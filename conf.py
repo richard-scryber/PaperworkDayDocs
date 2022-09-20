@@ -7,6 +7,8 @@ master_doc = 'index'
 project = u'Paperwork'
 html_static_path = ['_static']
 
-html_css_files = [
-    'css/scrybertheme.css',
+
+html_js_files = [
+    'https://www.paperworkday.net/paper.generate.js',
 ]
+
