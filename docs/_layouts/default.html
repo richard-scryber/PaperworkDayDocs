@@ -15,10 +15,18 @@
     <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script src="https://www.paperworkday.net/paper.generate.js" crossorigin="anonymous"  ></script>
+    <script src="https://www.paperworkday.net/paperwork.min.js" crossorigin="anonymous"  ></script>
     <style>
         .document-container{
             height: 500px;
+        }
+
+        #footer .credits.left{
+            float: left;
+        }
+
+        #footer .credits.right{
+            float: right;
         }
     </style>
     {% include head-custom.html %}
@@ -70,14 +78,14 @@
                 var name = $(ele).attr("name") || ele.id;
 
                 if(template){
-                    paperworkday.init({
+                    paperwork.init({
                         name: name,
                         container: "#" + ele.id,
                         ui: ui,
                         scale: 0.5,
                         loaded: (result) => {
                             if(data){
-                                paperworkday.generate({
+                                paperwork.generate({
                                     name: name,
                                     template: { source : sampleRoot + template},
                                     data: {source: sampleRoot + data}

@@ -2,5 +2,5 @@ remote_theme: pages-themes/midnight@v0.2.0
 plugins:
 - jekyll-remote-theme
 
-title: Paperwork guide
-description: A guide to including, using and working with the Paperwork document creation solution. 
+title: Paperwork
+description: A guide to including, using and working with the Paperwork dynamic document creation library. 
