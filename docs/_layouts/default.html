@@ -16,6 +16,11 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="https://www.paperworkday.net/paper.generate.js" crossorigin="anonymous"  ></script>
+    <style>
+        .document-container{
+            height: 500px;
+        }
+    </style>
     {% include head-custom.html %}
   </head>
   <body>
@@ -63,9 +68,6 @@
                     paperworkday.init({
                         name: name,
                         container: "#" + ele.id,
-                        width: "600px",
-                        height: "800px",
-                        host: "https://www.paperworkday.net",
                         ui: ["Default"],
                         loaded: (result) => {
                             if(data){
