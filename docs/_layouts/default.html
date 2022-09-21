@@ -55,12 +55,23 @@
             $(".document-container").each((index, ele) => {
                 var template = $(ele).data("template-source");
                 var data = $(ele).data("json-source");
+                var name = $(ele).attr("name");
+
                 if(template){
-                    paper.generate.init({
+                    paperworkday.init({
+                        name: name,
                         container: ele.id,
                         width: "600px",
                         height: "800px",
-                        ui: ["Default"]
+                        origin: window.location.origin,
+                        ui: ["Default"],
+                        loaded: (result) => {
+                            paperworkday.generate({
+                                name: name,
+                                template: { source : template},
+                                data: {source: data}
+                            });
+                        }
                     });
                 }
             }
