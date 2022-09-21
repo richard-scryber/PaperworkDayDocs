@@ -8,13 +8,18 @@ It supports html tags, images, cascading styles, expressions and calculations wi
 
 ## Creating a document preview - with Plain old Javascript
 
-The (second) easiset was to create a document with Paperwork is to firstly, add a reference to the script file in your html head.
+
+#### Add a reference to the javascript.
+
+The easiset was to create a document with Paperwork is to firstly, add a reference to the script file in your html head.
 
 ```html
 
     <script src='https://www.paperworkday.net/paperwork.min.js'  ></script>
 
 ```
+
+#### Add a container for the preview.
 
 And a div with a specific id (or unique selector) where you would like the document to be shown in the the body of the page.
 
@@ -26,8 +31,11 @@ And a div with a specific id (or unique selector) where you would like the docum
 
 ```
 
+#### Add the code that creates the document.
+
 And then finally once the page is loaded, initialize and load a document from the javascript event (in this case the window.onload event, but it could be a button click, or any other event).
 
+{% raw %}
 ```javascript
 
     window.onload = function(evt){
@@ -50,14 +58,9 @@ And then finally once the page is loaded, initialize and load a document from th
     }
 
 ```
+{% endraw %}
 
 And the output on the page should be the same as below.
 
 
 <div id='first-sample-container' class='document-container' data-pw-ui="Default" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
-
-This is a static site with dynamic document contents being created.
-
-## Second Sample
-
-<div id='second-sample-container' class='document-container' data-pw-ui="Download,Code,Edit" data-pw-scale='0.75' data-pw-template="_samples/downloadedit/index.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
