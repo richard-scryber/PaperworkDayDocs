@@ -51,6 +51,8 @@
       </section>
       <script>
 
+        var sampleRoot = "https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/"
+
         $().ready( () =>
             $(".document-container").each((index, ele) => {
                 var template = $(ele).data("template-source");
@@ -63,14 +65,23 @@
                         container: "#" + ele.id,
                         width: "600px",
                         height: "800px",
-                        origin: window.location.origin,
+                        host: "https://www.paperworkday.net",
                         ui: ["Default"],
                         loaded: (result) => {
-                            paperworkday.generate({
-                                name: name,
-                                template: { source : template},
-                                data: {source: data}
-                            });
+                            if(data){
+                                paperworkday.generate({
+                                    name: name,
+                                    template: { source : sampleRoot + template},
+                                    data: {source: sampleRoot + data}
+                                });
+                            }
+                            else{
+                                paperworkday.generate({
+                                    name: name,
+                                    template: { source : sampleRoot + template}
+                                });
+                            }
+                            
                         }
                     });
                 }
