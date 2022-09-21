@@ -66,7 +66,7 @@
             $(".document-container").each((index, ele) => {
                 var template = $(ele).data("template-source");
                 var data = $(ele).data("json-source");
-                var name = $(ele).attr("name");
+                var name = $(ele).attr("name") || ele.id;
 
                 if(template){
                     paperworkday.init({
