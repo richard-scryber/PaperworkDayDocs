@@ -60,7 +60,7 @@ And then finally once the page is loaded, initialize and load a document from th
             loaded: (result) => {
                 paperwork.generate({
                     template: {content: template},
-                    values: {content: values}
+                    data: {content: values}
                 });
             });
     }
