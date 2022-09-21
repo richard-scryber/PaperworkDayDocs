@@ -53,8 +53,8 @@
 
         $().ready( () =>
             $(".document-container").each((index, ele) => {
-                var template = $.data("template-source");
-                var data = $.data("json-source");
+                var template = $(ele).data("template-source");
+                var data = $(ele).data("json-source");
                 if(template){
                     paper.generate.init({
                         container: ele.id,
