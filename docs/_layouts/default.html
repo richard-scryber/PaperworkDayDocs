@@ -64,15 +64,16 @@
 
         $().ready( () =>
             $(".document-container").each((index, ele) => {
-                var template = $(ele).data("template-source");
-                var data = $(ele).data("json-source");
+                var template = $(ele).data("pw-template");
+                var data = $(ele).data("pw-json");
+                var ui =$(ele).data("pw-ui") || "Default";
                 var name = $(ele).attr("name") || ele.id;
 
                 if(template){
                     paperworkday.init({
                         name: name,
                         container: "#" + ele.id,
-                        ui: ["Default"],
+                        ui: ui,
                         scale: 0.5,
                         loaded: (result) => {
                             if(data){
