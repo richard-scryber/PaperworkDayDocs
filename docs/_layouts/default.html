@@ -52,8 +52,18 @@
       <script>
 
         $().ready( () =>
-            $(".document-container").each((index, ele) =>
-                alert("Found container with id " + ele.id)
+            $(".document-container").each((index, ele) => {
+                var template = $.data("template-source");
+                var data = $.data("json-source");
+                if(template){
+                    paper.generate.init({
+                        container: ele.id,
+                        width: "600px",
+                        height: "800px",
+                        ui: ["Default"]
+                    });
+                }
+            }
             )
         );
       </script>
