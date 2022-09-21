@@ -1,11 +1,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
     <title>Hello world document</title>
+    <style>
+        body { padding : 20px;}
+        .title { color : calc(theme.color || "red");}
+    </style>
 </head>
 <body>
-    <p>{{greeting}}.</p>
+    <h2 class="title" style="text-decoration: underline;">{{greeting}}.</h2>
     <p>{{concat('From all at ', owner)}}</p>
-    
 </body>
 	
 

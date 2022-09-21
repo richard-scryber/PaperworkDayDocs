@@ -41,11 +41,19 @@ And then finally once the page is loaded, initialize and load a document from th
     window.onload = function(evt){
 
         var html = "<html xmlns='http://www.w3.org/1999/xhtml' >" + 
-            "<head><title>Hello world document</title></head>" + 
-            "<body><h2 class='title' >{{concat(greeting,' from ', author)}}</h2></body>" + 
+            "<head><title>Hello world document</title>" +
+            "<style> body { padding: 20px; } .title { color: calc(theme.color);} </style>" + 
+            "</head>" + 
+            "<body>" +
+            "<h2 class='title' style='text-decoration: underline;' >{{greeting}}</h2>" + 
+            "<p>{{concat('From all at ', author)}}</p></body>" + 
             "</html>";
         
-        var values = { greeting : "Hello world", author : "Paperwork" };
+        var values = { 
+            greeting : "Hello World", 
+            author : "the Paperwork Collective",
+            theme: { color: "aqua"} 
+        };
 
         paperwork.init({
             container: "#helloworld_doc",
