@@ -1,5 +1,5 @@
 {
     "greeting" : "Hello World",
     "owner" : "the Paperwork Collective.",
-    "theme" : { "color" : "aqua" }
+    "theme" : { "color" : "#00ffff" }
 }
