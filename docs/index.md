@@ -45,8 +45,8 @@ And then finally once the page is loaded, initialize and load a document from th
             "<style> body { padding: 20px; } .title { color: calc(theme.color);} </style>" + 
             "</head>" + 
             "<body>" +
-            "<h2 class='title' style='font-style: italic;' >{{greeting}}</h2>" + 
-            "<p>{{concat('From all at ', author)}}</p></body>" + 
+            "<h2 class='title' style='font-style: italic;' >{{content.greeting}}</h2>" + 
+            "<p>{{concat('From all at ', content.author)}}</p></body>" + 
             "</html>";
         
         var values = { 
