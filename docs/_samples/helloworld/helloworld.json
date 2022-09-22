@@ -1,8 +1,7 @@
 {
-    "content" : {
     "greeting" : "Hello World",
-    "owner" : "the Paperwork Collective."
-    },
-    "theme_color" : "#00ffff",
-    "theme_name": "aqua"
+    "owner" : "the Paperwork Collective.",
+    "theme" : {
+        "color" : "#00ffff"
+    }   
 }
