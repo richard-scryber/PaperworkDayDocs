@@ -84,9 +84,9 @@ Yes, this is a **real** live preview!
 
 The technical version of how this works can be found <a href='/docs/framemechanism' >here</a>, but as a simple starter.
 
-The div `helloworld_doc` has an iframe injected with our static site at https://www.paperworkday.net that is hosted by the cloud-flare cdn via the `init` function.
+The div `helloworld_doc` has an iframe injected into the page via the `init` function, with our static site at https://www.paperworkday.net that is hosted on the cloud-flare cdn.
 
-Once the page has `loaded` then the call back allows our code to `generate` a document by passing the data to to the frame from the template and the data provided, and this is presented in the frame.
+Once the page has `loaded` then the call back allows our code to `generate` a document by passing the data to to the frame from the template and the data provided, and this is presented in the frame using our open-source <a href='https://github.com/richard-scryber/scryber.core' >Scryber.Core</a> framework.
 
 The template has `handlebar` syntax for reading the values from the provided data in the template, and performing calculations on that data. And the `calc` (or `var`) function can be used within the document styles.
 
@@ -94,11 +94,17 @@ In fact, if we were to change the data, then calling the `generate` function aga
 
 > NOTE: All this is on the client browser. 
 > There is no file transfer involved or server side document creation. 
-> **Paperwork does not know anything about your data**.
+> **Paperwork does not know anything about your data, it is just the tool**.
 
 ## Other frameworks and platforms
 
 We really want to add support for react, angual, wordpress, blazor and many other tools. Just beacuse we can and it is easy. Please, watch this space or get in-touch to suggest.
+
+## Minimum browser versions.
+
+Because of the way paperwork does it's thing, browsers **must** support the messaging api, and browser web-assembly, along with basic javascript and frames. 
+
+All the latest versions of the main browsers do support this, even on mobiles and tablets.
 
 ## Initialization and Generation options
 
