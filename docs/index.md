@@ -2,12 +2,13 @@
 
 Paperwork is a freely available tool, that allows you (as a designer, developer) to create beautiful and dymanic documents, quickly and easily on your site.
 
-The templates are based on xhtml and you can add dynamic content from json data, generating and previewing the document directly on the page.
+With templates based on `xhtml` and dynamic content from `json` data, generating and previewing the document directly on the page takes but moments.
 
-It supports html tags, images, cascading styles, expressions and calculations within the templates and complex json data.
+It supports html tags, images, cascading styles, custom fonts, expressions and calculations within the templates, and complex json data.
 
-## Creating a document preview - with Plain old Javascript
+## Creating a document preview - (PoJS)
 
+We wanted to make it really easy to add paperwork to any site.
 
 ### Add a reference to the javascript.
 
@@ -95,6 +96,9 @@ In fact, if we were to change the data, then calling the `generate` function aga
 > There is no file transfer involved or server side document creation. 
 > **Paperwork does not know anything about your data**.
 
+## Other frameworks and platforms
+
+We really want to add support for react, angual, wordpress, blazor and many other tools. Just beacuse we can and it is easy. Please, watch this space or get in-touch to suggest.
 
 ## Initialization and Generation options
 
