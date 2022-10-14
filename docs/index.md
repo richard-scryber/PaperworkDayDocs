@@ -81,13 +81,18 @@ And the output on the page should be the same as below.
 
 The technical version of how this works can be found <a href='/docs/framemechanism' >here</a>, but as a simple starter.
 
-The div 'helloworld_doc' has an iframe injected with our static site at https://www.paperworkday.net that is hosted by the cloud-flare cdn via the <c>init</c> function.
+The div `helloworld_doc` has an iframe injected with our static site at https://www.paperworkday.net that is hosted by the cloud-flare cdn via the `init` function.
 
-Once the page has 'loaded' then the call back allows our code to <c>generate</c> a document by passing the data to to the frame from the template and the data provided, and this is presented in the frame.
+Once the page has `loaded` then the call back allows our code to `generate` a document by passing the data to to the frame from the template and the data provided, and this is presented in the frame.
 
-In fact, if the data were to change, then calling the <c>generate</c> function again will re-create the document in the frame.
+The template has `handlebar` syntax for reading the values from the provided data in the template, and performing calculations on that data. And the `calc` (or `var`) function can be used within the document styles.
 
-All this is on the client browser. There is no file transfer involved or server side document creation. **Paperwork does not know anything about your data**.
+In fact, if we were to change the data, then calling the `generate` function again will re-create the document with the new data in the frame!
+
+> NOTE: All this is on the client browser. 
+> There is no file transfer involved or server side document creation. 
+> **Paperwork does not know anything about your data**.
+
 
 ## Initialization and Generation options
 
