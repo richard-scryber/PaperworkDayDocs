@@ -74,3 +74,53 @@ And the output on the page should be the same as below.
 
 
 <div id='first-sample-container' class='document-container' data-pw-ui="Default" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
+
+
+## How does it work?
+
+The technical version of how this works can be found <a href='/docs/framemechanism' >here</a>, but as a simple starter.
+
+The div 'helloworld_doc' has an iframe injected with our static site at https://www.paperworkday.net that is hosted by the cloud-flare cdn via the <c>init</c> function.
+
+Once the page has 'loaded' then the call back allows our code to <c>generate</c> a document by passing the data to to the frame from the template and the data provided, and this is presented in the frame.
+
+In fact, if the data were to change, then calling the <c>generate</c> function again will re-create the document in the frame.
+
+All this is on the client browser. There is no file transfer involved or server side document creation. **Paperwork does not know anything about your data**.
+
+## Initialization and Generation options
+
+There are many more options available within initialization, including 
+
+1. Changing the display theme,
+2. Supporting multiple frame instances on a single page
+3. Altering interface functions such as full screen and download
+4. Allowing viewing and editing of the code
+5. Frame sizing and resizing.
+6. Callback functions and error handling.
+
+Read more about the <a href='/docs/initconfig' >init configuration</a>.
+
+In the same way there are more options for the document generation, including
+
+1. Loading either or both template and data from a url.
+2. Getting the final generated data.
+3. Error handling and logging.
+
+Read more about the <a href='/docs/genconfig' >generate configuration</a>.
+
+
+## Avoid iframes
+
+Sometimes an iframe is either not appropriate, or cannot be used. In this case we have added a simple wrapper to our frame at <a href='https://www.paperworkday.net/preview?builder=true'>https://www.paperworkday.net/preview</a> 
+that will allow you to build full links to the same capability outside of your site content, and even has a handy url builder.
+
+## Still interested
+
+We are really glad to see that you are still interested.
+
+Some links we thing you would like to read are...
+
+ - <a href='/docs/framemechanism' >How paperwork works</a>
+ - <a href='/docs/initconfig' >The initialization configuration</a>
+ - <a href='/docs/genconfig' >The generation configuration</a>
