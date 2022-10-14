@@ -72,10 +72,12 @@ And then finally once the page is loaded, initialize and load a document from th
 
 And the output on the page should be the same as below.
 
+Yes, this is a **real** live preview!
+
 
 <div id='first-sample-container' class='document-container' data-pw-ui="Default" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
 
-<p>Yes, this is a **real** live preview!</p>
+<p>&nbsp;</p>
 
 ## How does it work?
 
