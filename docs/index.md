@@ -75,6 +75,7 @@ And the output on the page should be the same as below.
 
 <div id='first-sample-container' class='document-container' data-pw-ui="Default" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
 
+<p>Yes, this is a **real** live preview!</p>
 
 ## How does it work?
 
