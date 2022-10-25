@@ -1,3 +1,11 @@
+---
+layout: default
+title: Home
+nav_order: 1
+description: "Paperwork is a free tool to create beautiful PDF documents from html templates and formatted data."
+permalink: /
+---
+
 # What is Paperwork?
 
 Paperwork is a freely available tool, that allows you (as a designer, developer) to create beautiful and dymanic documents, quickly and easily on your site.
