@@ -8,7 +8,11 @@ It supports html tags, images, cascading styles, custom fonts, expressions and c
 
 ## Creating a document preview - (PoJS)
 
-We wanted to make it really easy to add paperwork to any site.
+We wanted to make it really easy to add paperwork to any site so you can create dynamic documents.
+
+<div id='first-sample-container' class='document-container' data-pw-ui="Default, Code, Edit" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
+
+<p>&nbsp;</p>
 
 ### Add a reference to the javascript.
 
@@ -39,28 +43,33 @@ And then finally once the page is loaded, initialize and load a document from th
 {% raw %}
 ```javascript
 
-    window.onload = function(evt){
-
-        var html = "<html xmlns='http://www.w3.org/1999/xhtml' >" + 
+    //The content of the template as xhtml (or use a url)
+    var html = "<html xmlns='http://www.w3.org/1999/xhtml' >" + 
             "<head><title>Hello world document</title>" +
-            "<style> body { padding: 20px; } .title { color: calc(theme.color);} </style>" + 
+            //Using the data in css styles with var (or calc)
+            "<style> body { padding: 20px; } .title { background-color: var(theme.color);} </style>" + 
             "</head>" + 
             "<body>" +
+            //Binding the data using {{}} (or calculating new values)
             "<h2 class='title' style='font-style: italic;' >{{greeting}}</h2>" + 
             "<p>{{concat('From all at ', author)}}</p></body>" + 
             "</html>";
-        
-        var values = { 
+
+    //The data to use in the template
+    var values = { 
             greeting : "Hello World", 
             author : "the Paperwork Collective",
-            theme: { color: "aqua"} 
-        };
+            theme: { color: "silver"} 
+    };
 
+    window.onload = function(evt){
+        //Initialize the container
         paperwork.init({
             container: "#helloworld_doc",
             loaded: (result) => {
+                //And once loaded, then generate the document with the template and the current data
                 paperwork.generate({
-                    template: {content: template},
+                    template: {content: html},
                     data: {content: values}
                 });
             });
@@ -76,9 +85,7 @@ And the output on the page should be the same as below.
 Yes, this is a **real** live preview!
 
 
-<div id='first-sample-container' class='document-container' data-pw-ui="Default" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
 
-<p>&nbsp;</p>
 
 ## How does it work?
 
