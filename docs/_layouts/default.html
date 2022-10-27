@@ -241,6 +241,7 @@
                     height: "600px",
                     width: "100%",
                     loaded: (result) => {
+                        $("#" + ele.id).addClass("doc_wrapper");
                         if(data){
                             paperwork.generate({
                                 name: name,
