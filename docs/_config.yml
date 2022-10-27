@@ -1,3 +1,5 @@
 ##theme: jekyll-theme-leap-day
-
+title: "Remote theme example"
 remote_theme: just-the-docs/just-the-docs
+color_scheme: "dark"
+search_enabled: false
