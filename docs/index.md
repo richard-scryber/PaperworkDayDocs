@@ -6,7 +6,7 @@ With templates based on `xhtml` and dynamic content from `json` data, generating
 
 It supports html tags, images, tables, cascading styles, custom fonts and repeating elements within the templates, along with complex json data, expressions, calculations and selecting.
 
-## Creating a document preview - (PoJS)
+## Creating a document with preview
 
 We want to make it really easy to add paperwork to any site so you can create dynamic documents.
 
@@ -117,6 +117,7 @@ In the same way there are more options for the document generation, including
 1. Loading either or both template and data from a url.
 2. Getting the final generated data.
 3. Error handling and logging.
+4. White and black listing remote domains
 
 Read more about the <a href='/docs/genconfig' >generate configuration</a>.
 
@@ -128,6 +129,7 @@ The core framework does **not** support all html tags or css style rules (and so
 - Colors, sizes, columns and alignment
 - Cascading styles
 - Expressions and calculaions
+- Images, types and inline support
 - Remote content and imports
 - Drawing shapes and svg
 - Logging and output options.
