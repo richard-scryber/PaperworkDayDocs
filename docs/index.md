@@ -4,11 +4,11 @@ Paperwork is a freely available tool, that allows you (as a designer, developer)
 
 With templates based on `xhtml` and dynamic content from `json` data, generating and previewing the document directly on the page takes but moments.
 
-It supports html tags, images, cascading styles, custom fonts, expressions and calculations within the templates, and complex json data.
+It supports html tags, images, tables, cascading styles, custom fonts and repeating elements within the templates, along with complex json data, expressions, calculations and selecting.
 
 ## Creating a document preview - (PoJS)
 
-We wanted to make it really easy to add paperwork to any site so you can create dynamic documents.
+We want to make it really easy to add paperwork to any site so you can create dynamic documents.
 
 <div id='first-sample-container' class='document-container' data-pw-ui="Default, Code, Edit" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
 
@@ -51,7 +51,7 @@ And then finally once the page is loaded, initialize and load a document from th
             "</head>" + 
             "<body>" +
             //Binding the data using {{}} (or calculating new values)
-            "<h2 class='title' style='font-style: italic;' >{{greeting}}</h2>" + 
+            "<h2 class='title' style='font-style: italic; padding: 30px' >{{greeting}}</h2>" + 
             "<p>{{concat('From all at ', author)}}</p></body>" + 
             "</html>";
 
@@ -66,6 +66,8 @@ And then finally once the page is loaded, initialize and load a document from th
         //Initialize the container
         paperwork.init({
             container: "#helloworld_doc",
+            //Add some optional flags for user interface options
+            ui: [Default, Code, Edit],
             loaded: (result) => {
                 //And once loaded, then generate the document with the template and the current data
                 paperwork.generate({
@@ -78,38 +80,22 @@ And then finally once the page is loaded, initialize and load a document from th
 ```
 {% endraw %}
 
-### Viewing the result
+See <a href='/docs/framemechanism' >how paperwork works</a> for a deeper dive into how Paperwork genersates your document.
 
-And the output on the page should be the same as below.
+If you want to avoid the inclusion of iframes in your own site take a look at <a href='https://www.paperworkday.net/preview?builder=true'>https://www.paperworkday.net/preview</a> 
+that will allow you to build full links to the same capability outside of your site content, and even has a handy url builder.
 
-Yes, this is a **real** live preview!
+{: .note-title }
+> Remember
+> All this is on the client browser. 
+> There is no network file transfer involved or server side document creation. 
+>
+> **Paperwork does not know anything about your template data, it is just the tool**.
 
-
-
-
-## How does it work?
-
-The technical version of how this works can be found <a href='/docs/framemechanism' >here</a>, but as a simple starter.
-
-The div `helloworld_doc` has an iframe injected into the page via the `init` function, with our static site at https://www.paperworkday.net that is hosted on the cloud-flare cdn.
-
-Once the page has `loaded` then the call back allows our code to `generate` a document by passing the data to to the frame from the template and the data provided, and this is presented in the frame using our open-source <a href='https://github.com/richard-scryber/scryber.core' >Scryber.Core</a> framework.
-
-The template has `handlebar` syntax for reading the values from the provided data in the template, and performing calculations on that data. And the `calc` (or `var`) function can be used within the document styles.
-
-In fact, if we were to change the data, then calling the `generate` function again will re-create the document with the new data in the frame!
-
-> NOTE: All this is on the client browser. 
-> There is no file transfer involved or server side document creation. 
-> **Paperwork does not know anything about your data, it is just the tool**.
-
-## Other frameworks and platforms
-
-We really want to add support for react, angual, wordpress, blazor and many other tools. Just beacuse we can and it is easy. Please, watch this space or get in-touch to suggest.
 
 ## Minimum browser versions.
 
-Because of the way paperwork does it's thing, browsers **must** support the messaging api, and browser web-assembly, along with basic javascript and frames. 
+Because of the way paperwork does it's thing, browsers **must** support the *messaging api*, and *browser web-assembly*, along with basic javascript and frames. 
 
 All the latest versions of the main browsers do support this, even on mobiles and tablets.
 
@@ -134,18 +120,23 @@ In the same way there are more options for the document generation, including
 
 Read more about the <a href='/docs/genconfig' >generate configuration</a>.
 
+## Supported content
 
-## Avoid iframes
+The core framework does **not** support all html tags or css style rules (and some may perform differently that you expect), so please see the following pages for more information.
 
-Sometimes an iframe is either not appropriate, or cannot be used. In this case we have added a simple wrapper to our frame at <a href='https://www.paperworkday.net/preview?builder=true'>https://www.paperworkday.net/preview</a> 
-that will allow you to build full links to the same capability outside of your site content, and even has a handy url builder.
+- Html content
+- Colors, sizes, columns and alignment
+- Cascading styles
+- Expressions and calculaions
+- Remote content and imports
+- Drawing shapes and svg
+- Logging and output options.
 
-## Still interested
+## Want more?
 
-We are really glad to see that you are still interested.
+We offer a subscription service that offers the following features.
 
-Some links we thing you would like to read are...
+- Document retrieval in your own code to do with the document anything you need.
+- Custom css on the frame UI so it can be branded as your own site.
+- Security options for restricting printing copying etc. And also password protecting your file.
 
- - <a href='/docs/framemechanism' >How paperwork works</a>
- - <a href='/docs/initconfig' >The initialization configuration</a>
- - <a href='/docs/genconfig' >The generation configuration</a>
