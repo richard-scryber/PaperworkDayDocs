@@ -142,3 +142,9 @@ We offer a subscription service that offers the following features.
 - Custom css on the frame UI so it can be branded as your own site.
 - Security options for restricting printing copying etc. And also password protecting your file.
 
+## Samples
+
+Or just refer to  <a href='/docs/genconfig' >here</a> for our list of samples and templates you can freely use for your own purposes.
+
+
+
