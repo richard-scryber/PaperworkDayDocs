@@ -28,7 +28,7 @@ The easiset was to create a document with Paperwork is to firstly, add a referen
 
 ### Add a container for the preview.
 
-And a div with a specific id (or unique selector) where you would like the document to be shown in the the body of the page.
+Add a div with a specific id (or unique selector) where you would like the document to be shown in the the body of the page.
 
 ```html
 
@@ -38,9 +38,10 @@ And a div with a specific id (or unique selector) where you would like the docum
 
 ```
 
-### Add the code that creates the document.
+### Declare or load your template in your script
 
-And then finally once the page is loaded, initialize and load a document from the javascript event (in this case the window.onload event, but it could be a button click, or any other event).
+You can assign a variable to your template content, or load it from a source using standard xhtml content.
+(The xmlns declaration on the html element is important and required)
 
 {% raw %}
 ```javascript
@@ -49,7 +50,7 @@ And then finally once the page is loaded, initialize and load a document from th
     var html = "<html xmlns='http://www.w3.org/1999/xhtml' >" + 
             "<head>" + 
                 "<title>Hello world document</title>" +
-                //Using the data in css styles with var (or calc)
+                //Using css styles (or reference a stylesheet)
                 "<style>" + 
                     //using poppins open font for the title
                     "@font-face{" + 
@@ -86,12 +87,31 @@ And then finally once the page is loaded, initialize and load a document from th
             "<p>{{concat('From all at ', author)}}</p></body>" + 
             "</html>";
 
-    //The data to use in the template
+```
+{% endraw %}
+
+### Declare, caclulate or load any needed data
+
+Our template uses values for both data and theme.
+
+{% raw %}
+```javascript
+
     var values = { 
             greeting : "Hello World", 
             author : "the Paperwork Collective",
             theme: { color: "silver"} 
     };
+
+```
+{% endraw %}
+
+### Add the code that creates the document.
+
+And then finally once the page is loaded, we can initialize and generate a document from the javascript event (in this case the window.onload event, but it could be a button click, or any other event).
+
+{% raw %}
+```javascript
 
     window.onload = function(evt){
         //Initialize the container
