@@ -125,7 +125,8 @@ And then finally once the page is loaded, we can initialize and generate a docum
                     template: {content: html},
                     data: {content: values}
                 });
-            });
+            }
+        });
     }
 
 ```
