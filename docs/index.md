@@ -45,12 +45,41 @@ And then finally once the page is loaded, initialize and load a document from th
 
     //The content of the template as xhtml (or use a url)
     var html = "<html xmlns='http://www.w3.org/1999/xhtml' >" + 
-            "<head><title>Hello world document</title>" +
-            //Using the data in css styles with var (or calc)
-            "<style> body { padding: 20px; } .title { background-color: var(theme.color);} </style>" + 
+            "<head>" + 
+                "<title>Hello world document</title>" +
+                //Using the data in css styles with var (or calc)
+                "<style>" + 
+                    //using poppins open font for the title
+                    "@font-face{" + 
+                        "font-family: 'Poppins';" + 
+                        "font-style: italic;" + 
+                        "font-weight: 300;" + 
+                        "src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21llEA.ttf) format('truetype');" + 
+                    "}" + 
+                    "body {" + 
+                        "padding : 0px;" + 
+                        "background-color: #0A0907;" +
+                    "}" + 
+                    // adding a padding and dynamic color for both h2 and p elements
+                    "h2, p{" + 
+                        "padding: 20px;" + 
+                        "color : var(theme.color);" + 
+                    "}" + 
+                    //setting the font, position and background for the title.
+                    ".title {" + 
+                        "font-family: Poppins;" + 
+                        "font-weight: 300;" + 
+                        "background: url(coffee_small.jpg);" + 
+                        "background-size: cover;" + 
+                        "height: 300pt;" + 
+                        "text-align: right;" + 
+                        "vertical-align: bottom;" + 
+                        "font-size: 60px;" + 
+                    "}" + 
+                "</style>" + 
             "</head>" + 
             "<body>" +
-            //Binding the data using {{}} (or calculating new values)
+            //Binding the dynamic data using {{}} (or calculating new values)
             "<h2 class='title' style='font-style: italic; padding: 30px' >{{greeting}}</h2>" + 
             "<p>{{concat('From all at ', author)}}</p></body>" + 
             "</html>";
@@ -80,17 +109,12 @@ And then finally once the page is loaded, initialize and load a document from th
 ```
 {% endraw %}
 
-See <a href='/docs/framemechanism' >how paperwork works</a> for a deeper dive into how Paperwork generates your document.
 
-If you want to avoid the inclusion of iframes in your own site take a look at <a href='https://www.paperworkday.net/preview?builder=true'>https://www.paperworkday.net/preview</a> 
-that will allow you to build full links to the same capability outside of your site content, and even has a handy url builder.
-
-{: .note-title }
-> Remember
-> All this is on the client browser. 
-> There is no network file transfer involved or server side document creation. 
+{: .note}
+> All this is built in the  browser. 
+> There is no network file transfer or server side computation involved for the document creation. 
 >
-> **Paperwork does not know anything about your template data, it is just the tool**.
+> Paperwork does not know anything about your template or data, it is just the tool.
 
 
 ## Minimum browser versions.
@@ -99,7 +123,14 @@ Because of the way paperwork does it's thing, browsers **must** support the *mes
 
 All the latest versions of the main browsers do support this, even on mobiles and tablets.
 
-## Initialization and Generation options
+See <a href='/docs/framemechanism' >how paperwork works</a> for a deeper dive into how Paperwork generates your document. 
+
+### No frames option
+
+If you want to avoid the inclusion of iframes in your own site take a look at <a href='https://www.paperworkday.net/preview?builder=true'>https://www.paperworkday.net/preview</a> 
+that will allow you to build full links to the same capability outside of your site content, and even has a handy url builder.
+
+## Initialization options
 
 There are many more options available within initialization, including 
 
@@ -111,6 +142,8 @@ There are many more options available within initialization, including
 6. Callback functions and error handling.
 
 Read more about the <a href='/docs/initconfig' >init configuration</a>.
+
+## Generation Options
 
 In the same way there are more options for the document generation, including
 
@@ -138,13 +171,12 @@ The core framework does **not** support all html tags or css style rules (and so
 
 We also offer a subscription service that offers the following features.
 
-- Document retrieval in your own code to do with the document anything you need.
 - Custom css on the frame UI so it can be branded as your own site.
 - Security options for restricting printing copying etc. And also password protecting your file.
 
 ## Samples
 
-We have a lot of samples, just refer to  <a href='/docs/genconfig' >here</a> for our list freely use for your own purposes. We like them, and hope they are of use to you too.
+We are building a lot of samples, just refer to  <a href='/docs/genconfig' >here</a> for our list, free use for your own purposes. We like them, and hope they are of use to you too.
 
 
 
