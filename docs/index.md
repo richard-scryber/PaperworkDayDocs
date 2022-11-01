@@ -1,4 +1,4 @@
-# Getting Started?
+# Getting Started
 
 Paperwork is a freely available tool, that allows you (as a designer, developer) to create beautiful and dymanic documents, quickly and easily on your site.
 
@@ -12,9 +12,9 @@ We want to make it really easy to add paperwork to any site so you can create dy
 
 <div id='first-sample-container' class='document-container' data-pw-ui="Default, Code, Edit" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
 
-<p>&nbsp;</p>
+<p>(Yes this is Paperwork in action!)</p>
 
-(Yes this is Paperwork in action!)
+
 
 ### Add a reference to the javascript.
 
