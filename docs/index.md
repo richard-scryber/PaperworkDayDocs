@@ -90,9 +90,9 @@ You can assign a variable to your template content, or load it from a source usi
 ```
 {% endraw %}
 
-### Declare, caclulate or load any needed data
+### Declare, calculate or load any needed data
 
-Our template uses values for both data and theme.
+Our template has placeholder values for both data and theme that we provide
 
 {% raw %}
 ```javascript
