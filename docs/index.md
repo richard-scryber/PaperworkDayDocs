@@ -80,7 +80,7 @@ And then finally once the page is loaded, initialize and load a document from th
 ```
 {% endraw %}
 
-See <a href='/docs/framemechanism' >how paperwork works</a> for a deeper dive into how Paperwork genersates your document.
+See <a href='/docs/framemechanism' >how paperwork works</a> for a deeper dive into how Paperwork generates your document.
 
 If you want to avoid the inclusion of iframes in your own site take a look at <a href='https://www.paperworkday.net/preview?builder=true'>https://www.paperworkday.net/preview</a> 
 that will allow you to build full links to the same capability outside of your site content, and even has a handy url builder.
@@ -136,7 +136,7 @@ The core framework does **not** support all html tags or css style rules (and so
 
 ## Want more?
 
-We offer a subscription service that offers the following features.
+We also offer a subscription service that offers the following features.
 
 - Document retrieval in your own code to do with the document anything you need.
 - Custom css on the frame UI so it can be branded as your own site.
@@ -144,7 +144,7 @@ We offer a subscription service that offers the following features.
 
 ## Samples
 
-Or just refer to  <a href='/docs/genconfig' >here</a> for our list of samples and templates you can freely use for your own purposes.
+We have a lot of samples, just refer to  <a href='/docs/genconfig' >here</a> for our list freely use for your own purposes. We like them, and hope they are of use to you too.
 
 
 
