@@ -16,6 +16,10 @@ The minimum configuration options for initializing paperwork is the name of the 
 
 This will create an initialize a new iframe, add it to a wrapping div and then append it to the container with id 'paperwork'.
 
+If the container is not provided, or cannot be found then an error will be raised in the console and false returned from the `init` function.
+
+## More options
+
 More options can be provided to change the appearance and behaviour as below.
 
 <dl>
