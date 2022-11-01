@@ -24,7 +24,7 @@ More options can be provided to change the appearance and behaviour as below.
   <dt>ui</dt>
   <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
   <dt>name</dt>
-  <dd>This optional <code>string<code> is the identifying name of the wrapper and frame. It allows multiple paperwork frame instances on a single page, and supports the mechanism for calling each individually from within your code at any point.</dd>
+  <dd>This optional <code>string</code> is the identifying name of the wrapper and frame. It allows multiple paperwork frame instances on a single page, and supports the mechanism for calling each individually from within your code at any point.</dd>
   <dt>width</dt>
   <dd>This optional css unit of size string, will set the starting <i>width</i> of the frame (and or wrapper)</dd>
   <dt>height</dt>
