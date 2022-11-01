@@ -163,7 +163,7 @@ There are many more options available within initialization, including
 5. Frame sizing and resizing.
 6. Callback functions and error handling.
 
-Read more about the <a href='/docs/initconfig' >init configuration</a>.
+Read more about the <a href='/docs/init_config' >init configuration</a>.
 
 ## Generation Options
 
@@ -174,7 +174,7 @@ In the same way there are more options for the document generation, including
 3. Error handling and logging.
 4. White and black listing remote domains
 
-Read more about the <a href='/docs/genconfig' >generate configuration</a>.
+Read more about the <a href='/docs/gen_config' >generate configuration</a>.
 
 ## Supported content
 

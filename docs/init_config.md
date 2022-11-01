@@ -25,10 +25,10 @@ More options can be provided to change the appearance and behaviour as below.
 <dl>
   <dt>container</dt>
   <dd>This is the required selector for an existing element within the page that the frame sho</dd>
-  <dt>ui</dt>
-  <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
   <dt>name</dt>
   <dd>This optional <code>string</code> is the identifying name of the wrapper and frame. It allows multiple paperwork frame instances on a single page, and supports the mechanism for calling each individually from within your code at any point.</dd>
+  <dt>ui</dt>
+  <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
   <dt>width</dt>
   <dd>This optional css unit of size string, will set the starting <i>width</i> of the frame (and or wrapper)</dd>
   <dt>height</dt>
@@ -41,8 +41,37 @@ More options can be provided to change the appearance and behaviour as below.
   <dd>This version string, is recommended for production environments, but not required. It will specifiy the framework version to use for generation. Currently there are only 2 values supported: '1.0' or 'latest'. It is expected that in future further values will be supported, and these versions may not support your template - hence the recommentation.</dd>
 </dl>
 
-## The UI flags
+## The name identifier
 
+By providing names, then more than one frame instance is supported by Paperwork on the current page. Each named frame must still be initialized, and can then be referred to individually for other actions.
+
+If a name is not provided then it will be given a default name. And any secondary initialization will fail if a name is not provided.
+
+
+{% raw %}
+```javascript
+
+
+    paperwork.init({ container: "#paperwork1", name : "first"});
+    paperwork.init({ container: "#paperwork1", name : "second"});
+
+    .
+    .
+    .
+
+    paperwork.gen({name: "second", template:{content: html}, data: {content: values} });
+
+    .
+    .
+    .
+
+    paperwork.retrieve({name: "second"});
+
+
+```
+{% endraw %}
+
+## The UI flags
 
 FullScreen=1,
 Download = 2,
