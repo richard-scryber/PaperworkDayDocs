@@ -145,7 +145,7 @@ Because of the way paperwork does it's thing, browsers **must** support the *mes
 
 All the latest versions of the main browsers do support this, even on mobiles and tablets.
 
-See <a href='/docs/framemechanism' >how paperwork works</a> for a deeper dive into how Paperwork generates your document. 
+See <a href='/deep/framemechanism' >how paperwork works</a> for a deeper dive into how Paperwork generates your document. 
 
 ### No frames option
 
@@ -163,7 +163,7 @@ There are many more options available within initialization, including
 5. Frame sizing and resizing.
 6. Callback functions and error handling.
 
-Read more about the <a href='/docs/init_config' >init configuration</a>.
+Read more about the <a href='/init_config' >init configuration</a>.
 
 ## Generation Options
 
@@ -174,7 +174,7 @@ In the same way there are more options for the document generation, including
 3. Error handling and logging.
 4. White and black listing remote domains
 
-Read more about the <a href='/docs/gen_config' >generate configuration</a>.
+Read more about the <a href='/gen_config' >generate configuration</a>.
 
 ## Supported content
 
@@ -198,7 +198,7 @@ We also offer a subscription service that offers the following features.
 
 ## Samples
 
-We are building a lot of samples, just refer to  <a href='/docs/genconfig' >here</a> for our list, free use for your own purposes. We like them, and hope they are of use to you too.
+We are building a lot of samples, just refer to  <a href='/samples/all' >here</a> for our list, free use for your own purposes. We like them, and hope they are of use to you too.
 
 
 
