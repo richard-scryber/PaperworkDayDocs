@@ -32,28 +32,29 @@ If the container is not provided, or cannot be found then an error will be raise
 
 More options can be provided to change the appearance and behaviour as below.
 
-<dl>
-  <dt>container</dt>
-  <dd>This is the required selector for an existing element within the page that the frame should be shown in</dd>
-  <dt>name</dt>
-  <dd>This optional string is the identifying name of the wrapper and frame. It allows multiple paperwork frame instances on a single page.</dd>
-  <dt>ui</dt>
-  <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
-  <dt>theme</dt>
-<dd>There are currently 2 themes available. 'dark' and 'light' with the default being dark. Or for subscribers there are also `custom-dark` and `custom-light` themes from your own stylesheets.
-<dt>width</dt>
-<dd>This optional css unit of size string, will set the starting width of the frame (and or wrapper)</dd>
-<dt>height</dt>
-<dd>This optional css unit of size string, will set the starting height of the frame (and or wrapper)</dd>
-<dt>scale</dt>
-<dd>This optional numeric value will set the initial percentage scale of the preview when a document is first generated.</dd>
-<dt>page</dt>
-<dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
-<dt>vers</dt>
-<dd>This version string, is recommended for production environments, but not required.</dd>
-</dl>
+{% raw %}
+    <dl>
+        <dt>container</dt>
+        <dd>This is the required selector for an existing element within the page that the frame should be shown in</dd>
+        <dt>name</dt>
+        <dd>This optional string is the identifying name of the wrapper and frame. It allows multiple paperwork frame instances on a single page.</dd>
+        <dt>ui</dt>
+        <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
+        <dt>theme</dt>
+        <dd>There are currently 2 themes available. 'dark' and 'light' with the default being dark. Or for subscribers there are also `custom-dark` and `custom-light` themes from your own stylesheets.
+        <dt>width</dt>
+        <dd>This optional css unit of size string, will set the starting width of the frame (and or wrapper)</dd>
+        <dt>height</dt>
+        <dd>This optional css unit of size string, will set the starting height of the frame (and or wrapper)</dd>
+        <dt>scale</dt>
+        <dd>This optional numeric value will set the initial percentage scale of the preview when a document is first generated.</dd>
+        <dt>page</dt>
+        <dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
+        <dt>vers</dt>
+        <dd>This version string, is recommended for production environments, but not required.</dd>
+    </dl>
 
-<p>&nbsp;</p>
+{% endraw %}
 
 
 ## The name identifier
