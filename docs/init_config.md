@@ -1,4 +1,16 @@
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+
 # Initialization Options
+
+
 
 When initializing the container to show documents, there are a number of options that can be provided, and events that may be raised.
 
@@ -29,6 +41,8 @@ More options can be provided to change the appearance and behaviour as below.
   <dd>This optional <code>string</code> is the identifying name of the wrapper and frame. It allows multiple paperwork frame instances on a single page.</dd>
   <dt>ui</dt>
   <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
+  <dt>theme</dt>
+  <dd>There are currently 2 themes available. 'dark' and 'light' with the default being dark. Or for <a href='/extra/themes' >subscribers</a> there are also `custom-dark` and `custom-light` themes from your own stylesheets.
   <dt>width</dt>
   <dd>This optional css unit of size string, will set the starting <i>width</i> of the frame (and or wrapper)</dd>
   <dt>height</dt>
