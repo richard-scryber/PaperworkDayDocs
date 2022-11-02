@@ -1,4 +1,5 @@
 # Initialization Options
+{: .no_toc }
 
 When initializing the container to show documents, there are a number of options that can be provided, and events that may be raised.
 
@@ -7,9 +8,11 @@ When initializing the container to show documents, there are a number of options
     Table of contents
   </summary>
   {: .text-delta }
-1. TOC
+- TOC
 {:toc}
 </details>
+
+---
 
 ## As a minimum
 
@@ -26,6 +29,8 @@ The minimum configuration options for initializing paperwork is the name of the 
 This will create an initialize a new iframe, add it to a wrapping div and then append it to the container with id 'paperwork'.
 
 If the container is not provided, or cannot be found then an error will be raised in the console and false returned from the `init` function.
+
+---
 
 ## All options
 
@@ -52,7 +57,7 @@ More options can be provided to change the appearance and behaviour as below.
     <dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
 </dl>
 
-
+---
 
 ## The name identifier
 
@@ -83,6 +88,8 @@ If a name is not provided then it will be given a default name. And any secondar
 
 ```
 {% endraw %}
+
+---
 
 ## The UI flags
 
@@ -127,6 +134,7 @@ If another flag is added to the ui set, and is deemed a standard interface eleme
 
 Currently it is not possible to update / change the UI elements after initialization. An instance can only be <a href='advanced/dispose_instance' >disposed</a>, and then re-initialized.
 
+---
 
 ## Width and Height of the frame.
 
@@ -143,6 +151,8 @@ If more control is needed, then simply specifying an explicit size will be appli
     
 ```
 {% endraw %}
+
+---
 
 ## Zoom (Scale) of the document page.
 
@@ -169,6 +179,8 @@ Currently, if a value outside of these numbers is provided for scale it will be 
 ```
 {% endraw %}
 
+---
+
 ## Starting page index.
 
 During the initialization of the frame the one-based first page index for the displayed page can be specified. This allows the standard values to be set of the page the consuming end user will see, but they will have full control of the current page (if the UI controls allow paging).
@@ -182,6 +194,8 @@ The first page in the document is alway 1, and if a value is provided e.g. 10 th
     
 ```
 {% endraw %}
+
+---
 
 ## Versioning of the generation.
 
@@ -199,7 +213,9 @@ By specifying `latest` then a client will always be using the most recent **rele
 ```
 {% endraw %}
 
-## Events
+---
+
+## Loaded Event
 
 There is only 1 event raised from the init method and that is the loaded event. A provided funtion will be called once the inner content is ready in the browser. 
 
@@ -224,6 +240,8 @@ The loaded option method will be called with the same object as the init method 
 
 ```
 {% endraw %}
+
+---
 
 ## Example
 
@@ -254,7 +272,4 @@ A complete set of options for the initialization would be as follows...
 ```
 {% endraw %}
 
-
-## Next
-
-Once all the init options are set correctly, it makes sense to understand the <a href='gen_config' >generation options</a>
+Once all the init options are set correctly, it makes sense to move onto the <a href='gen_config' >generation options</a>
