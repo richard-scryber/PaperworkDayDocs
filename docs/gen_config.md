@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Navigation Structure
+title: Generate Options
 parent: Getting Started
 nav_order: 2
 ---
@@ -28,42 +28,35 @@ The minimum configuration options for generating a document in paperwork is the 
 {% raw %}
 ```javascript
 
-    paperwork.gen({ template: { source: "https://mylocation.com/templates/first.html"}});
+    paperwork.generate({ template: { source: "https://mylocation.com/templates/first.html"}});
 
 ```
 {% endraw %}
 
 This will attempt to generate a new document from the source path, add render in the previously <a href='init_config' >initialized frame</a> with the default name. 
 
-If the frame is not initialized, or cannot be found then an error will be raised in the console and false returned from the `gen` function.
+If the frame is not initialized, or cannot be found then an error will be raised in the console and false returned from the `generate` function.
+
+A `data` object can also be provided to reference any dynamic content.
 
 ---
 
-## All options
+## Template and Data Objects
 
-More options can be provided to change the appearance and behaviour as below.
+Within the template and data objects, there are 3 properties that can be set.
+
 
 <dl>
-    <dt>container</dt>
-    <dd>This is the <strong>required</strong> selector for an existing element within the page that the frame should be shown in</dd>
-    <dt>name</dt>
-    <dd>This optional string is the identifying name of the wrapper and frame. It allows multiple paperwork frame instances on a single page.</dd>
-    <dt>vers</dt>
-    <dd>This version string, is <strong>recommended</strong> for production environments, but not required.</dd>
-    <dt>ui</dt>
-    <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
-    <dt>theme</dt>
-    <dd>There are currently 2 themes available. 'dark' and 'light' with the default being dark. Or for subscribers there are also `custom-dark` and `custom-light` themes from your own stylesheets.</dd>
-    <dt>width</dt>
-    <dd>This optional css unit of size string, will set the starting width of the frame (and or wrapper)</dd>
-    <dt>height</dt>
-    <dd>This optional css unit of size string, will set the starting height of the frame (and or wrapper)</dd>
-    <dt>scale</dt>
-    <dd>This optional numeric value will set the initial percentage scale of the preview when a document is first generated.</dd>
-    <dt>page</dt>
-    <dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
+    <dt>content</dt>
+    <dd>This is a <strong>raw</strong> object or string of the actual values (JSON or XHTML)</dd>
+    <dt>source</dt>
+    <dd>This is a full URL to the content that should be loaded and used.</dd>
+    <dt>type</dt>
+    <dd>This is by default <code>Auto</code>, but supports also <code>Content</code> or <code>Location</code>. So if both properties are set, then the one to use can be specified.</dd>
 </dl>
 
+{% .note}
+> If both properties cotent and source are set, and the type is Auto, then the content will be used as a preference.
 ---
 
 ## The name identifier
