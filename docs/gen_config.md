@@ -1,7 +1,7 @@
-# Initialization Options
+# Generation Options
 {: .no_toc }
 
-When initializing the container to show documents, there are a number of options that can be provided, and events that may be raised.
+When generating a document in a frame, there are a number of options that can be provided, and events that may be raised.
 
 <details open markdown="block">
   <summary>
@@ -16,19 +16,19 @@ When initializing the container to show documents, there are a number of options
 
 ## As a minimum
 
-The minimum configuration options for initializing paperwork is the name of the container where the paperwork tool will be shown.
+The minimum configuration options for generating a document in paperwork is the template with either html, or a source where the html can be located.
 
 {% raw %}
 ```javascript
 
-    paperwork.init({ container: "#paperwork"});
+    paperwork.gen({ template: { source: "https://mylocation.com/templates/first.html"}});
 
 ```
 {% endraw %}
 
-This will create an initialize a new iframe, add it to a wrapping div and then append it to the container with id 'paperwork'.
+This will attempt to generate a new document from the source path, add render in the previously <a href='init_config' >initialized frame</a> with the default name. 
 
-If the container is not provided, or cannot be found then an error will be raised in the console and false returned from the `init` function.
+If the frame is not initialized, or cannot be found then an error will be raised in the console and false returned from the `gen` function.
 
 ---
 
