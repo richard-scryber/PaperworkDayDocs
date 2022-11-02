@@ -55,8 +55,9 @@ Within the template and data objects, there are 3 properties that can be set.
     <dd>This is by default <code>Auto</code>, but supports also <code>Content</code> or <code>Location</code>. So if both properties are set, then the one to use can be specified.</dd>
 </dl>
 
-{% .note}
+{: .note }
 > If both properties cotent and source are set, and the type is Auto, then the content will be used as a preference.
+
 ---
 
 ## The name identifier
