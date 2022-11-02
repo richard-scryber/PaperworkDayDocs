@@ -1,3 +1,10 @@
+---
+layout: default
+title: Navigation Structure
+parent: Getting Started
+nav_order: 2
+---
+
 # Generation Options
 {: .no_toc }
 

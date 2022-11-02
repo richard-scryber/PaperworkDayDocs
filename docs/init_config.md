@@ -1,3 +1,10 @@
+---
+layout: default
+title: Init Options
+parent: Getting Started
+nav_order: 1
+---
+
 # Initialization Options
 {: .no_toc }
 
