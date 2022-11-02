@@ -1,3 +1,7 @@
+# Initialization Options
+
+When initializing the container to show documents, there are a number of options that can be provided, and events that may be raised.
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -6,11 +10,6 @@
 1. TOC
 {:toc}
 </details>
-
-
-# Initialization Options
-
-When initializing the container to show documents, there are a number of options that can be provided, and events that may be raised.
 
 ## As a minimum
 
@@ -28,15 +27,17 @@ This will create an initialize a new iframe, add it to a wrapping div and then a
 
 If the container is not provided, or cannot be found then an error will be raised in the console and false returned from the `init` function.
 
-## More init options
+## All options
 
 More options can be provided to change the appearance and behaviour as below.
 
 <dl>
     <dt>container</dt>
-    <dd>This is the required selector for an existing element within the page that the frame should be shown in</dd>
+    <dd>This is the <strong>required</strong> selector for an existing element within the page that the frame should be shown in</dd>
     <dt>name</dt>
     <dd>This optional string is the identifying name of the wrapper and frame. It allows multiple paperwork frame instances on a single page.</dd>
+    <dt>vers</dt>
+    <dd>This version string, is <strong>recommended</strong> for production environments, but not required.</dd>
     <dt>ui</dt>
     <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
     <dt>theme</dt>
@@ -49,8 +50,6 @@ More options can be provided to change the appearance and behaviour as below.
     <dd>This optional numeric value will set the initial percentage scale of the preview when a document is first generated.</dd>
     <dt>page</dt>
     <dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
-    <dt>vers</dt>
-    <dd>This version string, is recommended for production environments, but not required.</dd>
 </dl>
 
 
@@ -106,15 +105,11 @@ The UI options can either be provided as an array or as a comma separated string
     <dd>If included in the set of flags then the code (template and data) that was used to generate any document and preview can be <strong>EDITED</strong>, even if it was loaded from a url rather than directly provided, and also <strong>RE-RUN</strong> with any changes. This does not affect the original source, but can be very useful in creating, checking and fixing template and data sources.</dd>
 </dl>
 
-### No Elements
-
 If, for some reason, none of the above interface elements are wanted, then the `None` option can be explicitly provided.
-
-*More flags may be added later on for standard and non-standard user interface elements within the frame.*
 
 ### Default components and the Default flag.
 
-Along with the flags above another value of `Default` is supported. This is alos the value that is used if the `ui` option is not specified on the initialization options.
+Along with the flags above another value of `Default` is supported. This is also the value that is used if the `ui` option is not specified on the initialization options.
 
 Default will currently show `FullScreen, Download, Paging, Zoom` ui options.
 
@@ -123,15 +118,12 @@ If another flag is added to the ui set, and is deemed a standard interface eleme
 {% raw %}
 ```javascript
 
-
     paperwork.init({ container: "#paperwork1", name : "simple", ui : "Default, Resize"});
     paperwork.init({ container: "#paperwork1", name : "editable", ui : "Default, Resize"});
     paperwork.init({ container: "#paperwork1", name : "none", ui : "None"});
     
 ```
 {% endraw %}
-
-### Post initialization
 
 Currently it is not possible to update / change the UI elements after initialization. An instance can only be <a href='advanced/dispose_instance' >disposed</a>, and then re-initialized.
 
@@ -142,7 +134,17 @@ If width and height are not specified on the initialization options, then both t
 
 If more control is needed, then simply specifying an explicit size will be applied to the frame.
 
-## Scale of the document page.
+{% raw %}
+```javascript
+
+
+    paperwork.init({ container: "#paperwork1", name : "fixed", ui : "Default", width: "100%", height: "600px" });
+    paperwork.init({ container: "#paperwork1", name : "stretch", ui : "Default, Resize", width: "400px", height: "600px"});
+    
+```
+{% endraw %}
+
+## Zoom (Scale) of the document page.
 
 During the initialization of the frame a first percentage scale for the displayed page can be specified. THis allows the standard value to be set, based upon the explict or expected viewport size vs the expected document page size. Ultimately the consuming end user has full control of the zoom level.
 
@@ -159,11 +161,27 @@ The following values are supported
 
 Currently, if a value outside of these numbers is provided for scale it will be ignored.
 
-## Page index of the document.
+{% raw %}
+```javascript
+
+    paperwork.init({ container: "#paperwork1", name : "small", ui : "Default", scale: "0.5" });
+    
+```
+{% endraw %}
+
+## Starting page index.
 
 During the initialization of the frame the one-based first page index for the displayed page can be specified. This allows the standard values to be set of the page the consuming end user will see, but they will have full control of the current page (if the UI controls allow paging).
 
 The first page in the document is alway 1, and if a value is provided e.g. 10 that falls beyond the range of the documents number of pages, then the last (or first) page in the document will be shown.
+
+{% raw %}
+```javascript
+
+    paperwork.init({ container: "#paperwork1", name : "second-page", ui : "Default", page: "2" });
+    
+```
+{% endraw %}
 
 ## Versioning of the generation.
 
@@ -173,6 +191,13 @@ Currently there are only 2 values supported: '1.0' or 'latest'. It is expected t
 
 By specifying `latest` then a client will always be using the most recent **released** version of the framework. 
 
+{% raw %}
+```javascript
+
+    paperwork.init({ container: "#paperwork1", name : "explicit-version", ui : "Default", vers: "1.0" });
+    
+```
+{% endraw %}
 
 ## Events
 
@@ -193,6 +218,35 @@ The loaded option method will be called with the same object as the init method 
             paperwork.generate({
                 template: {content: html},
                 data: {content: values}
+            });
+        }
+    });
+
+```
+{% endraw %}
+
+## Example
+
+A complete set of options for the initialization would be as follows...
+
+{% raw %}
+```javascript
+
+    //Initialize the container
+    paperwork.init({
+        container: "#helloworld_doc",
+        name: "fullInit",
+        vers: "latest",
+        width: "400px",
+        height: "600px",
+        theme: "light",
+        ui: "FullScreen, Paging, Zoom", //no download, resizing or editing
+        scale: 2.0,
+        page: 3,
+        loaded: (result) => {
+            //Once loaded, then generate the document with a template and any current data
+            paperwork.generate({
+                template: {source: url}
             });
         }
     });
