@@ -10,8 +10,6 @@
 
 # Initialization Options
 
-
-
 When initializing the container to show documents, there are a number of options that can be provided, and events that may be raised.
 
 ## As a minimum
@@ -50,10 +48,10 @@ More options can be provided to change the appearance and behaviour as below.
   <dt>scale</dt>
   <dd>This optional numeric value will set the <u>initial</u> percentage scale of the preview when a document is first generated.</dd>
   <dt>page</dt>
-  <dd>This optional numeric value, will set the starting page number within the document. The first page is 1.</dd>
+  <dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
   <dt>vers</dt>
-  <dd>This version string, is recommended for production environments, but not required.</dd>
-</dl>
+  <dd>This version string, is recommended for production environments, but not required.</dd></dl>
+
 
 ## The name identifier
 
