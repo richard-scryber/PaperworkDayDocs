@@ -40,7 +40,7 @@ More options can be provided to change the appearance and behaviour as below.
     <dt>ui</dt>
     <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
     <dt>theme</dt>
-    <dd>There are currently 2 themes available. 'dark' and 'light' with the default being dark. Or for subscribers there are also `custom-dark` and `custom-light` themes from your own stylesheets.<dd>
+    <dd>There are currently 2 themes available. 'dark' and 'light' with the default being dark. Or for subscribers there are also `custom-dark` and `custom-light` themes from your own stylesheets.</dd>
     <dt>width</dt>
     <dd>This optional css unit of size string, will set the starting width of the frame (and or wrapper)</dd>
     <dt>height</dt>
