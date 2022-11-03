@@ -45,7 +45,6 @@ A `data` object can also be provided to reference any dynamic content.
 
 Within the template and data objects, there are 3 properties that can be set.
 
-
 <dl>
     <dt>content</dt>
     <dd>This is a <strong>raw</strong> object or string of the actual values (JSON or XHTML)</dd>
@@ -56,36 +55,25 @@ Within the template and data objects, there are 3 properties that can be set.
 </dl>
 
 {: .note }
-> If both properties content and source are set, and the type is Auto (or not specified), then the content will be used as a preference.
+> If both properties content and source are set, and the type is Auto (or not specified), 
+> then the `content` will be used as a preference.
 
 ---
 
-## The name identifier
-
-By providing names, then the frame that was initialized with that name will be invoked..
-
-If a name is not provided then it will be given a default name. And any secondary initialization will fail if a name is not provided.
+## Providing content 
 
 
 {% raw %}
 ```javascript
 
+    var html = GetMyTemplate();
+    var data = GetTemplateData();
 
-    paperwork.init({ container: "#paperwork1", name : "first"});
-    paperwork.init({ container: "#paperwork1", name : "second"});
-
-    .
-    .
-    .
-
-    paperwork.gen({name: "second", template:{content: html}, data: {content: values} });
-
-    .
-    .
-    .
-
-    paperwork.retrieve({name: "second"});
-
+    paperwork.generate({
+        name: "myContainer", 
+        template: { content: html, type: "Content"}, 
+        data: {content: mydata, type: "Content"}
+        });
 
 ```
 {% endraw %}

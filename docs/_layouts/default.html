@@ -230,16 +230,27 @@
             var template = $(ele).data("pw-template");
             var data = $(ele).data("pw-json");
             var ui =$(ele).data("pw-ui") || "Default";
+            var width = $(ele).data("pw-width") || "100%";
+            var height = $(ele).data("pw-height") || "600px";
+            var scale = $(ele).data("pw-scale") || 0.75;
+            var page = $(ele).data("pw-page") || 1;
             var name = $(ele).attr("name") || ele.id;
-
+            var vers = $(ele).data("pw-vers") || "latest";
+            
             if(template){
+                if(!ele.id){
+                  console.error("No ID provided for initializing the container with template " + template);
+                }
                 paperwork.init({
                     name: name,
                     container: "#" + ele.id,
                     ui: ui,
                     scale: 0.5,
-                    height: "600px",
-                    width: "100%",
+                    height: height,
+                    width: width,
+                    vers: vers,
+                    page: page,
+                    scale: scale,
                     loaded: (result) => {
                         $("#" + ele.id).addClass("doc_wrapper");
                         if(data){
