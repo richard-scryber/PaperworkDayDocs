@@ -56,13 +56,13 @@ Within the template and data objects, there are 3 properties that can be set.
 </dl>
 
 {: .note }
-> If both properties cotent and source are set, and the type is Auto, then the content will be used as a preference.
+> If both properties content and source are set, and the type is Auto (or not specified), then the content will be used as a preference.
 
 ---
 
 ## The name identifier
 
-By providing names, then more than one frame instance is supported by Paperwork on the current page. Each named frame must still be initialized, and can then be referred to individually for other actions.
+By providing names, then the frame that was initialized with that name will be invoked..
 
 If a name is not provided then it will be given a default name. And any secondary initialization will fail if a name is not provided.
 
