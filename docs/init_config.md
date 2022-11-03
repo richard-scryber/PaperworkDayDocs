@@ -62,6 +62,8 @@ More options can be provided to change the appearance and behaviour as below.
     <dd>This optional numeric value will set the initial percentage scale of the preview when a document is first generated.</dd>
     <dt>page</dt>
     <dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
+    <dt>loaded:</dt>
+    <dd>This optional function will be called once the frame has been created and is ready with a reference to the frame.</dd>
 </dl>
 
 ---
@@ -85,8 +87,11 @@ A complete set of options for the initialization would be as follows...
         scale: 2.0,
         page: 3,
         loaded: (result) => {
-            //Once loaded, then generate the document with a template and any current data
+
+            //Once loaded, then do anything you want, including
+            //generate the document with a template and any current data
             //using the name of the frame.
+
             paperwork.generate({
                 name: "fullInit",
                 template: {source: url}
@@ -215,7 +220,7 @@ The following values are supported
 - 1.5,
 - 2.0,
 - 4.0,
-- 8.0, equivalen to 800%
+- 8.0, equivalent to 800%
 
 Currently, if a value outside of these numbers is provided for scale it will be ignored.
 
