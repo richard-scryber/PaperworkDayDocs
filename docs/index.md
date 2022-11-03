@@ -13,6 +13,8 @@ With templates based on `xhtml` and dynamic content from `json` data, generating
 
 It supports html tags, images, tables, cascading styles, custom fonts and repeating elements within the templates, along with complex json data, expressions, calculations and selecting.
 
+---
+
 ## Creating a document with preview
 
 We want to make it really easy to add paperwork to any site so you can create dynamic documents.
@@ -22,6 +24,7 @@ We want to make it really easy to add paperwork to any site so you can create dy
 <p>(Yes this is Paperwork in action!)</p>
 
 
+---
 
 ### Add a reference to the javascript.
 
@@ -32,6 +35,8 @@ The easiset was to create a document with Paperwork is to firstly, add a referen
     <script src='https://www.paperworkday.net/paperwork.min.js'  ></script>
 
 ```
+
+---
 
 ### Add a container for the preview.
 
@@ -44,6 +49,8 @@ Add a div with a specific id (or unique selector) where you would like the docum
     </section>
 
 ```
+
+---
 
 ### Declare or load your template in your script
 
@@ -97,6 +104,8 @@ You can assign a variable to your template content, or load it from a source usi
 ```
 {% endraw %}
 
+---
+
 ### Declare, calculate or load any needed data
 
 Our template has placeholder values for both data and theme that we provide
@@ -112,6 +121,8 @@ Our template has placeholder values for both data and theme that we provide
 
 ```
 {% endraw %}
+
+---
 
 ### Add the code that creates the document.
 
@@ -146,6 +157,7 @@ And then finally once the page is loaded, we can initialize and generate a docum
 >
 > Paperwork does not know anything about your template or data, it is just the tool.
 
+---
 
 ## Minimum browser versions.
 
@@ -155,10 +167,14 @@ All the latest versions of the main browsers do support this, even on mobiles an
 
 See <a href='/deep/framemechanism' >how paperwork works</a> for a deeper dive into how Paperwork generates your document. 
 
+---
+
 ### No frames option
 
 If you want to avoid the inclusion of iframes in your own site take a look at <a href='https://www.paperworkday.net/preview?builder=true'>https://www.paperworkday.net/preview</a> 
 that will allow you to build full links to the same capability outside of your site content, and even has a handy url builder.
+
+---
 
 ## Initialization options
 
@@ -173,6 +189,8 @@ There are many more options available within initialization, including
 
 Read more about the <a href='/init_config' >init configuration</a>.
 
+---
+
 ## Generation Options
 
 In the same way there are more options for the document generation, including
@@ -183,6 +201,8 @@ In the same way there are more options for the document generation, including
 4. White and black listing remote domains
 
 Read more about the <a href='/gen_config' >generate configuration</a>.
+
+---
 
 ## Supported content
 
@@ -197,12 +217,16 @@ The core framework does **not** support all html tags or css style rules (and so
 - Drawing shapes and svg
 - Logging and output options.
 
+---
+
 ## Want more?
 
 We also offer a subscription service that offers the following features.
 
 - Custom css on the frame UI so it can be branded as your own site.
 - Security options for restricting printing copying etc. And also password protecting your file.
+
+---
 
 ## Samples
 

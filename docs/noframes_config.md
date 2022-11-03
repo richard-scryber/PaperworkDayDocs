@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Init Options
+title: No Frame Options
 parent: Getting Started
-nav_order: 1
+nav_order: 3
 ---
 
-# Initialization Options
+# No Frame Options
 {: .no_toc }
 
-When initializing the container to show documents, there are a number of options that can be provided, and events that may be raised.
+It may be that, as a designer or configurator, there is no ability to support frames within your platform of choice. As a convenience Paperwork offers a preview option that can be invoked from a link.
 
 <details open markdown="block">
   <summary>
@@ -23,52 +23,46 @@ When initializing the container to show documents, there are a number of options
 
 ## As a minimum
 
-The minimum configuration options for initializing paperwork is the name of the container where the paperwork tool will be shown.
+The minimum configuration options for generating a document in paperwork is the template with either html, or a source where the html can be located.
 
 {% raw %}
 ```javascript
 
-    paperwork.init({ container: "#paperwork"});
+    paperwork.generate({ template: { source: "https://mylocation.com/templates/first.html"}});
 
 ```
 {% endraw %}
 
-This will create an initialize a new iframe, add it to a wrapping div and then append it to the container with id 'paperwork'.
+This will attempt to generate a new document from the source path, add render in the previously <a href='init_config' >initialized frame</a> with the default name. 
 
-If the container is not provided, or cannot be found then an error will be raised in the console and false returned from the `init` function.
+If the frame is not initialized, or cannot be found then an error will be raised in the console and false returned from the `generate` function.
+
+A `data` object can also be provided to reference any dynamic content.
 
 ---
 
-## All options
+## Template and Data Objects
 
-More options can be provided to change the appearance and behaviour as below.
+Within the template and data objects, there are 3 properties that can be set.
+
 
 <dl>
-    <dt>container</dt>
-    <dd>This is the <strong>required</strong> selector for an existing element within the page that the frame should be shown in</dd>
-    <dt>name</dt>
-    <dd>This optional string is the identifying name of the wrapper and frame. It allows multiple paperwork frame instances on a single page.</dd>
-    <dt>vers</dt>
-    <dd>This version string, is <strong>recommended</strong> for production environments, but not required.</dd>
-    <dt>ui</dt>
-    <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
-    <dt>theme</dt>
-    <dd>There are currently 2 themes available. 'dark' and 'light' with the default being dark. Or for subscribers there are also `custom-dark` and `custom-light` themes from your own stylesheets.</dd>
-    <dt>width</dt>
-    <dd>This optional css unit of size string, will set the starting width of the frame (and or wrapper)</dd>
-    <dt>height</dt>
-    <dd>This optional css unit of size string, will set the starting height of the frame (and or wrapper)</dd>
-    <dt>scale</dt>
-    <dd>This optional numeric value will set the initial percentage scale of the preview when a document is first generated.</dd>
-    <dt>page</dt>
-    <dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
+    <dt>content</dt>
+    <dd>This is a <strong>raw</strong> object or string of the actual values (JSON or XHTML)</dd>
+    <dt>source</dt>
+    <dd>This is a full URL to the content that should be loaded and used.</dd>
+    <dt>type</dt>
+    <dd>This is by default <code>Auto</code>, but supports also <code>Content</code> or <code>Location</code>. So if both properties are set, then the one to use can be specified.</dd>
 </dl>
+
+{: .note }
+> If both properties content and source are set, and the type is Auto (or not specified), then the content will be used as a preference.
 
 ---
 
 ## The name identifier
 
-By providing names, then more than one frame instance is supported by Paperwork on the current page. Each named frame must still be initialized, and can then be referred to individually for other actions.
+By providing names, then the frame that was initialized with that name will be invoked..
 
 If a name is not provided then it will be given a default name. And any secondary initialization will fail if a name is not provided.
 
@@ -116,7 +110,7 @@ The UI options can either be provided as an array or as a comma separated string
     <dt>Code</dt>
     <dd>If included in the set of flags then the code (template and data) that was used to generate any document and preview can be viewed, even if it was loaded from a url rather than directly provided. This does not affect the original source, but can be very useful in checking template and data sources.</dd>
     <dt>Edit</dt>
-    <dd>If included in the set of flags then the code (template and data) that was used to generate any document and preview can be <strong>EDITED</strong></dd>
+    <dd>If included in the set of flags then the code (template and data) that was used to generate any document and preview can be <strong>EDITED</strong>, even if it was loaded from a url rather than directly provided, and also <strong>RE-RUN</strong> with any changes. This does not affect the original source, but can be very useful in creating, checking and fixing template and data sources.</dd>
 </dl>
 
 If, for some reason, none of the above interface elements are wanted, then the `None` option can be explicitly provided.
@@ -140,14 +134,6 @@ If another flag is added to the ui set, and is deemed a standard interface eleme
 {% endraw %}
 
 Currently it is not possible to update / change the UI elements after initialization. An instance can only be <a href='advanced/dispose_instance' >disposed</a>, and then re-initialized.
-
----
-
-### Code viewing and editing
-
-By specifying the `Code` flag on the `ui` it is possible to view the data and template that was used to generate any document.
-
-By also specifying the `Edit`flag, then it is possible to not only view the code, but also change it. Any changes will not be saved back to the original source, but it is useful to test and validate.
 
 ---
 
