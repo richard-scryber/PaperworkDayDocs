@@ -66,6 +66,39 @@ More options can be provided to change the appearance and behaviour as below.
 
 ---
 
+## Full Example
+
+A complete set of options for the initialization would be as follows...
+
+{% raw %}
+```javascript
+
+    //Initialize the container
+    paperwork.init({
+        container: "#helloworld_doc",
+        name: "fullInit",
+        vers: "latest",
+        width: "400px",
+        height: "600px",
+        theme: "light",
+        ui: "FullScreen, Paging, Zoom", //no download, resizing or editing
+        scale: 2.0,
+        page: 3,
+        loaded: (result) => {
+            //Once loaded, then generate the document with a template and any current data
+            //using the name of the frame.
+            paperwork.generate({
+                name: "fullInit",
+                template: {source: url}
+            });
+        }
+    });
+
+```
+{% endraw %}
+
+---
+
 ## The name identifier
 
 By providing names, then more than one frame instance is supported by Paperwork on the current page. Each named frame must still be initialized, and can then be referred to individually for other actions.
@@ -257,36 +290,5 @@ The loaded option method will be called with the same object as the init method 
 {% endraw %}
 
 ---
-
-## Example
-
-A complete set of options for the initialization would be as follows...
-
-{% raw %}
-```javascript
-
-    //Initialize the container
-    paperwork.init({
-        container: "#helloworld_doc",
-        name: "fullInit",
-        vers: "latest",
-        width: "400px",
-        height: "600px",
-        theme: "light",
-        ui: "FullScreen, Paging, Zoom", //no download, resizing or editing
-        scale: 2.0,
-        page: 3,
-        loaded: (result) => {
-            //Once loaded, then generate the document with a template and any current data
-            //using the name of the frame.
-            paperwork.generate({
-                name: "fullInit",
-                template: {source: url}
-            });
-        }
-    });
-
-```
-{% endraw %}
 
 Once all the init options are set correctly, it makes sense to move onto the <a href='gen_config' >generation options</a>
