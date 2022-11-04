@@ -23,40 +23,39 @@ It may be that, as a designer or configurator, there is no ability to support fr
 
 ## As a minimum
 
-The minimum configuration options for generating a document in paperwork is the template with either html, or a source where the html can be located.
+The minimum the link requires a template
 
 {% raw %}
-```javascript
+```html
 
-    paperwork.generate({ template: { source: "https://mylocation.com/templates/first.html"}});
+    <a href='https:www.paperworkday.info/preview?template=https%3Awww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html' target='paperwork_preview' >Preview Sample</a>
 
 ```
 {% endraw %}
 
-This will attempt to generate a new document from the source path, add render in the previously <a href='init_config' >initialized frame</a> with the default name. 
-
-If the frame is not initialized, or cannot be found then an error will be raised in the console and false returned from the `generate` function.
-
-A `data` object can also be provided to reference any dynamic content.
+This will open a new window or tab with the contents of the template 'https:www.paperworkday.info/samples/nodata/helloworld.html' within a full pane.
 
 ---
 
-## Template and Data Objects
+## Builder and option
 
-Within the template and data objects, there are 3 properties that can be set.
+Within the preview pane, there is an optional builder. Simple append the `&builder=true` parameter and you can create your own url's to copy and paste into your pages.
+
+{% raw %}
+```html
+
+    <a href='https:www.paperworkday.info/preview?template=https%3Awww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html&builder=true' target='paperwork_preview' >Preview Sample</a>
+
+```
+{% endraw %}
 
 
-<dl>
-    <dt>content</dt>
-    <dd>This is a <strong>raw</strong> object or string of the actual values (JSON or XHTML)</dd>
-    <dt>source</dt>
-    <dd>This is a full URL to the content that should be loaded and used.</dd>
-    <dt>type</dt>
-    <dd>This is by default <code>Auto</code>, but supports also <code>Content</code> or <code>Location</code>. So if both properties are set, then the one to use can be specified.</dd>
-</dl>
+<a href='https:www.paperworkday.info/preview?template=https%3Awww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html&builder=true' target='paperwork_preview' >Preview Sample</a>
+
 
 {: .note }
-> If both properties content and source are set, and the type is Auto (or not specified), then the content will be used as a preference.
+> Although, we can no assurance that anyone cannot access this link, it is alwayls loaded as the current user, 
+> if they cannot access the data or template, then they cannot see the information.
 
 ---
 
