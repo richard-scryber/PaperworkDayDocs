@@ -28,7 +28,7 @@ The minimum the link requires a template
 {% raw %}
 ```html
 
-    <a href='https:www.paperworkday.info/preview?template=https%3Awww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html' target='paperwork_preview' >Preview Sample</a>
+    <a href='https:www.paperworkday.met/preview?template=https%3A%2F%2Fwww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html' target='paperwork_preview' >Preview Sample</a>
 
 ```
 {% endraw %}
@@ -44,18 +44,18 @@ Within the preview pane, there is an optional builder. Simple append the `&build
 {% raw %}
 ```html
 
-    <a href='https:www.paperworkday.info/preview?template=https%3Awww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html&builder=true' target='paperwork_preview' >Preview Sample</a>
+    <a href='https:www.paperworkday.info/preview?template=https%3A%2F%2Fwww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html&builder=true' target='paperwork_preview' >Preview Sample</a>
 
 ```
 {% endraw %}
 
 
-<a href='https:www.paperworkday.info/preview?template=https%3Awww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html&builder=true' target='paperwork_preview' >Preview Sample</a>
+<a href='https//:www.paperworkday.info/preview?template=https%3A%2F%2Fwww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html&builder=true' target='paperwork_preview' >Preview Sample</a>
 
 
 {: .note }
-> Although, we can no assurance that anyone cannot access this link, it is alwayls loaded as the current user, 
-> if they cannot access the data or template, then they cannot see the information.
+> Although, we can make no assurance that anyone cannot access this link, it is always loaded as the current user, 
+> if they cannot access the data or template, then they cannot see the preview.
 
 ---
 
