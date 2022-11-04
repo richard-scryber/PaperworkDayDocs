@@ -28,14 +28,14 @@ The minimum the link requires a template
 {% raw %}
 ```html
 
-    <a href='https://www.paperworkday.net/preview?template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2Fsamples%2Fnodata%2Fhelloworld.html' target='paperwork_preview' >Preview Sample</a>
+    <a href='https://www.paperworkday.net/preview?template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2F_samples%2Fnodata%2Fhelloworld.html' target='paperwork_preview' >Preview Sample</a>
 
 ```
 {% endraw %}
 
 This will open a new window or tab with the contents of the template 'https:www.paperworkday.info/samples/nodata/helloworld.html' within a full pane.
 
-<a href='https://www.paperworkday.net/preview?template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2Fsamples%2Fnodata%2Fhelloworld.html' target='paperwork_preview' >Preview Sample</a>
+<a href='https://www.paperworkday.net/preview?template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2F_samples%2Fnodata%2Fhelloworld.html' target='paperwork_preview' >Preview Sample</a>
 
 ---
 
@@ -46,13 +46,13 @@ Within the preview pane, there is an optional builder. Simple append the `&build
 {% raw %}
 ```html
 
-    <a href='https://www.paperworkday.net/preview?template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2Fsamples%2Fnodata%2Fhelloworld.html&builder=true' target='paperwork_preview' >Preview Sample</a>
+    <a href='https://www.paperworkday.net/preview?template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2F_samples%2Fnodata%2Fhelloworld.html&builder=true' target='paperwork_preview' >Preview Sample</a>
 
 ```
 {% endraw %}
 
 
-<a href='https://www.paperworkday.net/preview?template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2Fsamples%2Fnodata%2Fhelloworld.html%0A&builder=true' target='paperwork_preview' >Preview Sample</a>
+<a href='https://www.paperworkday.net/preview?template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2F_samples%2Fnodata%2Fhelloworld.html%0A&builder=true' target='paperwork_preview' >Preview Sample</a>
 
 
 {: .note }
