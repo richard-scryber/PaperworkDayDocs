@@ -35,6 +35,8 @@ The minimum the link requires a template
 
 This will open a new window or tab with the contents of the template 'https:www.paperworkday.info/samples/nodata/helloworld.html' within a full pane.
 
+<a href='https//:www.paperworkday.info/preview?template=https%3A%2F%2Fwww.paperworkday.info%2Fsamples%2Fnodata%2Fhelloworld.html' target='paperwork_preview' >Preview Sample</a>
+
 ---
 
 ## Builder and option
