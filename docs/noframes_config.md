@@ -61,35 +61,10 @@ Within the preview pane, there is an optional builder. Simple append the `&build
 
 ---
 
-## The name identifier
+## The builder options
 
-By providing names, then the frame that was initialized with that name will be invoked..
+![](https://www.paperworkday.info/assets/builderOptions.png)
 
-If a name is not provided then it will be given a default name. And any secondary initialization will fail if a name is not provided.
-
-
-{% raw %}
-```javascript
-
-
-    paperwork.init({ container: "#paperwork1", name : "first"});
-    paperwork.init({ container: "#paperwork1", name : "second"});
-
-    .
-    .
-    .
-
-    paperwork.gen({name: "second", template:{content: html}, data: {content: values} });
-
-    .
-    .
-    .
-
-    paperwork.retrieve({name: "second"});
-
-
-```
-{% endraw %}
 
 ---
 
