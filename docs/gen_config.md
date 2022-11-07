@@ -83,14 +83,21 @@ Within the template and data objects, there are 3 properties that can be set.
 {% raw %}
 ```javascript
 
-    var html = getTemplateObject(null, "https://localhost/path/totemplate.html");
-    var data = getTemplateObject({greeting: "Hello World"}, null);
+    function generateMyDocument(){
 
-    paperwork.generate({
-        name: "myContainer", 
-        template: html
-        data: data
-        });
+        var html = getTemplateObject(null, "https://localhost/path/totemplate.html");
+
+        var data = getTemplateObject({
+            greeting: "Hello World", 
+            when: Date.name().toLocaleString(),
+        }, null);
+
+        paperwork.generate({
+            name: "myContainer", 
+            template: html
+            data: data
+            });
+    }
 ```
 {% endraw %}
 
@@ -110,7 +117,7 @@ This can be called multiple times on the same frame instance with different opti
 ```html
 
     <div class='button-wrapper' >
-        <button id='GenerateButton' onclick='paperwork.generate({name: "myContainer", tempate: getTemplate(), data: getData()})'>Update Document</button>
+        <button id='GenerateButton' onclick='generateMyDocument()'>Update Document</button>
     <div>
     
 ```
