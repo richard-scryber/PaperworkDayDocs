@@ -24,6 +24,7 @@ Paperwork uses XHTML for the visual representation of templates, supporting casc
 ## Basic Template
 
 The basic template is xhtml and has the **required** xml namespace (`xmlns`) attribute set to "http://www.w3.org/1999/xhtml", with an optional `scryber` processing instruction infront.
+
 The head element supports the standard `title`, `base`, `style` and `link` inner elements.
 
 The `body` defines the content of the page(s) within the document including most html elements, inline svg content and graphic images.
@@ -90,16 +91,18 @@ The following elements can be used within the body of a document template, and s
 
 <dl>
     <dt>Page headers and footers</dt>
-    <dd>The `header` and `footer` elements are supported on the body element for page headers and page footers (repeating on each page). `continuation-header` and `continuation-footer` are also added if needed for subsequent pages.
-    <br/> both main and section also support their own headers and footers for new pages</dd>
+    <dd>The `header` and `footer` elements are supported on the body element for page headers and page footers (repeating on each page). 
+    <br/>`continuation-header` and `continuation-footer` are also possible on the `body` if needed for subsequent pages.
+    <br/>The main and section elements can be within a body and support their own headers and footers for new pages</dd>
     <dt>Heading elements</dt>
     <dd>`h1` to `h6` elements are fully supported with rich content.</dd>
     <dt>Block elements</dt>
-    <dd>`div`, `p`, `main`, `article`, `section`, `nav`, `blockquote` are supported, and will by default be block elements starting and ending on a new line within the document. They can also be nested.</dd>
+    <dd>`div`, `p`, `main`, `article`, `section`, `nav`, `blockquote` are supported, and will, by default, be block elements starting and ending on a new line within the document. They can also be nested.</dd>
     <dt>Inline elements</dt>
     <dd>The simple inline elements: `span`, `b`, `i`, `u`, `strike`, `strong`, `emphasis` and `label` are supported with the usual textual adornments on specific </dd>
     <dt>Discreet inline elements</dt>
-    <dd>The elements: `num`, `time` are supported, and a custom element for `page`</dd>
+    <dd>The elements: `num`, `time` are supported with formatting for displaying numbers and dates.<br/>
+        And a custom element `page` for displaying the current page or the page number of another element within the document.</dd>
     <dt>Table elements</dt>
     <dd>The standard `table` with inner `thead`, `tbody`, `tfoot` along with `tr` and `td` are supported (including column spans, but not currently row spans)</dd>
     <dt>Lists</dt>
