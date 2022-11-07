@@ -16,7 +16,7 @@ Paperwork uses XHTML for the visual representation of templates, supporting casc
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
@@ -74,7 +74,7 @@ The following are the supported options on the processing instruction.
 
 See :doc:`extending_logging` for a detailed explanation of the tracing and logging capabilities in the scryber library which is **really** useful when trying to hunt down issues.
 
-{% .note}
+{: .note }
 > A log-level` of Diagnostic will be extremely lengthy.
 > And if appended can reamatically slow down any composition or rendering.
 >
@@ -120,7 +120,7 @@ The following elements can be used within the body of a document template, and s
 
 There are a few omissions from the full HTML5 set, but as is a functional set of elements. More may be added in the future such as fieldsets, cite and figure.
 
-{% .note}
+{: .note}
 > Currently the form, input, select and button elements are not supported
 > This may be something that will be supported in the future.
 >
