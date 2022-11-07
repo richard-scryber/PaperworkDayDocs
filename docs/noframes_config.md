@@ -65,28 +65,31 @@ Within the preview pane, there is an optional builder. Simple append the `&build
 
 ![](https://www.paperworkday.info/assets/builderOptions.png)
 
-
 ---
 
-## The UI flags
+## The Options
 
-The UI options can either be provided as an array or as a comma separated string of values. Each value will show a particular user interface (ui) component as follows.
+The options match directly to the configuration available on the init and generate options, except that the template and data can only be an absolute url link, so they are specified directly.
 
 <dl>
-    <dt>FullScreen</dt>
-    <dd>If included in the set of flags, then the full screen toggle icon will be shown to allow the user to enter full screen mode with the frame content. By pressing escape, the end user will return the frame back to the last size. Normally this icon will be on the top far right corner.</dd>
-    <dt>Download</dt>
-    <dd>If included in the set of flags then the download document icon will be shown (disabled unless a document has been generated), to allow the user to easily download a single full copy of the current document. </dd>
-    <dt>Paging</dt>
-    <dd>If included in the set of flags then the next, previous icons and current page will be shown, (disabled unless a document has been generated), to allow the user to easily move between pages in the current document.</dd>
-    <dt>Zoom</dt>
-    <dd>If included in the set of flags then the zoom-in, zoom-out icons and current zoom percentate will be shown, (disabled unless a document has been generated), to allow the user to easily increases the displayed size of the documents' current page frame.</dd>
-    <dt>Resize</dt>
-    <dd>If included in the set of flags then the initialized frame will be identified as resizable to the browser. Provided this is supported based upon parent elements and browser version, then the current user should be able to change the size and or aspect ration of the previewing frame.</dd>
-    <dt>Code</dt>
-    <dd>If included in the set of flags then the code (template and data) that was used to generate any document and preview can be viewed, even if it was loaded from a url rather than directly provided. This does not affect the original source, but can be very useful in checking template and data sources.</dd>
-    <dt>Edit</dt>
-    <dd>If included in the set of flags then the code (template and data) that was used to generate any document and preview can be <strong>EDITED</strong>, even if it was loaded from a url rather than directly provided, and also <strong>RE-RUN</strong> with any changes. This does not affect the original source, but can be very useful in creating, checking and fixing template and data sources.</dd>
+    <dt>Template Path</dt>
+    <dd>This is the <strong>required</strong> absolute url to the xhtml template to generate a file from</dd>
+    <dt>Data Path</dt>
+    <dd>This is the <emphasis>optional</emphasis> absolute url to the json dynamic data to generate a file with.</dd>
+    <dt>User Interface options</dt>
+    <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
+    <dt>theme</dt>
+    <dd>There are currently 2 themes available. 'dark' and 'light' with the default being dark. Or for subscribers there are also `custom-dark` and `custom-light` themes from your own stylesheets.</dd>
+    <dt>width</dt>
+    <dd>This optional css unit of size string, will set the starting width of the frame (and or wrapper)</dd>
+    <dt>height</dt>
+    <dd>This optional css unit of size string, will set the starting height of the frame (and or wrapper)</dd>
+    <dt>scale</dt>
+    <dd>This optional numeric value will set the initial percentage scale of the preview when a document is first generated.</dd>
+    <dt>page</dt>
+    <dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
+    <dt>loaded:</dt>
+    <dd>This optional function will be called once the frame has been created and is ready with a reference to the frame.</dd>
 </dl>
 
 If, for some reason, none of the above interface elements are wanted, then the `None` option can be explicitly provided.
