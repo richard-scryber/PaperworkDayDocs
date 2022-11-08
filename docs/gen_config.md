@@ -153,3 +153,7 @@ jtd.addEvent(generateDoc, 'click', function(){
 <div id='buttonGenerate' class='document-container' name='ButtonGenerate' data-pw-ui="Default, Code, Edit" ></div>
 
 ---
+
+## Generation events
+
+There are two events that can be attached to the generage action configuration. 

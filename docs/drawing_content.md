@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Binding Content
+title: Drawing Content
 has_children: true
-nav_order: 5
+nav_order: 4
 ---
 
-# Binding Content
+# Drawing Content
 {: .no_toc }
 
-Paperwork uses handlebars syntax (by default), for dynamically binding values in any provided data to elements within the template, along with supporting repeating content and complex expresssions.
+Paperwork uses in document svg for drawing lines and diagrams. It is not (currently) full support svg support but the main static capabilities are there.
 
 <details open markdown="block">
   <summary>
@@ -21,7 +21,7 @@ Paperwork uses handlebars syntax (by default), for dynamically binding values in
 
 ---
 
-## Basic Binding
+## Basic Shapes
 
 The basic template is xhtml and has the **required** xml namespace (`xmlns`) attribute set to "http://www.w3.org/1999/xhtml", with an optional `scryber` processing instruction infront.
 
@@ -60,16 +60,12 @@ Css styles can either be referenced from `link` elements in the head or as inlin
 
 ---
 
-## Repeating templates
+## At rule styles
 
 With @rules Paperwork can be used to import content, specify page sizes and add specific print styles to existing stylesheets.
 
 ---
 
-## Complex expressions and calculations
+## Binding data and expressions
 
 The paperwork binding implementation is flexible and pervasive. It is supported within the content of an element, on the attributes, or even within styles and referenced stylesheets.
-
----
-
-## Calc and var within styles.

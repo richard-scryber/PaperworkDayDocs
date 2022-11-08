@@ -1,14 +1,14 @@
 ---
 layout: default
-title: How Paperwork works
+title: Retrieving the document
 parent: Getting Started
-nav_order: 5
+nav_order: 4
 ---
 
-# How Paperwork works
+# Retreiving a generated document
 {: .no_toc }
 
-When generating a document in a frame, there are a number of actions the framework performs.
+Once a document has been generated in a frame, then the actual document data can be retrieved in code to be stored or other action taken.
 
 <details open markdown="block">
   <summary>
