@@ -94,6 +94,8 @@ The options match directly to the configuration available on the init and genera
 
 If, for some reason, none of the above interface elements are wanted, then the `None` option can be explicitly provided.
 
+---
+
 ## Build, or build and go
 
 With the build action, the Preview Url will be updated based on the selections, with the Build and Go, 
@@ -108,3 +110,5 @@ When happy, the link can be coppied and used in any pages as is.
     
 ```
 {% endraw %}
+
+---

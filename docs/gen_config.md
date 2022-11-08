@@ -123,4 +123,30 @@ This can be called multiple times on the same frame instance with different opti
 ```
 {% endraw %}
 
+
+<button class="btn generateDoc">Create document on click</button>
+
+<script>
+
+var count = 0;
+
+const generateDoc = document.querySelector('.generateDoc');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  count++;
+  var source = "https://www.paperworkday.info/_samples/helloworld/helloworld.html"
+  var data = { count: count};
+
+  paperwork.generate({
+    name: 'ButtonGenerate',
+    template: {source: source},
+    data: {content: data}
+  });
+
+});
+</script>
+
+<!-- the frame will be initialzed by the code in the root default _layout -->
+<div id='buttonGenerate' class='document-container' name='ButtonGenerate' data-pw-ui="Default, Code, Edit" ></div>
+
 ---
