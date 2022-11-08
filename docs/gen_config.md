@@ -132,7 +132,7 @@ var count = 0;
 
 const generateDoc = document.querySelector('.generateDoc');
 
-jtd.addEvent(toggleDarkMode, 'click', function(){
+jtd.addEvent(generateDoc, 'click', function(){
   count++;
   var source = "https://www.paperworkday.info/_samples/helloworld/helloworld.html"
   var data = { count: count};

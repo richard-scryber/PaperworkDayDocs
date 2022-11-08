@@ -237,42 +237,41 @@
             var name = $(ele).attr("name") || ele.id;
             var vers = $(ele).data("pw-vers") || "latest";
             
-            if(template){
-                if(!ele.id){
-                  console.error("No ID provided for initializing the container with template " + template);
-                }
-                paperwork.init({
-                    name: name,
-                    container: "#" + ele.id,
-                    ui: ui,
-                    scale: 0.5,
-                    height: height,
-                    width: width,
-                    vers: vers,
-                    page: page,
-                    scale: scale,
-                    loaded: (result) => {
-                        $("#" + ele.id).addClass("doc_wrapper");
-                        if(data){
-                            paperwork.generate({
-                                name: name,
-                                template: { source : sampleRoot + template},
-                                data: {source: sampleRoot + data}
-                            });
-                        }
-                        else{
-                            paperworkday.generate({
-                                name: name,
-                                template: { source : sampleRoot + template}
-                            });
-                        }
-                        
-                    }
-                });
+
+            if(!ele.id){
+              console.error("No ID provided for initializing the container with template " + template);
             }
-        }
-        )
-    );
+            paperwork.init({
+                name: name,
+                container: "#" + ele.id,
+                ui: ui,
+                scale: 0.5,
+                height: height,
+                width: width,
+                vers: vers,
+                page: page,
+                scale: scale,
+                loaded: (result) => {
+                      if(template){
+                      $("#" + ele.id).addClass("doc_wrapper");
+                      if(data){
+                          paperwork.generate({
+                              name: name,
+                              template: { source : sampleRoot + template},
+                              data: {source: sampleRoot + data}
+                          });
+                      }
+                      else{
+                          paperworkday.generate({
+                              name: name,
+                              template: { source : sampleRoot + template}
+                          });
+                      }
+                  }
+                } //loaded
+            }); //init
+        }) //each
+    ); //ready
   </script>
 </body>
 </html>
