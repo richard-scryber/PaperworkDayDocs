@@ -134,7 +134,7 @@ const generateDoc = document.querySelector('.generateDoc');
 
 jtd.addEvent(generateDoc, 'click', function(){
   count++;
-  var source = "https://www.paperworkday.info/_samples/helloworld/helloworld.html"
+  var source = "https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/_samples/nodata/buttonCounterIncrement.html"
   var data = { count: count};
 
   paperwork.generate({
