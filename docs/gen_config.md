@@ -199,7 +199,7 @@ If a success function is provided, but execution fails and no fail function is p
 ```
 {% endraw %}
 
-{% .note %}
+{: .note }
 > If the parsing mode is set to lax (see <a href='/template_content.html'>template content</a>), then there 
 > may be warnings or even errors in the document, but an output was produced. For production environments, 
 > Strict is preferred.
