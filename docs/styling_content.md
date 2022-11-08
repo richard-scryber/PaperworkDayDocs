@@ -2,7 +2,7 @@
 layout: default
 title: Styling Content
 has_children: true
-nav_order: 2
+nav_order: 3
 ---
 
 # Styling Content

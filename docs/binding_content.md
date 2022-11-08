@@ -2,7 +2,7 @@
 layout: default
 title: Binding Content
 has_children: true
-nav_order: 2
+nav_order: 4
 ---
 
 # Binding Content

@@ -174,6 +174,8 @@ See <a href='/deep/framemechanism' >how paperwork works</a> for a deeper dive in
 If you want to avoid the inclusion of iframes in your own site take a look at <a href='https://www.paperworkday.net/preview?builder=true'>https://www.paperworkday.net/preview</a> 
 that will allow you to build full links to the same capability outside of your site content, and even has a handy url builder.
 
+Read more about the <a href='/noframes_config' >Preview configuration</a>.
+
 ---
 
 ## Initialization options
