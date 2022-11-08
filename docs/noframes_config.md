@@ -94,164 +94,17 @@ The options match directly to the configuration available on the init and genera
 
 If, for some reason, none of the above interface elements are wanted, then the `None` option can be explicitly provided.
 
-### Default components and the Default flag.
+## Build, or build and go
 
-Along with the flags above another value of `Default` is supported. This is also the value that is used if the `ui` option is not specified on the initialization options.
+With the build action, the Preview Url will be updated based on the selections, with the Build and Go, 
+the page will be refreshed with the requested options and the builder available. 
 
-Default will currently show `FullScreen, Download, Paging, Zoom` ui options.
-
-If another flag is added to the ui set, and is deemed a standard interface element, the it will be included in `Default`. As a designer / developer it is realy up to you, to be explicit or implicit in the specfication of the UI elements. 
+When happy, the link can be coppied and used in any pages as is.
 
 {% raw %}
-```javascript
+```html
 
-    paperwork.init({ container: "#paperwork1", name : "simple", ui : "Default, Resize"});
-    paperwork.init({ container: "#paperwork1", name : "editable", ui : "Default, Resize"});
-    paperwork.init({ container: "#paperwork1", name : "none", ui : "None"});
+    <a href='https://www.paperworkday.net/preview.html?ui=None&template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2F_samples%2Fnodata%2Fhelloworld.html' target='_blank' >Open my document</a>
     
 ```
 {% endraw %}
-
-Currently it is not possible to update / change the UI elements after initialization. An instance can only be <a href='advanced/dispose_instance' >disposed</a>, and then re-initialized.
-
----
-
-## Width and Height of the frame.
-
-If width and height are not specified on the initialization options, then both the wrapper and the frame will be set to 100% size. This allows you as the designer or developer to control the height via the specified container.
-
-If more control is needed, then simply specifying an explicit size will be applied to the frame.
-
-{% raw %}
-```javascript
-
-
-    paperwork.init({ container: "#paperwork1", name : "fixed", ui : "Default", width: "100%", height: "600px" });
-    paperwork.init({ container: "#paperwork1", name : "stretch", ui : "Default, Resize", width: "400px", height: "600px"});
-    
-```
-{% endraw %}
-
----
-
-## Zoom (Scale) of the document page.
-
-During the initialization of the frame a first percentage scale for the displayed page can be specified. THis allows the standard value to be set, based upon the explict or expected viewport size vs the expected document page size. Ultimately the consuming end user has full control of the zoom level.
-
-The following values are supported
-
-- 0.25, equivalent to 25%
-- 0.5,
-- 0.75,
-- 1.0, the default 100% value if not provided,
-- 1.5,
-- 2.0,
-- 4.0,
-- 8.0, equivalen to 800%
-
-Currently, if a value outside of these numbers is provided for scale it will be ignored.
-
-{% raw %}
-```javascript
-
-    paperwork.init({ container: "#paperwork1", name : "small", ui : "Default", scale: "0.5" });
-    
-```
-{% endraw %}
-
----
-
-## Starting page index.
-
-During the initialization of the frame the one-based first page index for the displayed page can be specified. This allows the standard values to be set of the page the consuming end user will see, but they will have full control of the current page (if the UI controls allow paging).
-
-The first page in the document is alway 1, and if a value is provided e.g. 10 that falls beyond the range of the documents number of pages, then the last (or first) page in the document will be shown.
-
-{% raw %}
-```javascript
-
-    paperwork.init({ container: "#paperwork1", name : "second-page", ui : "Default", page: "2" });
-    
-```
-{% endraw %}
-
----
-
-## Versioning of the generation.
-
-The 'vers' number used to intialize the frame will specifiy the Paperwork framework version to use for generation. 
-
-Currently there are only 2 values supported: '1.0' or 'latest'. It is expected that in future further values will be supported, and these versions may not support your template - hence it is recommended to use it in all production environments.
-
-By specifying `latest` then a client will always be using the most recent **released** version of the framework. 
-
-{% raw %}
-```javascript
-
-    paperwork.init({ container: "#paperwork1", name : "explicit-version", ui : "Default", vers: "1.0" });
-    
-```
-{% endraw %}
-
----
-
-## Loaded Event
-
-There is only 1 event raised from the init method and that is the loaded event. A provided funtion will be called once the inner content is ready in the browser. 
-
-Because the init method will set the source of a frame to remote content, the secondary generation method cannot be called as soon as init returns, so loaded is a good convenience method to use to explicity generate content, or enable any client interface to interact with the frame.
-
-The loaded option method will be called with the same object as the init method returns. A single object instance with the name given to the frame, and whether it is currently running or not.
-
-{% raw %}
-```javascript
-
-    //Initialize the container
-    paperwork.init({
-        container: "#helloworld_doc",
-        loaded: (result) => {
-            //Once loaded, then generate the document with a template and any current data
-            paperwork.generate({
-                template: {content: html},
-                data: {content: values}
-            });
-        }
-    });
-
-```
-{% endraw %}
-
----
-
-## Example
-
-A complete set of options for the initialization would be as follows...
-
-{% raw %}
-```javascript
-
-    //Initialize the container
-    paperwork.init({
-        container: "#helloworld_doc",
-        name: "fullInit",
-        vers: "latest",
-        width: "400px",
-        height: "600px",
-        theme: "light",
-        ui: "FullScreen, Paging, Zoom", //no download, resizing or editing
-        scale: 2.0,
-        page: 3,
-        loaded: (result) => {
-            //Once loaded, then generate the document with a template and any current data
-            //using the name of the frame.
-            paperwork.generate({
-                name: "fullInit",
-                template: {source: url}
-            });
-        }
-    });
-
-```
-{% endraw %}
-
-Once all the init options are set correctly, it makes sense to move onto the <a href='gen_config' >generation options</a>
