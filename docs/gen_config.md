@@ -123,6 +123,13 @@ This can be called multiple times on the same frame instance with different opti
 ```
 {% endraw %}
 
+---
+
+## Generate dynamic content.
+
+Here an input and button has been added to the page that will generate a document each time the button is clicked, 
+passing the name entered and the number of times the button has been clicked
+
 <input type='text' class='generateName' style='width: 400px' placeholder='Your Name' />
 
 <button class="btn generateDoc">Create document on click</button>
@@ -154,6 +161,47 @@ jtd.addEvent(generateDoc, 'click', function(){
 
 ---
 
-## Generation events
+## Post generation events
 
 There are two events that can be attached to the generage action configuration. 
+
+1. `success` function that will be called once the generation has completed if, and only if, successful.
+2. `fail` functikon that will be called if (and only if) the generation has failed.
+
+If a success function is provided, but execution fails and no fail function is provided, then an error will be logged to the console.
+
+{% raw %}
+```javascript
+
+    function generateMyDocument(){
+
+        var html = getTemplateObject(null, "https://localhost/path/totemplate.html");
+
+        var data = getTemplateObject({
+            greeting: "Hello World", 
+            when: Date.name().toLocaleString(),
+        }, null);
+
+        paperwork.generate({
+            name: "myContainer", 
+            template: html
+            data: data,
+            success: function(result){
+                //success handler
+                console.log("Generation completed successfully");
+            },
+            fail: function(result){
+                //error handler
+                alert("Generation failed with message : " + result.error);
+            }
+            });
+    }
+```
+{% endraw %}
+
+{% .note %}
+> If the parsing mode is set to lax (see <a href='/template_content.html'>template content</a>), then there 
+> may be warnings or even errors in the document, but an output was produced. For production environments, 
+> Strict is preferred.
+
+See <a href='/retreiving_config.html'>Retrieving the document</a> for actions possible on a successful execution.
