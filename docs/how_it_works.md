@@ -43,116 +43,41 @@ A reference to this frame, along with it's name and whether it is 'running' is s
 
 ---
 
-## WASM and BLazor
+## WASM and Blazor
 
-The paperworkday.net site is a single page application that loads a number of Blazor .net web assemblies into the browser. This allows the frame to dynamically load and generate documents with fonts, images and graphics
-dynamically on the site without needing a server to generate.
+The paperworkday.net site is a single page application that loads a number of Blazor .net (6.0) web assemblies into the browser context. This allows the frame to dynamically load and generate documents with fonts, images and graphics on the site without needing a server to generate.
 
-<dl>
-    <dt>content</dt>
-    <dd>This is a <strong>raw</strong> object or string of the actual values (JSON or XHTML)</dd>
-    <dt>source</dt>
-    <dd>This is a full URL to the content that should be loaded and used.</dd>
-    <dt>type</dt>
-    <dd>This is by default <code>Auto</code>, but supports also <code>Content</code> or <code>Location</code>. So if both properties are set, then the one to use can be specified.</dd>
-</dl>
+Once the page is fully loaded then a message is sent back to the calling frame content via the window messaging API.
 
-{% raw %}
-```javascript
+*By using this api the frame does not have to come from the same domain as the hosting frame, and messages are secure and client side only*
 
-    function getTemplateObject(raw, link){
+---
 
-        var obj = {
-            content = raw,
-            source = link,
-            type = (link ? "Location" : "Content")
-        };
+## Generating content 
 
-        return obj;
-    }
-    
-```
-{% endraw %}
+With the frame fully loaded, the paperwork script can `generate` a document by passing the content again via the messaging api, to the waiting Blazor application. 
+This application will decode the message, and interpret the generate request, loading any remote files as needed.
+
+403 redirects are generally ignored, but content can be obtained from any service the current user has direct access to. If they are alread authenticated onto a site, then the content can be retrieved.
 
 {: .note }
-> If both properties content and source are set, and the type is Auto (or not specified), 
-> then the `content` will be used as a preference.
+> Paperwork must be the in the root of the page, for security reasonst we do not support being within a frame.
+> So nested frames within frames cannot be used to pull content.
+
+Once generated then the preview will be rendered using the pdf.js library into the frame at the requested page.
 
 ---
 
-## Providing content 
+## Retrieving content
 
+Once the document has been generated, the Blazor application holds a reference the the binary data.
 
-{% raw %}
-```javascript
-
-    function generateMyDocument(){
-
-        var html = getTemplateObject(null, "https://localhost/path/totemplate.html");
-
-        var data = getTemplateObject({
-            greeting: "Hello World", 
-            when: Date.name().toLocaleString(),
-        }, null);
-
-        paperwork.generate({
-            name: "myContainer", 
-            template: html
-            data: data
-            });
-    }
-```
-{% endraw %}
+To retrieve this again the messaging api is used and the data encoded and transferred across the boundary. If the document is very large, or has large images or fonts within it, then it may fail or cause poor performance.
 
 ---
 
-## When to generate.
+## Multiple instances
 
-Because the  <a href='init_config' >initialized frame</a> is loaded asyncronously, the generate method cannot be called immediately after the init function.
+Each container will have an iframe attached to it. That iframe will have an instance of the blazor application. The generated document is presented with a PDF worker process building the representation.
 
-If you want to create a preview as soon as the frame is available, then the `loaded` event is available on the init configuration.
-
-Alternatively the `generate` function can be called with a button click, or other user interface interaction on your page. 
-This can be called multiple times on the same frame instance with different options.
-
-
-{% raw %}
-```html
-
-    <div class='button-wrapper' >
-        <button id='GenerateButton' onclick='generateMyDocument()'>Update Document</button>
-    <div>
-    
-```
-{% endraw %}
-
-<input type='text' class='generateName' style='width: 400px' placeholder='Your Name' />
-
-<button class="btn generateDoc">Create document on click</button>
-
-<script>
-
-var count = 0;
-
-const generateDoc = document.querySelector('.generateDoc');
-const generateName = document.querySelector('.generateName');
-
-jtd.addEvent(generateDoc, 'click', function(){
-  count++;
-  var inputName = generateName.value;
-  var source = "https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/_samples/nodata/buttonCounterIncrement.html"
-  var data = { count: count, name: inputName ?? "None" };
-
-  paperwork.generate({
-    name: 'ButtonGenerate',
-    template: {source: source},
-    data: {content: data}
-  });
-
-});
-</script>
-
-<!-- the frame will be initialzed by the code in the root default _layout -->
-<div id='buttonGenerate' class='document-container' name='ButtonGenerate' data-pw-ui="Default, Code, Edit" ></div>
-
----
+If there are a lot of frames on the page, or many re-generations of a document within a single frame, then memory performance may become an issue. We have not experienced any problems with hundreds of generations, but be aware!
