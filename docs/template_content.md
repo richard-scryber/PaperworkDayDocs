@@ -76,8 +76,8 @@ The following are the supported options on the processing instruction.
 See :doc:`extending_logging` for a detailed explanation of the tracing and logging capabilities in the scryber library which is **really** useful when trying to hunt down issues.
 
 {: .note }
-> A log-level` of Diagnostic will be extremely lengthy.
-> And if appended can reamatically slow down any composition or rendering.
+> A log-level of Diagnostic will be extremely lengthy.
+> And if appended can dramatically slow down any composition or rendering.
 >
 > Use with caution!
 
@@ -85,7 +85,7 @@ See :doc:`extending_logging` for a detailed explanation of the tracing and loggi
 
 ## Supported body elements
 
-Whilst not a true html to document conversion engine. Paperwork uses the structure to reduce the learning curve and give us a framework to match to.
+Whilst not a true html to document conversion engine. Paperwork uses the xhtml structure to reduce the learning curve and provide a framework to match to.
 
 The following elements can be used within the body of a document template, and should match most expected behaviour. See each section individually to see what attributes and inner content are supported.
 
@@ -121,7 +121,7 @@ The following elements can be used within the body of a document template, and s
     <dd>The `template` element allows repeating data to be used as part of the normal flow of the document. This is the true power, and discussed in the [DataBinding](Binding) section.</dd>
 </dl>
 
-There are a few omissions from the full HTML5 set, but as is a functional set of elements. More may be added in the future such as fieldsets, cite and figure.
+There are a few omissions from the full HTML5 set, but is a functional group of elements. More may be added in the future such as forms, fieldsets, cite and figure.
 
 {: .note}
 > Currently the form, input, select and button elements are not supported
@@ -133,22 +133,25 @@ There are a few omissions from the full HTML5 set, but as is a functional set of
 
 ## Standard attributes
 
-Paperwork supports the standard set of html attributes on all elements, alomng with specific attributes within that element, and somestimes a couple more to support the binding
+Paperwork supports the standard set of html attributes on all elements, along with specific attributes within that element, and somestimes a couple more to support the binding
+
+<dl>
+    <dt>id</dt>
+    <dd>The `id` attribute on each element supports the use of links within documents and navigation.</dd>
+    <dt>name</dt>
+    <dd>A `name` attribute can also be used insted of an id for links, and is less prescriptive on format.</dd>
+    <dt>hidden</dt>
+    <dd>The hidden attribute is a string value that can dynamically show and hide content (inlcuding any child content).<br/>
+        This is in addition to any style:display value as the visibility is more prominant and can be set with `hidden`. Any other value will be treated as not hidden.</dd>
+    <dt>title</dt>
+    <dd>The `title` is a human readable string attribute, as a description of the content, and forms the book mark hierarchy with inner titled content.</dd>
+    <dt>class</dt>
+    <dd>The `class` is a space separated list of class names to be applied to the element and styles from any css will be applied to the element when laid out and rendered based on these classes.</dd>
+    <dt>style</dt>
+    <dd>The `style` attribute creates a specific css descriptor applied directly to the element after all other styles have be applied</dd>
+    
+</dl>
 
 ---
 
-## Styling content
 
-Along with the html elements Paperwork also supports the following style basic style selectors
-
----
-
-## At rule styles
-
-With @rules Paperwork can be used to import content, specify page sizes and add specific print styles to existing stylesheets.
-
----
-
-## Binding data and expressions
-
-The paperwork binding implementation is flexible and pervasive. It is supported within the content of an element, on the attributes, or even within styles and referenced stylesheets.
