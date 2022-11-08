@@ -123,7 +123,7 @@ This can be called multiple times on the same frame instance with different opti
 ```
 {% endraw %}
 
-<input type='text' class='generateName' style='width: 400px' placeholder='Your Name' ></input>
+<input type='text' class='generateName' style='width: 400px' placeholder='Your Name' />
 
 <button class="btn generateDoc">Create document on click</button>
 
