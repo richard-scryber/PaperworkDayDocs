@@ -123,6 +123,7 @@ This can be called multiple times on the same frame instance with different opti
 ```
 {% endraw %}
 
+<input type='text' class='generateName' style='width: 400px' placeholder='Your Name' ></input>
 
 <button class="btn generateDoc">Create document on click</button>
 
@@ -131,11 +132,13 @@ This can be called multiple times on the same frame instance with different opti
 var count = 0;
 
 const generateDoc = document.querySelector('.generateDoc');
+const generateName = document.querySelector('.generateName');
 
 jtd.addEvent(generateDoc, 'click', function(){
   count++;
+  var inputName = generateName.value;
   var source = "https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/_samples/nodata/buttonCounterIncrement.html"
-  var data = { count: count};
+  var data = { count: count, name: inputName ?? "None" };
 
   paperwork.generate({
     name: 'ButtonGenerate',
