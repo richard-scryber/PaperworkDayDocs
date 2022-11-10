@@ -171,13 +171,25 @@ If another flag is added to the ui set, and is deemed a standard interface eleme
 ```javascript
 
     paperwork.init({ container: "#paperwork1", name : "simple", ui : "Default, Resize"});
-    paperwork.init({ container: "#paperwork1", name : "editable", ui : "Default, Resize"});
-    paperwork.init({ container: "#paperwork1", name : "none", ui : "None"});
+    paperwork.init({ container: "#paperwork2", name : "editable", ui : "Default, Resize"});
+    paperwork.init({ container: "#paperwork3", name : "none", ui : "None"});
     
 ```
 {% endraw %}
 
-Currently it is not possible to update / change the UI elements after initialization. An instance can only be <a href='advanced/dispose_instance' >disposed</a>, and then re-initialized.
+Currently it is not possible to update / change the UI elements after initialization. An instance can only be `release`d by name, and then re-initialized.
+Releasing will remove the frame from the page.
+
+{% raw %}
+```javascript
+
+    paperwork.release({name : "simple"});
+    paperwork.init({ container: "#paperwork1", name : "simple2", ui : "Default, Resize, Code, Edit", theme: "light"});
+    
+```
+{% endraw %}
+
+_Passing '*' to release will remove **ALL** instances_
 
 ---
 
