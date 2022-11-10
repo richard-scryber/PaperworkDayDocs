@@ -67,48 +67,26 @@ Add a div with a specific id (or unique selector) where you would like the docum
 You can assign a variable to your template content, or load it from a source using standard xhtml content.
 (The xmlns declaration on the html element is important and required)
 
+The base value allows us to use relative references for the stylesheets, images or other resources to load.
+
 {% raw %}
 ```javascript
 
-    //The content of the template as xhtml (or use a url)
+    //The content of the template as xhtml
+    //(or use a url to the html template)
+
     var html = "<html xmlns='http://www.w3.org/1999/xhtml' >" + 
             "<head>" + 
                 "<title>Hello world document</title>" +
-                //Using css styles (or reference a stylesheet)
-                "<style>" + 
-                    //using poppins open font for the title
-                    "@font-face{" + 
-                        "font-family: 'Poppins';" + 
-                        "font-style: italic;" + 
-                        "font-weight: 300;" + 
-                        "src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21llEA.ttf) format('truetype');" + 
-                    "}" + 
-                    "body {" + 
-                        "padding : 0px;" + 
-                        "background-color: #0A0907;" +
-                    "}" + 
-                    // adding a padding and dynamic color for both h2 and p elements
-                    "h2, p{" + 
-                        "padding: 20px;" + 
-                        "color : var(theme.color);" + 
-                    "}" + 
-                    //setting the font, position and background for the title.
-                    ".title {" + 
-                        "font-family: Poppins;" + 
-                        "font-weight: 300;" + 
-                        "background: url(coffee_small.jpg);" + 
-                        "background-size: cover;" + 
-                        "height: 300pt;" + 
-                        "text-align: right;" + 
-                        "vertical-align: bottom;" + 
-                        "font-size: 60px;" + 
-                    "}" + 
-                "</style>" + 
+                "<base>https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/_samples/helloworld/</base>" + 
+                "<link rel='stylesheet' href='helloworld.css' />" +
             "</head>" + 
             "<body>" +
-            //Binding the dynamic data using {{}} (or calculating new values)
-            "<h2 class='title' style='font-style: italic; padding: 30px' >{{greeting}}</h2>" + 
-            "<p>{{concat('From all at ', author)}}</p></body>" + 
+                //a .title h2 with some inline style and a bound value for greeting
+                "<h2 class='title' style='font-style: italic; padding: 30px' >{{greeting}}</h2>" + 
+                //calculate the text using an expression and value
+                "<p>{{concat('From all at ', author)}}</p>" + 
+            "</body>" + 
             "</html>";
 
 ```
@@ -116,9 +94,51 @@ You can assign a variable to your template content, or load it from a source usi
 
 ---
 
+### A refreneced css file
+
+Our relatively referenced css file contains the following style content for fonts, background images and layout options which will be
+loaded automatically 
+
+{% raw %}
+```css
+
+@font-face{
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21llEA.ttf) format('truetype');
+}
+
+body {
+  padding : 0px;
+}
+
+h2, p{
+  padding: 20px;
+}
+
+.title {
+  font-family: Poppins;
+  font-weight: 300;
+  /* relative background image */
+  background: url(coffee_small.jpg);
+  background-size: cover;
+  height: 300pt;
+  text-align: right;
+  vertical-align: bottom;
+  font-size: 60px;
+  /* using the calc function to get the data bound color or a default */
+  color : calc(theme.color ?? "black");
+}
+
+```
+{% endraw %}
+
+
+---
 ### Declare, calculate or load any needed data
 
-Our template has placeholder values for both data and theme that we provide
+Our template has placeholder values for both data and theme that we can provide
 
 {% raw %}
 ```javascript
