@@ -21,6 +21,11 @@ When generating a document in a frame, there are a number of actions the framewo
 
 ---
 
+## Process Flow
+
+![](https://www.paperworkday.info/assets/processslide.png)
+
+---
 ## Loading the frame
 
 The first stage of initialization will set up the library, and then inject a wrapping div and an iFrame into the current document, within the container specified, and an iframe source of 'https://www.paperworkday.net/(version)/generate'. 
