@@ -120,6 +120,9 @@ function retrieveAndDownloadBlob(frameName){
                     })
                 );
                 document.body.removeChild(link);
+            },
+            fail: function(result){
+                alert("Could not download the data " + JSON.Stringify(result));
             }
         });
     }
