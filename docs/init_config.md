@@ -282,7 +282,7 @@ By specifying `latest` then a client will always be using the most recent **rele
 
 ## Loaded Event
 
-There is only 1 event raised from the init method and that is the loaded event. A provided funtion will be called once the inner content is ready in the browser. 
+There is only 1 event raised from the init method and that is the loaded event. A provided function will be called once the inner content is ready in the browser. 
 
 Because the init method will set the source of a frame to remote content, the secondary generation method cannot be called as soon as init returns, so loaded is a good convenience method to use to explicity generate content, or enable any client interface to interact with the frame.
 
