@@ -91,13 +91,13 @@ jtd.addEvent(generateDoc, 'click', function(){
     template: {source: source},
     data: {content: data},
     success: function(result) {
-        retreiveAndDownloadBlob('ButtonDownload');
+        retrieveAndDownloadBlob('ButtonDownload');
     }
   });
 
 });
 
-function retreiveAndDownloadBlob(frameName){
+function retrieveAndDownloadBlob(frameName){
         //This will download the file by creating  a blob url
         //and automatically clicking a link referencing the blob.
 
@@ -133,67 +133,46 @@ function retreiveAndDownloadBlob(frameName){
 
 ## Retrieval options
 
-The paperworkday.net site is a single page application that loads a number of Blazor .net web assemblies into the browser. This allows the frame to dynamically load and generate documents with fonts, images and graphics
-dynamically on the site without needing a server to generate.
+The options that can be provided to the `retreive` function are
 
 <dl>
-    <dt>content</dt>
-    <dd>This is a <strong>raw</strong> object or string of the actual values (JSON or XHTML)</dd>
-    <dt>source</dt>
-    <dd>This is a full URL to the content that should be loaded and used.</dd>
-    <dt>type</dt>
-    <dd>This is by default <code>Auto</code>, but supports also <code>Content</code> or <code>Location</code>. So if both properties are set, then the one to use can be specified.</dd>
+    <dt>name</dt>
+    <dd>This is an optional value for the name of the frame to retreive the document for</dd>
+    <dt>format</dt>
+    <dd>This an optional enumeration for the way the document data is encoded in the call. Supported values are `blob`, 'array`, `base64`. If not provided then the default is `base64`</dd>
+    <dt>success</dt>
+    <dd>A function that will be called when the document has been successfully retreived with the data.</dd>
+    <dt>fail</dt>
+    <dd>A function that will be called when the document could not be retreived, or there is no document or frame to retreive from.</dd>
 </dl>
 
-{% raw %}
-```javascript
-
-    function getTemplateObject(raw, link){
-
-        var obj = {
-            content = raw,
-            source = link,
-            type = (link ? "Location" : "Content")
-        };
-
-        return obj;
-    }
-    
-```
-{% endraw %}
 
 {: .note }
-> If both properties content and source are set, and the type is Auto (or not specified), 
-> then the `content` will be used as a preference.
-
----
-
-## Available formats
-
-
-{% raw %}
-```javascript
-
-    function generateMyDocument(){
-
-        var html = getTemplateObject(null, "https://localhost/path/totemplate.html");
-
-        var data = getTemplateObject({
-            greeting: "Hello World", 
-            when: Date.name().toLocaleString(),
-        }, null);
-
-        paperwork.generate({
-            name: "myContainer", 
-            template: html
-            data: data
-            });
-    }
-```
-{% endraw %}
+> As the data is transfered across boundaries, the memory used is copied, 
+> It is pure client side, but may cause bottleneck if the document is very large.
 
 ---
 
 ## When to retreive.
+
+Retrieval can happen at any point once a document is created. 
+An error will be raised (calling the fail function if defined), however, if there is a generation already happening or an existing retrieval in process.
+
+This button will download any available document from the frame above without re-generating.
+
+
+<button class="btn downloadDoc">Just Download</button>
+
+<script>
+
+var count = 0;
+
+const downloadDoc = document.querySelector('.downloadDoc');
+
+jtd.addEvent(downloadDoc, 'click', function(){
+  retrieveAndDownloadBlob('ButtonDownload');
+  });
+
+</script>
 
 ---
