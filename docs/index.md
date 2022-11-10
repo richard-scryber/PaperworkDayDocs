@@ -78,7 +78,7 @@ The base value allows us to use relative references for the stylesheets, images 
     var html = "<html xmlns='http://www.w3.org/1999/xhtml' >" + 
             "<head>" + 
                 "<title>Hello world document</title>" +
-                "<base>https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/_samples/helloworld/</base>" + 
+                "<base href='https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/_samples/helloworld/' />" + 
                 "<link rel='stylesheet' href='helloworld.css' />" +
             "</head>" + 
             "<body>" +
