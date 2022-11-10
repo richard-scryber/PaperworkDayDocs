@@ -6,12 +6,22 @@ nav_order: 1
 ---
 
 # Getting Started
+{: .no_toc }
 
 Paperwork is a freely available tool, that allows you (as a designer, developer) to create beautiful and dymanic documents, quickly and easily on your site.
 
 With templates based on `xhtml` and dynamic content from `json` data, generating and previewing the document directly on the page takes but moments.
 
 It supports html tags, images, tables, cascading styles, custom fonts and repeating elements within the templates, along with complex json data, expressions, calculations and selecting.
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 ---
 
