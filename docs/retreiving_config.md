@@ -102,7 +102,7 @@ function retreiveAndDownloadBlob(frameName){
         //and automatically clicking a link referencing the blob.
 
         paperwork.retreive({
-            name: fameName, 
+            name: frameName, 
             format: 'blob',
             success: function (data) {
                 //we have our blob
