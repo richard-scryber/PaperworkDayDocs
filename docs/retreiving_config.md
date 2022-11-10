@@ -83,7 +83,6 @@ const generateDoc = document.querySelector('.generateDoc');
 
 jtd.addEvent(generateDoc, 'click', function(){
   count++;
-  var inputName = generateName.value;
   var source = "https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/_samples/nodata/buttonDownload.html"
   var data = { count: count, name: "Just for download" };
 
