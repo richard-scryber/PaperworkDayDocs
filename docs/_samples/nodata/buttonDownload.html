@@ -1,0 +1,37 @@
+<?scryber append-log='false' log-level='Verbose' ?>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head>
+    <title>Hello world document</title>
+    <style>
+      @font-face{
+        font-family: 'Poppins';
+        font-style: italic;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21llEA.ttf) format('truetype');
+      }
+      body {
+        padding : 0px;
+      }
+      h2, p{
+        padding: 20px;
+      }
+      .title {
+        font-family: Poppins;
+        font-weight: 300;
+        background: url(coffee_small.jpg);
+        background-size: cover;
+        color : silver;
+        height: 300pt;
+        text-align: right;
+        vertical-align: bottom;
+        font-size: 60px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h2 class="title" style="font-style:italic; padding: 30px;">Hello World Template.</h2>
+    <p>Automatically downloaded, from a clicked button {{count}} times.</p>
+  </body>
+</html>
+

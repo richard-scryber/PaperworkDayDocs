@@ -8,7 +8,7 @@ nav_order: 4
 # Retreiving a generated document
 {: .no_toc }
 
-Once a document has been generated in a frame, then the actual document data can be retrieved in code to be stored or other action taken.
+Once a document has been generated in a frame, then the actual data can be retrieved in code to be stored or another action taken.
 
 <details open markdown="block">
   <summary>
@@ -21,29 +21,118 @@ Once a document has been generated in a frame, then the actual document data can
 
 ---
 
-## Loading the frame
+## Post execution retrieval
 
-The first stage of initialization will set up the library, and then inject a wrapping div and an iFrame into the current document, within the container specified, and an iframe source of 'https://www.paperworkday.net/generate'. 
-The init options will be passed on the url parameters so the library can initialize the content of the frame as required.
-
-A reference to this frame, along with it's name and whether it is 'running' is stored in the library.
+With the <a href='gen_config.html' >Generate Options</a> a function can be provided that will be called on successful execution. Within that function it is possible to retrieve the data and process.
 
 {% raw %}
-```html
+```javascript
 
-    <div id='doc-container'>
-        <!-- This content is injected by the library given the container #doc-container -->
-        <div id='provided name or default' >
-            <iframe src='https://www.paperworday.net/generate?....' style='width and height' ></iframe>
-        </div>
-    </div>
+    function doGenerate(initilazedFrameName, dynamicData){
+
+        paperwork.generate({
+            name: initilazedFrameName,
+            template: { source: 'link_to_template'},
+            data: { content: dynamicData},
+            success: function(result){
+                retreiveAndDownloadBlob(initilazedFrameName);
+            }
+        });
+    }
+
+    function retreiveAndDownloadBlob(frameName){
+        //This will download the file by creating  a blob url
+        //and automatically clicking a link referencing the blob.
+
+        paperwork.retreive({
+            name: fameName, 
+            format: 'blob',
+            success: function (data) {
+                //we have our blob
+                const blobUrl = URL.createObjectURL(data);
+                var link = document.createElement("a");
+                link.href = blobUrl;
+                link.download = (name || "PaperworkForms") + ".pdf";
+
+                document.body.appendChild(link);
+                link.dispatchEvent(
+                    new MouseEvent('click', {
+                        bubbles: true,
+                        cancelable: true,
+                        view: window
+                    })
+                );
+                document.body.removeChild(link);
+            }
+        });
+    }
 
 ```
 {% endraw %}
 
 ---
 
-## WASM and BLazor
+<button class="btn generateDoc">Create and Download</button>
+
+<script>
+
+var count = 0;
+
+const generateDoc = document.querySelector('.generateDoc');
+
+
+jtd.addEvent(generateDoc, 'click', function(){
+  count++;
+  var inputName = generateName.value;
+  var source = "https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/_samples/nodata/buttonDownload.html"
+  var data = { count: count, name: "Just for download" };
+
+  paperwork.generate({
+    name: 'ButtonGenerate',
+    template: {source: source},
+    data: {content: data}
+    success: function(result) {
+        retreiveAndDownloadBlob('ButtonGenerate');
+    }
+  });
+
+});
+
+function retreiveAndDownloadBlob(frameName){
+        //This will download the file by creating  a blob url
+        //and automatically clicking a link referencing the blob.
+
+        paperwork.retreive({
+            name: fameName, 
+            format: 'blob',
+            success: function (data) {
+                //we have our blob
+                const blobUrl = URL.createObjectURL(data);
+                var link = document.createElement("a");
+                link.href = blobUrl;
+                link.download = (frameName || "PaperworkForms") + ".pdf";
+
+                document.body.appendChild(link);
+                link.dispatchEvent(
+                    new MouseEvent('click', {
+                        bubbles: true,
+                        cancelable: true,
+                        view: window
+                    })
+                );
+                document.body.removeChild(link);
+            }
+        });
+    }
+
+</script>
+
+<!-- the frame will be initialzed by the code in the root default _layout -->
+<div id='buttonGenerate' class='document-container' name='ButtonGenerate' data-pw-ui="Default, Code, Edit" ></div>
+
+---
+
+## Retrieval options
 
 The paperworkday.net site is a single page application that loads a number of Blazor .net web assemblies into the browser. This allows the frame to dynamically load and generate documents with fonts, images and graphics
 dynamically on the site without needing a server to generate.
@@ -80,7 +169,7 @@ dynamically on the site without needing a server to generate.
 
 ---
 
-## Providing content 
+## Available formats
 
 
 {% raw %}
@@ -106,53 +195,6 @@ dynamically on the site without needing a server to generate.
 
 ---
 
-## When to generate.
-
-Because the  <a href='init_config' >initialized frame</a> is loaded asyncronously, the generate method cannot be called immediately after the init function.
-
-If you want to create a preview as soon as the frame is available, then the `loaded` event is available on the init configuration.
-
-Alternatively the `generate` function can be called with a button click, or other user interface interaction on your page. 
-This can be called multiple times on the same frame instance with different options.
-
-
-{% raw %}
-```html
-
-    <div class='button-wrapper' >
-        <button id='GenerateButton' onclick='generateMyDocument()'>Update Document</button>
-    <div>
-    
-```
-{% endraw %}
-
-<input type='text' class='generateName' style='width: 400px' placeholder='Your Name' />
-
-<button class="btn generateDoc">Create document on click</button>
-
-<script>
-
-var count = 0;
-
-const generateDoc = document.querySelector('.generateDoc');
-const generateName = document.querySelector('.generateName');
-
-jtd.addEvent(generateDoc, 'click', function(){
-  count++;
-  var inputName = generateName.value;
-  var source = "https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/docs/_samples/nodata/buttonCounterIncrement.html"
-  var data = { count: count, name: inputName ?? "None" };
-
-  paperwork.generate({
-    name: 'ButtonGenerate',
-    template: {source: source},
-    data: {content: data}
-  });
-
-});
-</script>
-
-<!-- the frame will be initialzed by the code in the root default _layout -->
-<div id='buttonGenerate' class='document-container' name='ButtonGenerate' data-pw-ui="Default, Code, Edit" ></div>
+## When to retreive.
 
 ---

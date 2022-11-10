@@ -23,7 +23,7 @@ When generating a document in a frame, there are a number of actions the framewo
 
 ## Loading the frame
 
-The first stage of initialization will set up the library, and then inject a wrapping div and an iFrame into the current document, within the container specified, and an iframe source of 'https://www.paperworkday.net/generate'. 
+The first stage of initialization will set up the library, and then inject a wrapping div and an iFrame into the current document, within the container specified, and an iframe source of 'https://www.paperworkday.net/(version)/generate'. 
 The init options will be passed on the url parameters so the library can initialize the content of the frame as required.
 
 A reference to this frame, along with it's name and whether it is 'running' is stored in the library.
@@ -34,7 +34,7 @@ A reference to this frame, along with it's name and whether it is 'running' is s
     <div id='doc-container'>
         <!-- This content is injected by the library given the container #doc-container -->
         <div id='provided name or default' >
-            <iframe src='https://www.paperworday.net/generate?....' style='width and height' ></iframe>
+            <iframe src='https://www.paperworkday.net/v1_0/generate?....' style='width and height etc.' ></iframe>
         </div>
     </div>
 
@@ -58,19 +58,19 @@ Once the page is fully loaded then a message is sent back to the calling frame c
 With the frame fully loaded, the paperwork script can `generate` a document by passing the content again via the messaging api, to the waiting Blazor application. 
 This application will decode the message, and interpret the generate request, loading any remote files as needed.
 
-403 redirects are generally ignored, but content can be obtained from any service the current user has direct access to. If they are alread authenticated onto a site, then the content can be retrieved.
+403 redirects are generally ignored, but content can be obtained from any service the current user has direct access to. If they are already authenticated onto a site, then the content can be retrieved.
 
 {: .note }
-> Paperwork must be the in the root of the page, for security reasonst we do not support being within a frame.
+> Paperwork must be the in the root of the page, for security reasons we do not support the library being within a frame.
 > So nested frames within frames cannot be used to pull content.
 
-Once generated then the preview will be rendered using the pdf.js library into the frame at the requested page.
+Once generated then the preview will be rendered using the pdf.js library into a canvas on the frame at the requested page.
 
 ---
 
 ## Retrieving content
 
-Once the document has been generated, the Blazor application holds a reference the the binary data.
+Once the document has been generated, the Blazor application holds a reference the the binary data for the generated document.
 
 To retrieve this again the messaging api is used and the data encoded and transferred across the boundary. If the document is very large, or has large images or fonts within it, then it may fail or cause poor performance.
 
