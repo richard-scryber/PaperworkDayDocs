@@ -1,14 +1,18 @@
 ---
 layout: default
-title: Page Headers and Footers
+title: Inline Elements
 parent: Template Content
-nav_order: 1
+nav_order: 5
 ---
 
 # Template Content
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template.
+THe inline elements will appear within the current line (by default ).
+
+These are `span`, `i`, `b`, `strong`, `emphasis`, `u` and `strike`.
+
+All elememts can be nested.
 
 <details open markdown="block">
   <summary>

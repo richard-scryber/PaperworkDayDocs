@@ -1,14 +1,16 @@
 ---
 layout: default
-title: Page Headers and Footers
+title: Tables and Row Elements
 parent: Template Content
-nav_order: 1
+nav_order: 7
 ---
 
 # Template Content
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template.
+The table elements are a powerful binding constructs.
+
+The supported inner elements are the optional thead, tbody, tfoot along with the standard tr's with inner td's
 
 <details open markdown="block">
   <summary>

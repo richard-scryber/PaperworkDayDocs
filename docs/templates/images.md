@@ -1,14 +1,16 @@
 ---
 layout: default
-title: Page Headers and Footers
+title: Image Elements
 parent: Template Content
-nav_order: 1
+nav_order: 9
 ---
 
 # Template Content
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template.
+The image element supports in template pixel data graphic images. (See svg content and css background images for other types)
+
+These can be sized and styled appropriately.
 
 <details open markdown="block">
   <summary>

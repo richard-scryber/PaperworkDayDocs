@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Page Headers and Footers
+title: Embedding content Elements
 parent: Template Content
-nav_order: 1
+nav_order: 12
 ---
 
 # Template Content
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template.
+The embed and iframe elements support the direct inclusion of referenced content within a generated document.
 
 <details open markdown="block">
   <summary>

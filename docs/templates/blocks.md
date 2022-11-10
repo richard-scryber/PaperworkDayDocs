@@ -1,14 +1,18 @@
 ---
 layout: default
-title: Page Headers and Footers
+title: Block Elements
 parent: Template Content
-nav_order: 1
+nav_order: 4
 ---
 
 # Template Content
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template.
+THe block elements will appear on a new line on their own (by default ).
+
+These are `div`, `p`, `main`, `article`, `section`, `nav` and `blockquote`.
+
+All elememts can be nested.
 
 <details open markdown="block">
   <summary>

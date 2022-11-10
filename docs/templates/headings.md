@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Page Headers and Footers
+title: Heading Elements
 parent: Template Content
-nav_order: 1
+nav_order: 3
 ---
 
 # Template Content
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template.
+Paperwork supports the use of the standard headings 1 to 6 for titles in a document.
 
 <details open markdown="block">
   <summary>

@@ -1,14 +1,17 @@
 ---
 layout: default
-title: Page Headers and Footers
+title: List Elements
 parent: Template Content
-nav_order: 1
+nav_order: 8
 ---
 
 # Template Content
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template.
+The list element are fullt supported with Ordered (ol), unordered (ul) and definitions.
+With inner li or dd elements.
+
+These can be nested with prefix concatenation and styling.
 
 <details open markdown="block">
   <summary>
