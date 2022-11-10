@@ -195,7 +195,7 @@ Because of the way paperwork does it's thing, browsers **must** support the *mes
 
 All the latest versions of the main browsers do support this, even on mobiles and tablets.
 
-See <a href='/deep/framemechanism' >how paperwork works</a> for a deeper dive into how Paperwork generates your document. 
+See <a href='how_it_works.html' >how paperwork works</a> for a deeper dive into how Paperwork generates your document. 
 
 ---
 
@@ -204,7 +204,7 @@ See <a href='/deep/framemechanism' >how paperwork works</a> for a deeper dive in
 If you want to avoid the inclusion of iframes in your own site take a look at <a href='https://www.paperworkday.net/preview?builder=true'>https://www.paperworkday.net/preview</a> 
 that will allow you to build full links to the same capability outside of your site content, and even has a handy url builder.
 
-Read more about the <a href='/noframes_config' >Preview configuration</a>.
+Read more about the <a href='noframes_config.html' >Preview configuration</a>.
 
 ---
 
@@ -219,7 +219,7 @@ There are many more options available within initialization, including
 5. Frame sizing and resizing.
 6. Callback functions and error handling.
 
-Read more about the <a href='/init_config' >init configuration</a>.
+Read more about the <a href='init_config.html' >init configuration</a>.
 
 ---
 
@@ -232,7 +232,7 @@ In the same way there are more options for the document generation, including
 3. Error handling and logging.
 4. White and black listing remote domains
 
-Read more about the <a href='/gen_config' >generate configuration</a>.
+Read more about the <a href='gen_config.html' >generate configuration</a>.
 
 ---
 
