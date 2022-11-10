@@ -121,8 +121,8 @@ function retrieveAndDownloadBlob(frameName){
                 );
                 document.body.removeChild(link);
             },
-            fail: function(result){
-                alert("Could not download the data " + JSON.Stringify(result));
+            fail: function(message){
+                alert("Could not download the data " + message);
             }
         });
     }
@@ -146,7 +146,7 @@ The options that can be provided to the `retreive` function are
     <dt>success</dt>
     <dd>A function that will be called when the document has been successfully retreived with the data.</dd>
     <dt>fail</dt>
-    <dd>A function that will be called when the document could not be retreived, or there is no document or frame to retreive from.</dd>
+    <dd>A function that will be called when the document could not be retreived.</dd>
 </dl>
 
 
