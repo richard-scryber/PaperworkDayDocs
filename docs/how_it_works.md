@@ -23,7 +23,12 @@ When generating a document in a frame, there are a number of actions the framewo
 
 ## Process Flow
 
-![](https://www.paperworkday.info/assets/processslide.png)
+![](https://www.paperworkday.info/assets/ProcessSlide.png)
+
+
+{: .note }
+> All generation and rendering are performed on the client.
+> Only remote requests are made for files within the template across the network e.g images, fonts, stylesheets.
 
 ---
 ## Loading the frame
