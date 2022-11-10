@@ -5,7 +5,7 @@ parent: Getting Started
 nav_order: 4
 ---
 
-# Retreiving a generated document
+# Retrieving a generated document
 {: .no_toc }
 
 Once a document has been generated in a frame, then the actual data can be retrieved in code to be stored or another action taken.
@@ -35,16 +35,16 @@ With the <a href='gen_config.html' >Generate Options</a> a function can be provi
             template: { source: 'link_to_template'},
             data: { content: dynamicData},
             success: function(result){
-                retreiveAndDownloadBlob(initilazedFrameName);
+                retrieveAndDownloadBlob(initilazedFrameName);
             }
         });
     }
 
-    function retreiveAndDownloadBlob(frameName){
+    function retrieveAndDownloadBlob(frameName){
         //This will download the file by creating  a blob url
         //and automatically clicking a link referencing the blob.
 
-        paperwork.retreive({
+        paperwork.retrieve({
             name: fameName, 
             format: 'blob',
             success: function (data) {
@@ -136,17 +136,17 @@ function retrieveAndDownloadBlob(frameName){
 
 ## Retrieval options
 
-The options that can be provided to the `retreive` function are
+The options that can be provided to the `retrieve` function are
 
 <dl>
     <dt>name</dt>
-    <dd>This is an optional value for the name of the frame to retreive the document for</dd>
+    <dd>This is an optional value for the name of the frame to retrieve the document for</dd>
     <dt>format</dt>
     <dd>This an optional enumeration for the way the document data is encoded in the call. Supported values are `blob`, 'array`, `base64`. If not provided then the default is `base64`</dd>
     <dt>success</dt>
-    <dd>A function that will be called when the document has been successfully retreived with the data.</dd>
+    <dd>A function that will be called when the document has been successfully retrieved with the data.</dd>
     <dt>fail</dt>
-    <dd>A function that will be called when the document could not be retreived.</dd>
+    <dd>A function that will be called when the document could not be retrieved.</dd>
 </dl>
 
 
@@ -156,7 +156,7 @@ The options that can be provided to the `retreive` function are
 
 ---
 
-## When to retreive.
+## When to retrieve.
 
 Retrieval can happen at any point once a document is created. 
 An error will be raised (calling the fail function if defined), however, if there is a generation already happening or an existing retrieval in process.
