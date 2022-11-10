@@ -88,11 +88,11 @@ jtd.addEvent(generateDoc, 'click', function(){
   var data = { count: count, name: "Just for download" };
 
   paperwork.generate({
-    name: 'ButtonGenerate',
+    name: 'ButtonDownload',
     template: {source: source},
-    data: {content: data}
+    data: {content: data},
     success: function(result) {
-        retreiveAndDownloadBlob('ButtonGenerate');
+        retreiveAndDownloadBlob('ButtonDownload');
     }
   });
 
@@ -128,7 +128,7 @@ function retreiveAndDownloadBlob(frameName){
 </script>
 
 <!-- the frame will be initialzed by the code in the root default _layout -->
-<div id='buttonGenerate' class='document-container' name='ButtonGenerate' data-pw-ui="Default, Code, Edit" ></div>
+<div id='buttonDownload' class='document-container' name='ButtonDownload' data-pw-ui="Default, Code, Edit" ></div>
 
 ---
 
