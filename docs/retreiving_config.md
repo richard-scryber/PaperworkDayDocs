@@ -101,7 +101,7 @@ function retreiveAndDownloadBlob(frameName){
         //This will download the file by creating  a blob url
         //and automatically clicking a link referencing the blob.
 
-        paperwork.retreive({
+        paperwork.retrieve({
             name: frameName, 
             format: 'blob',
             success: function (data) {
