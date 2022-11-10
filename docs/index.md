@@ -94,6 +94,24 @@ The base value allows us to use relative references for the stylesheets, images 
 
 ---
 
+### Declare, calculate or load any needed data
+
+Our template has values for both data and theme that we can provide
+
+{% raw %}
+```javascript
+
+    var values = { 
+            greeting : "Hello World", 
+            author : "the Paperwork Collective",
+            theme: { color: "silver"} 
+    };
+
+```
+{% endraw %}
+
+---
+
 ### A refreneced css file
 
 Our relatively referenced css file contains the following style content for fonts, background images and layout options which will be
@@ -135,22 +153,7 @@ h2, p{
 {% endraw %}
 
 
----
-### Declare, calculate or load any needed data
 
-Our template has placeholder values for both data and theme that we can provide
-
-{% raw %}
-```javascript
-
-    var values = { 
-            greeting : "Hello World", 
-            author : "the Paperwork Collective",
-            theme: { color: "silver"} 
-    };
-
-```
-{% endraw %}
 
 ---
 
@@ -253,16 +256,18 @@ The core framework does **not** support all html tags or css style rules (and so
 
 ## Want more?
 
-We also offer a subscription service that offers the following features.
+We also will be offering a subscription service that offers the following features.
 
 - Custom css on the frame UI so it can be branded as your own site.
-- Security options for restricting printing copying etc. And also password protecting your file.
+- Security options for restricting printing copying etc. And password protecting your file.
+
+
+Please contact us for more information.
 
 ---
 
-## Samples
+## Configuration options
 
-We are building a lot of samples, just refer to  <a href='/samples/all' >here</a> for our list, free use for your own purposes. We like them, and hope they are of use to you too.
 
 
 
