@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Break and Rules Elements
+title: Breaks and Rules
 parent: Template Content
-nav_order: 11
+nav_order: 12
 ---
 
-# Template Content
+# Breaks and Rules
 {: .no_toc }
 
 The br and hr elements give division to your content in a document.

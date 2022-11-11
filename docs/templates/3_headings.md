@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Heading Elements
+title: Headings 1 to 6
 parent: Template Content
 nav_order: 3
 ---

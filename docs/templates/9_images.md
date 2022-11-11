@@ -1,18 +1,16 @@
 ---
 layout: default
-title: Inline Elements
+title: Images
 parent: Template Content
-nav_order: 5
+nav_order: 9
 ---
 
-# Template Content
+# Images and graphics
 {: .no_toc }
 
-THe inline elements will appear within the current line (by default ).
+The image element supports in template pixel data raster images. (See drawing content and css background images for other types)
 
-These are `span`, `i`, `b`, `strong`, `emphasis`, `u` and `strike`.
-
-All elememts can be nested.
+These can be sized and styled appropriately.
 
 <details open markdown="block">
   <summary>

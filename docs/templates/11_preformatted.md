@@ -1,14 +1,16 @@
 ---
 layout: default
-title: Repeating Template Elements
+title: Pre-formatted
 parent: Template Content
-nav_order: 13
+nav_order: 11
 ---
 
-# Template Content
+# Pre-Formatted content
 {: .no_toc }
 
-The template element allows the binding of multiple bound data into repeating inner content.
+The pre and code elements support the use of styling on specific content as a formatted type.
+
+These can be sized and styled appropriately.
 
 <details open markdown="block">
   <summary>

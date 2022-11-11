@@ -1,16 +1,14 @@
 ---
 layout: default
-title: Pre-formatted Elements
+title: Embedding content
 parent: Template Content
-nav_order: 10
+nav_order: 13
 ---
 
-# Template Content
+# Embedding external content
 {: .no_toc }
 
-The pre and code elements support the use of styling on specific content as a formatted type.
-
-These can be sized and styled appropriately.
+The embed and iframe elements support the direct inclusion of referenced content within a generated document.
 
 <details open markdown="block">
   <summary>

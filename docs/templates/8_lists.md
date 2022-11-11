@@ -1,11 +1,11 @@
 ---
 layout: default
-title: List Elements
+title: Lists
 parent: Template Content
 nav_order: 8
 ---
 
-# Template Content
+# Ordered, Unordered and Definition Lists
 {: .no_toc }
 
 The list element are fullt supported with Ordered (ol), unordered (ul) and definitions.

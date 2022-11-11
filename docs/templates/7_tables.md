@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Tables and Row Elements
+title: Tables and Rows
 parent: Template Content
 nav_order: 7
 ---
 
-# Template Content
+# Tables and rows
 {: .no_toc }
 
 The table elements are a powerful binding constructs.

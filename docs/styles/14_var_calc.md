@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Dynamic styles
+title: Dynamic style values
 parent: Styling Content
 nav_order: 14
 ---
 
-# Dynamic styles with var and calc
+# Dynamic style values with var and calc
 {: .no_toc }
 
 THe block elements will appear on a new line on their own (by default ).

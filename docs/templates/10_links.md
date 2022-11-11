@@ -1,16 +1,14 @@
 ---
 layout: default
-title: Image Elements
+title: Links and navigation
 parent: Template Content
-nav_order: 9
+nav_order: 10
 ---
 
-# Template Content
+# Links and navigation
 {: .no_toc }
 
-The image element supports in template pixel data graphic images. (See svg content and css background images for other types)
-
-These can be sized and styled appropriately.
+The anchor (a) tag allows navigation within the current document, along with links to external content.
 
 <details open markdown="block">
   <summary>

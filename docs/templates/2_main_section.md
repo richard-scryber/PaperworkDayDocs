@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Main and Section Elements
+title: Main and Sections
 parent: Template Content
 nav_order: 2
 ---
 
-# Template Content
+# Main element and Section elements
 {: .no_toc }
 
 Paperwork supports the use of page headers and footers within the main and section element of the template to alter the headers and footers and give structure to new pages along with different page size / proportions.

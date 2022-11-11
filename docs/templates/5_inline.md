@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Text Conversion Elements
+title: Inline Elements
 parent: Template Content
-nav_order: 6
+nav_order: 5
 ---
 
-# Template Content
+# Inline Elements
 {: .no_toc }
 
-The text elements will appear within the current line (by default ) and support binding and conversion from other value types.
+The inline elements will appear within the current line (by default ).
 
-These are `num`, `time`, `label` and a custom `page` element.
+These are `span`, `i`, `b`, `strong`, `emphasis`, `u` and `strike`.
 
 All elememts can be nested.
 
