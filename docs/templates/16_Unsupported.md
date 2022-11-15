@@ -1,16 +1,14 @@
 ---
 layout: default
-title: Pre-formatted
+title: Unsupported elements
 parent: Template Content
-nav_order: 11
+nav_order: 16
 ---
 
-# Pre-Formatted content
+# Unsupported elements
 {: .no_toc }
 
-The pre and code elements support the use of styling on specific content as a formatted type.
-
-These can be sized and styled appropriately.
+The template element allows the binding of multiple bound data into repeating inner content.
 
 <details open markdown="block">
   <summary>

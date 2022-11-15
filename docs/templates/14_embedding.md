@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Repeating Template
+title: Embedding content
 parent: Template Content
 nav_order: 14
 ---
 
-# Repeating Template Content
+# Embedding external content
 {: .no_toc }
 
-The template element allows the binding of multiple bound data into repeating inner content.
+The embed and iframe elements support the direct inclusion of referenced content within a generated document.
 
 <details open markdown="block">
   <summary>
