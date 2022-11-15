@@ -70,7 +70,7 @@ Paperwork supports the use of page headers and footers within the body element o
 ## Repeating Headers and footers example
 
 <!-- the frame will be initialzed by the code in the root default _layout -->
-<div id='buttonGenerate' class='document-container' name='HeadersAndFooters' data-template='templates/headersAndFooters/pageHeadersAndFooters.html' data-pw-ui="Default, Code, Edit" ></div>
+<div id='buttonGenerate' class='document-container' name='HeadersAndFooters' data-pw-template='_samples/templates/headersAndFooters/pageHeadersAndFooters.html' data-pw-ui="Default, Code, Edit" ></div>
 
 
 ## Margins and Padding
