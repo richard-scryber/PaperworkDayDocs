@@ -144,6 +144,6 @@ Explictly splitting content at a particular place within the content can be done
 
 ### Page Sizes
 
-Page sizes are fixed for an element. They can be changed globally and for a specific element that forces a new page. This is covered in the <a href='../stlyes/13_pages.html' >Page styles</a> section.
+Page sizes are fixed for an element. They can be changed globally and for a specific element that forces a new page. This is covered in the <a href='../styles/13_pages.html' >Page styles</a> section.
 
 ---
