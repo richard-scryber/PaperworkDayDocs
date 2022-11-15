@@ -252,6 +252,7 @@
                 page: page,
                 scale: scale,
                 loaded: (result) => {
+                    console.log("Frame with name " + result.name + " loaded");
                       if(template){
                       $("#" + ele.id).addClass("doc_wrapper");
                       if(data){
