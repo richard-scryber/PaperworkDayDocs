@@ -125,7 +125,7 @@ Within the page, the margins and padding will be applied to **both** the body co
 {% endraw %}
 
 
-<div id='paddingExample' class='document-container' name='HeadersAndFootersWithPadding' data-pw-template='_samples/templates/headersAndFooters/pageHeadersAndFooters.html' data-pw-ui="Default, Code, Edit" ></div>
+<div id='paddingExample' class='document-container' name='HeadersAndFootersWithPadding' data-pw-template='_samples/templates/headersAndFooters/pageHeadersAndFootersPadding.html' data-pw-ui="Default, Code, Edit" ></div>
 
 
 ---
