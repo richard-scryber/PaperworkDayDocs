@@ -5,7 +5,7 @@ parent: Template Content
 nav_order: 1
 ---
 
-# Body headers and footers
+# Body, headers & footers
 {: .no_toc }
 
 Paperwork supports the use of page headers and footers within the body element of the template. These will repeat across multiple pages when content overflows.
@@ -132,18 +132,18 @@ Within the page, the margins and padding will be applied to **both** the body co
 
 ## Further reading
 
-### Page Numbers.
+<dl>
+  <dt>Page Numbers</dt>
+  <dd>Paperwork supports the display of page numbers, both current and total within the footer and main content using the custom inline `page` element.<br/>
+      The default (no attributes) will simply show the current page number but a `data-format` attribute can be applied (See <a href='11_page_numbers.html' >Page Numbering</a> for more details).</dd>
 
-Paperwork supports the display of page numbers, both current and total within the footer and main content using the custom inline `page` element.
+  <dt>Page Breaks</dt>
+  <dd>Explictly splitting content at a particular place within the content can be done with the `page-break-before` and `page-break-after` styles. <br/>
+      These are covered in more details in the <a href='2_main_section.html' >Next</a> section.</dd>
 
-The default (no attributes) will simply show the current page number but a `data-format` attribute can be applied (See <a href='11_page_numbers.html' >Page Numbering</a> for more details).
-
-### Page Breaks.
-
-Explictly splitting content at a particular place within the content can be done with the `page-break-before` and `page-break-after` styles. These are covered in more details in the <a href='2_main_section.html' >Next</a> section.
-
-### Page Sizes
-
-Page sizes are fixed for an element. They can be changed globally and for a specific element that forces a new page. This is covered in the <a href='../styles/13_pages.html' >Page styles</a> section.
+  <dt>Page Sizes</dt>
+  <dd>Page sizes are fixed for the content within an element, except when a new page is applied. They can be changed globally and for that specific element that begins a new page.<br/>
+      This is covered in the <a href='../styles/13_pages.html' >Page styles</a> section.</dd>
+</dl>
 
 ---
