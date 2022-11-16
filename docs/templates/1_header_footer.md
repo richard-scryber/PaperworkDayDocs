@@ -5,7 +5,7 @@ parent: Template Content
 nav_order: 1
 ---
 
-# Body, headers & footers
+# The body, headers and footers
 {: .no_toc }
 
 Paperwork supports the use of page headers and footers within the body element of the template. These will repeat across multiple pages when content overflows.
