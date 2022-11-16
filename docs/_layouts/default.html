@@ -257,14 +257,14 @@
                       $("#" + ele.id).addClass("doc_wrapper");
                       if(data){
                           paperwork.generate({
-                              name: name,
+                              name: result.name,
                               template: { source : sampleRoot + template},
                               data: {source: sampleRoot + data}
                           });
                       }
                       else{
                           paperwork.generate({
-                              name: name,
+                              name: result.name,
                               template: { source : sampleRoot + template}
                           });
                       }
