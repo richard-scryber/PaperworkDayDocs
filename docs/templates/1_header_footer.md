@@ -21,7 +21,7 @@ Paperwork supports the use of page headers and footers within the body element o
 
 ---
 
-## A header and footer.
+## Adding a header and footer.
 
 
 {% raw %}

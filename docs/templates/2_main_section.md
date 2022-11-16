@@ -23,4 +23,9 @@ Paperwork supports the use of page headers and footers within the main and secti
 
 ## ToDo
 
+
+<!-- the frame will be initialzed by the code in the root default _layout -->
+<div id='mainelement' class='document-container' name='HeadersAndFooters' data-pw-template='_samples/templates/headersAndFooters/mainElement.html' data-pw-ui="Default, Code, Edit" ></div>
+
+
 More content will follow
