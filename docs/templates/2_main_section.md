@@ -5,10 +5,14 @@ parent: Template Content
 nav_order: 2
 ---
 
-# Main element and Section elements
+# Section element, plus Main and Article elements
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the main and section element of the template to alter the headers and footers and give structure to new pages along with different page size / proportions.
+Paperwork supports the use of the section, main and article element of the template to give structure to new pages along with different page size / proportions.
+
+By default the section element will force a new page (adding the document headers and footers as appropriate). Main and article will not be on a new page unless explicitly set.
+
+All 3 elements support having their own header and footer content within the flow of the document.
 
 <details open markdown="block">
   <summary>
@@ -21,11 +25,12 @@ Paperwork supports the use of page headers and footers within the main and secti
 
 ---
 
-## ToDo
+## A section within a main content flow.
 
 
 <!-- the frame will be initialzed by the code in the root default _layout -->
-<div id='mainelement' class='document-container' name='HeadersAndFooters' data-pw-template='_samples/templates/headersAndFooters/mainElement.html' data-pw-ui="Default, Code, Edit" ></div>
+<div id='sectionelement' class='document-container' name='Sections' data-pw-template='_samples/templates/headersAndFooters/sectionElement.html' data-pw-ui="Default, Code, Edit" ></div>
+
+Here there is a main content within the body, and a section that will break onto a new page, with the main content following after any body headers and footers.
 
 
-More content will follow
