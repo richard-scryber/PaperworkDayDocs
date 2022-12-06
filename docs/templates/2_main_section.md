@@ -46,7 +46,9 @@ An article is by default the same as the main element, supporting headers and fo
 
 <div id='articleElement' class='document-container' name='articleElement' data-pw-template='_samples/templates/headersAndFooters/breakingArticleElement.html' data-pw-ui="Default, Code, Edit" ></div>
 
-Any element can have the the page break style applied to it, but deeply nesting may cause layout issues.
+{: .note }
+> Any element can have the the page break style applied to it, but deeply nesting may cause layout 
+> issues.
 
 ## Further reading
 

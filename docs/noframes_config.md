@@ -78,21 +78,13 @@ The options match directly to the configuration available on the init and genera
     <dd>This is the <emphasis>optional</emphasis> absolute url to the json dynamic data to generate a file with.</dd>
     <dt>User Interface options</dt>
     <dd>This optional set of flags define the functional user interface elements that will be shown on the client when initialized, and or a document is generated. </dd>
-    <dt>theme</dt>
+    <dt>Theme</dt>
     <dd>There are currently 2 themes available. 'dark' and 'light' with the default being dark. Or for subscribers there are also `custom-dark` and `custom-light` themes from your own stylesheets.</dd>
-    <dt>width</dt>
-    <dd>This optional css unit of size string, will set the starting width of the frame (and or wrapper)</dd>
-    <dt>height</dt>
-    <dd>This optional css unit of size string, will set the starting height of the frame (and or wrapper)</dd>
-    <dt>scale</dt>
-    <dd>This optional numeric value will set the initial percentage scale of the preview when a document is first generated.</dd>
-    <dt>page</dt>
+    <dt>Initial Page Zoom</dt>
+    <dd>This optional numeric value will set the initial percentage scale of the preview when a document is first generated (default is 100%).</dd>
+    <dt>Initial Page</dt>
     <dd>This optional numeric value, will set the starting page number within the document. The first page is 1</dd>
-    <dt>loaded:</dt>
-    <dd>This optional function will be called once the frame has been created and is ready with a reference to the frame.</dd>
 </dl>
-
-If, for some reason, none of the above interface elements are wanted, then the `None` option can be explicitly provided.
 
 ---
 
@@ -110,5 +102,7 @@ When happy, the link can be coppied and used in any pages as is.
     
 ```
 {% endraw %}
+
+<a href='https://www.paperworkday.net/preview.html?ui=None&template=https%3A%2F%2Fraw.githubusercontent.com%2Frichard-scryber%2FPaperworkDayDocs%2Fmain%2Fdocs%2F_samples%2Fnodata%2Fhelloworld.html' target='_blank' >Open my document</a>
 
 ---
