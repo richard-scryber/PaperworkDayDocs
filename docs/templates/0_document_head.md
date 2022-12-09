@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Document Head
+parent: Template Content
 has_children: false
 nav_order: 0
 ---
