@@ -1,0 +1,45 @@
+<?scryber append-log='false' ?>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head>
+    <title>Hello world document
+    </title>
+    <style>
+      @font-face{
+        font-family: 'Poppins';
+        font-style: italic;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21llEA.ttf) format('truetype');
+      }
+      body {
+        padding : 20px;
+      }
+      h2, p{
+        padding: 20px;
+      }
+      .title {
+        font-family: Poppins;
+        font-weight: 300;
+        color : silver;
+        height: 300pt;
+        text-align: right;
+        vertical-align: bottom;
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title" style="font-style:italic; padding: 30px;">Only the Station Wagons.</h2>
+    <table style='width:100%; margin:40pt; font-size: 12pt'>
+      <tr>
+        <td>Color</td>
+        <td>Capacity</td>
+      </tr>
+      <template data-bind="{{selectWhere(items, .type == 'station wagon')}}" >
+        <tr>
+          <td>{{.color}}</td>
+          <td>{{.capacity}}</td>
+        </tr>
+      </template>
+    </table>
+  </body>
+</html>
