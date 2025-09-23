@@ -266,7 +266,10 @@ Please contact us for more information.
 
 ---
 
-## Configuration options
+## Library Reference
+
+1. <a href='/reference/'>Root Reference</a>
+2. <a href='/reference/svg_components'>Supported SVG tags</a>
 
 
 
