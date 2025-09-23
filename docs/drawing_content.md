@@ -3,6 +3,7 @@ layout: default
 title: Drawing Content
 has_children: true
 nav_order: 4
+has_toc: false
 ---
 
 # Drawing Content
