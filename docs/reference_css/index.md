@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Body, Headers & Footers
-parent: Template Content
+title: Styles Reference
 nav_order: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Body, Headers & Footers
-parent: Template Content
+title: SVG Drawing Reference
 nav_order: 1
 ---
 
