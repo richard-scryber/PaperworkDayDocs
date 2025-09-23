@@ -268,8 +268,8 @@ Please contact us for more information.
 
 ## Library Reference
 
-1. <a href='/reference/'>Root Reference</a>
-2. <a href='/reference/svg_components'>Supported SVG tags</a>
+1. <a href='/reference_css/index.html'>CSS Styles</a>
+2. <a href='/reference_tags/index.html'>HTML tags</a>
 
 
 
