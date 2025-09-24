@@ -33,7 +33,7 @@ More information on the binding syntax can be found in <a href='../binding_conte
 
 ### Parentheses
 
-The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'parameters'.
+The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'parameters'. Nesting parentheses is supported to N number of levels.
 
 ### Storing results
 
@@ -117,3 +117,17 @@ To convert values of one type to another, the following functions are available.
 | <a href='funcs/atan.html' >Arc Tangent Function</a>   | atan(expr) | Will return the value as a double of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to double will be made|
 | <a href='funcs/ceiling.html' >Ceiling Function</a>   | ceiling(expr) | Will return the value as a integer of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to integer will be made|
 | <a href='funcs/cos.html' >Cosine Function</a>   | cos(expr) | Will return the value of the contained expression as a string. Complex (object and array values will be expanded). A formatting parameter can also be specifified to alter how the value is encoded|
+| <a href='funcs/deg.html' >Degrees Function</a>   | deg(expr) | Will convert any numeric value (expected to be in radians), to its equivalent degree value based on the rotation around half a circle circumference.  |
+| <a href='funcs/e.html' >Eulers Constant Function</a>   | e[()] | Will return the value of Eulers number (to 10 decimal places). It can also be used as a constant without the parenthese. e.g. e and E() are equivalent.|
+| <a href='funcs/floor.html' >Floor Function</a>   | floor(expr) | Will return the highest possible integer value below the provided value. |
+| <a href='funcs/log.html' >Logarithm Function</a>   | log(expr, newbase) | Will return the logarithm of the first argument in the base of the second argument. |
+| <a href='funcs/log10.html' >Logarithm Base 10 Function</a>   | log10(expr) | Is a standard shorthand for the log(n,10) function, and will return the base 10 logarithm of a number. |
+| <a href='funcs/pi.html' >PI Constant Function</a>   | pi[()] | Will return the value of Pi (to 10 decimal places). It can also be used as a constant without the parenthese. e.g. pi and PI() are equivalent.|
+| <a href='funcs/pow.html' >Power Exponent Function</a>   | pow(expr, exponent) | Will return the first argument, raised to the exponent of the second argument e.g. pow(3,2) is equivalent to 3^2|
+| <a href='funcs/rad.html' >Radient Function</a>   | rad(expr) | Will convert a value in degrees to it's radian equivalent.|
+| <a href='funcs/round.html' >Round Function</a>   | round(expr, [precision]) | Will return the value of a provided number to the nearest integer, or rounded to any provided precision.  |
+| <a href='funcs/sign.html' >Sign Function</a>   | sign(expr) | Will return 1 if the value of a provided number is positive. If the value is negative it will return -1, and zero will return 0.|
+| <a href='funcs/sine.html' >Sine Function</a>   | sin(expr) | Will return the sine of the provided angle (in radians). |
+| <a href='funcs/sqrt.html' >Square Root Function</a>   | sqrt(expr) | Will return the square root of a number. |
+| <a href='funcs/tan.html' >Tangent Function</a>   | tan(expr) | Will return the tangent of the provided angle (in radians). |
+| <a href='funcs/truncate.html' >Truncate Function</a>   | truncate(expr) | Will remove any floating point value from expr. This means negative values are equivalent to ceiling(expr) and positive values are equivalent to floor(expr).|
