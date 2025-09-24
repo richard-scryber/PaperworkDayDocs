@@ -15,7 +15,7 @@ The library supports the use of data binding to dynamic content within a templat
 Binding is supported by wrapping expressions within 'handlebars' either in content, or for attribute or style values.
 
 ```
-    <span id='{{model.blockId}}' style='color: {{model.theme.color}}; font-weight: strong;' >{{model.username}}</span>
+    <span id='\{\{model.blockId\}\}' style='color: \{\{model.theme.color\}\}; font-weight: strong;' >\{\{model.username\}\}</span>
 ```
 
 More information on the binding syntax can be found in <a href='../binding_content.html'>Binding Content</a>
@@ -31,11 +31,11 @@ More information on the binding syntax can be found in <a href='../binding_conte
 
 ---
 
-## Parentheses
+### Parentheses
 
 The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'parameters'.
 
-## Storing results
+### Storing results
 
 Sometimes it is appropriate to capture the results of a function or calculation to be re-used or output elsewhere. The library allows for the use of the <code>&lt;var &gt;</code> element within a template to capture calculated values during processing. See the <a href='../learning/templates/variables.html' >Variables article</a> for more information
 
