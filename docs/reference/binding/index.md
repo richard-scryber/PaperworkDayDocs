@@ -131,3 +131,19 @@ To convert values of one type to another, the following functions are available.
 | <a href='funcs/sqrt.html' >Square Root Function</a>   | sqrt(expr) | Will return the square root of a number. |
 | <a href='funcs/tan.html' >Tangent Function</a>   | tan(expr) | Will return the tangent of the provided angle (in radians). |
 | <a href='funcs/truncate.html' >Truncate Function</a>   | truncate(expr) | Will remove any floating point value from expr. This means negative values are equivalent to ceiling(expr) and positive values are equivalent to floor(expr).|
+
+
+
+## String functions
+
+To manipulate string (character) values, the following functions are available.
+
+
+| Function  | Example  | Description |
+|---|---|---|
+| <a href='funcs/Boolean.html' >Boolean Function</a>   | boolean(expr) | Will return true if the contained expression can be converted to a true value, otherwise false, or false if the contained expression results in false. The contained expression can be a constant or another expression, and an attempt to convert to boolean will be made.  |
+| <a href='funcs/date.html' >Date Function</a>   | date([expr], [format]) | Will return the value, of the contained expression, as a date. If no contained expression is provided, then it will return the current date and time. The contained expression can be aconstant or another expression, and an attempt to convert to date will be made. If a second *format* parameter is provided, then the expr will be parsed according to that format.  |
+| <a href='funcs/decimal.html' >Decimal Function</a>   | decimal(expr) | Will return the value as a decimal of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to decmial will be made|
+| <a href='funcs/double.html' >Double Function</a>   | double(expr) | Will return the value as a double of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to double will be made|
+| <a href='funcs/integer.html' >Integer Function</a>   | integer(expr) | Will return the value as a integer of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to integer will be made|
+| <a href='funcs/string.html' >String Function</a>   | string(expr, [format]) | Will return the value of the contained expression as a string. Complex (object and array values will be expanded). A formatting parameter can also be specifified to alter how the value is encoded|
