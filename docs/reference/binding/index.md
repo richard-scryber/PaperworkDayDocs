@@ -47,17 +47,17 @@ The library supports the use of the standard mathematical binary operators, usin
 
 | Operator  | Example  | Description |
 |---|---|---|
-| <a href='ops/Multiply.html' >Multiply '*' </a>   | LHS * RHS | Will multiply the value of the expression on the left hand side by the value of the expression on right hand side and return the result   |
-| <a href='ops/Divide.html' >Divide '/' </a>   | LHS / RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the result  |
-| <a href='ops/Plus.html' >Plus '+' </a>   | LHS + RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the result, or concatenate 2 strings together |
-| <a href='ops/Minus.html' >Minus '-' </a>   | LHS - RHS | Will subtract the value of the expression on the left hand side with the value of the expression on right hand side and return the result  |
-| <a href='ops/Modulo.html' >Modulo '%' </a>   | LHS % RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the **remainder** as a result  |
+| <a href='ops/multiply.html' >Multiply '*' </a>   | LHS * RHS | Will multiply the value of the expression on the left hand side by the value of the expression on right hand side and return the result   |
+| <a href='ops/divide.html' >Divide '/' </a>   | LHS / RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the result  |
+| <a href='ops/plus.html' >Plus '+' </a>   | LHS + RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the result, or concatenate 2 strings together |
+| <a href='ops/minus.html' >Minus '-' </a>   | LHS - RHS | Will subtract the value of the expression on the left hand side with the value of the expression on right hand side and return the result  |
+| <a href='ops/modulo.html' >Modulo '%' </a>   | LHS % RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the **remainder** as a result  |
 | <a href='ops/Exponent.html' >Exponent '^' </a>   | LHS ^ RHS | Will raise the value of the expression on the left hand side to the power of the value of the expression on right hand side and return the result  |
-| <a href='ops/nullCoalesce.html' >Null coalescing '??' </a>   | LHS ?? RHS | Will return the value of the expression on the left hand side if it is not null, otherwise it will retiurn the value of the expression on the right hand side  |
-| <a href='ops/BitAnd.html' >Bitwise And '&' </a>   | LHS & RHS | Will perform a bit level comparison operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based on the AND truth table  |
-| <a href='ops/BitOr.html' >Bitwise Or '\|' </a>   | LHS \| RHS | Will perform a bit level comparison operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based on the OR truth table  |
-| <a href='ops/BitLeft.html' >Bitwise Shift Left '&lt;&lt;' </a>   | LHS &lt;&lt; RHS | Will perform a bit level operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based shifting the bits RHS number of places to the **right**.  |
-| <a href='ops/BitRight.html' >Bitwise Shift Right '&gt;&gt;' </a>   | LHS &gt;&gt; RHS | Will perform a bit level operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based shifting the bits RHS number of places to the **right**.  |
+| <a href='ops/nullcoalesce.html' >Null coalescing '??' </a>   | LHS ?? RHS | Will return the value of the expression on the left hand side if it is not null, otherwise it will retiurn the value of the expression on the right hand side  |
+| <a href='ops/bitand.html' >Bitwise And '&' </a>   | LHS & RHS | Will perform a bit level comparison operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based on the AND truth table  |
+| <a href='ops/bitor.html' >Bitwise Or '\|' </a>   | LHS \| RHS | Will perform a bit level comparison operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based on the OR truth table  |
+| <a href='ops/bitleft.html' >Bitwise Shift Left '&lt;&lt;' </a>   | LHS &lt;&lt; RHS | Will perform a bit level operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based shifting the bits RHS number of places to the **right**.  |
+| <a href='ops/bitright.html' >Bitwise Shift Right '&gt;&gt;' </a>   | LHS &gt;&gt; RHS | Will perform a bit level operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based shifting the bits RHS number of places to the **right**.  |
 
 ---
 
@@ -68,11 +68,11 @@ The library supports the use of the following relational operators for comparing
 | Operator  | Example  | Description |
 |---|---|---|
 | <a href='ops/equals.html' >Equals '==' </a>   | LHS == RHS | Will return true if the left and right side are the same value, otherwise false. If the types of values are different, then an attempt to convert to the same value will be made.   |
-| <a href='ops/Greater.html' >Greater Than '&gt;' </a>   | LHS &gt; RHS | Will return true if the left side is greater than the right side otherwise false. Again, if the types of values are different, then an attempt to convert to the same type will be made.  |
-| <a href='ops/GreaterEqual.html' >Greater Than or Equal '&gt;=' </a>   | LHS &gt;= RHS | Will return true if the left side is more than or the same as the right side otherwise false. If the types of values are different, then an attempt to convert to the same type will be made. |
-| <a href='ops/Less.html' >Less Than '&lt;' </a>   | LHS &lt; RHS | Will return true if the left side is considered less than the right side. Again, ifthe types of values are different, then an attempt to convert to the same type will be made. |
-| <a href='ops/LessEqual.html' >Less Than or Equal '&lt;=' </a>   | LHS &lt;= RHS | Will return true if the left side is less than or the same as the right side otherwise false. If the types of values are different, then an attempt to convert to the same type will be made. |
-| <a href='ops/NotEqual.html' >Not Equal '!=' </a>   | LHS != RHS | Will return true if the left and right side are *not* the same value, otherwise false. Again, if the types of values are different, then an attempt to convert to the same type will be made  |
+| <a href='ops/greater.html' >Greater Than '&gt;' </a>   | LHS &gt; RHS | Will return true if the left side is greater than the right side otherwise false. Again, if the types of values are different, then an attempt to convert to the same type will be made.  |
+| <a href='ops/greaterequal.html' >Greater Than or Equal '&gt;=' </a>   | LHS &gt;= RHS | Will return true if the left side is more than or the same as the right side otherwise false. If the types of values are different, then an attempt to convert to the same type will be made. |
+| <a href='ops/less.html' >Less Than '&lt;' </a>   | LHS &lt; RHS | Will return true if the left side is considered less than the right side. Again, ifthe types of values are different, then an attempt to convert to the same type will be made. |
+| <a href='ops/lessequal.html' >Less Than or Equal '&lt;=' </a>   | LHS &lt;= RHS | Will return true if the left side is less than or the same as the right side otherwise false. If the types of values are different, then an attempt to convert to the same type will be made. |
+| <a href='ops/notequal.html' >Not Equal '!=' </a>   | LHS != RHS | Will return true if the left and right side are *not* the same value, otherwise false. Again, if the types of values are different, then an attempt to convert to the same type will be made  |
 
 ---
 
@@ -82,9 +82,9 @@ The library supports the use of the following logical operators.
 
 | Operator  | Example  | Description |
 |---|---|---|
-| <a href='ops/And.html' >And '&amp;&amp;' </a>   | LHS &amp;&amp; RHS | Will return true if the left and right side are both true, otherwise it will return false. Either side can be a constant or an expression, and if the types of values are different, then an attempt to convert to the same value will be made.   |
-| <a href='ops/Or.html' >Or '\|\|' </a>   | LHS \|\| RHS | Will return true if the left or right side are true, otherwise it will return false. Either side can be a constant or an expression, and if the types of values are different, then an attempt to convert to the same value will be made.  |
-| <a href='ops/Not.html' >Not '!' </a>   | !RHS | Will return true if the contained value results in false, or false if the contained value results in true. The contained value can be a constant or another expression, and if the type of value is not a boolean value, then an attempt to convert to boolean will be made. |
+| <a href='ops/and.html' >And '&amp;&amp;' </a>   | LHS &amp;&amp; RHS | Will return true if the left and right side are both true, otherwise it will return false. Either side can be a constant or an expression, and if the types of values are different, then an attempt to convert to the same value will be made.   |
+| <a href='ops/or.html' >Or '\|\|' </a>   | LHS \|\| RHS | Will return true if the left or right side are true, otherwise it will return false. Either side can be a constant or an expression, and if the types of values are different, then an attempt to convert to the same value will be made.  |
+| <a href='ops/not.html' >Not '!' </a>   | !RHS | Will return true if the contained value results in false, or false if the contained value results in true. The contained value can be a constant or another expression, and if the type of value is not a boolean value, then an attempt to convert to boolean will be made. |
 
 ---
 
@@ -95,7 +95,7 @@ To convert values of one type to another, the following functions are available.
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/Boolean.html' >Boolean Function</a>   | boolean(expr) | Will return true if the contained expression can be converted to a true value, otherwise false, or false if the contained expression results in false. The contained expression can be a constant or another expression, and an attempt to convert to boolean will be made.  |
+| <a href='funcs/boolean.html' >Boolean Function</a>   | boolean(expr) | Will return true if the contained expression can be converted to a true value, otherwise false, or false if the contained expression results in false. The contained expression can be a constant or another expression, and an attempt to convert to boolean will be made.  |
 | <a href='funcs/date.html' >Date Function</a>   | date([expr], [format]) | Will return the value, of the contained expression, as a date. If no contained expression is provided, then it will return the current date and time. The contained expression can be aconstant or another expression, and an attempt to convert to date will be made. If a second *format* parameter is provided, then the expr will be parsed according to that format.  |
 | <a href='funcs/decimal.html' >Decimal Function</a>   | decimal(expr) | Will return the value as a decimal of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to decmial will be made|
 | <a href='funcs/double.html' >Double Function</a>   | double(expr) | Will return the value as a double of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to double will be made|
