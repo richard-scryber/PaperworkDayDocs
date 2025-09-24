@@ -15,7 +15,7 @@ The library supports the use of data binding to dynamic content within a templat
 Binding is supported by wrapping expressions within 'handlebars' either in content, or for attribute or style values.
 
 ```
-    <span id='\{\{model.blockId\}\}' style='color: \{\{model.theme.color\}\}; font-weight: strong;' >\{\{model.username\}\}</span>
+    <span id='\{{model.blockId\}}' style='color: \{{model.theme.color\}}; font-weight: strong;' >\{{model.username\}}</span>
 ```
 
 More information on the binding syntax can be found in <a href='../binding_content.html'>Binding Content</a>
@@ -80,9 +80,9 @@ The library supports the use of the following logical operators.
 
 | Operator  | Example  | Description |
 |---|---|---|
-| <a href='ops/And.html' >And '&amp;&amp;' </a>   | LHS &amp;&amp; RHS | Will return true if the left and right side are the same value, otherwise false. If the types of values are different, then an attempt to convert to the same value will be made.   |
-| <a href='ops/Or.html' >Or '\|\|' </a>   | LHS \|\| RHS | Will return true if the left side is greater than the right side otherwise false. Again, if the types of values are different, then an attempt to convert to the same type will be made.  |
-| <a href='ops/Not.html' >Not '!' </a>   | !RHS | Will return true if the left side is more than or the same as the right side otherwise false. If the types of values are different, then an attempt to convert to the same type will be made. |
+| <a href='ops/And.html' >And '&amp;&amp;' </a>   | LHS &amp;&amp; RHS | Wiill return true if the left and right side are both true, otherwise it will return false. Either side can be a constant or an expression, and if the types of values are different, then an attempt to convert to the same value will be made.   |
+| <a href='ops/Or.html' >Or '\|\|' </a>   | LHS \|\| RHS | Will return true if the left or right side are true, otherwise it will return false. Either side can be a constant or an expression, and if the types of values are different, then an attempt to convert to the same value will be made.  |
+| <a href='ops/Not.html' >Not '!' </a>   | !RHS | Will return true if the contained value results in false, or false if the contained value results in true. The contained value can be a constant or another expression, and if the type of value is not a boolean value, then an attempt to convert to boolean will be made. |
 
 ---
 
