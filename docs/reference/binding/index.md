@@ -12,6 +12,12 @@ nav_order: 5
 
 The library supports the use of data binding to dynamic content within a template (including refrenced files and stylesheets) so that textual or visual elements and styles can be updated when a document is created.
 
+Binding is supported by wrapping expressions within 'handlebars' either in content, or for attribute or style values.
+
+```
+    <span id='{{model.blockId}}' style='color: {{model.theme.color}}; font-weight: strong;' >{{model.username}}</span>
+```
+
 More information on the binding syntax can be found in <a href='../binding_content.html'>Binding Content</a>
 
 <details open markdown="block">
