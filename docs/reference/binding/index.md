@@ -47,7 +47,7 @@ The library supports the use of the standard mathematical binary operators, usin
 | <a href='ops/Exponent.html' >Exponent '^' </a>   | LHS ^ RHS | Will raise the value of the expression on the left hand side to the power of the value of the expression on right hand side and return the result  |
 | <a href='ops/nullCoalesce.html' >Null coalescing '??' </a>   | LHS ^ RHS | Will return the value of the expression on the left hand side if it is not null, otherwise it will retiurn the value of the expression on the right hand side  |
 | <a href='ops/BitAnd.html' >Bitwise And '&' </a>   | LHS & RHS | Will perform a bit level comparison operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based on the AND truth table  |
-| <a href='ops/BitOr.html' >Bitwise And '&pipe;' </a>   | LHS &pipe; RHS | Will perform a bit level comparison operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based on the OR truth table  |
+| <a href='ops/BitOr.html' >Bitwise And '&vert;' </a>   | LHS &vert; RHS | Will perform a bit level comparison operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based on the OR truth table  |
 | <a href='ops/BitLeft.html' >Bitwise Shift Left '&lt;&lt;' </a>   | LHS &lt;&lt; RHS | Will perform a bit level operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based shifting the bits RHS number of places to the **right**.  |
 | <a href='ops/BitRight.html' >Bitwise Shift Right '&gt;&gt;' </a>   | LHS &gt;&gt; RHS | Will perform a bit level operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based shifting the bits RHS number of places to the **right**.  |
 
@@ -65,6 +65,18 @@ The library supports the use of the following relational operators for comparing
 | <a href='ops/Less.html' >Less Than '&lt;' </a>   | LHS &lt; RHS | Will return true if the left side is considered less than the right side. Again, ifthe types of values are different, then an attempt to convert to the same type will be made. |
 | <a href='ops/LessEqual.html' >Less Than or Equal '&lt;=' </a>   | LHS &lt;= RHS | Will return true if the left side is less than or the same as the right side otherwise false. If the types of values are different, then an attempt to convert to the same type will be made. |
 | <a href='ops/NotEqual.html' >Not Equal '!=' </a>   | LHS != RHS | Will return true if the left and right side are *not* the same value, otherwise false. Again, if the types of values are different, then an attempt to convert to the same type will be made  |
+
+---
+
+## Logical operators
+
+The library supports the use of the following logical operators.
+
+| Operator  | Example  | Description |
+|---|---|---|
+| <a href='ops/And.html' >And '&amp;&amp;' </a>   | LHS &amp;&amp; RHS | Will return true if the left and right side are the same value, otherwise false. If the types of values are different, then an attempt to convert to the same value will be made.   |
+| <a href='ops/Or.html' >Or '&vert;&vert;' </a>   | LHS &vert;&vert; RHS | Will return true if the left side is greater than the right side otherwise false. Again, if the types of values are different, then an attempt to convert to the same type will be made.  |
+| <a href='ops/Not.html' >Greater Than or Equal '&gt;=' </a>   | LHS &gt;= RHS | Will return true if the left side is more than or the same as the right side otherwise false. If the types of values are different, then an attempt to convert to the same type will be made. |
 
 ---
 
