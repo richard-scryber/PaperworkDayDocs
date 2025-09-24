@@ -10,7 +10,9 @@ nav_order: 6
 # SVG Element Reference
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template. These will repeat across multiple pages when content overflows.
+This page lists all of the SVG elements supported by the library.
+
+They are grouped by function  
 
 <details open markdown="block">
   <summary>
