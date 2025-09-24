@@ -15,7 +15,7 @@ The library supports the use of data binding to dynamic content within a templat
 Binding is supported by wrapping expressions within 'handlebars' either in content, or for attribute or style values.
 
 ```
-   {% raw %} <span id='\{{model.blockId\}}' style='color: \{{model.theme.color\}};' >\{{model.username\}}</span> {% endraw %}
+   {% raw %} <span id='{{model.blockId}}' style='color: {{model.theme.color}};' >{{model.name}}</span> {% endraw %}
 ```
 
 More information on the binding syntax can be found in <a href='../binding_content.html'>Binding Content</a>
