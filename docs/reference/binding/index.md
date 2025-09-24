@@ -82,7 +82,7 @@ The library supports the use of the following logical operators.
 
 | Operator  | Example  | Description |
 |---|---|---|
-| <a href='ops/And.html' >And '&amp;&amp;' </a>   | LHS &amp;&amp; RHS | Wiill return true if the left and right side are both true, otherwise it will return false. Either side can be a constant or an expression, and if the types of values are different, then an attempt to convert to the same value will be made.   |
+| <a href='ops/And.html' >And '&amp;&amp;' </a>   | LHS &amp;&amp; RHS | Will return true if the left and right side are both true, otherwise it will return false. Either side can be a constant or an expression, and if the types of values are different, then an attempt to convert to the same value will be made.   |
 | <a href='ops/Or.html' >Or '\|\|' </a>   | LHS \|\| RHS | Will return true if the left or right side are true, otherwise it will return false. Either side can be a constant or an expression, and if the types of values are different, then an attempt to convert to the same value will be made.  |
 | <a href='ops/Not.html' >Not '!' </a>   | !RHS | Will return true if the contained value results in false, or false if the contained value results in true. The contained value can be a constant or another expression, and if the type of value is not a boolean value, then an attempt to convert to boolean will be made. |
 
@@ -176,7 +176,7 @@ The date functions work on (Gregorian) DateTime values, to convert strings, use 
 | <a href='funcs/adddays.html' >Add Days Function</a>   | adddays(expr , count) | Adds the specified number of days in the second parameter (either positive or negative), to the date value in the first parameter, returning the result |
 | <a href='funcs/addhours.html' >Add Hours Function</a>   | addhours(expr, count) | Adds the specified number of hours in the second parameter (either positive or negative), to the date value in the first parameter, returning the result. If the expr or the count are null then null will be returned.  |
 | <a href='funcs/addms.html' >Add Milliseconds Function</a>   | addmilliseconds(expr, count) | Adds the specified number of milli-seconds in the second parameter (either positive or negative) to the date value in the first parameter, returning the result |
-| <a href='funcs/addmins.html' >Add Minutes Function</a>   | addminutesd(expr, count) | Adds the specified number of minutes in the second parameter (either positive or negative) to the date value in the first parameter, returning the result. |
+| <a href='funcs/addmins.html' >Add Minutes Function</a>   | addminutes(expr, count) | Adds the specified number of minutes in the second parameter (either positive or negative) to the date value in the first parameter, returning the result. |
 | <a href='funcs/addmonths.html' >Add Months Function</a>   | addmonths(expr, count) | Adds the specified number of months in the second parameter (either positive or negative), to the date value in the first parameter, returning the result.|
 | <a href='funcs/addsecs.html' >Add Seconds Function</a>   | addseconds(expr, count) | Adds the specified number of seconds in the second parameter (either positive or negative) to the date value in the first parameter, returning the result.|
 | <a href='funcs/addyears.html' >Add Years Function</a>   | addyears(expr, count) | Adds the specified discreet number of years in the second parameter (either positive or negative), to the date value in the first parameter, returning the result. |
@@ -192,3 +192,56 @@ The date functions work on (Gregorian) DateTime values, to convert strings, use 
 | <a href='funcs/secsof.html' >Second Of Function</a>   | secondof(expr) | Will return the discreet number of seconds passed in the current minute for the date expr parameter.|
 | <a href='funcs/secsbetween.html' >Seconds Between Function</a>   | secondsbetween(expr) | Will return the total number of seconds (inc partial seconds) that have passed between the two provided dates.|
 | <a href='funcs/yearof.html' >Year Of Function</a>   | yearof(expr) | Will return the current year for the date expr parameter - non-zero based. |
+
+---
+
+
+## Logical Functions
+
+The library supports the use of the following logical functions.
+
+| Operator  | Example  | Description |
+|---|---|---|
+| <a href='funcs/if.html' >If Function </a>   | if(expr, trueresult, falseresult) | Checks the first parameter and if the result is true, then returns the second parameter, otherwise the third parameter is evaluated and returned.   |
+| <a href='funcs/iferror.html' >If Error Function</a>   | iferror(expr, fallback) | Checks the first parameter and if the evaluated result does not cause an error, then it will be returned, otherwise the second parameter is evaluated and returned.  |
+| <a href='funcs/in.html' >In Function</a>   | in(compare, expr1 [, expr2, expr3 ...]) | Takes the first parameter, and checks any following parameters to see if they are equal to the first. If so then it returns true, otherwise false. If one of the following parameters is a collection or array, then it will expand the contents and check each individual item. |
+
+--
+
+## Aggregate Functions
+
+The library supports the use of the following aggregate functions to calculate individual values from collections or arrays.
+
+| Operator  | Example  | Description |
+|---|---|---|
+| <a href='funcs/average.html' >Average Function</a>   | average(item1 [,item2,item3, ...]) | Will return the sum of the arguments passed to the function, divided by the number of arguments. If one of those arguments is a collection or array (or a function that returns an array), then each item in the array will be included in the calculation.   |
+| <a href='funcs/averageof.html' >Average Of Function</a>   | averageof(collection, valueExpr) | Will return the mean average of evaluation of the second argument in the context of the current item from the first array or collection argument.  |
+| <a href='funcs/count.html' >Count Function</a>   | count(item1 [,item2,item3, ...]) | Will return the number of non-null arguments passed to the function. If one of those arguments is a collection or array (or a function that returns an array), then it will add the non-null array length to the count. |
+| <a href='funcs/max.html' >Max Function </a>   | max(item1 [,item2,item3, ...]) | Will return the largest value based on the non-null arguments passed to the function. If one of those arguments is a collection or array (or a function that returns an array), then it will check the non-null array values for the maximum.|
+| <a href='funcs/maxof.html' >Max Of Function</a>   | maxof(collection, valueExpr) | Will return the the largest value based on the second parameter in the context of the current item from the array or collection in the first parameter|
+| <a href='funcs/mean.html' >Mean Function</a>   | mean(item1 [,item2,item3, ...]) | Will return the sum of the arguments passed to the function, divided by the number of arguments. If one of those arguments is a collection or array (or a function that returns an array), then each item in the array will be included in the calculation. |
+| <a href='funcs/median.html' >Median Function</a>   | median(item1 [,item2,item3, ...]) | Will return the middle value of all the arguments passed to the function. If one of those arguments is a collection or array (or a function that returns an array), then each item in the array will be included in the calculation. |
+| <a href='funcs/min.html' >Min Function </a>   | min(item1 [,item2,item3, ...]) | Will return the smallest value based on the non-null arguments passed to the function. If one of those arguments is a collection or array (or an expression that returns an array), then it will check the non-null array values for the minimum.   |
+| <a href='funcs/minof.html' >Min Of Function</a>   | minof(collection, valueExpr) | Will return the smallest value based on the second parameter in the context of the current item from the array of collection in the first parameter.  |
+| <a href='funcs/mode.html' >Mode Function</a>   | mode(item1 [,item2,item3, ...]) | Will return the number value that occurs most often in all the arguments passed to the function. If one of those arguments is a collection or array (or a function that returns an array), then each item in the array will be included in the calculation. |
+| <a href='funcs/sum.html' >Sum Function</a>   | sum(item1 [,item2,item3, ...]) | Will return the total accumulated value based on the non-null arguments passed to the function. If one of those arguments is a collection or array (or an expression that returns an array), then it will include the sum of the non-null array values.  |
+| <a href='funcs/sumof.html' >Sum Of Function</a>   | sumof(collection, valueExpr) | will return the total value based on the second parameter in the context of the current item from the array of collection in the first parameter. |
+
+---
+
+
+## Collection Functions
+
+The library supports the use of the following collection functions to bring together values into an array.
+
+| Operator  | Example  | Description |
+|---|---|---|
+| <a href='funcs/collect.html' >Collect Function</a>   | collect(item1 [,item2,item3, ...]) | Will return all the arguments passed to the function as a single collection / array, in the order they are added. If one of those arguments is a collection or array (or a function that returns an array), then it will add the items in the array to the result.|
+| <a href='funcs/eachof.html' >Each Of Function</a>   | eachof(collection, valueExpr) | Will return the an array of all the values based on the second parameter in the context of the current item from the array or collection in the first parameter.  |
+| <a href='funcs/firstWhere.html' >First Where Function</a>   | firstwhere(collection, selectExpr) | Will return the first entry of the collection or array where the second expression results in a value considered to be true. |
+| <a href='funcs/index.html' >Index Function </a>   | index() | Will return the current (zero based) value of the loop over a collection within the document processing.|
+| <a href='funcs/lastWhere.html' ><del>Last Where Function</del></a>   | lastwhere(collection, selectExpr) | Will return the number of non-null arguments passed to the function. If one of those arguments is a collection or array (or a function that returns an array), then it will add the non-null array length to the count. |
+| <a href='funcs/reverse.html' >Reverse Function</a>   | reverse(item1 [,item2,item3, ...]) | Will return all the arguments passed to the function as a single collection / array, inthe *reverse* order they are added. If one of those arguments is a collection or array (or a function that returns an array), then it will add the items in the array to the result (reversed)|
+| <a href='funcs/sanitize.html' ><del>Sanitize Function</del></a>   | sanitize(item1 [,item2,item3, ...]) | Will return all the arguments passed to the function as a single collection / array, in the order they are added provided that value is not null or an empty string. If one of those arguments is a collection or array (or a function that returns an array), then it will include the items in the array to the result as long as they are again not null or an empty string. |
+| <a href='funcs/selectwhere.html' >Select Where Function</a>   | selectwhere(collection, selectExpr) | Will return the an array of all the items from the array or collection in the first parameter that are matched against the second parameter in the context of the current item. |
+| <a href='funcs/sortby.html' >Sort By Function</a>   | sortby(collection, sortExpr) | Will return the an array of all the items from the array or collection in the first parameter ordered by the compared value returned from the result of the second sort expression. |
