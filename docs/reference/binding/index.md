@@ -31,7 +31,7 @@ The library fully supports the use of parenthese '()' to encapsulate operations 
 
 ## Storing results
 
-Sometimes it is appropriate to capture the results of a function or calculation to be re-used or output elsewhere. The library allows for the use of the <code>&lt;var &gt;</code> element within a template. See the <a href='../learning/templates/variables.html' >Variables article</a> for more information
+Sometimes it is appropriate to capture the results of a function or calculation to be re-used or output elsewhere. The library allows for the use of the <code>&lt;var &gt;</code> element within a template to capture calculated values during processing. See the <a href='../learning/templates/variables.html' >Variables article</a> for more information
 
 ## Binary operators
 
@@ -43,8 +43,13 @@ The library supports the use of the standard mathematical binary operators, usin
 | <a href='ops/Divide.html' >Divide '/' </a>   | LHS / RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the result  |
 | <a href='ops/Plus.html' >Plus '+' </a>   | LHS + RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the result, or concatenate 2 strings together |
 | <a href='ops/Minus.html' >Minus '-' </a>   | LHS - RHS | Will subtract the value of the expression on the left hand side with the value of the expression on right hand side and return the result  |
-| <a href='ops/Modulo.html' >Modulo '%' </a>   | LHS % RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the *remainder* as a result  |
-| <a href='ops/Exponent.html' >Exponent '^' </a>   | LHS ^ RHS | Will raise the value of the expression on the left hand side to the power of the value of the expression on right hand side and return the  result  |
+| <a href='ops/Modulo.html' >Modulo '%' </a>   | LHS % RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the **remainder** as a result  |
+| <a href='ops/Exponent.html' >Exponent '^' </a>   | LHS ^ RHS | Will raise the value of the expression on the left hand side to the power of the value of the expression on right hand side and return the result  |
+| <a href='ops/nullCoalesce.html' >Null coalescing '??' </a>   | LHS ^ RHS | Will return the value of the expression on the left hand side if it is not null, otherwise it will retiurn the value of the expression on the right hand side  |
+| <a href='ops/BitAnd.html' >Bitwise And '&' </a>   | LHS & RHS | Will perform a bit level comparison operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based on the AND truth table  |
+| <a href='ops/BitOr.html' >Bitwise And '&pipe;' </a>   | LHS &pipe; RHS | Will perform a bit level comparison operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based on the OR truth table  |
+| <a href='ops/BitLeft.html' >Bitwise Shift Left '&lt;&lt;' </a>   | LHS &lt;&lt; RHS | Will perform a bit level operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based shifting the bits RHS number of places to the **right**.  |
+| <a href='ops/BitRight.html' >Bitwise Shift Right '&gt;&gt;' </a>   | LHS &gt;&gt; RHS | Will perform a bit level operation on the **integer** value of the expression on the left hand side with the **integer** value of the expression on right hand side and return the result based shifting the bits RHS number of places to the **right**.  |
 
 ---
 
