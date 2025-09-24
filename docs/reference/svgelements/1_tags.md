@@ -1,6 +1,7 @@
 ---
 layout: default
-title: HTML Tags Reference
+title: All Tags
+parent: HTML Tags Reference
 nav_order: 1
 ---
 

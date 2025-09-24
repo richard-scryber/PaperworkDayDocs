@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Template Reference
+title: Template reference
 has_children: true
 nav_order: 4
 has_toc: false
