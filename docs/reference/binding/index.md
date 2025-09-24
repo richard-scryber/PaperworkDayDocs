@@ -158,7 +158,37 @@ To manipulate string (character) values, the following functions are available.
 | <a href='funcs/substring.html' >Sub-string Function</a>   | substring(expr, startIndex, [length]) | Will return a modified version of the first string parameter starting at the index of the second parameter and optionally limited in length to the third integer parameter.|
 | <a href='funcs/swap.html' >Swap Function</a>   | swap(expr, pattern, replacement) | Will replace *all* of the values in the first string parameter that match the regular expression string second parameter, with the value passed in the third parameter. |
 | <a href='funcs/tolower.html' >To Lowercase Function</a>   | tolower(expr) | Will return the string parameter converting all characters to lowercase characters.|
-| <a href='funcs/toupper.html' >TO Uppercase Function</a>   | toupper(expr) | Will return the string parameter converting all characters to uppercase (capital) characters.|
+| <a href='funcs/toupper.html' >To Uppercase Function</a>   | toupper(expr) | Will return the string parameter converting all characters to uppercase (capital) characters.|
 | <a href='funcs/trim.html' >Trim Function</a>   | trim(expr) | Will return the first string removing any white space characters from the start and end of the value when converted to a string. |
 | <a href='funcs/trimend.html' >Trim End Function</a>   | trimend(expr) | Will return the first string parameter removing any white space characters from the right (end) of the string.  |
 | <a href='funcs/trimstart.html' >Trim Start Function</a>   | trimstart(expr) | Will return the first string parameter removing any white space characters from the left (start) of the string. |
+
+
+## Date functions
+
+The date functions work on (Gregorian) DateTime values, to convert strings, use one of the date() conversion function overloads.
+
+**Note**" When working with the current date time value, it will increase as the document is processed unless it is stored in a <code>var</code> value.
+
+
+| Function  | Example  | Description |
+|---|---|---|
+| <a href='funcs/adddays.html' >Add Days Function</a>   | adddays(expr , count) | Adds the specified number of days in the second parameter (either positive or negative), to the date value in the first parameter, returning the result |
+| <a href='funcs/addhours.html' >Add Hours Function</a>   | addhours(expr, count) | Adds the specified number of hours in the second parameter (either positive or negative), to the date value in the first parameter, returning the result. If the expr or the count are null then null will be returned.  |
+| <a href='funcs/addms.html' >Add Milliseconds Function</a>   | addmilliseconds(expr, count) | Adds the specified number of milli-seconds in the second parameter (either positive or negative) to the date value in the first parameter, returning the result |
+| <a href='funcs/addmins.html' >Add Minutes Function</a>   | addminutesd(expr, count) | Adds the specified number of minutes in the second parameter (either positive or negative) to the date value in the first parameter, returning the result. |
+| <a href='funcs/addmonths.html' >Add Months Function</a>   | addmonths(expr, count) | Adds the specified number of months in the second parameter (either positive or negative), to the date value in the first parameter, returning the result.|
+| <a href='funcs/addsecs.html' >Add Seconds Function</a>   | addseconds(expr, count) | Adds the specified number of seconds in the second parameter (either positive or negative) to the date value in the first parameter, returning the result.|
+| <a href='funcs/addyears.html' >Add Years Function</a>   | addyears(expr, count) | Adds the specified discreet number of years in the second parameter (either positive or negative), to the date value in the first parameter, returning the result. |
+| <a href='funcs/dayofmonth.html' >Day Of Month Function</a>   | dayofmonth(expr) | Will return the day of the month of the date expr parameter. The first day of the month is 1, not zero.  |
+| <a href='funcs/dayofweek.html' >Day of Week Function</a>   | dayofweek(expr) | Will return the day of the week (0 - 6) of the date expr parameter. |
+| <a href='funcs/dayofyear.html' >Day Of Year Function</a>   | dayofyear(expr) | Will return the total number of days that have passed in the current year for the date expr parameter.|
+| <a href='funcs/daysbetween.html' >Days Between Function</a>   | daysbetween(start, end) | Will return the total number of days (inc partial days) that have passed between the two provided dates.|
+| <a href='funcs/hourof.html' >Hour Of Function</a>   | hourof(expr) | discreet number of hours passed for the date expr parameter.|
+| <a href='funcs/hoursbetween.html' >Hours Between Function</a>   | hoursbetween(start, end) | Will return the total number of hours (inc partial hours) that have passed between the two provided dates.  |
+| <a href='funcs/msof.html' >Millisecond Of Function</a>   | millisecondof(expr) | Will return the discreet number of milliseconds passed *in the current second* for the date expr parameter.  |
+| <a href='funcs/msbetween.html' >Milliseconds Between Function</a>   | millisecondsbetween(start, end) | Will return total number of milli-seconds (inc partial milli-seconds) that have passed between the two provided dates.|
+| <a href='funcs/monthof.html' >Month Of Function</a>   | monthof(expr) | Will return the current month number passed for the date expr parameter - non-zero based |
+| <a href='funcs/secsof.html' >Second Of Function</a>   | secondof(expr) | Will return the discreet number of seconds passed in the current minute for the date expr parameter.|
+| <a href='funcs/secsbetween.html' >Seconds Between Function</a>   | secondsbetween(expr) | Will return the total number of seconds (inc partial seconds) that have passed between the two provided dates.|
+| <a href='funcs/yearof.html' >Year Of Function</a>   | yearof(expr) | Will return the current year for the date expr parameter - non-zero based. |
