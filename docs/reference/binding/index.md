@@ -55,23 +55,16 @@ The library supports the use of the standard mathematical binary operators, usin
 
 ## Relational operators
 
-The library supports the use of the standard mathematical operators, and standard operator precedence.
+The library supports the use of the following relational operators for comparing values.
 
 | Operator  | Example  | Description |
 |---|---|---|
-| <a href='ops/Multiply.html' >Multiply * </a>   | a * b | Will multiply the expression on the left hand side by the expression on right hand side and return the result   |
-| <a href='ops/Divide.html' >Divide / </a>   | a / b | Will divide the expression on the left hand side by the expression on the right hand side and return the result  |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+| <a href='ops/equals.html' >Equals '==' </a>   | LHS == RHS | Will return true if the left and right side are the same value, otherwise false. If the types of values are different, then an attempt to convert to the same value will be made.   |
+| <a href='ops/Greater.html' >Greater Than '&gt;' </a>   | LHS &gt; RHS | Will return true if the left side is greater than the right side otherwise false. Again, if the types of values are different, then an attempt to convert to the same type will be made.  |
+| <a href='ops/GreaterEqual.html' >Greater Than or Equal '&gt;=' </a>   | LHS &gt;= RHS | Will return true if the left side is more than or the same as the right side otherwise false. If the types of values are different, then an attempt to convert to the same type will be made. |
+| <a href='ops/Less.html' >Less Than '&lt;' </a>   | LHS &lt; RHS | Will return true if the left side is considered less than the right side. Again, ifthe types of values are different, then an attempt to convert to the same type will be made. |
+| <a href='ops/LessEqual.html' >Less Than or Equal '&lt;=' </a>   | LHS &lt;= RHS | Will return true if the left side is less than or the same as the right side otherwise false. If the types of values are different, then an attempt to convert to the same type will be made. |
+| <a href='ops/NotEqual.html' >Not Equal '!=' </a>   | LHS != RHS | Will return true if the left and right side are *not* the same value, otherwise false. Again, if the types of values are different, then an attempt to convert to the same type will be made  |
 
 ---
 
