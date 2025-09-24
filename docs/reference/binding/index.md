@@ -39,6 +39,8 @@ The library fully supports the use of parenthese '()' to encapsulate operations 
 
 Sometimes it is appropriate to capture the results of a function or calculation to be re-used or output elsewhere. The library allows for the use of the <code>&lt;var &gt;</code> element within a template to capture calculated values during processing. See the <a href='../learning/templates/variables.html' >Variables article</a> for more information
 
+
+
 ## Binary operators
 
 The library supports the use of the standard mathematical binary operators, using standard operator precedence.
@@ -86,6 +88,16 @@ The library supports the use of the following logical operators.
 
 ---
 
-## Binding conversion functions
+## Conversion functions
 
-All conversion functions
+To convert values of one type to another, the following functions are available.
+
+
+| Function  | Example  | Description |
+|---|---|---|
+| <a href='funcs/Boolean.html' >Boolean Function</a>   | boolean(expr) | Will return true if the contained expression can be converted to a true value, otherwise false, or false if the contained expression results in false. The contained expression can be a constant or another expression, and an attempt to convert to boolean will be made.  |
+| <a href='funcs/date.html' >Date Function</a>   | date([expr], [format]) | Will return the value, of the contained expression, as a date. If no contained expression is provided, then it will return the current date and time. The contained expression can be aconstant or another expression, and an attempt to convert to date will be made. If a second *format* parameter is provided, then the expr will be parsed according to that format.  |
+| <a href='ops/decimal.html' >Decimal Function</a>   | decimal(expr) | Will return the value as a decimal of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to decmial will be made|
+| <a href='ops/double.html' >Double Function</a>   | double(expr) | Will return the value as a double of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to double will be made|
+| <a href='ops/integer.html' >Integer Function</a>   | integer(expr) | Will return the value as a integer of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to integer will be made|
+| <a href='ops/string.html' >String Function</a>   | string(expr, [format]) | Will return the value of the contained expression as a string. Complex (object and array values will be expanded). A formatting parameter can also be specifified to alter how the value is encoded|
