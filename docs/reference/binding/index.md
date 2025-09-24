@@ -27,7 +27,7 @@ More information on the binding syntax can be found in <a href='../binding_conte
 
 ## Parentheses
 
-The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'partameters'.
+The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'parameters'.
 
 ## Storing results
 
@@ -37,12 +37,14 @@ Sometimes it is appropriate to capture the results of a function or calculation 
 
 The library supports the use of the standard mathematical binary operators, using standard operator precedence.
 
-<dl>
-  <dt><a href='ops/Parenthese.html' >Parenthese () </a></dt>
-  <dd>.</dd>
-  <dt><a href='ops/Multiply.html' >Multiply * </a></dt>
-  <dd>Will multiply the result of the left hand side by the right hand  and return the result.</dd>
-</dl>
+| Operator  | Example  | Description |
+|---|---|---|
+| <a href='ops/Multiply.html' >Multiply '*' </a>   | LHS * RHS | Will multiply the value of the expression on the left hand side by the value of the expression on right hand side and return the result   |
+| <a href='ops/Divide.html' >Divide '/' </a>   | LHS / RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the result  |
+| <a href='ops/Plus.html' >Plus '+' </a>   | LHS + RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the result, or concatenate 2 strings together |
+| <a href='ops/Minus.html' >Minus '-' </a>   | LHS - RHS | Will subtract the value of the expression on the left hand side with the value of the expression on right hand side and return the result  |
+| <a href='ops/Modulo.html' >Modulo '%' </a>   | LHS % RHS | Will divide the value of the expression on the left hand side by the value of the expression on right hand side and return the *remainder* as a result  |
+| <a href='ops/Exponent.html' >Exponent '^' </a>   | LHS ^ RHS | Will raise the value of the expression on the left hand side to the power of the value of the expression on right hand side and return the  result  |
 
 ---
 
