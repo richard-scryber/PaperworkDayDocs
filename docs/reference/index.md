@@ -33,7 +33,7 @@ Styling properties such as <code>font-style: italic;</code> or <code>background-
 
 ### <a href='binding/index.html'>Binding Expressions reference</a>
 
-Binding content within templates to external or calculated data is key to creating dynamic documents and can be within the <code><% raw %><span>{{ handle bars notation }}</span><% endraw %></code> or attributes <code><% raw %><rect width='{{model.width}}' .../><% endraw %></code> or within style properties with the <code>width: calc(model.size + 10pt)</code>. This sections details all the available expressions and functions that can be used within a template (or passed content) to dynamically alter the output, or layout, or design of the resultant document.
+Binding content within templates to external or calculated data is key to creating dynamic documents and can be within the <code>{% raw %}<span>{{ handle bars notation }}</span>{% endraw %}</code> or attributes <code>{% raw %}<rect width='{{model.width}}' .../>{% endraw %}</code> or within style properties with the <code>width: calc(model.size + 10pt)</code>. This sections details all the available expressions and functions that can be used within a template (or passed content) to dynamically alter the output, or layout, or design of the resultant document.
 
 ### <a href='svgelements/index.html'>SVG drawing element refererence</a>
 
