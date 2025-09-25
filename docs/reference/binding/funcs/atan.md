@@ -1,6 +1,6 @@
 ---
 layout: default
-title: abs()
+title: atan()
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Absolute Function - abs()
+# Arc Tangent Function - atan()
 
 Summary
 
