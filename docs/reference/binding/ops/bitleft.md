@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bitwise Shit Left (>>) Operator
+title: Bitwise Shift Left (<<)
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Bitwise Shit Left (<<) Operator
+# Bitwise Shift Left (&lt;&lt;) Operator
 
 Summary
 

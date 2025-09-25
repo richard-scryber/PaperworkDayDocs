@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Divide (/) Operator
+title: Divide (/)
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference

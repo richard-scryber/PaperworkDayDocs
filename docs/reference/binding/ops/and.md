@@ -1,6 +1,6 @@
 ---
 layout: default
-title: And (&&) Operator
+title: And (&&)
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference

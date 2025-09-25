@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Multiply Operator
+title: Greater Than (>)
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Muliply Operator
+# Greater Than (>) Operator
 
 Summary
 

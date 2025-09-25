@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bitwise And (&) Operator
+title: Bitwise And (&)
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference

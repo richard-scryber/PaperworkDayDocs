@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Equals (==) Operator
+title: Equals (==)
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference

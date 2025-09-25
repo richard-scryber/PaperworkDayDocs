@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bitwise Or (|) Operator
+title: Bitwise Or (|)
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
