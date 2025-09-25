@@ -1,6 +1,6 @@
 ---
 layout: default
-title: asin()
+title: sin()
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Arcsine Mathematical Function - asin()
+# Sine Mathematical Function - sin()
 
 Summary
 

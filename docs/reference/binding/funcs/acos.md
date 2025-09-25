@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Arc Cos Mathematical Function - acos()
+# Arccosine Mathematical Function - acos()
 
 Summary
 

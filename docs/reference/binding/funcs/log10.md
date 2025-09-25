@@ -1,6 +1,6 @@
 ---
 layout: default
-title: asin()
+title: log10()
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Arcsine Mathematical Function - asin()
+# Logarithm Base 10 Mathematical Function - log10()
 
 Summary
 
