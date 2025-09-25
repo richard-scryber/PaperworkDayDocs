@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Plus (+) Operator
+title: Plus (+)
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Muliply Operator
+# Plus (+) Operator
 
 Summary
 

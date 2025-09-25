@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Arc Sin Function - asin()
+# Arc Sin Mathematical Function - asin()
 
 Summary
 

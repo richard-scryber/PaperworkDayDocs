@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Absolute Function - abs()
+# Absolute Mathematical Function - abs()
 
 Summary
 

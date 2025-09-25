@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Arc Tangent Function - atan()
+# Arc Tangent Mathematical Function - atan()
 
 Summary
 

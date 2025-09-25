@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Or (||) Operator
+title: Or (||)
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference

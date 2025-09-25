@@ -1,6 +1,6 @@
 ---
 layout: default
-title: acos()
+title: boolean()
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Arc Cos Mathematical Function - acos()
+# Boolean Conversion Function - boolean()
 
 Summary
 
