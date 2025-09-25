@@ -2,6 +2,7 @@
 layout: default
 title: Multiply Operator
 parent: Binding Expressions
+parent_url: /reference/binding/
 has_children: false
 has_toc: false
 ---
