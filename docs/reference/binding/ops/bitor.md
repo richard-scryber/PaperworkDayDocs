@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Multiply Operator
+title: Bitwise Or (|) Operator
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Muliply Operator
+# Bitwise Or (|) Operator
 
 Summary
 
