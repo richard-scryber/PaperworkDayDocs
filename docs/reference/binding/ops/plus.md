@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Multiply Operator
+title: Plus (+) Operator
 parent: Binding Expressions
 parent_url: /reference/binding/
 grand_parent: Template reference
