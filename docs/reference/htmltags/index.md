@@ -45,7 +45,7 @@ More information on actual document creation can be found in <a href='/index.htm
 
 ### Comments
 
-Enclosing any content starting with a <code>&lt!-</code> and ending with <code>--&gt</code> will mark a comment within the document.
+Enclosing any content starting with a <code>&lt;!-</code> and ending with <code>--&gt;</code> will mark a comment within the document.
 
 This content will not be processed, and be ignored. It can either be used to exclude content whilst creating a template, or adding context to the structure of a document.
 
@@ -67,7 +67,7 @@ By default **all** elements are *case sensitive* and are all lower case.
 
 ## Document Root Elements
 
-The root of a document is always the <code>&lt;html&gt;</code> element. Known DTD and or processing instructions (<code>&lt;?  ?&gt;</code>) along with whitespace and comments are supported before the outermost html element
+The root of a document is always the <code>&lt;html&gt;</code> element. Any known DTD and or processing instructions (<code>&lt;?&nbsp;&nbsp;?&gt;</code>) along with whitespace and comments are supported before the outermost html element
 
 | Operator  | Example  | Description |
 |---|---|---|
@@ -83,10 +83,10 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 |---|---|---|
 | <a href='tags/head.html' >Head Content</a>   | <code>&lt;head&gt;</code> | Will mark the beginning of the metadata section for the document.   |
 | <a href='tags/body.html' >Body Content</a>   | <code>&lt;body&gt;</code> | Will mark the beginning of the visible content within the document.   |
-| <a href='tags/header.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new block for content that will be shown at the top of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element, <u>**unless**</u> a continuation header is defined.   |
-| <a href='tags/footer.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element, <u>**unless**</u> a continuation header is defined.   |
-| <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document, within a <code>&lt;body&gt;</code> element <u>**except**</u> the first page.   |
-| <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document, within a <code>&lt;body&gt;</code> element <u>**except**</u> the first page.   |
+| <a href='tags/header.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new block for content that will be shown at the top of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element, **<u>unless</u>** a continuation header is defined.   |
+| <a href='tags/footer.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element, **<u>unless</u>** a continuation header is defined.   |
+| <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
+| <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
 | <a href='tags/frameset.html' >Frameset Content</a>   | <code>&lt;frameset&gt;</code> | Will mark the beginning of a set of <code>&lt;frame&gt;</code> elements that a source document, or template and a set of pages from that document to include. Replaces the <code>&lt;body&gt;</code> element.   |
 | <a href='tags/frame.html' >Frame</a>   | <code>&lt;frame&gt;</code> | An element within a <code>&lt;frameset&gt;</code> that begins a new section of content from within an existing document, or from a referenced template.  |
 
