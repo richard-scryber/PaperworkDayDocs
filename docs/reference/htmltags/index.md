@@ -15,7 +15,7 @@ The library supports the use of (x)html elements, also referred to a tags to str
 The root level of a document should always be the <code>&lt;html&gt;</code> element, preferably using the xmlns attribute namespace to define the content as xhtml. Followed by the <code>&lt;head&gt;</code> element for document meta data (to describe the the document) and then a <code>&lt;body&gt;</code> to contain the content of the document. 
 
 ```
-   {% raw %}<html xmlns='http://www.w3.org/1999/xhtml'>
+   <html xmlns='http://www.w3.org/1999/xhtml'>
     <head>
 
     </head>
