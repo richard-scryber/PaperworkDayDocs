@@ -85,11 +85,16 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 
 ## Document Metadata
 
-The library supports the use of the following relational operators for comparing values.
+The library supports the use of the following elements within the meta-data <code>&lt;head&gt;</code> of the document.
 
 | Operator  | Example  | Description |
 |---|---|---|
-| <a href='ops/equals.html' >Equals '==' </a>   | LHS == RHS | Will return true if the left and right side are the same value, otherwise false. If the types of values are different, then an attempt to convert to the same value will be made.   |
+| <a href='tags/title.html' >Document Title</a>   | <code>&lt;title&gt;</code> | A purely textual value that will set the display title for the output document.   |
+| <a href='tags/base.html' >Document Base Path</a>   | <code>&lt;base&gt;</code> | A folder or uri reference to to a path where any relative files specified in the content of the document (images etc.) can be located.  |
+| <a href='tags/meta.html' >Meta data</a>   | <code>&lt;meta&gt;</code> | A generalized informational tag that can define information about the final document production, its owners or security settings for use.  |
+| <a href='tags/link.html' >Linked files</a>   | <code>&lt;link&gt;</code> | References an external file that contains resources (specifically styles) that the document should use when generating the output.  |
+| <a href='tags/styles.html' >Style content</a>   | <code>&lt;style&gt;</code> | Marks the document specific visual styles for the content that the document should use. Has a higher priority than any linked stylesheets.  |
+
 
 
 ---
