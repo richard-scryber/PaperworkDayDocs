@@ -83,8 +83,8 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 | <a href='tags/body.html' >Body Content</a>   | <code>&lt;body&gt;</code> | Will mark the beginning of the visible content within the document.   |
 | <a href='tags/header.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document **including** the first page, *unless* a continuation header is defined.   |
 | <a href='tags/footer.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document **including** the first page, *unless* a continuation header is defined.   |
-| <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation-header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document **except** the first page.   |
-| <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation-footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document **except** the first page.   |
+| <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document **except** the first page.   |
+| <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document **except** the first page.   |
 | <a href='tags/frameset.html' >Frameset Content</a>   | <code>&lt;frameset&gt;</code> | Will mark the beginning of a set of frames that a source document, or template and a set of pages from that document to include. Replaces the <code>&lt;body&gt;</code> element.   |
 | <a href='tags/frame.html' >Frame</a>   | <code>&lt;frame&gt;</code> | An within a <code>&lt;frameset&gt;</code> that begins a new section of content from within an existing document, or from a referenced template.  |
 
@@ -109,11 +109,17 @@ The library supports the use of the following elements within the meta-data <cod
 
 ## Content Sectioning Elements
 
-The library supports the use of the following logical operators.
+The library supports the use of the following sectioning elements used to divide up the main content of the template into significant blocks.
 
 | Operator  | Example  | Description |
 |---|---|---|
-
+| <a href='tags/address.html' >Address</a>   | <code>&lt;address&gt;</code> | Denotes a single block of content that is a physical address.   |
+| <a href='tags/article.html' >Article</a>   | <code>&lt;article&gt;</code> | Denotes a continuous block of content that is on a specific subject.  |
+| <a href='tags/aside.html' >Aside</a>   | <code>&lt;aside&gt;</code> | Denotes a block of content that is not part of the current main content but relevant to place at the location.  |
+| <a href='tags/headings.html' >Headings 1-6</a>   | <code>&lt;h1&gt; - &lt;h6&gt;</code> | Denotes a heading within the content. Levels vary in importance from level 1 down to 6.  |
+| <a href='tags/main.html' >Main</a>   | <code>&lt;main&gt;</code> | Marks the content within the template that contains the majority of the document content.  |
+| <a href='tags/nav.html' >Nav</a>   | <code>&lt;nav&gt;</code> | Marks the content within the template that performs navigation functions.  |
+| <a href='tags/section.html' >Section</a>   | <code>&lt;section&gt;</code> | Denotes a block of content within the template that is in discreet. **NOTE:** By default each section in a template will start on a new page in the output document. |
 
 ---
 
@@ -124,7 +130,7 @@ To convert values of one type to another, the following functions are available.
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/boolean.html' >Boolean Function</a>   | boolean(expr) | Will return true if the contained expression can be converted to a true value, otherwise false, or false if the contained expression results in false. The contained expression can be a constant or another expression, and an attempt to convert to boolean will be made.  |
+| <a href='tags/blockquote.html' >Block Quote</a>   | <code>&lt;section&gt;</code> | Denotes a block of content within the template that is in discreet. **NOTE:** By default each section in a template will start on a new page in the output document. |
 
 
 ## Dynamic Content Elements
