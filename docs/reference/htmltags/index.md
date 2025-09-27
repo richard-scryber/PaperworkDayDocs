@@ -179,6 +179,7 @@ To
 | <a href='funcs/object.html' >Object</a>   | <code>&lt;object&gt;</code> |   |
 | <a href='funcs/page.html' >Page Number</a>   | <code>&lt;page&gt;</code> |   |
 | <a href='funcs/template.html' >Template Content</a>   | <code>&lt;template&gt;</code> |   |
+| <a href='funcs/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> |  |
 
 ---
 
@@ -189,10 +190,10 @@ To
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/img.html' >Image Content</a>   | <code>&lt;img&gt;</code>|
-| <a href='funcs/picture.html' >Picture Content</a>   | <code>&lt;picture&gt;</code> |
-| <a href='funcs/meter.html' >Meters</a>   | <code>&lt;meter&gt;</code> |
-| <a href='funcs/progress.html' >Progress</a>   | <code>&lt;progress&gt;</code> |
+| <a href='funcs/img.html' >Image Content</a>   | <code>&lt;img&gt;</code>|  |
+| <a href='funcs/picture.html' >Picture Content</a>   | <code>&lt;picture&gt;</code> |  |
+| <a href='funcs/meter.html' >Meters</a>   | <code>&lt;meter&gt;</code> |  |
+| <a href='funcs/progress.html' >Progress</a>   | <code>&lt;progress&gt;</code> |  |
 
 ---
 
@@ -203,11 +204,31 @@ The
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/abbr.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> |
-| <a href='funcs/big.html' >Big</a>   | <code>&lt;big&gt;</code> |
-| <a href='funcs/b.html' >Bold</a>   | <code>&lt;b&gt;</code> |
-| <a href='funcs/cite.html' >Cite</a>   | <code>&lt;cite&gt;</code> |
-
+| <a href='funcs/abbr.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> |  |
+| <a href='funcs/big.html' >Big</a>   | <code>&lt;big&gt;</code> |  |
+| <a href='funcs/b.html' >Bold</a>   | <code>&lt;b&gt;</code> |  |
+| <a href='funcs/cite.html' >Citation</a>   | <code>&lt;cite&gt;</code> |  |
+| <a href='funcs/code.html' >Code</a>   | <code>&lt;code&gt;</code> |  |
+| <a href='funcs/defn.html' >Definition</a>   | <code>&lt;defn&gt;</code> |  |
+| <a href='funcs/del.html' >Mark Deleted</a>   | <code>&lt;del&gt;</code> |  |
+| <a href='funcs/em.html' >Emphasised</a>   | <code>&lt;em&gt;</code> |  |
+| <a href='funcs/font.html' >Font style</a>   | <code>&lt;font&gt;</code> |  |
+| <a href='funcs/ins.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> |  |
+| <a href='funcs/i.html' >Italic</a>   | <code>&lt;i&gt;</code> |  |
+| <a href='funcs/kbd.html' >Keyboard</a>   | <code>&lt;kbd&gt;</code> |  |
+| <a href='funcs/br.html' >Line Break</a>   | <code>&lt;br&gt;</code> |  |
+| <a href='funcs/mark.html' >Marked span</a>   | <code>&lt;mark&gt;</code> |  |
+| <a href='funcs/num.html' >Number</a>   | <code>&lt;num&gt;</code> |  |
+| <a href='funcs/output.html' >Output</a>   | <code>&lt;output&gt;</code> |  |
+| <a href='funcs/q.html' >Quoted Span</a>   | <code>&lt;q&gt;</code> |  |
+| <a href='funcs/em.html' >Sample Span</a>   | <code>&lt;samp&gt;</code> |  |
+| <a href='funcs/small.html' >Small</a>   | <code>&lt;small&gt;</code> |  |
+| <a href='funcs/strike.html' >Strikethrough</a>   | <code>&lt;strike&gt;</code> |  |
+| <a href='funcs/strong.html' >Strong style</a>   | <code>&lt;strong&gt;</code> |  |
+| <a href='funcs/sub.html' >Subscript</a>   | <code>&lt;sub&gt;</code> |  |
+| <a href='funcs/sup.html' >Superscript</a>   | <code>&lt;sup&gt;</code> |  |
+| <a href='funcs/time.html' >Time Span</a>   | <code>&lt;time&gt;</code> |  |
+| <a href='funcs/u.html' >Underlined</a>   | <code>&lt;u&gt;</code> |  |
 
 ---
 
