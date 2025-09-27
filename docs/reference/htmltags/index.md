@@ -12,7 +12,7 @@ nav_order: 5
 
 The library supports the use of (x)html elements, also referred to a tags to structure content within a template. This can be extended by embedding external files, or dymamically binding elements.
 
-The root level of a document should always be the <code>&lt;html&gt;</code> element, preferably using the xmlns attribute namespace to define the content as xhtml. Followed by the <code>&lt;head&gt;</code> element for document meta data (to describe the the document) and then a <code>&lt;body&gt;</code> to contain the content of the document. 
+The root level of a document should always be the <code>&lt;html&gt;</code> element, (preferably) using the xmlns attribute namespace to define the content as xhtml. Followed by the <code>&lt;head&gt;</code> element for document meta data (to describe the the document) and then a <code>&lt;body&gt;</code> to contain the content of the document. 
 
 ```
    <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -29,6 +29,8 @@ The root level of a document should always be the <code>&lt;html&gt;</code> elem
 
 
 More information on actual document creation can be found in <a href='/index.html'>Getting Started</a>
+
+---
 
 <details open markdown="block">
   <summary>
@@ -59,13 +61,13 @@ This is done with the <code>&lt;frameset&gt;</code> element, replacing the body,
 
 ### Case sensitivity
 
-By default **all** elements are case sensitive and are all lower case.
+By default **all** elements are *case sensitive* and are all lower case.
 
 ---
 
 ## Document Root Elements
 
-The root of a document is always the <code>&lt;html&gt;</code> element. A DTD and or processing instructions (<code>&lt;?  ?&gt;</code>) along with whitespace and comments are allowed before the outermost html element
+The root of a document is always the <code>&lt;html&gt;</code> element. Known DTD and or processing instructions (<code>&lt;?  ?&gt;</code>) along with whitespace and comments are supported before the outermost html element
 
 | Operator  | Example  | Description |
 |---|---|---|
@@ -81,10 +83,10 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 |---|---|---|
 | <a href='tags/head.html' >Head Content</a>   | <code>&lt;head&gt;</code> | Will mark the beginning of the metadata section for the document.   |
 | <a href='tags/body.html' >Body Content</a>   | <code>&lt;body&gt;</code> | Will mark the beginning of the visible content within the document.   |
-| <a href='tags/header.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new content block for elements that will be shown at the top of the first page of the document and all subsequent pages within a <code>&lt;body&gt;</code> element, **unless** a continuation header is defined.   |
-| <a href='tags/footer.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of the first page of the document and all subsequent pages within a <code>&lt;body&gt;</code> element, **unless** a continuation header is defined.   |
-| <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document, within a <code>&lt;body&gt;</code> element **except** the first page.   |
-| <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document, within a <code>&lt;body&gt;</code> element **except** the first page.   |
+| <a href='tags/header.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new block for content that will be shown at the top of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element, <u>**unless**</u> a continuation header is defined.   |
+| <a href='tags/footer.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element, <u>**unless**</u> a continuation header is defined.   |
+| <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document, within a <code>&lt;body&gt;</code> element <u>**except**</u> the first page.   |
+| <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document, within a <code>&lt;body&gt;</code> element <u>**except**</u> the first page.   |
 | <a href='tags/frameset.html' >Frameset Content</a>   | <code>&lt;frameset&gt;</code> | Will mark the beginning of a set of <code>&lt;frame&gt;</code> elements that a source document, or template and a set of pages from that document to include. Replaces the <code>&lt;body&gt;</code> element.   |
 | <a href='tags/frame.html' >Frame</a>   | <code>&lt;frame&gt;</code> | An element within a <code>&lt;frameset&gt;</code> that begins a new section of content from within an existing document, or from a referenced template.  |
 
