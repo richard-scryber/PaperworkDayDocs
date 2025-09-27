@@ -162,40 +162,51 @@ Description
 | <a href='tags/td.html' >Table Cell</a>   | <code>&lt;td&gt;</code> |  |
 | <a href='tags/th.html' >Table Header Cell</a>   | <code>&lt;th&gt;</code> |  |
 
+---
 
 ## Dynamic Content Elements
 
-To convert values of one type to another, the following functions are available.
+To
 
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/abs.html' >Abs Function</a>   | abs(expr) | Will return true if the contained expression can be converted to a true value, otherwise false, or false if the contained expression results in false. The contained expression can be a constant or another expression, and an attempt to convert to boolean will be made.  |
+| <a href='funcs/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |   |
+| <a href='funcs/embed.html' >Anchor Link</a>   | <code>&lt;embed&gt;</code> |   |
+| <a href='funcs/fragment.html' >Fragment</a>   | <code>&lt;fragment&gt;</code> |   |
+| <a href='funcs/if.html' >If *</a>   | <code>&lt;if&gt;</code> |   |
+| <a href='funcs/iframe.html' >i-Frame</a>   | <code>&lt;iframe&gt;</code> |   |
+| <a href='funcs/object.html' >Object</a>   | <code>&lt;object&gt;</code> |   |
+| <a href='funcs/page.html' >Page Number</a>   | <code>&lt;page&gt;</code> |   |
+| <a href='funcs/template.html' >Template Content</a>   | <code>&lt;template&gt;</code> |   |
 
-
-
+---
 
 ## Image and Multimedia Elements
 
-To manipulate string (character) values, the following functions are available.
+To 
 
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/concat.html' >Concatenate Function</a>   | concat(expr [, expr, expr, ...]) | Will take any length of parameters and concatenate them into a single string returning the result. If one of the parameters is a collection or array, then each of the entries in that array will be appended to the string in order. |
+| <a href='funcs/img.html' >Image Content</a>   | <code>&lt;img&gt;</code>|
+| <a href='funcs/picture.html' >Picture Content</a>   | <code>&lt;picture&gt;</code> |
+| <a href='funcs/meter.html' >Meters</a>   | <code>&lt;meter&gt;</code> |
+| <a href='funcs/progress.html' >Progress</a>   | <code>&lt;progress&gt;</code> |
 
-
+---
 
 ## Inline Text Semantic Elements
 
-The date functions work on (Gregorian) DateTime values, to convert strings, use one of the date() conversion function overloads.
-
-**Note**" When working with the current date time value, it will increase as the document is processed unless it is stored in a <code>var</code> value.
+The 
 
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/adddays.html' >Add Days Function</a>   | adddays(expr , count) | Adds the specified number of days in the second parameter (either positive or negative), to the date value in the first parameter, returning the result |
+| <a href='funcs/abbr.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> |
+| <a href='funcs/big.html' >Big</a>   | <code>&lt;big&gt;</code> |
+| <a href='funcs/b.html' >Bold</a>   | <code>&lt;b&gt;</code> |
+| <a href='funcs/cite.html' >Cite</a>   | <code>&lt;cite&gt;</code> |
 
 
 ---
@@ -209,5 +220,5 @@ The library supports the use of the following logical functions.
 |---|---|---|
 | <a href='funcs/if.html' >If Function </a>   | if(expr, trueresult, falseresult) | Checks the first parameter and if the result is true, then returns the second parameter, otherwise the third parameter is evaluated and returned.   |
 
---
+---
 
