@@ -7,7 +7,7 @@ has_toc: false
 nav_order: 5
 ---
 
-# Binding Expression Reference
+# Supported Binding Expression Reference
 {: .no_toc }
 
 The library supports the use of data binding to dynamic content within a template (including refrenced files and stylesheets) so that textual or visual elements and styles can be updated when a document is created.
