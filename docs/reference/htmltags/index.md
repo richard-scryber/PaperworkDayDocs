@@ -47,17 +47,23 @@ Enclosing any content starting with a <code>&lt!-</code> and ending with <code>-
 
 This content will not be processed, and be ignored. It can either be used to exclude content whilst creating a template, or adding context to the structure of a document.
 
+---
+
 ### Modifying or updating existing documents.
 
 Along with the creation of new documents, it is possible to modify a previously created document - adding new pages or removing existing pages.
 
 This is done with the <code>&lt;frameset&gt;</code> element, replacing the body, and more information can be found <a href='/learning/templates/frameset.html' >here</a>
 
+---
+
 ### Case sensitivity
 
 By default **all** elements are case sensitive and are all lower case.
 
-## Document Root
+---
+
+## Document Root Elements
 
 The root of a document is always the <code>&lt;html&gt;</code> element. A DTD and or processing instructions (<code>{% raw %}<?  ?>{% endraw %}</code>) along with whitespace and comments are allowed before the outermost html element
 
@@ -65,7 +71,9 @@ The root of a document is always the <code>&lt;html&gt;</code> element. A DTD an
 |---|---|---|
 | <a href='tags/html.html' >Html Root</a>   | <code>&lt;html&gt;</code> | Marks the start of a complete document template, and encapsulates all references, metadata and content for that template.   |
 
-## Sectioning Root
+---
+
+## Sectioning Root Elements
 
 Within the document there should be a <code>&lt;head&gt;</code> for the metadata and either a <code>&lt;body&gt;</code> or <code>&lt;frameset&gt;</code> for the actual content.
 
@@ -83,7 +91,7 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 
 ---
 
-## Document Metadata
+## Document Metadata Elements
 
 The library supports the use of the following elements within the meta-data <code>&lt;head&gt;</code> of the document.
 
@@ -99,7 +107,7 @@ The library supports the use of the following elements within the meta-data <cod
 
 ---
 
-## Content Sectioning
+## Content Sectioning Elements
 
 The library supports the use of the following logical operators.
 
@@ -109,7 +117,7 @@ The library supports the use of the following logical operators.
 
 ---
 
-## Structural content
+## Structural Content Elements
 
 To convert values of one type to another, the following functions are available.
 
@@ -119,7 +127,7 @@ To convert values of one type to another, the following functions are available.
 | <a href='funcs/boolean.html' >Boolean Function</a>   | boolean(expr) | Will return true if the contained expression can be converted to a true value, otherwise false, or false if the contained expression results in false. The contained expression can be a constant or another expression, and an attempt to convert to boolean will be made.  |
 
 
-## Dynamic Content
+## Dynamic Content Elements
 
 To convert values of one type to another, the following functions are available.
 
@@ -131,7 +139,7 @@ To convert values of one type to another, the following functions are available.
 
 
 
-## Image and Multimedia
+## Image and Multimedia Elements
 
 To manipulate string (character) values, the following functions are available.
 
@@ -142,7 +150,7 @@ To manipulate string (character) values, the following functions are available.
 
 
 
-## Inline text semantics
+## Inline Text Semantic Elements
 
 The date functions work on (Gregorian) DateTime values, to convert strings, use one of the date() conversion function overloads.
 
@@ -157,7 +165,7 @@ The date functions work on (Gregorian) DateTime values, to convert strings, use 
 ---
 
 
-## Forms Content <span class='label label-yellow'>alpha</span>
+## Forms Content Elements <span class='label label-yellow'>alpha</span>
 
 The library supports the use of the following logical functions.
 
