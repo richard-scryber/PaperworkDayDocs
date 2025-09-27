@@ -65,7 +65,7 @@ By default **all** elements are case sensitive and are all lower case.
 
 ## Document Root Elements
 
-The root of a document is always the <code>&lt;html&gt;</code> element. A DTD and or processing instructions (<code>{% raw %}<?  ?>{% endraw %}</code>) along with whitespace and comments are allowed before the outermost html element
+The root of a document is always the <code>&lt;html&gt;</code> element. A DTD and or processing instructions (<code>&lt;?  ?&gt;</code>) along with whitespace and comments are allowed before the outermost html element
 
 | Operator  | Example  | Description |
 |---|---|---|
@@ -81,8 +81,8 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 |---|---|---|
 | <a href='tags/head.html' >Head Content</a>   | <code>&lt;head&gt;</code> | Will mark the beginning of the metadata section for the document.   |
 | <a href='tags/body.html' >Body Content</a>   | <code>&lt;body&gt;</code> | Will mark the beginning of the visible content within the document.   |
-| <a href='tags/header.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document **including** the first page, *unless* a continuation header is defined.   |
-| <a href='tags/footer.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document **including** the first page, *unless* a continuation header is defined.   |
+| <a href='tags/header.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new content block for elements that will be shown at the top of the first page of the document and all subsequent pages, **unless** a continuation header is defined.   |
+| <a href='tags/footer.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of the first page of the document and all subsequent pages, **unless** a continuation header is defined.   |
 | <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document **except** the first page.   |
 | <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document **except** the first page.   |
 | <a href='tags/frameset.html' >Frameset Content</a>   | <code>&lt;frameset&gt;</code> | Will mark the beginning of a set of frames that a source document, or template and a set of pages from that document to include. Replaces the <code>&lt;body&gt;</code> element.   |
@@ -133,13 +133,13 @@ To convert values of one type to another, the following functions are available.
 | <a href='tags/blockquote.html' >Block Quote</a>   | <code>&lt;blockquote&gt;</code> | Denotes a quote within the context of the temlate that is separate from the primary content |
 | <a href='tags/details.html' >Details</a>   | <code>&lt;details&gt;</code> | Denotes a block of content that has a summery (below) and then further information available to provide greater clarity.|
 | <a href='tags/summary.html' >Details Summary</a>   | <code>&lt;summary&gt;</code> | Denotes the shorter information of a details block before the main information |
+| <a href='tags/dl.html' >Definition List</a>   | <code>&lt;dl&gt;</code> |  |
+| <a href='tags/dt.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> |  |
+| <a href='tags/dd.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> |  |
 | <a href='tags/div.html' >Div</a>   | <code>&lt;div&gt;</code> | Denotes a discrete block of content, without specific meaining |
 | <a href='tags/figure.html' >Figure</a>   | <code>&lt;figure&gt;</code> |  |
 | <a href='tags/figcaption.html' >Figure Caption</a>   | <code>&lt;figcaption&gt;</code> |  |
 | <a href='tags/hr.html' >Horizontal Rule</a>   | <code>&lt;hr&gt;</code> |  |
-| <a href='tags/dl.html' >Definition List</a>   | <code>&lt;dl&gt;</code> |  |
-| <a href='tags/dt.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> |  |
-| <a href='tags/dd.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> |  |
 | <a href='tags/ol.html' >List Ordered</a>   | <code>&lt;ol&gt;</code> |  |
 | <a href='tags/ul.html' >List Unordered</a>   | <code>&lt;ul&gt;</code> |  |
 | <a href='tags/li.html' >List Item</a>   | <code>&lt;li&gt;</code> |  |
@@ -151,6 +151,8 @@ To convert values of one type to another, the following functions are available.
 ---
 
 ## Table Content Elements
+
+Description
 
 | <a href='tags/table.html' >Table</a>   | <code>&lt;table&gt;</code> |  |
 | <a href='tags/tbody.html' >Table Body</a>   | <code>&lt;tbody&gt;</code> |  |
