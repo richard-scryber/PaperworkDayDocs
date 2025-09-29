@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# &lt;body&gt; : The Document Body Element
+# &lt;body&gt; : The Document Body
 
 Summary
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: html
+title: header
 parent: HTML Elements
 parent_url: /reference/htmltags/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# HTML Section Root &lt;html&gt;
+# &lt;header&gt; : The Header Element
 
 Summary
 

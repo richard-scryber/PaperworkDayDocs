@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# &lt;continuation-footer&gt; : Document Continuation Footer
+# &lt;continuation-footer&gt; : The Continuation Footer
 
 Summary
 

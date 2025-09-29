@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# &lt;continuation-header&gt; : Document Continuation Header
+# &lt;continuation-header&gt; : The Continuation Header
 
 Summary
 

@@ -84,13 +84,8 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 |---|---|---|
 | <a href='tags/head.html' >Head Content</a>   | <code>&lt;head&gt;</code> | Will mark the beginning of the metadata section for the document.   |
 | <a href='tags/body.html' >Body Content</a>   | <code>&lt;body&gt;</code> | Will mark the beginning of the visible content within the document.   |
-| <a href='tags/header.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new block for content that will be shown at the top of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element **<u>unless</u>** a continuation header is defined.   |
-| <a href='tags/footer.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element **<u>unless</u>** a continuation header is defined.   |
-| <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
-| <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
 | <a href='tags/frameset.html' >Frameset Content</a>   | <code>&lt;frameset&gt;</code> | Will mark the beginning of a set of <code>&lt;frame&gt;</code> elements that a source document, or template and a set of pages from that document to include. Replaces the <code>&lt;body&gt;</code> element.   |
 | <a href='tags/frame.html' >Frame</a>   | <code>&lt;frame&gt;</code> | An element within a <code>&lt;frameset&gt;</code> that begins a new section of content from within an existing document, or from a referenced template.  |
-
 
 ---
 
@@ -118,10 +113,10 @@ The library supports the use of the following sectioning elements used to divide
 
 | Operator  | Example  | Description |
 |---|---|---|
-| <a href='tags/address.html' >Address</a>   | <code>&lt;address&gt;</code> | Denotes a single block of content that is a physical address.   |
-| <a href='tags/article.html' >Article</a>   | <code>&lt;article&gt;</code> | Denotes a continuous block of content that is on a specific subject.  |
-| <a href='tags/aside.html' >Aside</a>   | <code>&lt;aside&gt;</code> | Denotes a block of content that is not part of the current main content but relevant to place at the location.  |
-| <a href='tags/headings.html' >Headings 1-6</a>   | <code>&lt;h1&gt; - &lt;h6&gt;</code> | Denotes a heading within the content. Levels vary in importance from level 1 down to 6.  |
+| <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
+| <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
+| <a href='tags/footer.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element **<u>unless</u>** a continuation header is defined.   |
+| <a href='tags/header.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new block for content that will be shown at the top of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element **<u>unless</u>** a continuation header is defined.   |
 | <a href='tags/main.html' >Main</a>   | <code>&lt;main&gt;</code> | Marks the content within the template that contains the majority of the document content.  |
 | <a href='tags/nav.html' >Nav</a>   | <code>&lt;nav&gt;</code> | Marks the content within the template that performs navigation functions.  |
 | <a href='tags/section.html' >Section</a>   | <code>&lt;section&gt;</code> | Denotes a block of content within the template that is in discreet. **NOTE:** By default each section in a template will start on a new page in the output document. |
@@ -151,11 +146,15 @@ The following elements provide a general way to divide content in the template, 
 
 | Function  | Example  | Description |
 |---|---|---|
+| <a href='tags/address.html' >Address</a>   | <code>&lt;address&gt;</code> | Denotes a single block of content that is a physical address.   |
+| <a href='tags/article.html' >Article</a>   | <code>&lt;article&gt;</code> | Denotes a continuous block of content that is on a specific subject.  |
+| <a href='tags/aside.html' >Aside</a>   | <code>&lt;aside&gt;</code> | Denotes a block of content that is not part of the current main content but relevant to place at the location.  |
 | <a href='tags/blockquote.html' >Block Quote</a>   | <code>&lt;blockquote&gt;</code> | Denotes a quote within the context of the temlate that is separate from the primary content |
 | <a href='tags/details.html' >Details</a>   | <code>&lt;details&gt;</code> | Denotes a block of content that has a <code>summary</code> (below) and then further information available to provide greater clarity.|
 | <a href='tags/summary.html' >Details Summary</a>   | <code>&lt;summary&gt;</code> | Denotes the shorter information of a details block before the main information. |
 | <a href='tags/div.html' >Div</a>   | <code>&lt;div&gt;</code> | Denotes a discrete block of content, without specific meaining. |
 | <a href='funcs/fieldset.html' >Fieldset Container</a>   | <code>&lt;fieldset&gt;</code> | Denotes a grouping of similar content with a <code>legend</code> (below) available to describe the content.  |
+| <a href='tags/headings.html' >Headings 1-6</a>   | <code>&lt;h1&gt; - &lt;h6&gt;</code> | Denotes a heading within the content. Levels vary in importance from level 1 down to 6.  |
 | <a href='funcs/legend.html' >Fieldset Legend </a>   | <code>&lt;legend&gt;</code> | A descriptive element to the outer <code>fieldset</code>. |
 | <a href='tags/hr.html' >Horizontal Rule</a>   | <code>&lt;hr&gt;</code> | Denotes a horizontal line, by default across the width of the containing element. |
 | <a href='tags/p.html' >Paragraph</a>   | <code>&lt;p&gt;</code> | Denotes an individual paragraph of content, usually textual. |
