@@ -1,6 +1,6 @@
 ---
 layout: default
-title: h1 - h6
+title: ul
 parent: HTML Elements
 parent_url: /reference/htmltags/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# &lt;h1&gt; - &lt;h2&gt; : The Headings 1-6 Elements
+# &lt;ul&gt; : The Unordered List Element
 
 Summary
 
