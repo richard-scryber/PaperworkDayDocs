@@ -1,6 +1,6 @@
 ---
 layout: default
-title: head
+title: meta
 parent: HTML Elements
 parent_url: /reference/htmltags/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# &lt;meta&gt; : The Document Meta Element
+# &lt;meta&gt; : The Document Metadata Element
 
 Summary
 

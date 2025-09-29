@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# &lt;link&gt; : The Document Links Element
+# &lt;link&gt; : The External Document Links Element
 
 Summary
 
