@@ -154,8 +154,8 @@ The following elements provide a general way to divide content in the template, 
 | <a href='tags/summary.html' >Details Summary</a>   | <code>&lt;summary&gt;</code> | Denotes the shorter information of a details block before the main information. |
 | <a href='tags/div.html' >Div</a>   | <code>&lt;div&gt;</code> | Denotes a discrete block of content, without specific meaining. |
 | <a href='funcs/fieldset.html' >Fieldset Container</a>   | <code>&lt;fieldset&gt;</code> | Denotes a grouping of similar content with a <code>legend</code> (below) available to describe the content.  |
-| <a href='tags/headings.html' >Headings 1-6</a>   | <code>&lt;h1&gt; - &lt;h6&gt;</code> | Denotes a heading within the content. Levels vary in importance from level 1 down to 6.  |
 | <a href='funcs/legend.html' >Fieldset Legend </a>   | <code>&lt;legend&gt;</code> | A descriptive element to the outer <code>fieldset</code>. |
+| <a href='tags/headings.html' >Headings 1-6</a>   | <code>&lt;h1&gt; - &lt;h6&gt;</code> | Denotes a heading within the content. Levels vary in importance from level 1 down to 6.  |
 | <a href='tags/hr.html' >Horizontal Rule</a>   | <code>&lt;hr&gt;</code> | Denotes a horizontal line, by default across the width of the containing element. |
 | <a href='tags/p.html' >Paragraph</a>   | <code>&lt;p&gt;</code> | Denotes an individual paragraph of content, usually textual. |
 | <a href='tags/pre.html' >Pre-formatted</a>   | <code>&lt;pre&gt;</code> | Denotes a block of textual content that is already laid-out into explicit lines and spacing, that should be maintained.  |
