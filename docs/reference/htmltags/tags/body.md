@@ -1,6 +1,6 @@
 ---
 layout: default
-title: &lt;body&gt;
+title: body
 parent: HTML Elements
 parent_url: /reference/htmltags/
 grand_parent: Template reference
