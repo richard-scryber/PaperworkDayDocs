@@ -212,7 +212,7 @@ To
 
 ---
 
-## Inline Special Text Elements
+## Dynamic Text Elements
 
 The following elements support generating dynamic content within the final document based on provided or calculated values.
 
@@ -224,7 +224,7 @@ The following elements support generating dynamic content within the final docum
 | <a href='tags/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> | A simple text element, that also allows data within the template to be calculated, stored and modified during the processing, and then used by other elements later on. |
 
 
-## Inline Semantic Text Elements
+## Semantic Text Elements
 
 The following elements are based on and have a similar function to the standard HTML defined tags. Some will also alter the style of the inner content based on the intended meaning of the element.
 
