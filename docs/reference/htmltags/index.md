@@ -77,6 +77,7 @@ The root of a document is always the <code>&lt;html&gt;</code> element. Any know
 
 ## Sectioning Root Elements
 
+
 Within the document there should be a <code>&lt;head&gt;</code> for the metadata and either a <code>&lt;body&gt;</code> or <code>&lt;frameset&gt;</code> for the actual content.
 
 | Operator  | Example  | Description |
@@ -95,6 +96,7 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 
 ## Document Metadata Elements
 
+
 The library supports the use of the following elements within the meta-data <code>&lt;head&gt;</code> of the document.
 
 | Operator  | Example  | Description |
@@ -111,6 +113,7 @@ The library supports the use of the following elements within the meta-data <cod
 
 ## Content Sectioning Elements
 
+
 The library supports the use of the following sectioning elements used to divide up the main content of the template into significant blocks.
 
 | Operator  | Example  | Description |
@@ -122,6 +125,26 @@ The library supports the use of the following sectioning elements used to divide
 | <a href='tags/main.html' >Main</a>   | <code>&lt;main&gt;</code> | Marks the content within the template that contains the majority of the document content.  |
 | <a href='tags/nav.html' >Nav</a>   | <code>&lt;nav&gt;</code> | Marks the content within the template that performs navigation functions.  |
 | <a href='tags/section.html' >Section</a>   | <code>&lt;section&gt;</code> | Denotes a block of content within the template that is in discreet. **NOTE:** By default each section in a template will start on a new page in the output document. |
+
+---
+
+
+## Dynamic Content Elements
+
+To
+
+
+| Function  | Example  | Description |
+|---|---|---|
+| <a href='funcs/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |   |
+| <a href='funcs/embed.html' >Anchor Link</a>   | <code>&lt;embed&gt;</code> |   |
+| <a href='funcs/fragment.html' >Fragment</a>   | <code>&lt;fragment&gt;</code> |   |
+| <a href='funcs/if.html' >If *</a>   | <code>&lt;if&gt;</code> |   |
+| <a href='funcs/iframe.html' >i-Frame</a>   | <code>&lt;iframe&gt;</code> |   |
+| <a href='funcs/object.html' >Object</a>   | <code>&lt;object&gt;</code> |   |
+| <a href='funcs/page.html' >Page Number</a>   | <code>&lt;page&gt;</code> |   |
+| <a href='funcs/template.html' >Template Content</a>   | <code>&lt;template&gt;</code> |   |
+| <a href='funcs/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> |  |
 
 ---
 
@@ -166,24 +189,6 @@ Description
 
 ---
 
-## Dynamic Content Elements
-
-To
-
-
-| Function  | Example  | Description |
-|---|---|---|
-| <a href='funcs/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |   |
-| <a href='funcs/embed.html' >Anchor Link</a>   | <code>&lt;embed&gt;</code> |   |
-| <a href='funcs/fragment.html' >Fragment</a>   | <code>&lt;fragment&gt;</code> |   |
-| <a href='funcs/if.html' >If *</a>   | <code>&lt;if&gt;</code> |   |
-| <a href='funcs/iframe.html' >i-Frame</a>   | <code>&lt;iframe&gt;</code> |   |
-| <a href='funcs/object.html' >Object</a>   | <code>&lt;object&gt;</code> |   |
-| <a href='funcs/page.html' >Page Number</a>   | <code>&lt;page&gt;</code> |   |
-| <a href='funcs/template.html' >Template Content</a>   | <code>&lt;template&gt;</code> |   |
-| <a href='funcs/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> |  |
-
----
 
 ## Image and Multimedia Elements
 
