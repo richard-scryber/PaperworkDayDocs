@@ -144,7 +144,7 @@ The following elements support the inclusion of further content, or outputing co
 
 ---
 
-## Structural Content Elements
+## Structural Elements
 
 The following elements provide a general way to divide content in the template, to be output in the document.
 
@@ -216,7 +216,7 @@ The following elements support generating dynamic content within the final docum
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/num.html' >Number</a>   | <code>&lt;num&gt;</code> | A textual element that can output a numeric value in a specific display format. |
+| <a href='funcs/num.html' >Number *</a>   | <code>&lt;num&gt;</code> | A textual element that can output a numeric value in a specific display format. |
 | <a href='funcs/page.html' >Page Number *</a>   | <code>&lt;page&gt;</code> | Outputs the current document or sections page number, or alternatively the page number of another referenced element within the final document. |
 | <a href='funcs/time.html' >Time Span</a>   | <code>&lt;time&gt;</code> | A textual element that can output a date time value in a specific format. |
 | <a href='funcs/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> | A simple text element, that also allows data within the template to be calculated, stored and modified during the processing, and then used by other elements later on. |
@@ -255,6 +255,8 @@ The following elements are based on and have a similar function to the standard 
 
 ---
 
+
+* These elements are unique to the library, and are expected to be ignored by other applications / browsers that display the template. 
 
 <!--- 
 
