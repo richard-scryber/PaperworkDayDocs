@@ -4,7 +4,7 @@ title: HTML Elements
 parent: Template reference
 has_children: true
 has_toc: false
-nav_order: 5
+nav_order: 1
 ---
 
 # Supported HTML Element Reference
