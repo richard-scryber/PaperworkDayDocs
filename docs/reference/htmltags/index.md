@@ -131,53 +131,48 @@ The library supports the use of the following sectioning elements used to divide
 
 ## Dynamic Content Elements
 
-To
+The following elements support the inclusion of further content, or outputing content dynamically based on current data during processing.
 
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the content within the anchor link a navigation element to another point in the document output, or an external link to another resource. |
 | <a href='funcs/embed.html' >Embedded Content</a>   | <code>&lt;embed&gt;</code> | Allows external or dynamic content to be included within the output document as if it is part of the original content.  |
 | <a href='funcs/if.html' >If *</a>   | <code>&lt;if&gt;</code> | Denotes any optional block of content that will be output *only* when the <code>data-test</code> value is true.  |
 | <a href='funcs/iframe.html' >i-Frame</a>   | <code>&lt;iframe&gt;</code> | Denotes an external source of content to be included within the output document, but unlike embedding, the inner content does not use any of the outer document visual style.  |
 | <a href='funcs/object.html' >Object</a>   | <code>&lt;object&gt;</code> | Denotes an external source to be attached within the output document, which can then be linked to via the anchor. |
-| <a href='funcs/page.html' >Page Number</a>   | <code>&lt;page&gt;</code> | Outputs the current output document or section page number, or alternatively the page number of another referenced element. |
-| <a href='funcs/template.html' >Template Content</a>   | <code>&lt;template&gt;</code> | An invisible container that will repeatably output its contents based on any bound data. |
-| <a href='funcs/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> | A simple text element, that also allows data within the document to be stored and modified during the processing, to be used by other elements later on. |
+| <a href='funcs/template.html' >Template Content</a>   | <code>&lt;template&gt;</code> | An invisible container that will repeatably re-generate its contents within the document based on any bound data. |
 
 ---
 
 ## Structural Content Elements
 
-To convert values of one type to another, the following functions are available.
+The following elements provide a general way to divide content in the template, to be output in the document.
 
 
 | Function  | Example  | Description |
 |---|---|---|
 | <a href='tags/blockquote.html' >Block Quote</a>   | <code>&lt;blockquote&gt;</code> | Denotes a quote within the context of the temlate that is separate from the primary content |
-| <a href='tags/details.html' >Details</a>   | <code>&lt;details&gt;</code> | Denotes a block of content that has a summery (below) and then further information available to provide greater clarity.|
-| <a href='tags/summary.html' >Details Summary</a>   | <code>&lt;summary&gt;</code> | Denotes the shorter information of a details block before the main information |
-| <a href='tags/div.html' >Div</a>   | <code>&lt;div&gt;</code> | Denotes a discrete block of content, without specific meaining |
-| <a href='funcs/fieldset.html' >Fieldset Container</a>   | <code>&lt;fieldset&gt;</code> | A grouping of similar content with a legend available to describe the content  |
-| <a href='funcs/legend.html' >Fieldset Legend </a>   | <code>&lt;legend&gt;</code> | A descriptive element to the outer <code>fieldset</code> |
-| <a href='tags/figure.html' >Figure</a>   | <code>&lt;figure&gt;</code> |  |
-| <a href='tags/figcaption.html' >Figure Caption</a>   | <code>&lt;figcaption&gt;</code> |  |
-| <a href='tags/hr.html' >Horizontal Rule</a>   | <code>&lt;hr&gt;</code> |  |
-| <a href='tags/menu.html' >Menu List</a>   | <code>&lt;li&gt;</code> |  |
-| <a href='tags/p.html' >Paragraph</a>   | <code>&lt;p&gt;</code> |  |
-| <a href='tags/pre.html' >Pre-formatted</a>   | <code>&lt;pre&gt;</code> |  |
-| <a href='tags/span.html' >Span</a>   | <code>&lt;span&gt;</code> |  |
+| <a href='tags/details.html' >Details</a>   | <code>&lt;details&gt;</code> | Denotes a block of content that has a <code>summary</code> (below) and then further information available to provide greater clarity.|
+| <a href='tags/summary.html' >Details Summary</a>   | <code>&lt;summary&gt;</code> | Denotes the shorter information of a details block before the main information. |
+| <a href='tags/div.html' >Div</a>   | <code>&lt;div&gt;</code> | Denotes a discrete block of content, without specific meaining. |
+| <a href='funcs/fieldset.html' >Fieldset Container</a>   | <code>&lt;fieldset&gt;</code> | Denotes a grouping of similar content with a <code>legend</code> (below) available to describe the content.  |
+| <a href='funcs/legend.html' >Fieldset Legend </a>   | <code>&lt;legend&gt;</code> | A descriptive element to the outer <code>fieldset</code>. |
+| <a href='tags/hr.html' >Horizontal Rule</a>   | <code>&lt;hr&gt;</code> | Denotes a horizontal line, by default across the width of the containing element. |
+| <a href='tags/p.html' >Paragraph</a>   | <code>&lt;p&gt;</code> | Denotes an individual paragraph of content, usually textual. |
+| <a href='tags/pre.html' >Pre-formatted</a>   | <code>&lt;pre&gt;</code> | Denotes a block of textual content that is already laid-out into explicit lines and spacing, that should be maintained.  |
+| <a href='tags/span.html' >Span</a>   | <code>&lt;span&gt;</code> | Denotes a discreet inline container for phrasing content. |
 
 ---
 
 ## List Content Elements
 
-| <a href='tags/dl.html' >Definition List</a>   | <code>&lt;dl&gt;</code> |  |
-| <a href='tags/dt.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> |  |
-| <a href='tags/dd.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> |  |
-| <a href='tags/li.html' >List Item</a>   | <code>&lt;li&gt;</code> |  |
-| <a href='tags/ol.html' >List Ordered</a>   | <code>&lt;ol&gt;</code> |  |
-| <a href='tags/ul.html' >List Unordered</a>   | <code>&lt;ul&gt;</code> |  |
+| <a href='tags/dl.html' >Definition List</a>   | <code>&lt;dl&gt;</code> | A container block of multiple terms <code>dt</code> and associated defintion values <code>dd</dd>.  |
+| <a href='tags/dt.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> | Denotes the term to be defined within the list.  |
+| <a href='tags/dd.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> | Denotes the definition value of the term within the list. |
+| <a href='tags/li.html' >List Item</a>   | <code>&lt;li&gt;</code> | Denotes an individual item within an ordered, unordered or menu list.  |
+| <a href='tags/ol.html' >List Ordered</a>   | <code>&lt;ol&gt;</code> | Denotes a list of items whose order **is not** specific. |
+| <a href='tags/ul.html' >List Unordered</a>   | <code>&lt;ul&gt;</code> | Denotes a list of items whose order **is**  |
+| <a href='tags/menu.html' >Menu List</a>   | <code>&lt;li&gt;</code> | Denotes a list of items that represent a choice.  |
 
 
 ---
@@ -186,13 +181,13 @@ To convert values of one type to another, the following functions are available.
 
 Description
 
-| <a href='tags/table.html' >Table</a>   | <code>&lt;table&gt;</code> |  |
-| <a href='tags/tbody.html' >Table Body</a>   | <code>&lt;tbody&gt;</code> |  |
-| <a href='tags/thead.html' >Table Header</a>   | <code>&lt;thead&gt;</code> |  |
-| <a href='tags/tfoot.html' >Table Footer</a>   | <code>&lt;tfoot&gt;</code> |  |
-| <a href='tags/tr.html' >Table Row</a>   | <code>&lt;tr&gt;</code> |  |
-| <a href='tags/td.html' >Table Cell</a>   | <code>&lt;td&gt;</code> |  |
-| <a href='tags/th.html' >Table Header Cell</a>   | <code>&lt;th&gt;</code> |  |
+| <a href='tags/table.html' >Table</a>   | <code>&lt;table&gt;</code> | A container block whose contents will be output in a tablular (grid) format. |
+| <a href='tags/tbody.html' >Table Body</a>   | <code>&lt;tbody&gt;</code> | An optional table row container that denotes the start of the main part of the parent table. |
+| <a href='tags/thead.html' >Table Header</a>   | <code>&lt;thead&gt;</code> | An optional table row container that denotes the start of the top descriptive part of the parent table. **NOTE**: By default a table header content will repead across columns and pages. |
+| <a href='tags/tfoot.html' >Table Footer</a>   | <code>&lt;tfoot&gt;</code> | An optional table row container that denotes the end content of the parent table. |
+| <a href='tags/tr.html' >Table Row</a>   | <code>&lt;tr&gt;</code> | A grouping of individual cells that will be output next to each other as a single row.  |
+| <a href='tags/td.html' >Table Cell</a>   | <code>&lt;td&gt;</code> | A container for any content to be output in the document within the rectangular boundaries defined within the table. |
+| <a href='tags/th.html' >Table Header Cell</a>   | <code>&lt;th&gt;</code> | A container that denotes a descriptive content of the table, to be output in the document within the rectangular boundaries defined within the table. |
 
 ---
 
@@ -204,36 +199,50 @@ To
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/img.html' >Image Content</a>   | <code>&lt;img&gt;</code>|  |
-| <a href='funcs/picture.html' >Picture Content</a>   | <code>&lt;picture&gt;</code> |  |
-| <a href='funcs/meter.html' >Meters</a>   | <code>&lt;meter&gt;</code> |  |
-| <a href='funcs/progress.html' >Progress</a>   | <code>&lt;progress&gt;</code> |  |
+| <a href='funcs/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the inner content within the anchor link, as a navigation element to another point in the document output, or an external link to another resource. |
+| <a href='funcs/img.html' >Image Content</a>   | <code>&lt;img&gt;</code>| An external (or bound) graphical image, referernced within the template, to be output within final document. |
+| <a href='tags/figure.html' >Figure</a>   | <code>&lt;figure&gt;</code> | Denotes self contained content, usually a graphic or illustration, with an optional caption to describe the content. |
+| <a href='tags/figcaption.html' >Figure Caption</a>   | <code>&lt;figcaption&gt;</code> | Denotes the description of the main content within the parent figure. |
+| <a href='funcs/picture.html' >Picture Content</a>   | <code>&lt;picture&gt;</code> | A group of <code>source</code> elements that define various graphical images that can be used on the pictures inner <code>img</code> element based on media and output type. |
+| <a href='funcs/picture.html' >Picture Source</a>   | <code>&lt;source&gt;</code> | A single reference to an external or bound graphic that will be used instead of the primary <code>img</code> source when it is a more appropriate rendition. |
+| <a href='funcs/meter.html' >Meters</a>   | <code>&lt;meter&gt;</code> | Denotes a scalar value within a pre-defined range. |
+| <a href='funcs/progress.html' >Progress</a>   | <code>&lt;progress&gt;</code> | Denotes how far within an individual process, based on scalar value within a known range. |
 
 ---
 
-## Inline Text Semantic Elements
+## Inline Special Text Elements
 
-The 
+The following elements support generating dynamic content within the final document based on provided or calculated values.
+
+| Function  | Example  | Description |
+|---|---|---|
+| <a href='funcs/num.html' >Number</a>   | <code>&lt;num&gt;</code> | A textual element that can output a numeric value in a specific display format. |
+| <a href='funcs/page.html' >Page Number *</a>   | <code>&lt;page&gt;</code> | Outputs the current document or sections page number, or alternatively the page number of another referenced element within the final document. |
+| <a href='funcs/time.html' >Time Span</a>   | <code>&lt;time&gt;</code> | A textual element that can output a date time value in a specific format. |
+| <a href='funcs/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> | A simple text element, that also allows data within the template to be calculated, stored and modified during the processing, and then used by other elements later on. |
+
+
+## Inline Semantic Text Elements
+
+The following elements are based on and have a similar function to the standard HTML defined tags. Some will also alter the style of the inner content based on the intended meaning of the element.
 
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/abbr.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> |  |
-| <a href='funcs/big.html' >Big</a>   | <code>&lt;big&gt;</code> |  |
-| <a href='funcs/b.html' >Bold</a>   | <code>&lt;b&gt;</code> |  |
-| <a href='funcs/cite.html' >Citation</a>   | <code>&lt;cite&gt;</code> |  |
-| <a href='funcs/code.html' >Code</a>   | <code>&lt;code&gt;</code> |  |
-| <a href='funcs/defn.html' >Definition</a>   | <code>&lt;defn&gt;</code> |  |
-| <a href='funcs/del.html' >Mark Deleted</a>   | <code>&lt;del&gt;</code> |  |
-| <a href='funcs/em.html' >Emphasised</a>   | <code>&lt;em&gt;</code> |  |
-| <a href='funcs/font.html' >Font style</a>   | <code>&lt;font&gt;</code> |  |
-| <a href='funcs/ins.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> |  |
-| <a href='funcs/i.html' >Italic</a>   | <code>&lt;i&gt;</code> |  |
-| <a href='funcs/kbd.html' >Keyboard</a>   | <code>&lt;kbd&gt;</code> |  |
-| <a href='funcs/label.html' >Label</a>   | <code>&lt;label&gt;</code> |   |
-| <a href='funcs/br.html' >Line Break</a>   | <code>&lt;br&gt;</code> |  |
-| <a href='funcs/mark.html' >Marked span</a>   | <code>&lt;mark&gt;</code> |  |
-| <a href='funcs/num.html' >Number</a>   | <code>&lt;num&gt;</code> |  |
+| <a href='funcs/abbr.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> | Marks the inner content as an abbreviation of a longer word or phrase. |
+| <a href='funcs/big.html' >Big</a>   | <code>&lt;big&gt;</code> | Marks that the inner content of the <code>big</code> element should use a larger font size. |
+| <a href='funcs/b.html' >Bold</a>   | <code>&lt;b&gt;</code> | Marks that the inner content of the <code>b</code> element should use a heavier font weight. |
+| <a href='funcs/cite.html' >Citation</a>   | <code>&lt;cite&gt;</code> | Marks that the inner content of the <code>big</code> element should use a larger font size. |
+| <a href='funcs/code.html' >Code</a>   | <code>&lt;code&gt;</code> | Marks the inner content as a reference to an different source of material, that is used within the template and output document. |
+| <a href='funcs/defn.html' >Definition</a>   | <code>&lt;defn&gt;</code> | Marks the inner content as to be defined within the template and output document. |
+| <a href='funcs/del.html' >Mark Deleted</a>   | <code>&lt;del&gt;</code> | Marks a range of content that has been deleted from an original document. |
+| <a href='funcs/em.html' >Emphasised</a>   | <code>&lt;em&gt;</code> | Marks a range of content that has stress emphasis. |
+| <a href='funcs/ins.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> | Marks a range of content that has been into the document. |
+| <a href='funcs/i.html' >Italic</a>   | <code>&lt;i&gt;</code> | Marks that the inner content of the <code>i</code> element should use an oblique font style. |
+| <a href='funcs/kbd.html' >Keyboard</a>   | <code>&lt;kbd&gt;</code> | Marks the inner content of the <code>kbd</code> element as user text input. |
+| <a href='funcs/label.html' >Label</a>   | <code>&lt;label&gt;</code> |  Denotes a description for another associated template content elements |
+| <a href='funcs/br.html' >Line Break</a>   | <code>&lt;br&gt;</code> | Denotes a break in the flow of content in the output document, Any following content will begin on a new line.  |
+| <a href='funcs/mark.html' >Marked span</a>   | <code>&lt;mark&gt;</code> | Marks the inner content of the <code>mark</code> element as highlighted for reference.  |
 | <a href='funcs/output.html' >Output</a>   | <code>&lt;output&gt;</code> |  |
 | <a href='funcs/q.html' >Quoted Span</a>   | <code>&lt;q&gt;</code> |  |
 | <a href='funcs/em.html' >Sample Span</a>   | <code>&lt;samp&gt;</code> |  |
@@ -242,7 +251,6 @@ The
 | <a href='funcs/strong.html' >Strong style</a>   | <code>&lt;strong&gt;</code> |  |
 | <a href='funcs/sub.html' >Subscript</a>   | <code>&lt;sub&gt;</code> |  |
 | <a href='funcs/sup.html' >Superscript</a>   | <code>&lt;sup&gt;</code> |  |
-| <a href='funcs/time.html' >Time Span</a>   | <code>&lt;time&gt;</code> |  |
 | <a href='funcs/u.html' >Underlined</a>   | <code>&lt;u&gt;</code> |  |
 
 ---
