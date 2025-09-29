@@ -199,14 +199,14 @@ To
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the inner content within the anchor link, as a navigation element to another point in the document output, or an external link to another resource. |
-| <a href='funcs/img.html' >Image Content</a>   | <code>&lt;img&gt;</code>| An external (or bound) graphical image, referernced within the template, to be output within final document. |
+| <a href='tags/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the inner content within the anchor link, as a navigation element to another point in the document output, or an external link to another resource. |
+| <a href='tags/img.html' >Image Content</a>   | <code>&lt;img&gt;</code>| An external (or bound) graphical image, referernced within the template, to be output within final document. |
 | <a href='tags/figure.html' >Figure</a>   | <code>&lt;figure&gt;</code> | Denotes self contained content, usually a graphic or illustration, with an optional caption to describe the content. |
 | <a href='tags/figcaption.html' >Figure Caption</a>   | <code>&lt;figcaption&gt;</code> | Denotes the description of the main content within the parent figure. |
-| <a href='funcs/picture.html' >Picture Content</a>   | <code>&lt;picture&gt;</code> | A group of <code>source</code> elements that define various graphical images that can be used on the pictures inner <code>img</code> element based on media and output type. |
-| <a href='funcs/picture.html' >Picture Source</a>   | <code>&lt;source&gt;</code> | A single reference to an external or bound graphic that will be used instead of the primary <code>img</code> source when it is a more appropriate rendition. |
-| <a href='funcs/meter.html' >Meters</a>   | <code>&lt;meter&gt;</code> | Denotes a scalar value within a pre-defined range. |
-| <a href='funcs/progress.html' >Progress</a>   | <code>&lt;progress&gt;</code> | Denotes how far within an individual process, based on scalar value within a known range. |
+| <a href='tags/picture.html' >Picture Content</a>   | <code>&lt;picture&gt;</code> | A group of <code>source</code> elements that define various graphical images that can be used on the pictures inner <code>img</code> element based on media and output type. |
+| <a href='tags/picture.html' >Picture Source</a>   | <code>&lt;source&gt;</code> | A single reference to an external or bound graphic that will be used instead of the primary <code>img</code> source when it is a more appropriate rendition. |
+| <a href='tags/meter.html' >Meters</a>   | <code>&lt;meter&gt;</code> | Denotes a scalar value within a pre-defined range. |
+| <a href='tags/progress.html' >Progress</a>   | <code>&lt;progress&gt;</code> | Denotes how far within an individual process, based on scalar value within a known range. |
 
 ---
 
@@ -216,10 +216,10 @@ The following elements support generating dynamic content within the final docum
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/num.html' >Number *</a>   | <code>&lt;num&gt;</code> | A textual element that can output a numeric value in a specific display format. |
-| <a href='funcs/page.html' >Page Number *</a>   | <code>&lt;page&gt;</code> | Outputs the current document or sections page number, or alternatively the page number of another referenced element within the final document. |
-| <a href='funcs/time.html' >Time Span</a>   | <code>&lt;time&gt;</code> | A textual element that can output a date time value in a specific format. |
-| <a href='funcs/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> | A simple text element, that also allows data within the template to be calculated, stored and modified during the processing, and then used by other elements later on. |
+| <a href='tags/num.html' >Number *</a>   | <code>&lt;num&gt;</code> | A textual element that can output a numeric value in a specific display format. |
+| <a href='tags/page.html' >Page Number *</a>   | <code>&lt;page&gt;</code> | Outputs the current document or sections page number, or alternatively the page number of another referenced element within the final document. |
+| <a href='tags/time.html' >Time Span</a>   | <code>&lt;time&gt;</code> | A textual element that can output a date time value in a specific format. |
+| <a href='tags/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> | A simple text element, that also allows data within the template to be calculated, stored and modified during the processing, and then used by other elements later on. |
 
 
 ## Inline Semantic Text Elements
@@ -229,29 +229,29 @@ The following elements are based on and have a similar function to the standard 
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/abbr.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> | Marks the inner content as an abbreviation of a longer word or phrase. |
-| <a href='funcs/big.html' >Big</a>   | <code>&lt;big&gt;</code> | Marks that the inner content of the <code>big</code> element should use a larger font size. |
-| <a href='funcs/b.html' >Bold</a>   | <code>&lt;b&gt;</code> | Marks that the inner content of the <code>b</code> element should use a heavier font weight. |
-| <a href='funcs/cite.html' >Citation</a>   | <code>&lt;cite&gt;</code> | Denotes the inner content of the <code>cite</code> is a reference to an different source which has been used in the document. |
-| <a href='funcs/code.html' >Code</a>   | <code>&lt;code&gt;</code> | Marks the inner content as a reference to an different source of material, that is used within the template and output document. |
-| <a href='funcs/defn.html' >Definition</a>   | <code>&lt;defn&gt;</code> | Marks the inner content as to be defined within the template and output document. |
-| <a href='funcs/del.html' >Mark Deleted</a>   | <code>&lt;del&gt;</code> | Marks a range of content that has been deleted from an original document. |
-| <a href='funcs/em.html' >Emphasised</a>   | <code>&lt;em&gt;</code> | Marks a range of content that has stress emphasis. |
-| <a href='funcs/ins.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> | Marks a range of content that has been added into the document. |
-| <a href='funcs/i.html' >Italic</a>   | <code>&lt;i&gt;</code> | Marks that the inner content of the <code>i</code> element should use an oblique font style. |
-| <a href='funcs/kbd.html' >Keyboard</a>   | <code>&lt;kbd&gt;</code> | Marks the inner content of the <code>kbd</code> element as user text input. |
-| <a href='funcs/label.html' >Label</a>   | <code>&lt;label&gt;</code> |  Denotes a description for another associated template content elements |
-| <a href='funcs/br.html' >Line Break</a>   | <code>&lt;br&gt;</code> | Denotes a break in the flow of content in the output document, Any following content will begin on a new line.  |
-| <a href='funcs/mark.html' >Marked span</a>   | <code>&lt;mark&gt;</code> | Marks the inner content of the <code>mark</code> element as highlighted for reference.  |
-| <a href='funcs/output.html' >Output</a>   | <code>&lt;output&gt;</code> | Marks the inner content of the <code>output</element> as  a value that has been calculated by a separate process. |
-| <a href='funcs/q.html' >Quoted Span</a>   | <code>&lt;q&gt;</code> | Marks the inner content of the <code>q</element> as short inline quotation. |
-| <a href='funcs/em.html' >Sample Span</a>   | <code>&lt;samp&gt;</code> | Marks the inner content of the <code>output</element> as a sample or quoted output by a separate process. |
-| <a href='funcs/small.html' >Small</a>   | <code>&lt;small&gt;</code> | Marks that the inner content of the <code>small</code> element should use a smaller font size.  |
-| <a href='funcs/strike.html' >Strikethrough</a>   | <code>&lt;strike&gt;</code> | Marks that the inner content of the <code>strike</code> element should have a line rendered through the middle of it.  |
-| <a href='funcs/strong.html' >Strong style</a>   | <code>&lt;strong&gt;</code> | Marks a reng of content that has a strong emphasis.  |
-| <a href='funcs/sub.html' >Subscript</a>   | <code>&lt;sub&gt;</code> | Marks that the inner content of the <code>sub</code> element should subscript - use a smaller font and have an ascender on the baseline of the parent line. |
-| <a href='funcs/sup.html' >Superscript</a>   | <code>&lt;sup&gt;</code> | Marks that the inner content of the <code>sub</code> element should superscript - use a smaller font and have a descender on the mid-point of the parent line. |
-| <a href='funcs/u.html' >Underlined</a>   | <code>&lt;u&gt;</code> | Marks that the inner content of the <code>u</code> element should have a line rendered underneath it. |
+| <a href='tags/abbr.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> | Marks the inner content as an abbreviation of a longer word or phrase. |
+| <a href='tags/big.html' >Big</a>   | <code>&lt;big&gt;</code> | Marks that the inner content of the <code>big</code> element should use a larger font size, by default 120%. |
+| <a href='tags/b.html' >Bold</a>   | <code>&lt;b&gt;</code> | Marks that the inner content of the <code>b</code> element should use a heavier font weight. |
+| <a href='tags/cite.html' >Citation</a>   | <code>&lt;cite&gt;</code> | Denotes the inner content of the <code>cite</code> is a reference to an different source which has been used in the document. |
+| <a href='tags/code.html' >Code</a>   | <code>&lt;code&gt;</code> | Marks the inner content as a reference to an different source of material, that is used within the template and output document. |
+| <a href='tags/defn.html' >Definition</a>   | <code>&lt;defn&gt;</code> | Marks the inner content as to be defined within the template and output document. |
+| <a href='tags/del.html' >Mark Deleted</a>   | <code>&lt;del&gt;</code> | Marks a range of content that has been deleted from an original document. |
+| <a href='tags/em.html' >Emphasised</a>   | <code>&lt;em&gt;</code> | Marks a range of content that has stress emphasis. |
+| <a href='tags/ins.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> | Marks a range of content that has been added into the document. |
+| <a href='tags/i.html' >Italic</a>   | <code>&lt;i&gt;</code> | Marks that the inner content of the <code>i</code> element should use an oblique font style. |
+| <a href='tags/kbd.html' >Keyboard</a>   | <code>&lt;kbd&gt;</code> | Marks the inner content of the <code>kbd</code> element as user text input. |
+| <a href='tags/label.html' >Label</a>   | <code>&lt;label&gt;</code> |  Denotes a description for another associated template content elements |
+| <a href='tags/br.html' >Line Break</a>   | <code>&lt;br&gt;</code> | Denotes a break in the flow of content in the output document, Any following content will begin on a new line.  |
+| <a href='tags/mark.html' >Marked span</a>   | <code>&lt;mark&gt;</code> | Marks the inner content of the <code>mark</code> element as highlighted for reference.  |
+| <a href='tags/output.html' >Output</a>   | <code>&lt;output&gt;</code> | Marks the inner content of the <code>output</element> as  a value that has been calculated by a separate process. |
+| <a href='tags/q.html' >Quoted Span</a>   | <code>&lt;q&gt;</code> | Marks the inner content of the <code>q</element> as short inline quotation. |
+| <a href='tags/em.html' >Sample Span</a>   | <code>&lt;samp&gt;</code> | Marks the inner content of the <code>output</element> as a sample or quoted output by a separate process. |
+| <a href='tags/small.html' >Small</a>   | <code>&lt;small&gt;</code> | Marks that the inner content of the <code>small</code> element should use a smaller font size, by default 70%  |
+| <a href='tags/strike.html' >Strikethrough</a>   | <code>&lt;strike&gt;</code> | Marks that the inner content of the <code>strike</code> element should have a line rendered through the middle of it.  |
+| <a href='tags/strong.html' >Strong style</a>   | <code>&lt;strong&gt;</code> | Marks a reng of content that has a strong emphasis.  |
+| <a href='tags/sub.html' >Subscript</a>   | <code>&lt;sub&gt;</code> | Marks that the inner content of the <code>sub</code> element should be subscript - use a smaller font and have an ascender on the baseline of the parent line. |
+| <a href='tags/sup.html' >Superscript</a>   | <code>&lt;sup&gt;</code> | Marks that the inner content of the <code>sub</code> element should be superscript - use a smaller font and have a descender on the mid-point of the parent line. |
+| <a href='tags/u.html' >Underlined</a>   | <code>&lt;u&gt;</code> | Marks that the inner content of the <code>u</code> element should have a line rendered underneath it. |
 
 ---
 
@@ -266,8 +266,8 @@ The library supports the use of the following logical functions.
 
 | Operator  | Example  | Description |
 |---|---|---|
-| <a href='funcs/input.html' >Input Control </a>   | <code>&lt;fieldset&gt;</code> |   |
-| <a href='funcs/select.html' >Select Control </a>   | <code>&lt;select&gt;</code> |   |
+| <a href='tags/input.html' >Input Control </a>   | <code>&lt;fieldset&gt;</code> |   |
+| <a href='tags/select.html' >Select Control </a>   | <code>&lt;select&gt;</code> |   |
 
 --->
 
