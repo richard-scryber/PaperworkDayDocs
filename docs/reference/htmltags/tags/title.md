@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# &lt;base&gt; : The Document Title
+# &lt;title&gt; : The Document Title
 
 Summary
 
