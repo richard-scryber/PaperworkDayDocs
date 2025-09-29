@@ -162,6 +162,7 @@ To convert values of one type to another, the following functions are available.
 | <a href='tags/dt.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> |  |
 | <a href='tags/dd.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> |  |
 | <a href='tags/div.html' >Div</a>   | <code>&lt;div&gt;</code> | Denotes a discrete block of content, without specific meaining |
+| <a href='funcs/fieldset.html' >Fieldset Container</a>   | <code>&lt;fieldset&gt;</code> |   |
 | <a href='tags/figure.html' >Figure</a>   | <code>&lt;figure&gt;</code> |  |
 | <a href='tags/figcaption.html' >Figure Caption</a>   | <code>&lt;figcaption&gt;</code> |  |
 | <a href='tags/hr.html' >Horizontal Rule</a>   | <code>&lt;hr&gt;</code> |  |
@@ -223,6 +224,8 @@ The
 | <a href='funcs/ins.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> |  |
 | <a href='funcs/i.html' >Italic</a>   | <code>&lt;i&gt;</code> |  |
 | <a href='funcs/kbd.html' >Keyboard</a>   | <code>&lt;kbd&gt;</code> |  |
+| <a href='funcs/label.html' >Label</a>   | <code>&lt;label&gt;</code> |   |
+| <a href='funcs/legend.html' >Legend </a>   | <code>&lt;legend&gt;</code> |   |
 | <a href='funcs/br.html' >Line Break</a>   | <code>&lt;br&gt;</code> |  |
 | <a href='funcs/mark.html' >Marked span</a>   | <code>&lt;mark&gt;</code> |  |
 | <a href='funcs/num.html' >Number</a>   | <code>&lt;num&gt;</code> |  |
@@ -240,13 +243,16 @@ The
 ---
 
 
+<!--- 
+
 ## Forms Content Elements <span class='label label-yellow'>alpha</span>
 
 The library supports the use of the following logical functions.
 
 | Operator  | Example  | Description |
 |---|---|---|
-| <a href='funcs/if.html' >If Function </a>   | if(expr, trueresult, falseresult) | Checks the first parameter and if the result is true, then returns the second parameter, otherwise the third parameter is evaluated and returned.   |
+| <a href='funcs/input.html' >Input Control </a>   | <code>&lt;fieldset&gt;</code> |   |
+| <a href='funcs/select.html' >Select Control </a>   | <code>&lt;select&gt;</code> |   |
 
----
+--->
 
