@@ -158,21 +158,27 @@ To convert values of one type to another, the following functions are available.
 | <a href='tags/blockquote.html' >Block Quote</a>   | <code>&lt;blockquote&gt;</code> | Denotes a quote within the context of the temlate that is separate from the primary content |
 | <a href='tags/details.html' >Details</a>   | <code>&lt;details&gt;</code> | Denotes a block of content that has a summery (below) and then further information available to provide greater clarity.|
 | <a href='tags/summary.html' >Details Summary</a>   | <code>&lt;summary&gt;</code> | Denotes the shorter information of a details block before the main information |
-| <a href='tags/dl.html' >Definition List</a>   | <code>&lt;dl&gt;</code> |  |
-| <a href='tags/dt.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> |  |
-| <a href='tags/dd.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> |  |
 | <a href='tags/div.html' >Div</a>   | <code>&lt;div&gt;</code> | Denotes a discrete block of content, without specific meaining |
 | <a href='funcs/fieldset.html' >Fieldset Container</a>   | <code>&lt;fieldset&gt;</code> |   |
 | <a href='tags/figure.html' >Figure</a>   | <code>&lt;figure&gt;</code> |  |
 | <a href='tags/figcaption.html' >Figure Caption</a>   | <code>&lt;figcaption&gt;</code> |  |
 | <a href='tags/hr.html' >Horizontal Rule</a>   | <code>&lt;hr&gt;</code> |  |
-| <a href='tags/ol.html' >List Ordered</a>   | <code>&lt;ol&gt;</code> |  |
-| <a href='tags/ul.html' >List Unordered</a>   | <code>&lt;ul&gt;</code> |  |
-| <a href='tags/li.html' >List Item</a>   | <code>&lt;li&gt;</code> |  |
 | <a href='tags/menu.html' >Menu List</a>   | <code>&lt;li&gt;</code> |  |
 | <a href='tags/p.html' >Paragraph</a>   | <code>&lt;p&gt;</code> |  |
 | <a href='tags/pre.html' >Pre-formatted</a>   | <code>&lt;pre&gt;</code> |  |
 | <a href='tags/span.html' >Span</a>   | <code>&lt;span&gt;</code> |  |
+
+---
+
+## List Content Elements
+
+| <a href='tags/dl.html' >Definition List</a>   | <code>&lt;dl&gt;</code> |  |
+| <a href='tags/dt.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> |  |
+| <a href='tags/dd.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> |  |
+| <a href='tags/li.html' >List Item</a>   | <code>&lt;li&gt;</code> |  |
+| <a href='tags/ol.html' >List Ordered</a>   | <code>&lt;ol&gt;</code> |  |
+| <a href='tags/ul.html' >List Unordered</a>   | <code>&lt;ul&gt;</code> |  |
+
 
 ---
 
