@@ -131,6 +131,7 @@ The following elements support the inclusion of further content, or outputing co
 
 | Function  | Example  | Description |
 |---|---|---|
+| <a href='tags/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the inner content within the anchor link, as a navigation element to another point in the document output, or an external link to another resource. |
 | <a href='funcs/embed.html' >Embedded Content</a>   | <code>&lt;embed&gt;</code> | Allows external or dynamic content to be included within the output document as if it is part of the original content.  |
 | <a href='funcs/if.html' >If *</a>   | <code>&lt;if&gt;</code> | Denotes any optional block of content that will be output *only* when the <code>data-test</code> value is true.  |
 | <a href='funcs/iframe.html' >i-Frame</a>   | <code>&lt;iframe&gt;</code> | Denotes an external source of content to be included within the output document, but unlike embedding, the inner content does not use any of the outer document visual style.  |
@@ -165,6 +166,8 @@ The following elements provide a general way to divide content in the template, 
 
 ## List Content Elements
 
+The following elements allow content to be output within a list style, to show a grouping of similar items along with a marker, number or term to identify each one.
+
 | <a href='tags/dl.html' >Definition List</a>   | <code>&lt;dl&gt;</code> | A container block of multiple terms <code>dt</code> and associated defintion values <code>dd</dd>.  |
 | <a href='tags/dt.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> | Denotes the term to be defined within the list.  |
 | <a href='tags/dd.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> | Denotes the definition value of the term within the list. |
@@ -191,14 +194,13 @@ Description
 ---
 
 
-## Image and Multimedia Elements
+## Image and Graphical Elements
 
 To 
 
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='tags/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the inner content within the anchor link, as a navigation element to another point in the document output, or an external link to another resource. |
 | <a href='tags/img.html' >Image Content</a>   | <code>&lt;img&gt;</code>| An external (or bound) graphical image, referernced within the template, to be output within final document. |
 | <a href='tags/figure.html' >Figure</a>   | <code>&lt;figure&gt;</code> | Denotes self contained content, usually a graphic or illustration, with an optional caption to describe the content. |
 | <a href='tags/figcaption.html' >Figure Caption</a>   | <code>&lt;figcaption&gt;</code> | Denotes the description of the main content within the parent figure. |
@@ -206,6 +208,7 @@ To
 | <a href='tags/picture.html' >Picture Source</a>   | <code>&lt;source&gt;</code> | A single reference to an external or bound graphic that will be used instead of the primary <code>img</code> source when it is a more appropriate rendition. |
 | <a href='tags/meter.html' >Meters</a>   | <code>&lt;meter&gt;</code> | Denotes a scalar value within a pre-defined range. |
 | <a href='tags/progress.html' >Progress</a>   | <code>&lt;progress&gt;</code> | Denotes how far within an individual process, based on scalar value within a known range. |
+| <a href='tags/svg/' >SVG Drawing</a>   | <code>&lt;svg&gt;</code> | The library supports a full set of SVG elements and attributes. These are covered in their own section <a href='/reference/svg/' >here</a>. |
 
 ---
 

@@ -9,7 +9,7 @@ has_toc: false
 # Template content refererence
 {: .no_toc }
 
-All the elements, attributes, style selectors and properties that paperwork and the core library support
+All the elements, attributes, style selectors and properties that the core library supports.
 
 ---
 
