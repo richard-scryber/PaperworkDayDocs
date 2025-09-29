@@ -65,7 +65,7 @@ By default **all** elements are *case sensitive* and are all lower case.
 
 ---
 
-## Document Root Elements
+## Document Root Element
 
 The root of a document is always the <code>&lt;html&gt;</code> element. Any known DTD and or processing instructions (<code>&lt;?&nbsp;&nbsp;?&gt;</code>) along with whitespace and comments are supported before the outermost html element
 
