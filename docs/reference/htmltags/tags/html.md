@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <html>
+title: &lt;html&gt;
 parent: HTML Elements
 parent_url: /reference/htmltags/
 grand_parent: Template reference
@@ -22,21 +22,21 @@ Summary
 ## Supported Attributes
 
 
---
+---
 
 ## Notes
 
 
--- 
+---
 
 ## Examples
 
 
---
+---
 
 
 ## See Also
 
 
---
+---
 
