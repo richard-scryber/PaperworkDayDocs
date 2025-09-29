@@ -232,26 +232,26 @@ The following elements are based on and have a similar function to the standard 
 | <a href='funcs/abbr.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> | Marks the inner content as an abbreviation of a longer word or phrase. |
 | <a href='funcs/big.html' >Big</a>   | <code>&lt;big&gt;</code> | Marks that the inner content of the <code>big</code> element should use a larger font size. |
 | <a href='funcs/b.html' >Bold</a>   | <code>&lt;b&gt;</code> | Marks that the inner content of the <code>b</code> element should use a heavier font weight. |
-| <a href='funcs/cite.html' >Citation</a>   | <code>&lt;cite&gt;</code> | Marks that the inner content of the <code>big</code> element should use a larger font size. |
+| <a href='funcs/cite.html' >Citation</a>   | <code>&lt;cite&gt;</code> | Denotes the inner content of the <code>cite</code> is a reference to an different source which has been used in the document. |
 | <a href='funcs/code.html' >Code</a>   | <code>&lt;code&gt;</code> | Marks the inner content as a reference to an different source of material, that is used within the template and output document. |
 | <a href='funcs/defn.html' >Definition</a>   | <code>&lt;defn&gt;</code> | Marks the inner content as to be defined within the template and output document. |
 | <a href='funcs/del.html' >Mark Deleted</a>   | <code>&lt;del&gt;</code> | Marks a range of content that has been deleted from an original document. |
 | <a href='funcs/em.html' >Emphasised</a>   | <code>&lt;em&gt;</code> | Marks a range of content that has stress emphasis. |
-| <a href='funcs/ins.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> | Marks a range of content that has been into the document. |
+| <a href='funcs/ins.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> | Marks a range of content that has been added into the document. |
 | <a href='funcs/i.html' >Italic</a>   | <code>&lt;i&gt;</code> | Marks that the inner content of the <code>i</code> element should use an oblique font style. |
 | <a href='funcs/kbd.html' >Keyboard</a>   | <code>&lt;kbd&gt;</code> | Marks the inner content of the <code>kbd</code> element as user text input. |
 | <a href='funcs/label.html' >Label</a>   | <code>&lt;label&gt;</code> |  Denotes a description for another associated template content elements |
 | <a href='funcs/br.html' >Line Break</a>   | <code>&lt;br&gt;</code> | Denotes a break in the flow of content in the output document, Any following content will begin on a new line.  |
 | <a href='funcs/mark.html' >Marked span</a>   | <code>&lt;mark&gt;</code> | Marks the inner content of the <code>mark</code> element as highlighted for reference.  |
-| <a href='funcs/output.html' >Output</a>   | <code>&lt;output&gt;</code> |  |
-| <a href='funcs/q.html' >Quoted Span</a>   | <code>&lt;q&gt;</code> |  |
-| <a href='funcs/em.html' >Sample Span</a>   | <code>&lt;samp&gt;</code> |  |
-| <a href='funcs/small.html' >Small</a>   | <code>&lt;small&gt;</code> |  |
-| <a href='funcs/strike.html' >Strikethrough</a>   | <code>&lt;strike&gt;</code> |  |
-| <a href='funcs/strong.html' >Strong style</a>   | <code>&lt;strong&gt;</code> |  |
-| <a href='funcs/sub.html' >Subscript</a>   | <code>&lt;sub&gt;</code> |  |
-| <a href='funcs/sup.html' >Superscript</a>   | <code>&lt;sup&gt;</code> |  |
-| <a href='funcs/u.html' >Underlined</a>   | <code>&lt;u&gt;</code> |  |
+| <a href='funcs/output.html' >Output</a>   | <code>&lt;output&gt;</code> | Marks the inner content of the <code>output</element> as  a value that has been calculated by a separate process. |
+| <a href='funcs/q.html' >Quoted Span</a>   | <code>&lt;q&gt;</code> | Marks the inner content of the <code>q</element> as short inline quotation. |
+| <a href='funcs/em.html' >Sample Span</a>   | <code>&lt;samp&gt;</code> | Marks the inner content of the <code>output</element> as a sample or quoted output by a separate process. |
+| <a href='funcs/small.html' >Small</a>   | <code>&lt;small&gt;</code> | Marks that the inner content of the <code>small</code> element should use a smaller font size.  |
+| <a href='funcs/strike.html' >Strikethrough</a>   | <code>&lt;strike&gt;</code> | Marks that the inner content of the <code>strike</code> element should have a line rendered through the middle of it.  |
+| <a href='funcs/strong.html' >Strong style</a>   | <code>&lt;strong&gt;</code> | Marks a reng of content that has a strong emphasis.  |
+| <a href='funcs/sub.html' >Subscript</a>   | <code>&lt;sub&gt;</code> | Marks that the inner content of the <code>sub</code> element should subscript - use a smaller font and have an ascender on the baseline of the parent line. |
+| <a href='funcs/sup.html' >Superscript</a>   | <code>&lt;sup&gt;</code> | Marks that the inner content of the <code>sub</code> element should superscript - use a smaller font and have a descender on the mid-point of the parent line. |
+| <a href='funcs/u.html' >Underlined</a>   | <code>&lt;u&gt;</code> | Marks that the inner content of the <code>u</code> element should have a line rendered underneath it. |
 
 ---
 
