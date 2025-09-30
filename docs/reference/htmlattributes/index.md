@@ -70,8 +70,8 @@ The following attributes are supported on all visual elements - the elements tha
 | Attribute  | Use | Bindable  | Description |
 |---|---|---|--|
 | <a href='global/id.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/title.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/style.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
+| <a href='global/title.html' >title</a>   | *All* | Any | By default adds an entry into the document outline structure with the attribute text value to support navigation to the element. **NOTE**: See the data extension attributes below as some elements override this default behaviour.   |
+| <a href='global/style.html' >id</a>   | *All* | Any | Allows a full definition of the visual appearance of the element. Styles and classes are discussed in their own sections as part of <a href='/styling_content.html'>Styling Content</a> and a full reference section on <a href='/reference/cssselectors/'>CSS selectors</a> and <a href='/reference/cssproperties/'>CSS properties</a>    |
 | <a href='global/hidden.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
 | <a href='global/class.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
 | <a href='global/name.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
