@@ -69,7 +69,7 @@ By default **all** elements are *case sensitive* and are all lower case.
 
 The root of a document is always the <code>&lt;html&gt;</code> element. Any known DTD and or processing instructions (<code>&lt;?&nbsp;&nbsp;?&gt;</code>) along with whitespace and comments are supported before the outermost html element
 
-| Operator  | Example  | Description |
+| Element  | Tag  | Description |
 |---|---|---|
 | <a href='tags/html.html' >Html Root</a>   | <code>&lt;html&gt;</code> | Marks the start of a complete document template, and encapsulates all references, metadata and content for that template.   |
 
@@ -80,7 +80,7 @@ The root of a document is always the <code>&lt;html&gt;</code> element. Any know
 
 Within the document there should be a <code>&lt;head&gt;</code> for the metadata and either a <code>&lt;body&gt;</code> or <code>&lt;frameset&gt;</code> for the actual content.
 
-| Operator  | Example  | Description |
+| Element  | Tag  | Description |
 |---|---|---|
 | <a href='tags/head.html' >Head Content</a>   | <code>&lt;head&gt;</code> | Will mark the beginning of the metadata section for the document.   |
 | <a href='tags/body.html' >Body Content</a>   | <code>&lt;body&gt;</code> | Will mark the beginning of the visible content within the document.   |
@@ -94,7 +94,7 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 
 The library supports the use of the following elements within the meta-data <code>&lt;head&gt;</code> of the document.
 
-| Operator  | Example  | Description |
+| Element  | Tag  | Description |
 |---|---|---|
 | <a href='tags/title.html' >Document Title</a>   | <code>&lt;title&gt;</code> | A purely textual value that will set the display title for the output document.   |
 | <a href='tags/base.html' >Document Base Path</a>   | <code>&lt;base&gt;</code> | A folder or uri reference to to a path where any relative files specified in the content of the document (images etc.) can be located.  |
@@ -111,7 +111,7 @@ The library supports the use of the following elements within the meta-data <cod
 
 The library supports the use of the following sectioning elements used to divide up the main content of the template into significant blocks.
 
-| Operator  | Example  | Description |
+| Element  | Tag  | Description |
 |---|---|---|
 | <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
 | <a href='tags/contheader.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
@@ -129,7 +129,7 @@ The library supports the use of the following sectioning elements used to divide
 The following elements support the inclusion of further content, or outputing content dynamically based on current data during processing.
 
 
-| Function  | Example  | Description |
+| Element  | Tag  | Description |
 |---|---|---|
 | <a href='tags/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the inner content within the anchor link, as a navigation element to another point in the document output, or an external link to another resource. |
 | <a href='funcs/embed.html' >Embedded Content</a>   | <code>&lt;embed&gt;</code> | Allows external or dynamic content to be included within the output document as if it is part of the original content.  |
@@ -145,7 +145,7 @@ The following elements support the inclusion of further content, or outputing co
 The following elements provide a general way to divide content in the template, to be output in the document.
 
 
-| Function  | Example  | Description |
+| Element  | Tag  | Description |
 |---|---|---|
 | <a href='tags/address.html' >Address</a>   | <code>&lt;address&gt;</code> | Denotes a single block of content that is a physical address.   |
 | <a href='tags/article.html' >Article</a>   | <code>&lt;article&gt;</code> | Denotes a continuous block of content that is on a specific subject.  |
@@ -168,6 +168,8 @@ The following elements provide a general way to divide content in the template, 
 
 The following elements allow content to be output within a list style, to show a grouping of similar items along with a marker, number or term to identify each one.
 
+| Element  | Tag  | Description |
+|---|---|---|
 | <a href='tags/dl.html' >Definition List</a>   | <code>&lt;dl&gt;</code> | A container block of multiple terms <code>dt</code> and associated defintion values <code>dd</dd>.  |
 | <a href='tags/dt.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> | Denotes the term to be defined within the list.  |
 | <a href='tags/dd.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> | Denotes the definition value of the term within the list. |
@@ -181,8 +183,10 @@ The following elements allow content to be output within a list style, to show a
 
 ## Table Content Elements
 
-Description
+The following elements allow content to be output within a tabular (grid) structure.
 
+| Element  | Tag  | Description |
+|---|---|---|
 | <a href='tags/table.html' >Table</a>   | <code>&lt;table&gt;</code> | A container block whose contents will be output in a tablular (grid) format. |
 | <a href='tags/tbody.html' >Table Body</a>   | <code>&lt;tbody&gt;</code> | An optional table row container that denotes the start of the main part of the parent table. |
 | <a href='tags/thead.html' >Table Header</a>   | <code>&lt;thead&gt;</code> | An optional table row container that denotes the start of the top descriptive part of the parent table. **NOTE**: By default a table header content will repead across columns and pages. |
@@ -196,7 +200,7 @@ Description
 
 ## Image and Graphical Elements
 
-To 
+The following elements support showing raster and vector graphical content within a document.
 
 
 | Function  | Example  | Description |
