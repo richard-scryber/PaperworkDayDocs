@@ -11,7 +11,8 @@ nav_order: 1
 
 Paperwork can be used at multiple levels, for creating dynamic document from simple templates.
 
-All of them offer the great features of the template driven content creation.
+No matter which is good for you, they all offer the great features of the template driven content creation.
+
 
 <details open markdown="block">
   <summary>
@@ -29,7 +30,7 @@ All of them offer the great features of the template driven content creation.
 For designers and front-end devs, simply hook in the javascript library and start building your templates.
 Zero cost, and client side creation.
 
-How to build <a href='/gettingstarted/viewer/'>Here</a>
+How to build <a href='/gettingStarted/viewer/'>Here</a>
 
 
 ---
@@ -37,16 +38,16 @@ How to build <a href='/gettingstarted/viewer/'>Here</a>
 ## As an request method in you ASP.NET MVC Web Application
 
 For the web app developers. Getting a little bit server-side with dynamic creation and return.
-How to build <a href='/gettingstarted/mvc/'>Here</a>
+How to build <a href='/gettingStarted/mvc/'>Here</a>
 
 ---
 
 ## As a dependency injection to a service application
 
-How to build <a href='/gettingstarted/service/'>Here</a>
+How to build <a href='/gettingStarted/service/'>Here</a>
 
 ---
 
 ## Just the core package
 
-How to build <a href='/gettingstarted/package/'>Here</a>
+How to build <a href='/gettingStarted/package/'>Here</a>
