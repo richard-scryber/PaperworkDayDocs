@@ -1,6 +1,6 @@
 ---
 layout: default
-title: With the viewer
+title: With the JS Viewer
 parent: Getting Started
 parent_url: /gettingStarted/
 has_children: true

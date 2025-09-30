@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Generate Options
-parent: Getting Started
+title: Generation Options
+parent: With the JS Viewer
+parent_url: /viewer/
 nav_order: 2
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: With .NET MVC Web App
+parent: Getting Started
+parent_url: /gettingStarted/
 has_children: true
 nav_order: 2
 ---

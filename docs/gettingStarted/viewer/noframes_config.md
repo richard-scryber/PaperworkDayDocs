@@ -1,7 +1,8 @@
 ---
 layout: default
 title: No Frame Options
-parent: Getting Started
+parent: With the JS Viewer
+parent_url: /viewer/
 nav_order: 3
 ---
 

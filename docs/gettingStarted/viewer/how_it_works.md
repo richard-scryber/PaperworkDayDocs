@@ -1,10 +1,10 @@
 ---
 layout: default
 title: How Paperwork works
-parent: With the viewer
+parent: With the JS Viewer
 parent_url: /viewer/
 nav_order: 5
-has_children: true
+has_children: false
 ---
 
 # How Paperwork works

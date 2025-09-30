@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Init Options
-parent: Getting Started
+parent: With the JS Viewer
+parent_url: /viewer/
 nav_order: 1
 ---
 

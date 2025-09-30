@@ -1,6 +1,8 @@
 ---
 layout: default
 title: With a .NET Service
+parent: Getting Started
+parent_url: /gettingStarted/
 has_children: true
 nav_order: 3
 ---
