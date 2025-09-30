@@ -1,6 +1,6 @@
 ---
 layout: default
-title: With .NET MVC Web App
+title: With an MVC Web App
 parent: Getting Started
 parent_url: /gettingStarted/
 has_children: true
