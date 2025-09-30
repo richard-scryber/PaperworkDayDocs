@@ -60,7 +60,7 @@ By default **all** attributes are *case sensitive* and are all lower case.
 
 ### Binding values to attributes
 
-The library is strongly typed and expects specific types to be set on a value of an attribute. These can be explicity set within a template content, or created dynamically at generation time. Some attributes however are explicitly static only, or explicitly binding only - as the required type is not convertable. These are marked in tables below, with one of **Any | Binding Only | Static Only**.
+The library is strongly typed and expects specific types to be set on a value of an attribute. These can be explicity set within a template content, or created dynamically at generation time. Some attributes however are explicitly static only, or explicitly binding only - as the required type is not convertable. These are marked in tables below, with one of **Any** or **Binding Only** or **Static Only**.
 
 
 ## Global Attributes
@@ -71,15 +71,14 @@ The following attributes are supported on all visual elements - the elements tha
 |---|---|---|--|
 | <a href='global/id.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
 | <a href='global/title.html' >title</a>   | *All* | Any | By default adds an entry into the document outline structure with the attribute text value to support navigation to the element. **NOTE**: See the data extension attributes below as some elements override this default behaviour.   |
-| <a href='global/style.html' >id</a>   | *All* | Any | Allows a full definition of the visual appearance of the element. Styles and classes are discussed in their own sections as part of <a href='/styling_content.html'>Styling Content</a> and a full reference section on <a href='/reference/cssselectors/'>CSS selectors</a> and <a href='/reference/cssproperties/'>CSS properties</a>    |
-| <a href='global/hidden.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/class.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/name.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-|--|--|--|--|
-| <a href='global/data-content.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/data-content-action.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
+| <a href='global/style.html' >style</a>   | *All* | Any | Allows a full definition of the visual appearance of the element. Styles and classes are discussed in their own sections as part of <a href='/styling_content.html'>Styling Content</a> and a full reference section on <a href='/reference/cssproperties/'>CSS properties</a>    |
+| <a href='global/class.html' >class</a>   | *All* | Any | Specifies a set of style class names as <a href='/reference/cssselectors/'>CSS selectors</a> to apply to the element.   |
+| <a href='global/hidden.html' >hidden</a>   | *All* | Any | Indicates if this content should be displayed or not. As an xhtml template the value of the attribute should also be 'hidden' e.g. hidden='hidden'.  |
+| <a href='global/name.html' >name</a>   | *All* | Any | Defines an explicit name for the element it is contained in, that can be used to refer to elsewhere in the template.   |
+| <a href='global/data-content.html' >data-content</a>   | *All* | *Binding Only* | Allows the dynamic binding of more visual content into the template at generation time from the documents data. More infomation on data binding can be found in the <a href='/learning/' >Learning section</a>   |
+| <a href='global/data-content-action.html' >data-content-action</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
 | <a href='global/data-content-type.html' >data-content-type</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/data-content-type.html' >data-content-type</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
+| <a href='global/data-style-identifier.html' >data-style-identifier</a>   | *All* | *Static Only* | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
 
 ---
 
