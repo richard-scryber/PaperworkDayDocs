@@ -1,7 +1,8 @@
 ---
 layout: default
 title: How Paperwork works
-parent: Getting Started
+parent: With the viewer
+parent_url: /viewer/
 nav_order: 5
 ---
 

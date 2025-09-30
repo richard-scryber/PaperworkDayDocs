@@ -2,7 +2,7 @@
 layout: default
 title: Home
 has_children: true
-nav_order: 1
+nav_order: 0
 ---
 
 # Home of Paperwork documentation, and the core library
