@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Getting Started with .NET Core
+title: With the Core Package
 parent: Getting Started
 parent_url: /gettingStarted/
 has_children: true
