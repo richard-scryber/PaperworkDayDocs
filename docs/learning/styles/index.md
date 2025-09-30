@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Drawing Content
+title: Styling Content
+parent: Learning
+parent_url: /learning/
 has_children: true
-nav_order: 4
-has_toc: false
+nav_order: 3
 ---
 
-# Drawing Content
+# Styling Content
 {: .no_toc }
 
-Paperwork uses in document svg for drawing lines and diagrams. It is not (currently) full support svg support but the main static capabilities are there.
+Paperwork uses css for the styling of template content, this can either be in linked files from the template, in a style element of the template head, or directly on the element itself.
 
 <details open markdown="block">
   <summary>
@@ -22,15 +23,10 @@ Paperwork uses in document svg for drawing lines and diagrams. It is not (curren
 
 ---
 
-## Basic Shapes
+## Basic Style
 
-The basic template is xhtml and has the **required** xml namespace (`xmlns`) attribute set to "http://www.w3.org/1999/xhtml", with an optional `scryber` processing instruction infront.
 
-The head element supports the standard `title`, `base`, `style` and `link` inner elements.
-
-The `body` defines the content of the page(s) within the document including most html elements, inline svg content and graphic images.
-
-Css styles can either be referenced from `link` elements in the head or as inline `style` elements with css content.
+Css styles can either be referenced from `link` elements in the head or as `style` elements with css content, again in the head, or declared on the element itself.
 
 {: .note}
 > For linked content, the html head has a `base` element that can be used for referencing 
@@ -60,6 +56,21 @@ Css styles can either be referenced from `link` elements in the head or as inlin
 {% endraw %}
 
 ---
+
+## Supported style selectors
+
+
+---
+
+## Units and measurements
+
+---
+
+## Built in and remote fonts
+
+---
+
+
 
 ## At rule styles
 

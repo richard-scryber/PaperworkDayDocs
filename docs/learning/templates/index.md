@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Template Content
+parent: Learning
+parent_url: /learning/
 has_children: true
 nav_order: 2
 ---

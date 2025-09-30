@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Getting Started with JS
+title: With the viewer
+parent: Getting Started
+parent_url: /gettingStarted/
 has_children: true
 nav_order: 1
 ---

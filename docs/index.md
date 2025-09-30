@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Getting Started
+title: Home
 has_children: true
 nav_order: 1
 ---
 
-# Getting Started
+# Home of Paperwork documentation, and the core library
+
+## Getting Started
 {: .no_toc }
 
 Paperwork is a freely available tool, that allows you (as a designer, developer) to create beautiful and dymanic documents, quickly and easily on your site.
