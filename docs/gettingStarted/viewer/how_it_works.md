@@ -4,6 +4,7 @@ title: How Paperwork works
 parent: With the viewer
 parent_url: /viewer/
 nav_order: 5
+has_children: true
 ---
 
 # How Paperwork works
