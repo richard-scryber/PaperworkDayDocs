@@ -87,8 +87,8 @@ The following attributes are supported on all visual elements - the elements tha
 
 The following event attributes are supported on all visual elements. For more information on document controllers and event handling see the <a href='/learning/binding/codebehind.html'>code behind</a> learning article
 
-| Attribute  | Use  | Description |
-|---|---|---|
+| Attribute  | Use | Bindable  | Description |
+|---|---|---|---|
 | <a href='events/init.html' >on-init</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller when the element is initialized.   |
 | <a href='events/loaded.html' >on-loaded</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller when the element is loaded.   |
 | <a href='events/binding.html' >on-databinding</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller before the element is data bound.   |
@@ -105,8 +105,8 @@ The following event attributes are supported on all visual elements. For more in
 
 The library supports the use of the following standard attributes that match existing attributes on html elements.
 
-| Attribute  | Use  | Description |
-|---|---|---|
+| Attribute  | Use | Bindable  | Description |
+|---|---|---|---|
 | <a href='standard/align.html' >align</a>   | <code>img</code> | Any | Defines the alignment on a line for an image when it is laid out.   |
 | <a href='standard/alt.html' >alt</a>   | <code>img</code>, <code>object</code> | Any | An alternative name for the element. *Not currently used, but defined*  |
 | <a href='standard/charset.html' >charset</a>   | <code>&lt;meta&gt;</code> | Any | The character set for the meta data information. *Not currently used, but defined*  |
@@ -145,8 +145,11 @@ The library supports the use of the following standard attributes that match exi
 
 The library uses the <code>data-*</code> attributes to extend the use of existing elements to preserve validity of a html template and provide support for the library features.
 
-| Attribute  | Use  | Description |
-|---|---|---|
-| <a href='tags/contfooter.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
+| Attribute  | Use | Bindable  | Description |
+|---|---|---|---|
+| <a href='tags/data-bind.html' >data-bind</a>   | <code>&lt;template&gt;</code> | *Bindable Only* | Allows the dynamic binding of more visual content, **multiple times**, from within the template into the documents' layout, based on the data received from the data-bind value. More infomation on data binding can be found in the <a href='/learning/' >Learning section</a>  |
+| <a href='tags/data-bind-max.html' >data-bind-max</a>   | <code>&lt;template&gt;</code> | Any | Limits the dynamic binding of visual content, to a **maximum** number of items. More infomation on data binding can be found in the <a href='/learning/' >Learning section</a>  |
+| <a href='tags/data-bind-start.html' >data-bind-start</a>   | <code>&lt;template&gt;</code> | Any | Sets the start of the dynamic binding of more visual content, from within the template into the documents' layout, with zero being the first itteration. More infomation on data binding can be found in the <a href='/learning/' >Learning section</a>  |
+| <a href='tags/data-bind-start.html' >data-bind-step</a>   | <code>&lt;template&gt;</code> | Any | Sets the loop over count of the dynamic binding data before any entry is added to the document's layout. More infomation on data binding can be found in the <a href='/learning/' >Learning section</a>  |
 
 
