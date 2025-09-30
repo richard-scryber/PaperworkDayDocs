@@ -89,8 +89,14 @@ The following event attributes are supported on all visual elements. For more in
 
 | Attribute  | Use  | Description |
 |---|---|---|
-| <a href='tags/head.html' >Head Content</a>   | <code>&lt;head&gt;</code> | Will mark the beginning of the metadata section for the document.   |
-
+| <a href='events/init.html' >on-init</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller when the element is initialized.   |
+| <a href='events/loaded.html' >on-loaded</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller when the element is loaded.   |
+| <a href='events/binding.html' >on-databinding</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller before the element is data bound.   |
+| <a href='events/bound.html' >on-databound</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller after the element is databound.   |
+| <a href='events/prelayout.html' >on-prelayout</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller before the element is laid out.   |
+| <a href='events/postlayout.html' >on-postlayout</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller after the element is laid out.   |
+| <a href='events/prerender.html' >on-prerender</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller before the element is rendered.   |
+| <a href='event/postrender.html' >on-postrender</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller after the element is rendered.   |
 
 ---
 
@@ -101,12 +107,36 @@ The library supports the use of the following standard attributes that match exi
 
 | Attribute  | Use  | Description |
 |---|---|---|
-| <a href='tags/title.html' >Document Title</a>   | <code>&lt;title&gt;</code> | A purely textual value that will set the display title for the output document.   |
-| <a href='tags/base.html' >Document Base Path</a>   | <code>&lt;base&gt;</code> | A folder or uri reference to to a path where any relative files specified in the content of the document (images etc.) can be located.  |
-| <a href='tags/meta.html' >Meta data</a>   | <code>&lt;meta&gt;</code> | A generalized informational tag that can define information about the final document production, its owners or security settings for use.  |
-| <a href='tags/link.html' >Linked files</a>   | <code>&lt;link&gt;</code> | References an external file that contains resources (specifically styles) that the document should use when generating the output.  |
-| <a href='tags/styles.html' >Style content</a>   | <code>&lt;style&gt;</code> | Marks the document specific visual styles for the content that the document should use. Has a higher priority than any linked stylesheets.  |
-
+| <a href='standard/align.html' >align</a>   | <code>img</code> | Any | Defines the alignment on a line for an image when it is laid out.   |
+| <a href='standard/alt.html' >alt</a>   | <code>img</code>, <code>object</code> | Any | An alternative name for the element. *Not currently used, but defined*  |
+| <a href='standard/charset.html' >charset</a>   | <code>&lt;meta&gt;</code> | Any | The character set for the meta data information. *Not currently used, but defined*  |
+| <a href='standard/cite.html' >cite</a>   | <code>&lt;ins&gt;</code>, <code>&lt;del&gt;</code> | Any | The citation information for the inserter or deleter of the section. *Not currently used, but defined*  |
+| <a href='standard/colspan.html' >colspan</a>   | <code>&lt;td&gt;</code> | Any |  Defines the number of columns across, a cell occupies including the current column.  |
+| <a href='standard/content.html' >content</a>   | <code>&lt;meta&gt;</code> | Any | Set the actual content value of a named meta-data element so that it can be used in document processing.  |\
+| <a href='standard/data.html' >data</a>   | <code>&lt;object&gt;</code> | Any | Sets the source file path to a specific location (using any document base path) so the attachment can be loaded and included.  |
+| <a href='standard/datetime.html' >datetime</a>   | <code>&lt;ins&gt;</code>, <code>&lt;del&gt;</code>, <code>&lt;time&gt;</code> | Any | In the case of ins and del, specifies the timestamp for the modification. For a time element, specifies the date and/or time that should be displayed by the element.  |
+| <a href='standard/for.html' >for</a>   | <code>&lt;label&gt;</code>, <code>&lt;output&gt;</code>, <code>&lt;page&gt;</code> | Any | Identifies the id of the referenced element this element is referring to. For a page element, this with then be the page number of that referenced element.  |
+| <a href='standard/height.html' >height</a>   | <code>&lt;img&gt;</code> | Any | A legacy support attribute for the image element to explicitly set the pixel height for rendering. Use the CSS properties instead  |
+| <a href='standard/high.html' >high</a>   | <code>&lt;meter&gt;</code> | Any | Defines the recommended high value for a graphical meter bar.  |
+| <a href='standard/href.html' >href</a>   | <code>&lt;a&gt;</code>, <code>&lt;link&gt;</code> | Any | Sets the source file path to a specific location (using any document base path) so an image or external resource can be loaded and included.  |
+| <a href='standard/http-equiv.html' >http-equiv</a>   | <code>&lt;meta&gt;</code> | Any | Defines a pragme directive for the template. *Not currently used, but defined*  |
+| <a href='standard/lang.html' >lang</a>   | <code>&lt;html&gt;</code> | Any | Specifies the default output culture (e.g. en-US or fr-FR) for the resultant document. This impacts features such as number conversion and date conversion to rendered strings.  |
+| <a href='standard/low.html' >low</a>   | <code>&lt;meter&gt;</code> | Any | Defines the recommended low value for a graphical meter bar.  |
+| <a href='standard/max.html' >max</a>   | <code>&lt;meter&gt;</code>, <code>&lt;progress&gt;</code>  | Any | Defines the maximum value for a graphical meter or progress bar - based on this value the offset of the bar will be calculated.  |
+| <a href='standard/media.html' >media</a>   | <code>&lt;source&gt;</code>, <code>&lt;style&gt;</code>  | Any | Specifies the mime type of the picture source or a media query the style is appropriate to be used for.  |
+| <a href='standard/min.html' >min</a>   | <code>&lt;meter&gt;</code>  | Any | Defines the minimum value for a graphical meter - based on this value the offset of the bar will be calculated.  |
+| <a href='standard/open.html' >open</a>   | <code>&lt;details&gt;</code> | Any | Used to define if a details section will show all content, or just the summary.  |
+| <a href='standard/optimum.html' >min</a>   | <code>&lt;meter&gt;</code>  | Any | Defines the optimum value for a graphical meter.  |
+| <a href='standard/property.html' >property</a>   | <code>&lt;page&gt;</code>  | Any | Specifies the type of page number that should be looked up and used, e.g. 'total', or 'section' page number or 'sectiontotal' number.  |
+| <a href='standard/rel.html' >rel</a>   | <code>&lt;link&gt;</code>  | Any | Specifies the relationship of the linked source to the current source. **NOTE** anything other than 'stylesheet' will currently be ignored.  |
+| <a href='standard/rowspan.html' >rowspan</a>   | <code>&lt;td&gt;</code>  | Any | Defines the number of rows down, a cell occupies including the current row.  |
+| <a href='standard/scope.html' >scope</a>   | <code>&lt;th&gt;</code>  | Any | Defines whether a header cell is a header for a column, row, or group of columns or rows. Has no effect on output.  |
+| <a href='standard/src.html' >src</a>   | <code>&lt;embed&gt;</code>, <code>&lt;frame&gt;</code>,<code>&lt;source&gt;</code>, <code>&lt;img&gt;</code>  | Any | Defines the external location of a resource (taking into account the document base path) that the element will use.  |
+| <a href='standard/srcset.html' >srcset</a>   | <code>&lt;source&gt;</code>  | Any | Defines the external location of a range of resource (taking into account the document base path) that the element *can* use.  |
+| <a href='standard/target.html' >target</a>   | <code>&lt;a&gt;</code>  | Any | Sets the location within the consuming application where the linked content should be shown. *Support is based on the reader applications implementation*  |
+| <a href='standard/type.html' >type</a>   | <code>&lt;frame&gt;</code>, <code>&lt;source&gt;</code>, <code>&lt;style&gt;</code> <code>&lt;object&gt;</code>  | Any | Identifies the content mime type of a resource at an external location (taking into account the document base path).  |
+| <a href='standard/value.html' >value</a>   | <code>&lt;progress&gt;</code>  | Any | Defines the actual value for a graphical progress bar - based on this value the offset of the bar will be calculated using max  |
+| <a href='standard/width.html' >width</a>   | <code>&lt;img&gt;</code> | Any | A legacy support attribute for the image element to explicitly set the pixel width for rendering. Use the CSS properties instead  |
 
 ---
 
