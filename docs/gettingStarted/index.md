@@ -6,10 +6,12 @@ has_toc: true
 nav_order: 1
 ---
 
-# CSS Style Selector Reference
+# Getting Started with Paperwork
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template. These will repeat across multiple pages when content overflows.
+Paperwork can be used at multiple levels, for creating dynamic document from simple templates.
+
+All of them offer the great features of the template driven content creation.
 
 <details open markdown="block">
   <summary>
@@ -22,24 +24,29 @@ Paperwork supports the use of page headers and footers within the body element o
 
 ---
 
-## Binding notation.
+## As a client-side Viewer with a Javascript library in your website.
 
-How to bind
+For designers and front-end devs, simply hook in the javascript library and start building your templates.
+Zero cost, and client side creation.
 
----
+How to build <a href='/gettingstarted/viewer/'>Here</a>
 
-## Data to bind to
-
-Adding data
 
 ---
 
-## Binding operators
+## As an request method in you ASP.NET MVC Web Application
 
-All operators
+For the web app developers. Getting a little bit server-side with dynamic creation and return.
+How to build <a href='/gettingstarted/mvc/'>Here</a>
 
 ---
 
-## Binding conversion functions
+## As a dependency injection to a service application
 
-All conversion functions
+How to build <a href='/gettingstarted/service/'>Here</a>
+
+---
+
+## Just the core package
+
+How to build <a href='/gettingstarted/package/'>Here</a>
