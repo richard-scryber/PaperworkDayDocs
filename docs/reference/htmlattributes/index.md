@@ -78,7 +78,7 @@ The following attributes are supported on all visual elements - the elements tha
 | <a href='global/data-content.html' >data-content</a>   | *All* | *Binding Only* | Allows the dynamic binding of more visual content into the template at generation time from the documents data. More infomation on data binding can be found in the <a href='/learning/' >Learning section</a>   |
 | <a href='global/data-content-action.html' >data-content-action</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
 | <a href='global/data-content-type.html' >data-content-type</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/data-style-identifier.html' >data-style-identifier</a>   | *All* | *Static Only* | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
+| <a href='global/data-style-identifier.html' >data-style-identifier</a>   | *All* | *Static Only* | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template, to significantly improve performance of *many* repeating items in multiple structures.   |
 
 ---
 
@@ -112,7 +112,7 @@ The library supports the use of the following standard attributes that match exi
 | <a href='standard/charset.html' >charset</a>   | <code>&lt;meta&gt;</code> | Any | The character set for the meta data information. *Not currently used, but defined*  |
 | <a href='standard/cite.html' >cite</a>   | <code>&lt;ins&gt;</code>, <code>&lt;del&gt;</code> | Any | The citation information for the inserter or deleter of the section. *Not currently used, but defined*  |
 | <a href='standard/colspan.html' >colspan</a>   | <code>&lt;td&gt;</code> | Any |  Defines the number of columns across, a cell occupies including the current column.  |
-| <a href='standard/content.html' >content</a>   | <code>&lt;meta&gt;</code> | Any | Set the actual content value of a named meta-data element so that it can be used in document processing.  |\
+| <a href='standard/content.html' >content</a>   | <code>&lt;meta&gt;</code> | Any | Set the actual content value of a named meta-data element so that it can be used in document processing.  |
 | <a href='standard/data.html' >data</a>   | <code>&lt;object&gt;</code> | Any | Sets the source file path to a specific location (using any document base path) so the attachment can be loaded and included.  |
 | <a href='standard/datetime.html' >datetime</a>   | <code>&lt;ins&gt;</code>, <code>&lt;del&gt;</code>, <code>&lt;time&gt;</code> | Any | In the case of ins and del, specifies the timestamp for the modification. For a time element, specifies the date and/or time that should be displayed by the element.  |
 | <a href='standard/for.html' >for</a>   | <code>&lt;label&gt;</code>, <code>&lt;output&gt;</code>, <code>&lt;page&gt;</code> | Any | Identifies the id of the referenced element this element is referring to. For a page element, this with then be the page number of that referenced element.  |
