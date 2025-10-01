@@ -85,7 +85,7 @@ The following attributes are supported on all visual elements - the elements tha
 ## Global Event Attributes
 
 
-The following event attributes are supported on all visual elements. For more information on document controllers and event handling see the <a href='/learning/binding/codebehind.html'>code behind</a> learning article
+The following event attributes are supported on all visual elements. For more information on document controllers and event handling see the <a href='/learning/binding/codebehind.html'>code behind</a> learning article.
 
 | Attribute  | Use | Bindable  | Description |
 |---|---|---|---|
