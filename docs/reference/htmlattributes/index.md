@@ -54,7 +54,7 @@ When re-using existing content, there are a lot of attributes that can be on an 
 
 ### Case sensitivity
 
-By default **all** attributes are *case sensitive* and are all lower case.
+By default **All Visual Elements** attributes are *case sensitive* and are all lower case.
 
 ---
 
@@ -69,16 +69,16 @@ The following attributes are supported on all visual elements - the elements tha
 
 | Attribute  | Use | Bindable  | Description |
 |---|---|---|--|
-| <a href='global/id.html' >id</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/title.html' >title</a>   | *All* | Any | By default adds an entry into the document outline structure with the attribute text value to support navigation to the element. **NOTE**: See the data extension attributes below as some elements override this default behaviour.   |
-| <a href='global/style.html' >style</a>   | *All* | Any | Allows a full definition of the visual appearance of the element. Styles and classes are discussed in their own sections as part of <a href='/styling_content.html'>Styling Content</a> and a full reference section on <a href='/reference/cssproperties/'>CSS properties</a>    |
-| <a href='global/class.html' >class</a>   | *All* | Any | Specifies a set of style class names as <a href='/reference/cssselectors/'>CSS selectors</a> to apply to the element.   |
-| <a href='global/hidden.html' >hidden</a>   | *All* | Any | Indicates if this content should be displayed or not. As an xhtml template the value of the attribute should also be 'hidden' e.g. hidden='hidden'.  |
-| <a href='global/name.html' >name</a>   | *All* | Any | Defines an explicit name for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/data-content.html' >data-content</a>   | *All*, except if and template | *Binding Only* | Allows the dynamic binding of more visual content into the template at generation time from the documents data. More infomation on data binding can be found in the <a href='/learning/' >Learning section</a>   |
-| <a href='global/data-content-action.html' >data-content-action</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/data-content-type.html' >data-content-type</a>   | *All* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
-| <a href='global/data-style-identifier.html' >data-style-identifier</a>   | *All* | *Static Only* | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template, to significantly improve performance of *many* repeating items in multiple structures.   |
+| <a href='global/id.html' >id</a>   | *All Visual Elements* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
+| <a href='global/title.html' >title</a>   | *All Visual Elements* | Any | By default adds an entry into the document outline structure with the attribute text value to support navigation to the element. **NOTE**: See the data extension attributes below as some elements override this default behaviour.   |
+| <a href='global/style.html' >style</a>   | *All Visual Elements* | Any | Allows a full definition of the visual appearance of the element. Styles and classes are discussed in their own sections as part of <a href='/styling_content.html'>Styling Content</a> and a full reference section on <a href='/reference/cssproperties/'>CSS properties</a>    |
+| <a href='global/class.html' >class</a>   | *All Visual Elements* | Any | Specifies a set of style class names as <a href='/reference/cssselectors/'>CSS selectors</a> to apply to the element.   |
+| <a href='global/hidden.html' >hidden</a>   | *All Visual Elements* | Any | Indicates if this content should be displayed or not. As an xhtml template the value of the attribute should also be 'hidden' e.g. hidden='hidden'.  |
+| <a href='global/name.html' >name</a>   | *All Visual Elements* | Any | Defines an explicit name for the element it is contained in, that can be used to refer to elsewhere in the template.   |
+| <a href='global/data-content.html' >data-content</a>   | *All Visual Elements*, except <code>if</code> and <code>template</code> | *Binding Only* | Allows the dynamic binding of more visual content into the template at generation time from the documents data. More infomation on data binding can be found in the <a href='/learning/' >Learning section</a>   |
+| <a href='global/data-content-action.html' >data-content-action</a>   | *All Visual Elements* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
+| <a href='global/data-content-type.html' >data-content-type</a>   | *All Visual Elements* | Any | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template.   |
+| <a href='global/data-style-identifier.html' >data-style-identifier</a>   | *All Visual Elements* | *Static Only* | Defines an identifier for the element it is contained in, that can be used to refer to elsewhere in the template, to significantly improve performance of *many* repeating items in multiple structures.   |
 
 ---
 
@@ -89,14 +89,14 @@ The following event attributes are supported on all visual elements. For more in
 
 | Attribute  | Use | Bindable  | Description |
 |---|---|---|---|
-| <a href='events/init.html' >on-init</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller when the element is initialized.   |
-| <a href='events/loaded.html' >on-loaded</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller when the element is loaded.   |
-| <a href='events/binding.html' >on-databinding</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller before the element is data bound.   |
-| <a href='events/bound.html' >on-databound</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller after the element is databound.   |
-| <a href='events/prelayout.html' >on-prelayout</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller before the element is laid out.   |
-| <a href='events/postlayout.html' >on-postlayout</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller after the element is laid out.   |
-| <a href='events/prerender.html' >on-prerender</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller before the element is rendered.   |
-| <a href='event/postrender.html' >on-postrender</a>   | *All* | Static Only | An event that is raised to a declared method on the defined controller after the element is rendered.   |
+| <a href='events/init.html' >on-init</a>   | *All Visual Elements* | Static Only | An event that is raised to a declared method on the defined controller when the element is initialized.   |
+| <a href='events/loaded.html' >on-loaded</a>   | *All Visual Elements* | Static Only | An event that is raised to a declared method on the defined controller when the element is loaded.   |
+| <a href='events/binding.html' >on-databinding</a>   | *All Visual Elements* | Static Only | An event that is raised to a declared method on the defined controller before the element is data bound.   |
+| <a href='events/bound.html' >on-databound</a>   | *All Visual Elements* | Static Only | An event that is raised to a declared method on the defined controller after the element is databound.   |
+| <a href='events/prelayout.html' >on-prelayout</a>   | *All Visual Elements* | Static Only | An event that is raised to a declared method on the defined controller before the element is laid out.   |
+| <a href='events/postlayout.html' >on-postlayout</a>   | *All Visual Elements* | Static Only | An event that is raised to a declared method on the defined controller after the element is laid out.   |
+| <a href='events/prerender.html' >on-prerender</a>   | *All Visual Elements* | Static Only | An event that is raised to a declared method on the defined controller before the element is rendered.   |
+| <a href='event/postrender.html' >on-postrender</a>   | *All Visual Elements* | Static Only | An event that is raised to a declared method on the defined controller after the element is rendered.   |
 
 ---
 
