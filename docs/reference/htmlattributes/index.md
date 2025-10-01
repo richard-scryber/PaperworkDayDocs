@@ -108,7 +108,7 @@ The library supports the use of the following standard attributes that match exi
 | Attribute  | Use | Bindable  | Description |
 |---|---|---|---|
 | <a href='standard/align.html' >align</a>   | <code>img</code> | Any | Defines the alignment on a line for an image when it is laid out.   |
-| <a href='standard/alt.html' >alt</a>   | <code>img</code>, <code>object</code> | Any | An alternative name for the element. *Not currently used, but defined*  |
+| <a href='standard/alt.html' >alt</a>   | <code>img</code>, <code>object</code> | Any | An alternative description for the element. *Not currently used, but defined*  |
 | <a href='standard/charset.html' >charset</a>   | <code>&lt;meta&gt;</code> | Any | The character set for the meta data information. *Not currently used, but defined*  |
 | <a href='standard/cite.html' >cite</a>   | <code>&lt;ins&gt;</code>, <code>&lt;del&gt;</code> | Any | The citation information for the inserter or deleter of the section. *Not currently used, but defined*  |
 | <a href='standard/colspan.html' >colspan</a>   | <code>&lt;td&gt;</code> | Any |  Defines the number of columns across, a cell occupies including the current column.  |
