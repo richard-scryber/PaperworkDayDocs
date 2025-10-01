@@ -1,6 +1,6 @@
 ---
 layout: default
-title: id
+title: class
 parent: HTML Attributes
 parent_url: /reference/htmlattributes/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# @id : The ID Attribute
+# @class : The Style Class Names Attribute
 
 Summary
 

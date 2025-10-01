@@ -1,6 +1,6 @@
 ---
 layout: default
-title: id
+title: hidden
 parent: HTML Attributes
 parent_url: /reference/htmlattributes/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# @id : The ID Attribute
+# @hidden : The Display Hidden Attribute
 
 Summary
 
