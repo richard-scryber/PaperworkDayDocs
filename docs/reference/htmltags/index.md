@@ -2,6 +2,7 @@
 layout: default
 title: HTML Elements
 parent: Template reference
+parent_url: /reference/
 has_children: true
 has_toc: false
 nav_order: 1
