@@ -29,67 +29,67 @@ Initial, Inherit, etc.
 
 ## Element Fills.
 
-The following propeerties are supported to alter the basic color of elements.
+The following properties are supported to alter the basic color of elements.
 
 
 | Property  | Description |
 |---|---|
-| <a href='properties/fill.html' >fill</a>   |   |
-| <a href='properties/opacity.html' >opacity</a>   |  |
+| <a href='properties/color.html' >color</a>   |  Defines the fill color of any character content, and any decoration applied. |
+| <a href='properties/opacity.html' >opacity</a>   | Defines the opacity of the element itself. |
 
 ---
 
 ## Element Backgrounds.
 
-The following propeerties are supported to alter the background appearance of 'boxed' elements.
+The following properties are supported to alter the background appearance of 'boxed'* elements **NOTE**: The background area is a rectangular shape including any padding are that is applied to the elelemt (and chaildren).
 
 
 | Property  | Description |
 |---|---|
-| <a href='properties/background.html' >background</a>   |  |
-| <a href='properties/background-color.html' >background-color</a>   | |
-| <a href='properties/background-image.html' >background-image</a>   |  |
-| <a href='properties/background-repeat.html' >background-repeat</a>   |  |
-| <a href='properties/background-size.html' >background-size</a>   |  |
-| <a href='properties/background-position.html' >background-position</a>   |  |
-| <a href='properties/background-position-x.html' >background-position-x</a>   |  |
-| <a href='properties/background-position-y.html' >background-psition-y</a>   |  |
+| <a href='properties/background.html' >background</a>   | A shorthand pproperty for setting the background properties of an element. |
+| <a href='properties/background-color.html' >background-color</a>   | Specifies the colour that will fill the entire background. |
+| <a href='properties/background-image.html' >background-image</a>   | Specifies an image, or gradient, that will fill the entire background. |
+| <a href='properties/background-repeat.html' >background-repeat</a>   | Specifies how that image, if it is smaller than the element size will repeat.  |
+| <a href='properties/background-size.html' >background-size</a>   | Specifies the horizontal and vertical size of the image to repeat |
+| <a href='properties/background-position.html' >background-position</a>   | Specifies both the horizontal and vertical starting postion of the image (including the repeat). |
+| <a href='properties/background-position-x.html' >background-position-x</a>   | Specifies just the horizontal starting postion of the image (including the repeat). |
+| <a href='properties/background-position-y.html' >background-psition-y</a>   | Specifies Just the vertical starting postion of the image (including the repeat). |
 
 ---
 
 ## Element Borders
 
-The following properties alter the border appearance on 'boxed' elements
+The following properties alter the border appearance on 'boxed'* elements. **NOTE**: By default borders do not affect the spacing around an element. Thick borders will impinge on outer and inner content, if no margins or padding are applied.
 
 | Property  | Description |
 |---|---|
-| <a href='properties/border.html' >border</a>   |  |
-| <a href='properties/border-width.html' >border-width</a>   |  |
-| <a href='properties/borde-color.html' >border-color</a>   |  |
-| <a href='properties/border-style.html' >border-style</a>   |  |
-| <a href='properties/border-radius.html' >border-radius</a>   |  |
-| <a href='properties/border-top.html' >border-top</a>   |  |
-| <a href='properties/border-top-color.html' >border-top-color</a>   |  |
-| <a href='properties/border-top-width.html' >border-top-width</a>   |  |
-| <a href='properties/border-top-style.html' >border-top-style</a>   |  |
-| <a href='properties/border-left.html' >border-left</a>   |  |
-| <a href='properties/border-left-color.html' >border-left-color</a>   |  |
-| <a href='properties/border-left-width.html' >border-left-width</a>   |  |
-| <a href='properties/border-left-style.html' >border-left-style</a>   |  |
-| <a href='properties/border-bottom.html' >border-bottom</a>   |  |
-| <a href='properties/border-bottom-color.html' >border-bottom-color</a>   |  |
-| <a href='properties/border-bottom-width.html' >border-bottom-width</a>   |  |
-| <a href='properties/border-bottom-style.html' >border-bottom-style</a>   |  |
-| <a href='properties/border-right.html' >border-top</a>   |  |
-| <a href='properties/border-right-color.html' >border-right-color</a>   |  |
-| <a href='properties/border-right-width.html' >border-right-width</a>   |  |
-| <a href='properties/border-right-style.html' >border-right-style</a>   |  |
+| <a href='properties/border.html' >border</a>   | A shorthand property of setting the style, width and color of all the borders |
+| <a href='properties/border-width.html' >border-width</a>   | Sets the width of all the borders around an element. |
+| <a href='properties/borde-color.html' >border-color</a>   | Sets the color of all the borders around an element.  |
+| <a href='properties/border-style.html' >border-style</a>   | Sets the style (solid, dash, none) of all the borders around an element. |
+| <a href='properties/border-radius.html' >border-radius</a>   | Sets the corner radius, of a border when switching between sides. Only one value is (currently) supported. |
+| <a href='properties/border-top.html' >border-top</a>   | A shorthand property of setting the style, width and color of the top borders.  |
+| <a href='properties/border-top-color.html' >border-top-color</a>   | Sets the color of the top border of an element. |
+| <a href='properties/border-top-width.html' >border-top-width</a>   | Sets the width of the top border of an element. |
+| <a href='properties/border-top-style.html' >border-top-style</a>   | Sets the style of the top border of an element. |
+| <a href='properties/border-left.html' >border-left</a>   | A shorthand property of setting the style, width and color of the left borders. |
+| <a href='properties/border-left-color.html' >border-left-color</a>   | Sets the color of the left border of an element. |
+| <a href='properties/border-left-width.html' >border-left-width</a>   | Sets the width of the left border of an element. |
+| <a href='properties/border-left-style.html' >border-left-style</a>   | Sets the style of the left border of an element. |
+| <a href='properties/border-bottom.html' >border-bottom</a>   | A shorthand property of setting the style, width and color of the bottom borders. |
+| <a href='properties/border-bottom-color.html' >border-bottom-color</a>   | Sets the color of the bottom border of an element. |
+| <a href='properties/border-bottom-width.html' >border-bottom-width</a>   | Sets the width of the bottom border of an element. |
+| <a href='properties/border-bottom-style.html' >border-bottom-style</a>   | Sets the style of the bottom border of an element. |
+| <a href='properties/border-right.html' >border-top</a>   | A shorthand property of setting the style, width and color of the right borders. |
+| <a href='properties/border-right-color.html' >border-right-color</a>   | Sets the color of the right border of an element. |
+| <a href='properties/border-right-width.html' >border-right-width</a>   | Sets the width of the right border of an element. |
+| <a href='properties/border-right-style.html' >border-right-style</a>   | Sets the style of the right border of an element. |
 
 ---
 
 ## Element Position and Size.
 
-The following properties are supported to alter the position and size appearance of 'boxed' elements.
+The following properties are supported to alter the position and size appearance of 'boxed'* elements.
 
 | Property  | Description |
 |---|---|
@@ -113,7 +113,7 @@ The following properties are supported to alter the position and size appearance
 
 ## Element Spacing
 
-The following properties manage the spacing in and around 'boxed' elements.
+The following properties manage the spacing in and around 'boxed'* elements.
 
 | Property  | Description |
 |---|---|
@@ -225,3 +225,8 @@ The following properties are specific to lists and the items within them. Some a
 | <a href='properties/pdf-li-inset.html' >-pdf-li-inset</a>   |  |
 | <a href='properties/pdf-li-prefix.html' >-pdf-li-prefix</a>   |  |
 | <a href='properties/pdf-li-postfix.html' >-pdf-li-postfix</a>   |  |
+
+
+---
+
+* 'boxed' elements have a non pure inline display, so they encapsulate all their content within a rectangular 'box', e.g. block, or inline-block.
