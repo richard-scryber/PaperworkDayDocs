@@ -159,6 +159,8 @@ The following properties control the page sizes, columns and breaks within.
 | <a href='properties/margin-inline-start.html' >margin-inline-start</a>   |  |
 | <a href='properties/margin-inline-end.html' >margin-inline-end</a>   |  |
 
+---
+
 ## Fonts and Type Faces
 
 The following properties control the font that any text will use, including families and styles, and remote font registration.
@@ -174,3 +176,22 @@ The following properties control the font that any text will use, including fami
 | <a href='properties/font-stretch.html' >font-stretch</a>   |  |
 | <a href='properties/src.html' >src</a>   |  |
 
+--- 
+
+## Text and Character Adjustment
+
+The following properties control the way any text within the element will be output.
+
+| Property  | Description |
+|---|---|
+| <a href='properties/text-align.html' >text-align</a>   |  |
+| <a href='properties/vertical-align.html' >vertical-align</a>   |  |
+| <a href='properties/line-height.html' >line-height</a>   |  |
+| <a href='properties/text-decoration.html' >text-decoration</a>   |  |
+| <a href='properties/text-decoration-line.html' >text-decoration-line</a>   |  |
+| <a href='properties/letter-spacing.html' >letter-spacing</a>   |  |
+| <a href='properties/hyphens.html' >hyphens</a>   |  |
+| <a href='properties/hyphenate-limit-chars.html' >hyphenate-limit-chars</a>   |  |
+| <a href='properties/hyphenate-character.html' >hyphenate-character</a>   |  |
+| <a href='properties/word-spacing.html' >word-spacing</a>   |  |
+| <a href='properties/white-space.html' >white-space</a>   |  |
