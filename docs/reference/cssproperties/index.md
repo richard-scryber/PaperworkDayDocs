@@ -91,24 +91,24 @@ The following properties alter the border appearance on 'boxed' elements
 
 The following properties are supported to alter the position and size appearance of 'boxed' elements.
 
-
 | Property  | Description |
 |---|---|
-| <a href='properties/position.html' >position</a>   |  |
-| <a href='properties/display.html' >display</a>   | |
-| <a href='properties/float.html' >float</a>   |  |
-| <a href='properties/top.html' >top</a>   |  |
-| <a href='properties/left.html' >left</a>   |  |
-| <a href='properties/bottom.html' >bottom</a>   |  |
-| <a href='properties/right.html' >right</a>   |  |
-| <a href='properties/width.html' >width</a>   |  |
-| <a href='properties/height.html' >height</a>   |  |
-| <a href='properties/min-width.html' >min-width</a>   |  |
-| <a href='properties/min-height.html' >min-height</a>   |  |
+| <a href='properties/position.html' >position</a> |    |
+| <a href='properties/display.html' >display</a> | |
+| <a href='properties/float.html' >float</a> |  |
+| <a href='properties/top.html' >top</a> |  |
+| <a href='properties/left.html' >left</a> |  |
+| <a href='properties/bottom.html' >bottom</a> |  |
+| <a href='properties/right.html' >right</a> |  |
+| <a href='properties/width.html' >width</a>  |  |
+| <a href='properties/height.html' >height</a> |    |
+| <a href='properties/min-width.html' >min-width</a>   |    |
+| <a href='properties/min-height.html' >min-height</a>   | |
 | <a href='properties/max-width.html' >max-width</a>   |  |
 | <a href='properties/max-height.html' >max-height</a>   |  |
 | <a href='properties/transform.html' >transform</a>   |  |
 | <a href='properties/overflow.html' >overflow</a>   |  |
+
 ---
 
 ## Element Spacing
@@ -159,6 +159,18 @@ The following properties control the page sizes, columns and breaks within.
 | <a href='properties/margin-inline-start.html' >margin-inline-start</a>   |  |
 | <a href='properties/margin-inline-end.html' >margin-inline-end</a>   |  |
 
-## Binding conversion functions
+## Fonts and Type Faces
 
-All conversion functions
+The following properties control the font that any text will use, including families and styles, and remote font registration.
+
+| Property  | Description |
+|---|---|
+| <a href='properties/font.html' >font</a>   |  |
+| <a href='properties/font-style.html' >font-style</a>   |  |
+| <a href='properties/font-family.html' >font-family</a>   |  |
+| <a href='properties/font-weight.html' >font-weight</a>   |  |
+| <a href='properties/font-size.html' >font-size</a>   |  |
+| <a href='properties/font-display.html' >font-display</a>   |  |
+| <a href='properties/font-stretch.html' >font-stretch</a>   |  |
+| <a href='properties/src.html' >src</a>   |  |
+
