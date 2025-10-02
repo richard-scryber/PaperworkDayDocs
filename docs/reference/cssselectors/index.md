@@ -81,9 +81,7 @@ Pseudo element are keywords added to a selector to identify particular parts of 
 
 ---
 
-
-
-### Unsupported Rules
+## Unsupported Rules
 
 If the library encounters a css rule it cannot understand the entire content of that rule will be skipped
 
@@ -108,7 +106,7 @@ If the library encounters a css rule it cannot understand the entire content of 
 
 ---
 
-### Unsupported Selectors
+## Unsupported Selectors
 
 If the library encounters a css selector it cannot understand, then it will be skipped. But any valid selectors will be maintained.
 
@@ -131,7 +129,7 @@ If the library encounters a css selector it cannot understand, then it will be s
 
 ---
 
-### Combining Selectors
+## Combining Selectors
 
 If the library encounters an individual css selector within a selector list, that it cannot understand, then it will be skipped. But any valid selectors will be maintained.
 
