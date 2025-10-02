@@ -10,7 +10,7 @@ nav_order: 4
 # CSS Style Property Reference
 {: .no_toc }
 
-Paperwork supports the use of page headers and footers within the body element of the template. These will repeat across multiple pages when content overflows.
+Within the style attribute of a visual element, or a selector in a stylesheet or group, properties alter the actual visual apperance of the element they are on, or matched to. Each property has a name and one or more values, depending on what is being set.
 
 <details open markdown="block">
   <summary>
@@ -23,9 +23,33 @@ Paperwork supports the use of page headers and footers within the body element o
 
 ---
 
-## Binding notation.
+## Element Fills.
 
-How to bind
+The following propeerties are supported to alter the basic color of elements in the library.
+
+
+| Property  | Description |
+|---|---|
+| <a href='properties/fill.html' >fill</a>   |   |
+| <a href='properties/opacity.html' >opacity</a>   |  |
+
+---
+
+## Element Backgrounds.
+
+The following propeerties are supported to alter the background appearnce of elements in the library.
+
+
+| Name  | Property  | Description |
+|---|---|---|
+| <a href='properties/background.html' >background</a>   |  |
+| <a href='properties/background-color.html' >background-color</a>   | |
+| <a href='properties/background-image.html' >background-image</a>   |  |
+| <a href='properties/background-repeat.html' >background-repeat</a>   |  |
+| <a href='properties/background-size.html' >background-size</a>   |  |
+| <a href='properties/background-position.html' >background-position</a>   |  |
+| <a href='properties/background-position-x.html' >background-position-x</a>   |  |
+| <a href='properties/background-position-y.html' >background-psition-y</a>   |  |
 
 ---
 
