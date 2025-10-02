@@ -127,6 +127,8 @@ If the library encounters a css selector it cannot understand, then it will be s
 
 ```
 
+---
+
 ### Combining Selectors
 
 If the library encounters an individual css selector within a selector list, that it cannot understand, then it will be skipped. But any valid selectors will be maintained.
