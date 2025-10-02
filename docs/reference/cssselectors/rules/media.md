@@ -1,6 +1,6 @@
 ---
 layout: default
-title: @media rule
+title: \@media rule
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference

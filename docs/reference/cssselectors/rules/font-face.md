@@ -1,6 +1,6 @@
 ---
 layout: default
-title: @font-face rule
+title: \@font-face rule
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference

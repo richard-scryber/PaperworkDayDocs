@@ -16,6 +16,8 @@ A rule contains one or more selectors and defines a condition that the current e
 
 The library supports the use of a sub-set of all the current CSS selectors and at-rules. These are detailed below.
 
+For more information on selectors see the <a href='/learning/styles/'>Using Styles</a> articles.
+
 <details open markdown="block">
   <summary>
     Table of contents
