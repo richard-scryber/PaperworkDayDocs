@@ -1,6 +1,6 @@
 ---
 layout: default
-title: catch-all '*'
+title: select all '*'
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference

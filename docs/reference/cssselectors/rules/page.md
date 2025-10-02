@@ -1,6 +1,6 @@
 ---
 layout: default
-title: \@page rule
+title: at-rule page
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference

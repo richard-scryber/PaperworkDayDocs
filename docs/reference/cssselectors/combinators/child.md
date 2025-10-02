@@ -1,6 +1,6 @@
 ---
 layout: default
-title: direct child '>'
+title: combine child >
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference

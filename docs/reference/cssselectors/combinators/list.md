@@ -1,6 +1,6 @@
 ---
 layout: default
-title: selector list ','
+title: combine list ','
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference

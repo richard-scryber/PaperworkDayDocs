@@ -1,6 +1,6 @@
 ---
 layout: default
-title: element
+title: select element
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ::before
+title: pseudo ::before
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference
