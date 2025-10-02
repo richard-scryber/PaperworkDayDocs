@@ -93,21 +93,21 @@ The following properties are supported to alter the position and size appearance
 
 | Property  | Description |
 |---|---|
-| <a href='properties/position.html' >position</a> |    |
-| <a href='properties/display.html' >display</a> | |
-| <a href='properties/float.html' >float</a> |  |
-| <a href='properties/top.html' >top</a> |  |
-| <a href='properties/left.html' >left</a> |  |
-| <a href='properties/bottom.html' >bottom</a> |  |
-| <a href='properties/right.html' >right</a> |  |
-| <a href='properties/width.html' >width</a>  |  |
-| <a href='properties/height.html' >height</a> |    |
-| <a href='properties/min-width.html' >min-width</a>   |    |
-| <a href='properties/min-height.html' >min-height</a>   | |
-| <a href='properties/max-width.html' >max-width</a>   |  |
-| <a href='properties/max-height.html' >max-height</a>   |  |
-| <a href='properties/transform.html' >transform</a>   |  |
-| <a href='properties/overflow.html' >overflow</a>   |  |
+| <a href='properties/position.html' >position</a> | Defines the way the element is positioned within the current page at the time of layout.  |
+| <a href='properties/display.html' >display</a> | Defines how the elements contents should be laid-out - in a block, inline with the flow, or just ignored. |
+| <a href='properties/float.html' >float</a> | Defines the positioning of the element on the current line. And how content will move around it. |
+| <a href='properties/top.html' >top</a> | Specifies the top postion for an element that can be explictly moved. |
+| <a href='properties/left.html' >left</a> | Specifies the left postion for an element that can be explictly moved. |
+| <a href='properties/bottom.html' >bottom</a> | Specifies the bottom postion for an element that can be explictly moved, as long as top is not set. |
+| <a href='properties/right.html' >right</a> | Specifies the top postion for an element that can be explictly moved, as long as left is not set. |
+| <a href='properties/width.html' >width</a>  | Specifies the width taken up for the 'boxed' element. |
+| <a href='properties/height.html' >height</a> |  Specifies the height taken up for the 'boxed' element.  |
+| <a href='properties/min-width.html' >min-width</a>   | Specifies the minimim width for the 'boxed' element.   |
+| <a href='properties/min-height.html' >min-height</a>   | Specifies the minimim height for the 'boxed' element. |
+| <a href='properties/max-width.html' >max-width</a>   | Specifies the maximum width the 'boxed' element is allowed consume on the page |
+| <a href='properties/max-height.html' >max-height</a>   | Specifies the maximum width the 'boxed' element is allowed consume on the page |
+| <a href='properties/transform.html' >transform</a>   | Specifies (a range of) transform operations that should be performed on the final output of the element and its children when finally output |
+| <a href='properties/overflow.html' >overflow</a>   | Stipulates the action (or non-action) that will be taken if the contents of the element exceed the available size of this container element.  |
 
 ---
 
