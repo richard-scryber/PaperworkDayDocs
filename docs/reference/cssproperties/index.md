@@ -3,7 +3,7 @@ layout: default
 title: CSS Style Properties
 parent: Template reference
 has_children: true
-has_toc: true
+has_toc: false
 nav_order: 4
 ---
 
@@ -195,3 +195,33 @@ The following properties control the way any text within the element will be out
 | <a href='properties/hyphenate-character.html' >hyphenate-character</a>   |  |
 | <a href='properties/word-spacing.html' >word-spacing</a>   |  |
 | <a href='properties/white-space.html' >white-space</a>   |  |
+
+
+---
+
+## Counters and Content
+
+The following properties manage counter values, updating and displaying dynamic content.
+
+| Property  | Description |
+|---|---|
+| <a href='properties/content.html' >content</a>   |  |
+| <a href='properties/counter-reset.html' >counter-reset</a>   |  |
+| <a href='properties/counter-increment.html' >counter-increment</a>   |  |
+
+---
+
+## Lists and List Items
+
+The following properties are specific to lists and the items within them. Some are unique to the library as the functionality is not available (or difficult to replicate) in CSS < 3, but used significantly in many forms of documentation.
+
+| Property  | Description |
+|---|---|
+| <a href='properties/list-style.html' >list-style</a>   |  |
+| <a href='properties/list-style-type.html' >list-style-tyle</a>   |  |
+| <a href='properties/pdf-li-group.html' >-pdf-li-group</a>   |  |
+| <a href='properties/pdf-li-concat.html' >-pdf-li-concat</a>   |  |
+| <a href='properties/pdf-li-align.html' >-pdf-li-align</a>   |  |
+| <a href='properties/pdf-li-inset.html' >-pdf-li-inset</a>   |  |
+| <a href='properties/pdf-li-prefix.html' >-pdf-li-prefix</a>   |  |
+| <a href='properties/pdf-li-postfix.html' >-pdf-li-postfix</a>   |  |
