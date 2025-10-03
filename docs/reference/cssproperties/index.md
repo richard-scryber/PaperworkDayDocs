@@ -25,7 +25,13 @@ Within the style attribute of a visual element, or a selector in a stylesheet or
 
 ## Property Value Keywords
 
-Initial, Inherit, etc.
+The style property global values (initial, revert, inherit, etc.) are **not** supported by the library, and that property will be ignored. If there has been a value set on that property previously (or with lower precedence) then it will be maintained for the content that would have had the global value set on it. See the <a href='/learning/styles/precedence.html' >CSS Selector Precedence</a> article for more information on ordering and assigning values.
+
+## Unsupported Properties
+
+If the style group, style sheet or style attribute contains an unknown or unsupported property, then that property will be skipped over. However further properties that are known will still be parsed and used during document output.
+
+---
 
 ## Element Fills.
 
@@ -160,9 +166,9 @@ The following properties control the font that any text will use, including fami
 
 | Property  | Description |
 |---|---|
-| <a href='properties/font.html' >font</a>   |  |
-| <a href='properties/font-style.html' >font-style</a>   |  |
-| <a href='properties/font-family.html' >font-family</a>   |  |
+| <a href='properties/font.html' >font</a>   | Shorthand property for setting the font family, style, weight and size. |
+| <a href='properties/font-style.html' >font-style</a>   | Specifies the style of the font-face in the family. If the style is not available, then the library will fallback to an available style within the family. |
+| <a href='properties/font-family.html' >font-family</a>   |  Specifies one or more family names to use, in order of preference. The library has built in fonts for the standard 'serif', 'sans-serif' and 'monospace' fonts. |
 | <a href='properties/font-weight.html' >font-weight</a>   |  |
 | <a href='properties/font-size.html' >font-size</a>   |  |
 | <a href='properties/font-display.html' >font-display</a>   |  |
