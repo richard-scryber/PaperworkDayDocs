@@ -113,26 +113,26 @@ The following properties are supported to alter the position and size appearance
 
 ## Element Spacing
 
-The following properties manage the spacing in and around 'boxed'* elements.
+The following properties manage the spacing in and around elements. The border rectangle is the boundary between the margins and padding and is where a border around the element would be shown if one is specified. The content rectangle is where the flowing children of the element (if any) are going to be positioned. **NOTE**: By default, and by design, the library does not collapse any margin spacing, nor does it allocate space for the width of a border.
 
 | Property  | Description |
 |---|---|
-| <a href='properties/padding.html' >padding</a>   |  |
-| <a href='properties/padding-top.html' >padding-top</a>   |  |
-| <a href='properties/padding-left.html' >padding-left</a>   |  |
-| <a href='properties/padding-bottom.html' >padding-bottom</a>   |  |
-| <a href='properties/padding-right.html' >padding-right</a>   |  |
-| <a href='properties/padding-inline.html' >padding-inline</a>   |  |
-| <a href='properties/padding-inline-start.html' >padding-inline-start</a>   |  |
-| <a href='properties/padding-inline-end.html' >padding-inline-end</a>   |  |
-| <a href='properties/margin.html' >margin</a>   |  |
-| <a href='properties/margin-top.html' >margin-top</a>   |  |
-| <a href='properties/margin-left.html' >margin-left</a>   |  |
-| <a href='properties/margin-bottom.html' >margin-bottom</a>   |  |
-| <a href='properties/margin-right.html' >margin-right</a>   |  |
-| <a href='properties/margin-inline.html' >margin-inline</a>   |  |
-| <a href='properties/margin-inline-start.html' >margin-inline-start</a>   |  |
-| <a href='properties/margin-inline-end.html' >margin-inline-end</a>   |  |
+| <a href='properties/padding.html' >padding</a>   | A shorthand property of setting the space between the border rectangle and the rectangle where the content is displayed for a *boxed* element. |
+| <a href='properties/padding-top.html' >padding-top</a>   | Sets the space between the top of the border rectangle and the start of any content for a *boxed* element. |
+| <a href='properties/padding-left.html' >padding-left</a>   | Sets the space between the left of the border rectangle and the start of any content for a *boxed* element. |
+| <a href='properties/padding-bottom.html' >padding-bottom</a>   | Sets the space between the bottom of the border rectangle and the start of any content for a *boxed* element. |
+| <a href='properties/padding-right.html' >padding-right</a>   | Sets the space between the right of the border rectangle and the start of any content for a *boxed* element. |
+| <a href='properties/padding-inline.html' >padding-inline</a>   |  Sets the start and end padding of an *inline* element to either one value or two values. |
+| <a href='properties/padding-inline-start.html' >padding-inline-start</a>   | Sets the start padding of an *inline* element to a specific value. |
+| <a href='properties/padding-inline-end.html' >padding-inline-end</a>   | Sets the end padding of an *inline* element to a specific value. |
+| <a href='properties/margin.html' >margin</a>   | A shorthand property of setting the space between other sibling content and the border rectangle of any inner the content for a *boxed* element. |
+| <a href='properties/margin-top.html' >margin-top</a>   |  Sets the space between other content and the top of the border rectangle of any inner content for a *boxed* element. |
+| <a href='properties/margin-left.html' >margin-left</a>   | Sets the space between other content and the left of the border rectangle of any inner content for a *boxed* element. |
+| <a href='properties/margin-bottom.html' >margin-bottom</a>   | Sets the space between the bottom of the border rectangle and other content for a *boxed* element. |
+| <a href='properties/margin-right.html' >margin-right</a>   | Sets the space between the right of the border rectangle and other content for a *boxed* element. |
+| <a href='properties/margin-inline.html' >margin-inline</a>   | Sets the start and end margins of an *inline* element to either one value or two values. |
+| <a href='properties/margin-inline-start.html' >margin-inline-start</a>   | Sets the start margins of an *inline* element to a specific value. |
+| <a href='properties/margin-inline-end.html' >margin-inline-end</a>   | Sets the start margins of an *inline* element to a specific value. |
 
 ---
 
