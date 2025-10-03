@@ -156,7 +156,7 @@ The following properties control the page sizes, columns and breaks within. Page
 | <a href='properties/break-before.html' >break-before</a>   | Setting to always, will ensure that the content begins on a new region, column and/or page where possible. |
 | <a href='properties/page-break-inside.html' >page-break-inside</a>   | Setting to avoid, will ensure that the content within is in a single page where possible. |
 | <a href='properties/page-break-after.html' >page-break-after</a>   | Setting to always, will ensure that any following content begins on a new page where possible. |
-| <a href='properties/page-break-before.html' >page-break-before</a>   | Setting to always, will ensure that any following content begins on a new page where possible. |
+| <a href='properties/page-break-before.html' >page-break-before</a>   | Setting to always, will ensure that the content begins on a new page where possible. |
 
 ---
 
@@ -168,12 +168,12 @@ The following properties control the font that any text will use, including fami
 |---|---|
 | <a href='properties/font.html' >font</a>   | Shorthand property for setting the font family, style, weight and size. |
 | <a href='properties/font-style.html' >font-style</a>   | Specifies the style of the font-face in the family. If the style is not available, then the library will fallback to an available style within the family. |
-| <a href='properties/font-family.html' >font-family</a>   |  Specifies one or more family names to use, in order of preference. The library has built in fonts for the standard 'serif', 'sans-serif' and 'monospace' fonts. |
-| <a href='properties/font-weight.html' >font-weight</a>   |  |
-| <a href='properties/font-size.html' >font-size</a>   |  |
-| <a href='properties/font-display.html' >font-display</a>   |  |
-| <a href='properties/font-stretch.html' >font-stretch</a>   |  |
-| <a href='properties/src.html' >src</a>   |  |
+| <a href='properties/font-family.html' >font-family</a>   |  Specifies one or more family names to use, in order of preference. The library has built in fonts for the standard 'serif', 'sans-serif' and 'monospace' fonts, and will always be available. |
+| <a href='properties/font-weight.html' >font-weight</a>   | Specifies the numeric weight (100 - 900), or 'normal' or 'bold'. If the actual font-weight is not available, then the library will fallback to the nearest available weight. |
+| <a href='properties/font-size.html' >font-size</a>   | Specifies the numeric size of the text to display when the document is output. This can be an absolute unit or a relative unit or percentage. The absolute (x-large, small etc.) and relative (larger / smaller) are supported. |
+<!-- | <a href='properties/font-display.html' >font-display</a>   |  |
+| <a href='properties/font-stretch.html' >font-stretch</a>   |  | -->
+<!-- | <a href='properties/src.html' >src</a>   |  Used by the font-face at rule | -->
 
 --- 
 
