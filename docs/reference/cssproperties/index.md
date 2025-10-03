@@ -106,7 +106,7 @@ The following properties are supported to alter the position and size appearance
 | <a href='properties/min-height.html' >min-height</a>   | Specifies the minimim height for the 'boxed' element. |
 | <a href='properties/max-width.html' >max-width</a>   | Specifies the maximum width the 'boxed' element is allowed consume on the page |
 | <a href='properties/max-height.html' >max-height</a>   | Specifies the maximum width the 'boxed' element is allowed consume on the page |
-| <a href='properties/transform.html' >transform</a>   | Specifies (a range of) transform operations that should be performed on the final output of the element and its children when finally output |
+| <a href='properties/transform.html' >transform</a>   | Specifies (a series of) transform operations that should be performed on the final output of the element and its children when finally output |
 | <a href='properties/overflow.html' >overflow</a>   | Stipulates the action (or non-action) that will be taken if the contents of the element exceed the available size of this container element.  |
 
 ---
@@ -138,32 +138,25 @@ The following properties manage the spacing in and around elements. The border r
 
 ## Pages and Columns
 
-The following properties control the page sizes, columns and breaks within.
+The following properties control the page sizes, columns and breaks within. Pages can also be modified with the 'page' at-rule.
 
 | Property  | Description |
 |---|---|
-| <a href='properties/column-count.html' >column-count</a>   |  |
-| <a href='properties/column-gap.html' >column-gap</a>   |  |
-| <a href='properties/column-width.html' >column-width</a>   |  |
-| <a href='properties/break-inside.html' >break-inside</a>   |  |
-| <a href='properties/break-after.html' >break-after</a>   |  |
-| <a href='properties/break-before.html' >break-before</a>   |  |
-| <a href='properties/page-break-inside.html' >page-break-inside</a>   |  |
-| <a href='properties/page-break-after.html' >page-break-after</a>   |  |
-| <a href='properties/page-break-before.html' >page-break-before</a>   |  |
-| <a href='properties/margin-top.html' >margin-top</a>   |  |
-| <a href='properties/margin-left.html' >margin-left</a>   |  |
-| <a href='properties/margin-bottom.html' >margin-bottom</a>   |  |
-| <a href='properties/margin-right.html' >margin-right</a>   |  |
-| <a href='properties/margin-inline.html' >margin-inline</a>   |  |
-| <a href='properties/margin-inline-start.html' >margin-inline-start</a>   |  |
-| <a href='properties/margin-inline-end.html' >margin-inline-end</a>   |  |
+| <a href='properties/column-count.html' >column-count</a>   | Specifies the number of columns within a block |
+| <a href='properties/column-gap.html' >column-gap</a>   | Specifies the alley width between columns |
+| <a href='properties/column-width.html' >column-width</a>   | Specifies ideal column widths for content within an container so they are not smaller than the desired width but fill the container's width  |
+| <a href='properties/break-inside.html' >break-inside</a>   | Setting to avoid, will ensure that the content within is in a single region, column and/or page where possible. |
+| <a href='properties/break-after.html' >break-after</a>   | Setting to always, will ensure that any following content begins on a new region, column and/or page where possible.  |
+| <a href='properties/break-before.html' >break-before</a>   | Setting to always, will ensure that the content begins on a new region, column and/or page where possible. |
+| <a href='properties/page-break-inside.html' >page-break-inside</a>   | Setting to avoid, will ensure that the content within is in a single page where possible. |
+| <a href='properties/page-break-after.html' >page-break-after</a>   | Setting to always, will ensure that any following content begins on a new page where possible. |
+| <a href='properties/page-break-before.html' >page-break-before</a>   | Setting to always, will ensure that any following content begins on a new page where possible. |
 
 ---
 
 ## Fonts and Type Faces
 
-The following properties control the font that any text will use, including families and styles, and remote font registration.
+The following properties control the font that any text will use, including families and styles, and remote font registration. The 'font-face' at-rule allows definition of custom fonts, that can be used here.
 
 | Property  | Description |
 |---|---|
@@ -213,18 +206,19 @@ The following properties manage counter values, updating and displaying dynamic 
 
 ## Lists and List Items
 
-The following properties are specific to lists and the items within them. Some are unique to the library as the functionality is not available (or difficult to replicate) in CSS < 3, but used significantly in many forms of documentation.
+The following properties are specific to lists and the items within them. **NOTE**: The counter-style at-rule can also support various custom list style types.
 
 | Property  | Description |
 |---|---|
 | <a href='properties/list-style.html' >list-style</a>   |  |
 | <a href='properties/list-style-type.html' >list-style-tyle</a>   |  |
+<!-- Replace with counter-style rule 
 | <a href='properties/pdf-li-group.html' >-pdf-li-group</a>   |  |
 | <a href='properties/pdf-li-concat.html' >-pdf-li-concat</a>   |  |
 | <a href='properties/pdf-li-align.html' >-pdf-li-align</a>   |  |
 | <a href='properties/pdf-li-inset.html' >-pdf-li-inset</a>   |  |
 | <a href='properties/pdf-li-prefix.html' >-pdf-li-prefix</a>   |  |
-| <a href='properties/pdf-li-postfix.html' >-pdf-li-postfix</a>   |  |
+| <a href='properties/pdf-li-postfix.html' >-pdf-li-postfix</a>   |  | -->
 
 
 ---
