@@ -27,6 +27,8 @@ Within the style attribute of a visual element, or a selector in a stylesheet or
 
 The style property global values (initial, revert, inherit, etc.) are **not** supported by the library, and that property will be ignored. If there has been a value set on that property previously (or with lower precedence) then it will be maintained for the content that would have had the global value set on it. See the <a href='/learning/styles/precedence.html' >CSS Selector Precedence</a> article for more information on ordering and assigning values.
 
+---
+
 ## Unsupported Properties
 
 If the style group, style sheet or style attribute contains an unknown or unsupported property, then that property will be skipped over. However further properties that are known will still be parsed and used during document output.
@@ -171,6 +173,7 @@ The following properties control the font that any text will use, including fami
 | <a href='properties/font-family.html' >font-family</a>   |  Specifies one or more family names to use, in order of preference. The library has built in fonts for the standard 'serif', 'sans-serif' and 'monospace' fonts, and will always be available. |
 | <a href='properties/font-weight.html' >font-weight</a>   | Specifies the numeric weight (100 - 900), or 'normal' or 'bold'. If the actual font-weight is not available, then the library will fallback to the nearest available weight. |
 | <a href='properties/font-size.html' >font-size</a>   | Specifies the numeric size of the text to display when the document is output. This can be an absolute unit or a relative unit or percentage. The absolute (x-large, small etc.) and relative (larger / smaller) are supported. |
+
 <!-- | <a href='properties/font-display.html' >font-display</a>   |  |
 | <a href='properties/font-stretch.html' >font-stretch</a>   |  | -->
 <!-- | <a href='properties/src.html' >src</a>   |  Used by the font-face at rule | -->
@@ -214,10 +217,11 @@ The following properties manage counter values, updating and displaying dynamic 
 
 The following properties are specific to lists and the items within them. **NOTE**: The counter-style at-rule can also support various custom list style types.
 
-| Property  | Description |
+| Property | Description |
 |---|---|
 | <a href='properties/list-style.html' >list-style</a>   |  |
 | <a href='properties/list-style-type.html' >list-style-tyle</a>   |  |
+
 <!-- Replace with counter-style rule 
 | <a href='properties/pdf-li-group.html' >-pdf-li-group</a>   |  |
 | <a href='properties/pdf-li-concat.html' >-pdf-li-concat</a>   |  |
