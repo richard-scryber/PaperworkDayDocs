@@ -3,7 +3,7 @@ layout: default
 title: SVG Elements
 parent: Template reference
 has_children: true
-has_toc: true
+has_toc: false
 nav_order: 6
 ---
 
@@ -35,7 +35,7 @@ This content will not be processed, and be ignored. It can either be used to exc
 
 ### Case sensitivity
 
-By default **all** elements are *case sensitive* and are all lower case.
+By default **all** elements are *case sensitive* and are all lower case, or camelCase.
 
 ---
 

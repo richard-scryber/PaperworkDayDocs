@@ -1,6 +1,6 @@
 ---
 layout: default
-title: svg
+title: g
 parent: SVG Element Referernce
 parent_url: /reference/svgelements/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# SVG Root Element
+# &lt;g&gt; : SVG Group Element
 
 Summary
 
