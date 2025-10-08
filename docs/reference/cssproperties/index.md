@@ -146,7 +146,7 @@ The following properties manage the spacing in and around elements. The border r
 
 ## Pages and Columns
 
-The following properties control the page sizes, columns and breaks within. Pages can also be modified with the 'page' at-rule.
+The following properties control the page sizes, columns and breaks within. The <a href='/reference/cssselectors/rules/page.html'>'page'</a> at-rule allows definition of custom page sizes, overall and in-groups.
 
 | Property  | Description |
 |---|---|
@@ -159,6 +159,7 @@ The following properties control the page sizes, columns and breaks within. Page
 | <a href='properties/page-break-inside.html' >page-break-inside</a>   | Setting to avoid, will ensure that the content within is in a single page where possible. |
 | <a href='properties/page-break-after.html' >page-break-after</a>   | Setting to always, will ensure that any following content begins on a new page where possible. |
 | <a href='properties/page-break-before.html' >page-break-before</a>   | Setting to always, will ensure that the content begins on a new page where possible. |
+| <a href='properties/page.html' >page</a>   | Specifies the name of the page group style from an at-rule, that should be used to define the size and layout af any pages within this section. |
 
 ---
 
@@ -203,7 +204,7 @@ The following properties control the way any text within the element will be out
 
 ## Lists, Counters and Content
 
-The following properties manage counter values, updating and displaying dynamic incrementing content.
+The following properties manage counter values, updating and displaying dynamic incrementing content. The <a href='/reference/cssselectors/rules/counter-style.html'>'counter-style'</a> at-rule allows definition of custom fonts, that can be used here.
 
 | Property  | Description |
 |---|---|
