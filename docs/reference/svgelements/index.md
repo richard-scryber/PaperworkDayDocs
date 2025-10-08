@@ -10,9 +10,14 @@ nav_order: 6
 # SVG Element Reference
 {: .no_toc }
 
-
-
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
 {: toc}
+</details>
 
 
 ---
@@ -60,7 +65,9 @@ If the <a href='/learning/templates/conformancemode.html'>conformance mode</a> i
 
 ## Supported Elements
 
-## SVG Root Element
+The following elements are supported in the library
+
+### SVG Root Element
 
 The root of a graphic element is always the <code>&lt;svg&gt;</code> element along with the svg namespace declaration (unless a prefix has already been declared). An SVG Root dogument can be parsed on it's own without a wrapping html template, but it cannot be output to a document without the surrounding document definition template - at the moment.
 
@@ -72,7 +79,7 @@ The root of a graphic element is always the <code>&lt;svg&gt;</code> element alo
 
 ---
 
-## Document Elements
+### Document Elements
 
 The document level elements sit within an svg definition and hold reference information to be used whilst outputting the final document.
 
@@ -84,7 +91,7 @@ The document level elements sit within an svg definition and hold reference info
 
 ---
 
-## Graphic Elements
+### Graphic Elements
 
 The following graphic shapes will output visual content into the drawing area of the final document.
 
@@ -101,7 +108,7 @@ The following graphic shapes will output visual content into the drawing area of
 
 ---
 
-## Structural Elements
+### Structural Elements
 
 All structural elements have no specific visual appearance, but contain other elements into a single group that can be used and modified as required.
 
@@ -115,7 +122,7 @@ All structural elements have no specific visual appearance, but contain other el
 
 ---
 
-## Text Content Elements
+### Text Content Elements
 
 THe following elements will show textual graphics in the output at specific positions. The style for the typeface, fill and stroke are supported.
 
@@ -124,7 +131,7 @@ THe following elements will show textual graphics in the output at specific posi
 
 ---
 
-## Paint Elements
+### Paint Elements
 
 The paint elements allow the complex definition of how a shape or textual graphic element should be presented on the output document.
 
