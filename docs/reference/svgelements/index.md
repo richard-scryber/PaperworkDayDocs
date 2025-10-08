@@ -28,7 +28,7 @@ Drawing vector content within a document is supported by the library using the w
 
 The svg elements can be included inline with the template, or as an <a href='/reference/htmltags/tags/embed.html'>embedded</a> set of content. Or also as a referenced <a href='/reference/htmltags/tags/img.html'>image</a> source. However, only inline or embedded content will get the full binding capability, so drawings can show dynamic values, or styles. Data will not be passed down to svg images.
 
-
+---
 
 ### Commenting Content
 
@@ -36,11 +36,14 @@ Enclosing any content starting with a <code>&lt;!-</code> and ending with <code>
 
 This content will not be processed, and be ignored. It can either be used to exclude content whilst creating a template, or adding context to the structure of a document.
 
+---
+
 
 ### Case sensitivity
 
 By default **all** elements are *case sensitive* and are all lower case, or camelCase.
 
+---
 
 
 ### Filters.
