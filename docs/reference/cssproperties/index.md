@@ -186,49 +186,33 @@ The following properties control the way any text within the element will be out
 
 | Property  | Description |
 |---|---|
-| <a href='properties/text-align.html' >text-align</a>   |  |
-| <a href='properties/vertical-align.html' >vertical-align</a>   |  |
-| <a href='properties/line-height.html' >line-height</a>   |  |
-| <a href='properties/text-decoration.html' >text-decoration</a>   |  |
-| <a href='properties/text-decoration-line.html' >text-decoration-line</a>   |  |
-| <a href='properties/letter-spacing.html' >letter-spacing</a>   |  |
-| <a href='properties/hyphens.html' >hyphens</a>   |  |
-| <a href='properties/hyphenate-limit-chars.html' >hyphenate-limit-chars</a>   |  |
-| <a href='properties/hyphenate-character.html' >hyphenate-character</a>   |  |
-| <a href='properties/word-spacing.html' >word-spacing</a>   |  |
-| <a href='properties/white-space.html' >white-space</a>   |  |
+| <a href='properties/text-align.html' >text-align</a>   | Specifies the horizontal alignment of content on a line, or content within a block with a specific width (inc. full width) or a table cell. |
+| <a href='properties/vertical-align.html' >vertical-align</a>   | Specifies the vertical alignment of content on a line, or content within a block with a specific height or a table cell |
+| <a href='properties/line-height.html' >line-height</a>   | Specifies the leading of a line which can either be a relative or an absolute value.  |
+| <a href='properties/text-decoration.html' >text-decoration</a>   | Specifies any decoration on the text - A line above, below or in the middle of the characters is supported. |
+| <a href='properties/text-decoration.html' >text-decoration-line</a>   | As per text-decoration - Specifies any decoration on the text - A line above, below or in the middle of the characters is supported. |
+| <a href='properties/letter-spacing.html' >letter-spacing</a>   | Defines an adjustment to the space applied between letters on a word, phrase or run of text. O is the standard value. |
+| <a href='properties/hyphens.html' >hyphens</a>   | Sets the model for hypenation, auto or none. NOTE: The library default is none, the manual option is considered equivalent to none. |
+| <a href='properties/hyphenate-limit-chars.html' >hyphenate-limit-chars</a>   | Specifies upt to 3 values representing the minimum word length to hyphenate and then the minimum left and or right length of characters, allowed before or after a hyphen. |
+| <a href='properties/hyphenate-character.html' >hyphenate-character</a>   | Specifies the character to use for a hyphen. Default is '-' |
+| <a href='properties/word-spacing.html' >word-spacing</a>   | Defines an adjustment to the space applied between words on a phrase or run of text. O is the standard value. |
+| <a href='properties/white-space.html' >white-space</a>   | Specifies if white space (tags, returns, spaces, etc.) should be preserved in the output document. |
 
 
 ---
 
-## Counters and Content
+## Lists, Counters and Content
 
-The following properties manage counter values, updating and displaying dynamic content.
+The following properties manage counter values, updating and displaying dynamic incrementing content.
 
 | Property  | Description |
 |---|---|
-| <a href='properties/content.html' >content</a>   |  |
-| <a href='properties/counter-reset.html' >counter-reset</a>   |  |
-| <a href='properties/counter-increment.html' >counter-increment</a>   |  |
+| <a href='properties/content.html' >content</a>   | The content propety is commonly used to add some textual content before (CSS <code>::before</code> selector) or after (CSS <code>::after</code> selector), the element that the style is applied to.  |
+| <a href='properties/counter-reset.html' >counter-reset</a>   | Accepts a space separated list of names of 'counter-identies' and optionally a following number for an initial value to reset to. If not provided, then the default for that counter will be used  |
+| <a href='properties/counter-increment.html' >counter-increment</a>   | Accepts a space separated list of names of 'counter-identites' and optionally a following number for teh value to increment by. If a number is not provided then the counter is incremented by 1 |
+| <a href='properties/list-style.html' >list-style</a>   | Specifies the format of the prefixed value that will be displayed against a list item - e.g. lower-roman, along with options for inside or outside (not currently supported) |
+| <a href='properties/list-style-type.html' >list-style-type</a>   | Expicity specifies the format of the prefixed value that will be displayed against a list item - e.g. lower-roman, or none if no value should be shown. |
 
----
-
-## Lists and List Items
-
-The following properties are specific to lists and the items within them. **NOTE**: The counter-style at-rule can also support various custom list style types.
-
-| Property | Description |
-|---|---|
-| <a href='properties/list-style.html' >list-style</a>   |  |
-| <a href='properties/list-style-type.html' >list-style-tyle</a>   |  |
-
-<!-- Replace with counter-style rule 
-| <a href='properties/pdf-li-group.html' >-pdf-li-group</a>   |  |
-| <a href='properties/pdf-li-concat.html' >-pdf-li-concat</a>   |  |
-| <a href='properties/pdf-li-align.html' >-pdf-li-align</a>   |  |
-| <a href='properties/pdf-li-inset.html' >-pdf-li-inset</a>   |  |
-| <a href='properties/pdf-li-prefix.html' >-pdf-li-prefix</a>   |  |
-| <a href='properties/pdf-li-postfix.html' >-pdf-li-postfix</a>   |  | -->
 
 
 ---
