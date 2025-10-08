@@ -25,15 +25,30 @@ The svg elements can be included inline with the template, or as an <a href='/re
 
 ---
 
+### Comments
+
+Enclosing any content starting with a <code>&lt;!-</code> and ending with <code>--&gt;</code> will mark a comment within the document.
+
+This content will not be processed, and be ignored. It can either be used to exclude content whilst creating a template, or adding context to the structure of a document.
+
+---
+
+### Case sensitivity
+
+By default **all** elements are *case sensitive* and are all lower case.
+
+---
+
+
 ## Filters.
 
-The filters defined in SVG are used to modify colors and blends of objects based on their raster data, as a vector description of document content, it is not possible to know the raster colour image of a drawing until the final rendition by the reading application.
+The filters defined in SVG are used to modify colors and blends of objects based on their raster data, as a vector description of document content, however these are **not** supported at the moment, as it is not possible to know the raster colour image of a drawing until the final rendition by the reading application.
 
 ---
 
 ## Animations
 
-SVG supports a range of animation elements and attributes, however these are not supported in the library at this time, as the document output format is generically a static format.
+SVG supports a range of animation elements and attributes, however these are **not** supported in the library at this time, as the document output format is generically a static format.
 
 ---
 
@@ -47,7 +62,8 @@ If the <a href='/learning/templates/conformancemode.html'>conformance mode</a> i
 
 ## SVG Root Element
 
-The root of a document is always the <code>&lt;html&gt;</code> element. Any known DTD and or processing instructions (<code>&lt;?&nbsp;&nbsp;?&gt;</code>) along with whitespace and comments are supported before the outermost html element
+The root of a graphic element is always the <code>&lt;svg&gt;</code> element along with the svg namespace declaration (unless a prefix has already been declared). An SVG Root dogument can be parsed on it's own without a wrapping html template, but it cannot be output to a document without the surrounding document definition template - at the moment.
+
 
 | Element  | Tag  | Description |
 |---|---|---|
