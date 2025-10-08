@@ -1,7 +1,7 @@
 ---
 layout: default
 title: svg
-parent: SVG Element Referernce
+parent: SVG Elements
 parent_url: /reference/svgelements/
 grand_parent: Template reference
 grand_parent_url: /reference/
