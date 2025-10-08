@@ -10,11 +10,9 @@ nav_order: 6
 # SVG Element Reference
 {: .no_toc }
 
-Drawing vector content within a document is supported using the well-known <code>svg</code> elements from the XML based markup. Although the library only supports part of the SVG specification, a significat proportion, of the static SVG capabilities are available, and most reference images and sources should work without modification as long as they do not rely on filters or animations.
+Drawing vector content within a document is supported by the library using the well-known <code>svg</code> elements from the XML based markup. Although the library only supports part of the SVG specification, a significant proportion, of the static SVG capabilities are available, and most referenced svg images and sources should work without modification as long as they do not rely on filters or animations.
 
-The svg elements can be included inline or as an <a href='/reference/htmltags/tags/embed.html'>embedded</a> set of content. Or as a referenced <a href='/reference/htmltags/tags/img.html'>image</a> source. However, only inline or embedded content will get the full binding capability, so drawings can show dynamic values, or styles.
-
-The SVG elements are grouped by function  
+The svg elements can be included inline with the template, or as an <a href='/reference/htmltags/tags/embed.html'>embedded</a> set of content. Or also as a referenced <a href='/reference/htmltags/tags/img.html'>image</a> source. However, only inline or embedded content will get the full binding capability, so drawings can show dynamic values, or styles. Data will not be passed down to svg images.
 
 <details open markdown="block">
   <summary>
@@ -36,6 +34,8 @@ The filters defined in SVG are used to modify colors and blends of objects based
 ## Animations
 
 SVG supports a range of animation elements and attributes, however these are not supported in the library at this time, as the document output format is generically a static format.
+
+---
 
 ## Unsupported Element Handling
 
