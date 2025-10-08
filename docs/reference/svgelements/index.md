@@ -10,22 +10,20 @@ nav_order: 6
 # SVG Element Reference
 {: .no_toc }
 
-Drawing vector content within a document is supported by the library using the well-known <code>svg</code> elements from the XML based markup. Although the library only supports part of the SVG specification, a significant proportion, of the static SVG capabilities are available, and most referenced svg images and sources should work without modification as long as they do not rely on filters or animations.
 
-The svg elements can be included inline with the template, or as an <a href='/reference/htmltags/tags/embed.html'>embedded</a> set of content. Or also as a referenced <a href='/reference/htmltags/tags/img.html'>image</a> source. However, only inline or embedded content will get the full binding capability, so drawings can show dynamic values, or styles. Data will not be passed down to svg images.
 
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-- TOC
 {: toc}
-</details>
+
 
 ---
 
 ## Overview
+
+Drawing vector content within a document is supported by the library using the well-known <code>svg</code> elements from the XML based markup. Although the library only supports part of the SVG specification, a significant proportion, of the static SVG capabilities are available, and most referenced svg images and sources should work without modification as long as they do not rely on filters or animations.
+
+The svg elements can be included inline with the template, or as an <a href='/reference/htmltags/tags/embed.html'>embedded</a> set of content. Or also as a referenced <a href='/reference/htmltags/tags/img.html'>image</a> source. However, only inline or embedded content will get the full binding capability, so drawings can show dynamic values, or styles. Data will not be passed down to svg images.
+
+
 
 ### Commenting Content
 
@@ -52,13 +50,15 @@ SVG supports a range of animation elements and attributes, however these are **n
 
 ---
 
-## Unsupported Element Handling
+### Unsupported Element Handling
 
 If the library encounters an element it does not understand then, by default, it will skip over the element and all its inner content, moving down to the next sibling (or the end of the document).
 
 If the <a href='/learning/templates/conformancemode.html'>conformance mode</a> is set to <code>strict</code>, then an error will be raised so that any offending content can be tracked if there is an issue.
 
 ---
+
+## Supported Elements
 
 ## SVG Root Element
 
