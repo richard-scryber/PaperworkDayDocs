@@ -164,7 +164,7 @@ The following properties control the page sizes, columns and breaks within. Page
 
 ## Fonts and Type Faces
 
-The following properties control the font that any text will use, including families and styles, and remote font registration. The 'font-face' at-rule allows definition of custom fonts, that can be used here.
+The following properties control the font that any text will use, including families and styles, and remote font registration. The <a href='/reference/cssselectors/rules/font-face.html'>'font-face'</a> at-rule allows definition of custom fonts, that can be used here.
 
 | Property  | Description |
 |---|---|
