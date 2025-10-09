@@ -31,7 +31,7 @@ An attribute supports the element in which it is enclosed by adding further info
 The library also extended the behaviour of the element with a number of custom elements
 
 ```html
-    <body id='bId' class='main-content other-class' >
+    {% raw %}<body id='bId' class='main-content other-class' >
 
       <!--  custom binding repeater on a list -->
         
@@ -43,7 +43,7 @@ The library also extended the behaviour of the element with a number of custom e
 
       <!-- more content -->
 
-    </body>
+    </body>{% endraw %}
 ```
 
 More information on actual document creation can be found in <a href='/index.html'>Getting Started</a>. And all <a href='/reference/htmltags/' >elements</a> have a list of the specific attributes they individually support.
@@ -180,6 +180,7 @@ The library uses the <code>data-*</code> attributes to extend the use of existin
 | <a href='tags/data-page-start.html' >data-page-start</a>   | <code>&lt;frame&gt;</code> | Any | Specifies the starting page index from the frames source document, where output into the final document will begin. Where 1 is the first page in the document.  |
 | <a href='tags/data-passthrough.html' >data-passthrough</a>   | <code>&lt;iframe&gt;</code> | Any | Flag, false by default, that can allow data from the parent document to flow through into a child template - allowing dynamic content within the child.  |
 | <a href='tags/data-test.html' >data-test</a>   | <code>&lt;if&gt;</code> | *Binding Only* | A binding expression that should return a non-null or non-false value and will then show the content within the inner elements of the if elements |
+| <a href='tags/data-id.html' >data-id</a>   | <code>&lt;var&gt;</code> | *Static Only* | A name of an existing or new document variable. THis variable will be set to the result of the <code>data-value</code> expression (each time the var is bound). This can then be used elsewhere in the document to show or calculate further values. |
 | <a href='tags/data-value.html' >data-value</a>   | <code>&lt;num&gt;</code>, <code>&lt;var&gt;</code>, <code>&lt;data&gt;</code> | *Binding Only* | A binding expression that will be used by parent element. Either outputting it as a value in a specific format of the document, or storing it in a document variable for use later on. |
 
 
