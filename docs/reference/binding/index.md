@@ -30,43 +30,40 @@ The library supports the use of data binding to dynamic content within a templat
 Binding is supported by wrapping expressions within 'handlebars' either in content, or for attribute or style values.
 
 ```html
-
-   {% raw %} <span id='{{model.blockId}}' style='color: {{concat("#", model.theme.color)}};' >{{model.name}}</span> {% endraw %}
-
+{% raw %} <span id='{{model.blockId}}' style='color: {{concat("#", model.theme.color)}};' >{{model.name}}</span> {% endraw %}
 ```
 
 More information on the binding syntax can be found in <a href='../binding_content.html'>Binding Content</a>
 
 ---
 
-#### Parentheses
+### Parentheses
 
 The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'parameters'. Nesting parentheses is supported, to more levels than can be understood.
 
 ---
 
-#### Storing results
+### Storing results
 
 Sometimes it is appropriate to capture the results of a function or calculation to be re-used or output elsewhere. The library allows for the use of the <code>&lt;var &gt;</code> element within a template to capture calculated values during processing. See the <a href='../learning/templates/variables.html' >Variables article</a> for more information
 
 
 ---
 
-#### Current Data Context
+### Current Data Context
 
 When looping through an array or collection of objects, the current object can be explicitly accessed by the dot (.) operator.
 
 ```html
-
-   {% raw %} <span id='{{.blockId}}' style='color: {{concat("#", .theme.color)}};' >{{.name}}</span> {% endraw %}
-
+{% raw %} <span id='{{.blockId}}' style='color: {{concat("#", .theme.color)}};' >{{.name}}</span> {% endraw %}
 ```
 
 This is useful when the current context is not obvious, such as within a nested loop.
+See the <a href='../learning/templates/template.html' >template article</a> for more information on looping through data.
 
 ---
 
-#### Error Results and Error Handling
+### Error Results and Error Handling
 
 If the expression cannot be understood, as the syntax is not correct, then the document will fail to be output as the template is invalid.
 
@@ -158,20 +155,20 @@ The following functions are available to calculate numeric values.
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='funcs/abs.html' >Abs Function</a>   | abs(expr) | Will return true if the contained expression can be converted to a true value, otherwise false, or false if the contained expression results in false. The contained expression can be a constant or another expression, and an attempt to convert to boolean will be made.  |
+| <a href='funcs/abs.html' >Absolute Value Function</a>   | abs(expr) | Will return true if the contained expression can be converted to a true value, otherwise false, or false if the contained expression results in false. The contained expression can be a constant or another expression, and an attempt to convert to boolean will be made.  |
 | <a href='funcs/acos.html' >Arc Cos Function</a>   | acos(expr) | Will return the value, of the contained expression, as a date. If no contained expression is provided, then it will return the current date and time. The contained expression can be aconstant or another expression, and an attempt to convert to date will be made. If a second *format* parameter is provided, then the expr will be parsed according to that format.  |
 | <a href='funcs/asin.html' >Arc Sine Function</a>   | asin(expr) | Will return the value as a decimal of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to decmial will be made|
 | <a href='funcs/atan.html' >Arc Tangent Function</a>   | atan(expr) | Will return the value as a double of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to double will be made|
 | <a href='funcs/ceiling.html' >Ceiling Function</a>   | ceiling(expr) | Will return the value as a integer of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to integer will be made|
 | <a href='funcs/cos.html' >Cosine Function</a>   | cos(expr) | Will return the value of the contained expression as a string. Complex (object and array values will be expanded). A formatting parameter can also be specifified to alter how the value is encoded|
-| <a href='funcs/deg.html' >Degrees Function</a>   | deg(expr) | Will convert any numeric value (expected to be in radians), to its equivalent degree value based on the rotation around half a circle circumference.  |
+| <a href='funcs/deg.html' >To Degrees Function</a>   | deg(expr) | Will convert any numeric value (expected to be in radians), to its equivalent degree value based on the rotation around half a circle circumference.  |
 | <a href='funcs/e.html' >Eulers Constant Function</a>   | e[()] | Will return the value of Eulers number (to 10 decimal places). It can also be used as a constant without the parenthese. e.g. e and E() are equivalent.|
 | <a href='funcs/floor.html' >Floor Function</a>   | floor(expr) | Will return the highest possible integer value below the provided value. |
 | <a href='funcs/log.html' >Logarithm Function</a>   | log(expr, newbase) | Will return the logarithm of the first argument in the base of the second argument. |
 | <a href='funcs/log10.html' >Logarithm Base 10 Function</a>   | log10(expr) | Is a standard shorthand for the log(n,10) function, and will return the base 10 logarithm of a number. |
 | <a href='funcs/pi.html' >PI Constant Function</a>   | pi[()] | Will return the value of Pi (to 10 decimal places). It can also be used as a constant without the parenthese. e.g. pi and PI() are equivalent.|
 | <a href='funcs/pow.html' >Power Exponent Function</a>   | pow(expr, exponent) | Will return the first argument, raised to the exponent of the second argument e.g. pow(3,2) is equivalent to 3^2|
-| <a href='funcs/rad.html' >Radient Function</a>   | rad(expr) | Will convert a value in degrees to it's radian equivalent.|
+| <a href='funcs/rad.html' >To Radians Function</a>   | rad(expr) | Will convert a value in degrees to it's radian equivalent.|
 | <a href='funcs/round.html' >Round Function</a>   | round(expr, [precision]) | Will return the value of a provided number to the nearest integer, or rounded to any provided precision.  |
 | <a href='funcs/sign.html' >Sign Function</a>   | sign(expr) | Will return 1 if the value of a provided number is positive. If the value is negative it will return -1, and zero will return 0.|
 | <a href='funcs/sine.html' >Sine Function</a>   | sin(expr) | Will return the sine of the provided angle (in radians). |

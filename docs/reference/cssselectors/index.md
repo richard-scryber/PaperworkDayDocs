@@ -31,32 +31,28 @@ A rule contains one or more selectors and defines a condition that the current e
 The library supports the use of a sub-set of all the current CSS selectors and at-rules. These are detailed below.
 
 ```css
-
 /* A simple selector matching all div elements */
 div {
   color: red;
 }
 
-/* A simple selector matching all elements with the 'blue' class */
+/* A simple selector matching all elements tagged with the 'blue' class */
 .blue {
   color: blue;
 }
 
-/* Adds a border and padding to all blue divs */
+/* Adds a border and padding to all blue tagged divs */
 div.blue{
   border: solid 1pt blue;
   padding: 5pt;
 }
 
 @media print{
-
   /* All styles within this rule will be applied by the library */
   div {
     color: black;
   }
-
 }
-
 ```
 
 For more information on selectors see the <a href='/learning/styles/'>Using Styles</a> articles.
@@ -65,10 +61,9 @@ For more information on selectors see the <a href='/learning/styles/'>Using Styl
 
 ### Unsupported Rules
 
-If the library encounters a css rule it cannot understand the entire content of that rule will be skipped
+If the library encounters a css rule it cannot understand the entire content of that rule will be skipped.
 
 ```css
-
 @scope (.article-body) to (figure) {
   /* Nothing after this will be checked
   img {
@@ -83,7 +78,6 @@ If the library encounters a css rule it cannot understand the entire content of 
   /* This will be included */
   color: red;
 }
-
 ```
 
 ---
@@ -93,7 +87,6 @@ If the library encounters a css rule it cannot understand the entire content of 
 If the library encounters a css selector it cannot understand, then it will be skipped. But any valid selectors will be maintained.
 
 ```css
-
 .myclass[lang="pt"] {
   /* Nothing after this will be checked.
   img {
@@ -106,7 +99,6 @@ If the library encounters a css selector it cannot understand, then it will be s
   /* This will be included */
   color: red;
 }
-
 ```
 
 ---
@@ -116,13 +108,10 @@ If the library encounters a css selector it cannot understand, then it will be s
 If the library encounters an individual css selector within a selector list, that it cannot understand, then it will be skipped. But any valid selectors will be maintained.
 
 ```css
-
 .myclass[lang="pt"], .next {
   /* This will be included for .next */
   color: red;
 }
-
-
 ```
 
 ---

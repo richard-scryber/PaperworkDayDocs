@@ -29,22 +29,19 @@ Within the element style
 
 ```html
 
-  {% raw %} <div style='property-name: value [ , value2, ...]; property-name: value [ , value2, ...]' >...</div> {% endraw %}
+  {% raw %} <div style='property-name: value [ , value2, ...]; property-name2: value [ , value2, ...]' >...</div> {% endraw %}
 
 ```
 
 As part of a referenced style-sheet or <a href='/reference/htmltags/tags/style.html' >style</a> element.
 
 ```css
-
 {% raw %}
 selector {
    property-name: value [ , value2, ... ];
    property-name2: value [ , value2, ... ];
-   ...
 }
 {% endraw %}
-
 ```
 
 
