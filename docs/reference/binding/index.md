@@ -29,8 +29,10 @@ The library supports the use of data binding to dynamic content within a templat
 
 Binding is supported by wrapping expressions within 'handlebars' either in content, or for attribute or style values.
 
-```
-   {% raw %} <span id='{{model.blockId}}' style='color: {{model.theme.color}};' >{{model.name}}</span> {% endraw %}
+```html
+
+   {% raw %} <span id='{{model.blockId}}' style='color: {{concat("#", model.theme.color)}};' >{{model.name}}</span> {% endraw %}
+
 ```
 
 More information on the binding syntax can be found in <a href='../binding_content.html'>Binding Content</a>
@@ -49,6 +51,20 @@ Sometimes it is appropriate to capture the results of a function or calculation 
 
 
 ---
+
+### Current Data Context
+
+When looping through an array or collection of objects, the current object can be explicitly accessed by the dot (.) operator.
+
+```html
+
+   {% raw %} <span id='{{.blockId}}' style='color: {{concat("#", .theme.color)}};' >{{.name}}</span> {% endraw %}
+
+```
+
+This is useful when the current context is not obvious, such as within a nested loop.
+
+--
 
 ### Error Results and Error Handling
 
@@ -113,7 +129,7 @@ The following logical operators compare two values for truthfulness and return a
 
 ---
 
-## Function Refererence
+## Supported Functions
 
 Functions take zero or more parameters within parenthese after the function name, perform the operation on the parameters and retun the result.
 

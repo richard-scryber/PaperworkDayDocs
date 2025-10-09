@@ -10,7 +10,6 @@ nav_order: 4
 # CSS Style Property Reference
 {: .no_toc }
 
-Within the style attribute of a visual element, or a selector in a stylesheet or group, properties alter the actual visual apperance of the element they are on, or matched to. Each property has a name and one or more values, depending on what is being set.
 
 <details open markdown="block">
   <summary>
@@ -21,21 +20,54 @@ Within the style attribute of a visual element, or a selector in a stylesheet or
 {: toc}
 </details>
 
+
+## Overview
+
+Within the style attribute of a visual element, or a selector in a stylesheet or group, properties alter the actual visual apperance of the element they are on, or matched to. Each property has a name and one or more values, depending on what is being set.
+
+Within the element style
+
+```html
+
+  {% raw %} <div style='property-name: value [ , value2, ...]; property-name: value [ , value2, ...]' >...</div> {% endraw %}
+
+```
+
+As part of a referenced style-sheet or <a href='/reference/htmltags/tags/style.html' >style</a> element.
+
+```css
+
+{% raw %}
+selector {
+   property-name: value [ , value2, ... ];
+   property-name2: value [ , value2, ... ];
+   ...
+}
+{% endraw %}
+
+```
+
+
+
 ---
 
-## Property Value Keywords
+### Property Value Keywords
 
 The style property global values (initial, revert, inherit, etc.) are **not** supported by the library, and that property will be ignored. If there has been a value set on that property previously (or with lower precedence) then it will be maintained for the content that would have had the global value set on it. See the <a href='/learning/styles/precedence.html' >CSS Selector Precedence</a> article for more information on ordering and assigning values.
 
 ---
 
-## Unsupported Properties
+### Unsupported Properties
 
 If the style group, style sheet or style attribute contains an unknown or unsupported property, then that property will be skipped over. However further properties that are known will still be parsed and used during document output.
 
 ---
 
-## Element Fills.
+## Supported Style Properties
+
+The library supports the use of the following properties with associated values. The actual output result will vary based on the element the property is applied to and the value of other properties.
+
+### Element Fills.
 
 The following properties are supported to alter the basic color of elements.
 
@@ -47,7 +79,8 @@ The following properties are supported to alter the basic color of elements.
 
 ---
 
-## Element Backgrounds.
+
+### Element Backgrounds.
 
 The following properties are supported to alter the background appearance of 'boxed'* elements **NOTE**: The background area is a rectangular shape including any padding are that is applied to the elelemt (and chaildren).
 
@@ -65,7 +98,7 @@ The following properties are supported to alter the background appearance of 'bo
 
 ---
 
-## Element Borders
+### Element Borders
 
 The following properties alter the border appearance on 'boxed'* elements. **NOTE**: By default borders do not affect the spacing around an element. Thick borders will impinge on outer and inner content, if no margins or padding are applied.
 
@@ -95,7 +128,7 @@ The following properties alter the border appearance on 'boxed'* elements. **NOT
 
 ---
 
-## Element Position and Size.
+### Element Position and Size.
 
 The following properties are supported to alter the position and size appearance of 'boxed'* elements.
 
@@ -119,7 +152,7 @@ The following properties are supported to alter the position and size appearance
 
 ---
 
-## Element Spacing
+### Element Spacing
 
 The following properties manage the spacing in and around elements. The border rectangle is the boundary between the margins and padding and is where a border around the element would be shown if one is specified. The content rectangle is where the flowing children of the element (if any) are going to be positioned. **NOTE**: By default, and by design, the library does not collapse any margin spacing, nor does it allocate space for the width of a border.
 
@@ -144,7 +177,7 @@ The following properties manage the spacing in and around elements. The border r
 
 ---
 
-## Pages and Columns
+### Pages and Columns
 
 The following properties control the page sizes, columns and breaks within. The <a href='/reference/cssselectors/rules/page.html'>'page'</a> at-rule allows definition of custom page sizes, overall and in-groups.
 
@@ -163,7 +196,7 @@ The following properties control the page sizes, columns and breaks within. The 
 
 ---
 
-## Fonts and Type Faces
+### Fonts and Type Faces
 
 The following properties control the font that any text will use, including families and styles, and remote font registration. The <a href='/reference/cssselectors/rules/font-face.html'>'font-face'</a> at-rule allows definition of custom fonts, that can be used here.
 
@@ -181,7 +214,7 @@ The following properties control the font that any text will use, including fami
 
 --- 
 
-## Text and Character Adjustment
+### Text and Character Adjustment
 
 The following properties control the way any text within the element will be output.
 
@@ -202,7 +235,7 @@ The following properties control the way any text within the element will be out
 
 ---
 
-## Lists, Counters and Content
+### Lists, Counters and Content
 
 The following properties manage counter values, updating and displaying dynamic incrementing content. The <a href='/reference/cssselectors/rules/counter-style.html'>'counter-style'</a> at-rule allows definition of custom fonts, that can be used here.
 
