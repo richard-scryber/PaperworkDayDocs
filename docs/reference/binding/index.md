@@ -41,7 +41,7 @@ More information on the binding syntax can be found in <a href='../binding_conte
 
 ### Parentheses
 
-The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'parameters'. Nesting parentheses is supported to N number of levels.
+The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'parameters'. Nesting parentheses is supported, to more levels than can be understood.
 
 ---
 
