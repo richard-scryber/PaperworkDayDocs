@@ -70,7 +70,6 @@ If the library encounters a css rule it cannot understand the entire content of 
     border: 5px solid black;
     background-color: goldenrod;
   }
-
   */
 }
 
@@ -160,6 +159,7 @@ Combinators allow mutiple selectors to be combined into a single match check. Th
 | <a href='combinators/media.html' >Media Rule</a>   | @media | The media rule groups styles that are most appropriate for a display device. Most specifically the library will only use styles with a 'print' media query within it's list.   |
 | <a href='combinators/page.html' >Page Size Rule</a>   | @page | The page rule allows modification of the page paper sizing, along with margins on that page. They can be named to be applied to individual sections of the resultant document.  |
 | <a href='combinators/font-face.html' >Font Face Rule</a>   | @font-face | The font-face rule defines a custom font available to be used from a local or remote source along with the format it uses. See <a href='/learning/styles/fonts.html' >Using Fonts</a> for more information on font support.   |
+| <a href='combinators/counter-style.html' >Counter Style Rule</a>   | @counter-style | The counter style rule defines a custom counter available to be refererences from a list-style-type or a css counter instruction. See <a href='/learning/styles/counters.html' >Using Counters</a> for more information.   |
 
 ---
 

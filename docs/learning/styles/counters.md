@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Styling Content
+title: Counters and List Styles
 parent: Learning
 parent_url: /learning/
 has_children: true
