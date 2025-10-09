@@ -39,20 +39,20 @@ More information on the binding syntax can be found in <a href='../binding_conte
 
 ---
 
-### Parentheses
+#### Parentheses
 
 The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'parameters'. Nesting parentheses is supported, to more levels than can be understood.
 
 ---
 
-### Storing results
+#### Storing results
 
 Sometimes it is appropriate to capture the results of a function or calculation to be re-used or output elsewhere. The library allows for the use of the <code>&lt;var &gt;</code> element within a template to capture calculated values during processing. See the <a href='../learning/templates/variables.html' >Variables article</a> for more information
 
 
 ---
 
-### Current Data Context
+#### Current Data Context
 
 When looping through an array or collection of objects, the current object can be explicitly accessed by the dot (.) operator.
 
@@ -64,9 +64,9 @@ When looping through an array or collection of objects, the current object can b
 
 This is useful when the current context is not obvious, such as within a nested loop.
 
---
+---
 
-### Error Results and Error Handling
+#### Error Results and Error Handling
 
 If the expression cannot be understood, as the syntax is not correct, then the document will fail to be output as the template is invalid.
 
