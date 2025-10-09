@@ -10,6 +10,7 @@ nav_order: 4
 # CSS Style Property Reference
 {: .no_toc }
 
+---
 
 <details open markdown="block">
   <summary>
@@ -20,6 +21,7 @@ nav_order: 4
 {: toc}
 </details>
 
+---
 
 ## Overview
 

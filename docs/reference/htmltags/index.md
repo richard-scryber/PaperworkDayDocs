@@ -11,28 +11,6 @@ nav_order: 1
 # Supported HTML Element Reference
 {: .no_toc }
 
-The library supports the use of (x)html elements, also referred to a tags to structure content within a template. This can be extended by embedding external files, or dymamically binding elements.
-
-The root level of a document should always be the <code>&lt;html&gt;</code> element, (preferably) using the xmlns attribute namespace to define the content as xhtml. Followed by the <code>&lt;head&gt;</code> element for document meta data (to describe the the document) and then a <code>&lt;body&gt;</code> to contain the content of the document. 
-
-```
-   <html xmlns='http://www.w3.org/1999/xhtml'>
-    <head>
-
-    </head>
-    <body>
-   
-      <!-- add further content -->
-
-    </body>
-   </html>
-```
-
-
-More information on actual document creation can be found in <a href='/index.html'>Getting Started</a>
-
----
-
 <details open markdown="block">
   <summary>
     Table of contents
@@ -43,6 +21,28 @@ More information on actual document creation can be found in <a href='/index.htm
 </details>
 
 ---
+
+## Overview
+
+The library supports the use of (x)html elements, also referred to a tags to structure content within a template. This can be extended by embedding external files, or dymamically binding elements.
+
+The root level of a document should always be the <code>&lt;html&gt;</code> element, (preferably) using the xmlns attribute namespace to define the content as xhtml. Followed by the <code>&lt;head&gt;</code> element for document meta data (to describe the the document) and then a <code>&lt;body&gt;</code> to contain the content of the document. 
+
+```html
+   <html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+      <!-- document information -->
+    </head>
+    <body>
+   
+      <!-- add further content -->
+
+    </body>
+   </html>
+```
+
+More information on actual document creation can be found in <a href='/index.html'>Getting Started</a>
+
 
 ### Comments
 
@@ -66,7 +66,13 @@ By default **all** elements are *case sensitive* and are all lower case.
 
 ---
 
-## Document Root Element
+## Suppoorted Elements
+
+The library supports the following elelemts (tags) within a template.
+
+---
+
+### Document Root Element
 
 The root of a document is always the <code>&lt;html&gt;</code> element. Any known DTD and or processing instructions (<code>&lt;?&nbsp;&nbsp;?&gt;</code>) along with whitespace and comments are supported before the outermost html element
 
@@ -76,7 +82,7 @@ The root of a document is always the <code>&lt;html&gt;</code> element. Any know
 
 ---
 
-## Sectioning Root Elements
+### Sectioning Root Elements
 
 
 Within the document there should be a <code>&lt;head&gt;</code> for the metadata and either a <code>&lt;body&gt;</code> or <code>&lt;frameset&gt;</code> for the actual content.
@@ -90,7 +96,7 @@ Within the document there should be a <code>&lt;head&gt;</code> for the metadata
 
 ---
 
-## Document Metadata Elements
+### Document Metadata Elements
 
 
 The library supports the use of the following elements within the meta-data <code>&lt;head&gt;</code> of the document.
@@ -107,7 +113,7 @@ The library supports the use of the following elements within the meta-data <cod
 
 ---
 
-## Content Sectioning Elements
+### Content Sectioning Elements
 
 
 The library supports the use of the following sectioning elements used to divide up the main content of the template into significant blocks.
@@ -125,7 +131,7 @@ The library supports the use of the following sectioning elements used to divide
 ---
 
 
-## Dynamic Content Elements
+### Dynamic Content Elements
 
 The following elements support the inclusion of further content, or outputing content dynamically based on current data during processing.
 
@@ -141,7 +147,7 @@ The following elements support the inclusion of further content, or outputing co
 
 ---
 
-## Structural Elements
+### Structural Elements
 
 The following elements provide a general way to divide content in the template, to be output in the document.
 
@@ -165,7 +171,7 @@ The following elements provide a general way to divide content in the template, 
 
 ---
 
-## List Content Elements
+### List Content Elements
 
 The following elements allow content to be output within a list style, to show a grouping of similar items along with a marker, number or term to identify each one.
 
@@ -182,7 +188,7 @@ The following elements allow content to be output within a list style, to show a
 
 ---
 
-## Table Content Elements
+### Table Content Elements
 
 The following elements allow content to be output within a tabular (grid) structure.
 
@@ -199,7 +205,7 @@ The following elements allow content to be output within a tabular (grid) struct
 ---
 
 
-## Image and Graphical Elements
+### Image and Graphical Elements
 
 The following elements support showing raster and vector graphical content within a document.
 
@@ -217,7 +223,7 @@ The following elements support showing raster and vector graphical content withi
 
 ---
 
-## Dynamic Text Elements
+### Dynamic Text Elements
 
 The following elements support generating dynamic content within the final document based on provided or calculated values.
 
@@ -229,7 +235,7 @@ The following elements support generating dynamic content within the final docum
 | <a href='tags/var.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> | A simple text element, that also allows data within the template to be calculated, stored and modified during the processing, and then used by other elements later on. |
 
 
-## Semantic Text Elements
+### Semantic Text Elements
 
 The following elements are based on and have a similar function to the standard HTML defined tags. Some will also alter the style of the inner content based on the intended meaning of the element.
 

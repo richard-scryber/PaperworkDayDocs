@@ -11,15 +11,30 @@ nav_order: 2
 # Supported HTML Attribute Reference
 {: .no_toc }
 
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Overview
+
 An attribute supports the element in which it is enclosed by adding further information in a formal and discreet manner. The library supports the use of the many standard element attributes on various <a href='../htmltags/' >Html Elements</a>. Where possible the library tries to match expected behaviour to the final output based on existing meaning.
 
 The library also extended the behaviour of the element with a number of custom elements
 
-```
+```html
     <body id='bId' class='main-content other-class' >
-   
-      <!--  custom binding repeater on a list -->
 
+      <!--  custom binding repeater on a list -->
+        
       <ol class='model-list'>
         <template id='listing' data-bind='{{model.items}}' data-bind-max='200' >
           <li id='{{"item" + index()}}' class='model-item' >{{.name}}</li>
@@ -31,19 +46,7 @@ The library also extended the behaviour of the element with a number of custom e
     </body>
 ```
 
-
 More information on actual document creation can be found in <a href='/index.html'>Getting Started</a>. And all <a href='/reference/htmltags/' >elements</a> have a list of the specific attributes they individually support.
-
----
-
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-- TOC
-{: toc}
-</details>
 
 ---
 
@@ -63,8 +66,15 @@ By default **All Visual Elements** attributes are *case sensitive* and are all l
 
 The library is strongly typed and expects specific types to be set on a value of an attribute. These can be explicity set within a template content, or created dynamically at generation time. Some attributes however are explicitly static only, or explicitly binding only - as the required type is not convertable. These are marked in tables below, with one of **Any** or **Binding Only** or **Static Only**.
 
+---
 
-## Global Attributes
+## Attribute Reference
+
+The library supports the following attributes.
+
+---
+
+### Global Attributes
 
 The following attributes are supported on all visual elements - the elements that are within the body element, including the body element itself.
 
@@ -83,7 +93,7 @@ The following attributes are supported on all visual elements - the elements tha
 
 ---
 
-## Global Event Attributes
+### Global Event Attributes
 
 
 The following event attributes are supported on all visual elements. For more information on document controllers and event handling see the <a href='/learning/binding/codebehind.html'>code behind</a> learning article.
@@ -101,7 +111,7 @@ The following event attributes are supported on all visual elements. For more in
 
 ---
 
-## Supported Standard Attributes
+### Supported Standard Attributes
 
 
 The library supports the use of the following standard attributes that match existing attributes on html elements.
@@ -141,7 +151,7 @@ The library supports the use of the following standard attributes that match exi
 
 ---
 
-## Extension Attributes
+### Extension Attributes
 
 
 The library uses the <code>data-*</code> attributes to extend the use of existing elements to preserve validity of a html template and provide support for the library features.

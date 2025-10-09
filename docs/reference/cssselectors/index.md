@@ -11,6 +11,7 @@ nav_order: 3
 # CSS Style Selector Reference
 {: .no_toc }
 
+---
 
 <details open markdown="block">
   <summary>

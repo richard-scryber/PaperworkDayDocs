@@ -10,6 +10,8 @@ nav_order: 6
 # SVG Element Reference
 {: .no_toc }
 
+---
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -27,6 +29,29 @@ nav_order: 6
 Drawing vector content within a document is supported by the library using the well-known <code>svg</code> elements from the XML based markup. Although the library only supports part of the SVG specification, a significant proportion, of the static SVG capabilities are available, and most referenced svg images and sources should work without modification as long as they do not rely on filters or animations.
 
 The svg elements can be included inline with the template, or as an <a href='/reference/htmltags/tags/embed.html'>embedded</a> set of content. Or also as a referenced <a href='/reference/htmltags/tags/img.html'>image</a> source. However, only inline or embedded content will get the full binding capability, so drawings can show dynamic values, or styles. Data will not be passed down to svg images.
+
+```html
+   <html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+      <title>Different SVG inclusion options</title>
+    </head>
+    <body>
+      <!-- An inline SVG drawing --> 
+       <svg xmlns='http://www.w3.org/2000/svg' viewport='0 0 30 30' width='100pt' height='100pt'>
+          <rect x='10' y='10' width='10' height='10' />
+        </svg>
+
+        <!-- An embedded SVG drawing --> 
+        <embed source='./mydrawing.svg' />
+
+        <!-- An referenced SVG drawing as a static image --> 
+        <img src='./mydrawing.svg' />
+
+      <!-- add further content -->
+
+    </body>
+   </html>
+```
 
 ---
 
