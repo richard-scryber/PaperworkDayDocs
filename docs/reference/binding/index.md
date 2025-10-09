@@ -11,15 +11,6 @@ nav_order: 5
 # Supported Binding Expression Reference
 {: .no_toc }
 
-The library supports the use of data binding to dynamic content within a template (including refrenced files and stylesheets) so that textual or visual elements and styles can be updated when a document is created.
-
-Binding is supported by wrapping expressions within 'handlebars' either in content, or for attribute or style values.
-
-```
-   {% raw %} <span id='{{model.blockId}}' style='color: {{model.theme.color}};' >{{model.name}}</span> {% endraw %}
-```
-
-More information on the binding syntax can be found in <a href='../binding_content.html'>Binding Content</a>
 
 <details open markdown="block">
   <summary>
@@ -32,19 +23,52 @@ More information on the binding syntax can be found in <a href='../binding_conte
 
 ---
 
+## Overview
+
+The library supports the use of data binding to dynamic content within a template (including refrenced files and stylesheets) so that textual or visual elements and styles can be updated when a document is created.
+
+Binding is supported by wrapping expressions within 'handlebars' either in content, or for attribute or style values.
+
+```
+   {% raw %} <span id='{{model.blockId}}' style='color: {{model.theme.color}};' >{{model.name}}</span> {% endraw %}
+```
+
+More information on the binding syntax can be found in <a href='../binding_content.html'>Binding Content</a>
+
+---
+
 ### Parentheses
 
 The library fully supports the use of parenthese '()' to encapsulate operations into discreet sets, and also to encapsulate values passed to function calls - 'parameters'. Nesting parentheses is supported to N number of levels.
+
+---
 
 ### Storing results
 
 Sometimes it is appropriate to capture the results of a function or calculation to be re-used or output elsewhere. The library allows for the use of the <code>&lt;var &gt;</code> element within a template to capture calculated values during processing. See the <a href='../learning/templates/variables.html' >Variables article</a> for more information
 
 
+---
 
-## Binary operators
+### Error Results and Error Handling
 
-The library supports the use of the standard mathematical binary operators, using standard operator precedence.
+If the expression cannot be understood, as the syntax is not correct, then the document will fail to be output as the template is invalid.
+
+If the expressions operation or function fail during binding then, by default, that value will be empty, and an error will be logged. However the document processing will contine. Logs can be appended to the document and checked as needed. See <a href='/learning/templates/logging.html'>here</a> for more information.
+
+---
+
+## Supported Operators
+
+
+The library supports the use of the following operators within a template to define calculations, sorted by category.
+
+---
+
+
+### Binary operators
+
+The following standard mathematical binary operators perform a calculation on two operands and return a comparable value, using standard operator precedence.
 
 | Operator  | Example  | Description |
 |---|---|---|
@@ -62,9 +86,9 @@ The library supports the use of the standard mathematical binary operators, usin
 
 ---
 
-## Relational operators
+### Relational operators
 
-The library supports the use of the following relational operators for comparing values.
+The following relational operators compare values returning a boolean.
 
 | Operator  | Example  | Description |
 |---|---|---|
@@ -77,9 +101,9 @@ The library supports the use of the following relational operators for comparing
 
 ---
 
-## Logical operators
+### Logical operators
 
-The library supports the use of the following logical operators.
+The following logical operators compare two values for truthfulness and return a boolean value based on their truth tables.
 
 | Operator  | Example  | Description |
 |---|---|---|
@@ -89,7 +113,13 @@ The library supports the use of the following logical operators.
 
 ---
 
-## Conversion functions
+## Function Refererence
+
+Functions take zero or more parameters within parenthese after the function name, perform the operation on the parameters and retun the result.
+
+---
+
+### Conversion functions
 
 To convert values of one type to another, the following functions are available.
 
@@ -103,11 +133,11 @@ To convert values of one type to another, the following functions are available.
 | <a href='funcs/integer.html' >Integer Function</a>   | integer(expr) | Will return the value as a integer of the contained expression. The contained expression can be a constant or another expression, and an attempt to convert to integer will be made|
 | <a href='funcs/string.html' >String Function</a>   | string(expr, [format]) | Will return the value of the contained expression as a string. Complex (object and array values will be expanded). A formatting parameter can also be specifified to alter how the value is encoded|
 
+---
 
+### Mathematical functions
 
-## Mathematical functions
-
-To convert values of one type to another, the following functions are available.
+The following functions are available to calculate numeric values.
 
 
 | Function  | Example  | Description |
@@ -133,11 +163,11 @@ To convert values of one type to another, the following functions are available.
 | <a href='funcs/tan.html' >Tangent Function</a>   | tan(expr) | Will return the tangent of the provided angle (in radians). |
 | <a href='funcs/truncate.html' >Truncate Function</a>   | truncate(expr) | Will remove any floating point value from expr. This means negative values are equivalent to ceiling(expr) and positive values are equivalent to floor(expr).|
 
+---
 
+### String functions
 
-## String functions
-
-To manipulate string (character) values, the following functions are available.
+The following functions are available to manipulate string (character) values.
 
 
 | Function  | Example  | Description |
@@ -164,10 +194,11 @@ To manipulate string (character) values, the following functions are available.
 | <a href='funcs/trimend.html' >Trim End Function</a>   | trimend(expr) | Will return the first string parameter removing any white space characters from the right (end) of the string.  |
 | <a href='funcs/trimstart.html' >Trim Start Function</a>   | trimstart(expr) | Will return the first string parameter removing any white space characters from the left (start) of the string. |
 
+---
 
-## Date functions
+### Date functions
 
-The date functions work on (Gregorian) DateTime values, to convert strings, use one of the date() conversion function overloads.
+The following functions work on (Gregorian) DateTime values to add, split and manipulate values. To convert strings, use one of the date() conversion function overloads.
 
 **Note**" When working with the current date time value, it will increase as the document is processed unless it is stored in a <code>var</code> value.
 
@@ -197,9 +228,9 @@ The date functions work on (Gregorian) DateTime values, to convert strings, use 
 ---
 
 
-## Logical Functions
+### Logical Functions
 
-The library supports the use of the following logical functions.
+The following logical functions allow decisions to be made based on input parameters.
 
 | Operator  | Example  | Description |
 |---|---|---|
@@ -207,11 +238,11 @@ The library supports the use of the following logical functions.
 | <a href='funcs/iferror.html' >If Error Function</a>   | iferror(expr, fallback) | Checks the first parameter and if the evaluated result does not cause an error, then it will be returned, otherwise the second parameter is evaluated and returned.  |
 | <a href='funcs/in.html' >In Function</a>   | in(compare, expr1 [, expr2, expr3 ...]) | Takes the first parameter, and checks any following parameters to see if they are equal to the first. If so then it returns true, otherwise false. If one of the following parameters is a collection or array, then it will expand the contents and check each individual item. |
 
---
+---
 
-## Aggregate Functions
+### Aggregate Functions
 
-The library supports the use of the following aggregate functions to calculate individual values from collections or arrays.
+The following aggregate functions calculate individual values from collections or arrays, or values within the members of the collection.
 
 | Operator  | Example  | Description |
 |---|---|---|
@@ -231,9 +262,9 @@ The library supports the use of the following aggregate functions to calculate i
 ---
 
 
-## Collection Functions
+### Collection Functions
 
-The library supports the use of the following collection functions to bring together values into an array.
+The following collection functions bring together values into an array, manipulate array contents or inspect array contents.
 
 | Operator  | Example  | Description |
 |---|---|---|
