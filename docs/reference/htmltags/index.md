@@ -11,6 +11,8 @@ nav_order: 1
 # Supported HTML Element Reference
 {: .no_toc }
 
+---
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -43,6 +45,7 @@ The root level of a document should always be the <code>&lt;html&gt;</code> elem
 
 More information on actual document creation can be found in <a href='/index.html'>Getting Started</a>
 
+---
 
 ### Comments
 
@@ -58,6 +61,19 @@ Along with the creation of new documents, it is possible to modify a previously 
 
 This is done with the <code>&lt;frameset&gt;</code> element, replacing the body, and more information can be found <a href='/learning/templates/frameset.html' >here</a>
 
+```html
+   <html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+      <!-- document information -->
+    </head>
+    <frameset>
+      <frame src='./draftcoverpage.html' />
+      <frame src='./existing.pdf' data-page-start='2' />
+      <!-- add further content -->
+    </frameset>
+   </html>
+```
+
 ---
 
 ### Case sensitivity
@@ -66,7 +82,7 @@ By default **all** elements are *case sensitive* and are all lower case.
 
 ---
 
-## Suppoorted Elements
+## Supported Elements
 
 The library supports the following elelemts (tags) within a template.
 

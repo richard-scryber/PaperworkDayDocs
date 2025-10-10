@@ -95,6 +95,8 @@ If the <a href='/learning/templates/conformancemode.html'>conformance mode</a> i
 
 The following elements are supported in the library
 
+---
+
 ### SVG Root Element
 
 The root of a graphic element is always the <code>&lt;svg&gt;</code> element along with the svg namespace declaration (unless a prefix has already been declared). An SVG Root dogument can be parsed on it's own without a wrapping html template, but it cannot be output to a document without the surrounding document definition template - at the moment.
@@ -154,6 +156,9 @@ All structural elements have no specific visual appearance, but contain other el
 
 THe following elements will show textual graphics in the output at specific positions. The style for the typeface, fill and stroke are supported.
 
+
+| Element  | Tag  | Description |
+|---|---|---|
 | <a href='tags/text.html' >Text</a>   | <code>&lt;text&gt;</code> | A graphic block of textual content that will be output at the desired x,y (or dy,dy) position. |
 | <a href='tags/tspan.html' >Inner Text Span</a>   | <code>&lt;tspan&gt;</code> | A subtext element that will adjust the position and/or style of the inner characters for the final output. |
 
@@ -171,7 +176,14 @@ The paint elements allow the complex definition of how a shape or textual graphi
 | <a href='tags/marker.html' >Marker Definition</a>   | <code>&lt;marker&gt;</code> | Defines a group of graphic and/or textual elements that will be used on a line or set of lines/paths at pre-determined points on the line, at a specific size and angle. |
 | <a href='tags/stop.html' >Gradient Stop Definition</a>   | <code>&lt;stop&gt;</code> | Specifies a color and optionally an offset within a linear or radial gradient, that forms a transition boundary between colors. |
 
+### Meta-Data Elements
 
+The meta-data elements allow the inclusion of additional information about the graphic content that is not directly related to the visual appearance.
+
+| Element  | Tag  | Description |
+|---|---|---|
+| <a href='tags/title.html' >Title</a>   | <code>&lt;title&gt;</code> | Defines the short descriptive title about the outer parent element. This will also be shown in the document outline for visual (graphic) elements.
+| <a href='tags/desc.html' >Description</a>   | <code>&lt;desc&gt;</code> | Defines the longer description about the outer parent element. This will not be shown.
 
 
 

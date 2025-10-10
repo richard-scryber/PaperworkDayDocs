@@ -4,7 +4,7 @@ title: CSS Selectors
 parent: Template reference
 parent_url: /reference/
 has_children: true
-has_toc: true
+has_toc: false
 nav_order: 3
 ---
 
@@ -172,7 +172,6 @@ Pseudo element are keywords added to a selector to identify particular parts of 
 |---|---|---|
 | <a href='pseudo/before.html' >Before Content</a>   | ::before | ::before creates new pseudo element that is the first child of the matched element, often used to add cosmetic content. Also supports <a href='/learning/styles/counters.html' >counters</a>  |
 | <a href='pseudo/after.html' >After Content</a>   | ::after | ::after in a style selector creates new pseudo element that is the last child of the matched element, often used to add cosmetic content. Also supports <a href='/learning/styles/counters.html' >counters</a>  |
-
 
 ---
 

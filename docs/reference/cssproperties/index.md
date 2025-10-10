@@ -47,7 +47,6 @@ selector {
 ```
 
 
-
 ---
 
 ### Property Value Keywords
@@ -65,6 +64,8 @@ If the style group, style sheet or style attribute contains an unknown or unsupp
 ## Supported Style Properties
 
 The library supports the use of the following properties with associated values. The actual output result will vary based on the element the property is applied to and the value of other properties.
+
+---
 
 ### Element Fills.
 
@@ -250,4 +251,4 @@ The following properties manage counter values, updating and displaying dynamic 
 
 ---
 
-* 'boxed' elements have a non pure inline display, so they encapsulate all their content within a rectangular 'box', e.g. block, or inline-block.
+* 'boxed' encapsulate all their content within a rectangular 'box', e.g. block, or inline-block.
