@@ -36,9 +36,9 @@ When re-using existing content, there are a lot of attributes that can be on an 
 
 ### CSS vs Attributes
 
-Within the attribute tables below, if a property supports being set from styles, then the name is showm. 
+CSS support within SVG is limited. The preferred approach for the library is to bind to and calculate from reference values in the data.
 
-**NOTE**: Not all properties can support being set from styles, and some that are defined within the SVG specification, are pending implementation. A style property has a higher priority than an attribute value on the element.
+**NOTE**: CSS Support for properties will be added based on repeatable results from browsers.
 
 ---
 
