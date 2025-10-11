@@ -86,12 +86,15 @@ The following attributes, spilt into functional groups, are supported by the lib
 
 | Element  | Tag  | CSS Property| Description |
 |---|---|---|
-| <a href='tags/class.html' >Class name(s)</a>   | <code>&lt;class&gt;</code> | N/A | Zero or more names of css classes that will be used to match against for styling the element. |
-| <a href='tags/style.html' >Inline style values</a>   | <code>&lt;style&gt;</code> | N/A | The css style attribute for applying visual style to an element directly. See the <a href=''>Styles Reference</a> for more information.  |
+| <a href='attrs/id.html' >Element ID</a>   | <code>&lt;id&gt;</code> | N/A | The unique identifier for this element within the document. This can be used to reference the element from styles or scripts. |
+| <a href='attrs/class.html' >Class name(s)</a>   | <code>&lt;class&gt;</code> | N/A | Zero or more names of css classes that will be used to match against for styling the element. |
+| <a href='attrs/style.html' >Inline style values</a>   | <code>&lt;style&gt;</code> | N/A | The css style attribute for applying visual style to an element directly. See the <a href='/learning/styles/'>Styles</a> for more information.  |
+| <a href='attrs/hidden.html' >Is Hidden</a>   | <code>&lt;hidden&gt;</code> | N/A | This mirrors the library implementation, as it is a fast and easy way to show and hide content dynamically.  |
+| <a href='attrs/title.html' >Outline Title</a>   | <code>&lt;title&gt;</code> | N/A | This mirrors the library implementation of <a href='/reference/htmlattributes/title.html'>outline title attribute</a> and is also available as a <a href='/reference/svgelements/title.html'>title inner element</a>  |
 
 ---
 
-## Data to bind to
+## Position and Size Attributes
 
 Adding data
 
