@@ -104,12 +104,15 @@ By default all the svg visual elements are absolutely positioned relative to the
 
 | Element  | Tag | Description |
 |---|---|---|
+| <a href='attrs/cx.html' >Centre X Position</a>   | <code>&lt;cx&gt;</code> | The x coordinate position of the centre of a circle or ellipse within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings.   |
+| <a href='attrs/cy.html' >Centre Y Position</a>   | <code>&lt;cy&gt;</code> | The y coordinate position of the centre of a circle or ellipse within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. |
 | <a href='attrs/x.html' >X Position</a>   | <code>&lt;x&gt;</code> | The x coordinate position of the element within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Used by the svg, rect, use, text, tspan, image and pattern.    |
 | <a href='attrs/y.html' >Y Position</a>   | <code>&lt;y&gt;</code> | The y coordinate position of the element within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Used by the svg, rect, use, text, tspan, image and pattern. |
 | <a href='attrs/x1.html' >First X Position</a>   | <code>&lt;x1&gt;</code> | The x coordinate position of the start of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the horizontal start point of the line a linear gradient will follow.  |
 | <a href='attrs/y1.html' >First Y Position</a>   | <code>&lt;y1&gt;</code> | The y coordinate position of the start of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the vertical start point of the line a linear gradient will follow. |
 | <a href='attrs/x2.html' >Second X Position</a>   | <code>&lt;x2&gt;</code> |  The x coordinate position of the end of line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the horizontal end point of the line a linear gradient will follow.  |
 | <a href='attrs/y2.html' >Y Position</a>   | <code>&lt;y2&gt;</code> | The y coordinate position of the end of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the vertical end point of the line a linear gradient will follow.
+
 
 ---
 
