@@ -90,11 +90,11 @@ The html global attributes are also available on the svg elements.
 
 | Element  | Tag  |  Description |
 |---|---|---|
-| <a href='attrs/id.html' >Element ID</a>   | <code>&lt;id&gt;</code> | The unique identifier for this element within the document. This can be used to reference the element from styles other elements inside and outside the svg for non-image content. |
-| <a href='attrs/class.html' >Class name(s)</a>   | <code>&lt;class&gt;</code> | Zero or more names of css classes that will be used to match against for styling the element. |
-| <a href='attrs/style.html' >Inline style values</a>   | <code>&lt;style&gt;</code> | The css style attribute for applying visual style to an element directly. See the <a href='/learning/styles/'>Styles</a> for more information.  |
-| <a href='attrs/hidden.html' >Is Hidden</a>   | <code>&lt;hidden&gt;</code> | This mirrors the library implementation, as it is a fast and easy way to show and hide content dynamically.  |
-| <a href='attrs/title.html' >Outline Title</a>   | <code>&lt;title&gt;</code> | This mirrors the library implementation of <a href='/reference/htmlattributes/title.html'>outline title attribute</a> and is also available as a <a href='/reference/svgelements/title.html'>title inner element</a>  |
+| <a href='attrs/id.html' >Element ID</a>   | <code>id</code> | The unique identifier for this element within the document. This can be used to reference the element from styles other elements inside and outside the svg for non-image content. |
+| <a href='attrs/class.html' >Class name(s)</a>   | <code>class</code> | Zero or more names of css classes that will be used to match against for styling the element. |
+| <a href='attrs/style.html' >Inline style values</a>   | <code>style</code> | The css style attribute for applying visual style to an element directly. See the <a href='/learning/styles/'>Styles</a> for more information.  |
+| <a href='attrs/hidden.html' >Is Hidden</a>   | <code>hidden</code> | This mirrors the library implementation, as it is a fast and easy way to show and hide content dynamically.  |
+| <a href='attrs/title.html' >Outline Title</a>   | <code>title</code> | This mirrors the library implementation of <a href='/reference/htmlattributes/title.html'>outline title attribute</a> and is also available as a <a href='/reference/svgelements/title.html'>title inner element</a>  |
 
 ---
 
@@ -104,14 +104,16 @@ By default all the svg visual elements are absolutely positioned relative to the
 
 | Element  | Tag | Description |
 |---|---|---|
-| <a href='attrs/cx.html' >Centre X Position</a>   | <code>&lt;cx&gt;</code> | The x coordinate position of the centre of a circle or ellipse within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings.   |
-| <a href='attrs/cy.html' >Centre Y Position</a>   | <code>&lt;cy&gt;</code> | The y coordinate position of the centre of a circle or ellipse within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. |
-| <a href='attrs/x.html' >X Position</a>   | <code>&lt;x&gt;</code> | The x coordinate position of the element within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Used by the svg, rect, use, text, tspan, image and pattern.    |
-| <a href='attrs/y.html' >Y Position</a>   | <code>&lt;y&gt;</code> | The y coordinate position of the element within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Used by the svg, rect, use, text, tspan, image and pattern. |
-| <a href='attrs/x1.html' >First X Position</a>   | <code>&lt;x1&gt;</code> | The x coordinate position of the start of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the horizontal start point of the line a linear gradient will follow.  |
-| <a href='attrs/y1.html' >First Y Position</a>   | <code>&lt;y1&gt;</code> | The y coordinate position of the start of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the vertical start point of the line a linear gradient will follow. |
-| <a href='attrs/x2.html' >Second X Position</a>   | <code>&lt;x2&gt;</code> |  The x coordinate position of the end of line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the horizontal end point of the line a linear gradient will follow.  |
-| <a href='attrs/y2.html' >Y Position</a>   | <code>&lt;y2&gt;</code> | The y coordinate position of the end of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the vertical end point of the line a linear gradient will follow.
+| <a href='attrs/cx.html' >Centre X Position</a>   | <code>cx</code> | The x coordinate position of the centre of a circle or ellipse within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings.   |
+| <a href='attrs/cy.html' >Centre Y Position</a>   | <code>cy</code> | The y coordinate position of the centre of a circle or ellipse within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. |
+| <a href='attrs/dx.html' >Delta (offset) X Position</a>   | <code>dx</code> | The x coordinate position of the centre of a text block or text span, relative to is parent. |
+| <a href='attrs/dy.html' >Delta (offset) Y Position</a>   | <code>dy</code> | The y coordinate position of the centre of a text block or text span, relative to is parent. |
+| <a href='attrs/x.html' >X Position</a>   | <code>x</code> | The x coordinate position of the element within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Used by the svg, rect, use, text, tspan, image and pattern.    |
+| <a href='attrs/y.html' >Y Position</a>   | <code>y</code> | The y coordinate position of the element within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Used by the svg, rect, use, text, tspan, image and pattern. |
+| <a href='attrs/x1.html' >First X Position</a>   | <code>x1</code> | The x coordinate position of the start of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the horizontal start point of the line a linear gradient will follow.  |
+| <a href='attrs/y1.html' >First Y Position</a>   | <code>y1</code> | The y coordinate position of the start of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the vertical start point of the line a linear gradient will follow. |
+| <a href='attrs/x2.html' >Second X Position</a>   | <code>x2</code> |  The x coordinate position of the end of line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the horizontal end point of the line a linear gradient will follow.  |
+| <a href='attrs/y2.html' >Y Position</a>   | <code>y2</code> | The y coordinate position of the end of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the vertical end point of the line a linear gradient will follow.
 
 
 ---
