@@ -1,6 +1,6 @@
 ---
 layout: default
-title: cx
+title: width
 parent: SVG Attributes
 parent_url: /reference/svgattributes/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# @cx : The Circle Centre X Attribute
+# @width : The Element (Or Pattern) Width Attribute
 
 Summary
 
