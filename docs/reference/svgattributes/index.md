@@ -2,6 +2,7 @@
 layout: default
 title: SVG Attributes
 parent: Template reference
+parent_url: /reference/
 has_children: true
 has_toc: false
 nav_order: 7
@@ -164,7 +165,6 @@ The following attributes control the visual appearance of elements around the ed
 | <a href='attrs/stroke-width.html' >Element Stroke Width</a>   | <code>stroke-width</code> | Defines the width of the stroke around the elements shape or characters. |
 | <a href='attrs/stroke-linecap.html' >Element Stroke Line Cap</a> | <code>stroke-linecap</code> | Defines the type of ending to be rendered for an open shape or character. |
 | <a href='attrs/stroke-linejoin.html' >Element Stroke Line Join</a> | <code>stroke-linejoin</code> | Defines the type of join to be rendered at corners within a shape or character. |
-| <a href='attrs/stroke-width.html' >Element Stroke Width</a> | <code>stroke-width</code> | Defines the thicknes of any stroke to be rendered around a shape or character. |
 
 ---
 
