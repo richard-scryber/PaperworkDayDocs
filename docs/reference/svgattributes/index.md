@@ -84,7 +84,7 @@ The following attributes, spilt into functional groups, are supported by the lib
 
 ---
 
-## Standard Html Attributes.
+### Standard Html Attributes.
 
 The html global attributes are also available on the svg elements. 
 
@@ -98,6 +98,20 @@ The html global attributes are also available on the svg elements.
 
 ---
 
+## Scaling and View Attributes
+
+The followning attributes alter the size., shape and aspect ratio of teh SVG canvas and elements within a canvas.
+
+| Element  | Tag | Description |
+|---|---|---|
+| <a href='attrs/viewBox.html' >View Box</a> | <code>viewBox</code>  | Defines the rectangular position and size of a proportion of the inner drawing content that will be shown in the parent content, or of the canvas as a whole within the document. |
+| <a href='attrs/preserveAspectRatio.html' >Preserve Aspect Ratio</a> | <code>preserveAspectRatio</code>  | Defines how the inner drawing content will be aligned and scaled to fit the parent content, or of the canvas as a whole within the document. |
+| <a href='attrs/transform.html' >Element Transformation Operations</a> | <code>transform</code>  | Defines one or more transformation instrictions to be performed on the element for presentation within the canvas or as a whole within the document. |
+| <a href='attrs/transform-origin.html' >Element Transformation Origin</a> | <code>transform-origin</code>  | Defines the origin point within the element that is being transformed - the point at which the transformations will be set from. |
+
+---
+
+
 ## Position and Size Attributes
 
 By default all the svg visual elements are absolutely positioned relative to their containing SVG canvas. Many have their own indivdual position and size properties, and should be confirmed with each of the elements.
@@ -106,8 +120,8 @@ By default all the svg visual elements are absolutely positioned relative to the
 |---|---|---|
 | <a href='attrs/cx.html' >Centre X Position</a>   | <code>cx</code> | The x coordinate position of the centre of a circle or ellipse within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings.   |
 | <a href='attrs/cy.html' >Centre Y Position</a>   | <code>cy</code> | The y coordinate position of the centre of a circle or ellipse within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. |
-| <a href='attrs/dx.html' >Delta (offset) X Position</a>   | <code>dx</code> | The x coordinate position of the centre of a text block or text span, relative to is parent. |
-| <a href='attrs/dy.html' >Delta (offset) Y Position</a>   | <code>dy</code> | The y coordinate position of the centre of a text block or text span, relative to is parent. |
+| <a href='attrs/dx.html' >Delta (offset) X Position</a>   | <code>dx</code> | The x coordinate position of a text block or text span, relative to is parent. |
+| <a href='attrs/dy.html' >Delta (offset) Y Position</a>   | <code>dy</code> | The y coordinate position of a text block or text span, relative to is parent. |
 | <a href='attrs/x.html' >X Position</a>   | <code>x</code> | The x coordinate position of the element within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Used by the svg, rect, use, text, tspan, image and pattern.    |
 | <a href='attrs/y.html' >Y Position</a>   | <code>y</code> | The y coordinate position of the element within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Used by the svg, rect, use, text, tspan, image and pattern. |
 | <a href='attrs/x1.html' >First X Position</a>   | <code>x1</code> | The x coordinate position of the start of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the horizontal start point of the line a linear gradient will follow.  |
@@ -124,12 +138,46 @@ By default all the svg visual elements are absolutely positioned relative to the
 
 ---
 
-## Binding operators
+## Path Operation Attrbutes
 
-All operators
+The following attributes define the position of points, lines, arcs within complex shapes in the SVG canvas.
+
+| Element  | Tag | Description |
+|---|---|---|
+| <a href='attrs/d.html' >Path Data</a>   | <code>d</code> |  The vector drawing instructions for a complex path. |
+| <a href='attrs/points.html' >Poly Points</a>   | <code>points</code> | The set of points to draw for a poly-line or polygon. |
 
 ---
 
-## Binding conversion functions
+
+## Stroke and Fill Attributes
+
+The following attributes control the visual appearance of elements around the edge and within the shape.
+
+| Element  | Tag | Description |
+|---|---|---|
+| <a href='attrs/fill.html' >Element Fill</a>   | <code>fill</code> | A known color or a url reference to a defined pattern or gradient to use to flood fill the elements shape. |
+| <a href='attrs/fill-opacity.html' >Element Fill Opacity</a>   | <code>fill-opacity</code> | Defines the visibility of content underneath the elements shape and how transparent the flood fill will be. |
+| <a href='attrs/fill-rule.html' >Element Fill Rule</a>   | <code>fill-rule</code> | Defines how a point within the shape will be considered as 'inside' and hence whether it will be filled. |
+| <a href='attrs/opacity.html' >Element Opacity</a>   | <code>opacity</code> | Specifies the transparency of an complete object or of a group of objects, that is, the degree to which the background behind the element is visible behind. |
+| <a href='attrs/stroke.html' >Element Stroke</a>   | <code>stroke</code> | A known color or a url reference (TBC) to a defined pattern or gradient to use to render an edge around the elements shape or characters. |
+| <a href='attrs/stroke-dasharray.html' >Element Stroke Dash Spacing</a> | <code>stroke-dasharray</code> | A series of numbers defining the repeating dashes and gaps used to render the border of a shape or character |
+| <a href='attrs/stroke-opacity.html' >Element Stroke Opacity</a>   | <code>stroke-opacity</code> | Defines the visibility of the border around the elements shape or characters and how transparent the stroke will be. |
+| <a href='attrs/stroke-width.html' >Element Stroke Width</a>   | <code>stroke-width</code> | Defines the width of the stroke around the elements shape or characters. |
+| <a href='attrs/stroke-linecap.html' >Element Stroke Line Cap</a> | <code>stroke-linecap</code> | Defines the type of ending to be rendered for an open shape or character. |
+| <a href='attrs/stroke-linejoin.html' >Element Stroke Line Join</a> | <code>stroke-linejoin</code> | Defines the type of join to be rendered at corners within a shape or character. |
+| <a href='attrs/stroke-width.html' >Element Stroke Width</a> | <code>stroke-width</code> | Defines the thicknes of any stroke to be rendered around a shape or character. |
+
+---
+
+## Text Layout Attributes
 
 All conversion functions
+
+---
+
+## Patterns and Gradient Attributes
+
+All conversion functions
+
+---
