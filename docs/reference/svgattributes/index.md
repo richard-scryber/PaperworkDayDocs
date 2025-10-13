@@ -3,7 +3,7 @@ layout: default
 title: SVG Attributes
 parent: Template reference
 has_children: true
-has_toc: true
+has_toc: false
 nav_order: 7
 ---
 
@@ -207,7 +207,6 @@ The following attributes control how markers are presented and rendered on shape
 | <a href='attrs/orient.html' >Marker Orientation</a>   | <code>orient</code> | Specifies the way a marker should be rendered, either following the angle of the shape or reversed at the start, or at a specific angle. |
 
 ---
-
 
 
 ### Patterns and Gradient Attributes
