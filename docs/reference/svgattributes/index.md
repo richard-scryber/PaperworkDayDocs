@@ -113,8 +113,14 @@ By default all the svg visual elements are absolutely positioned relative to the
 | <a href='attrs/x1.html' >First X Position</a>   | <code>x1</code> | The x coordinate position of the start of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the horizontal start point of the line a linear gradient will follow.  |
 | <a href='attrs/y1.html' >First Y Position</a>   | <code>y1</code> | The y coordinate position of the start of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the vertical start point of the line a linear gradient will follow. |
 | <a href='attrs/x2.html' >Second X Position</a>   | <code>x2</code> |  The x coordinate position of the end of line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the horizontal end point of the line a linear gradient will follow.  |
-| <a href='attrs/y2.html' >Y Position</a>   | <code>y2</code> | The y coordinate position of the end of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the vertical end point of the line a linear gradient will follow.
-
+| <a href='attrs/y2.html' >Y Position</a>   | <code>y2</code> | The y coordinate position of the end of a line within the svg canvas. This is usually relative to the top left corner of the canvas, but can be altered by groups, transforms and viewbox settings. Also defines the vertical end point of the line a linear gradient will follow. |
+| <a href='attrs/r.html' >Circle Radius</a>   | <code>r</code> | The radius of a circle element. |
+| <a href='attrs/rx.html' >X Radius</a>   | <code>rx</code> |  The horizontal (x) radius of an ellipse element, and also the corner x radius of a rectangle elements. |
+| <a href='attrs/ry.html' >Y Radius</a>   | <code>ry</code> | The vertical (y) radius of an ellipse element, and also the corner y radius of a rectangle elements.|
+| <a href='attrs/refx.html' >X Reference Point</a>   | <code>refX</code> |  The horizontal (x) position of the referernce point for a marker. |
+| <a href='attrs/refy.html' >Y Reference Point</a>   | <code>refY</code> | The vertical (y) position of the reference point for a marker.|
+| <a href='attrs/width.html' >Element Width</a>   | <code>width</code> |  The horizontal size of an svg canvas, or elements within a canvas. |
+| <a href='attrs/height.html' >Element Height</a>   | <code>height</code> | The vertical size of an svg canvas, or elements within a canvas. |
 
 ---
 
