@@ -94,7 +94,7 @@ The root of a document is always the <code>&lt;html&gt;</code> element. Any know
 
 | Element  | Tag  | Description |
 |---|---|---|
-| <a href='tags/html.html' >Html Root</a>   | <code>&lt;html&gt;</code> | Marks the start of a complete document template, and encapsulates all references, metadata and content for that template.   |
+| <a href='elements/html_html_element.html' >Html Root</a>   | <code>&lt;html&gt;</code> | Marks the start of a complete document template, and encapsulates all references, metadata and content for that template.   |
 
 ---
 
