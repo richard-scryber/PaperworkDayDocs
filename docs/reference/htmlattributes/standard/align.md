@@ -19,8 +19,12 @@ Summary
 
 ---
 
-## Supported Attributes
+## Supported Elements
 
+
+---
+
+## Binding Values
 
 ---
 
