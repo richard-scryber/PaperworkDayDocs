@@ -10,8 +10,7 @@ has_toc: false
 ---
 
 # &lt;address&gt; : The Contact Information Element
-
-The `<address>` element represents contact information for a person, organization, or document. It is a semantic block-level element designed for displaying contact details such as physical addresses, email addresses, phone numbers, and social media links with appropriate styling to distinguish this information from regular content.
+{: .no_toc }
 
 ---
 
@@ -23,6 +22,12 @@ The `<address>` element represents contact information for a person, organizatio
 - TOC
 {: toc}
 </details>
+
+---
+
+## Summary
+
+The `<address>` element represents contact information for a person, organization, or document. It is a semantic block-level element designed for displaying contact details such as physical addresses, email addresses, phone numbers, and social media links with appropriate styling to distinguish this information from regular content.
 
 ---
 
@@ -82,7 +87,6 @@ The `<address>` element supports extensive CSS styling through the `style` attri
 - `position`: `static`, `relative`, `absolute`
 - `display`: `block`, `inline`, `inline-block`, `none`
 - `float`: `left`, `right`, `none`
-- `clear`: `both`, `left`, `right`, `none`
 
 **Layout**:
 - `page-break-before`, `page-break-after`, `page-break-inside`

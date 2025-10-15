@@ -29,6 +29,8 @@ has_toc: false
 
 The `<a>` (anchor) element creates hyperlinks in PDF documents. It supports internal document links, external URLs, file references, and PDF-specific navigation actions. Links can contain text, images, or other inline content.
 
+---
+
 ## Usage
 
 The `<a>` element creates clickable hyperlinks that:

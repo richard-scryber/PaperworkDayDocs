@@ -1,6 +1,6 @@
 ---
 layout: default
-title: abbr Element
+title: abbr
 parent: HTML Elements
 parent_url: /reference/htmlelements/
 grand_parent: Template reference
