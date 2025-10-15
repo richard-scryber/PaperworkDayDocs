@@ -42,7 +42,7 @@ The `<abbr>` element is an inline semantic HTML element that marks up abbreviati
 <abbr title="Cascading Style Sheets" class="technical-term">CSS</abbr>
 
 <!-- With data binding -->
-<abbr title="{{model.abbreviationExpansion}}">{{model.abbreviationText}}</abbr>
+{% raw %}<abbr title="{{model.abbreviationExpansion}}">{{model.abbreviationText}}</abbr>{% endraw %}
 ```
 
 ---
