@@ -11,7 +11,24 @@ has_toc: false
 
 # &lt;details&gt; and &lt;summary&gt; : Collapsible Content Sections
 
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
+
 The `<details>` and `<summary>` elements create collapsible content sections. In static PDF output, these elements render in either expanded or collapsed state based on the `open` attribute. The `<summary>` provides a visible heading, while the remaining content inside `<details>` can be shown or hidden.
+
+**NOTE:** It is expected that this element, along with `abbr`, `cite`, `defn` will use the interactive features for comments and call outs, <u>in future</u>>.
 
 ## Usage
 
@@ -29,13 +46,13 @@ The `<details>` element creates a disclosure widget that:
 <!-- Expanded by default -->
 <details open="open">
     <summary>Click to expand</summary>
-    <p>This content is visible in the PDF</p>
+    <p>This content is visible in the output document</p>
 </details>
 
 <!-- Collapsed (content hidden) -->
 <details>
     <summary>Collapsed Section</summary>
-    <p>This content will not appear in the PDF</p>
+    <p>This content will not appear in the output document</p>
 </details>
 ```
 

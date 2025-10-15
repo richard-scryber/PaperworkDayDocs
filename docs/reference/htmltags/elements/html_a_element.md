@@ -27,7 +27,9 @@ has_toc: false
 
 ## Summary
 
-The `<a>` (anchor) element creates hyperlinks in PDF documents. It supports internal document links, external URLs, file references, and PDF-specific navigation actions. Links can contain text, images, or other inline content.
+The `<a>` (anchor) element creates hyperlinks in PDF documents. It supports internal document links, external URLs, file references, and document-specific navigation actions. Links can contain text, images, or other content. By default the anchor is inline, but can be styled as a block or inline-block component.
+
+Block and inline content within the anchor will become 'clickable' to navigate within and outside of the current document.
 
 ---
 
@@ -52,8 +54,8 @@ The `<a>` element creates clickable hyperlinks that:
 <a href="!NextPage">Next Page</a>
 
 <!-- Link with styled content -->
-<a href="https://scryber.com" style="color: red; font-weight: bold;">
-    Visit Scryber
+<a href="https://www.paperworkday.com" style="color: red; font-weight: bold;">
+    Visit Paperwork
 </a>
 ```
 
@@ -94,7 +96,7 @@ Special `href` values can trigger PDF navigation actions by prefixing with `!`:
 
 ## CSS Style Support
 
-The `<a>` element supports extensive CSS styling:
+The `<a>` element supports extensive CSS styling.
 
 **Typography**:
 - `font-family`, `font-size`, `font-weight`, `font-style`
