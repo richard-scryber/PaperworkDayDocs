@@ -334,8 +334,8 @@ In the Scryber codebase:
 <!-- Repeating links -->
 <template data-bind="{{model.menuItems}}">
     <a href="{{.url}}" style="margin-right: 15pt;">{{.title}}</a>
-</template>
-{% endraw }```
+</template>{% endraw %}
+```
 
 ### Link with Block Content
 
@@ -378,7 +378,7 @@ In the Scryber codebase:
         </a>
     </div>
 </div>
-{% endraw }```
+{% endraw %}```
 
 ### Footer Navigation
 
