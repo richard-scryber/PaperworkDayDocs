@@ -30,6 +30,9 @@ The `<a>` element creates clickable hyperlinks that:
 <!-- Internal document link -->
 <a href="#section2">Jump to Section 2</a>
 
+<!-- Document Navigation -->
+<a href="!NextPage">Next Page</a>
+
 <!-- Link with styled content -->
 <a href="https://scryber.com" style="color: red; font-weight: bold;">
     Visit Scryber
@@ -58,7 +61,7 @@ The `<a>` element creates clickable hyperlinks that:
 | `target` | string | Link target. Use `_blank` to open in a new window (sets `new-window` behavior). |
 | `data-fit-to` | OutlineFit | How the destination page should be displayed: `FullPage`, `PageWidth`, `PageHeight`, `BoundingBox`. Default: `PageWidth`. |
 
-### PDF Action Attributes
+### Navigation Action Attributes
 
 Special `href` values can trigger PDF navigation actions by prefixing with `!`:
 
@@ -129,10 +132,6 @@ External URLs are automatically detected and open in the default browser or PDF 
 <a href="mailto:info@example.com">Email Us</a>
 ```
 
-Set `target="_blank"` to open the link in a new window:
-```html
-<a href="https://www.example.com" target="_blank">Open in New Window</a>
-```
 
 ### External File Links
 
@@ -142,7 +141,8 @@ Link to external PDF files or documents:
 <!-- Link to another PDF -->
 <a href="document.pdf">Open Document</a>
 
-<!-- Link to specific page in external PDF -->
+<!-- Link to specific page in external PDF.
+ Dependant on the reader support, and the named destination within the file.  -->
 <a href="document.pdf#section1">Open Document at Section 1</a>
 ```
 
@@ -318,23 +318,11 @@ In the Scryber codebase:
 <a href="#diagram" data-fit-to="BoundingBox">View Diagram (Fit to Box)</a>
 ```
 
-### External File Links
-
-```html
-<!-- Link to external PDF -->
-<a href="manual.pdf">Download User Manual</a>
-
-<!-- Link to external PDF with destination -->
-<a href="report.pdf#summary">View Report Summary</a>
-
-<!-- Link to external file with new window -->
-<a href="document.pdf" target="_blank">Open in New Window</a>
-```
 
 ### Data Binding in Links
 
 ```html
-<!-- With model = { url: "https://example.com", linkText: "Click Here" } -->
+{% raw %}<!-- With model = { url: "https://example.com", linkText: "Click Here" } -->
 <a href="{{model.url}}">{{model.linkText}}</a>
 
 <!-- Dynamic styling -->
@@ -347,7 +335,7 @@ In the Scryber codebase:
 <template data-bind="{{model.menuItems}}">
     <a href="{{.url}}" style="margin-right: 15pt;">{{.title}}</a>
 </template>
-```
+{% endraw }```
 
 ### Link with Block Content
 
@@ -365,15 +353,15 @@ In the Scryber codebase:
 
 ```html
 <!-- Link shown/hidden based on condition -->
-<a href="{{model.detailsUrl}}" hidden="{{model.hideLink ? 'hidden' : ''}}">
+{% raw %}<a href="{{model.detailsUrl}}" hidden="{{model.hideLink ? 'hidden' : ''}}">
     View Details
-</a>
+{% endraw %}</a>
 ```
 
 ### Table of Contents with Styled Links
 
 ```html
-<div style="border: 2pt solid #336699; padding: 15pt; margin: 20pt 0;">
+{% raw %}<div style="border: 2pt solid #336699; padding: 15pt; margin: 20pt 0;">
     <h2 style="margin-top: 0;">Contents</h2>
     <div style="line-height: 2;">
         <a href="#chapter1" style="display: block; color: #333;
@@ -390,7 +378,7 @@ In the Scryber codebase:
         </a>
     </div>
 </div>
-```
+{% endraw }```
 
 ### Footer Navigation
 
@@ -400,11 +388,11 @@ In the Scryber codebase:
     <a href="#top" style="margin: 0 20pt;">Top</a>
     <a href="!PrevPage" style="margin: 0 20pt;">Previous Page</a>
     <a href="!NextPage" style="margin: 0 20pt;">Next Page</a>
-    <a href="index.pdf" style="margin: 0 20pt;">Index</a>
+    <a href="!FirstPage" style="margin: 0 20pt;">Index</a>
 </div>
 ```
 
-### Link with Title/Tooltip
+### Link with Outline Title
 
 ```html
 <a href="https://www.example.com"

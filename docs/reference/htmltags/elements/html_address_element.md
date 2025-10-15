@@ -13,6 +13,19 @@ has_toc: false
 
 The `<address>` element represents contact information for a person, organization, or document. It is a semantic block-level element designed for displaying contact details such as physical addresses, email addresses, phone numbers, and social media links with appropriate styling to distinguish this information from regular content.
 
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
 ## Usage
 
 The `<address>` element creates a semantic container for contact information that:
@@ -51,8 +64,8 @@ The `<address>` element creates a semantic container for contact information tha
 
 | Attribute | Type | Description |
 |-----------|------|-------------|
-| `data-bind` | expression | Binds the element to a data context for use with templates. |
 | `data-content` | expression | Dynamically sets the content of the address element from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
 
 ### CSS Style Support
 
@@ -338,7 +351,7 @@ In the Scryber codebase:
 ### Data Binding with Contact Information
 
 ```html
-<!-- With model.contacts = [
+{% raw %}<!-- With model.contacts = [
     { name: "Sales", email: "sales@company.com", phone: "(555) 100-0001" },
     { name: "Support", email: "support@company.com", phone: "(555) 100-0002" }
 ] -->
@@ -352,7 +365,7 @@ In the Scryber codebase:
         </address>
     </div>
 </template>
-```
+{% endraw %}```
 
 ### Newsletter Subscription Contact
 
@@ -485,12 +498,11 @@ In the Scryber codebase:
 
 ## See Also
 
-- [p](/reference/htmltags/p.html) - Paragraph element for general content
-- [footer](/reference/htmltags/footer.html) - Footer element often containing address information
-- [article](/reference/htmltags/article.html) - Article element that can contain author address
-- [a](/reference/htmltags/a.html) - Anchor element for email and phone links
-- [br](/reference/htmltags/br.html) - Line break element for formatting addresses
-- [div](/reference/htmltags/div.html) - Generic block container
-- [Panel Component](/reference/components/panel.html) - Base panel component in Scryber namespace
+- [p](html_p_element.html) - Paragraph element for general content
+- [footer](html_footer_element.html) - Footer element often containing address information
+- [article](html_article_element.html) - Article element that can contain author address
+- [a](html_a_element.html) - Anchor element for email and phone links
+- [br](html_br_element.html) - Line break element for formatting addresses
+- [div](html_div_element.html) - Generic block container
 
 ---

@@ -154,7 +154,7 @@ The following elements support the inclusion of further content, or outputing co
 
 | Element  | Tag  | Description |
 |---|---|---|
-| <a href='tags/a.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the inner content within the anchor link, as a navigation element to another point in the document output, or an external link to another resource. |
+| <a href='elements/html_a_element.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the inner content within the anchor link, as a navigation element to another point in the document output, or an external link to another resource. |
 | <a href='funcs/embed.html' >Embedded Content</a>   | <code>&lt;embed&gt;</code> | Allows external or dynamic content to be included within the output document as if it is part of the original content.  |
 | <a href='funcs/if.html' >If *</a>   | <code>&lt;if&gt;</code> | Denotes any optional block of content that will be output *only* when the <code>data-test</code> value is true.  |
 | <a href='funcs/iframe.html' >i-Frame</a>   | <code>&lt;iframe&gt;</code> | Denotes an external source of content to be included within the output document, but unlike embedding, the inner content does not use any of the outer document visual style.  |
@@ -258,7 +258,7 @@ The following elements are based on and have a similar function to the standard 
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='tags/abbr.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> | Marks the inner content as an abbreviation of a longer word or phrase. |
+| <a href='elements/html_abbr_element.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> | Marks the inner content as an abbreviation of a longer word or phrase. |
 | <a href='tags/big.html' >Big</a>   | <code>&lt;big&gt;</code> | Marks that the inner content of the <code>big</code> element should use a larger font size, by default 120%. |
 | <a href='tags/b.html' >Bold</a>   | <code>&lt;b&gt;</code> | Marks that the inner content of the <code>b</code> element should use a heavier font weight. |
 | <a href='tags/cite.html' >Citation</a>   | <code>&lt;cite&gt;</code> | Denotes the inner content of the <code>cite</code> is a reference to an different source which has been used in the document. |
