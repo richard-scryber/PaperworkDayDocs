@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # &lt;br&gt; : The Line Break Element
+{: .no_toc }
+
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `<br>` element creates a line break within text content, forcing subsequent content to start on a new line without creating a new paragraph or block-level container.
 
@@ -18,7 +34,6 @@ The `<br>` element creates a line break within text content, forcing subsequent 
 The `<br>` element:
 - Creates a single line break in flowing text
 - Does not add vertical spacing beyond the line height
-- Is a self-closing element (no content or closing tag)
 - Works within inline and block-level containers
 - Can be styled (though rarely needed)
 - Differs from `<p>` which creates a new paragraph with margins
@@ -118,16 +133,6 @@ Avoid `<br>` for:
 <!-- Separate paragraphs -->
 <p>This is the first paragraph.</p>
 <p>This is the second paragraph.</p>
-```
-
-### Clearing Floats
-
-In traditional HTML/CSS, `<br>` with `clear` attribute clears floating elements. In Scryber, use CSS `clear` style:
-
-```html
-<div style="float: left; width: 200pt;">Floated content</div>
-<br style="clear: both;"/>
-<div>This content appears below the float</div>
 ```
 
 ### Line Break Behavior
@@ -249,20 +254,6 @@ The `<br>` element:
 </div>
 ```
 
-### Clearing Floats
-
-```html
-<div>
-    <img src="logo.png" style="float: left; width: 100pt; margin-right: 10pt;"/>
-    <p>
-        Company Name<br/>
-        Tag line here
-    </p>
-    <br style="clear: both;"/>
-    <p>This paragraph appears below the floated image.</p>
-</div>
-```
-
 ### Song Lyrics with Stanzas
 
 ```html
@@ -304,29 +295,6 @@ The `<br>` element:
         </td>
     </tr>
 </table>
-```
-
-### Recipe Instructions
-
-```html
-<div>
-    <h3>Ingredients:</h3>
-    <p>
-        2 cups flour<br/>
-        1 cup sugar<br/>
-        1/2 cup butter<br/>
-        2 eggs<br/>
-        1 tsp vanilla extract
-    </p>
-
-    <h3>Instructions:</h3>
-    <p>
-        1. Preheat oven to 350°F<br/>
-        2. Mix dry ingredients<br/>
-        3. Add wet ingredients<br/>
-        4. Bake for 25 minutes
-    </p>
-</div>
 ```
 
 ### Legal Document Footer
@@ -395,26 +363,14 @@ The `<br>` element:
 </p>
 ```
 
-### Dynamic Line Breaks with Data Binding
-
-```html
-<!-- With model = { lines: ["First line", "Second line", "Third line"] } -->
-<p>
-    <template data-bind="{{model.lines}}">
-        {{.}}<br/>
-    </template>
-</p>
-```
-
 ---
 
 ## See Also
 
-- [p](/reference/htmltags/p.html) - Paragraph element with margins
-- [div](/reference/htmltags/div.html) - Block-level container
-- [hr](/reference/htmltags/hr.html) - Horizontal rule divider
-- [span](/reference/htmltags/span.html) - Inline container
-- [pre](/reference/htmltags/pre.html) - Preformatted text with preserved whitespace
-- [Layout](/reference/layout/) - Layout and spacing guide
+- [p](html_p_element.html) - Paragraph element with margins
+- [div](html_div_element.html) - Block-level container
+- [hr](html_hr_element.html) - Horizontal rule divider
+- [span](html_span_element.html) - Inline container
+- [pre](html_pre_element.html) - Preformatted text with preserved whitespace
 
 ---

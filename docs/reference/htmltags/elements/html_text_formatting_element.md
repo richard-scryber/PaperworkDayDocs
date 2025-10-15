@@ -19,7 +19,6 @@ Specialized inline elements for text formatting including computer code, keyboar
 - `<code>`: Inline code or computer text (monospace)
 - `<kbd>`: Keyboard input (monospace)
 - `<samp>`: Sample program output (monospace)
-- `<var>`: Mathematical or programming variable (italic, supports data binding)
 
 ### Text Modification Elements
 - `<mark>`: Highlighted/marked text (yellow background)
@@ -33,6 +32,12 @@ Specialized inline elements for text formatting including computer code, keyboar
 - `<u>`: Underlined text (presentational)
 - `<s>`: Strikethrough text (presentational)
 
+
+Output
+Q
+Samp
+Defn
+Data
 ---
 
 ## Usage

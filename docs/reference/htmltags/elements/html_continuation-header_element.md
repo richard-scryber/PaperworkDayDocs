@@ -11,17 +11,33 @@ has_toc: false
 
 # &lt;continuation-header&gt; : The Continuation Header Element
 
-The `<continuation-header>` element defines content that appears at the top of continuation pages when content spans multiple pages. Unlike the regular `<header>` element which appears only on the first page, the continuation header appears on second and subsequent pages.
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
 
 ## Summary
 
-The `<continuation-header>` element is used within `<body>` or `<section>` elements to provide a header that displays on overflow pages. This is particularly useful for:
+The `<continuation-header>` element defines content that appears at the top of continuation pages when content spans multiple pages. The regular `<header>` element will appear on all pages, unless the continuation header is present, and it will appear on second and subsequent pages.
+
+
+It is used within `<body>` or `<section>` elements to provide a header that displays on overflow pages. This is particularly useful for:
 - Multi-page tables with repeated column headers
 - Long sections that need context on continuation pages
 - Reports where each page needs identifying information
 - Documents where "Continued from previous page" indicators are needed
 
 The continuation header only appears when content flows to additional pages. The first page shows the regular `<header>` element (if present), while subsequent pages show the `<continuation-header>`.
+If the continuation header is not present then any template `<header>` will show on all pages.
 
 ---
 
@@ -54,7 +70,7 @@ The continuation header only appears when content flows to additional pages. The
 | `class` | string | CSS class name(s) for styling |
 | `style` | string | Inline CSS styles |
 | `hidden` | string | If set to "hidden", the element is not visible |
-| `data-bind` | expression | Data binding expression for dynamic content |
+| `data-content` | expression | Data binding expression for dynamic content |
 
 ---
 
@@ -73,7 +89,7 @@ The `<continuation-header>` element can be placed within:
 - **Styling**: Can be styled independently from the main `<header>`
 - **Data Binding**: Supports full data binding capabilities
 - **Layout**: Automatically positioned at the top of each continuation page
-- **Overflow**: If the continuation header itself is too tall, it will span multiple pages
+- **Overflow**: If the continuation header itself is too tall, it will block the layout of **any** content.
 
 ---
 
@@ -191,7 +207,7 @@ The `<continuation-header>` element can be placed within:
 <continuation-header>
     <div style="display: flex; justify-content: space-between;">
         <span>Report Continued</span>
-        <span>Page <page-number /></span>
+        <span>Page <page /></span>
     </div>
 </continuation-header>
 ```
@@ -199,7 +215,7 @@ The `<continuation-header>` element can be placed within:
 ### Example 5: Data-Bound Continuation Header
 
 ```html
-<body>
+{% raw %}<body>
     <header>
         <h1>{{report.title}}</h1>
         <p>Generated: {{report.date}}</p>
@@ -207,7 +223,7 @@ The `<continuation-header>` element can be placed within:
 
     <continuation-header>
         <div style="font-size: 10pt; color: #666;">
-            <strong>{{report.title}}</strong> - Page <page-number /> - {{report.date}}
+            <strong>{{report.title}}</strong> - Page <page /> - {{report.date}}
         </div>
     </continuation-header>
 
@@ -215,7 +231,7 @@ The `<continuation-header>` element can be placed within:
         <h2>{{.heading}}</h2>
         <p>{{.content}}</p>
     </div>
-</body>
+</body>{% endraw %}
 ```
 
 ### Example 6: Styled Continuation Indicator
@@ -258,7 +274,7 @@ The `<continuation-header>` element can be placed within:
                 Continued
             </td>
             <td style="width: 33%; text-align: right;">
-                Page <page-number />
+                Page <page />
             </td>
         </tr>
     </table>
@@ -272,7 +288,7 @@ The `<continuation-header>` element can be placed within:
     <div style="border-bottom: 2pt solid #0066cc; padding-bottom: 5pt;">
         <img src="logo-small.png" style="height: 20pt; float: left;" />
         <span style="float: right; font-size: 9pt; color: #666;">
-            Confidential - Page <page-number />
+            Confidential - Page <page />
         </span>
         <div style="clear: both;"></div>
     </div>
@@ -282,7 +298,7 @@ The `<continuation-header>` element can be placed within:
 ### Example 9: Invoice Continuation
 
 ```html
-<body>
+{% raw %}<body>
     <header>
         <h1>Invoice #{{invoice.number}}</h1>
         <p>Bill To: {{invoice.customer.name}}</p>
@@ -314,13 +330,13 @@ The `<continuation-header>` element can be placed within:
             </tr>
         </tbody>
     </table>
-</body>
+</body>{% endraw %}
 ```
 
 ### Example 10: Legal Document Continuation
 
 ```html
-<style>
+{% raw %}<style>
     continuation-header {
         font-family: 'Times New Roman', serif;
         font-size: 10pt;
@@ -337,19 +353,19 @@ The `<continuation-header>` element can be placed within:
     </header>
 
     <continuation-header>
-        CONTRACT - {{contract.party1}} / {{contract.party2}} - Page <page-number />
+        CONTRACT - {{contract.party1}} / {{contract.party2}} - Page <page />
     </continuation-header>
 
     <div>
         <!-- Contract clauses -->
     </div>
-</body>
+</body>{% endraw %}
 ```
 
 ### Example 11: Medical Records with Patient Info
 
 ```html
-<body>
+{% raw %}<body>
     <header>
         <h1>Patient Medical Record</h1>
         <p>Name: {{patient.name}}</p>
@@ -359,20 +375,20 @@ The `<continuation-header>` element can be placed within:
     <continuation-header style="background-color: #e8f4f8; padding: 8pt;">
         <strong>Patient: {{patient.name}}</strong> |
         MRN: {{patient.mrn}} |
-        Page <page-number />
+        Page <page />
     </continuation-header>
 
     <div data-bind="{{patient.records}}">
         <h3>{{.date}}: {{.visitType}}</h3>
         <p>{{.notes}}</p>
     </div>
-</body>
+</body>{% endraw %}
 ```
 
 ### Example 12: Academic Transcript
 
 ```html
-<body>
+{% raw %}<body>
     <header>
         <h1>Official Academic Transcript</h1>
         <p>Student: {{student.name}} (ID: {{student.id}})</p>
@@ -385,16 +401,16 @@ The `<continuation-header>` element can be placed within:
         </div>
     </continuation-header>
 
-    <table data-bind="{{student.courses}}">
+    <table data-content="{{student.courses}}">
         <!-- Course listings -->
     </table>
-</body>
+</body>{% endraw %}
 ```
 
 ### Example 13: Inventory List with Context
 
 ```html
-<continuation-header>
+{% raw %}<continuation-header>
     <table style="width: 100%; background-color: #333; color: white; padding: 5pt;">
         <tr>
             <td><strong>Warehouse Inventory</strong></td>
@@ -404,13 +420,13 @@ The `<continuation-header>` element can be placed within:
             </td>
         </tr>
     </table>
-</continuation-header>
+</continuation-header>{% endraw %}
 ```
 
 ### Example 14: Conference Schedule
 
 ```html
-<body>
+{% raw %}<body>
     <header>
         <h1>{{conference.name}}</h1>
         <h2>Schedule - {{conference.date}}</h2>
@@ -424,161 +440,18 @@ The `<continuation-header>` element can be placed within:
         <h3>{{.time}}: {{.title}}</h3>
         <p>Speaker: {{.speaker}} | Room: {{.room}}</p>
     </div>
-</body>
-```
-
-### Example 15: Multi-Department Report
-
-```html
-<body data-bind="{{report.departments}}">
-    <header>
-        <h1>{{.departmentName}} Report</h1>
-        <p>Quarter: {{report.quarter}} {{report.year}}</p>
-    </header>
-
-    <continuation-header>
-        <div style="background-color: #e9ecef; padding: 10pt;">
-            <strong>{{.departmentName}}</strong> - {{report.quarter}} {{report.year}} - Continued
-        </div>
-    </continuation-header>
-
-    <div data-bind="{{.data}}">
-        <!-- Department data -->
-    </div>
-</body>
-```
-
-### Example 16: Catalog Continuation
-
-```html
-<style>
-    continuation-header {
-        background-color: #fff3cd;
-        border: 1pt solid #ffc107;
-        padding: 10pt;
-        margin-bottom: 10pt;
-    }
-</style>
-
-<continuation-header>
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div>
-            <strong>Product Catalog 2024</strong><br/>
-            <small>Categories: {{category.name}}</small>
-        </div>
-        <div style="text-align: right;">
-            <small>Page <page-number /></small>
-        </div>
-    </div>
-</continuation-header>
-```
-
-### Example 17: Conditional Continuation Header
-
-```html
-<body>
-    <header>
-        <h1>{{document.title}}</h1>
-    </header>
-
-    <continuation-header data-if="{{document.showContinuationHeader}}">
-        <p style="font-style: italic; color: #666;">
-            {{document.title}} - Continued
-        </p>
-    </continuation-header>
-
-    <div>
-        <!-- Content -->
-    </div>
-</body>
-```
-
-### Example 18: Audit Trail Report
-
-```html
-<body>
-    <header>
-        <h1>System Audit Trail</h1>
-        <p>Period: {{audit.startDate}} to {{audit.endDate}}</p>
-        <p>Generated: {{audit.generatedDate}}</p>
-    </header>
-
-    <continuation-header style="font-size: 9pt; background-color: #f8f9fa; padding: 8pt; border-bottom: 2pt solid #dee2e6;">
-        <strong>Audit Trail</strong> |
-        Period: {{audit.startDate}} - {{audit.endDate}} |
-        Page <page-number />
-    </continuation-header>
-
-    <table data-bind="{{audit.entries}}">
-        <tr>
-            <td>{{.timestamp}}</td>
-            <td>{{.user}}</td>
-            <td>{{.action}}</td>
-        </tr>
-    </table>
-</body>
-```
-
-### Example 19: Newsletter with Sections
-
-```html
-<section data-bind="{{newsletter.articles}}">
-    <header>
-        <h2>{{.title}}</h2>
-        <p>By {{.author}}</p>
-    </header>
-
-    <continuation-header style="background-color: #f0f8ff; padding: 5pt; font-size: 10pt;">
-        <em>{{.title}}</em> (continued)
-    </continuation-header>
-
-    <div>
-        {{.content}}
-    </div>
-</section>
-```
-
-### Example 20: Phone Directory
-
-```html
-<body>
-    <header>
-        <h1>Company Directory</h1>
-        <p>{{company.name}} - Internal Use Only</p>
-    </header>
-
-    <continuation-header>
-        <table style="width: 100%; font-size: 9pt; background-color: #e9ecef;">
-            <tr>
-                <td><strong>Name</strong></td>
-                <td><strong>Department</strong></td>
-                <td><strong>Extension</strong></td>
-                <td style="text-align: right;">Page <page-number /></td>
-            </tr>
-        </table>
-    </continuation-header>
-
-    <table style="width: 100%;">
-        <tbody data-bind="{{employees}}">
-            <tr>
-                <td>{{.name}}</td>
-                <td>{{.department}}</td>
-                <td>{{.extension}}</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+</body>{% endraw %}
 ```
 
 ---
 
 ## See Also
 
-- [continuation-footer Element](/reference/htmlelements/html_continuation-footer_element)
-- [header Element](/reference/htmlelements/html_header_element)
-- [body Element](/reference/htmlelements/html_body_element)
-- [section Element](/reference/htmlelements/html_section_element)
-- [Page Numbers](/reference/components/page-number)
-- [Multi-page Documents](/guides/multi-page)
+- [continuation-footer Element](html_continuation-footer_element)
+- [header Element](html_header_element)
+- [body Element](html_body_element)
+- [section Element](html_section_element)
+- [Page Numbers](html_page_element)
+- [Pages](/learning/templates/header_footer)
 
 ---
