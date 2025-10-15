@@ -10,12 +10,11 @@ has_toc: false
 ---
 
 # &lt;abbr&gt; : The Abbreviation Element
-
-The `<abbr>` element represents an abbreviation or acronym.
+{: .no_toc }
 
 ---
 
-<details open markdown="block">
+<details markdown="block">
   <summary>
     Table of contents
   </summary>

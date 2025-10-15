@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # &lt;a&gt; : The Anchor/Link Element
+{: .no_toc }
+
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `<a>` (anchor) element creates hyperlinks in PDF documents. It supports internal document links, external URLs, file references, and PDF-specific navigation actions. Links can contain text, images, or other inline content.
 
