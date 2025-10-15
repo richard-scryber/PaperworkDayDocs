@@ -11,6 +11,21 @@ has_toc: false
 
 # &lt;big&gt; : The Big Text Element (Deprecated)
 
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
+
 The `<big>` element is a deprecated HTML element that renders text at 120% of the parent font size. While still supported for backward compatibility, **CSS styling is strongly recommended** instead.
 
 ## Usage
@@ -182,7 +197,7 @@ The `<big>` element may be useful when:
 ### Data Binding with Big Tags
 
 ```html
-<!-- While deprecated, big tags work with data binding -->
+{% raw %}<!-- While deprecated, big tags work with data binding -->
 <p>
     Welcome, <big>{{model.userName}}</big>!
 </p>
@@ -190,7 +205,7 @@ The `<big>` element may be useful when:
 <!-- Better alternative with CSS -->
 <p>
     Welcome, <span style="font-size: 1.2em; font-weight: bold;">{{model.userName}}</span>!
-</p>
+</p>{% endraw %}
 ```
 
 ### Big in Lists
@@ -322,10 +337,10 @@ The `<big>` element may be useful when:
 
 ## See Also
 
-- [span](/reference/htmltags/span.html) - Modern inline container (recommended)
-- [small](/reference/htmltags/small.html) - Small text element (also deprecated)
-- [font](/reference/htmltags/font.html) - Font styling element (deprecated)
-- [CSS Styles](/reference/styles/) - Complete CSS styling reference
-- [Text Formatting](/reference/htmltags/text-formatting.html) - Modern text formatting elements
+- [span](html_span_element.html) - Modern inline container (recommended)
+- [small](html_small_element.html) - Small text element (also deprecated)
+- [font](html_font_element.html) - Font styling element (deprecated)
+- [CSS Styles](/learning/styles/) - Complete CSS styling reference
+- [Text Formatting](/learning/styles/text-formatting.html) - Modern text formatting elements
 
 ---

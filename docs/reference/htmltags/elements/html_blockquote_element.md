@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # &lt;blockquote&gt; : The Block Quotation Element
+{: .no_toc }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `<blockquote>` element represents a section that is quoted from another source. It is a semantic block-level element designed for displaying extended quotations with appropriate visual styling to distinguish quoted content from surrounding text.
 
@@ -50,10 +66,12 @@ The `<blockquote>` element creates a block-level quotation container that:
 
 | Attribute | Type | Description |
 |-----------|------|-------------|
-| `data-bind` | expression | Binds the element to a data context for use with templates. |
-| `data-content` | expression | Dynamically sets the content of the blockquote from bound data. |
+| `data-content` | expression | Dynamically sets the content of the address element from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
 
-### CSS Style Support
+---
+
+## CSS Style Support
 
 The `<blockquote>` element supports extensive CSS styling through the `style` attribute or CSS classes:
 
@@ -285,7 +303,7 @@ In the Scryber codebase:
 ### Blockquote with Data Binding
 
 ```html
-<!-- With model.testimonials = [
+{% raw %}<!-- With model.testimonials = [
     { quote: "Excellent service!", author: "John Doe", company: "ABC Corp" },
     { quote: "Highly recommended!", author: "Jane Smith", company: "XYZ Ltd" }
 ] -->
@@ -297,7 +315,7 @@ In the Scryber codebase:
             — <strong>{{.author}}</strong>, {{.company}}
         </footer>
     </blockquote>
-</template>
+</template>{% endraw %}
 ```
 
 ### Blockquote for Pull Quote
@@ -406,11 +424,10 @@ In the Scryber codebase:
 
 ## See Also
 
-- [p](/reference/htmltags/p.html) - Paragraph element
-- [cite](/reference/htmltags/cite.html) - Citation element for referencing sources
-- [q](/reference/htmltags/q.html) - Inline quotation element
-- [div](/reference/htmltags/div.html) - Generic block container
-- [footer](/reference/htmltags/footer.html) - Footer element for attribution
-- [Panel Component](/reference/components/panel.html) - Base panel component in Scryber namespace
+- [p](html_p_element.html) - Paragraph element
+- [cite](html_cite_element.html) - Citation element for referencing sources
+- [q](html_q_element.html) - Inline quotation element
+- [div](html_div_element.html) - Generic block container
+- [footer](html_footer_element.html) - Footer element for attribution
 
 ---

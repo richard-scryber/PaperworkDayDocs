@@ -72,7 +72,9 @@ The `<address>` element creates a semantic container for contact information tha
 | `data-content` | expression | Dynamically sets the content of the address element from bound data. |
 | `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
 
-### CSS Style Support
+---
+
+## CSS Style Support
 
 The `<address>` element supports extensive CSS styling through the `style` attribute or CSS classes:
 
