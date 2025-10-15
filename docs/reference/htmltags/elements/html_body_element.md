@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # &lt;body&gt; : The Document Body Element
+{: .no_toc }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `<body>` element represents the main content container of an HTML document. It contains all visible content that will be rendered in the PDF, including text, images, tables, and other elements. The body acts as a section with special properties for document-wide content.
 
@@ -65,8 +81,8 @@ The `<body>` element is the primary content container that:
 
 | Attribute | Type | Description |
 |-----------|------|-------------|
-| `data-bind` | expression | Binds the element to a data context for use with templates. |
-| `data-content` | expression | Dynamically sets the content of the body from bound data. |
+| `data-content` | expression | Dynamically sets the content of the address element from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
 
 ### Child Elements
 
@@ -74,13 +90,15 @@ The `<body>` element can contain:
 
 | Element | Purpose | Repeating |
 |---------|---------|-----------|
-| `<header>` | Page header content | ✓ Yes (every page) |
-| `<footer>` | Page footer content | ✓ Yes (every page) |
+| `<header>` | Page header content | ✓ Yes (every page, or first page only) |
+| `<footer>` | Page footer content | ✓ Yes (every page, or first page only) |
 | `<continuation-header>` | Header for continuation pages | ✓ Yes (pages 2+) |
 | `<continuation-footer>` | Footer for continuation pages | ✓ Yes (pages 2+) |
 | Any content elements | Main document content | No |
 
-### CSS Style Support
+---
+
+## CSS Style Support
 
 The `<body>` element supports extensive CSS styling through the `style` attribute or CSS classes:
 
@@ -112,7 +130,7 @@ The `<body>` element supports extensive CSS styling through the `style` attribut
 
 ### Body as a Section
 
-The `<body>` element is implemented as a `Section` component in Scryber:
+The `<body>` element is implemented as a `Section` component in the library:
 
 1. **Section Behavior**: Inherits all section properties and behaviors
 2. **Page Management**: Automatically creates and manages pages
@@ -156,7 +174,7 @@ The `<body>` element supports repeating headers and footers:
     <!-- Main content -->
 
     <footer>
-        <div>Page {{page-number}} of {{page-count}}</div>
+        <div>Page <page /> of <page property='total'/></div>
     </footer>
 </body>
 ```
@@ -183,7 +201,7 @@ The `<body>` element supports repeating headers and footers:
 
     <continuation-footer>
         <!-- Pages 2+ footer -->
-        <div>Page {{page-number}}</div>
+        <div>Page <page /></div>
     </continuation-footer>
 </body>
 ```
@@ -228,18 +246,18 @@ In the Scryber codebase:
 
 ### Page Numbering
 
-Use data binding expressions in headers/footers for page numbers:
+Use the custom page element in headers/footers for page numbers:
 
 ```html
 <footer>
-    <p>Page {{page-number}} of {{page-count}}</p>
+    <page /> of <page property='total'/>
 </footer>
 ```
 
 Special expressions available:
-- `{{page-number}}`: Current page number
-- `{{page-count}}`: Total page count
-- `{{page-label}}`: Page label (if set)
+- [none]: Current page number
+- `property='total`: Total page count
+- `data-format='{0} of {1}`: Custom page numbering format
 
 ### Performance Considerations
 
@@ -314,7 +332,7 @@ Special expressions available:
     <p>Revenue increased by 25% year-over-year...</p>
 
     <footer>
-        <p>Page {{page-number}} of {{page-count}} | Annual Report 2025 | Confidential</p>
+        <p>Page <page /> of <page property='total'/> | Annual Report 2025 | Confidential</p>
     </footer>
 </body>
 </html>
@@ -367,7 +385,7 @@ Special expressions available:
 
     <continuation-footer>
         <p style="text-align: center; font-size: 9pt;">
-            © 2025 Research Institute | Page {{page-number}}
+            © 2025 Research Institute | Page <page />
         </p>
     </continuation-footer>
 </body>
@@ -685,7 +703,7 @@ Special expressions available:
     <p>Follow these steps to begin...</p>
 
     <footer>
-        <p>Page {{page-number}} | © 2025 Company Name | support@example.com</p>
+        <p>Page <page /> | © 2025 Company Name | support@example.com</p>
     </footer>
 </body>
 </html>
@@ -744,7 +762,7 @@ Special expressions available:
     </div>
 
     <footer>
-        <div class="slide-number">Slide {{page-number}}</div>
+        <div class="slide-number">Slide <page /></div>
     </footer>
 </body>
 </html>
@@ -827,7 +845,7 @@ Special expressions available:
 ### Data-Bound Body
 
 ```html
-<!DOCTYPE html>
+{% raw %}<!DOCTYPE html>
 <html>
 <head>
     <title>{{model.title}}</title>
@@ -847,7 +865,8 @@ Special expressions available:
     </header>
 
     <h2>{{model.sectionTitle}}</h2>
-    <p>{{model.content}}</p>
+    <!-- bind complex formatted content -->
+    <p data-content='{{model.content}}'></p>
 
     <footer>
         <p style="text-align: center;">
@@ -855,78 +874,21 @@ Special expressions available:
         </p>
     </footer>
 </body>
-</html>
-```
-
-### Catalog Body with Grid Layout
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Product Catalog</title>
-    <style>
-        body {
-            margin: 30pt;
-            font-family: Arial, sans-serif;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15pt;
-        }
-        .product-card {
-            border: 1pt solid #ddd;
-            padding: 10pt;
-            text-align: center;
-        }
-        .product-card img {
-            width: 100%;
-            height: 150pt;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<body>
-    <header style="text-align: center; margin-bottom: 30pt;">
-        <h1>2025 Product Catalog</h1>
-    </header>
-
-    <div class="product-grid">
-        <div class="product-card">
-            <img src="product1.jpg" />
-            <h3>Product 1</h3>
-            <p>$99.99</p>
-        </div>
-        <div class="product-card">
-            <img src="product2.jpg" />
-            <h3>Product 2</h3>
-            <p>$149.99</p>
-        </div>
-        <!-- More products -->
-    </div>
-
-    <footer style="text-align: center; margin-top: 30pt; border-top: 1pt solid #ddd; padding-top: 10pt;">
-        <p>Page {{page-number}} | Order online at www.example.com</p>
-    </footer>
-</body>
-</html>
+</html>{% endraw %}
 ```
 
 ---
 
 ## See Also
 
-- [html](/reference/htmltags/html.html) - Root HTML element (parent of body)
-- [head](/reference/htmltags/head.html) - Head element for metadata
-- [header](/reference/htmltags/header.html) - Header element for page headers
-- [footer](/reference/htmltags/footer.html) - Footer element for page footers
-- [section](/reference/htmltags/section.html) - Section element for document sections
-- [div](/reference/htmltags/div.html) - Generic container element
-- [Section Component](/reference/components/section.html) - Base section component
-- [Page Management](/reference/pages/) - Page creation and management
-- [Headers and Footers](/reference/headerfooter/) - Header and footer details
-- [Data Binding](/reference/binding/) - Data binding and expressions
-- [Page Layout](/reference/layout/pages.html) - Page layout and flow
+- [html](html_html_element.html) - Root HTML element (parent of body)
+- [head](html_head_element.html) - Head element for metadata
+- [header](html_header_element.html) - Header element for page headers
+- [footer](html_footer_element.html) - Footer element for page footers
+- [section](html_section_element.html) - Section element for document sections
+- [div](html_div_element.html) - Generic container element
+- [Page Management](/reference/learning/styles/pages) - Page sizing, numbering and sectioning.
+- [Headers and Footers](/reference/learing/header_footer/) - Header and footer details
+- [Data Binding](/reference/learning/binding/) - Data binding and expressions
 
 ---
