@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # &lt;aside&gt; : The Aside Element
+{: .no_toc }
+
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `<aside>` element represents content that is tangentially related to the content around it. It is a semantic block-level element typically used for sidebars, pull quotes, callout boxes, glossaries, related links, and supplementary information that enhances but is separate from the main content.
 
@@ -50,10 +66,12 @@ The `<aside>` element creates a semantic container that:
 
 | Attribute | Type | Description |
 |-----------|------|-------------|
-| `data-bind` | expression | Binds the element to a data context for use with templates. |
-| `data-content` | expression | Dynamically sets the content of the aside from bound data. |
+| `data-content` | expression | Dynamically sets the content of the address element from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
 
-### CSS Style Support
+---
+
+## CSS Style Support
 
 The `<aside>` element supports extensive CSS styling through the `style` attribute or CSS classes:
 

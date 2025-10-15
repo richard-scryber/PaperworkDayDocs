@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # &lt;article&gt; : The Article Element
+{: .no_toc }
+
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `<article>` element represents a self-contained composition in a document that is independently distributable or reusable. It is a semantic block-level element ideal for blog posts, news articles, product cards, user comments, or any content that makes sense on its own.
 
@@ -34,7 +50,7 @@ The `<article>` element creates a semantic container that:
     <p>This article explains the basics of PDF generation...</p>
 
     <footer>
-        <p>Author: John Doe</p>
+        <p>Author: John Smith</p>
     </footer>
 </article>
 ```
@@ -57,10 +73,12 @@ The `<article>` element creates a semantic container that:
 
 | Attribute | Type | Description |
 |-----------|------|-------------|
-| `data-bind` | expression | Binds the element to a data context for use with templates. |
-| `data-content` | expression | Dynamically sets the content of the article from bound data. |
+| `data-content` | expression | Dynamically sets the content of the address element from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
 
-### CSS Style Support
+---
+
+## CSS Style Support
 
 The `<article>` element supports extensive CSS styling through the `style` attribute or CSS classes:
 
@@ -304,7 +322,7 @@ The `<article>` element has the following default behavior:
 ### Article with Data Binding
 
 ```html
-<!-- With model.articles = [
+{% raw %}<!-- With model.articles = [
     { title: "First Post", author: "John", date: "Oct 10", content: "..." },
     { title: "Second Post", author: "Jane", date: "Oct 11", content: "..." }
 ] -->
@@ -322,7 +340,7 @@ The `<article>` element has the following default behavior:
             Article by {{.author}}
         </footer>
     </article>
-</template>
+</template>{% endraw %}
 ```
 
 ### Product Card Article
@@ -405,14 +423,13 @@ The `<article>` element has the following default behavior:
 
 ## See Also
 
-- [section](/reference/htmltags/section.html) - Semantic section element for thematic groupings
-- [div](/reference/htmltags/div.html) - Generic block container without semantic meaning
-- [header](/reference/htmltags/header.html) - Header element for introductory content
-- [footer](/reference/htmltags/footer.html) - Footer element for closing content
-- [aside](/reference/htmltags/aside.html) - Aside element for tangentially related content
-- [nav](/reference/htmltags/nav.html) - Navigation element for navigation links
-- [Panel Component](/reference/components/panel.html) - Base panel component in Scryber namespace
-- [PDF Bookmarks](/reference/bookmarks/) - Creating document outlines and bookmarks
-- [Document Structure](/reference/structure/) - Structuring PDF documents
+- [section](html_section_element.html) - Semantic section element for thematic groupings
+- [div](html_div_element.html) - Generic block container without semantic meaning
+- [header](html_header_element.html) - Header element for introductory content
+- [footer](html_footer_element.html) - Footer element for closing content
+- [aside](html_aside_element.html) - Aside element for tangentially related content
+- [nav](html_nav_element.html) - Navigation element for navigation links
+- [PDF Bookmarks](/reference/library/html/document_outline.html) - Creating document outlines and bookmarks
+
 
 ---

@@ -90,7 +90,9 @@ Special `href` values can trigger PDF navigation actions by prefixing with `!`:
 | `!FirstPage` | Navigate | Go to the first page in the document |
 | `!LastPage` | Navigate | Go to the last page in the document |
 
-### CSS Style Support
+---
+
+## CSS Style Support
 
 The `<a>` element supports extensive CSS styling:
 
