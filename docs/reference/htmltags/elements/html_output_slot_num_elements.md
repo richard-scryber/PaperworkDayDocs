@@ -200,7 +200,7 @@ Common .NET number format strings:
 </p>
 
 <!-- Custom format -->
-<p>Phone: <num data-value="{{model.phoneNumber}}" data-format="(###) ###-####"></num></p>{% raw %}
+<p>Phone: <num data-value="{{model.phoneNumber}}" data-format="(###) ###-####"></num></p>{% endraw %}
 ```
 
 ---
