@@ -178,13 +178,6 @@ When you add a `title` attribute to an `<article>`, it creates an entry in the P
 
 This creates a clickable bookmark in PDF readers that allows users to navigate directly to this article. Nested articles create hierarchical bookmarks.
 
-### Class Hierarchy
-
-In the Scryber codebase:
-- `HTMLArticle` extends `HTMLHeadFootContainer` extends `Panel` extends `VisualComponent`
-- Inherits header/footer arrangement behavior from `HTMLHeadFootContainer`
-- Shares implementation with `<section>` element but conveys different semantic meaning
-
 ### Default Behavior
 
 The `<article>` element has the following default behavior:
@@ -193,6 +186,15 @@ The `<article>` element has the following default behavior:
 2. **Full Width**: Takes 100% of the parent container's width by default
 3. **Static Position**: Uses normal document flow positioning
 4. **Header/Footer Management**: Automatically arranges header and footer elements
+
+---
+
+## Class Hierarchy
+
+In the library codebase:
+- `HTMLArticle` extends `HTMLHeadFootContainer` extends `Panel` extends `VisualComponent`
+- Inherits header/footer arrangement behavior from `HTMLHeadFootContainer`
+- Shares implementation with `<section>` element but conveys different semantic meaning and does not start on a new page (by default).
 
 ---
 
@@ -429,7 +431,7 @@ The `<article>` element has the following default behavior:
 - [footer](html_footer_element.html) - Footer element for closing content
 - [aside](html_aside_element.html) - Aside element for tangentially related content
 - [nav](html_nav_element.html) - Navigation element for navigation links
-- [PDF Bookmarks](/reference/library/html/document_outline.html) - Creating document outlines and bookmarks
+- [PDF Bookmarks](/library/templates/document_outline.html) - Creating document outlines and bookmarks
 
 
 ---

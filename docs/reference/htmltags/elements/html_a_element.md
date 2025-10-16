@@ -199,7 +199,7 @@ Links can contain:
 
 ## Class Hierarchy
 
-In the Scryber codebase:
+In the library codebase:
 - `HTMLAnchor` extends `Link` extends `SpanBase` extends `VisualComponent`
 - Inherits inline display behavior from `SpanBase`
 - Supports nested content through `Contents` collection

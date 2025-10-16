@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open markdown="block">
+<details markdown="block">
   <summary>
     Table of contents
   </summary>
@@ -28,6 +28,8 @@ has_toc: false
 ## Summary
 
 The `<body>` element represents the main content container of an HTML document. It contains all visible content that will be rendered in the PDF, including text, images, tables, and other elements. The body acts as a section with special properties for document-wide content.
+
+---
 
 ## Usage
 
@@ -43,7 +45,7 @@ The `<body>` element is the primary content container that:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My Document</title>
 </head>
@@ -238,7 +240,7 @@ Content automatically flows from one column to the next, and across pages when n
 
 ### Class Hierarchy
 
-In the Scryber codebase:
+In the library codebase:
 - `HTMLBody` extends `Section`
 - `Section` extends `Panel` extends `VisualComponent`
 - Inherits all section capabilities (headers, footers, page management)
@@ -274,7 +276,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Basic Document</title>
     <style>
@@ -296,7 +298,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Report with Headers and Footers</title>
     <style>
@@ -342,7 +344,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Long Document</title>
     <style>
@@ -366,7 +368,7 @@ Special expressions available:
 
     <continuation-header>
         <!-- Pages 2+ header -->
-        <div>Research Paper: PDF Generation | Dr. Jane Smith | Page {{page-number}}</div>
+        <div>Research Paper: PDF Generation | Dr. Jane Smith | Page <page /></div>
     </continuation-header>
 
     <h2>Abstract</h2>
@@ -396,7 +398,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Newsletter</title>
     <style>
@@ -436,7 +438,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Branded Document</title>
     <style>
@@ -463,7 +465,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Full Bleed Design</title>
     <style>
@@ -496,7 +498,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Invoice #12345</title>
     <style>
@@ -567,7 +569,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Resume - John Doe</title>
     <style>
@@ -607,8 +609,8 @@ Special expressions available:
 ### Book Body with Chapter Pages
 
 ```html
-<!DOCTYPE html>
-<html>
+{% raw %}<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My Book</title>
     <style>
@@ -645,17 +647,17 @@ Special expressions available:
     <p>The story continues with many paragraphs...</p>
 
     <footer>
-        <p>{{page-number}}</p>
+        <p><page /></p>
     </footer>
 </body>
-</html>
+</html>{% endraw %}
 ```
 
 ### Technical Manual Body
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Technical Manual</title>
     <style>
@@ -713,7 +715,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Business Presentation</title>
     <style>
@@ -772,7 +774,7 @@ Special expressions available:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Service Agreement</title>
     <style>
@@ -846,7 +848,7 @@ Special expressions available:
 
 ```html
 {% raw %}<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>{{model.title}}</title>
     <style>
@@ -870,7 +872,7 @@ Special expressions available:
 
     <footer>
         <p style="text-align: center;">
-            {{model.footerText}} | Page {{page-number}} of {{page-count}}
+            {{model.footerText}} | Page <page data-format="{0} of {1}" />
         </p>
     </footer>
 </body>
@@ -887,8 +889,9 @@ Special expressions available:
 - [footer](html_footer_element.html) - Footer element for page footers
 - [section](html_section_element.html) - Section element for document sections
 - [div](html_div_element.html) - Generic container element
-- [Page Management](/reference/learning/styles/pages) - Page sizing, numbering and sectioning.
-- [Headers and Footers](/reference/learing/header_footer/) - Header and footer details
-- [Data Binding](/reference/learning/binding/) - Data binding and expressions
+- [Page Sizes](/learning/styles/page_sizes) - Page sizing
+- [Page Layout](/learning/styles/page_layout) - Page breaks, numbering and sectioning.
+- [Headers and Footers](/learing/header_footer/) - Header and footer details
+- [Data Binding](/learning/binding/) - Data binding and expressions
 
 ---

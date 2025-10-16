@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Fonts and Typefaces
+title: Page Layout and Breaks
 parent: Styling Content
 nav_order: 8
 ---
 
-# Fonts and Typefaces
+# Page Layout and Breaks
 {: .no_toc }
 
 THe block elements will appear on a new line on their own (by default ).

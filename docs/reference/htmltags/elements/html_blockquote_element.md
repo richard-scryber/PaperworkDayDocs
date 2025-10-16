@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open markdown="block">
+<details markdown="block">
   <summary>
     Table of contents
   </summary>
@@ -28,6 +28,8 @@ has_toc: false
 ## Summary
 
 The `<blockquote>` element represents a section that is quoted from another source. It is a semantic block-level element designed for displaying extended quotations with appropriate visual styling to distinguish quoted content from surrounding text.
+
+---
 
 ## Usage
 
@@ -109,17 +111,13 @@ The `<blockquote>` element supports extensive CSS styling through the `style` at
 
 The `<blockquote>` element has distinctive default styling to visually separate quoted content:
 
-**HTML blockquote (Scryber.Html.Components.HTMLBlockQuote)**:
+**HTML blockquote :
 - **Left Border**: 2pt solid gray
 - **Left Padding**: 5pt
 - **Top Margin**: 5pt
 - **Bottom Margin**: 5pt
 - **Display**: Block
 
-**Base BlockQuote (Scryber.Components.BlockQuote)**:
-- **All Margins**: 10pt
-- **Font Style**: Italic
-- **Display**: Block
 
 The HTML blockquote overrides some of the base styles to provide a more modern appearance with a left border accent instead of all-around margins.
 
@@ -162,9 +160,11 @@ Blockquotes can be nested to represent quotes within quotes, such as in email th
 
 While HTML5 supports the `cite` attribute for URLs, visual citation information is typically included within the blockquote content using `<footer>` or `<cite>` elements for better visibility.
 
-### Class Hierarchy
+---
 
-In the Scryber codebase:
+## Class Hierarchy
+
+In the library codebase:
 - `HTMLBlockQuote` extends `BlockQuote` extends `Panel` extends `VisualComponent`
 - The HTML version overrides the base style to provide a left border instead of all-around margins
 - Both versions apply italic font styling to distinguish quoted text
@@ -411,13 +411,13 @@ In the Scryber codebase:
 ### Blockquote with Dynamic Styling
 
 ```html
-<!-- With model = { quoteStyle: "professional" } -->
+{% raw %}<!-- With model = { quoteStyle: "professional" } -->
 
 <blockquote style="border-left-color: {{model.quoteColor}};
                    border-left-width: {{model.borderWidth}}pt;">
     <p>{{model.quoteText}}</p>
     <footer style="font-style: normal;">— {{model.attribution}}</footer>
-</blockquote>
+</blockquote>{% endraw %}
 ```
 
 ---
@@ -428,6 +428,6 @@ In the Scryber codebase:
 - [cite](html_cite_element.html) - Citation element for referencing sources
 - [q](html_q_element.html) - Inline quotation element
 - [div](html_div_element.html) - Generic block container
-- [footer](html_footer_element.html) - Footer element for attribution
+- [footer](html_header_footer_element.html) - Footer element for attribution
 
 ---

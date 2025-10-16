@@ -148,13 +148,7 @@ Use `<div>` when:
 - **Accessibility**: Semantic meaning helps with document structure understanding
 - **Best Practice**: Use `<aside>` when the semantic meaning applies, `<div>` otherwise
 
-### Class Hierarchy
-
-In the Scryber codebase:
-- `HTMLAside` extends `HTMLDiv` extends `Div` extends `Panel` extends `VisualComponent`
-- Inherits all properties and behaviors from `HTMLDiv`
-- Provides semantic meaning without changing layout behavior
-- Identical rendering to `<div>` but with aside semantics
+---
 
 ### Default Behavior
 
@@ -184,6 +178,17 @@ Common styling patterns for asides include:
 - Different font sizes or styles
 - Float positioning for sidebar layouts
 - Box shadows or borders for callout boxes
+
+---
+
+## Class Hierarchy
+
+In the library codebase:
+- `HTMLAside` extends `HTMLDiv` extends `Div` extends `Panel` extends `VisualComponent`
+- Inherits all properties and behaviors from `HTMLDiv`
+- Provides semantic meaning without changing layout behavior
+- Identical rendering to `<div>` but with aside semantics
+
 
 ---
 
@@ -335,7 +340,7 @@ Common styling patterns for asides include:
         </p>
     </aside>
 
-    <p>PDF generation has evolved significantly over the past decade. Modern libraries like Scryber enable developers to create sophisticated documents using familiar HTML and CSS syntax.</p>
+    <p>PDF generation has evolved significantly over the past decade. Modern libraries enable developers to create sophisticated documents using familiar HTML and CSS syntax.</p>
 
     <p>This article explores the key concepts, best practices, and advanced techniques for generating professional PDFs from web templates.</p>
 </article>
@@ -386,7 +391,7 @@ Common styling patterns for asides include:
 <aside style="background-color: #e8f4f8; padding: 15pt; margin: 15pt 0; border-radius: 5pt;">
     <h3 style="margin-top: 0; color: #336699; font-size: 12pt;">🔗 Related Articles</h3>
     <ul style="margin-bottom: 0; line-height: 1.8; font-size: 10pt;">
-        <li><a href="#basics" style="color: #336699;">Getting Started with Scryber</a></li>
+        <li><a href="#basics" style="color: #336699;">Getting Started</a></li>
         <li><a href="#templates" style="color: #336699;">Working with Templates</a></li>
         <li><a href="#data-binding" style="color: #336699;">Data Binding Guide</a></li>
         <li><a href="#styling" style="color: #336699;">CSS Styling Reference</a></li>
@@ -429,7 +434,7 @@ Common styling patterns for asides include:
     { icon: "📊", title: "Reporting", text: "Use data binding for dynamic reports" }
 ] -->
 
-<template data-bind="{{model.tips}}">
+{% raw %}<template data-bind="{{model.tips}}">
     <aside style="background-color: #f0f8ff; border-left: 4pt solid #4a90e2; padding: 15pt; margin: 10pt 0;">
         <div style="display: flex; align-items: flex-start;">
             <span style="font-size: 24pt; margin-right: 10pt;">{{.icon}}</span>
@@ -439,7 +444,7 @@ Common styling patterns for asides include:
             </div>
         </div>
     </aside>
-</template>
+</template>{% endraw %}
 ```
 
 ### Feature Highlight
@@ -448,7 +453,7 @@ Common styling patterns for asides include:
 <aside style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20pt; margin: 20pt 0; border-radius: 10pt;">
     <h3 style="margin-top: 0; color: white; font-size: 16pt;">✨ New Feature</h3>
     <p style="margin: 0 0 10pt 0; font-size: 11pt;">
-        Scryber 2.0 introduces advanced layout capabilities including CSS Grid and Flexbox support for complex document layouts.
+        Introduction to advanced layout capabilities including CSS Grid and Flexbox support for complex document layouts.
     </p>
     <div style="background-color: rgba(255,255,255,0.2); padding: 10pt; border-radius: 5pt;">
         <a href="#learn-more" style="color: white; font-weight: bold; text-decoration: none;">
@@ -465,11 +470,11 @@ Common styling patterns for asides include:
     <div style="color: #75715e; font-size: 9pt; margin-bottom: 8pt; font-family: Arial, sans-serif;">
         Example Code:
     </div>
-    <pre style="margin: 0; font-size: 10pt; white-space: pre-wrap;">
+    {% raw %}<pre style="margin: 0; font-size: 10pt; white-space: pre-wrap;">
 var doc = Document.Parse("template.html");
 doc.Params["title"] = "My Document";
 doc.SaveAsPDF("output.pdf");
-    </pre>
+    </pre>{% endraw %}
 </aside>
 ```
 
@@ -480,7 +485,7 @@ doc.SaveAsPDF("output.pdf");
     <div style="position: absolute; left: -8pt; top: 0; width: 12pt; height: 12pt; background-color: #336699; border-radius: 6pt; border: 2pt solid white;"></div>
     <div style="font-weight: bold; color: #336699; margin-bottom: 5pt;">October 2025</div>
     <p style="margin: 0; font-size: 10pt; color: #666;">
-        Scryber 2.0 released with major performance improvements and new layout features.
+        Version 9.0 released with major performance improvements and new layout features.
     </p>
 </aside>
 ```
@@ -550,14 +555,12 @@ doc.SaveAsPDF("output.pdf");
 
 ## See Also
 
-- [div](/reference/htmltags/div.html) - Generic block container (identical behavior, no semantic meaning)
-- [article](/reference/htmltags/article.html) - Article element for self-contained content
-- [section](/reference/htmltags/section.html) - Section element for thematic groupings
-- [nav](/reference/htmltags/nav.html) - Navigation element
-- [blockquote](/reference/htmltags/blockquote.html) - Block quotation element
-- [Panel Component](/reference/components/panel.html) - Base panel component
-- [CSS Styles](/reference/styles/) - Complete CSS styling reference
-- [Data Binding](/reference/binding/) - Data binding and expressions
-- [Layout](/reference/layout/) - Layout and positioning guide
+- [div](html_div_element.html) - Generic block container (identical behavior, no semantic meaning)
+- [article](html_div_element.html) - Article element for self-contained content
+- [section](html_div_element.html) - Section element for thematic groupings
+- [nav](html_div_element.html) - Navigation element
+- [blockquote](html_div_element.html) - Block quotation element
+- [CSS Styles](/learning/styles/) - Complete CSS styling reference
+- [Data Binding](/learning/binding/) - Data binding and expressions
 
 ---

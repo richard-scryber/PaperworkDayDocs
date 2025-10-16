@@ -10,7 +10,7 @@ has_toc: false
 ---
 
 # &lt;big&gt; : The Big Text Element (Deprecated)
-
+{: .no_toc }
 ---
 
 <details open markdown="block">
@@ -27,6 +27,8 @@ has_toc: false
 ## Summary
 
 The `<big>` element is a deprecated HTML element that renders text at 120% of the parent font size. While still supported for backward compatibility, **CSS styling is strongly recommended** instead.
+
+---
 
 ## Usage
 
@@ -341,6 +343,6 @@ The `<big>` element may be useful when:
 - [small](html_small_element.html) - Small text element (also deprecated)
 - [font](html_font_element.html) - Font styling element (deprecated)
 - [CSS Styles](/learning/styles/) - Complete CSS styling reference
-- [Text Formatting](/learning/styles/text-formatting.html) - Modern text formatting elements
+- [Text Formatting](/learning/styles/text.html) - Modern text formatting elements
 
 ---
