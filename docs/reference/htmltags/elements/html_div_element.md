@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # &lt;div&gt; : The Generic Div Element
+{: .no_toc }
+
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `<div>` element is a generic block-level container used to group content and apply styling. It is one of the most commonly used elements in HTML templates for creating document structure and layout in PDF output.
 
@@ -51,8 +67,9 @@ The `<div>` element creates a block-level container that:
 
 | Attribute | Type | Description |
 |-----------|------|-------------|
-| `data-bind` | expression | Binds the element to a data context for use with templates. |
-| `data-content` | expression | Dynamically sets the content of the div from bound data. |
+| `data-content` | expression | Dynamically sets the content of the address element from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
+| `data-content-action` | Replace, Append, Prepend | Specifies the action to take when binding elements with existing inner content. |
 
 ### CSS Style Support
 
@@ -102,21 +119,6 @@ The `<div>` element has the following default behavior:
 3. **Static Position**: Uses normal document flow positioning
 4. **No Overflow**: Content overflows to the next page when space is exhausted
 
-### Class Hierarchy
-
-In the Scryber codebase:
-- `HTMLDiv` extends `Div` extends `Panel` extends `VisualComponent`
-- The `HTMLDiv` class is specifically for HTML namespace elements
-- Inherits all properties and behaviors from the base `Panel` class
-
-### Layout Engine
-
-The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
-- Supports child content layout in block or inline flow
-- Handles page breaks and content overflow
-- Manages multi-column layouts when configured
-- Calculates box model dimensions (content, padding, border, margin)
-
 ### Page Breaking
 
 Content within a `<div>` will automatically flow to the next page when:
@@ -125,6 +127,7 @@ Content within a `<div>` will automatically flow to the next page when:
 - The `overflow-action` is set to continue
 
 Control page breaking behavior:
+
 ```html
 <div style="page-break-before: always;">Starts on new page</div>
 <div style="page-break-inside: avoid;">Keeps together</div>
@@ -138,6 +141,23 @@ Divs can be configured for multi-column layout:
     Content flows across two columns
 </div>
 ```
+
+---
+
+## Class Hierarchy
+
+In the Scryber codebase:
+- `HTMLDiv` extends `Div` extends `Panel` extends `VisualComponent`
+- The `HTMLDiv` class is specifically for HTML namespace elements
+- Inherits all properties and behaviors from the base `Panel` class
+
+### Layout Engine
+
+The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
+- Supports child content layout in block or inline flow
+- Handles page breaks and content overflow
+- Manages multi-column layouts when configured
+- Calculates box model dimensions (content, padding, border, margin)
 
 ---
 
@@ -184,7 +204,7 @@ Divs can be configured for multi-column layout:
 ### Div with Data Binding
 
 ```html
-<!-- In template with model = { name: "John", age: 30 } -->
+{% raw %}<!-- In template with model = { name: "John", age: 30 } -->
 <div class="user-card">
     <div style="font-weight: bold;">Name: {{model.name}}</div>
     <div>Age: {{model.age}}</div>
@@ -192,7 +212,7 @@ Divs can be configured for multi-column layout:
 
 <!-- Output: -->
 <!-- Name: John -->
-<!-- Age: 30 -->
+<!-- Age: 30 -->{% endraw %}
 ```
 
 ### Repeating Divs with Template
@@ -249,9 +269,9 @@ Divs can be configured for multi-column layout:
 </div>
 
 <!-- Conditionally shown based on expression -->
-<div hidden="{{model.hideSection ? 'hidden' : ''}}">
+{% raw %}<div hidden="{{model.hideSection ? 'hidden' : ''}}">
     Shown only when model.hideSection is false
-</div>
+</div>{% endraw %}
 ```
 
 ### Transform Example
@@ -286,12 +306,10 @@ Divs can be configured for multi-column layout:
 
 ## See Also
 
-- [span](/reference/htmltags/span.html) - Inline container element
-- [p](/reference/htmltags/p.html) - Paragraph element (block container with margins)
-- [section](/reference/htmltags/section.html) - Semantic section element
-- [Panel Component](/reference/components/panel.html) - Base panel component in Scryber namespace
-- [CSS Styles](/reference/styles/) - Complete CSS styling reference
-- [Data Binding](/reference/binding/) - Data binding and expressions
-- [Layout](/reference/layout/) - Layout and positioning guide
+- [span](html_span_element.html) - Inline container element
+- [p](html_p_element.html) - Paragraph element (block container with margins)
+- [section](html_section_element.html) - Semantic section element
+- [CSS Styles](/learning/styles/) - Complete CSS styling reference
+- [Data Binding](/learning/binding/) - Data binding and expressions
 
 ---

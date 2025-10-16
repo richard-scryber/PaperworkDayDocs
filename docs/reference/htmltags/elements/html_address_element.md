@@ -164,7 +164,9 @@ Use `<br/>` elements for line breaks within addresses to maintain proper formatt
 </address>
 ```
 
-### Class Hierarchy
+---
+
+## Class Hierarchy
 
 In the Scryber codebase:
 - `HTMLAddress` extends `HTMLDiv` extends `Panel` extends `VisualComponent`

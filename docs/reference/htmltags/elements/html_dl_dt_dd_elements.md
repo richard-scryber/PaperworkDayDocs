@@ -1,6 +1,6 @@
 ---
 layout: default
-title: dl
+title: dl, dt, dd
 parent: HTML Elements
 parent_url: /reference/htmltags/
 grand_parent: Template reference
@@ -9,9 +9,27 @@ has_children: false
 has_toc: false
 ---
 
-# &lt;dl&gt; : The Definition List Element
+# &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; : The Definition List Elements
+{: .no_toc }
+
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `<dl>` element represents a definition list (also known as a description list) containing term-description pairs. It consists of `<dt>` (definition term) elements and `<dd>` (definition description) elements. Definition lists are ideal for glossaries, metadata, key-value pairs, FAQs, and any content where terms need to be associated with their descriptions or definitions.
+
+---
 
 ## Usage
 
@@ -198,9 +216,6 @@ Definition lists handle page breaks naturally:
         color: #2c3e50;
         font-size: 13pt;
         margin-top: 10pt;
-    }
-    .glossary dt:first-child {
-        margin-top: 0;
     }
     .glossary dd {
         margin-left: 20pt;
@@ -421,9 +436,6 @@ Definition lists handle page breaks naturally:
         color: #2c3e50;
         margin-top: 8pt;
     }
-    .two-column dt:first-child {
-        margin-top: 0;
-    }
     .two-column dd {
         margin-left: 0;
         margin-bottom: 12pt;
@@ -497,7 +509,7 @@ Definition lists handle page breaks naturally:
 ### Data Binding with Definition Lists
 
 ```html
-<!-- Template with model.terms = [{term: "API", def: "Application Programming Interface"}, ...] -->
+{% raw %}<!-- Template with model.terms = [{term: "API", def: "Application Programming Interface"}, ...] -->
 <dl>
     <template data-bind="{{model.terms}}">
         <dt>{{.term}}</dt>
@@ -505,7 +517,7 @@ Definition lists handle page breaks naturally:
     </template>
 </dl>
 
-<!-- Output renders all term-definition pairs from the data model -->
+<!-- Output renders all term-definition pairs from the data model -->{% endraw %}
 ```
 
 ### Complex Data Binding Example
@@ -533,7 +545,7 @@ Definition lists handle page breaks naturally:
     }
 </style>
 
-<dl class="settings">
+{% raw %}<dl class="settings">
     <template data-bind="{{model.settings}}">
         <dt>{{.name}}</dt>
         <dd>
@@ -541,7 +553,7 @@ Definition lists handle page breaks naturally:
             <p style="margin: 5pt 0 0 0; color: #7f8c8d;">{{.description}}</p>
         </dd>
     </template>
-</dl>
+</dl>{% endraw %}
 ```
 
 ### Keeping Terms and Descriptions Together
@@ -573,9 +585,6 @@ Definition lists handle page breaks naturally:
         padding: 10pt;
         margin-top: 10pt;
         border-radius: 3pt 3pt 0 0;
-    }
-    .bordered-pairs dt:first-child {
-        margin-top: 0;
     }
     .bordered-pairs dd {
         background-color: #ecf0f1;
@@ -651,9 +660,6 @@ Definition lists handle page breaks naturally:
         margin-top: 20pt;
         position: relative;
     }
-    .timeline dt:first-child {
-        margin-top: 0;
-    }
     .timeline dt:before {
         content: '';
         width: 15pt;
@@ -700,9 +706,6 @@ Definition lists handle page breaks naturally:
         margin-top: 15pt;
         border-radius: 3pt;
     }
-    .code-docs dt:first-child {
-        margin-top: 0;
-    }
     .code-docs dd {
         margin-left: 0;
         padding: 10pt;
@@ -748,9 +751,6 @@ Definition lists handle page breaks naturally:
         font-size: 14pt;
         margin-top: 15pt;
         border-radius: 5pt 5pt 0 0;
-    }
-    .card-layout dt:first-child {
-        margin-top: 0;
     }
     .card-layout dd {
         margin-left: 0;
@@ -800,45 +800,6 @@ Definition lists handle page breaks naturally:
 </dl>
 ```
 
-### Striped Rows Style
-
-```html
-<style>
-    .striped dt {
-        background-color: #f8f9fa;
-        padding: 8pt;
-        font-weight: bold;
-        margin: 0;
-    }
-    .striped dd {
-        background-color: #ffffff;
-        padding: 8pt;
-        margin: 0 0 1pt 0;
-    }
-    .striped dt:nth-of-type(even),
-    .striped dd:nth-of-type(even) {
-        background-color: #e9ecef;
-    }
-</style>
-
-<dl class="striped">
-    <dt>Monday</dt>
-    <dd>Team meeting at 9:00 AM, Project review at 2:00 PM</dd>
-
-    <dt>Tuesday</dt>
-    <dd>Client presentation at 10:00 AM, Development sprint planning</dd>
-
-    <dt>Wednesday</dt>
-    <dd>Code review session, Documentation update</dd>
-
-    <dt>Thursday</dt>
-    <dd>Testing phase begins, QA coordination meeting</dd>
-
-    <dt>Friday</dt>
-    <dd>Weekly retrospective, Deploy to staging environment</dd>
-</dl>
-```
-
 ### Dictionary/Encyclopedia Style
 
 ```html
@@ -853,9 +814,6 @@ Definition lists handle page breaks naturally:
         margin-top: 20pt;
         padding-bottom: 5pt;
         border-bottom: 2pt solid #333;
-    }
-    .dictionary dt:first-child {
-        margin-top: 0;
     }
     .dictionary dd {
         margin-left: 20pt;
@@ -908,13 +866,11 @@ Definition lists handle page breaks naturally:
 
 ## See Also
 
-- [dt](/reference/htmltags/dt.html) - Definition term element
-- [dd](/reference/htmltags/dd.html) - Definition description element
-- [ul](/reference/htmltags/ul.html) - Unordered list element
-- [ol](/reference/htmltags/ol.html) - Ordered list element
-- [li](/reference/htmltags/li.html) - List item element
+- [ul](html_ul_element.html) - Unordered list element
+- [ol](html_ol_element.html) - Ordered list element
+- [li](html_li_element.html) - List item element
 - [div](/reference/htmltags/div.html) - Generic block container
-- [CSS Styles](/reference/styles/) - Complete CSS styling reference
-- [Data Binding](/reference/binding/) - Data binding and expressions
+- [CSS Styles](/learning/styles/) - Complete CSS styling
+- [Data Binding](/learning/binding/) - Data binding and expressions
 
 ---

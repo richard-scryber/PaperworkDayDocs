@@ -725,8 +725,8 @@ public class DocumentGenerator
 
 - [div](html_div_element.html) - Generic container element
 - [section](html_div_element.html) - Semantic section element
-- [template](html_div_element.html) - Template element for data binding
-- [CSS Styles](/learning/styles/) - Complete CSS styling reference
+- [template](html_template_element.html) - Template element for data binding
+- [CSS Styles](/learning/styles/) - Complete CSS styling
 - [Data Binding](/learning/binding/) - Data binding and expressions
 
 ---
