@@ -9,9 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Text Formatting Elements
-
-Specialized inline elements for marking edits and changes to textual content for deletions, insertions and underlines.
+# &lt;del&gt;, &lt;ins&gt;, &lt;u&gt;, &lt;s&gt;: Text Formatting Elements
 {: .no_toc }
 
 ---
@@ -27,12 +25,14 @@ Specialized inline elements for marking edits and changes to textual content for
 
 ---
 
-### Edit/Change Indicators
+## Summary
+
+Specialized inline elements for marking edits and changes to textual content for deletions, insertions and underlines.
+
 - `<del>`: Deleted text (strikethrough)
 - `<ins>`: Inserted text (underlined)
 - `<u>`: Underlined text (presentational)
 - `<s>`: Strikethrough text (presentational)
-
 
 ---
 

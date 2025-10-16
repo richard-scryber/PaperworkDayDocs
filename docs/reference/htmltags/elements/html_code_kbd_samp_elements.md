@@ -25,11 +25,10 @@ has_toc: false
 
 ---
 
+## Summary
+
 Specialized inline elements for text formatting computer code, keyboard input and sample output
 
-## Elements Overview
-
-### Computer-Related Elements
 - `<code>`: Inline code or computer text (monospace)
 - `<kbd>`: Keyboard input (monospace)
 - `<samp>`: Sample program output (monospace)

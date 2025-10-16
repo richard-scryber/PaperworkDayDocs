@@ -29,6 +29,8 @@ has_toc: false
 
 The `<div>` element is a generic block-level container used to group content and apply styling. It is one of the most commonly used elements in HTML templates for creating document structure and layout in PDF output.
 
+---
+
 ## Usage
 
 The `<div>` element creates a block-level container that:

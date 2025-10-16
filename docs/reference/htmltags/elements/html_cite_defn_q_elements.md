@@ -31,7 +31,9 @@ The library supports a variety of semantic HTML elements that provide meaning to
 
 They can each be styled indepently or as a tag group, and support the full styling capabilities of a [span](html_span_element.html).
 
-## Overview
+---
+
+## Usage
 
 These inline semantic elements help structure and style text with specific meanings:
 
