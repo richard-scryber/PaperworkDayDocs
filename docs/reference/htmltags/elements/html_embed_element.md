@@ -251,7 +251,7 @@ With data:
 Include reusable table structures:
 
 ```html
-<h2>Sales Data</h2>
+{% raw %}<h2>Sales Data</h2>
 <table style="width: 100%; border-collapse: collapse;">
     <thead>
         <embed src="./components/sales-table-header.html" />
@@ -268,7 +268,7 @@ Include reusable table structures:
     <tfoot>
         <embed src="./components/table-footer.html" />
     </tfoot>
-</table>
+</table>{% endraw %}
 ```
 
 ### Remote Content Loading
@@ -295,7 +295,7 @@ Load content from remote URLs:
 Build complex documents from multiple parts:
 
 ```html
-<!DOCTYPE html>
+{% raw %}<!DOCTYPE html>
 <html>
 <head>
     <title>{{model.documentTitle}}</title>
@@ -324,7 +324,7 @@ Build complex documents from multiple parts:
         <embed src="chapters/chapter3.html" />
     </div>
 </body>
-</html>
+</html>{% endraw %}
 ```
 
 ### Example 9: API-Driven Content
@@ -332,7 +332,7 @@ Build complex documents from multiple parts:
 Load content from API endpoints:
 
 ```html
-<div class="report">
+{% raw %}<div class="report">
     <embed src="{{model.apiUrl + '/reports/' + model.reportId + '/header.html'}}" />
 
     <div class="report-body">
@@ -340,7 +340,7 @@ Load content from API endpoints:
     </div>
 
     <embed src="{{model.apiUrl + '/reports/' + model.reportId + '/footer.html'}}" />
-</div>
+</div>{% endraw %}
 ```
 
 With data:
@@ -359,14 +359,14 @@ With data:
 Load different template versions:
 
 ```html
-<embed src="{{'templates/v' + model.templateVersion + '/header.html'}}" />
+{% raw %}<embed src="{{'templates/v' + model.templateVersion + '/header.html'}}" />
 
 <div class="content">
     <h1>{{model.title}}</h1>
     <embed src="{{'templates/v' + model.templateVersion + '/body.html'}}" />
 </div>
 
-<embed src="{{'templates/v' + model.templateVersion + '/footer.html'}}" />
+<embed src="{{'templates/v' + model.templateVersion + '/footer.html'}}" />{% endraw %}
 ```
 
 With data:
@@ -385,7 +385,7 @@ With data:
 Store parameters and use in embedded content:
 
 ```html
-<var data-id="companyName" data-value="{{model.company}}" />
+{% raw %}<var data-id="companyName" data-value="{{model.company}}" />
 <var data-id="reportDate" data-value="{{date(model.date)}}" />
 
 <div class="annual-report">
@@ -395,7 +395,7 @@ Store parameters and use in embedded content:
     <embed src="./sections/letter-to-shareholders.html" />
 
     <embed src="./sections/financial-highlights.html" />
-</div>
+</div>{% endraw %}
 ```
 
 With data:
@@ -413,7 +413,7 @@ With data:
 Include content based on multiple conditions:
 
 ```html
-<var data-id="documentType" data-value="{{model.type}}" />
+{% raw %}<var data-id="documentType" data-value="{{model.type}}" />
 <var data-id="securityLevel" data-value="{{model.security}}" />
 
 <div class="secure-document">
@@ -443,7 +443,7 @@ Include content based on multiple conditions:
             <embed src="audit/audit-trail.html" />
         </div>
     </if>
-</div>
+</div>{% endraw %}
 ```
 
 With data:
