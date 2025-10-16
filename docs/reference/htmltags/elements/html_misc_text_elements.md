@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Text Formatting Elements
+title: Miscellaneous Text Elements
 parent: HTML Elements
 parent_url: /reference/htmltags/
 grand_parent: Template reference

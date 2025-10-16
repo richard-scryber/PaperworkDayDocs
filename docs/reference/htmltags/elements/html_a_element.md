@@ -73,6 +73,14 @@ The `<a>` element creates clickable hyperlinks that:
 | `title` | string | Sets the outline/bookmark title for the link. Also used as tooltip text. |
 | `hidden` | string | Controls visibility. Set to "hidden" to hide the element, or omit/empty to show. |
 
+### Data Binding Attributes
+
+| Attribute | Type | Description |
+|-----------|------|-------------|
+| `data-content` | expression | Dynamically sets the content of the address element from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
+| `data-content-action` | Replace, Append, Prepend | Specifies the action to take when binding elements with existing inner content. |
+
 ### Link-Specific Attributes
 
 | Attribute | Type | Description |

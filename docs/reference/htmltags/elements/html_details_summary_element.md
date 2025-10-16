@@ -28,7 +28,9 @@ has_toc: false
 
 The `<details>` and `<summary>` elements create collapsible content sections. In static PDF output, these elements render in either expanded or collapsed state based on the `open` attribute. The `<summary>` provides a visible heading, while the remaining content inside `<details>` can be shown or hidden.
 
-**NOTE:** It is expected that this element, along with `abbr`, `cite`, `defn` will use the interactive features for comments and call outs, <u>in future</u>>.
+**NOTE:** It is expected that this element, along with `abbr`, `cite`, `defn` will use the interactive features for comments and call outs in output documents, <u>in future versions</u>>.
+
+---
 
 ## Usage
 
@@ -85,10 +87,13 @@ The `<details>` element creates a disclosure widget that:
 
 | Attribute | Type | Description |
 |-----------|------|-------------|
-| `data-bind` | expression | Binds the element to a data context for use with templates. |
 | `data-content` | expression | Dynamically sets the content from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
+| `data-content-action` | Replace, Append, Prepend | Specifies the action to take when binding elements with existing inner content. |
 
-### CSS Style Support
+---
+
+## CSS Style Support
 
 Both `<details>` and `<summary>` support extensive CSS styling:
 
@@ -121,7 +126,7 @@ Both `<details>` and `<summary>` support extensive CSS styling:
 
 In PDF output, the `<details>` element is **not interactive**. Unlike web browsers where users can click to expand/collapse:
 
-1. **Open State**: When `open` attribute is present (or set to "open", "true", or empty string):
+1. **Open State**: When `open` attribute is present and set to a empty string or a value that isn't "false" or "closed":
    - Both `<summary>` and content are rendered
    - Content is fully visible in the PDF
 
@@ -131,10 +136,10 @@ In PDF output, the `<details>` element is **not interactive**. Unlike web browse
 
 ```html
 <!-- These will show content -->
-<details open>...</details>
+ <details open="">...</details>
 <details open="open">...</details>
 <details open="true">...</details>
-<details open="">...</details>
+<details open="yes">...</details>
 
 <!-- These will hide content -->
 <details>...</details>
@@ -151,40 +156,6 @@ The `<summary>` element:
 - Uses full width by default (block-level)
 - Can be styled independently with its own classes and styles
 
-### Visual Indicators
-
-Since PDFs are static, use visual styling to indicate expanded/collapsed state:
-
-```html
-<style>
-    /* Expanded state indicator */
-    details[open] summary::before {
-        content: "▼ ";
-    }
-
-    /* Collapsed state indicator */
-    details:not([open]) summary::before {
-        content: "▶ ";
-    }
-
-    /* Styling for the summary */
-    summary {
-        font-weight: bold;
-        padding: 10pt;
-        background-color: #f0f0f0;
-        cursor: pointer; /* Note: Not clickable in PDF */
-    }
-</style>
-```
-
-### Class Hierarchy
-
-In the Scryber codebase:
-- `HTMLDetails` extends `Panel` - Block-level container
-- `HTMLDetailsSummary` extends `Panel` - Block-level heading
-- Both inherit all properties from `Panel` and `VisualComponent`
-- Both use full width by default
-
 ### Use Cases for PDF
 
 While not interactive in PDF, these elements are useful for:
@@ -193,6 +164,17 @@ While not interactive in PDF, these elements are useful for:
 3. **FAQ Documents**: Create expandable FAQ sections where some answers are shown, others hidden
 4. **Report Sections**: Hide detailed data while showing summaries
 5. **Conditional Rendering**: Control what content appears based on template parameters
+
+---
+
+## Class Hierarchy
+
+In the Scryber codebase:
+- `HTMLDetails` extends `Panel` - Block-level container
+- `HTMLDetailsSummary` extends `Panel` - Block-level heading
+- Both inherit all properties from `Panel` and `VisualComponent`
+- Both use full width by default
+
 
 ---
 
@@ -245,10 +227,6 @@ While not interactive in PDF, these elements are useful for:
         content: "▶ ";
         color: #666;
         margin-right: 8pt;
-    }
-
-    .faq-details[open] .faq-summary::before {
-        content: "▼ ";
     }
 
     .faq-content {
@@ -345,7 +323,7 @@ While not interactive in PDF, these elements are useful for:
 ### Data-Bound Details
 
 ```html
-<!-- With model = { showDetails: true, title: "Product Info", description: "..." } -->
+{% raw %}<!-- With model = { showDetails: true, title: "Product Info", description: "..." } -->
 <details open="{{model.showDetails ? 'open' : 'closed'}}">
     <summary style="font-weight: bold; padding: 10pt; background-color: #e8e8e8;">
         {{model.title}}
@@ -353,13 +331,13 @@ While not interactive in PDF, these elements are useful for:
     <div style="padding: 10pt;">
         <p>{{model.description}}</p>
     </div>
-</details>
+</details>{% endraw %}
 ```
 
 ### Repeating Details from Collection
 
 ```html
-<!-- With model.faqs = [{q: "Question 1?", a: "Answer 1", open: true}, {q: "Question 2?", a: "Answer 2", open: false}] -->
+{% raw %}<!-- With model.faqs = [{q: "Question 1?", a: "Answer 1", open: true}, {q: "Question 2?", a: "Answer 2", open: false}] -->
 <template data-bind="{{model.faqs}}">
     <details open="{{.open ? 'open' : 'closed'}}"
              style="border: 1pt solid #ddd; margin: 8pt 0; border-radius: 4pt;">
@@ -370,7 +348,7 @@ While not interactive in PDF, these elements are useful for:
             <p>{{.a}}</p>
         </div>
     </details>
-</template>
+</template>{% endraw %}
 ```
 
 ### Card-Style Details
@@ -451,20 +429,11 @@ While not interactive in PDF, these elements are useful for:
         border-bottom: none;
     }
 
-    .accordion-item:last-child {
-        border-bottom: 1pt solid #ccc;
-    }
-
     .accordion-summary {
         padding: 12pt 15pt;
         background-color: #f7f7f7;
         font-weight: 600;
         border-left: 4pt solid #666;
-    }
-
-    .accordion-item[open] .accordion-summary {
-        background-color: #e8e8e8;
-        border-left-color: #336699;
     }
 
     .accordion-content {
@@ -610,7 +579,7 @@ public class DocumentGenerator
         color: white;
         font-size: 13pt;
         font-weight: bold;">
-        📋 Technical Specifications
+        Technical Specifications
     </summary>
 
     <div style="padding: 20pt;">
@@ -671,10 +640,10 @@ public class DocumentGenerator
 ### Conditional Details Based on User Role
 
 ```html
-<!-- With model = { userRole: "admin", adminContent: "Admin details...", userContent: "User details..." } -->
+{% raw %}<!-- With model = { userRole: "admin", adminContent: "Admin details...", userContent: "User details..." } -->
 <details open="{{model.userRole === 'admin' ? 'open' : 'closed'}}">
     <summary style="padding: 10pt; background-color: #ffebee; font-weight: bold;">
-        🔒 Administrator Settings
+        Administrator Settings
     </summary>
     <div style="padding: 15pt; background-color: #fff;">
         <p>{{model.adminContent}}</p>
@@ -690,7 +659,7 @@ public class DocumentGenerator
         <p>{{model.userContent}}</p>
         <p>Visible to all users.</p>
     </div>
-</details>
+</details>{% endraw %}
 ```
 
 ### Multi-Level Documentation Structure
@@ -731,7 +700,7 @@ public class DocumentGenerator
             <div style="padding: 12pt; margin-left: 15pt;">
                 <p>PDF documents are composed of objects that define the document structure...</p>
 
-                <details style="margin-left: 30pt; margin-top: 10pt;">
+                <details open="closed" style="margin-left: 30pt; margin-top: 10pt;">
                     <summary class="subsection-summary">1.1.1 Document Catalog</summary>
                     <div style="padding: 10pt; margin-left: 30pt;">
                         <p>This subsection is collapsed and won't appear in the PDF.</p>
@@ -740,7 +709,7 @@ public class DocumentGenerator
             </div>
         </details>
 
-        <details class="doc-section">
+        <details open="closed" class="doc-section">
             <summary class="section-summary">1.2 Getting Started</summary>
             <div style="padding: 12pt; margin-left: 15pt;">
                 <p>This section is collapsed in PDF output.</p>
@@ -754,12 +723,10 @@ public class DocumentGenerator
 
 ## See Also
 
-- [div](/reference/htmltags/div.html) - Generic container element
-- [section](/reference/htmltags/section.html) - Semantic section element
-- [template](/reference/htmltags/template.html) - Template element for data binding
-- [Panel Component](/reference/components/panel.html) - Base panel component
-- [CSS Styles](/reference/styles/) - Complete CSS styling reference
-- [Data Binding](/reference/binding/) - Data binding and expressions
-- [Conditional Rendering](/reference/rendering/conditional.html) - Control what content appears
+- [div](html_div_element.html) - Generic container element
+- [section](html_div_element.html) - Semantic section element
+- [template](html_div_element.html) - Template element for data binding
+- [CSS Styles](/learning/styles/) - Complete CSS styling reference
+- [Data Binding](/learning/binding/) - Data binding and expressions
 
 ---

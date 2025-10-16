@@ -34,7 +34,7 @@ The `<continuation-footer>` element is used within `<body>` or `<section>` eleme
 - Displaying context information throughout multi-page content
 
 The continuation footer appears on pages 2, 3, 4... but NOT on the first page. The first page shows the regular `<footer>` element (even if it is empty).
-If the continuation footer is not present then any template `<footer>` will show on all pages.
+If the continuation footer is not present then *any* template `<footer>` will show on all pages.
 
 ---
 
@@ -67,7 +67,6 @@ If the continuation footer is not present then any template `<footer>` will show
 | `class` | string | CSS class name(s) for styling |
 | `style` | string | Inline CSS styles |
 | `hidden` | string | If set to "hidden", the element is not visible |
-| `data-bind` | expression | Data binding expression for dynamic content |
 
 ---
 
@@ -104,7 +103,7 @@ The `<continuation-footer>` element can be placed within:
 
 ## Examples
 
-### Example 1: Basic Continuation Footer
+### Basic Continuation Footer
 
 ```html
 <body>
@@ -125,7 +124,7 @@ The `<continuation-footer>` element can be placed within:
 ```
 
 
-### Example 4: Legal Disclaimer on Each following page
+### Legal Disclaimer on Each following page
 
 ```html
 
@@ -137,10 +136,10 @@ The `<continuation-footer>` element can be placed within:
 
 ```
 
-### Example 5: Data-Bound Continuation Footer - No Title Footer spage
+### Data-Bound Continuation Footer - No Title Footer spage
 
 ```html
-<body>
+{% raw %}<body>
     <div data-bind="{{report.sections}}">
         <h2>{{.title}}</h2>
         <p>{{.content}}</p>
@@ -155,12 +154,41 @@ The `<continuation-footer>` element can be placed within:
 
     <footer>
     </footer>
-</body>
+</body>{% endraw %}
+```
+
+### Medical Records with Patient Info
+
+```html
+{% raw %}<body>
+    <header>
+        <h1>Patient Medical Record</h1>
+    </header>
+
+    <footer>
+        <p>Name: {{patient.name}}</p>
+        <p>DOB: {{patient.dob}} | MRN: {{patient.mrn}}</p>
+    </footer>
+
+    <continuation-footer style="background-color: #e8f4f8; padding: 8pt;">
+        <strong>Patient: {{patient.name}}</strong> |
+        MRN: {{patient.mrn}} |
+        <strong>Continuation Page <page /></strong>
+    </continuation-footer>
+
+    <main >
+        <template data-bind="{{patient.records}}">
+            <div class='visit'>
+            <h3>{{.date}}: {{.visitType}}</h3>
+            <p data-content="{{.notes}}"></p>
+            <div>
+        </template>
+    </main>
+</body>{% endraw %}
 ```
 
 
-
-### Example 8: Multi-Column Footer Layout
+### Multi-Column Footer Layout
 
 ```html
 {% raw %}<footer>
@@ -186,18 +214,19 @@ The `<continuation-footer>` element can be placed within:
             </td>
         </tr>
     </table>
-</continuation-footer>{% endraw%}
+</continuation-footer>{% endraw %}
 ```
 
 ---
 
 ## See Also
 
-- [continuation-header](/reference/htmlelements/html_continuation-header_element) - The header on continuation pages.
-- [footer](/reference/htmlelements/html_footer_element) - Individual page footers
-- [body](/reference/htmlelements/html_body_element) - The document body element
-- [section](/reference/htmlelements/html_section_element) - Section Element
-- [Page Management](/reference/learning/styles/pages) - Page sizing, numbering and sectioning.
-- [Multi-page Documents](/guides/multi-page)
+- [continuation-header](html_continuation-header_element) - The header on continuation pages.
+- [footer](html_footer_element) - Individual page footers
+- [body](html_body_element) - The document body element
+- [section](html_section_element) - Section Element
+- [page](html_page_element) - Page number display
+- [Page Management](learning/styles/page_layout) - Page breaks, sections and content flow.
+- [Multi-page Documents](/learning/styles/page_sizes) - Page sizing, numbering and grouping.
 
 ---

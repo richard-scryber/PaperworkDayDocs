@@ -85,6 +85,7 @@ The `<body>` element is the primary content container that:
 |-----------|------|-------------|
 | `data-content` | expression | Dynamically sets the content of the address element from bound data. |
 | `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
+| `data-content-action` | Replace, Append, Prepend | Specifies the action to take when binding elements with existing inner content. |
 
 ### Child Elements
 

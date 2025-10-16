@@ -11,12 +11,12 @@ has_toc: false
 
 # &lt;iframe&gt; and &lt;embed&gt; : The Embedded Content Elements
 
-The `<iframe>` and `<embed>` elements allow embedding external content into PDF documents. They support loading remote HTML/PDF files that are dynamically parsed and embedded at render time. These elements enable content reuse, modular document composition, and dynamic content inclusion.
+The `<iframe>` and `<embed>` elements allow embedding external content into PDF documents. They support loading remote HTML files that are dynamically parsed and embedded at render time. These elements enable content reuse, modular document composition, and dynamic content inclusion.
 
 ## Usage
 
 The `<iframe>` and `<embed>` elements enable embedded content that:
-- Load and parse external HTML/PDF documents via the `src` attribute
+- Load and parse external HTML documents via the `src` attribute
 - Support remote content loading from URLs or local file paths
 - Parse and render external content within the current document context
 - Support styling through CSS and inline styles

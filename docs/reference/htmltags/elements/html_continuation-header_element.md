@@ -107,7 +107,7 @@ The `<continuation-header>` element can be placed within:
 
 ## Examples
 
-### Example 1: Basic Continuation Header
+### Basic Continuation Header
 
 ```html
 <body>
@@ -128,10 +128,10 @@ The `<continuation-header>` element can be placed within:
 </body>
 ```
 
-### Example 2: Multi-page Table with Headers
+### Multi-page Table with Headers
 
 ```html
-<style>
+{% raw %}<style>
     continuation-header {
         background-color: #f0f0f0;
         padding: 10pt;
@@ -148,28 +148,30 @@ The `<continuation-header>` element can be placed within:
     <continuation-header>
         <table style="width: 100%">
             <tr style="background-color: #333; color: white;">
-                <th>Date</th>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Amount</th>
+                <th style='width: 25%'>Date</th>
+                <th style='width: 25%'>Product</th>
+                <th style='width: 25%'>Quantity</th>
+                <th style='width: 25%'>Amount</th>
             </tr>
         </table>
     </continuation-header>
 
     <table style="width: 100%">
-        <tbody data-bind="{{sales.transactions}}">
+        <tbody>
+            <template data-bind="{{sales.transactions}}">
             <tr>
-                <td>{{.date}}</td>
-                <td>{{.product}}</td>
-                <td>{{.quantity}}</td>
-                <td>${{.amount}}</td>
+                <td style='width: 25%'>{{.date}}</td>
+                <td style='width: 25%'>{{.product}}</td>
+                <td style='width: 25%'>{{.quantity}}</td>
+                <td style='width: 25%'>${{.amount}}</td>
             </tr>
+            </template>
         </tbody>
     </table>
-</body>
+</body>{% endraw %}
 ```
 
-### Example 3: Section-Specific Continuation Header
+### Section-Specific Continuation Header
 
 ```html
 <section>
@@ -201,7 +203,7 @@ The `<continuation-header>` element can be placed within:
 </section>
 ```
 
-### Example 4: Continuation Header with Page Numbers
+### Continuation Header with Page Numbers
 
 ```html
 <continuation-header>
@@ -212,7 +214,7 @@ The `<continuation-header>` element can be placed within:
 </continuation-header>
 ```
 
-### Example 5: Data-Bound Continuation Header
+### Data-Bound Continuation Header
 
 ```html
 {% raw %}<body>
@@ -227,14 +229,16 @@ The `<continuation-header>` element can be placed within:
         </div>
     </continuation-header>
 
-    <div data-bind="{{report.sections}}">
-        <h2>{{.heading}}</h2>
-        <p>{{.content}}</p>
+    <div>
+        <template data-bind="{{report.sections}}">
+            <h2>{{.heading}}</h2>
+            <p data-content="{{.content}}"></p>
+        </template>
     </div>
 </body>{% endraw %}
 ```
 
-### Example 6: Styled Continuation Indicator
+### Styled Continuation Indicator
 
 ```html
 <style>
@@ -261,7 +265,7 @@ The `<continuation-header>` element can be placed within:
 </body>
 ```
 
-### Example 7: Multi-Column Report Header
+### Multi-Column Report Header
 
 ```html
 <continuation-header>
@@ -281,7 +285,7 @@ The `<continuation-header>` element can be placed within:
 </continuation-header>
 ```
 
-### Example 8: Continuation with Company Branding
+### Continuation with Company Branding
 
 ```html
 <continuation-header>
@@ -295,7 +299,7 @@ The `<continuation-header>` element can be placed within:
 </continuation-header>
 ```
 
-### Example 9: Invoice Continuation
+### Invoice Continuation
 
 ```html
 {% raw %}<body>
@@ -333,7 +337,7 @@ The `<continuation-header>` element can be placed within:
 </body>{% endraw %}
 ```
 
-### Example 10: Legal Document Continuation
+### Legal Document Continuation
 
 ```html
 {% raw %}<style>
@@ -362,7 +366,7 @@ The `<continuation-header>` element can be placed within:
 </body>{% endraw %}
 ```
 
-### Example 11: Medical Records with Patient Info
+### Medical Records with Patient Info
 
 ```html
 {% raw %}<body>
@@ -378,14 +382,18 @@ The `<continuation-header>` element can be placed within:
         Page <page />
     </continuation-header>
 
-    <div data-bind="{{patient.records}}">
-        <h3>{{.date}}: {{.visitType}}</h3>
-        <p>{{.notes}}</p>
-    </div>
+    <main >
+        <template data-bind="{{patient.records}}">
+            <div class='visit'>
+            <h3>{{.date}}: {{.visitType}}</h3>
+            <p data-content="{{.notes}}"></p>
+            <div>
+        </template>
+    </main>
 </body>{% endraw %}
 ```
 
-### Example 12: Academic Transcript
+### Academic Transcript
 
 ```html
 {% raw %}<body>
@@ -407,7 +415,7 @@ The `<continuation-header>` element can be placed within:
 </body>{% endraw %}
 ```
 
-### Example 13: Inventory List with Context
+### Inventory List with Context
 
 ```html
 {% raw %}<continuation-header>
@@ -423,7 +431,7 @@ The `<continuation-header>` element can be placed within:
 </continuation-header>{% endraw %}
 ```
 
-### Example 14: Conference Schedule
+### Conference Schedule
 
 ```html
 {% raw %}<body>
@@ -436,10 +444,14 @@ The `<continuation-header>` element can be placed within:
         <strong>{{conference.name}}</strong> - Schedule (continued) - {{conference.date}}
     </continuation-header>
 
-    <div data-bind="{{conference.sessions}}">
-        <h3>{{.time}}: {{.title}}</h3>
-        <p>Speaker: {{.speaker}} | Room: {{.room}}</p>
-    </div>
+    <main>
+        <template data-bind="{{conference.sessions}}">
+            <div >
+                <h3>{{.time}}: {{.title}}</h3>
+                <p>Speaker: {{.speaker}} | Room: {{.room}}</p>
+            </div>
+        </template>
+    </main>
 </body>{% endraw %}
 ```
 
@@ -447,11 +459,12 @@ The `<continuation-header>` element can be placed within:
 
 ## See Also
 
-- [continuation-footer Element](html_continuation-footer_element)
-- [header Element](html_header_element)
-- [body Element](html_body_element)
-- [section Element](html_section_element)
-- [Page Numbers](html_page_element)
-- [Pages](/learning/templates/header_footer)
+- [continuation-footer](html_continuation-footer_element) - The footer on continuation pages
+- [header](html_header_element) - Individual page headers.
+- [body](html_body_element) - The document body element.
+- [section](html_section_element) - Section element.
+- [page](html_page_element) - Page number display.
+- [Page Management](learning/styles/page_layout) - Page breaks, sections and content flow.
+- [Multi-page Documents](/learning/styles/page_sizes) - Page sizing, numbering and grouping.
 
 ---

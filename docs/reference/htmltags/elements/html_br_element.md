@@ -29,6 +29,8 @@ has_toc: false
 
 The `<br>` element creates a line break within text content, forcing subsequent content to start on a new line without creating a new paragraph or block-level container.
 
+---
+
 ## Usage
 
 The `<br>` element:
@@ -176,7 +178,7 @@ The `<br>` element:
 <div style="font-style: italic; line-height: 1.6;">
     Roses are red,<br/>
     Violets are blue,<br/>
-    Scryber makes PDFs,<br/>
+    You can make PDFs,<br/>
     Beautiful and true.
 </div>
 ```

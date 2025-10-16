@@ -56,7 +56,14 @@ The `<abbr>` element is an inline semantic HTML element that marks up abbreviati
 | `class` | string | CSS class name(s) for styling |
 | `style` | string | Inline CSS styles |
 | `hidden` | string | If set to "hidden", the element is not visible |
-| `data-content` | expression | Data binding expression for dynamic content |
+
+### Data Binding Attributes
+
+| Attribute | Type | Description |
+|-----------|------|-------------|
+| `data-content` | expression | Dynamically sets the content of the address element from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
+| `data-content-action` | Replace, Append, Prepend | Specifies the action to take when binding elements with existing inner content. |
 
 ---
 
