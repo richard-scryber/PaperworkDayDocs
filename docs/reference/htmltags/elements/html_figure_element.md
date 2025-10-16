@@ -1,6 +1,6 @@
 ---
 layout: default
-title: figure
+title: figure, figcaption
 parent: HTML Elements
 parent_url: /reference/htmltags/
 grand_parent: Template reference
@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # &lt;figure&gt; : The Figure with Caption Element
+{: .no_toc }
+
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `<figure>` element represents self-contained content, typically with a caption, that is referenced as a single unit from the main content. It is a semantic block-level element designed for encapsulating images, diagrams, code listings, illustrations, charts, or other content that can be moved away from the main flow without affecting the document's meaning.
+
+---
 
 ## Usage
 
@@ -51,10 +69,13 @@ The `<figure>` element creates a semantic container for figures that:
 
 | Attribute | Type | Description |
 |-----------|------|-------------|
-| `data-bind` | expression | Binds the element to a data context for use with templates. |
-| `data-content` | expression | Dynamically sets the content of the figure from bound data. |
+| `data-content` | expression | Dynamically sets the content of the address element from bound data. |
+| `data-content-type` | Mime Type | Specifies the type of bound content fragment - XHTML; HTML; Markdown. |
+| `data-content-action` | Replace, Append, Prepend | Specifies the action to take when binding elements with existing inner content. |
 
-### CSS Style Support
+---
+
+## CSS Style Support
 
 The `<figure>` element supports extensive CSS styling through the `style` attribute or CSS classes:
 
@@ -161,7 +182,7 @@ For accessibility:
 
 ### Class Hierarchy
 
-In the Scryber codebase:
+In the library codebase:
 - `HTMLFigure` extends `HTMLDiv` extends `Panel` extends `VisualComponent`
 - `HTMLFigureCaption` extends `HTMLDiv` extends `Panel` extends `VisualComponent`
 - Both inherit all container functionality from `HTMLDiv`
@@ -310,7 +331,7 @@ function authenticate(username, password) {
 ### Figure with Data Binding
 
 ```html
-<!-- With model.figures = [
+{% raw %}<!-- With model.figures = [
     { number: 1, title: "Architecture", image: "arch.png", description: "System overview" },
     { number: 2, title: "Workflow", image: "flow.png", description: "Process flow" }
 ] -->
@@ -322,7 +343,7 @@ function authenticate(username, password) {
             Figure {{.number}}: {{.description}}
         </figcaption>
     </figure>
-</template>
+</template>{% endraw %}
 ```
 
 ### Figure for Mathematical Diagram

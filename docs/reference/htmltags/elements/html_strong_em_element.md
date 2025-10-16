@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # &lt;strong&gt;, &lt;em&gt;, &lt;b&gt;, &lt;i&gt; : Bold and Italic Text Elements
+{: .no_toc }
+
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The bold and italic text elements provide both semantic and presentational text emphasis in PDF documents. `<strong>` and `<em>` are semantic elements indicating importance and emphasis, while `<b>` and `<i>` are presentational elements for visual styling without semantic meaning.
+
+---
 
 ## Usage
 
@@ -120,7 +138,9 @@ Elements can be nested to combine effects:
 <strong><u>Bold underlined</u></strong>
 ```
 
-### Class Hierarchy
+---
+
+## Class Hierarchy
 
 In the Scryber codebase:
 - `HTMLBoldSpan`/`HTMLStrong` extends `BoldSpan` extends `SpanBase` extends `Panel`

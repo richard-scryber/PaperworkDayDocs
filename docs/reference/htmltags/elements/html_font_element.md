@@ -10,7 +10,22 @@ has_toc: false
 ---
 
 # &lt;font&gt; : The Font Element (Deprecated)
+{: .no_toc }
 
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 The `<font>` element is a deprecated HTML element for styling text appearance. While still supported for backward compatibility, **CSS styling is strongly recommended** instead.
 
 ## Usage
@@ -116,14 +131,6 @@ The `<font>` element:
 </font>
 ```
 
-### Nested Font Tags (Not Recommended)
-
-```html
-<font color="blue">
-    Blue text with <font size="20pt">larger nested text</font> inside
-</font>
-```
-
 ### Migration Example: Before and After
 
 **Before (deprecated `<font>`):**
@@ -160,125 +167,6 @@ The `<font>` element:
     This is regular text with <span class="highlight">highlighted</span> sections
     and <span class="code">code snippets</span>.
 </p>
-```
-
-### Legacy Document Conversion
-
-```html
-<!-- Original legacy HTML with font tags -->
-<html>
-<body>
-    <font color="navy" face="Times New Roman" size="16pt">
-        <b>Company Report</b>
-    </font>
-    <br/>
-    <font color="gray" size="10pt">
-        Generated on: 2024-01-15
-    </font>
-    <br/><br/>
-    <font face="Arial" size="11pt">
-        This report contains financial information...
-    </font>
-</body>
-</html>
-```
-
-### Mixed Font and CSS (Transition Phase)
-
-```html
-<style>
-    .header {
-        font-weight: bold;
-        margin-bottom: 10pt;
-    }
-</style>
-
-<!-- Using both font tag and CSS class during migration -->
-<font color="#336699" face="Arial" size="18pt" class="header">
-    Section Header
-</font>
-```
-
-### Data Binding with Font Tags
-
-```html
-<!-- While deprecated, font tags work with data binding -->
-<font color="{{model.statusColor}}" face="Arial" size="12pt">
-    Status: {{model.status}}
-</font>
-
-<!-- Better alternative with CSS -->
-<span style="color: {{model.statusColor}}; font-family: Arial; font-size: 12pt;">
-    Status: {{model.status}}
-</span>
-```
-
-### Color Names vs Hex Values
-
-```html
-<!-- Named colors -->
-<font color="red">Red text</font>
-<font color="blue">Blue text</font>
-<font color="green">Green text</font>
-
-<!-- Hex color values -->
-<font color="#FF0000">Red text</font>
-<font color="#0000FF">Blue text</font>
-<font color="#00FF00">Green text</font>
-
-<!-- RGB values -->
-<font color="rgb(255, 0, 0)">Red text</font>
-```
-
-### Font Sizes in Different Units
-
-```html
-<font size="10pt">10 point text</font><br/>
-<font size="12pt">12 point text</font><br/>
-<font size="14pt">14 point text</font><br/>
-<font size="16pt">16 point text</font><br/>
-<font size="20pt">20 point text</font>
-```
-
-### Legacy Email Template
-
-```html
-<table width="600" border="0" cellpadding="10">
-    <tr>
-        <td bgcolor="#f0f0f0">
-            <font color="#333333" face="Verdana, Arial, sans-serif" size="11pt">
-                Dear Customer,<br/><br/>
-
-                Thank you for your order. Your order number is
-                <font color="#ff0000" size="12pt"><b>#12345</b></font>.
-                <br/><br/>
-
-                <font size="10pt" color="#666666">
-                    This is an automated message. Please do not reply.
-                </font>
-            </font>
-        </td>
-    </tr>
-</table>
-```
-
-### Recommended Alternative: CSS Classes
-
-```html
-<style>
-    .error { color: #d32f2f; font-weight: bold; }
-    .success { color: #388e3c; font-weight: bold; }
-    .warning { color: #f57c00; font-weight: bold; }
-    .info { color: #1976d2; }
-    .code { font-family: 'Courier New', monospace; background-color: #f5f5f5; padding: 2pt; }
-</style>
-
-<p>Status messages:</p>
-<p class="error">Error: Operation failed</p>
-<p class="success">Success: Operation completed</p>
-<p class="warning">Warning: Check your input</p>
-<p class="info">Info: Processing in progress</p>
-<p>Code example: <span class="code">var x = 10;</span></p>
 ```
 
 ---

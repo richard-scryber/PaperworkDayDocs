@@ -29,6 +29,8 @@ has_toc: false
 
 The `<article>` element represents a self-contained composition in a document that is independently distributable or reusable. It is a semantic block-level element ideal for blog posts, news articles, product cards, user comments, or any content that makes sense on its own.
 
+---
+
 ## Usage
 
 The `<article>` element creates a semantic container that:
