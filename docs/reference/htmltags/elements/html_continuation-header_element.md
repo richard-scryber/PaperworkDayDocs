@@ -10,7 +10,7 @@ has_toc: false
 ---
 
 # &lt;continuation-header&gt; : The Continuation Header Element
-
+{: .no_toc }
 ---
 
 <details markdown="block">
