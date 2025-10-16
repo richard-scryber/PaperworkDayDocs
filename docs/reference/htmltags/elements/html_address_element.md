@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open markdown="block">
+<details markdown="block">
   <summary>
     Table of contents
   </summary>
@@ -45,7 +45,7 @@ The `<address>` element creates a semantic container for contact information tha
 
 ```html
 <address>
-    Written by <a href="mailto:john@example.com">John Doe</a><br/>
+    Written by <a href="mailto:john@example.com">John Smith</a><br/>
     123 Main Street, Suite 100<br/>
     New York, NY 10001
 </address>
@@ -301,58 +301,25 @@ In the Scryber codebase:
 </address>
 ```
 
-### Contact with Social Media
+### Contact with Social Media Icons
 
 ```html
+<!-- Link required to the font-awesome ttf file 
+ 
+ -->
 <address style="font-style: normal; background-color: #f9f9f9;
                 padding: 15pt; border-radius: 5pt;">
     <strong style="font-size: 12pt;">Get in Touch</strong><br/>
     <br/>
     <div style="line-height: 1.8;">
-        Email: <a href="mailto:hello@company.com">hello@company.com</a><br/>
-        Twitter: <a href="https://twitter.com/company">@company</a><br/>
-        LinkedIn: <a href="https://linkedin.com/company/company">company</a><br/>
-        Phone: <a href="tel:+15551234567">(555) 123-4567</a>
+        <i class='far fa-envelope'></i> <a href="mailto:hello@company.com">hello@company.com</a><br/>
+        <i class="fab fa-twitter-square"></i> <a href="https://twitter.com/company">twitter account</a><br/>
+        <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/company/company">linked-in account</a><br/>
+        <i class="fas fa-phone-square"></i> <a href="tel:+15551234567">(555) 123-4567</a>
     </div>
 </address>
 ```
 
-### Contact Information with Icons
-
-```html
-<address style="font-style: normal; padding: 15pt;
-                background-color: #ffffff; border: 1pt solid #e0e0e0;">
-    <div style="margin-bottom: 8pt;">
-        <span style="color: #336699; font-weight: bold;">📧</span>
-        <a href="mailto:support@example.com">support@example.com</a>
-    </div>
-    <div style="margin-bottom: 8pt;">
-        <span style="color: #336699; font-weight: bold;">📞</span>
-        <a href="tel:+15551234567">+1 (555) 123-4567</a>
-    </div>
-    <div style="margin-bottom: 8pt;">
-        <span style="color: #336699; font-weight: bold;">📍</span>
-        123 Main Street, New York, NY 10001
-    </div>
-    <div>
-        <span style="color: #336699; font-weight: bold;">🌐</span>
-        <a href="https://www.example.com">www.example.com</a>
-    </div>
-</address>
-```
-
-### Emergency Contact Information
-
-```html
-<div style="background-color: #fff3cd; border: 2pt solid #ffc107;
-            padding: 15pt; margin: 20pt 0;">
-    <strong style="font-size: 12pt; color: #856404;">Emergency Contact</strong>
-    <address style="margin-top: 10pt; font-style: normal; color: #856404;">
-        24/7 Hotline: <a href="tel:+18005551234" style="color: #856404; font-weight: bold;">1-800-555-1234</a><br/>
-        Email: <a href="mailto:emergency@company.com" style="color: #856404;">emergency@company.com</a>
-    </address>
-</div>
-```
 
 ### Data Binding with Contact Information
 
@@ -373,17 +340,6 @@ In the Scryber codebase:
 </template>
 {% endraw %}```
 
-### Newsletter Subscription Contact
-
-```html
-<div style="background-color: #e8f4f8; padding: 20pt; text-align: center;">
-    <h2 style="margin-top: 0; color: #336699;">Subscribe to Our Newsletter</h2>
-    <p>Get the latest updates delivered to your inbox</p>
-    <address style="font-style: normal; margin-top: 15pt;">
-        Questions? Contact us at <a href="mailto:newsletter@company.com" style="color: #336699; font-weight: bold;">newsletter@company.com</a>
-    </address>
-</div>
-```
 
 ### Legal/Copyright Notice with Contact
 
@@ -435,71 +391,6 @@ In the Scryber codebase:
 </div>
 ```
 
-### Press Contact Information
-
-```html
-<div style="background-color: #f5f5f5; padding: 20pt; margin: 20pt 0;">
-    <h3 style="margin-top: 0; color: #333;">Press Inquiries</h3>
-    <p style="margin-bottom: 15pt;">
-        For media inquiries, interviews, or press releases, please contact our press office:
-    </p>
-    <address style="font-style: normal; line-height: 1.8;">
-        <strong>Press Office</strong><br/>
-        Email: <a href="mailto:press@company.com">press@company.com</a><br/>
-        Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a><br/>
-        After hours: <a href="tel:+15551234568">+1 (555) 123-4568</a><br/>
-        <br/>
-        <span style="font-size: 9pt; color: #666;">
-            Media kit available at: www.company.com/press
-        </span>
-    </address>
-</div>
-```
-
-### Vendor/Supplier Contact
-
-```html
-<div style="border: 1pt solid #ccc; padding: 15pt; margin: 15pt 0;">
-    <div style="font-size: 11pt; font-weight: bold; margin-bottom: 10pt; color: #336699;">
-        Supplier Information
-    </div>
-    <address style="font-style: normal; font-size: 9pt; line-height: 1.6;">
-        <strong>ABC Manufacturing Co.</strong><br/>
-        Vendor ID: VND-12345<br/>
-        <br/>
-        Contact Person: Robert Chen<br/>
-        Direct Line: <a href="tel:+15551234567">+1 (555) 123-4567</a> ext. 789<br/>
-        Email: <a href="mailto:robert.chen@abcmanufacturing.com">robert.chen@abcmanufacturing.com</a><br/>
-        <br/>
-        Purchase Orders: <a href="mailto:po@abcmanufacturing.com">po@abcmanufacturing.com</a><br/>
-        Accounts Payable: <a href="mailto:ap@abcmanufacturing.com">ap@abcmanufacturing.com</a>
-    </address>
-</div>
-```
-
-### Technical Support Contact
-
-```html
-<div style="background: linear-gradient(to right, #667eea, #764ba2);
-            color: white; padding: 20pt; margin: 20pt 0;">
-    <h2 style="margin-top: 0; color: white;">Need Help?</h2>
-    <p style="margin-bottom: 15pt;">
-        Our technical support team is here to assist you 24/7
-    </p>
-    <address style="font-style: normal; line-height: 1.8;">
-        <strong style="font-size: 11pt;">Technical Support</strong><br/>
-        Email: <a href="mailto:support@company.com" style="color: #ffeb3b; font-weight: bold;">support@company.com</a><br/>
-        Live Chat: www.company.com/chat<br/>
-        Phone (US): <a href="tel:+18005551234" style="color: #ffeb3b;">1-800-555-1234</a><br/>
-        Phone (Intl): <a href="tel:+15551234567" style="color: #ffeb3b;">+1 (555) 123-4567</a><br/>
-        <br/>
-        <span style="font-size: 9pt; opacity: 0.9;">
-            Average response time: Under 2 hours
-        </span>
-    </address>
-</div>
-```
-
 ---
 
 ## See Also
@@ -510,5 +401,6 @@ In the Scryber codebase:
 - [a](html_a_element.html) - Anchor element for email and phone links
 - [br](html_br_element.html) - Line break element for formatting addresses
 - [div](html_div_element.html) - Generic block container
+- [Fonts and Typefaces](/learning/styles/fonts.html) - Using fonts and typefaces in the library
 
 ---

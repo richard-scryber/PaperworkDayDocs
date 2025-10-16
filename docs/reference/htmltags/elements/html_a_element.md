@@ -118,7 +118,7 @@ The `<a>` element supports extensive CSS styling.
 
 ### Link Types
 
-Scryber automatically determines the link type based on the `href` value:
+The library automatically determines the link type based on the `href` value:
 
 1. **Internal Anchor Links** (`#id`): Links starting with `#` navigate to an element with matching `id` within the same document.
 2. **External URLs**: Absolute URLs (http://, https://, mailto:, etc.) open external resources.
@@ -195,17 +195,9 @@ Links can contain:
 </a>
 ```
 
-### Accessibility
+---
 
-Use the `title` attribute to provide accessible descriptions:
-
-```html
-<a href="https://example.com" title="Visit Example.com homepage">
-    Visit Example
-</a>
-```
-
-### Class Hierarchy
+## Class Hierarchy
 
 In the Scryber codebase:
 - `HTMLAnchor` extends `Link` extends `SpanBase` extends `VisualComponent`
@@ -306,7 +298,7 @@ In the Scryber codebase:
 </a>
 ```
 
-### PDF Navigation Links
+### Document Navigation Links
 
 ```html
 <div style="position: fixed; bottom: 10pt; width: 100%;">
@@ -414,15 +406,6 @@ In the Scryber codebase:
 </div>
 ```
 
-### Link with Outline Title
-
-```html
-<a href="https://www.example.com"
-   title="Visit Example.com for more information">
-    Example Link
-</a>
-```
-
 ---
 
 ## See Also
@@ -430,7 +413,6 @@ In the Scryber codebase:
 - [img](/reference/htmltags/img.html) - Image element (often used within links)
 - [span](/reference/htmltags/span.html) - Inline container element
 - [div](/reference/htmltags/div.html) - Block container (can be wrapped in links)
-- [Link Component](/reference/components/link.html) - Base link component in Scryber namespace
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and expressions
 - [PDF Actions](/reference/actions/) - PDF-specific actions and navigation
