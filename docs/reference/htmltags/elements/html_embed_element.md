@@ -462,10 +462,11 @@ With data:
 
 ## See Also
 
-- [&lt;object&gt; - File Attachments](html_object_element.html) for attaching files to the PDF
-- [&lt;template&gt; - Template Element](html_template_element.html) for data-driven repetition
-- [&lt;if&gt; - If Conditional Element](html_template_element.html) for data-driven choice on inclusion
-- [&lt;var&gt; - Variables](html_var_element.html) for storing document parameters
-- [Data Binding](/learning/binding/) for binding dynamic content
+- [span](html_span_elelemts.html) - Generic inline container element
+- [cite, defn, q](html_output_slot_num_elements.html) - Other inline semantic text elements
+- [var](html_var_element.html) - For storing or outputting document parameters.
+- [Text Formatting](/library/templates/text.html) - Text formatting
+- [Data Binding](/library/binding/) - Data binding expressions
+- [CSS Styling](/library/styles/) - CSS styling reference
 
 ---
