@@ -140,10 +140,12 @@ The `<continuation-footer>` element can be placed within:
 
 ```html
 {% raw %}<body>
-    <div data-bind="{{report.sections}}">
-        <h2>{{.title}}</h2>
-        <p>{{.content}}</p>
-    </div>
+    <template data-bind="{{report.sections}}">
+        <div>
+            <h2>{{.title}}</h2>
+            <p>{{.content}}</p>
+        </div>
+    </template>
 
     <continuation-footer>
         <div style="background-color: #e9ecef; padding: 8pt;">
