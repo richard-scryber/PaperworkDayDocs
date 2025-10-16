@@ -1,6 +1,6 @@
 ---
 layout: default
-title: continuation-footer Element
+title: continuation-footer
 parent: HTML Elements
 parent_url: /reference/htmlelements/
 grand_parent: Template reference

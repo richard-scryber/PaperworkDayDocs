@@ -29,6 +29,8 @@ has_toc: false
 
 The `<aside>` element represents content that is tangentially related to the content around it. It is a semantic block-level element typically used for sidebars, pull quotes, callout boxes, glossaries, related links, and supplementary information that enhances but is separate from the main content.
 
+---
+
 ## Usage
 
 The `<aside>` element creates a semantic container that:

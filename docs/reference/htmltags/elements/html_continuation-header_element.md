@@ -1,6 +1,6 @@
 ---
 layout: default
-title: continuation-header Element
+title: continuation-header
 parent: HTML Elements
 parent_url: /reference/htmlelements/
 grand_parent: Template reference
