@@ -173,10 +173,10 @@ The `<font>` element:
 
 ## See Also
 
-- [span](/reference/htmltags/span.html) - Modern inline container (recommended)
-- [strong](/reference/htmltags/strong.html) - Bold text (semantic)
-- [em](/reference/htmltags/em.html) - Italic text (semantic)
-- [CSS Styles](/reference/styles/) - Complete CSS styling reference
-- [Text Formatting](/reference/htmltags/text-formatting.html) - Modern text formatting elements
+- [span](html_span_element.html) - Modern inline container (recommended)
+- [strong](html_strong_element.html) - Bold text (semantic)
+- [em](html_strong_em_element.html) - Italic text (semantic)
+- [CSS Styles](/learning/styles/) - Complete CSS styling reference
+- [Text Formatting](/learning/styles/fonts.html) - Modern text formatting elements
 
 ---

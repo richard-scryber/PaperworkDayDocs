@@ -11,7 +11,24 @@ has_toc: false
 
 # &lt;frameset&gt; and &lt;frame&gt; : PDF Merging and Document Combination Elements
 
-The `<frameset>` and `<frame>` elements are powerful Scryber components that enable merging existing PDFs with dynamically generated content, creating combined documents, and building complex multi-source PDF files. This allows you to overlay generated content onto existing PDFs, append documents, or create sophisticated document workflows.
+---
+
+<details markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
+
+The `<frameset>` and `<frame>` elements are powerful components that enable merging existing PDFs with dynamically generated content, creating combined documents, and building complex multi-source PDF files. This allows you to overlay generated content onto existing PDFs, append documents, or create sophisticated document workflows.
+
+--
 
 ## Usage
 
@@ -24,7 +41,7 @@ The `<frameset>` element acts as a container for multiple `<frame>` elements, wh
 ### Key Capabilities
 
 - **PDF Merging**: Combine existing PDFs with new content
-- **Template Overlay**: Overlay generated content on existing PDF pages
+- **Template Overlay**: Overlay generated content on top of existing PDF pages
 - **Document Concatenation**: Append multiple documents together
 - **Page Selection**: Extract specific pages from source PDFs
 - **Dynamic Content**: Generate content that interacts with existing PDFs
@@ -131,7 +148,7 @@ Frames can contain inline HTML documents:
 1. **Single PDF Rule**: Only ONE PDF file can be referenced across all frames in a frameset
 2. **Multiple References**: The same PDF can be referenced multiple times with different page selections
 3. **Root Priority**: If no PDF is referenced, the first template becomes the root
-4. **Order Matters**: Frames are processed in order, with later frames overlaying earlier content
+4. **Order Matters**: Frames are processed in order, with later frames appending to eariler content.
 
 ### Page Selection
 
@@ -159,11 +176,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 ### Basic PDF with Overlay Content
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <!-- Existing PDF form -->
     <frame src="application-form.pdf"></frame>
 
-    <!-- Overlay generated data -->
+    <!-- Last page generated content -->
     <frame>
         <html>
             <body>
@@ -176,7 +193,7 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>
+</frameset>{% endraw %}
 ```
 
 ### Merging Multiple Templates
@@ -214,10 +231,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 ```html
 <frameset>
     <!-- Pre-designed certificate template PDF -->
-    <frame src="certificate-template.pdf"></frame>
-
-    <!-- Overlay recipient information -->
-    <frame>
+    <frame src="certificate-template.pdf">
+        <!-- Overlay recipient information on the page -->
         <html>
             <body>
                 <!-- Recipient name -->
@@ -247,13 +262,13 @@ Frame content is loaded during the data binding phase and may use async operatio
 ### Invoice with Letterhead
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <!-- Company letterhead PDF (first page only) -->
     <frame src="company-letterhead.pdf" data-page-start="0" data-page-count="1"></frame>
 
-    <!-- Invoice content -->
+    <!-- Invoice content. -->
     <frame>
-        <html>
+        <html><!-- automatically picks up the xhtml namespace from the outer document if set -->
             <body>
                 <div style="margin: 150pt 50pt 50pt 50pt;">
                     <h1>Invoice #{{model.invoiceNumber}}</h1>
@@ -284,18 +299,15 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>
+</frameset>{% endraw %}
 ```
 
 ### Form Filling
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <!-- Government or standard form PDF -->
-    <frame src="tax-form.pdf"></frame>
-
-    <!-- Fill in form fields with absolute positioning -->
-    <frame>
+    <frame src="tax-form.pdf">
         <html>
             <body>
                 <!-- Field 1: Name -->
@@ -318,7 +330,7 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>
+</frameset>{% endraw %}
 ```
 
 ### Multi-Page Overlay
@@ -326,10 +338,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 ```html
 <frameset>
     <!-- Base PDF with multiple pages -->
-    <frame src="multi-page-template.pdf"></frame>
-
-    <!-- First page overlay -->
-    <frame>
+    <frame src="multi-page-template.pdf">
+        <!-- First page overlay -->
         <html>
             <body>
                 <div style="position: absolute; right: 50pt; top: 50pt;">
@@ -338,7 +348,6 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-
     <!-- Additional content pages -->
     <frame src="appendix.html"></frame>
 </frameset>
@@ -347,7 +356,7 @@ Frame content is loaded during the data binding phase and may use async operatio
 ### Conditional Frame Inclusion
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <frame src="main-document.pdf"></frame>
 
     <!-- Include cover page only if specified -->
@@ -360,17 +369,15 @@ Frame content is loaded during the data binding phase and may use async operatio
 
     <frame src="enterprise-terms.html"
            hidden="{{model.contractType != 'enterprise' ? 'hidden' : ''}}"></frame>
-</frameset>
+</frameset>{% endraw %}
 ```
 
 ### Report with Executive Summary
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <!-- Executive summary on company template -->
-    <frame src="company-template.pdf" data-page-start="0" data-page-count="1"></frame>
-
-    <frame>
+    <frame src="company-template.pdf" data-page-start="0" data-page-count="1">
         <html>
             <body style="margin: 150pt 50pt 50pt 50pt;">
                 <h1>Executive Summary</h1>
@@ -381,13 +388,13 @@ Frame content is loaded during the data binding phase and may use async operatio
 
     <!-- Detailed report content -->
     <frame src="detailed-report.html"></frame>
-</frameset>
+</frameset>{% endraw %}
 ```
 
 ### Contract Assembly
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <!-- Standard contract first page -->
     <frame src="contract-template.pdf" data-page-start="0" data-page-count="1"></frame>
 
@@ -416,7 +423,7 @@ Frame content is loaded during the data binding phase and may use async operatio
 
     <!-- Standard contract last pages -->
     <frame src="contract-template.pdf" data-page-start="1"></frame>
-</frameset>
+</frameset>{% endraw %}
 ```
 
 ### Watermarking Existing PDF
@@ -424,10 +431,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 ```html
 <frameset>
     <!-- Original PDF document -->
-    <frame src="original-document.pdf"></frame>
-
-    <!-- Watermark overlay -->
-    <frame>
+    <frame src="original-document.pdf">
+        <!-- Watermark overlay -->
         <html>
             <body>
                 <div style="position: fixed; top: 50%; left: 50%;
@@ -445,17 +450,15 @@ Frame content is loaded during the data binding phase and may use async operatio
 ### Dynamic Content Insertion
 
 ```html
-<frameset>
-    <frame src="template.pdf"></frame>
-
-    <frame data-content="{{model.htmlContent}}"></frame>
-</frameset>
+{% raw %}<frameset>
+    <frame src="template.pdf" data-content="{{model.htmlContent}}" ></frame>
+</frameset>{% endraw %}
 ```
 
 ### Multi-Language Documents
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <!-- English version -->
     <frame src="content-en.html"
            hidden="{{model.language != 'en' ? 'hidden' : ''}}"></frame>
@@ -467,69 +470,13 @@ Frame content is loaded during the data binding phase and may use async operatio
     <!-- French version -->
     <frame src="content-fr.html"
            hidden="{{model.language != 'fr' ? 'hidden' : ''}}"></frame>
-</frameset>
-```
-
-### Purchase Order with Branding
-
-```html
-<frameset>
-    <!-- Company branded header (page 1 of template) -->
-    <frame src="company-branding.pdf" data-page-start="0" data-page-count="1"></frame>
-
-    <!-- PO content -->
-    <frame>
-        <html>
-            <body style="margin: 120pt 50pt 50pt 50pt;">
-                <h1>Purchase Order #{{model.poNumber}}</h1>
-
-                <div style="display: table; width: 100%; margin: 20pt 0;">
-                    <div style="display: table-row;">
-                        <div style="display: table-cell; width: 50%;">
-                            <strong>Vendor:</strong><br/>
-                            {{model.vendorName}}<br/>
-                            {{model.vendorAddress}}
-                        </div>
-                        <div style="display: table-cell; width: 50%;">
-                            <strong>Ship To:</strong><br/>
-                            {{model.shipToName}}<br/>
-                            {{model.shipToAddress}}
-                        </div>
-                    </div>
-                </div>
-
-                <table style="width: 100%; margin-top: 30pt;">
-                    <thead>
-                        <tr>
-                            <th>Item</th>
-                            <th>Description</th>
-                            <th style="text-align: right;">Qty</th>
-                            <th style="text-align: right;">Price</th>
-                            <th style="text-align: right;">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <template data-bind="{{model.lineItems}}">
-                            <tr>
-                                <td>{{.itemNumber}}</td>
-                                <td>{{.description}}</td>
-                                <td style="text-align: right;">{{.quantity}}</td>
-                                <td style="text-align: right;">${{.unitPrice}}</td>
-                                <td style="text-align: right;">${{.total}}</td>
-                            </tr>
-                        </template>
-                    </tbody>
-                </table>
-            </body>
-        </html>
-    </frame>
-</frameset>
+</frameset>{% endraw %}
 ```
 
 ### Medical Records with Privacy Notice
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <!-- HIPAA privacy notice (required first page) -->
     <frame src="hipaa-notice.pdf" data-page-start="0" data-page-count="1"></frame>
 
@@ -556,7 +503,7 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>
+</frameset>{% endraw %}
 ```
 
 ### Paginated Report Assembly
@@ -586,55 +533,62 @@ Frame content is loaded during the data binding phase and may use async operatio
 ### Ticket or Badge Generation
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <!-- Badge template with design -->
-    <frame src="badge-template.pdf"></frame>
-
-    <!-- Attendee information overlay -->
-    <frame>
+    <frame src="badge-template.pdf">
         <html>
             <body>
-                <!-- Name -->
-                <div style="position: absolute; left: 50%; top: 200pt;
-                            transform: translateX(-50%);
-                            font-size: 18pt; font-weight: bold; text-align: center;">
-                    {{model.attendeeName}}
-                </div>
+                <template data-bind="{{model.attendees}}">
+                    <!-- 4 badges per column, 3 columns -->
+                    <!-- force a page break on each 12th -->
+                    <div style="page-break-before: always" hidden="{{index() % 12 == 0 ? 'visible' : 'hidden' }}" ></div>
 
-                <!-- Company -->
-                <div style="position: absolute; left: 50%; top: 240pt;
-                            transform: translateX(-50%);
-                            font-size: 12pt; text-align: center;">
-                    {{model.companyName}}
-                </div>
+                    <var data-id="badge_column" data-value= "{{index() % 4}}" ></var>
+                    <var data-id="badge_offset" data-value= "{{(index() mod 4) * 140}}"></var>
 
-                <!-- Badge type -->
-                <div style="position: absolute; left: 50%; top: 280pt;
-                            transform: translateX(-50%);
-                            font-size: 10pt; text-align: center; color: #666;">
-                    {{model.badgeType}}
-                </div>
+                <div style="position: relative; left: {{(badge_column * 200pt)}}; top: {{(badge_offset * 120pt)}};" >
+                    <!-- Name -->
+                    <div style="position: absolute; left: 20pt; top: 20pt;
+                                font-size: 18pt; font-weight: bold; text-align: center;">
+                        {{model.attendeeName}}
+                    </div>
 
-                <!-- QR Code -->
-                <div style="position: absolute; left: 50%; top: 320pt;
-                            transform: translateX(-50%);">
-                    <img src="{{model.qrCodeUrl}}" style="width: 80pt; height: 80pt;"/>
+                    <!-- Company -->
+                    <div style="position: absolute; left: 50%; top: 240pt;
+                                font-size: 12pt; text-align: center;">
+                        {{model.companyName}}
+                    </div>
+
+                    <!-- Badge type -->
+                    <div style="position: absolute; left: 50%; top: 280pt;
+                                font-size: 10pt; text-align: center; color: #666;">
+                        {{model.badgeType}}
+                    </div>
+
+                    <!-- QR Code -->
+                    <div style="position: absolute; left: 50%; top: 320pt;>
+                        <img src="{{model.qrCodeUrl}}" style="width: 80pt; height: 80pt;"/>
+                    </div>
                 </div>
             </body>
         </html>
     </frame>
-</frameset>
+
+    <!-- Attendee information overlay -->
+    <frame>
+        
+    </frame>
+</frameset>{% endraw %}
 ```
 
 ---
 
 ## See Also
 
-- [Data Binding](/reference/binding/) - Complete guide to data binding expressions
-- [template](/reference/htmltags/template.html) - Template element for repeating content
-- [if](/reference/htmltags/if.html) - Conditional rendering element
+- [Data Binding](/learing/binding/) - Complete guide to data binding expressions
+- [template](html_template_element.html) - Template element for repeating content
+- [if](html_if_element.html) - Conditional rendering element
 - [Document Modification](/reference/modification/) - PDF modification and merging concepts
-- [File Paths](/reference/paths/) - Path resolution and mapping
-- [Remote Content](/reference/remote/) - Loading remote files and resources
+- [File Paths](/learning/templates/paths.html) - Path resolution and mapping
 
 ---
