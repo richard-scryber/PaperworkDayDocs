@@ -46,7 +46,7 @@ PDF typography has unique characteristics:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
     <!-- Load Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />

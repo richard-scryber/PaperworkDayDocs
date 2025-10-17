@@ -46,7 +46,7 @@ PDF layout differs significantly from web layout:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
     <style>
         @page {
@@ -356,7 +356,7 @@ Content flows from page to page automatically:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
     <style>
         @page {

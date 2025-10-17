@@ -344,28 +344,43 @@ Contributions welcome! See [Contributing Guide](https://github.com/richard-scryb
 
 ### Essential Syntax
 
+**XHTML Format (with namespace):**
 {% raw %}
 ```html
-<!-- Data binding -->
-{{propertyName}}
-{{object.property}}
-{{calc(a, '+', b)}}
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<body>
+    <!-- Data binding -->
+    <p>{{propertyName}}</p>
+    <p>{{object.property}}</p>
+    <p>{{calc(a, '+', b)}}</p>
 
-<!-- Iteration -->
-{{#each items}}
-    {{this.name}}
-{{/each}}
+    <!-- Iteration -->
+    {{#each items}}
+        <li>{{this.name}}</li>
+    {{/each}}
 
-<!-- Conditionals -->
-{{#if condition}}
-    Content
-{{/if}}
+    <!-- Conditionals -->
+    {{#if condition}}
+        <p>Content</p>
+    {{/if}}
 
-<!-- Variables -->
-<var data-id="myVar" data-value="{{expression}}" />
-{{Document.Params.myVar}}
+    <!-- Variables -->
+    <var data-id="myVar" data-value="{{expression}}" />
+    <p>{{Document.Params.myVar}}</p>
+</body>
+</html>
 ```
 {% endraw %}
+
+**Parsing Methods:**
+```csharp
+// XHTML with namespace (ParseDocument)
+var doc = Document.ParseDocument("template.html");
+
+// HTML5 without namespace (ParseHTML)
+var doc = Document.ParseHTML("template.html");
+```
 
 ### Common Patterns
 

@@ -46,19 +46,24 @@ Data binding connects your template to your data. In Scryber, this means:
 ### Template
 {% raw %}
 ```html
-<div>
-    <h1>Invoice #{{invoice.number}}</h1>
-    <p>Total: {{invoice.total}}</p>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<body>
+    <div>
+        <h1>Invoice #{{invoice.number}}</h1>
+        <p>Total: {{invoice.total}}</p>
 
-    <table>
-        {{#each invoice.items}}
-        <tr>
-            <td>{{this.name}}</td>
-            <td>{{this.price}}</td>
-        </tr>
-        {{/each}}
-    </table>
-</div>
+        <table>
+            {{#each invoice.items}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.price}}</td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+</body>
+</html>
 ```
 {% endraw %}
 

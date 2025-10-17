@@ -45,7 +45,7 @@ While Scryber uses familiar CSS syntax, PDF styling has unique characteristics:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
     <style>
         body {

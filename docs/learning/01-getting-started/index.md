@@ -71,7 +71,7 @@ dotnet add package Scryber.Core
 {% raw %}
 ```html
 <!DOCTYPE html>
-<html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
     <title>My First PDF</title>
     <style>
@@ -92,8 +92,11 @@ dotnet add package Scryber.Core
 ```csharp
 using Scryber.Components;
 
-// Load the template
+// Load the template (XHTML format with namespace)
 var doc = Document.ParseDocument("template.html");
+
+// Or use ParseHTML for standard HTML5 (without namespace)
+// var doc = Document.ParseHTML("template.html");
 
 // Pass data to the template
 doc.Params["model"] = new { name = "World" };
@@ -107,12 +110,82 @@ using (var stream = new FileStream("output.pdf", FileMode.Create))
 
 That's it! You've created your first PDF with dynamic content.
 
+## XHTML vs HTML5 Format
+
+Scryber supports two document formats:
+
+### XHTML Format (Recommended)
+
+Uses XML namespace and strict XHTML syntax:
+
+{% raw %}
+```html
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <title>XHTML Document</title>
+</head>
+<body>
+    <p>Content here</p>
+</body>
+</html>
+```
+{% endraw %}
+
+**Parse with:** `Document.ParseDocument()`
+
+**Benefits:**
+- Full XML namespace support
+- Stricter validation
+- Better for complex documents
+- Supports Scryber-specific namespaces
+
+### HTML5 Format
+
+Standard HTML5 syntax without namespace:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Document</title>
+</head>
+<body>
+    <p>Content here</p>
+</body>
+</html>
+```
+
+**Parse with:** `Document.ParseHTML()`
+
+**Benefits:**
+- Familiar HTML5 syntax
+- No namespace required
+- Simpler for basic documents
+- Works with existing HTML files
+
+### When to Use Each
+
+**Use XHTML (ParseDocument) when:**
+- Building templates from scratch
+- Need strict validation
+- Using Scryber-specific elements
+- Want explicit namespace control
+
+**Use HTML5 (ParseHTML) when:**
+- Converting existing HTML content
+- Prefer simpler syntax
+- Working with HTML5 tools
+- Don't need custom namespaces
+
+Both formats produce the same PDF output!
+
 ## What You'll Learn in This Series
 
 This series covers the essential foundations of Scryber.Core:
 
 1. **[Installation & Setup](01_installation_setup.md)** - Get Scryber installed and configured
-2. **[Your First Document](02_first_document.md)** - Create a complete PDF from scratch
+2. **[Your First Document](02_first_document.md)** - Create a complete PDF from scratch, including XHTML vs HTML5 formats
 3. **[HTML to PDF](03_html_to_pdf.md)** - Understand how HTML translates to PDF
 4. **[CSS Basics](04_css_basics.md)** - Style your documents with CSS
 5. **[Pages & Sections](05_pages_sections.md)** - Structure multi-page documents
