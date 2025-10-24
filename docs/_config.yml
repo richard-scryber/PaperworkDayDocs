@@ -1,6 +1,6 @@
 ##theme: jekyll-theme-leap-day
 title: "Paperwork"
-remote_theme: just-the-docs/just-the-docs
+##remote_theme: just-the-docs/just-the-docs
 color_scheme: "dark"
 search_enabled: false
 nav_enabled: true

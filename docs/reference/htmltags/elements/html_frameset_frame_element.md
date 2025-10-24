@@ -87,6 +87,7 @@ The `<frameset>` element acts as a container and has no specific attributes beyo
 | `data-page-start` | integer | Zero-based index of the first page to include from the source. Default is 0 (first page). |
 | `data-page-count` | integer | Number of pages to include from the source. Default is all pages (int.MaxValue). |
 | `data-content` | string | Inline HTML content to use instead of a file source. |
+| `data-over-repeat` | string | Controls how inner content overlays repeat on source pages. Options: `"None"`, `"First"`, `"Once"` (default), `"Last"`, `"Repeat"`. See Overlay Repeat Behavior section. |
 | `hidden` | string | Set to "hidden" to skip this frame. Useful for conditional inclusion. |
 
 ---
@@ -138,6 +139,57 @@ Frames can contain inline HTML documents:
     </frame>
 </frameset>
 ```
+
+### Overlay Repeat Behavior
+
+When a frame has both a source file (typically a PDF) and inner content, the inner content acts as an overlay. The `data-over-repeat` attribute controls how this overlay repeats across pages:
+
+| Value | Behavior |
+|-------|----------|
+| `"None"` | No overlay applied to any pages |
+| `"First"` | Overlay applied only to the first page of the source |
+| `"Once"` | **Default**. Overlay applied only to the first page of this frame's content |
+| `"Last"` | Overlay applied only to the last page of the source |
+| `"Repeat"` | Overlay applied to every page of the source |
+
+**Example: Watermark on all pages**
+
+{% raw %}
+```html
+<frameset>
+    <frame src="document.pdf" data-over-repeat="Repeat">
+        <html>
+            <body>
+                <div style="position: fixed; top: 50%; left: 50%;
+                            transform: translate(-50%, -50%) rotate(-45deg);
+                            font-size: 120pt; color: rgba(255, 0, 0, 0.15);">
+                    {{model.status}}
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>
+```
+{% endraw %}
+
+**Example: Header on first page only**
+
+{% raw %}
+```html
+<frameset>
+    <frame src="report.pdf" data-over-repeat="First">
+        <html>
+            <body>
+                <div style="position: absolute; top: 20pt; left: 50pt; right: 50pt;">
+                    <h1>{{model.reportTitle}}</h1>
+                    <p>Generated: {{model.date}}</p>
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>
+```
+{% endraw %}
 
 ---
 
@@ -576,7 +628,372 @@ Frame content is loaded during the data binding phase and may use async operatio
 
     <!-- Attendee information overlay -->
     <frame>
-        
+
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: Watermark on All Pages
+
+```html
+{% raw %}<frameset>
+    <!-- Apply "CONFIDENTIAL" watermark to every page -->
+    <frame src="document.pdf" data-over-repeat="Repeat">
+        <html>
+            <body>
+                <div style="position: fixed; top: 50%; left: 50%;
+                            transform: translate(-50%, -50%) rotate(-45deg);
+                            font-size: 96pt; font-weight: bold;
+                            color: rgba(255, 0, 0, 0.1);
+                            pointer-events: none;">
+                    CONFIDENTIAL
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: Page Numbers on All Pages
+
+```html
+{% raw %}<frameset>
+    <!-- Add page numbers to every page of existing PDF -->
+    <frame src="legacy-document.pdf" data-over-repeat="Repeat">
+        <html>
+            <body>
+                <div style="position: fixed; bottom: 20pt; right: 50pt;
+                            font-size: 10pt; color: #666;">
+                    Page <page-number /> of <page-count />
+                </div>
+                <div style="position: fixed; bottom: 20pt; left: 50pt;
+                            font-size: 10pt; color: #666;">
+                    Document #{{model.documentId}}
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: First Page Header
+
+```html
+{% raw %}<frameset>
+    <!-- Add cover information only to first page -->
+    <frame src="report.pdf" data-over-repeat="First">
+        <html>
+            <body>
+                <div style="position: absolute; top: 20pt; left: 50pt; right: 50pt;
+                            padding: 15pt; background-color: rgba(37, 99, 235, 0.1);
+                            border-left: 4pt solid #2563eb;">
+                    <h1 style="margin: 0; color: #2563eb;">{{model.title}}</h1>
+                    <p style="margin: 5pt 0 0 0; font-size: 10pt; color: #666;">
+                        Generated: {{model.date}} | Author: {{model.author}}
+                    </p>
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: Last Page Footer
+
+```html
+{% raw %}<frameset>
+    <!-- Add signature block only to last page -->
+    <frame src="contract.pdf" data-over-repeat="Last">
+        <html>
+            <body>
+                <div style="position: absolute; bottom: 100pt; left: 50pt; right: 50pt;">
+                    <div style="display: table; width: 100%;">
+                        <div style="display: table-row;">
+                            <div style="display: table-cell; width: 50%; padding-right: 20pt;">
+                                <div style="border-top: 1pt solid #000; padding-top: 5pt;">
+                                    <strong>{{model.party1Name}}</strong><br/>
+                                    Date: _________________
+                                </div>
+                            </div>
+                            <div style="display: table-cell; width: 50%; padding-left: 20pt;">
+                                <div style="border-top: 1pt solid #000; padding-top: 5pt;">
+                                    <strong>{{model.party2Name}}</strong><br/>
+                                    Date: _________________
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: Conditional Watermark
+
+```html
+{% raw %}<frameset>
+    <!-- Apply different watermarks based on document status -->
+    <frame src="document.pdf" data-over-repeat="Repeat"
+           hidden="{{model.status != 'draft' ? 'hidden' : ''}}">
+        <html>
+            <body>
+                <div style="position: fixed; top: 50%; left: 50%;
+                            transform: translate(-50%, -50%) rotate(-45deg);
+                            font-size: 96pt; color: rgba(128, 128, 128, 0.1);">
+                    DRAFT
+                </div>
+            </body>
+        </html>
+    </frame>
+
+    <frame src="document.pdf" data-over-repeat="Repeat"
+           hidden="{{model.status != 'approved' ? 'hidden' : ''}}">
+        <html>
+            <body>
+                <div style="position: fixed; top: 50%; left: 50%;
+                            transform: translate(-50%, -50%) rotate(-45deg);
+                            font-size: 96pt; color: rgba(0, 128, 0, 0.1);">
+                    APPROVED
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: Bates Numbering
+
+```html
+{% raw %}<frameset>
+    <!-- Add Bates numbering to each page -->
+    <frame src="legal-document.pdf" data-over-repeat="Repeat">
+        <html>
+            <body>
+                <div style="position: fixed; bottom: 10pt; right: 10pt;
+                            font-family: Courier; font-size: 9pt;
+                            background-color: white; padding: 2pt 5pt;
+                            border: 1pt solid #000;">
+                    {{model.batesPrefix}}<page-number format="000000" />
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: Dynamic Headers and Footers
+
+```html
+{% raw %}<frameset>
+    <!-- Add repeating header/footer with dynamic content -->
+    <frame src="presentation.pdf" data-over-repeat="Repeat">
+        <html>
+            <body>
+                <!-- Header on every page -->
+                <div style="position: fixed; top: 15pt; left: 50pt; right: 50pt;
+                            border-bottom: 1pt solid #2563eb; padding-bottom: 5pt;">
+                    <div style="display: table; width: 100%;">
+                        <div style="display: table-row;">
+                            <div style="display: table-cell; width: 70%;">
+                                <span style="font-weight: bold; color: #2563eb;">
+                                    {{model.companyName}}
+                                </span>
+                            </div>
+                            <div style="display: table-cell; width: 30%; text-align: right;">
+                                <span style="font-size: 9pt; color: #666;">
+                                    {{model.presentationDate}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer on every page -->
+                <div style="position: fixed; bottom: 15pt; left: 50pt; right: 50pt;
+                            border-top: 1pt solid #ccc; padding-top: 5pt;">
+                    <div style="display: table; width: 100%;">
+                        <div style="display: table-row;">
+                            <div style="display: table-cell; width: 50%;">
+                                <span style="font-size: 8pt; color: #666;">
+                                    {{model.confidentialityNotice}}
+                                </span>
+                            </div>
+                            <div style="display: table-cell; width: 50%; text-align: right;">
+                                <span style="font-size: 9pt; color: #333;">
+                                    Page <page-number /> of <page-count />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: First and Last Page Special Treatment
+
+```html
+{% raw %}<frameset>
+    <!-- Cover page overlay (first page only) -->
+    <frame src="blank-template.pdf" data-page-count="1" data-over-repeat="First">
+        <html>
+            <body style="background: linear-gradient(to bottom, #1e40af, #3b82f6);">
+                <div style="position: absolute; top: 50%; left: 50%;
+                            transform: translate(-50%, -50%); text-align: center;">
+                    <h1 style="color: white; font-size: 36pt; margin: 0;">
+                        {{model.reportTitle}}
+                    </h1>
+                    <p style="color: white; font-size: 14pt; margin-top: 20pt;">
+                        {{model.subtitle}}
+                    </p>
+                </div>
+            </body>
+        </html>
+    </frame>
+
+    <!-- Main content pages (no overlay) -->
+    <frame src="report-content.pdf" data-page-start="1"></frame>
+
+    <!-- Back cover (last page only) -->
+    <frame src="blank-template.pdf" data-page-count="1" data-over-repeat="Last">
+        <html>
+            <body style="background-color: #f3f4f6;">
+                <div style="position: absolute; bottom: 50pt; left: 50pt; right: 50pt;
+                            text-align: center;">
+                    <p style="font-size: 10pt; color: #666;">
+                        © {{model.year}} {{model.companyName}}. All rights reserved.
+                    </p>
+                    <p style="font-size: 9pt; color: #999; margin-top: 5pt;">
+                        {{model.contactInfo}}
+                    </p>
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: Data-Bound Conditional Control
+
+```html
+{% raw %}<frameset>
+    <!-- Dynamically control overlay repeat based on data -->
+    <frame src="document.pdf" data-over-repeat="{{if(model.showWatermark, 'Repeat', 'None')}}">
+        <html>
+            <body>
+                <div style="position: fixed; top: 50%; left: 50%;
+                            transform: translate(-50%, -50%) rotate(-45deg);
+                            font-size: 96pt; color: rgba(255, 0, 0, 0.1);">
+                    {{model.watermarkText}}
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: Dynamic Selection Based on Document Type
+
+```html
+{% raw %}<frameset>
+    <!-- Use different overlay patterns based on document settings -->
+    <frame src="document.pdf"
+           data-over-repeat="{{if(model.headerOnAllPages, 'Repeat', if(model.headerOnFirstOnly, 'First', 'None'))}}">
+        <html>
+            <body>
+                <div style="position: fixed; top: 20pt; left: 50pt; right: 50pt;
+                            padding: 10pt; border-bottom: 2pt solid #2563eb;">
+                    <h2 style="margin: 0; color: #2563eb;">{{model.documentTitle}}</h2>
+                    <p style="margin: 5pt 0 0 0; font-size: 9pt; color: #666;">
+                        {{model.documentNumber}}
+                    </p>
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: User Preference Controlled
+
+```html
+{% raw %}<frameset>
+    <!-- Page numbers controlled by user preference -->
+    <frame src="report.pdf"
+           data-over-repeat="{{if(model.preferences.showPageNumbers, 'Repeat', 'None')}}">
+        <html>
+            <body>
+                <div style="position: fixed; bottom: 20pt; text-align: center; width: 100%;">
+                    <span style="font-size: 10pt; color: #666;">
+                        Page <page-number /> of <page-count />
+                    </span>
+                </div>
+            </body>
+        </html>
+    </frame>
+
+    <!-- Confidentiality notice on first and last pages only -->
+    <frame src="report.pdf"
+           data-over-repeat="{{if(model.isConfidential, 'Repeat', 'None')}}">
+        <html>
+            <body>
+                <div style="position: fixed; top: 10pt; right: 20pt;
+                            background-color: #fee; padding: 5pt 10pt;
+                            border: 2pt solid #f00; border-radius: 3pt;">
+                    <strong style="color: #f00; font-size: 9pt;">
+                        {{model.confidentialityLevel}}
+                    </strong>
+                </div>
+            </body>
+        </html>
+    </frame>
+</frameset>{% endraw %}
+```
+
+### Overlay Repeat: Complex Conditional Logic
+
+```html
+{% raw %}<frameset>
+    <!-- Different overlay behaviors based on multiple conditions -->
+    <frame src="document.pdf"
+           data-over-repeat="{{if(model.documentType == 'draft', 'Repeat',
+                                if(model.documentType == 'final', 'First',
+                                if(model.documentType == 'archived', 'None', 'Once')))}}">
+        <html>
+            <body>
+                <!-- Draft: watermark on all pages -->
+                {{#if model.documentType == 'draft'}}
+                <div style="position: fixed; top: 50%; left: 50%;
+                            transform: translate(-50%, -50%) rotate(-45deg);
+                            font-size: 96pt; color: rgba(255, 165, 0, 0.1);">
+                    DRAFT
+                </div>
+                {{/if}}
+
+                <!-- Final: header on first page -->
+                {{#if model.documentType == 'final'}}
+                <div style="position: absolute; top: 30pt; left: 50pt; right: 50pt;
+                            text-align: center; border-bottom: 2pt solid #10b981;">
+                    <h1 style="color: #10b981; margin: 0;">FINAL VERSION</h1>
+                    <p style="font-size: 10pt; color: #666; margin: 5pt 0;">
+                        Approved: {{model.approvalDate}}
+                    </p>
+                </div>
+                {{/if}}
+
+                <!-- Default: simple identifier -->
+                {{#if model.documentType != 'archived' && model.documentType != 'draft' && model.documentType != 'final'}}
+                <div style="position: absolute; top: 20pt; right: 20pt;
+                            font-size: 9pt; color: #666;">
+                    ID: {{model.documentId}}
+                </div>
+                {{/if}}
+            </body>
+        </html>
     </frame>
 </frameset>{% endraw %}
 ```

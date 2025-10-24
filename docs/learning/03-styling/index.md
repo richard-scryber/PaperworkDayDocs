@@ -164,7 +164,7 @@ Every element in a PDF is a box with:
 
 ```
 ┌─────────────────────────────────┐
-│         Margin (transparent)     │
+│         Margin (transparent)    │
 │  ┌───────────────────────────┐  │
 │  │   Border                  │  │
 │  │  ┌─────────────────────┐  │  │
