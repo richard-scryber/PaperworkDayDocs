@@ -1,6 +1,12 @@
-##theme: jekyll-theme-leap-day
-title: "Paperwork"
-##remote_theme: just-the-docs/just-the-docs
-color_scheme: "dark"
-search_enabled: false
-nav_enabled: true
+logo: "/assets/Paperwork%20Logo%20and%20name.png"
+title: Paperwork
+description: A starter template for a Jeykll site using the Just the Docs theme!
+theme: just-the-docs
+color_scheme: light
+
+url: https://www.paperworkday.net
+
+aux_links:
+  .git: https://github.com/just-the-docs/just-the-docs-template
+  .com: https://www.paperworkday.com
+  .studio: https://paperworkday.studio

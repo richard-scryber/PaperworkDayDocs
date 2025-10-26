@@ -1,0 +1,18 @@
+@import "./color_schemes/dark";
+
+details.top-toc{
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 200px;
+    max-height: 70%;
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid $color-border;
+    background-color: $color-background-secondary;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+details.side-toc{
+    
+}

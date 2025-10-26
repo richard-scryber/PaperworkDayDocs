@@ -8,14 +8,13 @@ has_toc: false
 nav_order: 1
 ---
 
+
 # Supported HTML Element Reference
 {: .no_toc }
 
----
-
-<details open markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
-    Table of contents
+    On this page
   </summary>
   {: .text-delta }
 - TOC
@@ -23,6 +22,7 @@ nav_order: 1
 </details>
 
 ---
+
 
 ## Overview
 
@@ -44,10 +44,16 @@ The root level of a document should always be the <code>&lt;html&gt;</code> elem
 ```
 
 More information on actual document creation can be found in <a href='/index.html'>Getting Started</a>
+{: .no_toc }
+---
+
+### All Avaliable Elements
+
+This article contains a list of the elements with a descption and link, categorized by purpose. A full alphabetical list of all supported elements can be found on the navigation on the left (or at the top mobile menu).
 
 ---
 
-### Comments
+### Using Comments
 
 Enclosing any content starting with a <code>&lt;!-</code> and ending with <code>--&gt;</code> will mark a comment within the document.
 
