@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;meter&gt; : The Gauge/Measurement Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<meter>` element represents a scalar measurement within a known range, or a fractional value. In PDF output, it renders as a static visual bar that displays the current value relative to minimum, maximum, and optimal ranges. It's ideal for showing disk usage, relevance scores, voting results, or any measurement that has low/high thresholds.
 

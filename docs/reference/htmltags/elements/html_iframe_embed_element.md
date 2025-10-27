@@ -10,7 +10,23 @@ has_toc: false
 ---
 
 # &lt;iframe&gt; and &lt;embed&gt; : The Embedded Content Elements
+{: .no_toc }
 
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 The `<iframe>` and `<embed>` elements allow embedding external content into PDF documents. They support loading remote HTML files that are dynamically parsed and embedded at render time. These elements enable content reuse, modular document composition, and dynamic content inclusion.
 
 ## Usage

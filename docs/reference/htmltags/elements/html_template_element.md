@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;template&gt; : The Template Element for Repeating Content
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<template>` element is a powerful data-binding component that generates repeating content by iterating over collections. It enables dynamic content generation, data context scoping, and complex data transformations in PDF documents.
 

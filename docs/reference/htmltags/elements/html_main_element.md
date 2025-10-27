@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;main&gt; : The Main Content Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<main>` element represents the dominant content of the document body. It is a semantic block-level container that identifies the primary content area, excluding headers, footers, navigation, sidebars, and other ancillary content. There should be only one `<main>` element per document.
 

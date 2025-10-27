@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;input&gt; : The Input Field Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<input>` element creates form input fields in PDF documents. Since PDFs are static documents, inputs render as **visual representations** of form fields with their current values displayed. They can be styled, data-bound, and used to create form-like layouts for invoices, applications, surveys, and other documents that require formatted data display.
 

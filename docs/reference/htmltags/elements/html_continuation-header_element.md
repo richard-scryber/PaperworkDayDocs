@@ -13,9 +13,9 @@ has_toc: false
 {: .no_toc }
 ---
 
-<details markdown="block">
+<details open class='top-toc' markdown="block">
   <summary>
-    Table of contents
+    On this page
   </summary>
   {: .text-delta }
 - TOC

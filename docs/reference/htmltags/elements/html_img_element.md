@@ -10,7 +10,23 @@ has_toc: false
 ---
 
 # &lt;img&gt; : The Image Element
+{: .no_toc }
 
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 The `<img>` element embeds images in PDF documents. It supports multiple image sources including local files, remote URLs, and data URIs. Images can be in various formats (JPEG, PNG, GIF) and can be dynamically sized, positioned, and styled.
 
 ## Usage

@@ -10,7 +10,23 @@ has_toc: false
 ---
 
 # &lt;if&gt; : The Conditional Rendering Element
+{: .no_toc }
 
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 The `<if>` element is a powerful Scryber component that conditionally renders content based on boolean expressions. It enables dynamic content control, allowing you to show or hide sections of your PDF based on data, user permissions, configuration settings, or any boolean condition.
 
 ## Usage

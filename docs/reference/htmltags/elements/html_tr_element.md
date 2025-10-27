@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;tr&gt; : The Table Row Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<tr>` element represents a row in a table. It contains table cells (`<td>` or `<th>`) and can be styled independently to control row appearance, colors, borders, and typography. Rows are kept together during page breaks and cannot be split across pages.
 

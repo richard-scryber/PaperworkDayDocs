@@ -10,7 +10,23 @@ has_toc: false
 ---
 
 # &lt;h1&gt; - &lt;h6&gt; : The HTML Heading Elements
+{: .no_toc }
 
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 The `<h1>` through `<h6>` elements represent six levels of section headings in HTML documents. `<h1>` is the highest (most important) heading level and `<h6>` is the lowest. Headings are block-level elements used to create document structure, establish hierarchy, and automatically generate PDF bookmarks/outlines when the `title` attribute is set.
 
 ## Usage

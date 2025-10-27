@@ -10,7 +10,23 @@ has_toc: false
 ---
 
 # &lt;hr&gt; : The Horizontal Rule Element
+{: .no_toc }
 
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 The `<hr>` element creates a horizontal line (rule) that visually separates content sections in a document. It is a block-level element used as a thematic divider.
 
 ## Usage

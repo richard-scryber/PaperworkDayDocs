@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;menu&gt; : The Menu List Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<menu>` element represents an unordered list of menu items. It behaves identically to `<ul>` but with a default list style of "none" (no bullets or markers).
 

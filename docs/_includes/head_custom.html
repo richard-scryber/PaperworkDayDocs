@@ -21,10 +21,20 @@ details.top-toc ul > li::before{
 
 .site-header{
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     background-color: #f5f6fa;
     border-bottom: #e6e1e8 1px solid;
 }
+
+details ul#markdown-toc{
+    font-size: smaller;
+    line-height: 2;
+}
+
+details ul#markdown-toc li::before{
+content: "";
+}
+
 
 @media (max-width: 50rem) {
 
@@ -47,6 +57,25 @@ details.top-toc ul > li::before{
     details.top-toc {
         margin-top: 1.5rem;
     }
+
+    .site-nav{
+        position: fixed;
+        width: 100%;
+        background-color: #f5f6fa;
+        max-height: 100%;
+        overflow: auto;
+        z-index: 2;
+        margin-top: -4px;
+    }
+
+    .search{
+    width: calc(100% - 100px);
+    left: 50px;
+    height: 3.5rem;
+    position: fixed;
+    z-index: 4;
+}
+
     
 }
 

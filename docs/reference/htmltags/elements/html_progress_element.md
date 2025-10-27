@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;progress&gt; : The Progress Bar Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<progress>` element represents the completion progress of a task. In PDF output, it renders as a static visual bar showing the current progress value. Unlike the `<meter>` element which shows measurements against thresholds, `<progress>` specifically represents task completion from 0% to 100%.
 

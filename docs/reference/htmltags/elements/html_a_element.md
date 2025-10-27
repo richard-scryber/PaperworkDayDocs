@@ -14,9 +14,9 @@ has_toc: false
 
 ---
 
-<details markdown="block">
+<details open class='top-toc' markdown="block">
   <summary>
-    Table of contents
+    On this page
   </summary>
   {: .text-delta }
 - TOC
@@ -24,6 +24,7 @@ has_toc: false
 </details>
 
 ---
+
 
 ## Summary
 

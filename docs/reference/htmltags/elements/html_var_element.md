@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;var&gt; : The Variable Storage Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<var>` element is used to store values in the document data stack for later retrieval. It can store calculated values, intermediate results, or any data that needs to be accessed across different parts of the document, including within repeating templates.
 

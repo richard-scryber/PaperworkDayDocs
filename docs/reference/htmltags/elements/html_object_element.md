@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;object&gt; : The Object/Attachment Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<object>` element embeds external files as attachments in PDF documents. It creates file attachments that can be opened from within the PDF viewer, supporting various file types including documents, images, data files, and other binary content. Objects can optionally display as icons within the document.
 

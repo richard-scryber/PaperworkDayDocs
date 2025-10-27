@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;pre&gt; : The Preformatted Text Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<pre>` element represents preformatted text that should be displayed exactly as written in the source code. It is a block-level element designed for displaying content where whitespace, line breaks, and formatting are significant, such as code listings, ASCII art, or formatted data.
 

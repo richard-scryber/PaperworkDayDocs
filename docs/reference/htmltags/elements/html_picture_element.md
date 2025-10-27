@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;picture&gt; and &lt;source&gt; : The Responsive Picture Elements
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<picture>` element provides responsive image selection for PDF documents. It contains multiple `<source>` elements that specify different image sources based on media queries and image formats. Scryber automatically selects the most appropriate image source for PDF rendering, typically choosing the highest quality image suitable for print media.
 

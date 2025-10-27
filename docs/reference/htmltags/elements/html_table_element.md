@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;table&gt; : The Table Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<table>` element is used to create structured tabular data displays in PDF documents. It supports complex layouts with headers, footers, row and column spans, borders, and full styling control. Tables automatically handle page breaks and can repeat headers across pages.
 

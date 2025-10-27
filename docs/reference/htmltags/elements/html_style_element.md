@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;style&gt; : The Embedded Style Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<style>` element contains embedded CSS styles within the HTML document. It allows inline definition of CSS rules without requiring external stylesheet files, providing self-contained styling within a single document.
 

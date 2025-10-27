@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;page&gt; : The Page Number Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<page>` element is a special Scryber component that automatically displays page numbers in your PDF documents. It supports various formats, can reference specific components, and provides access to document, section, and total page counts.
 

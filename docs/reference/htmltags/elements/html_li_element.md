@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;li&gt; : The List Item Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<li>` element represents an item in a list. It must be contained within a parent list element: `<ul>` (unordered list), `<ol>` (ordered list), or `<menu>`. The `<li>` element can contain any type of content including text, images, tables, nested lists, and other block or inline elements. Each list item is automatically rendered with a marker (bullet, number, or custom label) inherited from its parent list.
 

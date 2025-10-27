@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;link&gt; : The Link Element (External Stylesheets)
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<link>` element links external resources to the PDF document, primarily used for loading external CSS stylesheets. It enables modular styling by separating CSS into external files that can be reused across multiple documents.
 

@@ -10,6 +10,23 @@ has_toc: false
 ---
 
 # &lt;label&gt; : The Label Element
+{: .no_toc }
+
+---
+
+<details open class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+
+## Summary
 
 The `<label>` element provides descriptive text for form input fields. Labels improve form readability and organization by associating descriptive text with input controls. In Scryber PDFs, labels are rendered as inline text elements that can be styled and positioned alongside form fields to create professional, well-organized form layouts.
 
