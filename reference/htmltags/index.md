@@ -47,11 +47,6 @@ More information on actual document creation can be found in <a href='/index.htm
 {: .no_toc }
 ---
 
-### All Avaliable Elements
-
-This article contains a list of the elements with a descption and link, categorized by purpose. A full alphabetical list of all supported elements can be found on the navigation on the left (or at the top mobile menu).
-
----
 
 ### Using Comments
 
