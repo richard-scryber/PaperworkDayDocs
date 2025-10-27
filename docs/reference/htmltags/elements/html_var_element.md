@@ -1,8 +1,8 @@
 ---
 layout: default
-title: var Element
+title: var
 parent: HTML Elements
-parent_url: /reference/htmlelements/
+parent_url: /reference/htmltags/
 grand_parent: Template reference
 grand_parent_url: /reference/
 has_children: false

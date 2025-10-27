@@ -1,6 +1,6 @@
 ---
 layout: default
-title: del, ins, u, s
+title: del, ins, u, strike
 parent: HTML Elements
 parent_url: /reference/htmltags/
 grand_parent: Template reference
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# &lt;del&gt;, &lt;ins&gt;, &lt;u&gt;, &lt;s&gt;: Text Formatting Elements
+# &lt;del&gt;, &lt;ins&gt;, &lt;u&gt;, &lt;strike&gt;: Text Formatting Elements
 {: .no_toc }
 
 ---
@@ -32,7 +32,7 @@ Specialized inline elements for marking edits and changes to textual content for
 - `<del>`: Deleted text (strikethrough)
 - `<ins>`: Inserted text (underlined)
 - `<u>`: Underlined text (presentational)
-- `<s>`: Strikethrough text (presentational)
+- `<strike>` (`s`): Strikethrough text (presentational)
 
 ---
 

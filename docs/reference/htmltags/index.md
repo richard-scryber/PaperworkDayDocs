@@ -61,27 +61,6 @@ This content will not be processed, and be ignored. It can either be used to exc
 
 ---
 
-### Modifying or updating existing documents.
-
-Along with the creation of new documents, it is possible to modify a previously created document - adding new pages or removing existing pages.
-
-This is done with the <code>&lt;frameset&gt;</code> element, replacing the body, and more information can be found <a href='/learning/templates/frameset.html' >here</a>
-
-```html
-   <html xmlns='http://www.w3.org/1999/xhtml'>
-    <head>
-      <!-- document information -->
-    </head>
-    <frameset>
-      <frame src='./draftcoverpage.html' />
-      <frame src='./existing.pdf' data-page-start='2' />
-      <!-- add further content -->
-    </frameset>
-   </html>
-```
-
----
-
 ### Case sensitivity
 
 By default **all** elements are *case sensitive* and are all lower case.
@@ -125,11 +104,11 @@ The library supports the use of the following elements within the meta-data <cod
 
 | Element  | Tag  | Description |
 |---|---|---|
-| <a href='meta/html_title_element.html.html' >Document Title</a>   | <code>&lt;title&gt;</code> | A purely textual value that will set the display title for the output document.   |
-| <a href='mata/html_base_element.html' >Document Base Path</a>   | <code>&lt;base&gt;</code> | A folder or uri reference to to a path where any relative files specified in the content of the document (images etc.) can be located.  |
-| <a href='meta/html_meta_element.html' >Meta data</a>   | <code>&lt;meta&gt;</code> | A generalized informational tag that can define information about the final document production, its owners or security settings for use.  |
-| <a href='meta/html_link_element.html' >Linked files</a>   | <code>&lt;link&gt;</code> | References an external file that contains resources (specifically styles) that the document should use when generating the output.  |
-| <a href='meta/html_styles_element.html' >Style content</a>   | <code>&lt;style&gt;</code> | Marks the document specific visual styles for the content that the document should use. Has a higher priority than any linked stylesheets.  |
+| <a href='elements/html_head_element.html' >Document Title</a>   | <code>&lt;title&gt;</code> | A purely textual value that will set the display title for the output document.   |
+| <a href='elements/html_head_element.html' >Document Base Path</a>   | <code>&lt;base&gt;</code> | A folder or uri reference to to a path where any relative files specified in the content of the document (images etc.) can be located.  |
+| <a href='elements/html_meta_element.html' >Meta data</a>   | <code>&lt;meta&gt;</code> | A generalized informational tag that can define information about the final document production, its owners or security settings for use.  |
+| <a href='elements/html_link_element.html' >Linked files</a>   | <code>&lt;link&gt;</code> | References an external file that contains resources (specifically styles) that the document should use when generating the output.  |
+| <a href='elements/html_style_element.html' >Style content</a>   | <code>&lt;style&gt;</code> | Marks the document specific visual styles for the content that the document should use. Has a higher priority than any linked stylesheets.  |
 
 
 
@@ -142,8 +121,8 @@ The library supports the use of the following sectioning elements used to divide
 
 | Element  | Tag  | Description |
 |---|---|---|
-| <a href='elements/html_header_element.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new block for content that will be shown at the top of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element **<u>unless</u>** a continuation header is defined.   |
-| <a href='elements/html_footer_element.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element **<u>unless</u>** a continuation header is defined.   |
+| <a href='elements/html_header_footer_element.html' >Page Header</a>   | <code>&lt;header&gt;</code> | Begins a new block for content that will be shown at the top of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element **<u>unless</u>** a continuation header is defined.   |
+| <a href='elements/html_header_footer_element.html' >Page Footer</a>   | <code>&lt;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of the first page of the document, and all subsequent pages within a <code>&lt;body&gt;</code> element **<u>unless</u>** a continuation header is defined.   |
 | <a href='elements/html_continuation-header_element.html' >Continuation Header *</a>   | <code>&lt;continuation&#8209;header&gt;</code> | Begins a new content block for elements that will be shown at the top of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
 | <a href='elements/html_continuation-footer_element.html' >Continuation Footer *</a>   | <code>&lt;continuation&#8209;footer&gt;</code> | Begins a new content block for elements that will be shown at the bottom of every page of the document, within a <code>&lt;body&gt;</code> element **<u>except</u>** the first page.   |
 | <a href='elements/html_section_element.html' >Section</a>   | <code>&lt;section&gt;</code> | Denotes a block of content within the template that is in discreet. **NOTE:** By default each section in a template will start on a new page in the output document. |
@@ -162,9 +141,9 @@ The following elements support the inclusion of further content, or outputing co
 | Element  | Tag  | Description |
 |---|---|---|
 | <a href='elements/html_a_element.html' >Anchor Link</a>   | <code>&lt;a&gt;</code> |  Marks any of the inner content within the anchor link, as a navigation element to another point in the document output, or an external link to another resource. |
-| <a href='elements/html_embed_element.html' >Embedded Content</a>   | <code>&lt;embed&gt;</code> | Allows external or dynamic content to be included within the output document as if it is part of the original content.  |
+| <a href='elements/html_iframe_embed_element.html' >Embedded Content</a>   | <code>&lt;embed&gt;</code> | Allows external or dynamic content to be included within the output document as if it is part of the original content.  |
 | <a href='elements/html_if_element.html' >If *</a>   | <code>&lt;if&gt;</code> | Denotes any optional block of content that will be output *only* when the <code>data-test</code> value is true.  |
-| <a href='elements/html_iframe_element.html' >i-Frame</a>   | <code>&lt;iframe&gt;</code> | Denotes an external source of content to be included within the output document, but unlike embedding, the inner content does not use any of the outer document visual style.  |
+| <a href='elements/html_iframe_embed_element.html' >i-Frame</a>   | <code>&lt;iframe&gt;</code> | Denotes an external source of content to be included within the output document, but unlike embedding, the inner content does not use any of the outer document visual style.  |
 | <a href='elements/html_object_element.html' >Object</a>   | <code>&lt;object&gt;</code> | Denotes an external source to be attached within the output document, which can then be linked to via the anchor. |
 | <a href='elements/html_template_element.html' >Template Content</a>   | <code>&lt;template&gt;</code> | An invisible container that will repeatably re-generate its contents within the document based on any bound data. |
 
@@ -184,7 +163,7 @@ The following elements provide a general way to divide content in the template, 
 | <a href='elements/html_details_summary_element.html' >Details</a>   | <code>&lt;details&gt;</code> | Denotes a block of content that has a <code>summary</code> (below) and then further information available to provide greater clarity.|
 | <a href='elements/html_details_summary_element.html' >Details Summary</a>   | <code>&lt;summary&gt;</code> | Denotes the shorter information of a details block before the main information. |
 | <a href='elements/html_div_element.html' >Div</a>   | <code>&lt;div&gt;</code> | Denotes a discrete block of content, without specific meaining. |
-| <a href='elements/html_fieldset_legend_element.html' >Fieldset Container</a>   | <code>&lt;fieldset&gt;</code> | Denotes a grouping of similar content with a <code>legend</code> (below) available to describe the content.  |
+| <a href='elements/html_fieldset_legend_element.html' >Fieldset</a>   | <code>&lt;fieldset&gt;</code> | Denotes a grouping of similar content with a <code>legend</code> (below) available to describe the content.  |
 | <a href='elements/html_fieldset_legend_element.html' >Fieldset Legend </a>   | <code>&lt;legend&gt;</code> | A descriptive element to the outer <code>fieldset</code>. |
 | <a href='elements/html_headings_element.html' >Headings 1-6</a>   | <code>&lt;h1&gt; - &lt;h6&gt;</code> | Denotes a heading within the content. Levels vary in importance from level 1 down to 6.  |
 | <a href='elements/html_hr_element.html' >Horizontal Rule</a>   | <code>&lt;hr&gt;</code> | Denotes a horizontal line, by default across the width of the containing element. |
@@ -200,9 +179,9 @@ The following elements allow content to be output within a list style, to show a
 
 | Element  | Tag  | Description |
 |---|---|---|
-| <a href='elements/html_dl_element.html' >Definition List</a>   | <code>&lt;dl&gt;</code> | A container block of multiple terms <code>dt</code> and associated defintion values <code>dd</dd>.  |
-| <a href='elements/html_dl_element.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> | Denotes the term to be defined within the list.  |
-| <a href='elements/html_dl_element.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> | Denotes the definition value of the term within the list. |
+| <a href='elements/html_dl_dt_dd_elements.html' >Definition List</a>   | <code>&lt;dl&gt;</code> | A container block of multiple terms <code>dt</code> and associated defintion values <code>dd</dd>.  |
+| <a href='elements/html_dl_dt_dd_elements.html' >Definition List Term</a>   | <code>&lt;dt&gt;</code> | Denotes the term to be defined within the list.  |
+| <a href='elements/html_dl_dt_dd_elements.html' >Definition List Item</a>   | <code>&lt;dd&gt;</code> | Denotes the definition value of the term within the list. |
 | <a href='elements/html_li_element.html' >List Item</a>   | <code>&lt;li&gt;</code> | Denotes an individual item within an ordered, unordered or menu list.  |
 | <a href='elements/html_ol_element.html' >List Ordered</a>   | <code>&lt;ol&gt;</code> | Denotes a list of items whose order **is not** specific. |
 | <a href='elements/html_ul_element.html' >List Unordered</a>   | <code>&lt;ul&gt;</code> | Denotes a list of items whose order **is**  |
@@ -223,7 +202,7 @@ The following elements allow content to be output within a tabular (grid) struct
 | <a href='elements/html_table_element.html' >Table Footer</a>   | <code>&lt;tfoot&gt;</code> | An optional table row container that denotes the end content of the parent table. |
 | <a href='elements/html_table_element.html' >Table Row</a>   | <code>&lt;tr&gt;</code> | A grouping of individual cells that will be output next to each other as a single row.  |
 | <a href='elements/html_td_element.html' >Table Cell</a>   | <code>&lt;td&gt;</code> | A container for any content to be output in the document within the rectangular boundaries defined within the table. |
-| <a href='elements/html_table_element.html' >Table Header Cell</a>   | <code>&lt;th&gt;</code> | A container that denotes a descriptive content of the table, to be output in the document within the rectangular boundaries defined within the table. |
+| <a href='elements/html_td_element.html' >Table Header Cell</a>   | <code>&lt;th&gt;</code> | A container that denotes a descriptive content of the table, to be output in the document within the rectangular boundaries defined within the table. |
 
 ---
 
@@ -241,8 +220,8 @@ The following elements support showing raster and vector graphical content withi
 | <a href='elements/html_picture_element.html' >Picture Content</a>   | <code>&lt;picture&gt;</code> | A group of <code>source</code> elements that define various graphical images that can be used on the pictures inner <code>img</code> element based on media and output type. |
 | <a href='elements/html_picture_element.html' >Picture Source</a>   | <code>&lt;source&gt;</code> | A single reference to an external or bound graphic that will be used instead of the primary <code>img</code> source when it is a more appropriate rendition. |
 | <a href='elements/html_meter_element.html' >Meters</a>   | <code>&lt;meter&gt;</code> | Denotes a scalar value within a pre-defined range. |
-| <a href='elements/html_meter_element.html' >Progress</a>   | <code>&lt;progress&gt;</code> | Denotes how far within an individual process, based on scalar value within a known range. |
-| <a href='/reference/svgelements/' >SVG Drawing</a>   | <code>&lt;svg&gt;</code> | The library supports a full set of SVG elements and attributes. These are covered in their own section <a href='/reference/svg/' >here</a>. |
+| <a href='elements/html_progress_element.html' >Progress</a>   | <code>&lt;progress&gt;</code> | Denotes how far within an individual process, based on scalar value within a known range. |
+| <a href='/reference/svgelements/' >SVG Drawing</a>   | <code>&lt;svg&gt;</code> | The library supports a full set of SVG elements and attributes. These are covered in their own section <a href='/reference/svgelements/' >here</a>. |
 
 ---
 
@@ -252,8 +231,8 @@ The following elements support generating dynamic content within the final docum
 
 | Function  | Example  | Description |
 |---|---|---|
-| <a href='elements/html_num_element.html' >Number *</a>   | <code>&lt;num&gt;</code> | A textual element that can output a numeric value in a specific display format. |
-| <a href='elements/html_page_element.html' >Page Number *</a>   | <code>&lt;page&gt;</code> | Outputs the current document or sections page number, or alternatively the page number of another referenced element within the final document. |
+| <a href='elements/html_output_slot_num_elements.html' >Number *</a>   | <code>&lt;num&gt;</code> | A textual element that can output a numeric value in a specific display format. |
+| <a href='elements/html_pagenumber_element.html' >Page Number *</a>   | <code>&lt;page&gt;</code> | Outputs the current document or sections page number, or alternatively the page number of another referenced element within the final document. |
 | <a href='elements/html_time_element.html' >Time Span</a>   | <code>&lt;time&gt;</code> | A textual element that can output a date time value in a specific format. |
 | <a href='elements/html_var_element.html' >Variable Store and Display</a>   | <code>&lt;var&gt;</code> | A simple text element, that also allows data within the template to be calculated, stored and modified during the processing, and then used by other elements later on. |
 
@@ -267,27 +246,28 @@ The following elements are based on and have a similar function to the standard 
 |---|---|---|
 | <a href='elements/html_abbr_element.html' >Abbreviation</a>   | <code>&lt;abbr&gt;</code> | Marks the inner content as an abbreviation of a longer word or phrase. |
 | <a href='elements/html_big_element.html' >Big</a>   | <code>&lt;big&gt;</code> | Marks that the inner content of the <code>big</code> element should use a larger font size, by default 120%. |
-| <a href='elements/html_em_strong_element.html' >Bold</a>   | <code>&lt;b&gt;</code> | Marks that the inner content of the <code>b</code> element should use a heavier font weight. |
-| <a href='elements/html_cite_element.html' >Citation</a>   | <code>&lt;cite&gt;</code> | Denotes the inner content of the <code>cite</code> is a reference to an different source which has been used in the document. |
-| <a href='elements/html_text_formatting_element.html' >Code</a>   | <code>&lt;code&gt;</code> | Marks the inner content as a short input into or out of a computer programme. |
-| <a href='elements/html_text_formatting_element.html' >Definition</a>   | <code>&lt;defn&gt;</code> | Marks the inner content as to be defined within the template and output document. |
-| <a href='elements/html_text_formatting_element.html' >Mark Deleted</a>   | <code>&lt;del&gt;</code> | Marks a range of content that has been deleted from an original document. |
-| <a href='elements/html_em_strong_element.html' >Emphasised</a>   | <code>&lt;em&gt;</code> | Marks a range of content that has stress emphasis. |
-| <a href='elements/html_text_formatting_element.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> | Marks a range of content that has been added into the document. |
-| <a href='elements/html_em_strong_element.html' >Italic</a>   | <code>&lt;i&gt;</code> | Marks that the inner content of the <code>i</code> element should use an oblique font style. |
-| <a href='elements/html_text_formatting_element.html' >Keyboard</a>   | <code>&lt;kbd&gt;</code> | Marks the inner content of the <code>kbd</code> element as user text input. |
+| <a href='elements/html_strong_em_element.html' >Bold</a>   | <code>&lt;b&gt;</code> | Marks that the inner content of the <code>b</code> element should use a heavier font weight. |
+| <a href='elements/html_cite_defn_q_elements.html' >Citation</a>   | <code>&lt;cite&gt;</code> | Denotes the inner content of the <code>cite</code> is a reference to an different source which has been used in the document. |
+| <a href='elements/html_code_kbd_samp_elements.html' >Code</a>   | <code>&lt;code&gt;</code> | Marks the inner content as a short input into or out of a computer programme. |
+| <a href='elements/html_cite_defn_q_elements.html' >Definition</a>   | <code>&lt;defn&gt;</code> | Marks the inner content as to be defined within the template and output document. |
+| <a href='elements/html_del_ins_u_s_element.html' >Mark Deleted</a>   | <code>&lt;del&gt;</code> | Marks a range of content that has been deleted from an original document. |
+| <a href='elements/html_strong_em_element.html' >Emphasised</a>   | <code>&lt;em&gt;</code> | Marks a range of content that has stress emphasis. |
+| <a href='elements/html_del_ins_u_s_element.html' >Mark Inserted</a>   | <code>&lt;ins&gt;</code> | Marks a range of content that has been added into the document. |
+| <a href='elements/html_strong_em_element.html' >Italic</a>   | <code>&lt;i&gt;</code> | Marks that the inner content of the <code>i</code> element should use an oblique font style. |
+| <a href='elements/html_code_kbd_samp_elements.html' >Keyboard</a>   | <code>&lt;kbd&gt;</code> | Marks the inner content of the <code>kbd</code> element as user text input. |
 | <a href='elements/html_label_element.html' >Label</a>   | <code>&lt;label&gt;</code> |  Denotes a description for another associated template content elements |
 | <a href='elements/html_br_element.html' >Line Break</a>   | <code>&lt;br&gt;</code> | Denotes a break in the flow of content in the output document, Any following content will begin on a new line.  |
-| <a href='elements/html_text_formatting_element.html' >Marked span</a>   | <code>&lt;mark&gt;</code> | Marks the inner content of the <code>mark</code> element as highlighted for reference.  |
-| <a href='elements/html_text_formatting_element.html' >Output</a>   | <code>&lt;output&gt;</code> | Marks the inner content of the <code>output</element> as  a value that has been calculated by a separate process. |
-| <a href='elements/html_text_formatting_element.html' >Quoted Span</a>   | <code>&lt;q&gt;</code> | Marks the inner content of the <code>q</element> as short inline quotation. |
-| <a href='elements/html_text_formatting_element.html' >Sample Span</a>   | <code>&lt;samp&gt;</code> | Marks the inner content of the <code>output</element> as a sample or quoted output by a separate process. |
-| <a href='elements/html_text_formatting_element.html' >Small</a>   | <code>&lt;small&gt;</code> | Marks that the inner content of the <code>small</code> element should use a smaller font size, by default 70%  |
-| <a href='elements/html_text_formatting_element.html' >Strikethrough</a>   | <code>&lt;strike&gt;</code> | Marks that the inner content of the <code>strike</code> element should have a line rendered through the middle of it.  |
-| <a href='elements/html_em_strong_element.html' >Strong style</a>   | <code>&lt;strong&gt;</code> | Marks a reng of content that has a strong emphasis.  |
-| <a href='elements/html_text_formatting_element.html' >Subscript</a>   | <code>&lt;sub&gt;</code> | Marks that the inner content of the <code>sub</code> element should be subscript - use a smaller font and have an ascender on the baseline of the parent line. |
-| <a href='elements/html_text_formatting_element.html' >Superscript</a>   | <code>&lt;sup&gt;</code> | Marks that the inner content of the <code>sub</code> element should be superscript - use a smaller font and have a descender on the mid-point of the parent line. |
-| <a href='elements/html_text_formatting_element.html' >Underlined</a>   | <code>&lt;u&gt;</code> | Marks that the inner content of the <code>u</code> element should have a line rendered underneath it. |
+| <a href='elements/html_mark_sub_sup_elements.html' >Marked span</a>   | <code>&lt;mark&gt;</code> | Marks the inner content of the <code>mark</code> element as highlighted for reference.  |
+| <a href='elements/html_output_slot_num_elements.html' >Output</a>   | <code>&lt;output&gt;</code> | Marks the inner content of the <code>output</element> as  a value that has been calculated by a separate process. |
+| <a href='elements/html_cite_defn_q_elements.html' >Quoted Span</a>   | <code>&lt;q&gt;</code> | Marks the inner content of the <code>q</element> as short inline quotation. |
+| <a href='elements/html_code_kbd_samp_elements.html' >Sample Span</a>   | <code>&lt;samp&gt;</code> | Marks the inner content of the <code>output</element> as a sample or quoted output by a separate process. |
+| <a href='elements/html_mark_sub_sup_elements.html' >Small</a>   | <code>&lt;small&gt;</code> | Marks that the inner content of the <code>small</code> element should use a smaller font size, by default 70%  |
+| <a href='elements/html_del_ins_u_s_element.html' >Strikethrough</a>   | <code>&lt;strike&gt;</code> | Marks that the inner content of the <code>strike</code> element should have a line rendered through the middle of it.  |
+| <a href='elements/html_strong_em_element.html' >Strong style</a>   | <code>&lt;strong&gt;</code> | Marks a reng of content that has a strong emphasis.  |
+
+| <a href='elements/html_mark_sub_sup_elements.html' >Subscript</a>   | <code>&lt;sub&gt;</code> | Marks that the inner content of the <code>sub</code> element should be subscript - use a smaller font and have an ascender on the baseline of the parent line. |
+| <a href='elements/html_mark_sub_sup_elements.html' >Superscript</a>   | <code>&lt;sup&gt;</code> | Marks that the inner content of the <code>sub</code> element should be superscript - use a smaller font and have a descender on the mid-point of the parent line. |
+| <a href='elements/html_del_ins_u_s_element.html' >Underlined</a>   | <code>&lt;u&gt;</code> | Marks that the inner content of the <code>u</code> element should have a line rendered underneath it. |
 
 ---
 
