@@ -27,16 +27,17 @@ It supports html tags, images, tables, cascading styles, custom fonts and repeat
 
 ---
 
-## Creating a document with preview
 
-We want to make it really easy to add paperwork to any site so you can create dynamic documents.
+[//]: ## Creating a document with preview
 
-<div id='first-sample-container' class='document-container' data-pw-ui="Default, Code, Edit" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
+[//]: We want to make it really easy to add paperwork to any site so you can create dynamic documents.
 
-<p>(Yes this is Paperwork in action!)</p>
+[//]: <div id='first-sample-container' class='document-container' data-pw-ui="Default, Code, Edit" data-pw-template="_samples/helloworld/helloworld.html" data-pw-json="_samples/helloworld/helloworld.json"></div>
+
+[//]: <p>(Yes this is Paperwork in action!)</p>
 
 
----
+[//]: ---
 
 ### Add a reference to the javascript.
 
