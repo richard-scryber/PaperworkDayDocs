@@ -92,6 +92,32 @@ abbr {
 
 ---
 
+
+## Class Hierarchy
+
+```c#
+Scryber.Html.Components.HTMLAbbreviation, Scryber.Components
+```
+
+In the library codebase:
+- `HTMLAbbreviation` extends <a href='html_span_element.html'>`HTMLSpan`</a> extends `Span` extends `VisualComponent`
+- Inherits inline display behavior from `Span`
+- Supports nested content through `Contents` collection
+
+```c#
+using Scryber.Text;
+using Scryber.HTML.Components;
+
+var abbr = new HTMLAbbreviation();
+abbr.Contents.Add("API");
+abbr.AbbrTitle = "Application Programming Interface";
+abbr.OutlineTitle = "API Details";
+abbr.Style.Text.Decoration = TextDecoration.Underline;
+//page.Contents.Add(abbr);
+```
+
+---
+
 ## Examples
 
 ### Basic Abbreviation
@@ -206,8 +232,8 @@ abbr {
 
 - [span Element](html_span_element)
 - [CSS Styling](/reference/cssselectors/)
-- [@title attribute](/reference/html_attributes/attrs/attr_title)
-- [@class attribute](/reference/html_attributes/attrs/attr_class)
+- [@title attribute](/reference/htmlattributes/attributes/attr_title)
+- [@class attribute](/reference/htmlattributes/attributes/attr_class)
 - [Data Binding](/reference/learning/binding/)
 
 ---

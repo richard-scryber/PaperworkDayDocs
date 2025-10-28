@@ -194,10 +194,31 @@ The `<article>` element has the following default behavior:
 
 ## Class Hierarchy
 
+```c#
+Scryber.Html.Components.HTMLArticle, Scryber.Components
+```
+
 In the library codebase:
 - `HTMLArticle` extends `HTMLHeadFootContainer` extends `Panel` extends `VisualComponent`
 - Inherits header/footer arrangement behavior from `HTMLHeadFootContainer`
 - Shares implementation with `<section>` element but conveys different semantic meaning and does not start on a new page (by default).
+
+```c#
+using Scryber.HTML.Components;
+
+var art = new HTMLArticle();
+var head = new HTMLComponentHeader();
+head.Contents.Add("Article Title");
+head.StyleClass = "title";
+art.Contents.Add(head);
+
+var p = new HTMLParagraph();
+p.Contents.Add(data.ArticleContent());
+art.Contents.Add(p);
+
+art.StyleClass = "articles";
+//page.Contents.Add(art);
+```
 
 ---
 

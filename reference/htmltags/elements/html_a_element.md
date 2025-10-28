@@ -87,8 +87,8 @@ The `<a>` element creates clickable hyperlinks that:
 | Attribute | Type | Description |
 |-----------|------|-------------|
 | `href` | string | **Required**. The link destination: URL, file path, or internal anchor (prefixed with #). |
-| `target` | string | Link target. Use `_blank` to open in a new window (sets `new-window` behavior). |
-| `data-fit-to` | OutlineFit | How the destination page should be displayed: `FullPage`, `PageWidth`, `PageHeight`, `BoundingBox`. Default: `PageWidth`. |
+| `target` | string | Link target. Use `_blank` to open in a new window (sets `new-window` behavior). *NOTE* Requires the document reader to support the action destination. |
+| `data-fit-to` | OutlineFit | How the destination page should be displayed: `FullPage`, `PageWidth`, `PageHeight`, `BoundingBox`. Default: `PageWidth`.  *NOTE* Requires the document reader to support the action destination. |
 
 ### Navigation Action Attributes
 
@@ -208,10 +208,26 @@ Links can contain:
 
 ## Class Hierarchy
 
+```c#
+Scryber.Html.Components.HTMLAnchor, Scryber.Components
+```
+
 In the library codebase:
 - `HTMLAnchor` extends `Link` extends `SpanBase` extends `VisualComponent`
 - Inherits inline display behavior from `SpanBase`
 - Supports nested content through `Contents` collection
+
+```c#
+using Scryber.Drawing;
+using Scryber.HTML.Components;
+
+var anchor = new HTMLAnchor();
+anchor.Contents.Add("Click Here");
+anchor.File = "https://www.paperworkday.info";
+anchor.DestinationFit = OutlineFit.FullPage;
+anchor.Style.Fill.Color = StandardColors.Blue;
+//page.Contents.Add(anchor);
+```
 
 ---
 
@@ -424,6 +440,5 @@ In the library codebase:
 - [div](/reference/htmltags/div.html) - Block container (can be wrapped in links)
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and expressions
-- [PDF Actions](/reference/actions/) - PDF-specific actions and navigation
 
 ---

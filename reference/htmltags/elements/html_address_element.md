@@ -168,12 +168,31 @@ Use `<br/>` elements for line breaks within addresses to maintain proper formatt
 
 ## Class Hierarchy
 
-In the Scryber codebase:
+```c#
+Scryber.Html.Components.HTMLAddress, Scryber.Components
+```
+
+In the library codebase:
 - `HTMLAddress` extends `HTMLDiv` extends `Panel` extends `VisualComponent`
 - Inherits all container functionality from `HTMLDiv`
 - Applies italic font styling by default
 
+
+```c#
+using Scryber.Components;
+using Scryber.HTML.Components;
+
+var addr = new HTMLAddress();
+addr.ID = "sendTo";
+addr.Contents.AddRange(
+    new TextLiteral("First Line of Address"), new LineBreak(),
+    new TextLiteral("Second Line"), new LineBreak()
+    );
+addr.StyleClass = "postal-address";
+//page.Contents.Add(addr);
+```
 ---
+
 
 ## Examples
 
@@ -362,7 +381,7 @@ In the Scryber codebase:
 
 ```html
 <div style="column-count: 3; column-gap: 15pt; font-size: 9pt;">
-    <div>
+    <div style='break-inside: avoid'>
         <strong>USA</strong>
         <address>
             New York Office<br/>
@@ -372,7 +391,7 @@ In the Scryber codebase:
         </address>
     </div>
 
-    <div>
+    <div style='break-inside: avoid; break-before: always;'>
         <strong>UK</strong>
         <address>
             London Office<br/>
@@ -382,7 +401,7 @@ In the Scryber codebase:
         </address>
     </div>
 
-    <div>
+    <div style='break-inside: avoid; break-before: always;'>
         <strong>Japan</strong>
         <address>
             Tokyo Office<br/>

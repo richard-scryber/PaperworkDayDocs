@@ -186,12 +186,30 @@ Common styling patterns for asides include:
 
 ## Class Hierarchy
 
+```c#
+Scryber.Html.Components.HTMLAnchor, Scryber.Components
+```
+
 In the library codebase:
 - `HTMLAside` extends `HTMLDiv` extends `Div` extends `Panel` extends `VisualComponent`
 - Inherits all properties and behaviors from `HTMLDiv`
 - Provides semantic meaning without changing layout behavior
 - Identical rendering to `<div>` but with aside semantics
 
+
+```c#
+using Scryber.Components;
+using Scryber.HTML.Components;
+
+var aside = new HTMLAside();
+aside.ID = "pushedRight";
+addr.Contents.Add("NOTE: This content will appear on the right of the page, and flow with the content");
+
+aside.Style.Position.Float = FloatMode.Right;
+aside.Style.Padding.All = 10;
+aside.Style.Margins.Left = 10;
+//page.Contents.Add(aside);
+```
 
 ---
 
@@ -559,10 +577,10 @@ doc.SaveAsPDF("output.pdf");
 ## See Also
 
 - [div](html_div_element.html) - Generic block container (identical behavior, no semantic meaning)
-- [article](html_div_element.html) - Article element for self-contained content
-- [section](html_div_element.html) - Section element for thematic groupings
-- [nav](html_div_element.html) - Navigation element
-- [blockquote](html_div_element.html) - Block quotation element
+- [article](html_article_element.html) - Article element for self-contained content
+- [section](html_section_element.html) - Section element for thematic groupings
+- [nav](html_nav_element.html) - Navigation element
+- [blockquote](html_blockquote_element.html) - Block quotation element
 - [CSS Styles](/learning/styles/) - Complete CSS styling reference
 - [Data Binding](/learning/binding/) - Data binding and expressions
 
