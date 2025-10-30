@@ -450,15 +450,15 @@ aside.Style.Margins.Left = 10;
 
 ```html
 <!-- With model.tips = [
-    { icon: "💡", title: "Performance", text: "Cache templates for better performance" },
-    { icon: "🔒", title: "Security", text: "Always sanitize user input" },
-    { icon: "📊", title: "Reporting", text: "Use data binding for dynamic reports" }
+    { icon: "lightbulb", title: "Performance", text: "Cache templates for better performance" },
+    { icon: "lock", title: "Security", text: "Always sanitize user input" },
+    { icon: "chart-simple", title: "Reporting", text: "Use data binding for dynamic reports" }
 ] -->
 
 {% raw %}<template data-bind="{{model.tips}}">
     <aside style="background-color: #f0f8ff; border-left: 4pt solid #4a90e2; padding: 15pt; margin: 10pt 0;">
         <div style="display: flex; align-items: flex-start;">
-            <span style="font-size: 24pt; margin-right: 10pt;">{{.icon}}</span>
+            <i class='{{concat("fa-solid fa-",.icon)}}' style="font-size: 24pt; margin-right: 10pt;" ></i>
             <div>
                 <strong style="color: #2c5282; font-size: 11pt;">{{.title}}</strong>
                 <p style="margin: 5pt 0 0 0; color: #2c5282; font-size: 10pt;">{{.text}}</p>

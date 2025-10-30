@@ -155,6 +155,7 @@ The `d` attribute supports dynamic path generation using data binding expression
 ### Example 4: Dynamic Chart Path
 
 ```html
+{% raw %}
 <!-- Model: {
     data: [20, 45, 35, 60, 50, 75, 65],
     width: 280,
@@ -169,11 +170,13 @@ The `d` attribute supports dynamic path generation using data binding expression
             }).join(' ')}}"
           fill="none" stroke="#2196F3" stroke-width="3"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 5: Dynamic Star Generator
 
 ```html
+{% raw %}
 <!-- Model: {
     points: 5,
     outerRadius: 40,
@@ -196,11 +199,13 @@ The `d` attribute supports dynamic path generation using data binding expression
     <path d="{{generateStar(centerX, centerY, points, outerRadius, innerRadius)}}"
           fill="#FFC107" stroke="#F57F17" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 6: Multiple Dynamic Paths
 
 ```html
+{% raw %}
 <!-- Model: {
     paths: [
         {d: 'M 10,40 C 40,10 60,10 90,40', color: '#e74c3c', width: 2},
@@ -213,11 +218,13 @@ The `d` attribute supports dynamic path generation using data binding expression
               fill="none" stroke="{{.color}}" stroke-width="{{.width}}"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Example 7: Animated Progress Arc
 
 ```html
+{% raw %}
 <!-- Model: {
     progress: 0.75,  // 75%
     radius: 45,
@@ -238,6 +245,7 @@ The `d` attribute supports dynamic path generation using data binding expression
     <path d="{{generateArc(progress, radius)}}"
           fill="none" stroke="#4CAF50" stroke-width="10" stroke-linecap="round"/>
 </svg>
+{% endraw %}
 ```
 
 ---

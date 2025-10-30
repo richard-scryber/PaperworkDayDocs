@@ -91,6 +91,21 @@ All elements support standard CSS properties:
 
 ---
 
+## Class Hierarchy
+
+```c#
+Scryber.Html.Components.HTMLCodeSpan, Scryber.Components
+Scryber.Html.Components.HTMLKeyboardSpan, Scryber.Components
+Scryber.Html.Components.HTMLSampleSpan, Scryber.Components
+```
+
+In the library codebase:
+- `HTMLCodeSpan`, `HTMLKeyboardSpan` and `HTMLSampleSpan` all extend `HTMLSpan` that extends `SpanBase` extends `VisualComponent`
+- Inherits inline display behavior from `SpanBase`
+- Supports nested content through `Contents` collection
+
+---
+
 ## Notes
 
 ## Default Styling
@@ -98,10 +113,6 @@ All elements support standard CSS properties:
 The elements are by default output in monospace font
 
 - Font family: Monospace
-- All other properties inherited
-
-**`<var>`**:
-- Font style: Italic
 - All other properties inherited
 
 ---
@@ -172,7 +183,6 @@ The elements are by default output in monospace font
         border: 1pt solid #ccc;
         border-radius: 3pt;
         background-color: #fafafa;
-        box-shadow: 0 2pt 0 #ddd;
         font-family: monospace;
         font-size: 10pt;
     }

@@ -204,7 +204,7 @@ The `<body>` element supports repeating headers and footers:
 
     <continuation-footer>
         <!-- Pages 2+ footer -->
-        <div>Page <page /></div>
+        <div>Page <page /> of <page property='total' /></div>
     </continuation-footer>
 </body>
 ```
@@ -241,15 +241,29 @@ Content automatically flows from one column to the next, and across pages when n
 
 ### Class Hierarchy
 
+```c#
+Scryber.Html.Components.HTMLBody, Scryber.Components
+```
+
 In the library codebase:
 - `HTMLBody` extends `Section`
 - `Section` extends `Panel` extends `VisualComponent`
 - Inherits all section capabilities (headers, footers, page management)
 - Overrides `GetBaseStyle()` to set default 8pt margin
 
+```c#
+using Scryber.HTML.Components;
+
+//documents can either contain a body **or** a frameset.
+//Not both.
+var doc = new HTMLDocument();
+doc.Body = new HTMLBody();
+doc.Body.Contents.Add("All the content goes here.");
+```
+
 ### Page Numbering
 
-Use the custom page element in headers/footers for page numbers:
+Use the custom [page](html_pagenumber_element) element in headers/footers for page numbers:
 
 ```html
 <footer>
@@ -854,10 +868,10 @@ Special expressions available:
     <title>{{model.title}}</title>
     <style>
         body {
-            margin: {{model.pageMargin}}pt;
-            font-family: {{model.fontFamily}};
-            font-size: {{model.fontSize}}pt;
-            background-color: {{model.backgroundColor}};
+            margin: var(concat(model.pageMargin,'pt'));
+            font-family: var(model.fontFamily);
+            font-size: var(concat(model.fontSize,'pt'));
+            background-color: var(model.backgroundColor);
         }
     </style>
 </head>

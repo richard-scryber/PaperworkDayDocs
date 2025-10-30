@@ -40,13 +40,13 @@ The `<blockquote>` element creates a block-level quotation container that:
 - Includes left padding (5pt) and vertical margins (5pt top and bottom)
 - Takes full width of its parent container
 - Can contain any block or inline elements including paragraphs, headings, and nested quotes
-- Supports the `cite` attribute for referencing the source URL (via data binding)
+- Supports the `cite` attribute for referencing the source URL
 - Can generate PDF bookmarks/outlines when a `title` attribute is set
 
 ```html
 <blockquote>
     <p>The best way to predict the future is to invent it.</p>
-    <footer>— Alan Kay</footer>
+    <cite>— Alan Kay</cite>
 </blockquote>
 ```
 
@@ -165,10 +165,27 @@ While HTML5 supports the `cite` attribute for URLs, visual citation information 
 
 ## Class Hierarchy
 
+```c#
+Scryber.Html.Components.HTMLBlockQuote, Scryber.Components
+```
+
 In the library codebase:
 - `HTMLBlockQuote` extends `BlockQuote` extends `Panel` extends `VisualComponent`
 - The HTML version overrides the base style to provide a left border instead of all-around margins
 - Both versions apply italic font styling to distinguish quoted text
+
+```c#
+using Scryber.Components;
+using Scryber.HTML.Components;
+
+var bquote = new HTMLBlockQuote();
+bquote.ID = "notes";
+var p = new HTMLParagraph();
+p.Contents.Add("NOTE: This content will with a border on the left, and flow with the content");
+bquote.Contents.Add(q);
+
+//page.Contents.Add(bquote);
+```
 
 ---
 
@@ -345,7 +362,7 @@ In the library codebase:
 <blockquote style="padding-left: 40pt; position: relative;">
     <div style="position: absolute; left: 5pt; top: 0;
                 font-size: 24pt; color: #336699;">
-        ℹ
+        i
     </div>
     <p>
         <strong>Important Note:</strong> All submissions must be received

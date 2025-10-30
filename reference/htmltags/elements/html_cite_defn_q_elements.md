@@ -61,6 +61,20 @@ The `<cite>` element represents a citation or reference to a creative work, publ
 
 - Font style: **Italic**
 
+## Class Hierarchy
+
+```c#
+Scryber.Html.Components.HTMLCite, Scryber.Components
+```
+
+In the library codebase:
+- `HTMLCite` extends `HTMLSpan` extends `SpanBase` extends `VisualComponent`
+- Inherits inline display behavior from `SpanBase`
+- Overrides the default attribute name of OutlineTitle to `data-outline-title`
+- Supports nested content through `Contents` collection
+
+---
+
 ### Examples
 
 ```html
@@ -100,6 +114,20 @@ The `<dfn>` element represents the defining instance of a term, typically the fi
 
 - Font style: **Italic**
 
+## Class Hierarchy
+
+```c#
+Scryber.Html.Components.HTMLDefinition, Scryber.Components
+```
+
+In the library codebase:
+- `HTMLDefinition` extends `HTMLSpan` extends `SpanBase` extends `VisualComponent`
+- Inherits inline display behavior from `SpanBase`
+- Overrides the default attribute name of OutlineTitle to `data-outline-title`
+- Supports nested content through `Contents` collection
+
+---
+
 ### Examples
 
 ```html
@@ -134,6 +162,20 @@ The `<q>` element represents a short inline quotation. Browsers typically add qu
 | `hidden` | string | Set to "hidden" to hide the element. |
 | `title` | string | Optional outline/bookmark title. |
 
+
+## Class Hierarchy
+
+```c#
+Scryber.Html.Components.HTMLQuotedSpan, Scryber.Components
+```
+
+In the library codebase:
+- `HTMLQuotedSpan` extends `HTMLSpan` extends `SpanBase` extends `VisualComponent`
+- Inherits inline display behavior from `SpanBase`
+- Supports nested content through `Contents` collection
+
+---
+
 ### Examples
 
 ```html
@@ -161,7 +203,6 @@ The `<q>` element represents a short inline quotation. Browsers typically add qu
 ```
 
 ---
-
 
 
 ## CSS Styling

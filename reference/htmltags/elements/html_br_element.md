@@ -27,17 +27,17 @@ has_toc: false
 
 ## Summary
 
-The `<br>` element creates a line break within text content, forcing subsequent content to start on a new line without creating a new paragraph or block-level container.
+The `<br/>` element creates a line break within text content, forcing subsequent content to start on a new line without creating a new paragraph or block-level container.
 
 ---
 
 ## Usage
 
-The `<br>` element:
+The `<br/>` element:
 - Creates a single line break in flowing text
 - Does not add vertical spacing beyond the line height
 - Works within inline and block-level containers
-- Can be styled (though rarely needed)
+- Should be **closed** when used to respect the xhtml structure.
 - Differs from `<p>` which creates a new paragraph with margins
 
 ```html
@@ -63,11 +63,7 @@ The `<br>` element:
 
 ### CSS Style Support
 
-While `<br>` can technically accept styles, it's rarely styled. Common scenarios:
-
-**Spacing Control**:
-- `margin-top`, `margin-bottom` - Add extra spacing around the break
-- `line-height` - Affects the height of the line break
+While `<br/>` can technically accept styles, it's rarely styled. Common scenarios:
 
 **Visibility**:
 - `display: none` - Hide the break
@@ -79,7 +75,7 @@ While `<br>` can technically accept styles, it's rarely styled. Common scenarios
 
 ### When to Use &lt;br&gt;
 
-Use `<br>` for:
+Use `<br/>` for:
 - **Postal Addresses**: Breaking address lines
 - **Poetry or Verse**: Preserving line structure
 - **Line-Based Content**: Form labels, contact information
@@ -96,7 +92,7 @@ Use `<br>` for:
 
 ### When NOT to Use &lt;br&gt;
 
-Avoid `<br>` for:
+Avoid `<br/>` for:
 - **Spacing Between Sections**: Use `<p>` or `<div>` with margins instead
 - **Creating Lists**: Use `<ul>` or `<ol>` elements
 - **Layout**: Use CSS margins, padding, or positioning
@@ -112,7 +108,7 @@ Avoid `<br>` for:
 
 ### Line Break vs Paragraph Break
 
-**Line Break (`<br>`):**
+**Line Break (`<br/>`):**
 - Creates a new line within the same paragraph
 - No additional vertical spacing
 - Maintains text flow and styling context
@@ -139,7 +135,7 @@ Avoid `<br>` for:
 
 ### Line Break Behavior
 
-The `<br>` element:
+The `<br/>` element:
 - Forces content to the next line at the current position
 - Inherits line height from its parent container
 - Does not break across pages (it's part of the line flow)
@@ -241,13 +237,13 @@ The `<br>` element:
         alice@example.com<br/>
         (555) 123-0001
     </div>
-    <div style="margin-bottom: 15pt;">
+    <div style="margin-bottom: 15pt;break-before: always">
         <strong>Bob Wilson</strong><br/>
         Technical Lead<br/>
         bob@example.com<br/>
         (555) 123-0002
     </div>
-    <div style="margin-bottom: 15pt;">
+    <div style="margin-bottom: 15pt; break-before: always;">
         <strong>Carol Martinez</strong><br/>
         Marketing Director<br/>
         carol@example.com<br/>
@@ -353,16 +349,6 @@ The `<br>` element:
         </td>
     </tr>
 </table>
-```
-
-### Styled Line Break with Extra Spacing
-
-```html
-<p>
-    This is the first section of content.
-    <br style="margin-bottom: 10pt;"/>
-    This is the second section with extra space above it.
-</p>
 ```
 
 ---

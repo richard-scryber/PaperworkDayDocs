@@ -1,7 +1,8 @@
 ---
 layout: default
-title: CSS Style Properties
+title: CSS Properties
 parent: Template reference
+parent_url: /reference/
 has_children: true
 has_toc: false
 nav_order: 4

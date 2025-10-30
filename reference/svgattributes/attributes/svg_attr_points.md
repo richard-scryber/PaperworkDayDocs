@@ -98,6 +98,7 @@ The `points` attribute supports dynamic coordinate generation using data binding
 ### Example 2: Generated Line Chart
 
 ```html
+{% raw %}
 <!-- Model: {
     data: [30, 45, 35, 60, 50, 70, 55],
     width: 280,
@@ -112,11 +113,13 @@ The `points` attribute supports dynamic coordinate generation using data binding
                 }).join(' ')}}"
               fill="none" stroke="#4CAF50" stroke-width="3"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Dynamic Polygon Shape
 
 ```html
+{% raw %}
 <!-- Model: {
     sides: 6,
     radius: 40,
@@ -137,11 +140,13 @@ The `points` attribute supports dynamic coordinate generation using data binding
     <polygon points="{{generatePolygon(centerX, centerY, radius, sides)}}"
              fill="#9C27B0" stroke="#6A1B9A" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 4: Array-based Scatter Points
 
 ```html
+{% raw %}
 <!-- Model: {
     points: [
         {x: 30, y: 40},
@@ -155,11 +160,13 @@ The `points` attribute supports dynamic coordinate generation using data binding
     <polyline points="{{points.map(p => `${p.x},${p.y}`).join(' ')}}"
               fill="none" stroke="#e74c3c" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 5: Temperature Timeline
 
 ```html
+{% raw %}
 <!-- Model: {
     temperatures: [
         {hour: 0, temp: 55},
@@ -179,11 +186,13 @@ The `points` attribute supports dynamic coordinate generation using data binding
                 }).join(' ')}}"
               fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 6: Multi-Series Chart
 
 ```html
+{% raw %}
 <!-- Model: {
     series: [
         {
@@ -212,11 +221,13 @@ The `points` attribute supports dynamic coordinate generation using data binding
                   fill="none" stroke="{{.color}}" stroke-width="2"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Example 7: Grid of Points
 
 ```html
+{% raw %}
 <!-- Model: {
     rows: 5,
     cols: 5,
@@ -242,11 +253,13 @@ The `points` attribute supports dynamic coordinate generation using data binding
         <circle cx="{{.x}}" cy="{{.y}}" r="3" fill="#2196F3"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Example 8: Normalized Data Visualization
 
 ```html
+{% raw %}
 <!-- Model: {
     values: [23, 87, 45, 92, 34, 78, 56, 89],
     normalize: function(values, targetHeight) {
@@ -265,6 +278,7 @@ The `points` attribute supports dynamic coordinate generation using data binding
     <polyline points="{{normalize(values, 100)}}"
               fill="none" stroke="#9C27B0" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -536,11 +550,13 @@ For charts and graphs:
 ### Example 20: Sparkline Chart
 
 ```html
+{% raw %}
 <!-- Model: { sparkData: [12, 18, 15, 22, 19, 25, 23, 28, 24, 30] } -->
 <svg width="150" height="40">
     <polyline points="{{sparkData.map((v, i) => `${5 + i * 15},${35 - v}`).join(' ')}}"
               fill="none" stroke="#4CAF50" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ---
