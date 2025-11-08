@@ -10,8 +10,27 @@ has_toc: false
 ---
 
 # @border : The Border Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `border` attribute provides a simplified way to add borders to tables in PDF documents. This legacy HTML attribute sets a uniform border width around the table and its cells, offering quick border styling for table layouts.
+
+
+---
 
 ## Usage
 

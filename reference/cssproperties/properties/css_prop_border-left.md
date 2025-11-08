@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-left : Left Border Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-left` property is a shorthand that sets the width, style, and color of the left border of an element. This property is particularly useful for creating accent bars, callout boxes, and timeline markers.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-right-width : Right Border Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-right-width` property sets the width of the right border of an element.
+
+---
 
 ## Usage
 

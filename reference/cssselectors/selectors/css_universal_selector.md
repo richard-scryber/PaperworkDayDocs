@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # Universal Selector
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The universal selector matches all elements in the document. It is denoted by an asterisk (*) and has a specificity of 1 point (same as an element selector).
 

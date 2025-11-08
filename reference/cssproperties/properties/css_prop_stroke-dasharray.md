@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # stroke-dasharray : SVG Dashed Line Pattern Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `stroke-dasharray` property defines the pattern of dashes and gaps used to stroke paths and shapes in SVG elements. This property is essential for creating dashed lines, dotted borders, and custom dash patterns in PDF documents.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # @cite : The Citation Source Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `cite` attribute specifies the URL of a source document or resource that explains a quotation, insertion, or deletion. It provides attribution and reference information for `<blockquote>`, `<q>`, `<ins>`, and `<del>` elements, enabling proper citation and documentation of content changes in PDF documents.
+
+---
 
 ## Usage
 

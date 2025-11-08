@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # stroke-linecap : SVG Line Cap Style Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `stroke-linecap` property defines the shape to be used at the end of open subpaths and dashes in SVG strokes. This property controls how line endings appear, whether they are flat, rounded, or extended with a square cap.
+
+---
 
 ## Usage
 

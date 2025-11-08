@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # :root Pseudo-class Selector
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `:root` pseudo-class selector matches the root element of the document. This is typically the `<html>` element or the top-level document container in Scryber.
 

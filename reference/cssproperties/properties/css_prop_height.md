@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # height : Height Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `height` property sets the vertical dimension of an element in PDF documents. It defines how tall an element should be, affecting its layout, content overflow behavior, and how it interacts with other elements in the document flow.
+
+---
 
 ## Usage
 

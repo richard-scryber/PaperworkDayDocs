@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # max-height : Maximum Height Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `max-height` property sets the maximum vertical dimension of an element in PDF documents. It ensures that an element will never be taller than the specified value, even if its content would require more space. This property is essential for controlling layout overflow, maintaining consistent page breaks, and creating fixed-height sections that adapt to varying content amounts.
+
+---
 
 ## Usage
 

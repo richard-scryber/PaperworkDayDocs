@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # column-span : Column Span Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `column-span` property specifies whether an element should span across all columns in a multi-column layout. This is essential for creating headlines, section dividers, images, and other elements that need to break out of the column flow and span the full width of the container in newsletters, magazines, and professional documents.
+
+---
 
 ## Usage
 

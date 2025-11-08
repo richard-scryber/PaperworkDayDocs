@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # margin-inline-start : Inline Start Margin Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `margin-inline-start` property sets the margin at the inline start edge of an element in PDF documents. This is a logical property that maps to either left or right margin depending on the writing direction. In left-to-right (LTR) languages it corresponds to `margin-left`, while in right-to-left (RTL) languages it corresponds to `margin-right`.
+
+---
 
 ## Usage
 

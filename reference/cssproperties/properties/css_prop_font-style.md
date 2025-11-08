@@ -11,9 +11,26 @@ has_toc: false
 
 # font-style : The Font Style Property
 
-Summary
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `font-style` property specifies the stylistic variation of a font, primarily controlling whether text is displayed in normal, italic, or oblique style. This property is essential for emphasizing text or creating visual distinction in PDF documents.
+
+---
 
 ## Usage
 

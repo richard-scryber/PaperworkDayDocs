@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # margin : Margin Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `margin` property is a shorthand for setting all four margin sides (top, right, bottom, left) of an element in PDF documents. Margins create space outside the element's border, separating it from other elements and controlling document layout and white space.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # background-repeat : Background Repeat Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `background-repeat` property controls how background images are repeated (tiled) within an element in PDF documents. This property is essential for creating patterns, borders, and controlling single-instance image display.
+
+---
 
 ## Usage
 

@@ -10,8 +10,27 @@ has_toc: false
 ---
 
 # border-top : Top Border Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
+
 
 The `border-top` property is a shorthand that sets the width, style, and color of the top border of an element. This property allows precise control over individual border sides, enabling asymmetric designs and visual emphasis.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # list-style-type : List Marker Type Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `list-style-type` property specifies the type of marker (bullet or number) to display for list items. This property provides various built-in marker styles for both ordered and unordered lists, essential for creating properly formatted lists in PDF documents.
+
+---
 
 ## Usage
 

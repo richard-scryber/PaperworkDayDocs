@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # top : Top Position Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `top` property specifies the vertical offset from the top edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement. This property is essential for creating headers, fixed content, and precisely positioned elements.
+
+---
 
 ## Usage
 

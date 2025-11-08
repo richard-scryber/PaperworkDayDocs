@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # column-gap : Column Gap Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `column-gap` property specifies the space between columns in a multi-column layout. This property is essential for creating visually balanced and readable multi-column documents, controlling the whitespace that separates column content in newsletters, magazines, brochures, and professional reports.
+
+---
 
 ## Usage
 

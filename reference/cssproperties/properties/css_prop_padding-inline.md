@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # padding-inline : Inline Padding Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `padding-inline` property is a logical shorthand for setting both `padding-inline-start` and `padding-inline-end` of an element in PDF documents. This property adapts to the writing direction, making it ideal for creating internationalized documents that work in both LTR and RTL languages.
+
+---
 
 ## Usage
 

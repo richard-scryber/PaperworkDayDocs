@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # fill : SVG Fill Color Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `fill` property sets the interior color of SVG shapes and vector elements in PDF documents. This property is fundamental for styling vector graphics, icons, and custom shapes embedded in PDFs.
+
+---
 
 ## Usage
 

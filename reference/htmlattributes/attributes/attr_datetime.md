@@ -10,8 +10,23 @@ has_toc: false
 ---
 
 # @datetime : The Date and Time Attribute
+{: .no_toc }
 
 The `datetime` attribute specifies a machine-readable date, time, or duration for `<time>`, `<ins>`, and `<del>` elements. It provides precise temporal information in ISO 8601 format, enabling proper date/time representation in PDF documents while allowing human-readable content to be displayed separately.
+
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 

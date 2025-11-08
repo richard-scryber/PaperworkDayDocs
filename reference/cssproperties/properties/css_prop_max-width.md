@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # max-width : Maximum Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `max-width` property sets the maximum horizontal dimension of an element in PDF documents. It ensures that an element will never be wider than the specified value, even if its content or other constraints would make it larger. This property is essential for responsive layouts, readability optimization, and preventing content from extending beyond desired boundaries.
+
+---
 
 ## Usage
 

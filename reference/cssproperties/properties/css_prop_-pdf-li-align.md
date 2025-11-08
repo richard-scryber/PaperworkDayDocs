@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # -pdf-li-align : List Item Alignment Property (Scryber Custom)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `-pdf-li-align` property is a Scryber-specific extension that controls the horizontal alignment of list item markers relative to the list content. This property provides precise control over how bullets, numbers, and custom markers are positioned, enabling professional document layouts with properly aligned list structures.
+
+---
 
 ## Usage
 

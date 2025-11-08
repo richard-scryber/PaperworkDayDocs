@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # page-break-after : Page Break After Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `page-break-after` property controls whether a page break should occur after an element when generating PDF documents. This property is useful for ensuring specific content ends before a page break, separating sections, and controlling document flow. Note that this is a legacy CSS2 property; consider using the newer `break-after` property for more options.
+
+---
 
 ## Usage
 

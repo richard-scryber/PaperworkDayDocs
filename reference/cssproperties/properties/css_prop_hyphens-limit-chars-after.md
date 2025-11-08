@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # hyphens-limit-chars-after : Minimum Characters After Hyphen
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `hyphens-limit-chars-after` property specifies the minimum number of characters that must appear after the hyphenation point in a word. This ensures readable word fragments following the hyphen in PDF documents with automatic hyphenation.
+
+---
 
 ## Usage
 

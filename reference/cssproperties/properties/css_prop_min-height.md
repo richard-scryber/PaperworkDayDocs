@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # min-height : Minimum Height Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `min-height` property sets the minimum vertical dimension of an element in PDF documents. It ensures that an element will never be shorter than the specified value, even if its content would require less space. This property is crucial for maintaining consistent layouts and preventing elements from collapsing when content is minimal.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # text-decoration : Text Decoration Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `text-decoration` property specifies decorative lines that appear on text. This is commonly used to underline links, strike through deleted text, or add emphasis to content in PDF documents.
+
+---
 
 ## Usage
 

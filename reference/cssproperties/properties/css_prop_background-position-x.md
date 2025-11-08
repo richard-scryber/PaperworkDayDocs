@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # background-position-x : Background Horizontal Position Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `background-position-x` property sets the horizontal position of background images within an element in PDF documents. This property allows independent control of horizontal positioning without affecting vertical placement.
+
+---
 
 ## Usage
 

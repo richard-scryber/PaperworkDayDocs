@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # opacity : Element Opacity Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `opacity` property controls the transparency level of an entire element, including all its children, backgrounds, borders, and text. This property is essential for creating fade effects, overlays, watermarks, and visual hierarchy in PDF documents.
+
+---
 
 ## Usage
 

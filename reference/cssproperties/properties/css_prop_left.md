@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # left : Left Position Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `left` property specifies the horizontal offset from the left edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement along the horizontal axis. This property is essential for creating sidebars, precise layouts, and horizontally positioned content.
+
+---
 
 ## Usage
 

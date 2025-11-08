@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # -pdf-li-concat : List Item Concatenation Property (Scryber Custom)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `-pdf-li-concat` property is a Scryber-specific extension that controls whether nested list item numbers are concatenated with their parent numbers to create hierarchical numbering schemes. This property is essential for creating professional documentation with compound numbering like 1.1, 1.2.3, or Section 2.3.1.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # @data-outline-title : The Custom Outline Title Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `data-outline-title` attribute specifies a custom title for PDF bookmarks and outlines. It allows you to provide a different text for the document navigation structure than what appears in the visible content, enabling more descriptive or concise bookmark entries.
+
+---
 
 ## Usage
 

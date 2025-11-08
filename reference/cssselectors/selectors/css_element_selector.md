@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # Element Selector (Type Selector)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The element selector matches elements by their HTML tag name. It is the most basic CSS selector and has a specificity of 1.
 

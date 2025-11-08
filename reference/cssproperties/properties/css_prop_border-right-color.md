@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-right-color : Right Border Color Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-right-color` property sets the color of the right border.
+
+---
 
 ## Usage
 

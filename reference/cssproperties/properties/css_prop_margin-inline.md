@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # margin-inline : Inline Margin Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `margin-inline` property is a logical shorthand for setting both `margin-inline-start` and `margin-inline-end` of an element in PDF documents. This property adapts to the writing direction, making it ideal for creating internationalized documents that work in both LTR and RTL languages.
+
+---
 
 ## Usage
 

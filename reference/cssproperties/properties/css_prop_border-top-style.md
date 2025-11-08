@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-top-style : Top Border Style Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-top-style` property sets the line style of the top border.
+
+---
 
 ## Usage
 

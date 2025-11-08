@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # CSS Specificity
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 CSS specificity determines which styles are applied when multiple rules target the same element. In Scryber, specificity is calculated based on selector type, ancestor depth, and combinator type.
 

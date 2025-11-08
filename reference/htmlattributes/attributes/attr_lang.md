@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @lang : The Language Attribute
+{: .no_toc
+}
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `lang` attribute specifies the language of an element's content using BCP 47 language tags. It enables proper text rendering, hyphenation, and accessibility in PDF documents, particularly important for multilingual content and internationalization. The attribute can be applied to any HTML element to define language scope.
 

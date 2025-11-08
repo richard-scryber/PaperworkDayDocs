@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # @align and @valign : Alignment Attributes
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `align` and `valign` attributes control horizontal and vertical alignment of content within table cells and other block elements. These legacy HTML attributes provide quick alignment control for PDF documents and remain useful for table-based layouts.
+
+---
 
 ## Usage
 

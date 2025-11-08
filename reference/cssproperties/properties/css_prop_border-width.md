@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-width : Border Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-width` property sets the width of all four borders of an element. This property controls the thickness of borders and can be specified using named values or length measurements.
+
+---
 
 ## Usage
 

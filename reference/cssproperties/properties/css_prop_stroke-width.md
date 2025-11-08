@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # stroke-width : SVG Stroke Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `stroke-width` property controls the thickness of SVG shape strokes in PDF documents. This property is fundamental for defining line weights, border thickness, and the visual prominence of vector graphics outlines.
+
+---
 
 ## Usage
 

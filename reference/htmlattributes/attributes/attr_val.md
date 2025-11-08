@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @val : The Output Value Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `val` attribute specifies the value of an HTML `<output>` element. It provides an alternative to placing the output value as text content between the opening and closing tags.
 

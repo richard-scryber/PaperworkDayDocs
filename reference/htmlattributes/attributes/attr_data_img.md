@@ -10,8 +10,27 @@ has_toc: false
 ---
 
 # @data-img, @data-img-data, @data-img-type : Image Data Attributes
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `data-img`, `data-img-data`, and `data-img-type` attributes provide alternative methods for loading images in Scryber PDF documents. These attributes enable binding image data directly from memory, databases, or APIs without requiring file system access, supporting dynamic binary image data with explicit MIME type specification.
+
+
+---
 
 ## Usage
 

@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @data-passthrough : The Style Passthrough Attribute
+{: .no_toc }
 
 The `data-passthrough` attribute controls style inheritance for embedded content in `<iframe>` elements. It determines whether styles from the parent document should be applied to externally loaded content, enabling both style isolation and consistent theming across document composition.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Summary
 

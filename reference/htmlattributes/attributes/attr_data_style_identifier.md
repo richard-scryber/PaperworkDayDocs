@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @data-style-identifier : The Style Identification Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `data-style-identifier` attribute provides a unique identifier for caching and optimizing style application across repeated elements. It enables Scryber to cache computed styles for elements that share the same styling, significantly improving performance when generating PDFs with many similar elements.
 

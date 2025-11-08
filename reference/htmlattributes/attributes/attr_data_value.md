@@ -10,8 +10,21 @@ has_toc: false
 ---
 
 # @data-value : The Computed Value Attribute
+{: .no_toc }
 
 The `data-value` attribute enables computed or dynamic value assignment for elements, allowing you to bind expressions to element values, store intermediate calculations, or pass computed values to document parameters. This attribute is primarily used with `<var>` elements for creating document-level variables and computed values.
+
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 

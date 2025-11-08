@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # page : Page Context Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `page` property specifies which named page context an element should use when generating PDF documents. This allows different parts of a document to use different page configurations (size, orientation, margins, headers, footers) by referencing named `@page` rules. It's essential for creating complex documents with varying page layouts.
+
+---
 
 ## Usage
 
@@ -57,12 +75,10 @@ The `page` property can be applied to:
 - Elements with different `page` values will typically start on new pages
 - Named pages can have different sizes, orientations, margins, and other properties
 - The `page` property is inherited, so child elements use the parent's page context
-- Setting a different `page` value usually triggers an implicit page break
 - Named pages are ideal for documents with mixed page layouts (portrait/landscape)
 - You can define multiple named page contexts in a single document
 - The `page` property works in conjunction with page break properties
 - Named pages enable sophisticated document layouts with varying specifications
-- First, left, and right pseudo-classes can be used with named pages: `@page name:first`
 
 ---
 

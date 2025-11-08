@@ -10,10 +10,27 @@ has_toc: false
 ---
 
 # font-size : The Font Size Property
+{: .no_toc }
 
-Summary
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
+
 
 The `font-size` property sets the size of text in PDF documents. It accepts absolute length values (points, pixels, etc.) or predefined keyword values that map to specific point sizes. Font size is fundamental to text rendering and affects the visual hierarchy and readability of PDF content.
+
+---
 
 ## Usage
 

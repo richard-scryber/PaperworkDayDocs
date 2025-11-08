@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @srcset : The Source Set Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `srcset` attribute specifies multiple image sources for responsive images, allowing different versions to be selected based on device capabilities, screen resolution, or viewport dimensions. Used with `<img>` and `<source>` elements, it enables resolution-adaptive and art-directed images. In PDF generation, it can optimize image quality for high-resolution printing.
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # paint-order : SVG Paint Layering Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `paint-order` property specifies the order in which fill, stroke, and markers are painted on SVG elements. This property controls the layering of these paint operations, allowing you to create effects like outlined text, bordered shapes, and customized rendering orders.
+
+---
 
 ## Usage
 

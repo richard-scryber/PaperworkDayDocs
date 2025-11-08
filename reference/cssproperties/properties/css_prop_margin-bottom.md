@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # margin-bottom : Bottom Margin Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `margin-bottom` property sets the bottom margin of an element in PDF documents. The bottom margin creates space below the element, separating it from following elements and controlling vertical spacing and document flow.
+
+---
 
 ## Usage
 

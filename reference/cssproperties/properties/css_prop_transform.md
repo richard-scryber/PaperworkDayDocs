@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # transform : Element Transformation Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `transform` property applies 2D or 3D transformations to elements in PDF documents. This property allows you to rotate, scale, translate (move), skew, or apply matrix transformations to both HTML and SVG elements, enabling complex visual effects and layouts.
+
+---
 
 ## Usage
 

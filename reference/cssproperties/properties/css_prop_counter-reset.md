@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # counter-reset : Counter Initialization Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `counter-reset` property creates or resets one or more CSS counters to a specified value. Counters are used with the `content` property and `counter()` or `counters()` functions to automatically number elements, create hierarchical numbering systems, and generate sequential content.
+
+---
 
 ## Usage
 

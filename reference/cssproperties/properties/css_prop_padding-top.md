@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # padding-top : Top Padding Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `padding-top` property sets the top padding of an element in PDF documents. Top padding creates space inside the element above the content, between the top border and the content, inheriting the element's background color.
+
+---
 
 ## Usage
 

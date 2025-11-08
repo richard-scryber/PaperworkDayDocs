@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # -pdf-li-postfix : List Item Postfix Property (Scryber Custom)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `-pdf-li-postfix` property is a Scryber-specific extension that adds custom text after list item markers. This property enables advanced list formatting by allowing you to append text, symbols, or punctuation to list numbers or bullets, creating professional documentation with custom marker styles like "1.", "A)", "1.1:", or "Item 5 -".
+
+---
 
 ## Usage
 

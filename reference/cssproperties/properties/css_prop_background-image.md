@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # background-image : Background Image Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `background-image` property sets one or more background images for an element in PDF documents. This property is essential for adding logos, watermarks, letterheads, patterns, and decorative elements to enhance document appearance and branding.
+
+---
 
 ## Usage
 

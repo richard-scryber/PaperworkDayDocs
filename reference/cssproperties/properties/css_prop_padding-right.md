@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # padding-right : Right Padding Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `padding-right` property sets the right padding of an element in PDF documents. Right padding creates space inside the element to the right of the content, between the right border and the content, inheriting the element's background color.
+
+---
 
 ## Usage
 

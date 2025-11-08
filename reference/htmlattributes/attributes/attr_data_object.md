@@ -10,8 +10,27 @@ has_toc: false
 ---
 
 # @data : The Object Data Source Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `data` attribute on the `<object>` element specifies the file source for PDF attachments. It accepts file paths (relative or absolute), URLs, and dynamic data binding expressions, enabling flexible file embedding in PDF documents. Attached files remain as separate entities within the PDF, accessible through PDF viewer attachment interfaces.
+{: .no-}
+
+---
 
 ## Usage
 

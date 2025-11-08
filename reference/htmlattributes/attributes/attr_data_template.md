@@ -10,8 +10,20 @@ has_toc: false
 ---
 
 # @data-template : The Inline Template Content Attribute
+{: .no_toc }
 
 The `data-template` attribute allows you to define template content inline as a string attribute value, rather than as child elements. This provides a convenient way to specify simple templates, dynamically generate template content, or create templates from external sources.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 

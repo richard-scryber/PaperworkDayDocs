@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @optimum : The Optimal Value Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `optimum` attribute specifies the ideal target value for the meter element in PDF documents. It works with `low` and `high` threshold attributes to determine which range is considered optimal, directly controlling the color-coding logic that visually indicates whether the current value is in an optimal, suboptimal, or critically suboptimal state.
 

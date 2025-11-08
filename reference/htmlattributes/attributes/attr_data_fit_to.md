@@ -10,10 +10,26 @@ has_toc: false
 ---
 
 # @data-fit-to : The PDF Link Destination Fit Mode Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
+
 
 The `data-fit-to` attribute controls how PDF viewers display the destination when following internal document links. It specifies the zoom level and viewport positioning when navigating to anchored elements, providing precise control over the viewing experience for internal navigation.
 
-## Summary
 
 The `data-fit-to` attribute defines the display mode for link destinations:
 

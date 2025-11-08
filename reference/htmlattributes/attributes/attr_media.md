@@ -10,6 +10,21 @@ has_toc: false
 ---
 
 # @media : The Media Query Attribute
+{: .no_toc}
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `media` attribute specifies media queries that determine when styles or resources should be applied. Used primarily with `<link>` and `<style>` elements, it enables conditional CSS loading based on output characteristics. In PDF generation context, it allows creating print-optimized styles and responsive layouts tailored for different page sizes.
 

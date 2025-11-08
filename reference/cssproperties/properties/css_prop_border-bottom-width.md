@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-bottom-width : Bottom Border Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-bottom-width` property sets the width of the bottom border of an element.
+
+---
 
 ## Usage
 

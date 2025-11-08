@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # break-after : Break After Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `break-after` property controls page and column breaks after an element when generating PDF documents. This is the modern CSS3 replacement for `page-break-after`, offering more control including column breaks for multi-column layouts. It ensures specific content ends before a break, creating clear document structure and proper section separation.
+
+---
 
 ## Usage
 

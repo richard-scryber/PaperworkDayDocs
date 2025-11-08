@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # background : Background Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `background` property is a shorthand for setting multiple background-related properties in a single declaration. This property is essential for efficiently styling backgrounds in PDF documents, combining image, color, position, size, and repeat settings.
+
+---
 
 ## Usage
 

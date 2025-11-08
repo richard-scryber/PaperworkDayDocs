@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @http-equiv : The HTTP Header Equivalent Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+# Summary
 
 The `http-equiv` attribute provides an HTTP header equivalent for HTML `<meta>` elements. In web contexts, it instructs browsers to behave as if a specific HTTP header was received. In PDF generation, it is primarily informational and maintains HTML compatibility.
 

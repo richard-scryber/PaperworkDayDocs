@@ -10,8 +10,23 @@ has_toc: false
 ---
 
 # @for : The Label Association Attribute
+{: .no_toc }
 
 The `for` attribute creates a semantic association between a `<label>` element and a form input field. It references the `id` of the associated input, establishing a programmatic connection between the label and the field. While PDFs are static documents, the `for` attribute improves code organization, readability, and documents field relationships.
+
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 

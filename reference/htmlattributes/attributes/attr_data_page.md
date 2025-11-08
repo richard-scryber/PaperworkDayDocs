@@ -10,12 +10,24 @@ has_toc: false
 ---
 
 # @data-page-* : Frame Page Selection Attributes
+{: .no_toc }
 
 The `data-page-start` and `data-page-count` attributes control which pages from a source document are inserted when using `<frame>` elements in Scryber PDF documents. These attributes enable selective page inclusion for document assembly and page range operations.
 
 ---
 
-## Summary
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `data-page-*` attributes provide fine-grained control over page insertion when assembling PDF documents from multiple sources. They work specifically with the `<frame>` element to:
 

@@ -10,8 +10,21 @@ has_toc: false
 ---
 
 # @data-repeat : The Table Header Repetition Attribute
+{: .no_toc }
 
 The `data-repeat` attribute controls whether table header rows (`<thead>`) automatically repeat at the top of each page when a table spans multiple pages in a PDF document. This is a critical feature for multi-page tables, ensuring that column headers remain visible and providing context for data on every page.
+
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 

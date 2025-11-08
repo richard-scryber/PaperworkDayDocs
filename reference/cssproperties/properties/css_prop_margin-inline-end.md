@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # margin-inline-end : Inline End Margin Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `margin-inline-end` property sets the margin at the inline end edge of an element in PDF documents. This is a logical property that maps to either right or left margin depending on the writing direction. In left-to-right (LTR) languages it corresponds to `margin-right`, while in right-to-left (RTL) languages it corresponds to `margin-left`.
+
+---
 
 ## Usage
 

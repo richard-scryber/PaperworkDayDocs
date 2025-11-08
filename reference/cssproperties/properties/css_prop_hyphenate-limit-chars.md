@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # hyphenate-limit-chars : Hyphenation Character Limits
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `hyphenate-limit-chars` property specifies the minimum number of characters in a word before hyphenation, and the minimum number of characters before and after the hyphenation point. This is a shorthand property for fine-tuning automatic hyphenation behavior in PDF documents.
+
+---
 
 ## Usage
 

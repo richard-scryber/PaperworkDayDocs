@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # hyphens : Hyphenation Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `hyphens` property controls whether and how words should be hyphenated when text wraps across multiple lines. This is particularly important for justified text, narrow columns, and languages with long compound words in PDF documents.
+
+---
 
 ## Usage
 

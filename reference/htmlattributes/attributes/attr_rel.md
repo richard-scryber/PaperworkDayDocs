@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @rel : The Relationship Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `rel` attribute specifies the relationship between the current document and a linked resource. Used primarily with `<link>` elements, it defines resource types such as stylesheets, icons, alternate versions, and preload hints. In PDF generation, it's essential for linking CSS files and defining document metadata relationships.
 

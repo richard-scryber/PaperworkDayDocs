@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @width and @height : The Sizing Attributes
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `width` and `height` attributes control the dimensions of elements in PDF documents. They are primarily used with images, iframes, tables, and table cells, supporting various units (points, pixels, percentages) and enabling precise layout control through both explicit values and data binding.
 

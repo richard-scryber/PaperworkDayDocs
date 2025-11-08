@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # bottom : Bottom Position Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `bottom` property specifies the vertical offset from the bottom edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement from the bottom. This property is essential for creating footers, fixed bottom content, and precisely positioned elements anchored to the bottom.
+
+---
 
 ## Usage
 

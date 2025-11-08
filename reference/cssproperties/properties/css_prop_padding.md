@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # padding : Padding Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `padding` property is a shorthand for setting all four padding sides (top, right, bottom, left) of an element in PDF documents. Padding creates space inside the element's border, between the border and the content, and inherits the element's background color.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # stroke-opacity : SVG Stroke Opacity Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `stroke-opacity` property controls the transparency of SVG shape strokes independently from the fill. This property enables precise control over outline transparency while maintaining fill opacity, essential for creating layered graphics and sophisticated visual effects in PDF documents.
+
+---
 
 ## Usage
 

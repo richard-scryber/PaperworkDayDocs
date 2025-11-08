@@ -10,10 +10,26 @@ has_toc: false
 ---
 
 # font-family : The Font Family Property
+{: .no_toc }
 
-Summary
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `font-family` property specifies the typeface to be used for rendering text in PDF documents. It accepts a prioritized list of font family names, allowing for fallback options when the primary font is not available. Font names can be specified with or without quotes.
+
+---
 
 ## Usage
 

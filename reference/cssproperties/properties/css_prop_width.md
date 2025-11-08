@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # width : Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `width` property sets the horizontal dimension of an element in PDF documents. It defines how wide an element should be, affecting its layout and how it interacts with other elements in the document flow.
+
+---
 
 ## Usage
 

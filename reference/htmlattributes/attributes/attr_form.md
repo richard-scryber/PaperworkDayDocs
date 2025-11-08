@@ -10,8 +10,25 @@ has_toc: false
 ---
 
 # @form : The Associated Form Identifier Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+## Summary 
 
 The `form` attribute associates an HTML output element with a form element by its ID. This attribute enables output elements to be linked to forms even when they are not nested within the form's DOM structure.
+
+---
 
 ## Usage
 

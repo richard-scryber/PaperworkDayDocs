@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # break-inside : Break Inside Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `break-inside` property controls whether page and column breaks are allowed within an element when generating PDF documents. This is the modern CSS3 replacement for `page-break-inside`, offering more control including column break prevention for multi-column layouts. It's essential for keeping content blocks together and maintaining visual coherence.
+
+---
 
 ## Usage
 

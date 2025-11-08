@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # text-decoration-line : Text Decoration Line Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `text-decoration-line` property specifies the type of decoration line to apply to text. This property is part of the text-decoration shorthand and provides granular control over text decoration effects in PDF documents.
+
+---
 
 ## Usage
 

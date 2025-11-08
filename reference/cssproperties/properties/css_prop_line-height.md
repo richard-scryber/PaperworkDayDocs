@@ -10,10 +10,26 @@ has_toc: false
 ---
 
 # line-height : The Line Height Property
+{: .no_toc }
 
-Summary
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `line-height` property sets the vertical spacing between lines of text in PDF documents. It controls the leading (space between baselines of consecutive lines) and significantly affects readability. Line-height can be specified as an absolute unit, a unitless multiplier, or a relative unit (em units).
+
+---
 
 ## Usage
 

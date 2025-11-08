@@ -1,6 +1,6 @@
 logo: "/assets/PaperworkLogoAndName.png"
-title: Paperwork
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Scryber.Core
+description: The documentation for the Scryber.Code open source PDF creation library for dotnet.
 theme: just-the-docs
 color_scheme: light
 

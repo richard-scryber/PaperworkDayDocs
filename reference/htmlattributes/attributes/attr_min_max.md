@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @min and @max : The Value Range Attributes
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `min` and `max` attributes define the minimum and maximum values for numeric input fields, meter elements, and progress indicators in PDF documents. They establish the valid range for values, enabling proper percentage calculations, threshold evaluations, and visual scaling in rendered output.
 

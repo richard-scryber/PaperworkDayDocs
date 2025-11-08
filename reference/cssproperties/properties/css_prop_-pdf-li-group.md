@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # -pdf-li-group : List Item Group Property (Scryber Custom)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `-pdf-li-group` property is a Scryber-specific extension that controls how list item numbering is grouped across nested lists. This property enables advanced list numbering schemes commonly found in legal documents, technical specifications, and structured documentation where hierarchical numbering is required.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # stroke : SVG Stroke Color Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `stroke` property sets the outline color of SVG shapes and vector elements in PDF documents. This property is essential for creating borders around shapes, drawing lines, and defining the edges of vector graphics.
+
+---
 
 ## Usage
 

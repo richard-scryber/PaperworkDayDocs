@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # hyphens-limit-chars-length : Minimum Word Length for Hyphenation
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `hyphens-limit-chars-length` property specifies the minimum number of characters a word must have before it can be hyphenated. This property provides granular control over which words are eligible for automatic hyphenation in PDF documents.
+
+---
 
 ## Usage
 

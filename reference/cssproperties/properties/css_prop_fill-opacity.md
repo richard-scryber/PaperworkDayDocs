@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # fill-opacity : SVG Fill Opacity Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `fill-opacity` property controls the transparency of SVG shape fills independently from the stroke. This property enables precise control over fill transparency while maintaining stroke opacity, essential for creating layered graphics and subtle visual effects in PDF documents.
+
+---
 
 ## Usage
 

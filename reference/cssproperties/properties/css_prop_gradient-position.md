@@ -10,12 +10,30 @@ has_toc: false
 ---
 
 # x1, y1, x2, y2 : SVG Linear Gradient Position Attributes
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `x1`, `y1`, `x2`, and `y2` attributes define the start and end points of a linear gradient vector in SVG. These attributes control the direction and positioning of the gradient, allowing you to create horizontal, vertical, diagonal, and custom-angled gradients.
 
+---
+
 ## Usage
 
-```html
+```svg
 <linearGradient id="myGradient" x1="value" y1="value" x2="value" y2="value">
     <stop offset="0%" stop-color="#3b82f6"/>
     <stop offset="100%" stop-color="#1e40af"/>

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # page-break-inside : Page Break Inside Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `page-break-inside` property controls whether page breaks are allowed within an element when generating PDF documents. This property is crucial for keeping content blocks together, preventing tables from splitting awkwardly, and maintaining visual coherence. Note that this is a legacy CSS2 property; consider using the newer `break-inside` property for more options.
+
+---
 
 ## Usage
 

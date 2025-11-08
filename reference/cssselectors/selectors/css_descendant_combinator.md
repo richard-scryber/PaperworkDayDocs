@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # Descendant Combinator (Space)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The descendant combinator (space) selects elements that are descendants of another element, regardless of how deeply nested they are in the document tree.
 

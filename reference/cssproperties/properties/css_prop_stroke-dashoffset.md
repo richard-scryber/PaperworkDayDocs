@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # stroke-dashoffset : SVG Dash Pattern Offset Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `stroke-dashoffset` property specifies the distance into the dash pattern to start the dash. This property is commonly used in combination with `stroke-dasharray` to create animated drawing effects or to adjust the position of dashed patterns along a path.
+
+---
 
 ## Usage
 

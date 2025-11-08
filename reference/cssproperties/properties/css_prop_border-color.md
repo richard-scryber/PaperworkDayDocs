@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-color : Border Color Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-color` property sets the color of all four borders of an element. This property controls the visual appearance of borders and can be specified using various color formats including named colors, hexadecimal notation, and RGB/RGBA functions.
+
+---
 
 ## Usage
 

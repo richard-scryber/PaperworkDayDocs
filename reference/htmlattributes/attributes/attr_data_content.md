@@ -10,12 +10,22 @@ has_toc: false
 ---
 
 # @data-content : The Dynamic Content Attribute
-
-The `data-content` attribute enables dynamic content injection into elements at data binding time in Scryber PDF documents. It allows you to specify content as a string that will be parsed and inserted into the element, replacing or augmenting existing content based on the `data-content-action` setting.
+{: .no_toc }
 
 ---
 
-## Summary
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `data-content` attribute provides a mechanism for dynamically generating and inserting content into elements during the data binding phase. Unlike static content declared in the template, `data-content` evaluates at runtime, allowing you to:
 

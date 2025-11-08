@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # float : Float Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `float` property specifies whether an element should float to the left or right side of its container, allowing text and inline elements to wrap around it. This is essential for creating magazine-style layouts, image captions, sidebars, and multi-column designs in PDF documents.
+
+---
 
 ## Usage
 

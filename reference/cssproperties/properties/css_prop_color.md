@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # color : Text Color Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `color` property sets the foreground color of text content in PDF elements. This property is fundamental for controlling text appearance and establishing visual hierarchy in generated PDFs.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # @data-id : The Reference Identifier Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `data-id` attribute provides a reference identifier for elements that may not have or need a standard `id` attribute. It's primarily used with variable (`<var>`) elements to create a secondary identification system for data referencing and cross-referencing within PDF documents.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # margin-top : Top Margin Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `margin-top` property sets the top margin of an element in PDF documents. The top margin creates space above the element, separating it from preceding elements or the page edge and controlling vertical spacing in document layouts.
+
+---
 
 ## Usage
 

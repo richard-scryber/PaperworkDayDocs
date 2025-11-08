@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @style : The Style Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `style` attribute applies inline CSS styles directly to an HTML element. While inline styles provide quick, element-specific formatting, Scryber offers comprehensive CSS styling support through `<style>` blocks and external stylesheets for more maintainable designs.
 

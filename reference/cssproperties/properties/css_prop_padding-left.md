@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # padding-left : Left Padding Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `padding-left` property sets the left padding of an element in PDF documents. Left padding creates space inside the element to the left of the content, between the left border and the content, inheriting the element's background color.
+
+---
 
 ## Usage
 

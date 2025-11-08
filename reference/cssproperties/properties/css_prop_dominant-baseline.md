@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # dominant-baseline : SVG Vertical Text Alignment Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `dominant-baseline` property specifies the vertical alignment of SVG text content relative to the baseline. This property controls how text is positioned vertically at its anchor point, allowing precise control over text placement in diagrams, charts, and technical drawings.
+
+---
 
 ## Usage
 

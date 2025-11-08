@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # stop-opacity : SVG Gradient Stop Transparency Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `stop-opacity` property specifies the opacity (transparency) value at a gradient stop within SVG gradient definitions. This property enables creating gradients that fade to transparent, allowing backgrounds and underlying elements to show through.
+
+---
 
 ## Usage
 

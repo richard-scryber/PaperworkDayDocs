@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # word-spacing : Word Spacing Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `word-spacing` property controls the horizontal spacing between words in text. This property adjusts the space added to the default word separation and can be used to improve readability or create specific typographic effects in PDF documents.
+
+---
 
 ## Usage
 

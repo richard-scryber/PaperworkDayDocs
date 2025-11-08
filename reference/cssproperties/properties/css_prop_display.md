@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # display : Display Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `display` property specifies how an element is rendered in the document layout. It controls whether an element is treated as a block-level element, inline element, table element, or hidden entirely. This is fundamental for controlling document structure and layout in PDF generation.
+
+---
 
 ## Usage
 

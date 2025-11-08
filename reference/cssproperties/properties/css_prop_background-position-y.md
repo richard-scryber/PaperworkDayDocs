@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # background-position-y : Background Vertical Position Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `background-position-y` property sets the vertical position of background images within an element in PDF documents. This property allows independent control of vertical positioning without affecting horizontal placement.
+
+---
 
 ## Usage
 

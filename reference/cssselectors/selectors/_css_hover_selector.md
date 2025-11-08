@@ -23,6 +23,9 @@ element:hover {
 
 Applies styles to elements when they are in a hover/mouseover state.
 
+{: .warning }
+Hover is not currently supported in the library, but we are expecting this to be included with the next major release.
+
 ---
 
 ## Syntax Examples

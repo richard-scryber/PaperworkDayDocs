@@ -11,6 +11,22 @@ has_toc: false
 
 # @high and @low : The Threshold Value Attributes
 
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
+
 The `high` and `low` attributes define threshold boundaries for the meter element in PDF documents. They establish critical ranges that determine the visual color-coding of meter values, enabling automatic indication of whether measurements are in optimal, suboptimal, or critically suboptimal ranges based on the current value and optimum setting.
 
 ## Usage

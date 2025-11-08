@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # Class Selector
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The class selector matches elements by their class attribute value. It is denoted by a period (.) followed by the class name and has a specificity of 2-4 points depending on the number of classes.
 

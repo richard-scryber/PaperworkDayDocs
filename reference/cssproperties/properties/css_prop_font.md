@@ -11,9 +11,26 @@ has_toc: false
 
 # font : The Shorthand Font Property
 
-Summary
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `font` property is a shorthand CSS property that sets multiple font-related properties in a single declaration. It can set font-style, font-variant, font-weight, font-size, line-height, and font-family. Alternatively, it can set the font to a system font using predefined keywords.
+
+---
 
 ## Usage
 

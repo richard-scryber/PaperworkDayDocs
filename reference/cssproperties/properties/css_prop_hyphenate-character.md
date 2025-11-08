@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # hyphenate-character : Custom Hyphenation Character
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `hyphenate-character` property specifies the character to use at the end of a line when a word is hyphenated. This allows customization of the hyphen symbol for different languages, stylistic preferences, or special typographic requirements in PDF documents.
+
+---
 
 ## Usage
 

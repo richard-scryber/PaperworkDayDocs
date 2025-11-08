@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # counter-increment : Counter Modification Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `counter-increment` property increases or decreases the value of one or more CSS counters. Counters are used with the `content` property and `counter()` or `counters()` functions to automatically number elements and create sequential content in documents.
+
+---
 
 ## Usage
 

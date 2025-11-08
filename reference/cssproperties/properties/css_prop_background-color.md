@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # background-color : Background Color Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `background-color` property sets the background color of an element in PDF documents. This property is essential for creating visual distinction, highlighting content areas, and establishing document aesthetics.
+
+---
 
 ## Usage
 

@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # Multiple Selectors (Comma-Separated)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 Multiple selectors allow you to apply the same styles to different elements by separating selectors with commas. This is also known as a selector list or grouping selectors.
 

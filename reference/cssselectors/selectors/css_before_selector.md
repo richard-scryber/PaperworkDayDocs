@@ -1,6 +1,6 @@
 ---
 layout: default
-title: :before / ::before Pseudo-class
+title: ::before Pseudo-class
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference
@@ -10,8 +10,24 @@ has_toc: false
 ---
 
 # :before / ::before Pseudo-class Selector
+{: .no_toc }
 
-The `:before` and `::before` pseudo-class selectors target the "before" state of an element, allowing you to style content or elements that appear before the main element. Both single-colon (`:before`) and double-colon (`::before`) syntax are supported.
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
+
+The `::before` pseudo-class selector targets the "before" state of an element, allowing you to style content or elements that appear before the main element. Both single-colon (`:before`) and double-colon (`::before`) syntax are supported (although the double-colon is recommended).
 
 ## Usage
 

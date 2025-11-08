@@ -10,10 +10,28 @@ has_toc: false
 ---
 
 # border-bottom : Bottom Border Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-bottom` property is a shorthand that sets the width, style, and color of the bottom border of an element. This property is commonly used for underlines, section separators, and footer accents.
 
 ## Usage
+
+---
 
 ```css
 selector {

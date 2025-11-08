@@ -10,8 +10,27 @@ has_toc: false
 ---
 
 # @hidden : The Hidden Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `hidden` attribute controls the visibility of an element in the rendered PDF document. When set to "hidden", the element and all its contents are excluded from the output, making it useful for conditional content display, draft sections, and dynamic visibility control through data binding.
+
+
+---
 
 ## Usage
 

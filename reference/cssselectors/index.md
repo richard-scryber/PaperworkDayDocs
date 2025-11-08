@@ -130,11 +130,11 @@ The following selectors are supported in the library.
 
 | Selector  | Example  | Description |
 |---|---|---|
-| <a href='selectors/class.html' >Class Name</a>   | .name | Will match against any element that has that class name associated with it, and apply the style properties.   |
-| <a href='selectors/id.html' >Element ID</a>   | #id | Will match against an element that has that identifier, and apply the style properties.   |
-| <a href='selectors/tag.html' >ELement Name</a>   | div | Will match against any element that has that *is* that element, and apply the style properties.   |
-| <a href='selectors/root.html' >Document Root</a>   | :root | Sets the default properties, or CSS variable values for that document to use during processing.   |
-| <a href='selectors/all.html' >Catch All</a>   | \* | Matches all elements and applies the style properties. Can be used in combination with another selector to reduce the scope.   |
+| <a href='selectors/css_class_selector.html' >Class Name</a>   | .name | Will match against any element that has that class name associated with it, and apply the style properties.   |
+| <a href='selectors/css_id_selector.html' >Element ID</a>   | #id | Will match against an element that has that identifier, and apply the style properties.   |
+| <a href='selectors/css_element_selector.html' >Element Name</a>   | div | Will match against any element that has that *is* that element, and apply the style properties.   |
+| <a href='selectors/css_root_selector.html' >Document Root</a>   | :root | Sets the default properties, or CSS variable values for that document to use during processing.   |
+| <a href='selectors/css_universal_selector.html' >Catch All</a>   | \* | Matches all elements and applies the style properties. Can be used in combination with another selector to reduce the scope.   |
 
 ---
 
@@ -146,9 +146,9 @@ Combinators allow mutiple selectors to be combined into a single match check. Th
 
 | Combinator  | Character  | Description |
 |---|---|---|
-| <a href='combinators/descendant.html' >Descendant</a>   | space (" ") | Whitespace between one selector and the next will match elements on the last selector that have any parent(s) in the hierarchy that match the preceeding selector(s).   |
-| <a href='combinators/child.html' >Direct Child</a>   | &gt; | A greater-than symbol (&gt;) between one selector and the next will match elements on the last selector that have **direct** parent(s) in the hierarchy that match the preceeding selector(s).   |
-| <a href='combinators/list.html' >Selector List</a>   | comma (", ") | A comma between one selector and the next will make a list of selectors and match on any of the selectors present.   |
+| <a href='selectors/css_descendant_combinator.html' >Descendant</a>   | space (" ") | Whitespace between one selector and the next will match elements on the last selector that have any parent(s) in the hierarchy that match the preceeding selector(s).   |
+| <a href='selectors/css_child_combinator.html' >Direct Child</a>   | &gt; | A greater-than symbol (&gt;) between one selector and the next will match elements on the last selector that have **direct** parent(s) in the hierarchy that match the preceeding selector(s).   |
+| <a href='selectors/css_multiple_selectors.html' >Selector List</a>   | comma (", ") | A comma between one selector and the next will make a list of selectors and match on any of the selectors present.   |
 
 ---
 
@@ -157,10 +157,9 @@ Combinators allow mutiple selectors to be combined into a single match check. Th
 
 | Rule Namme  | Example  | Description |
 |---|---|---|
-| <a href='combinators/media.html' >Media Rule</a>   | @media | The media rule groups styles that are most appropriate for a display device. Most specifically the library will only use styles with a 'print' media query within it's list.   |
-| <a href='combinators/page.html' >Page Size Rule</a>   | @page | The page rule allows modification of the page paper sizing, along with margins on that page. They can be named to be applied to individual sections of the resultant document.  |
-| <a href='combinators/font-face.html' >Font Face Rule</a>   | @font-face | The font-face rule defines a custom font available to be used from a local or remote source along with the format it uses. See <a href='/learning/styles/fonts.html' >Using Fonts</a> for more information on font support.   |
-| <a href='combinators/counter-style.html' >Counter Style Rule</a>   | @counter-style | The counter style rule defines a custom counter available to be refererences from a list-style-type or a css counter instruction. See <a href='/learning/styles/counters.html' >Using Counters</a> for more information.   |
+| <a href='selectors/css_media_rule.html' >Media Rule</a>   | @media | The media rule groups styles that are most appropriate for a display device. Most specifically the library will only use styles with a 'print' media query within it's list.   |
+| <a href='selectors/css_page_rule.html' >Page Size Rule</a>   | @page | The page rule allows modification of the page paper sizing, along with margins on that page. They can be named to be applied to individual sections of the resultant document.  |
+| Font Face Rule   | @font-face | The font-face rule defines a custom font available to be used from a local or remote source along with the format it uses. See <a href='/learning/05-typography/' >Using Fonts</a> for more information on font support.  |
 
 ---
 
@@ -170,8 +169,8 @@ Pseudo element are keywords added to a selector to identify particular parts of 
 
 | Name  | Example  | Description |
 |---|---|---|
-| <a href='pseudo/before.html' >Before Content</a>   | ::before | ::before creates new pseudo element that is the first child of the matched element, often used to add cosmetic content. Also supports <a href='/learning/styles/counters.html' >counters</a>  |
-| <a href='pseudo/after.html' >After Content</a>   | ::after | ::after in a style selector creates new pseudo element that is the last child of the matched element, often used to add cosmetic content. Also supports <a href='/learning/styles/counters.html' >counters</a>  |
+| <a href='selectors/css_before_selector.html' >Before Content</a>   | ::before | ::before creates new pseudo element that is the first child of the matched element, often used to add cosmetic content. Also supports <a href='/learning/styles/counters.html' >counters</a>  |
+| <a href='selectors/css_after_selector.html' >After Content</a>   | ::after | ::after in a style selector creates new pseudo element that is the last child of the matched element, often used to add cosmetic content. Also supports <a href='/learning/styles/counters.html' >counters</a>  |
 
 ---
 

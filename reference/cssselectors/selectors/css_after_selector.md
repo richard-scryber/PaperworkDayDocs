@@ -1,6 +1,6 @@
 ---
 layout: default
-title: :after / ::after Pseudo-class
+title: ::after Pseudo-class
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference
@@ -9,9 +9,25 @@ has_children: false
 has_toc: false
 ---
 
-# :after / ::after Pseudo-class Selector
+# ::after Pseudo-class Selector
+{: .no_toc }
 
-The `:after` and `::after` pseudo-class selectors target the "after" state of an element, allowing you to style content or elements that appear after the main element. Both single-colon (`:after`) and double-colon (`::after`) syntax are supported.
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
+
+The `::after` pseudo-class selector targets the "after" state of an element, allowing you to style content or elements that appear after the main element. Both single-colon (`:after`) and double-colon (`::after`) syntax are supported (although the double-colon is recommended).
 
 ## Usage
 

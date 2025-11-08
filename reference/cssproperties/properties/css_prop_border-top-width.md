@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-top-width : Top Border Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-top-width` property sets the width of the top border of an element. Use this property when you need precise control over individual border widths.
+
+---
 
 ## Usage
 

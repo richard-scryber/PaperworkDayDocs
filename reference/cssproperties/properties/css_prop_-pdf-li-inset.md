@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # -pdf-li-inset : List Item Inset Property (Scryber Custom)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `-pdf-li-inset` property is a Scryber-specific extension that controls the horizontal distance (inset) between the list marker and the list item content. This property allows precise control over the spacing between bullets/numbers and their associated text, enabling professional document layouts with optimal readability.
+
+---
 
 ## Usage
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: @media Rule
+title: media at-Rule
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference
@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @media At-Rule
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `@media` at-rule allows you to define conditional styles that apply based on media features such as screen type, width, height, or print settings. This is essential for creating responsive PDF documents or different styles for screen vs. print.
 

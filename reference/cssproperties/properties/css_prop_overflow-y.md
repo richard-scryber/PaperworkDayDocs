@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # overflow-y : Vertical Overflow Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `overflow-y` property controls how content is handled when it exceeds the vertical boundaries of its containing element. This allows independent control of vertical overflow behavior, essential for fixed-height containers, content cards, and paginated layouts in PDF documents.
+
+---
 
 ## Usage
 

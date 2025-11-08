@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # column-count : Column Count Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `column-count` property specifies the number of columns an element should be divided into for multi-column layout. This is essential for creating newspaper-style layouts, magazine columns, brochures, and professional multi-column documents in PDF generation.
+
+---
 
 ## Usage
 

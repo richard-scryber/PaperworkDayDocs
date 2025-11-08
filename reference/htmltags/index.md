@@ -12,6 +12,8 @@ nav_order: 1
 # Supported HTML Element Reference
 {: .no_toc }
 
+---
+
 <details open class='top-toc' markdown="block">
   <summary>
     On this page

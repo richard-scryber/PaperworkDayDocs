@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-style : Border Style Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-style` property sets the line style for all four borders of an element. This property is required for borders to be visible and provides various line patterns including solid, dashed, dotted, and double styles.
+
+---
 
 ## Usage
 

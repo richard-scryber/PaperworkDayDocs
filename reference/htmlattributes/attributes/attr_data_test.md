@@ -10,8 +10,21 @@ has_toc: false
 ---
 
 # @data-test : The Conditional Test Expression Attribute
+{: .no_toc }
 
 The `data-test` attribute evaluates boolean expressions to conditionally render content within `<if>` elements. When the expression evaluates to `true`, the content is rendered; when `false`, the content is completely omitted from the PDF output. This enables sophisticated conditional logic for dynamic document generation.
+
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 

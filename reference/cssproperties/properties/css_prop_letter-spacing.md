@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # letter-spacing : Letter Spacing Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `letter-spacing` property controls the horizontal spacing between characters (letters) in text. This property is useful for adjusting text appearance, creating emphasis, and improving readability in PDF documents.
+
+---
 
 ## Usage
 

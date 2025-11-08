@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # margin-left : Left Margin Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `margin-left` property sets the left margin of an element in PDF documents. The left margin creates space to the left of the element, separating it from adjacent elements or the page edge and controlling horizontal spacing in document layouts.
+
+---
 
 ## Usage
 

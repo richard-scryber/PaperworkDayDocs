@@ -10,10 +10,25 @@ has_toc: false
 ---
 
 # @data-file and @data-file-data : The File Attachment Data Attributes
+{: .no_toc }
 
-The `data-file` and `data-file-data` attributes enable advanced file attachment capabilities in PDF documents, allowing direct binding of embedded file data objects and binary file content. These attributes provide powerful mechanisms for attaching files from memory, databases, APIs, or other dynamic sources.
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Summary
+
+
+The `data-file` and `data-file-data` attributes enable advanced file attachment capabilities in PDF documents, allowing direct binding of embedded file data objects and binary file content. These attributes provide powerful mechanisms for attaching files from memory, databases, APIs, or other dynamic sources.
 
 The `data-file` and `data-file-data` attributes work together to create PDF file attachments from various data sources:
 

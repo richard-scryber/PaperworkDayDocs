@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @data-li-* : List Item Formatting Attributes
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `data-li-*` family of attributes controls the appearance and behavior of list item numbering in Scryber PDF documents. These attributes provide fine-grained control over list styling including numbering style, grouping, concatenation, prefixes, suffixes, alignment, and spacing.
 

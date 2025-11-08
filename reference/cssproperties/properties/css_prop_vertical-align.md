@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # vertical-align : Vertical Alignment Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `vertical-align` property specifies the vertical alignment of inline and table-cell elements relative to their container or baseline. This property is essential for controlling the vertical positioning of text, images, and other inline content in PDF documents.
+
+---
 
 ## Usage
 

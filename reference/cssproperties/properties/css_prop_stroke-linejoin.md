@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # stroke-linejoin : SVG Line Join Style Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `stroke-linejoin` property defines the shape to be used at the corners where two line segments meet in SVG strokes. This property controls how corners appear, whether they are sharp mitered edges, rounded curves, or beveled (cut off) corners.
+
+---
 
 ## Usage
 

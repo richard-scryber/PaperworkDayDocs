@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # list-style : List Style Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `list-style` property is a shorthand for setting all list-related properties in a single declaration. It combines `list-style-type`, `list-style-position`, and `list-style-image` properties to control the appearance and positioning of list item markers.
+
+---
 
 ## Usage
 

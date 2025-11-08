@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # padding-inline-start : Inline Start Padding Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `padding-inline-start` property sets the padding at the inline start edge of an element in PDF documents. This is a logical property that maps to either left or right padding depending on the writing direction. In left-to-right (LTR) languages it corresponds to `padding-left`, while in right-to-left (RTL) languages it corresponds to `padding-right`.
+
+---
 
 ## Usage
 

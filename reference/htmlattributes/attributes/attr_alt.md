@@ -10,8 +10,27 @@ has_toc: false
 ---
 
 # @alt : The Alternative Text Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `alt` attribute provides alternative text for images when they cannot be displayed or for accessibility purposes. While PDFs typically display images successfully, the `alt` attribute serves as important metadata for accessibility tools, screen readers, and PDF document structure, enhancing document usability and compliance.
+
+
+---
 
 ## Usage
 

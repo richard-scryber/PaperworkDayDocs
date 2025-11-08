@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @target : The Link Target Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `target` attribute specifies where to open a linked document or resource. Used with `<a>` (anchor) elements, it controls link behavior such as opening in a new window, the same frame, or the parent frame. In PDF documents, it primarily affects external links and can control whether links open in the same PDF viewer or a new window.
 

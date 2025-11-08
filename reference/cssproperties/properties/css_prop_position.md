@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # position : Position Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `position` property specifies the positioning method used for an element in PDF documents. It determines how an element is positioned on the page and how it interacts with the normal document flow. This is fundamental for creating complex layouts, overlays, headers, footers, and watermarks.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # padding-inline-end : Inline End Padding Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `padding-inline-end` property sets the padding at the inline end edge of an element in PDF documents. This is a logical property that maps to either right or left padding depending on the writing direction. In left-to-right (LTR) languages it corresponds to `padding-right`, while in right-to-left (RTL) languages it corresponds to `padding-left`.
+
+---
 
 ## Usage
 

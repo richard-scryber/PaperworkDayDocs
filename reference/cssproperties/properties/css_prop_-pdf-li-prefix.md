@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # -pdf-li-prefix : List Item Prefix Property (Scryber Custom)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `-pdf-li-prefix` property is a Scryber-specific extension that adds custom text before list item markers. This property enables advanced list formatting by allowing you to prepend text, symbols, or labels to list numbers or bullets, creating professional documentation with custom marker styles like "Item 1:", "Step A)", or "Section 2.1:".
+
+---
 
 ## Usage
 

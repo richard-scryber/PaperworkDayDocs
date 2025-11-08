@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # stop-color : SVG Gradient Stop Color Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `stop-color` property specifies the color value at a gradient stop within SVG gradient definitions. This property is essential for creating linear and radial gradients by defining the colors at specific positions along the gradient vector.
+
+---
 
 ## Usage
 

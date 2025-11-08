@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-left-width : Left Border Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-left-width` property sets the width of the left border of an element.
+
+---
 
 ## Usage
 

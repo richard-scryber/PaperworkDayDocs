@@ -10,12 +10,24 @@ has_toc: false
 ---
 
 # @data-bind-start, @data-bind-step, @data-bind-max : Template Iteration Control Attributes
-
-These three attributes provide precise control over template iteration behavior, enabling pagination, selective item rendering, and performance optimization for large datasets. They work in conjunction with the `data-bind` attribute on `<template>` elements to control which items from a collection are processed and rendered.
+{: .no_toc }
 
 ---
 
-## Summary
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
+
+These three attributes provide precise control over template iteration behavior, enabling pagination, selective item rendering, and performance optimization for large datasets. They work in conjunction with the `data-bind` attribute on `<template>` elements to control which items from a collection are processed and rendered.
 
 The iteration control attributes extend the basic `data-bind` functionality by allowing you to:
 - **Paginate** large datasets by specifying start index and maximum count

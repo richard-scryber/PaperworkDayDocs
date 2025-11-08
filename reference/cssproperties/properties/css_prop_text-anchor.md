@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # text-anchor : SVG Text Alignment Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `text-anchor` property defines the horizontal alignment of SVG text content relative to a given point. This property controls whether text is left-aligned (starts at the point), center-aligned (centered on the point), or right-aligned (ends at the point).
+
+---
 
 ## Usage
 

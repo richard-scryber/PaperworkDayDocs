@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # break-before : Break Before Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `break-before` property controls page and column breaks before an element when generating PDF documents. This is the modern CSS3 replacement for `page-break-before`, offering more control including column breaks for multi-column layouts. It ensures specific content starts on a new page or column, creating clear document structure and organization.
+
+---
 
 ## Usage
 

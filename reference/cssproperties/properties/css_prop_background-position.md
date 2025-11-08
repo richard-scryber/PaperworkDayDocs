@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # background-position : Background Position Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `background-position` property sets the starting position of background images within an element in PDF documents. This property is essential for precisely positioning logos, watermarks, seals, and decorative elements.
+
+---
 
 ## Usage
 

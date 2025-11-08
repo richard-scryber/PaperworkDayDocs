@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @open : The Details Open State Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `open` attribute specifies whether a `<details>` element should be expanded (open) or collapsed (closed) by default. As a boolean attribute, its presence indicates the element is open, while its absence means closed. This enables creation of expandable/collapsible content sections in PDF documents, though PDF support for interactive elements is limited.
 

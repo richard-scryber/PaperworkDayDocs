@@ -10,8 +10,27 @@ has_toc: false
 ---
 
 # @charset : The Character Encoding Attribute
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
 
 The `charset` attribute specifies the character encoding for an HTML document or external resource. When used in `<meta>` elements, it declares the document's character encoding, ensuring proper interpretation and display of text content in the generated PDF. UTF-8 is the recommended encoding for maximum compatibility.
+
+
+---
 
 ## Usage
 

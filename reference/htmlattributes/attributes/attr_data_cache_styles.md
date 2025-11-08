@@ -10,12 +10,24 @@ has_toc: false
 ---
 
 # @data-cache-styles : The Style Caching Performance Attribute
-
-The `data-cache-styles` attribute is a performance optimization feature that caches style calculations for template-generated content. When enabled, Scryber reuses style computations across repeated template instances, dramatically reducing processing time and memory usage for large datasets.
+{: .no_toc }
 
 ---
 
-## Summary
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
+
+The `data-cache-styles` attribute is a performance optimization feature that caches style calculations for template-generated content. When enabled, Scryber reuses style computations across repeated template instances, dramatically reducing processing time and memory usage for large datasets.
 
 The `data-cache-styles` attribute enables style calculation caching for template iterations, providing:
 - **Significant performance improvements** for large collections (100+ items)

@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @title : The Title Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `title` attribute provides additional information about an element. In Scryber PDF documents, it primarily serves to create navigable bookmarks and outline entries, enabling users to quickly jump to different sections of the document through the PDF viewer's navigation panel.
 

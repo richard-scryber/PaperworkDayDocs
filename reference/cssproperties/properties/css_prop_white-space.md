@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # white-space : White Space Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `white-space` property controls how whitespace (spaces, tabs, and line breaks) inside an element is handled. This property is essential for formatting preformatted text, code blocks, and controlling text wrapping behavior in PDF documents.
+
+---
 
 ## Usage
 

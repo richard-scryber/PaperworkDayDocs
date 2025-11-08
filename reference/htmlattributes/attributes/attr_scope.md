@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @scope : The Table Header Scope Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `scope` attribute specifies whether a table header cell (`<th>`) applies to a row, column, or group of rows or columns. It defines the relationship between header cells and data cells, improving table structure, accessibility, and semantic meaning in PDF documents. Proper scope usage is essential for complex tables with multiple header levels.
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # overflow-x : Horizontal Overflow Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `overflow-x` property controls how content is handled when it exceeds the horizontal boundaries of its containing element. This allows independent control of horizontal overflow behavior, useful for wide tables, long text strings, and horizontally scrolling content in PDF documents.
+
+---
 
 ## Usage
 

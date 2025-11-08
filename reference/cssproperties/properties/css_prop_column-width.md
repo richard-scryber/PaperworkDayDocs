@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # column-width : Column Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `column-width` property specifies the ideal or minimum width for columns in a multi-column layout. Unlike `column-count` which sets an exact number of columns, `column-width` allows the browser to determine the optimal number of columns based on available space, making layouts more responsive and adaptable to different page sizes.
+
+---
 
 ## Usage
 

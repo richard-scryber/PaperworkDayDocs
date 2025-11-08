@@ -10,12 +10,25 @@ has_toc: false
 ---
 
 # @data-format : The Number and Date Formatting Attribute
-
-The `data-format` attribute specifies the display format for numeric values and dates in Scryber PDF documents. It uses .NET-style format strings to control how numbers, currency, percentages, and dates are rendered in `<num>`, `<time>`, and `<page>` elements.
+{: .no_toc }
 
 ---
 
-## Summary
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
+
+The `data-format` attribute specifies the display format for numeric values and dates in Scryber PDF documents. It uses .NET-style format strings to control how numbers, currency, percentages, and dates are rendered in `<num>`, `<time>`, and `<page>` elements.
+
 
 The `data-format` attribute enables precise control over the textual representation of numeric and temporal values in PDF output. It applies .NET Standard or Custom format strings to transform raw values into human-readable, locale-appropriate text.
 

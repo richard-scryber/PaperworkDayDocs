@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # size : Page Size Property (for @page rule)
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `size` property is used within the `@page` CSS at-rule to specify the size and orientation of pages in generated PDF documents. This property allows you to set standard paper sizes (like A4, Letter, Legal) or define custom dimensions. It's essential for controlling the physical dimensions of your PDF output.
+
+---
 
 ## Usage
 

@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # page-break-before : Page Break Before Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `page-break-before` property controls whether a page break should occur before an element when generating PDF documents. This property is essential for controlling document pagination, creating chapter breaks, and ensuring specific content starts on a new page. Note that this is a legacy CSS2 property; consider using the newer `break-before` property for more options.
+
+---
 
 ## Usage
 

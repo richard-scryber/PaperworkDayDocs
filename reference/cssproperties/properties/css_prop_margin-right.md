@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # margin-right : Right Margin Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `margin-right` property sets the right margin of an element in PDF documents. The right margin creates space to the right of the element, separating it from adjacent elements or the page edge and controlling horizontal spacing in document layouts.
+
+---
 
 ## Usage
 

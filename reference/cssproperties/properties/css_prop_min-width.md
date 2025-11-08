@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # min-width : Minimum Width Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `min-width` property sets the minimum horizontal dimension of an element in PDF documents. It ensures that an element will never be narrower than the specified value, even if its content or other constraints would make it smaller. This property is essential for maintaining minimum readability and layout integrity.
+
+---
 
 ## Usage
 

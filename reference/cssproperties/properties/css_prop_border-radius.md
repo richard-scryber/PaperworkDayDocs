@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border-radius : Border Radius Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border-radius` property rounds the corners of an element's border. This property creates smooth, curved corners instead of sharp right angles, enhancing the visual design of PDF documents with modern, polished appearances.
+
+---
 
 ## Usage
 

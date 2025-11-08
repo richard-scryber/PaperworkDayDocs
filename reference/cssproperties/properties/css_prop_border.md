@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # border : Border Shorthand Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `border` property is a shorthand that sets all border properties (width, style, and color) for all four sides of an element in a single declaration. This property is essential for creating visual boundaries, separating content sections, and enhancing the overall design of PDF documents.
+
+---
 
 ## Usage
 

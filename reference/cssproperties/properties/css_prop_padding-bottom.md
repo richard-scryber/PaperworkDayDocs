@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # padding-bottom : Bottom Padding Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `padding-bottom` property sets the bottom padding of an element in PDF documents. Bottom padding creates space inside the element below the content, between the bottom border and the content, inheriting the element's background color.
+
+---
 
 ## Usage
 

@@ -10,10 +10,26 @@ has_toc: false
 ---
 
 # font-weight : The Font Weight Property
+{: .no_toc }
 
-Summary
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `font-weight` property specifies the boldness or thickness of text characters. It accepts both numeric values (100-900) and keyword values, allowing precise control over text weight for creating visual hierarchy and emphasis in PDF documents.
+
+---
 
 ## Usage
 

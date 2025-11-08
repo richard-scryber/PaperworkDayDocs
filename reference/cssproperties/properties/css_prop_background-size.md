@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # background-size : Background Size Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `background-size` property specifies the size of background images in PDF documents. This property is essential for controlling image scaling, ensuring proper fit for logos, watermarks, and full-page backgrounds.
+
+---
 
 ## Usage
 

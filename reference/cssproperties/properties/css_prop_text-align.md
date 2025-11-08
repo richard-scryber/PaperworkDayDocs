@@ -10,8 +10,26 @@ has_toc: false
 ---
 
 # text-align : Text Alignment Property
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `text-align` property specifies the horizontal alignment of text and inline content within block-level elements. This is essential for controlling the layout and visual presentation of text in PDF documents.
+
+---
 
 ## Usage
 

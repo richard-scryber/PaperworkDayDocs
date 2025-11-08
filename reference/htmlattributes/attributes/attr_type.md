@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # @type : The Input Type Attribute
+{: .no_toc}
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `type` attribute specifies the type of input field to render in PDF documents. It controls both the visual appearance and the semantic meaning of form fields. Since Scryber PDFs are static documents, input types render as styled visual representations rather than interactive controls.
 

@@ -10,12 +10,24 @@ has_toc: false
 ---
 
 # @data-bind : The Template Iteration Attribute
-
-The `data-bind` attribute enables template-based iteration over collections in Scryber PDF documents. When applied to `<template>` elements, it dynamically generates repeating content for each item in an array, list, or any enumerable data source.
+{: .no_toc }
 
 ---
 
-## Summary
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summmary
+
+The `data-bind` attribute enables template-based iteration over collections in Scryber PDF documents. When applied to `<template>` elements, it dynamically generates repeating content for each item in an array, list, or any enumerable data source.
 
 The `data-bind` attribute is the primary mechanism for creating dynamic, data-driven repeating content in Scryber templates. It binds a template element to a collection and generates the template's content once for each item in that collection. Each iteration creates a new data context scoped to the current item, allowing you to reference item properties using the dot notation (`.propertyName`).
 
