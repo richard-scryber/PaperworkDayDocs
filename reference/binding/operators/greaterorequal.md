@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -31,9 +31,9 @@ Compare if the left value is greater than or equal to the right value.
 
 ## Syntax
 
-```handlebars
+```{% raw %}
 {{operand1 >= operand2}}
-```
+```{% endraw %}
 
 ---
 
@@ -68,7 +68,7 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 ### Age Verification
 
-```handlebars
+```html {% raw %}
 {{#if model.age >= 18}}
   <div class="eligible">
     <p>✓ Age requirement met ({{model.age}} years old)</p>
@@ -77,7 +77,7 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
   <div class="ineligible">
     <p>Must be 18 or older (currently {{model.age}})</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -96,7 +96,7 @@ doc.Params["model"] = new {
 
 ### Passing Grade
 
-```handlebars
+```html {% raw %}
 {{#if model.score >= 70}}
   <div class="pass">
     <h3>Passed</h3>
@@ -107,7 +107,7 @@ doc.Params["model"] = new {
     <h3>Did Not Pass</h3>
     <p>Score: {{model.score}}/100 (70 required)</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -127,7 +127,7 @@ doc.Params["model"] = new {
 
 ### Grade Classification
 
-```handlebars
+```html {% raw %}
 {{#if model.score >= 90}}
   <span class="grade-a">A - Excellent</span>
 {{else if model.score >= 80}}
@@ -138,12 +138,12 @@ doc.Params["model"] = new {
   <span class="grade-d">D - Needs Improvement</span>
 {{else}}
   <span class="grade-f">F - Failing</span>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Free Shipping Eligibility
 
-```handlebars
+```html {% raw %}
 {{#if model.orderTotal >= 50}}
   <div class="free-shipping">
     <strong>✓ Free Shipping Eligible</strong>
@@ -153,7 +153,7 @@ doc.Params["model"] = new {
   <div class="shipping-required">
     <p>Add ${{format(50 - model.orderTotal, '0.00')}} more for free shipping</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -173,7 +173,8 @@ doc.Params["model"] = new {
 
 ### Access Level Validation
 
-```handlebars
+{% raw %}
+```html 
 {{#if model.accessLevel >= 5}}
   <div class="admin-panel">
     <h2>Administration</h2>
@@ -188,12 +189,13 @@ doc.Params["model"] = new {
   <div class="user-panel">
     <h2>User Dashboard</h2>
   </div>
-{{/if}}
+{{/if}} 
 ```
+{% endraw %}
 
 ### Minimum Quantity Check
 
-```handlebars
+```html {% raw %}
 {{#each model.items}}
   {{#if this.quantity >= this.minimumOrder}}
     <div class="valid-order">
@@ -205,7 +207,7 @@ doc.Params["model"] = new {
       <small>Minimum order: {{this.minimumOrder}} units</small>
     </div>
   {{/if}}
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 ---
@@ -225,10 +227,10 @@ doc.Params["model"] = new {
 
 ## See Also
 
-- [Greater Than Operator](./greaterthan.md)
+- [Greater Than Operator](./greaterthan)
 - [Less Than Operator](./lessthan.md)
-- [Less Than or Equal Operator](./lessorequal.md)
-- [Equality Operator](./equality.md)
-- [#if Helper](../helpers/if.md)
+- [Less Than or Equal Operator](./lessorequal)
+- [Equality Operator](./equality)
+- [#if Helper](../helpers/if)
 
 ---

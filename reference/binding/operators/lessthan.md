@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -29,11 +29,13 @@ has_toc: false
 
 Compare if the left value is less than the right value.
 
+*Note*: even within attributes, xml (and as such xhtml require the < and the & to be escaped within templates.)
+
 ## Syntax
 
-```handlebars
-{{operand1 < operand2}}
-```
+``` {% raw %}
+{{operand1 &lt; operand2}}
+{% endraw %} ``` 
 
 ---
 
@@ -68,14 +70,14 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 ### Age Restriction
 
-```handlebars
+```html {% raw %}
 {{#if model.age < 18}}
   <div class="minor-warning">
     <p>Parental consent required (Age: {{model.age}})</p>
   </div>
 {{else}}
   <p>Age verified: {{model.age}} years old</p>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -94,13 +96,13 @@ doc.Params["model"] = new {
 
 ### Low Stock Warning
 
-```handlebars
+```html {% raw %}
 {{#if model.quantity < model.threshold}}
   <div class="alert-warning">
     <strong>Low Stock Alert!</strong>
     <p>Only {{model.quantity}} units remaining</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -121,19 +123,19 @@ doc.Params["model"] = new {
 
 ### Temperature Check
 
-```handlebars
+```html {% raw %}
 {{#if model.temperature < 32}}
   <span class="freezing">⚠ Freezing conditions</span>
 {{else if model.temperature < 60}}
   <span class="cold">Cold</span>
 {{else}}
   <span class="normal">Normal</span>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Discount Eligibility
 
-```handlebars
+```html {% raw %}
 {{#each model.products}}
   <div class="product">
     <h3>{{this.name}}</h3>
@@ -143,12 +145,12 @@ doc.Params["model"] = new {
       <span class="badge">Budget Friendly</span>
     {{/if}}
   </div>
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 ### Progress Tracking
 
-```handlebars
+```html {% raw %}
 {{#if model.progress < 0.25}}
   <div class="progress-bar red" style="width: {{model.progress * 100}}%">
     {{format(model.progress * 100, '0')}}%
@@ -161,7 +163,7 @@ doc.Params["model"] = new {
   <div class="progress-bar green" style="width: {{model.progress * 100}}%">
     {{format(model.progress * 100, '0')}}%
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ---

@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -31,9 +31,9 @@ Multiply two numeric values together.
 
 ## Syntax
 
-```handlebars
+``` {% raw %}
 {{operand1 * operand2}}
-```
+{% endraw %}```
 
 ---
 
@@ -68,9 +68,9 @@ The product of the left and right operands.
 
 ### Line Item Total
 
-```handlebars
+```html {% raw %}
 <p>Total: ${{format(model.quantity * model.price, '0.00')}}</p>
-```
+{% endraw %}```
 
 **Data:**
 ```csharp
@@ -87,9 +87,9 @@ doc.Params["model"] = new {
 
 ### Area Calculation
 
-```handlebars
+```html {% raw %}
 <p>Area: {{model.width * model.height}} sq ft</p>
-```
+{% endraw %}```
 
 **Data:**
 ```csharp
@@ -106,11 +106,11 @@ doc.Params["model"] = new {
 
 ### Tax Calculation
 
-```handlebars
+```html {% raw %}
 <p>Subtotal: ${{format(model.price, '0.00')}}</p>
 <p>Tax ({{model.taxRate * 100}}%): ${{format(model.price * model.taxRate, '0.00')}}</p>
 <p>Total: ${{format(model.price * (1 + model.taxRate), '0.00')}}</p>
-```
+{% endraw %}```
 
 **Data:**
 ```csharp
@@ -129,17 +129,17 @@ doc.Params["model"] = new {
 
 ### Percentage Calculation
 
-```handlebars
+```html {% raw %}
 <p>{{format(model.score / model.total * 100, '0.0')}}% correct</p>
-```
+{% endraw %}```
 
 ### Scaling Values
 
-```handlebars
+```html {% raw %}
 <!-- SVG bar chart with scaled heights -->
 {{#each model.data}}
   <rect height="{{this.value * model.scaleFactor}}" />
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 **Data:**

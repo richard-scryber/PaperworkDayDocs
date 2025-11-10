@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -31,9 +31,9 @@ Combine two boolean expressions. Returns true only if both operands are true.
 
 ## Syntax
 
-```handlebars
+```{% raw %}
 {{condition1 && condition2}}
-```
+{% endraw %}```
 
 ---
 
@@ -79,7 +79,7 @@ Evaluated before: `||`
 
 ### Driving Eligibility
 
-```handlebars
+```{% raw %}
 {{#if model.age >= 18 && model.hasLicense}}
   <div class="eligible">
     <p>✓ Eligible to drive</p>
@@ -94,7 +94,7 @@ Evaluated before: `||`
       <p>Reason: Valid license required</p>
     {{/if}}
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -114,8 +114,8 @@ doc.Params["model"] = new {
 
 ### Multiple Conditions
 
-```handlebars
-{{#if model.isActive && model.isPaid && model.isVerified}}
+```{% raw %}
+{{#if model.isActive && model.isPaid &amp;&amp; model.isVerified}}
   <div class="status-valid">
     <h3>Account Status: Active</h3>
     <p>All requirements met</p>
@@ -129,19 +129,19 @@ doc.Params["model"] = new {
       {{#if !model.isVerified}}<li>Verification pending</li>{{/if}}
     </ul>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Range Check
 
-```handlebars
-{{#if model.age >= 13 && model.age < 20}}
+```{% raw %}
+{{#if model.age >= 13 &amp;&amp; model.age < 20}}
   <span class="age-group">Teenager</span>
-{{else if model.age >= 20 && model.age < 65}}
+{{else if model.age >= 20 &amp;&amp; model.age < 65}}
   <span class="age-group">Adult</span>
 {{else}}
   <span class="age-group">Other</span>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -158,9 +158,9 @@ doc.Params["model"] = new {
 
 ### Stock and Price Validation
 
-```handlebars
+```{% raw %}
 {{#each model.products}}
-  {{#if this.stock > 0 && this.price <= model.maxBudget}}
+  {{#if this.stock > 0 &amp;&amp; this.price <= model.maxBudget}}
     <div class="product-available">
       <h3>{{this.name}}</h3>
       <p>Price: ${{this.price}}</p>
@@ -168,7 +168,7 @@ doc.Params["model"] = new {
       <button>Add to Cart</button>
     </div>
   {{/if}}
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 **Data:**
@@ -193,41 +193,6 @@ doc.Params["model"] = new {
 </div>
 ```
 
-### Priority Classification
-
-```handlebars
-{{#if model.isUrgent && model.isHighValue}}
-  <div class="priority-critical">
-    <strong>CRITICAL PRIORITY</strong>
-  </div>
-{{else if model.isUrgent}}
-  <div class="priority-high">
-    <strong>High Priority</strong>
-  </div>
-{{else if model.isHighValue}}
-  <div class="priority-medium">
-    <strong>Medium Priority</strong>
-  </div>
-{{else}}
-  <div class="priority-low">
-    <strong>Standard</strong>
-  </div>
-{{/if}}
-```
-
-### Date Range Validation
-
-```handlebars
-{{#if model.startDate <= model.today && model.endDate >= model.today}}
-  <div class="active-period">
-    <p>✓ Currently Active</p>
-  </div>
-{{else}}
-  <div class="inactive-period">
-    <p>Not currently active</p>
-  </div>
-{{/if}}
-```
 
 ---
 
@@ -245,10 +210,10 @@ doc.Params["model"] = new {
 
 ## See Also
 
-- [Logical OR Operator](./or.md)
-- [Equality Operator](./equality.md)
-- [Inequality Operator](./inequality.md)
-- [#if Helper](../helpers/if.md)
-- [Comparison Operators](./lessthan.md)
+- [Logical OR Operator](./or)
+- [Equality Operator](./equality)
+- [Inequality Operator](./inequality)
+- [#if Helper](../helpers/if)
+- [Comparison Operators](./lessthan)
 
 ---

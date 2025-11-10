@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -31,9 +31,11 @@ Provide a fallback value when an expression evaluates to null or undefined.
 
 ## Syntax
 
-```handlebars
+{% raw %}
+```
 {{expression ?? fallbackValue}}
 ```
+{% endraw %}
 
 ---
 
@@ -68,9 +70,11 @@ Returns the left operand if it's not null, otherwise returns the right operand.
 
 ### Default User Name
 
-```handlebars
+{% raw %}
+```html
 <h2>Welcome, {{model.user.name ?? 'Guest'}}!</h2>
 ```
+{% endraw %}
 
 **Data (with name):**
 ```csharp
@@ -102,7 +106,8 @@ doc.Params["model"] = new {
 
 ### Missing Description
 
-```handlebars
+{% raw %}
+```html
 {{#each model.products}}
   <div class="product">
     <h3>{{this.name}}</h3>
@@ -110,6 +115,7 @@ doc.Params["model"] = new {
   </div>
 {{/each}}
 ```
+{% endraw %}
 
 **Data:**
 ```csharp

@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -31,9 +31,9 @@ Compare if the left value is greater than the right value.
 
 ## Syntax
 
-```handlebars
+``` {% raw %}
 {{operand1 > operand2}}
-```
+``` {% endraw %}
 
 ---
 
@@ -68,7 +68,7 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 ### Adult Verification
 
-```handlebars
+```html {% raw %}
 {{#if model.age > 18}}
   <div class="access-granted">
     <p>Age verified: {{model.age}} years old</p>
@@ -77,7 +77,7 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
   <div class="access-denied">
     <p>Must be 18 or older</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -96,24 +96,23 @@ doc.Params["model"] = new {
 
 ### High Value Order
 
-```handlebars
+```html {% raw %}
 {{#if model.orderTotal > 1000}}
   <div class="vip-order">
     <strong>High-Value Order</strong>
     <p>Expedited processing approved</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Stock Availability
 
-```handlebars
+```html {% raw %}
 {{#if model.quantity > 0}}
-  <button class="btn-primary">Add to Cart</button>
   <p>{{model.quantity}} in stock</p>
 {{else}}
-  <button class="btn-disabled" disabled>Out of Stock</button>
-{{/if}}
+  <p class="disabled" >Out of Stock</button>
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -125,13 +124,12 @@ doc.Params["model"] = new {
 
 **Output:**
 ```html
-<button class="btn-primary">Add to Cart</button>
 <p>15 in stock</p>
 ```
 
 ### Performance Indicator
 
-```handlebars
+```html {% raw %}
 {{#if model.revenue > model.target}}
   <div class="success">
     <h3>Target Exceeded!</h3>
@@ -139,7 +137,7 @@ doc.Params["model"] = new {
     <p>Target: ${{format(model.target, 'N0')}}</p>
     <p>Surplus: ${{format(model.revenue - model.target, 'N0')}}</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -162,14 +160,14 @@ doc.Params["model"] = new {
 
 ### Temperature Warning
 
-```handlebars
+```html {% raw %}
 {{#if model.temperature > 100}}
   <span class="danger">⚠ High Temperature Alert: {{model.temperature}}°F</span>
 {{else if model.temperature > 80}}
   <span class="warning">Warm: {{model.temperature}}°F</span>
 {{else}}
   <span class="normal">{{model.temperature}}°F</span>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ---

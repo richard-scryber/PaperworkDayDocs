@@ -10,6 +10,22 @@ has_toc: false
 ---
 
 # :hover Pseudo-class Selector
+{: .no_toc }
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Summary
 
 The `:hover` pseudo-class selector targets elements in their "over" or hover state. This is particularly useful for interactive PDF documents where elements can have different appearances when moused over.
 

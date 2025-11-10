@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -31,9 +31,9 @@ Divide one numeric value by another.
 
 ## Syntax
 
-```handlebars
+```{% raw %}
 {{operand1 / operand2}}
-```
+```{% endraw %}
 
 ---
 
@@ -68,9 +68,9 @@ The quotient of the left operand divided by the right operand.
 
 ### Average Calculation
 
-```handlebars
+```html {% raw %}
 <p>Average: {{format(model.total / model.count, '0.00')}}</p>
-```
+```{% endraw %}
 
 **Data:**
 ```csharp
@@ -87,8 +87,8 @@ doc.Params["model"] = new {
 
 ### Unit Price
 
-```handlebars
-<p>Price per unit: ${{format(model.totalPrice / model.quantity, '0.00')}}</p>
+```html {% raw %}
+<p>Price per unit: ${{format(model.totalPrice / model.quantity, '0.00')}}</p> {% endraw %}
 ```
 
 **Data:**
@@ -106,8 +106,8 @@ doc.Params["model"] = new {
 
 ### Percentage Calculation
 
-```handlebars
-<p>Completion: {{format((model.completed / model.total) * 100, '0.0')}}%</p>
+```html {% raw %}
+<p>Completion: {{format((model.completed / model.total) * 100, '0.0')}}%</p> {% endraw %}
 ```
 
 **Data:**
@@ -125,13 +125,13 @@ doc.Params["model"] = new {
 
 ### Rate Calculation
 
-```handlebars
-<p>Speed: {{format(model.distance / model.time, '0.0')}} mph</p>
+```html {% raw %}
+<p>Speed: {{format(model.distance / model.time, '0.0')}} mph</p> {% endraw %}
 ```
 
 ### Ratio Comparison
 
-```handlebars
+```html {% raw %}
 <p>Efficiency Ratio: {{format(model.output / model.input, '0.00')}}</p>
 
 {{#if model.output / model.input > 1.5}}
@@ -140,7 +140,7 @@ doc.Params["model"] = new {
   <span class="good">Efficient</span>
 {{else}}
   <span class="poor">Needs improvement</span>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ---
@@ -159,11 +159,11 @@ doc.Params["model"] = new {
 
 ## See Also
 
-- [Multiplication Operator](./multiplication.md)
-- [Modulus Operator](./modulus.md)
-- [round Function](../functions/round.md)
-- [ceiling Function](../functions/ceiling.md)
-- [floor Function](../functions/floor.md)
-- [format Function](../functions/format.md)
+- [Multiplication Operator](./multiplication)
+- [Modulus Operator](./modulus)
+- [round Function](../functions/round)
+- [ceiling Function](../functions/ceiling)
+- [floor Function](../functions/floor)
+- [format Function](../functions/format)
 
 ---

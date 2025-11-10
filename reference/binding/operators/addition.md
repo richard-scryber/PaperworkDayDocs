@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -27,13 +27,15 @@ has_toc: false
 
 ## Summary
 
-Adds two numeric values together.
+Adds two numeric values together. Or joins two string values together.
 
 ## Syntax
 
-```handlebars
+{% raw %}
+```
 {{operand1 + operand2}}
 ```
+{% endraw %}
 
 ---
 
@@ -58,18 +60,21 @@ The sum of the two operands.
 
 ### Basic Addition
 
-```handlebars
+{% raw %}
+```
 {{5 + 3}}
 <!-- Output: 8 -->
 ```
+{% endraw %}
 
 ### With Variables
 
-```handlebars
+{% raw %}
+```html
 <p>Subtotal: ${{model.price}}</p>
 <p>Tax: ${{model.tax}}</p>
 <p>Total: ${{model.price + model.tax}}</p>
-```
+```{% endraw %}
 
 **Data:**
 ```csharp
@@ -88,23 +93,23 @@ doc.Params["model"] = new {
 
 ### Multiple Additions
 
-```handlebars
+```{% raw %}
 <p>Total: {{model.base + model.shipping + model.tax}}</p>
-```
+{% endraw %}```
 
 ### With Formatting
 
-```handlebars
+```{% raw %}
 <p>Grand Total: {{format(model.subtotal + model.tax, 'C2')}}</p>
-```
+{% endraw %}```
 
 ### In #each Loop
 
-```handlebars
+```{% raw %}
 {{#each model.items}}
-  <p>Item {{add(@index, 1)}}: {{this.name}}</p>
+  <p>Item {{@index + 1}}: {{this.name}}</p>
 {{/each}}
-```
+{% endraw %}```
 
 ---
 
@@ -117,6 +122,7 @@ Priority level in expression evaluation: **5** (after *, /, %)
 ## Notes
 
 - Works with `int`, `long`, `double`, `decimal` types
+- Works with strings, if, and only if, the first value is a string (e.g. 'item_' + index() = 'item_1`
 - Mixed types are automatically converted (e.g., `int + double` = `double`)
 - Left-to-right associativity: `a + b + c` = `(a + b) + c`
 - Use parentheses to control order: `(a + b) * c`
@@ -125,8 +131,8 @@ Priority level in expression evaluation: **5** (after *, /, %)
 
 ## See Also
 
-- [Subtraction (-)](./subtraction.md)
-- [Multiplication (*)](./multiplication.md)
-- [Operator Precedence](./index.md#operator-precedence)
+- [Subtraction (-)](./subtraction)
+- [Multiplication (*)](./multiplication)
+- [Operator Precedence](./index.html#operator-precedence)
 
 ---

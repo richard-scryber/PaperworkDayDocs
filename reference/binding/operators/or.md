@@ -31,9 +31,9 @@ Combine two boolean expressions. Returns true if at least one operand is true.
 
 ## Syntax
 
-```handlebars
+```html {% raw %}
 {{condition1 || condition2}}
-```
+``` {% endraw %}
 
 ---
 
@@ -77,7 +77,7 @@ Evaluated after: All other operators
 
 ### Administrative Access
 
-```handlebars
+```html {% raw %}
 {{#if model.isAdmin || model.isModerator}}
   <div class="admin-panel">
     <h2>Administration</h2>
@@ -87,7 +87,7 @@ Evaluated after: All other operators
   <div class="user-panel">
     <h2>User Dashboard</h2>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -108,7 +108,7 @@ doc.Params["model"] = new {
 
 ### Multiple Status Check
 
-```handlebars
+```html {% raw %}
 {{#if model.status == 'shipped' || model.status == 'delivered'}}
   <div class="order-completed">
     <p>✓ Order in transit or completed</p>
@@ -119,7 +119,7 @@ doc.Params["model"] = new {
     <p>Order being prepared</p>
     <p>Status: {{model.status}}</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -139,7 +139,7 @@ doc.Params["model"] = new {
 
 ### Weekend Detector
 
-```handlebars
+```html {% raw %}
 {{#if model.dayOfWeek == 0 || model.dayOfWeek == 6}}
   <div class="weekend">
     <h3>Weekend Hours</h3>
@@ -150,12 +150,12 @@ doc.Params["model"] = new {
     <h3>Weekday Hours</h3>
     <p>8:00 AM - 8:00 PM</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Alert Conditions
 
-```handlebars
+```html {% raw %}
 {{#each model.items}}
   {{#if this.stock <= 10 || this.expirationDays < 30}}
     <div class="alert-warning">
@@ -168,7 +168,7 @@ doc.Params["model"] = new {
       {{/if}}
     </div>
   {{/if}}
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 **Data:**
@@ -201,18 +201,18 @@ doc.Params["model"] = new {
 
 ### Role-Based Display
 
-```handlebars
+```html {% raw %}
 {{#if model.role == 'admin' || model.role == 'manager' || model.role == 'supervisor'}}
   <div class="leadership-tools">
     <h3>Leadership Dashboard</h3>
     <p>Role: {{model.role}}</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Priority Orders
 
-```handlebars
+```html {% raw %}
 {{#if model.total > 1000 || model.isPriority || model.customerTier == 'VIP'}}
   <div class="expedited-processing">
     <strong>Expedited Processing</strong>
@@ -226,7 +226,7 @@ doc.Params["model"] = new {
       <p>VIP customer</p>
     {{/if}}
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ---
@@ -238,17 +238,16 @@ doc.Params["model"] = new {
 - Can chain multiple OR conditions: `a || b || c`
 - Has lowest precedence - use parentheses for complex expressions: `(a || b) && c`
 - Commonly used for checking multiple acceptable values
-- Opposite of AND (`&&`) operator logic
-- Note: `!` (NOT) operator is not supported - use `!=` instead
+- Opposite of AND (`&&`) operator logic.
 
 ---
 
 ## See Also
 
-- [Logical AND Operator](./and.md)
-- [Equality Operator](./equality.md)
-- [Inequality Operator](./inequality.md)
-- [#if Helper](../helpers/if.md)
-- [in Function](../functions/in.md)
+- [Logical AND Operator](./and)
+- [Equality Operator](./equality)
+- [Inequality Operator](./inequality)
+- [#if Helper](../helpers/if)
+- [in Function](../functions/in)
 
 ---

@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -31,9 +31,9 @@ Compare two values for inequality. Returns true if values are not equal.
 
 ## Syntax
 
-```handlebars
+```{% raw %}
 {{operand1 != operand2}}
-```
+```{% endraw %}
 
 ---
 
@@ -68,13 +68,13 @@ Evaluated before: `??`, `&&`, `||`
 
 ### Exclude Specific Status
 
-```handlebars
+```html {% raw %}
 {{#if model.status != 'cancelled'}}
   <div class="order-active">
     <h3>Order #{{model.orderNumber}}</h3>
     <p>Status: {{model.status}}</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -95,25 +95,25 @@ doc.Params["model"] = new {
 
 ### Check for Non-Zero
 
-```handlebars
+```html {% raw %}
 {{#if model.balance != 0}}
   <p class="outstanding">Balance due: ${{format(model.balance, '0.00')}}</p>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Filter Out Null Values
 
-```handlebars
+```html {% raw %}
 {{#each model.users}}
   {{#if this.email != null}}
     <p>{{this.name}}: {{this.email}}</p>
   {{/if}}
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 ### Highlight Changes
 
-```handlebars
+```html {% raw %}
 {{#each model.items}}
   {{#if this.currentPrice != this.previousPrice}}
     <div class="price-changed">
@@ -122,18 +122,18 @@ doc.Params["model"] = new {
       <span class="new">${{this.currentPrice}}</span>
     </div>
   {{/if}}
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 ### Show Alert for Specific Conditions
 
-```handlebars
+```html {% raw %}
 {{#if model.stock != model.expectedStock}}
   <div class="alert-warning">
     <p>Stock discrepancy detected!</p>
     <p>Expected: {{model.expectedStock}}, Actual: {{model.stock}}</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -168,10 +168,10 @@ doc.Params["model"] = new {
 
 ## See Also
 
-- [Equality Operator](./equality.md)
-- [#if Helper](../helpers/if.md)
-- [Logical AND Operator](./and.md)
-- [Logical OR Operator](./or.md)
-- [Null Coalescing Operator](./nullcoalesce.md)
+- [Equality Operator](./equality)
+- [#if Helper](../helpers/if)
+- [Logical AND Operator](./and)
+- [Logical OR Operator](./or)
+- [Null Coalescing Operator](./nullcoalesce)
 
 ---

@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -31,9 +31,9 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 
 ## Syntax
 
-```handlebars
+```{% raw %}
 {{operand1 == operand2}}
-```
+{% endraw %}```
 
 ---
 
@@ -58,20 +58,20 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 
 ### Basic Comparison
 
-```handlebars
+```{% raw %}
 {{5 == 5}}
 <!-- Output: true -->
 
 {{5 == 3}}
-<!-- Output: false -->
+<!-- Output: false --> {% endraw %}
 ```
 
 ### String Comparison
 
-```handlebars
+```html {% raw %}
 {{#if model.status == 'active'}}
   <span class="badge-active">Active</span>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -83,44 +83,44 @@ doc.Params["model"] = new {
 
 ### Number Comparison
 
-```handlebars
+```html {% raw %}
 {{#if model.quantity == 0}}
   <span class="out-of-stock">Out of Stock</span>
 {{else}}
   <span>{{model.quantity}} in stock</span>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Boolean Comparison
 
-```handlebars
+```html {% raw %}
 {{#if model.isPremium == true}}
   <span class="premium-badge">Premium Member</span>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Multiple Conditions
 
-```handlebars
+```html {% raw %}
 {{#if model.role == 'admin'}}
   <button>Delete</button>
 {{else if model.role == 'editor'}}
   <button>Edit</button>
 {{else if model.role == 'viewer'}}
   <button>View</button>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### With #each
 
-```handlebars
+```html {% raw %}
 {{#each model.products}}
   {{#if this.category == 'Electronics'}}
     <div class="electronics-product">
       <h3>{{this.name}}</h3>
     </div>
   {{/if}}
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 ---
@@ -143,9 +143,9 @@ Priority level in expression evaluation: **7** (after comparison operators)
 
 ## See Also
 
-- [Inequality (!=)](./inequality.md)
-- [Greater Than (>)](./greaterthan.md)
-- [Less Than (<)](./lessthan.md)
-- [#if Helper](../helpers/if.md)
+- [Inequality (!=)](./inequality)
+- [Greater Than (>)](./greaterthan)
+- [Less Than (<)](./lessthan)
+- [#if Helper](../helpers/if)
 
 ---

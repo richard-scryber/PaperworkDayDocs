@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -27,13 +27,15 @@ has_toc: false
 
 ## Summary
 
-Compare if the left value is less than or equal to the right value.
+Compare if the left value is less than or equal to the right value. 
+
+*Note*: even within attributes, xml (and as such xhtml require the < and the & to be escaped within templates.)
 
 ## Syntax
 
-```handlebars
-{{operand1 <= operand2}}
-```
+``` {% raw %}
+{{operand1 <>= operand2}}
+``` {% endraw %}
 
 ---
 
@@ -68,13 +70,13 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 ### Low Stock Alert
 
-```handlebars
+```html {% raw %}
 {{#if model.stock <= 10}}
   <div class="alert-warning">
     <strong>Low Stock Warning</strong>
     <p>Only {{model.stock}} units left - reorder soon!</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -94,22 +96,22 @@ doc.Params["model"] = new {
 
 ### Score Validation
 
-```handlebars
+```html {% raw %}
 {{#if model.score <= 100}}
   <p class="valid">Score: {{model.score}}/100</p>
 {{else}}
   <p class="error">Invalid score: {{model.score}} (must be ≤ 100)</p>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Capacity Check
 
-```handlebars
+```html {% raw %}
 {{#if model.attendees <= model.capacity}}
   <span class="available">{{model.capacity - model.attendees}} spots available</span>
 {{else}}
   <span class="full">Event is full</span>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -127,18 +129,18 @@ doc.Params["model"] = new {
 
 ### Date Deadline Check
 
-```handlebars
+```html {% raw %}
 {{#if model.dueDate <= model.today}}
   <div class="overdue">
     <strong>Overdue!</strong>
     <p>Due: {{format(model.dueDate, 'MMM dd, yyyy')}}</p>
   </div>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 ### Price Range Filter
 
-```handlebars
+```html {% raw %}
 {{#each model.products}}
   {{#if this.price <= model.maxBudget}}
     <div class="product-affordable">
@@ -147,7 +149,7 @@ doc.Params["model"] = new {
       <span class="badge">Within Budget</span>
     </div>
   {{/if}}
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 **Data:**
@@ -192,10 +194,10 @@ doc.Params["model"] = new {
 
 ## See Also
 
-- [Less Than Operator](./lessthan.md)
-- [Greater Than Operator](./greaterthan.md)
-- [Greater Than or Equal Operator](./greaterorequal.md)
-- [Equality Operator](./equality.md)
-- [#if Helper](../helpers/if.md)
+- [Less Than Operator](./lessthan)
+- [Greater Than Operator](./greaterthan)
+- [Greater Than or Equal Operator](./greaterorequal)
+- [Equality Operator](./equality)
+- [#if Helper](../helpers/if)
 
 ---

@@ -14,7 +14,7 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -31,9 +31,9 @@ Calculate the remainder after dividing one number by another.
 
 ## Syntax
 
-```handlebars
+``` {% raw %}
 {{operand1 % operand2}}
-```
+{% endraw %} ```
 
 ---
 
@@ -68,12 +68,12 @@ The remainder after dividing the left operand by the right operand.
 
 ### Even/Odd Detection
 
-```handlebars
+```html {% raw %}
 {{#each model.items}}
   <div class="{{if(@index % 2 == 0, 'even', 'odd')}}">
     {{this.name}}
   </div>
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 **Data:**
@@ -98,36 +98,36 @@ doc.Params["model"] = new {
 
 ### Alternating Row Colors
 
-```handlebars
+```html {% raw %}
 <table>
 {{#each model.products}}
   <tr style="background-color: {{if(@index % 2 == 0, '#f9f9f9', '#ffffff')}}">
     <td>{{this.name}}</td>
     <td>${{this.price}}</td>
   </tr>
-{{/each}}
+{{/each}} {% endraw %}
 </table>
 ```
 
 ### Cycle Through Values
 
-```handlebars
+```html {% raw %}
 {{#each model.items}}
   <!-- Cycle through 3 colors -->
   <div class="color-{{@index % 3}}">
     {{this.text}}
   </div>
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 ### Check Divisibility
 
-```handlebars
+```html {% raw %}
 {{#if model.quantity % model.packSize == 0}}
   <p>Perfect fit: {{model.quantity / model.packSize}} complete packs</p>
 {{else}}
   <p>{{format(model.quantity / model.packSize, '0')}} packs plus {{model.quantity % model.packSize}} extra units</p>
-{{/if}}
+{{/if}} {% endraw %}
 ```
 
 **Data:**
@@ -145,14 +145,14 @@ doc.Params["model"] = new {
 
 ### Grid Layout Column Wrapping
 
-```handlebars
+```html {% raw %}
 {{#each model.images}}
-  {{#if @index % 3 == 0 && @index > 0}}
+  {{#if @index % 3 == 0 &amp;&amp; @index > 0}}
     <!-- Start new row every 3 items -->
     </div><div class="row">
   {{/if}}
   <img src="{{this.url}}" />
-{{/each}}
+{{/each}} {% endraw %}
 ```
 
 ---
@@ -171,9 +171,9 @@ doc.Params["model"] = new {
 
 ## See Also
 
-- [Division Operator](./division.md)
-- [Equality Operator](./equality.md)
-- [#each Helper](../helpers/each.md)
-- [if Function](../functions/if.md)
+- [Division Operator](./division)
+- [Equality Operator](./equality)
+- [#each Helper](../helpers/each)
+- [if Function](../functions/if)
 
 ---

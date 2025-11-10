@@ -10,7 +10,7 @@ has_toc: false
 ---
 
 # @high and @low : The Threshold Value Attributes
-
+{: .no_toc }
 
 ---
 
