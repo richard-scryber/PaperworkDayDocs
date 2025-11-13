@@ -409,11 +409,12 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 ```html
 {% raw %}<frameset>
-    <frame src="main-document.pdf"></frame>
 
     <!-- Include cover page only if specified -->
     <frame src="cover-page.html"
            hidden="{{!model.includeCover ? 'hidden' : ''}}"></frame>
+
+    <frame src="main-document.pdf"></frame>
 
     <!-- Include terms only for certain contract types -->
     <frame src="standard-terms.html"
@@ -1002,10 +1003,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 ## See Also
 
-- [Data Binding](/learing/binding/) - Complete guide to data binding expressions
+- [Data Binding](/learning/02-data-binding/) - Complete guide to data binding expressions
 - [template](html_template_element.html) - Template element for repeating content
 - [if](html_if_element.html) - Conditional rendering element
-- [Document Modification](/reference/modification/) - PDF modification and merging concepts
-- [File Paths](/learning/templates/paths.html) - Path resolution and mapping
 
 ---
