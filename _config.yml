@@ -1,12 +1,15 @@
-logo: "/assets/PaperworkLogoAndName.png"
+logo: "/assets/PaperworkTransparent.svg"
 title: Scryber.Core
-description: The documentation for the Scryber.Code open source PDF creation library for dotnet.
+description: The documentation for Paperwork library and the core, open source, Scryber PDF creation library for dotnet.
 theme: just-the-docs
 color_scheme: light
 
-url: https://www.paperworkday.net
+url: https://www.paperworkday.info
 
 aux_links:
-  .git: https://github.com/just-the-docs/just-the-docs-template
+  .git: https://github.com/richard-scryber/scryber.core
   .com: https://www.paperworkday.com
   .studio: https://paperworkday.studio
+  aux_links_new_tab: true
+
+heading_anchors: false

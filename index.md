@@ -12,7 +12,7 @@ nav_order: 0
 If you are new here then jump straight into the <a href='./learning/01-getting-started/'>Getting Started</a> section.
 
 ### NOTE
-The documnentation is **IN REVIEW** phase over the month of November and December. The reference section will be more accurate than the learing guides as it is rolled out. 
+The documentation is **IN REVIEW** phase. The reference section will be more accurate than the learing guides as it is rolled out. 
 
 So if you do discover an inconsistency whilst trying to do something. Then check the reference section - if it's still incorrect then please do reach out via the [GitHub](https://github.com/richard-scryber/scryber.core) issue and discussion tabs.
 
