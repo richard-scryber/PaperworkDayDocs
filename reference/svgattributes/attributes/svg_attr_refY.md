@@ -84,6 +84,7 @@ The `refY` attribute is supported on:
 Adjust vertical reference based on marker size:
 
 ```html
+{% raw %}
 <!-- Model: { markerSize: 14, verticalAlign: 'center' } -->
 <svg width="400" height="200">
     <defs>
@@ -102,11 +103,13 @@ Adjust vertical reference based on marker size:
           stroke="#2c3e50" stroke-width="2"
           marker-end="url(#dynamic-ref)"/>
 </svg>
+{% endraw %}
 ```
 
 ### Conditional Vertical Alignment
 
 ```html
+{% raw %}
 <!-- Model: { alignToTop: false } -->
 <svg width="400" height="200">
     <defs>
@@ -123,11 +126,13 @@ Adjust vertical reference based on marker size:
           stroke="#2c3e50" stroke-width="2"
           marker-end="url(#aligned-marker)"/>
 </svg>
+{% endraw %}
 ```
 
 ### Data-Driven Vertical Positioning
 
 ```html
+{% raw %}
 <!-- Model: {
     markers: [
         { size: 10, vAlign: 'top', color: '#e74c3c' },
@@ -161,6 +166,7 @@ Adjust vertical reference based on marker size:
               marker-end="url(#marker-{{$index}})"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---

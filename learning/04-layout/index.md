@@ -293,12 +293,14 @@ Content flows from page to page automatically:
 
 {% raw %}
 ```html
+{% raw %}
 {{#each chapters}}
 <div style="page-break-before: {{if(@index == 0, 'auto', 'always')}};">
     <h2>{{this.title}}</h2>
     <p>{{this.content}}</p>
 </div>
 {{/each}}
+{% endraw %}
 ```
 {% endraw %}
 
@@ -362,6 +364,7 @@ Content flows from page to page automatically:
 ### Report Layout
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -407,11 +410,13 @@ Content flows from page to page automatically:
     </footer>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Multi-Section Document
 
 ```html
+{% raw %}
 <section style="page: A4 portrait; margin: 1in;">
     <!-- Cover page -->
     <div style="text-align: center; margin-top: 3in;">
@@ -440,12 +445,14 @@ Content flows from page to page automatically:
         <!-- Wide data table -->
     </table>
 </section>
+{% endraw %}
 ```
 
 ### Watermark Overlay
 
 {% raw %}
 ```html
+{% raw %}
 <style>
     .watermark {
         position: absolute;
@@ -460,6 +467,7 @@ Content flows from page to page automatically:
 </style>
 
 <div class="watermark">{{if(isDraft, 'DRAFT', '')}}</div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -492,12 +500,14 @@ Content flows from page to page automatically:
 
 {% raw %}
 ```html
+{% raw %}
 {{#each chapters}}
 <div class="chapter" style="page-break-before: always;">
     <h1>Chapter {{@index}}: {{this.title}}</h1>
     <div>{{this.content}}</div>
 </div>
 {{/each}}
+{% endraw %}
 ```
 {% endraw %}
 
@@ -514,12 +524,14 @@ Content flows from page to page automatically:
 
 {% raw %}
 ```html
+{% raw %}
 <footer>
     <div style="display: flex; justify-content: space-between;">
         <span>{{documentTitle}}</span>
         <span>Page <page-number /> of <page-count /></span>
     </div>
 </footer>
+{% endraw %}
 ```
 {% endraw %}
 

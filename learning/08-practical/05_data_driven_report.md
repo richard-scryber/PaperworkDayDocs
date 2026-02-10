@@ -34,6 +34,7 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -427,6 +428,7 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
+{% endraw %}
 ```
 {% endraw %}
 

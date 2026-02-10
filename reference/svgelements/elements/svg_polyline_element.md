@@ -97,12 +97,14 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
 ### Example 2: Dynamic Trend Line
 
 ```html
+{% raw %}
 <!-- Model: { points: "50,80 100,60 150,90 200,40 250,70" } -->
 <svg width="300" height="120">
     <polyline points="{{points}}"
               fill="none" stroke="#4CAF50" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Multiple Polylines
@@ -392,12 +394,14 @@ At least 2 points are required for a visible polyline. A single point produces n
 ### Dynamic Chart from Array
 
 ```html
+{% raw %}
 <!-- Model: { values: [30, 45, 35, 60, 50, 70, 55] } -->
 <svg width="280" height="150">
     <polyline points="{{values.map((v, i)).join(' ')}}"
               fill="none" stroke="#3498db" stroke-width="3"
               stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+{% endraw %}
 ```
 
 ### Multi-Series with Data Binding

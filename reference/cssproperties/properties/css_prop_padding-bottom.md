@@ -92,6 +92,7 @@ The `padding-bottom` property supports dynamic values through data binding, allo
 ### Example 1: Section padding based on content type
 
 ```html
+{% raw %}
 <style>
     .section {
         background-color: white;
@@ -117,6 +118,7 @@ The `padding-bottom` property supports dynamic values through data binding, allo
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -133,6 +135,7 @@ Data context:
 ### Example 2: Card body with variable bottom padding
 
 ```html
+{% raw %}
 <style>
     .card {
         background-color: white;
@@ -163,6 +166,7 @@ Data context:
         {{/if}}
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -179,6 +183,7 @@ Data context:
 ### Example 3: Newsletter sections with adaptive padding
 
 ```html
+{% raw %}
 <style>
     .newsletter-section {
         padding-top: 25pt;
@@ -195,6 +200,7 @@ Data context:
         <p>{{section.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:

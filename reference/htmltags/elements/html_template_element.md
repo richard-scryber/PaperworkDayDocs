@@ -42,12 +42,14 @@ The `<template>` element creates repeating content that:
 - Allows inline content definition via `data-content` attribute
 
 ```html
+{% raw %}
 <template data-bind="{{model.items}}">
     <div class="item">
         <h3>{{.title}}</h3>
         <p>{{.description}}</p>
     </div>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -86,11 +88,13 @@ The `<template>` element creates repeating content that:
 Within a template, use `{{.}}` to reference the current item, or `{{.propertyName}}` to access properties:
 
 ```html
+{% raw %}
 <template data-bind="{{model.users}}">
     <div>
         <strong>{{.name}}</strong> - {{.email}}
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Parent Context Access
@@ -98,11 +102,13 @@ Within a template, use `{{.}}` to reference the current item, or `{{.propertyNam
 Access parent context using path notation:
 
 ```html
+{% raw %}
 <template data-bind="{{model.orders}}">
     <div>
         Order {{.orderNumber}} for customer {{model.customerName}}
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Index and Count
@@ -110,9 +116,11 @@ Access parent context using path notation:
 The template automatically provides context about iteration:
 
 ```html
+{% raw %}
 <template data-bind="{{model.items}}">
     <div>Item {{$index + 1}} of {{$count}}: {{.name}}</div>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -161,6 +169,7 @@ If the bound collection is empty or null, the template generates no output witho
 ### Basic Iteration
 
 ```html
+{% raw %}
 <!-- Model: { products: [{name: "Widget", price: 19.99}, {name: "Gadget", price: 29.99}] } -->
 <template data-bind="{{model.products}}">
     <div style="margin-bottom: 10pt;">
@@ -171,11 +180,13 @@ If the bound collection is empty or null, the template generates no output witho
 <!-- Output: -->
 <!-- Widget: $19.99 -->
 <!-- Gadget: $29.99 -->
+{% endraw %}
 ```
 
 ### Table Row Generation
 
 ```html
+{% raw %}
 <table style="width: 100%;">
     <thead>
         <tr>
@@ -194,11 +205,13 @@ If the bound collection is empty or null, the template generates no output witho
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Nested Templates for Hierarchical Data
 
 ```html
+{% raw %}
 <!-- Model: { departments: [{name: "Sales", employees: [{name: "John"}, {name: "Jane"}]}] } -->
 <template data-bind="{{model.departments}}">
     <div style="margin-bottom: 20pt; padding: 10pt; border: 1pt solid #ccc;">
@@ -215,22 +228,26 @@ If the bound collection is empty or null, the template generates no output witho
 <!-- Sales Department -->
 <!--   - John -->
 <!--   - Jane -->
+{% endraw %}
 ```
 
 ### Pagination with Start and Max
 
 ```html
+{% raw %}
 <!-- Show items 10-19 (page 2 of 10 items per page) -->
 <template data-bind="{{model.allItems}}"
           data-bind-start="10"
           data-bind-max="10">
     <div class="item">{{.title}}</div>
 </template>
+{% endraw %}
 ```
 
 ### Step Iteration (Every Other Item)
 
 ```html
+{% raw %}
 <!-- Show only odd-indexed items -->
 <template data-bind="{{model.items}}"
           data-bind-start="0"
@@ -244,21 +261,25 @@ If the bound collection is empty or null, the template generates no output witho
           data-bind-step="2">
     <div>{{.name}}</div>
 </template>
+{% endraw %}
 ```
 
 ### Conditional Rendering with Expressions
 
 ```html
+{% raw %}
 <template data-bind="{{model.items}}">
     <div hidden="{{.isHidden ? 'hidden' : ''}}">
         {{.content}}
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Complex Nested Template with Totals
 
 ```html
+{% raw %}
 <!-- Invoice with line items -->
 <div class="invoice">
     <h1>Invoice #{{model.invoiceNumber}}</h1>
@@ -291,11 +312,13 @@ If the bound collection is empty or null, the template generates no output witho
         </tfoot>
     </table>
 </div>
+{% endraw %}
 ```
 
 ### Multi-Level Nested Categories
 
 ```html
+{% raw %}
 <!-- Model: categories with subcategories and products -->
 <template data-bind="{{model.categories}}">
     <div style="margin-bottom: 30pt;">
@@ -318,20 +341,24 @@ If the bound collection is empty or null, the template generates no output witho
         </template>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Inline Content Template
 
 ```html
+{% raw %}
 <!-- Using data-content for dynamic template generation -->
 <template data-bind="{{model.widgets}}"
           data-content="<div style='padding: 10pt;'><strong>{{.title}}</strong><br/>{{.description}}</div>">
 </template>
+{% endraw %}
 ```
 
 ### Styled Cards with Alternating Colors
 
 ```html
+{% raw %}
 <style>
     .card {
         padding: 15pt;
@@ -355,11 +382,13 @@ If the bound collection is empty or null, the template generates no output witho
         </div>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Directory Listing with File Types
 
 ```html
+{% raw %}
 <template data-bind="{{model.files}}">
     <div style="padding: 8pt; border-bottom: 1pt solid #ddd;">
         <div style="display: inline-block; width: 40%;">
@@ -374,11 +403,13 @@ If the bound collection is empty or null, the template generates no output witho
         </div>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Chart Data Labels
 
 ```html
+{% raw %}
 <!-- Generating labels for a bar chart -->
 <div style="position: relative; height: 300pt;">
     <template data-bind="{{model.chartData}}">
@@ -399,11 +430,13 @@ If the bound collection is empty or null, the template generates no output witho
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Timeline with Date Grouping
 
 ```html
+{% raw %}
 <template data-bind="{{model.events}}">
     <div style="margin-bottom: 15pt; padding-left: 20pt; border-left: 2pt solid #336699;">
         <div style="font-weight: bold; color: #336699; margin-bottom: 5pt;">
@@ -417,11 +450,13 @@ If the bound collection is empty or null, the template generates no output witho
         </template>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Performance-Optimized Large Dataset
 
 ```html
+{% raw %}
 <!-- Efficient rendering of 1000+ items -->
 <template data-bind="{{model.largeDataset}}"
           data-cache-styles="true"
@@ -430,11 +465,13 @@ If the bound collection is empty or null, the template generates no output witho
         {{.name}} - {{.value}}
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Conditional Sections
 
 ```html
+{% raw %}
 <!-- Only render template if collection has items -->
 <div style="border: 1pt solid #ccc; padding: 10pt;">
     <h3>Available Products</h3>
@@ -447,11 +484,13 @@ If the bound collection is empty or null, the template generates no output witho
         <em>No products available.</em>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Master-Detail Report
 
 ```html
+{% raw %}
 <template data-bind="{{model.customers}}">
     <div style="page-break-before: always; padding: 20pt;">
         <!-- Customer Header -->
@@ -516,6 +555,7 @@ If the bound collection is empty or null, the template generates no output witho
         </template>
     </div>
 </template>
+{% endraw %}
 ```
 
 ---

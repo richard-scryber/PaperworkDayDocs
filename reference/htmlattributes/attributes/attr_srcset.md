@@ -63,10 +63,10 @@ The `srcset` attribute defines image source alternatives:
 </picture>
 
 <!-- Dynamic srcset -->
-<img src="{{model.defaultImage}}"
+{% raw %}<img src="{{model.defaultImage}}"
      srcset="{{model.imageSources}}"
      alt="{{model.altText}}" />
-```
+{% endraw %}```
 
 ---
 
@@ -87,7 +87,7 @@ The `srcset` attribute is used with:
 The `srcset` attribute supports data binding for dynamic image sources:
 
 ```html
-<!-- Dynamic srcset from model -->
+{% raw %}<!-- Dynamic srcset from model -->
 <img src="{{model.defaultSrc}}"
      srcset="{{model.responsiveSources}}"
      alt="{{model.description}}" />
@@ -118,7 +118,7 @@ The `srcset` attribute supports data binding for dynamic image sources:
     </template>
     <img src="{{model.fallback}}" alt="{{model.alt}}" />
 </picture>
-```
+{% endraw %}```
 
 **Data Model Example:**
 ```json
@@ -722,6 +722,7 @@ Avoid these errors:
 ### Data-Bound Responsive Images
 
 ```html
+{% raw %}
 <!-- Model: {
     products: [
         {
@@ -757,6 +758,7 @@ Avoid these errors:
         </article>
     </template>
 </section>
+{% endraw %}
 ```
 
 ### Comparison Chart

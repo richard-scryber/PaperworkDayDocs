@@ -105,6 +105,7 @@ The `form` attribute supports both static and dynamic values:
 ### Dynamic Form Association with Data Binding
 
 ```html
+{% raw %}
 <!-- Model: { formId: "registrationForm" } -->
 <form id="{{model.formId}}">
     <input type="text" name="username" value="{{model.username}}" />
@@ -113,15 +114,18 @@ The `form` attribute supports both static and dynamic values:
 <output form="{{model.formId}}" for="username">
     Username: {{model.username}}
 </output>
+{% endraw %}
 ```
 
 ### Conditional Form Association
 
 ```html
+{% raw %}
 <!-- Model: { useForm: true, primaryFormId: "form1", secondaryFormId: "form2" } -->
 <output form="{{model.useForm ? model.primaryFormId : model.secondaryFormId}}">
     Calculation result
 </output>
+{% endraw %}
 ```
 
 ---
@@ -441,6 +445,7 @@ When generating PDFs:
 ### Example 8: Data-Bound Form with Dynamic Output
 
 ```html
+{% raw %}
 <!-- Model: {
     formId: "paymentForm",
     subtotal: 500.00,
@@ -469,6 +474,7 @@ When generating PDFs:
         Total Due: ${{model.total}}
     </output>
 </div>
+{% endraw %}
 ```
 
 ### Example 9: Registration Form with Confirmation
@@ -617,6 +623,7 @@ When generating PDFs:
 ### Example 12: Conditional Form Association
 
 ```html
+{% raw %}
 <!-- Model: { isPremium: true } -->
 
 <form id="premiumForm">
@@ -635,6 +642,7 @@ When generating PDFs:
         {{model.isPremium ? 'All features included' : 'Limited features'}}
     </output>
 </div>
+{% endraw %}
 ```
 
 ### Example 13: Report with Form Filters

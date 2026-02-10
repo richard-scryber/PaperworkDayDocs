@@ -90,9 +90,11 @@ The `http-equiv` and `content` attributes support data binding:
 ### Dynamic Value
 
 ```html
+{% raw %}
 <!-- Model: { charset: "UTF-8", language: "en-US" } -->
 <meta http-equiv="Content-Type" content="text/html; charset={{model.charset}}" />
 <meta http-equiv="Content-Language" content="{{model.language}}" />
+{% endraw %}
 ```
 
 ---
@@ -218,6 +220,7 @@ Most `http-equiv` directives are **not applicable to PDF generation**:
 ### Example 6: Data-Bound Encoding
 
 ```html
+{% raw %}
 <!-- Model: { encoding: "UTF-8", contentType: "text/html" } -->
 
 <head>
@@ -226,6 +229,7 @@ Most `http-equiv` directives are **not applicable to PDF generation**:
     <meta http-equiv="Content-Type"
           content="{{model.contentType}}; charset={{model.encoding}}" />
 </head>
+{% endraw %}
 ```
 
 ### Example 7: Complete Document Headers
@@ -283,6 +287,7 @@ Most `http-equiv` directives are **not applicable to PDF generation**:
 ### Example 10: Conditional Encoding
 
 ```html
+{% raw %}
 <!-- Model: { useUnicode: true } -->
 
 <head>
@@ -291,6 +296,7 @@ Most `http-equiv` directives are **not applicable to PDF generation**:
     <meta http-equiv="Content-Type"
           content="text/html; charset={{model.useUnicode ? 'UTF-8' : 'ISO-8859-1'}}" />
 </head>
+{% endraw %}
 ```
 
 ### Example 11: International Character Set

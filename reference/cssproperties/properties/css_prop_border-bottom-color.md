@@ -77,6 +77,7 @@ The `border-bottom-color` property supports dynamic values through data binding,
 ### Example 1: Heading underline colors
 
 ```html
+{% raw %}
 <style>
     .heading {
         border-bottom-width: 3pt;
@@ -90,6 +91,7 @@ The `border-bottom-color` property supports dynamic values through data binding,
         {{heading.text}}
     </h2>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -105,6 +107,7 @@ Data context:
 ### Example 2: Table row separators with status
 
 ```html
+{% raw %}
 <style>
     .table-row {
         border-bottom-width: 2pt;
@@ -117,11 +120,13 @@ Data context:
         <p>{{row.label}}: {{row.value}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Card accent colors
 
 ```html
+{% raw %}
 <style>
     .card {
         border: 1pt solid #e5e7eb;
@@ -137,6 +142,7 @@ Data context:
         <p>{{card.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

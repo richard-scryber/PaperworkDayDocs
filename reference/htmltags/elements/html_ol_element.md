@@ -423,6 +423,7 @@ Part Two: 3. Third item, 4. Fourth item
 ### Data Binding with Dynamic Lists
 
 ```html
+{% raw %}
 <!-- Template with model.steps = ["Initialize", "Configure", "Execute"] -->
 <ol>
     <li>Procedure Overview ({{count(model.steps)}} steps):</li>
@@ -437,11 +438,13 @@ Part Two: 3. Third item, 4. Fourth item
 3. Configure
 4. Execute
 -->
+{% endraw %}
 ```
 
 ### Complex Data Binding Example
 
 ```html
+{% raw %}
 <!-- Template with model.tasks = [{title: "Task A", priority: "high"}, ...] -->
 <style>
     .priority-high { color: #e74c3c; font-weight: bold; }
@@ -456,6 +459,7 @@ Part Two: 3. Third item, 4. Fourth item
         </li>
     </template>
 </ol>
+{% endraw %}
 ```
 
 ### Styled Ordered List

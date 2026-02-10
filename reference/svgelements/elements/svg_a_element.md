@@ -195,6 +195,7 @@ SVG anchors can be defined in `<defs>` and reused:
 ### Dynamic Link Destinations
 
 ```html
+{% raw %}
 <!-- Model: { url: "https://example.com", label: "Visit Site" } -->
 <svg width="300pt" height="200pt">
     <a href="{{model.url}}">
@@ -204,11 +205,13 @@ SVG anchors can be defined in `<defs>` and reused:
         </text>
     </a>
 </svg>
+{% endraw %}
 ```
 
 ### Repeated Linked Elements
 
 ```html
+{% raw %}
 <!-- Model: { links: [{url:"#sec1", label:"Section 1", x:50}, {url:"#sec2", label:"Section 2", x:200}] } -->
 <svg width="400pt" height="100pt">
     <template data-bind="{{model.links}}">
@@ -220,11 +223,13 @@ SVG anchors can be defined in `<defs>` and reused:
         </a>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Conditional Link Styling
 
 ```html
+{% raw %}
 <!-- Model: { items: [{id:"item1", url:"#detail1", active:true}, {id:"item2", url:"#detail2", active:false}] } -->
 <svg width="400pt" height="200pt">
     <template data-bind="{{model.items}}">
@@ -238,11 +243,13 @@ SVG anchors can be defined in `<defs>` and reused:
         </a>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Interactive Map with Links
 
 ```html
+{% raw %}
 <!-- Model: { locations: [{name:"NYC", x:100, y:80, url:"#nyc"}, {name:"LA", x:250, y:120, url:"#la"}] } -->
 <svg width="400pt" height="300pt">
     <rect width="400" height="300" fill="#e8f4f8"/>
@@ -257,6 +264,7 @@ SVG anchors can be defined in `<defs>` and reused:
         </a>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -665,6 +673,7 @@ SVG anchors can be defined in `<defs>` and reused:
 ### Linked Status Indicators
 
 ```html
+{% raw %}
 <!-- Model: { servers: [{name:"Web", status:"ok", url:"#web"}, {name:"DB", status:"warning", url:"#db"}] } -->
 <svg width="400pt" height="200pt">
     <template data-bind="{{model.servers}}">
@@ -680,6 +689,7 @@ SVG anchors can be defined in `<defs>` and reused:
         </a>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Transformed Link

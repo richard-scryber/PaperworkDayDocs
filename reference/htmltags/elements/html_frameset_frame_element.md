@@ -156,6 +156,7 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
 
 {% raw %}
 ```html
+{% raw %}
 <frameset>
     <frame src="document.pdf" data-over-repeat="Repeat">
         <html>
@@ -169,6 +170,7 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
         </html>
     </frame>
 </frameset>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -176,6 +178,7 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
 
 {% raw %}
 ```html
+{% raw %}
 <frameset>
     <frame src="report.pdf" data-over-repeat="First">
         <html>
@@ -188,6 +191,7 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
         </html>
     </frame>
 </frameset>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -281,6 +285,7 @@ Frame content is loaded during the data binding phase and may use async operatio
 ### Certificate Generation
 
 ```html
+{% raw %}
 <frameset>
     <!-- Pre-designed certificate template PDF -->
     <frame src="certificate-template.pdf">
@@ -309,6 +314,7 @@ Frame content is loaded during the data binding phase and may use async operatio
         </html>
     </frame>
 </frameset>
+{% endraw %}
 ```
 
 ### Invoice with Letterhead

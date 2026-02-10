@@ -97,6 +97,7 @@ The `-pdf-li-prefix` property supports data binding, enabling dynamic prefix tex
 ### Example 1: Dynamic prefix based on list type
 
 ```html
+{% raw %}
 <style>
     .dynamic-prefix-list {
         list-style-type: decimal;
@@ -113,6 +114,7 @@ The `-pdf-li-prefix` property supports data binding, enabling dynamic prefix tex
         <li>{{items[2]}}</li>
     </ol>
 </body>
+{% endraw %}
 ```
 
 **Data context:**
@@ -136,6 +138,7 @@ Different list types (tasks, steps, requirements, questions) can have appropriat
 ### Example 2: Multilingual prefixes
 
 ```html
+{% raw %}
 <style>
     .localized-prefix {
         list-style-type: decimal;
@@ -152,6 +155,7 @@ Different list types (tasks, steps, requirements, questions) can have appropriat
         <li>{{locale.steps[2]}}</li>
     </ol>
 </body>
+{% endraw %}
 ```
 
 **Data context (English):**
@@ -191,6 +195,7 @@ List prefixes automatically adapt to the document language, ensuring proper loca
 ### Example 3: Document identifier prefixes
 
 ```html
+{% raw %}
 <style>
     .requirement-list {
         list-style-type: decimal;
@@ -218,6 +223,7 @@ List prefixes automatically adapt to the document language, ensuring proper loca
         <li>{{testCases[1]}}</li>
     </ol>
 </body>
+{% endraw %}
 ```
 
 **Data context:**

@@ -93,6 +93,7 @@ The `opacity` property can be dynamically set using data binding expressions, en
 ### Example 1: Priority-based opacity in task lists
 
 ```html
+{% raw %}
 <style>
     .task-item {
         background-color: #f3f4f6;
@@ -110,6 +111,7 @@ The `opacity` property can be dynamically set using data binding expressions, en
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 With model data:
@@ -126,6 +128,7 @@ With model data:
 ### Example 2: Conditional visibility based on status
 
 ```html
+{% raw %}
 <style>
     .status-row {
         padding: 10pt;
@@ -143,11 +146,13 @@ With model data:
         {{/each}}
     </table>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Age-based document opacity
 
 ```html
+{% raw %}
 <style>
     .document-card {
         background-color: white;
@@ -165,6 +170,7 @@ With model data:
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ---

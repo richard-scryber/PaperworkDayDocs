@@ -50,6 +50,7 @@ These attributes are essential for:
 Both attributes are used exclusively with the `<object>` element and support data binding:
 
 ```html
+{% raw %}
 <!-- Attach file from byte array -->
 <object data="filename.pdf"
         data-file-data="{{model.fileBytes}}"
@@ -66,6 +67,7 @@ Both attributes are used exclusively with the `<object>` element and support dat
         type="{{model.mimeType}}"
         data-icon="Paperclip"
         alt="{{model.description}}"></object>
+{% endraw %}
 ```
 
 ---
@@ -92,6 +94,7 @@ The `data-file-data` attribute accepts binary file content:
 **Usage**: Provide raw file bytes for attachment
 
 ```html
+{% raw %}
 <!-- Simple byte array binding -->
 <object data="report.pdf"
         data-file-data="{{model.pdfBytes}}"
@@ -106,6 +109,7 @@ The `data-file-data` attribute accepts binary file content:
 <object data="{{model.name}}"
         data-file-data="{{model.useCache ? model.cachedBytes : model.freshBytes}}"
         type="application/pdf"></object>
+{% endraw %}
 ```
 
 **Data Model Example (C#)**:
@@ -137,10 +141,12 @@ The `data-file` attribute binds to embedded file data objects:
 **Usage**: Advanced scenarios with pre-loaded file data objects
 
 ```html
+{% raw %}
 <!-- Bind to pre-loaded embedded file object -->
 <object data="document.pdf"
         data-file="{{model.embeddedFileObject}}"
         type="application/pdf"></object>
+{% endraw %}
 ```
 
 **Data Model Example (C#)**:
@@ -172,10 +178,12 @@ When multiple data sources are specified, they are evaluated in this order:
 3. **`data` attribute** - If both above are null, file is loaded from path/URL
 
 ```html
+{% raw %}
 <!-- This will use data-file-data if fileBytes is not null -->
 <object data="fallback.pdf"
         data-file-data="{{model.fileBytes}}"
         type="application/pdf"></object>
+{% endraw %}
 ```
 
 ### Filename from data Attribute
@@ -183,6 +191,7 @@ When multiple data sources are specified, they are evaluated in this order:
 When using `data-file-data`, the `data` attribute value becomes the filename:
 
 ```html
+{% raw %}
 <!-- The attachment will be named "monthly-report.pdf" -->
 <object data="monthly-report.pdf"
         data-file-data="{{model.reportBytes}}"
@@ -192,6 +201,7 @@ When using `data-file-data`, the `data` attribute value becomes the filename:
 <object data="{{model.reportName}}.pdf"
         data-file-data="{{model.reportBytes}}"
         type="application/pdf"></object>
+{% endraw %}
 ```
 
 The `data` attribute is **required** even when using `data-file-data` to provide the attachment name.
@@ -232,6 +242,7 @@ using (var stream = GetFileStream())
 Always specify the correct MIME type for proper file handling:
 
 ```html
+{% raw %}
 <!-- PDF -->
 <object data="file.pdf"
         data-file-data="{{model.bytes}}"
@@ -251,6 +262,7 @@ Always specify the correct MIME type for proper file handling:
 <object data="file.bin"
         data-file-data="{{model.bytes}}"
         type="application/octet-stream"></object>
+{% endraw %}
 ```
 
 ### Error Handling
@@ -268,6 +280,7 @@ File data loading follows standard error handling:
 - Fallback content (if provided) is displayed
 
 ```html
+{% raw %}
 <!-- With error fallback -->
 <object data="report.pdf"
         data-file-data="{{model.reportBytes}}"
@@ -277,6 +290,7 @@ File data loading follows standard error handling:
         <strong>Note:</strong> Report attachment unavailable
     </div>
 </object>
+{% endraw %}
 ```
 
 ### Performance Considerations
@@ -323,6 +337,7 @@ var model = new
 ```
 
 ```html
+{% raw %}
 <!-- Template usage -->
 <template data-bind="{{model.Attachments}}">
     <object data="{{.FileName}}"
@@ -330,6 +345,7 @@ var model = new
             type="{{.ContentType}}"
             data-icon="Paperclip"></object>
 </template>
+{% endraw %}
 ```
 
 ### Security Considerations
@@ -365,11 +381,13 @@ public byte[] ValidateAndGetFileData(byte[] input, string declaredType)
 When binary data is null or empty:
 
 ```html
+{% raw %}
 <!-- Safe binding with null check -->
 <object data="{{model.fileName}}"
         data-file-data="{{model.fileBytes}}"
         type="application/pdf"
         hidden="{{model.fileBytes == null ? 'hidden' : ''}}"></object>
+{% endraw %}
 ```
 
 If `data-file-data` evaluates to null:
@@ -398,11 +416,13 @@ model.EmbeddedFile = embeddedFile;
 ```
 
 ```html
+{% raw %}
 <!-- Use in template -->
 <object data="report.pdf"
         data-file="{{model.embeddedFile}}"
         type="application/pdf"
         data-icon="Paperclip"></object>
+{% endraw %}
 ```
 
 ---
@@ -414,12 +434,14 @@ model.EmbeddedFile = embeddedFile;
 Simple file attachment from byte array:
 
 ```html
+{% raw %}
 <!-- Model: { fileName: "document.pdf", fileData: byte[], mimeType: "application/pdf" } -->
 
 <object data="{{model.fileName}}"
         data-file-data="{{model.fileData}}"
         type="{{model.mimeType}}"
         data-icon="Paperclip"></object>
+{% endraw %}
 ```
 
 ### 2. Database BLOB Attachment
@@ -443,6 +465,7 @@ var documents = await db.Documents
 ```
 
 ```html
+{% raw %}
 <!-- Template -->
 <h2>Supporting Documents</h2>
 <template data-bind="{{model.Documents}}">
@@ -455,6 +478,7 @@ var documents = await db.Documents
         <span>{{.Name}}</span>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### 3. API-Retrieved File Content
@@ -481,11 +505,13 @@ public class ReportModel
 ```
 
 ```html
+{% raw %}
 <object data="{{model.FileName}}"
         data-file-data="{{model.FileBytes}}"
         type="application/pdf"
         data-icon="Paperclip"
         alt="API Retrieved Document"></object>
+{% endraw %}
 ```
 
 ### 4. Dynamically Generated File
@@ -514,6 +540,7 @@ public class InvoiceModel
 ```
 
 ```html
+{% raw %}
 <h2>Invoice Details</h2>
 <!-- Invoice content here -->
 
@@ -525,6 +552,7 @@ public class InvoiceModel
             data-icon="Graph"
             alt="Invoice Line Items CSV"></object>
 </div>
+{% endraw %}
 ```
 
 ### 5. Conditional File Attachment
@@ -532,6 +560,7 @@ public class InvoiceModel
 Attach files conditionally based on data availability:
 
 ```html
+{% raw %}
 <!-- Model: { hasAttachment: true, fileName: "report.pdf", fileData: byte[] } -->
 
 <div class="report">
@@ -544,6 +573,7 @@ Attach files conditionally based on data availability:
             data-icon="Paperclip"
             hidden="{{model.hasAttachment ? '' : 'hidden'}}"></object>
 </div>
+{% endraw %}
 ```
 
 ### 6. Multiple File Attachments from Array
@@ -566,6 +596,7 @@ public class ReportModel
 ```
 
 ```html
+{% raw %}
 <div class="attachments-section">
     <h3>Attached Files</h3>
     <template data-bind="{{model.Attachments}}">
@@ -581,6 +612,7 @@ public class ReportModel
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### 7. File from MemoryStream
@@ -610,11 +642,13 @@ public class Model
 ```
 
 ```html
+{% raw %}
 <object data="generated-report.pdf"
         data-file-data="{{model.GeneratedPDF}}"
         type="application/pdf"
         data-icon="Paperclip"
         alt="Generated Report"></object>
+{% endraw %}
 ```
 
 ### 8. Image File from Byte Array
@@ -633,6 +667,7 @@ public class ImageAttachment
 ```
 
 ```html
+{% raw %}
 <div class="image-gallery">
     <h3>High-Resolution Images</h3>
     <template data-bind="{{model.Images}}">
@@ -643,6 +678,7 @@ public class ImageAttachment
                 alt="High Resolution {{.FileName}}"></object>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### 9. Compressed File Attachment
@@ -678,11 +714,13 @@ public class SourceCodePackage
 ```
 
 ```html
+{% raw %}
 <object data="source-code.zip"
         data-file-data="{{model.ZipData}}"
         type="application/zip"
         data-icon="Tag"
         alt="Source Code Archive"></object>
+{% endraw %}
 ```
 
 ### 10. Excel Spreadsheet from Byte Array
@@ -712,11 +750,13 @@ public class ExcelReport
 ```
 
 ```html
+{% raw %}
 <object data="financial-data.xlsx"
         data-file-data="{{model.SpreadsheetData}}"
         type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         data-icon="Graph"
         alt="Financial Data Spreadsheet"></object>
+{% endraw %}
 ```
 
 ### 11. Fallback Content with Binary Data
@@ -724,6 +764,7 @@ public class ExcelReport
 Provide fallback when binary data is unavailable:
 
 ```html
+{% raw %}
 <object data="{{model.attachmentName}}"
         data-file-data="{{model.attachmentBytes}}"
         type="application/pdf"
@@ -739,6 +780,7 @@ Provide fallback when binary data is unavailable:
         </p>
     </div>
 </object>
+{% endraw %}
 ```
 
 ### 12. Certificate/Credential Attachment
@@ -755,6 +797,7 @@ public class CertificateAttachment
 ```
 
 ```html
+{% raw %}
 <div class="certificates">
     <h3>Security Certificates</h3>
     <template data-bind="{{model.Certificates}}">
@@ -771,6 +814,7 @@ public class CertificateAttachment
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### 13. JSON Configuration File
@@ -803,11 +847,13 @@ public class ConfigurationModel
 ```
 
 ```html
+{% raw %}
 <object data="configuration.json"
         data-file-data="{{model.ConfigData}}"
         type="application/json"
         data-icon="Tag"
         alt="Application Configuration"></object>
+{% endraw %}
 ```
 
 ### 14. Signed Document with Signature File
@@ -825,6 +871,7 @@ public class SignedDocument
 ```
 
 ```html
+{% raw %}
 <div class="signed-document">
     <h2>Signed Contract</h2>
     <p>This contract was digitally signed by {{model.SignerName}} on {{model.SignedDate}}.</p>
@@ -853,6 +900,7 @@ public class SignedDocument
         </div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### 15. Medical Record with DICOM Attachments
@@ -870,6 +918,7 @@ public class MedicalRecord
 ```
 
 ```html
+{% raw %}
 <div class="medical-record">
     <h2>Patient: {{model.PatientName}}</h2>
     <p>Scan Date: {{model.ScanDate}}</p>
@@ -898,6 +947,7 @@ public class MedicalRecord
         </div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### 16. Version-Controlled Document Attachments
@@ -920,6 +970,7 @@ public class VersionedDocument
 ```
 
 ```html
+{% raw %}
 <div class="document-versions">
     <h3>Document History</h3>
     <table style="width: 100%; border-collapse: collapse;">
@@ -949,6 +1000,7 @@ public class VersionedDocument
         </tbody>
     </table>
 </div>
+{% endraw %}
 ```
 
 ---

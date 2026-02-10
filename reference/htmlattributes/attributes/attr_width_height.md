@@ -40,6 +40,7 @@ The `width` and `height` attributes control element dimensions:
 - Essential for consistent layout and spacing
 
 ```html
+{% raw %}
 <!-- Image with explicit dimensions -->
 <img src="photo.jpg" width="400pt" height="300pt" />
 
@@ -59,6 +60,7 @@ The `width` and `height` attributes control element dimensions:
 
 <!-- Dynamic sizing -->
 <img src="{{model.imagePath}}" width="{{model.imageWidth}}pt" height="{{model.imageHeight}}pt" />
+{% endraw %}
 ```
 
 ---
@@ -91,6 +93,7 @@ The `width` and `height` attributes are commonly used with:
 The `width` and `height` attributes support data binding:
 
 ```html
+{% raw %}
 <!-- Dynamic image dimensions -->
 <img src="{{model.imagePath}}"
      width="{{model.width}}pt"
@@ -121,6 +124,7 @@ The `width` and `height` attributes support data binding:
          height="{{.height}}pt"
          alt="{{.description}}" />
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -472,6 +476,7 @@ Avoid zero or missing dimensions:
 ### Dynamic Sizing with Data Binding
 
 ```html
+{% raw %}
 <!-- Model: {
     thumbnail: { url: "thumb.jpg", width: 100, height: 75 },
     featured: { url: "featured.jpg", width: 600, height: 400 }
@@ -488,11 +493,13 @@ Avoid zero or missing dimensions:
          width="{{model.featured.width}}pt"
          height="{{model.featured.height}}pt" />
 </div>
+{% endraw %}
 ```
 
 ### Product Listing with Images
 
 ```html
+{% raw %}
 <!-- Model: { products: [
     { name: "Widget A", image: "widget-a.jpg", width: 250, height: 250 },
     { name: "Widget B", image: "widget-b.jpg", width: 250, height: 250 }
@@ -509,6 +516,7 @@ Avoid zero or missing dimensions:
         <h3 style="margin: 10pt 0 0 0; text-align: center;">{{.name}}</h3>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Logo Sizing Variations
@@ -579,6 +587,7 @@ Avoid zero or missing dimensions:
 ### Profile Photo Sizing
 
 ```html
+{% raw %}
 <!-- Model: { user: { name: "Alice", photo: "alice.jpg" } } -->
 
 <div style="text-align: center;">
@@ -599,6 +608,7 @@ Avoid zero or missing dimensions:
          style="border-radius: 25pt; margin-right: 10pt;" />
     <span>{{model.user.name}}</span>
 </div>
+{% endraw %}
 ```
 
 ### Full-Width Banner
@@ -655,12 +665,14 @@ Avoid zero or missing dimensions:
 ### Conditional Sizing
 
 ```html
+{% raw %}
 <!-- Model: { displayMode: "thumbnail" } -->
 
 <img src="product.jpg"
      width="{{model.displayMode == 'thumbnail' ? '100pt' : '400pt'}}"
      height="{{model.displayMode == 'thumbnail' ? '75pt' : '300pt'}}"
      alt="Product photo" />
+{% endraw %}
 ```
 
 ### Screenshot Sizing

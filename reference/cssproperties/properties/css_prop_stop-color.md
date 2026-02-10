@@ -98,6 +98,7 @@ The `stop-color` property can be dynamically controlled through data binding, en
 ### Example 1: Data-driven gradient colors for status indicators
 
 ```html
+{% raw %}
 <style>
     .status-bar { fill: url(#statusGrad); }
 </style>
@@ -114,11 +115,13 @@ The `stop-color` property can be dynamically controlled through data binding, en
         <rect class="status-bar" width="400" height="150"/>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Dynamic multi-stop gradients from data
 
 ```html
+{% raw %}
 <style>
     .data-viz { fill: url(#dataGradient); }
 </style>
@@ -134,11 +137,13 @@ The `stop-color` property can be dynamically controlled through data binding, en
         <rect class="data-viz" width="500" height="300"/>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Conditional gradient colors based on thresholds
 
 ```html
+{% raw %}
 <style>
     .metric-bar { fill: url(#metricGrad); }
 </style>
@@ -155,6 +160,7 @@ The `stop-color` property can be dynamically controlled through data binding, en
         <rect class="metric-bar" x="25" y="25" width="350" height="50" rx="25"/>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ---

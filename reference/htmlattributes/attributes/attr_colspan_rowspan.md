@@ -43,6 +43,7 @@ The `colspan` and `rowspan` attributes control cell spanning:
 - Must account for spanned cells in row/column calculations
 
 ```html
+{% raw %}
 <!-- Cell spanning 2 columns -->
 <td colspan="2">Spans two columns</td>
 
@@ -54,6 +55,7 @@ The `colspan` and `rowspan` attributes control cell spanning:
 
 <!-- Dynamic spanning -->
 <td colspan="{{model.columnCount}}">Dynamic column span</td>
+{% endraw %}
 ```
 
 ---
@@ -73,6 +75,7 @@ The `colspan` and `rowspan` attributes are used with:
 The `colspan` and `rowspan` attributes support data binding:
 
 ```html
+{% raw %}
 <!-- Dynamic colspan -->
 <td colspan="{{model.spanWidth}}">Dynamic column span</td>
 
@@ -94,6 +97,7 @@ The `colspan` and `rowspan` attributes support data binding:
         <td hidden="{{.shouldMerge ? 'hidden' : ''}}">{{.extraContent}}</td>
     </tr>
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -848,6 +852,7 @@ When using spanning cells:
 ### Dynamic Spanning with Data Binding
 
 ```html
+{% raw %}
 <!-- Model: {
     report: {
         title: "Sales Report",
@@ -882,6 +887,7 @@ When using spanning cells:
         </template>
     </template>
 </table>
+{% endraw %}
 ```
 
 ### Calendar Grid

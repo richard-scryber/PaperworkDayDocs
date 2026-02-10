@@ -77,26 +77,31 @@ The `<circle>` element supports dynamic attribute values using data binding expr
 ### Example 1: Dynamic Size and Color
 
 ```html
+{% raw %}
 <!-- Model: { dot: { cx: 50, cy: 50, radius: 25, color: '#4CAF50' } } -->
 <svg width="100" height="100">
     <circle cx="{{dot.cx}}" cy="{{dot.cy}}" r="{{dot.radius}}"
             fill="{{dot.color}}"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 2: Status Indicators
 
 ```html
+{% raw %}
 <!-- Model: { status: { online: true, x: 80, y: 20 } } -->
 <svg width="100" height="40">
     <circle cx="{{status.x}}" cy="{{status.y}}" r="8"
             fill="{{status.online ? '#4CAF50' : '#f44336'}}"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Bubble Chart with Template
 
 ```html
+{% raw %}
 <!-- Model: { bubbles: [
     {cx: 50, cy: 50, r: 30, color: '#e74c3c'},
     {cx: 120, cy: 60, r: 20, color: '#3498db'},
@@ -109,6 +114,7 @@ The `<circle>` element supports dynamic attribute values using data binding expr
                 stroke="#333" stroke-width="1"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -346,6 +352,7 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 ### Scatter Plot Points
 
 ```html
+{% raw %}
 <!-- Model: { points: [
     {x: 30, y: 70, r: 5},
     {x: 50, y: 40, r: 8},
@@ -358,11 +365,13 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
                 fill="#2196F3" opacity="0.7"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Dynamic Status Dots
 
 ```html
+{% raw %}
 <!-- Model: { servers: [
     {id: 1, online: true},
     {id: 2, online: true},
@@ -374,11 +383,13 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
                 fill="{{.online ? '#4CAF50' : '#f44336'}}"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Percentage Indicator
 
 ```html
+{% raw %}
 <!-- Model: { completion: 0.75 } -->
 <svg width="60" height="60">
     <!-- Background -->
@@ -390,6 +401,7 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
             stroke-dasharray="{{157 * completion}} {{157 * (1 - completion)}}"
             transform="rotate(-90, 30, 30)"/>
 </svg>
+{% endraw %}
 ```
 
 ---

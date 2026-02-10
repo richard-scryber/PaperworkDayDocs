@@ -40,6 +40,7 @@ The `target` attribute defines link opening behavior:
 - Supports data binding for dynamic target assignment
 
 ```html
+{% raw %}
 <!-- Open in new window/tab -->
 <a href="https://example.com" target="_blank">External Link</a>
 
@@ -57,6 +58,7 @@ The `target` attribute defines link opening behavior:
 
 <!-- Dynamic target -->
 <a href="{{model.url}}" target="{{model.targetWindow}}">Link</a>
+{% endraw %}
 ```
 
 ---
@@ -84,6 +86,7 @@ The `target` attribute is used with:
 The `target` attribute supports data binding for dynamic target assignment:
 
 ```html
+{% raw %}
 <!-- Dynamic target from model -->
 <a href="{{model.linkUrl}}" target="{{model.linkTarget}}">
     {{model.linkText}}
@@ -109,6 +112,7 @@ The `target` attribute supports data binding for dynamic target assignment:
         {{.name}}
     </a>
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -599,6 +603,7 @@ Target for form submissions (limited PDF use):
 ### Data-Bound Links
 
 ```html
+{% raw %}
 <!-- Model: {
     externalLinks: [
         { url: "https://example.com", title: "Example Site", external: true },
@@ -644,6 +649,7 @@ Target for form submissions (limited PDF use):
     </ul>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Research Paper References

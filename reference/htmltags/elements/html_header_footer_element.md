@@ -387,6 +387,7 @@ In the Scryber codebase:
 ### Document Footer with Page Number
 
 ```html
+{% raw %}
 <footer style="position: absolute; bottom: 20pt; left: 20pt; right: 20pt; border-top: 1pt solid #ddd; padding-top: 10pt; font-size: 9pt; color: #666;">
     <div style="display: table; width: 100%;">
         <div style="display: table-cell; text-align: left;">
@@ -400,6 +401,7 @@ In the Scryber codebase:
         </div>
     </div>
 </footer>
+{% endraw %}
 ```
 
 ### Newsletter Header
@@ -478,6 +480,7 @@ In the Scryber codebase:
 ### Data-Bound Article Header
 
 ```html
+{% raw %}
 <!-- With model = { title: "My Article", author: "John", date: "2025-10-13", category: "Technology" } -->
 <article>
     <header style="background-color: #f5f5f5; padding: 20pt; border-left: 5pt solid #336699;">
@@ -494,6 +497,7 @@ In the Scryber codebase:
         <p>Article content...</p>
     </div>
 </article>
+{% endraw %}
 ```
 
 ### Magazine Article Header

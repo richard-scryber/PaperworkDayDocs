@@ -115,6 +115,7 @@ The `data-repeat` attribute is **only** supported on the following element:
 The attribute accepts literal boolean values or binding expressions:
 
 ```html
+{% raw %}
 <!-- Literal value -->
 <thead data-repeat="true">
 
@@ -123,6 +124,7 @@ The attribute accepts literal boolean values or binding expressions:
 
 <!-- Conditional based on table size -->
 <thead data-repeat="{{count(model.items) > 20}}">
+{% endraw %}
 ```
 
 ---
@@ -212,6 +214,7 @@ Repeating headers improve document usability by:
 Standard table with header repetition (default):
 
 ```html
+{% raw %}
 <table style="width: 100%; border-collapse: collapse;">
     <thead>
         <tr>
@@ -236,6 +239,7 @@ Standard table with header repetition (default):
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 2. Disable Header Repetition
@@ -272,6 +276,7 @@ Single-page table without repetition:
 Professional styled header that repeats:
 
 ```html
+{% raw %}
 <table style="width: 100%; border-collapse: collapse;">
     <thead data-repeat="true">
         <tr style="background-color: #336699; color: white;">
@@ -300,6 +305,7 @@ Professional styled header that repeats:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 4. Multi-Row Header
@@ -307,6 +313,7 @@ Professional styled header that repeats:
 Complex header with two rows, both repeat:
 
 ```html
+{% raw %}
 <table style="width: 100%; border-collapse: collapse;">
     <thead data-repeat="true">
         <tr style="background-color: #2c3e50; color: white;">
@@ -342,6 +349,7 @@ Complex header with two rows, both repeat:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 5. Conditional Repetition Based on Data Size
@@ -349,6 +357,7 @@ Complex header with two rows, both repeat:
 Enable repetition only for large datasets:
 
 ```html
+{% raw %}
 <!-- Model: { items: [...], repeatHeaders: items.length > 25 } -->
 <table style="width: 100%; border-collapse: collapse;">
     <thead data-repeat="{{model.repeatHeaders}}">
@@ -368,6 +377,7 @@ Enable repetition only for large datasets:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 6. Invoice Line Items
@@ -375,6 +385,7 @@ Enable repetition only for large datasets:
 Invoice table with repeating header:
 
 ```html
+{% raw %}
 <h1>Invoice #{{model.invoiceNumber}}</h1>
 <table style="width: 100%; border-collapse: collapse; margin-top: 20pt;">
     <thead data-repeat="true">
@@ -424,6 +435,7 @@ Invoice table with repeating header:
         </tr>
     </tfoot>
 </table>
+{% endraw %}
 ```
 
 ### 7. Transaction Log
@@ -431,6 +443,7 @@ Invoice table with repeating header:
 Long transaction list with compact repeating header:
 
 ```html
+{% raw %}
 <h1>Transaction Log</h1>
 <p>Account: {{model.accountNumber}} | Date Range: {{model.startDate}} - {{model.endDate}}</p>
 
@@ -464,6 +477,7 @@ Long transaction list with compact repeating header:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 8. Inventory Report with Grouped Headers
@@ -471,6 +485,7 @@ Long transaction list with compact repeating header:
 Grouped column headers that repeat:
 
 ```html
+{% raw %}
 <table style="width: 100%; border-collapse: collapse;">
     <thead data-repeat="true">
         <tr style="background-color: #2c3e50; color: white;">
@@ -508,6 +523,7 @@ Grouped column headers that repeat:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 9. Employee Directory
@@ -515,6 +531,7 @@ Grouped column headers that repeat:
 Multi-page directory with repeating styled header:
 
 ```html
+{% raw %}
 <style>
     .directory-header {
         background: linear-gradient(to bottom, #336699, #2c5577);
@@ -547,6 +564,7 @@ Multi-page directory with repeating styled header:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 10. Product Catalog
@@ -554,6 +572,7 @@ Multi-page directory with repeating styled header:
 Catalog with image-based header (repetition enabled):
 
 ```html
+{% raw %}
 <table style="width: 100%; border-collapse: collapse;">
     <thead data-repeat="true">
         <tr style="background-color: #f0f0f0;">
@@ -584,6 +603,7 @@ Catalog with image-based header (repetition enabled):
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 11. Audit Trail Report
@@ -591,6 +611,7 @@ Catalog with image-based header (repetition enabled):
 Compliance report with repeating header:
 
 ```html
+{% raw %}
 <h1>System Audit Trail</h1>
 <p>Generated: {{model.reportDate}} | User: {{model.userName}}</p>
 
@@ -623,6 +644,7 @@ Compliance report with repeating header:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 12. Financial Statement
@@ -630,6 +652,7 @@ Compliance report with repeating header:
 Financial data with multiple header levels:
 
 ```html
+{% raw %}
 <table style="width: 100%; border-collapse: collapse;">
     <thead data-repeat="true">
         <tr style="background-color: #2c3e50; color: white;">
@@ -663,6 +686,7 @@ Financial data with multiple header levels:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 13. Order Fulfillment Report
@@ -670,6 +694,7 @@ Financial data with multiple header levels:
 Warehouse picking list with repeating header:
 
 ```html
+{% raw %}
 <table style="width: 100%; border-collapse: collapse;">
     <thead data-repeat="true">
         <tr style="background-color: #28a745; color: white;">
@@ -706,6 +731,7 @@ Warehouse picking list with repeating header:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 14. Event Schedule
@@ -713,6 +739,7 @@ Warehouse picking list with repeating header:
 Multi-day event schedule with repeating date headers:
 
 ```html
+{% raw %}
 <table style="width: 100%; border-collapse: collapse;">
     <thead data-repeat="true">
         <tr style="background-color: #6c757d; color: white;">
@@ -741,6 +768,7 @@ Multi-day event schedule with repeating date headers:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 15. Comparison Report
@@ -748,6 +776,7 @@ Multi-day event schedule with repeating date headers:
 Side-by-side comparison with repeating headers:
 
 ```html
+{% raw %}
 <table style="width: 100%; border-collapse: collapse;">
     <thead data-repeat="true">
         <tr style="background-color: #17a2b8; color: white;">
@@ -776,6 +805,7 @@ Side-by-side comparison with repeating headers:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ---

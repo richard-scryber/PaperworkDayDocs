@@ -289,6 +289,7 @@ This displays the page number where the referenced component appears.
 ### Data Binding with Page Numbers
 
 ```html
+{% raw %}
 <!-- Model: { documentTitle: "Annual Report 2024", currentYear: 2024 } -->
 <div style="text-align: center;">
     <h1>{{model.documentTitle}}</h1>
@@ -296,11 +297,13 @@ This displays the page number where the referenced component appears.
         Page <page></page> | {{model.currentYear}}
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Complex Footer Layout
 
 ```html
+{% raw %}
 <style>
     .footer {
         display: flex;
@@ -320,6 +323,7 @@ This displays the page number where the referenced component appears.
     </div>
     <div>{{model.date}}</div>
 </div>
+{% endraw %}
 ```
 
 ### Different Formats in Same Document
@@ -345,10 +349,12 @@ This displays the page number where the referenced component appears.
 ### Conditional Page Number Display
 
 ```html
+{% raw %}
 <!-- Only show page numbers after first page -->
 <div hidden="{{page.current == 1 ? 'hidden' : ''}}">
     Page <page></page> of <page property="total"></page>
 </div>
+{% endraw %}
 ```
 
 ### Alternating Left/Right Page Numbers
@@ -382,6 +388,7 @@ This displays the page number where the referenced component appears.
 ### Multi-Column Footer with Page Numbers
 
 ```html
+{% raw %}
 <div style="display: table; width: 100%; border-top: 1pt solid #ccc; padding-top: 5pt; font-size: 9pt;">
     <div style="display: table-row;">
         <div style="display: table-cell; width: 33%; text-align: left;">
@@ -395,11 +402,13 @@ This displays the page number where the referenced component appears.
         </div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Index with Page References
 
 ```html
+{% raw %}
 <div class="index">
     <h2>Index</h2>
 
@@ -414,6 +423,7 @@ This displays the page number where the referenced component appears.
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Watermark with Page Number
@@ -449,6 +459,7 @@ This displays the page number where the referenced component appears.
 ### Report Header with Section Info
 
 ```html
+{% raw %}
 <div style="padding: 15pt; background-color: #f5f5f5; border-bottom: 2pt solid #336699;">
     <div style="display: flex; justify-content: space-between;">
         <div>
@@ -461,6 +472,7 @@ This displays the page number where the referenced component appears.
         </div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ---

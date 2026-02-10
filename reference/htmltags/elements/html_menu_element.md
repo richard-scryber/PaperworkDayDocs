@@ -317,6 +317,7 @@ Or using data attributes:
 ### Data-Bound Menu
 
 ```html
+{% raw %}
 <!-- With model.menuItems = [{text: "Item 1"}, {text: "Item 2"}] -->
 <style>
     .dynamic-menu {
@@ -334,6 +335,7 @@ Or using data attributes:
         <li>{{.text}}</li>
     </template>
 </menu>
+{% endraw %}
 ```
 
 ### Nested Menu (Submenu)

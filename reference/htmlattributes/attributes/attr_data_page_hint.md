@@ -53,6 +53,7 @@ This attribute is essential for:
 The `data-page-hint` attribute is used exclusively with the `<page>` element (page number component):
 
 ```html
+{% raw %}
 <!-- Basic page number with hint -->
 <page data-page-hint="50"></page>
 
@@ -64,6 +65,7 @@ The `data-page-hint` attribute is used exclusively with the `<page>` element (pa
 
 <!-- Property-specific usage -->
 <page property="total" data-page-hint="{{model.totalPageEstimate}}"></page>
+{% endraw %}
 ```
 
 ---
@@ -89,6 +91,7 @@ The `data-page-hint` attribute is supported exclusively on:
 **Binding**: Supports data binding expressions
 
 ```html
+{% raw %}
 <!-- Static hint -->
 <page data-page-hint="50"></page>
 
@@ -100,6 +103,7 @@ The `data-page-hint` attribute is supported exclusively on:
 
 <!-- From template data -->
 <page property="total" data-page-hint="{{model.pageCountEstimate}}"></page>
+{% endraw %}
 ```
 
 **Data Model Example**:
@@ -286,11 +290,13 @@ public class ReportModel
 ```
 
 ```html
+{% raw %}
 <!-- Use calculated hint -->
 <footer>
     <page data-format="Page {0} of {1}"
           data-page-hint="{{model.pageHint}}"></page>
 </footer>
+{% endraw %}
 ```
 
 ### Sections and Page Hints
@@ -312,6 +318,7 @@ The hint applies to the scope of the page number display (document total or sect
 Common use case for page hints:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -344,6 +351,7 @@ Common use case for page hints:
     </footer>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Null or Missing Hint
@@ -452,10 +460,12 @@ public class ReportModel
 ```
 
 ```html
+{% raw %}
 <footer>
     <page data-format="Page {0} of {1}"
           data-page-hint="{{model.estimatedPages}}"></page>
 </footer>
+{% endraw %}
 ```
 
 ### 3. Large Report with Accurate Hint
@@ -463,6 +473,7 @@ public class ReportModel
 Optimize large document rendering:
 
 ```html
+{% raw %}
 <!-- Model: { totalItems: 1000 } -->
 
 <!DOCTYPE html>
@@ -492,6 +503,7 @@ Optimize large document rendering:
     </footer>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### 4. Total Page Count Display Only
@@ -524,6 +536,7 @@ public class MultiSectionReport
 ```
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <body>
@@ -569,6 +582,7 @@ public class MultiSectionReport
     </div>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### 6. Conditional Page Hint Based on Content
@@ -602,10 +616,12 @@ public class FlexibleReport
 ```
 
 ```html
+{% raw %}
 <footer>
     <page data-format="Page {0} of {1}"
           data-page-hint="{{model.pageHint}}"></page>
 </footer>
+{% endraw %}
 ```
 
 ### 7. Invoice Series with Predictable Pagination
@@ -634,6 +650,7 @@ public class InvoiceBatch
 ```
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <body>
@@ -652,6 +669,7 @@ public class InvoiceBatch
     </template>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### 8. Catalog with Item-Based Hint Calculation
@@ -683,10 +701,12 @@ public class ProductCatalog
 ```
 
 ```html
+{% raw %}
 <footer style="text-align: center;">
     <page data-format="{0} / {1}"
           data-page-hint="{{model.calculatePageHint()}}"></page>
 </footer>
+{% endraw %}
 ```
 
 ### 9. Academic Paper with Bibliography
@@ -720,9 +740,11 @@ public class ResearchPaper
 ```
 
 ```html
+{% raw %}
 <footer style="border-top: 1pt solid #333; padding-top: 5pt; text-align: center;">
     <page data-page-hint="{{model.pageEstimate}}"></page>
 </footer>
+{% endraw %}
 ```
 
 ### 10. Monthly Newsletter with Known Sections
@@ -753,12 +775,14 @@ public class Newsletter
 ```
 
 ```html
+{% raw %}
 <footer>
     <div style="text-align: center; font-size: 9pt; color: #666;">
         Newsletter - <page data-format="Page {0} of {1}"
                            data-page-hint="{{model.pageHint}}"></page>
     </div>
 </footer>
+{% endraw %}
 ```
 
 ### 11. Conference Proceedings with Paper Collection
@@ -790,12 +814,14 @@ public class ConferenceProceedings
 ```
 
 ```html
+{% raw %}
 <header>
     <div style="float: right; font-size: 9pt;">
         <page data-format="Page {0} of {1}"
               data-page-hint="{{model.totalPageHint}}"></page>
     </div>
 </header>
+{% endraw %}
 ```
 
 ### 12. Data-Driven Report with Table Pagination
@@ -828,6 +854,7 @@ public class DataReport
 ```
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <body>
@@ -858,6 +885,7 @@ public class DataReport
     </table>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### 13. Manual with Dynamic Chapter Inclusion
@@ -888,10 +916,12 @@ public class UserManual
 ```
 
 ```html
+{% raw %}
 <footer>
     <page data-format="Page {0} of {1}"
           data-page-hint="{{model.pageHint}}"></page>
 </footer>
+{% endraw %}
 ```
 
 ### 14. Batch Processing with Consistent Documents
@@ -911,6 +941,7 @@ public class BatchProcessor
 ```
 
 ```html
+{% raw %}
 <template data-bind="{{model.reports}}">
     <div style="page-break-before: always;">
         <header>
@@ -922,6 +953,7 @@ public class BatchProcessor
         <iframe src="customer-report-template.html"></iframe>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### 15. Real-Time Hint Adjustment
@@ -952,11 +984,13 @@ public class AdaptiveReport
 ```
 
 ```html
+{% raw %}
 <!-- Hint recalculates for each document -->
 <footer>
     <page data-format="Page {0} of {1}"
           data-page-hint="{{model.pageHint}}"></page>
 </footer>
+{% endraw %}
 ```
 
 ### 16. Performance Comparison View
@@ -964,6 +998,7 @@ public class AdaptiveReport
 Test document with and without hints:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -992,6 +1027,7 @@ Test document with and without hints:
     </footer>
 </body>
 </html>
+{% endraw %}
 ```
 
 ---

@@ -93,6 +93,7 @@ The column-width property integrates with data binding to create flexible, respo
 ### Example 1: Responsive column width based on page size
 
 ```html
+{% raw %}
 <style>
     .article {
         column-gap: 25pt;
@@ -126,11 +127,13 @@ The column-width property integrates with data binding to create flexible, respo
         <p>{{content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Configurable column layouts
 
 ```html
+{% raw %}
 <style>
     .newsletter {
         padding: 40pt;
@@ -165,11 +168,13 @@ The column-width property integrates with data binding to create flexible, respo
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Adaptive layouts for multi-section documents
 
 ```html
+{% raw %}
 <style>
     .document {
         padding: 40pt;
@@ -220,6 +225,7 @@ The column-width property integrates with data binding to create flexible, respo
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

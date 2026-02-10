@@ -93,6 +93,7 @@ The `padding-left` property supports dynamic values through data binding, allowi
 ### Example 1: Alert with icon padding
 
 ```html
+{% raw %}
 <style>
     .alert {
         padding-top: 12pt;
@@ -110,6 +111,7 @@ The `padding-left` property supports dynamic values through data binding, allowi
         <strong>{{alert.title}}:</strong> {{alert.message}}
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -126,6 +128,7 @@ Data context:
 ### Example 2: Nested content with hierarchy-based padding
 
 ```html
+{% raw %}
 <style>
     .content {
         padding: 25pt;
@@ -146,6 +149,7 @@ Data context:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -161,6 +165,7 @@ Data context:
 ### Example 3: Quote block with data-driven accent padding
 
 ```html
+{% raw %}
 <style>
     .quote-block {
         padding-top: 20pt;
@@ -179,6 +184,7 @@ Data context:
         <p style="margin-top: 10pt; font-size: 10pt; color: #6b7280;">— {{quote.author}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:

@@ -237,6 +237,7 @@ Data URIs are useful for:
 Bind image sources dynamically from data:
 
 ```html
+{% raw %}
 <!-- With model = { imagePath: "photo.jpg" } -->
 <img src="{{model.imagePath}}" width="200pt" />
 
@@ -244,6 +245,7 @@ Bind image sources dynamically from data:
 <img data-img-data="{{model.imageBytes}}"
      data-img-type="image/jpeg"
      width="150pt" height="100pt" />
+{% endraw %}
 ```
 
 ### Missing Images
@@ -483,6 +485,7 @@ o8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0icmVkIi8+Cjwvc3ZnPg=="
 ### Dynamic Image Binding
 
 ```html
+{% raw %}
 <!-- Bind image source from model -->
 <!-- With model = { productImage: "product.jpg", width: 200 } -->
 <img src="{{model.productImage}}"
@@ -503,6 +506,7 @@ o8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0icmVkIi8+Cjwvc3ZnPg=="
      data-img-type="image/jpeg"
      width="200pt" height="150pt"
      alt="User Photo" />
+{% endraw %}
 ```
 
 ### Image Cards
@@ -582,6 +586,7 @@ o8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0icmVkIi8+Cjwvc3ZnPg=="
 ### Image with Missing Fallback
 
 ```html
+{% raw %}
 <!-- Image that won't cause error if missing -->
 <img src="optional-image.jpg" width="200pt"
      data-allow-missing-images="true"
@@ -592,6 +597,7 @@ o8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0icmVkIi8+Cjwvc3ZnPg=="
      width="150pt"
      hidden="{{model.hideImage ? 'hidden' : ''}}"
      data-allow-missing-images="true" />
+{% endraw %}
 ```
 
 ### Product Layout with Images

@@ -229,12 +229,14 @@ This happens during the **DataBind** phase, before rendering.
 Use data binding for dynamic image sources:
 
 ```html
+{% raw %}
 <!-- With model = { printImage: "print.jpg", screenImage: "screen.jpg" } -->
 <picture>
     <source media="print" srcset="{{model.printImage}}">
     <source srcset="{{model.screenImage}}">
     <img src="{{model.fallbackImage}}" alt="Dynamic Image" width="200pt" />
 </picture>
+{% endraw %}
 ```
 
 All source elements are databound, allowing fully dynamic picture configurations.
@@ -391,6 +393,7 @@ In the Scryber codebase:
 ### Dynamic Picture Sources
 
 ```html
+{% raw %}
 <!-- With model = {
     highRes: "product-high.jpg",
     medRes: "product-med.jpg",
@@ -402,6 +405,7 @@ In the Scryber codebase:
     <source srcset="{{model.highRes}} 2x, {{model.medRes}} 1x" type="image/jpeg">
     <img src="{{model.lowRes}}" alt="{{model.altText}}" width="250pt" />
 </picture>
+{% endraw %}
 ```
 
 ### Picture in Document Layout
@@ -484,6 +488,7 @@ In the Scryber codebase:
 ### Product Images
 
 ```html
+{% raw %}
 <div class="product-card" style="border: 1pt solid #ddd; padding: 15pt; margin: 10pt;">
     <picture>
         <source media="print"
@@ -498,6 +503,7 @@ In the Scryber codebase:
     <h3 style="margin: 10pt 0;">{{model.productName}}</h3>
     <p style="color: #336699; font-weight: bold;">${{model.price}}</p>
 </div>
+{% endraw %}
 ```
 
 ### Magazine Layout
@@ -524,17 +530,20 @@ In the Scryber codebase:
 ### Conditional Picture Loading
 
 ```html
+{% raw %}
 <!-- With model = { showHighRes: true, imagePath: "photos/" } -->
 
 <picture hidden="{{model.showHighRes ? '' : 'hidden'}}">
     <source srcset="{{model.imagePath}}high-res-2x.jpg 2x">
     <img src="{{model.imagePath}}standard.jpg" alt="Conditional Image" width="300pt" />
 </picture>
+{% endraw %}
 ```
 
 ### Repeating Pictures from Data
 
 ```html
+{% raw %}
 <!-- With model.images = [
     {high: "img1-2x.jpg", low: "img1.jpg", alt: "Image 1"},
     {high: "img2-2x.jpg", low: "img2.jpg", alt: "Image 2"}
@@ -549,6 +558,7 @@ In the Scryber codebase:
         </picture>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Report Header with Logo
@@ -594,6 +604,7 @@ In the Scryber codebase:
 ### Certificate with Seal
 
 ```html
+{% raw %}
 <div style="border: 3pt double #336699; padding: 40pt; text-align: center;">
     <h1 style="color: #336699;">Certificate of Achievement</h1>
     <p style="font-size: 14pt; margin: 20pt 0;">Awarded to: {{model.recipientName}}</p>
@@ -607,11 +618,13 @@ In the Scryber codebase:
 
     <p style="margin-top: 20pt;">Date: {{model.date}}</p>
 </div>
+{% endraw %}
 ```
 
 ### Cover Page Design
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -648,6 +661,7 @@ In the Scryber codebase:
     </div>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Data Visualization Images
@@ -707,6 +721,7 @@ In the Scryber codebase:
 ### Email Newsletter Template
 
 ```html
+{% raw %}
 <div style="max-width: 600pt; margin: 0 auto; font-family: Arial, sans-serif;">
     <!-- Header with logo -->
     <div style="background-color: #336699; padding: 20pt; text-align: center;">
@@ -729,6 +744,7 @@ In the Scryber codebase:
         <p>{{model.featuredExcerpt}}</p>
     </div>
 </div>
+{% endraw %}
 ```
 
 ---

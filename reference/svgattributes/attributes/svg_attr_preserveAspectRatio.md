@@ -25,6 +25,7 @@ The `preserveAspectRatio` attribute controls SVG scaling behavior:
 - Create letterbox or pillarbox effects
 
 ```html
+{% raw %}
 <!-- Default: center and fit inside -->
 <svg width="300pt" height="200pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
     <circle cx="50" cy="50" r="40" fill="blue"/>
@@ -45,6 +46,7 @@ The `preserveAspectRatio` attribute controls SVG scaling behavior:
      preserveAspectRatio="{{model.alignMode}} {{model.scaleMode}}">
     <rect x="10" y="10" width="80" height="80" fill="purple"/>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -137,49 +139,58 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 ### Dynamic Alignment
 
 ```html
+{% raw %}
 <!-- Model: { alignment: "xMidYMid", scale: "meet" } -->
 <svg width="400pt" height="300pt" viewBox="0 0 100 100"
      preserveAspectRatio="{{model.alignment}} {{model.scale}}">
     <rect x="10" y="10" width="80" height="80" fill="blue"/>
     <circle cx="50" cy="50" r="30" fill="red"/>
 </svg>
+{% endraw %}
 ```
 
 ### Conditional Scaling
 
 ```html
+{% raw %}
 <!-- Model: { fillViewport: false } -->
 <svg width="400pt" height="200pt" viewBox="0 0 100 100"
      preserveAspectRatio="xMidYMid {{model.fillViewport ? 'slice' : 'meet'}}">
     <rect x="0" y="0" width="100" height="100" fill="lightblue"/>
     <text x="50" y="55" text-anchor="middle" font-size="12" fill="navy">Content</text>
 </svg>
+{% endraw %}
 ```
 
 ### User-Selected Alignment
 
 ```html
+{% raw %}
 <!-- Model: { userAlign: "xMinYMin" } -->
 <svg width="300pt" height="300pt" viewBox="0 0 100 50"
      preserveAspectRatio="{{model.userAlign}} meet">
     <rect x="0" y="0" width="100" height="50" fill="yellow"/>
     <text x="50" y="28" text-anchor="middle" font-size="10">Aligned Content</text>
 </svg>
+{% endraw %}
 ```
 
 ### Toggle Stretch Mode
 
 ```html
+{% raw %}
 <!-- Model: { maintainAspect: true } -->
 <svg width="400pt" height="200pt" viewBox="0 0 100 100"
      preserveAspectRatio="{{model.maintainAspect ? 'xMidYMid meet' : 'none'}}">
     <circle cx="50" cy="50" r="40" fill="purple"/>
 </svg>
+{% endraw %}
 ```
 
 ### Responsive Image Fitting
 
 ```html
+{% raw %}
 <!-- Model: { images: [{url:"photo.jpg", fit:"meet"}, {url:"banner.jpg", fit:"slice"}] } -->
 <template data-bind="{{model.images}}">
     <svg width="300pt" height="200pt" viewBox="0 0 400 300"
@@ -187,6 +198,7 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
         <image href="{{.url}}" width="400" height="300"/>
     </svg>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -700,6 +712,7 @@ When `preserveAspectRatio="none"`:
 ### Dynamic Fit Mode
 
 ```html
+{% raw %}
 <!-- Model: { displayMode: "contain" } -->
 <!-- displayMode can be "contain" (meet) or "cover" (slice) -->
 <svg width="400pt" height="300pt" viewBox="0 0 800 800"
@@ -711,11 +724,13 @@ When `preserveAspectRatio="none"`:
         {{model.displayMode}}
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### Mobile vs Desktop Layout
 
 ```html
+{% raw %}
 <!-- Model: { isMobile: false } -->
 <svg width="100%" height="400pt"
      viewBox="0 0 {{model.isMobile ? 400 : 1200}} 400"
@@ -730,6 +745,7 @@ When `preserveAspectRatio="none"`:
     <!-- Content area -->
     <rect y="80" width="{{model.isMobile ? 400 : 1200}}" height="320" fill="#f0f0f0"/>
 </svg>
+{% endraw %}
 ```
 
 ---

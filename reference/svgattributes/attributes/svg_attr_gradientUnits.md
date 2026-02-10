@@ -80,6 +80,7 @@ The `gradientUnits` attribute is supported on:
 Choose coordinate system based on data:
 
 ```html
+{% raw %}
 <!-- Model: { useAbsolute: false } -->
 <svg width="400" height="200">
     <defs>
@@ -95,6 +96,7 @@ Choose coordinate system based on data:
     </defs>
     <rect width="400" height="200" fill="url(#dynamicUnits)" />
 </svg>
+{% endraw %}
 ```
 
 ### Responsive vs Fixed Gradients
@@ -102,6 +104,7 @@ Choose coordinate system based on data:
 Switch between responsive and fixed based on context:
 
 ```html
+{% raw %}
 <!-- Model: { isResponsive: true, containerWidth: 500 } -->
 <svg width="{{model.containerWidth}}" height="300">
     <defs>
@@ -117,6 +120,7 @@ Switch between responsive and fixed based on context:
     </defs>
     <rect width="{{model.containerWidth}}" height="300" fill="url(#adaptiveGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ### Chart-Specific Gradients
@@ -124,6 +128,7 @@ Switch between responsive and fixed based on context:
 Use absolute coordinates for consistent chart backgrounds:
 
 ```html
+{% raw %}
 <!-- Model: { chartX: 50, chartY: 50, chartWidth: 400, chartHeight: 250 } -->
 <svg width="500" height="300">
     <defs>
@@ -142,6 +147,7 @@ Use absolute coordinates for consistent chart backgrounds:
           width="{{model.chartWidth}}" height="{{model.chartHeight}}"
           fill="url(#chartBg)" />
 </svg>
+{% endraw %}
 ```
 
 ### Shared Gradient Across Multiple Shapes
@@ -149,6 +155,7 @@ Use absolute coordinates for consistent chart backgrounds:
 Use userSpaceOnUse for consistent gradient across shapes:
 
 ```html
+{% raw %}
 <!-- Model: { shapes: [{x: 50, y: 50, size: 80}, {x: 200, y: 50, size: 120}] } -->
 <svg width="600" height="300">
     <defs>
@@ -166,6 +173,7 @@ Use userSpaceOnUse for consistent gradient across shapes:
               fill="url(#sharedGrad)" />
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -463,6 +471,7 @@ Use userSpaceOnUse for consistent gradient across shapes:
 ### Data-Driven Coordinate System
 
 ```html
+{% raw %}
 <!-- Model: { mode: "responsive", width: 500, height: 300 } -->
 <svg width="{{model.width}}" height="{{model.height}}">
     <defs>
@@ -479,6 +488,7 @@ Use userSpaceOnUse for consistent gradient across shapes:
 
     <rect width="{{model.width}}" height="{{model.height}}" fill="url(#modeGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ### Timeline with Absolute Positioning

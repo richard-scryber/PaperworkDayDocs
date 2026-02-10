@@ -25,6 +25,7 @@ The `viewBox` attribute controls the SVG coordinate system and viewport:
 - Simplify coordinate calculations with custom units
 
 ```html
+{% raw %}
 <!-- Basic viewBox: shows coordinates 0,0 to 100,100 -->
 <svg width="200pt" height="200pt" viewBox="0 0 100 100">
     <circle cx="50" cy="50" r="40" fill="blue"/>
@@ -39,6 +40,7 @@ The `viewBox` attribute controls the SVG coordinate system and viewport:
 <svg width="400pt" height="400pt" viewBox="{{model.x}} {{model.y}} {{model.width}} {{model.height}}">
     <rect x="0" y="0" width="100" height="100" fill="green"/>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -117,17 +119,20 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 ### Dynamic Zoom and Pan
 
 ```html
+{% raw %}
 <!-- Model: { x: 0, y: 0, width: 100, height: 100 } -->
 <svg width="400pt" height="400pt"
      viewBox="{{model.x}} {{model.y}} {{model.width}} {{model.height}}">
     <rect x="10" y="10" width="80" height="80" fill="blue"/>
     <circle cx="50" cy="50" r="30" fill="red"/>
 </svg>
+{% endraw %}
 ```
 
 ### Zoom Effect
 
 ```html
+{% raw %}
 <!-- Model: { zoomLevel: 1 } -->
 <!-- zoomLevel: 1 = normal, 2 = 2x zoom, 0.5 = zoom out -->
 <svg width="300pt" height="300pt"
@@ -136,11 +141,13 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
     <circle cx="50" cy="50" r="20" fill="blue"/>
     <text x="50" y="55" text-anchor="middle" fill="white" font-size="8">Target</text>
 </svg>
+{% endraw %}
 ```
 
 ### Pan Effect
 
 ```html
+{% raw %}
 <!-- Model: { panX: 0, panY: 0 } -->
 <svg width="400pt" height="300pt"
      viewBox="{{model.panX}} {{model.panY}} 200 150">
@@ -149,11 +156,13 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
     <circle cx="150" cy="100" r="20" fill="green"/>
     <circle cx="250" cy="50" r="20" fill="blue"/>
 </svg>
+{% endraw %}
 ```
 
 ### Responsive ViewBox
 
 ```html
+{% raw %}
 <!-- Model: { contentWidth: 800, contentHeight: 600 } -->
 <svg width="100%" height="400pt"
      viewBox="0 0 {{model.contentWidth}} {{model.contentHeight}}"
@@ -162,11 +171,13 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
     <text x="{{model.contentWidth / 2}}" y="{{model.contentHeight / 2}}"
           text-anchor="middle" font-size="48" fill="#333">Content</text>
 </svg>
+{% endraw %}
 ```
 
 ### Focus on Region
 
 ```html
+{% raw %}
 <!-- Model: { focusRegion: { x: 100, y: 100, width: 200, height: 200 } } -->
 <svg width="400pt" height="400pt"
      viewBox="{{model.focusRegion.x}} {{model.focusRegion.y}} {{model.focusRegion.width}} {{model.focusRegion.height}}">
@@ -174,11 +185,13 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
     <rect x="100" y="100" width="200" height="200" fill="yellow" stroke="orange" stroke-width="3"/>
     <text x="200" y="210" text-anchor="middle" font-size="24" font-weight="bold">Focus Area</text>
 </svg>
+{% endraw %}
 ```
 
 ### Animated Viewport Transition
 
 ```html
+{% raw %}
 <!-- Model: { currentView: 0, views: [{x:0,y:0,w:100,h:100}, {x:50,y:50,w:50,h:50}] } -->
 <svg width="400pt" height="400pt"
      viewBox="{{model.views[model.currentView].x}} {{model.views[model.currentView].y}} {{model.views[model.currentView].w}} {{model.views[model.currentView].h}}">
@@ -186,6 +199,7 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
     <rect x="25" y="25" width="50" height="50" fill="blue"/>
     <rect x="50" y="50" width="25" height="25" fill="red"/>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -562,6 +576,7 @@ ViewBox is key to creating responsive, scalable SVG:
 ### Dynamic Zoom to Element
 
 ```html
+{% raw %}
 <!-- Model: { selectedElement: { x: 200, y: 150, width: 100, height: 100 } } -->
 <svg width="400pt" height="300pt"
      viewBox="{{model.selectedElement.x - 20}} {{model.selectedElement.y - 20}} {{model.selectedElement.width + 40}} {{model.selectedElement.height + 40}}">
@@ -571,6 +586,7 @@ ViewBox is key to creating responsive, scalable SVG:
     <rect x="200" y="150" width="100" height="100" fill="red"/>
     <rect x="400" y="100" width="100" height="100" fill="green"/>
 </svg>
+{% endraw %}
 ```
 
 ### Minimap Overview
@@ -643,6 +659,7 @@ ViewBox is key to creating responsive, scalable SVG:
 ### Animated Pan Through Scene
 
 ```html
+{% raw %}
 <!-- Model: { frame: 0 } -->
 <!-- frame animates from 0 to 400 to pan across scene -->
 <svg width="400pt" height="300pt" viewBox="{{model.frame}} 0 400 300">
@@ -656,6 +673,7 @@ ViewBox is key to creating responsive, scalable SVG:
     <polygon points="750,220 700,160 800,160" fill="darkred"/>  <!-- Roof -->
     <circle cx="1000" cy="150" r="50" fill="white"/>  <!-- Cloud -->
 </svg>
+{% endraw %}
 ```
 
 ### Responsive Logo

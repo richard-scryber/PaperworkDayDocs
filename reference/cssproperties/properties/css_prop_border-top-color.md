@@ -77,6 +77,7 @@ The `border-top-color` property supports dynamic values through data binding, al
 ### Example 1: Status-based colors
 
 ```html
+{% raw %}
 <style>
     .section-header {
         border-top-width: 4pt;
@@ -92,6 +93,7 @@ The `border-top-color` property supports dynamic values through data binding, al
         <p>Status: {{section.status}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -108,6 +110,7 @@ Data context:
 ### Example 2: Priority-based colors
 
 ```html
+{% raw %}
 <style>
     .task-header {
         border-top-width: 3pt;
@@ -122,11 +125,13 @@ Data context:
         <p>Priority: {{priority.level}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Conditional alert colors
 
 ```html
+{% raw %}
 <style>
     .alert-header {
         border-top-width: 5pt;
@@ -140,6 +145,7 @@ Data context:
         <strong>{{alert.title}}:</strong> {{alert.message}}
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

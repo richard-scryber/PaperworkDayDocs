@@ -319,6 +319,7 @@ Create striped tables using nth-child CSS selectors:
 ### Data-Bound Dynamic Rows
 
 ```html
+{% raw %}
 <!-- Model: {
     employees: [
         {name: "Alice", dept: "Engineering", salary: 95000},
@@ -344,11 +345,13 @@ Create striped tables using nth-child CSS selectors:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Conditional Row Styling
 
 ```html
+{% raw %}
 <!-- Model: {
     transactions: [
         {id: 1, amount: 1500, status: "completed"},
@@ -377,6 +380,7 @@ Create striped tables using nth-child CSS selectors:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Row with Typography Styling

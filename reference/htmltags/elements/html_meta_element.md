@@ -367,6 +367,7 @@ In the Scryber codebase:
 ### Corporate Template Metadata
 
 ```html
+{% raw %}
 <head>
     <title>{{model.documentTitle}}</title>
     <meta charset="utf-8" />
@@ -379,11 +380,13 @@ In the Scryber codebase:
     <meta name="print-restrictions" content="{{model.permissions}}" />
     <meta name="print-encryption" content="{{model.encryptionLevel}}" />
 </head>
+{% endraw %}
 ```
 
 ### Invoice with Restricted Copying
 
 ```html
+{% raw %}
 <head>
     <title>Invoice #{{model.invoiceNumber}}</title>
     <meta name="author" content="{{model.companyName}}" />
@@ -394,6 +397,7 @@ In the Scryber codebase:
     <meta name="print-restrictions" content="printing, accessibility" />
     <meta name="print-encryption" content="128bit" />
 </head>
+{% endraw %}
 ```
 
 ### Contract Document

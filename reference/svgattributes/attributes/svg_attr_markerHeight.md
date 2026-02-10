@@ -80,6 +80,7 @@ The `markerHeight` attribute is supported on:
 Adjust marker height based on data:
 
 ```html
+{% raw %}
 <!-- Model: { markerSize: 14, visualScale: 1.2 } -->
 <svg width="400" height="200">
     <defs>
@@ -99,6 +100,7 @@ Adjust marker height based on data:
           stroke="#2c3e50" stroke-width="2"
           marker-end="url(#dynamic-marker)"/>
 </svg>
+{% endraw %}
 ```
 
 ### Proportional Sizing
@@ -106,6 +108,7 @@ Adjust marker height based on data:
 Scale both dimensions together:
 
 ```html
+{% raw %}
 <!-- Model: { scale: 1.5 } -->
 <svg width="400" height="200">
     <defs>
@@ -124,11 +127,13 @@ Scale both dimensions together:
           stroke="#2c3e50" stroke-width="2"
           marker-end="url(#scaled-marker)"/>
 </svg>
+{% endraw %}
 ```
 
 ### Variable Aspect Ratios
 
 ```html
+{% raw %}
 <!-- Model: {
     markers: [
         { width: 12, height: 8, color: '#e74c3c' },
@@ -157,6 +162,7 @@ Scale both dimensions together:
               marker-end="url(#marker-{{$index}})"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---

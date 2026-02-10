@@ -94,6 +94,7 @@ The `border-top` property supports dynamic values through data binding, allowing
 ### Example 1: Section headers with status colors
 
 ```html
+{% raw %}
 <style>
     .section-header {
         padding-top: 15pt;
@@ -107,6 +108,7 @@ The `border-top` property supports dynamic values through data binding, allowing
         <p>Status: {{section.status}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -124,6 +126,7 @@ Data context:
 ### Example 2: Dynamic table row separators
 
 ```html
+{% raw %}
 <style>
     .table-row {
         padding-top: 10pt;
@@ -135,11 +138,13 @@ Data context:
         <p>{{row.label}}: {{row.value}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Priority-based top accents
 
 ```html
+{% raw %}
 <style>
     .task-card {
         padding-top: 12pt;
@@ -153,6 +158,7 @@ Data context:
         <p>Priority: {{priority.level}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

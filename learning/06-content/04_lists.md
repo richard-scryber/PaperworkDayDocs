@@ -367,6 +367,7 @@ ul.custom li::before {
 
 {% raw %}
 ```html
+{% raw %}
 <h1>Product Catalog</h1>
 
 <ul>
@@ -374,6 +375,7 @@ ul.custom li::before {
     <li>{{this.name}} - ${{this.price}}</li>
     {{/each}}
 </ul>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -381,6 +383,7 @@ ul.custom li::before {
 
 {% raw %}
 ```html
+{% raw %}
 <h2>Available Features</h2>
 
 <ul>
@@ -394,6 +397,7 @@ ul.custom li::before {
     <li>GPS Navigation</li>
     {{/if}}
 </ul>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -401,6 +405,7 @@ ul.custom li::before {
 
 {% raw %}
 ```html
+{% raw %}
 <h1>Department Structure</h1>
 
 <ul>
@@ -415,6 +420,7 @@ ul.custom li::before {
     </li>
     {{/each}}
 </ul>
+{% endraw %}
 ```
 {% endraw %}
 

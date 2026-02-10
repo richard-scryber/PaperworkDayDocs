@@ -99,6 +99,7 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
 ### Example 1: Dynamic progress circles from data
 
 ```html
+{% raw %}
 <style>
     .progress-bg { fill: none; stroke: #e5e7eb; stroke-width: 10; }
     .progress-value { fill: none; stroke-width: 10; stroke-linecap: round; }
@@ -117,11 +118,13 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Data-driven gauge meter
 
 ```html
+{% raw %}
 <style>
     .gauge-track { fill: none; stroke: #e5e7eb; stroke-width: 12; }
     .gauge-indicator { fill: none; stroke-width: 12; stroke-linecap: round; }
@@ -137,11 +140,13 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
         <text x="125" y="145" text-anchor="middle" font-size="14" fill="#6b7280">{{unit}}</text>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Skill level bars with data binding
 
 ```html
+{% raw %}
 <style>
     .skill-track { fill: none; stroke: #f3f4f6; stroke-width: 10; stroke-linecap: round; }
     .skill-level { fill: none; stroke-width: 10; stroke-linecap: round; }
@@ -159,6 +164,7 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ---

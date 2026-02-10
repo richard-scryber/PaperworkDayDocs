@@ -110,6 +110,7 @@ The `background-position` property supports dynamic data binding, enabling preci
 ### Example 1: Dynamic logo positioning from preferences
 
 ```html
+{% raw %}
 <style>
     .invoice-header {
         background-image: url('{{company.logoUrl}}');
@@ -127,6 +128,7 @@ The `background-position` property supports dynamic data binding, enabling preci
         <p>Date: {{invoice.date}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Allows each organization to specify their preferred logo position (e.g., "top left", "right 20pt top 20pt", "center") through configuration, ensuring invoices match their exact branding guidelines stored in the database.
@@ -134,6 +136,7 @@ Allows each organization to specify their preferred logo position (e.g., "top le
 ### Example 2: Conditional positioning based on document layout
 
 ```html
+{% raw %}
 <style>
     .certificate-page {
         background-image: url('{{certificate.sealUrl}}');
@@ -152,6 +155,7 @@ Allows each organization to specify their preferred logo position (e.g., "top le
         <p style="text-align: center; font-size: 24pt; font-weight: bold;">{{recipient.name}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Automatically adjusts seal position based on certificate layout style - classic layouts place seals in the bottom right corner, modern layouts center them at the bottom, while alternative layouts center them completely.
@@ -159,6 +163,7 @@ Automatically adjusts seal position based on certificate layout style - classic 
 ### Example 3: Multi-element positioning with data arrays
 
 ```html
+{% raw %}
 <style>
     .complex-header {
         background-image: url('{{branding.mainLogoUrl}}'), url('{{branding.accentImageUrl}}');
@@ -175,6 +180,7 @@ Automatically adjusts seal position based on certificate layout style - classic 
         <p>{{document.subtitle}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Enables sophisticated multi-layered backgrounds where both main logos and accent graphics have data-driven positioning. Perfect for complex branded documents requiring precise placement of multiple visual elements based on brand guidelines.

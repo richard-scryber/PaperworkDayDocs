@@ -79,28 +79,33 @@ The `<ellipse>` element supports dynamic attribute values using data binding exp
 ### Example 1: Dynamic Size and Position
 
 ```html
+{% raw %}
 <!-- Model: { oval: { cx: 100, cy: 60, rx: 80, ry: 45, color: '#FF5722' } } -->
 <svg width="200" height="120">
     <ellipse cx="{{oval.cx}}" cy="{{oval.cy}}"
              rx="{{oval.rx}}" ry="{{oval.ry}}"
              fill="{{oval.color}}"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 2: Data-Driven Badges
 
 ```html
+{% raw %}
 <!-- Model: { badge: { width: 50, height: 25, label: 'SALE' } } -->
 <svg width="120" height="60">
     <ellipse cx="60" cy="30"
              rx="{{badge.width}}" ry="{{badge.height}}"
              fill="#f44336" stroke="#c62828" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Repeating Ellipses
 
 ```html
+{% raw %}
 <!-- Model: { bubbles: [
     {cx: 60, cy: 50, rx: 50, ry: 30, color: '#e74c3c'},
     {cx: 160, cy: 50, rx: 40, ry: 25, color: '#3498db'},
@@ -113,6 +118,7 @@ The `<ellipse>` element supports dynamic attribute values using data binding exp
                  fill="{{.color}}" fill-opacity="0.6"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -379,6 +385,7 @@ The stroke is drawn centered on the ellipse's outline, extending both inward and
 ### Dynamic Size Ellipses
 
 ```html
+{% raw %}
 <!-- Model: { sizes: [
     {cx: 60, size: 1.0, color: '#e74c3c'},
     {cx: 140, size: 0.7, color: '#f39c12'},
@@ -391,6 +398,7 @@ The stroke is drawn centered on the ellipse's outline, extending both inward and
                  fill="{{.color}}"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---

@@ -95,6 +95,7 @@ The `break-inside` property supports data binding, allowing you to dynamically c
 ### Example 1: Priority-based content grouping
 
 ```html
+{% raw %}
 <style>
     .content-card {
         break-inside: {{card.priority === 'high' || card.keepTogether ? 'avoid' : 'auto'}};
@@ -117,11 +118,13 @@ The `break-inside` property supports data binding, allowing you to dynamically c
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Configurable table and figure integrity
 
 ```html
+{% raw %}
 <style>
     .figure-container {
         break-inside: {{figureConfig.preventSplit ? 'avoid' : 'auto'}};
@@ -152,11 +155,13 @@ The `break-inside` property supports data binding, allowing you to dynamically c
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Multi-column newsletter with smart content breaking
 
 ```html
+{% raw %}
 <style>
     .newsletter {
         column-count: {{layout.columnCount || 2}};
@@ -191,6 +196,7 @@ The `break-inside` property supports data binding, allowing you to dynamically c
         {{/each}}
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

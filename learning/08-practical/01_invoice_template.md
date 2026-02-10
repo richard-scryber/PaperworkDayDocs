@@ -31,6 +31,7 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -386,6 +387,7 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -605,6 +607,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 {% raw %}
 ```html
+{% raw %}
 <div class="invoice-header">
     <div>
         <img src="{{company.logo}}" class="company-logo" />
@@ -614,6 +617,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
         <p>{{invoice.number}}</p>
     </div>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -627,6 +631,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 {% raw %}
 ```html
+{% raw %}
 <div class="info-section">
     <div class="company-info">
         <h3>From</h3>
@@ -642,6 +647,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
         {{/if}}
     </div>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -654,6 +660,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 {% raw %}
 ```html
+{% raw %}
 <table class="line-items">
     <thead>
         <tr>
@@ -679,6 +686,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
         {{/each}}
     </tbody>
 </table>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -692,6 +700,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 {% raw %}
 ```html
+{% raw %}
 <div class="totals-section">
     <table>
         <tr>
@@ -708,6 +717,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
         </tr>
     </table>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -737,6 +747,7 @@ Add more item details:
 
 {% raw %}
 ```html
+{% raw %}
 <tr>
     <td>
         <strong>{{this.description}}</strong>
@@ -748,6 +759,7 @@ Add more item details:
     <td class="right">{{this.discountPercent}}%</td>
     <td class="right">${{format(this.lineTotal, '0.00')}}</td>
 </tr>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -757,6 +769,7 @@ For hourly billing:
 
 {% raw %}
 ```html
+{% raw %}
 <table class="line-items">
     <thead>
         <tr>
@@ -780,6 +793,7 @@ For hourly billing:
         {{/each}}
     </tbody>
 </table>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -791,15 +805,18 @@ For hourly billing:
 
 1. **Logo Optimization:**
 ```html
+{% raw %}
 <img src="{{company.logo}}"
      class="company-logo"
      alt="{{company.name}}"
      style="max-height: 50pt; max-width: 200pt;" />
+{% endraw %}
 ```
 
 2. **Status Badge:**
 {% raw %}
 ```html
+{% raw %}
 {{#if invoice.isPaid}}
 <div style="position: absolute; top: 100pt; right: 50pt;
             transform: rotate(-15deg); border: 4pt solid #10b981;
@@ -808,25 +825,30 @@ For hourly billing:
     PAID
 </div>
 {{/if}}
+{% endraw %}
 ```
 {% endraw %}
 
 3. **QR Code for Payment:**
 ```html
+{% raw %}
 <div style="text-align: center; margin-top: 20pt;">
     <img src="{{invoice.paymentQrCode}}"
          style="width: 100pt; height: 100pt;" />
     <p style="font-size: 8pt;">Scan to pay</p>
 </div>
+{% endraw %}
 ```
 
 4. **Terms and Conditions:**
 ```html
+{% raw %}
 <div style="font-size: 8pt; color: #666; margin-top: 30pt;
             border-top: 1pt solid #e5e7eb; padding-top: 10pt;">
     <p><strong>Terms & Conditions:</strong></p>
     <p>{{company.termsAndConditions}}</p>
 </div>
+{% endraw %}
 ```
 
 ---
@@ -872,8 +894,10 @@ Build specialized invoices for:
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Dynamic calculation -->
 <td>Total: ${{format(invoice.total, '0.00')}}</td>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -881,8 +905,10 @@ Build specialized invoices for:
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Will break if customer.company is null -->
 <p>{{customer.company}}</p>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -890,10 +916,12 @@ Build specialized invoices for:
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Conditional rendering -->
 {{#if customer.company}}
 <p>{{customer.company}}</p>
 {{/if}}
+{% endraw %}
 ```
 {% endraw %}
 
@@ -901,9 +929,11 @@ Build specialized invoices for:
 
 {% raw %}
 ```html
+{% raw %}
 <!-- No currency formatting -->
 <td>${{invoice.total}}</td>
 <!-- Output: $1234.5 -->
+{% endraw %}
 ```
 {% endraw %}
 
@@ -911,9 +941,11 @@ Build specialized invoices for:
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Proper formatting -->
 <td>${{format(invoice.total, '0.00')}}</td>
 <!-- Output: $1,234.50 -->
+{% endraw %}
 ```
 {% endraw %}
 

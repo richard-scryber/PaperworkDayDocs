@@ -240,11 +240,13 @@ Format strings respect the current culture:
 Format strings can be bound from data:
 
 ```html
+{% raw %}
 <!-- Format from model -->
 <num value="{{.price}}" data-format="{{model.currencyFormat}}" />
 
 <!-- Conditional format -->
 <num value="{{.value}}" data-format="{{.isPercentage ? 'P2' : 'N2'}}" />
+{% endraw %}
 ```
 
 ---
@@ -256,12 +258,14 @@ Format strings can be bound from data:
 Display money with currency symbol:
 
 ```html
+{% raw %}
 <!-- Value: 1234.56 -->
 <num value="1234.56" data-format="C2" />
 <!-- Output: $1,234.56 -->
 
 <!-- Bound value -->
 <num value="{{model.price}}" data-format="C2" />
+{% endraw %}
 ```
 
 ### 2. Currency with Custom Symbol
@@ -281,6 +285,7 @@ Use custom currency format:
 Show values as percentages:
 
 ```html
+{% raw %}
 <!-- Value: 0.1234 -->
 <num value="0.1234" data-format="P1" />
 <!-- Output: 12.3% -->
@@ -291,6 +296,7 @@ Show values as percentages:
 <!-- From calculation -->
 <num value="{{.sold / .total}}" data-format="P0" />
 <!-- Output: 45% -->
+{% endraw %}
 ```
 
 ### 4. Fixed Decimal Places
@@ -298,6 +304,7 @@ Show values as percentages:
 Control decimal precision:
 
 ```html
+{% raw %}
 <!-- Always 2 decimal places -->
 <num value="42" data-format="F2" />
 <!-- Output: 42.00 -->
@@ -307,6 +314,7 @@ Control decimal precision:
 
 <num value="{{.measurement}}" data-format="F4" />
 <!-- Output: 1.4142 -->
+{% endraw %}
 ```
 
 ### 5. Thousands Separator
@@ -326,6 +334,7 @@ Format large numbers with separators:
 Pad with leading zeros:
 
 ```html
+{% raw %}
 <!-- Invoice numbers -->
 <num value="42" data-format="D5" />
 <!-- Output: 00042 -->
@@ -333,6 +342,7 @@ Pad with leading zeros:
 <!-- Item IDs -->
 <num value="{{.itemId}}" data-format="D6" />
 <!-- Output: 000123 -->
+{% endraw %}
 ```
 
 ### 7. Scientific Notation
@@ -352,11 +362,13 @@ Display in exponential format:
 Add custom text around numbers:
 
 ```html
+{% raw %}
 <num value="75" data-format="'Score: '#0' points'" />
 <!-- Output: Score: 75 points -->
 
 <num value="{{.temperature}}" data-format="#0.0'°C'" />
 <!-- Output: 23.5°C -->
+{% endraw %}
 ```
 
 ### 9. Positive/Negative/Zero Formats
@@ -469,6 +481,7 @@ Apply formatting to placeholders:
 Format currency in table:
 
 ```html
+{% raw %}
 <table style="width: 100%;">
     <thead>
         <tr>
@@ -489,6 +502,7 @@ Format currency in table:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### 18. Financial Report with Percentages
@@ -496,6 +510,7 @@ Format currency in table:
 Show financial metrics:
 
 ```html
+{% raw %}
 <div style="padding: 10pt; border: 1pt solid #ccc;">
     <div>Revenue: <num value="{{model.revenue}}" data-format="C0" /></div>
     <div>Growth: <num value="{{model.growthRate}}" data-format="P1" /></div>
@@ -507,6 +522,7 @@ Show financial metrics:
      Growth: 15.3%
      Margin: 23.45%
 -->
+{% endraw %}
 ```
 
 ### 19. Measurement Display
@@ -514,6 +530,7 @@ Show financial metrics:
 Show measurements with units:
 
 ```html
+{% raw %}
 <div>
     <div>Length: <num value="{{.length}}" data-format="#0.00'm'" /></div>
     <div>Weight: <num value="{{.weight}}" data-format="#0.0'kg'" /></div>
@@ -525,6 +542,7 @@ Show measurements with units:
      Weight: 45.3kg
      Temp: 23.5°C
 -->
+{% endraw %}
 ```
 
 ### 20. Date Header with Custom Format
@@ -532,6 +550,7 @@ Show measurements with units:
 Create formatted headers:
 
 ```html
+{% raw %}
 <header>
     <div style="text-align: right; font-size: 9pt; color: #666;">
         Report Date: <time value="{{model.reportDate}}" data-format="MMMM d, yyyy" />
@@ -539,6 +558,7 @@ Create formatted headers:
 </header>
 
 <!-- Output: Report Date: October 13, 2024 -->
+{% endraw %}
 ```
 
 ### 21. Dynamic Format Selection
@@ -546,9 +566,11 @@ Create formatted headers:
 Choose format based on data:
 
 ```html
+{% raw %}
 <!-- Model: { value: 1234.56, formatType: "currency" } -->
 <num value="{{model.value}}"
      data-format="{{model.formatType === 'currency' ? 'C2' : model.formatType === 'percentage' ? 'P1' : 'N2'}}" />
+{% endraw %}
 ```
 
 ### 22. Conditional Negative Formatting
@@ -556,9 +578,11 @@ Choose format based on data:
 Format negative values in red:
 
 ```html
+{% raw %}
 <span style="color: {{model.profit < 0 ? '#dc3545' : '#28a745'}};">
     <num value="{{model.profit}}" data-format="C2" />
 </span>
+{% endraw %}
 ```
 
 ### 23. Multi-Currency Display
@@ -566,12 +590,14 @@ Format negative values in red:
 Show multiple currencies:
 
 ```html
+{% raw %}
 <div>
     <div>USD: <num value="{{.amountUSD}}" data-format="$#,##0.00" /></div>
     <div>EUR: <num value="{{.amountEUR}}" data-format="€#,##0.00" /></div>
     <div>GBP: <num value="{{.amountGBP}}" data-format="£#,##0.00" /></div>
     <div>JPY: <num value="{{.amountJPY}}" data-format="¥#,##0" /></div>
 </div>
+{% endraw %}
 ```
 
 ### 24. Score Card with Conditional Formatting
@@ -579,6 +605,7 @@ Show multiple currencies:
 Display scores with context:
 
 ```html
+{% raw %}
 <template data-bind="{{model.students}}">
     <div style="padding: 10pt; border-bottom: 1pt solid #ddd;">
         <div style="display: inline-block; width: 50%;">{{.name}}</div>
@@ -590,6 +617,7 @@ Display scores with context:
         </div>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### 25. Time Duration Formatting
@@ -597,12 +625,14 @@ Display scores with context:
 Show elapsed time:
 
 ```html
+{% raw %}
 <!-- For TimeSpan or duration values -->
 <time value="{{model.duration}}" data-format="hh\:mm\:ss" />
 <!-- Output: 02:15:30 -->
 
 <time value="{{model.meetingTime}}" data-format="h\:mm tt" />
 <!-- Output: 2:15 PM -->
+{% endraw %}
 ```
 
 ---

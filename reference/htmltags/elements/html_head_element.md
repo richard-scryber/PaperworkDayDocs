@@ -466,6 +466,7 @@ The `<head>` element implements `IInvisibleContainer`, which means:
 ### Corporate Template Structure
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -496,11 +497,13 @@ The `<head>` element implements `IInvisibleContainer`, which means:
     <!-- Template content -->
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Academic Paper Template
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -551,11 +554,13 @@ The `<head>` element implements `IInvisibleContainer`, which means:
     <!-- Academic paper content -->
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Invoice Template
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -612,6 +617,7 @@ The `<head>` element implements `IInvisibleContainer`, which means:
     <!-- Invoice content -->
 </body>
 </html>
+{% endraw %}
 ```
 
 ---

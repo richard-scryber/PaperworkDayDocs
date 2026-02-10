@@ -93,6 +93,7 @@ The `stroke-width` property can be dynamically set using data binding expression
 ### Example 1: Data-driven line weights in charts
 
 ```html
+{% raw %}
 <style>
     .data-line {
         fill: none;
@@ -108,6 +109,7 @@ The `stroke-width` property can be dynamically set using data binding expression
         {{/each}}
     </svg>
 </body>
+{% endraw %}
 ```
 
 With model data:
@@ -124,6 +126,7 @@ With model data:
 ### Example 2: Conditional border thickness based on status
 
 ```html
+{% raw %}
 <style>
     .item-box {
         fill: white;
@@ -143,11 +146,13 @@ With model data:
         {{/each}}
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Network connections weighted by traffic
 
 ```html
+{% raw %}
 <style>
     .node {
         fill: white;
@@ -174,6 +179,7 @@ With model data:
         {{/each}}
     </svg>
 </body>
+{% endraw %}
 ```
 
 With model data (bandwidth determines line thickness):

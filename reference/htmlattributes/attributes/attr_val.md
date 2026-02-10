@@ -89,22 +89,28 @@ The `val` attribute fully supports data binding:
 ### Dynamic Value with Data Binding
 
 ```html
+{% raw %}
 <!-- Model: { totalAmount: 542.75 } -->
 <output for="subtotal tax" val="{{model.totalAmount}}" />
+{% endraw %}
 ```
 
 ### Calculated Value
 
 ```html
+{% raw %}
 <!-- Model: { quantity: 5, price: 29.99 } -->
 <output for="quantity price" val="{{model.quantity * model.price}}" />
+{% endraw %}
 ```
 
 ### Formatted Value
 
 ```html
+{% raw %}
 <!-- Model: { total: 1234.56 } -->
 <output for="items" val="${{model.total.toFixed(2)}}" />
+{% endraw %}
 ```
 
 ---
@@ -193,6 +199,7 @@ An empty or missing `val` attribute results in an empty output:
 ### Example 3: Data-Bound Output
 
 ```html
+{% raw %}
 <!-- Model: { subtotal: 500, taxRate: 0.08, total: 540 } -->
 
 <form id="invoice">
@@ -204,6 +211,7 @@ An empty or missing `val` attribute results in an empty output:
     <output for="subtotal" val="Tax: ${{model.subtotal * model.taxRate}}" /><br/>
     <output for="subtotal" val="Total: ${{model.total}}" />
 </div>
+{% endraw %}
 ```
 
 ### Example 4: Calculation Results
@@ -296,6 +304,7 @@ An empty or missing `val` attribute results in an empty output:
 ### Example 8: Dynamic Value Calculation
 
 ```html
+{% raw %}
 <!-- Model: { items: [
     {name: "Widget", qty: 10, price: 25},
     {name: "Gadget", qty: 5, price: 50}
@@ -312,6 +321,7 @@ An empty or missing `val` attribute results in an empty output:
 <div style="font-weight: bold; margin-top: 15pt; padding-top: 10pt; border-top: 2pt solid black;">
     Grand Total: <output val="${{sum(model.items, .qty * .price)}}" />
 </div>
+{% endraw %}
 ```
 
 ### Example 9: Report with Calculated Percentages
@@ -347,6 +357,7 @@ An empty or missing `val` attribute results in an empty output:
 ### Example 10: Invoice with Line Items
 
 ```html
+{% raw %}
 <!-- Model: { lineItems: [
     {desc: "Consulting", qty: 40, rate: 150, total: 6000},
     {desc: "Development", qty: 80, rate: 120, total: 9600}
@@ -388,6 +399,7 @@ An empty or missing `val` attribute results in an empty output:
         </tr>
     </tfoot>
 </table>
+{% endraw %}
 ```
 
 ### Example 11: Grade Calculator
@@ -483,6 +495,7 @@ An empty or missing `val` attribute results in an empty output:
 ### Example 15: Conditional Output Values
 
 ```html
+{% raw %}
 <!-- Model: { score: 95, passed: true } -->
 
 <form id="examResults">
@@ -498,6 +511,7 @@ An empty or missing `val` attribute results in an empty output:
         Grade: <output for="score" val="{{model.score >= 90 ? 'A' : model.score >= 80 ? 'B' : model.score >= 70 ? 'C' : model.score >= 60 ? 'D' : 'F'}}" />
     </p>
 </div>
+{% endraw %}
 ```
 
 ---

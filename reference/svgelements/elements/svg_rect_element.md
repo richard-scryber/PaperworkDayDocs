@@ -82,27 +82,32 @@ The `<rect>` element supports dynamic attribute values using data binding expres
 ### Example 1: Dynamic Position and Size
 
 ```html
+{% raw %}
 <!-- Model: { chart: { x: 50, y: 100, width: 200, height: 150 } } -->
 <svg width="300" height="300">
     <rect x="{{chart.x}}" y="{{chart.y}}"
           width="{{chart.width}}" height="{{chart.height}}"
           fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 2: Dynamic Colors from Data
 
 ```html
+{% raw %}
 <!-- Model: { status: 'success', color: '#4CAF50' } -->
 <svg width="100" height="40">
     <rect x="5" y="5" width="90" height="30" rx="5"
           fill="{{color}}" stroke="#333" stroke-width="1"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Repeating Rectangles with Template
 
 ```html
+{% raw %}
 <!-- Model: { bars: [
     {x: 10, height: 80, color: '#ff0000'},
     {x: 40, height: 120, color: '#00ff00'},
@@ -115,6 +120,7 @@ The `<rect>` element supports dynamic attribute values using data binding expres
               fill="{{.color}}"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -302,11 +308,13 @@ Transforms are applied in the order specified and can be combined:
 ### Status Indicator Badge
 
 ```html
+{% raw %}
 <!-- Model: { status: 'online', color: '#4CAF50' } -->
 <svg width="80" height="30">
     <rect x="2" y="2" width="76" height="26" rx="13"
           fill="{{color}}" stroke="#fff" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Card with Border Accent
@@ -367,6 +375,7 @@ Transforms are applied in the order specified and can be combined:
 ### Dynamic Width Progress Bar
 
 ```html
+{% raw %}
 <!-- Model: { progress: 0.65 } -->
 <svg width="400" height="40">
     <!-- Background -->
@@ -376,11 +385,13 @@ Transforms are applied in the order specified and can be combined:
     <rect x="10" y="10" width="{{380 * progress}}" height="20" rx="10"
           fill="#4CAF50"/>
 </svg>
+{% endraw %}
 ```
 
 ### Table Cell Background
 
 ```html
+{% raw %}
 <!-- Model: { cells: [{x:0, even:true}, {x:100, even:false}, {x:200, even:true}] } -->
 <svg width="300" height="40">
     <template data-bind="{{cells}}">
@@ -388,11 +399,13 @@ Transforms are applied in the order specified and can be combined:
               fill="{{.even ? '#f5f5f5' : '#fff'}}"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Dynamic Status Badges
 
 ```html
+{% raw %}
 <!-- Model: { items: [
     {x:10, status:'error', color:'#f44336'},
     {x:90, status:'warning', color:'#ff9800'},
@@ -404,17 +417,20 @@ Transforms are applied in the order specified and can be combined:
               fill="{{.color}}"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Heat Map Cell
 
 ```html
+{% raw %}
 <!-- Model: { intensity: 0.75 } -->
 <svg width="30" height="30">
     <rect x="2" y="2" width="26" height="26" rx="3"
           fill="#ff0000"
           fill-opacity="{{intensity}}"/>
 </svg>
+{% endraw %}
 ```
 
 ---

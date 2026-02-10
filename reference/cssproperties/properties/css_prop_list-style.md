@@ -98,6 +98,7 @@ The `list-style` property supports data binding, allowing you to dynamically con
 ### Example 1: Dynamic list marker types
 
 ```html
+{% raw %}
 <style>
     .dynamic-list {
         list-style: {{listFormat}};
@@ -111,6 +112,7 @@ The `list-style` property supports data binding, allowing you to dynamically con
         <li>Third item</li>
     </ul>
 </body>
+{% endraw %}
 ```
 
 **Data context:**
@@ -125,6 +127,7 @@ This example allows switching between different list marker types (disc, circle,
 ### Example 2: Conditional formatting for document types
 
 ```html
+{% raw %}
 <style>
     .contract-list {
         list-style: {{model.listStyle}};
@@ -139,6 +142,7 @@ This example allows switching between different list marker types (disc, circle,
         <li>Third provision</li>
     </ol>
 </body>
+{% endraw %}
 ```
 
 **Data context:**
@@ -156,6 +160,7 @@ Different document types can use different numbering schemes: decimal for techni
 ### Example 3: Multilingual list formatting
 
 ```html
+{% raw %}
 <style>
     .localized-list {
         list-style: {{locale.preferredListStyle}};
@@ -170,6 +175,7 @@ Different document types can use different numbering schemes: decimal for techni
         <li>{{locale.item3}}</li>
     </ul>
 </body>
+{% endraw %}
 ```
 
 **Data context:**

@@ -118,26 +118,31 @@ The `d` attribute supports dynamic path generation using data binding expression
 ### Example 1: Simple Dynamic Path
 
 ```html
+{% raw %}
 <!-- Model: { pathData: 'M 10,50 L 90,50 L 50,10 Z' } -->
 <svg width="100" height="60">
     <path d="{{pathData}}"
           fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 2: Calculated Bezier Curve
 
 ```html
+{% raw %}
 <!-- Model: { x1: 20, y1: 80, x2: 180, y2: 80, curveHeight: 40 } -->
 <svg width="200" height="100">
     <path d="M {{x1}},{{y1}} Q {{(x1 + x2) / 2}},{{y1 - curveHeight}} {{x2}},{{y2}}"
           fill="none" stroke="#4CAF50" stroke-width="3"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Programmatic Path Generation
 
 ```html
+{% raw %}
 <!-- Model: {
     radius: 40,
     centerX: 50,
@@ -150,6 +155,7 @@ The `d` attribute supports dynamic path generation using data binding expression
     <path d="{{generateCircle(centerX, centerY, radius)}}"
           fill="#FF9800" stroke="#E65100" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 4: Dynamic Chart Path

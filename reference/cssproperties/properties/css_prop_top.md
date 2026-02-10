@@ -93,6 +93,7 @@ The `top` property supports data binding, enabling dynamic vertical positioning 
 ### Example 1: Dynamic header offset based on configuration
 
 ```html
+{% raw %}
 <style>
     .page-header {
         position: fixed;
@@ -116,6 +117,7 @@ The `top` property supports data binding, enabling dynamic vertical positioning 
         <p>{{content.text}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:
@@ -138,6 +140,7 @@ Data model:
 ### Example 2: Configurable stamp vertical positioning
 
 ```html
+{% raw %}
 <style>
     .container {
         position: relative;
@@ -160,6 +163,7 @@ Data model:
         <p>{{document.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:
@@ -181,6 +185,7 @@ Data model:
 ### Example 3: Data-driven watermark placement
 
 ```html
+{% raw %}
 <style>
     .watermark {
         position: fixed;
@@ -200,6 +205,7 @@ Data model:
         <p>{{document.body}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:

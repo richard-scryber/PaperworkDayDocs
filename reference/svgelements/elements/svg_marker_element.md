@@ -166,6 +166,7 @@ Markers support data binding for dynamic appearance and behavior.
 ### Dynamic Marker Content
 
 ```html
+{% raw %}
 <!-- Marker with data-driven color -->
 <defs>
     <marker id="statusMarker" markerWidth="10" markerHeight="10" refX="5" refY="5">
@@ -180,11 +181,13 @@ Markers support data binding for dynamic appearance and behavior.
                  fill="{{model.markerColor}}"/>
     </marker>
 </defs>
+{% endraw %}
 ```
 
 ### Size Based on Data
 
 ```html
+{% raw %}
 <!-- Variable marker size -->
 <defs>
     <marker id="sizedMarker"
@@ -198,11 +201,13 @@ Markers support data binding for dynamic appearance and behavior.
                 fill="#336699"/>
     </marker>
 </defs>
+{% endraw %}
 ```
 
 ### Template-Generated Markers
 
 ```html
+{% raw %}
 <!-- Create multiple marker variations -->
 <defs>
     <template data-bind="{{model.markerTypes}}">
@@ -223,6 +228,7 @@ Markers support data binding for dynamic appearance and behavior.
           stroke="{{.color}}" stroke-width="2"
           marker-end="url(#marker-{{.markerId}})"/>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -508,6 +514,7 @@ Network nodes with connection arrows:
 Data-driven marker colors:
 
 ```html
+{% raw %}
 <!-- Model: { connections: [{x1: 50, y1: 50, x2: 200, y2: 50, status: "success"}] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
     <defs>
@@ -526,6 +533,7 @@ Data-driven marker colors:
               marker-end="{{.status === 'success' ? 'url(#successMarker)' : 'url(#errorMarker)'}}"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### 11. Curved Path with Arrow
@@ -678,6 +686,7 @@ Dashed connection with arrows:
 Progress indicator with markers:
 
 ```html
+{% raw %}
 <!-- Model: { progress: 0.75 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="100">
     <defs>
@@ -698,6 +707,7 @@ Progress indicator with markers:
         {{(model.progress * 100).toFixed(0)}}% Complete
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 19. Hierarchical Tree Connectors

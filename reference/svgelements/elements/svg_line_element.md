@@ -85,17 +85,20 @@ The `<line>` element supports dynamic attribute values using data binding expres
 ### Example 1: Dynamic Line Coordinates
 
 ```html
+{% raw %}
 <!-- Model: { line: { x1: 10, y1: 20, x2: 190, y2: 80 } } -->
 <svg width="200" height="100">
     <line x1="{{line.x1}}" y1="{{line.y1}}"
           x2="{{line.x2}}" y2="{{line.y2}}"
           stroke="#2196F3" stroke-width="3"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 2: Chart Grid Lines
 
 ```html
+{% raw %}
 <!-- Model: { gridLines: [20, 40, 60, 80, 100] } -->
 <svg width="150" height="120">
     <template data-bind="{{gridLines}}">
@@ -103,11 +106,13 @@ The `<line>` element supports dynamic attribute values using data binding expres
               stroke="#ccc" stroke-width="1"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Connection Lines
 
 ```html
+{% raw %}
 <!-- Model: { connections: [
     {x1: 30, y1: 30, x2: 170, y2: 70, color: '#e74c3c'},
     {x1: 30, y1: 70, x2: 170, y2: 30, color: '#3498db'}
@@ -119,6 +124,7 @@ The `<line>` element supports dynamic attribute values using data binding expres
               stroke="{{.color}}" stroke-width="2"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -425,6 +431,7 @@ Lines are efficient shapes for rendering. Use them for grids, axes, and connecto
 ### Progress Line
 
 ```html
+{% raw %}
 <!-- Model: { progress: 0.65 } -->
 <svg width="300" height="20">
     <!-- Background line -->
@@ -434,6 +441,7 @@ Lines are efficient shapes for rendering. Use them for grids, axes, and connecto
     <line x1="10" y1="10" x2="{{10 + (280 * progress)}}" y2="10"
           stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
 </svg>
+{% endraw %}
 ```
 
 ---

@@ -97,6 +97,7 @@ The `border-radius` property supports dynamic values through data binding, allow
 ### Example 1: Dynamic badge styles
 
 ```html
+{% raw %}
 <style>
     .badge {
         border: 1pt solid;
@@ -111,6 +112,7 @@ The `border-radius` property supports dynamic values through data binding, allow
         {{badge.label}}
     </span>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -128,6 +130,7 @@ Data context:
 ### Example 2: Card styles based on type
 
 ```html
+{% raw %}
 <style>
     .info-card {
         border: 2pt solid #e5e7eb;
@@ -142,6 +145,7 @@ Data context:
         <p>{{card.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -158,6 +162,7 @@ Data context:
 ### Example 3: Conditional rounded corners
 
 ```html
+{% raw %}
 <style>
     .alert-panel {
         border: 2pt solid;
@@ -171,6 +176,7 @@ Data context:
         <p>{{alert.message}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

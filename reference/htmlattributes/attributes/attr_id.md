@@ -83,6 +83,7 @@ The `id` attribute is supported on **all HTML elements** in Scryber, including:
 The `id` attribute supports data binding with dynamic values:
 
 ```html
+{% raw %}
 <!-- Dynamic ID from data model -->
 <div id="{{model.sectionId}}">
     Section content
@@ -105,6 +106,7 @@ The `id` attribute supports data binding with dynamic values:
         <p>{{.content}}</p>
     </div>
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -396,6 +398,7 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
 ### Data Binding with IDs
 
 ```html
+{% raw %}
 <!-- Model: { sections: [{ id: "intro", title: "Introduction" }, ...] } -->
 
 <nav>
@@ -410,11 +413,13 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
         <p>{{.content}}</p>
     </section>
 </template>
+{% endraw %}
 ```
 
 ### Unique IDs in Repeated Content
 
 ```html
+{% raw %}
 <!-- Model: { products: [{id: 1, name: "Widget"}, {id: 2, name: "Gadget"}] } -->
 
 <template data-bind="{{model.products}}">
@@ -424,6 +429,7 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
         <a href="#product-details-{{.id}}">View Details</a>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Anchor Navigation with Page Breaks
@@ -544,6 +550,7 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
 ### Conditional ID Assignment
 
 ```html
+{% raw %}
 <!-- Model: { user: { role: "admin", userId: 123 } } -->
 
 <div id="{{model.user.role}}-dashboard-{{model.user.userId}}">
@@ -552,6 +559,7 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
 </div>
 
 <!-- Results in: <div id="admin-dashboard-123"> -->
+{% endraw %}
 ```
 
 ### Footer Navigation with IDs

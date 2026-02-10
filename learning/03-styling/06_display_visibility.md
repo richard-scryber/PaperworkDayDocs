@@ -206,6 +206,7 @@ Control element visibility based on data.
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Show only if condition is true -->
 {{#if model.showSection}}
     <div class="content">
@@ -226,6 +227,7 @@ Control element visibility based on data.
         <!-- Upgrade information -->
     </div>
 {{/if}}
+{% endraw %}
 ```
 {% endraw %}
 
@@ -233,6 +235,7 @@ Control element visibility based on data.
 
 {% raw %}
 ```html
+{% raw %}
 <div style="display: {{if(model.showContent, 'block', 'none')}};">
     <p>This content is conditionally displayed.</p>
 </div>
@@ -241,6 +244,7 @@ Control element visibility based on data.
 <div style="display: {{if(model.userLevel >= 5, 'block', 'none')}};">
     <p>Advanced content for level 5+ users.</p>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -620,9 +624,11 @@ Create a layout with:
 
 {% raw %}
 ```html
+{% raw %}
 {{#if model.showSection}}
     <div>Content</div>
 <!-- Missing {{/if}} - will cause errors -->
+{% endraw %}
 ```
 {% endraw %}
 
@@ -630,9 +636,11 @@ Create a layout with:
 
 {% raw %}
 ```html
+{% raw %}
 {{#if model.showSection}}
     <div>Content</div>
 {{/if}}
+{% endraw %}
 ```
 {% endraw %}
 

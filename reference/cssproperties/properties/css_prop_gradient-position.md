@@ -96,6 +96,7 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 ### Example 1: Data-driven gradient directions
 
 ```html
+{% raw %}
 <body>
     <svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
         <template data-bind="{{#each gradientBars}}">
@@ -112,11 +113,13 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Dynamic angle gradients based on data
 
 ```html
+{% raw %}
 <body>
     <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
         <template data-bind="{{visualization}}">
@@ -133,11 +136,13 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Conditional gradient positions for different layouts
 
 ```html
+{% raw %}
 <body>
     <svg width="500" height="350" xmlns="http://www.w3.org/2000/svg">
         <template data-bind="{{#each sections}}">
@@ -156,6 +161,7 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ---

@@ -88,11 +88,13 @@ The `points` attribute supports dynamic coordinate generation using data binding
 ### Example 1: Simple Bound Points
 
 ```html
+{% raw %}
 <!-- Model: { pointList: "20,30 60,10 100,40 140,20 180,50" } -->
 <svg width="200" height="60">
     <polyline points="{{pointList}}"
               fill="none" stroke="#2196F3" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 2: Generated Line Chart

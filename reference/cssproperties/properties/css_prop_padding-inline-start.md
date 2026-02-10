@@ -92,6 +92,7 @@ The `padding-inline-start` property supports dynamic values through data binding
 ### Example 1: Alert with dynamic icon space
 
 ```html
+{% raw %}
 <style>
     .alert {
         padding-inline-start: {{alert.hasIcon ? '50pt' : '15pt'}};
@@ -107,6 +108,7 @@ The `padding-inline-start` property supports dynamic values through data binding
         <strong>{{alert.title}}:</strong> {{alert.message}}
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -123,6 +125,7 @@ Data context:
 ### Example 2: Nested content with hierarchy-based padding
 
 ```html
+{% raw %}
 <style>
     .content-block {
         padding-inline-start: {{block.level * 20}}pt;
@@ -138,6 +141,7 @@ Data context:
         <p>{{block.text}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -154,6 +158,7 @@ Data context:
 ### Example 3: Localized invoice with direction-aware padding
 
 ```html
+{% raw %}
 <style>
     .invoice-section {
         padding-inline-start: {{layout.sectionInset}}pt;
@@ -171,6 +176,7 @@ Data context:
         <p>{{section.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:

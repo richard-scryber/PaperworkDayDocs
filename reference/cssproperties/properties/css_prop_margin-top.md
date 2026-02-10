@@ -93,6 +93,7 @@ The `margin-top` property supports dynamic values through data binding, allowing
 ### Example 1: Dynamic heading spacing based on level
 
 ```html
+{% raw %}
 <style>
     .document h1 {
         margin-top: 0;
@@ -117,6 +118,7 @@ The `margin-top` property supports dynamic values through data binding, allowing
         <p>Subsection content.</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -132,6 +134,7 @@ Data context:
 ### Example 2: Invoice sections with dynamic top margins
 
 ```html
+{% raw %}
 <style>
     .invoice {
         padding: 40pt;
@@ -169,6 +172,7 @@ Data context:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -190,6 +194,7 @@ Data context:
 ### Example 3: Card spacing based on importance
 
 ```html
+{% raw %}
 <style>
     .card-container {
         padding: 20pt;
@@ -212,6 +217,7 @@ Data context:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:

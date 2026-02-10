@@ -83,6 +83,7 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
 ### Example 1: Adaptive Column Formatting
 
 ```html
+{% raw %}
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
     <p style="hyphens: auto; hyphens-limit-chars-before: {{model.column.charsBeforeHyphen}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -108,11 +109,13 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
     "content": "Implementation methodologies telecommunications..."
 }
 -->
+{% endraw %}
 ```
 
 ### Example 2: Language-Specific Hyphenation
 
 ```html
+{% raw %}
 <div style="width: 200pt; padding: 15pt" lang="{{model.language.code}}">
     <p style="hyphens: auto; hyphens-limit-chars-before: {{model.language.charsBefore}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -138,11 +141,13 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
     "content": "Systèmes de télécommunications..."
 }
 -->
+{% endraw %}
 ```
 
 ### Example 3: Quality-Based Settings
 
 ```html
+{% raw %}
 <div style="width: 220pt; padding: 18pt" lang="en">
     <p style="hyphens: auto; hyphens-limit-chars-before: {{model.quality.charsBefore}}; text-align: justify; font-size: 11pt">
         {{model.document.text}}
@@ -170,6 +175,7 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
     }
 }
 -->
+{% endraw %}
 ```
 
 ---

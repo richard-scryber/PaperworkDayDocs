@@ -92,6 +92,7 @@ The `-pdf-li-align` property supports data binding, allowing dynamic control of 
 ### Example 1: User-configurable marker alignment
 
 ```html
+{% raw %}
 <style>
     .aligned-list {
         list-style-type: decimal;
@@ -114,6 +115,7 @@ The `-pdf-li-align` property supports data binding, allowing dynamic control of 
         <li>{{items[9]}}</li>
     </ol>
 </body>
+{% endraw %}
 ```
 
 **Data context:**
@@ -135,6 +137,7 @@ For lists with varying marker widths (1-10, 1-100), right alignment ensures visu
 ### Example 2: Document type-specific alignment
 
 ```html
+{% raw %}
 <style>
     .doc-list {
         list-style-type: {{docStyle.numberingType}};
@@ -150,6 +153,7 @@ For lists with varying marker widths (1-10, 1-100), right alignment ensures visu
         <li>{{sections[2]}}</li>
     </ol>
 </body>
+{% endraw %}
 ```
 
 **Data context:**
@@ -175,6 +179,7 @@ Different document types can have predefined alignment preferences: center for f
 ### Example 3: Multilingual document formatting
 
 ```html
+{% raw %}
 <style>
     .localized-list {
         list-style-type: {{locale.listType}};
@@ -190,6 +195,7 @@ Different document types can have predefined alignment preferences: center for f
         <li>{{locale.items[2]}}</li>
     </ul>
 </body>
+{% endraw %}
 ```
 
 **Data context:**

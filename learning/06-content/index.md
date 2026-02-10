@@ -128,6 +128,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Local file -->
 <img src="./images/logo.png" />
 
@@ -139,6 +140,7 @@ Before starting this series:
 
 <!-- Base64 embedded -->
 <img src="data:image/png;base64,iVBORw0KG..." />
+{% endraw %}
 ```
 {% endraw %}
 
@@ -147,9 +149,11 @@ Before starting this series:
 **Inline SVG** - Full control and data binding:
 {% raw %}
 ```html
+{% raw %}
 <svg width="200" height="200">
     <circle cx="100" cy="100" r="{{radius}}" fill="blue" />
 </svg>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -192,6 +196,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 {{#each products}}
 <div class="product">
     <img src="{{this.imageUrl}}"
@@ -201,6 +206,7 @@ Before starting this series:
     <p>{{this.description}}</p>
 </div>
 {{/each}}
+{% endraw %}
 ```
 {% endraw %}
 
@@ -208,6 +214,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 <svg width="500" height="300">
     {{#each dataPoints}}
     <rect x="{{calc(@index, '*', 50)}}"
@@ -222,6 +229,7 @@ Before starting this series:
     </text>
     {{/each}}
 </svg>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -229,6 +237,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 <table>
     <thead>
         <tr>
@@ -249,6 +258,7 @@ Before starting this series:
         {{/each}}
     </tbody>
 </table>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -258,6 +268,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 <div class="catalog">
     {{#each products}}
     <div class="product-card" style="page-break-inside: avoid;">
@@ -277,6 +288,7 @@ Before starting this series:
     </div>
     {{/each}}
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -284,6 +296,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 <div class="dashboard">
     <h1>Sales Dashboard - {{reportDate}}</h1>
 
@@ -348,6 +361,7 @@ Before starting this series:
         </tbody>
     </table>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -355,6 +369,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 <div class="invoice">
     <img src="{{company.logo}}" style="width: 150pt;" />
 
@@ -398,6 +413,7 @@ Before starting this series:
     </div>
     {{/if}}
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -469,6 +485,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 <div class="gallery">
     {{#each images}}
     <div class="gallery-item">
@@ -479,6 +496,7 @@ Before starting this series:
     </div>
     {{/each}}
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -486,6 +504,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 <div class="chart-container">
     <svg width="500" height="300">
         <!-- Chart drawing -->
@@ -502,6 +521,7 @@ Before starting this series:
         {{/each}}
     </ul>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -509,6 +529,7 @@ Before starting this series:
 
 {% raw %}
 ```html
+{% raw %}
 <var data-id="runningTotal" data-value="0" />
 
 <table>
@@ -525,6 +546,7 @@ Before starting this series:
         {{/each}}
     </tbody>
 </table>
+{% endraw %}
 ```
 {% endraw %}
 

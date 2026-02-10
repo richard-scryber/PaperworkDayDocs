@@ -93,6 +93,7 @@ The `margin-bottom` property supports dynamic values through data binding, allow
 ### Example 1: Dynamic paragraph spacing for different document types
 
 ```html
+{% raw %}
 <style>
     .article {
         padding: 40pt;
@@ -113,6 +114,7 @@ The `margin-bottom` property supports dynamic values through data binding, allow
         <p>Second paragraph adapts to typography settings.</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -129,6 +131,7 @@ Data context:
 ### Example 2: Card spacing based on layout density
 
 ```html
+{% raw %}
 <style>
     .card-stack {
         padding: 25pt;
@@ -155,6 +158,7 @@ Data context:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -169,6 +173,7 @@ Data context:
 ### Example 3: Form field spacing based on validation
 
 ```html
+{% raw %}
 <style>
     .form {
         padding: 30pt;
@@ -202,6 +207,7 @@ Data context:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:

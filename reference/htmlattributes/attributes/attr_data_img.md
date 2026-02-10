@@ -46,6 +46,7 @@ These attributes provide programmatic image loading:
 - Enables dynamic image generation and manipulation
 
 ```html
+{% raw %}
 <!-- Bind to ImageData object -->
 <img data-img="{{model.imageData}}" width="200pt" height="150pt" />
 
@@ -65,6 +66,7 @@ These attributes provide programmatic image loading:
      data-img-data="{{model.dynamicImage}}"
      data-img-type="image/png"
      width="400pt" height="300pt" />
+{% endraw %}
 ```
 
 ---
@@ -85,6 +87,7 @@ These attributes are designed specifically for data binding scenarios:
 ### data-img Binding
 
 ```html
+{% raw %}
 <!-- Bind to ImageData object -->
 <!-- Model: { logo: ImageData object } -->
 <img data-img="{{model.logo}}" width="100pt" height="50pt" />
@@ -95,11 +98,13 @@ These attributes are designed specifically for data binding scenarios:
     <img data-img="{{.}}" width="200pt" height="150pt"
          style="margin: 5pt;" />
 </template>
+{% endraw %}
 ```
 
 ### data-img-data and data-img-type Binding
 
 ```html
+{% raw %}
 <!-- Simple binary binding -->
 <!-- Model: { photoBytes: byte[], photoType: "image/jpeg" } -->
 <img data-img-data="{{model.photoBytes}}"
@@ -126,6 +131,7 @@ These attributes are designed specifically for data binding scenarios:
      data-img-data="{{model.useDefault ? null : model.customImageBytes}}"
      data-img-type="image/jpeg"
      width="200pt" height="150pt" />
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -184,11 +190,13 @@ When multiple image source attributes are present:
 3. **src** attribute - Fallback if above are not present
 
 ```html
+{% raw %}
 <!-- data-img-data takes precedence -->
 <img src="fallback.jpg"
      data-img-data="{{model.bytes}}"
      data-img-type="image/png"
      width="200pt" height="150pt" />
+{% endraw %}
 ```
 
 ### Supported MIME Types
@@ -204,6 +212,7 @@ The `data-img-type` attribute accepts standard image MIME types:
 | `image/tiff` | TIFF | High-quality images (may work) |
 
 ```html
+{% raw %}
 <!-- JPEG image -->
 <img data-img-data="{{model.jpegBytes}}"
      data-img-type="image/jpeg"
@@ -218,6 +227,7 @@ The `data-img-type` attribute accepts standard image MIME types:
 <img data-img-data="{{model.gifBytes}}"
      data-img-type="image/gif"
      width="100pt" height="100pt" />
+{% endraw %}
 ```
 
 ### Binary Data Sources
@@ -232,6 +242,7 @@ Common sources for binary image data:
 6. **Image Processing**: Modified/transformed images
 
 ```html
+{% raw %}
 <!-- From database -->
 <img data-img-data="{{model.userPhoto}}"
      data-img-type="image/jpeg"
@@ -246,6 +257,7 @@ Common sources for binary image data:
 <img data-img-data="{{model.qrCodeBytes}}"
      data-img-type="image/png"
      width="80pt" height="80pt" />
+{% endraw %}
 ```
 
 ### Error Handling
@@ -254,8 +266,10 @@ When binary image data cannot be loaded:
 
 **Missing MIME Type**:
 ```html
+{% raw %}
 <!-- This will fail - no MIME type specified -->
 <img data-img-data="{{model.bytes}}" width="200pt" />
+{% endraw %}
 ```
 
 **Strict Mode**: Throws exception, stops generation
@@ -267,12 +281,14 @@ When binary image data cannot be loaded:
 - Empty or null byte array
 
 ```html
+{% raw %}
 <!-- Proper error handling -->
 <img data-img-data="{{model.bytes}}"
      data-img-type="image/jpeg"
      data-allow-missing-images="true"
      alt="User Photo"
      width="150pt" height="150pt" />
+{% endraw %}
 ```
 
 ### Performance Considerations
@@ -293,6 +309,7 @@ Binary image loading:
 
 **Best Practices**:
 ```html
+{% raw %}
 <!-- Good: Small images from database -->
 <img data-img-data="{{model.thumbnailBytes}}"
      data-img-type="image/jpeg"
@@ -301,6 +318,7 @@ Binary image loading:
 <!-- Consider file path for large images -->
 <!-- Instead of loading 5MB image into memory: -->
 <img src="{{model.largeImagePath}}" width="600pt" height="400pt" />
+{% endraw %}
 ```
 
 ### Memory Management
@@ -327,8 +345,10 @@ model.ImageData = imageData;
 ```
 
 ```html
+{% raw %}
 <!-- Use in template -->
 <img data-img="{{model.imageData}}" width="200pt" height="150pt" />
+{% endraw %}
 ```
 
 ### Combining with Standard Attributes
@@ -336,6 +356,7 @@ model.ImageData = imageData;
 Binary image attributes work with all standard image attributes:
 
 ```html
+{% raw %}
 <!-- Full featured binary image -->
 <img data-img-data="{{model.imageBytes}}"
      data-img-type="image/png"
@@ -346,6 +367,7 @@ Binary image attributes work with all standard image attributes:
      class="product-image"
      style="border: 1pt solid #ddd; padding: 5pt;"
      data-allow-missing-images="true" />
+{% endraw %}
 ```
 
 ### Dynamic MIME Type Determination
@@ -353,12 +375,14 @@ Binary image attributes work with all standard image attributes:
 MIME type can be determined at runtime:
 
 ```html
+{% raw %}
 <!-- Model determines type based on data -->
 <!-- Model: { imageData: byte[], imageFormat: "jpeg|png|gif" } -->
 
 <img data-img-data="{{model.imageData}}"
      data-img-type="image/{{model.imageFormat}}"
      width="200pt" height="150pt" />
+{% endraw %}
 ```
 
 ### Base64 Data URIs vs Binary Data
@@ -373,9 +397,11 @@ Comparison of approaches:
 
 **Binary data with data-img-data**:
 ```html
+{% raw %}
 <img data-img-data="{{model.bytes}}"
      data-img-type="image/png"
      width="100pt" height="100pt" />
+{% endraw %}
 ```
 
 **Recommendations**:
@@ -394,12 +420,14 @@ When handling binary image data:
 5. **Memory Limits**: Prevent memory exhaustion from large images
 
 ```html
+{% raw %}
 <!-- Validated and size-limited image -->
 <img data-img-data="{{model.validatedImageBytes}}"
      data-img-type="{{model.verifiedMimeType}}"
      width="{{model.maxWidth}}pt"
      height="{{model.maxHeight}}pt"
      data-allow-missing-images="true" />
+{% endraw %}
 ```
 
 ### Image Factory Processing
@@ -421,6 +449,7 @@ If no factory matches the MIME type, an error is raised.
 ### Basic Binary Image Loading
 
 ```html
+{% raw %}
 <!-- JPEG from byte array -->
 <img data-img-data="{{model.jpegBytes}}"
      data-img-type="image/jpeg"
@@ -435,11 +464,13 @@ If no factory matches the MIME type, an error is raised.
 <img data-img-data="{{model.gifBytes}}"
      data-img-type="image/gif"
      width="150pt" height="150pt" />
+{% endraw %}
 ```
 
 ### Database-Driven Images
 
 ```html
+{% raw %}
 <!-- User profile photo from database -->
 <!-- Model: { user: { photoData: byte[], photoType: "image/jpeg" } } -->
 
@@ -452,11 +483,13 @@ If no factory matches the MIME type, an error is raised.
     <h2>{{model.user.name}}</h2>
     <p>{{model.user.title}}</p>
 </div>
+{% endraw %}
 ```
 
 ### Product Images from Database
 
 ```html
+{% raw %}
 <!-- Model: { products: [
     { name: "Widget A", imageData: byte[], imageType: "image/jpeg", price: 29.99 },
     { name: "Widget B", imageData: byte[], imageType: "image/png", price: 39.99 }
@@ -482,11 +515,13 @@ If no factory matches the MIME type, an error is raised.
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Photo Gallery from API
 
 ```html
+{% raw %}
 <!-- Model: { gallery: [
     { data: byte[], format: "jpeg", caption: "Sunset" },
     { data: byte[], format: "png", caption: "Mountains" }
@@ -508,11 +543,13 @@ If no factory matches the MIME type, an error is raised.
         </template>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Dynamic QR Code Generation
 
 ```html
+{% raw %}
 <!-- Model: { qrCodes: [
     { code: byte[], label: "Product A", url: "https://..." },
     { code: byte[], label: "Product B", url: "https://..." }
@@ -533,11 +570,13 @@ If no factory matches the MIME type, an error is raised.
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Employee Badge with Photo
 
 ```html
+{% raw %}
 <!-- Model: {
     employee: {
         photo: byte[], name: "John Doe",
@@ -559,11 +598,13 @@ If no factory matches the MIME type, an error is raised.
         ID: {{model.employee.id}}
     </p>
 </div>
+{% endraw %}
 ```
 
 ### Chart Images from Rendering Service
 
 ```html
+{% raw %}
 <!-- Model: {
     charts: [
         { data: byte[], title: "Sales Trend", type: "image/png" },
@@ -587,11 +628,13 @@ If no factory matches the MIME type, an error is raised.
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Image with Fallback Handling
 
 ```html
+{% raw %}
 <!-- Model: { userPhoto: byte[] | null, hasPhoto: boolean } -->
 
 <div>
@@ -606,11 +649,13 @@ If no factory matches the MIME type, an error is raised.
          alt="User Photo"
          style="border-radius: 75pt;" />
 </div>
+{% endraw %}
 ```
 
 ### Medical Imaging Report
 
 ```html
+{% raw %}
 <!-- Model: {
     patient: { name: "Jane Smith", id: "P-789" },
     scans: [
@@ -635,11 +680,13 @@ If no factory matches the MIME type, an error is raised.
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Signature Images from Database
 
 ```html
+{% raw %}
 <!-- Model: {
     document: { title: "Service Agreement" },
     signatures: [
@@ -671,11 +718,13 @@ If no factory matches the MIME type, an error is raised.
         </template>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Real Estate Listing with Property Photos
 
 ```html
+{% raw %}
 <!-- Model: {
     property: {
         address: "123 Main St",
@@ -708,11 +757,13 @@ If no factory matches the MIME type, an error is raised.
         </template>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Dynamic Thumbnail Generation
 
 ```html
+{% raw %}
 <!-- Model: {
     documents: [
         { name: "Report.pdf", thumbnail: byte[], pageCount: 15 },
@@ -738,11 +789,13 @@ If no factory matches the MIME type, an error is raised.
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Barcode Labels
 
 ```html
+{% raw %}
 <!-- Model: {
     products: [
         { sku: "ABC123", barcode: byte[], name: "Widget A", price: 29.99 },
@@ -774,11 +827,13 @@ If no factory matches the MIME type, an error is raised.
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Image Comparison Layout
 
 ```html
+{% raw %}
 <!-- Model: {
     comparison: {
         before: { data: byte[], type: "image/jpeg" },
@@ -809,11 +864,13 @@ If no factory matches the MIME type, an error is raised.
         </div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### ID Card with Embedded Photo
 
 ```html
+{% raw %}
 <!-- Model: {
     card: {
         photo: byte[], name: "Jane Smith", id: "ID-456789",
@@ -848,11 +905,13 @@ If no factory matches the MIME type, an error is raised.
         </div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Image Grid from API
 
 ```html
+{% raw %}
 <!-- Model: {
     apiImages: [
         { bytes: byte[], format: "png", id: "img-1" },
@@ -880,11 +939,13 @@ If no factory matches the MIME type, an error is raised.
         </template>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Dynamic Logo Variations
 
 ```html
+{% raw %}
 <!-- Model: {
     logos: {
         color: byte[], grayscale: byte[], inverted: byte[]
@@ -923,11 +984,13 @@ If no factory matches the MIME type, an error is raised.
         </div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Certificate with Seal Image
 
 ```html
+{% raw %}
 <!-- Model: {
     certificate: {
         recipient: "John Doe", course: "Advanced PDF Development",
@@ -962,6 +1025,7 @@ If no factory matches the MIME type, an error is raised.
              style="opacity: 0.8;" />
     </div>
 </div>
+{% endraw %}
 ```
 
 ---

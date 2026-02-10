@@ -53,6 +53,7 @@ This attribute is essential for:
 The `data-passthrough` attribute is used exclusively with `<iframe>` elements:
 
 ```html
+{% raw %}
 <!-- Default: style isolation (passthrough=false) -->
 <iframe src="external-content.html"></iframe>
 
@@ -65,6 +66,7 @@ The `data-passthrough` attribute is used exclusively with `<iframe>` elements:
 <!-- With data binding -->
 <iframe src="{{model.contentUrl}}"
         data-passthrough="{{model.useTheme}}"></iframe>
+{% endraw %}
 ```
 
 ---
@@ -92,6 +94,7 @@ The `data-passthrough` attribute is supported exclusively on:
 **Binding**: Supports data binding expressions
 
 ```html
+{% raw %}
 <!-- Static values -->
 <iframe src="content.html" data-passthrough="true"></iframe>
 <iframe src="content.html" data-passthrough="false"></iframe>
@@ -107,6 +110,7 @@ The `data-passthrough` attribute is supported exclusively on:
 <!-- Expression -->
 <iframe src="content.html"
         data-passthrough="{{model.useCustomTheme ? false : true}}"></iframe>
+{% endraw %}
 ```
 
 **Data Model Example**:
@@ -334,9 +338,11 @@ Common patterns for document composition:
 
 **Pattern 3: Conditional Theming**
 ```html
+{% raw %}
 <!-- Theme based on document type -->
 <iframe src="{{.section}}.html"
         data-passthrough="{{model.documentType == 'branded'}}"></iframe>
+{% endraw %}
 ```
 
 ### Debugging Style Issues
@@ -472,6 +478,7 @@ All sections inherit parent theme:
 Apply theme based on content type:
 
 ```html
+{% raw %}
 <!-- Model: { sections: [{url: "a.html", themed: true}, {url: "b.html", themed: false}] } -->
 
 <style>
@@ -486,6 +493,7 @@ Apply theme based on content type:
             data-passthrough="{{.themed}}"
             style="margin-bottom: 20pt;"></iframe>
 </template>
+{% endraw %}
 ```
 
 ### 4. Corporate Theme Application
@@ -625,6 +633,7 @@ public class ReportModel
 ```
 
 ```html
+{% raw %}
 <style>
     body {
         font-family: 'Helvetica', sans-serif;
@@ -642,6 +651,7 @@ public class ReportModel
                 title="{{.Title}}"></iframe>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### 7. Newsletter with Themed Articles
@@ -702,6 +712,7 @@ public class DocumentSettings
 ```
 
 ```html
+{% raw %}
 <!-- Model: { settings: { themeMode: "light" } } -->
 
 <style>
@@ -724,6 +735,7 @@ public class DocumentSettings
 <iframe src="section1.html" data-passthrough="{{model.settings.applyTheme}}"></iframe>
 <iframe src="section2.html" data-passthrough="{{model.settings.applyTheme}}"></iframe>
 <iframe src="section3.html" data-passthrough="{{model.settings.applyTheme}}"></iframe>
+{% endraw %}
 ```
 
 ### 9. Multi-Language Document with Consistent Typography
@@ -731,6 +743,7 @@ public class DocumentSettings
 Different languages, same typography:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -769,6 +782,7 @@ Different languages, same typography:
             data-passthrough="true"></iframe>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### 10. Template Library with Style Control
@@ -791,6 +805,7 @@ public class TemplateLibraryModel
 ```
 
 ```html
+{% raw %}
 <!-- Load theme CSS -->
 <link rel="stylesheet" href="themes/{{model.ThemeName}}.css" />
 
@@ -804,6 +819,7 @@ public class TemplateLibraryModel
                 title="{{.TemplateName}}"></iframe>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### 11. White-Label Document Generation
@@ -822,6 +838,7 @@ public class BrandingConfig
 ```
 
 ```html
+{% raw %}
 <!-- Model: { branding: {clientName: "Acme", primaryColor: "#0066cc", ...} } -->
 
 <style>
@@ -853,6 +870,7 @@ public class BrandingConfig
         data-passthrough="{{model.branding.applyBranding}}"></iframe>
 <iframe src="sections/recommendations.html"
         data-passthrough="{{model.branding.applyBranding}}"></iframe>
+{% endraw %}
 ```
 
 ### 12. Academic Paper with Consistent Formatting

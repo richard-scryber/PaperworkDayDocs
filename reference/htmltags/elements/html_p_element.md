@@ -158,6 +158,7 @@ Control how paragraphs break across pages:
 ### Data Binding
 
 ```html
+{% raw %}
 <!-- With model = { description: "Product details here" } -->
 <p class="description">{{model.description}}</p>
 
@@ -165,6 +166,7 @@ Control how paragraphs break across pages:
 <p style="color: {{model.textColor}}; font-size: {{model.fontSize}}pt;">
     {{model.content}}
 </p>
+{% endraw %}
 ```
 
 ### First-Line Indent

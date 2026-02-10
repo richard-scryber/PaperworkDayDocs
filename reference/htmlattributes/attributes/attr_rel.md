@@ -40,6 +40,7 @@ The `rel` attribute defines resource relationships:
 - Supports data binding for dynamic relationship specification
 
 ```html
+{% raw %}
 <!-- Stylesheet (most common for PDF) -->
 <link rel="stylesheet" href="styles.css" />
 
@@ -57,6 +58,7 @@ The `rel` attribute defines resource relationships:
 
 <!-- Dynamic rel -->
 <link rel="{{model.linkType}}" href="{{model.resourceUrl}}" />
+{% endraw %}
 ```
 
 ---
@@ -81,6 +83,7 @@ The `rel` attribute is used with:
 The `rel` attribute supports data binding for dynamic relationship types:
 
 ```html
+{% raw %}
 <!-- Dynamic relationship type -->
 <link rel="{{model.relationType}}" href="{{model.resourcePath}}" />
 
@@ -100,6 +103,7 @@ The `rel` attribute supports data binding for dynamic relationship types:
 <template data-bind="{{model.alternates}}">
     <link rel="alternate" hreflang="{{.lang}}" href="{{.url}}" />
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -646,6 +650,7 @@ For web optimization (limited PDF use):
 ### Data-Bound Stylesheets
 
 ```html
+{% raw %}
 <!-- Model: {
     theme: "blue",
     stylesheets: [
@@ -674,6 +679,7 @@ For web optimization (limited PDF use):
     <p>Current theme: {{model.theme}}</p>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Corporate Document Template

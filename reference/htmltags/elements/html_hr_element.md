@@ -423,16 +423,20 @@ The horizontal rule is rendered as:
 ### Dynamic Rule with Data Binding
 
 ```html
+{% raw %}
 <!-- With model = { sectionColor: "#336699" } -->
 <hr style="border: none; height: 2pt; background-color: {{model.sectionColor}}; margin: 20pt 0;"/>
+{% endraw %}
 ```
 
 ### Conditional Rule
 
 ```html
+{% raw %}
 <!-- Only show rule if condition is met -->
 <hr hidden="{{model.hideRule ? 'hidden' : ''}}"
     style="border: none; height: 1pt; background-color: #ccc; margin: 15pt 0;"/>
+{% endraw %}
 ```
 
 ---

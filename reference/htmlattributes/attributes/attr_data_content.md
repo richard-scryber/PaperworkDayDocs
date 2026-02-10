@@ -50,6 +50,7 @@ The `data-content` attribute accepts a string value containing HTML/XHTML markup
 ### Basic Syntax
 
 ```html
+{% raw %}
 <!-- Simple text content -->
 <label data-content="{{model.userName}}">Default Name</label>
 
@@ -58,6 +59,7 @@ The `data-content` attribute accepts a string value containing HTML/XHTML markup
 
 <!-- Dynamic content from bound expression -->
 <span data-content="{{model.dynamicContent}}"></span>
+{% endraw %}
 ```
 
 ### Content Actions
@@ -71,6 +73,7 @@ The `data-content-action` attribute controls how the content is inserted:
 | `replace` | Replace all existing content | Yes (for most components) |
 
 ```html
+{% raw %}
 <!-- Replace existing content (default for labels) -->
 <label data-content="{{model.newText}}">Old text</label>
 
@@ -78,6 +81,7 @@ The `data-content-action` attribute controls how the content is inserted:
 <div data-content="<p>{{model.additionalInfo}}</p>" data-content-action="append">
     <p>Existing content stays here</p>
 </div>
+{% endraw %}
 ```
 
 ---
@@ -113,6 +117,7 @@ The `data-content` attribute is supported on the following elements:
 The `data-content` attribute value is evaluated during data binding, supporting:
 
 ```html
+{% raw %}
 <!-- Direct property binding -->
 <label data-content="{{model.userName}}"></label>
 
@@ -124,6 +129,7 @@ The `data-content` attribute value is evaluated during data binding, supporting:
 
 <!-- Conditional content -->
 <label data-content="{{model.isActive ? 'Active' : 'Inactive'}}"></label>
+{% endraw %}
 ```
 
 ### Content Type Specification
@@ -131,6 +137,7 @@ The `data-content` attribute value is evaluated during data binding, supporting:
 Use `data-content-type` to specify the MIME type of the content:
 
 ```html
+{% raw %}
 <!-- HTML content (default) -->
 <div data-content="<p>HTML content</p>" data-content-type="text/html"></div>
 
@@ -140,6 +147,7 @@ Use `data-content-type` to specify the MIME type of the content:
 
 <!-- Plain text -->
 <div data-content="{{model.plainText}}" data-content-type="text/plain"></div>
+{% endraw %}
 ```
 
 ### Markup Requirements
@@ -232,10 +240,12 @@ The default `data-content-action` varies by component:
 Replace label text with bound data:
 
 ```html
+{% raw %}
 <!-- Model: { userName: "John Smith" } -->
 <label data-content="{{model.userName}}">Loading...</label>
 
 <!-- Result: John Smith -->
+{% endraw %}
 ```
 
 ### 2. Dynamic Formatted Text
@@ -243,12 +253,14 @@ Replace label text with bound data:
 Generate formatted content from data:
 
 ```html
+{% raw %}
 <!-- Model: { firstName: "Jane", lastName: "Doe", title: "Dr." } -->
 <label data-content="{{concat(model.title, ' ', model.firstName, ' ', model.lastName)}}">
     Name Placeholder
 </label>
 
 <!-- Result: Dr. Jane Doe -->
+{% endraw %}
 ```
 
 ### 3. Conditional Content Display
@@ -256,12 +268,14 @@ Generate formatted content from data:
 Show different content based on conditions:
 
 ```html
+{% raw %}
 <!-- Model: { isActive: true, status: "Premium" } -->
 <label data-content="{{model.isActive ? concat('Active - ', model.status) : 'Inactive'}}">
     Status Unknown
 </label>
 
 <!-- Result: Active - Premium -->
+{% endraw %}
 ```
 
 ### 4. Dynamic HTML Content in Div
@@ -269,10 +283,12 @@ Show different content based on conditions:
 Insert formatted HTML markup:
 
 ```html
+{% raw %}
 <!-- Model: { productName: "Widget Pro", price: 29.99, inStock: true } -->
 <div data-content="<div><strong>{{model.productName}}</strong><br/>Price: ${{model.price}}<br/><em>{{model.inStock ? 'In Stock' : 'Out of Stock'}}</em></div>"></div>
 
 <!-- Renders formatted product info -->
+{% endraw %}
 ```
 
 ### 5. Inline Template Content
@@ -280,6 +296,7 @@ Insert formatted HTML markup:
 Define template content inline without nested elements:
 
 ```html
+{% raw %}
 <!-- Model: { items: [{name: "A"}, {name: "B"}] } -->
 <template data-bind="{{model.items}}"
           data-content="<div style='padding:5pt; border:1pt solid #ccc;'>{{.name}}</div>">
@@ -288,6 +305,7 @@ Define template content inline without nested elements:
 <!-- Generates: -->
 <!-- <div>A</div> -->
 <!-- <div>B</div> -->
+{% endraw %}
 ```
 
 ### 6. Appending Dynamic Content
@@ -295,11 +313,13 @@ Define template content inline without nested elements:
 Add content after existing elements:
 
 ```html
+{% raw %}
 <div data-content="<p><em>{{model.disclaimer}}</em></p>" data-content-action="append">
     <p>Main content appears here first.</p>
 </div>
 
 <!-- Results in main content followed by disclaimer -->
+{% endraw %}
 ```
 
 ### 7. Prepending Header Content
@@ -307,11 +327,13 @@ Add content after existing elements:
 Add content before existing elements:
 
 ```html
+{% raw %}
 <div data-content="<h2>{{model.title}}</h2>" data-content-action="prepend">
     <p>This paragraph will appear after the title.</p>
 </div>
 
 <!-- Results in title followed by paragraph -->
+{% endraw %}
 ```
 
 ### 8. Complex Multi-Line HTML Content
@@ -319,6 +341,7 @@ Add content before existing elements:
 Generate complex markup structure:
 
 ```html
+{% raw %}
 <!-- Model: { user: {name: "Alice", role: "Admin", department: "IT"} } -->
 <div data-content="<div style='border: 2pt solid #336699; padding: 10pt;'>
     <h3 style='margin: 0; color: #336699;'>{{model.user.name}}</h3>
@@ -328,6 +351,7 @@ Generate complex markup structure:
     </div>
 </div>">
 </div>
+{% endraw %}
 ```
 
 ### 9. Dynamic Table Content Generation
@@ -335,6 +359,7 @@ Generate complex markup structure:
 Create table structure dynamically:
 
 ```html
+{% raw %}
 <!-- Model: { columns: ["ID", "Name", "Status"], hasData: true } -->
 <div data-content="<table style='width:100%;'>
     <thead>
@@ -351,6 +376,7 @@ Create table structure dynamically:
     </tbody>
 </table>">
 </div>
+{% endraw %}
 ```
 
 ### 10. Conditional Section Inclusion
@@ -358,11 +384,13 @@ Create table structure dynamically:
 Include entire sections conditionally:
 
 ```html
+{% raw %}
 <!-- Model: { showWarning: true, warningMessage: "Important notice" } -->
 <div data-content="{{model.showWarning ? concat('<div style=\'background-color: #fff3cd; padding: 10pt; border: 1pt solid #ffc107;\'><strong>Warning:</strong> ', model.warningMessage, '</div>') : ''}}">
 </div>
 
 <!-- Only renders if showWarning is true -->
+{% endraw %}
 ```
 
 ### 11. List Generation with Dynamic Styling
@@ -370,12 +398,14 @@ Include entire sections conditionally:
 Create styled list items:
 
 ```html
+{% raw %}
 <!-- Model: { priority: "high", tasks: ["Task A", "Task B"] } -->
 <template data-bind="{{model.tasks}}"
           data-content="<div style='padding: 8pt; margin: 5pt; border-left: 3pt solid {{model.priority === 'high' ? '#dc3545' : '#28a745'}};'>{{.}}</div>">
 </template>
 
 <!-- Each task gets colored border based on priority -->
+{% endraw %}
 ```
 
 ### 12. Placeholder with Fallback Content
@@ -383,12 +413,14 @@ Create styled list items:
 Show dynamic content or fallback:
 
 ```html
+{% raw %}
 <!-- Model: { description: null } -->
 <div data-content="{{model.description ? model.description : '<em style=\'color: #999;\'>No description available</em>'}}">
     Loading...
 </div>
 
 <!-- Shows fallback when description is null -->
+{% endraw %}
 ```
 
 ### 13. Frame with Dynamic Document Content
@@ -396,6 +428,7 @@ Show dynamic content or fallback:
 Assemble documents dynamically:
 
 ```html
+{% raw %}
 <!-- Model: { reportContent: "<html>...</html>" } -->
 <frameset>
     <frame src="header.html"></frame>
@@ -404,6 +437,7 @@ Assemble documents dynamically:
 </frameset>
 
 <!-- Inserts dynamic report between header and footer -->
+{% endraw %}
 ```
 
 ### 14. Localized Content Injection
@@ -411,12 +445,14 @@ Assemble documents dynamically:
 Insert locale-specific content:
 
 ```html
+{% raw %}
 <!-- Model: { locale: "es", welcomeMessages: {en: "Welcome", es: "Bienvenido"} } -->
 <label data-content="{{model.welcomeMessages[model.locale]}}">
     Welcome
 </label>
 
 <!-- Shows: Bienvenido -->
+{% endraw %}
 ```
 
 ### 15. Rich Text with Embedded Bindings
@@ -424,6 +460,7 @@ Insert locale-specific content:
 Create complex formatted content with multiple bindings:
 
 ```html
+{% raw %}
 <!-- Model: { order: {id: 1234, date: "2024-10-13", customer: "Acme Corp", total: 1500.00} } -->
 <div data-content="<div style='padding: 15pt; border: 2pt solid #336699;'>
     <h2 style='margin: 0 0 10pt 0; color: #336699;'>Order Confirmation</h2>
@@ -435,6 +472,7 @@ Create complex formatted content with multiple bindings:
     </div>
 </div>">
 </div>
+{% endraw %}
 ```
 
 ### 16. Template with Alternate Content Definition
@@ -442,6 +480,7 @@ Create complex formatted content with multiple bindings:
 Define template behavior inline:
 
 ```html
+{% raw %}
 <!-- Model: { items: [{type: "A", name: "Item 1"}, {type: "B", name: "Item 2"}] } -->
 <template data-bind="{{model.items}}"
           data-content="<div style='padding: 10pt; background-color: {{.type === 'A' ? '#e3f2fd' : '#f3e5f5'}}; margin-bottom: 5pt;'>
@@ -450,6 +489,7 @@ Define template behavior inline:
 </template>
 
 <!-- Type A items get blue background, Type B get purple -->
+{% endraw %}
 ```
 
 ---

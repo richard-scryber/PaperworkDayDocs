@@ -96,6 +96,7 @@ The `border-color` property supports dynamic values through data binding, allowi
 ### Example 1: Status-based border colors
 
 ```html
+{% raw %}
 <style>
     .order-card {
         border-width: 2pt;
@@ -112,6 +113,7 @@ The `border-color` property supports dynamic values through data binding, allowi
         <p>Total: {{order.total}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -129,6 +131,7 @@ Data context:
 ### Example 2: Alert severity colors
 
 ```html
+{% raw %}
 <style>
     .alert-box {
         border-width: 1pt 1pt 1pt 4pt;
@@ -142,6 +145,7 @@ Data context:
         <strong>{{severity.level}}:</strong> {{message}}
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -159,6 +163,7 @@ Data context:
 ### Example 3: Table rows with conditional colors
 
 ```html
+{% raw %}
 <style>
     .data-table {
         width: 100%;
@@ -178,6 +183,7 @@ Data context:
         </tr>
     </table>
 </body>
+{% endraw %}
 ```
 
 ---

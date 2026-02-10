@@ -298,6 +298,7 @@ ID selectors have the highest specificity value of **5 points**.
 ### Example 10: Data binding with ID
 
 ```html
+{% raw %}
 <style>
     #customer-name {
         font-size: 18pt;
@@ -315,6 +316,7 @@ ID selectors have the highest specificity value of **5 points**.
     <div id="customer-name" data-bind="{{customer.name}}"></div>
     <div id="customer-balance" data-bind="${{customer.balance}}"></div>
 </body>
+{% endraw %}
 ```
 
 ---

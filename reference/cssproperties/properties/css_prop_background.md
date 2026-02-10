@@ -119,6 +119,7 @@ Background properties support dynamic data binding, allowing you to create perso
 ### Example 1: Dynamic company logo from data
 
 ```html
+{% raw %}
 <style>
     .company-header {
         background: url('{{company.logoUrl}}') no-repeat center / contain;
@@ -131,6 +132,7 @@ Background properties support dynamic data binding, allowing you to create perso
         <h1>{{company.name}} - Annual Report</h1>
     </div>
 </body>
+{% endraw %}
 ```
 
 This example dynamically loads company logos based on data, perfect for multi-tenant systems or white-label documents where each client needs their own branding.
@@ -138,6 +140,7 @@ This example dynamically loads company logos based on data, perfect for multi-te
 ### Example 2: Conditional background colors by status
 
 ```html
+{% raw %}
 <style>
     .status-section {
         background: {{#if status.isApproved}}#d1fae5{{else if status.isPending}}#fef3c7{{else}}#fee2e2{{/if}};
@@ -151,6 +154,7 @@ This example dynamically loads company logos based on data, perfect for multi-te
         <p>Your application is currently {{status.description}}.</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Perfect for creating status-driven documents like approval letters, invoice status reports, or compliance certificates where visual indicators change based on state.
@@ -158,6 +162,7 @@ Perfect for creating status-driven documents like approval letters, invoice stat
 ### Example 3: Data-driven watermarks and positioning
 
 ```html
+{% raw %}
 <style>
     .document-page {
         background: url('{{document.watermarkUrl}}') no-repeat {{document.watermarkPosition}} / {{document.watermarkSize}};
@@ -178,6 +183,7 @@ Perfect for creating status-driven documents like approval letters, invoice stat
         <p>Document content here...</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Enables dynamic document branding where watermark images, positions, sizes, and brand colors are all controlled by data. Ideal for template systems serving multiple organizations or document types.

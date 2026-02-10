@@ -77,6 +77,7 @@ The `border-right-color` property supports dynamic values through data binding, 
 ### Example 1: Column separators with status colors
 
 ```html
+{% raw %}
 <style>
     .table-cell {
         display: table-cell;
@@ -90,11 +91,13 @@ The `border-right-color` property supports dynamic values through data binding, 
         {{cell.content}}
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Dashboard metric dividers
 
 ```html
+{% raw %}
 <style>
     .metric-box {
         display: table-cell;
@@ -110,11 +113,13 @@ The `border-right-color` property supports dynamic values through data binding, 
         <div style="font-size: 11pt; color: #6b7280;">{{metric.label}}</div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Sidebar navigation indicators
 
 ```html
+{% raw %}
 <style>
     .nav-item {
         border-right-width: 4pt;
@@ -128,6 +133,7 @@ The `border-right-color` property supports dynamic values through data binding, 
         {{item.label}}
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

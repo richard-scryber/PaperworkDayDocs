@@ -99,6 +99,7 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 ### Data Binding Examples
 
 ```html
+{% raw %}
 <!-- Dynamic font family from model -->
 <div style="font-family: {{document.fontFamily}}">
     Content using dynamically selected font family
@@ -123,6 +124,7 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
         {{reportContent}}
     </div>
 </body>
+{% endraw %}
 ```
 
 **Note:** Ensure that font names from bound data match fonts available on the PDF generation system. Always include fallback fonts in the bound value or after the binding expression.

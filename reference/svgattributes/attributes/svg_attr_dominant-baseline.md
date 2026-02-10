@@ -89,6 +89,7 @@ The `dominant-baseline` attribute is supported on:
 Change vertical alignment based on data:
 
 ```html
+{% raw %}
 <!-- Model: { labels: [{text: 'Top', align: 'hanging', x: 100}, {text: 'Middle', align: 'middle', x: 200}, {text: 'Bottom', align: 'text-bottom', x: 300}] } -->
 <svg width="400" height="200">
     <line x1="50" y1="100" x2="350" y2="100" stroke="#bdc3c7" stroke-width="1"/>
@@ -99,6 +100,7 @@ Change vertical alignment based on data:
               text-anchor="middle" font-size="14" fill="#3498db">{{.text}}</text>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Centered Button Text
@@ -106,6 +108,7 @@ Change vertical alignment based on data:
 Center text perfectly in buttons:
 
 ```html
+{% raw %}
 <!-- Model: { buttons: [{label: 'Save', x: 80, y: 75, color: '#3498db'}, {label: 'Cancel', x: 220, y: 75, color: '#e74c3c'}] } -->
 <svg width="400" height="150">
     <template data-bind="{{model.buttons}}">
@@ -115,6 +118,7 @@ Center text perfectly in buttons:
               fill="white" font-size="16" font-weight="bold">{{.label}}</text>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Badge Labels with Centered Text
@@ -122,6 +126,7 @@ Center text perfectly in buttons:
 Create badges with perfectly centered numbers:
 
 ```html
+{% raw %}
 <!-- Model: { badges: [{count: 5, x: 80, y: 80}, {count: 23, x: 200, y: 80}, {count: 147, x: 320, y: 80}] } -->
 <svg width="400" height="160">
     <template data-bind="{{model.badges}}">
@@ -131,6 +136,7 @@ Create badges with perfectly centered numbers:
               fill="white" font-size="24" font-weight="bold">{{.count}}</text>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Multi-Line Aligned Text
@@ -138,6 +144,7 @@ Create badges with perfectly centered numbers:
 Align multi-line text blocks:
 
 ```html
+{% raw %}
 <!-- Model: { items: [{title: 'Item 1', desc: 'Description', y: 60}, {title: 'Item 2', desc: 'Description', y: 140}] } -->
 <svg width="400" height="200">
     <template data-bind="{{model.items}}">
@@ -149,6 +156,7 @@ Align multi-line text blocks:
         </text>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Position-Specific Alignment
@@ -156,6 +164,7 @@ Align multi-line text blocks:
 Use different alignment based on position:
 
 ```html
+{% raw %}
 <!-- Model: { markers: [{label: 'Top', x: 100, y: 50, position: 'top'}, {label: 'Center', x: 200, y: 150, position: 'center'}, {label: 'Bottom', x: 300, y: 250, position: 'bottom'}] } -->
 <svg width="400" height="300">
     <template data-bind="{{model.markers}}">
@@ -166,6 +175,7 @@ Use different alignment based on position:
               font-size="12" fill="#2c3e50">{{.label}}</text>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -279,26 +289,32 @@ Each line can have different baseline:
 
 **Buttons:**
 ```html
+{% raw %}
 <text x="{{buttonCenterX}}" y="{{buttonCenterY}}"
       text-anchor="middle" dominant-baseline="middle">
     Click Me
 </text>
+{% endraw %}
 ```
 
 **Badges:**
 ```html
+{% raw %}
 <text x="{{badgeX}}" y="{{badgeY}}"
       text-anchor="middle" dominant-baseline="middle">
     {{count}}
 </text>
+{% endraw %}
 ```
 
 **Chart labels:**
 ```html
+{% raw %}
 <text x="{{pointX}}" y="{{pointY - 10}}"
       text-anchor="middle" dominant-baseline="text-bottom">
     {{value}}
 </text>
+{% endraw %}
 ```
 
 **Top-aligned headings:**

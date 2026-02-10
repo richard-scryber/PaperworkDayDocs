@@ -240,6 +240,7 @@ In the Scryber codebase:
 The `<style>` element supports data binding:
 
 ```html
+{% raw %}
 <style>
     body {
         margin: {{model.pageMargin}}pt;
@@ -250,6 +251,7 @@ The `<style>` element supports data binding:
         background-color: {{model.brandColor}};
     }
 </style>
+{% endraw %}
 ```
 
 Data binding expressions are evaluated before CSS parsing.
@@ -673,6 +675,7 @@ Data binding expressions are evaluated before CSS parsing.
 ### Data-Bound Styles
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -709,6 +712,7 @@ Data binding expressions are evaluated before CSS parsing.
     <p class="highlight">Important information</p>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Form Styles

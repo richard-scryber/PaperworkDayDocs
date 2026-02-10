@@ -93,6 +93,7 @@ The overflow property integrates with data binding to create dynamic content are
 ### Example 1: Dynamic overflow based on content length
 
 ```html
+{% raw %}
 <style>
     .content-box {
         width: 400pt;
@@ -116,11 +117,13 @@ The overflow property integrates with data binding to create dynamic content are
         <p>{{articleContent}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Adaptive overflow for different page sizes
 
 ```html
+{% raw %}
 <style>
     .adaptive-container {
         width: 100%;
@@ -147,11 +150,13 @@ The overflow property integrates with data binding to create dynamic content are
         <p>{{dynamicContent}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Conditional overflow for data-driven layouts
 
 ```html
+{% raw %}
 <style>
     .dashboard-panel {
         width: 300pt;
@@ -186,6 +191,7 @@ The overflow property integrates with data binding to create dynamic content are
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

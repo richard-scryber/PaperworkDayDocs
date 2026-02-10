@@ -91,6 +91,7 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 ### Example 1: Data-driven polygon styles
 
 ```html
+{% raw %}
 <style>
     .data-polygon {
         fill: none;
@@ -107,11 +108,13 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Conditional border styles for UI states
 
 ```html
+{% raw %}
 <style>
     .ui-frame {
         stroke-width: 3;
@@ -129,11 +132,13 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Dynamic chart elements with variable line joins
 
 ```html
+{% raw %}
 <style>
     .chart-area {
         fill-opacity: 0.3;
@@ -151,6 +156,7 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ---

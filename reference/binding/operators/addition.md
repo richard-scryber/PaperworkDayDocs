@@ -71,9 +71,11 @@ The sum of the two operands.
 
 {% raw %}
 ```html
+{% raw %}
 <p>Subtotal: ${{model.price}}</p>
 <p>Tax: ${{model.tax}}</p>
 <p>Total: ${{model.price + model.tax}}</p>
+{% endraw %}
 ```{% endraw %}
 
 **Data:**

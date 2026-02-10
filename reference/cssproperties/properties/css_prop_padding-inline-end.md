@@ -92,6 +92,7 @@ The `padding-inline-end` property supports dynamic values through data binding, 
 ### Example 1: Alert with dynamic action button space
 
 ```html
+{% raw %}
 <style>
     .alert {
         padding-inline-start: 15pt;
@@ -107,6 +108,7 @@ The `padding-inline-end` property supports dynamic values through data binding, 
         <strong>Warning:</strong> {{alert.message}}
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -122,6 +124,7 @@ Data context:
 ### Example 2: Table cells with dynamic end padding
 
 ```html
+{% raw %}
 <style>
     .data-table th,
     .data-table td {
@@ -143,6 +146,7 @@ Data context:
         </tr>
     </table>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -157,6 +161,7 @@ Data context:
 ### Example 3: Quote block with asymmetric padding
 
 ```html
+{% raw %}
 <style>
     .quote-block {
         padding-inline-start: 30pt;
@@ -182,6 +187,7 @@ Data context:
         {{/if}}
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:

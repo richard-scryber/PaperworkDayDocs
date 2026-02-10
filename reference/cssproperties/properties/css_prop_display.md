@@ -106,6 +106,7 @@ The display property works seamlessly with data binding to create dynamic, condi
 ### Example 1: Conditional section visibility
 
 ```html
+{% raw %}
 <style>
     .section {
         padding: 20pt;
@@ -130,11 +131,13 @@ The display property works seamlessly with data binding to create dynamic, condi
         <p>Development data: Version {{version}}, Generated: {{timestamp}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Dynamic layout based on preferences
 
 ```html
+{% raw %}
 <style>
     .content-area {
         padding: 20pt;
@@ -166,11 +169,13 @@ The display property works seamlessly with data binding to create dynamic, condi
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Conditional rendering for different document types
 
 ```html
+{% raw %}
 <style>
     .invoice-layout { background-color: #f9fafb; }
     .report-layout { background-color: #fffef7; }
@@ -196,6 +201,7 @@ The display property works seamlessly with data binding to create dynamic, condi
         <p style="text-align: center; color: #dc2626; font-size: 36pt; opacity: 0.3;">DRAFT</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

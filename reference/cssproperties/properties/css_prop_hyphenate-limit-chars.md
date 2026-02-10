@@ -102,6 +102,7 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
 ### Example 1: Responsive Hyphenation Limits
 
 ```html
+{% raw %}
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
     <p style="hyphens: auto; hyphenate-limit-chars: {{model.column.hyphenateLimits}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -127,11 +128,13 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
     "content": "Telecommunications infrastructure implementation..."
 }
 -->
+{% endraw %}
 ```
 
 ### Example 2: Language-Specific Hyphenation Rules
 
 ```html
+{% raw %}
 <div style="width: 200pt; padding: 15pt" lang="{{model.language.code}}">
     <p style="hyphens: auto; hyphenate-limit-chars: {{model.language.hyphenateLimits}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -157,11 +160,13 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
     "content": "Telekommunikationsinfrastruktur dokumentation..."
 }
 -->
+{% endraw %}
 ```
 
 ### Example 3: Document Quality Settings
 
 ```html
+{% raw %}
 <div style="width: 250pt; padding: 20pt" lang="en">
     <p style="hyphens: auto; hyphenate-limit-chars: {{model.quality.hyphenateLimits}}; text-align: justify; font-size: 11pt">
         {{model.document.content}}
@@ -189,6 +194,7 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
     }
 }
 -->
+{% endraw %}
 ```
 
 ---

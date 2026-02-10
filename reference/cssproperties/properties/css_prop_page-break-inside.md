@@ -88,6 +88,7 @@ The `page-break-inside` property supports data binding, allowing you to dynamica
 ### Example 1: Conditional content grouping
 
 ```html
+{% raw %}
 <style>
     .content-item {
         page-break-inside: {{item.keepTogether ? 'avoid' : 'auto'}};
@@ -108,11 +109,13 @@ The `page-break-inside` property supports data binding, allowing you to dynamica
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Data-driven table integrity
 
 ```html
+{% raw %}
 <style>
     .data-table-wrapper {
         page-break-inside: {{tableSettings.preventSplit ? 'avoid' : 'auto'}};
@@ -149,11 +152,13 @@ The `page-break-inside` property supports data binding, allowing you to dynamica
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Variable break avoidance for important content
 
 ```html
+{% raw %}
 <style>
     .info-box {
         page-break-inside: {{content.priority === 'critical' ? 'avoid' : 'auto'}};
@@ -177,6 +182,7 @@ The `page-break-inside` property supports data binding, allowing you to dynamica
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ---

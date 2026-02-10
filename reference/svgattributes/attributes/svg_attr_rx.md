@@ -70,17 +70,20 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 ### Example 1: Dynamic Ellipse Size
 
 ```html
+{% raw %}
 <!-- Model: { oval: { cx: 150, cy: 80, rx: 100, ry: 50, color: '#FF5722' } } -->
 <svg width="300" height="160">
     <ellipse cx="{{oval.cx}}" cy="{{oval.cy}}"
              rx="{{oval.rx}}" ry="{{oval.ry}}"
              fill="{{oval.color}}"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 2: Rounded Corners Based on Size
 
 ```html
+{% raw %}
 <!-- Model: { card: { width: 200, height: 120, cornerRadius: 12 } } -->
 <svg width="250" height="150">
     <rect x="25" y="15"
@@ -88,11 +91,13 @@ The `rx` attribute supports dynamic values using data binding expressions with `
           rx="{{card.cornerRadius}}" ry="{{card.cornerRadius}}"
           fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Variable Ellipses in Charts
 
 ```html
+{% raw %}
 <!-- Model: { dataPoints: [
     {cx: 80, cy: 100, rx: 40, ry: 25, color: '#e74c3c'},
     {cx: 200, cy: 100, rx: 60, ry: 35, color: '#3498db'},
@@ -105,6 +110,7 @@ The `rx` attribute supports dynamic values using data binding expressions with `
                  fill="{{.color}}" opacity="0.6"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -377,6 +383,7 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 ### Dynamic Corner Radius
 
 ```html
+{% raw %}
 <!-- Model: { buttons: [
     {x: 20, label: 'Small', rx: 4},
     {x: 140, label: 'Medium', rx: 8},
@@ -390,6 +397,7 @@ The `rx` attribute supports dynamic values using data binding expressions with `
               fill="#2196F3"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Aspect Ratio Comparison

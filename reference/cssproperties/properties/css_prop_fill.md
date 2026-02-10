@@ -98,6 +98,7 @@ The `fill` property can be dynamically set using data binding expressions, enabl
 ### Example 1: Data-driven chart colors
 
 ```html
+{% raw %}
 <style>
     .chart-bar {
         stroke: white;
@@ -116,6 +117,7 @@ The `fill` property can be dynamically set using data binding expressions, enabl
         {{/each}}
     </svg>
 </body>
+{% endraw %}
 ```
 
 With model data:
@@ -132,6 +134,7 @@ With model data:
 ### Example 2: Conditional status indicators
 
 ```html
+{% raw %}
 <style>
     .status-icon {
         stroke: white;
@@ -149,11 +152,13 @@ With model data:
         {{/each}}
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Category-based color coding
 
 ```html
+{% raw %}
 <style>
     .category-shape {
         stroke: #374151;
@@ -169,6 +174,7 @@ With model data:
         {{/each}}
     </svg>
 </body>
+{% endraw %}
 ```
 
 With configuration mapping:

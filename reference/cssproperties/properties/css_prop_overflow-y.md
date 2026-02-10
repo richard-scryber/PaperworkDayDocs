@@ -93,6 +93,7 @@ The overflow-y property integrates with data binding to manage vertical content 
 ### Example 1: Dynamic card heights with overflow control
 
 ```html
+{% raw %}
 <style>
     .content-card {
         width: 300pt;
@@ -121,11 +122,13 @@ The overflow-y property integrates with data binding to manage vertical content 
         <div>{{articleBody}}</div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Adaptive overflow for dashboard panels
 
 ```html
+{% raw %}
 <style>
     .dashboard-panel {
         width: 320pt;
@@ -163,11 +166,13 @@ The overflow-y property integrates with data binding to manage vertical content 
         {{/each}}
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Responsive content lists with overflow
 
 ```html
+{% raw %}
 <style>
     .content-list {
         border: 2pt solid #d1d5db;
@@ -211,6 +216,7 @@ The overflow-y property integrates with data binding to manage vertical content 
         <div>{{contentBody}}</div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

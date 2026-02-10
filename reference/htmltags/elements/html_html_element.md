@@ -231,6 +231,7 @@ The `lang` attribute specifies the document's language but does not affect text 
 ### Document with Frameset (PDF Merging)
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -245,6 +246,7 @@ The `lang` attribute specifies the document's language but does not affect text 
         </frame>
     </frameset>
 </html>
+{% endraw %}
 ```
 
 ### Multi-Language Document
@@ -290,6 +292,7 @@ using (var doc = Document.ParseDocument(path))
 ```
 
 ```html
+{% raw %}
 <!-- HTML Template: branded-document.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -319,6 +322,7 @@ using (var doc = Document.ParseDocument(path))
         <p>{{model.content}}</p>
     </body>
 </html>
+{% endraw %}
 ```
 
 ### Document with Security Settings
@@ -345,6 +349,7 @@ using (var doc = Document.ParseDocument(path))
 ### Complete Invoice Example
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -440,6 +445,7 @@ using (var doc = Document.ParseDocument(path))
         </table>
     </body>
 </html>
+{% endraw %}
 ```
 
 ---

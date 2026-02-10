@@ -397,6 +397,7 @@ The `<nav>` element has the following default behavior:
 ### Data-Bound Navigation
 
 ```html
+{% raw %}
 <!-- With model.chapters = [
     { id: "intro", title: "Introduction", pageNum: 1 },
     { id: "chapter1", title: "Getting Started", pageNum: 5 },
@@ -417,6 +418,7 @@ The `<nav>` element has the following default behavior:
         </div>
     </template>
 </nav>
+{% endraw %}
 ```
 
 ### Styled Navigation Menu

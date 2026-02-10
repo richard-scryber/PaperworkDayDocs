@@ -82,6 +82,7 @@ Note: This attribute is NOT used with `<linearGradient>` elements.
 Bind focal point to data for dynamic lighting effects:
 
 ```html
+{% raw %}
 <!-- Model: { lightX: 35, lightY: 35 } -->
 <svg width="300" height="300">
     <defs>
@@ -95,6 +96,7 @@ Bind focal point to data for dynamic lighting effects:
     </defs>
     <circle cx="150" cy="150" r="130" fill="url(#dynamicLight)" />
 </svg>
+{% endraw %}
 ```
 
 ### Mouse/Touch Position Lighting
@@ -102,6 +104,7 @@ Bind focal point to data for dynamic lighting effects:
 Create interactive lighting following pointer position:
 
 ```html
+{% raw %}
 <!-- Model: { mouseX: 120, mouseY: 180, containerWidth: 400, containerHeight: 400 } -->
 <svg width="{{model.containerWidth}}" height="{{model.containerHeight}}">
     <defs>
@@ -117,6 +120,7 @@ Create interactive lighting following pointer position:
     <rect width="{{model.containerWidth}}" height="{{model.containerHeight}}"
           fill="url(#mouseLighting)" />
 </svg>
+{% endraw %}
 ```
 
 ### Data-Driven Highlight Direction
@@ -124,6 +128,7 @@ Create interactive lighting following pointer position:
 Position highlights based on data orientation:
 
 ```html
+{% raw %}
 <!-- Model: { direction: "top-left", intensity: 80 } -->
 <svg width="200" height="200">
     <defs>
@@ -141,6 +146,7 @@ Position highlights based on data orientation:
     </defs>
     <circle cx="100" cy="100" r="80" fill="url(#directionalLight)" />
 </svg>
+{% endraw %}
 ```
 
 ### Status Indicator with Centered/Offset Glow
@@ -148,6 +154,7 @@ Position highlights based on data orientation:
 Change focal point based on status state:
 
 ```html
+{% raw %}
 <!-- Model: { status: "active", isHighlighted: true } -->
 <svg width="100" height="100">
     <defs>
@@ -162,6 +169,7 @@ Change focal point based on status state:
     </defs>
     <circle cx="50" cy="50" r="40" fill="url(#statusGlow)" />
 </svg>
+{% endraw %}
 ```
 
 ### Calculated Lighting Angle
@@ -169,6 +177,7 @@ Change focal point based on status state:
 Calculate focal point from angle data:
 
 ```html
+{% raw %}
 <!-- Model: { lightAngle: 315, distance: 20 } -->
 <svg width="300" height="300">
     <defs>
@@ -182,6 +191,7 @@ Calculate focal point from angle data:
     </defs>
     <circle cx="150" cy="150" r="120" fill="url(#angleLighting)" />
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -461,6 +471,7 @@ Focal point positioning is ideal for:
 ### Data-Driven Light Position
 
 ```html
+{% raw %}
 <!-- Model: { lightX: 35, lightY: 40, brightness: 1.0 } -->
 <svg width="250" height="250">
     <defs>
@@ -475,11 +486,13 @@ Focal point positioning is ideal for:
 
     <circle cx="125" cy="125" r="100" fill="url(#dataLight)" />
 </svg>
+{% endraw %}
 ```
 
 ### Interactive Button State
 
 ```html
+{% raw %}
 <!-- Model: { isHovered: true, isPressed: false } -->
 <svg width="200" height="80">
     <defs>
@@ -498,6 +511,7 @@ Focal point positioning is ideal for:
         Submit
     </text>
 </svg>
+{% endraw %}
 ```
 
 ---

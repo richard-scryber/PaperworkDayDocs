@@ -40,6 +40,7 @@ The `open` attribute controls disclosure widget state:
 - Supports data binding for dynamic state control
 
 ```html
+{% raw %}
 <!-- Open/expanded by default -->
 <details open>
     <summary>Click to collapse</summary>
@@ -62,6 +63,7 @@ The `open` attribute controls disclosure widget state:
     <summary>{{model.title}}</summary>
     <p>{{model.content}}</p>
 </details>
+{% endraw %}
 ```
 
 ---
@@ -80,6 +82,7 @@ The `open` attribute is used exclusively with:
 The `open` attribute supports data binding for dynamic state control:
 
 ```html
+{% raw %}
 <!-- Dynamic open state from model -->
 <details open="{{model.expanded ? 'open' : null}}">
     <summary>Section Title</summary>
@@ -107,6 +110,7 @@ The `open` attribute supports data binding for dynamic state control:
         <p>{{.answer}}</p>
     </details>
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -677,6 +681,7 @@ Common uses for details elements:
 ### Data-Bound FAQ
 
 ```html
+{% raw %}
 <!-- Model: {
     faqs: [
         {
@@ -731,6 +736,7 @@ Common uses for details elements:
     </template>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Technical Documentation

@@ -39,6 +39,7 @@ The `data-style-identifier` attribute is used to:
 - Share style calculations across identical elements
 
 ```html
+{% raw %}
 <!-- Without identifier - styles computed for each row -->
 <template data-bind="{{model.items}}">
     <tr>
@@ -52,6 +53,7 @@ The `data-style-identifier` attribute is used to:
         <td style="padding: 8pt; border: 1pt solid #ccc;">{{.name}}</td>
     </tr>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -74,9 +76,11 @@ The `data-style-identifier` attribute is primarily supported by:
 ### Syntax
 
 ```html
+{% raw %}
 <template data-bind="{{collection}}" data-style-identifier="unique-id">
     <!-- Template content -->
 </template>
+{% endraw %}
 ```
 
 ### Value Type
@@ -109,23 +113,27 @@ The `data-style-identifier` attribute supports static and dynamic values:
 ### Static Identifier
 
 ```html
+{% raw %}
 <template data-bind="{{model.products}}" data-style-identifier="product-row">
     <tr>
         <td>{{.name}}</td>
         <td>{{.price}}</td>
     </tr>
 </template>
+{% endraw %}
 ```
 
 ### Dynamic Identifier
 
 ```html
+{% raw %}
 <!-- Model: { styleId: "custom-row-style" } -->
 <template data-bind="{{model.items}}" data-style-identifier="{{model.styleId}}">
     <tr>
         <td>{{.value}}</td>
     </tr>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -177,6 +185,7 @@ The style cache is reset when:
 For maximum performance, combine with:
 
 ```html
+{% raw %}
 <template data-bind="{{model.largeDataset}}"
           data-style-identifier="optimized-row"
           data-cache-styles="true">
@@ -184,6 +193,7 @@ For maximum performance, combine with:
         <td class="data-cell">{{.value}}</td>
     </tr>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -193,6 +203,7 @@ For maximum performance, combine with:
 ### Example 1: Basic Table Row Optimization
 
 ```html
+{% raw %}
 <!-- Large table with 1000+ rows -->
 <table border="1" cellpadding="8" style="width: 100%;">
     <thead>
@@ -213,11 +224,13 @@ For maximum performance, combine with:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Example 2: List Items with Shared Styling
 
 ```html
+{% raw %}
 <ul style="list-style: none; padding: 0;">
     <template data-bind="{{model.items}}"
               data-style-identifier="list-item-style">
@@ -227,11 +240,13 @@ For maximum performance, combine with:
         </li>
     </template>
 </ul>
+{% endraw %}
 ```
 
 ### Example 3: Invoice Line Items
 
 ```html
+{% raw %}
 <!-- Model: { lineItems: [...] } (potentially 100+ items) -->
 
 <table border="1" cellpadding="10" style="width: 100%;">
@@ -255,11 +270,13 @@ For maximum performance, combine with:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Example 4: Data Grid with Complex Styling
 
 ```html
+{% raw %}
 <style>
     .data-row {
         padding: 8pt;
@@ -279,11 +296,13 @@ For maximum performance, combine with:
         <span style="display: inline-block; width: 40%;">{{.email}}</span>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Example 5: Product Catalog Items
 
 ```html
+{% raw %}
 <template data-bind="{{model.products}}"
           data-style-identifier="catalog-product">
     <div style="page-break-inside: avoid; margin-bottom: 20pt; padding: 15pt;
@@ -296,11 +315,13 @@ For maximum performance, combine with:
         </div>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Example 6: Multiple Identifier Groups
 
 ```html
+{% raw %}
 <!-- Different identifiers for different row types -->
 <table border="1" cellpadding="8" style="width: 100%;">
     <tbody>
@@ -323,11 +344,13 @@ For maximum performance, combine with:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Example 7: Nested Templates with Identifiers
 
 ```html
+{% raw %}
 <template data-bind="{{model.departments}}"
           data-style-identifier="department-section">
     <div style="margin-bottom: 30pt;">
@@ -343,11 +366,13 @@ For maximum performance, combine with:
         </template>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Example 8: Transaction Log
 
 ```html
+{% raw %}
 <!-- Model: { transactions: [...] } (potentially thousands) -->
 
 <h2>Transaction History</h2>
@@ -363,11 +388,13 @@ For maximum performance, combine with:
         </div>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Example 9: Report with Alternating Row Colors
 
 ```html
+{% raw %}
 <table border="1" cellpadding="10" style="width: 100%; border-collapse: collapse;">
     <thead>
         <tr style="background-color: #336699; color: white;">
@@ -392,11 +419,13 @@ For maximum performance, combine with:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Example 10: Performance-Critical Large Dataset
 
 ```html
+{% raw %}
 <!-- Optimized for 10,000+ records -->
 <style>
     .record {
@@ -415,11 +444,13 @@ For maximum performance, combine with:
         <span>{{.timestamp}}</span>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Example 11: Customer List
 
 ```html
+{% raw %}
 <h2>Customer Directory</h2>
 
 <template data-bind="{{model.customers}}"
@@ -434,11 +465,13 @@ For maximum performance, combine with:
         </p>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Example 12: Dynamic Identifier Based on Data
 
 ```html
+{% raw %}
 <!-- Model: { items: [...], useCompactStyle: true } -->
 
 <template data-bind="{{model.items}}"
@@ -448,11 +481,13 @@ For maximum performance, combine with:
         {{.content}}
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Example 13: Financial Statement Rows
 
 ```html
+{% raw %}
 <table border="1" cellpadding="10" style="width: 100%;">
     <tbody>
         <!-- Account entries (potentially hundreds) -->
@@ -468,11 +503,13 @@ For maximum performance, combine with:
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Example 14: Email Campaign Report
 
 ```html
+{% raw %}
 <h2>Campaign Performance Metrics</h2>
 
 <template data-bind="{{model.campaigns}}"
@@ -496,11 +533,13 @@ For maximum performance, combine with:
         </table>
     </div>
 </template>
+{% endraw %}
 ```
 
 ### Example 15: Complete Optimized Report
 
 ```html
+{% raw %}
 <!-- Model: { sections: [{title: "Section", items: [...]}] } -->
 
 <style>
@@ -537,6 +576,7 @@ For maximum performance, combine with:
         </template>
     </div>
 </template>
+{% endraw %}
 ```
 
 ---

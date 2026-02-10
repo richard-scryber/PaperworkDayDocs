@@ -96,6 +96,7 @@ The `padding` property supports dynamic values through data binding, allowing yo
 ### Example 1: Dynamic card padding based on importance
 
 ```html
+{% raw %}
 <style>
     .card {
         margin-bottom: 15pt;
@@ -110,6 +111,7 @@ The `padding` property supports dynamic values through data binding, allowing yo
         <p>{{card.description}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -126,6 +128,7 @@ Data context:
 ### Example 2: Responsive padding based on content density
 
 ```html
+{% raw %}
 <style>
     .invoice {
         padding: {{density === 'compact' ? '30pt' : '40pt'}};
@@ -156,6 +159,7 @@ Data context:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -172,6 +176,7 @@ Data context:
 ### Example 3: Variable padding for form fields
 
 ```html
+{% raw %}
 <style>
     .form {
         padding: {{form.outerPadding}}pt;
@@ -201,6 +206,7 @@ Data context:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:

@@ -91,6 +91,7 @@ The `position` property supports data binding, allowing you to dynamically contr
 ### Example 1: Dynamic watermark positioning based on document type
 
 ```html
+{% raw %}
 <style>
     .watermark {
         position: {{document.watermark.positioning}};
@@ -109,6 +110,7 @@ The `position` property supports data binding, allowing you to dynamically contr
         <p>{{document.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:
@@ -132,6 +134,7 @@ Data model:
 ### Example 2: Conditional header positioning based on layout preferences
 
 ```html
+{% raw %}
 <style>
     .page-header {
         position: {{layout.headerPosition}};
@@ -155,6 +158,7 @@ Data model:
         <p>Document content starts here...</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:
@@ -178,6 +182,7 @@ Data model:
 ### Example 3: Dynamic approval stamp positioning
 
 ```html
+{% raw %}
 <style>
     .document-container {
         position: relative;
@@ -208,6 +213,7 @@ Data model:
         <div class="status-stamp">{{stamp.text}}</div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:

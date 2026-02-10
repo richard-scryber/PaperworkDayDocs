@@ -96,6 +96,7 @@ The `page-break-before` property supports data binding, allowing you to dynamica
 ### Example 1: Conditional page breaks for chapter starts
 
 ```html
+{% raw %}
 <style>
     .section {
         page-break-before: {{item.isNewChapter ? 'always' : 'auto'}};
@@ -114,11 +115,13 @@ The `page-break-before` property supports data binding, allowing you to dynamica
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Data-driven report sections
 
 ```html
+{% raw %}
 <style>
     .report-section {
         page-break-before: {{config.separateSections ? 'always' : 'auto'}};
@@ -139,11 +142,13 @@ The `page-break-before` property supports data binding, allowing you to dynamica
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Multi-format document with conditional pagination
 
 ```html
+{% raw %}
 <style>
     .document-part {
         page-break-before: {{documentType === 'formal' ? 'always' : 'auto'}};
@@ -161,6 +166,7 @@ The `page-break-before` property supports data binding, allowing you to dynamica
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ---

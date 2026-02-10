@@ -206,11 +206,13 @@ In the Scryber codebase:
 Bind stop colors to model data:
 
 ```html
+{% raw %}
 <!-- Model: { primaryColor: "#3498db", accentColor: "#e74c3c" } -->
 <linearGradient id="dataColors">
     <stop offset="0%" stop-color="{{model.primaryColor}}" />
     <stop offset="100%" stop-color="{{model.accentColor}}" />
 </linearGradient>
+{% endraw %}
 ```
 
 ### Dynamic Stop Positions
@@ -218,12 +220,14 @@ Bind stop colors to model data:
 Create data-driven stop positions:
 
 ```html
+{% raw %}
 <!-- Model: { midpoint: 30 } -->
 <linearGradient id="dynamicPosition">
     <stop offset="0%" stop-color="#2ecc71" />
     <stop offset="{{model.midpoint}}%" stop-color="#f39c12" />
     <stop offset="100%" stop-color="#e74c3c" />
 </linearGradient>
+{% endraw %}
 ```
 
 ### Conditional Stop Colors
@@ -231,12 +235,14 @@ Create data-driven stop positions:
 Set colors based on data conditions:
 
 ```html
+{% raw %}
 <!-- Model: { status: "error", errorColor: "#e74c3c", successColor: "#2ecc71" } -->
 <linearGradient id="statusGrad">
     <stop offset="0%" stop-color="white" />
     <stop offset="100%"
           stop-color="{{model.status === 'error' ? model.errorColor : model.successColor}}" />
 </linearGradient>
+{% endraw %}
 ```
 
 ### Dynamic Opacity
@@ -244,11 +250,13 @@ Set colors based on data conditions:
 Control stop transparency with data:
 
 ```html
+{% raw %}
 <!-- Model: { opacity: 0.7 } -->
 <radialGradient id="glowEffect">
     <stop offset="0%" stop-color="#3498db" stop-opacity="{{model.opacity}}" />
     <stop offset="100%" stop-color="#3498db" stop-opacity="0" />
 </radialGradient>
+{% endraw %}
 ```
 
 ### Generate Stops from Array
@@ -256,6 +264,7 @@ Control stop transparency with data:
 Create multiple stops from data collections:
 
 ```html
+{% raw %}
 <!-- Model: { colorStops: [
     {position: 0, color: "#e74c3c"},
     {position: 33, color: "#f39c12"},
@@ -267,6 +276,7 @@ Create multiple stops from data collections:
         <stop offset="{{.position}}%" stop-color="{{.color}}" />
     </template>
 </linearGradient>
+{% endraw %}
 ```
 
 ### Data-Driven Color Scales
@@ -274,6 +284,7 @@ Create multiple stops from data collections:
 Create color scales from data ranges:
 
 ```html
+{% raw %}
 <!-- Model: { values: [0, 25, 50, 75, 100], colors: ["#2ecc71", "#f1c40f", "#e67e22", "#e74c3c", "#c0392b"] } -->
 <linearGradient id="heatmap">
     <template data-bind="{{model.values}}">
@@ -281,6 +292,7 @@ Create color scales from data ranges:
               stop-color="{{model.colors[$index]}}" />
     </template>
 </linearGradient>
+{% endraw %}
 ```
 
 ---
@@ -504,6 +516,7 @@ Create color scales from data ranges:
 ### Data-Driven Status Colors
 
 ```html
+{% raw %}
 <!-- Model: { level: 75, lowColor: "#2ecc71", midColor: "#f39c12", highColor: "#e74c3c" } -->
 <svg width="400" height="100">
     <linearGradient id="statusLevel">
@@ -515,11 +528,13 @@ Create color scales from data ranges:
     </linearGradient>
     <rect width="{{model.level * 4}}" height="100" fill="url(#statusLevel)" />
 </svg>
+{% endraw %}
 ```
 
 ### Temperature Scale with Data Stops
 
 ```html
+{% raw %}
 <!-- Model: { temps: [-20, 0, 20, 40], colors: ["#3498db", "#2ecc71", "#f39c12", "#e74c3c"] } -->
 <svg width="400" height="50">
     <linearGradient id="tempScale">
@@ -530,11 +545,13 @@ Create color scales from data ranges:
     </linearGradient>
     <rect width="400" height="50" fill="url(#tempScale)" />
 </svg>
+{% endraw %}
 ```
 
 ### Dynamic Opacity Based on Value
 
 ```html
+{% raw %}
 <!-- Model: { strength: 0.8 } -->
 <svg width="300" height="300">
     <radialGradient id="strengthGrad">
@@ -543,11 +560,13 @@ Create color scales from data ranges:
     </radialGradient>
     <circle cx="150" cy="150" r="120" fill="url(#strengthGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ### Conditional Color Stops
 
 ```html
+{% raw %}
 <!-- Model: { showMiddle: true, startColor: "#3498db", midColor: "#9b59b6", endColor: "#e74c3c" } -->
 <svg width="400" height="100">
     <linearGradient id="conditional">
@@ -558,11 +577,13 @@ Create color scales from data ranges:
     </linearGradient>
     <rect width="400" height="100" fill="url(#conditional)" />
 </svg>
+{% endraw %}
 ```
 
 ### Percentage-Based Color Stops
 
 ```html
+{% raw %}
 <!-- Model: { percentage: 65, color: "#2ecc71" } -->
 <svg width="400" height="100">
     <linearGradient id="percentGrad">
@@ -573,6 +594,7 @@ Create color scales from data ranges:
     </linearGradient>
     <rect width="400" height="100" fill="url(#percentGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ---

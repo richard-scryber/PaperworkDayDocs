@@ -82,6 +82,7 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
 ### Example 1: Column Width Adaptation
 
 ```html
+{% raw %}
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
     <p style="hyphens: auto; hyphens-limit-chars-length: {{model.column.minWordLength}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -107,11 +108,13 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
     "content": "Telecommunications implementation requires documentation..."
 }
 -->
+{% endraw %}
 ```
 
 ### Example 2: Language-Specific Settings
 
 ```html
+{% raw %}
 <div style="width: 200pt; padding: 15pt" lang="{{model.language.code}}">
     <p style="hyphens: auto; hyphens-limit-chars-length: {{model.language.minWordLength}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -137,11 +140,13 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
     "content": "Professionelle Telekommunikationssysteme..."
 }
 -->
+{% endraw %}
 ```
 
 ### Example 3: Document Format Preferences
 
 ```html
+{% raw %}
 <div style="width: 220pt; padding: 18pt" lang="en">
     <p style="hyphens: auto; hyphens-limit-chars-length: {{model.format.minWordLength}}; text-align: justify; font-size: 11pt">
         {{model.document.text}}
@@ -169,6 +174,7 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
     }
 }
 -->
+{% endraw %}
 ```
 
 ---

@@ -39,6 +39,7 @@ The `datetime` attribute defines temporal values:
 - Enables data binding for dynamic date/time values
 
 ```html
+{% raw %}
 <!-- Date only -->
 <time datetime="2025-01-15">January 15, 2025</time>
 
@@ -56,6 +57,7 @@ The `datetime` attribute defines temporal values:
 
 <!-- Dynamic datetime -->
 <time datetime="{{model.publishDate}}">{{model.formattedDate}}</time>
+{% endraw %}
 ```
 
 ---
@@ -78,6 +80,7 @@ The `datetime` attribute is used with:
 The `datetime` attribute supports data binding for dynamic date/time values:
 
 ```html
+{% raw %}
 <!-- Dynamic datetime from model -->
 <time datetime="{{model.eventDate}}">{{model.displayDate}}</time>
 
@@ -111,6 +114,7 @@ The `datetime` attribute supports data binding for dynamic date/time values:
         <ins datetime="{{.timestamp}}">{{.after}}</ins>
     </p>
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -675,6 +679,7 @@ The `datetime` attribute is optional for `<time>` elements:
 ### Data-Bound Event Schedule
 
 ```html
+{% raw %}
 <!-- Model: {
     events: [
         {
@@ -711,6 +716,7 @@ The `datetime` attribute is optional for `<time>` elements:
         </div>
     </template>
 </article>
+{% endraw %}
 ```
 
 ### Historical Timeline

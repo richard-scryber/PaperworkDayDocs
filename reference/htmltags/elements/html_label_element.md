@@ -173,9 +173,11 @@ The `for` attribute creates a semantic association with an input field:
 The `data-content` attribute allows setting label text via data binding:
 
 ```html
+{% raw %}
 <!-- Model: { fieldLabel: "Customer Name" } -->
 <label data-content="{{model.fieldLabel}}" style="font-weight: bold;"></label>
 <input type="text" value="{{model.customerName}}" />
+{% endraw %}
 ```
 
 This is particularly useful when label text needs to be dynamic or localized.
@@ -555,6 +557,7 @@ In the Scryber codebase:
 ### Data-Bound Labels
 
 ```html
+{% raw %}
 <!-- Model: {
     fields: {
         nameLabel: "Customer Name",
@@ -588,6 +591,7 @@ In the Scryber codebase:
     <input type="text" value="{{model.customer.phone}}"
            style="width: 200pt; padding: 6pt; border: 1pt solid #cccccc;" />
 </div>
+{% endraw %}
 ```
 
 ### Two-Column Form Layout
@@ -925,6 +929,7 @@ In the Scryber codebase:
 ### Dynamic Form with Repeating Fields
 
 ```html
+{% raw %}
 <!-- Model: {
     formFields: [
         {label: "First Name", value: "John", required: true},
@@ -949,6 +954,7 @@ In the Scryber codebase:
 <p style="margin-top: 15pt; font-size: 9pt; color: #666666;">
     <span style="color: #d32f2f; font-weight: bold;">*</span> Required fields
 </p>
+{% endraw %}
 ```
 
 ### Compact Inline Form

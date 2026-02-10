@@ -103,6 +103,7 @@ The `background-position-x` property supports dynamic data binding, enabling hor
 ### Example 1: Dynamic horizontal alignment from user preferences
 
 ```html
+{% raw %}
 <style>
     .letterhead {
         background-image: url('{{company.logoUrl}}');
@@ -122,6 +123,7 @@ The `background-position-x` property supports dynamic data binding, enabling hor
         <p>{{document.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Allows organizations to control horizontal logo placement (left, center, right, or specific offsets) through configuration while keeping vertical position fixed at the top. Perfect for accommodating different brand guidelines in multi-tenant systems.
@@ -129,6 +131,7 @@ Allows organizations to control horizontal logo placement (left, center, right, 
 ### Example 2: Conditional horizontal positioning by document type
 
 ```html
+{% raw %}
 <style>
     .document-header {
         background-image: url('{{branding.iconUrl}}');
@@ -146,6 +149,7 @@ Allows organizations to control horizontal logo placement (left, center, right, 
         <p>{{document.description}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Automatically centers icons for formal documents while left-aligning them for informal ones. The vertical position remains consistent while horizontal placement adapts to document formality level.
@@ -153,6 +157,7 @@ Automatically centers icons for formal documents while left-aligning them for in
 ### Example 3: Responsive horizontal spacing for multiple logos
 
 ```html
+{% raw %}
 <style>
     .partner-header {
         background-image: url('{{primaryLogo.url}}'), url('{{partnerLogo.url}}');
@@ -170,6 +175,7 @@ Automatically centers icons for formal documents while left-aligning them for in
         <p style="text-align: center;">A Partnership Initiative</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Creates partnership documents with two logos positioned with dynamic horizontal offsets from edges. Margins can be adjusted per document to accommodate different logo sizes while maintaining professional spacing.

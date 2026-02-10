@@ -109,6 +109,7 @@ The `content` property can be dynamically populated through data binding with co
 ### Example 1: Dynamic list with data-bound counter labels
 
 ```html
+{% raw %}
 <style>
     body { counter-reset: item; }
     .item-list li {
@@ -131,11 +132,13 @@ The `content` property can be dynamically populated through data binding with co
         </template>
     </ul>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Generated badges with data-driven counters
 
 ```html
+{% raw %}
 <style>
     .notification-area { counter-reset: notification; }
     .notification-item {
@@ -170,11 +173,13 @@ The `content` property can be dynamically populated through data binding with co
         </template>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Data-driven figure numbering
 
 ```html
+{% raw %}
 <style>
     article { counter-reset: figure; }
     .figure-container {
@@ -205,6 +210,7 @@ The `content` property can be dynamically populated through data binding with co
         </template>
     </article>
 </body>
+{% endraw %}
 ```
 
 ---

@@ -143,12 +143,14 @@ Linear gradients support dynamic data binding for personalized backgrounds:
 ### Example: Dynamic gradient based on data
 
 ```html
+{% raw %}
 <div style="width: 200pt; height: 100pt; 
             background: linear-gradient(to right, 
                         {{model.theme.startColor ?? '#FF0000'}},
                         {{model.theme.endColor ?? '#0000FF'}});">
   Content with dynamic gradient
 </div>
+{% endraw %}
 ```
 
 ---

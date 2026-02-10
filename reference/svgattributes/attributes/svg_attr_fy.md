@@ -82,6 +82,7 @@ Note: This attribute is NOT used with `<linearGradient>` elements.
 Bind focal point Y coordinate to data:
 
 ```html
+{% raw %}
 <!-- Model: { lightY: 30 } -->
 <svg width="300" height="300">
     <defs>
@@ -95,6 +96,7 @@ Bind focal point Y coordinate to data:
     </defs>
     <circle cx="150" cy="150" r="130" fill="url(#dynamicY)" />
 </svg>
+{% endraw %}
 ```
 
 ### Height-Based Lighting Position
@@ -102,6 +104,7 @@ Bind focal point Y coordinate to data:
 Position lighting based on container dimensions:
 
 ```html
+{% raw %}
 <!-- Model: { containerHeight: 400, lightPosition: 150 } -->
 <svg width="400" height="{{model.containerHeight}}">
     <defs>
@@ -117,6 +120,7 @@ Position lighting based on container dimensions:
     </defs>
     <rect width="400" height="{{model.containerHeight}}" fill="url(#heightLight)" />
 </svg>
+{% endraw %}
 ```
 
 ### Data-Driven Vertical Direction
@@ -124,6 +128,7 @@ Position lighting based on container dimensions:
 Change vertical lighting based on data state:
 
 ```html
+{% raw %}
 <!-- Model: { lightDirection: "top", intensity: 0.9 } -->
 <svg width="200" height="200">
     <defs>
@@ -138,6 +143,7 @@ Change vertical lighting based on data state:
     </defs>
     <circle cx="100" cy="100" r="80" fill="url(#verticalLight)" />
 </svg>
+{% endraw %}
 ```
 
 ### Time-Based Sun Position
@@ -145,6 +151,7 @@ Change vertical lighting based on data state:
 Simulate sun position based on time of day:
 
 ```html
+{% raw %}
 <!-- Model: { hourOfDay: 14, sunriseHour: 6, sunsetHour: 20 } -->
 <svg width="600" height="400">
     <defs>
@@ -163,6 +170,7 @@ Simulate sun position based on time of day:
     </defs>
     <rect width="600" height="400" fill="url(#sunPosition)" />
 </svg>
+{% endraw %}
 ```
 
 ### Scroll-Based Lighting Effect
@@ -170,6 +178,7 @@ Simulate sun position based on time of day:
 Change lighting position based on scroll or progress:
 
 ```html
+{% raw %}
 <!-- Model: { scrollPercentage: 45 } -->
 <svg width="400" height="600">
     <defs>
@@ -186,6 +195,7 @@ Change lighting position based on scroll or progress:
     </defs>
     <rect width="400" height="600" fill="url(#scrollLight)" />
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -488,6 +498,7 @@ Using both fx and fy creates diagonal lighting:
 ### Data-Driven Vertical Position
 
 ```html
+{% raw %}
 <!-- Model: { verticalPos: 35, color: "#3498db" } -->
 <svg width="250" height="250">
     <defs>
@@ -502,6 +513,7 @@ Using both fx and fy creates diagonal lighting:
 
     <circle cx="125" cy="125" r="100" fill="url(#dataVertical)" />
 </svg>
+{% endraw %}
 ```
 
 ---

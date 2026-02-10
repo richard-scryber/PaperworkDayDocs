@@ -89,6 +89,7 @@ The `float` property supports data binding, allowing dynamic control of element 
 ### Example 1: Dynamic image float direction based on layout preferences
 
 ```html
+{% raw %}
 <style>
     .article-image {
         float: {{image.floatDirection}};
@@ -108,6 +109,7 @@ The `float` property supports data binding, allowing dynamic control of element 
         <p class="article-text">{{article.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:
@@ -138,6 +140,7 @@ Data model:
 ### Example 2: Configurable sidebar float position
 
 ```html
+{% raw %}
 <style>
     .sidebar {
         float: {{sidebar.floatDirection}};
@@ -174,6 +177,7 @@ Data model:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:
@@ -209,6 +213,7 @@ Data model:
 ### Example 3: Data-driven callout box positioning
 
 ```html
+{% raw %}
 <style>
     .callout {
         float: {{callout.float}};
@@ -239,6 +244,7 @@ Data model:
         <p>{{document.mainContent}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:

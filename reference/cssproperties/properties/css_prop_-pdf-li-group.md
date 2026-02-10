@@ -90,6 +90,7 @@ The `-pdf-li-group` property supports data binding, allowing dynamic control of 
 ### Example 1: Dynamic legal numbering scheme
 
 ```html
+{% raw %}
 <style>
     .legal-sections {
         list-style-type: decimal;
@@ -111,6 +112,7 @@ The `-pdf-li-group` property supports data binding, allowing dynamic control of 
         <li>{{sections[1].title}}</li>
     </ol>
 </body>
+{% endraw %}
 ```
 
 **Data context:**
@@ -137,6 +139,7 @@ When `enableGrouping` is true, produces hierarchical numbering (1, 1.1, 1.2); wh
 ### Example 2: Configurable document outline
 
 ```html
+{% raw %}
 <style>
     .outline {
         list-style-type: decimal;
@@ -156,6 +159,7 @@ When `enableGrouping` is true, produces hierarchical numbering (1, 1.1, 1.2); wh
         </li>
     </ol>
 </body>
+{% endraw %}
 ```
 
 **Data context:**
@@ -179,6 +183,7 @@ Organizations can configure whether documents use hierarchical (1.1, 1.2) or ind
 ### Example 3: Named groups for complex documents
 
 ```html
+{% raw %}
 <style>
     .requirement {
         list-style-type: decimal;
@@ -200,6 +205,7 @@ Organizations can configure whether documents use hierarchical (1.1, 1.2) or ind
         <li>99.9% uptime required</li>
     </ol>
 </body>
+{% endraw %}
 ```
 
 **Data context:**

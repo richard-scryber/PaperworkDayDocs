@@ -408,6 +408,7 @@ In the Scryber codebase:
 ### Invoice Template with External Styles
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -427,6 +428,7 @@ In the Scryber codebase:
     <!-- Invoice content -->
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Multi-Page Document with Section Styles
@@ -461,6 +463,7 @@ In the Scryber codebase:
 ### Conditional Stylesheet Loading
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -477,6 +480,7 @@ In the Scryber codebase:
     <h1>Themed Document</h1>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Print-Optimized Stylesheets

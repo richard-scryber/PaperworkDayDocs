@@ -410,6 +410,7 @@ In the Scryber codebase:
 ### Main Content with Data Binding
 
 ```html
+{% raw %}
 <!-- With model = {
     title: "Product Catalog",
     description: "Complete product listing",
@@ -440,6 +441,7 @@ In the Scryber codebase:
         </p>
     </footer>
 </main>
+{% endraw %}
 ```
 
 ### Main with Table of Contents

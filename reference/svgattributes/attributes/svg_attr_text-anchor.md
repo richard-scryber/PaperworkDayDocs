@@ -81,6 +81,7 @@ The `text-anchor` attribute is supported on:
 Change alignment based on data:
 
 ```html
+{% raw %}
 <!-- Model: { labels: [{text: 'Left', align: 'start', y: 80}, {text: 'Center', align: 'middle', y: 150}, {text: 'Right', align: 'end', y: 220}] } -->
 <svg width="400" height="300">
     <line x1="200" y1="50" x2="200" y2="250" stroke="#bdc3c7" stroke-width="1"/>
@@ -91,6 +92,7 @@ Change alignment based on data:
         </text>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Chart Labels with Centered Text
@@ -98,6 +100,7 @@ Change alignment based on data:
 Center labels on data points:
 
 ```html
+{% raw %}
 <!-- Model: { dataPoints: [{x: 100, y: 150, value: 45}, {x: 200, y: 100, value: 78}, {x: 300, y: 130, value: 62}] } -->
 <svg width="400" height="250">
     <template data-bind="{{model.dataPoints}}">
@@ -111,6 +114,7 @@ Center labels on data points:
     <!-- Baseline -->
     <line x1="50" y1="200" x2="350" y2="200" stroke="#95a5a6" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Position-Dependent Alignment
@@ -118,6 +122,7 @@ Center labels on data points:
 Align text based on position:
 
 ```html
+{% raw %}
 <!-- Model: { items: [{x: 50, y: 100, label: 'Left Edge', position: 'start'}, {x: 200, y: 100, label: 'Center', position: 'middle'}, {x: 350, y: 100, label: 'Right Edge', position: 'end'}] } -->
 <svg width="400" height="200">
     <template data-bind="{{model.items}}">
@@ -127,6 +132,7 @@ Align text based on position:
               font-size="12" fill="#2c3e50">{{.label}}</text>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Responsive Label Positioning
@@ -134,6 +140,7 @@ Align text based on position:
 Adjust alignment for different screen positions:
 
 ```html
+{% raw %}
 <!-- Model: { labels: [{text: 'Start', x: 50, isLeftEdge: true}, {text: 'Middle', x: 200, isLeftEdge: false}, {text: 'End', x: 350, isLeftEdge: false}] } -->
 <svg width="400" height="150">
     <template data-bind="{{model.labels}}">
@@ -143,6 +150,7 @@ Adjust alignment for different screen positions:
         <circle cx="{{.x}}" cy="75" r="3" fill="#e74c3c"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Data Table with Aligned Columns
@@ -150,6 +158,7 @@ Adjust alignment for different screen positions:
 Create aligned text columns:
 
 ```html
+{% raw %}
 <!-- Model: { rows: [{name: 'Item A', quantity: 45, price: 29.99}, {name: 'Item B', quantity: 12, price: 149.50}] } -->
 <svg width="500" height="200">
     <!-- Headers -->
@@ -164,6 +173,7 @@ Create aligned text columns:
         <text x="400" y="{{$index * 40 + 70}}" text-anchor="end" fill="#34495e">${{.price}}</text>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -234,35 +244,43 @@ Each line respects text-anchor:
 
 **Chart labels:**
 ```html
+{% raw %}
 <!-- Center labels on data points -->
 <text x="{{point.x}}" y="{{point.y - 10}}" text-anchor="middle">
     {{point.value}}
 </text>
+{% endraw %}
 ```
 
 **Axis labels:**
 ```html
+{% raw %}
 <!-- Right-align Y-axis labels -->
 <text x="{{axisX - 5}}" y="{{tickY}}" text-anchor="end">
     {{tickValue}}
 </text>
+{% endraw %}
 ```
 
 **Button text:**
 ```html
+{% raw %}
 <!-- Center text in button -->
 <text x="{{buttonX + buttonWidth/2}}" y="{{buttonY + buttonHeight/2}}"
       text-anchor="middle" dominant-baseline="middle">
     Click Me
 </text>
+{% endraw %}
 ```
 
 **Table columns:**
 ```html
+{% raw %}
 <!-- Right-align numbers -->
 <text x="{{columnX}}" y="{{rowY}}" text-anchor="end">
     ${{price}}
 </text>
+{% endraw %}
 ```
 
 ### Text Bounding Box

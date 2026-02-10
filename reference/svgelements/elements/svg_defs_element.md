@@ -167,6 +167,7 @@ Organize definitions logically:
 ### Dynamic Definition Creation
 
 ```html
+{% raw %}
 <!-- Model: { gradientColors: [{offset: "0%", color: "#ff0000"}, {offset: "100%", color: "#0000ff"}] } -->
 <svg width="300pt" height="200pt">
     <defs>
@@ -178,11 +179,13 @@ Organize definitions logically:
     </defs>
     <rect width="300" height="200" fill="url(#dynamicGrad)"/>
 </svg>
+{% endraw %}
 ```
 
 ### Conditional Definitions
 
 ```html
+{% raw %}
 <!-- Model: { usePattern: true } -->
 <svg width="300pt" height="200pt">
     <defs>
@@ -194,11 +197,13 @@ Organize definitions logically:
     <rect width="300" height="200"
           fill="{{model.usePattern ? 'url(#customPattern)' : '#f0f0f0'}}"/>
 </svg>
+{% endraw %}
 ```
 
 ### Data-Driven Icon Library
 
 ```html
+{% raw %}
 <!-- Model: { icons: [{id:"check", path:"M-6,0 L-2,5 L8,-8"}, {id:"x", path:"M-5,-5 L5,5 M-5,5 L5,-5"}] } -->
 <svg width="300pt" height="100pt">
     <defs>
@@ -213,6 +218,7 @@ Organize definitions logically:
     <use href="#icon-check" x="75" y="50"/>
     <use href="#icon-x" x="225" y="50"/>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -545,6 +551,7 @@ Organize definitions logically:
 ### Dynamic Badge Definitions
 
 ```html
+{% raw %}
 <!-- Model: { badges: [{id:"new", color:"#ff4444", text:"NEW"}, {id:"sale", color:"#50c878", text:"SALE"}] } -->
 <svg width="400pt" height="200pt">
     <defs>
@@ -563,6 +570,7 @@ Organize definitions logically:
     <rect x="250" y="50" width="100" height="100" fill="#f0f0f0"/>
     <use href="#badge-sale" x="300" y="60"/>
 </svg>
+{% endraw %}
 ```
 
 ### Organizational Template

@@ -138,26 +138,31 @@ The `<path>` element supports dynamic path data using data binding expressions w
 ### Example 1: Dynamic Path Data
 
 ```html
+{% raw %}
 <!-- Model: { pathData: 'M 10,50 L 50,20 L 90,60' } -->
 <svg width="100" height="80">
     <path d="{{pathData}}"
           fill="none" stroke="#2196F3" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 2: Calculated Curve
 
 ```html
+{% raw %}
 <!-- Model: { startX: 20, startY: 50, endX: 180, endY: 50, curve: 40 } -->
 <svg width="200" height="100">
     <path d="M {{startX}},{{startY}} Q {{(startX + endX) / 2}},{{startY - curve}} {{endX}},{{endY}}"
           fill="none" stroke="#4CAF50" stroke-width="3"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Multiple Dynamic Paths
 
 ```html
+{% raw %}
 <!-- Model: { paths: [
     {d: 'M 10,40 C 40,10 60,10 90,40', color: '#e74c3c'},
     {d: 'M 10,60 C 40,90 60,90 90,60', color: '#3498db'}
@@ -168,6 +173,7 @@ The `<path>` element supports dynamic path data using data binding expressions w
               fill="none" stroke="{{.color}}" stroke-width="2"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -426,11 +432,13 @@ The path data string is parsed into drawing operations. Invalid syntax will resu
 ### Dynamic Arc
 
 ```html
+{% raw %}
 <!-- Model: { radius: 50, sweep: 1 } -->
 <svg width="120" height="120">
     <path d="M 60,10 A {{radius}},{{radius}} 0 0,{{sweep}} 110,60"
           fill="none" stroke="#4CAF50" stroke-width="3"/>
 </svg>
+{% endraw %}
 ```
 
 ---

@@ -61,6 +61,7 @@ Each article provides:
 
 {% raw %}
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -130,6 +131,7 @@ Each article provides:
     </footer>
 </body>
 </html>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -249,6 +251,7 @@ Helpful but not required:
 
 {% raw %}
 ```html
+{% raw %}
 <header style="border-bottom: 2pt solid #2563eb; padding-bottom: 15pt;">
     <div style="display: flex; justify-content: space-between;">
         <img src="{{company.logo}}" style="height: 50pt;" />
@@ -258,6 +261,7 @@ Helpful but not required:
         </div>
     </div>
 </header>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -300,6 +304,7 @@ tfoot {
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Store subtotal -->
 <var data-id="subtotal" data-value="0" />
 
@@ -328,6 +333,7 @@ tfoot {
     <td>Total</td>
     <td>${{Document.Params.total}}</td>
 </tr>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -335,6 +341,7 @@ tfoot {
 
 {% raw %}
 ```html
+{% raw %}
 {{#if customer.isPremium}}
 <div class="premium-badge">
     <p>Valued Premium Customer</p>
@@ -346,17 +353,20 @@ tfoot {
     <p>Payment is past due. Please remit immediately.</p>
 </div>
 {{/if}}
+{% endraw %}
 ```
 {% endraw %}
 
 ### Page Numbers
 
 ```html
+{% raw %}
 <footer style="text-align: center; margin-top: 30pt;">
     <p style="font-size: 9pt; color: #666;">
         Page <page-number /> of <page-count /> | {{company.name}} | {{company.phone}}
     </p>
 </footer>
+{% endraw %}
 ```
 
 ## Data Structure Examples

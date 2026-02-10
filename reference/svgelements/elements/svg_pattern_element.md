@@ -161,6 +161,7 @@ Patterns support data binding for dynamic content, colors, and sizing.
 ### Dynamic Pattern Content
 
 ```html
+{% raw %}
 <!-- Pattern with data-driven colors -->
 <defs>
     <pattern id="dynamicDots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -175,11 +176,13 @@ Patterns support data binding for dynamic content, colors, and sizing.
         <rect x="5" y="5" width="15" height="15" fill="{{model.useSquares ? '#ff6600' : 'none'}}"/>
     </pattern>
 </defs>
+{% endraw %}
 ```
 
 ### Dynamic Pattern Size
 
 ```html
+{% raw %}
 <!-- Variable tile size -->
 <defs>
     <pattern id="sizedPattern"
@@ -193,11 +196,13 @@ Patterns support data binding for dynamic content, colors, and sizing.
                 fill="#336699"/>
     </pattern>
 </defs>
+{% endraw %}
 ```
 
 ### Template-Generated Patterns
 
 ```html
+{% raw %}
 <!-- Create multiple pattern variations -->
 <defs>
     <template data-bind="{{model.patternStyles}}">
@@ -219,11 +224,13 @@ Patterns support data binding for dynamic content, colors, and sizing.
     <rect x="{{.x}}" y="{{.y}}" width="{{.width}}" height="{{.height}}"
           fill="url(#pattern-{{.patternId}})"/>
 </template>
+{% endraw %}
 ```
 
 ### Data-Driven Pattern Application
 
 ```html
+{% raw %}
 <!-- Model: { dataPoints: [{value: 75, threshold: 80}, ...] } -->
 <template data-bind="{{model.dataPoints}}">
     <rect x="{{$index * 60 + 20}}"
@@ -232,6 +239,7 @@ Patterns support data binding for dynamic content, colors, and sizing.
           height="{{.value * 2}}"
           fill="{{.value >= .threshold ? 'url(#alertPattern)' : 'url(#normalPattern)'}}"/>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -467,6 +475,7 @@ Honeycomb texture:
 Bar chart with pattern fills based on data:
 
 ```html
+{% raw %}
 <!-- Model: { data: [{value: 120, category: "A", usePattern: true}, ...] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="300">
     <defs>
@@ -491,6 +500,7 @@ Bar chart with pattern fills based on data:
         </text>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### 11. Image Texture Pattern
@@ -535,6 +545,7 @@ Pattern containing gradient:
 Pattern with data-driven colors:
 
 ```html
+{% raw %}
 <!-- Model: { primaryColor: "#336699", secondaryColor: "#6699cc" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">
     <defs>
@@ -546,6 +557,7 @@ Pattern with data-driven colors:
 
     <rect x="50" y="50" width="300" height="200" fill="url(#coloredPattern)"/>
 </svg>
+{% endraw %}
 ```
 
 ### 14. Status Indicator Pattern
@@ -641,6 +653,7 @@ Different patterns for map regions:
 Chart regions with pattern fills:
 
 ```html
+{% raw %}
 <!-- Model: { zones: [{x: 0, y: 0, w: 200, h: 150, pattern: "safe"}, ...] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="400">
     <defs>
@@ -667,6 +680,7 @@ Chart regions with pattern fills:
     <line x1="50" y1="350" x2="450" y2="350" stroke="#333" stroke-width="2"/>
     <line x1="50" y1="350" x2="50" y2="50" stroke="#333" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### 18. Circular Pattern
@@ -694,6 +708,7 @@ Radial dot pattern:
 Pattern density based on data value:
 
 ```html
+{% raw %}
 <!-- Model: { density: 0.75 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">
     <defs>
@@ -714,6 +729,7 @@ Pattern density based on data value:
         Density: {{(model.density * 100).toFixed(0)}}%
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 20. Multi-Pattern Comparison
@@ -721,6 +737,7 @@ Pattern density based on data value:
 Side-by-side pattern comparisons:
 
 ```html
+{% raw %}
 <!-- Model: { patterns: [{id: "p1", name: "Pattern A", color: "#336699"}, ...] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="650" height="300">
     <defs>
@@ -751,6 +768,7 @@ Side-by-side pattern comparisons:
         </g>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---

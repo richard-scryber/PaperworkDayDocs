@@ -103,6 +103,7 @@ The `break-before` property supports data binding, allowing you to create sophis
 ### Example 1: Conditional chapter breaks
 
 ```html
+{% raw %}
 <style>
     .content-section {
         break-before: {{section.level === 'chapter' ? 'page' : (section.level === 'major' ? 'column' : 'auto')}};
@@ -122,11 +123,13 @@ The `break-before` property supports data binding, allowing you to create sophis
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Dynamic page orientation based on content
 
 ```html
+{% raw %}
 <style>
     @page portrait-page {
         size: A4 portrait;
@@ -165,11 +168,13 @@ The `break-before` property supports data binding, allowing you to create sophis
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Configurable report structure with named pages
 
 ```html
+{% raw %}
 <style>
     @page summary-page {
         size: A4 portrait;
@@ -202,6 +207,7 @@ The `break-before` property supports data binding, allowing you to create sophis
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ---

@@ -100,6 +100,7 @@ The `stroke` property can be dynamically set using data binding expressions, ena
 ### Example 1: Status-based outline colors
 
 ```html
+{% raw %}
 <style>
     .status-box {
         fill: white;
@@ -119,6 +120,7 @@ The `stroke` property can be dynamically set using data binding expressions, ena
         {{/each}}
     </svg>
 </body>
+{% endraw %}
 ```
 
 With model data:
@@ -135,6 +137,7 @@ With model data:
 ### Example 2: Conditional network connection colors
 
 ```html
+{% raw %}
 <style>
     .node {
         fill: white;
@@ -164,11 +167,13 @@ With model data:
         {{/each}}
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Category-based border colors from theme
 
 ```html
+{% raw %}
 <style>
     .category-card {
         fill: white;
@@ -188,6 +193,7 @@ With model data:
         {{/each}}
     </svg>
 </body>
+{% endraw %}
 ```
 
 With theme configuration:

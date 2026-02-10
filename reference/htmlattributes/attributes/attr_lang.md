@@ -40,6 +40,7 @@ The `lang` attribute defines content language:
 - Supports data binding for dynamic language selection
 
 ```html
+{% raw %}
 <!-- Document-wide language -->
 <html lang="en">
     <head>
@@ -66,6 +67,7 @@ The `lang` attribute defines content language:
 <html lang="{{model.language}}">
     <body>{{model.content}}</body>
 </html>
+{% endraw %}
 ```
 
 ---
@@ -96,6 +98,7 @@ The `lang` attribute can be used on **any HTML element**, including:
 The `lang` attribute supports data binding for dynamic language selection:
 
 ```html
+{% raw %}
 <!-- Dynamic document language -->
 <html lang="{{model.userLanguage}}">
     <head>
@@ -133,6 +136,7 @@ The `lang` attribute supports data binding for dynamic language selection:
         <footer>— {{.author}}</footer>
     </blockquote>
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -782,6 +786,7 @@ BCP 47 supports historical and extinct languages:
 ### Data-Bound Multilingual Content
 
 ```html
+{% raw %}
 <!-- Model: {
     language: "es",
     translations: {
@@ -820,6 +825,7 @@ BCP 47 supports historical and extinct languages:
     <button>{{model.content.button}}</button>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Product Documentation
@@ -1073,6 +1079,7 @@ BCP 47 supports historical and extinct languages:
 ### Corporate Multi-Region Document
 
 ```html
+{% raw %}
 <!-- Model: {
     regions: [
         { code: "en-US", name: "United States", message: "Welcome to our US office." },
@@ -1099,6 +1106,7 @@ BCP 47 supports historical and extinct languages:
     </template>
 </body>
 </html>
+{% endraw %}
 ```
 
 ---

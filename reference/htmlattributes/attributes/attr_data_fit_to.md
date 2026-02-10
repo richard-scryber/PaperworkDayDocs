@@ -55,6 +55,7 @@ This attribute is essential for:
 The `data-fit-to` attribute is used exclusively with anchor (`<a>`) elements that link to internal destinations:
 
 ```html
+{% raw %}
 <!-- Fit entire page in view -->
 <a href="#section1" data-fit-to="FullPage">Go to Section 1</a>
 
@@ -69,6 +70,7 @@ The `data-fit-to` attribute is used exclusively with anchor (`<a>`) elements tha
 
 <!-- With data binding -->
 <a href="#{{.targetId}}" data-fit-to="{{.fitMode}}">{{.linkText}}</a>
+{% endraw %}
 ```
 
 ---
@@ -111,6 +113,7 @@ The `data-fit-to` attribute is supported exclusively on:
 | `BoundingBox` | FitR | Fits bounding box of target element | Specific figures, charts, diagrams |
 
 ```html
+{% raw %}
 <!-- FullPage: Show entire page -->
 <a href="#chapter1" data-fit-to="FullPage">Chapter 1</a>
 
@@ -127,6 +130,7 @@ The `data-fit-to` attribute is supported exclusively on:
 <template data-bind="{{model.tocEntries}}">
     <a href="#{{.targetId}}" data-fit-to="{{.displayMode}}">{{.title}}</a>
 </template>
+{% endraw %}
 ```
 
 **Data Model Example**:
@@ -554,6 +558,7 @@ public class DocumentModel
 ```
 
 ```html
+{% raw %}
 <nav>
     <h2>Contents</h2>
     <template data-bind="{{model.navItems}}">
@@ -562,6 +567,7 @@ public class DocumentModel
         </div>
     </template>
 </nav>
+{% endraw %}
 ```
 
 ### 4. Academic Paper with Multiple Reference Types
@@ -970,6 +976,7 @@ public class TextbookModel
 ```
 
 ```html
+{% raw %}
 <div class="textbook">
     <div style="page-break-after: always;">
         <h1>Table of Contents</h1>
@@ -991,6 +998,7 @@ public class TextbookModel
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### 14. Product Catalog with Detail Views

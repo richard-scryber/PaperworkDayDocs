@@ -287,6 +287,7 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 ### Headings with Data Binding
 
 ```html
+{% raw %}
 <!-- With model = { reportTitle: "Q4 Report", chapter: "Sales Analysis", year: 2024 } -->
 
 <h1>{{model.reportTitle}} - {{model.year}}</h1>
@@ -297,11 +298,13 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 
 <h3>Total Sales: ${{model.totalSales}}</h3>
 <!-- Output: Total Sales: $1,250,000 -->
+{% endraw %}
 ```
 
 ### Dynamic Headings with Templates
 
 ```html
+{% raw %}
 <!-- With model.sections = [{title: "Introduction", level: 1}, {title: "Methods", level: 2}] -->
 
 <template data-bind="{{model.sections}}">
@@ -310,6 +313,7 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 </template>
 
 <!-- Generates headings for each section in the array -->
+{% endraw %}
 ```
 
 ### Headings with Page Break Control
@@ -433,6 +437,7 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 ### Headings with Conditional Display
 
 ```html
+{% raw %}
 <!-- With model = { showIntro: true, showMethods: false } -->
 
 <h1 hidden="{{!model.showIntro ? 'hidden' : ''}}">
@@ -444,6 +449,7 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
     Methodology
 </h2>
 <!-- Hidden when showMethods is false -->
+{% endraw %}
 ```
 
 ### Multi-line Headings

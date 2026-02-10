@@ -54,16 +54,19 @@ This attribute is essential for:
 The `data-value` attribute is applied to `<var>` elements and `<num>` elements:
 
 ```html
+{% raw %}
 <!-- Create document variable -->
 <var data-id="taxRate" data-value="{{0.08}}"></var>
 
 <!-- Use variable elsewhere -->
 <div>Tax Amount: ${{model.subtotal * taxRate}}</div>
+{% endraw %}
 ```
 
 ### Basic Syntax
 
 ```html
+{% raw %}
 <!-- Store simple value -->
 <var data-id="companyName" data-value="{{model.company}}"></var>
 
@@ -75,6 +78,7 @@ The `data-value` attribute is applied to `<var>` elements and `<num>` elements:
 
 <!-- Number element with data-value -->
 <num data-value="{{model.quantity * model.unitPrice}}" data-format="C"></num>
+{% endraw %}
 ```
 
 ---
@@ -112,6 +116,7 @@ The `data-value` attribute is supported on the following elements:
 The attribute accepts any valid binding expression:
 
 ```html
+{% raw %}
 <!-- Simple value -->
 <var data-id="name" data-value="{{model.userName}}"></var>
 
@@ -126,6 +131,7 @@ The attribute accepts any valid binding expression:
 
 <!-- Complex calculation -->
 <var data-id="total" data-value="{{(model.subtotal + model.shipping) * (1 + model.taxRate)}}"></var>
+{% endraw %}
 ```
 
 ---
@@ -167,7 +173,9 @@ Variables are evaluated in document order:
 When used with `<num>` elements, `data-value` provides the raw value:
 
 ```html
+{% raw %}
 <num data-value="{{model.price}}" data-format="C"></num>
+{% endraw %}
 ```
 
 The `data-format` attribute controls display formatting while `data-value` provides the underlying value.
@@ -176,24 +184,32 @@ The `data-format` attribute controls display formatting while `data-value` provi
 
 **Document-Level Constants**:
 ```html
+{% raw %}
 <var data-id="taxRate" data-value="{{0.0875}}"></var>
 <var data-id="companyName" data-value="{{'Acme Corporation'}}"></var>
+{% endraw %}
 ```
 
 **Computed Totals**:
 ```html
+{% raw %}
 <var data-id="grandTotal" data-value="{{model.subtotal + model.tax + model.shipping}}"></var>
+{% endraw %}
 ```
 
 **Conditional Values**:
 ```html
+{% raw %}
 <var data-id="discountRate" data-value="{{model.isVIP ? 0.20 : 0.10}}"></var>
+{% endraw %}
 ```
 
 **Complex Calculations**:
 ```html
+{% raw %}
 <var data-id="finalPrice"
      data-value="{{model.basePrice * (1 - model.discount) * (1 + model.tax)}}"></var>
+{% endraw %}
 ```
 
 ---
@@ -205,6 +221,7 @@ The `data-format` attribute controls display formatting while `data-value` provi
 Store a computed value for later use:
 
 ```html
+{% raw %}
 <var data-id="orderTotal" data-value="{{model.subtotal + model.tax}}"></var>
 
 <div>
@@ -213,6 +230,7 @@ Store a computed value for later use:
     <p>Tax: ${{model.tax}}</p>
     <p>Total: ${{orderTotal}}</p>
 </div>
+{% endraw %}
 ```
 
 ### 2. Tax Rate Constant
@@ -220,6 +238,7 @@ Store a computed value for later use:
 Create a reusable tax rate:
 
 ```html
+{% raw %}
 <var data-id="taxRate" data-value="{{0.0825}}"></var>
 
 <table style="width: 100%;">
@@ -232,6 +251,7 @@ Create a reusable tax rate:
         </tr>
     </template>
 </table>
+{% endraw %}
 ```
 
 ### 3. Discount Calculation
@@ -239,6 +259,7 @@ Create a reusable tax rate:
 Compute and store discount amount:
 
 ```html
+{% raw %}
 <var data-id="discountPercent" data-value="{{model.isPremium ? 0.15 : 0.05}}"></var>
 <var data-id="discountAmount" data-value="{{model.subtotal * discountPercent}}"></var>
 
@@ -248,6 +269,7 @@ Compute and store discount amount:
     <p>Discount Amount: ${{discountAmount}}</p>
     <p>You Save: ${{discountAmount}}</p>
 </div>
+{% endraw %}
 ```
 
 ### 4. Full Name Computation
@@ -255,6 +277,7 @@ Compute and store discount amount:
 Combine first and last names:
 
 ```html
+{% raw %}
 <var data-id="customerFullName"
      data-value="{{model.firstName + ' ' + model.lastName}}"></var>
 
@@ -264,6 +287,7 @@ Combine first and last names:
     <p>Dear {{customerFullName}},</p>
     <p>Thank you for your business.</p>
 </div>
+{% endraw %}
 ```
 
 ### 5. Formatted Number Display
@@ -271,6 +295,7 @@ Combine first and last names:
 Display computed value with formatting:
 
 ```html
+{% raw %}
 <div>
     <p>Unit Price:
         <num data-value="{{model.basePrice}}" data-format="C"></num>
@@ -280,6 +305,7 @@ Display computed value with formatting:
         <num data-value="{{model.basePrice * model.quantity}}" data-format="C"></num>
     </p>
 </div>
+{% endraw %}
 ```
 
 ### 6. Conditional Status Text
@@ -287,6 +313,7 @@ Display computed value with formatting:
 Store conditional status string:
 
 ```html
+{% raw %}
 <var data-id="statusText"
      data-value="{{model.isPaid ? 'PAID IN FULL' : 'PAYMENT PENDING'}}"></var>
 <var data-id="statusColor"
@@ -295,6 +322,7 @@ Store conditional status string:
 <div style="color: {{statusColor}}; font-weight: bold; font-size: 16pt;">
     {{statusText}}
 </div>
+{% endraw %}
 ```
 
 ### 7. Complex Financial Calculation
@@ -302,6 +330,7 @@ Store conditional status string:
 Multi-step calculation with intermediate values:
 
 ```html
+{% raw %}
 <!-- Store intermediate calculations -->
 <var data-id="itemTotal" data-value="{{model.subtotal}}"></var>
 <var data-id="taxAmount" data-value="{{itemTotal * 0.0825}}"></var>
@@ -331,6 +360,7 @@ Multi-step calculation with intermediate values:
         <td style="text-align: right; padding: 10pt 5pt;">${{grandTotal}}</td>
     </tr>
 </table>
+{% endraw %}
 ```
 
 ### 8. Date Formatting
@@ -338,6 +368,7 @@ Multi-step calculation with intermediate values:
 Store formatted date string:
 
 ```html
+{% raw %}
 <var data-id="invoiceDate" data-value="{{model.date}}"></var>
 <var data-id="dueDate" data-value="{{model.dueDate}}"></var>
 
@@ -345,6 +376,7 @@ Store formatted date string:
     <p><strong>Invoice Date:</strong> {{invoiceDate}}</p>
     <p><strong>Payment Due:</strong> {{dueDate}}</p>
 </div>
+{% endraw %}
 ```
 
 ### 9. Percentage Calculations
@@ -352,6 +384,7 @@ Store formatted date string:
 Calculate and display percentages:
 
 ```html
+{% raw %}
 <var data-id="completionPercent"
      data-value="{{(model.completed / model.total) * 100}}"></var>
 
@@ -365,6 +398,7 @@ Calculate and display percentages:
         <div style="width: {{completionPercent}}%; background-color: #336699; height: 20pt;"></div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### 10. Conditional Pricing
@@ -372,6 +406,7 @@ Calculate and display percentages:
 Store pricing based on customer type:
 
 ```html
+{% raw %}
 <var data-id="basePrice" data-value="{{model.listPrice}}"></var>
 <var data-id="discount"
      data-value="{{model.customerType == 'wholesale' ? 0.30 : model.customerType == 'retail' ? 0.10 : 0}}"></var>
@@ -386,6 +421,7 @@ Store pricing based on customer type:
         Your Price: ${{finalPrice}}
     </p>
 </div>
+{% endraw %}
 ```
 
 ### 11. Company Information Variables
@@ -393,6 +429,7 @@ Store pricing based on customer type:
 Store company details as variables:
 
 ```html
+{% raw %}
 <var data-id="companyName" data-value="{{'Acme Corporation'}}"></var>
 <var data-id="companyAddress" data-value="{{'123 Business St, Suite 100'}}"></var>
 <var data-id="companyCityState" data-value="{{'New York, NY 10001'}}"></var>
@@ -405,6 +442,7 @@ Store company details as variables:
     <p>{{companyCityState}}</p>
     <p>Phone: {{companyPhone}}</p>
 </div>
+{% endraw %}
 ```
 
 ### 12. Aggregate Statistics
@@ -412,6 +450,7 @@ Store company details as variables:
 Calculate summary statistics:
 
 ```html
+{% raw %}
 <!-- Hidden variables for calculations -->
 <var data-id="totalOrders" data-value="{{count(model.orders)}}"></var>
 <var data-id="totalRevenue" data-value="{{sum(model.orders, .amount)}}"></var>
@@ -438,6 +477,7 @@ Calculate summary statistics:
         </tr>
     </table>
 </div>
+{% endraw %}
 ```
 
 ### 13. Shipping Cost Calculation
@@ -445,6 +485,7 @@ Calculate summary statistics:
 Complex shipping logic:
 
 ```html
+{% raw %}
 <var data-id="weight" data-value="{{model.totalWeight}}"></var>
 <var data-id="baseShipping" data-value="{{5.99}}"></var>
 <var data-id="weightCharge" data-value="{{weight > 5 ? (weight - 5) * 0.99 : 0}}"></var>
@@ -463,6 +504,7 @@ Complex shipping logic:
         <p>Shipping Cost: ${{finalShipping}}</p>
     </if>
 </div>
+{% endraw %}
 ```
 
 ### 14. Dynamic Page Title
@@ -470,6 +512,7 @@ Complex shipping logic:
 Create page-specific titles:
 
 ```html
+{% raw %}
 <var data-id="pageTitle"
      data-value="{{model.documentType + ' - ' + model.referenceNumber}}"></var>
 <var data-id="pageSubtitle"
@@ -479,6 +522,7 @@ Create page-specific titles:
     <h1 style="margin: 0;">{{pageTitle}}</h1>
     <div style="margin-top: 5pt; font-size: 11pt;">{{pageSubtitle}}</div>
 </div>
+{% endraw %}
 ```
 
 ### 15. Conditional Message Text
@@ -486,6 +530,7 @@ Create page-specific titles:
 Generate dynamic messages:
 
 ```html
+{% raw %}
 <var data-id="daysUntilDue" data-value="{{model.daysUntilDue}}"></var>
 <var data-id="urgencyMessage"
      data-value="{{daysUntilDue < 0 ? 'OVERDUE' : daysUntilDue == 0 ? 'DUE TODAY' : daysUntilDue < 7 ? 'DUE SOON' : 'ON TRACK'}}"></var>
@@ -503,6 +548,7 @@ Generate dynamic messages:
         <p>Payment is {{-daysUntilDue}} days overdue</p>
     </if>
 </div>
+{% endraw %}
 ```
 
 ### 16. Multi-Currency Support
@@ -510,6 +556,7 @@ Generate dynamic messages:
 Calculate currency conversions:
 
 ```html
+{% raw %}
 <var data-id="usdAmount" data-value="{{model.amount}}"></var>
 <var data-id="exchangeRate" data-value="{{model.exchangeRate}}"></var>
 <var data-id="localAmount" data-value="{{usdAmount * exchangeRate}}"></var>
@@ -532,6 +579,7 @@ Calculate currency conversions:
         </td>
     </tr>
 </table>
+{% endraw %}
 ```
 
 ### 17. Inventory Status Calculation
@@ -539,6 +587,7 @@ Calculate currency conversions:
 Compute inventory metrics:
 
 ```html
+{% raw %}
 <var data-id="onHand" data-value="{{model.quantityOnHand}}"></var>
 <var data-id="committed" data-value="{{model.quantityCommitted}}"></var>
 <var data-id="available" data-value="{{onHand - committed}}"></var>
@@ -569,6 +618,7 @@ Compute inventory metrics:
         </div>
     </if>
 </div>
+{% endraw %}
 ```
 
 ### 18. Loan Payment Calculator
@@ -576,6 +626,7 @@ Compute inventory metrics:
 Calculate loan payment details:
 
 ```html
+{% raw %}
 <var data-id="principal" data-value="{{model.loanAmount}}"></var>
 <var data-id="annualRate" data-value="{{model.interestRate}}"></var>
 <var data-id="monthlyRate" data-value="{{annualRate / 12}}"></var>
@@ -622,6 +673,7 @@ Calculate loan payment details:
         </tr>
     </table>
 </div>
+{% endraw %}
 ```
 
 ### 19. Grade Calculation
@@ -629,6 +681,7 @@ Calculate loan payment details:
 Compute grade statistics:
 
 ```html
+{% raw %}
 <var data-id="totalPoints" data-value="{{sum(model.assignments, .pointsEarned)}}"></var>
 <var data-id="possiblePoints" data-value="{{sum(model.assignments, .pointsPossible)}}"></var>
 <var data-id="percentage" data-value="{{(totalPoints / possiblePoints) * 100}}"></var>
@@ -677,6 +730,7 @@ Compute grade statistics:
         </div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### 20. Comprehensive Invoice with All Calculations
@@ -684,6 +738,7 @@ Compute grade statistics:
 Production-ready invoice with complete calculations:
 
 ```html
+{% raw %}
 <!-- Company Information -->
 <var data-id="companyName" data-value="{{'Acme Corporation'}}"></var>
 <var data-id="companyAddress" data-value="{{'123 Business Street'}}"></var>
@@ -817,6 +872,7 @@ Production-ready invoice with complete calculations:
         </if>
     </div>
 </div>
+{% endraw %}
 ```
 
 ---

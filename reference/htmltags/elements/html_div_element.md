@@ -220,6 +220,7 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 ### Repeating Divs with Template
 
 ```html
+{% raw %}
 <!-- In template with model.items = [{name: "Item 1"}, {name: "Item 2"}] -->
 <div class="container">
     <template data-bind="{{model.items}}">
@@ -231,6 +232,7 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 
 <!-- Output: -->
 <!-- Two divs, each with item name and styling -->
+{% endraw %}
 ```
 
 ### Multi-Column Div

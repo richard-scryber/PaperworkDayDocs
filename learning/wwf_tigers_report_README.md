@@ -242,22 +242,27 @@ This template showcases many Scryber capabilities:
 
 ### 1. Data Binding
 ```html
+{% raw %}
 <h1>{{model.reportYear}} Report</h1>
 <p>{{model.introduction.openingText}}</p>
+{% endraw %}
 ```
 
-### 2. Iteration with {{#each}}
+### 2. Iteration with `{{#each}}`
 ```html
+{% raw %}
 {{#each model.sections.expandRange.stories}}
     <div class="success-story">
         <h2>{{this.title}}</h2>
         <p>{{this.description}}</p>
     </div>
 {{/each}}
+{% endraw %}
 ```
 
-### 3. Conditional Rendering with {{#if}}
+### 3. Conditional Rendering with `{{#if}}`
 ```html
+{% raw %}
 {{#if this.keyFacts}}
     <ul>
         {{#each this.keyFacts}}
@@ -265,20 +270,25 @@ This template showcases many Scryber capabilities:
         {{/each}}
     </ul>
 {{/if}}
+{% endraw %}
 ```
 
 ### 4. Inline Conditionals with if()
 ```html
+{% raw %}
 <span class="{{if(this.increasing, 'trend-up', 'trend-down')}}">
     {{if(this.increasing, '↑ Increasing', '↓ Declining')}}
 </span>
+{% endraw %}
 ```
 
 ### 5. Formatting with format()
 ```html
+{% raw %}
 <span>{{format(model.globalStats.currentPopulation, 'N0')}}</span>
 <span>{{format(model.footer.publishDate, 'MMMM yyyy')}}</span>
 <span>{{format(model.sections.secureHabitat.rangerGap.salaryShortfall, 'C0')}}</span>
+{% endraw %}
 ```
 
 ### 6. CSS Styling

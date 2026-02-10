@@ -131,6 +131,7 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 ### Basic Content Binding
 
 ```html
+{% raw %}
 <text x="10" y="30" font-size="16">
     Customer: <tspan font-weight="700">{{model.customerName}}</tspan>
 </text>
@@ -147,11 +148,13 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
         {{model.isActive ? 'Active' : 'Inactive'}}
     </tspan>
 </text>
+{% endraw %}
 ```
 
 ### Dynamic Positioning
 
 ```html
+{% raw %}
 <!-- Relative offset based on data -->
 <text x="10" y="30" font-size="16">
     Value<tspan dy="{{model.isExponent ? -8 : 0}}" font-size="12">{{model.exponent}}</tspan>
@@ -164,11 +167,13 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
         {{model.value}}
     </tspan>
 </text>
+{% endraw %}
 ```
 
 ### Style Binding
 
 ```html
+{% raw %}
 <!-- Data-driven font size -->
 <text x="10" y="30">
     <tspan font-size="{{model.importance * 4 + 12}}" font-weight="700">
@@ -185,11 +190,13 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
         {{model.score}}
     </tspan>
 </text>
+{% endraw %}
 ```
 
 ### Template Iteration
 
 ```html
+{% raw %}
 <!-- Generate styled text segments -->
 <text x="10" y="30" font-size="14">
     <template data-bind="{{model.keywords}}">
@@ -197,6 +204,7 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
         <tspan fill="#999"> • </tspan>
     </template>
 </text>
+{% endraw %}
 ```
 
 ---
@@ -391,6 +399,7 @@ Multi-colored status indicator:
 Dynamic customer information with styling:
 
 ```html
+{% raw %}
 <!-- Model: { customerName: "John Doe", accountType: "Premium", balance: 5432.10 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="100">
     <text x="10" y="30" font-size="14" fill="#333">
@@ -407,6 +416,7 @@ Dynamic customer information with styling:
         </tspan>
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 11. Temperature with Units
@@ -414,6 +424,7 @@ Dynamic customer information with styling:
 Temperature display with styled units:
 
 ```html
+{% raw %}
 <!-- Model: { temperature: 72.5, unit: "°F" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="80">
     <text x="100" y="50" text-anchor="middle">
@@ -423,6 +434,7 @@ Temperature display with styled units:
         <tspan font-size="24" fill="#999">{{model.unit}}</tspan>
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 12. Score with Context
@@ -430,6 +442,7 @@ Temperature display with styled units:
 Score display with description:
 
 ```html
+{% raw %}
 <!-- Model: { score: 87, maxScore: 100 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="60">
     <text x="10" y="40" font-size="16">
@@ -442,6 +455,7 @@ Score display with description:
         </tspan>
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 13. Conditional Status Color
@@ -449,6 +463,7 @@ Score display with description:
 Status text with conditional coloring:
 
 ```html
+{% raw %}
 <!-- Model: { orderStatus: "Shipped", isUrgent: false } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="60">
     <text x="10" y="30" font-size="14">
@@ -460,6 +475,7 @@ Status text with conditional coloring:
         </tspan>
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 14. Percentage Breakdown
@@ -467,6 +483,7 @@ Status text with conditional coloring:
 Percentage display with components:
 
 ```html
+{% raw %}
 <!-- Model: { completed: 45, inProgress: 30, pending: 25 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="40">
     <text x="10" y="25" font-size="14">
@@ -478,6 +495,7 @@ Percentage display with components:
         <tspan dx="5" fill="#999">pending</tspan>
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 15. Product Name with SKU
@@ -485,6 +503,7 @@ Percentage display with components:
 Product information with different text styles:
 
 ```html
+{% raw %}
 <!-- Model: { productName: "Premium Widget", sku: "WDG-001-BLU" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="60">
     <text x="10" y="30" font-size="16">
@@ -495,6 +514,7 @@ Product information with different text styles:
         <tspan dx="5" fill="#666" font-family="monospace">{{model.sku}}</tspan>
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 16. Metric with Trend Indicator
@@ -502,6 +522,7 @@ Product information with different text styles:
 Value with trend arrow:
 
 ```html
+{% raw %}
 <!-- Model: { revenue: 125000, trend: "up", change: 12.5 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="60">
     <text x="10" y="40" font-size="16">
@@ -517,6 +538,7 @@ Value with trend arrow:
         </tspan>
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 17. Date Range Display
@@ -524,6 +546,7 @@ Value with trend arrow:
 Formatted date range with separator:
 
 ```html
+{% raw %}
 <!-- Model: { startDate: "2024-01-01", endDate: "2024-12-31" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="60">
     <text x="10" y="30" font-size="14">
@@ -533,6 +556,7 @@ Formatted date range with separator:
         <tspan dx="5" fill="#333" font-weight="600">{{model.endDate}}</tspan>
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 18. Chart Legend Item
@@ -554,6 +578,7 @@ Legend entry with colored indicator text:
 Text with multiple highlighted terms:
 
 ```html
+{% raw %}
 <!-- Model: { keywords: ["important", "urgent", "required"] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="60">
     <text x="10" y="30" font-size="14" fill="#333">
@@ -564,6 +589,7 @@ Text with multiple highlighted terms:
         items in this document.
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 20. Complex Label with Multiple Styles
@@ -571,6 +597,7 @@ Text with multiple highlighted terms:
 Multi-component label with various styling:
 
 ```html
+{% raw %}
 <!-- Model: { department: "Sales", count: 24, status: "active", lastUpdate: "2h ago" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="450" height="60">
     <text x="10" y="35" font-size="14">
@@ -592,6 +619,7 @@ Multi-component label with various styling:
         </tspan>
     </text>
 </svg>
+{% endraw %}
 ```
 
 ---

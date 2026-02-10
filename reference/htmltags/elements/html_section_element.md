@@ -425,6 +425,7 @@ The `<section>` element has the following default behavior:
 ### Section with Data Binding
 
 ```html
+{% raw %}
 <!-- With model.chapters = [
     { id: 1, title: "Introduction", content: "...", author: "John" },
     { id: 2, title: "Methods", content: "...", author: "Jane" },
@@ -449,6 +450,7 @@ The `<section>` element has the following default behavior:
         </footer>
     </section>
 </template>
+{% endraw %}
 ```
 
 ### Academic Paper Structure

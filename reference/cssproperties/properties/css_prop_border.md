@@ -97,6 +97,7 @@ The `border` property supports dynamic values through data binding, allowing bor
 ### Example 1: Invoice status borders
 
 ```html
+{% raw %}
 <style>
     .invoice-card {
         padding: 15pt;
@@ -111,6 +112,7 @@ The `border` property supports dynamic values through data binding, allowing bor
         <p>Amount: {{invoice.total}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -129,6 +131,7 @@ Data context:
 ### Example 2: Conditional border emphasis
 
 ```html
+{% raw %}
 <style>
     .order-item {
         padding: 12pt;
@@ -142,11 +145,13 @@ Data context:
         <p>Priority: {{priority}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Alert severity borders
 
 ```html
+{% raw %}
 <style>
     .alert-box {
         padding: 12pt;
@@ -158,6 +163,7 @@ Data context:
         <strong>{{alert.title}}:</strong> {{alert.message}}
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:

@@ -206,11 +206,13 @@ body {
 **PDF:** Static output
 
 ```html
+{% raw %}
 <!-- ❌ Won't work in PDF -->
 <button onclick="alert('Hello')">Click Me</button>
 
 <!-- ✓ Use data binding instead -->
 <p>{{model.message}}</p>
+{% endraw %}
 ```
 
 ### 4. Font Handling

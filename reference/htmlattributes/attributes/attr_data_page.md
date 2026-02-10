@@ -338,6 +338,7 @@ Get specific chapter pages:
 Include pages based on data:
 
 ```html
+{% raw %}
 <frameset>
     <frame src="report.pdf"
            data-page-start="{{model.startPage}}"
@@ -346,6 +347,7 @@ Include pages based on data:
 
 <!-- Model: { startPage: 5, pageCount: 3 } -->
 <!-- Includes pages 6-8 -->
+{% endraw %}
 ```
 
 ### 8. Summary Document
@@ -404,7 +406,7 @@ Limit generated template pages:
 Build custom document based on user selection:
 
 ```html
-<!-- Model: { includeIntro: true, includeTech: true, includeAppendix: false } -->
+{% raw %}<!-- Model: { includeIntro: true, includeTech: true, includeAppendix: false } -->
 <frameset>
     <!-- Always include cover -->
     <frame src="library/cover.pdf" data-page-count="1"></frame>
@@ -419,14 +421,14 @@ Build custom document based on user selection:
     <frame src="library/appendix.pdf"
            hidden="{{model.includeAppendix ? '' : 'hidden'}}"></frame>
 </frameset>
-```
+{% endraw %}```
 
 ### 12. Extract Odd Pages Only
 
 Use template with bound data to extract odd pages:
 
 ```html
-<frameset>
+{% raw %}<frameset>
     <!-- Generate frames for odd pages 1, 3, 5, 7, 9 -->
     <template data-bind="{{range(0, 10, 2)}}">
         <frame src="document.pdf"
@@ -434,21 +436,21 @@ Use template with bound data to extract odd pages:
                data-page-count="1"></frame>
     </template>
 </frameset>
-```
+{% endraw %}```
 
 ### 13. Legal Document Assembly
 
 Assemble contract with variable clauses:
 
 ```html
-<!-- Model: { includeClause5: true, includeClause7: false } -->
+{% raw %}<!-- Model: { includeClause5: true, includeClause7: false } -->
 <frameset>
     <!-- Standard opening (pages 1-2) -->
     <frame src="contract-master.pdf" data-page-count="2"></frame>
 
     <!-- Standard clauses 1-4 (pages 3-6) -->
     <frame src="contract-master.pdf" data-page-start="2" data-page-count="4"></frame>
-
+{% endraw %}
     <!-- Optional clause 5 (page 7) -->
     <frame src="contract-master.pdf"
            data-page-start="6"
@@ -474,6 +476,7 @@ Assemble contract with variable clauses:
 Include sections based on data availability:
 
 ```html
+{% raw %}
 <!-- Model: { hasSalesData: true, hasMarketData: false, pageRanges: {...} } -->
 <frameset>
     <!-- Executive summary -->
@@ -494,6 +497,7 @@ Include sections based on data availability:
     <!-- Always include conclusions -->
     <frame src="reports/conclusions.pdf"></frame>
 </frameset>
+{% endraw %}{% endraw %}
 ```
 
 ### 15. Multi-Language Document
@@ -501,7 +505,7 @@ Include sections based on data availability:
 Assemble document with language-specific pages:
 
 ```html
-<!-- Model: { language: "es" } -->
+{% raw %}<!-- Model: { language: "es" } -->
 <frameset>
     <!-- Universal cover -->
     <frame src="cover-universal.pdf" data-page-count="1"></frame>
@@ -514,26 +518,27 @@ Assemble document with language-specific pages:
            data-page-start="49"
            data-page-count="3"></frame>
 </frameset>
-```
+{% endraw %}```
 
 ### 16. Page Range Validation Example
 
 Safe page extraction with bounds:
 
 ```html
-<!-- Model: { startIdx: 5, count: 10, maxPages: 100 } -->
+{% raw %}<!-- Model: { startIdx: 5, count: 10, maxPages: 100 } -->
 <frameset>
     <frame src="large-document.pdf"
            data-page-start="{{model.startIdx < model.maxPages ? model.startIdx : 0}}"
            data-page-count="{{model.count}}"></frame>
 </frameset>
-```
+{% endraw %}
 
 ### 17. Certification Document
 
 Assemble certification with selected modules:
 
 ```html
+{% raw %}
 <!-- Model: { completedModules: [1, 3, 7] } -->
 <frameset>
     <!-- Certificate cover -->
@@ -549,6 +554,7 @@ Assemble certification with selected modules:
     <!-- Certificate back -->
     <frame src="cert-cover.pdf" data-page-start="1" data-page-count="1"></frame>
 </frameset>
+{% endraw %}{% endraw %}
 ```
 
 ### 18. Datasheet Generator
@@ -556,7 +562,7 @@ Assemble certification with selected modules:
 Create custom product datasheet:
 
 ```html
-<!-- Model: { productId: 42, includeSpecs: true, includeWarranty: true } -->
+{% raw %}<!-- Model: { productId: 42, includeSpecs: true, includeWarranty: true } -->
 <frameset>
     <!-- Product page from catalog (2 pages per product) -->
     <frame src="catalog.pdf"
@@ -575,14 +581,14 @@ Create custom product datasheet:
            data-page-count="1"
            hidden="{{model.includeWarranty ? '' : 'hidden'}}"></frame>
 </frameset>
-```
+{% endraw %}```
 
 ### 19. Newsletter Assembly
 
 Combine articles into newsletter:
 
 ```html
-<!-- Model: { articles: [{start: 5, count: 3}, {start: 12, count: 2}, ...] } -->
+{% raw %}<!-- Model: { articles: [{start: 5, count: 3}, {start: 12, count: 2}, ...] } -->
 <frameset>
     <!-- Newsletter header -->
     <frame src="newsletter-header.pdf" data-page-count="1"></frame>
@@ -597,18 +603,18 @@ Combine articles into newsletter:
     <!-- Newsletter footer -->
     <frame src="newsletter-footer.pdf" data-page-count="1"></frame>
 </frameset>
-```
+{% endraw %}```
 
 ### 20. Exam with Question Bank
 
 Generate exam from question database:
 
 ```html
-<!-- Model: { questionPages: [2, 5, 8, 12, 15, 20, 23, 28, 30, 35] } -->
+{% raw %}<!-- Model: { questionPages: [2, 5, 8, 12, 15, 20, 23, 28, 30, 35] } -->
 <frameset>
     <!-- Exam instructions -->
     <frame src="exam-instructions.pdf"></frame>
-
+{% endraw %}
     <!-- Selected questions (each question is 1 page) -->
     <template data-bind="{{model.questionPages}}">
         <frame src="question-bank.pdf"

@@ -125,6 +125,7 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 ### Dynamic Image Source
 
 ```html
+{% raw %}
 <!-- Simple source binding -->
 <image href="{{model.logoUrl}}" x="10" y="10" width="100" height="100"/>
 
@@ -135,11 +136,13 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 <!-- Path construction -->
 <image href="./images/{{model.category}}/{{model.imageFile}}"
        x="20" y="20" width="200" height="150"/>
+{% endraw %}
 ```
 
 ### Dynamic Positioning
 
 ```html
+{% raw %}
 <!-- Data-driven coordinates -->
 <image href="icon.png"
        x="{{model.posX}}"
@@ -153,11 +156,13 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
        y="{{model.dataValue * 2}}"
        width="50"
        height="50"/>
+{% endraw %}
 ```
 
 ### Dynamic Sizing
 
 ```html
+{% raw %}
 <!-- Data-driven dimensions -->
 <image href="thumbnail.jpg"
        x="10"
@@ -171,11 +176,13 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
        y="0"
        width="{{model.containerWidth}}"
        height="{{model.containerHeight}}"/>
+{% endraw %}
 ```
 
 ### Conditional Display
 
 ```html
+{% raw %}
 <!-- Show/hide with opacity -->
 <image href="watermark.png"
        x="100"
@@ -191,11 +198,13 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
        width="60"
        height="60"
        hidden="{{!model.hasBadge}}"/>
+{% endraw %}
 ```
 
 ### Template Iteration
 
 ```html
+{% raw %}
 <!-- Generate multiple images from data -->
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="400">
     <template data-bind="{{model.icons}}">
@@ -215,6 +224,7 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
            width="100"
            height="100"/>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -381,12 +391,14 @@ Circular profile photo (clipped with clipPath):
 Dynamic logo based on model:
 
 ```html
+{% raw %}
 <!-- Model: { companyLogo: "./images/acme-corp-logo.png" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="100">
     <image href="{{model.companyLogo}}"
            x="10" y="10"
            width="100" height="80"/>
 </svg>
+{% endraw %}
 ```
 
 ### 8. Conditional Badge
@@ -394,12 +406,14 @@ Dynamic logo based on model:
 Badge shown based on status:
 
 ```html
+{% raw %}
 <!-- Model: { isPremium: true, badgeImage: "premium-badge.png" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150">
     <image href="{{model.isPremium ? model.badgeImage : 'standard-badge.png'}}"
            x="25" y="25"
            width="100" height="100"/>
 </svg>
+{% endraw %}
 ```
 
 ### 9. Product Thumbnail Grid
@@ -407,6 +421,7 @@ Badge shown based on status:
 Grid of product images:
 
 ```html
+{% raw %}
 <!-- Model: { products: [{image: "prod1.jpg"}, {image: "prod2.jpg"}, ...] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="450" height="300">
     <template data-bind="{{model.products}}">
@@ -417,6 +432,7 @@ Grid of product images:
                height="130"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### 10. Chart with Icon Markers
@@ -424,6 +440,7 @@ Grid of product images:
 Data points with icon markers:
 
 ```html
+{% raw %}
 <!-- Model: { dataPoints: [{x: 50, y: 100, icon: "up.png"}, ...] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="300">
     <!-- Chart background -->
@@ -439,6 +456,7 @@ Data points with icon markers:
                height="24"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### 11. Status Icon
@@ -446,6 +464,7 @@ Data points with icon markers:
 Status indicator icon with color coding:
 
 ```html
+{% raw %}
 <!-- Model: { status: "success", statusIcon: "check-circle.png" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
     <circle cx="50" cy="50" r="45"
@@ -455,6 +474,7 @@ Status indicator icon with color coding:
            x="25" y="25"
            width="50" height="50"/>
 </svg>
+{% endraw %}
 ```
 
 ### 12. Background Image
@@ -482,6 +502,7 @@ Full background image with content overlay:
 Horizontal row of partner logos:
 
 ```html
+{% raw %}
 <!-- Model: { partners: [{logo: "partner1.png", name: "ABC"}, ...] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="120">
     <text x="300" y="30" text-anchor="middle" font-size="16" fill="#333">
@@ -497,6 +518,7 @@ Horizontal row of partner logos:
                preserveAspectRatio="xMidYMid meet"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### 14. Image with Border Frame
@@ -520,6 +542,7 @@ Image inside decorative border:
 Avatar with size based on user tier:
 
 ```html
+{% raw %}
 <!-- Model: { userAvatar: "user123.jpg", userTier: 2 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
     <defs>
@@ -535,6 +558,7 @@ Avatar with size based on user tier:
            height="{{(model.userTier * 20 + 40) * 2}}"
            clip-path="url(#avatarClip)"/>
 </svg>
+{% endraw %}
 ```
 
 ### 16. Comparison Layout
@@ -542,6 +566,7 @@ Avatar with size based on user tier:
 Side-by-side image comparison:
 
 ```html
+{% raw %}
 <!-- Model: { beforeImage: "before.jpg", afterImage: "after.jpg" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="650" height="300">
     <text x="150" y="30" text-anchor="middle" font-size="16" font-weight="600">Before</text>
@@ -556,6 +581,7 @@ Side-by-side image comparison:
            width="250" height="200"
            preserveAspectRatio="xMidYMid meet"/>
 </svg>
+{% endraw %}
 ```
 
 ### 17. Category Icons
@@ -563,6 +589,7 @@ Side-by-side image comparison:
 Category selection with icons:
 
 ```html
+{% raw %}
 <!-- Model: { categories: [{name: "Home", icon: "home.png", selected: true}, ...] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="100">
     <template data-bind="{{model.categories}}">
@@ -591,6 +618,7 @@ Category selection with icons:
         </g>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### 18. Report Header with Logo
@@ -598,6 +626,7 @@ Category selection with icons:
 Report header combining logo and text:
 
 ```html
+{% raw %}
 <!-- Model: { companyLogo: "logo.png", reportTitle: "Q4 Financial Report", reportDate: "2024-12-31" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="120">
     <rect width="700" height="120" fill="#336699"/>
@@ -614,6 +643,7 @@ Report header combining logo and text:
         Generated: {{model.reportDate}}
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### 19. Image Gallery with Captions
@@ -621,6 +651,7 @@ Report header combining logo and text:
 Gallery layout with captions:
 
 ```html
+{% raw %}
 <!-- Model: { gallery: [{image: "img1.jpg", caption: "Sunset"}, ...] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="650" height="450">
     <template data-bind="{{model.gallery}}">
@@ -642,6 +673,7 @@ Gallery layout with captions:
         </g>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### 20. QR Code Placement
@@ -649,6 +681,7 @@ Gallery layout with captions:
 QR code with instructions:
 
 ```html
+{% raw %}
 <!-- Model: { qrCodeUrl: "data:image/png;base64,..." } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="350">
     <rect x="10" y="10" width="280" height="330" rx="5" fill="#f9f9f9" stroke="#ccc" stroke-width="1"/>
@@ -668,6 +701,7 @@ QR code with instructions:
         to access the online portal
     </text>
 </svg>
+{% endraw %}
 ```
 
 ---

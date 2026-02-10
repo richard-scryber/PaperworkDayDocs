@@ -96,6 +96,7 @@ The `background-repeat` property supports dynamic data binding, allowing you to 
 ### Example 1: Dynamic pattern selection
 
 ```html
+{% raw %}
 <style>
     .branded-section {
         background-image: url('{{brand.patternUrl}}');
@@ -110,6 +111,7 @@ The `background-repeat` property supports dynamic data binding, allowing you to 
         <p>{{brand.tagline}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Enables different organizations to use their own background patterns with custom repeat settings (repeat, repeat-x, repeat-y, no-repeat) - perfect for white-label document generation where each client has unique branding requirements.
@@ -117,6 +119,7 @@ Enables different organizations to use their own background patterns with custom
 ### Example 2: Conditional repeating borders based on document type
 
 ```html
+{% raw %}
 <style>
     .document-header {
         background-image: url('{{document.borderImageUrl}}');
@@ -131,6 +134,7 @@ Enables different organizations to use their own background patterns with custom
         <h1>{{document.title}}</h1>
     </div>
 </body>
+{% endraw %}
 ```
 
 Automatically adjusts background repetition based on document type - certificates get single centered images, letterheads get horizontal borders, while general documents can have full repeating patterns.
@@ -138,6 +142,7 @@ Automatically adjusts background repetition based on document type - certificate
 ### Example 3: Data-driven security patterns
 
 ```html
+{% raw %}
 <style>
     .security-document {
         background-image: url('{{security.patternUrl}}');
@@ -158,6 +163,7 @@ Automatically adjusts background repetition based on document type - certificate
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Creates security-enhanced documents where high-security items automatically get full repeating microprint patterns, while lower security levels may use simpler watermarks. Essential for compliance and document authentication.

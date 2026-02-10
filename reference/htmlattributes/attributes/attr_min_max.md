@@ -41,6 +41,7 @@ The `min` and `max` attributes control value ranges and scaling:
 - Default values: min=0, max=1 (for most elements)
 
 ```html
+{% raw %}
 <!-- Basic meter with range 0-100 -->
 <meter value="75" min="0" max="100">75%</meter>
 
@@ -59,6 +60,7 @@ The `min` and `max` attributes control value ranges and scaling:
        max="{{model.maxValue}}">
     {{model.currentValue}}
 </meter>
+{% endraw %}
 ```
 
 ---
@@ -159,49 +161,58 @@ The `min` and `max` attributes support data binding for dynamic ranges:
 ### Simple Range Binding
 
 ```html
+{% raw %}
 <!-- Model: { minTemp: 0, maxTemp: 100, currentTemp: 75 } -->
 <meter value="{{model.currentTemp}}"
        min="{{model.minTemp}}"
        max="{{model.maxTemp}}">
     {{model.currentTemp}}°C
 </meter>
+{% endraw %}
 ```
 
 ### Calculated Ranges
 
 ```html
+{% raw %}
 <!-- Model: { baseValue: 100, multiplier: 10 } -->
 <meter value="{{model.baseValue * 5}}"
        min="0"
        max="{{model.baseValue * model.multiplier}}">
     50%
 </meter>
+{% endraw %}
 ```
 
 ### Conditional Ranges
 
 ```html
+{% raw %}
 <!-- Model: { isMetric: true, value: 30 } -->
 <meter value="{{model.value}}"
        min="0"
        max="{{model.isMetric ? 100 : 212}}">
     {{model.value}}{{model.isMetric ? '°C' : '°F'}}
 </meter>
+{% endraw %}
 ```
 
 ### Dynamic Input Constraints
 
 ```html
+{% raw %}
 <!-- Model: { quantity: 5, minOrder: 1, maxStock: 20 } -->
 <input type="number"
        value="{{model.quantity}}"
        min="{{model.minOrder}}"
        max="{{model.maxStock}}" />
+{% endraw %}
 ```
 
 ### Repeating Elements with Varying Ranges
 
 ```html
+{% raw %}
 <!-- Model: { metrics: [
     {name: "CPU", value: 45, min: 0, max: 100},
     {name: "Memory", value: 3.2, min: 0, max: 8},
@@ -216,6 +227,7 @@ The `min` and `max` attributes support data binding for dynamic ranges:
         </meter>
     </div>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -676,6 +688,7 @@ The range affects visual fill calculation:
 ### Data-Bound Dynamic Ranges
 
 ```html
+{% raw %}
 <!-- Model: {
     metrics: [
         {name: "CPU Usage", value: 45, min: 0, max: 100, unit: "%"},
@@ -712,6 +725,7 @@ The range affects visual fill calculation:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Storage Capacity (Bytes)
@@ -1156,6 +1170,7 @@ The range affects visual fill calculation:
 ### Conditional Range Based on Data
 
 ```html
+{% raw %}
 <!-- Model: {
     useMetric: true,
     temperature: 25,
@@ -1191,6 +1206,7 @@ The range affects visual fill calculation:
         <div>Current: {{model.temperature}}{{model.useMetric ? '°C' : '°F'}}</div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ---

@@ -84,6 +84,7 @@ The `patternContentUnits` attribute is supported on:
 Choose content coordinate system based on data:
 
 ```html
+{% raw %}
 <!-- Model: { useRelativeContent: false, tileSize: 50, dotRadius: 18 } -->
 <svg width="400" height="300">
     <defs>
@@ -101,6 +102,7 @@ Choose content coordinate system based on data:
     <rect x="50" y="50" width="300" height="200"
           fill="url(#dynamicContent)" stroke="#2c3e50" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Adaptive Pattern Graphics
@@ -108,6 +110,7 @@ Choose content coordinate system based on data:
 Switch between scaling and fixed-size content:
 
 ```html
+{% raw %}
 <!-- Model: { patterns: [{id: 'small', scaleContent: true, size: 40}, {id: 'large', scaleContent: false, size: 60}] } -->
 <svg width="500" height="400">
     <defs>
@@ -135,6 +138,7 @@ Switch between scaling and fixed-size content:
     <rect x="280" y="50" width="200" height="300"
           fill="url(#pattern-large)" stroke="#2c3e50" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ### Responsive Pattern Content
@@ -142,6 +146,7 @@ Switch between scaling and fixed-size content:
 Create patterns where content adapts to filled shape size:
 
 ```html
+{% raw %}
 <!-- Model: { shapes: [{x: 50, y: 50, width: 150, height: 100}, {x: 250, y: 50, width: 200, height: 150}] } -->
 <svg width="500" height="250">
     <defs>
@@ -160,6 +165,7 @@ Create patterns where content adapts to filled shape size:
               fill="url(#responsive-pattern)" stroke="#2c3e50" stroke-width="2"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Data Visualization Patterns
@@ -167,6 +173,7 @@ Create patterns where content adapts to filled shape size:
 Create consistent patterns for chart backgrounds:
 
 ```html
+{% raw %}
 <!-- Model: { gridSize: 50, dotSize: 4, useFixedDots: true } -->
 <svg width="500" height="400">
     <defs>
@@ -186,6 +193,7 @@ Create consistent patterns for chart backgrounds:
     <rect x="50" y="50" width="400" height="300"
           fill="url(#chartPattern)" stroke="#2c3e50" stroke-width="2"/>
 </svg>
+{% endraw %}
 ```
 
 ---

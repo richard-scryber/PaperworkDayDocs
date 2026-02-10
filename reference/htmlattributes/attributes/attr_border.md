@@ -250,17 +250,20 @@ The `border` attribute supports data binding:
 ### Dynamic Border with Data Binding
 
 ```html
+{% raw %}
 <!-- Model: { borderWidth: 2 } -->
 <table border="{{model.borderWidth}}">
     <tr>
         <td>Dynamic border</td>
     </tr>
 </table>
+{% endraw %}
 ```
 
 ### Conditional Border
 
 ```html
+{% raw %}
 <!-- Model: { showBorders: true } -->
 <table border="{{model.showBorders ? '1' : '0'}}">
     <tr>
@@ -275,6 +278,7 @@ The `border` attribute supports data binding:
         <td>Content</td>
     </tr>
 </table>
+{% endraw %}
 ```
 
 ---
@@ -886,6 +890,7 @@ The `border` attribute has no performance impact on PDF generation.
 ### Data-Bound Table with Dynamic Border
 
 ```html
+{% raw %}
 <!-- Model: {
     borderWidth: 2,
     showBorders: true,
@@ -915,6 +920,7 @@ The `border` attribute has no performance impact on PDF generation.
         </template>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Nested Tables with Different Borders

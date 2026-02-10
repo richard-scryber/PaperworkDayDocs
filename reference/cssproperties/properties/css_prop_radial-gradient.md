@@ -159,12 +159,14 @@ Radial gradients support dynamic data binding for personalized backgrounds:
 ### Example: Dynamic radial gradient based on data
 
 ```html
+{% raw %}
 <div style="width: 200pt; height: 200pt; border-radius: 100pt;
             background: radial-gradient(circle at {{model.position.x ?? '50%'}} {{model.position.y ?? '50%'}},
                         {{model.theme.centerColor ?? '#FFFFFF'}},
                         {{model.theme.edgeColor ?? '#000000'}});">
   Content with dynamic radial gradient
 </div>
+{% endraw %}
 ```
 
 ---

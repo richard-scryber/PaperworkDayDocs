@@ -43,6 +43,7 @@ The `hidden` attribute controls element visibility:
 - Supports data binding for dynamic visibility control
 
 ```html
+{% raw %}
 <!-- Visible element (no hidden attribute) -->
 <div>This content is visible</div>
 
@@ -53,6 +54,7 @@ The `hidden` attribute controls element visibility:
 <p hidden="{{model.hideWarning ? 'hidden' : ''}}">
     Warning message
 </p>
+{% endraw %}
 ```
 
 ---
@@ -86,6 +88,7 @@ The `hidden` attribute is supported on **all HTML elements** in Scryber, includi
 The `hidden` attribute is particularly powerful with data binding for conditional visibility:
 
 ```html
+{% raw %}
 <!-- Simple boolean control -->
 <div hidden="{{model.isHidden ? 'hidden' : ''}}">
     Conditionally visible content
@@ -121,6 +124,7 @@ The `hidden` attribute is particularly powerful with data binding for conditiona
         <p>{{.content}}</p>
     </section>
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -191,6 +195,7 @@ The `hidden` attribute recognizes these values:
 Use boolean expressions to control visibility dynamically:
 
 ```html
+{% raw %}
 <!-- Show if true -->
 <div hidden="{{model.showContent ? '' : 'hidden'}}">
     Content shown when showContent is true
@@ -205,6 +210,7 @@ Use boolean expressions to control visibility dynamically:
 <div hidden="{{(model.status == 'published' && model.approved) ? '' : 'hidden'}}">
     Only shown when published AND approved
 </div>
+{% endraw %}
 ```
 
 ### Hiding Table Rows and Cells
@@ -212,6 +218,7 @@ Use boolean expressions to control visibility dynamically:
 You can conditionally hide table rows, cells, and other table elements:
 
 ```html
+{% raw %}
 <table>
     <tr>
         <th>Name</th>
@@ -226,6 +233,7 @@ You can conditionally hide table rows, cells, and other table elements:
         </tr>
     </template>
 </table>
+{% endraw %}
 ```
 
 ### Hiding vs Conditional Rendering
@@ -234,9 +242,11 @@ There are two approaches to conditional content:
 
 **1. Using `hidden` attribute:**
 ```html
+{% raw %}
 <div hidden="{{model.condition ? 'hidden' : ''}}">
     Content always in source, conditionally rendered
 </div>
+{% endraw %}
 ```
 
 **2. Using conditional template logic (if available):**
@@ -274,6 +284,7 @@ When debugging, temporarily remove `hidden` attributes to see all content:
 You can hide large document sections including all nested content:
 
 ```html
+{% raw %}
 <section hidden="{{model.includeDraftSections ? '' : 'hidden'}}">
     <h1>Draft Section</h1>
     <p>This entire section and all its contents will be hidden...</p>
@@ -282,6 +293,7 @@ You can hide large document sections including all nested content:
         <p>All nested elements are hidden too</p>
     </div>
 </section>
+{% endraw %}
 ```
 
 ---
@@ -304,6 +316,7 @@ You can hide large document sections including all nested content:
 ### Conditional Content Based on User Role
 
 ```html
+{% raw %}
 <!-- Model: { user: { role: "admin" } } -->
 
 <div>
@@ -327,11 +340,13 @@ You can hide large document sections including all nested content:
         <p>This section is hidden for administrators</p>
     </section>
 </div>
+{% endraw %}
 ```
 
 ### Show/Hide Based on Data Presence
 
 ```html
+{% raw %}
 <!-- Model: { orderNotes: "", specialInstructions: "Handle with care" } -->
 
 <div>
@@ -349,11 +364,13 @@ You can hide large document sections including all nested content:
         <p>{{model.specialInstructions}}</p>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Conditional Report Sections
 
 ```html
+{% raw %}
 <!-- Model: { report: { includeExecutiveSummary: true, includeAppendix: false } } -->
 
 <div>
@@ -374,11 +391,13 @@ You can hide large document sections including all nested content:
         <p>Additional reference materials...</p>
     </section>
 </div>
+{% endraw %}
 ```
 
 ### Hiding Table Columns
 
 ```html
+{% raw %}
 <!-- Model: { showPricing: true, showStock: false } -->
 
 <table style="width: 100%; border-collapse: collapse;">
@@ -420,11 +439,13 @@ You can hide large document sections including all nested content:
         </tr>
     </tbody>
 </table>
+{% endraw %}
 ```
 
 ### Conditional Warning Messages
 
 ```html
+{% raw %}
 <!-- Model: { hasErrors: true, hasWarnings: false, hasInfo: true } -->
 
 <div>
@@ -448,11 +469,13 @@ You can hide large document sections including all nested content:
         <strong>Info:</strong> Additional information is available.
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Hiding List Items
 
 ```html
+{% raw %}
 <!-- Model: { tasks: [{name: "Task 1", completed: true}, {name: "Task 2", completed: false}] } -->
 
 <div>
@@ -476,11 +499,13 @@ You can hide large document sections including all nested content:
         </template>
     </ul>
 </div>
+{% endraw %}
 ```
 
 ### Draft vs Final Document
 
 ```html
+{% raw %}
 <!-- Model: { documentMode: "final" } -->
 
 <div>
@@ -507,11 +532,13 @@ You can hide large document sections including all nested content:
         <p>This content appears in both draft and final versions.</p>
     </section>
 </div>
+{% endraw %}
 ```
 
 ### Conditional Page Sections
 
 ```html
+{% raw %}
 <!-- Model: { includeTableOfContents: true, includeCoverPage: true, includeIndex: false } -->
 
 <!DOCTYPE html>
@@ -555,11 +582,13 @@ You can hide large document sections including all nested content:
     </div>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Hiding Sensitive Information
 
 ```html
+{% raw %}
 <!-- Model: { user: { clearanceLevel: 2 }, document: { classificationLevel: 1 } } -->
 
 <div>
@@ -589,11 +618,13 @@ You can hide large document sections including all nested content:
         <p>This section requires clearance level 3.</p>
     </section>
 </div>
+{% endraw %}
 ```
 
 ### Conditional Graphics and Images
 
 ```html
+{% raw %}
 <!-- Model: { includeCharts: true, includePhotos: false } -->
 
 <div>
@@ -614,11 +645,13 @@ You can hide large document sections including all nested content:
         <img src="photo2.jpg" style="width: 300pt; height: 200pt;" />
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Dynamic Form Sections
 
 ```html
+{% raw %}
 <!-- Model: { formType: "business", includeShipping: true } -->
 
 <div>
@@ -652,11 +685,13 @@ You can hide large document sections including all nested content:
         <p>Postal Code: [field]</p>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Hiding Empty Sections
 
 ```html
+{% raw %}
 <!-- Model: { notes: "", recommendations: "Follow up in 30 days", attachments: [] } -->
 
 <div>
@@ -684,11 +719,13 @@ You can hide large document sections including all nested content:
         </ul>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Multi-Language Documents
 
 ```html
+{% raw %}
 <!-- Model: { language: "en" } -->
 
 <div>
@@ -710,11 +747,13 @@ You can hide large document sections including all nested content:
         <p>Esta es la versión en español del documento.</p>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Conditional Footer Information
 
 ```html
+{% raw %}
 <!-- Model: { includeConfidential: true, includePageNumbers: true, documentVersion: "1.2" } -->
 
 <footer style="position: fixed; bottom: 0; width: 100%; padding: 10pt;
@@ -730,11 +769,13 @@ You can hide large document sections including all nested content:
         </span>
     </div>
 </footer>
+{% endraw %}
 ```
 
 ### Status-Based Content
 
 ```html
+{% raw %}
 <!-- Model: { order: { status: "shipped", trackingNumber: "123456" } } -->
 
 <div>
@@ -761,6 +802,7 @@ You can hide large document sections including all nested content:
         <p style="color: #dc3545;">Your order has been cancelled.</p>
     </div>
 </div>
+{% endraw %}
 ```
 
 ---

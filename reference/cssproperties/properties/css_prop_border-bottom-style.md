@@ -71,6 +71,7 @@ The `border-top-style` property supports dynamic values through data binding, al
 ### Example 1: Status-based border styles
 
 ```html
+{% raw %}
 <style>
     .section-header {
         border-top-width: 3pt;
@@ -83,11 +84,13 @@ The `border-top-style` property supports dynamic values through data binding, al
         <h2>{{section.title}}</h2>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Document formality indicators
 
 ```html
+{% raw %}
 <style>
     .document-header {
         border-top-width: 4pt;
@@ -100,11 +103,13 @@ The `border-top-style` property supports dynamic values through data binding, al
         <h1>{{doc.title}}</h1>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Table row separators
 
 ```html
+{% raw %}
 <style>
     .table-row {
         border-top-width: 2pt;
@@ -117,6 +122,7 @@ The `border-top-style` property supports dynamic values through data binding, al
         <p>{{row.label}}: {{row.value}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

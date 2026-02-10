@@ -97,6 +97,7 @@ The `margin` property supports dynamic values through data binding, allowing you
 ### Example 1: Dynamic invoice spacing based on document type
 
 ```html
+{% raw %}
 <style>
     .invoice-container {
         margin: {{layout.margin}}pt;
@@ -115,6 +116,7 @@ The `margin` property supports dynamic values through data binding, allowing you
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -130,6 +132,7 @@ Data context:
 ### Example 2: Conditional spacing for compact vs. normal mode
 
 ```html
+{% raw %}
 <style>
     .document {
         margin: {{preferences.compact ? '20pt' : '50pt'}};
@@ -148,6 +151,7 @@ Data context:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -162,6 +166,7 @@ Data context:
 ### Example 3: Responsive margins based on page size
 
 ```html
+{% raw %}
 <style>
     .report-container {
         margin: {{page.size === 'A4' ? '50pt 40pt' : '72pt 54pt'}};
@@ -178,6 +183,7 @@ Data context:
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:

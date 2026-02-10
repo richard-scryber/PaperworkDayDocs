@@ -101,6 +101,7 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 ### Data Binding Examples
 
 ```html
+{% raw %}
 <!-- Dynamic font from model data -->
 <div style="font: {{fontSize}}pt {{fontFamily}}">
     Text with font size and family from model
@@ -117,6 +118,7 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
         Content styled according to user preferences
     </p>
 </body>
+{% endraw %}
 ```
 
 **Note:** The shorthand `font` property with data binding works best when the entire value is bound. Individual property values within the compound font declaration cannot be individually bound using `{{}}` syntax.

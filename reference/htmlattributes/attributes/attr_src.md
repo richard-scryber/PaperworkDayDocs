@@ -41,6 +41,7 @@ The `src` attribute specifies content sources:
 - Required attribute for functional image and iframe elements
 
 ```html
+{% raw %}
 <!-- Local image file -->
 <img src="logo.png" width="100pt" height="50pt" />
 
@@ -55,6 +56,7 @@ The `src` attribute specifies content sources:
 
 <!-- Iframe content -->
 <iframe src="external-content.html" width="500pt" height="300pt"></iframe>
+{% endraw %}
 ```
 
 ---
@@ -76,6 +78,7 @@ The `src` attribute is used with:
 The `src` attribute supports data binding for dynamic content sources:
 
 ```html
+{% raw %}
 <!-- Simple dynamic path -->
 <img src="{{model.logoPath}}" width="100pt" height="50pt" />
 
@@ -101,6 +104,7 @@ The `src` attribute supports data binding for dynamic content sources:
          alt="{{.description}}"
          style="margin: 5pt;" />
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -301,9 +305,11 @@ Be cautious with user-provided `src` values:
 - Consider file access permissions
 
 ```html
+{% raw %}
 <!-- Sanitize user input -->
 <!-- Model: sanitizedImagePath from validated user input -->
 <img src="{{model.sanitizedImagePath}}" width="200pt" height="150pt" />
+{% endraw %}
 ```
 
 ### Image Caching
@@ -361,6 +367,7 @@ Scryber may cache images during document generation:
 ### Dynamic Image Sources
 
 ```html
+{% raw %}
 <!-- Model: { user: { avatar: "avatars/john.png", name: "John" } } -->
 
 <div style="text-align: center; padding: 20pt;">
@@ -370,11 +377,13 @@ Scryber may cache images during document generation:
          style="border-radius: 50pt; border: 2pt solid #336699;" />
     <p>{{model.user.name}}</p>
 </div>
+{% endraw %}
 ```
 
 ### Image Gallery
 
 ```html
+{% raw %}
 <!-- Model: { images: [
     { url: "gallery/img1.jpg", caption: "Image 1" },
     { url: "gallery/img2.jpg", caption: "Image 2" }
@@ -392,21 +401,25 @@ Scryber may cache images during document generation:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Conditional Images
 
 ```html
+{% raw %}
 <!-- Model: { theme: "dark", darkLogo: "logo-dark.png", lightLogo: "logo-light.png" } -->
 
 <img src="{{model.theme == 'dark' ? model.darkLogo : model.lightLogo}}"
      width="150pt" height="75pt"
      alt="Company Logo" />
+{% endraw %}
 ```
 
 ### Product Catalog with Images
 
 ```html
+{% raw %}
 <!-- Model: { products: [
     { name: "Widget A", image: "products/widget-a.jpg", price: "$29.99" },
     { name: "Widget B", image: "products/widget-b.jpg", price: "$39.99" }
@@ -430,6 +443,7 @@ Scryber may cache images during document generation:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Logo Variations
@@ -524,6 +538,7 @@ Scryber may cache images during document generation:
 ### Profile Cards with Avatars
 
 ```html
+{% raw %}
 <!-- Model: { team: [
     { name: "Alice", role: "Manager", avatar: "avatars/alice.jpg" },
     { name: "Bob", role: "Developer", avatar: "avatars/bob.jpg" }
@@ -546,6 +561,7 @@ Scryber may cache images during document generation:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Image with Caption
@@ -618,6 +634,7 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 ### Image Grid Layout
 
 ```html
+{% raw %}
 <!-- Model: { gallery: Array of 6 images } -->
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10pt;">
@@ -627,6 +644,7 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
              style="border: 1pt solid #ddd;" />
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Before/After Images
@@ -650,6 +668,7 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 ### Iframe Usage
 
 ```html
+{% raw %}
 <!-- Embed external HTML content -->
 <iframe src="external-report.html"
         width="600pt" height="400pt"
@@ -664,6 +683,7 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 <!-- Model: { reportUrl: "reports/current.html" } -->
 <iframe src="{{model.reportUrl}}"
         width="600pt" height="500pt"></iframe>
+{% endraw %}
 ```
 
 ### Image with Link
@@ -686,6 +706,7 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 ### Image Thumbnails
 
 ```html
+{% raw %}
 <!-- Model: { photos: Array of photo objects } -->
 
 <div>
@@ -713,6 +734,7 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ---

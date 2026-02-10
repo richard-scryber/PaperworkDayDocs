@@ -95,6 +95,7 @@ The `border-width` property supports dynamic values through data binding, allowi
 ### Example 1: Conditional border emphasis
 
 ```html
+{% raw %}
 <style>
     .task-item {
         border-style: solid;
@@ -109,11 +110,13 @@ The `border-width` property supports dynamic values through data binding, allowi
         <p>Status: {{task.status}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Priority-based border thickness
 
 ```html
+{% raw %}
 <style>
     .document-card {
         border-style: solid;
@@ -128,6 +131,7 @@ The `border-width` property supports dynamic values through data binding, allowi
         <p>Priority: {{priority.level}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -146,6 +150,7 @@ Data context:
 ### Example 3: Table rows with dynamic borders
 
 ```html
+{% raw %}
 <style>
     .data-table {
         width: 100%;
@@ -164,6 +169,7 @@ Data context:
         </tr>
     </table>
 </body>
+{% endraw %}
 ```
 
 ---

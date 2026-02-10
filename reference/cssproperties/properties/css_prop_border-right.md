@@ -93,6 +93,7 @@ The `border-right` property supports dynamic values through data binding, allowi
 ### Example 1: Column dividers with conditional styling
 
 ```html
+{% raw %}
 <style>
     .table-cell {
         display: table-cell;
@@ -105,11 +106,13 @@ The `border-right` property supports dynamic values through data binding, allowi
         <p>{{cell.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Dashboard metrics with dynamic separators
 
 ```html
+{% raw %}
 <style>
     .metric-box {
         display: table-cell;
@@ -123,6 +126,7 @@ The `border-right` property supports dynamic values through data binding, allowi
         <div style="font-size: 11pt; color: #6b7280;">{{metric.label}}</div>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -140,6 +144,7 @@ Data context:
 ### Example 3: Sidebar navigation with active indicator
 
 ```html
+{% raw %}
 <style>
     .nav-item {
         padding: 10pt 15pt;
@@ -151,6 +156,7 @@ Data context:
         <p>{{item.label}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

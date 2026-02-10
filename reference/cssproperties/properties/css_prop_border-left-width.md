@@ -71,6 +71,7 @@ The `border-left-width` property supports dynamic values through data binding, a
 ### Example 1: Status indicator thickness
 
 ```html
+{% raw %}
 <style>
     .alert-box {
         border-left-style: solid;
@@ -83,11 +84,13 @@ The `border-left-width` property supports dynamic values through data binding, a
         <strong>{{alert.title}}:</strong> {{alert.message}}
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Priority-based accent bars
 
 ```html
+{% raw %}
 <style>
     .task-card {
         border-left-style: solid;
@@ -102,11 +105,13 @@ The `border-left-width` property supports dynamic values through data binding, a
         <p>Priority: {{task.priority}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Navigation active indicator
 
 ```html
+{% raw %}
 <style>
     .nav-item {
         border-left-style: solid;
@@ -120,6 +125,7 @@ The `border-left-width` property supports dynamic values through data binding, a
         {{item.label}}
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

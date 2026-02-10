@@ -97,6 +97,7 @@ The min-height property supports dynamic value binding through template expressi
 ### Example 1: Cards with variable minimum heights
 
 ```html
+{% raw %}
 <style>
     .card-grid {
         padding: 20pt;
@@ -124,11 +125,13 @@ The min-height property supports dynamic value binding through template expressi
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Section headers with data-driven minimum heights
 
 ```html
+{% raw %}
 <style>
     .section-header {
         padding: 20pt;
@@ -148,11 +151,13 @@ The min-height property supports dynamic value binding through template expressi
         <h1 class="section-title">{{section.title}}</h1>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Table rows with conditional minimum heights
 
 ```html
+{% raw %}
 <style>
     .data-table {
         width: 100%;
@@ -186,11 +191,13 @@ The min-height property supports dynamic value binding through template expressi
         </tbody>
     </table>
 </body>
+{% endraw %}
 ```
 
 ### Example 4: Dashboard panels with responsive minimum heights
 
 ```html
+{% raw %}
 <style>
     .dashboard {
         padding: 20pt;
@@ -224,6 +231,7 @@ The min-height property supports dynamic value binding through template expressi
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

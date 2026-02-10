@@ -42,6 +42,7 @@ The `optimum` attribute controls semantic coloring logic:
 - Default: NaN (not set - middle range assumed optimal)
 
 ```html
+{% raw %}
 <!-- Lower is better: optimum near min -->
 <meter value="25" min="0" max="100" low="30" high="75" optimum="0">
     25% - Green (near optimum, below low threshold)
@@ -66,6 +67,7 @@ The `optimum` attribute controls semantic coloring logic:
        optimum="{{model.targetValue}}">
     {{model.currentValue}}
 </meter>
+{% endraw %}
 ```
 
 ---
@@ -248,6 +250,7 @@ The `optimum` attribute supports data binding for dynamic target values:
 ### Simple Optimum Binding
 
 ```html
+{% raw %}
 <!-- Model: { currentValue: 75, targetValue: 80 } -->
 <meter value="{{model.currentValue}}"
        min="0"
@@ -257,11 +260,13 @@ The `optimum` attribute supports data binding for dynamic target values:
        optimum="{{model.targetValue}}">
     {{model.currentValue}}% (Target: {{model.targetValue}}%)
 </meter>
+{% endraw %}
 ```
 
 ### Calculated Optimum
 
 ```html
+{% raw %}
 <!-- Model: { maxCapacity: 100, targetUtilization: 0.8 } -->
 <!-- Optimal value is 80% of max capacity -->
 <meter value="{{model.currentLoad}}"
@@ -272,11 +277,13 @@ The `optimum` attribute supports data binding for dynamic target values:
        optimum="{{model.maxCapacity * model.targetUtilization}}">
     {{model.currentLoad}} (Target: {{model.maxCapacity * model.targetUtilization}})
 </meter>
+{% endraw %}
 ```
 
 ### Conditional Optimum
 
 ```html
+{% raw %}
 <!-- Model: { metric: "cpu", value: 45 } -->
 <!-- Different optimum for different metric types -->
 <meter value="{{model.value}}"
@@ -287,11 +294,13 @@ The `optimum` attribute supports data binding for dynamic target values:
        optimum="{{model.metric === 'cpu' ? 0 : (model.metric === 'score' ? 100 : 50)}}">
     {{model.value}}% {{model.metric}}
 </meter>
+{% endraw %}
 ```
 
 ### Context-Specific Optimum
 
 ```html
+{% raw %}
 <!-- Model: { season: "summer", temp: 75, winterTarget: 68, summerTarget: 72 } -->
 <!-- Different optimal temperatures for different seasons -->
 <meter value="{{model.temp}}"
@@ -302,11 +311,13 @@ The `optimum` attribute supports data binding for dynamic target values:
        optimum="{{model.season === 'winter' ? model.winterTarget : model.summerTarget}}">
     {{model.temp}}°F ({{model.season}})
 </meter>
+{% endraw %}
 ```
 
 ### Dynamic Targets from Collection
 
 ```html
+{% raw %}
 <!-- Model: {
     goals: [
         {name: "Sales", current: 875000, target: 1000000},
@@ -328,6 +339,7 @@ The `optimum` attribute supports data binding for dynamic target values:
         </span>
     </div>
 </template>
+{% endraw %}
 ```
 
 ---
@@ -441,15 +453,18 @@ Consistent optimum values for related measurements:
 
 **Fixed Optimum:**
 ```html
+{% raw %}
 <!-- Room temperature: always 72°F -->
 <meter value="{{model.currentTemp}}" min="60" max="85"
        low="68" high="76" optimum="72">
     {{model.currentTemp}}°F
 </meter>
+{% endraw %}
 ```
 
 **Variable Optimum:**
 ```html
+{% raw %}
 <!-- Target changes based on workout intensity -->
 <meter value="{{model.heartRate}}" min="60" max="200"
        low="{{model.restingHR}}"
@@ -457,16 +472,19 @@ Consistent optimum values for related measurements:
        optimum="{{model.targetZone}}">
     {{model.heartRate}} bpm
 </meter>
+{% endraw %}
 ```
 
 **Context-Dependent Optimum:**
 ```html
+{% raw %}
 <!-- Humidity: different optimal based on season -->
 <meter value="{{model.humidity}}" min="0" max="100"
        low="30" high="60"
        optimum="{{model.season === 'winter' ? 40 : 45}}">
     {{model.humidity}}% humidity
 </meter>
+{% endraw %}
 ```
 
 ### Visual Impact of Optimum Position
@@ -1221,6 +1239,7 @@ Test each zone to verify color logic:
 ### Dynamic Optimum Based on Context
 
 ```html
+{% raw %}
 <!-- Model: {
     environment: "production",
     cpuUsage: 45,
@@ -1279,11 +1298,13 @@ Test each zone to verify color logic:
         development but orange in production due to different optimum settings.
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Multiple Meters with Different Optimum Values
 
 ```html
+{% raw %}
 <!-- Model: {
     metrics: [
         {name: "CPU Usage", value: 45, min: 0, max: 100, low: 30, high: 75, optimum: 0, unit: "%", pattern: "minimize"},
@@ -1366,6 +1387,7 @@ Test each zone to verify color logic:
         </table>
     </div>
 </div>
+{% endraw %}
 ```
 
 ---

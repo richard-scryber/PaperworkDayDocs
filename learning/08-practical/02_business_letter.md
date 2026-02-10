@@ -31,6 +31,7 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -312,6 +313,7 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -497,6 +499,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
+{% raw %}
 <div class="letterhead">
     <img src="{{company.logo}}" class="letterhead-logo" />
     <h1>{{company.name}}</h1>
@@ -504,6 +507,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
     <p>{{company.city}}, {{company.state}} {{company.zip}}</p>
     <p>Phone: {{company.phone}} | Email: {{company.email}}</p>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -517,6 +521,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
+{% raw %}
 <div class="letter-date">
     <p>{{letter.date}}</p>
 </div>
@@ -526,6 +531,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
     <p><strong>Ref:</strong> {{letter.referenceNumber}}</p>
 </div>
 {{/if}}
+{% endraw %}
 ```
 {% endraw %}
 
@@ -538,6 +544,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
+{% raw %}
 <div class="recipient-address">
     <p><strong>{{recipient.name}}</strong></p>
     {{#if recipient.title}}
@@ -549,6 +556,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
     <p>{{recipient.address}}</p>
     <p>{{recipient.city}}, {{recipient.state}} {{recipient.zip}}</p>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -561,6 +569,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
+{% raw %}
 <p class="salutation">Dear {{recipient.salutation}}:</p>
 
 <div class="letter-body">
@@ -572,6 +581,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 <div class="closing">
     <p>{{letter.closing}},</p>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -584,6 +594,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
+{% raw %}
 <div class="signature-block">
     {{#if signer.signature}}
     <img src="{{signer.signature}}" class="signature-image" />
@@ -591,6 +602,7 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
     <p class="signature-name">{{signer.name}}</p>
     <p class="signature-title">{{signer.title}}</p>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -647,6 +659,7 @@ body {
 
 {% raw %}
 ```html
+{% raw %}
 <div class="memo-header">
     <table style="width: 100%; border-bottom: 2pt solid #000;">
         <tr>
@@ -667,6 +680,7 @@ body {
         </tr>
     </table>
 </div>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -678,6 +692,7 @@ For letters that span multiple pages, add page headers:
 
 {% raw %}
 ```html
+{% raw %}
 <style>
     @page {
         @top-left {
@@ -699,6 +714,7 @@ For letters that span multiple pages, add page headers:
         @top-right { content: none; }
     }
 </style>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -709,6 +725,7 @@ For letters that span multiple pages, add page headers:
 ### 1. Signature Positioning
 
 ```html
+{% raw %}
 <div style="display: flex; justify-content: space-between; margin-top: 40pt;">
     <div class="signature-block">
         <img src="{{signer1.signature}}" style="height: 40pt;" />
@@ -722,6 +739,7 @@ For letters that span multiple pages, add page headers:
         <p>{{signer2.title}}</p>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### 2. Confidential Watermark
@@ -741,15 +759,18 @@ For letters that span multiple pages, add page headers:
 
 {% raw %}
 ```html
+{% raw %}
 {{#if letter.isConfidential}}
 <div class="watermark">CONFIDENTIAL</div>
 {{/if}}
+{% endraw %}
 ```
 {% endraw %}
 
 ### 3. Custom Footer with Logo
 
 ```html
+{% raw %}
 <div class="letter-footer">
     <table style="width: 100%;">
         <tr>
@@ -765,6 +786,7 @@ For letters that span multiple pages, add page headers:
         </tr>
     </table>
 </div>
+{% endraw %}
 ```
 
 ---
@@ -830,23 +852,29 @@ Create specialized templates for:
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Personalized -->
 <p>Dear {{recipient.salutation}}:</p>
+{% endraw %}
 ```
 {% endraw %}
 
 ### ❌ Signature Too Large
 
 ```html
+{% raw %}
 <img src="{{signer.signature}}" />
 <!-- Signature fills entire page -->
+{% endraw %}
 ```
 
 ✅ **Solution:**
 
 ```html
+{% raw %}
 <img src="{{signer.signature}}"
      style="max-height: 40pt; max-width: 200pt;" />
+{% endraw %}
 ```
 
 ---

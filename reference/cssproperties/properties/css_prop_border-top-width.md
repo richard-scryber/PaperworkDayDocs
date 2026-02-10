@@ -74,6 +74,7 @@ The `border-top-width` property supports dynamic values through data binding, al
 ### Example 1: Priority-based header emphasis
 
 ```html
+{% raw %}
 <style>
     .section-header {
         border-top-style: solid;
@@ -88,11 +89,13 @@ The `border-top-width` property supports dynamic values through data binding, al
         {{section.title}}
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Dynamic table row separators
 
 ```html
+{% raw %}
 <style>
     .table-row {
         border-top-style: solid;
@@ -105,11 +108,13 @@ The `border-top-width` property supports dynamic values through data binding, al
         <p>{{row.label}}: {{row.value}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Conditional section dividers
 
 ```html
+{% raw %}
 <style>
     .content-section {
         border-top-style: solid;
@@ -124,6 +129,7 @@ The `border-top-width` property supports dynamic values through data binding, al
         <p>{{section.content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

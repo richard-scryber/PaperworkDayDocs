@@ -82,6 +82,7 @@ Note: This attribute is NOT used with `<radialGradient>` elements, which use `cx
 Bind the y1 coordinate to data for dynamic gradient start position:
 
 ```html
+{% raw %}
 <!-- Model: { startY: 20 } -->
 <svg width="400" height="300">
     <defs>
@@ -96,6 +97,7 @@ Bind the y1 coordinate to data for dynamic gradient start position:
     </defs>
     <rect width="400" height="300" fill="url(#dynamicY)" />
 </svg>
+{% endraw %}
 ```
 
 ### Data-Driven Gradient Angles
@@ -103,6 +105,7 @@ Bind the y1 coordinate to data for dynamic gradient start position:
 Calculate gradient angles from data:
 
 ```html
+{% raw %}
 <!-- Model: { angle: 135 } -->
 <!-- Creates gradient at specified angle in degrees -->
 <svg width="400" height="300">
@@ -118,6 +121,7 @@ Calculate gradient angles from data:
     </defs>
     <rect width="400" height="300" fill="url(#angleGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ### Chart Background with Data Position
@@ -125,6 +129,7 @@ Calculate gradient angles from data:
 Position gradient based on chart data ranges:
 
 ```html
+{% raw %}
 <!-- Model: { chartTopMargin: 10, chartHeight: 280 } -->
 <svg width="500" height="300">
     <defs>
@@ -139,6 +144,7 @@ Position gradient based on chart data ranges:
     </defs>
     <rect width="500" height="300" fill="url(#chartBg)" />
 </svg>
+{% endraw %}
 ```
 
 ### Conditional Gradient Direction
@@ -146,6 +152,7 @@ Position gradient based on chart data ranges:
 Change gradient direction based on data orientation:
 
 ```html
+{% raw %}
 <!-- Model: { orientation: "vertical", color1: "#2ecc71", color2: "#27ae60" } -->
 <svg width="400" height="200">
     <defs>
@@ -160,6 +167,7 @@ Change gradient direction based on data orientation:
     </defs>
     <rect width="400" height="200" fill="url(#orientGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ### Temperature Gradient Based on Range
@@ -167,6 +175,7 @@ Change gradient direction based on data orientation:
 Create vertical gradients representing temperature or value ranges:
 
 ```html
+{% raw %}
 <!-- Model: { minTemp: -20, maxTemp: 40, currentTemp: 15 } -->
 <svg width="100" height="400">
     <defs>
@@ -183,6 +192,7 @@ Create vertical gradients representing temperature or value ranges:
           y="{{((model.currentTemp - model.minTemp) / (model.maxTemp - model.minTemp)) * 400}}"
           width="100" height="5" fill="white" />
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -454,6 +464,7 @@ Vertical gradients are commonly used for:
 ### Gauge Indicator with Vertical Gradient
 
 ```html
+{% raw %}
 <svg width="200" height="300">
     <defs>
         <linearGradient id="gaugeVert" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -466,6 +477,7 @@ Vertical gradients are commonly used for:
     <rect x="70" y="50" width="60" height="200" rx="30" fill="url(#gaugeVert)" />
     <rect x="60" y="{{50 + (200 * 0.35)}}" width="80" height="8" fill="white" />
 </svg>
+{% endraw %}
 ```
 
 ### Battery Level Indicator
@@ -507,6 +519,7 @@ Vertical gradients are commonly used for:
 ### Data-Driven Vertical Range
 
 ```html
+{% raw %}
 <!-- Model: { minValue: 0, maxValue: 100, currentValue: 65 } -->
 <svg width="150" height="400">
     <defs>
@@ -526,6 +539,7 @@ Vertical gradients are commonly used for:
         {{model.currentValue}}%
     </text>
 </svg>
+{% endraw %}
 ```
 
 ---

@@ -93,6 +93,7 @@ The `left` property supports data binding, allowing dynamic horizontal positioni
 ### Example 1: Configurable sidebar offset
 
 ```html
+{% raw %}
 <style>
     .sidebar {
         position: fixed;
@@ -123,6 +124,7 @@ The `left` property supports data binding, allowing dynamic horizontal positioni
         <p>{{content.body}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:
@@ -151,6 +153,7 @@ Data model:
 ### Example 2: Dynamic badge positioning from left
 
 ```html
+{% raw %}
 <style>
     .container {
         position: relative;
@@ -176,6 +179,7 @@ Data model:
         <p>{{product.description}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:
@@ -198,6 +202,7 @@ Data model:
 ### Example 3: Configurable logo and margin notes
 
 ```html
+{% raw %}
 <style>
     .document {
         position: relative;
@@ -229,6 +234,7 @@ Data model:
         <p>{{article.paragraph2}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 Data model:

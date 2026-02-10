@@ -82,6 +82,7 @@ Note: This attribute is NOT used with `<radialGradient>` elements.
 Bind the y2 coordinate to data for dynamic gradient range:
 
 ```html
+{% raw %}
 <!-- Model: { endY: 80 } -->
 <svg width="400" height="400">
     <defs>
@@ -94,6 +95,7 @@ Bind the y2 coordinate to data for dynamic gradient range:
     </defs>
     <rect width="400" height="400" fill="url(#dynamicVertical)" />
 </svg>
+{% endraw %}
 ```
 
 ### Chart Height-Based Gradients
@@ -101,6 +103,7 @@ Bind the y2 coordinate to data for dynamic gradient range:
 Position gradient endpoint based on chart dimensions:
 
 ```html
+{% raw %}
 <!-- Model: { chartHeight: 300, dataMaxHeight: 250 } -->
 <svg width="500" height="{{model.chartHeight}}">
     <defs>
@@ -113,6 +116,7 @@ Position gradient endpoint based on chart dimensions:
     </defs>
     <rect width="500" height="{{model.chartHeight}}" fill="url(#chartGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ### Data-Driven Diagonal Gradients
@@ -120,6 +124,7 @@ Position gradient endpoint based on chart dimensions:
 Calculate gradient angle from data values:
 
 ```html
+{% raw %}
 <!-- Model: { angle: 45 } -->
 <svg width="400" height="300">
     <defs>
@@ -134,6 +139,7 @@ Calculate gradient angle from data values:
     </defs>
     <rect width="400" height="300" fill="url(#angleGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ### Conditional Vertical Extent
@@ -141,6 +147,7 @@ Calculate gradient angle from data values:
 Change gradient extent based on data conditions:
 
 ```html
+{% raw %}
 <!-- Model: { fillLevel: 65, maxLevel: 100 } -->
 <svg width="200" height="400">
     <defs>
@@ -162,6 +169,7 @@ Change gradient extent based on data conditions:
           rx="50"
           fill="url(#fillGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ### Temperature Range Visualization
@@ -169,6 +177,7 @@ Change gradient extent based on data conditions:
 Create vertical gradients representing value ranges:
 
 ```html
+{% raw %}
 <!-- Model: { minTemp: -20, maxTemp: 40, warmThreshold: 20 } -->
 <svg width="150" height="400">
     <defs>
@@ -183,6 +192,7 @@ Create vertical gradients representing value ranges:
 
     <rect x="50" y="20" width="50" height="360" rx="25" fill="url(#tempRange)" />
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -478,6 +488,7 @@ Common scenarios where y2 is essential:
 ### Data-Driven Fill Level
 
 ```html
+{% raw %}
 <!-- Model: { level: 70, maxLevel: 100 } -->
 <svg width="200" height="400">
     <defs>
@@ -503,6 +514,7 @@ Common scenarios where y2 is essential:
         {{model.level}}%
     </text>
 </svg>
+{% endraw %}
 ```
 
 ### Vertical Slider

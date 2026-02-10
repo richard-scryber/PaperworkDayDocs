@@ -77,6 +77,7 @@ The `border-left-color` property supports dynamic values through data binding, a
 ### Example 1: Alert severity colors
 
 ```html
+{% raw %}
 <style>
     .alert-box {
         border-left-width: 5pt;
@@ -90,6 +91,7 @@ The `border-left-color` property supports dynamic values through data binding, a
         <strong>{{severity.level}}:</strong> {{message}}
     </div>
 </body>
+{% endraw %}
 ```
 
 Data context:
@@ -107,6 +109,7 @@ Data context:
 ### Example 2: Status-based accent bars
 
 ```html
+{% raw %}
 <style>
     .status-card {
         border-left-width: 6pt;
@@ -122,11 +125,13 @@ Data context:
         <p>Status: {{status.label}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Category indicators
 
 ```html
+{% raw %}
 <style>
     .item-card {
         border-left-width: 4pt;
@@ -141,6 +146,7 @@ Data context:
         <p>Category: {{category.name}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

@@ -45,6 +45,7 @@ The `data-allow-missing-images` attribute provides error tolerance for images:
 - Can be combined with `alt` attribute for missing image text
 
 ```html
+{% raw %}
 <!-- Default: Missing image throws error -->
 <img src="photo.jpg" width="200pt" height="150pt" />
 
@@ -64,6 +65,7 @@ The `data-allow-missing-images` attribute provides error tolerance for images:
      width="300pt" height="200pt"
      data-allow-missing-images="true"
      style="border: 1pt solid #ddd;" />
+{% endraw %}
 ```
 
 ---
@@ -82,6 +84,7 @@ The `data-allow-missing-images` attribute is used exclusively with:
 The `data-allow-missing-images` attribute supports data binding for dynamic error handling:
 
 ```html
+{% raw %}
 <!-- Static value -->
 <img src="optional-image.jpg"
      width="200pt" height="150pt"
@@ -104,6 +107,7 @@ The `data-allow-missing-images` attribute supports data binding for dynamic erro
          data-allow-missing-images="{{.optional}}"
          alt="{{.caption}}" />
 </template>
+{% endraw %}
 ```
 
 **Data Model Example:**
@@ -188,40 +192,50 @@ When `data-allow-missing-images="true"`:
 
 1. **User-Generated Content**: Images uploaded by users that may not always be present
    ```html
+{% raw %}
    <img src="{{model.userAvatar}}"
         width="100pt" height="100pt"
         data-allow-missing-images="true"
         alt="User Avatar" />
-   ```
+   {% endraw %}
+```
 
 2. **Optional Images**: Images that enhance but aren't critical to the document
    ```html
+{% raw %}
    <img src="{{model.optionalLogo}}"
         width="150pt" height="50pt"
         data-allow-missing-images="true" />
-   ```
+   {% endraw %}
+```
 
 3. **Dynamic Content**: Images from external sources that may be temporarily unavailable
    ```html
+{% raw %}
    <img src="https://api.example.com/image/{{model.imageId}}"
         width="200pt" height="150pt"
         data-allow-missing-images="true" />
-   ```
+   {% endraw %}
+```
 
 4. **Template Reuse**: Shared templates used with varying data sources
    ```html
+{% raw %}
    <img src="{{model.productImage}}"
         width="200pt" height="150pt"
         data-allow-missing-images="true"
         alt="Product Image" />
-   ```
+   {% endraw %}
+```
 
 5. **Beta/Development Features**: New image sources being tested
    ```html
+{% raw %}
    <img src="{{model.experimentalFeatureImage}}"
         width="200pt" height="150pt"
         data-allow-missing-images="true" />
-   ```
+   {% endraw %}
+```
 
 **Use default strict mode (false) for**:
 
@@ -275,6 +289,7 @@ The attribute works in conjunction with parser conformance mode:
 The attribute works with all image loading methods:
 
 ```html
+{% raw %}
 <!-- Missing binary data allowed -->
 <img data-img-data="{{model.imageBytes}}"
      data-img-type="image/jpeg"
@@ -285,6 +300,7 @@ The attribute works with all image loading methods:
 <img data-img="{{model.imageData}}"
      width="200pt" height="150pt"
      data-allow-missing-images="true" />
+{% endraw %}
 ```
 
 ### Combining with Alternative Text
@@ -292,6 +308,7 @@ The attribute works with all image loading methods:
 Use `alt` attribute to provide text when images are missing:
 
 ```html
+{% raw %}
 <!-- Descriptive alternative text -->
 <img src="{{model.userPhoto}}"
      width="150pt" height="150pt"
@@ -303,6 +320,7 @@ Use `alt` attribute to provide text when images are missing:
      width="400pt" height="300pt"
      alt="Sales chart - data visualization not available"
      data-allow-missing-images="true" />
+{% endraw %}
 ```
 
 The `alt` text may be displayed or used for accessibility when the image is missing.
@@ -323,12 +341,14 @@ Consider timeout settings for network images when using lenient mode.
 
 **Multiple Optional Images**:
 ```html
+{% raw %}
 <!-- Each attempt takes time, even when failing gracefully -->
 <template data-bind="{{model.optionalImages}}">
     <img src="{{.url}}"
          width="100pt" height="100pt"
          data-allow-missing-images="true" />
 </template>
+{% endraw %}
 ```
 
 Pre-validate image availability when possible to improve performance.
@@ -344,11 +364,13 @@ Pre-validate image availability when possible to improve performance.
 
 2. **Provide Alt Text**: Always include alt text for missing images
    ```html
+{% raw %}
    <img src="{{model.photo}}"
         width="150pt" height="150pt"
         alt="Photo of {{model.name}}"
         data-allow-missing-images="true" />
-   ```
+   {% endraw %}
+```
 
 3. **Log and Monitor**: Enable logging to track missing images
    ```csharp
@@ -358,13 +380,15 @@ Pre-validate image availability when possible to improve performance.
 
 4. **Validate in Development**: Use strict mode during development
    ```html
+{% raw %}
    <!-- Development: Catch issues early -->
    <img src="{{model.image}}" width="200pt" height="150pt" />
 
    <!-- Production: Allow graceful degradation -->
    <img src="{{model.image}}" width="200pt" height="150pt"
         data-allow-missing-images="true" />
-   ```
+   {% endraw %}
+```
 
 5. **Pre-Check Availability**: Validate image existence before document generation
    ```csharp
@@ -376,11 +400,13 @@ Pre-validate image availability when possible to improve performance.
 
 6. **Fallback Images**: Provide fallback for missing images
    ```html
+{% raw %}
    <!-- If userPhoto missing, use default avatar -->
    <img src="{{model.userPhoto ?? 'images/default-avatar.png'}}"
         width="100pt" height="100pt"
         data-allow-missing-images="true" />
-   ```
+   {% endraw %}
+```
 
 ### Debugging Missing Images
 
@@ -414,6 +440,7 @@ Error: File not found at path 'C:\path\photos\missing.jpg'
 Different behaviors for different environments:
 
 ```html
+{% raw %}
 <!-- Model: { isProduction: true, allowMissing: true } -->
 
 <!-- Development: Strict -->
@@ -422,6 +449,7 @@ Different behaviors for different environments:
      data-allow-missing-images="{{model.isProduction && model.allowMissing}}" />
 
 <!-- Production: Lenient -->
+{% endraw %}
 ```
 
 ### Security Considerations
@@ -429,10 +457,12 @@ Different behaviors for different environments:
 Be cautious with path validation:
 
 ```html
+{% raw %}
 <!-- Validate and sanitize user-provided paths -->
 <img src="{{model.sanitizedImagePath}}"
      width="200pt" height="150pt"
      data-allow-missing-images="true" />
+{% endraw %}
 ```
 
 Don't expose file system details in error messages:
@@ -447,6 +477,7 @@ Don't expose file system details in error messages:
 ### Basic Missing Image Tolerance
 
 ```html
+{% raw %}
 <!-- Image may or may not exist -->
 <img src="optional-banner.jpg"
      width="600pt" height="200pt"
@@ -462,11 +493,13 @@ Don't expose file system details in error messages:
      width="100pt" height="100pt"
      alt="User Photo"
      data-allow-missing-images="true" />
+{% endraw %}
 ```
 
 ### User Profile with Optional Avatar
 
 ```html
+{% raw %}
 <!-- Model: { user: { name: "John Doe", avatar: "avatars/john.jpg" | null } } -->
 
 <div style="text-align: center; padding: 20pt;">
@@ -479,11 +512,13 @@ Don't expose file system details in error messages:
 
     <h2>{{model.user.name}}</h2>
 </div>
+{% endraw %}
 ```
 
 ### Product Catalog with Variable Images
 
 ```html
+{% raw %}
 <!-- Model: { products: [
     { name: "Widget A", image: "products/widget-a.jpg", price: 29.99 },
     { name: "Widget B", image: null, price: 39.99 }  // No image
@@ -508,11 +543,13 @@ Don't expose file system details in error messages:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Report with Optional Charts
 
 ```html
+{% raw %}
 <!-- Model: {
     report: { title: "Sales Analysis" },
     charts: [
@@ -543,11 +580,13 @@ Don't expose file system details in error messages:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Employee Directory with Photos
 
 ```html
+{% raw %}
 <!-- Model: { employees: [
     { name: "Alice", photo: "photos/alice.jpg", dept: "Engineering" },
     { name: "Bob", photo: null, dept: "Sales" }  // Photo not provided
@@ -573,11 +612,13 @@ Don't expose file system details in error messages:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Dynamic External Images
 
 ```html
+{% raw %}
 <!-- Model: { articles: [
     { title: "Article 1", imageUrl: "https://cdn.example.com/img1.jpg" },
     { title: "Article 2", imageUrl: "https://cdn.example.com/img2.jpg" }
@@ -600,11 +641,13 @@ Don't expose file system details in error messages:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Conditional Missing Image Handling
 
 ```html
+{% raw %}
 <!-- Model: {
     isDevelopment: false,
     isProduction: true,
@@ -618,11 +661,13 @@ Don't expose file system details in error messages:
          data-allow-missing-images="{{model.isProduction}}"
          alt="{{.description}}" />
 </template>
+{% endraw %}
 ```
 
 ### Real Estate Listings with Variable Photos
 
 ```html
+{% raw %}
 <!-- Model: { properties: [
     {
         address: "123 Main St",
@@ -650,11 +695,13 @@ Don't expose file system details in error messages:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Invoice with Optional Logo
 
 ```html
+{% raw %}
 <!-- Model: {
     invoice: { number: "INV-123", total: 1250.00 },
     companyLogo: "logos/company.png" | null
@@ -677,6 +724,7 @@ Don't expose file system details in error messages:
 
     <h2>Total: ${{model.invoice.total}}</h2>
 </div>
+{% endraw %}
 ```
 
 ### Training Manual with Optional Screenshots
@@ -720,6 +768,7 @@ Don't expose file system details in error messages:
 ### Social Media Style Feed
 
 ```html
+{% raw %}
 <!-- Model: { posts: [
     { user: "alice", avatar: "avatars/alice.jpg", content: "Hello!", image: "posts/1.jpg" },
     { user: "bob", avatar: null, content: "Hi!", image: null }
@@ -755,11 +804,13 @@ Don't expose file system details in error messages:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Medical Report with Optional Imaging
 
 ```html
+{% raw %}
 <!-- Model: {
     patient: { name: "Jane Doe", id: "P-456" },
     scans: [
@@ -791,11 +842,13 @@ Don't expose file system details in error messages:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Photo Gallery with Lazy Loading
 
 ```html
+{% raw %}
 <!-- Model: { gallery: [
     { id: 1, thumbnail: "thumbs/1.jpg", loaded: true },
     { id: 2, thumbnail: "thumbs/2.jpg", loaded: true },
@@ -821,11 +874,13 @@ Don't expose file system details in error messages:
         </template>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Certificate with Optional Seal
 
 ```html
+{% raw %}
 <!-- Model: {
     certificate: {
         recipient: "John Doe",
@@ -863,11 +918,13 @@ Don't expose file system details in error messages:
              style="opacity: 0.8;" />
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Product Comparison with Variable Images
 
 ```html
+{% raw %}
 <!-- Model: { products: [
     { name: "Basic", image: "products/basic.jpg", price: 99 },
     { name: "Pro", image: null, price: 199 },  // Coming soon, no image
@@ -905,11 +962,13 @@ Don't expose file system details in error messages:
         </tbody>
     </table>
 </div>
+{% endraw %}
 ```
 
 ### Event Flyer with Optional Sponsor Logos
 
 ```html
+{% raw %}
 <!-- Model: {
     event: { name: "Tech Conference 2024", date: "March 15, 2024" },
     sponsors: [
@@ -943,11 +1002,13 @@ Don't expose file system details in error messages:
         </div>
     </div>
 </div>
+{% endraw %}
 ```
 
 ### Newsletter with Optional Header Images
 
 ```html
+{% raw %}
 <!-- Model: {
     newsletter: { title: "Monthly Update", issue: "Jan 2024" },
     articles: [
@@ -975,11 +1036,13 @@ Don't expose file system details in error messages:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ### Team Roster with Missing Photos
 
 ```html
+{% raw %}
 <!-- Model: { team: [
     { name: "Alice", photo: "team/alice.jpg", role: "Lead", bio: "..." },
     { name: "Bob", photo: null, role: "Developer", bio: "..." },
@@ -1007,6 +1070,7 @@ Don't expose file system details in error messages:
         </div>
     </template>
 </div>
+{% endraw %}
 ```
 
 ---

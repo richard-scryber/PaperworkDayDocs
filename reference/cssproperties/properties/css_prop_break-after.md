@@ -103,6 +103,7 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 ### Example 1: Conditional breaks after content blocks
 
 ```html
+{% raw %}
 <style>
     .summary-block {
         break-after: {{block.isolate ? 'page' : 'auto'}};
@@ -123,11 +124,13 @@ The `break-after` property supports data binding, enabling dynamic control of pa
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Data-driven chart isolation
 
 ```html
+{% raw %}
 <style>
     .chart-container {
         break-after: {{chartSettings.onePerPage ? 'page' : 'avoid'}};
@@ -157,11 +160,13 @@ The `break-after` property supports data binding, enabling dynamic control of pa
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Variable document sections with mixed breaks
 
 ```html
+{% raw %}
 <style>
     @page standard {
         size: A4 portrait;
@@ -192,6 +197,7 @@ The `break-after` property supports data binding, enabling dynamic control of pa
     </div>
     {{/each}}
 </body>
+{% endraw %}
 ```
 
 ---

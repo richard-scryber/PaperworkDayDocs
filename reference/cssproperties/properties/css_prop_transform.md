@@ -110,6 +110,7 @@ The `transform` property can be dynamically controlled through data binding, ena
 ### Example 1: Data-driven rotation for gauge needles
 
 ```html
+{% raw %}
 <style>
     .gauge-dial { fill: #e5e7eb; }
     .gauge-needle { fill: #ef4444; }
@@ -128,11 +129,13 @@ The `transform` property can be dynamically controlled through data binding, ena
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: Dynamic scaling for data visualization
 
 ```html
+{% raw %}
 <style>
     .data-icon { fill: #3b82f6; }
     .icon-label { text-anchor: middle; font-size: 12px; }
@@ -148,11 +151,13 @@ The `transform` property can be dynamically controlled through data binding, ena
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Conditional transforms for interactive states
 
 ```html
+{% raw %}
 <style>
     .card { fill: white; stroke: #3b82f6; stroke-width: 2; }
     .card-title { text-anchor: middle; font-size: 14px; font-weight: bold; }
@@ -168,6 +173,7 @@ The `transform` property can be dynamically controlled through data binding, ena
         </template>
     </svg>
 </body>
+{% endraw %}
 ```
 
 ---

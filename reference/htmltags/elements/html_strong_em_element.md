@@ -259,6 +259,7 @@ In the Scryber codebase:
 ### Data Binding
 
 ```html
+{% raw %}
 <!-- With model = { userName: "John Smith", status: "Active", itemName: "Product A" } -->
 <p>Welcome <strong>{{model.userName}}</strong>!</p>
 <p>Status: <strong style="color: green;">{{model.status}}</strong></p>
@@ -268,6 +269,7 @@ In the Scryber codebase:
 <p>Alert: <strong style="color: {{model.isError ? 'red' : 'green'}};">
     {{model.message}}
 </strong></p>
+{% endraw %}
 ```
 
 ### Tables with Bold Headers
@@ -504,10 +506,12 @@ In the Scryber codebase:
 ### Repeating Bold Items with Data Binding
 
 ```html
+{% raw %}
 <!-- With model.items = [{name: "Item 1", value: "100"}, {name: "Item 2", value: "200"}] -->
 <template data-bind="{{model.items}}">
     <p><strong>{{.name}}:</strong> ${{.value}}</p>
 </template>
+{% endraw %}
 ```
 
 ### Combined with Links

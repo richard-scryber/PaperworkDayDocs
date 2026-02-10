@@ -167,6 +167,7 @@ Use `href` to reference another gradient's properties:
 Bind gradient stop colors to data values:
 
 ```html
+{% raw %}
 <!-- Model: { primaryColor: "#3498db", secondaryColor: "#e74c3c" } -->
 <svg width="300" height="100">
     <defs>
@@ -177,6 +178,7 @@ Bind gradient stop colors to data values:
     </defs>
     <rect width="280" height="80" fill="url(#dataGradient)" />
 </svg>
+{% endraw %}
 ```
 
 ### Dynamic Stop Positions
@@ -184,6 +186,7 @@ Bind gradient stop colors to data values:
 Create gradients with data-driven stop positions:
 
 ```html
+{% raw %}
 <!-- Model: { midpoint: 30 } -->
 <svg width="300" height="100">
     <linearGradient id="dynamicStops">
@@ -193,6 +196,7 @@ Create gradients with data-driven stop positions:
     </linearGradient>
     <rect width="280" height="80" fill="url(#dynamicStops)" />
 </svg>
+{% endraw %}
 ```
 
 ### Conditional Gradients
@@ -200,6 +204,7 @@ Create gradients with data-driven stop positions:
 Generate gradients based on data conditions:
 
 ```html
+{% raw %}
 <!-- Model: { status: "warning", warningColor: "#f39c12", successColor: "#2ecc71" } -->
 <svg width="300" height="100">
     <linearGradient id="statusGradient">
@@ -209,6 +214,7 @@ Generate gradients based on data conditions:
     </linearGradient>
     <rect width="280" height="80" fill="url(#statusGradient)" />
 </svg>
+{% endraw %}
 ```
 
 ### Data-Driven Gradient Angles
@@ -216,6 +222,7 @@ Generate gradients based on data conditions:
 Create gradients with dynamic angles:
 
 ```html
+{% raw %}
 <!-- Model: { angle: 45, startColor: "#3498db", endColor: "#9b59b6" } -->
 <svg width="300" height="100">
     <linearGradient id="angleGradient"
@@ -228,6 +235,7 @@ Create gradients with dynamic angles:
     </linearGradient>
     <rect width="280" height="80" fill="url(#angleGradient)" />
 </svg>
+{% endraw %}
 ```
 
 ### Repeating Gradients from Data
@@ -235,6 +243,7 @@ Create gradients with dynamic angles:
 Generate multiple gradient stops from arrays:
 
 ```html
+{% raw %}
 <!-- Model: { stops: [{offset: 0, color: "#3498db"}, {offset: 50, color: "#f39c12"}, {offset: 100, color: "#e74c3c"}] } -->
 <svg width="300" height="100">
     <linearGradient id="multiStop">
@@ -244,6 +253,7 @@ Generate multiple gradient stops from arrays:
     </linearGradient>
     <rect width="280" height="80" fill="url(#multiStop)" />
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -525,6 +535,7 @@ Generate multiple gradient stops from arrays:
 ### Data-Driven Status Indicator
 
 ```html
+{% raw %}
 <!-- Model: { value: 75, thresholdLow: 50, thresholdHigh: 80 } -->
 <svg width="300" height="100">
     <linearGradient id="statusGrad">
@@ -537,11 +548,13 @@ Generate multiple gradient stops from arrays:
     <rect width="{{model.value * 3}}" height="80" fill="url(#statusGrad)" />
     <text x="10" y="95" font-size="14">{{model.value}}%</text>
 </svg>
+{% endraw %}
 ```
 
 ### Dynamic Theme Gradients
 
 ```html
+{% raw %}
 <!-- Model: { theme: { primary: "#3498db", secondary: "#2ecc71" } } -->
 <svg width="400" height="100">
     <linearGradient id="themeGrad">
@@ -551,6 +564,7 @@ Generate multiple gradient stops from arrays:
 
     <rect width="400" height="100" fill="url(#themeGrad)" />
 </svg>
+{% endraw %}
 ```
 
 ---

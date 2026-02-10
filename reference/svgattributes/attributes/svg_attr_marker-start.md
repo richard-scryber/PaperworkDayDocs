@@ -78,6 +78,7 @@ The `marker-start` attribute is supported on:
 Choose marker based on data properties:
 
 ```html
+{% raw %}
 <!-- Model: { lineType: 'primary', markers: { primary: 'dot-start', secondary: 'arrow-start' } } -->
 <svg width="400" height="200">
     <defs>
@@ -95,6 +96,7 @@ Choose marker based on data properties:
           stroke="#2c3e50" stroke-width="2"
           marker-start="url(#{{model.markers[model.lineType]}})"/>
 </svg>
+{% endraw %}
 ```
 
 ### Conditional Markers
@@ -102,6 +104,7 @@ Choose marker based on data properties:
 Show markers based on conditions:
 
 ```html
+{% raw %}
 <!-- Model: { showStart: true, isActive: true } -->
 <svg width="400" height="200">
     <defs>
@@ -115,11 +118,13 @@ Show markers based on conditions:
           fill="none" stroke="#34495e" stroke-width="3"
           marker-start="{{model.showStart ? 'url(#start-marker)' : 'none'}}"/>
 </svg>
+{% endraw %}
 ```
 
 ### Data-Driven Connection Visualization
 
 ```html
+{% raw %}
 <!-- Model: {
     connections: [
         { from: {x: 50, y: 50}, to: {x: 200, y: 50}, type: 'direct' },
@@ -145,6 +150,7 @@ Show markers based on conditions:
               marker-start="{{.type === 'bidirectional' ? 'url(#start-arrow)' : 'none'}}"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---

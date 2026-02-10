@@ -34,6 +34,7 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -96,6 +97,7 @@ By the end of this article, you'll be able to:
     </table>
 </body>
 </html>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -103,6 +105,7 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
+{% raw %}
 <tbody>
     {{#each items}}
     <tr>
@@ -112,6 +115,7 @@ By the end of this article, you'll be able to:
     </tr>
     {{/each}}
 </tbody>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -123,6 +127,7 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
+{% raw %}
 <table>
     <thead>
         <tr>
@@ -143,6 +148,7 @@ By the end of this article, you'll be able to:
         {{/each}}
     </tbody>
 </table>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -150,6 +156,7 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
+{% raw %}
 <tbody>
     {{#each orders}}
     <tr>
@@ -165,6 +172,7 @@ By the end of this article, you'll be able to:
     </tr>
     {{/each}}
 </tbody>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -176,6 +184,7 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Initialize running total -->
 <var data-id="runningTotal" data-value="0" />
 
@@ -203,6 +212,7 @@ By the end of this article, you'll be able to:
         {{/each}}
     </tbody>
 </table>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -376,6 +386,7 @@ tfoot {
 
 {% raw %}
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -542,6 +553,7 @@ tfoot {
     </div>
 </body>
 </html>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -549,6 +561,7 @@ tfoot {
 
 {% raw %}
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -671,6 +684,7 @@ tfoot {
     </table>
 </body>
 </html>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -744,11 +758,13 @@ tr {
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Wrong: Missing operators -->
 <td>{{calc(this.a this.b)}}</td>
 
 <!-- Wrong: Too many nested calcs -->
 <td>{{calc(calc(calc(this.a, '+', this.b), '*', 2), '-', 10)}}</td>
+{% endraw %}
 ```
 {% endraw %}
 
@@ -756,6 +772,7 @@ tr {
 
 {% raw %}
 ```html
+{% raw %}
 <!-- Correct: All operators specified -->
 <td>{{calc(this.a, '+', this.b)}}</td>
 
@@ -763,6 +780,7 @@ tr {
 <var data-id="sum" data-value="{{calc(this.a, '+', this.b)}}" />
 <var data-id="doubled" data-value="{{calc(Document.Params.sum, '*', 2)}}" />
 <td>{{calc(Document.Params.doubled, '-', 10)}}</td>
+{% endraw %}
 ```
 {% endraw %}
 

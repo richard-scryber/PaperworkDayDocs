@@ -91,6 +91,7 @@ The column-count property works seamlessly with data binding to create dynamic m
 ### Example 1: Dynamic column count based on page size
 
 ```html
+{% raw %}
 <style>
     .article {
         column-gap: 20pt;
@@ -120,11 +121,13 @@ The column-count property works seamlessly with data binding to create dynamic m
         <p>{{content}}</p>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 2: User-configurable newsletter layout
 
 ```html
+{% raw %}
 <style>
     .newsletter {
         padding: 40pt;
@@ -166,11 +169,13 @@ The column-count property works seamlessly with data binding to create dynamic m
         </div>
     </div>
 </body>
+{% endraw %}
 ```
 
 ### Example 3: Responsive multi-column documents
 
 ```html
+{% raw %}
 <style>
     .document {
         width: 100%;
@@ -218,6 +223,7 @@ The column-count property works seamlessly with data binding to create dynamic m
         {{/each}}
     </div>
 </body>
+{% endraw %}
 ```
 
 ---

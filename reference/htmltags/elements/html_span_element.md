@@ -130,9 +130,11 @@ The `<span>` element has the following default behavior:
 ### Data Binding
 
 ```html
+{% raw %}
 <!-- With model = { userName: "John", userRole: "Admin" } -->
 <p>Welcome <span style="font-weight: bold;">{{model.userName}}</span>!</p>
 <p>Your role: <span class="role">{{model.userRole}}</span></p>
+{% endraw %}
 ```
 
 ### Inline-Block for Sizing
@@ -159,8 +161,10 @@ The `<span>` element has the following default behavior:
 ### Dynamic Content
 
 ```html
+{% raw %}
 <p>Status: <span data-content="{{model.status}}"
                style="color: {{model.statusColor}}"></span></p>
+{% endraw %}
 ```
 
 ---

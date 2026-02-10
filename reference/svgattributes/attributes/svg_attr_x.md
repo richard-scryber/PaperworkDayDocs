@@ -71,28 +71,33 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 ### Example 1: Dynamic Positioning from Data
 
 ```html
+{% raw %}
 <!-- Model: { position: { x: 100, y: 50 }, size: { width: 150, height: 80 } } -->
 <svg width="400" height="200">
     <rect x="{{position.x}}" y="{{position.y}}"
           width="{{size.width}}" height="{{size.height}}"
           fill="#2196F3"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 2: Calculated Position
 
 ```html
+{% raw %}
 <!-- Model: { margin: 20, index: 3, itemWidth: 60 } -->
 <svg width="300" height="100">
     <rect x="{{margin + (index * itemWidth)}}" y="20"
           width="50" height="60"
           fill="#FF5722"/>
 </svg>
+{% endraw %}
 ```
 
 ### Example 3: Dynamic Bar Chart Positioning
 
 ```html
+{% raw %}
 <!-- Model: { bars: [
     {value: 80, label: 'Q1'},
     {value: 120, label: 'Q2'},
@@ -106,6 +111,7 @@ The `x` attribute supports dynamic values using data binding expressions with `{
               fill="#4CAF50"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
@@ -280,6 +286,7 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 ### Dynamic Column Layout
 
 ```html
+{% raw %}
 <!-- Model: { columns: [
     {x: 20, height: 150, color: '#e74c3c'},
     {x: 90, height: 200, color: '#3498db'},
@@ -294,6 +301,7 @@ The `x` attribute supports dynamic values using data binding expressions with `{
               fill="{{.color}}"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Calendar Grid Days
@@ -319,6 +327,7 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 ### Dashboard Widget Grid
 
 ```html
+{% raw %}
 <!-- Model: { widgets: [
     {x: 10, y: 10, title: 'Sales'},
     {x: 160, y: 10, title: 'Users'},
@@ -333,6 +342,7 @@ The `x` attribute supports dynamic values using data binding expressions with `{
               fill="#fff" stroke="#ddd" stroke-width="1" rx="4"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ### Stacked Timeline Events
@@ -383,6 +393,7 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 ### Dynamic Spacing Between Elements
 
 ```html
+{% raw %}
 <!-- Model: { items: [
     {label: 'Item 1', color: '#e74c3c'},
     {label: 'Item 2', color: '#f39c12'},
@@ -395,6 +406,7 @@ The `x` attribute supports dynamic values using data binding expressions with `{
               fill="{{.color}}" rx="4"/>
     </template>
 </svg>
+{% endraw %}
 ```
 
 ---
