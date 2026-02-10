@@ -31,9 +31,10 @@ Compare if the left value is greater than or equal to the right value.
 
 ## Syntax
 
-```{% raw %}
+```
+{% raw %}
 {{operand1 >= operand2}}
-```{% endraw %}
+```
 
 ---
 

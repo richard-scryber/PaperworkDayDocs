@@ -183,13 +183,11 @@ Scryber provides page numbering through specific elements or data binding:
 
 {% raw %}
 ```html
-{% raw %}
 <footer>
     <p>Page {{@page}} of {{@pages}}</p>
 </footer>
 {% endraw %}
 ```
-{% endraw %}
 
 Or using dedicated page number elements (check Scryber documentation for exact syntax):
 
@@ -207,7 +205,6 @@ Or using dedicated page number elements (check Scryber documentation for exact s
 
 {% raw %}
 ```html
-{% raw %}
 <header>
     <div class="header-content">
         <div class="header-left">
@@ -220,19 +217,16 @@ Or using dedicated page number elements (check Scryber documentation for exact s
 </header>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Date and Time
 
 {% raw %}
 ```html
-{% raw %}
 <footer>
     <p>Generated: {{format(model.generatedDate, 'MMMM dd, yyyy')}}</p>
 </footer>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 

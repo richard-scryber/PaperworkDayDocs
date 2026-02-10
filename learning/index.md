@@ -347,7 +347,6 @@ Contributions welcome! See [Contributing Guide](https://github.com/richard-scryb
 **XHTML Format (with namespace):**
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <body>
@@ -373,7 +372,6 @@ Contributions welcome! See [Contributing Guide](https://github.com/richard-scryb
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 **Parsing Methods:**
 ```csharp

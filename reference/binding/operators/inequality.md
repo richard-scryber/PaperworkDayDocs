@@ -31,9 +31,10 @@ Compare two values for inequality. Returns true if values are not equal.
 
 ## Syntax
 
-```{% raw %}
+```
+{% raw %}
 {{operand1 != operand2}}
-```{% endraw %}
+```
 
 ---
 

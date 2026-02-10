@@ -71,12 +71,11 @@ The sum of the two operands.
 
 {% raw %}
 ```html
-{% raw %}
 <p>Subtotal: ${{model.price}}</p>
 <p>Tax: ${{model.tax}}</p>
 <p>Total: ${{model.price + model.tax}}</p>
 {% endraw %}
-```{% endraw %}
+```
 
 **Data:**
 ```csharp
@@ -95,19 +94,22 @@ doc.Params["model"] = new {
 
 ### Multiple Additions
 
-```{% raw %}
+```
+{% raw %}
 <p>Total: {{model.base + model.shipping + model.tax}}</p>
 {% endraw %}```
 
 ### With Formatting
 
-```{% raw %}
+```
+{% raw %}
 <p>Grand Total: {{format(model.subtotal + model.tax, 'C2')}}</p>
 {% endraw %}```
 
 ### In #each Loop
 
-```{% raw %}
+```
+{% raw %}
 {{#each model.items}}
   <p>Item {{@index + 1}}: {{this.name}}</p>
 {{/each}}

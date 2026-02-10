@@ -236,7 +236,6 @@ The `<path>` element is the most powerful SVG shape.
 
 {% raw %}
 ```html
-{% raw %}
 <svg width="400" height="300">
     <!-- Bind dimensions -->
     <rect x="50" y="50"
@@ -255,13 +254,11 @@ The `<path>` element is the most powerful SVG shape.
 </svg>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Calculated Positions
 
 {% raw %}
 ```html
-{% raw %}
 <svg width="500" height="300">
     {{#each dataPoints}}
     <!-- Calculate x position based on index -->
@@ -282,7 +279,6 @@ The `<path>` element is the most powerful SVG shape.
 </svg>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -292,7 +288,6 @@ The `<path>` element is the most powerful SVG shape.
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -410,13 +405,11 @@ The `<path>` element is the most powerful SVG shape.
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Example 2: Line Chart
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -538,7 +531,6 @@ The `<path>` element is the most powerful SVG shape.
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Example 3: Pie Chart
 
@@ -709,7 +701,6 @@ Create a chart comparing 2-3 data series:
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Calculate positions dynamically -->
 {{#each data}}
 <rect x="{{calc(@index, '*', 60, '+', 10)}}"
@@ -720,7 +711,6 @@ Create a chart comparing 2-3 data series:
 {{/each}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### ❌ Text Overflow
 

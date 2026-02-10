@@ -254,7 +254,6 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Bind image source -->
 <img src="{{product.imageUrl}}"
      alt="{{product.name}}" />
@@ -272,7 +271,6 @@ By the end of this article, you'll be able to:
      alt="{{this.caption}}"
      style="width: 200pt; margin: 10pt;" />
 {{/each}}
-{% endraw %}
 ```
 {% endraw %}
 
@@ -284,7 +282,6 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -384,7 +381,6 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
-{% endraw %}
 ```
 {% endraw %}
 
@@ -392,7 +388,6 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -575,7 +570,6 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
-{% endraw %}
 ```
 {% endraw %}
 

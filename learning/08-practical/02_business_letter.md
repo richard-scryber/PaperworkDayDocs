@@ -31,7 +31,6 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -315,7 +314,6 @@ By the end of this article, you'll be able to:
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -499,7 +497,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
-{% raw %}
 <div class="letterhead">
     <img src="{{company.logo}}" class="letterhead-logo" />
     <h1>{{company.name}}</h1>
@@ -507,7 +504,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
     <p>{{company.city}}, {{company.state}} {{company.zip}}</p>
     <p>Phone: {{company.phone}} | Email: {{company.email}}</p>
 </div>
-{% endraw %}
 ```
 {% endraw %}
 
@@ -521,7 +517,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
-{% raw %}
 <div class="letter-date">
     <p>{{letter.date}}</p>
 </div>
@@ -533,7 +528,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 {{/if}}
 {% endraw %}
 ```
-{% endraw %}
 
 **Features:**
 - Right-aligned date
@@ -544,7 +538,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
-{% raw %}
 <div class="recipient-address">
     <p><strong>{{recipient.name}}</strong></p>
     {{#if recipient.title}}
@@ -558,7 +551,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 **Features:**
 - Complete recipient information
@@ -569,7 +561,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
-{% raw %}
 <p class="salutation">Dear {{recipient.salutation}}:</p>
 
 <div class="letter-body">
@@ -583,7 +574,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 **Features:**
 - Dynamic paragraph count
@@ -594,7 +584,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 {% raw %}
 ```html
-{% raw %}
 <div class="signature-block">
     {{#if signer.signature}}
     <img src="{{signer.signature}}" class="signature-image" />
@@ -604,7 +593,6 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 **Features:**
 - Optional signature image
@@ -659,7 +647,6 @@ body {
 
 {% raw %}
 ```html
-{% raw %}
 <div class="memo-header">
     <table style="width: 100%; border-bottom: 2pt solid #000;">
         <tr>
@@ -682,7 +669,6 @@ body {
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -692,7 +678,6 @@ For letters that span multiple pages, add page headers:
 
 {% raw %}
 ```html
-{% raw %}
 <style>
     @page {
         @top-left {
@@ -716,7 +701,6 @@ For letters that span multiple pages, add page headers:
 </style>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -759,13 +743,11 @@ For letters that span multiple pages, add page headers:
 
 {% raw %}
 ```html
-{% raw %}
 {{#if letter.isConfidential}}
 <div class="watermark">CONFIDENTIAL</div>
 {{/if}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### 3. Custom Footer with Logo
 
@@ -852,12 +834,10 @@ Create specialized templates for:
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Personalized -->
 <p>Dear {{recipient.salutation}}:</p>
 {% endraw %}
 ```
-{% endraw %}
 
 ### ❌ Signature Too Large
 

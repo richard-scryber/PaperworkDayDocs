@@ -72,11 +72,9 @@ Returns the left operand if it's not null, otherwise returns the right operand.
 
 {% raw %}
 ```html
-{% raw %}
 <h2>Welcome, {{model.user.name ?? 'Guest'}}!</h2>
 {% endraw %}
 ```
-{% endraw %}
 
 **Data (with name):**
 ```csharp
@@ -110,7 +108,6 @@ doc.Params["model"] = new {
 
 {% raw %}
 ```html
-{% raw %}
 {{#each model.products}}
   <div class="product">
     <h3>{{this.name}}</h3>
@@ -119,7 +116,6 @@ doc.Params["model"] = new {
 {{/each}}
 {% endraw %}
 ```
-{% endraw %}
 
 **Data:**
 ```csharp

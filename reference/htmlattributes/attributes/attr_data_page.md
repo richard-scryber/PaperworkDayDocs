@@ -497,7 +497,7 @@ Include sections based on data availability:
     <!-- Always include conclusions -->
     <frame src="reports/conclusions.pdf"></frame>
 </frameset>
-{% endraw %}{% endraw %}
+{% endraw %}
 ```
 
 ### 15. Multi-Language Document
@@ -554,7 +554,7 @@ Assemble certification with selected modules:
     <!-- Certificate back -->
     <frame src="cert-cover.pdf" data-page-start="1" data-page-count="1"></frame>
 </frameset>
-{% endraw %}{% endraw %}
+{% endraw %}
 ```
 
 ### 18. Datasheet Generator

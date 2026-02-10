@@ -128,7 +128,6 @@ Before starting this series:
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Local file -->
 <img src="./images/logo.png" />
 
@@ -142,20 +141,17 @@ Before starting this series:
 <img src="data:image/png;base64,iVBORw0KG..." />
 {% endraw %}
 ```
-{% endraw %}
 
 ### SVG Inline vs External
 
 **Inline SVG** - Full control and data binding:
 {% raw %}
 ```html
-{% raw %}
 <svg width="200" height="200">
     <circle cx="100" cy="100" r="{{radius}}" fill="blue" />
 </svg>
 {% endraw %}
 ```
-{% endraw %}
 
 **External SVG** - Reusable graphics:
 ```html
@@ -196,7 +192,6 @@ Before starting this series:
 
 {% raw %}
 ```html
-{% raw %}
 {{#each products}}
 <div class="product">
     <img src="{{this.imageUrl}}"
@@ -208,13 +203,11 @@ Before starting this series:
 {{/each}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### Data-Driven SVG Charts
 
 {% raw %}
 ```html
-{% raw %}
 <svg width="500" height="300">
     {{#each dataPoints}}
     <rect x="{{calc(@index, '*', 50)}}"
@@ -231,13 +224,11 @@ Before starting this series:
 </svg>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Dynamic Tables with Calculations
 
 {% raw %}
 ```html
-{% raw %}
 <table>
     <thead>
         <tr>
@@ -260,7 +251,6 @@ Before starting this series:
 </table>
 {% endraw %}
 ```
-{% endraw %}
 
 ## Real-World Examples
 
@@ -268,7 +258,6 @@ Before starting this series:
 
 {% raw %}
 ```html
-{% raw %}
 <div class="catalog">
     {{#each products}}
     <div class="product-card" style="page-break-inside: avoid;">
@@ -290,13 +279,11 @@ Before starting this series:
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Data Dashboard
 
 {% raw %}
 ```html
-{% raw %}
 <div class="dashboard">
     <h1>Sales Dashboard - {{reportDate}}</h1>
 
@@ -363,13 +350,11 @@ Before starting this series:
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Invoice with Attachments
 
 {% raw %}
 ```html
-{% raw %}
 <div class="invoice">
     <img src="{{company.logo}}" style="width: 150pt;" />
 
@@ -415,7 +400,6 @@ Before starting this series:
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ## Performance Tips
 
@@ -485,7 +469,6 @@ Before starting this series:
 
 {% raw %}
 ```html
-{% raw %}
 <div class="gallery">
     {{#each images}}
     <div class="gallery-item">
@@ -498,13 +481,11 @@ Before starting this series:
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Chart with Legend
 
 {% raw %}
 ```html
-{% raw %}
 <div class="chart-container">
     <svg width="500" height="300">
         <!-- Chart drawing -->
@@ -523,13 +504,11 @@ Before starting this series:
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Running Totals in Table
 
 {% raw %}
 ```html
-{% raw %}
 <var data-id="runningTotal" data-value="0" />
 
 <table>
@@ -548,7 +527,6 @@ Before starting this series:
 </table>
 {% endraw %}
 ```
-{% endraw %}
 
 ## Next Steps
 

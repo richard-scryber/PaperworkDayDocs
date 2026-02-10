@@ -46,7 +46,6 @@ Data binding connects your template to your data. In Scryber, this means:
 ### Template
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <body>
@@ -67,7 +66,6 @@ Data binding connects your template to your data. In Scryber, this means:
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 ### C# Code
 ```csharp
@@ -154,7 +152,6 @@ Scryber uses Handlebars-style syntax for data binding:
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Simple value -->
 <p>{{userName}}</p>
 
@@ -168,7 +165,6 @@ Scryber uses Handlebars-style syntax for data binding:
 <p>{{if(isActive, 'Active', 'Inactive')}}</p>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Block Helpers
 
@@ -176,7 +172,6 @@ Block helpers control template flow:
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Iteration -->
 {{#each items}}
     <li>{{this.name}}</li>
@@ -188,7 +183,6 @@ Block helpers control template flow:
 {{/if}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### Data Context
 
@@ -196,7 +190,6 @@ Every expression evaluates in a data context:
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Root level: model.name -->
 {{name}}
 
@@ -207,7 +200,6 @@ Every expression evaluates in a data context:
 {{/each}}
 {% endraw %}
 ```
-{% endraw %}
 
 ## Real-World Applications
 
@@ -216,7 +208,6 @@ Data binding enables powerful scenarios:
 ### Dynamic Invoices
 {% raw %}
 ```html
-{% raw %}
 <h1>Invoice #{{invoice.number}}</h1>
 <p>Date: {{format(invoice.date, 'MMM dd, yyyy')}}</p>
 
@@ -230,12 +221,10 @@ Data binding enables powerful scenarios:
 <p><strong>Total: {{format(invoice.total, 'C2')}}</strong></p>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Conditional Sections
 {% raw %}
 ```html
-{% raw %}
 {{#if customer.isPremium}}
 <div class="premium-badge">Premium Customer</div>
 {{/if}}
@@ -245,12 +234,10 @@ Data binding enables powerful scenarios:
 {{/if}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### Calculated Values
 {% raw %}
 ```html
-{% raw %}
 <var data-id="subtotal" data-value="{{calc(quantity, '*', price)}}" />
 <var data-id="tax" data-value="{{calc(Document.Params.subtotal, '*', 0.08)}}" />
 <var data-id="total" data-value="{{calc(Document.Params.subtotal, '+', Document.Params.tax)}}" />
@@ -260,12 +247,10 @@ Data binding enables powerful scenarios:
 <p>Total: ${{Document.Params.total}}</p>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Multi-Language Support
 {% raw %}
 ```html
-{% raw %}
 {{#if language == 'es'}}
     <h1>Hola, {{userName}}!</h1>
 {{else}}
@@ -273,14 +258,12 @@ Data binding enables powerful scenarios:
 {{/if}}
 {% endraw %}
 ```
-{% endraw %}
 
 ## Common Patterns
 
 ### Master-Detail Reports
 {% raw %}
 ```html
-{% raw %}
 {{#each departments}}
 <h2>{{this.name}}</h2>
 <table>
@@ -294,12 +277,10 @@ Data binding enables powerful scenarios:
 {{/each}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### Running Totals
 {% raw %}
 ```html
-{% raw %}
 <var data-id="runningTotal" data-value="0" />
 
 {{#each items}}
@@ -313,12 +294,10 @@ Data binding enables powerful scenarios:
 {{/each}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### Conditional Formatting
 {% raw %}
 ```html
-{% raw %}
 {{#each products}}
 <tr style="color: {{if(this.inStock, 'black', 'red')}}">
     <td>{{this.name}}</td>
@@ -327,7 +306,6 @@ Data binding enables powerful scenarios:
 {{/each}}
 {% endraw %}
 ```
-{% endraw %}
 
 ## Learning Path
 

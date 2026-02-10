@@ -206,7 +206,6 @@ Control element visibility based on data.
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Show only if condition is true -->
 {{#if model.showSection}}
     <div class="content">
@@ -229,13 +228,11 @@ Control element visibility based on data.
 {{/if}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### Using Inline Conditionals with display
 
 {% raw %}
 ```html
-{% raw %}
 <div style="display: {{if(model.showContent, 'block', 'none')}};">
     <p>This content is conditionally displayed.</p>
 </div>
@@ -246,7 +243,6 @@ Control element visibility based on data.
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -624,25 +620,21 @@ Create a layout with:
 
 {% raw %}
 ```html
-{% raw %}
 {{#if model.showSection}}
     <div>Content</div>
 <!-- Missing {{/if}} - will cause errors -->
 {% endraw %}
 ```
-{% endraw %}
 
 ✅ **Solution:** Always close blocks
 
 {% raw %}
 ```html
-{% raw %}
 {{#if model.showSection}}
     <div>Content</div>
 {{/if}}
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 

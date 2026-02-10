@@ -61,7 +61,6 @@ Each article provides:
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -133,7 +132,6 @@ Each article provides:
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 ## What You'll Learn
 
@@ -251,7 +249,6 @@ Helpful but not required:
 
 {% raw %}
 ```html
-{% raw %}
 <header style="border-bottom: 2pt solid #2563eb; padding-bottom: 15pt;">
     <div style="display: flex; justify-content: space-between;">
         <img src="{{company.logo}}" style="height: 50pt;" />
@@ -263,7 +260,6 @@ Helpful but not required:
 </header>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Styled Tables
 
@@ -304,7 +300,6 @@ tfoot {
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Store subtotal -->
 <var data-id="subtotal" data-value="0" />
 
@@ -335,13 +330,11 @@ tfoot {
 </tr>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Conditional Content
 
 {% raw %}
 ```html
-{% raw %}
 {{#if customer.isPremium}}
 <div class="premium-badge">
     <p>Valued Premium Customer</p>
@@ -355,7 +348,6 @@ tfoot {
 {{/if}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### Page Numbers
 

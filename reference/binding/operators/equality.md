@@ -31,7 +31,8 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 
 ## Syntax
 
-```{% raw %}
+```
+{% raw %}
 {{operand1 == operand2}}
 {% endraw %}```
 
@@ -58,7 +59,8 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 
 ### Basic Comparison
 
-```{% raw %}
+```
+{% raw %}
 {{5 == 5}}
 <!-- Output: true -->
 

@@ -31,7 +31,6 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -414,7 +413,6 @@ By the end of this article, you'll be able to:
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -582,7 +580,6 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 
 {% raw %}
 ```html
-{% raw %}
 <p class="achievement-text">
     Has successfully completed <strong>{{training.hours}} hours</strong> of training in
 </p>
@@ -599,13 +596,11 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 </p>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Variation 2: Award Certificate
 
 {% raw %}
 ```html
-{% raw %}
 <p class="presented-to">Is hereby recognized with the</p>
 
 <div style="font-size: 28pt; font-weight: bold; color: #d97706; margin: 20pt 0;">
@@ -621,13 +616,11 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Variation 3: Membership Certificate
 
 {% raw %}
 ```html
-{% raw %}
 <p class="achievement-text">
     Is hereby recognized as an <strong>{{membership.level}}</strong> member of
 </p>
@@ -652,7 +645,6 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -703,7 +695,6 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Handwritten signature with typed name below -->
 <div class="signature-block">
     <img src="{{this.signatureImage}}"
@@ -726,7 +717,6 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 </div>
 {% endraw %}
 ```
-{% endraw %}
 
 ### 4. QR Code for Verification
 

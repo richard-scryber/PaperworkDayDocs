@@ -31,9 +31,10 @@ Divide one numeric value by another.
 
 ## Syntax
 
-```{% raw %}
+```
+{% raw %}
 {{operand1 / operand2}}
-```{% endraw %}
+```
 
 ---
 
@@ -70,7 +71,7 @@ The quotient of the left operand divided by the right operand.
 
 ```html {% raw %}
 <p>Average: {{format(model.total / model.count, '0.00')}}</p>
-```{% endraw %}
+```
 
 **Data:**
 ```csharp

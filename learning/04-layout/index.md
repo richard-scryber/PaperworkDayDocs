@@ -293,7 +293,6 @@ Content flows from page to page automatically:
 
 {% raw %}
 ```html
-{% raw %}
 {{#each chapters}}
 <div style="page-break-before: {{if(@index == 0, 'auto', 'always')}};">
     <h2>{{this.title}}</h2>
@@ -302,7 +301,6 @@ Content flows from page to page automatically:
 {{/each}}
 {% endraw %}
 ```
-{% endraw %}
 
 ## Column Layouts
 
@@ -452,7 +450,6 @@ Content flows from page to page automatically:
 
 {% raw %}
 ```html
-{% raw %}
 <style>
     .watermark {
         position: absolute;
@@ -469,7 +466,6 @@ Content flows from page to page automatically:
 <div class="watermark">{{if(isDraft, 'DRAFT', '')}}</div>
 {% endraw %}
 ```
-{% endraw %}
 
 ## Learning Path
 
@@ -500,7 +496,6 @@ Content flows from page to page automatically:
 
 {% raw %}
 ```html
-{% raw %}
 {{#each chapters}}
 <div class="chapter" style="page-break-before: always;">
     <h1>Chapter {{@index}}: {{this.title}}</h1>
@@ -509,7 +504,6 @@ Content flows from page to page automatically:
 {{/each}}
 {% endraw %}
 ```
-{% endraw %}
 
 ### Keep Heading with Content
 
@@ -524,7 +518,6 @@ Content flows from page to page automatically:
 
 {% raw %}
 ```html
-{% raw %}
 <footer>
     <div style="display: flex; justify-content: space-between;">
         <span>{{documentTitle}}</span>
@@ -533,7 +526,6 @@ Content flows from page to page automatically:
 </footer>
 {% endraw %}
 ```
-{% endraw %}
 
 ## Next Steps
 

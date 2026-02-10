@@ -156,7 +156,6 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
 
 {% raw %}
 ```html
-{% raw %}
 <frameset>
     <frame src="document.pdf" data-over-repeat="Repeat">
         <html>
@@ -172,13 +171,11 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
 </frameset>
 {% endraw %}
 ```
-{% endraw %}
 
 **Example: Header on first page only**
 
 {% raw %}
 ```html
-{% raw %}
 <frameset>
     <frame src="report.pdf" data-over-repeat="First">
         <html>
@@ -193,7 +190,6 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
 </frameset>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 

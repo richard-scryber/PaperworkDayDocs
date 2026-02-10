@@ -34,7 +34,6 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -99,13 +98,11 @@ By the end of this article, you'll be able to:
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Accessing Index
 
 {% raw %}
 ```html
-{% raw %}
 <tbody>
     {{#each items}}
     <tr>
@@ -117,7 +114,6 @@ By the end of this article, you'll be able to:
 </tbody>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -127,7 +123,6 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
-{% raw %}
 <table>
     <thead>
         <tr>
@@ -150,13 +145,11 @@ By the end of this article, you'll be able to:
 </table>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Complex Calculations
 
 {% raw %}
 ```html
-{% raw %}
 <tbody>
     {{#each orders}}
     <tr>
@@ -174,7 +167,6 @@ By the end of this article, you'll be able to:
 </tbody>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -184,7 +176,6 @@ By the end of this article, you'll be able to:
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Initialize running total -->
 <var data-id="runningTotal" data-value="0" />
 
@@ -214,7 +205,6 @@ By the end of this article, you'll be able to:
 </table>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -386,7 +376,6 @@ tfoot {
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -555,13 +544,11 @@ tfoot {
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 ### Example 2: Multi-Page Report with Repeating Headers
 
 {% raw %}
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -686,7 +673,6 @@ tfoot {
 </html>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
@@ -758,7 +744,6 @@ tr {
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Wrong: Missing operators -->
 <td>{{calc(this.a this.b)}}</td>
 
@@ -766,13 +751,11 @@ tr {
 <td>{{calc(calc(calc(this.a, '+', this.b), '*', 2), '-', 10)}}</td>
 {% endraw %}
 ```
-{% endraw %}
 
 ✅ **Solution:**
 
 {% raw %}
 ```html
-{% raw %}
 <!-- Correct: All operators specified -->
 <td>{{calc(this.a, '+', this.b)}}</td>
 
@@ -782,7 +765,6 @@ tr {
 <td>{{calc(Document.Params.doubled, '-', 10)}}</td>
 {% endraw %}
 ```
-{% endraw %}
 
 ---
 
