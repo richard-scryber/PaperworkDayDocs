@@ -560,13 +560,13 @@ In the Scryber codebase:
 
 ## See Also
 
-- [span](/reference/htmltags/span.html) - Generic inline container
-- [u](/reference/htmltags/u.html) - Underlined text
-- [mark](/reference/htmltags/mark.html) - Highlighted/marked text
-- [code](/reference/htmltags/code.html) - Code/monospace text
-- [small](/reference/htmltags/small.html) - Smaller text
-- [del](/reference/htmltags/del.html) - Deleted/strikethrough text
-- [ins](/reference/htmltags/ins.html) - Inserted/underlined text
+- [span](/reference/htmltags/elements/html_span_element.html) - Generic inline container
+- [u](/reference/htmltags/elements/html_u_element.html) - Underlined text
+- [mark](/reference/htmltags/elements/html_mark_element.html) - Highlighted/marked text
+- [code](/reference/htmltags/elements/html_code_element.html) - Code/monospace text
+- [small](/reference/htmltags/elements/html_small_element.html) - Smaller text
+- [del](/reference/htmltags/elements/html_del_element.html) - Deleted/strikethrough text
+- [ins](/reference/htmltags/elements/html_ins_element.html) - Inserted/underlined text
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 
 ---

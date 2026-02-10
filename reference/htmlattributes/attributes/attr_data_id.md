@@ -546,8 +546,8 @@ In Scryber PDF generation:
 
 ## See Also
 
-- [var element](/reference/htmltags/var.html) - Variable element
-- [id attribute](/reference/htmlattributes/id.html) - Standard identifier attribute
+- [var element](/reference/htmltags/elements/html_var_element.html) - Variable element
+- [id attribute](/reference/htmlattributes/attributes/attr_id.html) - Standard identifier attribute
 - [data-* attributes](/reference/htmlattributes/data-attributes.html) - Custom data attributes
 - [Data Binding](/reference/binding/) - Dynamic data binding
 - [Variables](/reference/variables/) - Variable handling in Scryber

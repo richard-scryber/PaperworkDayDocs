@@ -527,10 +527,10 @@ Allows administrators to configure certificate templates with custom background 
 
 ## See Also
 
-- [background](/reference/cssproperties/css_prop_background) - Shorthand for all background properties
-- [background-image](/reference/cssproperties/css_prop_background-image) - Set background image
-- [background-repeat](/reference/cssproperties/css_prop_background-repeat) - Control image repetition
-- [background-position](/reference/cssproperties/css_prop_background-position) - Set image position
-- [background-color](/reference/cssproperties/css_prop_background-color) - Set background color
+- [background](/reference/cssproperties/properties/css_prop_background) - Shorthand for all background properties
+- [background-image](/reference/cssproperties/properties/css_prop_background-image) - Set background image
+- [background-repeat](/reference/cssproperties/properties/css_prop_background-repeat) - Control image repetition
+- [background-position](/reference/cssproperties/properties/css_prop_background-position) - Set image position
+- [background-color](/reference/cssproperties/properties/css_prop_background-color) - Set background color
 
 ---

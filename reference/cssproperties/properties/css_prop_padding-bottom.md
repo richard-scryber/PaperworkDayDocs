@@ -688,11 +688,11 @@ Data context:
 
 ## See Also
 
-- [padding](/reference/cssproperties/css_prop_padding) - Set all padding shorthand
-- [padding-top](/reference/cssproperties/css_prop_padding-top) - Set top padding
-- [padding-left](/reference/cssproperties/css_prop_padding-left) - Set left padding
-- [padding-right](/reference/cssproperties/css_prop_padding-right) - Set right padding
-- [margin-bottom](/reference/cssproperties/css_prop_margin-bottom) - Set bottom margin
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [padding](/reference/cssproperties/properties/css_prop_padding) - Set all padding shorthand
+- [padding-top](/reference/cssproperties/properties/css_prop_padding-top) - Set top padding
+- [padding-left](/reference/cssproperties/properties/css_prop_padding-left) - Set left padding
+- [padding-right](/reference/cssproperties/properties/css_prop_padding-right) - Set right padding
+- [margin-bottom](/reference/cssproperties/properties/css_prop_margin-bottom) - Set bottom margin
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

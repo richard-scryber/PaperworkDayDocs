@@ -848,9 +848,9 @@ Formal specification style:
 
 ## See Also
 
-- [ol element](/reference/htmltags/ol.html) - Ordered list element
-- [ul element](/reference/htmltags/ul.html) - Unordered list element
-- [li element](/reference/htmltags/li.html) - List item element
+- [ol element](/reference/htmltags/elements/html_ol_element.html) - Ordered list element
+- [ul element](/reference/htmltags/elements/html_ul_element.html) - Unordered list element
+- [li element](/reference/htmltags/elements/html_li_element.html) - List item element
 - [Lists Reference](/reference/components/lists.html) - Complete lists guide
 - [CSS List Styling](/reference/styles/list-styles.html) - Standard CSS list properties
 - [ListOrdered Component](/reference/components/listordered.html) - Base list component

@@ -782,11 +782,11 @@ Side-by-side comparison with repeating headers:
 
 ## See Also
 
-- [table element](/reference/htmltags/table.html) - The table HTML element
-- [thead element](/reference/htmltags/thead.html) - Table header section
-- [tbody element](/reference/htmltags/tbody.html) - Table body section
-- [tfoot element](/reference/htmltags/tfoot.html) - Table footer section
+- [table element](/reference/htmltags/elements/html_table_element.html) - The table HTML element
+- [thead element](/reference/htmltags/elements/html_thead_element.html) - Table header section
+- [tbody element](/reference/htmltags/elements/html_tbody_element.html) - Table body section
+- [tfoot element](/reference/htmltags/elements/html_tfoot_element.html) - Table footer section
 - [Data Binding](/reference/binding/) - Complete data binding guide
-- [template element](/reference/htmltags/template.html) - Template for repeating content
+- [template element](/reference/htmltags/elements/html_template_element.html) - Template for repeating content
 
 ---

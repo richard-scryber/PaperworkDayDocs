@@ -458,9 +458,9 @@ Define template behavior inline:
 
 - [data-content-type attribute](/reference/htmlattributes/data-content-type.html) - Specify content MIME type
 - [data-content-action attribute](/reference/htmlattributes/data-content-action.html) - Control content insertion
-- [label element](/reference/htmltags/label.html) - Label element reference
-- [template element](/reference/htmltags/template.html) - Template element reference
-- [frame element](/reference/htmltags/frame.html) - Frame element reference
+- [label element](/reference/htmltags/elements/html_label_element.html) - Label element reference
+- [template element](/reference/htmltags/elements/html_template_element.html) - Template element reference
+- [frame element](/reference/htmltags/elements/html_frame_element.html) - Frame element reference
 - [Data Binding](/reference/binding/) - Data binding overview
 - [Expressions](/reference/expressions/) - Expression syntax guide
 

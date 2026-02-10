@@ -550,9 +550,9 @@ With configuration data:
 
 ## See Also
 
-- [background-color](/reference/cssproperties/css_prop_background-color) - Set background colors
-- [opacity](/reference/cssproperties/css_prop_opacity) - Control overall element transparency
-- [fill](/reference/cssproperties/css_prop_fill) - SVG fill color property
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
+- [background-color](/reference/cssproperties/properties/css_prop_background-color) - Set background colors
+- [opacity](/reference/cssproperties/properties/css_prop_opacity) - Control overall element transparency
+- [fill](/reference/cssproperties/properties/css_prop_fill) - SVG fill color property
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
 
 ---

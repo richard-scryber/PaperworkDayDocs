@@ -807,13 +807,13 @@ Avoid zero or missing dimensions:
 
 ## See Also
 
-- [img](/reference/htmltags/img.html) - Image element
-- [table](/reference/htmltags/table.html) - Table element
-- [td](/reference/htmltags/td.html) - Table cell element
-- [iframe](/reference/htmltags/iframe.html) - Iframe element
-- [src](/reference/htmlattributes/src.html) - Source attribute for images
-- [alt](/reference/htmlattributes/alt.html) - Alternative text for images
-- [style](/reference/htmlattributes/style.html) - Inline styling for dimensions
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element
+- [table](/reference/htmltags/elements/html_table_element.html) - Table element
+- [td](/reference/htmltags/elements/html_td_element.html) - Table cell element
+- [iframe](/reference/htmltags/elements/html_iframe_element.html) - Iframe element
+- [src](/reference/htmlattributes/attributes/attr_src.html) - Source attribute for images
+- [alt](/reference/htmlattributes/attributes/attr_alt.html) - Alternative text for images
+- [style](/reference/htmlattributes/attributes/attr_style.html) - Inline styling for dimensions
 - [CSS Styles](/reference/styles/) - Comprehensive styling including sizing
 - [Data Binding](/reference/binding/) - Dynamic attribute values
 

@@ -598,9 +598,9 @@ With model data:
 
 ## See Also
 
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
-- [stroke-width](/reference/cssproperties/css_prop_stroke-width) - Control stroke thickness
-- [fill-opacity](/reference/cssproperties/css_prop_fill-opacity) - SVG fill transparency
-- [opacity](/reference/cssproperties/css_prop_opacity) - Overall element transparency
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
+- [stroke-width](/reference/cssproperties/properties/css_prop_stroke-width) - Control stroke thickness
+- [fill-opacity](/reference/cssproperties/properties/css_prop_fill-opacity) - SVG fill transparency
+- [opacity](/reference/cssproperties/properties/css_prop_opacity) - Overall element transparency
 
 ---

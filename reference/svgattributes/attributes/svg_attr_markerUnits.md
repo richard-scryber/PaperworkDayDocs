@@ -785,14 +785,14 @@ Create arrows that scale proportionally with line thickness:
 ## See Also
 
 - [marker](/reference/svgtags/marker.html) - Marker definition element
-- [markerWidth](/reference/svgattributes/markerWidth.html) - Marker viewport width
-- [markerHeight](/reference/svgattributes/markerHeight.html) - Marker viewport height
-- [refX](/reference/svgattributes/refX.html) - Marker reference X position
-- [refY](/reference/svgattributes/refY.html) - Marker reference Y position
-- [orient](/reference/svgattributes/orient.html) - Marker orientation
-- [marker-start](/reference/svgattributes/marker-start.html) - Start marker attribute
-- [marker-mid](/reference/svgattributes/marker-mid.html) - Mid marker attribute
-- [marker-end](/reference/svgattributes/marker-end.html) - End marker attribute
+- [markerWidth](/reference/svgattributes/attributes/svg_attr_markerWidth.html) - Marker viewport width
+- [markerHeight](/reference/svgattributes/attributes/svg_attr_markerHeight.html) - Marker viewport height
+- [refX](/reference/svgattributes/attributes/svg_attr_refX.html) - Marker reference X position
+- [refY](/reference/svgattributes/attributes/svg_attr_refY.html) - Marker reference Y position
+- [orient](/reference/svgattributes/attributes/svg_attr_orient.html) - Marker orientation
+- [marker-start](/reference/svgattributes/attributes/svg_attr_marker-start.html) - Start marker attribute
+- [marker-mid](/reference/svgattributes/attributes/svg_attr_marker-mid.html) - Mid marker attribute
+- [marker-end](/reference/svgattributes/attributes/svg_attr_marker-end.html) - End marker attribute
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

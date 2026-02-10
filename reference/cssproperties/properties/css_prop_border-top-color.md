@@ -432,11 +432,11 @@ Data context:
 
 ## See Also
 
-- [border-top](/reference/cssproperties/css_prop_border-top) - Top border shorthand
-- [border-color](/reference/cssproperties/css_prop_border-color) - All border colors
-- [border-top-width](/reference/cssproperties/css_prop_border-top-width) - Top border width
-- [border-top-style](/reference/cssproperties/css_prop_border-top-style) - Top border style
-- [color](/reference/cssproperties/css_prop_color) - Text color
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border-top](/reference/cssproperties/properties/css_prop_border-top) - Top border shorthand
+- [border-color](/reference/cssproperties/properties/css_prop_border-color) - All border colors
+- [border-top-width](/reference/cssproperties/properties/css_prop_border-top-width) - Top border width
+- [border-top-style](/reference/cssproperties/properties/css_prop_border-top-style) - Top border style
+- [color](/reference/cssproperties/properties/css_prop_color) - Text color
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

@@ -504,11 +504,11 @@ The gradient vector is defined by start point (x1, y1) and end point (x2, y2):
 
 ## See Also
 
-- [x2](/reference/svgattributes/x2.html) - Linear gradient end X coordinate
-- [y1](/reference/svgattributes/y1.html) - Linear gradient start Y coordinate
-- [y2](/reference/svgattributes/y2.html) - Linear gradient end Y coordinate
+- [x2](/reference/svgattributes/attributes/svg_attr_x2.html) - Linear gradient end X coordinate
+- [y1](/reference/svgattributes/attributes/svg_attr_y1.html) - Linear gradient start Y coordinate
+- [y2](/reference/svgattributes/attributes/svg_attr_y2.html) - Linear gradient end Y coordinate
 - [linearGradient](/reference/svgtags/linearGradient.html) - Linear gradient definition element
-- [gradientUnits](/reference/svgattributes/gradientUnits.html) - Coordinate system mode
+- [gradientUnits](/reference/svgattributes/attributes/svg_attr_gradientUnits.html) - Coordinate system mode
 - [stop](/reference/svgtags/stop.html) - Gradient color stop element
 - [Data Binding](/reference/binding/) - Data binding and expressions
 - [CSS Gradients](/reference/styles/gradients.html) - CSS gradient properties

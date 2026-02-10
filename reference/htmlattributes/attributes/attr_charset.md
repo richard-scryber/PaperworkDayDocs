@@ -825,9 +825,9 @@ If you encounter issues with special characters:
 
 ## See Also
 
-- [meta](/reference/htmltags/meta.html) - Meta element for document metadata
-- [lang](/reference/htmlattributes/lang.html) - Language attribute for content language
-- [title](/reference/htmlattributes/title.html) - Document title element
+- [meta](/reference/htmltags/elements/html_meta_element.html) - Meta element for document metadata
+- [lang](/reference/htmlattributes/attributes/attr_lang.html) - Language attribute for content language
+- [title](/reference/htmlattributes/attributes/attr_title.html) - Document title element
 - [http-equiv](/reference/htmlattributes/http-equiv.html) - HTTP equivalent headers
 - [UTF-8 Encoding](/reference/encoding/utf8.html) - UTF-8 character encoding guide
 - [International Content](/reference/international/) - Creating multilingual documents

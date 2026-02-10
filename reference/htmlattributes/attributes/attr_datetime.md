@@ -896,10 +896,10 @@ The `datetime` attribute is optional for `<time>` elements:
 
 ## See Also
 
-- [time](/reference/htmltags/time.html) - Time element for semantic date/time markup
-- [ins](/reference/htmltags/ins.html) - Inserted content element
-- [del](/reference/htmltags/del.html) - Deleted content element
-- [cite](/reference/htmlattributes/cite.html) - Citation source attribute
+- [time](/reference/htmltags/elements/html_time_element.html) - Time element for semantic date/time markup
+- [ins](/reference/htmltags/elements/html_ins_element.html) - Inserted content element
+- [del](/reference/htmltags/elements/html_del_element.html) - Deleted content element
+- [cite](/reference/htmlattributes/attributes/attr_cite.html) - Citation source attribute
 - [data-format](/reference/htmlattributes/data-format.html) - Date formatting in data binding
 - [ISO 8601](/reference/standards/iso8601.html) - Date/time format standard
 

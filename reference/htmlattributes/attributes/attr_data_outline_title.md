@@ -629,9 +629,9 @@ Creates this bookmark structure:
 
 ## See Also
 
-- [Heading elements](/reference/htmltags/headings.html) - h1-h6 heading elements
-- [title attribute](/reference/htmlattributes/title.html) - Title tooltip attribute
-- [id attribute](/reference/htmlattributes/id.html) - Element identifier
+- [Heading elements](/reference/htmltags/elements/html_headings_element.html) - h1-h6 heading elements
+- [title attribute](/reference/htmlattributes/attributes/attr_title.html) - Title tooltip attribute
+- [id attribute](/reference/htmlattributes/attributes/attr_id.html) - Element identifier
 - [PDF Bookmarks](/reference/pdf/bookmarks.html) - PDF bookmark creation
 - [PDF Outlines](/reference/pdf/outlines.html) - PDF outline structure
 - [Document Navigation](/reference/pdf/navigation.html) - PDF navigation features

@@ -855,11 +855,11 @@ Scryber processes these input types during PDF generation. The rendered PDF disp
 
 ## See Also
 
-- [input](/reference/htmltags/input.html) - Input field element
-- [value](/reference/htmlattributes/value.html) - Value attribute for form fields
-- [name](/reference/htmlattributes/name.html) - Name attribute for form fields
-- [label](/reference/htmltags/label.html) - Label element for form fields
-- [fieldset](/reference/htmltags/fieldset.html) - Fieldset and legend for grouping
+- [input](/reference/htmltags/elements/html_input_element.html) - Input field element
+- [value](/reference/htmlattributes/attributes/attr_value.html) - Value attribute for form fields
+- [name](/reference/htmlattributes/attributes/attr_name.html) - Name attribute for form fields
+- [label](/reference/htmltags/elements/html_label_element.html) - Label element for form fields
+- [fieldset](/reference/htmltags/elements/html_fieldset_element.html) - Fieldset and legend for grouping
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 

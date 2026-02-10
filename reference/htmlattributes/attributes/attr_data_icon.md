@@ -1196,11 +1196,11 @@ Icons appear at the object element's location:
 
 ## See Also
 
-- [object](/reference/htmltags/object.html) - Object element (uses data-icon attribute)
-- [data](/reference/htmlattributes/data.html) - File source for attachments
+- [object](/reference/htmltags/elements/html_object_element.html) - Object element (uses data-icon attribute)
+- [data](/reference/htmlattributes/attributes/attr_data.html) - File source for attachments
 - [data-file-data](/reference/htmlattributes/data-file-data.html) - Binary file data for attachments
-- [type](/reference/htmlattributes/type.html) - MIME type specification
-- [alt](/reference/htmlattributes/alt.html) - Alternative text/description
+- [type](/reference/htmlattributes/attributes/attr_type.html) - MIME type specification
+- [alt](/reference/htmlattributes/attributes/attr_alt.html) - Alternative text/description
 - [Data Binding](/reference/binding/) - Dynamic content and attribute values
 - [PDF Attachments](/reference/pdf/attachments.html) - PDF attachment specifications
 - [IconAttachment Component](/reference/components/iconattachment.html) - Base attachment component

@@ -387,13 +387,13 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 
 ## See Also
 
-- [cx](/reference/svgattributes/cx.html) - Center X coordinate attribute
-- [cy](/reference/svgattributes/cy.html) - Center Y coordinate attribute
-- [rx](/reference/svgattributes/rx.html) - Horizontal radius for ellipses
-- [ry](/reference/svgattributes/ry.html) - Vertical radius for ellipses
-- [circle](/reference/svgelements/circle.html) - SVG circle element
-- [radialGradient](/reference/svgelements/radialGradient.html) - SVG radial gradient element
-- [SVG Transforms](/reference/svgelements/transforms.html) - Transformation operations
+- [cx](/reference/svgattributes/attributes/svg_attr_cx.html) - Center X coordinate attribute
+- [cy](/reference/svgattributes/attributes/svg_attr_cy.html) - Center Y coordinate attribute
+- [rx](/reference/svgattributes/attributes/svg_attr_rx.html) - Horizontal radius for ellipses
+- [ry](/reference/svgattributes/attributes/svg_attr_ry.html) - Vertical radius for ellipses
+- [circle](/reference/svgelements/elements/svg_circle_element.html) - SVG circle element
+- [radialGradient](/reference/svgelements/elements/svg_radialGradient_element.html) - SVG radial gradient element
+- [SVG Transforms](/reference/svgelements/elements/svg_transforms_element.html) - Transformation operations
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

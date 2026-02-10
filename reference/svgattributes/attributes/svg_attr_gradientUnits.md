@@ -527,9 +527,9 @@ Use userSpaceOnUse for consistent gradient across shapes:
 
 - [linearGradient](/reference/svgtags/linearGradient.html) - Linear gradient definition element
 - [radialGradient](/reference/svgtags/radialGradient.html) - Radial gradient definition element
-- [x1](/reference/svgattributes/x1.html), [y1](/reference/svgattributes/y1.html), [x2](/reference/svgattributes/x2.html), [y2](/reference/svgattributes/y2.html) - Linear gradient coordinates
-- [cx](/reference/svgattributes/cx.html), [cy](/reference/svgattributes/cy.html), [r](/reference/svgattributes/r.html) - Radial gradient coordinates
-- [fx](/reference/svgattributes/fx.html), [fy](/reference/svgattributes/fy.html) - Radial gradient focal point
+- [x1](/reference/svgattributes/attributes/svg_attr_x1.html), [y1](/reference/svgattributes/attributes/svg_attr_y1.html), [x2](/reference/svgattributes/attributes/svg_attr_x2.html), [y2](/reference/svgattributes/attributes/svg_attr_y2.html) - Linear gradient coordinates
+- [cx](/reference/svgattributes/attributes/svg_attr_cx.html), [cy](/reference/svgattributes/attributes/svg_attr_cy.html), [r](/reference/svgattributes/attributes/svg_attr_r.html) - Radial gradient coordinates
+- [fx](/reference/svgattributes/attributes/svg_attr_fx.html), [fy](/reference/svgattributes/attributes/svg_attr_fy.html) - Radial gradient focal point
 - [stop](/reference/svgtags/stop.html) - Gradient color stop element
 - [Data Binding](/reference/binding/) - Data binding and expressions
 

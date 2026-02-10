@@ -525,8 +525,8 @@ If the bound collection is empty or null, the template generates no output witho
 - [Data Binding](/reference/binding/) - Complete guide to data binding expressions
 - [ForEach Component](/reference/components/foreach.html) - Base ForEach component in Scryber namespace
 - [Data Sources](/reference/datasources/) - XML, JSON, and database data sources
-- [div](/reference/htmltags/div.html) - Generic container element
-- [span](/reference/htmltags/span.html) - Inline container element
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic container element
+- [span](/reference/htmltags/elements/html_span_element.html) - Inline container element
 - [Expressions](/reference/expressions/) - Expression syntax and functions
 
 ---

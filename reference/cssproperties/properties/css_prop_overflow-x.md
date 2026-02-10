@@ -775,11 +775,11 @@ The overflow-x property works with data binding to create dynamic horizontal ove
 
 ## See Also
 
-- [overflow](/reference/cssproperties/css_prop_overflow) - Control both horizontal and vertical overflow
-- [overflow-y](/reference/cssproperties/css_prop_overflow-y) - Control vertical overflow behavior
-- [width](/reference/cssproperties/css_prop_width) - Set element width
-- [max-width](/reference/cssproperties/css_prop_max-width) - Set maximum width constraint
-- [white-space](/reference/cssproperties/css_prop_white-space) - Control text wrapping behavior
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [overflow](/reference/cssproperties/properties/css_prop_overflow) - Control both horizontal and vertical overflow
+- [overflow-y](/reference/cssproperties/properties/css_prop_overflow-y) - Control vertical overflow behavior
+- [width](/reference/cssproperties/properties/css_prop_width) - Set element width
+- [max-width](/reference/cssproperties/properties/css_prop_max-width) - Set maximum width constraint
+- [white-space](/reference/cssproperties/properties/css_prop_white-space) - Control text wrapping behavior
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

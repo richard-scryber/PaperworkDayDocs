@@ -870,11 +870,11 @@ For web optimization (limited PDF use):
 
 ## See Also
 
-- [link](/reference/htmltags/link.html) - Link element for external resources
-- [href](/reference/htmlattributes/href.html) - Hyperlink reference attribute
-- [media](/reference/htmlattributes/media.html) - Media query attribute
-- [type](/reference/htmlattributes/type.html) - MIME type attribute
+- [link](/reference/htmltags/elements/html_link_element.html) - Link element for external resources
+- [href](/reference/htmlattributes/attributes/attr_href.html) - Hyperlink reference attribute
+- [media](/reference/htmlattributes/attributes/attr_media.html) - Media query attribute
+- [type](/reference/htmlattributes/attributes/attr_type.html) - MIME type attribute
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
-- [a](/reference/htmltags/a.html) - Anchor element
+- [a](/reference/htmltags/elements/html_a_element.html) - Anchor element
 
 ---

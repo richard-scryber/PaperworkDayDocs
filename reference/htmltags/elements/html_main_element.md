@@ -640,13 +640,13 @@ In the Scryber codebase:
 
 ## See Also
 
-- [article](/reference/htmltags/article.html) - Self-contained composition element
-- [section](/reference/htmltags/section.html) - Thematic section element
-- [header](/reference/htmltags/header.html) - Header element for introductory content
-- [footer](/reference/htmltags/footer.html) - Footer element for closing content
-- [nav](/reference/htmltags/nav.html) - Navigation element
-- [aside](/reference/htmltags/aside.html) - Sidebar or tangential content
-- [div](/reference/htmltags/div.html) - Generic block container
+- [article](/reference/htmltags/elements/html_article_element.html) - Self-contained composition element
+- [section](/reference/htmltags/elements/html_section_element.html) - Thematic section element
+- [header](/reference/htmltags/elements/html_header_element.html) - Header element for introductory content
+- [footer](/reference/htmltags/elements/html_footer_element.html) - Footer element for closing content
+- [nav](/reference/htmltags/elements/html_nav_element.html) - Navigation element
+- [aside](/reference/htmltags/elements/html_aside_element.html) - Sidebar or tangential content
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
 - [Panel Component](/reference/components/panel.html) - Base panel component in Scryber namespace
 
 ---

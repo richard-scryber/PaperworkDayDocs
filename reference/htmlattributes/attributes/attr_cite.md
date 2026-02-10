@@ -839,12 +839,12 @@ The `cite` attribute is optional:
 
 ## See Also
 
-- [blockquote](/reference/htmltags/blockquote.html) - Block quotation element
-- [q](/reference/htmltags/q.html) - Inline quotation element
-- [ins](/reference/htmltags/ins.html) - Inserted content element
-- [del](/reference/htmltags/del.html) - Deleted content element
-- [datetime](/reference/htmlattributes/datetime.html) - Date/time attribute for ins and del
-- [a](/reference/htmltags/a.html) - Anchor element for links
-- [footer](/reference/htmltags/footer.html) - Footer element for attribution
+- [blockquote](/reference/htmltags/elements/html_blockquote_element.html) - Block quotation element
+- [q](/reference/htmltags/elements/html_q_element.html) - Inline quotation element
+- [ins](/reference/htmltags/elements/html_ins_element.html) - Inserted content element
+- [del](/reference/htmltags/elements/html_del_element.html) - Deleted content element
+- [datetime](/reference/htmlattributes/attributes/attr_datetime.html) - Date/time attribute for ins and del
+- [a](/reference/htmltags/elements/html_a_element.html) - Anchor element for links
+- [footer](/reference/htmltags/elements/html_footer_element.html) - Footer element for attribution
 
 ---

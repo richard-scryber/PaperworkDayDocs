@@ -684,11 +684,11 @@ In the Scryber codebase:
 
 ## See Also
 
-- [object](/reference/htmltags/object.html) - Object element for file attachments
-- [picture](/reference/htmltags/picture.html) - Picture element for responsive images
-- [img](/reference/htmltags/img.html) - Image element
-- [div](/reference/htmltags/div.html) - Container element
-- [template](/reference/htmltags/template.html) - Template element for data binding
+- [object](/reference/htmltags/elements/html_object_element.html) - Object element for file attachments
+- [picture](/reference/htmltags/elements/html_picture_element.html) - Picture element for responsive images
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element
+- [div](/reference/htmltags/elements/html_div_element.html) - Container element
+- [template](/reference/htmltags/elements/html_template_element.html) - Template element for data binding
 - [Data Binding](/reference/binding/) - Data binding and expressions
 - [Document Parser](/reference/parser/) - HTML/XML parsing in Scryber
 - [Remote Resources](/reference/resources/) - Loading remote content

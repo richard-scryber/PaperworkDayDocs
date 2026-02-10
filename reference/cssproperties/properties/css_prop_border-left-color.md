@@ -433,11 +433,11 @@ Data context:
 
 ## See Also
 
-- [border-left](/reference/cssproperties/css_prop_border-left) - Left border shorthand
-- [border-color](/reference/cssproperties/css_prop_border-color) - All border colors
-- [border-left-width](/reference/cssproperties/css_prop_border-left-width) - Left border width
-- [border-left-style](/reference/cssproperties/css_prop_border-left-style) - Left border style
-- [color](/reference/cssproperties/css_prop_color) - Text color
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border-left](/reference/cssproperties/properties/css_prop_border-left) - Left border shorthand
+- [border-color](/reference/cssproperties/properties/css_prop_border-color) - All border colors
+- [border-left-width](/reference/cssproperties/properties/css_prop_border-left-width) - Left border width
+- [border-left-style](/reference/cssproperties/properties/css_prop_border-left-style) - Left border style
+- [color](/reference/cssproperties/properties/css_prop_color) - Text color
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

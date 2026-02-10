@@ -285,9 +285,9 @@ The pseudo-class adds to the base selector's specificity:
 
 ## See Also
 
-- [:after / ::after Pseudo-class](/reference/cssselectors/css_after_selector)
-- [:hover Pseudo-class](/reference/cssselectors/css_hover_selector)
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [Class Selector](/reference/cssselectors/css_class_selector)
+- [:after / ::after Pseudo-class](/reference/cssselectors/selectors/css_after_selector)
+- [:hover Pseudo-class](/reference/cssselectors/selectors/css_hover_selector)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [Class Selector](/reference/cssselectors/selectors/css_class_selector)
 
 ---

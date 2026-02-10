@@ -504,9 +504,9 @@ With model data:
 
 ## See Also
 
-- [fill](/reference/cssproperties/css_prop_fill) - SVG fill color property
-- [opacity](/reference/cssproperties/css_prop_opacity) - Overall element transparency
-- [stroke-opacity](/reference/cssproperties/css_prop_stroke-opacity) - SVG stroke transparency
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
+- [fill](/reference/cssproperties/properties/css_prop_fill) - SVG fill color property
+- [opacity](/reference/cssproperties/properties/css_prop_opacity) - Overall element transparency
+- [stroke-opacity](/reference/cssproperties/properties/css_prop_stroke-opacity) - SVG stroke transparency
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
 
 ---

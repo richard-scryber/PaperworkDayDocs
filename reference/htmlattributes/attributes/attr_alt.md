@@ -712,11 +712,11 @@ For optimal accessibility:
 
 ## See Also
 
-- [img](/reference/htmltags/img.html) - Image element (uses alt attribute)
-- [src](/reference/htmlattributes/src.html) - Source attribute for image paths
-- [width](/reference/htmlattributes/width.html) - Width sizing attribute
-- [height](/reference/htmlattributes/height.html) - Height sizing attribute
-- [title](/reference/htmlattributes/title.html) - Title attribute for additional information
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element (uses alt attribute)
+- [src](/reference/htmlattributes/attributes/attr_src.html) - Source attribute for image paths
+- [width](/reference/htmlattributes/attributes/attr_width.html) - Width sizing attribute
+- [height](/reference/htmlattributes/attributes/attr_height.html) - Height sizing attribute
+- [title](/reference/htmlattributes/attributes/attr_title.html) - Title attribute for additional information
 - [Accessibility](/reference/accessibility/) - PDF accessibility guidelines
 - [Data Binding](/reference/binding/) - Dynamic content and attributes
 

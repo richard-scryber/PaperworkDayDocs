@@ -785,12 +785,12 @@ Data context:
 
 ## See Also
 
-- [padding-top](/reference/cssproperties/css_prop_padding-top) - Set top padding
-- [padding-right](/reference/cssproperties/css_prop_padding-right) - Set right padding
-- [padding-bottom](/reference/cssproperties/css_prop_padding-bottom) - Set bottom padding
-- [padding-left](/reference/cssproperties/css_prop_padding-left) - Set left padding
-- [padding-inline](/reference/cssproperties/css_prop_padding-inline) - Set inline padding shorthand
-- [margin](/reference/cssproperties/css_prop_margin) - Set margin shorthand property
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [padding-top](/reference/cssproperties/properties/css_prop_padding-top) - Set top padding
+- [padding-right](/reference/cssproperties/properties/css_prop_padding-right) - Set right padding
+- [padding-bottom](/reference/cssproperties/properties/css_prop_padding-bottom) - Set bottom padding
+- [padding-left](/reference/cssproperties/properties/css_prop_padding-left) - Set left padding
+- [padding-inline](/reference/cssproperties/properties/css_prop_padding-inline) - Set inline padding shorthand
+- [margin](/reference/cssproperties/properties/css_prop_margin) - Set margin shorthand property
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

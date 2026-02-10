@@ -1710,10 +1710,10 @@ The `break-inside` property supports data binding, allowing you to dynamically c
 
 ## See Also
 
-- [break-before](/reference/cssproperties/css_prop_break-before) - Control breaks before elements
-- [break-after](/reference/cssproperties/css_prop_break-after) - Control breaks after elements
-- [page-break-inside](/reference/cssproperties/css_prop_page-break-inside) - Legacy CSS2 property
-- [page](/reference/cssproperties/css_prop_page) - Specify named page for element
+- [break-before](/reference/cssproperties/properties/css_prop_break-before) - Control breaks before elements
+- [break-after](/reference/cssproperties/properties/css_prop_break-after) - Control breaks after elements
+- [page-break-inside](/reference/cssproperties/properties/css_prop_page-break-inside) - Legacy CSS2 property
+- [page](/reference/cssproperties/properties/css_prop_page) - Specify named page for element
 - [@page rule](/reference/css_atrules/css_atrule_page) - Define page properties and margins
 
 ---

@@ -389,11 +389,11 @@ Most `http-equiv` directives are **not applicable to PDF generation**:
 
 ## See Also
 
-- [meta element](/reference/htmltags/meta.html) - The meta HTML element
-- [content attribute](/reference/htmlattributes/content.html) - Meta content value
-- [charset attribute](/reference/htmlattributes/charset.html) - Character encoding
-- [name attribute](/reference/htmlattributes/name.html) - Standard metadata name
-- [property attribute](/reference/htmlattributes/property.html) - Open Graph properties
+- [meta element](/reference/htmltags/elements/html_meta_element.html) - The meta HTML element
+- [content attribute](/reference/htmlattributes/attributes/attr_content.html) - Meta content value
+- [charset attribute](/reference/htmlattributes/attributes/attr_charset.html) - Character encoding
+- [name attribute](/reference/htmlattributes/attributes/attr_name.html) - Standard metadata name
+- [property attribute](/reference/htmlattributes/attributes/attr_property.html) - Open Graph properties
 - [Document Properties](/reference/document/properties.html) - PDF document properties
 - [Character Encoding](/reference/encoding/) - Character encoding reference
 

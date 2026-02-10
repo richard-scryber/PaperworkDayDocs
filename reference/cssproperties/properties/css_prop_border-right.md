@@ -793,13 +793,13 @@ Data context:
 
 ## See Also
 
-- [border](/reference/cssproperties/css_prop_border) - Shorthand for all border properties
-- [border-top](/reference/cssproperties/css_prop_border-top) - Set top border
-- [border-bottom](/reference/cssproperties/css_prop_border-bottom) - Set bottom border
-- [border-left](/reference/cssproperties/css_prop_border-left) - Set left border
-- [border-right-width](/reference/cssproperties/css_prop_border-right-width) - Set right border width
-- [border-right-style](/reference/cssproperties/css_prop_border-right-style) - Set right border style
-- [border-right-color](/reference/cssproperties/css_prop_border-right-color) - Set right border color
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border](/reference/cssproperties/properties/css_prop_border) - Shorthand for all border properties
+- [border-top](/reference/cssproperties/properties/css_prop_border-top) - Set top border
+- [border-bottom](/reference/cssproperties/properties/css_prop_border-bottom) - Set bottom border
+- [border-left](/reference/cssproperties/properties/css_prop_border-left) - Set left border
+- [border-right-width](/reference/cssproperties/properties/css_prop_border-right-width) - Set right border width
+- [border-right-style](/reference/cssproperties/properties/css_prop_border-right-style) - Set right border style
+- [border-right-color](/reference/cssproperties/properties/css_prop_border-right-color) - Set right border color
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

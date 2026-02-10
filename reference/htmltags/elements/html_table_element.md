@@ -619,11 +619,11 @@ Control page breaks:
 
 ## See Also
 
-- [tr](/reference/htmltags/tr.html) - Table row element
-- [td](/reference/htmltags/td.html) - Table cell elements (td and th)
-- [div](/reference/htmltags/div.html) - Generic block container
+- [tr](/reference/htmltags/elements/html_tr_element.html) - Table row element
+- [td](/reference/htmltags/elements/html_td_element.html) - Table cell elements (td and th)
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
 - [Data Binding](/reference/binding/) - Dynamic data binding
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
-- [Template Element](/reference/htmltags/template.html) - Template for repeating content
+- [Template Element](/reference/htmltags/elements/html_template_element.html) - Template for repeating content
 
 ---

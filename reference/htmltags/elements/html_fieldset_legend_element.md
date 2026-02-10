@@ -211,10 +211,10 @@ In the library codebase:
 
 ## See Also
 
-- [input](/reference/htmltags/input.html) - Input field element
-- [label](/reference/htmltags/label.html) - Label element for form fields
-- [form](/reference/htmltags/form.html) - Form container element
-- [div](/reference/htmltags/div.html) - Generic block container
+- [input](/reference/htmltags/elements/html_input_element.html) - Input field element
+- [label](/reference/htmltags/elements/html_label_element.html) - Label element for form fields
+- [form](/reference/htmltags/elements/html_form_element.html) - Form container element
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 

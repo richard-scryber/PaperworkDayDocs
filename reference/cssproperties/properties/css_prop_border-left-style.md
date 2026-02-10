@@ -381,11 +381,11 @@ The `border-top-style` property supports dynamic values through data binding, al
 
 ## See Also
 
-- [border-top](/reference/cssproperties/css_prop_border-top) - Top border shorthand
-- [border-style](/reference/cssproperties/css_prop_border-style) - All border styles
-- [border-right-style](/reference/cssproperties/css_prop_border-right-style) - Right border style
-- [border-bottom-style](/reference/cssproperties/css_prop_border-bottom-style) - Bottom border style
-- [border-left-style](/reference/cssproperties/css_prop_border-left-style) - Left border style
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border-top](/reference/cssproperties/properties/css_prop_border-top) - Top border shorthand
+- [border-style](/reference/cssproperties/properties/css_prop_border-style) - All border styles
+- [border-right-style](/reference/cssproperties/properties/css_prop_border-right-style) - Right border style
+- [border-bottom-style](/reference/cssproperties/properties/css_prop_border-bottom-style) - Bottom border style
+- [border-left-style](/reference/cssproperties/properties/css_prop_border-left-style) - Left border style
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

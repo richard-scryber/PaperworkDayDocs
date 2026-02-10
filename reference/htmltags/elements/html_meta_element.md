@@ -512,9 +512,9 @@ In the Scryber codebase:
 
 ## See Also
 
-- [head](/reference/htmltags/head.html) - Head element (container for meta tags)
-- [title](/reference/htmltags/title.html) - Title element for document title
-- [link](/reference/htmltags/link.html) - Link element for external stylesheets
+- [head](/reference/htmltags/elements/html_head_element.html) - Head element (container for meta tags)
+- [title](/reference/htmltags/elements/html_title_element.html) - Title element for document title
+- [link](/reference/htmltags/elements/html_link_element.html) - Link element for external stylesheets
 - [Document Component](/reference/components/document.html) - Base document component
 - [Document Properties](/reference/document/properties.html) - PDF document properties
 - [Document Info](/reference/document/info.html) - Document information API

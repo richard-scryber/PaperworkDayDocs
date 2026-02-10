@@ -627,16 +627,16 @@ The `refX` value should coordinate with `markerWidth`:
 
 ## See Also
 
-- [markerHeight](/reference/svgattributes/markerHeight.html) - Marker viewport height
+- [markerHeight](/reference/svgattributes/attributes/svg_attr_markerHeight.html) - Marker viewport height
 - [marker element](/reference/svgtags/marker.html) - Marker definition element
-- [refX](/reference/svgattributes/refX.html) - Marker reference X position
-- [refY](/reference/svgattributes/refY.html) - Marker reference Y position
-- [markerUnits](/reference/svgattributes/markerUnits.html) - Marker coordinate system
-- [orient](/reference/svgattributes/orient.html) - Marker orientation
-- [marker-start](/reference/svgattributes/marker-start.html) - Marker at path start
-- [marker-mid](/reference/svgattributes/marker-mid.html) - Marker at middle vertices
-- [marker-end](/reference/svgattributes/marker-end.html) - Marker at path end
-- [viewBox](/reference/svgattributes/viewBox.html) - SVG viewport and coordinate system
+- [refX](/reference/svgattributes/attributes/svg_attr_refX.html) - Marker reference X position
+- [refY](/reference/svgattributes/attributes/svg_attr_refY.html) - Marker reference Y position
+- [markerUnits](/reference/svgattributes/attributes/svg_attr_markerUnits.html) - Marker coordinate system
+- [orient](/reference/svgattributes/attributes/svg_attr_orient.html) - Marker orientation
+- [marker-start](/reference/svgattributes/attributes/svg_attr_marker-start.html) - Marker at path start
+- [marker-mid](/reference/svgattributes/attributes/svg_attr_marker-mid.html) - Marker at middle vertices
+- [marker-end](/reference/svgattributes/attributes/svg_attr_marker-end.html) - Marker at path end
+- [viewBox](/reference/svgattributes/attributes/svg_attr_viewBox.html) - SVG viewport and coordinate system
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

@@ -628,12 +628,12 @@ The `<section>` element has the following default behavior:
 
 ## See Also
 
-- [article](/reference/htmltags/article.html) - Article element for self-contained content
-- [div](/reference/htmltags/div.html) - Generic block container without semantic meaning
-- [header](/reference/htmltags/header.html) - Header element for introductory content
-- [footer](/reference/htmltags/footer.html) - Footer element for closing content
-- [aside](/reference/htmltags/aside.html) - Aside element for tangentially related content
-- [nav](/reference/htmltags/nav.html) - Navigation element for navigation links
+- [article](/reference/htmltags/elements/html_article_element.html) - Article element for self-contained content
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container without semantic meaning
+- [header](/reference/htmltags/elements/html_header_element.html) - Header element for introductory content
+- [footer](/reference/htmltags/elements/html_footer_element.html) - Footer element for closing content
+- [aside](/reference/htmltags/elements/html_aside_element.html) - Aside element for tangentially related content
+- [nav](/reference/htmltags/elements/html_nav_element.html) - Navigation element for navigation links
 - [Panel Component](/reference/components/panel.html) - Base panel component in Scryber namespace
 - [PDF Bookmarks](/reference/bookmarks/) - Creating document outlines and bookmarks
 - [Document Structure](/reference/structure/) - Structuring PDF documents

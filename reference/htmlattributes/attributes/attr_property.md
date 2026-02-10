@@ -552,9 +552,9 @@ In Scryber PDF generation:
 
 ## See Also
 
-- [meta element](/reference/htmltags/meta.html) - The meta HTML element
-- [content attribute](/reference/htmlattributes/content.html) - Meta content value
-- [name attribute](/reference/htmlattributes/name.html) - Standard metadata name
+- [meta element](/reference/htmltags/elements/html_meta_element.html) - The meta HTML element
+- [content attribute](/reference/htmlattributes/attributes/attr_content.html) - Meta content value
+- [name attribute](/reference/htmlattributes/attributes/attr_name.html) - Standard metadata name
 - [http-equiv attribute](/reference/htmlattributes/http-equiv.html) - HTTP header equivalent
 - [Open Graph Protocol](https://ogp.me/) - Open Graph specification
 - [Dublin Core](https://dublincore.org/) - Dublin Core metadata initiative

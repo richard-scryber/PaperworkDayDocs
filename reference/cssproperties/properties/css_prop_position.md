@@ -703,11 +703,11 @@ Data model:
 
 ## See Also
 
-- [top](/reference/cssproperties/css_prop_top) - Set top offset for positioned elements
-- [left](/reference/cssproperties/css_prop_left) - Set left offset for positioned elements
-- [right](/reference/cssproperties/css_prop_right) - Set right offset for positioned elements
-- [bottom](/reference/cssproperties/css_prop_bottom) - Set bottom offset for positioned elements
-- [float](/reference/cssproperties/css_prop_float) - Float elements left or right
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [top](/reference/cssproperties/properties/css_prop_top) - Set top offset for positioned elements
+- [left](/reference/cssproperties/properties/css_prop_left) - Set left offset for positioned elements
+- [right](/reference/cssproperties/properties/css_prop_right) - Set right offset for positioned elements
+- [bottom](/reference/cssproperties/properties/css_prop_bottom) - Set bottom offset for positioned elements
+- [float](/reference/cssproperties/properties/css_prop_float) - Float elements left or right
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

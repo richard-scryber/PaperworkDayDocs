@@ -497,10 +497,10 @@ Creates security-enhanced documents where high-security items automatically get 
 
 ## See Also
 
-- [background](/reference/cssproperties/css_prop_background) - Shorthand for all background properties
-- [background-image](/reference/cssproperties/css_prop_background-image) - Set background image
-- [background-position](/reference/cssproperties/css_prop_background-position) - Set image position
-- [background-size](/reference/cssproperties/css_prop_background-size) - Control image sizing
-- [background-color](/reference/cssproperties/css_prop_background-color) - Set background color
+- [background](/reference/cssproperties/properties/css_prop_background) - Shorthand for all background properties
+- [background-image](/reference/cssproperties/properties/css_prop_background-image) - Set background image
+- [background-position](/reference/cssproperties/properties/css_prop_background-position) - Set image position
+- [background-size](/reference/cssproperties/properties/css_prop_background-size) - Control image sizing
+- [background-color](/reference/cssproperties/properties/css_prop_background-color) - Set background color
 
 ---

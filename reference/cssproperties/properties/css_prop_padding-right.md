@@ -627,12 +627,12 @@ Data context:
 
 ## See Also
 
-- [padding](/reference/cssproperties/css_prop_padding) - Set all padding shorthand
-- [padding-left](/reference/cssproperties/css_prop_padding-left) - Set left padding
-- [padding-top](/reference/cssproperties/css_prop_padding-top) - Set top padding
-- [padding-bottom](/reference/cssproperties/css_prop_padding-bottom) - Set bottom padding
-- [margin-right](/reference/cssproperties/css_prop_margin-right) - Set right margin
-- [padding-inline-end](/reference/cssproperties/css_prop_padding-inline-end) - Set inline end padding
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [padding](/reference/cssproperties/properties/css_prop_padding) - Set all padding shorthand
+- [padding-left](/reference/cssproperties/properties/css_prop_padding-left) - Set left padding
+- [padding-top](/reference/cssproperties/properties/css_prop_padding-top) - Set top padding
+- [padding-bottom](/reference/cssproperties/properties/css_prop_padding-bottom) - Set bottom padding
+- [margin-right](/reference/cssproperties/properties/css_prop_margin-right) - Set right margin
+- [padding-inline-end](/reference/cssproperties/properties/css_prop_padding-inline-end) - Set inline end padding
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

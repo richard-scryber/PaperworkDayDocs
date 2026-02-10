@@ -673,11 +673,11 @@ Control how text wraps within cells:
 
 ## See Also
 
-- [table](/reference/htmltags/table.html) - Table element
-- [tr](/reference/htmltags/tr.html) - Table row element
-- [thead, tbody, tfoot](/reference/htmltags/table.html#table-sections) - Table sections
+- [table](/reference/htmltags/elements/html_table_element.html) - Table element
+- [tr](/reference/htmltags/elements/html_tr_element.html) - Table row element
+- [thead, tbody, tfoot](/reference/htmltags/elements/html_table_element.html#table-sections) - Table sections
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Dynamic data binding
-- [Template Element](/reference/htmltags/template.html) - Template for repeating content
+- [Template Element](/reference/htmltags/elements/html_template_element.html) - Template for repeating content
 
 ---

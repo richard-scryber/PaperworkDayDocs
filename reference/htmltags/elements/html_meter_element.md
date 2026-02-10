@@ -985,8 +985,8 @@ While not interactive in PDF, meters are excellent for:
 
 ## See Also
 
-- [progress](/reference/htmltags/progress.html) - Progress bar element (for task completion)
-- [div](/reference/htmltags/div.html) - Generic container (can create custom gauges)
+- [progress](/reference/htmltags/elements/html_progress_element.html) - Progress bar element (for task completion)
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic container (can create custom gauges)
 - [Data Binding](/reference/binding/) - Data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Visual Components](/reference/components/visual.html) - Base visual component

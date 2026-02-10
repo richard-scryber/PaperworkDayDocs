@@ -262,6 +262,6 @@ Dynamic CSS calculations.
 
 - [Handlebars Helpers](../helpers/) - Control flow and context management
 - [Binding Operators](../operators/) - Mathematical, comparison, and logical operators
-- [Expressions Guide](../../learning/02-data-binding/02_expressions.md) - Complete guide to expressions
+- [Expressions Guide](../../learning/02-data-binding/02_expression_functions.html) - Complete guide to expressions
 
 ---

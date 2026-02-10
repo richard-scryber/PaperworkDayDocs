@@ -519,12 +519,12 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 
 ## See Also
 
-- [x1](/reference/svgattributes/x1.html) - Linear gradient start X coordinate
-- [y1](/reference/svgattributes/y1.html) - Linear gradient start Y coordinate
-- [y2](/reference/svgattributes/y2.html) - Linear gradient end Y coordinate
+- [x1](/reference/svgattributes/attributes/svg_attr_x1.html) - Linear gradient start X coordinate
+- [y1](/reference/svgattributes/attributes/svg_attr_y1.html) - Linear gradient start Y coordinate
+- [y2](/reference/svgattributes/attributes/svg_attr_y2.html) - Linear gradient end Y coordinate
 - [linearGradient](/reference/svgtags/linearGradient.html) - Linear gradient definition element
-- [gradientUnits](/reference/svgattributes/gradientUnits.html) - Coordinate system mode
-- [spreadMethod](/reference/svgattributes/spreadMethod.html) - Gradient spread behavior
+- [gradientUnits](/reference/svgattributes/attributes/svg_attr_gradientUnits.html) - Coordinate system mode
+- [spreadMethod](/reference/svgattributes/attributes/svg_attr_spreadMethod.html) - Gradient spread behavior
 - [stop](/reference/svgtags/stop.html) - Gradient color stop element
 - [Data Binding](/reference/binding/) - Data binding and expressions
 

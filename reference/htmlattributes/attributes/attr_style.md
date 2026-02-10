@@ -800,12 +800,12 @@ Apply multiple CSS properties by separating them with semicolons:
 
 ## See Also
 
-- [class](/reference/htmlattributes/class.html) - CSS class attribute for reusable styles
-- [id](/reference/htmlattributes/id.html) - Unique identifier attribute
+- [class](/reference/htmlattributes/attributes/attr_class.html) - CSS class attribute for reusable styles
+- [id](/reference/htmlattributes/attributes/attr_id.html) - Unique identifier attribute
 - [CSS Styles](/reference/styles/) - **Comprehensive CSS styling documentation**
-- [style element](/reference/htmltags/style.html) - Defining CSS stylesheets
+- [style element](/reference/htmltags/elements/html_style_element.html) - Defining CSS stylesheets
 - [Data Binding](/reference/binding/) - Dynamic data binding in attributes
-- [div](/reference/htmltags/div.html) - Generic container element
-- [span](/reference/htmltags/span.html) - Generic inline element
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic container element
+- [span](/reference/htmltags/elements/html_span_element.html) - Generic inline element
 
 ---

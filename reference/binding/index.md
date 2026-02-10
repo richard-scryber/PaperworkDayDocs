@@ -328,10 +328,10 @@ Average: {{format(averageOf(items, 'rating'), '0.0')}}
 
 ## Additional Resources
 
-- [Data Binding Basics](../../learning/02-data-binding/01_data_binding_basics.md)
-- [Expression Syntax](../../learning/02-data-binding/02_expression_functions.md)
-- [Template Iteration](../../learning/02-data-binding/03_template_iteration.md)
-- [Conditional Rendering](../../learning/02-data-binding/04_conditional_rendering.md)
+- [Data Binding Basics](../../learning/02-data-binding/01_data_binding_basics.html)
+- [Expression Syntax](../../learning/02-data-binding/02_expression_functions.html)
+- [Template Iteration](../../learning/02-data-binding/03_template_iteration.html)
+- [Conditional Rendering](../../learning/02-data-binding/04_conditional_rendering.html)
 
 ---
 

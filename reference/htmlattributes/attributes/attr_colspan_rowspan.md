@@ -934,13 +934,13 @@ When using spanning cells:
 
 ## See Also
 
-- [table](/reference/htmltags/table.html) - Table element
-- [tr](/reference/htmltags/tr.html) - Table row element
-- [td](/reference/htmltags/td.html) - Table data cell element
-- [th](/reference/htmltags/th.html) - Table header cell element
-- [width](/reference/htmlattributes/width.html) - Width attribute
-- [height](/reference/htmlattributes/height.html) - Height attribute
-- [style](/reference/htmlattributes/style.html) - Inline CSS styling
+- [table](/reference/htmltags/elements/html_table_element.html) - Table element
+- [tr](/reference/htmltags/elements/html_tr_element.html) - Table row element
+- [td](/reference/htmltags/elements/html_td_element.html) - Table data cell element
+- [th](/reference/htmltags/elements/html_th_element.html) - Table header cell element
+- [width](/reference/htmlattributes/attributes/attr_width.html) - Width attribute
+- [height](/reference/htmlattributes/attributes/attr_height.html) - Height attribute
+- [style](/reference/htmlattributes/attributes/attr_style.html) - Inline CSS styling
 - [Tables](/reference/tables/) - Complete table documentation
 - [Data Binding](/reference/binding/) - Dynamic attribute values
 

@@ -645,10 +645,10 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 
 ## See Also
 
-- [dominant-baseline](/reference/cssproperties/css_prop_dominant-baseline) - SVG vertical text alignment
-- [fill](/reference/cssproperties/css_prop_fill) - SVG fill color property
-- [text-align](/reference/cssproperties/css_prop_text-align) - HTML text alignment (for regular elements)
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
+- [dominant-baseline](/reference/cssproperties/properties/css_prop_dominant-baseline) - SVG vertical text alignment
+- [fill](/reference/cssproperties/properties/css_prop_fill) - SVG fill color property
+- [text-align](/reference/cssproperties/properties/css_prop_text-align) - HTML text alignment (for regular elements)
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

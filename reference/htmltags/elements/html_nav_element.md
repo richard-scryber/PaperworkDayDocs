@@ -582,13 +582,13 @@ The `<nav>` element has the following default behavior:
 
 ## See Also
 
-- [article](/reference/htmltags/article.html) - Article element for self-contained content
-- [section](/reference/htmltags/section.html) - Section element for thematic groupings
-- [aside](/reference/htmltags/aside.html) - Aside element for tangentially related content
-- [div](/reference/htmltags/div.html) - Generic block container
-- [a](/reference/htmltags/a.html) - Anchor/link element
-- [ul](/reference/htmltags/ul.html) - Unordered list element
-- [ol](/reference/htmltags/ol.html) - Ordered list element
+- [article](/reference/htmltags/elements/html_article_element.html) - Article element for self-contained content
+- [section](/reference/htmltags/elements/html_section_element.html) - Section element for thematic groupings
+- [aside](/reference/htmltags/elements/html_aside_element.html) - Aside element for tangentially related content
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
+- [a](/reference/htmltags/elements/html_a_element.html) - Anchor/link element
+- [ul](/reference/htmltags/elements/html_ul_element.html) - Unordered list element
+- [ol](/reference/htmltags/elements/html_ol_element.html) - Ordered list element
 - [PDF Bookmarks](/reference/bookmarks/) - Creating document outlines and bookmarks
 - [Document Structure](/reference/structure/) - Structuring PDF documents
 - [Links and Navigation](/reference/links/) - Working with links in PDFs

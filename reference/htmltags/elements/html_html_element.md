@@ -446,11 +446,11 @@ using (var doc = Document.ParseDocument(path))
 
 ## See Also
 
-- [head](/reference/htmltags/head.html) - Document head for metadata
-- [body](/reference/htmltags/body.html) - Document body for content
-- [frameset](/reference/htmltags/frameset.html) - Frameset for PDF merging
-- [meta](/reference/htmltags/meta.html) - Metadata elements
-- [style](/reference/htmltags/style.html) - Embedded styles
-- [link](/reference/htmltags/link.html) - External stylesheets
+- [head](/reference/htmltags/elements/html_head_element.html) - Document head for metadata
+- [body](/reference/htmltags/elements/html_body_element.html) - Document body for content
+- [frameset](/reference/htmltags/elements/html_frameset_element.html) - Frameset for PDF merging
+- [meta](/reference/htmltags/elements/html_meta_element.html) - Metadata elements
+- [style](/reference/htmltags/elements/html_style_element.html) - Embedded styles
+- [link](/reference/htmltags/elements/html_link_element.html) - External stylesheets
 
 ---

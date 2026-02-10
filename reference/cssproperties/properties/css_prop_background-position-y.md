@@ -558,11 +558,11 @@ Creates documents with separate header and footer decorative elements, each with
 
 ## See Also
 
-- [background](/reference/cssproperties/css_prop_background) - Shorthand for all background properties
-- [background-position](/reference/cssproperties/css_prop_background-position) - Set both horizontal and vertical position
-- [background-position-x](/reference/cssproperties/css_prop_background-position-x) - Set horizontal position only
-- [background-image](/reference/cssproperties/css_prop_background-image) - Set background image
-- [background-repeat](/reference/cssproperties/css_prop_background-repeat) - Control image repetition
-- [background-size](/reference/cssproperties/css_prop_background-size) - Control image sizing
+- [background](/reference/cssproperties/properties/css_prop_background) - Shorthand for all background properties
+- [background-position](/reference/cssproperties/properties/css_prop_background-position) - Set both horizontal and vertical position
+- [background-position-x](/reference/cssproperties/properties/css_prop_background-position-x) - Set horizontal position only
+- [background-image](/reference/cssproperties/properties/css_prop_background-image) - Set background image
+- [background-repeat](/reference/cssproperties/properties/css_prop_background-repeat) - Control image repetition
+- [background-size](/reference/cssproperties/properties/css_prop_background-size) - Control image sizing
 
 ---

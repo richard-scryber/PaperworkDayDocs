@@ -500,12 +500,12 @@ function authenticate(username, password) {
 
 ## See Also
 
-- [figcaption](/reference/htmltags/figcaption.html) - Figure caption element
-- [img](/reference/htmltags/img.html) - Image element
-- [table](/reference/htmltags/table.html) - Table element with native caption support
-- [pre](/reference/htmltags/pre.html) - Preformatted text for code listings
-- [blockquote](/reference/htmltags/blockquote.html) - Block quotation element
-- [div](/reference/htmltags/div.html) - Generic block container
+- [figcaption](/reference/htmltags/elements/html_figcaption_element.html) - Figure caption element
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element
+- [table](/reference/htmltags/elements/html_table_element.html) - Table element with native caption support
+- [pre](/reference/htmltags/elements/html_pre_element.html) - Preformatted text for code listings
+- [blockquote](/reference/htmltags/elements/html_blockquote_element.html) - Block quotation element
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
 - [Panel Component](/reference/components/panel.html) - Base panel component in Scryber namespace
 
 ---

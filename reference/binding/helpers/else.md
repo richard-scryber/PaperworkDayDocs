@@ -202,10 +202,10 @@ doc.Params["model"] = new {
 
 ## See Also
 
-- [#if Helper](./if.md)
-- [else if Helper](./elseif.md)
-- [#each Helper](./each.md)
-- [#with Helper](./with.md)
-- [Conditional Rendering Guide](../../learning/02-data-binding/04_conditional_rendering.md)
+- [#if Helper](./if.html)
+- [else if Helper](./elseif.html)
+- [#each Helper](./each.html)
+- [#with Helper](./with.html)
+- [Conditional Rendering Guide](../../learning/02-data-binding/04_conditional_rendering.html)
 
 ---

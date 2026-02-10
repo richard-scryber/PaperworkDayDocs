@@ -536,9 +536,9 @@ With theme configuration:
 
 ## See Also
 
-- [stroke-width](/reference/cssproperties/css_prop_stroke-width) - Control stroke thickness
-- [stroke-opacity](/reference/cssproperties/css_prop_stroke-opacity) - SVG stroke transparency
-- [fill](/reference/cssproperties/css_prop_fill) - SVG fill color property
-- [color](/reference/cssproperties/css_prop_color) - Text color property
+- [stroke-width](/reference/cssproperties/properties/css_prop_stroke-width) - Control stroke thickness
+- [stroke-opacity](/reference/cssproperties/properties/css_prop_stroke-opacity) - SVG stroke transparency
+- [fill](/reference/cssproperties/properties/css_prop_fill) - SVG fill color property
+- [color](/reference/cssproperties/properties/css_prop_color) - Text color property
 
 ---

@@ -630,9 +630,9 @@ With configuration:
 
 ## See Also
 
-- [color](/reference/cssproperties/css_prop_color) - Set text color
-- [opacity](/reference/cssproperties/css_prop_opacity) - Control overall element transparency
-- [fill](/reference/cssproperties/css_prop_fill) - SVG fill color property
-- [border](/reference/htmlattributes/attr_border) - Border styling
+- [color](/reference/cssproperties/properties/css_prop_color) - Set text color
+- [opacity](/reference/cssproperties/properties/css_prop_opacity) - Control overall element transparency
+- [fill](/reference/cssproperties/properties/css_prop_fill) - SVG fill color property
+- [border](/reference/htmlattributes/attributes/attr_border) - Border styling
 
 ---

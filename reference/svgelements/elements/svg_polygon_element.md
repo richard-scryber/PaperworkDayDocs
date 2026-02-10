@@ -443,11 +443,11 @@ For regular polygons (equal sides and angles), calculate points using trigonomet
 
 ## See Also
 
-- [polyline](/reference/svgelements/polyline.html) - SVG polyline element (open path)
-- [path](/reference/svgelements/path.html) - SVG path element for curves and complex shapes
-- [rect](/reference/svgelements/rect.html) - SVG rectangle element
-- [circle](/reference/svgelements/circle.html) - SVG circle element
-- [svg](/reference/svgelements/svg.html) - SVG container element
+- [polyline](/reference/svgelements/elements/svg_polyline_element.html) - SVG polyline element (open path)
+- [path](/reference/svgelements/elements/svg_path_element.html) - SVG path element for curves and complex shapes
+- [rect](/reference/svgelements/elements/svg_rect_element.html) - SVG rectangle element
+- [circle](/reference/svgelements/elements/svg_circle_element.html) - SVG circle element
+- [svg](/reference/svgelements/elements/svg_svg_element.html) - SVG container element
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

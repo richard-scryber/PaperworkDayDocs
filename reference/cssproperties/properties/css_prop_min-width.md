@@ -879,12 +879,12 @@ The min-width property supports dynamic value binding through template expressio
 
 ## See Also
 
-- [width](/reference/cssproperties/css_prop_width) - Set element width
-- [max-width](/reference/cssproperties/css_prop_max-width) - Set maximum width constraint
-- [min-height](/reference/cssproperties/css_prop_min-height) - Set minimum height constraint
-- [max-height](/reference/cssproperties/css_prop_max-height) - Set maximum height constraint
-- [padding](/reference/cssproperties/css_prop_padding) - Set padding shorthand property
-- [margin](/reference/cssproperties/css_prop_margin) - Set margin shorthand property
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [width](/reference/cssproperties/properties/css_prop_width) - Set element width
+- [max-width](/reference/cssproperties/properties/css_prop_max-width) - Set maximum width constraint
+- [min-height](/reference/cssproperties/properties/css_prop_min-height) - Set minimum height constraint
+- [max-height](/reference/cssproperties/properties/css_prop_max-height) - Set maximum height constraint
+- [padding](/reference/cssproperties/properties/css_prop_padding) - Set padding shorthand property
+- [margin](/reference/cssproperties/properties/css_prop_margin) - Set margin shorthand property
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

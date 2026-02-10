@@ -963,12 +963,12 @@ Labels can be positioned before, after, or around inputs:
 
 ## See Also
 
-- [label](/reference/htmltags/label.html) - Label element for form fields
-- [input](/reference/htmltags/input.html) - Input field element
-- [name](/reference/htmlattributes/name.html) - Name attribute for form fields
-- [type](/reference/htmlattributes/type.html) - Input type attribute
-- [value](/reference/htmlattributes/value.html) - Value attribute for form fields
-- [fieldset](/reference/htmltags/fieldset.html) - Fieldset and legend for grouping
+- [label](/reference/htmltags/elements/html_label_element.html) - Label element for form fields
+- [input](/reference/htmltags/elements/html_input_element.html) - Input field element
+- [name](/reference/htmlattributes/attributes/attr_name.html) - Name attribute for form fields
+- [type](/reference/htmlattributes/attributes/attr_type.html) - Input type attribute
+- [value](/reference/htmlattributes/attributes/attr_value.html) - Value attribute for form fields
+- [fieldset](/reference/htmltags/elements/html_fieldset_element.html) - Fieldset and legend for grouping
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 

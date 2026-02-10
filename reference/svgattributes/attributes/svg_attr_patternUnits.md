@@ -682,11 +682,11 @@ Shape 300px wide, pattern width="50" → 6 tiles
 ## See Also
 
 - [pattern](/reference/svgtags/pattern.html) - Pattern definition element
-- [patternContentUnits](/reference/svgattributes/patternContentUnits.html) - Pattern content coordinate system
-- [patternTransform](/reference/svgattributes/patternTransform.html) - Pattern transformation
-- [x](/reference/svgattributes/x.html), [y](/reference/svgattributes/y.html) - Pattern position
-- [width](/reference/svgattributes/width.html), [height](/reference/svgattributes/height.html) - Pattern tile dimensions
-- [gradientUnits](/reference/svgattributes/gradientUnits.html) - Similar attribute for gradients
+- [patternContentUnits](/reference/svgattributes/attributes/svg_attr_patternContentUnits.html) - Pattern content coordinate system
+- [patternTransform](/reference/svgattributes/attributes/svg_attr_patternTransform.html) - Pattern transformation
+- [x](/reference/svgattributes/attributes/svg_attr_x.html), [y](/reference/svgattributes/attributes/svg_attr_y.html) - Pattern position
+- [width](/reference/svgattributes/attributes/svg_attr_width.html), [height](/reference/svgattributes/attributes/svg_attr_height.html) - Pattern tile dimensions
+- [gradientUnits](/reference/svgattributes/attributes/svg_attr_gradientUnits.html) - Similar attribute for gradients
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

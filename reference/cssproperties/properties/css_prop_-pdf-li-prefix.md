@@ -636,13 +636,13 @@ Project-specific identifier prefixes ensure traceability across requirements, te
 
 ## See Also
 
-- [list-style](/reference/cssproperties/css_prop_list-style) - List style shorthand
-- [list-style-type](/reference/cssproperties/css_prop_list-style-type) - Type of list marker
-- [-pdf-li-group](/reference/cssproperties/css_prop_-pdf-li-group) - Scryber custom: List number grouping
-- [-pdf-li-concat](/reference/cssproperties/css_prop_-pdf-li-concat) - Scryber custom: List number concatenation
-- [-pdf-li-align](/reference/cssproperties/css_prop_-pdf-li-align) - Scryber custom: List marker alignment
-- [-pdf-li-inset](/reference/cssproperties/css_prop_-pdf-li-inset) - Scryber custom: List content inset
-- [-pdf-li-postfix](/reference/cssproperties/css_prop_-pdf-li-postfix) - Scryber custom: List marker postfix
+- [list-style](/reference/cssproperties/properties/css_prop_list-style) - List style shorthand
+- [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type) - Type of list marker
+- [-pdf-li-group](/reference/cssproperties/properties/css_prop_-pdf-li-group) - Scryber custom: List number grouping
+- [-pdf-li-concat](/reference/cssproperties/properties/css_prop_-pdf-li-concat) - Scryber custom: List number concatenation
+- [-pdf-li-align](/reference/cssproperties/properties/css_prop_-pdf-li-align) - Scryber custom: List marker alignment
+- [-pdf-li-inset](/reference/cssproperties/properties/css_prop_-pdf-li-inset) - Scryber custom: List content inset
+- [-pdf-li-postfix](/reference/cssproperties/properties/css_prop_-pdf-li-postfix) - Scryber custom: List marker postfix
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

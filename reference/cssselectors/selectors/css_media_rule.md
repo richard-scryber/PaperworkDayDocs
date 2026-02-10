@@ -380,9 +380,9 @@ Applies styles conditionally based on media queries.
 
 ## See Also
 
-- [@page Rule](/reference/cssselectors/css_page_rule)
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [Class Selector](/reference/cssselectors/css_class_selector)
+- [@page Rule](/reference/cssselectors/selectors/css_page_rule)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [Class Selector](/reference/cssselectors/selectors/css_class_selector)
 - [Responsive Design in Scryber](/guides/responsive_design)
 
 ---

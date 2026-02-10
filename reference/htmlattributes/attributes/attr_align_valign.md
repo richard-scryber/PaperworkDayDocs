@@ -660,11 +660,11 @@ Alignment is applied in this order (later overrides earlier):
 
 ## See Also
 
-- [table](/reference/htmltags/table.html) - Table element
-- [td](/reference/htmltags/td.html) - Table cell elements (td and th)
-- [tr](/reference/htmltags/tr.html) - Table row element
-- [cellpadding](/reference/htmlattributes/cellpadding_cellspacing.html) - Table spacing attributes
-- [border](/reference/htmlattributes/border.html) - Border attribute
+- [table](/reference/htmltags/elements/html_table_element.html) - Table element
+- [td](/reference/htmltags/elements/html_td_element.html) - Table cell elements (td and th)
+- [tr](/reference/htmltags/elements/html_tr_element.html) - Table row element
+- [cellpadding](/reference/htmlattributes/attributes/attr_cellpadding_cellspacing.html) - Table spacing attributes
+- [border](/reference/htmlattributes/attributes/attr_border.html) - Border attribute
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Dynamic data binding
 

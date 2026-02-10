@@ -1032,12 +1032,12 @@ Names can contain letters, numbers, hyphens, and underscores:
 
 ## See Also
 
-- [input](/reference/htmltags/input.html) - Input field element
-- [type](/reference/htmlattributes/type.html) - Input type attribute
-- [value](/reference/htmlattributes/value.html) - Value attribute for form fields
-- [for](/reference/htmlattributes/for.html) - Label for attribute
-- [label](/reference/htmltags/label.html) - Label element for form fields
-- [fieldset](/reference/htmltags/fieldset.html) - Fieldset and legend for grouping
+- [input](/reference/htmltags/elements/html_input_element.html) - Input field element
+- [type](/reference/htmlattributes/attributes/attr_type.html) - Input type attribute
+- [value](/reference/htmlattributes/attributes/attr_value.html) - Value attribute for form fields
+- [for](/reference/htmlattributes/attributes/attr_for.html) - Label for attribute
+- [label](/reference/htmltags/elements/html_label_element.html) - Label element for form fields
+- [fieldset](/reference/htmltags/elements/html_fieldset_element.html) - Fieldset and legend for grouping
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 

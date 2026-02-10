@@ -226,6 +226,6 @@ foreach (var entry in collector)
 - [#if Helper](./if.md)
 - [#each Helper](./each.md)
 - [#with Helper](./with.md)
-- [Debugging Templates Guide](../../learning/02-data-binding/07_debugging.md)
+- [Debugging Templates Guide](../../learning/02-data-binding/07_debugging.html)
 
 ---

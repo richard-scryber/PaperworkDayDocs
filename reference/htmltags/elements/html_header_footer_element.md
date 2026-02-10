@@ -707,11 +707,11 @@ In the Scryber codebase:
 
 ## See Also
 
-- [article](/reference/htmltags/article.html) - Article element (automatically positions headers/footers)
-- [section](/reference/htmltags/section.html) - Section element (automatically positions headers/footers)
-- [div](/reference/htmltags/div.html) - Generic block container
-- [aside](/reference/htmltags/aside.html) - Aside element for tangentially related content
-- [nav](/reference/htmltags/nav.html) - Navigation element
+- [article](/reference/htmltags/elements/html_article_element.html) - Article element (automatically positions headers/footers)
+- [section](/reference/htmltags/elements/html_section_element.html) - Section element (automatically positions headers/footers)
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
+- [aside](/reference/htmltags/elements/html_aside_element.html) - Aside element for tangentially related content
+- [nav](/reference/htmltags/elements/html_nav_element.html) - Navigation element
 - [Panel Component](/reference/components/panel.html) - Base panel component
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and expressions

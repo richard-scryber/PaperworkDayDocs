@@ -1639,10 +1639,10 @@ The column-span property works with data binding to conditionally create full-wi
 
 ## See Also
 
-- [column-count](/reference/cssproperties/css_prop_column-count) - Set number of columns
-- [column-gap](/reference/cssproperties/css_prop_column-gap) - Set spacing between columns
-- [column-width](/reference/cssproperties/css_prop_column-width) - Set ideal column width
-- [display](/reference/cssproperties/css_prop_display) - Control element display type
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [column-count](/reference/cssproperties/properties/css_prop_column-count) - Set number of columns
+- [column-gap](/reference/cssproperties/properties/css_prop_column-gap) - Set spacing between columns
+- [column-width](/reference/cssproperties/properties/css_prop_column-width) - Set ideal column width
+- [display](/reference/cssproperties/properties/css_prop_display) - Control element display type
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

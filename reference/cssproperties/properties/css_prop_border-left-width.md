@@ -387,11 +387,11 @@ The `border-left-width` property supports dynamic values through data binding, a
 
 ## See Also
 
-- [border-left](/reference/cssproperties/css_prop_border-left) - Left border shorthand
-- [border-width](/reference/cssproperties/css_prop_border-width) - All border widths
-- [border-top-width](/reference/cssproperties/css_prop_border-top-width) - Top border width
-- [border-right-width](/reference/cssproperties/css_prop_border-right-width) - Right border width
-- [border-bottom-width](/reference/cssproperties/css_prop_border-bottom-width) - Bottom border width
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border-left](/reference/cssproperties/properties/css_prop_border-left) - Left border shorthand
+- [border-width](/reference/cssproperties/properties/css_prop_border-width) - All border widths
+- [border-top-width](/reference/cssproperties/properties/css_prop_border-top-width) - Top border width
+- [border-right-width](/reference/cssproperties/properties/css_prop_border-right-width) - Right border width
+- [border-bottom-width](/reference/cssproperties/properties/css_prop_border-bottom-width) - Bottom border width
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

@@ -511,14 +511,14 @@ Show markers based on conditions:
 
 ## See Also
 
-- [marker-mid](/reference/svgattributes/marker-mid.html) - Marker at middle vertices
-- [marker-end](/reference/svgattributes/marker-end.html) - Marker at path end
+- [marker-mid](/reference/svgattributes/attributes/svg_attr_marker-mid.html) - Marker at middle vertices
+- [marker-end](/reference/svgattributes/attributes/svg_attr_marker-end.html) - Marker at path end
 - [marker element](/reference/svgtags/marker.html) - Marker definition element
-- [markerWidth](/reference/svgattributes/markerWidth.html) - Marker viewport width
-- [markerHeight](/reference/svgattributes/markerHeight.html) - Marker viewport height
-- [refX](/reference/svgattributes/refX.html) - Marker reference X position
-- [refY](/reference/svgattributes/refY.html) - Marker reference Y position
-- [orient](/reference/svgattributes/orient.html) - Marker orientation
+- [markerWidth](/reference/svgattributes/attributes/svg_attr_markerWidth.html) - Marker viewport width
+- [markerHeight](/reference/svgattributes/attributes/svg_attr_markerHeight.html) - Marker viewport height
+- [refX](/reference/svgattributes/attributes/svg_attr_refX.html) - Marker reference X position
+- [refY](/reference/svgattributes/attributes/svg_attr_refY.html) - Marker reference Y position
+- [orient](/reference/svgattributes/attributes/svg_attr_orient.html) - Marker orientation
 - [path element](/reference/svgtags/path.html) - SVG path element
 - [line element](/reference/svgtags/line.html) - SVG line element
 - [Data Binding](/reference/binding/) - Data binding and expressions

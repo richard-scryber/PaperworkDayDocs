@@ -675,10 +675,10 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
 
 ## See Also
 
-- [class](/reference/htmlattributes/class.html) - CSS class attribute for styling multiple elements
-- [title](/reference/htmlattributes/title.html) - Title attribute for bookmarks and tooltips
-- [a](/reference/htmltags/a.html) - Anchor element for creating links to IDs
-- [href](/reference/htmlattributes/href.html) - Hyperlink reference attribute
+- [class](/reference/htmlattributes/attributes/attr_class.html) - CSS class attribute for styling multiple elements
+- [title](/reference/htmlattributes/attributes/attr_title.html) - Title attribute for bookmarks and tooltips
+- [a](/reference/htmltags/elements/html_a_element.html) - Anchor element for creating links to IDs
+- [href](/reference/htmlattributes/attributes/attr_href.html) - Hyperlink reference attribute
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and dynamic expressions
 - [PDF Bookmarks](/reference/document/bookmarks.html) - Document outline and bookmarks

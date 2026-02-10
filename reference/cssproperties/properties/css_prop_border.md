@@ -689,14 +689,14 @@ Data context:
 
 ## See Also
 
-- [border-width](/reference/cssproperties/css_prop_border-width) - Set border width
-- [border-style](/reference/cssproperties/css_prop_border-style) - Set border style
-- [border-color](/reference/cssproperties/css_prop_border-color) - Set border color
-- [border-radius](/reference/cssproperties/css_prop_border-radius) - Set rounded corners
-- [border-top](/reference/cssproperties/css_prop_border-top) - Set top border
-- [border-right](/reference/cssproperties/css_prop_border-right) - Set right border
-- [border-bottom](/reference/cssproperties/css_prop_border-bottom) - Set bottom border
-- [border-left](/reference/cssproperties/css_prop_border-left) - Set left border
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border-width](/reference/cssproperties/properties/css_prop_border-width) - Set border width
+- [border-style](/reference/cssproperties/properties/css_prop_border-style) - Set border style
+- [border-color](/reference/cssproperties/properties/css_prop_border-color) - Set border color
+- [border-radius](/reference/cssproperties/properties/css_prop_border-radius) - Set rounded corners
+- [border-top](/reference/cssproperties/properties/css_prop_border-top) - Set top border
+- [border-right](/reference/cssproperties/properties/css_prop_border-right) - Set right border
+- [border-bottom](/reference/cssproperties/properties/css_prop_border-bottom) - Set bottom border
+- [border-left](/reference/cssproperties/properties/css_prop_border-left) - Set left border
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

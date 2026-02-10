@@ -532,11 +532,11 @@ Vertical gradients are commonly used for:
 
 ## See Also
 
-- [x1](/reference/svgattributes/x1.html) - Linear gradient start X coordinate
-- [x2](/reference/svgattributes/x2.html) - Linear gradient end X coordinate
-- [y2](/reference/svgattributes/y2.html) - Linear gradient end Y coordinate
+- [x1](/reference/svgattributes/attributes/svg_attr_x1.html) - Linear gradient start X coordinate
+- [x2](/reference/svgattributes/attributes/svg_attr_x2.html) - Linear gradient end X coordinate
+- [y2](/reference/svgattributes/attributes/svg_attr_y2.html) - Linear gradient end Y coordinate
 - [linearGradient](/reference/svgtags/linearGradient.html) - Linear gradient definition element
-- [gradientUnits](/reference/svgattributes/gradientUnits.html) - Coordinate system mode
+- [gradientUnits](/reference/svgattributes/attributes/svg_attr_gradientUnits.html) - Coordinate system mode
 - [stop](/reference/svgtags/stop.html) - Gradient color stop element
 - [Data Binding](/reference/binding/) - Data binding and expressions
 - [CSS Gradients](/reference/styles/gradients.html) - CSS gradient properties

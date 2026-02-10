@@ -989,11 +989,11 @@ Target for form submissions (limited PDF use):
 
 ## See Also
 
-- [a](/reference/htmltags/a.html) - Anchor element for hyperlinks
-- [href](/reference/htmlattributes/href.html) - Hyperlink reference attribute
-- [base](/reference/htmltags/base.html) - Base URL element
-- [rel](/reference/htmlattributes/rel.html) - Relationship attribute
-- [area](/reference/htmltags/area.html) - Image map area element
-- [form](/reference/htmltags/form.html) - Form element
+- [a](/reference/htmltags/elements/html_a_element.html) - Anchor element for hyperlinks
+- [href](/reference/htmlattributes/attributes/attr_href.html) - Hyperlink reference attribute
+- [base](/reference/htmltags/elements/html_base_element.html) - Base URL element
+- [rel](/reference/htmlattributes/attributes/attr_rel.html) - Relationship attribute
+- [area](/reference/htmltags/elements/html_area_element.html) - Image map area element
+- [form](/reference/htmltags/elements/html_form_element.html) - Form element
 
 ---

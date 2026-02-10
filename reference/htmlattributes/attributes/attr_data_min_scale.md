@@ -526,10 +526,10 @@ In PDF generation:
 
 ## See Also
 
-- [img element](/reference/htmltags/img.html) - Image element
-- [src attribute](/reference/htmlattributes/src.html) - Image source
-- [alt attribute](/reference/htmlattributes/alt.html) - Alternative text
-- [width and height attributes](/reference/htmlattributes/width_height.html) - Image dimensions
+- [img element](/reference/htmltags/elements/html_img_element.html) - Image element
+- [src attribute](/reference/htmlattributes/attributes/attr_src.html) - Image source
+- [alt attribute](/reference/htmlattributes/attributes/attr_alt.html) - Alternative text
+- [width and height attributes](/reference/htmlattributes/attributes/attr_width_height.html) - Image dimensions
 - [CSS Sizing](/reference/styles/sizing.html) - CSS sizing properties
 - [Image Handling](/reference/images/) - Complete image handling reference
 - [Performance](/reference/performance/images.html) - Image performance optimization

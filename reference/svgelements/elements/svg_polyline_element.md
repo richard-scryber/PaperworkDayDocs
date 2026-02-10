@@ -422,12 +422,12 @@ At least 2 points are required for a visible polyline. A single point produces n
 
 ## See Also
 
-- [polygon](/reference/svgelements/polygon.html) - SVG polygon element (closed polyline)
-- [line](/reference/svgelements/line.html) - SVG line element for single segments
-- [path](/reference/svgelements/path.html) - SVG path element for curves and complex shapes
-- [rect](/reference/svgelements/rect.html) - SVG rectangle element
-- [svg](/reference/svgelements/svg.html) - SVG container element
-- [SVG Markers](/reference/svgelements/markers.html) - Arrowheads and line decorations
+- [polygon](/reference/svgelements/elements/svg_polygon_element.html) - SVG polygon element (closed polyline)
+- [line](/reference/svgelements/elements/svg_line_element.html) - SVG line element for single segments
+- [path](/reference/svgelements/elements/svg_path_element.html) - SVG path element for curves and complex shapes
+- [rect](/reference/svgelements/elements/svg_rect_element.html) - SVG rectangle element
+- [svg](/reference/svgelements/elements/svg_svg_element.html) - SVG container element
+- [SVG Markers](/reference/svgelements/elements/svg_markers_element.html) - Arrowheads and line decorations
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

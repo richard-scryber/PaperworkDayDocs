@@ -626,7 +626,7 @@ Show message when collection is empty:
 
 ## See Also
 
-- [template element](/reference/htmltags/template.html) - The template HTML element
+- [template element](/reference/htmltags/elements/html_template_element.html) - The template HTML element
 - [data-bind-start attribute](/reference/htmlattributes/data-bind-start.html) - Control iteration start index
 - [data-bind-step attribute](/reference/htmlattributes/data-bind-step.html) - Control iteration step
 - [data-bind-max attribute](/reference/htmlattributes/data-bind-max.html) - Limit iteration count

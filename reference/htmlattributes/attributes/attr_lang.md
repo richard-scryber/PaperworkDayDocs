@@ -1105,10 +1105,10 @@ BCP 47 supports historical and extinct languages:
 
 ## See Also
 
-- [charset](/reference/htmlattributes/charset.html) - Character encoding attribute
-- [dir](/reference/htmlattributes/dir.html) - Text direction attribute (ltr, rtl)
-- [translate](/reference/htmlattributes/translate.html) - Translation hint attribute
-- [html](/reference/htmltags/html.html) - Root HTML element
+- [charset](/reference/htmlattributes/attributes/attr_charset.html) - Character encoding attribute
+- [dir](/reference/htmlattributes/attributes/attr_dir.html) - Text direction attribute (ltr, rtl)
+- [translate](/reference/htmlattributes/attributes/attr_translate.html) - Translation hint attribute
+- [html](/reference/htmltags/elements/html_html_element.html) - Root HTML element
 - [Internationalization](/reference/i18n/) - Creating multilingual PDFs
 - [BCP 47](/reference/standards/bcp47.html) - Language tag specification
 

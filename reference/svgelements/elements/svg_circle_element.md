@@ -396,12 +396,12 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 
 ## See Also
 
-- [ellipse](/reference/svgelements/ellipse.html) - SVG ellipse element for oval shapes
-- [rect](/reference/svgelements/rect.html) - SVG rectangle element
-- [polygon](/reference/svgelements/polygon.html) - SVG polygon element
-- [path](/reference/svgelements/path.html) - SVG path element for complex shapes
-- [svg](/reference/svgelements/svg.html) - SVG container element
-- [SVG Gradients](/reference/svgelements/gradients.html) - Linear and radial gradients
+- [ellipse](/reference/svgelements/elements/svg_ellipse_element.html) - SVG ellipse element for oval shapes
+- [rect](/reference/svgelements/elements/svg_rect_element.html) - SVG rectangle element
+- [polygon](/reference/svgelements/elements/svg_polygon_element.html) - SVG polygon element
+- [path](/reference/svgelements/elements/svg_path_element.html) - SVG path element for complex shapes
+- [svg](/reference/svgelements/elements/svg_svg_element.html) - SVG container element
+- [SVG Gradients](/reference/svgelements/elements/svg_gradients_element.html) - Linear and radial gradients
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

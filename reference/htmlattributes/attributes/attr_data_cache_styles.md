@@ -825,7 +825,7 @@ Optimize only high-volume sections:
 - [data-bind attribute](/reference/htmlattributes/data-bind.html) - Primary template iteration attribute
 - [data-style-identifier attribute](/reference/htmlattributes/data-style-identifier.html) - Cache identifier
 - [data-bind-max attribute](/reference/htmlattributes/data-bind-max.html) - Pagination for performance
-- [template element](/reference/htmltags/template.html) - The template HTML element
+- [template element](/reference/htmltags/elements/html_template_element.html) - The template HTML element
 - [Performance Guide](/reference/performance/) - Complete performance optimization guide
 - [ForEach Component](/reference/components/foreach.html) - Base component class
 

@@ -321,9 +321,9 @@ ID selectors have the highest specificity value of **5 points**.
 
 ## See Also
 
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [Class Selector](/reference/cssselectors/css_class_selector)
-- [CSS Specificity](/reference/cssselectors/css_specificity)
-- [@id attribute](/reference/htmlattributes/attr_id)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [Class Selector](/reference/cssselectors/selectors/css_class_selector)
+- [CSS Specificity](/reference/cssselectors/selectors/css_specificity)
+- [@id attribute](/reference/htmlattributes/attributes/attr_id)
 
 ---

@@ -295,10 +295,10 @@ The pseudo-class adds to the base selector's specificity:
 
 ## See Also
 
-- [:before / ::before Pseudo-class](/reference/cssselectors/css_before_selector)
-- [:after / ::after Pseudo-class](/reference/cssselectors/css_after_selector)
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [Class Selector](/reference/cssselectors/css_class_selector)
+- [:before / ::before Pseudo-class](/reference/cssselectors/selectors/css_before_selector)
+- [:after / ::after Pseudo-class](/reference/cssselectors/selectors/css_after_selector)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [Class Selector](/reference/cssselectors/selectors/css_class_selector)
 - [ComponentState Documentation](/reference/component_state)
 
 ---

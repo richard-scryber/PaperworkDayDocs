@@ -1187,9 +1187,9 @@ For PDF generation with Scryber:
 
 ## See Also
 
-- [link](/reference/htmltags/link.html) - Link element for stylesheets
-- [style](/reference/htmltags/style.html) - Inline style element
-- [rel](/reference/htmlattributes/rel.html) - Relationship attribute for link element
+- [link](/reference/htmltags/elements/html_link_element.html) - Link element for stylesheets
+- [style](/reference/htmltags/elements/html_style_element.html) - Inline style element
+- [rel](/reference/htmlattributes/attributes/attr_rel.html) - Relationship attribute for link element
 - [@media](/reference/css/media.html) - CSS media queries
 - [@page](/reference/css/page.html) - Page rules for print
 - [CSS Styles](/reference/styles/) - Complete CSS reference

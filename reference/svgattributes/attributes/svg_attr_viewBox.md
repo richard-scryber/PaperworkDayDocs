@@ -693,10 +693,10 @@ ViewBox is key to creating responsive, scalable SVG:
 
 ## See Also
 
-- [preserveAspectRatio](/reference/svgattributes/preserveAspectRatio.html) - Aspect ratio control
+- [preserveAspectRatio](/reference/svgattributes/attributes/svg_attr_preserveAspectRatio.html) - Aspect ratio control
 - [svg](/reference/svgtags/svg.html) - SVG canvas element
 - [width and height](/reference/htmlattributes/width-height.html) - Viewport dimensions
-- [transform](/reference/svgattributes/transform.html) - Transform attribute
+- [transform](/reference/svgattributes/attributes/svg_attr_transform.html) - Transform attribute
 - [Data Binding](/reference/binding/) - Dynamic data binding
 - [SVG Coordinate Systems](https://www.w3.org/TR/SVG2/coords.html) - W3C specification
 

@@ -567,11 +567,11 @@ For radial gradients, spread methods work concentrically:
 
 - [linearGradient](/reference/svgtags/linearGradient.html) - Linear gradient definition element
 - [radialGradient](/reference/svgtags/radialGradient.html) - Radial gradient definition element
-- [x1](/reference/svgattributes/x1.html), [y1](/reference/svgattributes/y1.html), [x2](/reference/svgattributes/x2.html), [y2](/reference/svgattributes/y2.html) - Linear gradient coordinates
-- [cx](/reference/svgattributes/cx.html), [cy](/reference/svgattributes/cy.html), [r](/reference/svgattributes/r.html) - Radial gradient coordinates
-- [gradientUnits](/reference/svgattributes/gradientUnits.html) - Coordinate system mode
+- [x1](/reference/svgattributes/attributes/svg_attr_x1.html), [y1](/reference/svgattributes/attributes/svg_attr_y1.html), [x2](/reference/svgattributes/attributes/svg_attr_x2.html), [y2](/reference/svgattributes/attributes/svg_attr_y2.html) - Linear gradient coordinates
+- [cx](/reference/svgattributes/attributes/svg_attr_cx.html), [cy](/reference/svgattributes/attributes/svg_attr_cy.html), [r](/reference/svgattributes/attributes/svg_attr_r.html) - Radial gradient coordinates
+- [gradientUnits](/reference/svgattributes/attributes/svg_attr_gradientUnits.html) - Coordinate system mode
 - [stop](/reference/svgtags/stop.html) - Gradient color stop element
-- [offset](/reference/svgattributes/offset.html) - Gradient stop position
+- [offset](/reference/svgattributes/attributes/svg_attr_offset.html) - Gradient stop position
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

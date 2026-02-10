@@ -526,11 +526,11 @@ Stops outside 0%-100% work with spreadMethod:
 ## See Also
 
 - [stop](/reference/svgtags/stop.html) - Gradient color stop element
-- [stop-color](/reference/svgattributes/stop-color.html) - Color value at stop position
-- [stop-opacity](/reference/svgattributes/stop-opacity.html) - Opacity at stop position
+- [stop-color](/reference/svgattributes/attributes/svg_attr_stop-color.html) - Color value at stop position
+- [stop-opacity](/reference/svgattributes/attributes/svg_attr_stop-opacity.html) - Opacity at stop position
 - [linearGradient](/reference/svgtags/linearGradient.html) - Linear gradient definition element
 - [radialGradient](/reference/svgtags/radialGradient.html) - Radial gradient definition element
-- [spreadMethod](/reference/svgattributes/spreadMethod.html) - Gradient spread behavior
+- [spreadMethod](/reference/svgattributes/attributes/svg_attr_spreadMethod.html) - Gradient spread behavior
 - [Data Binding](/reference/binding/) - Data binding and expressions
 - [CSS Gradients](/reference/styles/gradients.html) - CSS gradient properties
 

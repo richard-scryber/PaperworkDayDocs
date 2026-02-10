@@ -239,10 +239,10 @@ Control how paragraphs break across pages:
 
 ## See Also
 
-- [div](/reference/htmltags/div.html) - Generic block container
-- [span](/reference/htmltags/span.html) - Inline container
-- [h1-h6](/reference/htmltags/heading.html) - Heading elements
-- [blockquote](/reference/htmltags/blockquote.html) - Block quotation
-- [pre](/reference/htmltags/pre.html) - Preformatted text
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
+- [span](/reference/htmltags/elements/html_span_element.html) - Inline container
+- [h1-h6](/reference/htmltags/elements/html_heading_element.html) - Heading elements
+- [blockquote](/reference/htmltags/elements/html_blockquote_element.html) - Block quotation
+- [pre](/reference/htmltags/elements/html_pre_element.html) - Preformatted text
 
 ---

@@ -313,10 +313,10 @@ p.intro {
 
 ## See Also
 
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [ID Selector](/reference/cssselectors/css_id_selector)
-- [Multiple Selectors](/reference/cssselectors/css_multiple_selectors)
-- [CSS Specificity](/reference/cssselectors/css_specificity)
-- [@class attribute](/reference/htmlattributes/attr_class)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [ID Selector](/reference/cssselectors/selectors/css_id_selector)
+- [Multiple Selectors](/reference/cssselectors/selectors/css_multiple_selectors)
+- [CSS Specificity](/reference/cssselectors/selectors/css_specificity)
+- [@class attribute](/reference/htmlattributes/attributes/attr_class)
 
 ---

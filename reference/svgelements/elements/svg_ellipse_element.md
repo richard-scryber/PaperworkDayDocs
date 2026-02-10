@@ -397,13 +397,13 @@ The stroke is drawn centered on the ellipse's outline, extending both inward and
 
 ## See Also
 
-- [circle](/reference/svgelements/circle.html) - SVG circle element for perfect circles
-- [rect](/reference/svgelements/rect.html) - SVG rectangle element
-- [polygon](/reference/svgelements/polygon.html) - SVG polygon element
-- [path](/reference/svgelements/path.html) - SVG path element for complex shapes
-- [svg](/reference/svgelements/svg.html) - SVG container element
-- [SVG Gradients](/reference/svgelements/gradients.html) - Linear and radial gradients
-- [SVG Transforms](/reference/svgelements/transforms.html) - Transformation operations
+- [circle](/reference/svgelements/elements/svg_circle_element.html) - SVG circle element for perfect circles
+- [rect](/reference/svgelements/elements/svg_rect_element.html) - SVG rectangle element
+- [polygon](/reference/svgelements/elements/svg_polygon_element.html) - SVG polygon element
+- [path](/reference/svgelements/elements/svg_path_element.html) - SVG path element for complex shapes
+- [svg](/reference/svgelements/elements/svg_svg_element.html) - SVG container element
+- [SVG Gradients](/reference/svgelements/elements/svg_gradients_element.html) - Linear and radial gradients
+- [SVG Transforms](/reference/svgelements/elements/svg_transforms_element.html) - Transformation operations
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

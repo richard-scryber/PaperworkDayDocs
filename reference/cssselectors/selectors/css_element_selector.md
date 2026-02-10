@@ -285,10 +285,10 @@ Element selectors have the lowest specificity value of **1 point**.
 
 ## See Also
 
-- [Class Selector](/reference/cssselectors/css_class_selector)
-- [ID Selector](/reference/cssselectors/css_id_selector)
-- [Universal Selector](/reference/cssselectors/css_universal_selector)
-- [Descendant Combinator](/reference/cssselectors/css_descendant_combinator)
-- [CSS Specificity](/reference/cssselectors/css_specificity)
+- [Class Selector](/reference/cssselectors/selectors/css_class_selector)
+- [ID Selector](/reference/cssselectors/selectors/css_id_selector)
+- [Universal Selector](/reference/cssselectors/selectors/css_universal_selector)
+- [Descendant Combinator](/reference/cssselectors/selectors/css_descendant_combinator)
+- [CSS Specificity](/reference/cssselectors/selectors/css_specificity)
 
 ---

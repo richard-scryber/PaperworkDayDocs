@@ -429,11 +429,11 @@ Data context:
 
 ## See Also
 
-- [border-bottom](/reference/cssproperties/css_prop_border-bottom) - Bottom border shorthand
-- [border-color](/reference/cssproperties/css_prop_border-color) - All border colors
-- [border-bottom-width](/reference/cssproperties/css_prop_border-bottom-width) - Bottom border width
-- [border-bottom-style](/reference/cssproperties/css_prop_border-bottom-style) - Bottom border style
-- [color](/reference/cssproperties/css_prop_color) - Text color
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border-bottom](/reference/cssproperties/properties/css_prop_border-bottom) - Bottom border shorthand
+- [border-color](/reference/cssproperties/properties/css_prop_border-color) - All border colors
+- [border-bottom-width](/reference/cssproperties/properties/css_prop_border-bottom-width) - Bottom border width
+- [border-bottom-style](/reference/cssproperties/properties/css_prop_border-bottom-style) - Bottom border style
+- [color](/reference/cssproperties/properties/css_prop_color) - Text color
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

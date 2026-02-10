@@ -709,10 +709,10 @@ For consistent results, always provide explicit `title` attributes on elements y
 
 ## See Also
 
-- [id](/reference/htmlattributes/id.html) - Unique identifier attribute (required for bookmark navigation)
-- [a](/reference/htmltags/a.html) - Anchor element for linking to bookmarked sections
-- [href](/reference/htmlattributes/href.html) - Link reference attribute
-- [h1-h6](/reference/htmltags/headings.html) - Heading elements (primary use for bookmarks)
+- [id](/reference/htmlattributes/attributes/attr_id.html) - Unique identifier attribute (required for bookmark navigation)
+- [a](/reference/htmltags/elements/html_a_element.html) - Anchor element for linking to bookmarked sections
+- [href](/reference/htmlattributes/attributes/attr_href.html) - Link reference attribute
+- [h1-h6](/reference/htmltags/elements/html_headings_element.html) - Heading elements (primary use for bookmarks)
 - [PDF Bookmarks](/reference/document/bookmarks.html) - Document outline and navigation
 - [Document Structure](/reference/document/structure.html) - Organizing PDF documents
 - [Data Binding](/reference/binding/) - Dynamic content and attributes

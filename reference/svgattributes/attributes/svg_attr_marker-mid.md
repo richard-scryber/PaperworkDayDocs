@@ -519,14 +519,14 @@ For path elements, middle markers appear at vertices between these commands:
 
 ## See Also
 
-- [marker-start](/reference/svgattributes/marker-start.html) - Marker at path start
-- [marker-end](/reference/svgattributes/marker-end.html) - Marker at path end
+- [marker-start](/reference/svgattributes/attributes/svg_attr_marker-start.html) - Marker at path start
+- [marker-end](/reference/svgattributes/attributes/svg_attr_marker-end.html) - Marker at path end
 - [marker element](/reference/svgtags/marker.html) - Marker definition element
-- [markerWidth](/reference/svgattributes/markerWidth.html) - Marker viewport width
-- [markerHeight](/reference/svgattributes/markerHeight.html) - Marker viewport height
-- [refX](/reference/svgattributes/refX.html) - Marker reference X position
-- [refY](/reference/svgattributes/refY.html) - Marker reference Y position
-- [orient](/reference/svgattributes/orient.html) - Marker orientation
+- [markerWidth](/reference/svgattributes/attributes/svg_attr_markerWidth.html) - Marker viewport width
+- [markerHeight](/reference/svgattributes/attributes/svg_attr_markerHeight.html) - Marker viewport height
+- [refX](/reference/svgattributes/attributes/svg_attr_refX.html) - Marker reference X position
+- [refY](/reference/svgattributes/attributes/svg_attr_refY.html) - Marker reference Y position
+- [orient](/reference/svgattributes/attributes/svg_attr_orient.html) - Marker orientation
 - [path element](/reference/svgtags/path.html) - SVG path element
 - [polyline element](/reference/svgtags/polyline.html) - SVG polyline element
 - [Data Binding](/reference/binding/) - Data binding and expressions

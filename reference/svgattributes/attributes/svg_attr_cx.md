@@ -381,14 +381,14 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 
 ## See Also
 
-- [cy](/reference/svgattributes/cy.html) - Center Y coordinate attribute
-- [r](/reference/svgattributes/r.html) - Radius attribute for circles
-- [rx](/reference/svgattributes/rx.html) - Horizontal radius for ellipses
-- [x](/reference/svgattributes/x.html) - X coordinate attribute
-- [circle](/reference/svgelements/circle.html) - SVG circle element
-- [ellipse](/reference/svgelements/ellipse.html) - SVG ellipse element
-- [radialGradient](/reference/svgelements/radialGradient.html) - SVG radial gradient element
-- [SVG Transforms](/reference/svgelements/transforms.html) - Transformation operations
+- [cy](/reference/svgattributes/attributes/svg_attr_cy.html) - Center Y coordinate attribute
+- [r](/reference/svgattributes/attributes/svg_attr_r.html) - Radius attribute for circles
+- [rx](/reference/svgattributes/attributes/svg_attr_rx.html) - Horizontal radius for ellipses
+- [x](/reference/svgattributes/attributes/svg_attr_x.html) - X coordinate attribute
+- [circle](/reference/svgelements/elements/svg_circle_element.html) - SVG circle element
+- [ellipse](/reference/svgelements/elements/svg_ellipse_element.html) - SVG ellipse element
+- [radialGradient](/reference/svgelements/elements/svg_radialGradient_element.html) - SVG radial gradient element
+- [SVG Transforms](/reference/svgelements/elements/svg_transforms_element.html) - Transformation operations
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

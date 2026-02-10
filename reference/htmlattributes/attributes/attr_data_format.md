@@ -609,9 +609,9 @@ Show elapsed time:
 
 ## See Also
 
-- [num element](/reference/htmltags/num.html) - Number display element
-- [time element](/reference/htmltags/time.html) - Date/time display element
-- [page element](/reference/htmltags/page.html) - Page number element
+- [num element](/reference/htmltags/elements/html_num_element.html) - Number display element
+- [time element](/reference/htmltags/elements/html_time_element.html) - Date/time display element
+- [page element](/reference/htmltags/elements/html_page_element.html) - Page number element
 - [.NET Standard Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) - Microsoft documentation
 - [.NET Custom Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings) - Microsoft documentation
 - [.NET Date/Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) - Microsoft documentation

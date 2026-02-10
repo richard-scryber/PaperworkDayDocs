@@ -533,10 +533,10 @@ Or using data attributes:
 
 ## See Also
 
-- [ul](/reference/htmltags/ul.html) - Unordered list (with default markers)
-- [li](/reference/htmltags/li.html) - List item element
-- [ol](/reference/htmltags/ol.html) - Ordered list
-- [nav](/reference/htmltags/nav.html) - Navigation section
+- [ul](/reference/htmltags/elements/html_ul_element.html) - Unordered list (with default markers)
+- [li](/reference/htmltags/elements/html_li_element.html) - List item element
+- [ol](/reference/htmltags/elements/html_ol_element.html) - Ordered list
+- [nav](/reference/htmltags/elements/html_nav_element.html) - Navigation section
 - [CSS List Styling](/reference/styles/lists.html) - List styling reference
 
 ---

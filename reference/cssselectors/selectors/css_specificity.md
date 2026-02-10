@@ -370,11 +370,11 @@ div > section > p { }   /* 1 × 200 = 200 */
 
 ## See Also
 
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [Class Selector](/reference/cssselectors/css_class_selector)
-- [ID Selector](/reference/cssselectors/css_id_selector)
-- [Descendant Combinator](/reference/cssselectors/css_descendant_combinator)
-- [Child Combinator](/reference/cssselectors/css_child_combinator)
-- [Multiple Selectors](/reference/cssselectors/css_multiple_selectors)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [Class Selector](/reference/cssselectors/selectors/css_class_selector)
+- [ID Selector](/reference/cssselectors/selectors/css_id_selector)
+- [Descendant Combinator](/reference/cssselectors/selectors/css_descendant_combinator)
+- [Child Combinator](/reference/cssselectors/selectors/css_child_combinator)
+- [Multiple Selectors](/reference/cssselectors/selectors/css_multiple_selectors)
 
 ---

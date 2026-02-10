@@ -606,11 +606,11 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 
 ## See Also
 
-- [p](/reference/htmltags/p.html) - Paragraph element
-- [div](/reference/htmltags/div.html) - Generic block container
-- [span](/reference/htmltags/span.html) - Inline text container
-- [strong](/reference/htmltags/strong.html) - Bold text emphasis
-- [em](/reference/htmltags/em.html) - Italic text emphasis
+- [p](/reference/htmltags/elements/html_p_element.html) - Paragraph element
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
+- [span](/reference/htmltags/elements/html_span_element.html) - Inline text container
+- [strong](/reference/htmltags/elements/html_strong_element.html) - Bold text emphasis
+- [em](/reference/htmltags/elements/html_em_element.html) - Italic text emphasis
 - [Heading Component](/reference/components/heading.html) - Base heading component in Scryber namespace
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and expressions

@@ -770,10 +770,10 @@ Each line respects text-anchor:
 
 - [text](/reference/svgtags/text.html) - Text element
 - [tspan](/reference/svgtags/tspan.html) - Text span element
-- [dominant-baseline](/reference/svgattributes/dominant-baseline.html) - Vertical text alignment
-- [x](/reference/svgattributes/x.html), [y](/reference/svgattributes/y.html) - Text position coordinates
-- [font-size](/reference/svgattributes/font-size.html) - Text size
-- [fill](/reference/svgattributes/fill.html) - Text color
+- [dominant-baseline](/reference/svgattributes/attributes/svg_attr_dominant-baseline.html) - Vertical text alignment
+- [x](/reference/svgattributes/attributes/svg_attr_x.html), [y](/reference/svgattributes/attributes/svg_attr_y.html) - Text position coordinates
+- [font-size](/reference/svgattributes/attributes/svg_attr_font-size.html) - Text size
+- [fill](/reference/svgattributes/attributes/svg_attr_fill.html) - Text color
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

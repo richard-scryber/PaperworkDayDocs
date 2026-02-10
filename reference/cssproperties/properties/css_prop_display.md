@@ -1046,12 +1046,12 @@ The display property works seamlessly with data binding to create dynamic, condi
 
 ## See Also
 
-- [float](/reference/cssproperties/css_prop_float) - Float elements left or right
-- [position](/reference/cssproperties/css_prop_position) - Set positioning method
-- [width](/reference/cssproperties/css_prop_width) - Set element width
-- [height](/reference/cssproperties/css_prop_height) - Set element height
-- [overflow](/reference/cssproperties/css_prop_overflow) - Control overflow behavior
-- [vertical-align](/reference/cssproperties/css_prop_vertical-align) - Set vertical alignment
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [float](/reference/cssproperties/properties/css_prop_float) - Float elements left or right
+- [position](/reference/cssproperties/properties/css_prop_position) - Set positioning method
+- [width](/reference/cssproperties/properties/css_prop_width) - Set element width
+- [height](/reference/cssproperties/properties/css_prop_height) - Set element height
+- [overflow](/reference/cssproperties/properties/css_prop_overflow) - Control overflow behavior
+- [vertical-align](/reference/cssproperties/properties/css_prop_vertical-align) - Set vertical alignment
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

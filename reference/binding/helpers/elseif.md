@@ -225,10 +225,10 @@ Conditions are evaluated in order from top to bottom. Only the first true condit
 
 ## See Also
 
-- [#if Helper](./if.md)
-- [else Helper](./else.md)
-- [Comparison Operators](../operators/equality.md)
-- [Logical Operators](../operators/and.md)
-- [Conditional Rendering Guide](../../learning/02-data-binding/04_conditional_rendering.md)
+- [#if Helper](./if.html)
+- [else Helper](./else.html)
+- [Comparison Operators](../operators/equality.html)
+- [Logical Operators](../operators/and.html)
+- [Conditional Rendering Guide](../../learning/02-data-binding/04_conditional_rendering.html)
 
 ---

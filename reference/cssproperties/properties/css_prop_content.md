@@ -607,10 +607,10 @@ The `content` property can be dynamically populated through data binding with co
 
 ## See Also
 
-- [counter-reset](/reference/cssproperties/css_prop_counter-reset) - Initialize counters
-- [counter-increment](/reference/cssproperties/css_prop_counter-increment) - Increment counters
-- [display](/reference/cssproperties/css_prop_display) - Element display type
-- [list-style-type](/reference/cssproperties/css_prop_list-style-type) - List marker style
+- [counter-reset](/reference/cssproperties/properties/css_prop_counter-reset) - Initialize counters
+- [counter-increment](/reference/cssproperties/properties/css_prop_counter-increment) - Increment counters
+- [display](/reference/cssproperties/properties/css_prop_display) - Element display type
+- [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type) - List marker style
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

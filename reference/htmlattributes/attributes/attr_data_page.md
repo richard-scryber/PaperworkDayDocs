@@ -625,11 +625,11 @@ Generate exam from question database:
 
 ## See Also
 
-- [frame element](/reference/htmltags/frame.html) - Frame element reference
-- [frameset element](/reference/htmltags/frameset.html) - Frameset container element
+- [frame element](/reference/htmltags/elements/html_frame_element.html) - Frame element reference
+- [frameset element](/reference/htmltags/elements/html_frameset_element.html) - Frameset container element
 - [Document Assembly](/reference/assembly/) - Document assembly guide
 - [Modifications](/reference/modifications/) - Document modification framework
-- [Hidden Attribute](/reference/htmlattributes/hidden.html) - Controlling visibility
+- [Hidden Attribute](/reference/htmlattributes/attributes/attr_hidden.html) - Controlling visibility
 - [Data Binding](/reference/binding/) - Data binding expressions
 
 ---

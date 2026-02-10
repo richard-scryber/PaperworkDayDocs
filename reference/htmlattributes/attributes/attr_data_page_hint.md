@@ -998,10 +998,10 @@ Test document with and without hints:
 
 ## See Also
 
-- [page element](/reference/htmltags/page.html) - Page number element documentation
+- [page element](/reference/htmltags/elements/html_page_element.html) - Page number element documentation
 - [data-format attribute](/reference/htmlattributes/data-format.html) - Page number format control
-- [property attribute](/reference/htmlattributes/property.html) - Page property selection
-- [for attribute](/reference/htmlattributes/for.html) - Page number component reference
+- [property attribute](/reference/htmlattributes/attributes/attr_property.html) - Page property selection
+- [for attribute](/reference/htmlattributes/attributes/attr_for.html) - Page number component reference
 - [Page Numbering](/reference/pagenumbering/) - Complete page numbering guide
 - [Document Performance](/reference/performance/) - Performance optimization techniques
 - [Headers and Footers](/reference/headers-footers/) - Header and footer implementation

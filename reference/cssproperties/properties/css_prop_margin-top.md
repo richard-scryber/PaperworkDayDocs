@@ -874,11 +874,11 @@ Data context:
 
 ## See Also
 
-- [margin](/reference/cssproperties/css_prop_margin) - Set all margins shorthand
-- [margin-bottom](/reference/cssproperties/css_prop_margin-bottom) - Set bottom margin
-- [margin-left](/reference/cssproperties/css_prop_margin-left) - Set left margin
-- [margin-right](/reference/cssproperties/css_prop_margin-right) - Set right margin
-- [padding-top](/reference/cssproperties/css_prop_padding-top) - Set top padding
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [margin](/reference/cssproperties/properties/css_prop_margin) - Set all margins shorthand
+- [margin-bottom](/reference/cssproperties/properties/css_prop_margin-bottom) - Set bottom margin
+- [margin-left](/reference/cssproperties/properties/css_prop_margin-left) - Set left margin
+- [margin-right](/reference/cssproperties/properties/css_prop_margin-right) - Set right margin
+- [padding-top](/reference/cssproperties/properties/css_prop_padding-top) - Set top padding
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

@@ -913,12 +913,12 @@ Data context:
 
 ## See Also
 
-- [margin](/reference/cssproperties/css_prop_margin) - Set all margins shorthand
-- [margin-right](/reference/cssproperties/css_prop_margin-right) - Set right margin
-- [margin-top](/reference/cssproperties/css_prop_margin-top) - Set top margin
-- [margin-bottom](/reference/cssproperties/css_prop_margin-bottom) - Set bottom margin
-- [padding-left](/reference/cssproperties/css_prop_padding-left) - Set left padding
-- [margin-inline-start](/reference/cssproperties/css_prop_margin-inline-start) - Set inline start margin
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [margin](/reference/cssproperties/properties/css_prop_margin) - Set all margins shorthand
+- [margin-right](/reference/cssproperties/properties/css_prop_margin-right) - Set right margin
+- [margin-top](/reference/cssproperties/properties/css_prop_margin-top) - Set top margin
+- [margin-bottom](/reference/cssproperties/properties/css_prop_margin-bottom) - Set bottom margin
+- [padding-left](/reference/cssproperties/properties/css_prop_padding-left) - Set left padding
+- [margin-inline-start](/reference/cssproperties/properties/css_prop_margin-inline-start) - Set inline start margin
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

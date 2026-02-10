@@ -539,11 +539,11 @@ Creates partnership documents with two logos positioned with dynamic horizontal 
 
 ## See Also
 
-- [background](/reference/cssproperties/css_prop_background) - Shorthand for all background properties
-- [background-position](/reference/cssproperties/css_prop_background-position) - Set both horizontal and vertical position
-- [background-position-y](/reference/cssproperties/css_prop_background-position-y) - Set vertical position only
-- [background-image](/reference/cssproperties/css_prop_background-image) - Set background image
-- [background-repeat](/reference/cssproperties/css_prop_background-repeat) - Control image repetition
-- [background-size](/reference/cssproperties/css_prop_background-size) - Control image sizing
+- [background](/reference/cssproperties/properties/css_prop_background) - Shorthand for all background properties
+- [background-position](/reference/cssproperties/properties/css_prop_background-position) - Set both horizontal and vertical position
+- [background-position-y](/reference/cssproperties/properties/css_prop_background-position-y) - Set vertical position only
+- [background-image](/reference/cssproperties/properties/css_prop_background-image) - Set background image
+- [background-repeat](/reference/cssproperties/properties/css_prop_background-repeat) - Control image repetition
+- [background-size](/reference/cssproperties/properties/css_prop_background-size) - Control image sizing
 
 ---

@@ -346,9 +346,9 @@ In Scryber, child combinators have higher precedence than descendant combinators
 
 ## See Also
 
-- [Descendant Combinator](/reference/cssselectors/css_descendant_combinator)
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [Class Selector](/reference/cssselectors/css_class_selector)
-- [CSS Specificity](/reference/cssselectors/css_specificity)
+- [Descendant Combinator](/reference/cssselectors/selectors/css_descendant_combinator)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [Class Selector](/reference/cssselectors/selectors/css_class_selector)
+- [CSS Specificity](/reference/cssselectors/selectors/css_specificity)
 
 ---

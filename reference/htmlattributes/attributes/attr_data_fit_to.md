@@ -1071,10 +1071,10 @@ Document with return-to-top navigation:
 
 ## See Also
 
-- [a element](/reference/htmltags/a.html) - Anchor/link element documentation
-- [href attribute](/reference/htmlattributes/href.html) - Link destination attribute
-- [id attribute](/reference/htmlattributes/id.html) - Element identifier for link targets
-- [title attribute](/reference/htmlattributes/title.html) - Bookmark title attribute
+- [a element](/reference/htmltags/elements/html_a_element.html) - Anchor/link element documentation
+- [href attribute](/reference/htmlattributes/attributes/attr_href.html) - Link destination attribute
+- [id attribute](/reference/htmlattributes/attributes/attr_id.html) - Element identifier for link targets
+- [title attribute](/reference/htmlattributes/attributes/attr_title.html) - Bookmark title attribute
 - [PDF Links](/reference/pdf/links.html) - PDF link and navigation specification
 - [PDF Destinations](/reference/pdf/destinations.html) - PDF destination types
 - [Document Navigation](/reference/navigation/) - Navigation patterns and best practices

@@ -248,10 +248,10 @@ num {
 
 ## See Also
 
-- [span](/reference/htmltags/span.html) - Generic inline container element
-- [strong](/reference/htmltags/strong.html) - Strong emphasis (bold)
-- [em](/reference/htmltags/em.html) - Emphasis (italic)
-- [Text Formatting](/reference/htmltags/textformatting.html) - Text formatting elements
+- [span](/reference/htmltags/elements/html_span_element.html) - Generic inline container element
+- [strong](/reference/htmltags/elements/html_strong_element.html) - Strong emphasis (bold)
+- [em](/reference/htmltags/elements/html_em_element.html) - Emphasis (italic)
+- [Text Formatting](/reference/htmltags/elements/html_textformatting_element.html) - Text formatting elements
 - [Data Binding](/reference/binding/) - Data binding expressions
 - [CSS Styling](/reference/styles/) - CSS styling reference
 

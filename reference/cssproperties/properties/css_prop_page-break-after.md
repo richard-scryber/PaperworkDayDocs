@@ -920,11 +920,11 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 
 ## See Also
 
-- [page-break-before](/reference/cssproperties/css_prop_page-break-before) - Control page breaks before elements
-- [page-break-inside](/reference/cssproperties/css_prop_page-break-inside) - Control page breaks within elements
-- [break-after](/reference/cssproperties/css_prop_break-after) - Modern alternative with more options
-- [break-before](/reference/cssproperties/css_prop_break-before) - Modern page and column break control
-- [page](/reference/cssproperties/css_prop_page) - Specify named page for element
+- [page-break-before](/reference/cssproperties/properties/css_prop_page-break-before) - Control page breaks before elements
+- [page-break-inside](/reference/cssproperties/properties/css_prop_page-break-inside) - Control page breaks within elements
+- [break-after](/reference/cssproperties/properties/css_prop_break-after) - Modern alternative with more options
+- [break-before](/reference/cssproperties/properties/css_prop_break-before) - Modern page and column break control
+- [page](/reference/cssproperties/properties/css_prop_page) - Specify named page for element
 - [@page rule](/reference/css_atrules/css_atrule_page) - Define page properties and margins
 
 ---

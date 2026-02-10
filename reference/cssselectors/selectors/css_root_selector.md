@@ -252,9 +252,9 @@ The `:root` selector has a specificity equivalent to a pseudo-class applied to a
 
 ## See Also
 
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [Universal Selector](/reference/cssselectors/css_universal_selector)
-- [CSS Specificity](/reference/cssselectors/css_specificity)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [Universal Selector](/reference/cssselectors/selectors/css_universal_selector)
+- [CSS Specificity](/reference/cssselectors/selectors/css_specificity)
 - [html Element](/reference/htmlelements/html_html_element)
 
 ---

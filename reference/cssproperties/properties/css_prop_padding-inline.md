@@ -642,12 +642,12 @@ Data context:
 
 ## See Also
 
-- [padding-inline-start](/reference/cssproperties/css_prop_padding-inline-start) - Set inline start padding
-- [padding-inline-end](/reference/cssproperties/css_prop_padding-inline-end) - Set inline end padding
-- [padding](/reference/cssproperties/css_prop_padding) - Set all padding shorthand
-- [padding-left](/reference/cssproperties/css_prop_padding-left) - Set left padding (physical property)
-- [padding-right](/reference/cssproperties/css_prop_padding-right) - Set right padding (physical property)
-- [margin-inline](/reference/cssproperties/css_prop_margin-inline) - Set inline margin shorthand
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [padding-inline-start](/reference/cssproperties/properties/css_prop_padding-inline-start) - Set inline start padding
+- [padding-inline-end](/reference/cssproperties/properties/css_prop_padding-inline-end) - Set inline end padding
+- [padding](/reference/cssproperties/properties/css_prop_padding) - Set all padding shorthand
+- [padding-left](/reference/cssproperties/properties/css_prop_padding-left) - Set left padding (physical property)
+- [padding-right](/reference/cssproperties/properties/css_prop_padding-right) - Set right padding (physical property)
+- [margin-inline](/reference/cssproperties/properties/css_prop_margin-inline) - Set inline margin shorthand
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

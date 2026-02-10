@@ -736,7 +736,7 @@ When `preserveAspectRatio="none"`:
 
 ## See Also
 
-- [viewBox](/reference/svgattributes/viewBox.html) - SVG viewport and coordinate system
+- [viewBox](/reference/svgattributes/attributes/svg_attr_viewBox.html) - SVG viewport and coordinate system
 - [svg](/reference/svgtags/svg.html) - SVG canvas element
 - [width and height](/reference/htmlattributes/width-height.html) - Viewport dimensions
 - [image](/reference/svgtags/image.html) - Embedded image element

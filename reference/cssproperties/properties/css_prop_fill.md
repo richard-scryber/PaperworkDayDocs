@@ -457,10 +457,10 @@ With configuration mapping:
 
 ## See Also
 
-- [fill-opacity](/reference/cssproperties/css_prop_fill-opacity) - Control fill transparency separately
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
-- [stroke-width](/reference/cssproperties/css_prop_stroke-width) - Control stroke thickness
-- [color](/reference/cssproperties/css_prop_color) - Text color property
-- [opacity](/reference/cssproperties/css_prop_opacity) - Overall element transparency
+- [fill-opacity](/reference/cssproperties/properties/css_prop_fill-opacity) - Control fill transparency separately
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
+- [stroke-width](/reference/cssproperties/properties/css_prop_stroke-width) - Control stroke thickness
+- [color](/reference/cssproperties/properties/css_prop_color) - Text color property
+- [opacity](/reference/cssproperties/properties/css_prop_opacity) - Overall element transparency
 
 ---

@@ -566,12 +566,12 @@ Common scenarios where y2 is essential:
 
 ## See Also
 
-- [x1](/reference/svgattributes/x1.html) - Linear gradient start X coordinate
-- [y1](/reference/svgattributes/y1.html) - Linear gradient start Y coordinate
-- [x2](/reference/svgattributes/x2.html) - Linear gradient end X coordinate
+- [x1](/reference/svgattributes/attributes/svg_attr_x1.html) - Linear gradient start X coordinate
+- [y1](/reference/svgattributes/attributes/svg_attr_y1.html) - Linear gradient start Y coordinate
+- [x2](/reference/svgattributes/attributes/svg_attr_x2.html) - Linear gradient end X coordinate
 - [linearGradient](/reference/svgtags/linearGradient.html) - Linear gradient definition element
-- [gradientUnits](/reference/svgattributes/gradientUnits.html) - Coordinate system mode
-- [spreadMethod](/reference/svgattributes/spreadMethod.html) - Gradient spread behavior
+- [gradientUnits](/reference/svgattributes/attributes/svg_attr_gradientUnits.html) - Coordinate system mode
+- [spreadMethod](/reference/svgattributes/attributes/svg_attr_spreadMethod.html) - Gradient spread behavior
 - [stop](/reference/svgtags/stop.html) - Gradient color stop element
 - [Data Binding](/reference/binding/) - Data binding and expressions
 

@@ -911,9 +911,9 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 ## See Also
 
 - [@page rule](/reference/css_atrules/css_atrule_page) - Define page properties and margins
-- [page](/reference/cssproperties/css_prop_page) - Specify named page for element
-- [break-before](/reference/cssproperties/css_prop_break-before) - Control page breaks before elements
-- [break-after](/reference/cssproperties/css_prop_break-after) - Control page breaks after elements
+- [page](/reference/cssproperties/properties/css_prop_page) - Specify named page for element
+- [break-before](/reference/cssproperties/properties/css_prop_break-before) - Control page breaks before elements
+- [break-after](/reference/cssproperties/properties/css_prop_break-after) - Control page breaks after elements
 - [margin (in @page)](/reference/css_atrules/css_atrule_page#margins) - Set page margins
 
 ---

@@ -668,9 +668,9 @@ Part Two: 3. Third item, 4. Fourth item
 
 ## See Also
 
-- [ul](/reference/htmltags/ul.html) - Unordered list element
-- [li](/reference/htmltags/li.html) - List item element
-- [dl](/reference/htmltags/dl.html) - Definition list element
+- [ul](/reference/htmltags/elements/html_ul_element.html) - Unordered list element
+- [li](/reference/htmltags/elements/html_li_element.html) - List item element
+- [dl](/reference/htmltags/elements/html_dl_element.html) - Definition list element
 - [Lists Reference](/reference/components/lists.html) - Complete lists documentation
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and expressions

@@ -439,9 +439,9 @@ The horizontal rule is rendered as:
 
 ## See Also
 
-- [br](/reference/htmltags/br.html) - Line break element
-- [div](/reference/htmltags/div.html) - Block container element
-- [p](/reference/htmltags/p.html) - Paragraph element
+- [br](/reference/htmltags/elements/html_br_element.html) - Line break element
+- [div](/reference/htmltags/elements/html_div_element.html) - Block container element
+- [p](/reference/htmltags/elements/html_p_element.html) - Paragraph element
 - [Line Component](/reference/components/line.html) - Base line component in Scryber namespace
 - [Page Breaks](/reference/layout/pagebreaks.html) - Page breaking guide
 - [Borders and Styling](/reference/styles/borders.html) - Border styling reference

@@ -1274,11 +1274,11 @@ The column-gap property integrates with data binding to create adaptive spacing 
 
 ## See Also
 
-- [column-count](/reference/cssproperties/css_prop_column-count) - Set number of columns
-- [column-width](/reference/cssproperties/css_prop_column-width) - Set ideal column width
-- [column-span](/reference/cssproperties/css_prop_column-span) - Make elements span columns
-- [margin](/reference/cssproperties/css_prop_margin) - Set margin spacing
-- [padding](/reference/cssproperties/css_prop_padding) - Set padding spacing
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [column-count](/reference/cssproperties/properties/css_prop_column-count) - Set number of columns
+- [column-width](/reference/cssproperties/properties/css_prop_column-width) - Set ideal column width
+- [column-span](/reference/cssproperties/properties/css_prop_column-span) - Make elements span columns
+- [margin](/reference/cssproperties/properties/css_prop_margin) - Set margin spacing
+- [padding](/reference/cssproperties/properties/css_prop_padding) - Set padding spacing
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

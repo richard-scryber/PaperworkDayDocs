@@ -667,11 +667,11 @@ const scryber = require('scryber-pdf');
 
 ## See Also
 
-- [ul](/reference/htmltags/ul.html) - Unordered list element
-- [ol](/reference/htmltags/ol.html) - Ordered list element
-- [dl](/reference/htmltags/dl.html) - Definition list element
-- [dt](/reference/htmltags/dt.html) - Definition term element
-- [dd](/reference/htmltags/dd.html) - Definition description element
+- [ul](/reference/htmltags/elements/html_ul_element.html) - Unordered list element
+- [ol](/reference/htmltags/elements/html_ol_element.html) - Ordered list element
+- [dl](/reference/htmltags/elements/html_dl_element.html) - Definition list element
+- [dt](/reference/htmltags/elements/html_dt_element.html) - Definition term element
+- [dd](/reference/htmltags/elements/html_dd_element.html) - Definition description element
 - [Lists Reference](/reference/components/lists.html) - Complete lists documentation
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and expressions

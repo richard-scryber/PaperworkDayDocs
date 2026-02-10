@@ -435,9 +435,9 @@ anchor.Style.Fill.Color = StandardColors.Blue;
 
 ## See Also
 
-- [img](/reference/htmltags/img.html) - Image element (often used within links)
-- [span](/reference/htmltags/span.html) - Inline container element
-- [div](/reference/htmltags/div.html) - Block container (can be wrapped in links)
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element (often used within links)
+- [span](/reference/htmltags/elements/html_span_element.html) - Inline container element
+- [div](/reference/htmltags/elements/html_div_element.html) - Block container (can be wrapped in links)
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and expressions
 

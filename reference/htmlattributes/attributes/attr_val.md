@@ -504,11 +504,11 @@ An empty or missing `val` attribute results in an empty output:
 
 ## See Also
 
-- [output element](/reference/htmltags/output.html) - The output HTML element
-- [form attribute](/reference/htmlattributes/form.html) - Associates output with form
-- [for attribute](/reference/htmlattributes/for.html) - Associates output with form controls
-- [value attribute](/reference/htmlattributes/value.html) - Input value attribute
-- [name attribute](/reference/htmlattributes/name.html) - Names form elements
+- [output element](/reference/htmltags/elements/html_output_element.html) - The output HTML element
+- [form attribute](/reference/htmlattributes/attributes/attr_form.html) - Associates output with form
+- [for attribute](/reference/htmlattributes/attributes/attr_for.html) - Associates output with form controls
+- [value attribute](/reference/htmlattributes/attributes/attr_value.html) - Input value attribute
+- [name attribute](/reference/htmlattributes/attributes/attr_name.html) - Names form elements
 - [Data Binding](/reference/binding/) - Dynamic data binding
 - [Expressions](/reference/expressions/) - Expression syntax
 - [HTML Forms](/reference/forms/) - Complete form reference

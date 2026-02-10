@@ -543,7 +543,7 @@ For maximum performance, combine with:
 
 ## See Also
 
-- [template element](/reference/htmltags/template.html) - Template element for iteration
+- [template element](/reference/htmltags/elements/html_template_element.html) - Template element for iteration
 - [data-bind attribute](/reference/htmlattributes/data-bind.html) - Data binding for templates
 - [Performance Optimization](/reference/performance/) - PDF generation optimization
 - [Style Caching](/reference/performance/style-caching.html) - Style caching details

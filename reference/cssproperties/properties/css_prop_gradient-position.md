@@ -446,10 +446,10 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 
 ## See Also
 
-- [stop-color](/reference/cssproperties/css_prop_stop-color) - Gradient stop color
-- [stop-opacity](/reference/cssproperties/css_prop_stop-opacity) - Gradient stop transparency
-- [spreadMethod](/reference/cssproperties/css_prop_spreadMethod) - Gradient spread behavior
-- [fill](/reference/cssproperties/css_prop_fill) - SVG fill color property
+- [stop-color](/reference/cssproperties/properties/css_prop_stop-color) - Gradient stop color
+- [stop-opacity](/reference/cssproperties/properties/css_prop_stop-opacity) - Gradient stop transparency
+- [spreadMethod](/reference/cssproperties/properties/css_prop_spreadMethod) - Gradient spread behavior
+- [fill](/reference/cssproperties/properties/css_prop_fill) - SVG fill color property
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

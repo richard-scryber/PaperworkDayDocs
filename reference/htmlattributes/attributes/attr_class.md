@@ -1035,12 +1035,12 @@ Use classes to create reusable component patterns:
 
 ## See Also
 
-- [id](/reference/htmlattributes/id.html) - Unique identifier attribute
-- [style](/reference/htmlattributes/style.html) - Inline CSS styling attribute
+- [id](/reference/htmlattributes/attributes/attr_id.html) - Unique identifier attribute
+- [style](/reference/htmlattributes/attributes/attr_style.html) - Inline CSS styling attribute
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and dynamic expressions
-- [style element](/reference/htmltags/style.html) - Defining CSS styles
-- [div](/reference/htmltags/div.html) - Generic container element
-- [span](/reference/htmltags/span.html) - Generic inline element
+- [style element](/reference/htmltags/elements/html_style_element.html) - Defining CSS styles
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic container element
+- [span](/reference/htmltags/elements/html_span_element.html) - Generic inline element
 
 ---

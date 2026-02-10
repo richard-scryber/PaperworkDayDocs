@@ -437,12 +437,12 @@ The path data string is parsed into drawing operations. Invalid syntax will resu
 
 ## See Also
 
-- [polyline](/reference/svgelements/polyline.html) - SVG polyline element for straight segments
-- [polygon](/reference/svgelements/polygon.html) - SVG polygon element for closed straight shapes
-- [rect](/reference/svgelements/rect.html) - SVG rectangle element
-- [circle](/reference/svgelements/circle.html) - SVG circle element
-- [ellipse](/reference/svgelements/ellipse.html) - SVG ellipse element
-- [svg](/reference/svgelements/svg.html) - SVG container element
+- [polyline](/reference/svgelements/elements/svg_polyline_element.html) - SVG polyline element for straight segments
+- [polygon](/reference/svgelements/elements/svg_polygon_element.html) - SVG polygon element for closed straight shapes
+- [rect](/reference/svgelements/elements/svg_rect_element.html) - SVG rectangle element
+- [circle](/reference/svgelements/elements/svg_circle_element.html) - SVG circle element
+- [ellipse](/reference/svgelements/elements/svg_ellipse_element.html) - SVG ellipse element
+- [svg](/reference/svgelements/elements/svg_svg_element.html) - SVG container element
 - [SVG Path Data](https://www.w3.org/TR/SVG/paths.html) - W3C SVG Path specification
 - [Data Binding](/reference/binding/) - Data binding and expressions
 

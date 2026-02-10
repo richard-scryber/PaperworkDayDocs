@@ -167,10 +167,10 @@ The `<span>` element has the following default behavior:
 
 ## See Also
 
-- [div](/reference/htmltags/div.html) - Block-level container element
-- [strong](/reference/htmltags/strong.html) - Bold text (semantic)
-- [em](/reference/htmltags/em.html) - Italic text (semantic)
-- [b](/reference/htmltags/b.html) - Bold text (presentational)
-- [i](/reference/htmltags/i.html) - Italic text (presentational)
+- [div](/reference/htmltags/elements/html_div_element.html) - Block-level container element
+- [strong](/reference/htmltags/elements/html_strong_element.html) - Bold text (semantic)
+- [em](/reference/htmltags/elements/html_em_element.html) - Italic text (semantic)
+- [b](/reference/htmltags/elements/html_b_element.html) - Bold text (presentational)
+- [i](/reference/htmltags/elements/html_i_element.html) - Italic text (presentational)
 
 ---

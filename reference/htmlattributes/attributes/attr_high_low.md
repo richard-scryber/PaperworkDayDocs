@@ -1380,11 +1380,11 @@ Test boundary values:
 
 ## See Also
 
-- [meter](/reference/htmltags/meter.html) - Meter/gauge element
-- [value](/reference/htmlattributes/value.html) - Value attribute
-- [min and max](/reference/htmlattributes/min_max.html) - Range attributes
-- [optimum](/reference/htmlattributes/optimum.html) - Optimal value attribute
-- [progress](/reference/htmltags/progress.html) - Progress bar element (no thresholds)
+- [meter](/reference/htmltags/elements/html_meter_element.html) - Meter/gauge element
+- [value](/reference/htmlattributes/attributes/attr_value.html) - Value attribute
+- [min and max](/reference/htmlattributes/attributes/attr_min_max.html) - Range attributes
+- [optimum](/reference/htmlattributes/attributes/attr_optimum.html) - Optimal value attribute
+- [progress](/reference/htmltags/elements/html_progress_element.html) - Progress bar element (no thresholds)
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 

@@ -103,7 +103,7 @@ The `<picture>` element supports CSS styling:
 **Display**:
 - `display`: `inline` (default), `block`, `inline-block`, `none`
 
-The nested `<img>` element supports full image styling. See the [img element documentation](/reference/htmltags/img.html) for complete CSS support.
+The nested `<img>` element supports full image styling. See the [img element documentation](/reference/htmltags/elements/html_img_element.html) for complete CSS support.
 
 ---
 
@@ -735,10 +735,10 @@ In the Scryber codebase:
 
 ## See Also
 
-- [img](/reference/htmltags/img.html) - Image element (used within picture)
-- [source](/reference/htmltags/source.html) - Source element specification
-- [iframe](/reference/htmltags/iframe.html) - Iframe element for embedded content
-- [object](/reference/htmltags/object.html) - Object element for attachments
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element (used within picture)
+- [source](/reference/htmltags/elements/html_source_element.html) - Source element specification
+- [iframe](/reference/htmltags/elements/html_iframe_element.html) - Iframe element for embedded content
+- [object](/reference/htmltags/elements/html_object_element.html) - Object element for attachments
 - [CSS Media Queries](/reference/styles/media.html) - Media query support
 - [Image Formats](/reference/images/formats.html) - Supported image formats
 - [Data Binding](/reference/binding/) - Data binding and expressions

@@ -431,9 +431,9 @@ Or use multiple meta tags with the same property:
 
 ## See Also
 
-- [meta element](/reference/htmltags/meta.html) - The meta HTML element
-- [name attribute](/reference/htmlattributes/name.html) - Metadata property name
-- [property attribute](/reference/htmlattributes/property.html) - Open Graph properties
+- [meta element](/reference/htmltags/elements/html_meta_element.html) - The meta HTML element
+- [name attribute](/reference/htmlattributes/attributes/attr_name.html) - Metadata property name
+- [property attribute](/reference/htmlattributes/attributes/attr_property.html) - Open Graph properties
 - [http-equiv attribute](/reference/htmlattributes/http-equiv.html) - HTTP header equivalent
 - [Document Properties](/reference/document/properties.html) - PDF document properties
 - [Document Info](/reference/document/info.html) - PDF document information

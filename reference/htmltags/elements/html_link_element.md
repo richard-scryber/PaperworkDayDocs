@@ -678,9 +678,9 @@ In the Scryber codebase:
 
 ## See Also
 
-- [style](/reference/htmltags/style.html) - Style element for embedded CSS
-- [head](/reference/htmltags/head.html) - Head element (container for link elements)
-- [base](/reference/htmltags/base.html) - Base element for URL resolution
+- [style](/reference/htmltags/elements/html_style_element.html) - Style element for embedded CSS
+- [head](/reference/htmltags/elements/html_head_element.html) - Head element (container for link elements)
+- [base](/reference/htmltags/elements/html_base_element.html) - Base element for URL resolution
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [CSS Selectors](/reference/styles/selectors.html) - CSS selector syntax
 - [Style Collection](/reference/styles/collection.html) - Document style collection

@@ -536,9 +536,9 @@ With model data:
 
 ## See Also
 
-- [fill-opacity](/reference/cssproperties/css_prop_fill-opacity) - SVG fill transparency
-- [stroke-opacity](/reference/cssproperties/css_prop_stroke-opacity) - SVG stroke transparency
-- [color](/reference/cssproperties/css_prop_color) - Text color (supports RGBA)
-- [background-color](/reference/cssproperties/css_prop_background-color) - Background color (supports RGBA)
+- [fill-opacity](/reference/cssproperties/properties/css_prop_fill-opacity) - SVG fill transparency
+- [stroke-opacity](/reference/cssproperties/properties/css_prop_stroke-opacity) - SVG stroke transparency
+- [color](/reference/cssproperties/properties/css_prop_color) - Text color (supports RGBA)
+- [background-color](/reference/cssproperties/properties/css_prop_background-color) - Background color (supports RGBA)
 
 ---

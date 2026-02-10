@@ -606,9 +606,9 @@ With model data (bandwidth determines line thickness):
 
 ## See Also
 
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
-- [stroke-opacity](/reference/cssproperties/css_prop_stroke-opacity) - SVG stroke transparency
-- [fill](/reference/cssproperties/css_prop_fill) - SVG fill color property
-- [border](/reference/htmlattributes/attr_border) - HTML border styling
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
+- [stroke-opacity](/reference/cssproperties/properties/css_prop_stroke-opacity) - SVG stroke transparency
+- [fill](/reference/cssproperties/properties/css_prop_fill) - SVG fill color property
+- [border](/reference/htmlattributes/attributes/attr_border) - HTML border styling
 
 ---

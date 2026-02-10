@@ -29,7 +29,7 @@ has_toc: false
 
 Iterate over arrays or collections, rendering the enclosed template for each item. The data context changes to the current item within the block.
 
-**Based on:** [`<template>` element](../../htmltags/template.md) with data binding and the [`ForEach` component](../../components/foreach.md)
+**Based on:** [`<template>` element](../../htmltags/template.html) with data binding and the [`ForEach` component](../../components/foreach.html)
 
 ## Syntax
 
@@ -148,7 +148,7 @@ The `{{#each}}` helper compiles to the following Scryber template element:
 </template>
 ```
 
-This uses Scryber's [`ForEach` component](../../components/foreach.md) internally, which provides the iteration and context management.
+This uses Scryber's [`ForEach` component](../../components/foreach.html) internally, which provides the iteration and context management.
 
 ---
 
@@ -165,8 +165,8 @@ This uses Scryber's [`ForEach` component](../../components/foreach.md) internall
 
 ## See Also
 
-- [#with Helper](./with.md)
-- [#if Helper](./if.md)
-- [Template Iteration Guide](../../learning/02-data-binding/03_template_iteration.md)
+- [#with Helper](./with.html)
+- [#if Helper](./if.html)
+- [Template Iteration Guide](../../learning/02-data-binding/03_template_iteration.html)
 
 ---

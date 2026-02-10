@@ -504,9 +504,9 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
 
 ## See Also
 
-- [ol](/reference/htmltags/ol.html) - Ordered list element
-- [li](/reference/htmltags/li.html) - List item element
-- [dl](/reference/htmltags/dl.html) - Definition list element
+- [ol](/reference/htmltags/elements/html_ol_element.html) - Ordered list element
+- [li](/reference/htmltags/elements/html_li_element.html) - List item element
+- [dl](/reference/htmltags/elements/html_dl_element.html) - Definition list element
 - [Lists Reference](/reference/components/lists.html) - Complete lists documentation
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and expressions

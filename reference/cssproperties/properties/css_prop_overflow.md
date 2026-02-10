@@ -1077,12 +1077,12 @@ The overflow property integrates with data binding to create dynamic content are
 
 ## See Also
 
-- [overflow-x](/reference/cssproperties/css_prop_overflow-x) - Control horizontal overflow behavior
-- [overflow-y](/reference/cssproperties/css_prop_overflow-y) - Control vertical overflow behavior
-- [width](/reference/cssproperties/css_prop_width) - Set element width
-- [height](/reference/cssproperties/css_prop_height) - Set element height
-- [max-height](/reference/cssproperties/css_prop_max-height) - Set maximum height constraint
-- [max-width](/reference/cssproperties/css_prop_max-width) - Set maximum width constraint
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [overflow-x](/reference/cssproperties/properties/css_prop_overflow-x) - Control horizontal overflow behavior
+- [overflow-y](/reference/cssproperties/properties/css_prop_overflow-y) - Control vertical overflow behavior
+- [width](/reference/cssproperties/properties/css_prop_width) - Set element width
+- [height](/reference/cssproperties/properties/css_prop_height) - Set element height
+- [max-height](/reference/cssproperties/properties/css_prop_max-height) - Set maximum height constraint
+- [max-width](/reference/cssproperties/properties/css_prop_max-width) - Set maximum width constraint
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

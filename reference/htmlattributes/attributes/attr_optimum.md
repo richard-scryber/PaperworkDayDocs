@@ -1372,11 +1372,11 @@ Test each zone to verify color logic:
 
 ## See Also
 
-- [meter](/reference/htmltags/meter.html) - Meter/gauge element
-- [value](/reference/htmlattributes/value.html) - Value attribute
-- [min and max](/reference/htmlattributes/min_max.html) - Range attributes
-- [high and low](/reference/htmlattributes/high_low.html) - Threshold attributes
-- [progress](/reference/htmltags/progress.html) - Progress bar element (no optimum)
+- [meter](/reference/htmltags/elements/html_meter_element.html) - Meter/gauge element
+- [value](/reference/htmlattributes/attributes/attr_value.html) - Value attribute
+- [min and max](/reference/htmlattributes/attributes/attr_min_max.html) - Range attributes
+- [high and low](/reference/htmlattributes/attributes/attr_high_low.html) - Threshold attributes
+- [progress](/reference/htmltags/elements/html_progress_element.html) - Progress bar element (no optimum)
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 

@@ -570,11 +570,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 ## See Also
 
-- [template](/reference/htmltags/template.html) - Template element for repeating content
+- [template](/reference/htmltags/elements/html_template_element.html) - Template element for repeating content
 - [Data Binding](/reference/binding/) - Complete guide to data binding expressions
 - [Expressions](/reference/expressions/) - Expression syntax and functions
 - [hidden attribute](/reference/attributes/hidden.html) - Alternative visibility control
 - [Choose Component](/reference/components/choose.html) - Multi-condition selection (if/else if/else)
-- [div](/reference/htmltags/div.html) - Generic container element
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic container element
 
 ---

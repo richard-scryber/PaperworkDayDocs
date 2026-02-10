@@ -421,13 +421,13 @@ Transforms are applied in the order specified and can be combined:
 
 ## See Also
 
-- [circle](/reference/svgelements/circle.html) - SVG circle element
-- [ellipse](/reference/svgelements/ellipse.html) - SVG ellipse element
-- [polygon](/reference/svgelements/polygon.html) - SVG polygon element
-- [path](/reference/svgelements/path.html) - SVG path element for complex shapes
-- [svg](/reference/svgelements/svg.html) - SVG container element
-- [SVG Gradients](/reference/svgelements/gradients.html) - Linear and radial gradients
-- [SVG Transforms](/reference/svgelements/transforms.html) - Transformation operations
+- [circle](/reference/svgelements/elements/svg_circle_element.html) - SVG circle element
+- [ellipse](/reference/svgelements/elements/svg_ellipse_element.html) - SVG ellipse element
+- [polygon](/reference/svgelements/elements/svg_polygon_element.html) - SVG polygon element
+- [path](/reference/svgelements/elements/svg_path_element.html) - SVG path element for complex shapes
+- [svg](/reference/svgelements/elements/svg_svg_element.html) - SVG container element
+- [SVG Gradients](/reference/svgelements/elements/svg_gradients_element.html) - Linear and radial gradients
+- [SVG Transforms](/reference/svgelements/elements/svg_transforms_element.html) - Transformation operations
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

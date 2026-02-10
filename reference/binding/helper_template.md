@@ -107,6 +107,6 @@ Brief explanation of how it works internally.
 ## See Also
 
 - [Related Helper](./related.md)
-- [Data Binding Basics](../../learning/02-data-binding/01_data_binding_basics.md)
+- [Data Binding Basics](../../learning/02-data-binding/01_data_binding_basics.html)
 
 ---

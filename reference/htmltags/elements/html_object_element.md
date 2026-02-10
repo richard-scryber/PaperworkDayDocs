@@ -807,10 +807,10 @@ In the Scryber codebase:
 
 ## See Also
 
-- [iframe](/reference/htmltags/iframe.html) - Iframe element for embedded HTML content
-- [embed](/reference/htmltags/embed.html) - Embed element for embedded HTML content
-- [img](/reference/htmltags/img.html) - Image element
-- [a](/reference/htmltags/a.html) - Anchor/link element
+- [iframe](/reference/htmltags/elements/html_iframe_element.html) - Iframe element for embedded HTML content
+- [embed](/reference/htmltags/elements/html_embed_element.html) - Embed element for embedded HTML content
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element
+- [a](/reference/htmltags/elements/html_a_element.html) - Anchor/link element
 - [IconAttachment Component](/reference/components/iconattachment.html) - Base attachment component
 - [PDF Attachments](/reference/pdf/attachments.html) - PDF attachment specifications
 - [Data Binding](/reference/binding/) - Data binding and expressions

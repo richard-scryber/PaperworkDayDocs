@@ -440,12 +440,12 @@ Lines are efficient shapes for rendering. Use them for grids, axes, and connecto
 
 ## See Also
 
-- [polyline](/reference/svgelements/polyline.html) - SVG polyline element for connected lines
-- [path](/reference/svgelements/path.html) - SVG path element for complex paths
-- [rect](/reference/svgelements/rect.html) - SVG rectangle element
-- [polygon](/reference/svgelements/polygon.html) - SVG polygon element
-- [svg](/reference/svgelements/svg.html) - SVG container element
-- [SVG Markers](/reference/svgelements/markers.html) - Arrowheads and line decorations
+- [polyline](/reference/svgelements/elements/svg_polyline_element.html) - SVG polyline element for connected lines
+- [path](/reference/svgelements/elements/svg_path_element.html) - SVG path element for complex paths
+- [rect](/reference/svgelements/elements/svg_rect_element.html) - SVG rectangle element
+- [polygon](/reference/svgelements/elements/svg_polygon_element.html) - SVG polygon element
+- [svg](/reference/svgelements/elements/svg_svg_element.html) - SVG container element
+- [SVG Markers](/reference/svgelements/elements/svg_markers_element.html) - Arrowheads and line decorations
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

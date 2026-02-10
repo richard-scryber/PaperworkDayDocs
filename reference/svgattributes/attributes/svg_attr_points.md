@@ -563,13 +563,13 @@ For charts and graphs:
 
 ## See Also
 
-- [polyline element](/reference/svgelements/polyline.html) - SVG polyline element for open paths
-- [polygon element](/reference/svgelements/polygon.html) - SVG polygon element for closed shapes
-- [path element](/reference/svgelements/path.html) - SVG path element for curves and complex shapes
-- [d attribute](/reference/svgattributes/d.html) - Path data for complex curves
-- [line element](/reference/svgelements/line.html) - SVG line element for single segments
-- [stroke attributes](/reference/svgattributes/stroke.html) - Stroke styling attributes
-- [fill attributes](/reference/svgattributes/fill.html) - Fill styling attributes
+- [polyline element](/reference/svgelements/elements/svg_polyline_element.html) - SVG polyline element for open paths
+- [polygon element](/reference/svgelements/elements/svg_polygon_element.html) - SVG polygon element for closed shapes
+- [path element](/reference/svgelements/elements/svg_path_element.html) - SVG path element for curves and complex shapes
+- [d attribute](/reference/svgattributes/attributes/svg_attr_d.html) - Path data for complex curves
+- [line element](/reference/svgelements/elements/svg_line_element.html) - SVG line element for single segments
+- [stroke attributes](/reference/svgattributes/attributes/svg_attr_stroke.html) - Stroke styling attributes
+- [fill attributes](/reference/svgattributes/attributes/svg_attr_fill.html) - Fill styling attributes
 - [Data Binding](/reference/binding/) - Data binding and expressions guide
 
 ---

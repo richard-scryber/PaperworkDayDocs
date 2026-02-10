@@ -513,9 +513,9 @@ Create striped tables using nth-child CSS selectors:
 
 ## See Also
 
-- [table](/reference/htmltags/table.html) - Table element
-- [td](/reference/htmltags/td.html) - Table cell elements (td and th)
-- [thead, tbody, tfoot](/reference/htmltags/table.html#table-sections) - Table sections
+- [table](/reference/htmltags/elements/html_table_element.html) - Table element
+- [td](/reference/htmltags/elements/html_td_element.html) - Table cell elements (td and th)
+- [thead, tbody, tfoot](/reference/htmltags/elements/html_table_element.html#table-sections) - Table sections
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Dynamic data binding
 

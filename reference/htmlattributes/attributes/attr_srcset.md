@@ -975,13 +975,13 @@ Avoid these errors:
 
 ## See Also
 
-- [img](/reference/htmltags/img.html) - Image element
-- [picture](/reference/htmltags/picture.html) - Picture element for art direction
-- [source](/reference/htmltags/source.html) - Source element for media
-- [src](/reference/htmlattributes/src.html) - Source attribute
-- [alt](/reference/htmlattributes/alt.html) - Alternative text attribute
-- [width](/reference/htmlattributes/width.html) - Width attribute
-- [height](/reference/htmlattributes/height.html) - Height attribute
-- [sizes](/reference/htmlattributes/sizes.html) - Sizes attribute for responsive images
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element
+- [picture](/reference/htmltags/elements/html_picture_element.html) - Picture element for art direction
+- [source](/reference/htmltags/elements/html_source_element.html) - Source element for media
+- [src](/reference/htmlattributes/attributes/attr_src.html) - Source attribute
+- [alt](/reference/htmlattributes/attributes/attr_alt.html) - Alternative text attribute
+- [width](/reference/htmlattributes/attributes/attr_width.html) - Width attribute
+- [height](/reference/htmlattributes/attributes/attr_height.html) - Height attribute
+- [sizes](/reference/htmlattributes/attributes/attr_sizes.html) - Sizes attribute for responsive images
 
 ---

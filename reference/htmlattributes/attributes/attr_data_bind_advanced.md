@@ -745,7 +745,7 @@ Handle a very large dataset with pagination and caching:
 ## See Also
 
 - [data-bind attribute](/reference/htmlattributes/data-bind.html) - Primary template iteration attribute
-- [template element](/reference/htmltags/template.html) - The template HTML element
+- [template element](/reference/htmltags/elements/html_template_element.html) - The template HTML element
 - [data-cache-styles attribute](/reference/htmlattributes/data-cache-styles.html) - Performance optimization
 - [ForEach Component](/reference/components/foreach.html) - Base component class
 - [Data Binding](/reference/binding/) - Complete data binding guide

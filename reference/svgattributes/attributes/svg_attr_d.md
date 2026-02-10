@@ -504,12 +504,12 @@ The direction (clockwise vs counter-clockwise) affects:
 
 ## See Also
 
-- [path element](/reference/svgelements/path.html) - SVG path element
-- [polyline element](/reference/svgelements/polyline.html) - SVG polyline for straight line segments
-- [polygon element](/reference/svgelements/polygon.html) - SVG polygon for closed shapes
-- [points attribute](/reference/svgattributes/points.html) - Points list for polyline and polygon
-- [stroke attributes](/reference/svgattributes/stroke.html) - Stroke styling attributes
-- [fill attributes](/reference/svgattributes/fill.html) - Fill styling attributes
+- [path element](/reference/svgelements/elements/svg_path_element.html) - SVG path element
+- [polyline element](/reference/svgelements/elements/svg_polyline_element.html) - SVG polyline for straight line segments
+- [polygon element](/reference/svgelements/elements/svg_polygon_element.html) - SVG polygon for closed shapes
+- [points attribute](/reference/svgattributes/attributes/svg_attr_points.html) - Points list for polyline and polygon
+- [stroke attributes](/reference/svgattributes/attributes/svg_attr_stroke.html) - Stroke styling attributes
+- [fill attributes](/reference/svgattributes/attributes/svg_attr_fill.html) - Fill styling attributes
 - [SVG Path Specification](https://www.w3.org/TR/SVG/paths.html) - W3C SVG path data specification
 - [Data Binding](/reference/binding/) - Data binding and expressions guide
 

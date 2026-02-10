@@ -710,10 +710,10 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
 
 ## See Also
 
-- [font element](/reference/htmltags/font.html) - The deprecated font element
-- [span element](/reference/htmltags/span.html) - Modern inline container (recommended)
-- [style attribute](/reference/htmlattributes/style.html) - Inline CSS styling
-- [class attribute](/reference/htmlattributes/class.html) - CSS class reference
+- [font element](/reference/htmltags/elements/html_font_element.html) - The deprecated font element
+- [span element](/reference/htmltags/elements/html_span_element.html) - Modern inline container (recommended)
+- [style attribute](/reference/htmlattributes/attributes/attr_style.html) - Inline CSS styling
+- [class attribute](/reference/htmlattributes/attributes/attr_class.html) - CSS class reference
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Color Values](/reference/styles/colors.html) - CSS color reference
 - [Font Properties](/reference/styles/fonts.html) - CSS font styling

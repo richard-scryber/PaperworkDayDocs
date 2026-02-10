@@ -744,12 +744,12 @@ Data context:
 
 ## See Also
 
-- [margin-top](/reference/cssproperties/css_prop_margin-top) - Set top margin
-- [margin-right](/reference/cssproperties/css_prop_margin-right) - Set right margin
-- [margin-bottom](/reference/cssproperties/css_prop_margin-bottom) - Set bottom margin
-- [margin-left](/reference/cssproperties/css_prop_margin-left) - Set left margin
-- [margin-inline](/reference/cssproperties/css_prop_margin-inline) - Set inline margins (start and end)
-- [padding](/reference/cssproperties/css_prop_padding) - Set padding shorthand property
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [margin-top](/reference/cssproperties/properties/css_prop_margin-top) - Set top margin
+- [margin-right](/reference/cssproperties/properties/css_prop_margin-right) - Set right margin
+- [margin-bottom](/reference/cssproperties/properties/css_prop_margin-bottom) - Set bottom margin
+- [margin-left](/reference/cssproperties/properties/css_prop_margin-left) - Set left margin
+- [margin-inline](/reference/cssproperties/properties/css_prop_margin-inline) - Set inline margins (start and end)
+- [padding](/reference/cssproperties/properties/css_prop_padding) - Set padding shorthand property
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

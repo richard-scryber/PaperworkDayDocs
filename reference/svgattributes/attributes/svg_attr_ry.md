@@ -446,14 +446,14 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 
 ## See Also
 
-- [rx](/reference/svgattributes/rx.html) - Horizontal radius attribute
-- [r](/reference/svgattributes/r.html) - Radius attribute for circles
-- [cy](/reference/svgattributes/cy.html) - Center Y coordinate attribute
-- [height](/reference/svgattributes/height.html) - Height attribute
-- [ellipse](/reference/svgelements/ellipse.html) - SVG ellipse element
-- [rect](/reference/svgelements/rect.html) - SVG rectangle element
-- [circle](/reference/svgelements/circle.html) - SVG circle element
-- [SVG Transforms](/reference/svgelements/transforms.html) - Transformation operations
+- [rx](/reference/svgattributes/attributes/svg_attr_rx.html) - Horizontal radius attribute
+- [r](/reference/svgattributes/attributes/svg_attr_r.html) - Radius attribute for circles
+- [cy](/reference/svgattributes/attributes/svg_attr_cy.html) - Center Y coordinate attribute
+- [height](/reference/svgattributes/attributes/svg_attr_height.html) - Height attribute
+- [ellipse](/reference/svgelements/elements/svg_ellipse_element.html) - SVG ellipse element
+- [rect](/reference/svgelements/elements/svg_rect_element.html) - SVG rectangle element
+- [circle](/reference/svgelements/elements/svg_circle_element.html) - SVG circle element
+- [SVG Transforms](/reference/svgelements/elements/svg_transforms_element.html) - Transformation operations
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

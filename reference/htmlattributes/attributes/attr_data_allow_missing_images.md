@@ -1013,12 +1013,12 @@ Don't expose file system details in error messages:
 
 ## See Also
 
-- [img](/reference/htmltags/img.html) - Image element (uses data-allow-missing-images attribute)
-- [src](/reference/htmlattributes/src.html) - Image source attribute
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element (uses data-allow-missing-images attribute)
+- [src](/reference/htmlattributes/attributes/attr_src.html) - Image source attribute
 - [data-img](/reference/htmlattributes/data-img.html) - Binary image data attributes
-- [alt](/reference/htmlattributes/alt.html) - Alternative text for images
-- [width](/reference/htmlattributes/width.html) - Width attribute for sizing
-- [height](/reference/htmlattributes/height.html) - Height attribute for sizing
+- [alt](/reference/htmlattributes/attributes/attr_alt.html) - Alternative text for images
+- [width](/reference/htmlattributes/attributes/attr_width.html) - Width attribute for sizing
+- [height](/reference/htmlattributes/attributes/attr_height.html) - Height attribute for sizing
 - [Data Binding](/reference/binding/) - Dynamic content and attribute values
 - [Error Handling](/reference/errors/) - Error handling and conformance modes
 - [Logging](/reference/logging/) - Trace logging configuration

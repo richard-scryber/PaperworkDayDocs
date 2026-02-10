@@ -414,14 +414,14 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 
 ## See Also
 
-- [ry](/reference/svgattributes/ry.html) - Vertical radius attribute
-- [r](/reference/svgattributes/r.html) - Radius attribute for circles
-- [cx](/reference/svgattributes/cx.html) - Center X coordinate attribute
-- [width](/reference/svgattributes/width.html) - Width attribute
-- [ellipse](/reference/svgelements/ellipse.html) - SVG ellipse element
-- [rect](/reference/svgelements/rect.html) - SVG rectangle element
-- [circle](/reference/svgelements/circle.html) - SVG circle element
-- [SVG Transforms](/reference/svgelements/transforms.html) - Transformation operations
+- [ry](/reference/svgattributes/attributes/svg_attr_ry.html) - Vertical radius attribute
+- [r](/reference/svgattributes/attributes/svg_attr_r.html) - Radius attribute for circles
+- [cx](/reference/svgattributes/attributes/svg_attr_cx.html) - Center X coordinate attribute
+- [width](/reference/svgattributes/attributes/svg_attr_width.html) - Width attribute
+- [ellipse](/reference/svgelements/elements/svg_ellipse_element.html) - SVG ellipse element
+- [rect](/reference/svgelements/elements/svg_rect_element.html) - SVG rectangle element
+- [circle](/reference/svgelements/elements/svg_circle_element.html) - SVG circle element
+- [SVG Transforms](/reference/svgelements/elements/svg_transforms_element.html) - Transformation operations
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

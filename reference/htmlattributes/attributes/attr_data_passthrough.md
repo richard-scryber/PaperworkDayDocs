@@ -1080,10 +1080,10 @@ Compare styled vs. unstyled rendering:
 
 ## See Also
 
-- [iframe element](/reference/htmltags/iframe.html) - Iframe element documentation
-- [embed element](/reference/htmltags/embed.html) - Embed element documentation
-- [style attribute](/reference/htmlattributes/style.html) - Inline style attribute
-- [class attribute](/reference/htmlattributes/class.html) - CSS class attribute
+- [iframe element](/reference/htmltags/elements/html_iframe_element.html) - Iframe element documentation
+- [embed element](/reference/htmltags/elements/html_embed_element.html) - Embed element documentation
+- [style attribute](/reference/htmlattributes/attributes/attr_style.html) - Inline style attribute
+- [class attribute](/reference/htmlattributes/attributes/attr_class.html) - CSS class attribute
 - [CSS Styling](/reference/styles/) - CSS styling in Scryber
 - [Document Composition](/reference/composition/) - Building modular documents
 - [Style Inheritance](/reference/styles/inheritance.html) - Style inheritance rules

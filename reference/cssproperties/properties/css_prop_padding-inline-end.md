@@ -580,11 +580,11 @@ Data context:
 
 ## See Also
 
-- [padding-inline-start](/reference/cssproperties/css_prop_padding-inline-start) - Set inline start padding
-- [padding-inline](/reference/cssproperties/css_prop_padding-inline) - Set both inline paddings shorthand
-- [padding-right](/reference/cssproperties/css_prop_padding-right) - Set right padding (physical property)
-- [padding-left](/reference/cssproperties/css_prop_padding-left) - Set left padding (physical property)
-- [margin-inline-end](/reference/cssproperties/css_prop_margin-inline-end) - Set inline end margin
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [padding-inline-start](/reference/cssproperties/properties/css_prop_padding-inline-start) - Set inline start padding
+- [padding-inline](/reference/cssproperties/properties/css_prop_padding-inline) - Set both inline paddings shorthand
+- [padding-right](/reference/cssproperties/properties/css_prop_padding-right) - Set right padding (physical property)
+- [padding-left](/reference/cssproperties/properties/css_prop_padding-left) - Set left padding (physical property)
+- [margin-inline-end](/reference/cssproperties/properties/css_prop_margin-inline-end) - Set inline end margin
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

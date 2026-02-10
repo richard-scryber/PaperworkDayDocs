@@ -934,11 +934,11 @@ You can combine these attributes with CSS for fine control:
 
 ## See Also
 
-- [table](/reference/htmltags/table.html) - Table element
-- [td](/reference/htmltags/td.html) - Table cell elements (td and th)
-- [tr](/reference/htmltags/tr.html) - Table row element
-- [border](/reference/htmlattributes/border.html) - Border attribute
-- [align](/reference/htmlattributes/align.html) - Alignment attributes
+- [table](/reference/htmltags/elements/html_table_element.html) - Table element
+- [td](/reference/htmltags/elements/html_td_element.html) - Table cell elements (td and th)
+- [tr](/reference/htmltags/elements/html_tr_element.html) - Table row element
+- [border](/reference/htmlattributes/attributes/attr_border.html) - Border attribute
+- [align](/reference/htmlattributes/attributes/attr_align.html) - Alignment attributes
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Dynamic data binding
 

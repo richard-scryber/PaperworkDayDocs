@@ -643,15 +643,15 @@ Use decimal values for precise positioning:
 
 ## See Also
 
-- [refY](/reference/svgattributes/refY.html) - Marker reference Y position
+- [refY](/reference/svgattributes/attributes/svg_attr_refY.html) - Marker reference Y position
 - [marker element](/reference/svgtags/marker.html) - Marker definition element
-- [markerWidth](/reference/svgattributes/markerWidth.html) - Marker viewport width
-- [markerHeight](/reference/svgattributes/markerHeight.html) - Marker viewport height
-- [orient](/reference/svgattributes/orient.html) - Marker orientation
-- [markerUnits](/reference/svgattributes/markerUnits.html) - Marker coordinate system
-- [marker-start](/reference/svgattributes/marker-start.html) - Marker at path start
-- [marker-mid](/reference/svgattributes/marker-mid.html) - Marker at middle vertices
-- [marker-end](/reference/svgattributes/marker-end.html) - Marker at path end
+- [markerWidth](/reference/svgattributes/attributes/svg_attr_markerWidth.html) - Marker viewport width
+- [markerHeight](/reference/svgattributes/attributes/svg_attr_markerHeight.html) - Marker viewport height
+- [orient](/reference/svgattributes/attributes/svg_attr_orient.html) - Marker orientation
+- [markerUnits](/reference/svgattributes/attributes/svg_attr_markerUnits.html) - Marker coordinate system
+- [marker-start](/reference/svgattributes/attributes/svg_attr_marker-start.html) - Marker at path start
+- [marker-mid](/reference/svgattributes/attributes/svg_attr_marker-mid.html) - Marker at middle vertices
+- [marker-end](/reference/svgattributes/attributes/svg_attr_marker-end.html) - Marker at path end
 - [Data Binding](/reference/binding/) - Data binding and expressions
 
 ---

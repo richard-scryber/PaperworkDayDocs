@@ -511,11 +511,11 @@ Enables dynamic document branding where watermark images, positions, sizes, and 
 
 ## See Also
 
-- [background-color](/reference/cssproperties/css_prop_background-color) - Set background color
-- [background-image](/reference/cssproperties/css_prop_background-image) - Set background image
-- [background-repeat](/reference/cssproperties/css_prop_background-repeat) - Control image repetition
-- [background-position](/reference/cssproperties/css_prop_background-position) - Set image position
-- [background-size](/reference/cssproperties/css_prop_background-size) - Control image sizing
-- [opacity](/reference/cssproperties/css_prop_opacity) - Control overall element transparency
+- [background-color](/reference/cssproperties/properties/css_prop_background-color) - Set background color
+- [background-image](/reference/cssproperties/properties/css_prop_background-image) - Set background image
+- [background-repeat](/reference/cssproperties/properties/css_prop_background-repeat) - Control image repetition
+- [background-position](/reference/cssproperties/properties/css_prop_background-position) - Set image position
+- [background-size](/reference/cssproperties/properties/css_prop_background-size) - Control image sizing
+- [opacity](/reference/cssproperties/properties/css_prop_opacity) - Control overall element transparency
 
 ---

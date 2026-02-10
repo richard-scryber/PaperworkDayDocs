@@ -534,11 +534,11 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 
 ## See Also
 
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
-- [stroke-width](/reference/cssproperties/css_prop_stroke-width) - Control stroke thickness
-- [stroke-linecap](/reference/cssproperties/css_prop_stroke-linecap) - Control line ending appearance
-- [stroke-dasharray](/reference/cssproperties/css_prop_stroke-dasharray) - Define dash pattern
-- [stroke-opacity](/reference/cssproperties/css_prop_stroke-opacity) - SVG stroke transparency
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
+- [stroke-width](/reference/cssproperties/properties/css_prop_stroke-width) - Control stroke thickness
+- [stroke-linecap](/reference/cssproperties/properties/css_prop_stroke-linecap) - Control line ending appearance
+- [stroke-dasharray](/reference/cssproperties/properties/css_prop_stroke-dasharray) - Define dash pattern
+- [stroke-opacity](/reference/cssproperties/properties/css_prop_stroke-opacity) - SVG stroke transparency
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

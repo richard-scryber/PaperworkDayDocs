@@ -457,11 +457,11 @@ ID,Name,Email,Status,Date
 
 ## See Also
 
-- [code](/reference/htmltags/code.html) - Inline code element for short code fragments
-- [samp](/reference/htmltags/samp.html) - Sample output element
-- [kbd](/reference/htmltags/kbd.html) - Keyboard input element
-- [var](/reference/htmltags/var.html) - Variable element for mathematical or programming variables
-- [div](/reference/htmltags/div.html) - Generic block container
+- [code](/reference/htmltags/elements/html_code_element.html) - Inline code element for short code fragments
+- [samp](/reference/htmltags/elements/html_samp_element.html) - Sample output element
+- [kbd](/reference/htmltags/elements/html_kbd_element.html) - Keyboard input element
+- [var](/reference/htmltags/elements/html_var_element.html) - Variable element for mathematical or programming variables
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
 - [Panel Component](/reference/components/panel.html) - Base panel component in Scryber namespace
 
 ---

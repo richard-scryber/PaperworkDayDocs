@@ -315,9 +315,9 @@ Applies styles to the page container itself, not the content within the page.
 
 ## See Also
 
-- [@media Rule](/reference/cssselectors/css_media_rule)
+- [@media Rule](/reference/cssselectors/selectors/css_media_rule)
 - [Page Size Configuration](/guides/page_setup)
-- [Element Selector](/reference/cssselectors/css_element_selector)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
 - [PDF Generation Pipeline](/architecture/generation_pipeline)
 
 ---

@@ -420,11 +420,11 @@ The `border-right-color` property supports dynamic values through data binding, 
 
 ## See Also
 
-- [border-right](/reference/cssproperties/css_prop_border-right) - Right border shorthand
-- [border-color](/reference/cssproperties/css_prop_border-color) - All border colors
-- [border-right-width](/reference/cssproperties/css_prop_border-right-width) - Right border width
-- [border-right-style](/reference/cssproperties/css_prop_border-right-style) - Right border style
-- [color](/reference/cssproperties/css_prop_color) - Text color
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border-right](/reference/cssproperties/properties/css_prop_border-right) - Right border shorthand
+- [border-color](/reference/cssproperties/properties/css_prop_border-color) - All border colors
+- [border-right-width](/reference/cssproperties/properties/css_prop_border-right-width) - Right border width
+- [border-right-style](/reference/cssproperties/properties/css_prop_border-right-style) - Right border style
+- [color](/reference/cssproperties/properties/css_prop_color) - Text color
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

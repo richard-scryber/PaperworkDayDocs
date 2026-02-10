@@ -508,13 +508,13 @@ Using both fx and fy creates diagonal lighting:
 
 ## See Also
 
-- [fx](/reference/svgattributes/fx.html) - Radial gradient focal point X coordinate
-- [cx](/reference/svgattributes/cx.html) - Radial gradient center X coordinate
-- [cy](/reference/svgattributes/cy.html) - Radial gradient center Y coordinate
-- [r](/reference/svgattributes/r.html) - Radial gradient radius
-- [fr](/reference/svgattributes/fr.html) - Radial gradient focal radius
+- [fx](/reference/svgattributes/attributes/svg_attr_fx.html) - Radial gradient focal point X coordinate
+- [cx](/reference/svgattributes/attributes/svg_attr_cx.html) - Radial gradient center X coordinate
+- [cy](/reference/svgattributes/attributes/svg_attr_cy.html) - Radial gradient center Y coordinate
+- [r](/reference/svgattributes/attributes/svg_attr_r.html) - Radial gradient radius
+- [fr](/reference/svgattributes/attributes/svg_attr_fr.html) - Radial gradient focal radius
 - [radialGradient](/reference/svgtags/radialGradient.html) - Radial gradient definition element
-- [gradientUnits](/reference/svgattributes/gradientUnits.html) - Coordinate system mode
+- [gradientUnits](/reference/svgattributes/attributes/svg_attr_gradientUnits.html) - Coordinate system mode
 - [stop](/reference/svgtags/stop.html) - Gradient color stop element
 - [Data Binding](/reference/binding/) - Data binding and expressions
 

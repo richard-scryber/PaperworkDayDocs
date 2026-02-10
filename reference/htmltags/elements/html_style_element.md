@@ -1191,8 +1191,8 @@ Data binding expressions are evaluated before CSS parsing.
 
 ## See Also
 
-- [link](/reference/htmltags/link.html) - Link element for external stylesheets
-- [head](/reference/htmltags/head.html) - Head element (container for style elements)
+- [link](/reference/htmltags/elements/html_link_element.html) - Link element for external stylesheets
+- [head](/reference/htmltags/elements/html_head_element.html) - Head element (container for style elements)
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [CSS Selectors](/reference/styles/selectors.html) - CSS selector syntax
 - [CSS Properties](/reference/styles/properties.html) - Supported CSS properties

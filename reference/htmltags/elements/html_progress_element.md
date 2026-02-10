@@ -953,8 +953,8 @@ Progress bars are excellent for:
 
 ## See Also
 
-- [meter](/reference/htmltags/meter.html) - Meter/gauge element (for measurements with thresholds)
-- [div](/reference/htmltags/div.html) - Generic container (can create custom progress indicators)
+- [meter](/reference/htmltags/elements/html_meter_element.html) - Meter/gauge element (for measurements with thresholds)
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic container (can create custom progress indicators)
 - [Data Binding](/reference/binding/) - Data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Visual Components](/reference/components/visual.html) - Base visual component

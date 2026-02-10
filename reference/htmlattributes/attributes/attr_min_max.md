@@ -1197,12 +1197,12 @@ The range affects visual fill calculation:
 
 ## See Also
 
-- [meter](/reference/htmltags/meter.html) - Meter/gauge element
-- [progress](/reference/htmltags/progress.html) - Progress bar element
-- [input](/reference/htmltags/input.html) - Input field element
-- [value](/reference/htmlattributes/value.html) - Value attribute
-- [high and low](/reference/htmlattributes/high_low.html) - Threshold attributes for meter
-- [optimum](/reference/htmlattributes/optimum.html) - Optimal value attribute for meter
+- [meter](/reference/htmltags/elements/html_meter_element.html) - Meter/gauge element
+- [progress](/reference/htmltags/elements/html_progress_element.html) - Progress bar element
+- [input](/reference/htmltags/elements/html_input_element.html) - Input field element
+- [value](/reference/htmlattributes/attributes/attr_value.html) - Value attribute
+- [high and low](/reference/htmlattributes/attributes/attr_high_low.html) - Threshold attributes for meter
+- [optimum](/reference/htmlattributes/attributes/attr_optimum.html) - Optimal value attribute for meter
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 

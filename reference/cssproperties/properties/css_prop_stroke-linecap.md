@@ -509,11 +509,11 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 
 ## See Also
 
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
-- [stroke-width](/reference/cssproperties/css_prop_stroke-width) - Control stroke thickness
-- [stroke-dasharray](/reference/cssproperties/css_prop_stroke-dasharray) - Define dash pattern
-- [stroke-linejoin](/reference/cssproperties/css_prop_stroke-linejoin) - Control corner appearance
-- [stroke-opacity](/reference/cssproperties/css_prop_stroke-opacity) - SVG stroke transparency
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
+- [stroke-width](/reference/cssproperties/properties/css_prop_stroke-width) - Control stroke thickness
+- [stroke-dasharray](/reference/cssproperties/properties/css_prop_stroke-dasharray) - Define dash pattern
+- [stroke-linejoin](/reference/cssproperties/properties/css_prop_stroke-linejoin) - Control corner appearance
+- [stroke-opacity](/reference/cssproperties/properties/css_prop_stroke-opacity) - SVG stroke transparency
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

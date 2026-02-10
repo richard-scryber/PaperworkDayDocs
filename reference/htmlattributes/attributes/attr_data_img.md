@@ -968,12 +968,12 @@ If no factory matches the MIME type, an error is raised.
 
 ## See Also
 
-- [img](/reference/htmltags/img.html) - Image element (uses data-img attributes)
-- [src](/reference/htmlattributes/src.html) - Standard image source attribute
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element (uses data-img attributes)
+- [src](/reference/htmlattributes/attributes/attr_src.html) - Standard image source attribute
 - [data-allow-missing-images](/reference/htmlattributes/data-allow-missing-images.html) - Error handling for missing images
-- [width](/reference/htmlattributes/width.html) - Width attribute for sizing
-- [height](/reference/htmlattributes/height.html) - Height attribute for sizing
-- [alt](/reference/htmlattributes/alt.html) - Alternative text for images
+- [width](/reference/htmlattributes/attributes/attr_width.html) - Width attribute for sizing
+- [height](/reference/htmlattributes/attributes/attr_height.html) - Height attribute for sizing
+- [alt](/reference/htmlattributes/attributes/attr_alt.html) - Alternative text for images
 - [Data Binding](/reference/binding/) - Dynamic content and attribute values
 - [Image Formats](/reference/images/) - Supported image formats
 - [ImageData Class](/reference/api/imagedata.html) - ImageData object reference

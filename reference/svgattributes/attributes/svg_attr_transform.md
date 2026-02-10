@@ -715,10 +715,10 @@ Note that SVG transforms are different from CSS transforms:
 
 ## See Also
 
-- [transform-origin](/reference/svgattributes/transform-origin.html) - Transform origin point
+- [transform-origin](/reference/svgattributes/attributes/svg_attr_transform-origin.html) - Transform origin point
 - [g](/reference/svgtags/g.html) - Group element for transforming multiple elements
 - [svg](/reference/svgtags/svg.html) - SVG canvas container
-- [matrix](/reference/svgattributes/matrix.html) - Matrix transformation attribute
+- [matrix](/reference/svgattributes/attributes/svg_attr_matrix.html) - Matrix transformation attribute
 - [Data Binding](/reference/binding/) - Dynamic data binding
 - [SVG Shapes](/reference/svgtags/shapes.html) - rect, circle, ellipse, line, etc.
 

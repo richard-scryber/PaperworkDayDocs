@@ -897,11 +897,11 @@ Data context:
 
 ## See Also
 
-- [margin-inline-end](/reference/cssproperties/css_prop_margin-inline-end) - Set inline end margin
-- [margin-inline](/reference/cssproperties/css_prop_margin-inline) - Set both inline margins shorthand
-- [margin-left](/reference/cssproperties/css_prop_margin-left) - Set left margin (physical property)
-- [margin-right](/reference/cssproperties/css_prop_margin-right) - Set right margin (physical property)
-- [padding-inline-start](/reference/cssproperties/css_prop_padding-inline-start) - Set inline start padding
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [margin-inline-end](/reference/cssproperties/properties/css_prop_margin-inline-end) - Set inline end margin
+- [margin-inline](/reference/cssproperties/properties/css_prop_margin-inline) - Set both inline margins shorthand
+- [margin-left](/reference/cssproperties/properties/css_prop_margin-left) - Set left margin (physical property)
+- [margin-right](/reference/cssproperties/properties/css_prop_margin-right) - Set right margin (physical property)
+- [padding-inline-start](/reference/cssproperties/properties/css_prop_padding-inline-start) - Set inline start padding
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

@@ -979,11 +979,11 @@ In the Scryber codebase:
 
 ## See Also
 
-- [input](/reference/htmltags/input.html) - Input field element
-- [fieldset](/reference/htmltags/fieldset.html) - Fieldset and legend for grouping form elements
-- [form](/reference/htmltags/form.html) - Form container element
-- [span](/reference/htmltags/span.html) - Generic inline container
-- [div](/reference/htmltags/div.html) - Generic block container
+- [input](/reference/htmltags/elements/html_input_element.html) - Input field element
+- [fieldset](/reference/htmltags/elements/html_fieldset_element.html) - Fieldset and legend for grouping form elements
+- [form](/reference/htmltags/elements/html_form_element.html) - Form container element
+- [span](/reference/htmltags/elements/html_span_element.html) - Generic inline container
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 

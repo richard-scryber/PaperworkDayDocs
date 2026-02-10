@@ -693,10 +693,10 @@ The `counter-increment` property automatically works with data-bound elements, i
 
 ## See Also
 
-- [counter-reset](/reference/cssproperties/css_prop_counter-reset) - Initialize counters
-- [content](/reference/cssproperties/css_prop_content) - Generated content with counters
-- [list-style-type](/reference/cssproperties/css_prop_list-style-type) - List marker style
-- [display](/reference/cssproperties/css_prop_display) - Element display type
+- [counter-reset](/reference/cssproperties/properties/css_prop_counter-reset) - Initialize counters
+- [content](/reference/cssproperties/properties/css_prop_content) - Generated content with counters
+- [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type) - List marker style
+- [display](/reference/cssproperties/properties/css_prop_display) - Element display type
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

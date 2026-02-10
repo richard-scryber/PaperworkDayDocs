@@ -582,10 +582,10 @@ Multi-section conditional content:
 
 ## See Also
 
-- [if element](/reference/htmltags/if.html) - Conditional rendering element
+- [if element](/reference/htmltags/elements/html_if_element.html) - Conditional rendering element
 - [data-content attribute](/reference/htmlattributes/data-content.html) - Synonym for template elements
 - [data-test attribute](/reference/htmlattributes/data-test.html) - Conditional test expressions
-- [template element](/reference/htmltags/template.html) - Template for repeating content
+- [template element](/reference/htmltags/elements/html_template_element.html) - Template for repeating content
 - [Data Binding](/reference/binding/) - Complete data binding guide
 - [Expressions](/reference/expressions/) - Expression syntax reference
 

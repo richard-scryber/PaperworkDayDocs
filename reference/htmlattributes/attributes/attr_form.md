@@ -788,12 +788,12 @@ When generating PDFs:
 
 ## See Also
 
-- [output element](/reference/htmltags/output.html) - The output HTML element
-- [form element](/reference/htmltags/form.html) - The form HTML element
-- [for attribute](/reference/htmlattributes/for.html) - Associates output with form controls
-- [val attribute](/reference/htmlattributes/val.html) - Output value attribute
-- [name attribute](/reference/htmlattributes/name.html) - Names form elements
-- [id attribute](/reference/htmlattributes/id.html) - Unique identifier
+- [output element](/reference/htmltags/elements/html_output_element.html) - The output HTML element
+- [form element](/reference/htmltags/elements/html_form_element.html) - The form HTML element
+- [for attribute](/reference/htmlattributes/attributes/attr_for.html) - Associates output with form controls
+- [val attribute](/reference/htmlattributes/attributes/attr_val.html) - Output value attribute
+- [name attribute](/reference/htmlattributes/attributes/attr_name.html) - Names form elements
+- [id attribute](/reference/htmlattributes/attributes/attr_id.html) - Unique identifier
 - [Data Binding](/reference/binding/) - Dynamic data binding
 - [HTML Forms](/reference/forms/) - Complete form reference
 

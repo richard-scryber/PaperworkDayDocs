@@ -526,11 +526,11 @@ Generates product catalogs, price lists, or inventory reports where each item di
 
 ## See Also
 
-- [background](/reference/cssproperties/css_prop_background) - Shorthand for all background properties
-- [background-color](/reference/cssproperties/css_prop_background-color) - Set background color
-- [background-repeat](/reference/cssproperties/css_prop_background-repeat) - Control image repetition
-- [background-position](/reference/cssproperties/css_prop_background-position) - Set image position
-- [background-size](/reference/cssproperties/css_prop_background-size) - Control image sizing
-- [opacity](/reference/cssproperties/css_prop_opacity) - Control overall element transparency
+- [background](/reference/cssproperties/properties/css_prop_background) - Shorthand for all background properties
+- [background-color](/reference/cssproperties/properties/css_prop_background-color) - Set background color
+- [background-repeat](/reference/cssproperties/properties/css_prop_background-repeat) - Control image repetition
+- [background-position](/reference/cssproperties/properties/css_prop_background-position) - Set image position
+- [background-size](/reference/cssproperties/properties/css_prop_background-size) - Control image sizing
+- [opacity](/reference/cssproperties/properties/css_prop_opacity) - Control overall element transparency
 
 ---

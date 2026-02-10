@@ -1246,10 +1246,10 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 
 ## See Also
 
-- [break-before](/reference/cssproperties/css_prop_break-before) - Control breaks before elements
-- [break-inside](/reference/cssproperties/css_prop_break-inside) - Control breaks within elements
-- [page-break-after](/reference/cssproperties/css_prop_page-break-after) - Legacy CSS2 property
-- [page](/reference/cssproperties/css_prop_page) - Specify named page for element
+- [break-before](/reference/cssproperties/properties/css_prop_break-before) - Control breaks before elements
+- [break-inside](/reference/cssproperties/properties/css_prop_break-inside) - Control breaks within elements
+- [page-break-after](/reference/cssproperties/properties/css_prop_page-break-after) - Legacy CSS2 property
+- [page](/reference/cssproperties/properties/css_prop_page) - Specify named page for element
 - [@page rule](/reference/css_atrules/css_atrule_page) - Define page properties and margins
 
 ---

@@ -259,10 +259,10 @@ The universal selector has a specificity value of **1 point** (equivalent to an 
 
 ## See Also
 
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [Class Selector](/reference/cssselectors/css_class_selector)
-- [ID Selector](/reference/cssselectors/css_id_selector)
-- [Descendant Combinator](/reference/cssselectors/css_descendant_combinator)
-- [CSS Specificity](/reference/cssselectors/css_specificity)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [Class Selector](/reference/cssselectors/selectors/css_class_selector)
+- [ID Selector](/reference/cssselectors/selectors/css_id_selector)
+- [Descendant Combinator](/reference/cssselectors/selectors/css_descendant_combinator)
+- [CSS Specificity](/reference/cssselectors/selectors/css_specificity)
 
 ---

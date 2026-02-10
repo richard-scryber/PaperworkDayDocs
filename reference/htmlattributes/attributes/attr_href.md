@@ -880,10 +880,10 @@ Links should always have a valid `href` value:
 
 ## See Also
 
-- [a](/reference/htmltags/a.html) - Anchor/link element (uses href attribute)
-- [id](/reference/htmlattributes/id.html) - Unique identifier (target for internal links)
-- [target](/reference/htmlattributes/target.html) - Link target attribute
-- [title](/reference/htmlattributes/title.html) - Title attribute for bookmarks
+- [a](/reference/htmltags/elements/html_a_element.html) - Anchor/link element (uses href attribute)
+- [id](/reference/htmlattributes/attributes/attr_id.html) - Unique identifier (target for internal links)
+- [target](/reference/htmlattributes/attributes/attr_target.html) - Link target attribute
+- [title](/reference/htmlattributes/attributes/attr_title.html) - Title attribute for bookmarks
 - [data-fit-to](/reference/htmlattributes/data-fit-to.html) - Control destination display
 - [PDF Actions](/reference/actions/) - PDF navigation actions
 - [Data Binding](/reference/binding/) - Dynamic link generation

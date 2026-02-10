@@ -1236,10 +1236,10 @@ The column-count property works seamlessly with data binding to create dynamic m
 
 ## See Also
 
-- [column-gap](/reference/cssproperties/css_prop_column-gap) - Set spacing between columns
-- [column-width](/reference/cssproperties/css_prop_column-width) - Set ideal column width
-- [column-span](/reference/cssproperties/css_prop_column-span) - Make elements span columns
-- [width](/reference/cssproperties/css_prop_width) - Set element width
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [column-gap](/reference/cssproperties/properties/css_prop_column-gap) - Set spacing between columns
+- [column-width](/reference/cssproperties/properties/css_prop_column-width) - Set ideal column width
+- [column-span](/reference/cssproperties/properties/css_prop_column-span) - Make elements span columns
+- [width](/reference/cssproperties/properties/css_prop_width) - Set element width
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

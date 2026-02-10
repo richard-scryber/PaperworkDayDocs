@@ -679,13 +679,13 @@ Data context:
 
 ## See Also
 
-- [border](/reference/cssproperties/css_prop_border) - Shorthand for all border properties
-- [border-style](/reference/cssproperties/css_prop_border-style) - Set border style
-- [border-color](/reference/cssproperties/css_prop_border-color) - Set border color
-- [border-top-width](/reference/cssproperties/css_prop_border-top-width) - Set top border width
-- [border-right-width](/reference/cssproperties/css_prop_border-right-width) - Set right border width
-- [border-bottom-width](/reference/cssproperties/css_prop_border-bottom-width) - Set bottom border width
-- [border-left-width](/reference/cssproperties/css_prop_border-left-width) - Set left border width
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border](/reference/cssproperties/properties/css_prop_border) - Shorthand for all border properties
+- [border-style](/reference/cssproperties/properties/css_prop_border-style) - Set border style
+- [border-color](/reference/cssproperties/properties/css_prop_border-color) - Set border color
+- [border-top-width](/reference/cssproperties/properties/css_prop_border-top-width) - Set top border width
+- [border-right-width](/reference/cssproperties/properties/css_prop_border-right-width) - Set right border width
+- [border-bottom-width](/reference/cssproperties/properties/css_prop_border-bottom-width) - Set bottom border width
+- [border-left-width](/reference/cssproperties/properties/css_prop_border-left-width) - Set left border width
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

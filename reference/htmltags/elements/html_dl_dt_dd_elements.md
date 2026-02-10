@@ -869,7 +869,7 @@ Definition lists handle page breaks naturally:
 - [ul](html_ul_element.html) - Unordered list element
 - [ol](html_ol_element.html) - Ordered list element
 - [li](html_li_element.html) - List item element
-- [div](/reference/htmltags/div.html) - Generic block container
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
 - [CSS Styles](/learning/styles/) - Complete CSS styling
 - [Data Binding](/learning/binding/) - Data binding and expressions
 

@@ -996,11 +996,11 @@ Important distinction:
 
 ## See Also
 
-- [object](/reference/htmltags/object.html) - Object element (uses data attribute)
+- [object](/reference/htmltags/elements/html_object_element.html) - Object element (uses data attribute)
 - [data-icon](/reference/htmlattributes/data-icon.html) - Display icon for attachments
 - [data-file-data](/reference/htmlattributes/data-file-data.html) - Binary file data for attachments
-- [type](/reference/htmlattributes/type.html) - MIME type specification
-- [alt](/reference/htmlattributes/alt.html) - Alternative text/description
+- [type](/reference/htmlattributes/attributes/attr_type.html) - MIME type specification
+- [alt](/reference/htmlattributes/attributes/attr_alt.html) - Alternative text/description
 - [Data Binding](/reference/binding/) - Dynamic content and attribute values
 - [PDF Attachments](/reference/pdf/attachments.html) - PDF attachment specifications
 - [File Resources](/reference/resources/files.html) - Working with file resources

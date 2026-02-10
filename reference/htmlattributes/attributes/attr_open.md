@@ -1094,9 +1094,9 @@ Common uses for details elements:
 
 ## See Also
 
-- [details](/reference/htmltags/details.html) - Details disclosure element
-- [summary](/reference/htmltags/summary.html) - Summary element for details
-- [hidden](/reference/htmlattributes/hidden.html) - Hidden attribute for visibility
+- [details](/reference/htmltags/elements/html_details_element.html) - Details disclosure element
+- [summary](/reference/htmltags/elements/html_summary_element.html) - Summary element for details
+- [hidden](/reference/htmlattributes/attributes/attr_hidden.html) - Hidden attribute for visibility
 - [Collapsible Content](/reference/techniques/collapsible.html) - Creating collapsible sections
 - [Interactive Elements](/reference/interactive/) - Interactive HTML elements
 

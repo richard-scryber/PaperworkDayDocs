@@ -961,8 +961,8 @@ The `<time>` element is perfect for:
 
 ## See Also
 
-- [span](/reference/htmltags/span.html) - Inline container element (for wrapping time elements)
-- [div](/reference/htmltags/div.html) - Block container element
+- [span](/reference/htmltags/elements/html_span_element.html) - Inline container element (for wrapping time elements)
+- [div](/reference/htmltags/elements/html_div_element.html) - Block container element
 - [Data Binding](/reference/binding/) - Data binding and expressions
 - [Date Component](/reference/components/date.html) - Base date component in Scryber namespace
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference

@@ -618,12 +618,12 @@ The `<head>` element implements `IInvisibleContainer`, which means:
 
 ## See Also
 
-- [meta](/reference/htmltags/meta.html) - Meta element for document metadata
-- [title](/reference/htmltags/title.html) - Title element for document title
-- [link](/reference/htmltags/link.html) - Link element for external stylesheets
-- [style](/reference/htmltags/style.html) - Style element for embedded CSS
-- [body](/reference/htmltags/body.html) - Body element for document content
-- [html](/reference/htmltags/html.html) - Root HTML element
+- [meta](/reference/htmltags/elements/html_meta_element.html) - Meta element for document metadata
+- [title](/reference/htmltags/elements/html_title_element.html) - Title element for document title
+- [link](/reference/htmltags/elements/html_link_element.html) - Link element for external stylesheets
+- [style](/reference/htmltags/elements/html_style_element.html) - Style element for embedded CSS
+- [body](/reference/htmltags/elements/html_body_element.html) - Body element for document content
+- [html](/reference/htmltags/elements/html_html_element.html) - Root HTML element
 - [Document Component](/reference/components/document.html) - Base document component
 - [Document Properties](/reference/document/properties.html) - PDF document properties
 - [Security Settings](/reference/security/) - PDF security and encryption

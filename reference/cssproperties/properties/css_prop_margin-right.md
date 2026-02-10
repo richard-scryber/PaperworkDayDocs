@@ -807,12 +807,12 @@ Data context:
 
 ## See Also
 
-- [margin](/reference/cssproperties/css_prop_margin) - Set all margins shorthand
-- [margin-left](/reference/cssproperties/css_prop_margin-left) - Set left margin
-- [margin-top](/reference/cssproperties/css_prop_margin-top) - Set top margin
-- [margin-bottom](/reference/cssproperties/css_prop_margin-bottom) - Set bottom margin
-- [padding-right](/reference/cssproperties/css_prop_padding-right) - Set right padding
-- [margin-inline-end](/reference/cssproperties/css_prop_margin-inline-end) - Set inline end margin
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [margin](/reference/cssproperties/properties/css_prop_margin) - Set all margins shorthand
+- [margin-left](/reference/cssproperties/properties/css_prop_margin-left) - Set left margin
+- [margin-top](/reference/cssproperties/properties/css_prop_margin-top) - Set top margin
+- [margin-bottom](/reference/cssproperties/properties/css_prop_margin-bottom) - Set bottom margin
+- [padding-right](/reference/cssproperties/properties/css_prop_padding-right) - Set right padding
+- [margin-inline-end](/reference/cssproperties/properties/css_prop_margin-inline-end) - Set inline end margin
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

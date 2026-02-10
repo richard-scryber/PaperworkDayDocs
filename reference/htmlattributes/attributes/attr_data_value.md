@@ -823,8 +823,8 @@ Production-ready invoice with complete calculations:
 
 ## See Also
 
-- [var element](/reference/htmltags/var.html) - Variable element for computed values
-- [num element](/reference/htmltags/num.html) - Number element for formatted display
+- [var element](/reference/htmltags/elements/html_var_element.html) - Variable element for computed values
+- [num element](/reference/htmltags/elements/html_num_element.html) - Number element for formatted display
 - [data-id attribute](/reference/htmlattributes/data-id.html) - Variable identifier
 - [Data Binding](/reference/binding/) - Complete data binding guide
 - [Expressions](/reference/expressions/) - Expression syntax reference

@@ -509,10 +509,10 @@ The `stop-color` property can be dynamically controlled through data binding, en
 
 ## See Also
 
-- [stop-opacity](/reference/cssproperties/css_prop_stop-opacity) - Gradient stop transparency
-- [fill](/reference/cssproperties/css_prop_fill) - SVG fill color property
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
-- [opacity](/reference/cssproperties/css_prop_opacity) - Element transparency
+- [stop-opacity](/reference/cssproperties/properties/css_prop_stop-opacity) - Gradient stop transparency
+- [fill](/reference/cssproperties/properties/css_prop_fill) - SVG fill color property
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
+- [opacity](/reference/cssproperties/properties/css_prop_opacity) - Element transparency
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

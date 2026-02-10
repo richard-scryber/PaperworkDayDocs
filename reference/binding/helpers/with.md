@@ -29,7 +29,7 @@ has_toc: false
 
 Change the data context to a specific object, simplifying property access within the block. Properties can be accessed directly without the object prefix.
 
-**Based on:** [`<template>` element](../../htmltags/template.md) with context binding and the [`With` component](../../components/with.md)
+**Based on:** [`<template>` element](../../htmltags/template.html) with context binding and the [`With` component](../../components/with.html)
 
 ## Syntax
 
@@ -184,8 +184,8 @@ For the alias syntax `{{#with object as | alias |}}`, it creates a variable bind
 
 ## See Also
 
-- [#each Helper](./each.md)
-- [#if Helper](./if.md)
-- [Context & Scope Guide](../../learning/02-data-binding/06_context_scope.md)
+- [#each Helper](./each.html)
+- [#if Helper](./if.html)
+- [Context & Scope Guide](../../learning/02-data-binding/06_context_scope.html)
 
 ---

@@ -1075,11 +1075,11 @@ The overflow-y property integrates with data binding to manage vertical content 
 
 ## See Also
 
-- [overflow](/reference/cssproperties/css_prop_overflow) - Control both horizontal and vertical overflow
-- [overflow-x](/reference/cssproperties/css_prop_overflow-x) - Control horizontal overflow behavior
-- [height](/reference/cssproperties/css_prop_height) - Set element height
-- [max-height](/reference/cssproperties/css_prop_max-height) - Set maximum height constraint
-- [min-height](/reference/cssproperties/css_prop_min-height) - Set minimum height constraint
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [overflow](/reference/cssproperties/properties/css_prop_overflow) - Control both horizontal and vertical overflow
+- [overflow-x](/reference/cssproperties/properties/css_prop_overflow-x) - Control horizontal overflow behavior
+- [height](/reference/cssproperties/properties/css_prop_height) - Set element height
+- [max-height](/reference/cssproperties/properties/css_prop_max-height) - Set maximum height constraint
+- [min-height](/reference/cssproperties/properties/css_prop_min-height) - Set minimum height constraint
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

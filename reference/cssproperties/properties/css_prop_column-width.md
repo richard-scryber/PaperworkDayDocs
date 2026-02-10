@@ -1375,10 +1375,10 @@ The column-width property integrates with data binding to create flexible, respo
 
 ## See Also
 
-- [column-count](/reference/cssproperties/css_prop_column-count) - Set exact number of columns
-- [column-gap](/reference/cssproperties/css_prop_column-gap) - Set spacing between columns
-- [column-span](/reference/cssproperties/css_prop_column-span) - Make elements span columns
-- [width](/reference/cssproperties/css_prop_width) - Set element width
-- [style](/reference/htmlattributes/attr_style) - Inline style attribute
+- [column-count](/reference/cssproperties/properties/css_prop_column-count) - Set exact number of columns
+- [column-gap](/reference/cssproperties/properties/css_prop_column-gap) - Set spacing between columns
+- [column-span](/reference/cssproperties/properties/css_prop_column-span) - Make elements span columns
+- [width](/reference/cssproperties/properties/css_prop_width) - Set element width
+- [style](/reference/htmlattributes/attributes/attr_style) - Inline style attribute
 
 ---

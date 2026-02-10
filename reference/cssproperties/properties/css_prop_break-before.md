@@ -1090,10 +1090,10 @@ The `break-before` property supports data binding, allowing you to create sophis
 
 ## See Also
 
-- [break-after](/reference/cssproperties/css_prop_break-after) - Control breaks after elements
-- [break-inside](/reference/cssproperties/css_prop_break-inside) - Control breaks within elements
-- [page-break-before](/reference/cssproperties/css_prop_page-break-before) - Legacy CSS2 property
-- [page](/reference/cssproperties/css_prop_page) - Specify named page for element
+- [break-after](/reference/cssproperties/properties/css_prop_break-after) - Control breaks after elements
+- [break-inside](/reference/cssproperties/properties/css_prop_break-inside) - Control breaks within elements
+- [page-break-before](/reference/cssproperties/properties/css_prop_page-break-before) - Legacy CSS2 property
+- [page](/reference/cssproperties/properties/css_prop_page) - Specify named page for element
 - [@page rule](/reference/css_atrules/css_atrule_page) - Define page properties and margins
 
 ---

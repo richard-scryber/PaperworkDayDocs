@@ -356,9 +356,9 @@ The depth of the ancestor relationship also affects specificity in Scryber (1, 1
 
 ## See Also
 
-- [Child Combinator](/reference/cssselectors/css_child_combinator)
-- [Element Selector](/reference/cssselectors/css_element_selector)
-- [Class Selector](/reference/cssselectors/css_class_selector)
-- [CSS Specificity](/reference/cssselectors/css_specificity)
+- [Child Combinator](/reference/cssselectors/selectors/css_child_combinator)
+- [Element Selector](/reference/cssselectors/selectors/css_element_selector)
+- [Class Selector](/reference/cssselectors/selectors/css_class_selector)
+- [CSS Specificity](/reference/cssselectors/selectors/css_specificity)
 
 ---

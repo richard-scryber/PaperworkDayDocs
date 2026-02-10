@@ -767,11 +767,11 @@ You can hide large document sections including all nested content:
 
 ## See Also
 
-- [id](/reference/htmlattributes/id.html) - Unique identifier attribute
-- [class](/reference/htmlattributes/class.html) - CSS class attribute
-- [style](/reference/htmlattributes/style.html) - Inline CSS styling (including display property)
+- [id](/reference/htmlattributes/attributes/attr_id.html) - Unique identifier attribute
+- [class](/reference/htmlattributes/attributes/attr_class.html) - CSS class attribute
+- [style](/reference/htmlattributes/attributes/attr_style.html) - Inline CSS styling (including display property)
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
-- [template](/reference/htmltags/template.html) - Template element for repeating content
+- [template](/reference/htmltags/elements/html_template_element.html) - Template element for repeating content
 - [Conditional Rendering](/reference/binding/conditionals.html) - Conditional content patterns
 
 ---

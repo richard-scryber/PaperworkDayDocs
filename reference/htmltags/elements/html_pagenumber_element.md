@@ -467,11 +467,11 @@ This displays the page number where the referenced component appears.
 
 ## See Also
 
-- [section](/reference/htmltags/section.html) - Section element for page numbering context
-- [header](/reference/htmltags/header.html) - Header element for page headers
-- [footer](/reference/htmltags/footer.html) - Footer element for page footers
+- [section](/reference/htmltags/elements/html_section_element.html) - Section element for page numbering context
+- [header](/reference/htmltags/elements/html_header_element.html) - Header element for page headers
+- [footer](/reference/htmltags/elements/html_footer_element.html) - Footer element for page footers
 - [Page Layout](/reference/pagelayout/) - Page layout and numbering settings
 - [Data Binding](/reference/binding/) - Data binding expressions
-- [template](/reference/htmltags/template.html) - Template element for repeating content
+- [template](/reference/htmltags/elements/html_template_element.html) - Template element for repeating content
 
 ---

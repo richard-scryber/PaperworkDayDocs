@@ -846,12 +846,12 @@ For PDF generation:
 
 ## See Also
 
-- [th](/reference/htmltags/th.html) - Table header cell element
-- [table](/reference/htmltags/table.html) - Table element
-- [thead](/reference/htmltags/thead.html) - Table head element
-- [tbody](/reference/htmltags/tbody.html) - Table body element
-- [colspan](/reference/htmlattributes/colspan.html) - Column span attribute
-- [rowspan](/reference/htmlattributes/rowspan.html) - Row span attribute
-- [headers](/reference/htmlattributes/headers.html) - Headers attribute for complex associations
+- [th](/reference/htmltags/elements/html_th_element.html) - Table header cell element
+- [table](/reference/htmltags/elements/html_table_element.html) - Table element
+- [thead](/reference/htmltags/elements/html_thead_element.html) - Table head element
+- [tbody](/reference/htmltags/elements/html_tbody_element.html) - Table body element
+- [colspan](/reference/htmlattributes/attributes/attr_colspan.html) - Column span attribute
+- [rowspan](/reference/htmlattributes/attributes/attr_rowspan.html) - Row span attribute
+- [headers](/reference/htmlattributes/attributes/attr_headers.html) - Headers attribute for complex associations
 
 ---

@@ -646,9 +646,9 @@ o8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0icmVkIi8+Cjwvc3ZnPg=="
 
 ## See Also
 
-- [a](/reference/htmltags/a.html) - Anchor/link element (wraps images for clickable links)
-- [div](/reference/htmltags/div.html) - Container element (for background images)
-- [figure](/reference/htmltags/figure.html) - Figure element with caption
+- [a](/reference/htmltags/elements/html_a_element.html) - Anchor/link element (wraps images for clickable links)
+- [div](/reference/htmltags/elements/html_div_element.html) - Container element (for background images)
+- [figure](/reference/htmltags/elements/html_figure_element.html) - Figure element with caption
 - [Image Component](/reference/components/image.html) - Base image component in Scryber namespace
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 - [Data Binding](/reference/binding/) - Data binding and expressions

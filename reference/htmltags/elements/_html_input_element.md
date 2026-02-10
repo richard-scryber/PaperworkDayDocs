@@ -1109,11 +1109,11 @@ In the Scryber codebase:
 
 ## See Also
 
-- [label](/reference/htmltags/label.html) - Label element for form fields
-- [fieldset](/reference/htmltags/fieldset.html) - Fieldset and legend for grouping form elements
-- [form](/reference/htmltags/form.html) - Form container element
-- [div](/reference/htmltags/div.html) - Generic block container
-- [span](/reference/htmltags/span.html) - Inline container for styling
+- [label](/reference/htmltags/elements/html_label_element.html) - Label element for form fields
+- [fieldset](/reference/htmltags/elements/html_fieldset_element.html) - Fieldset and legend for grouping form elements
+- [form](/reference/htmltags/elements/html_form_element.html) - Form container element
+- [div](/reference/htmltags/elements/html_div_element.html) - Generic block container
+- [span](/reference/htmltags/elements/html_span_element.html) - Inline container for styling
 - [Data Binding](/reference/binding/) - Dynamic data binding and expressions
 - [CSS Styles](/reference/styles/) - Complete CSS styling reference
 

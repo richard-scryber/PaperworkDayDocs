@@ -709,13 +709,13 @@ Data context:
 
 ## See Also
 
-- [border](/reference/cssproperties/css_prop_border) - Shorthand for all border properties
-- [border-top](/reference/cssproperties/css_prop_border-top) - Set top border
-- [border-right](/reference/cssproperties/css_prop_border-right) - Set right border
-- [border-left](/reference/cssproperties/css_prop_border-left) - Set left border
-- [border-bottom-width](/reference/cssproperties/css_prop_border-bottom-width) - Set bottom border width
-- [border-bottom-style](/reference/cssproperties/css_prop_border-bottom-style) - Set bottom border style
-- [border-bottom-color](/reference/cssproperties/css_prop_border-bottom-color) - Set bottom border color
-- [style attribute](/reference/htmlattributes/attr_style) - Inline CSS styling
+- [border](/reference/cssproperties/properties/css_prop_border) - Shorthand for all border properties
+- [border-top](/reference/cssproperties/properties/css_prop_border-top) - Set top border
+- [border-right](/reference/cssproperties/properties/css_prop_border-right) - Set right border
+- [border-left](/reference/cssproperties/properties/css_prop_border-left) - Set left border
+- [border-bottom-width](/reference/cssproperties/properties/css_prop_border-bottom-width) - Set bottom border width
+- [border-bottom-style](/reference/cssproperties/properties/css_prop_border-bottom-style) - Set bottom border style
+- [border-bottom-color](/reference/cssproperties/properties/css_prop_border-bottom-color) - Set bottom border color
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styling
 
 ---

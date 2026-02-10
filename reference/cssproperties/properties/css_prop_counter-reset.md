@@ -635,10 +635,10 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 
 ## See Also
 
-- [counter-increment](/reference/cssproperties/css_prop_counter-increment) - Increment counter values
-- [content](/reference/cssproperties/css_prop_content) - Generated content with counters
-- [list-style-type](/reference/cssproperties/css_prop_list-style-type) - List marker style
-- [display](/reference/cssproperties/css_prop_display) - Element display type
+- [counter-increment](/reference/cssproperties/properties/css_prop_counter-increment) - Increment counter values
+- [content](/reference/cssproperties/properties/css_prop_content) - Generated content with counters
+- [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type) - List marker style
+- [display](/reference/cssproperties/properties/css_prop_display) - Element display type
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

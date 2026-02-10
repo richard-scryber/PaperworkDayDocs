@@ -955,10 +955,10 @@ public class VersionedDocument
 
 ## See Also
 
-- [object element](/reference/htmltags/object.html) - Object/attachment element documentation
-- [data attribute](/reference/htmlattributes/data.html) - File path/URL attribute
+- [object element](/reference/htmltags/elements/html_object_element.html) - Object/attachment element documentation
+- [data attribute](/reference/htmlattributes/attributes/attr_data.html) - File path/URL attribute
 - [data-icon attribute](/reference/htmlattributes/data-icon.html) - Attachment icon display
-- [type attribute](/reference/htmlattributes/type.html) - MIME type specification
+- [type attribute](/reference/htmlattributes/attributes/attr_type.html) - MIME type specification
 - [Data Binding](/reference/binding/) - Data binding and expressions
 - [IconAttachment Component](/reference/components/iconattachment.html) - Base attachment component
 - [PDF Attachments](/reference/pdf/attachments.html) - PDF attachment specifications

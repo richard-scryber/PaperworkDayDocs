@@ -638,10 +638,10 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 
 ## See Also
 
-- [text-anchor](/reference/cssproperties/css_prop_text-anchor) - SVG horizontal text alignment
-- [fill](/reference/cssproperties/css_prop_fill) - SVG fill color property
-- [vertical-align](/reference/cssproperties/css_prop_vertical-align) - HTML vertical alignment
-- [stroke](/reference/cssproperties/css_prop_stroke) - SVG stroke color property
+- [text-anchor](/reference/cssproperties/properties/css_prop_text-anchor) - SVG horizontal text alignment
+- [fill](/reference/cssproperties/properties/css_prop_fill) - SVG fill color property
+- [vertical-align](/reference/cssproperties/properties/css_prop_vertical-align) - HTML vertical alignment
+- [stroke](/reference/cssproperties/properties/css_prop_stroke) - SVG stroke color property
 - [style attribute](/reference/htmlattributes/style) - Inline CSS styles
 
 ---

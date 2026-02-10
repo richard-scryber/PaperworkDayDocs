@@ -719,11 +719,11 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 
 ## See Also
 
-- [img](/reference/htmltags/img.html) - Image element (uses src attribute)
-- [iframe](/reference/htmltags/iframe.html) - Iframe element for embedded content
-- [width](/reference/htmlattributes/width.html) - Width attribute for sizing
-- [height](/reference/htmlattributes/height.html) - Height attribute for sizing
-- [alt](/reference/htmlattributes/alt.html) - Alternative text for images
+- [img](/reference/htmltags/elements/html_img_element.html) - Image element (uses src attribute)
+- [iframe](/reference/htmltags/elements/html_iframe_element.html) - Iframe element for embedded content
+- [width](/reference/htmlattributes/attributes/attr_width.html) - Width attribute for sizing
+- [height](/reference/htmlattributes/attributes/attr_height.html) - Height attribute for sizing
+- [alt](/reference/htmlattributes/attributes/attr_alt.html) - Alternative text for images
 - [Data Binding](/reference/binding/) - Dynamic content and attribute values
 - [Image Formats](/reference/images/) - Supported image formats and optimization
 
