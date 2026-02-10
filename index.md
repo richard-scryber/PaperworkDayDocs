@@ -6,15 +6,17 @@ has_toc: false
 nav_order: 0
 ---
 
-# Welcome to the home of Scryber.Core library documentation
+# Learn Paperwork, and the Core library
 {: .no_toc}
 
-If you are new here then jump straight into the <a href='./learning/01-getting-started/'>Getting Started</a> section.
+---
 
-### NOTE
-The documentation is **IN REVIEW** phase. The reference section will be more accurate than the learing guides as it is rolled out. 
+{: .note }
+> The documentation is **IN REVIEW** phase. The reference section will be more accurate than the learing guides as it is rolled out. 
+>
+> If you do discover an inconsistency whilst trying to do something. Then check the reference section, if it's still incorrect then please do reach out via the [GitHub](https://github.com/richard-scryber/scryber.core) issue and discussion tabs.
 
-So if you do discover an inconsistency whilst trying to do something. Then check the reference section - if it's still incorrect then please do reach out via the [GitHub](https://github.com/richard-scryber/scryber.core) issue and discussion tabs.
+---
 
 <details class='top-toc' markdown="block">
   <summary>
@@ -27,16 +29,19 @@ So if you do discover an inconsistency whilst trying to do something. Then check
 
 ---
 
-### Getting Around
+
+## Getting Around
 
 This documentation is meant to support your use of the library. The navigation on the left (or top) will allow you to move around the docs without visiting every page in turn.
 
-Most pages contain a table of contents for that page, istelf, and then further links so you can dive deeper of move to a related subject.
+Most pages contain a table of contents for that page, itself, and then further links so you can dive deeper of move to a related subject.
 
 Finally if you know what you are looking for, then the search is available at the top.
 
+---
 
-### Learning the Scryber.Core library
+
+## Learning the Scryber.Core library
 
 The first section is for the Learing guides which covers the capabilities the library in general terms.
 
@@ -51,8 +56,9 @@ There are 8 individual modules
 7. [Document Configuration](learning/07-configuration) - Configure logging, security, conformance, and optimization for production-ready PDF documents.
 8. [Practical Applications](learning/08-poctical) - Learn through complete, real-world examples - from invoices to reports, certificates to catalogs. Highlighting specific features.
 
+---
 
-### Reference section
+## Reference section
 
 The reference section is split into 7 sections covering each of the major components with examples of usage, and samples.
 

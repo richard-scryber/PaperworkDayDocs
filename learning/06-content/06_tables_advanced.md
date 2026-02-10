@@ -796,10 +796,10 @@ tr {
 
 ## Next Steps
 
-1. **[Attachments & Embedded Content](07_attachments_embedded.md)** - File embedding
-2. **[Content Best Practices](08_content_best_practices.md)** - Optimization
+1. **[Attachments & Embedded Content](07_attachments_embedded.html)** - File embedding
+2. **[Content Best Practices](08_content_best_practices.html)** - Optimization
 3. **[Practical Applications](/learning/08-practical/)** - Real-world examples
 
 ---
 
-**Continue learning →** [Attachments & Embedded Content](07_attachments_embedded.md)
+**Continue learning →** [Attachments & Embedded Content](07_attachments_embedded.html)

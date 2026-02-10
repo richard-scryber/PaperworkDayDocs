@@ -765,10 +765,10 @@ Create a technical guide with:
 
 Now that you can add basic content:
 
-1. **[Output Options](07_output_options.md)** - Configure PDF generation
+1. **[Output Options](07_output_options.html)** - Configure PDF generation
 2. **[Content Components](/learning/06-content/)** - Advanced content types
 3. **[Data Binding](/learning/02-data-binding/)** - Dynamic content
 
 ---
 
-**Continue learning →** [Output Options](07_output_options.md)
+**Continue learning →** [Output Options](07_output_options.html)

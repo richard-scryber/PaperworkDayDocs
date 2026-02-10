@@ -16,14 +16,14 @@ Welcome to the Scryber.Core learning series! This comprehensive guide will take 
 
 ## Table of Contents
 
-1. [Installation & Setup](01_installation_setup.md) - Get Scryber installed and configured
-2. [Your First Document](02_first_document.md) - Create a complete PDF from scratch
-3. [HTML to PDF](03_html_to_pdf.md) - Understand how HTML translates to PDF
-4. [CSS Basics](04_css_basics.md) - Style your documents with CSS
-5. [Pages & Sections](05_pages_sections.md) - Structure multi-page documents
-6. [Basic Content](06_basic_content.md) - Add text, images, lists, and tables
-7. [Output Options](07_output_options.md) - Save, stream, and configure output
-8. [Troubleshooting](08_troubleshooting.md) - Solve common issues and debug effectively
+1. [Installation & Setup](01_installation_setup.html) - Get Scryber installed and configured
+2. [Your First Document](02_first_document.html) - Create a complete PDF from scratch
+3. [HTML to PDF](03_html_to_pdf.html) - Understand how HTML translates to PDF
+4. [CSS Basics](04_css_basics.html) - Style your documents with CSS
+5. [Pages & Sections](05_pages_sections.html) - Structure multi-page documents
+6. [Basic Content](06_basic_content.html) - Add text, images, lists, and tables
+7. [Output Options](07_output_options.html) - Save, stream, and configure output
+8. [Troubleshooting](08_troubleshooting.html) - Solve common issues and debug effectively
 
 ---
 
@@ -184,14 +184,14 @@ Both formats produce the same PDF output!
 
 This series covers the essential foundations of Scryber.Core:
 
-1. **[Installation & Setup](01_installation_setup.md)** - Get Scryber installed and configured
-2. **[Your First Document](02_first_document.md)** - Create a complete PDF from scratch, including XHTML vs HTML5 formats
-3. **[HTML to PDF](03_html_to_pdf.md)** - Understand how HTML translates to PDF
-4. **[CSS Basics](04_css_basics.md)** - Style your documents with CSS
-5. **[Pages & Sections](05_pages_sections.md)** - Structure multi-page documents
-6. **[Basic Content](06_basic_content.md)** - Add text, images, lists, and tables
-7. **[Output Options](07_output_options.md)** - Save, stream, and configure output
-8. **[Troubleshooting](08_troubleshooting.md)** - Solve common issues and debug effectively
+1. **[Installation & Setup](01_installation_setup.html)** - Get Scryber installed and configured
+2. **[Your First Document](02_first_document.html)** - Create a complete PDF from scratch, including XHTML vs HTML5 formats
+3. **[HTML to PDF](03_html_to_pdf.html)** - Understand how HTML translates to PDF
+4. **[CSS Basics](04_css_basics.html)** - Style your documents with CSS
+5. **[Pages & Sections](05_pages_sections.html)** - Structure multi-page documents
+6. **[Basic Content](06_basic_content.html)** - Add text, images, lists, and tables
+7. **[Output Options](07_output_options.html)** - Save, stream, and configure output
+8. **[Troubleshooting](08_troubleshooting.html)** - Solve common issues and debug effectively
 
 ## Prerequisites
 
@@ -237,9 +237,9 @@ Each article in this series is designed to be:
 
 ## Next Steps
 
-Ready to begin? Start with [Installation & Setup](01_installation_setup.md) to get Scryber.Core installed and configured in your project.
+Ready to begin? Start with [Installation & Setup](01_installation_setup.html) to get Scryber.Core installed and configured in your project.
 
-If you run into issues, jump to [Troubleshooting](08_troubleshooting.md) for help.
+If you run into issues, jump to [Troubleshooting](08_troubleshooting.html) for help.
 
 ## What's Next After This Series?
 
@@ -252,4 +252,4 @@ Once you've completed Getting Started, continue your learning journey:
 
 ---
 
-**Ready to get started?** Head to [Installation & Setup](01_installation_setup.md) →
+**Ready to get started?** Head to [Installation & Setup](01_installation_setup.html) →

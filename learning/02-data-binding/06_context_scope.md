@@ -712,10 +712,10 @@ doc.Params["products"] = new[]
 
 Now that you master context and scope:
 
-1. **[Formatting Output](07_formatting_output.md)** - Format dates, numbers, and text
-2. **[Advanced Patterns](08_advanced_patterns.md)** - Complex data binding scenarios
+1. **[Formatting Output](07_formatting_output.html)** - Format dates, numbers, and text
+2. **[Advanced Patterns](08_advanced_patterns.html)** - Complex data binding scenarios
 3. **[Practical Applications](/learning/08-practical/)** - Real-world examples
 
 ---
 
-**Continue learning →** [Formatting Output](07_formatting_output.md)
+**Continue learning →** [Formatting Output](07_formatting_output.html)

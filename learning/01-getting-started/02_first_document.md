@@ -547,8 +547,8 @@ var doc = Document.ParseDocument(templatePath);
 
 Now that you can create basic documents:
 
-1. **[HTML to PDF](03_html_to_pdf.md)** - Learn which HTML elements are supported
-2. **[CSS Basics](04_css_basics.md)** - Master styling your documents
+1. **[HTML to PDF](03_html_to_pdf.html)** - Learn which HTML elements are supported
+2. **[CSS Basics](04_css_basics.html)** - Master styling your documents
 3. **[Data Binding](/learning/02-data-binding/)** - Make documents dynamic
 
 ---
@@ -561,4 +561,4 @@ Now that you can create basic documents:
 
 ---
 
-**Continue learning →** [HTML to PDF](03_html_to_pdf.md)
+**Continue learning →** [HTML to PDF](03_html_to_pdf.html)

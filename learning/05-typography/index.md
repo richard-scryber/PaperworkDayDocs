@@ -16,14 +16,14 @@ Master typography and font usage, including font properties, custom fonts, text 
 
 ## Table of Contents
 
-1. [Font Basics](01_font_basics.md) - Font families, sizes, weights, styles, system fonts
-2. [Custom Fonts](02_custom_fonts.md) - Loading TTF/OTF fonts, @font-face, embedding
-3. [Web Fonts](03_web_fonts.md) - Using Google Fonts locally in PDFs
-4. [Font Styling](04_font_styling.md) - Text transforms, decorations, shadows
-5. [Text Spacing](05_text_spacing.md) - Line height, letter spacing, vertical rhythm
-6. [Text Alignment](06_text_alignment.md) - Horizontal/vertical alignment, justification
-7. [Advanced Typography](07_advanced_typography.md) - Drop caps, special characters, entities
-8. [Typography Best Practices](08_typography_best_practices.md) - Professional patterns, optimization
+1. [Font Basics](01_font_basics.html) - Font families, sizes, weights, styles, system fonts
+2. [Custom Fonts](02_custom_fonts.html) - Loading TTF/OTF fonts, @font-face, embedding
+3. [Web Fonts](03_web_fonts.html) - Using Google Fonts locally in PDFs
+4. [Font Styling](04_font_styling.html) - Text transforms, decorations, shadows
+5. [Text Spacing](05_text_spacing.html) - Line height, letter spacing, vertical rhythm
+6. [Text Alignment](06_text_alignment.html) - Horizontal/vertical alignment, justification
+7. [Advanced Typography](07_advanced_typography.html) - Drop caps, special characters, entities
+8. [Typography Best Practices](08_typography_best_practices.html) - Professional patterns, optimization
 
 ---
 
@@ -104,56 +104,56 @@ PDF typography has unique characteristics:
 
 This series covers comprehensive typography for professional PDFs:
 
-### 1. [Font Basics](01_font_basics.md)
+### 1. [Font Basics](01_font_basics.html)
 - Font families and font stacks
 - font-family, font-size, font-weight, font-style
 - Generic font families (serif, sans-serif, monospace)
 - Standard 14 PDF fonts
 - System fonts and fallbacks
 
-### 2. [Custom Fonts](02_custom_fonts.md)
+### 2. [Custom Fonts](02_custom_fonts.html)
 - Loading custom fonts with @font-face
 - Font file formats (TTF, OTF)
 - Loading multiple font weights and styles
 - Font paths and organization
 - Font embedding in PDFs
 
-### 3. [Web Fonts](03_web_fonts.md)
+### 3. [Web Fonts](03_web_fonts.html)
 - Using Google Fonts in PDFs
 - Why CDN links don't work for PDF generation
 - Downloading and hosting fonts locally
 - Font format selection
 - Performance considerations
 
-### 4. [Font Styling](04_font_styling.md)
+### 4. [Font Styling](04_font_styling.html)
 - Text transforms (uppercase, lowercase, capitalize)
 - Text decorations (underline, line-through, overline)
 - Text shadows (limited support in PDF)
 - Combining text properties
 - Practical styling patterns
 
-### 5. [Text Spacing](05_text_spacing.md)
+### 5. [Text Spacing](05_text_spacing.html)
 - Line height (leading) for readability
 - Letter spacing (tracking)
 - Word spacing
 - Vertical rhythm and baseline grids
 - Optimal spacing values
 
-### 6. [Text Alignment](06_text_alignment.md)
+### 6. [Text Alignment](06_text_alignment.html)
 - Horizontal alignment (left, right, center, justify)
 - Vertical alignment (top, middle, bottom, baseline)
 - Justification considerations
 - Table cell alignment
 - Alignment best practices
 
-### 7. [Advanced Typography](07_advanced_typography.md)
+### 7. [Advanced Typography](07_advanced_typography.html)
 - Drop caps for articles
 - Special characters and HTML entities
 - Smart quotes and proper dashes
 - Subscript and superscript
 - Ligatures and small caps (when supported)
 
-### 8. [Typography Best Practices](08_typography_best_practices.md)
+### 8. [Typography Best Practices](08_typography_best_practices.html)
 - Professional typography patterns
 - Clear visual hierarchy
 - Font loading optimization
@@ -482,12 +482,12 @@ body { font-family: 'CustomFont', Arial, sans-serif; }
 
 ## Next Steps
 
-Ready to master typography? Start with [Font Basics](01_font_basics.md) to understand font properties and the standard PDF fonts.
+Ready to master typography? Start with [Font Basics](01_font_basics.html) to understand font properties and the standard PDF fonts.
 
 Jump to specific topics:
-- [Web Fonts](03_web_fonts.md) for using Google Fonts locally
-- [Text Spacing](05_text_spacing.md) for optimal readability
-- [Advanced Typography](07_advanced_typography.md) for professional details
+- [Web Fonts](03_web_fonts.html) for using Google Fonts locally
+- [Text Spacing](05_text_spacing.html) for optimal readability
+- [Advanced Typography](07_advanced_typography.html) for professional details
 
 ---
 
@@ -498,4 +498,4 @@ Jump to specific topics:
 
 ---
 
-**Begin your typography journey →** [Font Basics](01_font_basics.md)
+**Begin your typography journey →** [Font Basics](01_font_basics.html)

@@ -16,14 +16,14 @@ Transform static templates into dynamic, data-driven PDF documents with Scryber'
 
 ## Table of Contents
 
-1. [Data Binding Basics](01_data_binding_basics.md) - Basic syntax, properties, passing data, data context
-2. [Expression Functions](02_expression_functions.md) - String, math (calc), date, conditional functions
-3. [Template Iteration](03_template_iteration.md) - Template element, {{#each}}, loops
-4. [Conditional Rendering](04_conditional_rendering.md) - {{#if}}, {{#unless}}, inline conditionals
-5. [Variables & Document Parameters](05_variables_params.md) - &lt;var&gt; element, Document.Params, calculated values
-6. [Context & Scope](06_context_scope.md) - Data context, parent (..), root (@@root)
-7. [Formatting Output](07_formatting_output.md) - Number, date, currency formatting
-8. [Advanced Patterns](08_advanced_patterns.md) - Complex expressions, aggregation, best practices
+1. [Data Binding Basics](01_data_binding_basics.html) - Basic syntax, properties, passing data, data context
+2. [Expression Functions](02_expression_functions.html) - String, math (calc), date, conditional functions
+3. [Template Iteration](03_template_iteration.html) - Template element, {{#each}}, loops
+4. [Conditional Rendering](04_conditional_rendering.html) - {{#if}}, {{#unless}}, inline conditionals
+5. [Variables & Document Parameters](05_variables_params.html) - &lt;var&gt; element, Document.Params, calculated values
+6. [Context & Scope](06_context_scope.html) - Data context, parent (..), root (@@root)
+7. [Formatting Output](07_formatting_output.html) - Number, date, currency formatting
+8. [Advanced Patterns](08_advanced_patterns.html) - Complex expressions, aggregation, best practices
 
 ---
 
@@ -86,50 +86,50 @@ A fully populated invoice with all items listed dynamically!
 
 This series covers everything you need to create sophisticated data-driven documents:
 
-### 1. [Data Binding Basics](01_data_binding_basics.md)
+### 1. [Data Binding Basics](01_data_binding_basics.html)
 - Basic `{{expression}}` syntax
 - Binding to properties and nested objects
 - Passing data from C#, JSON, and XML
 - Understanding data context
 
-### 2. [Expression Functions](02_expression_functions.md)
+### 2. [Expression Functions](02_expression_functions.html)
 - String functions (concat, substring, upper, lower)
 - Math functions (add, subtract, multiply, divide, **calc**)
 - Date functions
 - Conditional functions (if, choose)
 - Comparison and logical operators
 
-### 3. [Template Iteration](03_template_iteration.md)
+### 3. [Template Iteration](03_template_iteration.html)
 - Using the `<template>` element
 - Iterating with `{{#each}}`
 - Working with `{{@index}}` and `{{@key}}`
 - Nested loops and complex data structures
 
-### 4. [Conditional Rendering](04_conditional_rendering.md)
+### 4. [Conditional Rendering](04_conditional_rendering.html)
 - `{{#if}}` and `{{#unless}}` helpers
 - Inline conditionals with `if()` function
 - `{{else}}` clauses
 - Conditional visibility and sections
 
-### 5. [Variables & Document Parameters](05_variables_params.md)
+### 5. [Variables & Document Parameters](05_variables_params.html)
 - Using the `<var>` element to store values
 - Document.Params for global access
 - Variable scope and context
 - Storing calculated values
 
-### 6. [Context & Scope](06_context_scope.md)
+### 6. [Context & Scope](06_context_scope.html)
 - Understanding data context
 - Parent context access with `..`
 - Root context with `@@root`
 - Context in nested structures
 
-### 7. [Formatting Output](07_formatting_output.md)
+### 7. [Formatting Output](07_formatting_output.html)
 - Number formatting
 - Date and time formatting
 - Currency formatting
 - Custom format strings
 
-### 8. [Advanced Patterns](08_advanced_patterns.md)
+### 8. [Advanced Patterns](08_advanced_patterns.html)
 - Complex expressions
 - Aggregation (sum, count, avg)
 - Performance considerations
@@ -329,12 +329,12 @@ Data binding enables powerful scenarios:
 
 ## Next Steps
 
-Ready to dive in? Start with [Data Binding Basics](01_data_binding_basics.md) to learn the fundamentals of dynamic content.
+Ready to dive in? Start with [Data Binding Basics](01_data_binding_basics.html) to learn the fundamentals of dynamic content.
 
 Already familiar with basics? Jump to:
-- [Expression Functions](02_expression_functions.md) for calculations
-- [Template Iteration](03_template_iteration.md) for loops
-- [Variables & Document Parameters](05_variables_params.md) for value storage
+- [Expression Functions](02_expression_functions.html) for calculations
+- [Template Iteration](03_template_iteration.html) for loops
+- [Variables & Document Parameters](05_variables_params.html) for value storage
 
 ---
 
@@ -345,4 +345,4 @@ Already familiar with basics? Jump to:
 
 ---
 
-**Begin your journey →** [Data Binding Basics](01_data_binding_basics.md)
+**Begin your journey →** [Data Binding Basics](01_data_binding_basics.html)

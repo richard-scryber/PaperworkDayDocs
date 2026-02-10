@@ -869,10 +869,10 @@ code { font-family: Courier, monospace; }  /* One for code */
 
 Now that you understand font basics:
 
-1. **[Custom Fonts](02_custom_fonts.md)** - Load and embed your own fonts
-2. **[Web Fonts](03_web_fonts.md)** - Use Google Fonts and other services
-3. **[Text Spacing](05_text_spacing.md)** - Line height, letter spacing
+1. **[Custom Fonts](02_custom_fonts.html)** - Load and embed your own fonts
+2. **[Web Fonts](03_web_fonts.html)** - Use Google Fonts and other services
+3. **[Text Spacing](05_text_spacing.html)** - Line height, letter spacing
 
 ---
 
-**Continue learning →** [Custom Fonts](02_custom_fonts.md)
+**Continue learning →** [Custom Fonts](02_custom_fonts.html)

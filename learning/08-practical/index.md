@@ -16,14 +16,14 @@ Learn through complete, real-world examples - from invoices to reports, certific
 
 ## Table of Contents
 
-1. [Invoice Template](01_invoice_template.md) - Professional invoices with calculations
-2. [Business Letter](02_business_letter.md) - Letterhead and multi-page correspondence
-3. [Report Template](03_report_template.md) - Multi-section reports with charts
-4. [Certificate Template](04_certificate_template.md) - Awards and certificates
-5. [Data-Driven Report](05_data_driven_report.md) - Dynamic content from APIs/databases
-6. [Catalog & Brochure](06_catalog_brochure.md) - Product catalogs with images
-7. [Form Template](07_form_template.md) - Print-and-fill forms
-8. [Multi-Language & Branded Documents](08_multi_language_branded.md) - Enterprise templates
+1. [Invoice Template](01_invoice_template.html) - Professional invoices with calculations
+2. [Business Letter](02_business_letter.html) - Letterhead and multi-page correspondence
+3. [Report Template](03_report_template.html) - Multi-section reports with charts
+4. [Certificate Template](04_certificate_template.html) - Awards and certificates
+5. [Data-Driven Report](05_data_driven_report.html) - Dynamic content from APIs/databases
+6. [Catalog & Brochure](06_catalog_brochure.html) - Product catalogs with images
+7. [Form Template](07_form_template.html) - Print-and-fill forms
+8. [Multi-Language & Branded Documents](08_multi_language_branded.html) - Enterprise templates
 
 ---
 
@@ -137,7 +137,7 @@ Each article provides:
 
 This series includes 9 complete practical examples:
 
-### 1. [Invoice Template](01_invoice_template.md)
+### 1. [Invoice Template](01_invoice_template.html)
 Complete professional invoice with:
 - Company header and branding
 - Line items with data binding
@@ -145,7 +145,7 @@ Complete professional invoice with:
 - Payment terms and footer
 - Multiple layout variations
 
-### 2. [Business Letter](02_business_letter.md)
+### 2. [Business Letter](02_business_letter.html)
 Professional correspondence with:
 - Letterhead design
 - Address blocks
@@ -154,7 +154,7 @@ Professional correspondence with:
 - Multi-page handling
 - Date and reference numbers
 
-### 3. [Report Template](03_report_template.md)
+### 3. [Report Template](03_report_template.html)
 Multi-section business report with:
 - Cover page with branding
 - Table of contents
@@ -163,7 +163,7 @@ Multi-section business report with:
 - Executive summary
 - Page numbering and headers
 
-### 4. [Certificate Template](04_certificate_template.md)
+### 4. [Certificate Template](04_certificate_template.html)
 Achievement certificates with:
 - Decorative borders and backgrounds
 - Dynamic names and dates
@@ -171,7 +171,7 @@ Achievement certificates with:
 - Landscape orientation
 - Elegant typography
 
-### 5. [Data-Driven Report](05_data_driven_report.md)
+### 5. [Data-Driven Report](05_data_driven_report.html)
 Dynamic reports from databases/APIs:
 - Loading data from external sources
 - Dynamic tables with calculations
@@ -180,7 +180,7 @@ Dynamic reports from databases/APIs:
 - Summary statistics and KPIs
 - Export options
 
-### 6. [Catalog & Brochure](06_catalog_brochure.md)
+### 6. [Catalog & Brochure](06_catalog_brochure.html)
 Product catalogs with:
 - Product listings with images
 - Grid layouts
@@ -189,7 +189,7 @@ Product catalogs with:
 - Multi-column design
 - Professional layout
 
-### 7. [Form Template](07_form_template.md)
+### 7. [Form Template](07_form_template.html)
 Print-and-fill forms:
 - Form structure and layout
 - Form fields and labels
@@ -197,7 +197,7 @@ Print-and-fill forms:
 - Professional form design
 - Validation instructions
 
-### 8. [Multi-Language & Branded Documents](08_multi_language_branded.md)
+### 8. [Multi-Language & Branded Documents](08_multi_language_branded.html)
 Enterprise document templates:
 - Multi-language document patterns
 - Localization and i18n
@@ -483,11 +483,11 @@ body {
 
 Ready to build real documents? Start with the example that best matches your needs:
 
-- **New to Scryber?** → Start with [Invoice Template](01_invoice_template.md)
-- **Need correspondence?** → [Business Letter](02_business_letter.md)
-- **Building reports?** → [Report Template](03_report_template.md)
-- **Dynamic content?** → [Data-Driven Report](05_data_driven_report.md)
-- **Product listings?** → [Catalog & Brochure](06_catalog_brochure.md)
+- **New to Scryber?** → Start with [Invoice Template](01_invoice_template.html)
+- **Need correspondence?** → [Business Letter](02_business_letter.html)
+- **Building reports?** → [Report Template](03_report_template.html)
+- **Dynamic content?** → [Data-Driven Report](05_data_driven_report.html)
+- **Product listings?** → [Catalog & Brochure](06_catalog_brochure.html)
 
 ## Tips for Adapting Examples
 
@@ -514,4 +514,4 @@ Ready to build real documents? Start with the example that best matches your nee
 
 ---
 
-**Start building →** [Invoice Template](01_invoice_template.md)
+**Start building →** [Invoice Template](01_invoice_template.html)

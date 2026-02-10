@@ -843,10 +843,10 @@ li {
 
 ## Next Steps
 
-1. **[Tables - Basics](05_tables_basics.md)** - Structured tabular data
-2. **[Tables - Advanced](06_tables_advanced.md)** - Dynamic tables
-3. **[Content Best Practices](08_content_best_practices.md)** - Optimization
+1. **[Tables - Basics](05_tables_basics.html)** - Structured tabular data
+2. **[Tables - Advanced](06_tables_advanced.html)** - Dynamic tables
+3. **[Content Best Practices](08_content_best_practices.html)** - Optimization
 
 ---
 
-**Continue learning →** [Tables - Basics](05_tables_basics.md)
+**Continue learning →** [Tables - Basics](05_tables_basics.html)

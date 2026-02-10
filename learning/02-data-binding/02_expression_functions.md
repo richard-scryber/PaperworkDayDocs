@@ -676,10 +676,10 @@ Create a template that displays the same date in:
 
 Now that you can use expression functions:
 
-1. **[Template Iteration](03_template_iteration.md)** - Loop through data
-2. **[Conditional Rendering](04_conditional_rendering.md)** - Show/hide content
-3. **[Variables & Params](05_variables_params.md)** - Store calculated values
+1. **[Template Iteration](03_template_iteration.html)** - Loop through data
+2. **[Conditional Rendering](04_conditional_rendering.html)** - Show/hide content
+3. **[Variables & Params](05_variables_params.html)** - Store calculated values
 
 ---
 
-**Continue learning →** [Template Iteration](03_template_iteration.md)
+**Continue learning →** [Template Iteration](03_template_iteration.html)

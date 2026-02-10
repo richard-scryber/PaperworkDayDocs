@@ -910,10 +910,10 @@ Implement a complete spacing scale:
 
 Now that you master margins and padding:
 
-1. **[Sections & Page Breaks](03_sections_page_breaks.md)** - Control multi-page layouts
-2. **[Positioning](05_positioning.md)** - Absolute and relative positioning
-3. **[Styling Best Practices](/learning/03-styling/08_styling_best_practices.md)** - Professional patterns
+1. **[Sections & Page Breaks](03_sections_page_breaks.html)** - Control multi-page layouts
+2. **[Positioning](05_positioning.html)** - Absolute and relative positioning
+3. **[Styling Best Practices](/learning/03-styling/08_styling_best_practices.html)** - Professional patterns
 
 ---
 
-**Continue learning →** [Sections & Page Breaks](03_sections_page_breaks.md)
+**Continue learning →** [Sections & Page Breaks](03_sections_page_breaks.html)

@@ -662,10 +662,10 @@ if (logger.Entries.Any(e => e.Level == TraceRecordLevel.Warnings))
 
 ## Next Steps
 
-1. **[Error Handling & Conformance](03_error_handling_conformance.md)** - Handle errors gracefully
-2. **[Security](05_security.md)** - Secure your documents
-3. **[Optimization & Performance](06_optimization_performance.md)** - Optimize generation
+1. **[Error Handling & Conformance](03_error_handling_conformance.html)** - Handle errors gracefully
+2. **[Security](05_security.html)** - Secure your documents
+3. **[Optimization & Performance](06_optimization_performance.html)** - Optimize generation
 
 ---
 
-**Continue learning →** [Error Handling & Conformance](03_error_handling_conformance.md)
+**Continue learning →** [Error Handling & Conformance](03_error_handling_conformance.html)

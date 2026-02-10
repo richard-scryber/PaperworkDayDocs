@@ -784,10 +784,10 @@ Create multiple catalog formats:
 
 ## Next Steps
 
-1. **[Form Template](07_form_template.md)** - Print-and-fill forms
-2. **[Multi-Language & Branded Documents](08_multi_language_branded.md)** - Enterprise templates
-3. **[Invoice Template](01_invoice_template.md)** - Review invoicing
+1. **[Form Template](07_form_template.html)** - Print-and-fill forms
+2. **[Multi-Language & Branded Documents](08_multi_language_branded.html)** - Enterprise templates
+3. **[Invoice Template](01_invoice_template.html)** - Review invoicing
 
 ---
 
-**Continue learning →** [Form Template](07_form_template.md)
+**Continue learning →** [Form Template](07_form_template.html)

@@ -684,10 +684,10 @@ body {
 
 Now that you understand pages and sections:
 
-1. **[Basic Content](06_basic_content.md)** - Add various content types
+1. **[Basic Content](06_basic_content.html)** - Add various content types
 2. **[Layout & Positioning](/learning/04-layout/)** - Advanced page layout
-3. **[Output Options](07_output_options.md)** - Configure PDF generation
+3. **[Output Options](07_output_options.html)** - Configure PDF generation
 
 ---
 
-**Continue learning →** [Basic Content](06_basic_content.md)
+**Continue learning →** [Basic Content](06_basic_content.html)

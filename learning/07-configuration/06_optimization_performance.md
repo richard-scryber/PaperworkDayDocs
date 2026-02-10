@@ -660,10 +660,10 @@ doc.TraceLog.SetRecordLevel(TraceRecordLevel.Errors);
 
 ## Next Steps
 
-1. **[Production & Deployment](07_production_deployment.md)** - Deploy to production
+1. **[Production & Deployment](07_production_deployment.html)** - Deploy to production
 2. **[Practical Applications](/learning/08-practical/)** - Real-world examples
 3. **Review previous topics** - Reinforce learning
 
 ---
 
-**Continue learning →** [Production & Deployment](07_production_deployment.md)
+**Continue learning →** [Production & Deployment](07_production_deployment.html)

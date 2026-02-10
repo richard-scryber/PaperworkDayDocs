@@ -871,10 +871,10 @@ Build an automated system:
 
 ## Next Steps
 
-1. **[Certificate Template](04_certificate_template.md)** - Awards and certificates
-2. **[Data-Driven Report](05_data_driven_report.md)** - Dynamic database reports
-3. **[Catalog & Brochure](06_catalog_brochure.md)** - Product catalogs
+1. **[Certificate Template](04_certificate_template.html)** - Awards and certificates
+2. **[Data-Driven Report](05_data_driven_report.html)** - Dynamic database reports
+3. **[Catalog & Brochure](06_catalog_brochure.html)** - Product catalogs
 
 ---
 
-**Continue learning →** [Certificate Template](04_certificate_template.md)
+**Continue learning →** [Certificate Template](04_certificate_template.html)

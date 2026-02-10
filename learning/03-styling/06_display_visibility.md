@@ -667,10 +667,10 @@ Create a layout with:
 
 Now that you control display and visibility:
 
-1. **[Style Organization](07_style_organization.md)** - Organize your CSS
-2. **[Styling Best Practices](08_styling_best_practices.md)** - Professional patterns
+1. **[Style Organization](07_style_organization.html)** - Organize your CSS
+2. **[Styling Best Practices](08_styling_best_practices.html)** - Professional patterns
 3. **[Layout & Positioning](/learning/04-layout/)** - Advanced layout techniques
 
 ---
 
-**Continue learning →** [Style Organization](07_style_organization.md)
+**Continue learning →** [Style Organization](07_style_organization.html)

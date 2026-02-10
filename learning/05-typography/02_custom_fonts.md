@@ -914,10 +914,10 @@ body {
 
 Now that you can load custom fonts:
 
-1. **[Web Fonts](03_web_fonts.md)** - Use Google Fonts and CDNs
-2. **[Font Styling](04_font_styling.md)** - Advanced text effects
-3. **[Text Spacing](05_text_spacing.md)** - Line height, letter spacing
+1. **[Web Fonts](03_web_fonts.html)** - Use Google Fonts and CDNs
+2. **[Font Styling](04_font_styling.html)** - Advanced text effects
+3. **[Text Spacing](05_text_spacing.html)** - Line height, letter spacing
 
 ---
 
-**Continue learning →** [Web Fonts](03_web_fonts.md)
+**Continue learning →** [Web Fonts](03_web_fonts.html)

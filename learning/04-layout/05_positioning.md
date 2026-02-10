@@ -835,10 +835,10 @@ Create a header with:
 
 Now that you master positioning:
 
-1. **[Tables](06_tables.md)** - Advanced table layouts
-2. **[Headers & Footers](07_headers_footers.md)** - Repeating page elements
-3. **[Layout Best Practices](08_layout_best_practices.md)** - Professional patterns
+1. **[Tables](06_tables.html)** - Advanced table layouts
+2. **[Headers & Footers](07_headers_footers.html)** - Repeating page elements
+3. **[Layout Best Practices](08_layout_best_practices.html)** - Professional patterns
 
 ---
 
-**Continue learning →** [Tables](06_tables.md)
+**Continue learning →** [Tables](06_tables.html)

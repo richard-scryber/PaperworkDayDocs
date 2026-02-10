@@ -1042,10 +1042,10 @@ Add analytical features:
 
 ## Next Steps
 
-1. **[Catalog & Brochure](06_catalog_brochure.md)** - Product catalogs
-2. **[Form Template](07_form_template.md)** - Interactive forms
-3. **[Multi-Language & Branded Documents](08_multi_language_branded.md)** - Enterprise templates
+1. **[Catalog & Brochure](06_catalog_brochure.html)** - Product catalogs
+2. **[Form Template](07_form_template.html)** - Interactive forms
+3. **[Multi-Language & Branded Documents](08_multi_language_branded.html)** - Enterprise templates
 
 ---
 
-**Continue learning →** [Catalog & Brochure](06_catalog_brochure.md)
+**Continue learning →** [Catalog & Brochure](06_catalog_brochure.html)

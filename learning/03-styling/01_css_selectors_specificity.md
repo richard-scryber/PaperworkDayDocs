@@ -687,10 +687,10 @@ p.highlight { color: red; }    /* (0,0,1,1) - Won't work */
 
 Now that you understand selectors and specificity:
 
-1. **[Colors & Backgrounds](02_colors_backgrounds.md)** - Apply colors and backgrounds
-2. **[Borders & Spacing](03_borders_spacing.md)** - Control borders and box model
-3. **[Units & Measurements](04_units_measurements.md)** - Master CSS units
+1. **[Colors & Backgrounds](02_colors_backgrounds.html)** - Apply colors and backgrounds
+2. **[Borders & Spacing](03_borders_spacing.html)** - Control borders and box model
+3. **[Units & Measurements](04_units_measurements.html)** - Master CSS units
 
 ---
 
-**Continue learning →** [Colors & Backgrounds](02_colors_backgrounds.md)
+**Continue learning →** [Colors & Backgrounds](02_colors_backgrounds.html)

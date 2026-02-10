@@ -947,10 +947,10 @@ Build specialized invoices for:
 
 ## Next Steps
 
-1. **[Business Letter](02_business_letter.md)** - Multi-page correspondence
-2. **[Report Template](03_report_template.md)** - Complex reports with sections
-3. **[Data-Driven Report](05_data_driven_report.md)** - Database integration
+1. **[Business Letter](02_business_letter.html)** - Multi-page correspondence
+2. **[Report Template](03_report_template.html)** - Complex reports with sections
+3. **[Data-Driven Report](05_data_driven_report.html)** - Database integration
 
 ---
 
-**Continue learning →** [Business Letter](02_business_letter.md)
+**Continue learning →** [Business Letter](02_business_letter.html)

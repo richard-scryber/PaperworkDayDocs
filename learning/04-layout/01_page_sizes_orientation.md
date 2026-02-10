@@ -825,10 +825,10 @@ body {
 
 Now that you understand page sizes and orientation:
 
-1. **[Margins & Padding](02_margins_padding.md)** - Control page margins and content spacing
-2. **[Sections & Page Breaks](03_sections_page_breaks.md)** - Manage multi-page layouts
-3. **[Headers & Footers](07_headers_footers.md)** - Add repeating content
+1. **[Margins & Padding](02_margins_padding.html)** - Control page margins and content spacing
+2. **[Sections & Page Breaks](03_sections_page_breaks.html)** - Manage multi-page layouts
+3. **[Headers & Footers](07_headers_footers.html)** - Add repeating content
 
 ---
 
-**Continue learning →** [Margins & Padding](02_margins_padding.md)
+**Continue learning →** [Margins & Padding](02_margins_padding.html)

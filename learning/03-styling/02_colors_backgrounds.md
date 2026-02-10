@@ -714,10 +714,10 @@ Create a document with:
 
 Now that you understand colors and backgrounds:
 
-1. **[Borders & Spacing](03_borders_spacing.md)** - Master borders and box model
-2. **[Units & Measurements](04_units_measurements.md)** - Learn CSS units
-3. **[Text Styling](05_text_styling.md)** - Advanced text formatting
+1. **[Borders & Spacing](03_borders_spacing.html)** - Master borders and box model
+2. **[Units & Measurements](04_units_measurements.html)** - Learn CSS units
+3. **[Text Styling](05_text_styling.html)** - Advanced text formatting
 
 ---
 
-**Continue learning →** [Borders & Spacing](03_borders_spacing.md)
+**Continue learning →** [Borders & Spacing](03_borders_spacing.html)

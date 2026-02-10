@@ -593,10 +593,10 @@ Create a showcase featuring:
 
 ## Next Steps
 
-1. **[Typography Best Practices](08_typography_best_practices.md)** - Professional patterns
+1. **[Typography Best Practices](08_typography_best_practices.html)** - Professional patterns
 2. **[Content Components](/learning/06-content/)** - Images, lists, tables
 3. **[Practical Applications](/learning/08-practical/)** - Real-world documents
 
 ---
 
-**Continue learning →** [Typography Best Practices](08_typography_best_practices.md)
+**Continue learning →** [Typography Best Practices](08_typography_best_practices.html)

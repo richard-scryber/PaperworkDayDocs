@@ -1092,10 +1092,10 @@ col:nth-child(3) { width: 30%; }
 
 Now that you master table layouts:
 
-1. **[Headers & Footers](07_headers_footers.md)** - Repeating page elements
-2. **[Layout Best Practices](08_layout_best_practices.md)** - Professional patterns
+1. **[Headers & Footers](07_headers_footers.html)** - Repeating page elements
+2. **[Layout Best Practices](08_layout_best_practices.html)** - Professional patterns
 3. **[Content Components](/learning/06-content/)** - Images, lists, and more
 
 ---
 
-**Continue learning →** [Headers & Footers](07_headers_footers.md)
+**Continue learning →** [Headers & Footers](07_headers_footers.html)

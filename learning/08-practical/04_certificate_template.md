@@ -939,10 +939,10 @@ doc.RenderOptions.Compression = PDFCompressionType.FlateDecode;
 
 ## Next Steps
 
-1. **[Data-Driven Report](05_data_driven_report.md)** - Database integration
-2. **[Catalog & Brochure](06_catalog_brochure.md)** - Product listings
-3. **[Multi-Language & Branded Documents](08_multi_language_branded.md)** - Enterprise templates
+1. **[Data-Driven Report](05_data_driven_report.html)** - Database integration
+2. **[Catalog & Brochure](06_catalog_brochure.html)** - Product listings
+3. **[Multi-Language & Branded Documents](08_multi_language_branded.html)** - Enterprise templates
 
 ---
 
-**Continue learning →** [Data-Driven Report](05_data_driven_report.md)
+**Continue learning →** [Data-Driven Report](05_data_driven_report.html)

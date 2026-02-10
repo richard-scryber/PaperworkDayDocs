@@ -696,10 +696,10 @@ Create a report that:
 
 ## Next Steps
 
-1. **[SVG Basics](02_svg_basics.md)** - Scalable vector graphics
-2. **[SVG Drawing](03_svg_drawing.md)** - Create dynamic charts
-3. **[Content Best Practices](08_content_best_practices.md)** - Optimization tips
+1. **[SVG Basics](02_svg_basics.html)** - Scalable vector graphics
+2. **[SVG Drawing](03_svg_drawing.html)** - Create dynamic charts
+3. **[Content Best Practices](08_content_best_practices.html)** - Optimization tips
 
 ---
 
-**Continue learning →** [SVG Basics](02_svg_basics.md)
+**Continue learning →** [SVG Basics](02_svg_basics.html)

@@ -807,10 +807,10 @@ Create an org chart showing:
 
 Now that you can iterate through data:
 
-1. **[Conditional Rendering](04_conditional_rendering.md)** - Show/hide content dynamically
-2. **[Variables & Params](05_variables_params.md)** - Store and reuse values
-3. **[Context & Scope](06_context_scope.md)** - Master data access patterns
+1. **[Conditional Rendering](04_conditional_rendering.html)** - Show/hide content dynamically
+2. **[Variables & Params](05_variables_params.html)** - Store and reuse values
+3. **[Context & Scope](06_context_scope.html)** - Master data access patterns
 
 ---
 
-**Continue learning →** [Conditional Rendering](04_conditional_rendering.md)
+**Continue learning →** [Conditional Rendering](04_conditional_rendering.html)

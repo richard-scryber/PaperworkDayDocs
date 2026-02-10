@@ -662,10 +662,10 @@ Compare file sizes and rendering quality.
 
 ## Next Steps
 
-1. **[SVG Drawing](03_svg_drawing.md)** - Create charts and visualizations
-2. **[Lists](04_lists.md)** - Structured content
-3. **[Content Best Practices](08_content_best_practices.md)** - Optimization
+1. **[SVG Drawing](03_svg_drawing.html)** - Create charts and visualizations
+2. **[Lists](04_lists.html)** - Structured content
+3. **[Content Best Practices](08_content_best_practices.html)** - Optimization
 
 ---
 
-**Continue learning →** [SVG Drawing](03_svg_drawing.md)
+**Continue learning →** [SVG Drawing](03_svg_drawing.html)

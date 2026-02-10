@@ -759,10 +759,10 @@ Create a grid of boxes:
 
 Now that you understand borders and spacing:
 
-1. **[Units & Measurements](04_units_measurements.md)** - Master CSS units
-2. **[Text Styling](05_text_styling.md)** - Advanced text formatting
-3. **[Display & Visibility](06_display_visibility.md)** - Control element display
+1. **[Units & Measurements](04_units_measurements.html)** - Master CSS units
+2. **[Text Styling](05_text_styling.html)** - Advanced text formatting
+3. **[Display & Visibility](06_display_visibility.html)** - Control element display
 
 ---
 
-**Continue learning →** [Units & Measurements](04_units_measurements.md)
+**Continue learning →** [Units & Measurements](04_units_measurements.html)

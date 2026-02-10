@@ -1181,10 +1181,10 @@ Create a template that:
 
 Now that you can control content visibility:
 
-1. **[Variables & Params](05_variables_params.md)** - Store and reuse calculated values
-2. **[Context & Scope](06_context_scope.md)** - Understand data access patterns
-3. **[Formatting Output](07_formatting_output.md)** - Format dates, numbers, and text
+1. **[Variables & Params](05_variables_params.html)** - Store and reuse calculated values
+2. **[Context & Scope](06_context_scope.html)** - Understand data access patterns
+3. **[Formatting Output](07_formatting_output.html)** - Format dates, numbers, and text
 
 ---
 
-**Continue learning →** [Variables & Params](05_variables_params.md)
+**Continue learning →** [Variables & Params](05_variables_params.html)

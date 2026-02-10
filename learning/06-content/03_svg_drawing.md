@@ -777,10 +777,10 @@ Create a chart comparing 2-3 data series:
 
 ## Next Steps
 
-1. **[Lists](04_lists.md)** - Structured content formatting
-2. **[Tables - Basics](05_tables_basics.md)** - Tabular data
-3. **[Content Best Practices](08_content_best_practices.md)** - Performance optimization
+1. **[Lists](04_lists.html)** - Structured content formatting
+2. **[Tables - Basics](05_tables_basics.html)** - Tabular data
+3. **[Content Best Practices](08_content_best_practices.html)** - Performance optimization
 
 ---
 
-**Continue learning →** [Lists](04_lists.md)
+**Continue learning →** [Lists](04_lists.html)

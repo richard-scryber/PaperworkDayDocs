@@ -920,10 +920,10 @@ code { font-family: 'Inconsolata', monospace; }
 
 Now that you understand web fonts:
 
-1. **[Font Styling](04_font_styling.md)** - Text transforms, decorations
-2. **[Text Spacing](05_text_spacing.md)** - Line height, letter spacing
-3. **[Typography Best Practices](08_typography_best_practices.md)** - Professional patterns
+1. **[Font Styling](04_font_styling.html)** - Text transforms, decorations
+2. **[Text Spacing](05_text_spacing.html)** - Line height, letter spacing
+3. **[Typography Best Practices](08_typography_best_practices.html)** - Professional patterns
 
 ---
 
-**Continue learning →** [Font Styling](04_font_styling.md)
+**Continue learning →** [Font Styling](04_font_styling.html)

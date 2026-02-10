@@ -679,10 +679,10 @@ Link to documents via QR codes (generate separately):
 
 ## Next Steps
 
-1. **[Content Best Practices](08_content_best_practices.md)** - Optimization and performance
+1. **[Content Best Practices](08_content_best_practices.html)** - Optimization and performance
 2. **[Practical Applications](/learning/08-practical/)** - Real-world examples
 3. **[Configuration](/learning/07-configuration/)** - Document settings
 
 ---
 
-**Continue learning →** [Content Best Practices](08_content_best_practices.md)
+**Continue learning →** [Content Best Practices](08_content_best_practices.html)

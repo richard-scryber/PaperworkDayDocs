@@ -762,10 +762,10 @@ h3 {
 
 Now that you master text styling:
 
-1. **[Display & Visibility](06_display_visibility.md)** - Control element display
-2. **[Style Organization](07_style_organization.md)** - Organize your CSS
-3. **[Styling Best Practices](08_styling_best_practices.md)** - Professional styling patterns
+1. **[Display & Visibility](06_display_visibility.html)** - Control element display
+2. **[Style Organization](07_style_organization.html)** - Organize your CSS
+3. **[Styling Best Practices](08_styling_best_practices.html)** - Professional styling patterns
 
 ---
 
-**Continue learning →** [Display & Visibility](06_display_visibility.md)
+**Continue learning →** [Display & Visibility](06_display_visibility.html)

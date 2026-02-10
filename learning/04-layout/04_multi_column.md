@@ -947,10 +947,10 @@ Create a comparison layout:
 
 Now that you master column layouts:
 
-1. **[Positioning](05_positioning.md)** - Absolute and relative positioning
-2. **[Tables](06_tables.md)** - Advanced table layouts
-3. **[Headers & Footers](07_headers_footers.md)** - Repeating page elements
+1. **[Positioning](05_positioning.html)** - Absolute and relative positioning
+2. **[Tables](06_tables.html)** - Advanced table layouts
+3. **[Headers & Footers](07_headers_footers.html)** - Repeating page elements
 
 ---
 
-**Continue learning →** [Positioning](05_positioning.md)
+**Continue learning →** [Positioning](05_positioning.html)

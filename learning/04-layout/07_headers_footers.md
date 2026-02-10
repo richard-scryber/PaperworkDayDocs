@@ -825,10 +825,10 @@ header {
 
 Now that you master headers and footers:
 
-1. **[Layout Best Practices](08_layout_best_practices.md)** - Professional layout patterns
+1. **[Layout Best Practices](08_layout_best_practices.html)** - Professional layout patterns
 2. **[Typography & Fonts](/learning/05-typography/)** - Advanced text styling
 3. **[Practical Applications](/learning/08-practical/)** - Real-world documents
 
 ---
 
-**Continue learning →** [Layout Best Practices](08_layout_best_practices.md)
+**Continue learning →** [Layout Best Practices](08_layout_best_practices.html)

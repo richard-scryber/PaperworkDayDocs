@@ -746,10 +746,10 @@ Generate truly fillable PDFs:
 
 ## Next Steps
 
-1. **[Multi-Language & Branded Documents](08_multi_language_branded.md)** - Enterprise templates
-2. **[Invoice Template](01_invoice_template.md)** - Review business documents
-3. **[Data-Driven Report](05_data_driven_report.md)** - Dynamic content
+1. **[Multi-Language & Branded Documents](08_multi_language_branded.html)** - Enterprise templates
+2. **[Invoice Template](01_invoice_template.html)** - Review business documents
+3. **[Data-Driven Report](05_data_driven_report.html)** - Dynamic content
 
 ---
 
-**Continue learning →** [Multi-Language & Branded Documents](08_multi_language_branded.md)
+**Continue learning →** [Multi-Language & Branded Documents](08_multi_language_branded.html)

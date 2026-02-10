@@ -800,10 +800,10 @@ td {
 
 ## Next Steps
 
-1. **[Tables - Advanced](06_tables_advanced.md)** - Dynamic data and calculations
-2. **[Attachments & Embedded Content](07_attachments_embedded.md)** - File attachments
-3. **[Content Best Practices](08_content_best_practices.md)** - Optimization
+1. **[Tables - Advanced](06_tables_advanced.html)** - Dynamic data and calculations
+2. **[Attachments & Embedded Content](07_attachments_embedded.html)** - File attachments
+3. **[Content Best Practices](08_content_best_practices.html)** - Optimization
 
 ---
 
-**Continue learning →** [Tables - Advanced](06_tables_advanced.md)
+**Continue learning →** [Tables - Advanced](06_tables_advanced.html)

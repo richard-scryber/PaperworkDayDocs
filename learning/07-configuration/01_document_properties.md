@@ -571,10 +571,10 @@ public IActionResult Generate(DocumentRequest request)
 
 ## Next Steps
 
-1. **[Logging](02_logging.md)** - Configure diagnostic logging
-2. **[Error Handling & Conformance](03_error_handling_conformance.md)** - Handle errors gracefully
-3. **[Security](05_security.md)** - Protect your documents
+1. **[Logging](02_logging.html)** - Configure diagnostic logging
+2. **[Error Handling & Conformance](03_error_handling_conformance.html)** - Handle errors gracefully
+3. **[Security](05_security.html)** - Protect your documents
 
 ---
 
-**Continue learning →** [Logging](02_logging.md)
+**Continue learning →** [Logging](02_logging.html)

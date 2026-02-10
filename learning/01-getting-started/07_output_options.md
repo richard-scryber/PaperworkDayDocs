@@ -674,10 +674,10 @@ catch (Exception ex)
 
 Now that you can handle PDF output:
 
-1. **[Troubleshooting](08_troubleshooting.md)** - Debug common issues
+1. **[Troubleshooting](08_troubleshooting.html)** - Debug common issues
 2. **[Document Configuration](/learning/07-configuration/)** - Advanced settings
 3. **[Data Binding](/learning/02-data-binding/)** - Dynamic content
 
 ---
 
-**Continue learning →** [Troubleshooting](08_troubleshooting.md)
+**Continue learning →** [Troubleshooting](08_troubleshooting.html)

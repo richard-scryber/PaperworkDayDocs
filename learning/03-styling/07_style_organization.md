@@ -742,10 +742,10 @@ h1 { color: blue; }
 
 Now that you can organize styles:
 
-1. **[Styling Best Practices](08_styling_best_practices.md)** - Professional patterns
+1. **[Styling Best Practices](08_styling_best_practices.html)** - Professional patterns
 2. **[Layout & Positioning](/learning/04-layout/)** - Advanced layout techniques
 3. **[Typography & Fonts](/learning/05-typography/)** - Custom fonts and typography
 
 ---
 
-**Continue learning →** [Styling Best Practices](08_styling_best_practices.md)
+**Continue learning →** [Styling Best Practices](08_styling_best_practices.html)

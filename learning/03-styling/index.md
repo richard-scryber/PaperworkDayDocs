@@ -16,14 +16,14 @@ Master CSS styling to create beautiful, professional-looking PDF documents with 
 
 ## Table of Contents
 
-1. [CSS Selectors & Specificity](01_css_selectors_specificity.md) - Element, class, ID selectors, cascade, inheritance
-2. [Colors & Backgrounds](02_colors_backgrounds.md) - Color formats, backgrounds, images, positioning
-3. [Borders & Spacing](03_borders_spacing.md) - Borders, margins, padding, box model
-4. [Units & Measurements](04_units_measurements.md) - Absolute/relative units, calc() function
-5. [Text Styling](05_text_styling.md) - Font properties, alignment, decoration
-6. [Display & Visibility](06_display_visibility.md) - Display modes, visibility, conditional display
-7. [Style Organization](07_style_organization.md) - Inline/embedded/external styles, maintenance
-8. [Styling Best Practices](08_styling_best_practices.md) - Performance, troubleshooting, patterns
+1. [CSS Selectors & Specificity](01_css_selectors_specificity.html) - Element, class, ID selectors, cascade, inheritance
+2. [Colors & Backgrounds](02_colors_backgrounds.html) - Color formats, backgrounds, images, positioning
+3. [Borders & Spacing](03_borders_spacing.html) - Borders, margins, padding, box model
+4. [Units & Measurements](04_units_measurements.html) - Absolute/relative units, calc() function
+5. [Text Styling](05_text_styling.html) - Font properties, alignment, decoration
+6. [Display & Visibility](06_display_visibility.html) - Display modes, visibility, conditional display
+7. [Style Organization](07_style_organization.html) - Inline/embedded/external styles, maintenance
+8. [Styling Best Practices](08_styling_best_practices.html) - Performance, troubleshooting, patterns
 
 ---
 
@@ -93,55 +93,55 @@ While Scryber uses familiar CSS syntax, PDF styling has unique characteristics:
 
 This series covers comprehensive CSS styling for PDFs:
 
-### 1. [CSS Selectors & Specificity](01_css_selectors_specificity.md)
+### 1. [CSS Selectors & Specificity](01_css_selectors_specificity.html)
 - Element, class, and ID selectors
 - Attribute selectors
 - Pseudo-classes
 - Specificity rules and cascade
 - Style inheritance
 
-### 2. [Colors & Backgrounds](02_colors_backgrounds.md)
+### 2. [Colors & Backgrounds](02_colors_backgrounds.html)
 - Color formats (hex, rgb, named colors)
 - Text and background colors
 - Transparency and opacity
 - Background images
 - Background positioning and repeat
 
-### 3. [Borders & Spacing](03_borders_spacing.md)
+### 3. [Borders & Spacing](03_borders_spacing.html)
 - Border width, style, and color
 - Individual border sides
 - Border radius
 - Margin and padding
 - The box model
 
-### 4. [Units & Measurements](04_units_measurements.md)
+### 4. [Units & Measurements](04_units_measurements.html)
 - **Absolute units** (pt, px, in, cm, mm)
 - **Relative units** (%, em, rem)
 - **calc() function** for calculations
 - Unit conversions
 - Best practices for PDF units
 
-### 5. [Text Styling](05_text_styling.md)
+### 5. [Text Styling](05_text_styling.html)
 - Font size, weight, and style
 - Text color and alignment
 - Line height and letter spacing
 - Text decoration and transform
 - Text indentation
 
-### 6. [Display & Visibility](06_display_visibility.md)
+### 6. [Display & Visibility](06_display_visibility.html)
 - Display property (block, inline, inline-block, none)
 - Visibility control
 - Hidden attribute
 - Conditional display with data binding
 
-### 7. [Style Organization](07_style_organization.md)
+### 7. [Style Organization](07_style_organization.html)
 - Inline vs embedded vs external styles
 - Creating reusable style classes
 - Multiple classes
 - External stylesheets
 - Organizing and maintaining styles
 
-### 8. [Styling Best Practices](08_styling_best_practices.md)
+### 8. [Styling Best Practices](08_styling_best_practices.html)
 - Performance optimization
 - Browser vs PDF differences
 - Common pitfalls and solutions
@@ -455,12 +455,12 @@ display: block;
 
 ## Next Steps
 
-Ready to create beautiful PDFs? Start with [CSS Selectors & Specificity](01_css_selectors_specificity.md) to master targeting elements.
+Ready to create beautiful PDFs? Start with [CSS Selectors & Specificity](01_css_selectors_specificity.html) to master targeting elements.
 
 Jump ahead to specific topics:
-- [Units & Measurements](04_units_measurements.md) for calc() and relative units
-- [Colors & Backgrounds](02_colors_backgrounds.md) for visual styling
-- [Styling Best Practices](08_styling_best_practices.md) for professional results
+- [Units & Measurements](04_units_measurements.html) for calc() and relative units
+- [Colors & Backgrounds](02_colors_backgrounds.html) for visual styling
+- [Styling Best Practices](08_styling_best_practices.html) for professional results
 
 ---
 
@@ -471,4 +471,4 @@ Jump ahead to specific topics:
 
 ---
 
-**Begin styling →** [CSS Selectors & Specificity](01_css_selectors_specificity.md)
+**Begin styling →** [CSS Selectors & Specificity](01_css_selectors_specificity.html)

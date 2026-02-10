@@ -16,14 +16,14 @@ Master images, SVG graphics, lists, tables, and embedded content to create rich,
 
 ## Table of Contents
 
-1. [Images](01_images.md) - Formats, sizing, positioning, local/remote, data binding
-2. [SVG Basics](02_svg_basics.md) - SVG overview, inline vs files, sizing
-3. [SVG Drawing](03_svg_drawing.md) - Shapes, paths, styling, data binding, charts
-4. [Lists](04_lists.md) - Ordered/unordered lists, styling, nesting, data binding
-5. [Tables - Basics](05_tables_basics.md) - Structure, styling, borders, column widths
-6. [Tables - Advanced](06_tables_advanced.md) - Dynamic data, calculations, spanning, page breaks
-7. [Attachments & Embedded Content](07_attachments_embedded.md) - File attachments, embed/iframe
-8. [Content Best Practices](08_content_best_practices.md) - Optimization, performance, accessibility
+1. [Images](01_images.html) - Formats, sizing, positioning, local/remote, data binding
+2. [SVG Basics](02_svg_basics.html) - SVG overview, inline vs files, sizing
+3. [SVG Drawing](03_svg_drawing.html) - Shapes, paths, styling, data binding, charts
+4. [Lists](04_lists.html) - Ordered/unordered lists, styling, nesting, data binding
+5. [Tables - Basics](05_tables_basics.html) - Structure, styling, borders, column widths
+6. [Tables - Advanced](06_tables_advanced.html) - Dynamic data, calculations, spanning, page breaks
+7. [Attachments & Embedded Content](07_attachments_embedded.html) - File attachments, embed/iframe
+8. [Content Best Practices](08_content_best_practices.html) - Optimization, performance, accessibility
 
 ---
 
@@ -49,116 +49,49 @@ Scryber supports a rich variety of content types:
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
+1. [Images](01_images.html) - Formats, sizing, positioning, local/remote, data binding
+2. [SVG Basics](02_svg_basics.html) - SVG overview, inline vs files, sizing
+3. [SVG Drawing](03_svg_drawing.html) - Shapes, paths, styling, data binding, charts
+4. [Lists](04_lists.html) - Ordered/unordered lists, styling, nesting, data binding
+5. [Tables - Basics](05_tables_basics.html) - Structure, styling, borders, column widths
+6. [Tables - Advanced](06_tables_advanced.html) - Dynamic data, calculations, spanning, page breaks
+7. [Attachments & Embedded Content](07_attachments_embedded.html) - File attachments, embed/iframe
+8. [Content Best Practices](08_content_best_practices.html) - Optimization, performance, accessibility
     <style>
         img {
             max-width: 100%;
-            height: auto;
+### 1. [Images](01_images.html)
         }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
+### 2. [SVG Basics](02_svg_basics.html)
         }
-
-        th {
-            background-color: #2563eb;
-            color: white;
-            padding: 10pt;
-        }
-
-        td {
-            padding: 8pt;
-            border-bottom: 1pt solid #e5e7eb;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-    </style>
-</head>
-<body>
-    <h1>Sales Report</h1>
-
-    <!-- Image -->
-    <img src="{{company.logo}}" alt="Company Logo" style="width: 150pt;" />
-
-    <!-- SVG Chart -->
-    <svg width="400" height="200">
-        <rect x="0" y="{{calc(200, '-', sales.q1)}}"
-              width="80" height="{{sales.q1}}" fill="#3b82f6" />
+### 3. [SVG Drawing](03_svg_drawing.html)
         <rect x="100" y="{{calc(200, '-', sales.q2)}}"
-              width="80" height="{{sales.q2}}" fill="#3b82f6" />
-        <rect x="200" y="{{calc(200, '-', sales.q3)}}"
-              width="80" height="{{sales.q3}}" fill="#3b82f6" />
-        <rect x="300" y="{{calc(200, '-', sales.q4)}}"
-              width="80" height="{{sales.q4}}" fill="#3b82f6" />
-    </svg>
-
-    <!-- Dynamic Table -->
-    <table>
-        <thead>
+### 4. [Lists](04_lists.html)
             <tr>
-                <th>Product</th>
-                <th>Sales</th>
-                <th>Revenue</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each products}}
-            <tr>
-                <td>{{this.name}}</td>
-                <td>{{this.sales}}</td>
+### 5. [Tables - Basics](05_tables_basics.html)
                 <td>${{this.revenue}}</td>
-            </tr>
-            {{/each}}
-        </tbody>
-    </table>
-</body>
-</html>
-```
-{% endraw %}
+### 6. [Tables - Advanced](06_tables_advanced.html)
 
-## What You'll Learn
-
-This series covers all content components comprehensively:
-
-### 1. [Images](01_images.md)
-- Image formats (PNG, JPEG, GIF, SVG)
-- Image sizing and positioning
-- Local vs remote images
-- Image styling (borders, margins, alignment)
-- Data binding image sources
-- Base64 embedded images
-
-### 2. [SVG Basics](02_svg_basics.md)
-- SVG element overview
-- Inline SVG vs SVG files
-- SVG sizing and viewBox
+### 7. [Attachments & Embedded Content](07_attachments_embedded.html)
 - SVG positioning and styling
-
-### 3. [SVG Drawing](03_svg_drawing.md)
-- SVG shapes (rect, circle, ellipse, polygon, path)
-- SVG lines and polylines
-- SVG text elements
-- SVG styling and attributes
-- **Data binding in SVG**
-- Dynamic charts and visualizations
-
-### 4. [Lists](04_lists.md)
+### 8. [Content Best Practices](08_content_best_practices.html)
 - Ordered lists (ol) and unordered lists (ul)
 - List styling and custom markers
 - Nested lists
+Ready to master content components? Start with [Images](01_images.html) to learn about image handling and optimization.
 - Definition lists
-- List data binding
-
-### 5. [Tables - Basics](05_tables_basics.md)
+Jump to specific topics:
+- [SVG Drawing](03_svg_drawing.html) for data-driven graphics
+- [Tables - Advanced](06_tables_advanced.html) for dynamic tables
+- [Attachments & Embedded Content](07_attachments_embedded.html) for file embedding
 - Table structure (thead, tbody, tfoot)
+**Begin with content components →** [Images](01_images.html)
 - Rows and columns
 - Table borders and styling
 - Cell spacing, padding, and alignment
 - Column widths and groups
 
-### 6. [Tables - Advanced](06_tables_advanced.md)
+### 6. [Tables - Advanced](06_tables_advanced.html)
 - **Dynamic table rows with data binding**
 - Template binding in tables
 - **Calculated columns**
@@ -166,7 +99,7 @@ This series covers all content components comprehensively:
 - Repeating headers on pages
 - Table page breaks
 
-### 7. [Attachments & Embedded Content](07_attachments_embedded.md)
+### 7. [Attachments & Embedded Content](07_attachments_embedded.html)
 - File attachments (object element)
 - Attachment icons and styling
 - Embedding files in PDFs
@@ -174,7 +107,7 @@ This series covers all content components comprehensively:
 - Embed and iframe elements
 - Content inclusion and modular documents
 
-### 8. [Content Best Practices](08_content_best_practices.md)
+### 8. [Content Best Practices](08_content_best_practices.html)
 - Performance optimization
 - Image and SVG optimization
 - Table performance
@@ -597,12 +530,12 @@ Before starting this series:
 
 ## Next Steps
 
-Ready to master content components? Start with [Images](01_images.md) to learn about image handling and optimization.
+Ready to master content components? Start with [Images](01_images.html) to learn about image handling and optimization.
 
 Jump to specific topics:
-- [SVG Drawing](03_svg_drawing.md) for data-driven graphics
-- [Tables - Advanced](06_tables_advanced.md) for dynamic tables
-- [Attachments & Embedded Content](07_attachments_embedded.md) for file embedding
+- [SVG Drawing](03_svg_drawing.html) for data-driven graphics
+- [Tables - Advanced](06_tables_advanced.html) for dynamic tables
+- [Attachments & Embedded Content](07_attachments_embedded.html) for file embedding
 
 ---
 
@@ -613,4 +546,4 @@ Jump to specific topics:
 
 ---
 
-**Begin with content components →** [Images](01_images.md)
+**Begin with content components →** [Images](01_images.html)

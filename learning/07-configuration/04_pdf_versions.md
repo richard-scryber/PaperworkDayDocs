@@ -534,10 +534,10 @@ doc.RenderOptions.FontSubsetting = false;  // ✅ Full embedding
 
 ## Next Steps
 
-1. **[Security](05_security.md)** - Encryption and permissions
-2. **[Optimization & Performance](06_optimization_performance.md)** - File size and speed
-3. **[Production & Deployment](07_production_deployment.md)** - Production configuration
+1. **[Security](05_security.html)** - Encryption and permissions
+2. **[Optimization & Performance](06_optimization_performance.html)** - File size and speed
+3. **[Production & Deployment](07_production_deployment.html)** - Production configuration
 
 ---
 
-**Continue learning →** [Security](05_security.md)
+**Continue learning →** [Security](05_security.html)

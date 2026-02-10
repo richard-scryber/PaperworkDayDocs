@@ -365,9 +365,9 @@ public class PdfService
 
 Now that Scryber is installed and configured:
 
-1. **[Create Your First Document](02_first_document.md)** - Build a simple PDF from scratch
-2. **[HTML to PDF](03_html_to_pdf.md)** - Learn how HTML converts to PDF
-3. **[Troubleshooting](08_troubleshooting.md)** - If you encounter issues
+1. **[Create Your First Document](02_first_document.html)** - Build a simple PDF from scratch
+2. **[HTML to PDF](03_html_to_pdf.html)** - Learn how HTML converts to PDF
+3. **[Troubleshooting](08_troubleshooting.html)** - If you encounter issues
 
 ---
 
@@ -379,4 +379,4 @@ Now that Scryber is installed and configured:
 
 ---
 
-**Ready to create your first PDF?** → [Your First Document](02_first_document.md)
+**Ready to create your first PDF?** → [Your First Document](02_first_document.html)

@@ -789,10 +789,10 @@ var items = rawItems.Select(item => new
 
 Now that you've mastered advanced patterns:
 
-1. **[Common Mistakes](09_common_mistakes.md)** - Avoid common errors
+1. **[Common Mistakes](09_common_mistakes.html)** - Avoid common errors
 2. **[Styling PDFs](/learning/03-styling/)** - Advanced styling techniques
 3. **[Practical Applications](/learning/08-practical/)** - Real-world examples
 
 ---
 
-**Continue learning →** [Common Mistakes](09_common_mistakes.md)
+**Continue learning →** [Common Mistakes](09_common_mistakes.html)

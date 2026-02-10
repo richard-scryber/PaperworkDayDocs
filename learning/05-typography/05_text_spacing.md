@@ -528,10 +528,10 @@ p { margin-bottom: 12pt; }
 
 ## Next Steps
 
-1. **[Text Alignment](06_text_alignment.md)** - Alignment and justification
-2. **[Advanced Typography](07_advanced_typography.md)** - Drop caps, special features
-3. **[Typography Best Practices](08_typography_best_practices.md)** - Professional patterns
+1. **[Text Alignment](06_text_alignment.html)** - Alignment and justification
+2. **[Advanced Typography](07_advanced_typography.html)** - Drop caps, special features
+3. **[Typography Best Practices](08_typography_best_practices.html)** - Professional patterns
 
 ---
 
-**Continue learning →** [Text Alignment](06_text_alignment.md)
+**Continue learning →** [Text Alignment](06_text_alignment.html)

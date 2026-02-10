@@ -786,13 +786,13 @@ You've completed the **Practical Applications** series and mastered real-world P
 
 Through this series, you've built complete, production-ready examples:
 
-1. **[Invoice Template](01_invoice_template.md)** - Professional invoicing
-2. **[Business Letter](02_business_letter.md)** - Formal correspondence
-3. **[Report Template](03_report_template.md)** - Multi-section reports
-4. **[Certificate Template](04_certificate_template.md)** - Awards and certificates
-5. **[Data-Driven Report](05_data_driven_report.md)** - Database integration
-6. **[Catalog & Brochure](06_catalog_brochure.md)** - Product catalogs
-7. **[Form Template](07_form_template.md)** - Print-and-fill forms
+1. **[Invoice Template](01_invoice_template.html)** - Professional invoicing
+2. **[Business Letter](02_business_letter.html)** - Formal correspondence
+3. **[Report Template](03_report_template.html)** - Multi-section reports
+4. **[Certificate Template](04_certificate_template.html)** - Awards and certificates
+5. **[Data-Driven Report](05_data_driven_report.html)** - Database integration
+6. **[Catalog & Brochure](06_catalog_brochure.html)** - Product catalogs
+7. **[Form Template](07_form_template.html)** - Print-and-fill forms
 8. **Multi-Language & Branded Documents** - Enterprise systems
 
 ### Next Steps

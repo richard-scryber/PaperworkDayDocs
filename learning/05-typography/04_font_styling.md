@@ -1017,10 +1017,10 @@ h1, h2 {
 
 Now that you understand font styling:
 
-1. **[Text Spacing](05_text_spacing.md)** - Line height, letter spacing, word spacing
-2. **[Text Alignment](06_text_alignment.md)** - Alignment and justification
-3. **[Typography Best Practices](08_typography_best_practices.md)** - Professional patterns
+1. **[Text Spacing](05_text_spacing.html)** - Line height, letter spacing, word spacing
+2. **[Text Alignment](06_text_alignment.html)** - Alignment and justification
+3. **[Typography Best Practices](08_typography_best_practices.html)** - Professional patterns
 
 ---
 
-**Continue learning →** [Text Spacing](05_text_spacing.md)
+**Continue learning →** [Text Spacing](05_text_spacing.html)

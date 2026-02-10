@@ -586,8 +586,8 @@ Try using an unsupported element (like `<canvas>`) and observe the result. How d
 
 Now that you understand HTML-to-PDF conversion:
 
-1. **[CSS Basics](04_css_basics.md)** - Learn CSS styling for PDFs
-2. **[Pages & Sections](05_pages_sections.md)** - Master multi-page documents
+1. **[CSS Basics](04_css_basics.html)** - Learn CSS styling for PDFs
+2. **[Pages & Sections](05_pages_sections.html)** - Master multi-page documents
 3. **[HTML Element Reference](/reference/htmltags/)** - Complete element documentation
 
 ---
@@ -596,8 +596,8 @@ Now that you understand HTML-to-PDF conversion:
 
 - **[HTML Element Reference](/reference/htmltags/)** - All supported elements
 - **[CSS Property Reference](/reference/css/)** - All supported CSS properties
-- **[Troubleshooting](08_troubleshooting.md)** - Common HTML issues
+- **[Troubleshooting](08_troubleshooting.html)** - Common HTML issues
 
 ---
 
-**Continue learning →** [CSS Basics](04_css_basics.md)
+**Continue learning →** [CSS Basics](04_css_basics.html)

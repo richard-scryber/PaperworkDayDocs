@@ -881,10 +881,10 @@ Create specialized templates for:
 
 ## Next Steps
 
-1. **[Report Template](03_report_template.md)** - Multi-section reports
-2. **[Certificate Template](04_certificate_template.md)** - Awards and certificates
-3. **[Multi-Language & Branded Documents](08_multi_language_branded.md)** - Enterprise templates
+1. **[Report Template](03_report_template.html)** - Multi-section reports
+2. **[Certificate Template](04_certificate_template.html)** - Awards and certificates
+3. **[Multi-Language & Branded Documents](08_multi_language_branded.html)** - Enterprise templates
 
 ---
 
-**Continue learning →** [Report Template](03_report_template.md)
+**Continue learning →** [Report Template](03_report_template.html)

@@ -16,13 +16,13 @@ Configure logging, security, conformance, and optimization for production-ready 
 
 ## Table of Contents
 
-1. [Document Properties](01_document_properties.md) - Title, author, metadata, custom properties
-2. [Logging](02_logging.md) - Log levels, handlers, performance logging, troubleshooting
-3. [Error Handling & Conformance](03_error_handling_conformance.md) - Strict/Lax modes, validation, recovery
-4. [PDF Versions](04_pdf_versions.md) - PDF versions, PDF/A, PDF/X compliance
-5. [Security](05_security.md) - Encryption, passwords, permissions
-6. [Optimization & Performance](06_optimization_performance.md) - File size, compression, caching, scaling
-7. [Production & Deployment](07_production_deployment.md) - Production config, monitoring, troubleshooting
+1. [Document Properties](01_document_properties.html) - Title, author, metadata, custom properties
+2. [Logging](02_logging.html) - Log levels, handlers, performance logging, troubleshooting
+3. [Error Handling & Conformance](03_error_handling_conformance.html) - Strict/Lax modes, validation, recovery
+4. [PDF Versions](04_pdf_versions.html) - PDF versions, PDF/A, PDF/X compliance
+5. [Security](05_security.html) - Encryption, passwords, permissions
+6. [Optimization & Performance](06_optimization_performance.html) - File size, compression, caching, scaling
+7. [Production & Deployment](07_production_deployment.html) - Production config, monitoring, troubleshooting
 
 ---
 
@@ -97,13 +97,13 @@ foreach (var entry in ((PDFCollectorTraceLog)doc.TraceLog).Entries)
 
 This series covers production-ready configuration:
 
-### 1. [Document Properties](01_document_properties.md)
+### 1. [Document Properties](01_document_properties.html)
 - Title, author, subject, keywords
 - Creator and producer
 - Metadata and custom properties
 - Document information dictionary
 
-### 2. [Logging](02_logging.md)
+### 2. [Logging](02_logging.html)
 - **Scryber logging system**
 - Log levels (Error, Warning, Info, Verbose)
 - Configuring logging output
@@ -111,7 +111,7 @@ This series covers production-ready configuration:
 - Performance and diagnostic logging
 - Log analysis and troubleshooting
 
-### 3. [Error Handling & Conformance](03_error_handling_conformance.md)
+### 3. [Error Handling & Conformance](03_error_handling_conformance.html)
 - Error handling strategies
 - Try-catch patterns
 - **Strict vs Lax conformance modes**
@@ -119,20 +119,20 @@ This series covers production-ready configuration:
 - Validation and error recovery
 - Graceful degradation
 
-### 4. [PDF Versions](04_pdf_versions.md)
+### 4. [PDF Versions](04_pdf_versions.html)
 - PDF version selection (1.4 - 2.0)
 - PDF/A compliance (archival)
 - PDF/X compliance (printing)
 - Feature compatibility by version
 
-### 5. [Security](05_security.md)
+### 5. [Security](05_security.html)
 - Document encryption
 - User and owner passwords
 - Permission levels (printing, copying, editing)
 - Form filling permissions
 - Security best practices
 
-### 6. [Optimization & Performance](06_optimization_performance.md)
+### 6. [Optimization & Performance](06_optimization_performance.html)
 - File size optimization
 - Image compression
 - Font subsetting
@@ -141,7 +141,7 @@ This series covers production-ready configuration:
 - Memory management
 - Benchmarking and scaling
 
-### 7. [Production & Deployment](07_production_deployment.md)
+### 7. [Production & Deployment](07_production_deployment.html)
 - Production configuration
 - Error handling in production
 - Monitoring and alerting
@@ -534,12 +534,12 @@ doc.TraceLog = new PDFCollectorTraceLog(TraceRecordLevel.Warnings);
 
 ## Next Steps
 
-Ready to configure production-ready documents? Start with [Document Properties](01_document_properties.md) to learn about metadata.
+Ready to configure production-ready documents? Start with [Document Properties](01_document_properties.html) to learn about metadata.
 
 Jump to specific topics:
-- [Logging](02_logging.md) for diagnostic information
-- [Security](05_security.md) for protection
-- [Optimization & Performance](06_optimization_performance.md) for production
+- [Logging](02_logging.html) for diagnostic information
+- [Security](05_security.html) for protection
+- [Optimization & Performance](06_optimization_performance.html) for production
 
 ---
 
@@ -549,4 +549,4 @@ Jump to specific topics:
 
 ---
 
-**Begin configuration →** [Document Properties](01_document_properties.md)
+**Begin configuration →** [Document Properties](01_document_properties.html)

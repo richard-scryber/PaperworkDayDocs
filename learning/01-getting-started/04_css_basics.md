@@ -783,10 +783,10 @@ body div.content div.section div.subsection p.text {
 
 Now that you understand CSS basics:
 
-1. **[Pages & Sections](05_pages_sections.md)** - Structure multi-page documents
+1. **[Pages & Sections](05_pages_sections.html)** - Structure multi-page documents
 2. **[Styling & Appearance](/learning/03-styling/)** - Deep dive into styling
 3. **[CSS Property Reference](/reference/css/)** - All supported properties
 
 ---
 
-**Continue learning →** [Pages & Sections](05_pages_sections.md)
+**Continue learning →** [Pages & Sections](05_pages_sections.html)

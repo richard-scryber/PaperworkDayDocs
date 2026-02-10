@@ -699,10 +699,10 @@ Create a 3-column layout:
 
 Now that you understand units and measurements:
 
-1. **[Text Styling](05_text_styling.md)** - Advanced text formatting
-2. **[Display & Visibility](06_display_visibility.md)** - Control element display
-3. **[Style Organization](07_style_organization.md)** - Organize your CSS
+1. **[Text Styling](05_text_styling.html)** - Advanced text formatting
+2. **[Display & Visibility](06_display_visibility.html)** - Control element display
+3. **[Style Organization](07_style_organization.html)** - Organize your CSS
 
 ---
 
-**Continue learning →** [Text Styling](05_text_styling.md)
+**Continue learning →** [Text Styling](05_text_styling.html)

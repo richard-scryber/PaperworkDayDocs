@@ -35,12 +35,25 @@
         <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
       </svg>
     </symbol>
+    <symbol id="svg-dark-light" viewBox="0 0 24 24">
+      <title>Toggle dark mode</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="ic_fluent_dark_theme_24_regular" fill="currentColor" fill-rule="nonzero">
+                <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,20.5 L12,3.5 C16.6944204,3.5 20.5,7.30557963 20.5,12 C20.5,16.6944204 16.6944204,20.5 12,20.5 Z" id="🎨-Color"></path>
+            </g>
+        </g>
+      </svg>
+    </symbol>
     {% include icons/external_link.html %}
   </svg>
 
   <div class="side-bar">
     <div class="site-header">
       <a href="{{ '/' | relative_url }}" class="site-title lh-tight">{% include title.html %}</a>
+      <a href="#" class="site-button js-toggle-dark-mode">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-dark-light"></use></svg>
+      </a>
       <a href="#" id="menu-button" class="site-button">
         <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
       </a>
@@ -112,6 +125,9 @@
         <div></div>
       {% endif %}
       {% include header_custom.html %}
+      <a href="#" class="site-button js-toggle-dark-mode">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-dark-light"></use></svg>
+      </a>
       {% if site.aux_links %}
         <nav aria-label="Auxiliary" class="aux-nav">
           <ul class="aux-nav-list">
@@ -223,9 +239,12 @@
   {% endif %}
 
   <script type="text/javascript">
+
+    
+
     var sampleRoot = "https://raw.githubusercontent.com/richard-scryber/PaperworkDayDocs/main/"
 
-    $().ready( () =>
+    $().ready( () => {
         $(".document-container").each((index, ele) => {
             var template = $(ele).data("pw-template");
             var data = $(ele).data("pw-json");
@@ -271,8 +290,44 @@
                   }
                 } //loaded
             }); //init
-        }) //each
+        }); //each
+
+        var currTheme = $.cookie("theme");
+        if(currTheme && currTheme != "dark"){
+            jtd.setTheme(currTheme);
+            $("body").addClass(currTheme);
+        }
+
+        $(".js-toggle-dark-mode").on("click", function() {
+          var currTheme = $.cookie("theme");
+          $("body").removeClass(currTheme);
+            if (currTheme === 'dark') {
+                jtd.setTheme('light');
+                $.cookie("theme", "light", { expires: 365, path: '/' });
+                $("body").addClass("light");
+            } else {
+                jtd.setTheme('dark');
+                $.cookie("theme", "dark", { expires: 365, path: '/' }); 
+                $("body").addClass("dark");
+            }
+            return false;
+        });
+      }
     ); //ready
+
+    
   </script>
+  <script>
+    // const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+    // const darkflag = document.querySelector('.js-dark-mode-flag');
+    // jtd.addEvent(toggleDarkMode, 'click', function() {
+    //     if (jtd.getTheme() === 'dark') {
+    //         jtd.setTheme('light');
+    //     } else {
+    //         jtd.setTheme('dark');
+    //     }
+    // });
+</script>
+
 </body>
 </html>

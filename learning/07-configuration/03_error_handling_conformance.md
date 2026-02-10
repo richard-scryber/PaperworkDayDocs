@@ -688,10 +688,10 @@ if (logger.Entries.Any(e => e.Level == TraceRecordLevel.Warnings))
 
 ## Next Steps
 
-1. **[PDF Versions](04_pdf_versions.md)** - Version and compliance settings
-2. **[Security](05_security.md)** - Protect your documents
-3. **[Production & Deployment](07_production_deployment.md)** - Production best practices
+1. **[PDF Versions](04_pdf_versions.html)** - Version and compliance settings
+2. **[Security](05_security.html)** - Protect your documents
+3. **[Production & Deployment](07_production_deployment.html)** - Production best practices
 
 ---
 
-**Continue learning →** [PDF Versions](04_pdf_versions.md)
+**Continue learning →** [PDF Versions](04_pdf_versions.html)

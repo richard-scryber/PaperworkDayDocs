@@ -759,10 +759,10 @@ Create a template that:
 
 Now that you can format output:
 
-1. **[Advanced Patterns](08_advanced_patterns.md)** - Complex data binding scenarios
-2. **[Common Mistakes](09_common_mistakes.md)** - Avoid common errors
+1. **[Advanced Patterns](08_advanced_patterns.html)** - Complex data binding scenarios
+2. **[Common Mistakes](09_common_mistakes.html)** - Avoid common errors
 3. **[Styling PDFs](/learning/03-styling/)** - Apply advanced styling
 
 ---
 
-**Continue learning →** [Advanced Patterns](08_advanced_patterns.md)
+**Continue learning →** [Advanced Patterns](08_advanced_patterns.html)

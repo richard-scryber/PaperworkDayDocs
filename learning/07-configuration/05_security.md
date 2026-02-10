@@ -624,10 +624,10 @@ doc.RenderOptions.SecurityOptions = null;  // ✅
 
 ## Next Steps
 
-1. **[Optimization & Performance](06_optimization_performance.md)** - File size and speed optimization
-2. **[Production & Deployment](07_production_deployment.md)** - Production configuration
+1. **[Optimization & Performance](06_optimization_performance.html)** - File size and speed optimization
+2. **[Production & Deployment](07_production_deployment.html)** - Production configuration
 3. **[Practical Applications](/learning/08-practical/)** - Real-world examples
 
 ---
 
-**Continue learning →** [Optimization & Performance](06_optimization_performance.md)
+**Continue learning →** [Optimization & Performance](06_optimization_performance.html)

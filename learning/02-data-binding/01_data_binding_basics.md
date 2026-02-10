@@ -648,10 +648,10 @@ doc.Params["user"] = new { name = "John" };
 
 Now that you understand data binding basics:
 
-1. **[Expression Functions](02_expression_functions.md)** - Use functions in expressions
-2. **[Template Iteration](03_template_iteration.md)** - Loop through collections
-3. **[Conditional Rendering](04_conditional_rendering.md)** - Show/hide content
+1. **[Expression Functions](02_expression_functions.html)** - Use functions in expressions
+2. **[Template Iteration](03_template_iteration.html)** - Loop through collections
+3. **[Conditional Rendering](04_conditional_rendering.html)** - Show/hide content
 
 ---
 
-**Continue learning →** [Expression Functions](02_expression_functions.md)
+**Continue learning →** [Expression Functions](02_expression_functions.html)

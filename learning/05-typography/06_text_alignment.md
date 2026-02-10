@@ -607,10 +607,10 @@ p {
 
 ## Next Steps
 
-1. **[Advanced Typography](07_advanced_typography.md)** - Drop caps, special features
-2. **[Typography Best Practices](08_typography_best_practices.md)** - Professional patterns
+1. **[Advanced Typography](07_advanced_typography.html)** - Drop caps, special features
+2. **[Typography Best Practices](08_typography_best_practices.html)** - Professional patterns
 3. **[Content Components](/learning/06-content/)** - Images, lists, tables
 
 ---
 
-**Continue learning →** [Advanced Typography](07_advanced_typography.md)
+**Continue learning →** [Advanced Typography](07_advanced_typography.html)

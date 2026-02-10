@@ -928,10 +928,10 @@ p {
 
 Now that you control page breaks:
 
-1. **[Multi-Column Layouts](04_multi_column.md)** - Create column-based designs
-2. **[Positioning](05_positioning.md)** - Absolute and relative positioning
-3. **[Headers & Footers](07_headers_footers.md)** - Repeating page elements
+1. **[Multi-Column Layouts](04_multi_column.html)** - Create column-based designs
+2. **[Positioning](05_positioning.html)** - Absolute and relative positioning
+3. **[Headers & Footers](07_headers_footers.html)** - Repeating page elements
 
 ---
 
-**Continue learning →** [Multi-Column Layouts](04_multi_column.md)
+**Continue learning →** [Multi-Column Layouts](04_multi_column.html)
