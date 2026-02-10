@@ -79,6 +79,10 @@ body.light blockquote.note::before {
     /* border-left: solid 1px #aaa; */
 }
 
+a, .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active, .nav-list .nav-list-item .nav-list-expander{
+    color: rgb(0,168,161);
+}
+
 
 @media (max-width: 50rem) {
 
@@ -119,6 +123,10 @@ body.light blockquote.note::before {
         overflow: auto;
         z-index: 2;
         margin-top: -4px;
+    }
+
+    .site-nav.nav-open{
+        height: 100%;
     }
 
     .light .site-nav{
@@ -201,6 +209,10 @@ body.light blockquote.note::before {
 
     .site-nav{
         padding-top: 1rem;
+    }
+
+    .main-header .icon{
+        color: rgb(0,168,161)
     }
 
 }
