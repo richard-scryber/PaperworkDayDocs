@@ -31,6 +31,11 @@ The `-pdf-li-postfix` property is a Scryber-specific extension that adds custom 
 
 ---
 
+{: .note }
+Although the support for this property is expected to continue for the forseeable future, its functionality will be consumed into custom or pre-defined [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type.html) values.
+
+---
+
 ## Usage
 
 ```css
@@ -755,6 +760,6 @@ Legal documents must conform to jurisdiction-specific formatting requirements. D
 - [-pdf-li-align](/reference/cssproperties/properties/css_prop_-pdf-li-align) - Scryber custom: List marker alignment
 - [-pdf-li-inset](/reference/cssproperties/properties/css_prop_-pdf-li-inset) - Scryber custom: List content inset
 - [-pdf-li-prefix](/reference/cssproperties/properties/css_prop_-pdf-li-prefix) - Scryber custom: List marker prefix
-- [style attribute](/reference/htmlattributes/style) - Inline CSS styles
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styles
 
 ---

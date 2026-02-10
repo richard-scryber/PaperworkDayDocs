@@ -75,6 +75,15 @@ The background property can set `background-color`, `background-image`, `backgro
 - `contain` - Scale to fit within area
 - Length values: `100pt 50pt`, `50% 25%`
 
+### Gradient Functions
+
+The `background` shorthand also supports CSS gradient functions as alternatives to image URLs:
+
+- **[linear-gradient](/reference/cssproperties/properties/css_prop_linear-gradient)** - Creates linear color transitions with directional control
+- **[radial-gradient](/reference/cssproperties/properties/css_prop_radial-gradient)** - Creates radial color transitions from a center point
+
+Gradients can be used directly in the shorthand like `background: linear-gradient(90deg, red, blue)` and support transparency, data binding, and multiple color stops for professional visual effects.
+
 ---
 
 ## Supported Elements

@@ -31,6 +31,11 @@ The `-pdf-li-group` property is a Scryber-specific extension that controls how l
 
 ---
 
+{: .note }
+Although the support for this property is expected to continue for the forseeable future, its functionality will be consumed into custom or pre-defined [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type.html) values.
+
+---
+
 ## Usage
 
 ```css
@@ -794,6 +799,6 @@ Different requirement categories can maintain independent numbering sequences us
 - [-pdf-li-inset](/reference/cssproperties/properties/css_prop_-pdf-li-inset) - Scryber custom: List content inset
 - [-pdf-li-prefix](/reference/cssproperties/properties/css_prop_-pdf-li-prefix) - Scryber custom: List marker prefix
 - [-pdf-li-postfix](/reference/cssproperties/properties/css_prop_-pdf-li-postfix) - Scryber custom: List marker postfix
-- [style attribute](/reference/htmlattributes/style) - Inline CSS styles
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styles
 
 ---

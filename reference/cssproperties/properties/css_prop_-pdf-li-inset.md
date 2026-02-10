@@ -31,6 +31,11 @@ The `-pdf-li-inset` property is a Scryber-specific extension that controls the h
 
 ---
 
+{: .note }
+Although the support for this property is expected to continue for the forseeable future, its functionality will be consumed into custom or pre-defined [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type.html) values.
+
+---
+
 ## Usage
 
 ```css
@@ -701,6 +706,6 @@ Progressive inset reduction for nested levels creates visual hierarchy. Organiza
 - [-pdf-li-prefix](/reference/cssproperties/properties/css_prop_-pdf-li-prefix) - Scryber custom: List marker prefix
 - [-pdf-li-postfix](/reference/cssproperties/properties/css_prop_-pdf-li-postfix) - Scryber custom: List marker postfix
 - [padding-left](/reference/cssproperties/properties/css_prop_padding-left) - Left padding property
-- [style attribute](/reference/htmlattributes/style) - Inline CSS styles
+- [style attribute](/reference/htmlattributes/attributes/attr_style) - Inline CSS styles
 
 ---

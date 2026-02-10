@@ -5,7 +5,7 @@ parent: CSS Properties
 parent_url: /reference/cssproperties/
 grand_parent: Template reference
 grand_parent_url: /reference/
-has_children: false
+has_children: true
 has_toc: false
 ---
 
@@ -59,6 +59,15 @@ The background-image property accepts URL values pointing to image files or the 
 - GIF - Simple graphics and animations (static frame in PDF)
 - BMP - Bitmap images
 - SVG - Scalable vector graphics (support varies)
+
+### Gradient Functions
+
+In addition to image URLs, `background-image` supports CSS gradient functions for creating smooth color transitions:
+
+- **[linear-gradient](/reference/cssproperties/properties/css_prop_linear-gradient)** - Creates linear color gradients with directional control
+- **[radial-gradient](/reference/cssproperties/properties/css_prop_radial-gradient)** - Creates radial color gradients from a center point
+
+Gradients are rendered as backgrounds and are fully scalable within PDF documents. They support multiple color stops, transparency, and data binding for dynamic gradient creation.
 
 ---
 
@@ -532,5 +541,7 @@ Generates product catalogs, price lists, or inventory reports where each item di
 - [background-position](/reference/cssproperties/properties/css_prop_background-position) - Set image position
 - [background-size](/reference/cssproperties/properties/css_prop_background-size) - Control image sizing
 - [opacity](/reference/cssproperties/properties/css_prop_opacity) - Control overall element transparency
+- [linear-gradient](/reference/cssproperties/properties/css_prop_linear-gradient) - Use *linear* gradients in backgrounds
+- [radial-gradient](/reference/cssproperties/properties/css_prop_radial-gradient) - Use *radial* gradients in backgrounds
 
 ---
