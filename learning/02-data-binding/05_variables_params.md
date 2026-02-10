@@ -548,10 +548,10 @@ doc.SaveAsPDF("annual-report.pdf");
                 <td style="text-align: right;">{{format(this.revenue, 'C0')}}</td>
                 <td style="text-align: right;">{{format(this.expenses, 'C0')}}</td>
                 <td style="text-align: right;">
-                    {{format(calc(this.revenue, '-', this.expenses), 'C0')}}
+                    {{format(this.revenue -  this.expenses, 'C0')}}
                 </td>
                 <td style="text-align: right;">
-                    {{format(calc(calc(this.revenue, '-', this.expenses), '/', this.revenue), 'P0')}}
+                    {{format(calc(calc(this.revenue -  this.expenses) /  this.revenue), 'P0')}}
                 </td>
             </tr>
             {{/each}}

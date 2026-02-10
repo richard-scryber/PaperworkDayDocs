@@ -80,7 +80,7 @@ doc.Params["model"] = new {
 ### Remove Characters
 
 ```handlebars
-<p>Phone: {{replace(model.phone, '-', '')}}</p>
+<p>Phone: {{replace(model.phone -  '')}}</p>
 ```
 
 **Data:**

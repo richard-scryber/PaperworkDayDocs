@@ -656,7 +656,7 @@ doc.Params["model"] = new
                         <td>{{this.name}}</td>
                         <td style="text-align: right;">{{format(this.sales, 'C0')}}</td>
                         <td style="text-align: right;">
-                            {{format(calc(this.sales, '/', ../totalSales), 'P0')}}
+                            {{format(this.sales /  ../totalSales, 'P0')}}
                         </td>
                     </tr>
                     {{/each}}

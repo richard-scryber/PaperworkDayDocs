@@ -380,7 +380,7 @@ doc.Params["invoice"] = new
                 <td>{{this.hours}}</td>
                 <td>${{format(this.rate, 'F2')}}</td>
                 <td style="text-align: right;">
-                    ${{format(calc(this.hours, '*', this.rate), 'F2')}}
+                    ${{format(this.hours *  this.rate, 'F2')}}
                 </td>
             </tr>
             {{/each}}

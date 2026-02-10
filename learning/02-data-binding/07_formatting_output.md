@@ -406,7 +406,7 @@ doc.Params["model"] = new
                 <td>{{this.region}}</td>
                 <td class="number-cell">{{format(this.revenue, 'C0')}}</td>
                 <td class="number-cell">
-                    {{format(calc(this.revenue, '/', ../metrics.revenue), 'P1')}}
+                    {{format(this.revenue /  ../metrics.revenue, 'P1')}}
                 </td>
                 <td class="number-cell positive">+{{format(this.growth, 'P0')}}</td>
             </tr>

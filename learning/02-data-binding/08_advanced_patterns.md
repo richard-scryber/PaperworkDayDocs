@@ -565,7 +565,7 @@ doc.Params["model"] = new
 ```html
 <div style="display: table; width: 100%;">
     {{#each model.products}}
-        <div style="display: table-cell; width: {{calc(100, '/', ../columnCount)}}%; padding: 10pt; vertical-align: top;">
+        <div style="display: table-cell; width: {{100 /  ../columnCount}}%; padding: 10pt; vertical-align: top;">
             <div style="border: 1pt solid #d1d5db; padding: 15pt;">
                 <h3>{{this.name}}</h3>
                 <p>{{format(this.price, 'C2')}}</p>
@@ -765,7 +765,7 @@ doc.Params["displayValue"] = displayValue;
 {% raw %}
 ```html
 {{#each items}}
-    <p>Total: {{format(calc(this.price, '*', this.quantity, '+', calc(this.price, '*', this.quantity, '*', 0.08)), 'C2')}}</p>
+    <p>Total: {{format(calc(this.price *  this.quantity +  calc(this.price *  this.quantity *  0.08)), 'C2')}}</p>
 {{/each}}
 ```
 {% endraw %}

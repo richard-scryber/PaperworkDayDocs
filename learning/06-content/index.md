@@ -65,7 +65,7 @@ Scryber supports a rich variety of content types:
 ### 2. [SVG Basics](02_svg_basics.html)
         }
 ### 3. [SVG Drawing](03_svg_drawing.html)
-        <rect x="100" y="{{calc(200, '-', sales.q2)}}"
+        <rect x="100" y="{{calc(200 -  sales.q2)}}"
 ### 4. [Lists](04_lists.html)
             <tr>
 ### 5. [Tables - Basics](05_tables_basics.html)
@@ -210,12 +210,12 @@ Before starting this series:
 ```html
 <svg width="500" height="300">
     {{#each dataPoints}}
-    <rect x="{{calc(@index, '*', 50)}}"
-          y="{{calc(300, '-', this.value)}}"
+    <rect x="{{calc(@index *  50)}}"
+          y="{{calc(300 -  this.value)}}"
           width="40"
           height="{{this.value}}"
           fill="#3b82f6" />
-    <text x="{{calc(@index, '*', 50, '+', 20)}}"
+    <text x="{{calc(@index *  50 +  20)}}"
           y="290"
           text-anchor="middle">
         {{this.label}}
@@ -244,7 +244,7 @@ Before starting this series:
             <td>{{this.name}}</td>
             <td>{{this.quantity}}</td>
             <td>${{this.price}}</td>
-            <td>${{calc(this.quantity, '*', this.price)}}</td>
+            <td>${{this.quantity *  this.price}}</td>
         </tr>
         {{/each}}
     </tbody>
@@ -306,20 +306,20 @@ Before starting this series:
         </text>
 
         {{#each quarters}}
-        <rect x="{{calc(@index, '*', 150, '+', 50)}}"
-              y="{{calc(350, '-', this.sales)}}"
+        <rect x="{{calc(@index *  150 +  50)}}"
+              y="{{calc(350 -  this.sales)}}"
               width="100"
               height="{{this.sales}}"
               fill="#3b82f6" />
 
-        <text x="{{calc(@index, '*', 150, '+', 100)}}"
+        <text x="{{calc(@index *  150 +  100)}}"
               y="370"
               text-anchor="middle">
-            Q{{calc(@index, '+', 1)}}
+            Q{{@index +  1}}
         </text>
 
-        <text x="{{calc(@index, '*', 150, '+', 100)}}"
-              y="{{calc(350, '-', this.sales, '-', 10)}}"
+        <text x="{{calc(@index *  150 +  100)}}"
+              y="{{calc(350 -  this.sales -  10)}}"
               text-anchor="middle">
             ${{this.sales}}
         </text>
@@ -375,7 +375,7 @@ Before starting this series:
                 <td>{{this.description}}</td>
                 <td>{{this.quantity}}</td>
                 <td>${{this.price}}</td>
-                <td>${{calc(this.quantity, '*', this.price)}}</td>
+                <td>${{this.quantity *  this.price}}</td>
             </tr>
             {{/each}}
         </tbody>
@@ -519,7 +519,7 @@ Before starting this series:
             <td>{{this.description}}</td>
             <td>${{this.amount}}</td>
             <var data-id="runningTotal"
-                 data-value="{{calc(Document.Params.runningTotal, '+', this.amount)}}" />
+                 data-value="{{Document.Params.runningTotal +  this.amount}}" />
             <td>${{Document.Params.runningTotal}}</td>
         </tr>
         {{/each}}

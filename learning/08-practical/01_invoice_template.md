@@ -326,7 +326,7 @@ By the end of this article, you'll be able to:
                 </td>
                 <td class="right">{{this.quantity}}</td>
                 <td class="right">${{format(this.price, '0.00')}}</td>
-                <td class="right">${{format(calc(this.quantity, '*', this.price), '0.00')}}</td>
+                <td class="right">${{format(this.quantity * this.price, '0.00')}}}</td>
             </tr>
             {{/each}}
         </tbody>
@@ -346,7 +346,7 @@ By the end of this article, you'll be able to:
             </tr>
             {{/if}}
             <tr>
-                <td>Tax ({{format(calc(invoice.taxRate, '*', 100), '0.0')}}%):</td>
+                <td>Tax ({{format(invoice.taxRate * 100, '0.0')}}%):</td>
                 <td>${{format(invoice.tax, '0.00')}}</td>
             </tr>
             {{#if invoice.shipping}}
@@ -675,7 +675,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
             </td>
             <td class="right">{{this.quantity}}</td>
             <td class="right">${{format(this.price, '0.00')}}</td>
-            <td class="right">${{format(calc(this.quantity, '*', this.price), '0.00')}}</td>
+            <td class="right">${{format(this.quantity * this.price, '0.00')}}}</td>
         </tr>
         {{/each}}
     </tbody>
@@ -701,7 +701,7 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
             <td>${{format(invoice.subtotal, '0.00')}}</td>
         </tr>
         <tr>
-            <td>Tax ({{format(calc(invoice.taxRate, '*', 100), '0.0')}}%):</td>
+            <td>Tax ({{format(invoice.taxRate * 100, '0.0')}}%):</td>
             <td>${{format(invoice.tax, '0.00')}}</td>
         </tr>
         <tr class="total-row">
@@ -778,7 +778,7 @@ For hourly billing:
             </td>
             <td class="right">{{format(this.hours, '0.00')}}</td>
             <td class="right">${{{format(this.rate, '0.00')}}/hr</td>
-            <td class="right">${{format(calc(this.hours, '*', this.rate), '0.00')}}</td>
+            <td class="right">${{format(this.hours * this.rate, '0.00')}}}</td>
         </tr>
         {{/each}}
     </tbody>

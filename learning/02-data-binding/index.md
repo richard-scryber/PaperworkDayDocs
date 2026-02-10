@@ -238,13 +238,13 @@ Data binding enables powerful scenarios:
 ### Calculated Values
 {% raw %}
 ```html
-<var data-id="subtotal" data-value="{{calc(quantity, '*', price)}}" />
-<var data-id="tax" data-value="{{calc(Document.Params.subtotal, '*', 0.08)}}" />
-<var data-id="total" data-value="{{calc(Document.Params.subtotal, '+', Document.Params.tax)}}" />
+<var data-id="subtotal" data-value="{{quantity *  price}}" />
+<var data-id="tax" data-value="{{subtotal *  0.08}}" />
+<var data-id="total" data-value="{{subtotal +  tax}}" />
 
-<p>Subtotal: ${{Document.Params.subtotal}}</p>
-<p>Tax (8%): ${{Document.Params.tax}}</p>
-<p>Total: ${{Document.Params.total}}</p>
+<p>Subtotal: ${{subtotal}}</p>
+<p>Tax (8%): ${{tax}}</p>
+<p>Total: ${{total}}</p>
 {% endraw %}
 ```
 
@@ -288,8 +288,8 @@ Data binding enables powerful scenarios:
     <td>{{this.name}}</td>
     <td>{{this.amount}}</td>
     <var data-id="runningTotal"
-         data-value="{{calc(Document.Params.runningTotal, '+', this.amount)}}" />
-    <td>{{Document.Params.runningTotal}}</td>
+         data-value="{{runningTotal + this.amount}}" />
+    <td>{{runningTotal}}</td>
 </tr>
 {{/each}}
 {% endraw %}

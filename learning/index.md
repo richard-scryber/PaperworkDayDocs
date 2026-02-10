@@ -353,7 +353,7 @@ Contributions welcome! See [Contributing Guide](https://github.com/richard-scryb
     <!-- Data binding -->
     <p>{{propertyName}}</p>
     <p>{{object.property}}</p>
-    <p>{{calc(a, '+', b)}}</p>
+    <p>{{a +  b}}</p>
 
     <!-- Iteration -->
     {{#each items}}

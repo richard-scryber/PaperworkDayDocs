@@ -232,6 +232,13 @@ The `<path>` element is the most powerful SVG shape.
 
 ## Data Binding in SVG
 
+{.note }
+> Most svg charts and graphs are hard to work on manually, and it would not be expected to manually create these files.
+>
+> However, given the learnings within them to an appropriate AI Engine (e.g. Claude) then the charts can quickly be created and included in templates.
+
+
+
 ### Dynamic Values
 
 {% raw %}
@@ -252,8 +259,7 @@ The `<path>` element is the most powerful SVG shape.
         {{displayText}}
     </text>
 </svg>
-{% endraw %}
-```
+```{% endraw %}
 
 ### Calculated Positions
 
@@ -262,14 +268,14 @@ The `<path>` element is the most powerful SVG shape.
 <svg width="500" height="300">
     {{#each dataPoints}}
     <!-- Calculate x position based on index -->
-    <rect x="{{calc(@index, '*', 50, '+', 10)}}"
-          y="{{calc(250, '-', this.value)}}"
+    <rect x="{{(@index *  50) +  10}}"
+          y="{{250 -  this.value}}"
           width="40"
           height="{{this.value}}"
           fill="#3b82f6" />
 
     <!-- Label below each bar -->
-    <text x="{{calc(@index, '*', 50, '+', 30)}}"
+    <text x="{{@index *  50 +  30}}"
           y="280"
           text-anchor="middle"
           font-size="12">
@@ -277,8 +283,8 @@ The `<path>` element is the most powerful SVG shape.
     </text>
     {{/each}}
 </svg>
-{% endraw %}
-```
+
+```{% endraw %}
 
 ---
 
@@ -370,26 +376,26 @@ The `<path>` element is the most powerful SVG shape.
 
             <!-- Bars -->
             {{#each quarters}}
-            <rect x="{{calc(@index, '*', 120, '+', 80)}}"
-                  y="{{calc(350, '-', this.revenue)}}"
+            <rect x="{{(@index *  120) +  80}}"
+                  y="{{350 -  this.revenue}}"
                   width="80"
                   height="{{this.revenue}}"
                   class="bar" />
 
             <!-- Value labels on bars -->
-            <text x="{{calc(@index, '*', 120, '+', 120)}}"
-                  y="{{calc(350, '-', this.revenue, '-', 10)}}"
+            <text x="{{(@index *  120) +  120}}"
+                  y="{{(350 -  this.revenue) -  10}}"
                   text-anchor="middle"
                   class="bar-value">
                 ${{this.revenue}}
             </text>
 
             <!-- Quarter labels -->
-            <text x="{{calc(@index, '*', 120, '+', 120)}}"
+            <text x="{{(@index *  120) +  120}}"
                   y="370"
                   text-anchor="middle"
                   class="bar-label">
-                Q{{calc(@index, '+', 1)}}
+                Q{{@index +  1}}
             </text>
             {{/each}}
 
@@ -488,7 +494,7 @@ The `<path>` element is the most powerful SVG shape.
             <polyline class="data-line">
                 <param name="points">
                     {{#each months}}
-                    {{calc(@index, '*', 100, '+', 75)}},{{calc(350, '-', this.value, '*', 2.5)}}{{#unless @last}} {{/unless}}
+                    {{@index *  100 +  75}},{{350 -  (this.value *  2.5)}}{{#unless @last}} {{/unless}}
                     {{/each}}
                 </param>
             </polyline>
@@ -496,21 +502,21 @@ The `<path>` element is the most powerful SVG shape.
             <!-- Data points and labels -->
             {{#each months}}
             <!-- Point -->
-            <circle cx="{{calc(@index, '*', 100, '+', 75)}}"
-                    cy="{{calc(350, '-', this.value, '*', 2.5)}}"
+            <circle cx="{{(@index *  100) +  75}}"
+                    cy="{{(350 -  this.value) *  2.5}}"
                     r="5"
                     class="data-point" />
 
             <!-- Value label -->
-            <text x="{{calc(@index, '*', 100, '+', 75)}}"
-                  y="{{calc(350, '-', this.value, '*', 2.5, '-', 15)}}"
+            <text x="{{(@index *  100) +  75}}"
+                  y="{{((350 -  this.value) *  2.5) -  15}}"
                   text-anchor="middle"
                   class="data-point-label">
                 {{this.value}}
             </text>
 
             <!-- Month label -->
-            <text x="{{calc(@index, '*', 100, '+', 75)}}"
+            <text x="{{(@index *  100) +  75}}"
                   y="370"
                   text-anchor="middle"
                   font-size="11"
@@ -661,15 +667,8 @@ The `<path>` element is the most powerful SVG shape.
 
 ## Try It Yourself
 
-### Exercise 1: Progress Indicator
 
-Create a circular progress indicator:
-- Use SVG circle with stroke-dasharray
-- Show percentage in center as text
-- Make progress value data-bound
-- Add color coding (green >75%, yellow >50%, red <50%)
-
-### Exercise 2: Dashboard Gauges
+### Exercise 1: Dashboard Gauges
 
 Build a dashboard with 3-4 gauges:
 - Semi-circular gauge design
@@ -677,7 +676,7 @@ Build a dashboard with 3-4 gauges:
 - Value labels
 - Min/max markers
 
-### Exercise 3: Multi-Series Chart
+### Exercise 2: Multi-Series Chart
 
 Create a chart comparing 2-3 data series:
 - Line or bar chart
@@ -703,7 +702,7 @@ Create a chart comparing 2-3 data series:
 ```html
 <!-- Calculate positions dynamically -->
 {{#each data}}
-<rect x="{{calc(@index, '*', 60, '+', 10)}}"
+<rect x="{{(@index *  60) +  10}}"
       y="10"
       width="50"
       height="{{this.value}}"

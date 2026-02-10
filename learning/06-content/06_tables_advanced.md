@@ -106,7 +106,7 @@ By the end of this article, you'll be able to:
 <tbody>
     {{#each items}}
     <tr>
-        <td>{{calc(@index, '+', 1)}}</td>  <!-- Row number -->
+        <td>{{@index +  1}}</td>  <!-- Row number -->
         <td>{{this.name}}</td>
         <td>{{this.value}}</td>
     </tr>
@@ -138,7 +138,7 @@ By the end of this article, you'll be able to:
             <td>{{this.name}}</td>
             <td>{{this.quantity}}</td>
             <td>${{this.price}}</td>
-            <td>${{calc(this.quantity, '*', this.price)}}</td>
+            <td>${{this.quantity *  this.price}}</td>
         </tr>
         {{/each}}
     </tbody>
@@ -157,11 +157,11 @@ By the end of this article, you'll be able to:
         <td>{{this.quantity}}</td>
         <td>${{this.unitPrice}}</td>
         <!-- Subtotal -->
-        <td>${{calc(this.quantity, '*', this.unitPrice)}}</td>
+        <td>${{this.quantity *  this.unitPrice}}</td>
         <!-- Tax (8%) -->
-        <td>${{calc(this.quantity, '*', this.unitPrice, '*', 0.08)}}</td>
+        <td>${{this.quantity *  this.unitPrice *  0.08}}</td>
         <!-- Total with tax -->
-        <td>${{calc(this.quantity, '*', this.unitPrice, '*', 1.08)}}</td>
+        <td>${{this.quantity *  this.unitPrice *  1.08}}</td>
     </tr>
     {{/each}}
 </tbody>
@@ -196,7 +196,7 @@ By the end of this article, you'll be able to:
             <td>${{this.amount}}</td>
             <!-- Update running total -->
             <var data-id="runningTotal"
-                 data-value="{{calc(Document.Params.runningTotal, '+', this.amount)}}" />
+                 data-value="{{Document.Params.runningTotal +  this.amount}}" />
             <!-- Display current total -->
             <td>${{Document.Params.runningTotal}}</td>
         </tr>
@@ -506,15 +506,15 @@ tfoot {
         <tbody>
             {{#each invoice.items}}
             <tr>
-                <td>{{calc(@index, '+', 1)}}</td>
+                <td>{{@index +  1}}</td>
                 <td>{{this.description}}</td>
                 <td class="right">{{this.quantity}}</td>
                 <td class="right">${{this.unitPrice}}</td>
-                <td class="right">${{calc(this.quantity, '*', this.unitPrice)}}</td>
+                <td class="right">${{this.quantity *  this.unitPrice}}</td>
             </tr>
             <!-- Accumulate subtotal -->
             <var data-id="subtotal"
-                 data-value="{{calc(Document.Params.subtotal, '+', this.quantity, '*', this.unitPrice)}}" />
+                 data-value="{{Document.Params.subtotal +  this.quantity *  this.unitPrice}}" />
             {{/each}}
         </tbody>
     </table>
@@ -528,7 +528,7 @@ tfoot {
             </tr>
             <tr>
                 <td>Tax (8%):</td>
-                <td>${{calc(Document.Params.subtotal, '*', 0.08)}}</td>
+                <td>${{Document.Params.subtotal *  0.08}}</td>
             </tr>
             <tr>
                 <td>Shipping:</td>
@@ -536,7 +536,7 @@ tfoot {
             </tr>
             <tr class="grand-total">
                 <td>Total:</td>
-                <td>${{calc(Document.Params.subtotal, '*', 1.08, '+', 15)}}</td>
+                <td>${{Document.Params.subtotal *  1.08 +  15}}</td>
             </tr>
         </table>
     </div>
@@ -656,7 +656,7 @@ tfoot {
                 <td>{{this.productName}}</td>
                 <td class="right">{{this.quantity}}</td>
                 <td class="right">${{this.unitPrice}}</td>
-                <td class="right">${{calc(this.quantity, '*', this.unitPrice)}}</td>
+                <td class="right">${{this.quantity *  this.unitPrice}}</td>
             </tr>
             {{/each}}
         </tbody>
@@ -745,10 +745,10 @@ tr {
 {% raw %}
 ```html
 <!-- Wrong: Missing operators -->
-<td>{{calc(this.a this.b)}}</td>
+<td>{{this.a this.b}}</td>
 
 <!-- Wrong: Too many nested calcs -->
-<td>{{calc(calc(calc(this.a, '+', this.b), '*', 2), '-', 10)}}</td>
+<td>{{calc(calc(calc(this.a +  this.b) *  2) -  10)}}</td>
 {% endraw %}
 ```
 
@@ -757,12 +757,12 @@ tr {
 {% raw %}
 ```html
 <!-- Correct: All operators specified -->
-<td>{{calc(this.a, '+', this.b)}}</td>
+<td>{{this.a +  this.b}}</td>
 
 <!-- Better: Break into steps with variables -->
-<var data-id="sum" data-value="{{calc(this.a, '+', this.b)}}" />
-<var data-id="doubled" data-value="{{calc(Document.Params.sum, '*', 2)}}" />
-<td>{{calc(Document.Params.doubled, '-', 10)}}</td>
+<var data-id="sum" data-value="{{this.a +  this.b}}" />
+<var data-id="doubled" data-value="{{Document.Params.sum *  2}}" />
+<td>{{Document.Params.doubled -  10}}</td>
 {% endraw %}
 ```
 

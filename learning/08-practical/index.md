@@ -104,7 +104,7 @@ Each article provides:
                 <td>{{this.description}}</td>
                 <td>{{this.quantity}}</td>
                 <td>${{this.price}}</td>
-                <td>${{calc(this.quantity, '*', this.price)}}</td>
+                <td>${{this.quantity * this.price}}</td>
             </tr>
             {{/each}}
         </tbody>
@@ -309,15 +309,15 @@ tfoot {
     <td>{{this.description}}</td>
     <td>${{this.amount}}</td>
     <var data-id="subtotal"
-         data-value="{{calc(Document.Params.subtotal, '+', this.amount)}}" />
+         data-value="{{Document.Params.subtotal + this.amount}}" />
 </tr>
 {{/each}}
 
 <!-- Calculate tax and total -->
 <var data-id="tax"
-     data-value="{{calc(Document.Params.subtotal, '*', taxRate)}}" />
+     data-value="{{Document.Params.subtotal * taxRate}}" />
 <var data-id="total"
-     data-value="{{calc(Document.Params.subtotal, '+', Document.Params.tax)}}" />
+     data-value="{{Document.Params.subtotal + Document.Params.tax}}" />
 
 <!-- Display totals -->
 <tr>

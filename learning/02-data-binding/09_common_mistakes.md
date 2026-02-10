@@ -201,35 +201,35 @@ doc.Params["model"] = new
 
 ## Mistake 6: Incorrect calc() Syntax
 
-### ❌ Problem: Operators Not as Strings
+### ❌ Problem: Passing as String
 
 {% raw %}
 ```html
-{{calc(model.price + model.tax)}}  <!-- Won't work -->
+{{'model.price + model.tax'}}  <!-- Won't work - string literal -->
 ```
 {% endraw %}
 
-### ✅ Solution: Operators Must Be String Arguments
+### ✅ Solution: Use Direct Expression
 
 {% raw %}
 ```html
-{{calc(model.price, '+', model.tax)}}  <!-- Correct -->
+{{model.price + model.tax}}  <!-- Correct -->
 ```
 {% endraw %}
 
-### ❌ Problem: Parentheses as Single Argument
+### ❌ Problem: Using Comma-Separated Arguments
 
 {% raw %}
 ```html
-{{calc((model.a + model.b), '*', model.c)}}  <!-- Won't work -->
+{{model.a +  model.b *  model.c}}  <!-- Won't work -->
 ```
 {% endraw %}
 
-### ✅ Solution: Parentheses as Separate Arguments
+### ✅ Solution: Use Standard Math Expression
 
 {% raw %}
 ```html
-{{calc('(', model.a, '+', model.b, ')', '*', model.c)}}  <!-- Correct -->
+{{calc((model.a + model.b) * model.c)}}  <!-- Correct -->
 ```
 {% endraw %}
 
@@ -361,8 +361,8 @@ doc.Params["invoice"] = invoiceData;
 
 {% raw %}
 ```html
-<p>{{format(calc(calc(model.price, '*', model.quantity), '+',
-            calc(calc(model.price, '*', model.quantity), '*', 0.08)), 'C2')}}</p>
+<p>{{format(calc(calc(model.price *  model.quantity) + 
+            calc(calc(model.price *  model.quantity) *  0.08)), 'C2')}}</p>
 ```
 {% endraw %}
 
@@ -458,7 +458,7 @@ doc.Params["model"] = new
 
 {% raw %}
 ```html
-{{calc(model.price, '*', 2)}}  <!-- May not work correctly -->
+{{model.price *  2}}  <!-- May not work correctly -->
 ```
 {% endraw %}
 
@@ -473,7 +473,7 @@ doc.Params["model"] = new
 
 {% raw %}
 ```html
-{{calc(model.price, '*', 2)}}  <!-- Works correctly -->
+{{model.price *  2}}  <!-- Works correctly -->
 ```
 {% endraw %}
 

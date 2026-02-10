@@ -178,18 +178,18 @@ The `calc()` function allows complex math expressions:
 {% raw %}
 ```html
 <!-- Basic arithmetic -->
-<p>{{calc(model.price, '+', model.tax)}}</p>
+<p>{{model.price + model.tax}}</p>
 
 <!-- With literals -->
-<p>{{calc(model.quantity, '*', 10)}}</p>
+<p>{{model.quantity * 10}}</p>
 
 <!-- Multiple operations (evaluated left to right) -->
-<p>{{calc(model.price, '*', model.quantity, '+', model.tax)}}</p>
+<p>{{model.price * model.quantity + model.tax}}</p>
 
 <!-- (price * quantity) + tax -->
 
 <!-- Parentheses for order of operations -->
-<p>{{calc('(', model.price, '+', model.tax, ')', '*', model.quantity)}}</p>
+<p>{{calc((model.price + model.tax) * model.quantity)}}</p>
 
 <!-- (price + tax) * quantity -->
 ```
@@ -216,10 +216,10 @@ doc.Params["model"] = new
 {% raw %}
 ```html
 <!-- Total with tax -->
-<p>Subtotal: {{calc(model.price, '*', model.quantity)}}</p>
+<p>Subtotal: {{model.price * model.quantity}}</p>
 <!-- Result: 300 -->
 
-<p>Total: {{calc(model.price, '*', model.quantity, '+', model.tax)}}</p>
+<p>Total: {{model.price * model.quantity + model.tax}}</p>
 <!-- Result: 315 -->
 ```
 {% endraw %}
@@ -404,7 +404,7 @@ Use in conditional functions:
             <td>{{this.description}}</td>
             <td>{{this.quantity}}</td>
             <td>{{format(this.price, 'C')}}</td>
-            <td>{{format(calc(this.quantity, '*', this.price), 'C')}}</td>
+            <td>{{format(this.quantity *  this.price, 'C')}}</td>
         </tr>
         {{/each}}
     </tbody>
@@ -442,10 +442,10 @@ Use in conditional functions:
 <div class="pricing">
     <p>Original Price: {{format(model.originalPrice, 'C')}}</p>
     <p>Discount ({{model.discountPercent}}%):
-       {{format(calc(model.originalPrice, '*', model.discountPercent, '/', 100), 'C')}}</p>
+       {{format(model.originalPrice *  model.discountPercent /  100, 'C')}}</p>
     <p style="font-weight: bold; font-size: 14pt;">
-        Final Price: {{format(calc(model.originalPrice, '-',
-                                   calc(model.originalPrice, '*', model.discountPercent, '/', 100)), 'C')}}
+        Final Price: {{format(calc(model.originalPrice - 
+                                   calc(model.originalPrice *  model.discountPercent /  100)), 'C')}}
     </p>
 </div>
 ```
@@ -558,7 +558,7 @@ doc.SaveAsPDF("report.pdf");
                 <td>{{this.region}}</td>
                 <td>{{format(this.revenue, 'C0')}}</td>
                 <td>{{format(this.target, 'C0')}}</td>
-                <td>{{format(calc(this.revenue, '/', this.target), 'P0')}}</td>
+                <td>{{format(this.revenue /  this.target, 'P0')}}</td>
                 <td class="{{if(this.revenue >= this.target, 'met-target', 'missed-target')}}">
                     {{if(this.revenue >= this.target, '✓ Met', '✗ Missed')}}
                 </td>
@@ -570,7 +570,7 @@ doc.SaveAsPDF("report.pdf");
                 <td>TOTAL</td>
                 <td>{{format(model.totalRevenue, 'C0')}}</td>
                 <td>{{format(model.totalTarget, 'C0')}}</td>
-                <td>{{format(calc(model.totalRevenue, '/', model.totalTarget), 'P0')}}</td>
+                <td>{{format(model.totalRevenue /  model.totalTarget, 'P0')}}</td>
                 <td class="{{if(model.totalRevenue >= model.totalTarget, 'met-target', 'missed-target')}}">
                     {{if(model.totalRevenue >= model.totalTarget, '✓ Above Target', '✗ Below Target')}}
                 </td>
@@ -582,8 +582,8 @@ doc.SaveAsPDF("report.pdf");
         <strong>Summary:</strong>
         Total revenue of {{format(model.totalRevenue, 'C0')}} is
         {{if(model.totalRevenue >= model.totalTarget,
-             concat(format(calc(calc(model.totalRevenue, '-', model.totalTarget), '/', model.totalTarget), 'P0'), ' above target'),
-             concat(format(calc(calc(model.totalTarget, '-', model.totalRevenue), '/', model.totalTarget), 'P0'), ' below target'))}}.
+             concat(format(calc(calc(model.totalRevenue -  model.totalTarget) /  model.totalTarget), 'P0'), ' above target'),
+             concat(format(calc(calc(model.totalTarget -  model.totalRevenue) /  model.totalTarget), 'P0'), ' below target'))}}.
     </div>
 </body>
 </html>
@@ -642,15 +642,15 @@ Create a template that displays the same date in:
 
 {% raw %}
 ```html
-{{calc(model.price + model.tax)}}  <!-- Error: operators as strings -->
+{{'model.price + model.tax'}}  <!-- Error: string instead of expression -->
 ```
 {% endraw %}
 
-✅ **Solution:** Operators must be quoted strings
+✅ **Solution:** Use direct expression with operators
 
 {% raw %}
 ```html
-{{calc(model.price, '+', model.tax)}}
+{{model.price + model.tax}}
 ```
 {% endraw %}
 
@@ -658,15 +658,15 @@ Create a template that displays the same date in:
 
 {% raw %}
 ```html
-{{calc((model.a + model.b), '*', model.c)}}  <!-- Error -->
+{{calc('(model.a + model.b) * model.c')}}  <!-- Error - string instead of expression -->
 ```
 {% endraw %}
 
-✅ **Solution:** Parentheses must be separate arguments
+✅ **Solution:** Use standard math expression with parentheses
 
 {% raw %}
 ```html
-{{calc('(', model.a, '+', model.b, ')', '*', model.c)}}
+{{calc((model.a + model.b) * model.c)}}  <!-- Correct -->
 ```
 {% endraw %}
 
