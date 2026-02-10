@@ -293,7 +293,8 @@
         }); //each
 
         var currTheme = $.cookie("theme");
-        if(currTheme && currTheme != "dark"){
+        var existing = jtd.getTheme();
+        if(currTheme && currTheme != existing){
             jtd.setTheme(currTheme);
             $("body").addClass(currTheme);
         }
@@ -301,14 +302,14 @@
         $(".js-toggle-dark-mode").on("click", function() {
           var currTheme = $.cookie("theme");
           $("body").removeClass(currTheme);
-            if (currTheme === 'dark') {
+            if (!currTheme || currTheme === 'default') {
                 jtd.setTheme('light');
                 $.cookie("theme", "light", { expires: 365, path: '/' });
                 $("body").addClass("light");
             } else {
-                jtd.setTheme('dark');
-                $.cookie("theme", "dark", { expires: 365, path: '/' }); 
-                $("body").addClass("dark");
+                jtd.setTheme('default');
+                $.cookie("theme", "default", { expires: 365, path: '/' }); 
+                $("body").addClass("default");
             }
             return false;
         });
@@ -317,17 +318,6 @@
 
     
   </script>
-  <script>
-    // const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-    // const darkflag = document.querySelector('.js-dark-mode-flag');
-    // jtd.addEvent(toggleDarkMode, 'click', function() {
-    //     if (jtd.getTheme() === 'dark') {
-    //         jtd.setTheme('light');
-    //     } else {
-    //         jtd.setTheme('dark');
-    //     }
-    // });
-</script>
 
 </body>
 </html>

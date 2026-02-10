@@ -2,11 +2,17 @@
 <script src="/assets/jquery.cookie.js" crossorigin="anonymous"></script>
 <script>
         var currTheme = $.cookie("theme");
-        if(currTheme != "dark"){
-            jtd.setTheme(currTheme);
-            $("body").addClass(currTheme);
+        if(currTheme){
+
+            var existing = jtd.getTheme();
+
+            if(currTheme != existing && currTheme != "default"){
+
+                jtd.setTheme(currTheme);
+                $("body").addClass(currTheme);
+            }
+            $.cookie("theme", currTheme, { expires: 365, path: '/' });
         }
-        $.cookie("theme", currTheme, { expires: 365, path: '/' });
 
       </script>
 <script src="https://www.paperworkday.net/paper.generate.js" crossorigin="anonymous"  ></script>
