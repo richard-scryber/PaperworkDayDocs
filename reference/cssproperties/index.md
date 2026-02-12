@@ -74,8 +74,8 @@ The following properties are supported to alter the basic color of elements.
 
 | Property  | Description |
 |---|---|
-| <a href='properties/color.html' >color</a>   |  Defines the fill color of any character content, and any decoration applied. |
-| <a href='properties/opacity.html' >opacity</a>   | Defines the opacity of the element itself. |
+| <a href='/reference/cssproperties/properties/css_prop_color.html' >color</a>   |  Defines the fill color of any character content, and any decoration applied. |
+| <a href='/reference/cssproperties/properties/css_prop_opacity.html' >opacity</a>   | Defines the opacity of the element itself. |
 
 ---
 
@@ -87,14 +87,14 @@ The following properties are supported to alter the background appearance of 'bo
 
 | Property  | Description |
 |---|---|
-| <a href='properties/background.html' >background</a>   | A shorthand pproperty for setting the background properties of an element. |
-| <a href='properties/background-color.html' >background-color</a>   | Specifies the colour that will fill the entire background. |
-| <a href='properties/background-image.html' >background-image</a>   | Specifies an image, or gradient, that will fill the entire background. |
-| <a href='properties/background-repeat.html' >background-repeat</a>   | Specifies how that image, if it is smaller than the element size will repeat.  |
-| <a href='properties/background-size.html' >background-size</a>   | Specifies the horizontal and vertical size of the image to repeat |
-| <a href='properties/background-position.html' >background-position</a>   | Specifies both the horizontal and vertical starting postion of the image (including the repeat). |
-| <a href='properties/background-position-x.html' >background-position-x</a>   | Specifies just the horizontal starting postion of the image (including the repeat). |
-| <a href='properties/background-position-y.html' >background-psition-y</a>   | Specifies Just the vertical starting postion of the image (including the repeat). |
+| <a href='/reference/cssproperties/properties/css_prop_background.html' >background</a>   | A shorthand pproperty for setting the background properties of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_background-color.html' >background-color</a>   | Specifies the colour that will fill the entire background. |
+| <a href='/reference/cssproperties/properties/css_prop_background-image.html' >background-image</a>   | Specifies an image, or gradient, that will fill the entire background. |
+| <a href='/reference/cssproperties/properties/css_prop_background-repeat.html' >background-repeat</a>   | Specifies how that image, if it is smaller than the element size will repeat.  |
+| <a href='/reference/cssproperties/properties/css_prop_background-size.html' >background-size</a>   | Specifies the horizontal and vertical size of the image to repeat |
+| <a href='/reference/cssproperties/properties/css_prop_background-position.html' >background-position</a>   | Specifies both the horizontal and vertical starting postion of the image (including the repeat). |
+| <a href='/reference/cssproperties/properties/css_prop_background-position-x.html' >background-position-x</a>   | Specifies just the horizontal starting postion of the image (including the repeat). |
+| <a href='/reference/cssproperties/properties/css_prop_background-position-y.html' >background-psition-y</a>   | Specifies Just the vertical starting postion of the image (including the repeat). |
 
 ---
 
@@ -104,27 +104,27 @@ The following properties alter the border appearance on 'boxed'* elements. **NOT
 
 | Property  | Description |
 |---|---|
-| <a href='properties/border.html' >border</a>   | A shorthand property of setting the style, width and color of all the borders |
-| <a href='properties/border-width.html' >border-width</a>   | Sets the width of all the borders around an element. |
-| <a href='properties/borde-color.html' >border-color</a>   | Sets the color of all the borders around an element.  |
-| <a href='properties/border-style.html' >border-style</a>   | Sets the style (solid, dash, none) of all the borders around an element. |
-| <a href='properties/border-radius.html' >border-radius</a>   | Sets the corner radius, of a border when switching between sides. Only one value is (currently) supported. |
-| <a href='properties/border-top.html' >border-top</a>   | A shorthand property of setting the style, width and color of the top borders.  |
-| <a href='properties/border-top-color.html' >border-top-color</a>   | Sets the color of the top border of an element. |
-| <a href='properties/border-top-width.html' >border-top-width</a>   | Sets the width of the top border of an element. |
-| <a href='properties/border-top-style.html' >border-top-style</a>   | Sets the style of the top border of an element. |
-| <a href='properties/border-left.html' >border-left</a>   | A shorthand property of setting the style, width and color of the left borders. |
-| <a href='properties/border-left-color.html' >border-left-color</a>   | Sets the color of the left border of an element. |
-| <a href='properties/border-left-width.html' >border-left-width</a>   | Sets the width of the left border of an element. |
-| <a href='properties/border-left-style.html' >border-left-style</a>   | Sets the style of the left border of an element. |
-| <a href='properties/border-bottom.html' >border-bottom</a>   | A shorthand property of setting the style, width and color of the bottom borders. |
-| <a href='properties/border-bottom-color.html' >border-bottom-color</a>   | Sets the color of the bottom border of an element. |
-| <a href='properties/border-bottom-width.html' >border-bottom-width</a>   | Sets the width of the bottom border of an element. |
-| <a href='properties/border-bottom-style.html' >border-bottom-style</a>   | Sets the style of the bottom border of an element. |
-| <a href='properties/border-right.html' >border-top</a>   | A shorthand property of setting the style, width and color of the right borders. |
-| <a href='properties/border-right-color.html' >border-right-color</a>   | Sets the color of the right border of an element. |
-| <a href='properties/border-right-width.html' >border-right-width</a>   | Sets the width of the right border of an element. |
-| <a href='properties/border-right-style.html' >border-right-style</a>   | Sets the style of the right border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border.html' >border</a>   | A shorthand property of setting the style, width and color of all the borders |
+| <a href='/reference/cssproperties/properties/css_prop_border-width.html' >border-width</a>   | Sets the width of all the borders around an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-color.html' >border-color</a>   | Sets the color of all the borders around an element.  |
+| <a href='/reference/cssproperties/properties/css_prop_border-style.html' >border-style</a>   | Sets the style (solid, dash, none) of all the borders around an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-radius.html' >border-radius</a>   | Sets the corner radius, of a border when switching between sides. Only one value is (currently) supported. |
+| <a href='/reference/cssproperties/properties/css_prop_border-top.html' >border-top</a>   | A shorthand property of setting the style, width and color of the top borders.  |
+| <a href='/reference/cssproperties/properties/css_prop_border-top-color.html' >border-top-color</a>   | Sets the color of the top border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-top-width.html' >border-top-width</a>   | Sets the width of the top border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-top-style.html' >border-top-style</a>   | Sets the style of the top border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-left.html' >border-left</a>   | A shorthand property of setting the style, width and color of the left borders. |
+| <a href='/reference/cssproperties/properties/css_prop_border-left-color.html' >border-left-color</a>   | Sets the color of the left border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-left-width.html' >border-left-width</a>   | Sets the width of the left border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-left-style.html' >border-left-style</a>   | Sets the style of the left border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-bottom.html' >border-bottom</a>   | A shorthand property of setting the style, width and color of the bottom borders. |
+| <a href='/reference/cssproperties/properties/css_prop_border-bottom-color.html' >border-bottom-color</a>   | Sets the color of the bottom border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-bottom-width.html' >border-bottom-width</a>   | Sets the width of the bottom border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-bottom-style.html' >border-bottom-style</a>   | Sets the style of the bottom border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-right.html' >border-top</a>   | A shorthand property of setting the style, width and color of the right borders. |
+| <a href='/reference/cssproperties/properties/css_prop_border-right-color.html' >border-right-color</a>   | Sets the color of the right border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-right-width.html' >border-right-width</a>   | Sets the width of the right border of an element. |
+| <a href='/reference/cssproperties/properties/css_prop_border-right-style.html' >border-right-style</a>   | Sets the style of the right border of an element. |
 
 ---
 
@@ -134,21 +134,21 @@ The following properties are supported to alter the position and size appearance
 
 | Property  | Description |
 |---|---|
-| <a href='properties/position.html' >position</a> | Defines the way the element is positioned within the current page at the time of layout.  |
-| <a href='properties/display.html' >display</a> | Defines how the elements contents should be laid-out - in a block, inline with the flow, or just ignored. |
-| <a href='properties/float.html' >float</a> | Defines the positioning of the element on the current line. And how content will move around it. |
-| <a href='properties/top.html' >top</a> | Specifies the top postion for an element that can be explictly moved. |
-| <a href='properties/left.html' >left</a> | Specifies the left postion for an element that can be explictly moved. |
-| <a href='properties/bottom.html' >bottom</a> | Specifies the bottom postion for an element that can be explictly moved, as long as top is not set. |
-| <a href='properties/right.html' >right</a> | Specifies the top postion for an element that can be explictly moved, as long as left is not set. |
-| <a href='properties/width.html' >width</a>  | Specifies the width taken up for the 'boxed' element. |
-| <a href='properties/height.html' >height</a> |  Specifies the height taken up for the 'boxed' element.  |
-| <a href='properties/min-width.html' >min-width</a>   | Specifies the minimim width for the 'boxed' element.   |
-| <a href='properties/min-height.html' >min-height</a>   | Specifies the minimim height for the 'boxed' element. |
-| <a href='properties/max-width.html' >max-width</a>   | Specifies the maximum width the 'boxed' element is allowed consume on the page |
-| <a href='properties/max-height.html' >max-height</a>   | Specifies the maximum width the 'boxed' element is allowed consume on the page |
-| <a href='properties/transform.html' >transform</a>   | Specifies (a series of) transform operations that should be performed on the final output of the element and its children when finally output |
-| <a href='properties/overflow.html' >overflow</a>   | Stipulates the action (or non-action) that will be taken if the contents of the element exceed the available size of this container element.  |
+| <a href='/reference/cssproperties/properties/css_prop_position.html' >position</a> | Defines the way the element is positioned within the current page at the time of layout.  |
+| <a href='/reference/cssproperties/properties/css_prop_display.html' >display</a> | Defines how the elements contents should be laid-out - in a block, inline with the flow, or just ignored. |
+| <a href='/reference/cssproperties/properties/css_prop_float.html' >float</a> | Defines the positioning of the element on the current line. And how content will move around it. |
+| <a href='/reference/cssproperties/properties/css_prop_top.html' >top</a> | Specifies the top postion for an element that can be explictly moved. |
+| <a href='/reference/cssproperties/properties/css_prop_left.html' >left</a> | Specifies the left postion for an element that can be explictly moved. |
+| <a href='/reference/cssproperties/properties/css_prop_bottom.html' >bottom</a> | Specifies the bottom postion for an element that can be explictly moved, as long as top is not set. |
+| <a href='/reference/cssproperties/properties/css_prop_right.html' >right</a> | Specifies the top postion for an element that can be explictly moved, as long as left is not set. |
+| <a href='/reference/cssproperties/properties/css_prop_width.html' >width</a>  | Specifies the width taken up for the 'boxed' element. |
+| <a href='/reference/cssproperties/properties/css_prop_height.html' >height</a> |  Specifies the height taken up for the 'boxed' element.  |
+| <a href='/reference/cssproperties/properties/css_prop_min-width.html' >min-width</a>   | Specifies the minimim width for the 'boxed' element.   |
+| <a href='/reference/cssproperties/properties/css_prop_min-height.html' >min-height</a>   | Specifies the minimim height for the 'boxed' element. |
+| <a href='/reference/cssproperties/properties/css_prop_max-width.html' >max-width</a>   | Specifies the maximum width the 'boxed' element is allowed consume on the page |
+| <a href='/reference/cssproperties/properties/css_prop_max-height.html' >max-height</a>   | Specifies the maximum width the 'boxed' element is allowed consume on the page |
+| <a href='/reference/cssproperties/properties/css_prop_transform.html' >transform</a>   | Specifies (a series of) transform operations that should be performed on the final output of the element and its children when finally output |
+| <a href='/reference/cssproperties/properties/css_prop_overflow.html' >overflow</a>   | Stipulates the action (or non-action) that will be taken if the contents of the element exceed the available size of this container element.  |
 
 ---
 
@@ -158,22 +158,22 @@ The following properties manage the spacing in and around elements. The border r
 
 | Property  | Description |
 |---|---|
-| <a href='properties/padding.html' >padding</a>   | A shorthand property of setting the space between the border rectangle and the rectangle where the content is displayed for a *boxed* element. |
-| <a href='properties/padding-top.html' >padding-top</a>   | Sets the space between the top of the border rectangle and the start of any content for a *boxed* element. |
-| <a href='properties/padding-left.html' >padding-left</a>   | Sets the space between the left of the border rectangle and the start of any content for a *boxed* element. |
-| <a href='properties/padding-bottom.html' >padding-bottom</a>   | Sets the space between the bottom of the border rectangle and the start of any content for a *boxed* element. |
-| <a href='properties/padding-right.html' >padding-right</a>   | Sets the space between the right of the border rectangle and the start of any content for a *boxed* element. |
-| <a href='properties/padding-inline.html' >padding-inline</a>   |  Sets the start and end padding of an *inline* element to either one value or two values. |
-| <a href='properties/padding-inline-start.html' >padding-inline-start</a>   | Sets the start padding of an *inline* element to a specific value. |
-| <a href='properties/padding-inline-end.html' >padding-inline-end</a>   | Sets the end padding of an *inline* element to a specific value. |
-| <a href='properties/margin.html' >margin</a>   | A shorthand property of setting the space between other sibling content and the border rectangle of any inner the content for a *boxed* element. |
-| <a href='properties/margin-top.html' >margin-top</a>   |  Sets the space between other content and the top of the border rectangle of any inner content for a *boxed* element. |
-| <a href='properties/margin-left.html' >margin-left</a>   | Sets the space between other content and the left of the border rectangle of any inner content for a *boxed* element. |
-| <a href='properties/margin-bottom.html' >margin-bottom</a>   | Sets the space between the bottom of the border rectangle and other content for a *boxed* element. |
-| <a href='properties/margin-right.html' >margin-right</a>   | Sets the space between the right of the border rectangle and other content for a *boxed* element. |
-| <a href='properties/margin-inline.html' >margin-inline</a>   | Sets the start and end margins of an *inline* element to either one value or two values. |
-| <a href='properties/margin-inline-start.html' >margin-inline-start</a>   | Sets the start margins of an *inline* element to a specific value. |
-| <a href='properties/margin-inline-end.html' >margin-inline-end</a>   | Sets the start margins of an *inline* element to a specific value. |
+| <a href='/reference/cssproperties/properties/css_prop_padding.html' >padding</a>   | A shorthand property of setting the space between the border rectangle and the rectangle where the content is displayed for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_padding-top.html' >padding-top</a>   | Sets the space between the top of the border rectangle and the start of any content for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_padding-left.html' >padding-left</a>   | Sets the space between the left of the border rectangle and the start of any content for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_padding-bottom.html' >padding-bottom</a>   | Sets the space between the bottom of the border rectangle and the start of any content for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_padding-right.html' >padding-right</a>   | Sets the space between the right of the border rectangle and the start of any content for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_padding-inline.html' >padding-inline</a>   |  Sets the start and end padding of an *inline* element to either one value or two values. |
+| <a href='/reference/cssproperties/properties/css_prop_padding-inline-start.html' >padding-inline-start</a>   | Sets the start padding of an *inline* element to a specific value. |
+| <a href='/reference/cssproperties/properties/css_prop_padding-inline-end.html' >padding-inline-end</a>   | Sets the end padding of an *inline* element to a specific value. |
+| <a href='/reference/cssproperties/properties/css_prop_margin.html' >margin</a>   | A shorthand property of setting the space between other sibling content and the border rectangle of any inner the content for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_margin-top.html' >margin-top</a>   |  Sets the space between other content and the top of the border rectangle of any inner content for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_margin-left.html' >margin-left</a>   | Sets the space between other content and the left of the border rectangle of any inner content for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_margin-bottom.html' >margin-bottom</a>   | Sets the space between the bottom of the border rectangle and other content for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_margin-right.html' >margin-right</a>   | Sets the space between the right of the border rectangle and other content for a *boxed* element. |
+| <a href='/reference/cssproperties/properties/css_prop_margin-inline.html' >margin-inline</a>   | Sets the start and end margins of an *inline* element to either one value or two values. |
+| <a href='/reference/cssproperties/properties/css_prop_margin-inline-start.html' >margin-inline-start</a>   | Sets the start margins of an *inline* element to a specific value. |
+| <a href='/reference/cssproperties/properties/css_prop_margin-inline-end.html' >margin-inline-end</a>   | Sets the start margins of an *inline* element to a specific value. |
 
 ---
 
