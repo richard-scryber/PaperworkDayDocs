@@ -76,8 +76,10 @@ The `text-decoration-line` property supports data binding for dynamic decoration
 
 ### Example 1: Dynamic Link Styling
 
-```html
+
+
 {% raw %}
+```html
 <a href="{{model.link.url}}"
    style="color: {{model.link.color}}; text-decoration-line: {{model.link.decorationLine}}">
     {{model.link.text}}
@@ -93,13 +95,17 @@ The `text-decoration-line` property supports data binding for dynamic decoration
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Product Status Indication
 
-```html
+
+
 {% raw %}
+```html
 <div>
     <span style="text-decoration-line: {{model.product.decorationLine}}; color: {{model.product.textColor}}">
         {{model.product.name}}
@@ -125,13 +131,17 @@ The `text-decoration-line` property supports data binding for dynamic decoration
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Emphasis Style from Settings
 
-```html
+
+
 {% raw %}
+```html
 <h2 style="text-decoration-line: {{model.heading.decorationLine}}; font-size: 18pt; color: #1e40af">
     {{model.heading.text}}
 </h2>
@@ -144,8 +154,10 @@ The `text-decoration-line` property supports data binding for dynamic decoration
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

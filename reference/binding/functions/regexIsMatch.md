@@ -58,15 +58,19 @@ regexIsMatch(str, pattern)
 
 ### Email Validation
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 {{#if regexIsMatch(model.email, '^[^@]+@[^@]+\\.[^@]+$')}}
   <p class="valid">Valid email: {{model.email}}</p>
 {{else}}
   <p class="invalid">Invalid email format</p>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -82,15 +86,19 @@ doc.Params["model"] = new {
 
 ### Phone Number Format
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 {{#if regexIsMatch(model.phone, '^\\d{3}-\\d{3}-\\d{4}$')}}
   <p>US Format: {{model.phone}}</p>
 {{else}}
   <p>Invalid phone format</p>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -106,8 +114,10 @@ doc.Params["model"] = new {
 
 ### Postal Code Validation
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 {{#each model.addresses}}
   <div class="address">
     <p>{{this.city}}, {{this.state}}</p>
@@ -118,11 +128,16 @@ doc.Params["model"] = new {
     {{/if}}
   </div>
 {{/each}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Contains Digits
 
+
+
+{% raw %}
 ```handlebars
 {{#if regexIsMatch(model.text, '\\d')}}
   <p>Contains numbers</p>
@@ -130,18 +145,25 @@ doc.Params["model"] = new {
   <p>No numbers found</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### Alphanumeric Check
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 {{#if regexIsMatch(model.code, '^[A-Za-z0-9]+$')}}
   <p>Valid code: {{model.code}}</p>
 {{else}}
   <p>Code must be alphanumeric</p>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

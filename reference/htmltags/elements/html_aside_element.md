@@ -448,6 +448,9 @@ aside.Style.Margins.Left = 10;
 
 ### Data-Bound Tips
 
+
+
+{% raw %}
 ```html
 <!-- With model.tips = [
     { icon: "lightbulb", title: "Performance", text: "Cache templates for better performance" },
@@ -455,7 +458,7 @@ aside.Style.Margins.Left = 10;
     { icon: "chart-simple", title: "Reporting", text: "Use data binding for dynamic reports" }
 ] -->
 
-{% raw %}<template data-bind="{{model.tips}}">
+<template data-bind="{{model.tips}}">
     <aside style="background-color: #f0f8ff; border-left: 4pt solid #4a90e2; padding: 15pt; margin: 10pt 0;">
         <div style="display: flex; align-items: flex-start;">
             <i class='{{concat("fa-solid fa-",.icon)}}' style="font-size: 24pt; margin-right: 10pt;" ></i>
@@ -465,8 +468,12 @@ aside.Style.Margins.Left = 10;
             </div>
         </div>
     </aside>
-</template>{% endraw %}
+</template>
 ```
+{% endraw %}
+
+
+
 
 ### Feature Highlight
 
@@ -491,11 +498,11 @@ aside.Style.Margins.Left = 10;
     <div style="color: #75715e; font-size: 9pt; margin-bottom: 8pt; font-family: Arial, sans-serif;">
         Example Code:
     </div>
-    {% raw %}<pre style="margin: 0; font-size: 10pt; white-space: pre-wrap;">
+    <pre style="margin: 0; font-size: 10pt; white-space: pre-wrap;">
 var doc = Document.Parse("template.html");
 doc.Params["title"] = "My Document";
 doc.SaveAsPDF("output.pdf");
-    </pre>{% endraw %}
+    </pre>
 </aside>
 ```
 

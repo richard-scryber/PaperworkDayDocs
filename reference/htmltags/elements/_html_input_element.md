@@ -42,8 +42,10 @@ The `<input>` element creates form fields that:
 - Enable creation of professional form templates
 - Support multi-line text areas with appropriate options
 
-```html
+
+
 {% raw %}
+```html
 <!-- Basic text input with value -->
 <input type="text" value="John Doe" />
 
@@ -52,8 +54,10 @@ The `<input>` element creates form fields that:
 
 <!-- Checkbox (checked state shown visually) -->
 <input type="checkbox" value="checked" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -170,16 +174,20 @@ Renders as multi-line text area with text wrapping enabled.
 
 Inputs support dynamic value binding:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { name: "John Doe", email: "john@example.com" } -->
 <input type="text" value="{{model.name}}" />
 <input type="text" value="{{model.email}}" />
 
 <!-- Conditional checkbox -->
 <input type="checkbox" value="{{model.isActive ? 'checked' : ''}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Value Handling
 
@@ -356,8 +364,10 @@ In the Scryber codebase:
 
 ### Data-Bound Inputs
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     firstName: "John",
     lastName: "Doe",
@@ -390,8 +400,10 @@ In the Scryber codebase:
     <input type="checkbox" value="{{model.agreeTerms ? 'checked' : ''}}" />
     <label style="margin-left: 5pt;">I agree to the terms and conditions</label>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complete Registration Form
 
@@ -878,8 +890,10 @@ In the Scryber codebase:
 
 ### Dynamic Form with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     user: {
         firstName: "Alice",
@@ -947,13 +961,17 @@ In the Scryber codebase:
         <label style="margin-left: 8pt;">Receive marketing emails</label>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Form Template with Repeating Fields
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     contacts: [
         {name: "John Doe", email: "john@example.com", phone: "(555) 111-1111"},
@@ -991,8 +1009,10 @@ In the Scryber codebase:
         </div>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Professional Medical Form
 

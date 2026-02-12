@@ -283,21 +283,27 @@ Both attributes can be set statically or dynamically:
 
 ### Dynamic Values with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { tablePadding: 12, tableSpacing: 4 } -->
 <table cellpadding="{{model.tablePadding}}" cellspacing="{{model.tableSpacing}}">
     <tr>
         <td>Cell content</td>
     </tr>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Values
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { compact: true } -->
 <table cellpadding="{{model.compact ? '5' : '12'}}"
        cellspacing="{{model.compact ? '0' : '5'}}">
@@ -305,8 +311,10 @@ Both attributes can be set statically or dynamically:
         <td>Cell content</td>
     </tr>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -895,8 +903,10 @@ You can combine these attributes with CSS for fine control:
 
 ### Data-Bound Table with Dynamic Spacing
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     tablePadding: 10,
     tableSpacing: 0,
@@ -933,8 +943,10 @@ You can combine these attributes with CSS for fine control:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

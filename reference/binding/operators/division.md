@@ -31,10 +31,11 @@ Divide one numeric value by another.
 
 ## Syntax
 
+
 ```
-{% raw %}
 {{operand1 / operand2}}
 ```
+
 
 ---
 
@@ -69,9 +70,15 @@ The quotient of the left operand divided by the right operand.
 
 ### Average Calculation
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 <p>Average: {{format(model.total / model.count, '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -88,9 +95,16 @@ doc.Params["model"] = new {
 
 ### Unit Price
 
-```html {% raw %}
-<p>Price per unit: ${{format(model.totalPrice / model.quantity, '0.00')}}</p> {% endraw %}
+
+
+{% raw %}
+```html 
+<p>Price per unit: ${{format(model.totalPrice / model.quantity, '0.00')}}</p> 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -107,9 +121,16 @@ doc.Params["model"] = new {
 
 ### Percentage Calculation
 
-```html {% raw %}
-<p>Completion: {{format((model.completed / model.total) * 100, '0.0')}}%</p> {% endraw %}
+
+
+{% raw %}
+```html 
+<p>Completion: {{format((model.completed / model.total) * 100, '0.0')}}%</p> 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -126,13 +147,23 @@ doc.Params["model"] = new {
 
 ### Rate Calculation
 
-```html {% raw %}
-<p>Speed: {{format(model.distance / model.time, '0.0')}} mph</p> {% endraw %}
+
+
+{% raw %}
+```html 
+<p>Speed: {{format(model.distance / model.time, '0.0')}} mph</p> 
 ```
+{% endraw %}
+
+
+
 
 ### Ratio Comparison
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 <p>Efficiency Ratio: {{format(model.output / model.input, '0.00')}}</p>
 
 {{#if model.output / model.input > 1.5}}
@@ -141,8 +172,12 @@ doc.Params["model"] = new {
   <span class="good">Efficient</span>
 {{else}}
   <span class="poor">Needs improvement</span>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 ---
 

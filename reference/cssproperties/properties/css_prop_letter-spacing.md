@@ -94,8 +94,10 @@ The `letter-spacing` property can be dynamically controlled through data binding
 
 ### Example 1: User Accessibility Preferences
 
-```html
+
+
 {% raw %}
+```html
 <p style="letter-spacing: {{model.accessibility.letterSpacing}}; font-size: 12pt">
     {{model.content}}
 </p>
@@ -108,13 +110,17 @@ The `letter-spacing` property can be dynamically controlled through data binding
     "content": "This text spacing improves readability for some users."
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Content Type-Based Spacing
 
-```html
+
+
 {% raw %}
+```html
 <h1 style="letter-spacing: {{model.heading.spacing}}; font-size: {{model.heading.size}}; text-transform: uppercase">
     {{model.heading.text}}
 </h1>
@@ -138,13 +144,17 @@ The `letter-spacing` property can be dynamically controlled through data binding
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Dynamic Emphasis Levels
 
-```html
+
+
 {% raw %}
+```html
 <div style="letter-spacing: {{model.emphasis.spacing}}; font-size: 14pt; text-transform: uppercase">
     {{model.emphasis.text}}
 </div>
@@ -157,8 +167,10 @@ The `letter-spacing` property can be dynamically controlled through data binding
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

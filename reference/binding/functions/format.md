@@ -83,10 +83,16 @@ The formatted string representation of the value.
 
 ### Currency Formatting
 
+
+
+{% raw %}
 ```handlebars
 <p>Price: {{format(model.price, 'C2')}}</p>
 <!-- Output: Price: $19.99 -->
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -95,17 +101,29 @@ doc.Params["model"] = new { price = 19.99m };
 
 ### Number Formatting
 
+
+
+{% raw %}
 ```handlebars
 <p>Population: {{format(model.population, 'N0')}}</p>
 <!-- Output: Population: 1,234,567 -->
 ```
+{% endraw %}
+
+
 
 ### Percentage Formatting
 
+
+
+{% raw %}
 ```handlebars
 <p>Growth: {{format(model.growth, 'P1')}}</p>
 <!-- Output: Growth: 15.6% -->
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -114,6 +132,9 @@ doc.Params["model"] = new { growth = 0.156 };
 
 ### Date Formatting
 
+
+
+{% raw %}
 ```handlebars
 <p>Date: {{format(model.orderDate, 'yyyy-MM-dd')}}</p>
 <!-- Output: Date: 2024-03-15 -->
@@ -121,14 +142,23 @@ doc.Params["model"] = new { growth = 0.156 };
 <p>Published: {{format(model.publishDate, 'MMMM dd, yyyy')}}</p>
 <!-- Output: Published: March 15, 2024 -->
 ```
+{% endraw %}
+
+
 
 ### With Calculations
 
+
+
+{% raw %}
 ```handlebars
 <p>Total: {{format(model.price * model.quantity, 'C2')}}</p>
 
 <p>Complete: {{format(model.completed / model.total, 'P0')}}</p>
 ```
+{% endraw %}
+
+
 
 ---
 

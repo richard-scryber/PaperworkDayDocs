@@ -57,9 +57,15 @@ The arithmetic mean of all values. Returns null for empty collections.
 
 ### Simple Average
 
+
+
+{% raw %}
 ```handlebars
 <p>Average score: {{round(average(model.scores), 1)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,6 +81,9 @@ doc.Params["model"] = new {
 
 ### Grade Report
 
+
+
+{% raw %}
 ```handlebars
 <h3>Student Performance</h3>
 {{#each model.students}}
@@ -84,6 +93,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -106,12 +118,18 @@ doc.Params["model"] = new {
 
 ### Performance Metrics
 
+
+
+{% raw %}
 ```handlebars
 <h3>API Performance Summary</h3>
 <p>Average response time: {{round(average(collect(model.requests, 'responseTime')), 0)}}ms</p>
 <p>Fastest: {{min(collect(model.requests, 'responseTime'))}}ms</p>
 <p>Slowest: {{max(collect(model.requests, 'responseTime'))}}ms</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -135,12 +153,18 @@ doc.Params["model"] = new {
 
 ### Price Analysis
 
+
+
+{% raw %}
 ```handlebars
 <h3>Product Pricing</h3>
 <p>Average price: ${{round(average(collect(model.products, 'price')), 2)}}</p>
 <p>Total inventory value: ${{sum(collect(model.products, 'price'))}}</p>
 <p>Price range: ${{min(collect(model.products, 'price'))}} - ${{max(collect(model.products, 'price'))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

@@ -100,8 +100,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 
 ### Data Binding Examples
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic stretch from model (no effect until implemented) -->
 <div style="font-stretch: {{textStyle.stretch}}">
     Text with bound font-stretch value
@@ -129,8 +131,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
         Prepared for future font-stretch implementation
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Note:** Font-stretch is currently not applied during PDF rendering. These data binding examples demonstrate the syntax for future compatibility when the property is implemented. The binding expressions will be processed but have no visual effect.
 

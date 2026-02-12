@@ -205,15 +205,19 @@ body {
 **Browser:** Interactive JavaScript
 **PDF:** Static output
 
-```html
+
+
 {% raw %}
+```html
 <!-- ❌ Won't work in PDF -->
 <button onclick="alert('Hello')">Click Me</button>
 
 <!-- ✓ Use data binding instead -->
 <p>{{model.message}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 4. Font Handling
 
@@ -542,11 +546,15 @@ public void TestTemplate(string htmlPath)
 
 ✅ **Solution:** Use data binding
 
+
+
 {% raw %}
 ```html
 <p>Date: {{model.currentDate}}</p>
 ```
 {% endraw %}
+
+
 
 ### ❌ Relative URLs Without Base
 

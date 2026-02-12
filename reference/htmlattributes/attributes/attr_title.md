@@ -39,8 +39,10 @@ The `title` attribute provides element metadata that:
 - Supports data binding for dynamic bookmark text
 - Enhances document accessibility and navigation
 
-```html
+
+
 {% raw %}
+```html
 <!-- Create a bookmark entry -->
 <h1 id="chapter1" title="Chapter 1: Introduction">
     Chapter 1: Introduction
@@ -55,8 +57,10 @@ The `title` attribute provides element metadata that:
 <h1 id="{{model.chapterId}}" title="{{model.chapterTitle}}">
     {{model.chapterTitle}}
 </h1>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -85,8 +89,10 @@ These elements automatically create hierarchical bookmark structures based on he
 
 The `title` attribute supports data binding for dynamic bookmark text:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic chapter titles -->
 <h1 id="chapter-{{model.chapterNum}}" title="Chapter {{model.chapterNum}}: {{model.chapterName}}">
     Chapter {{model.chapterNum}}: {{model.chapterName}}
@@ -112,8 +118,10 @@ The `title` attribute supports data binding for dynamic bookmark text:
 <h2 id="summary" title="{{model.isExecutive ? 'Executive Summary' : 'Summary'}}">
     Summary
 </h2>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -423,8 +431,10 @@ For consistent results, always provide explicit `title` attributes on elements y
 
 ### Data-Bound Bookmarks
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { report: { title: "Q4 2025 Report", sections: [...] } } -->
 
 <h1 id="report-title" title="{{model.report.title}}">
@@ -447,8 +457,10 @@ For consistent results, always provide explicit `title` attributes on elements y
         </template>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Report with Abbreviated Bookmarks
 
@@ -659,8 +671,10 @@ For consistent results, always provide explicit `title` attributes on elements y
 
 ### Dynamic Report with Conditional Titles
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { reportType: "quarterly", quarter: "Q4", year: 2025, sections: [...] } -->
 
 <h1 id="report-title"
@@ -681,8 +695,10 @@ For consistent results, always provide explicit `title` attributes on elements y
         </template>
     </section>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Instruction Manual
 

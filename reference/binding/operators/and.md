@@ -31,10 +31,11 @@ Combine two boolean expressions. Returns true only if both operands are true.
 
 ## Syntax
 
+
 ```
-{% raw %}
 {{condition1 && condition2}}
-{% endraw %}```
+```
+
 
 ---
 
@@ -81,7 +82,7 @@ Evaluated before: `||`
 ### Driving Eligibility
 
 ```
-{% raw %}
+
 {{#if model.age >= 18 && model.hasLicense}}
   <div class="eligible">
     <p>✓ Eligible to drive</p>
@@ -96,8 +97,9 @@ Evaluated before: `||`
       <p>Reason: Valid license required</p>
     {{/if}}
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+
 
 **Data:**
 ```csharp
@@ -117,7 +119,7 @@ doc.Params["model"] = new {
 ### Multiple Conditions
 
 ```
-{% raw %}
+
 {{#if model.isActive && model.isPaid &amp;&amp; model.isVerified}}
   <div class="status-valid">
     <h3>Account Status: Active</h3>
@@ -132,21 +134,23 @@ doc.Params["model"] = new {
       {{#if !model.isVerified}}<li>Verification pending</li>{{/if}}
     </ul>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+
 
 ### Range Check
 
 ```
-{% raw %}
+
 {{#if model.age >= 13 &amp;&amp; model.age < 20}}
   <span class="age-group">Teenager</span>
 {{else if model.age >= 20 &amp;&amp; model.age < 65}}
   <span class="age-group">Adult</span>
 {{else}}
   <span class="age-group">Other</span>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+
 
 **Data:**
 ```csharp
@@ -163,7 +167,7 @@ doc.Params["model"] = new {
 ### Stock and Price Validation
 
 ```
-{% raw %}
+
 {{#each model.products}}
   {{#if this.stock > 0 &amp;&amp; this.price <= model.maxBudget}}
     <div class="product-available">
@@ -173,8 +177,9 @@ doc.Params["model"] = new {
       <button>Add to Cart</button>
     </div>
   {{/if}}
-{{/each}} {% endraw %}
+{{/each}} 
 ```
+
 
 **Data:**
 ```csharp

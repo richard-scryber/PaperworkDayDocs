@@ -34,6 +34,9 @@ Provides a fallback branch when conditional expressions are false or when collec
 ## Syntax
 
 **With {{#if}}:**
+
+
+{% raw %}
 ```handlebars
 {{#if condition}}
   <!-- Content when true -->
@@ -41,8 +44,14 @@ Provides a fallback branch when conditional expressions are false or when collec
   <!-- Content when false -->
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **With {{#each}}:**
+
+
+{% raw %}
 ```handlebars
 {{#each collection}}
   <!-- Content for each item -->
@@ -50,8 +59,14 @@ Provides a fallback branch when conditional expressions are false or when collec
   <!-- Content when collection is empty -->
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **With {{#with}}:**
+
+
+{% raw %}
 ```handlebars
 {{#with object}}
   <!-- Content when object exists -->
@@ -59,6 +74,9 @@ Provides a fallback branch when conditional expressions are false or when collec
   <!-- Content when object is null -->
 {{/with}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -72,6 +90,9 @@ No parameters. The `{{else}}` helper is used as a separator within block helpers
 
 ### With If Statement
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.hasStock}}
   <button class="btn-primary">Add to Cart</button>
@@ -79,6 +100,9 @@ No parameters. The `{{else}}` helper is used as a separator within block helpers
   <button class="btn-disabled" disabled>Out of Stock</button>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -94,6 +118,9 @@ doc.Params["model"] = new {
 
 ### With Each Loop (Empty Collection)
 
+
+
+{% raw %}
 ```handlebars
 <ul>
 {{#each model.items}}
@@ -103,6 +130,9 @@ doc.Params["model"] = new {
 {{/each}}
 </ul>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -120,6 +150,9 @@ doc.Params["model"] = new {
 
 ### With Context Switch (Null Object)
 
+
+
+{% raw %}
 ```handlebars
 {{#with model.user}}
   <div class="user-profile">
@@ -132,6 +165,9 @@ doc.Params["model"] = new {
   </div>
 {{/with}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -149,6 +185,9 @@ doc.Params["model"] = new {
 
 ### Multiple Else If with Final Else
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.grade >= 90}}
   <span class="a">A - Excellent</span>
@@ -160,12 +199,18 @@ doc.Params["model"] = new {
   <span class="f">F - Needs Improvement</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ---
 
 ## Underlying Implementation
 
 **In {{#if}} blocks**, `{{else}}` compiles to:
+
+
+{% raw %}
 ```xml
 <choose>
   <when data-test="{{condition}}">
@@ -176,8 +221,14 @@ doc.Params["model"] = new {
   </otherwise>
 </choose>
 ```
+{% endraw %}
+
+
 
 **In {{#each}} blocks**, `{{else}}` creates a conditional wrapper:
+
+
+{% raw %}
 ```xml
 <template data-bind="{{collection}}">
   <!-- Each content -->
@@ -186,6 +237,9 @@ doc.Params["model"] = new {
   <!-- Else content shown when empty -->
 </template>
 ```
+{% endraw %}
+
+
 
 ---
 

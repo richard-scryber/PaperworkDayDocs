@@ -68,8 +68,10 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
 
 ### Example 1: Conditional spread method for pattern styles
 
-```html
+
+
 {% raw %}
+```html
 <body>
     <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -83,13 +85,17 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
         <rect fill="url(#dynamicGrad)" width="400" height="300"/>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Data-driven striped patterns
 
-```html
+
+
 {% raw %}
+```html
 <body>
     <svg width="500" height="250" xmlns="http://www.w3.org/2000/svg">
         <template data-bind="{{#each backgrounds}}">
@@ -106,13 +112,17 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Dynamic radial patterns with reflection
 
-```html
+
+
 {% raw %}
+```html
 <body>
     <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
         <template data-bind="{{radialEffect}}">
@@ -126,8 +136,10 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

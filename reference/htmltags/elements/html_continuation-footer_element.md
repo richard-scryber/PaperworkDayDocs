@@ -138,8 +138,11 @@ The `<continuation-footer>` element can be placed within:
 
 ### Data-Bound Continuation Footer - No Title Footer spage
 
+
+
+{% raw %}
 ```html
-{% raw %}<body>
+<body>
     <template data-bind="{{report.sections}}">
         <div>
             <h2>{{.title}}</h2>
@@ -156,13 +159,20 @@ The `<continuation-footer>` element can be placed within:
 
     <footer>
     </footer>
-</body>{% endraw %}
+</body>
 ```
+{% endraw %}
+
+
+
 
 ### Medical Records with Patient Info
 
+
+
+{% raw %}
 ```html
-{% raw %}<body>
+<body>
     <header>
         <h1>Patient Medical Record</h1>
     </header>
@@ -186,14 +196,21 @@ The `<continuation-footer>` element can be placed within:
             <div>
         </template>
     </main>
-</body>{% endraw %}
+</body>
 ```
+{% endraw %}
+
+
+
 
 
 ### Multi-Column Footer Layout
 
+
+
+{% raw %}
 ```html
-{% raw %}<footer>
+<footer>
     <table style="width: 100%; border-collapse: collapse; border-top: 2pt solid #333;">
         <tr>
             <td style="width: 50%; font-size: 9pt; padding: 5pt;">
@@ -216,8 +233,12 @@ The `<continuation-footer>` element can be placed within:
             </td>
         </tr>
     </table>
-</continuation-footer>{% endraw %}
+</continuation-footer>
 ```
+{% endraw %}
+
+
+
 
 ---
 

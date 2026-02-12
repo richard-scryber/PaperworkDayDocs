@@ -58,9 +58,15 @@ The number of seconds between the two datetimes. Positive if endDateTime is afte
 
 ### Countdown Timer
 
+
+
+{% raw %}
 ```handlebars
 <p>T-minus {{secondsBetween(model.currentTime, model.launchTime)}} seconds</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -77,6 +83,9 @@ doc.Params["model"] = new {
 
 ### Performance Timing
 
+
+
+{% raw %}
 ```handlebars
 <h3>Operation Performance</h3>
 {{#each model.operations}}
@@ -87,6 +96,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -117,9 +129,15 @@ doc.Params["model"] = new {
 
 ### Video Duration
 
+
+
+{% raw %}
 ```handlebars
 <p>Duration: {{floor(secondsBetween(model.startTime, model.endTime) / 60)}}:{{padLeft(string(secondsBetween(model.startTime, model.endTime) % 60), 2, '0')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -136,12 +154,18 @@ doc.Params["model"] = new {
 
 ### Response Time Analysis
 
+
+
+{% raw %}
 ```handlebars
 <h3>API Response Times</h3>
 <p>Average: {{average(collect(model.requests, 'responseTime'))}}s</p>
 <p>Min: {{min(collect(model.requests, 'responseTime'))}}s</p>
 <p>Max: {{max(collect(model.requests, 'responseTime'))}}s</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

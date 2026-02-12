@@ -562,12 +562,16 @@ foreach (var batch in items.Chunk(100))
 
 **Problem:** Data binding expressions show as literal text
 
+
+
 {% raw %}
 ```html
 <!-- Shows: {{model.name}} instead of actual name -->
 <p>{{model.name}}</p>
 ```
 {% endraw %}
+
+
 
 **Causes:**
 - Data not passed to document
@@ -594,6 +598,9 @@ foreach (var prop in properties)
 
 **Solutions:**
 
+
+
+{% raw %}
 ```csharp
 // ✅ Ensure data is passed
 var model = new
@@ -607,6 +614,9 @@ doc.Params["model"] = model;
 // Template uses: {{model.name}}
 // Data must have: .name property
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -241,6 +241,8 @@ The `<path>` element is the most powerful SVG shape.
 
 ### Dynamic Values
 
+
+
 {% raw %}
 ```html
 <svg width="400" height="300">
@@ -259,9 +261,14 @@ The `<path>` element is the most powerful SVG shape.
         {{displayText}}
     </text>
 </svg>
-```{% endraw %}
+```
+{% endraw %}
+
+
 
 ### Calculated Positions
+
+
 
 {% raw %}
 ```html
@@ -284,13 +291,18 @@ The `<path>` element is the most powerful SVG shape.
     {{/each}}
 </svg>
 
-```{% endraw %}
+```
+{% endraw %}
+
+
 
 ---
 
 ## Practical Examples
 
 ### Example 1: Bar Chart
+
+
 
 {% raw %}
 ```html
@@ -409,10 +421,14 @@ The `<path>` element is the most powerful SVG shape.
     </div>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Line Chart
+
+
 
 {% raw %}
 ```html
@@ -535,12 +551,14 @@ The `<path>` element is the most powerful SVG shape.
     </div>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Pie Chart
 
-{% raw %}
+
 ```html
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -661,7 +679,7 @@ The `<path>` element is the most powerful SVG shape.
 </body>
 </html>
 ```
-{% endraw %}
+
 
 ---
 
@@ -698,6 +716,8 @@ Create a chart comparing 2-3 data series:
 
 ✅ **Solution:**
 
+
+
 {% raw %}
 ```html
 <!-- Calculate positions dynamically -->
@@ -708,8 +728,10 @@ Create a chart comparing 2-3 data series:
       height="{{this.value}}"
       fill="blue" />
 {{/each}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### ❌ Text Overflow
 

@@ -114,8 +114,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 
 ### Data Binding Examples
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic weight from model data -->
 <div style="font-weight: {{heading.weight}}">
     {{heading.text}}
@@ -151,8 +153,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
         {{alertMessage}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Note:** Bound font-weight values can be keywords ('normal', 'bold') or numeric values (100-900). Ensure bound data provides valid font-weight values to maintain consistent text rendering.
 

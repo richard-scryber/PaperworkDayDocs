@@ -217,8 +217,10 @@ Referenced elements must implement `ICloneable`:
 
 ### Dynamic References
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { shapeId: "star", x: 100, y: 100 } -->
 <svg width="300pt" height="200pt">
     <defs>
@@ -227,13 +229,17 @@ Referenced elements must implement `ICloneable`:
     </defs>
     <use href="#{{model.shapeId}}" x="{{model.x}}" y="{{model.y}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Repeated Instances
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { positions: [{x:50,y:50}, {x:150,y:100}, {x:250,y:50}] } -->
 <svg width="300pt" height="200pt">
     <defs>
@@ -243,13 +249,17 @@ Referenced elements must implement `ICloneable`:
         <use href="#marker" x="{{.x}}" y="{{.y}}"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Styling
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { instances: [{x:50, color:"red"}, {x:150, color:"blue"}, {x:250, color:"green"}] } -->
 <svg width="300pt" height="200pt">
     <defs>
@@ -259,13 +269,17 @@ Referenced elements must implement `ICloneable`:
         <use href="#dot" x="{{.x}}" y="100" fill="{{.color}}"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Transformations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { icons: [{id:"check", x:75, scale:1}, {id:"star", x:225, scale:1.5}] } -->
 <svg width="300pt" height="200pt">
     <defs>
@@ -282,8 +296,10 @@ Referenced elements must implement `ICloneable`:
              transform="scale({{.scale}})"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -494,8 +510,10 @@ Referenced elements must implement `ICloneable`:
 
 ### Data-Driven Chart Points
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { points: [{x:50, y:150, value:25}, {x:150, y:100, value:50}, {x:250, y:50, value:75}] } -->
 <svg width="300pt" height="200pt">
     <defs>
@@ -511,8 +529,10 @@ Referenced elements must implement `ICloneable`:
         <text x="{{.x}}" y="{{.y - 15}}" text-anchor="middle" font-size="12">{{.value}}</text>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Repeated Pattern with Variations
 
@@ -595,8 +615,10 @@ Referenced elements must implement `ICloneable`:
 
 ### Conditional Icon Display
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { status: "success", x: 100, y: 100 } -->
 <svg width="300pt" height="200pt">
     <defs>
@@ -613,8 +635,10 @@ Referenced elements must implement `ICloneable`:
 
     <use href="#{{model.status}}" x="{{model.x}}" y="{{model.y}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Network Nodes
 

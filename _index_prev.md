@@ -65,6 +65,8 @@ You can assign a variable to your template content, or load it from a source usi
 
 The base value allows us to use relative references for the stylesheets, images or other resources to load.
 
+
+
 {% raw %}
 ```javascript
 
@@ -88,13 +90,15 @@ The base value allows us to use relative references for the stylesheets, images 
 ```
 {% endraw %}
 
+
+
 ---
 
 ### Declare, calculate or load any needed data
 
 Our template has values for both data and theme that we can provide
 
-{% raw %}
+
 ```javascript
 
     var values = { 
@@ -104,7 +108,7 @@ Our template has values for both data and theme that we can provide
     };
 
 ```
-{% endraw %}
+
 
 ---
 
@@ -113,7 +117,7 @@ Our template has values for both data and theme that we can provide
 Our relatively referenced css file contains the following style content for fonts, background images and layout options which will be
 loaded automatically 
 
-{% raw %}
+
 ```css
 
 @font-face{
@@ -146,7 +150,7 @@ h2, p{
 }
 
 ```
-{% endraw %}
+
 
 
 
@@ -157,7 +161,7 @@ h2, p{
 
 And then finally once the page is loaded, we can initialize and generate a document from the javascript event (in this case the window.onload event, but it could be a button click, or any other event).
 
-{% raw %}
+
 ```javascript
 
     window.onload = function(evt){
@@ -177,7 +181,7 @@ And then finally once the page is loaded, we can initialize and generate a docum
     }
 
 ```
-{% endraw %}
+
 
 
 {: .note}

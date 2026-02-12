@@ -508,8 +508,11 @@ Definition lists handle page breaks naturally:
 
 ### Data Binding with Definition Lists
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- Template with model.terms = [{term: "API", def: "Application Programming Interface"}, ...] -->
+<!-- Template with model.terms = [{term: "API", def: "Application Programming Interface"}, ...] -->
 <dl>
     <template data-bind="{{model.terms}}">
         <dt>{{.term}}</dt>
@@ -517,11 +520,18 @@ Definition lists handle page breaks naturally:
     </template>
 </dl>
 
-<!-- Output renders all term-definition pairs from the data model -->{% endraw %}
+<!-- Output renders all term-definition pairs from the data model -->
 ```
+{% endraw %}
+
+
+
 
 ### Complex Data Binding Example
 
+
+
+{% raw %}
 ```html
 <!-- Template with model.settings = [{name: "Timeout", value: "30s", desc: "Connection timeout"}, ...] -->
 <style>
@@ -545,7 +555,7 @@ Definition lists handle page breaks naturally:
     }
 </style>
 
-{% raw %}<dl class="settings">
+<dl class="settings">
     <template data-bind="{{model.settings}}">
         <dt>{{.name}}</dt>
         <dd>
@@ -553,8 +563,12 @@ Definition lists handle page breaks naturally:
             <p style="margin: 5pt 0 0 0; color: #7f8c8d;">{{.description}}</p>
         </dd>
     </template>
-</dl>{% endraw %}
+</dl>
 ```
+{% endraw %}
+
+
+
 
 ### Keeping Terms and Descriptions Together
 

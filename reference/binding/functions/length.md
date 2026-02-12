@@ -57,9 +57,15 @@ The number of characters in the string or items in the array.
 
 ### String Length
 
+
+
+{% raw %}
 ```handlebars
 <p>Length: {{length(model.text)}} characters</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Array Count
 
+
+
+{% raw %}
 ```handlebars
 <p>Total items: {{length(model.items)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,6 +105,9 @@ doc.Params["model"] = new {
 
 ### Conditional Truncation
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.descriptions}}
   {{#if length(this) > 50}}
@@ -102,9 +117,15 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ### Character Limit Validation
 
+
+
+{% raw %}
 ```handlebars
 {{#if length(model.comment) > 200}}
   <p class="error">Comment too long ({{length(model.comment)}}/200 characters)</p>
@@ -112,6 +133,9 @@ doc.Params["model"] = new {
   <p>{{model.comment}}</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -127,6 +151,9 @@ doc.Params["model"] = new {
 
 ### List Size Display
 
+
+
+{% raw %}
 ```handlebars
 <h3>Products ({{length(model.products)}})</h3>
 <ul>
@@ -135,6 +162,9 @@ doc.Params["model"] = new {
 {{/each}}
 </ul>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

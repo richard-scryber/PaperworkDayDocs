@@ -33,6 +33,9 @@ Provides alternative conditional branches within an `{{#if}}` block. Multiple `{
 
 ## Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{#if condition1}}
   <!-- Rendered if condition1 is true -->
@@ -44,6 +47,9 @@ Provides alternative conditional branches within an `{{#if}}` block. Multiple `{
   <!-- Rendered if all conditions are false -->
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -76,6 +82,9 @@ Same as `{{#if}}`:
 
 ### Grade Classification
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.score >= 90}}
   <span class="grade-a">A - Excellent</span>
@@ -89,6 +98,9 @@ Same as `{{#if}}`:
   <span class="grade-f">F - Failing</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -104,6 +116,9 @@ doc.Params["model"] = new {
 
 ### Order Status
 
+
+
+{% raw %}
 ```handlebars
 <div class="order-status">
   {{#if model.status == 'shipped'}}
@@ -120,6 +135,9 @@ doc.Params["model"] = new {
   {{/if}}
 </div>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -137,6 +155,9 @@ doc.Params["model"] = new {
 
 ### Age Group Classification
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.age < 13}}
   <p class="child">Child (under 13)</p>
@@ -148,6 +169,9 @@ doc.Params["model"] = new {
   <p class="senior">Senior (65+)</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -163,6 +187,9 @@ doc.Params["model"] = new {
 
 ### Priority Level with Multiple Conditions
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.urgent && model.highValue}}
   <div class="priority-critical">
@@ -182,6 +209,9 @@ doc.Params["model"] = new {
   </div>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -189,6 +219,9 @@ doc.Params["model"] = new {
 
 The `{{else if}}` helper compiles to additional `<when>` elements in the Scryber `<choose>` structure:
 
+
+
+{% raw %}
 ```xml
 <choose>
   <when data-test="{{condition1}}">
@@ -205,6 +238,9 @@ The `{{else if}}` helper compiles to additional `<when>` elements in the Scryber
   </otherwise>
 </choose>
 ```
+{% endraw %}
+
+
 
 Conditions are evaluated in order from top to bottom. Only the first true condition is rendered.
 

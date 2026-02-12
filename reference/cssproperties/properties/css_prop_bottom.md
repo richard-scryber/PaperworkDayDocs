@@ -92,8 +92,10 @@ The `bottom` property supports data binding, allowing dynamic vertical positioni
 
 ### Example 1: Configurable footer positioning
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .page-footer {
         position: fixed;
@@ -119,8 +121,10 @@ The `bottom` property supports data binding, allowing dynamic vertical positioni
         <p>{{footer.text}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data model:
 ```json
@@ -145,8 +149,10 @@ Data model:
 
 ### Example 2: Dynamic signature block positioning
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .letter {
         position: relative;
@@ -183,8 +189,10 @@ Data model:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data model:
 ```json
@@ -208,8 +216,10 @@ Data model:
 
 ### Example 3: Data-driven approval stamp at bottom
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .contract {
         position: relative;
@@ -241,8 +251,10 @@ Data model:
         <div class="approval-stamp">{{stamp.text}}</div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data model:
 ```json

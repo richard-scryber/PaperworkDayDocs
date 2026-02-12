@@ -58,12 +58,18 @@ A new sorted array with items ordered by the specified property in ascending ord
 
 ### Sort by Name
 
+
+
+{% raw %}
 ```handlebars
 <h3>Students (Alphabetical)</h3>
 {{#each sortBy(model.students, 'name')}}
   <p>{{this.name}} - Grade: {{this.grade}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -86,12 +92,18 @@ doc.Params["model"] = new {
 
 ### Sort by Price
 
+
+
+{% raw %}
 ```handlebars
 <h3>Products (Lowest to Highest Price)</h3>
 {{#each sortBy(model.products, 'price')}}
   <p>{{this.name}}: ${{this.price}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -114,12 +126,18 @@ doc.Params["model"] = new {
 
 ### Sort by Date
 
+
+
+{% raw %}
 ```handlebars
 <h3>Upcoming Events</h3>
 {{#each sortBy(model.events, 'date')}}
   <p>{{format(this.date, 'MMM dd')}}: {{this.title}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -142,12 +160,18 @@ doc.Params["model"] = new {
 
 ### Sort and Reverse for Descending Order
 
+
+
+{% raw %}
 ```handlebars
 <h3>Top Scores</h3>
 {{#each reverse(sortBy(model.players, 'score'))}}
   <p>{{@index + 1}}. {{this.name}}: {{this.score}} points</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -172,12 +196,18 @@ doc.Params["model"] = new {
 
 ### Sort Filtered Results
 
+
+
+{% raw %}
 ```handlebars
 <h3>Active Tasks (By Priority)</h3>
 {{#each sortBy(selectWhere(model.tasks, 'status', 'active'), 'priority')}}
   <p>{{this.name}} - {{this.priority}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

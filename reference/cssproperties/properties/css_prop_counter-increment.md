@@ -94,8 +94,10 @@ The `counter-increment` property automatically works with data-bound elements, i
 
 ### Example 1: Data-driven numbered list with automatic incrementing
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .numbered-container { counter-reset: item; }
     .list-item {
@@ -123,13 +125,17 @@ The `counter-increment` property automatically works with data-bound elements, i
         </template>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Dynamic FAQ with question numbering
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .faq-section { counter-reset: question; }
     .faq-item {
@@ -161,13 +167,17 @@ The `counter-increment` property automatically works with data-bound elements, i
         </template>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Multi-category lists with separate counters
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .content-area { counter-reset: figure table; }
     .figure-item {
@@ -205,8 +215,10 @@ The `counter-increment` property automatically works with data-bound elements, i
         </template>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

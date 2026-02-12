@@ -59,12 +59,18 @@ A new array containing only items where the specified property equals the given 
 
 ### Filter by Status
 
+
+
+{% raw %}
 ```handlebars
 <h3>Active Tasks</h3>
 {{#each selectWhere(model.tasks, 'status', 'active')}}
   <p>{{this.name}} - Priority: {{this.priority}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -87,12 +93,18 @@ doc.Params["model"] = new {
 
 ### Filter and Calculate
 
+
+
+{% raw %}
 ```handlebars
 <h3>Category Sales</h3>
 <p>Electronics: ${{sumOf(selectWhere(model.products, 'category', 'Electronics'), 'sales')}}</p>
 <p>Books: ${{sumOf(selectWhere(model.products, 'category', 'Books'), 'sales')}}</p>
 <p>Clothing: ${{sumOf(selectWhere(model.products, 'category', 'Clothing'), 'sales')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -117,12 +129,18 @@ doc.Params["model"] = new {
 
 ### Filter Boolean Properties
 
+
+
+{% raw %}
 ```handlebars
 <h3>Verified Users ({{count(selectWhere(model.users, 'verified', true))}})</h3>
 {{#each selectWhere(model.users, 'verified', true)}}
   <p>{{this.name}} - {{this.email}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -144,6 +162,9 @@ doc.Params["model"] = new {
 
 ### Multi-Step Filtering
 
+
+
+{% raw %}
 ```handlebars
 <h3>High Priority Active Tasks</h3>
 {{#with selectWhere(model.tasks, 'status', 'active') as | activeTasks |}}
@@ -152,6 +173,9 @@ doc.Params["model"] = new {
   {{/each}}
 {{/with}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

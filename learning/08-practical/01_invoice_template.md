@@ -29,8 +29,10 @@ By the end of this article, you'll be able to:
 
 ## Complete Invoice Template
 
-```html
+
+
 {% raw %}
+```html
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -386,8 +388,10 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -603,8 +607,10 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 ### 1. Header Section
 
-```html
+
+
 {% raw %}
+```html
 <div class="invoice-header">
     <div>
         <img src="{{company.logo}}" class="company-logo" />
@@ -614,8 +620,10 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
         <p>{{invoice.number}}</p>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Features:**
 - Company logo on left
@@ -625,8 +633,10 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 ### 2. Company and Customer Information
 
-```html
+
+
 {% raw %}
+```html
 <div class="info-section">
     <div class="company-info">
         <h3>From</h3>
@@ -642,8 +652,10 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
         {{/if}}
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Features:**
 - Side-by-side layout
@@ -653,8 +665,10 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 ### 3. Line Items Table
 
 
-```html
+
+
 {% raw %}
+```html
 <table class="line-items">
     <thead>
         <tr>
@@ -680,8 +694,10 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
         {{/each}}
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Features:**
 - Dynamic rows with `{{#each}}`
@@ -692,8 +708,10 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 ### 4. Totals Calculation
 
 
-```html
+
+
 {% raw %}
+```html
 <div class="totals-section">
     <table>
         <tr>
@@ -710,8 +728,10 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
         </tr>
     </table>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Features:**
 - Subtotal, tax, and total
@@ -738,8 +758,10 @@ Remove optional sections for a cleaner look:
 Add more item details:
 
 
-```html
+
+
 {% raw %}
+```html
 <tr>
     <td>
         <strong>{{this.description}}</strong>
@@ -751,15 +773,19 @@ Add more item details:
     <td class="right">{{this.discountPercent}}%</td>
     <td class="right">${{format(this.lineTotal, '0.00')}}</td>
 </tr>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Variation 3: Service Invoice (Hourly)
 
 For hourly billing:
 
-```html
+
+
 {% raw %}
+```html
 <table class="line-items">
     <thead>
         <tr>
@@ -783,8 +809,10 @@ For hourly billing:
         {{/each}}
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -793,19 +821,25 @@ For hourly billing:
 ### Professional Touches
 
 1. **Logo Optimization:**
-```html
+
+
 {% raw %}
+```html
 <img src="{{company.logo}}"
      class="company-logo"
      alt="{{company.name}}"
      style="max-height: 50pt; max-width: 200pt;" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 2. **Status Badge:**
 
-```html
+
+
 {% raw %}
+```html
 {{#if invoice.isPaid}}
 <div style="position: absolute; top: 100pt; right: 50pt;
             transform: rotate(-15deg); border: 4pt solid #10b981;
@@ -814,30 +848,40 @@ For hourly billing:
     PAID
 </div>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 3. **QR Code for Payment:**
-```html
+
+
 {% raw %}
+```html
 <div style="text-align: center; margin-top: 20pt;">
     <img src="{{invoice.paymentQrCode}}"
          style="width: 100pt; height: 100pt;" />
     <p style="font-size: 8pt;">Scan to pay</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 4. **Terms and Conditions:**
-```html
+
+
 {% raw %}
+```html
 <div style="font-size: 8pt; color: #666; margin-top: 30pt;
             border-top: 1pt solid #e5e7eb; padding-top: 10pt;">
     <p><strong>Terms & Conditions:</strong></p>
     <p>{{company.termsAndConditions}}</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -880,53 +924,73 @@ Build specialized invoices for:
 
 ✅ **Solution:**
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic calculation -->
 <td>Total: ${{format(invoice.total, '0.00')}}</td>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### ❌ Missing Null Checks
 
 
-```html
+
+
 {% raw %}
+```html
 <!-- Will break if customer.company is null -->
 <p>{{customer.company}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ✅ **Solution:**
 
-```html
+
+
 {% raw %}
+```html
 <!-- Conditional rendering -->
 {{#if customer.company}}
 <p>{{customer.company}}</p>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### ❌ Poor Number Formatting
 
-```html
+
+
 {% raw %}
+```html
 <!-- No currency formatting -->
 <td>${{invoice.total}}</td>
 <!-- Output: $1234.5 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ✅ **Solution:**
 
-```html
+
+
 {% raw %}
+```html
 <!-- Proper formatting -->
 <td>${{format(invoice.total, '0.00')}}</td>
 <!-- Output: $1,234.50 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

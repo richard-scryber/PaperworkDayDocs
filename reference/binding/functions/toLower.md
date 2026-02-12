@@ -57,9 +57,15 @@ The string converted to lowercase.
 
 ### Basic Lowercase
 
+
+
+{% raw %}
 ```handlebars
 <p>{{toLower(model.text)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,11 +81,17 @@ doc.Params["model"] = new {
 
 ### Normalize for Comparison
 
+
+
+{% raw %}
 ```handlebars
 {{#if toLower(model.status) == 'active'}}
   <span class="badge-active">Active</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -95,9 +107,15 @@ doc.Params["model"] = new {
 
 ### Email Display
 
+
+
+{% raw %}
 ```handlebars
 <p>Email: {{toLower(model.email)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -113,6 +131,9 @@ doc.Params["model"] = new {
 
 ### CSS Class Names
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.categories}}
   <div class="category-{{toLower(replace(this.name, ' ', '-'))}}">
@@ -120,6 +141,9 @@ doc.Params["model"] = new {
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

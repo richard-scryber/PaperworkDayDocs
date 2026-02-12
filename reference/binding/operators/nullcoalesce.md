@@ -31,11 +31,11 @@ Provide a fallback value when an expression evaluates to null or undefined.
 
 ## Syntax
 
-{% raw %}
+
 ```
 {{expression ?? fallbackValue}}
 ```
-{% endraw %}
+
 
 ---
 
@@ -70,11 +70,15 @@ Returns the left operand if it's not null, otherwise returns the right operand.
 
 ### Default User Name
 
+
+
 {% raw %}
 ```html
 <h2>Welcome, {{model.user.name ?? 'Guest'}}!</h2>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data (with name):**
 ```csharp
@@ -106,6 +110,8 @@ doc.Params["model"] = new {
 
 ### Missing Description
 
+
+
 {% raw %}
 ```html
 {{#each model.products}}
@@ -114,8 +120,10 @@ doc.Params["model"] = new {
     <p>{{this.description ?? 'No description available'}}</p>
   </div>
 {{/each}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -146,6 +154,9 @@ doc.Params["model"] = new {
 
 ### Optional Contact Information
 
+
+
+{% raw %}
 ```handlebars
 <div class="contact-info">
   <p>Email: {{model.email ?? 'Not provided'}}</p>
@@ -153,12 +164,21 @@ doc.Params["model"] = new {
   <p>Address: {{model.address ?? 'Not provided'}}</p>
 </div>
 ```
+{% endraw %}
+
+
 
 ### Nested Property Access
 
+
+
+{% raw %}
 ```handlebars
 <p>City: {{model.user.address.city ?? 'Unknown'}}</p>
 ```
+{% endraw %}
+
+
 
 **Data (nested null):**
 ```csharp
@@ -176,6 +196,9 @@ doc.Params["model"] = new {
 
 ### Default Values in Lists
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.items}}
   <tr>
@@ -186,6 +209,9 @@ doc.Params["model"] = new {
   </tr>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -215,17 +241,29 @@ doc.Params["model"] = new {
 
 ### Chaining Multiple Defaults
 
+
+
+{% raw %}
 ```handlebars
 <p>Display Name: {{model.displayName ?? model.username ?? model.email ?? 'Anonymous'}}</p>
 ```
+{% endraw %}
+
+
 
 ### Default Image
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.products}}
   <img src="{{this.imageUrl ?? '/images/placeholder.png'}}" alt="{{this.name}}" />
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -246,6 +284,9 @@ doc.Params["model"] = new {
 
 The `??` operator only checks for null/undefined, not empty strings:
 
+
+
+{% raw %}
 ```handlebars
 <!-- Empty string is NOT null -->
 {{model.name ?? 'Default'}}
@@ -254,6 +295,9 @@ The `??` operator only checks for null/undefined, not empty strings:
 <!-- To handle empty strings, use a conditional -->
 {{#if model.name}}{{model.name}}{{else}}Default{{/if}}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -322,8 +322,11 @@ In the Scryber codebase:
 
 ### Data-Bound Details
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- With model = { showDetails: true, title: "Product Info", description: "..." } -->
+<!-- With model = { showDetails: true, title: "Product Info", description: "..." } -->
 <details open="{{model.showDetails ? 'open' : 'closed'}}">
     <summary style="font-weight: bold; padding: 10pt; background-color: #e8e8e8;">
         {{model.title}}
@@ -331,13 +334,20 @@ In the Scryber codebase:
     <div style="padding: 10pt;">
         <p>{{model.description}}</p>
     </div>
-</details>{% endraw %}
+</details>
 ```
+{% endraw %}
+
+
+
 
 ### Repeating Details from Collection
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- With model.faqs = [{q: "Question 1?", a: "Answer 1", open: true}, {q: "Question 2?", a: "Answer 2", open: false}] -->
+<!-- With model.faqs = [{q: "Question 1?", a: "Answer 1", open: true}, {q: "Question 2?", a: "Answer 2", open: false}] -->
 <template data-bind="{{model.faqs}}">
     <details open="{{.open ? 'open' : 'closed'}}"
              style="border: 1pt solid #ddd; margin: 8pt 0; border-radius: 4pt;">
@@ -348,8 +358,12 @@ In the Scryber codebase:
             <p>{{.a}}</p>
         </div>
     </details>
-</template>{% endraw %}
+</template>
 ```
+{% endraw %}
+
+
+
 
 ### Card-Style Details
 
@@ -639,8 +653,11 @@ public class DocumentGenerator
 
 ### Conditional Details Based on User Role
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- With model = { userRole: "admin", adminContent: "Admin details...", userContent: "User details..." } -->
+<!-- With model = { userRole: "admin", adminContent: "Admin details...", userContent: "User details..." } -->
 <details open="{{model.userRole === 'admin' ? 'open' : 'closed'}}">
     <summary style="padding: 10pt; background-color: #ffebee; font-weight: bold;">
         Administrator Settings
@@ -659,8 +676,12 @@ public class DocumentGenerator
         <p>{{model.userContent}}</p>
         <p>Visible to all users.</p>
     </div>
-</details>{% endraw %}
+</details>
 ```
+{% endraw %}
+
+
+
 
 ### Multi-Level Documentation Structure
 

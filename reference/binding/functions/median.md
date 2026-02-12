@@ -57,9 +57,15 @@ The median value. For even-length collections, returns the average of the two mi
 
 ### Basic Median
 
+
+
+{% raw %}
 ```handlebars
 <p>Median score: {{median(model.scores)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Even Count Median
 
+
+
+{% raw %}
 ```handlebars
 <p>Median value: {{median(model.values)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,12 +105,18 @@ doc.Params["model"] = new {
 
 ### Robust Against Outliers
 
+
+
+{% raw %}
 ```handlebars
 <h3>Price Analysis</h3>
 <p>Mean price: ${{round(mean(model.prices), 2)}}</p>
 <p>Median price: ${{round(median(model.prices), 2)}}</p>
 <p style="color: gray;">Median is less affected by extreme values</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -117,6 +135,9 @@ doc.Params["model"] = new {
 
 ### Income Distribution
 
+
+
+{% raw %}
 ```handlebars
 <h3>Household Income Statistics</h3>
 <p>Median income: ${{round(median(collect(model.households, 'income')), 0)}}</p>
@@ -125,6 +146,9 @@ doc.Params["model"] = new {
   <p style="color: blue;">Income distribution is right-skewed (high earners pull mean up)</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -149,6 +173,9 @@ doc.Params["model"] = new {
 
 ### Statistical Comparison
 
+
+
+{% raw %}
 ```handlebars
 <h3>Test Score Analysis</h3>
 <p>Number of students: {{count(model.scores)}}</p>
@@ -157,6 +184,9 @@ doc.Params["model"] = new {
 <p>Mode: {{mode(model.scores)}}</p>
 <p>Range: {{min(model.scores)}} - {{max(model.scores)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

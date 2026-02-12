@@ -58,9 +58,15 @@ The sum of the specified property across all items. Returns 0 for empty collecti
 
 ### Simple Property Sum
 
+
+
+{% raw %}
 ```handlebars
 <p>Total price: ${{sumOf(model.products, 'price')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -80,12 +86,18 @@ doc.Params["model"] = new {
 
 ### Sales Report
 
+
+
+{% raw %}
 ```handlebars
 <h3>Monthly Sales Summary</h3>
 <p>Total Revenue: ${{sumOf(model.sales, 'amount')}}</p>
 <p>Total Units Sold: {{sumOf(model.sales, 'quantity')}}</p>
 <p>Average Sale: ${{round(sumOf(model.sales, 'amount') / count(model.sales), 2)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -108,6 +120,9 @@ doc.Params["model"] = new {
 
 ### Inventory Value
 
+
+
+{% raw %}
 ```handlebars
 <h3>Warehouse Inventory</h3>
 {{#each model.warehouses}}
@@ -115,6 +130,9 @@ doc.Params["model"] = new {
 {{/each}}
 <p><strong>Total Value: ${{sumOf(model.warehouses, 'totalValue')}}</strong></p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -150,6 +168,9 @@ doc.Params["model"] = new {
 
 ### Project Hours
 
+
+
+{% raw %}
 ```handlebars
 <h3>Team Time Tracking</h3>
 {{#each model.projects}}
@@ -157,6 +178,9 @@ doc.Params["model"] = new {
 {{/each}}
 <p>Grand Total: {{sumOf(model.projects, 'totalHours')}} hours</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

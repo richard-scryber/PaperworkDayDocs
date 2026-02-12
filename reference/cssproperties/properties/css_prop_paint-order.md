@@ -110,8 +110,10 @@ The `paint-order` property can be dynamically controlled through data binding, e
 
 ### Example 1: Conditional outlined text based on emphasis level
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .heading-text {
         font-size: 36px;
@@ -132,13 +134,17 @@ The `paint-order` property can be dynamically controlled through data binding, e
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Data-driven label styles for status badges
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .badge-bg { stroke-width: 2; }
     .badge-label { font-size: 14px; font-weight: bold; text-anchor: middle; dominant-baseline: middle; }
@@ -159,13 +165,17 @@ The `paint-order` property can be dynamically controlled through data binding, e
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Dynamic signage with variable paint order
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .sign-text {
         font-size: 42px;
@@ -189,8 +199,10 @@ The `paint-order` property can be dynamically controlled through data binding, e
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

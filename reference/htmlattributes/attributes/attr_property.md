@@ -117,25 +117,33 @@ The `property` and `content` attributes support data binding:
 
 ### Dynamic Metadata with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { reportTitle: "Q4 2024 Report", reportType: "quarterly" } -->
 <meta property="og:title" content="{{model.reportTitle}}" />
 <meta property="og:type" content="{{model.reportType}}" />
 <meta property="og:date" content="{{model.generationDate}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Metadata
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { isPublic: false, department: "Finance" } -->
 <meta property="app:visibility"
       content="{{model.isPublic ? 'public' : 'internal'}}" />
 <meta property="app:department" content="{{model.department}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -303,8 +311,10 @@ In Scryber PDF generation:
 
 ### Example 7: Data-Bound Document Metadata
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     title: "Q4 Financial Report",
     author: "Jane Doe",
@@ -331,8 +341,10 @@ In Scryber PDF generation:
     <meta property="app:confidential" content="{{model.confidential}}" />
     <meta property="app:report-date" content="{{model.reportDate}}" />
 </head>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 8: Document with Image Metadata
 

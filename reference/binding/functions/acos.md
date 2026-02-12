@@ -57,10 +57,16 @@ The angle in radians (between 0 and π).
 
 ### Basic Arccosine
 
+
+
+{% raw %}
 ```handlebars
 <p>acos(0.5) = {{format(acos(0.5), '0.000')}} radians</p>
 <p>acos(0.5) = {{format(degrees(acos(0.5)), '0.0')}}°</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -70,9 +76,15 @@ The angle in radians (between 0 and π).
 
 ### Find Angle from Adjacent Side
 
+
+
+{% raw %}
 ```handlebars
 <p>Angle: {{format(degrees(acos(model.adjacent / model.hypotenuse)), '0.0')}}°</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

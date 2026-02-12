@@ -113,25 +113,33 @@ The `data-outline-title` attribute supports data binding:
 
 ### Dynamic Outline Title with Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { chapterNum: 3, chapterTitle: "Advanced Features" } -->
 <h1 data-outline-title="Chapter {{model.chapterNum}}: {{model.chapterTitle}}">
     Chapter {{model.chapterNum}}: {{model.chapterTitle}} - Comprehensive Guide
 </h1>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Computed Outline Title
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { quarter: "Q4", year: 2024 } -->
 <h2 data-outline-title="{{model.quarter}} {{model.year}} Report">
     Quarterly Financial Report for {{model.quarter}} {{model.year}} - Detailed Analysis
 </h2>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -315,8 +323,10 @@ Creates this bookmark structure:
 
 ### Example 6: Data-Bound Outline Titles
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     chapters: [
         {num: 1, title: "Introduction", subtitle: "Getting Started"},
@@ -330,8 +340,10 @@ Creates this bookmark structure:
         Chapter {{.num}}: {{.title}} - {{.subtitle}}
     </h1>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 7: Business Report
 
@@ -591,8 +603,10 @@ Creates this bookmark structure:
 
 ### Example 15: Complex Multi-Level Document
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { year: 2024, sections: [...] } -->
 
 <h1 data-outline-title="Annual Report {{model.year}}">
@@ -630,8 +644,10 @@ Creates this bookmark structure:
 <h1 data-outline-title="Part II: Strategic Initiatives">
     Part II: Strategic Initiatives and Future Direction
 </h1>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -105,23 +105,31 @@ The `data-id` attribute supports both static and dynamic values:
 
 ### Dynamic Data ID with Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { varId: "dynamic-total" } -->
 <var data-id="{{model.varId}}">$500.00</var>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Computed Data ID
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { category: "electronics", itemId: 42 } -->
 <var data-id="{{model.category}}-item-{{model.itemId}}">
     Product Name
 </var>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -233,8 +241,10 @@ In Scryber PDF generation:
 
 ### Example 4: Data-Bound Variable IDs
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [{id: "001", name: "Widget", price: 25}, {id: "002", name: "Gadget", price: 50}] } -->
 
 <h2>Product List</h2>
@@ -245,8 +255,10 @@ In Scryber PDF generation:
         <var data-id="product-{{.id}}-price">${{.price}}</var>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 5: Form Output Values
 
@@ -492,8 +504,10 @@ In Scryber PDF generation:
 
 ### Example 14: Dynamic Variable References
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     vars: [
         {id: "revenue", label: "Revenue", value: 145000},
@@ -510,8 +524,10 @@ In Scryber PDF generation:
         <var data-id="metric.{{.id}}">${{.value}}</var>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 15: Complex Hierarchical Data
 

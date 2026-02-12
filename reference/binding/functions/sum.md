@@ -57,9 +57,15 @@ The sum of all numeric values in the collection. Returns 0 for empty or null col
 
 ### Simple Sum
 
+
+
+{% raw %}
 ```handlebars
 <p>Total: {{sum(model.values)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,6 +81,9 @@ doc.Params["model"] = new {
 
 ### Order Total
 
+
+
+{% raw %}
 ```handlebars
 <h3>Invoice</h3>
 {{#each model.items}}
@@ -82,6 +91,9 @@ doc.Params["model"] = new {
 {{/each}}
 <p><strong>Total: ${{sum(collect(model.items, 'price'))}}</strong></p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -105,12 +117,18 @@ doc.Params["model"] = new {
 
 ### Budget Summary
 
+
+
+{% raw %}
 ```handlebars
 <h3>Budget Overview</h3>
 <p>Total Budget: ${{model.totalBudget}}</p>
 <p>Total Spent: ${{sum(collect(model.expenses, 'amount'))}}</p>
 <p>Remaining: ${{model.totalBudget - sum(collect(model.expenses, 'amount'))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -134,11 +152,17 @@ doc.Params["model"] = new {
 
 ### Score Aggregation
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.students}}
   <p>{{this.name}}: {{sum(this.scores)}} total points</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

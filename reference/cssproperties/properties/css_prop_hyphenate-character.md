@@ -87,8 +87,10 @@ The `hyphenate-character` property can be dynamically controlled through data bi
 
 ### Example 1: Language-Specific Hyphen Characters
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: 200pt; padding: 15pt" lang="{{model.language.code}}">
     <p style="hyphens: auto; hyphenate-character: {{model.language.hyphenChar}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -114,13 +116,17 @@ The `hyphenate-character` property can be dynamically controlled through data bi
     "content": "Telecommunications infrastructure implementation..."
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Document Format-Based Character
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: 220pt; padding: 18pt" lang="en">
     <p style="hyphens: auto; hyphenate-character: {{model.format.hyphenChar}}; text-align: justify; font-size: 11pt">
         {{model.document.text}}
@@ -148,13 +154,17 @@ The `hyphenate-character` property can be dynamically controlled through data bi
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Typography Style Settings
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: 250pt; padding: 20pt; font-family: {{model.typography.fontFamily}}" lang="en">
     <p style="hyphens: auto; hyphenate-character: {{model.typography.hyphenChar}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -180,8 +190,10 @@ The `hyphenate-character` property can be dynamically controlled through data bi
     "content": "Contemporary methodological frameworks demonstrate..."
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

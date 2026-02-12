@@ -182,8 +182,10 @@ Radial gradients are ideal for:
 
 Bind radial gradient colors to data values:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { centerColor: "#f39c12", edgeColor: "#e74c3c" } -->
 <svg width="300" height="300">
     <defs>
@@ -194,15 +196,19 @@ Bind radial gradient colors to data values:
     </defs>
     <circle cx="150" cy="150" r="120" fill="url(#dataRadial)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Focal Point Position
 
 Create lighting effects with data-driven focal points:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { lightX: 30, lightY: 30 } -->
 <svg width="300" height="300">
     <radialGradient id="lighting"
@@ -213,15 +219,17 @@ Create lighting effects with data-driven focal points:
     </radialGradient>
     <circle cx="150" cy="150" r="120" fill="url(#lighting)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Gradient Based on Status
 
 Generate gradients based on data state:
 
-```html
 {% raw %}
+```html
 <!-- Model: { status: "active", temperature: 85 } -->
 <svg width="200" height="200">
     <radialGradient id="statusRadial">
@@ -232,15 +240,18 @@ Generate gradients based on data state:
     </radialGradient>
     <circle cx="100" cy="100" r="80" fill="url(#statusRadial)" />
 </svg>
-{% endraw %}
+
 ```
+{% endraw %}
 
 ### Dynamic Gradient Radius
 
 Control gradient extent with data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { intensity: 75 } -->
 <svg width="300" height="300">
     <radialGradient id="intensityGrad"
@@ -251,15 +262,19 @@ Control gradient extent with data:
     </radialGradient>
     <circle cx="150" cy="150" r="120" fill="url(#intensityGrad)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Multi-Stop Gradients
 
 Generate complex gradients from data arrays:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { stops: [{offset: 0, color: "#ffffff"}, {offset: 40, color: "#f39c12"}, {offset: 100, color: "#e74c3c"}] } -->
 <svg width="300" height="300">
     <radialGradient id="multiRadial">
@@ -269,8 +284,10 @@ Generate complex gradients from data arrays:
     </radialGradient>
     <circle cx="150" cy="150" r="120" fill="url(#multiRadial)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -525,8 +542,10 @@ Generate complex gradients from data arrays:
 
 ### Data-Driven Temperature Indicator
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { temperature: 85, maxTemp: 100 } -->
 <svg width="200" height="200">
     <radialGradient id="tempGrad">
@@ -540,13 +559,17 @@ Generate complex gradients from data arrays:
     <text x="100" y="105" text-anchor="middle" fill="white"
           font-size="24" font-weight="bold">{{model.temperature}}°</text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Spotlight Position
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { spotX: 60, spotY: 40 } -->
 <svg width="400" height="300">
     <radialGradient id="dynamicSpot"
@@ -557,8 +580,10 @@ Generate complex gradients from data arrays:
     </radialGradient>
     <rect width="400" height="300" fill="url(#dynamicSpot)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Progress Circle with Radial Background
 

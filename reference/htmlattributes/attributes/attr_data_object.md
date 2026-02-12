@@ -44,8 +44,10 @@ The `data` attribute specifies the source file for attachment:
 - Supports dynamic data binding for runtime file selection
 - Files are embedded as attachments, not rendered inline
 
-```html
+
+
 {% raw %}
+```html
 <!-- Local file attachment -->
 <object data="documents/report.pdf" type="application/pdf"></object>
 
@@ -58,8 +60,10 @@ The `data` attribute specifies the source file for attachment:
 
 <!-- With display icon -->
 <object data="contract.pdf" type="application/pdf" data-icon="Paperclip"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -78,8 +82,10 @@ The `data` attribute is used exclusively with:
 
 The `data` attribute supports data binding for dynamic file attachment:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Simple dynamic path -->
 <object data="{{model.documentPath}}" type="application/pdf"
         data-icon="Paperclip"></object>
@@ -104,8 +110,10 @@ The `data` attribute supports data binding for dynamic file attachment:
             data-icon="Paperclip"
             alt="{{.description}}"></object>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -216,15 +224,19 @@ The `data` attribute works with any file type. Common examples:
 
 For files from memory or databases, use `data-file-data` instead:
 
-```html
+
+
 {% raw %}
+```html
 <!-- data attribute used as filename, binary content from data-file-data -->
 <object data="generated-report.pdf"
         data-file-data="{{model.pdfBytes}}"
         type="application/pdf"
         data-icon="Paperclip"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 When `data-file-data` is provided:
 - The `data` attribute value becomes the filename
@@ -296,15 +308,19 @@ Be cautious with file attachments:
 6. **Access Control**: Ensure proper file system permissions
 7. **URL Safety**: Validate URLs for HTTPS and trusted domains
 
-```html
+
+
 {% raw %}
+```html
 <!-- Sanitize user input -->
 <!-- Model: sanitizedPath from validated user input -->
 <object data="{{model.sanitizedPath}}"
         type="{{model.validatedMimeType}}"
         data-icon="Paperclip"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Network Considerations
 
@@ -327,8 +343,10 @@ When using URLs in the `data` attribute:
 
 The attachment filename is extracted from the `data` attribute:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Filename: "report.pdf" -->
 <object data="documents/report.pdf" type="application/pdf"></object>
 
@@ -340,8 +358,10 @@ The attachment filename is extracted from the `data` attribute:
 <object data="generated.pdf"
         data-file-data="{{model.bytes}}"
         type="application/pdf"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Combining with Display Icons
 
@@ -477,8 +497,10 @@ Important distinction:
 
 ### Dynamic File Sources
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { reportPath: "reports/Q4.pdf", reportType: "application/pdf" } -->
 
 <!-- Simple binding -->
@@ -502,8 +524,10 @@ Important distinction:
 <!-- Model: { documentId: "12345", version: "2" } -->
 <object data="https://api.example.com/docs/{{model.documentId}}/v{{model.version}}"
         type="application/pdf"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Attachment List with Descriptions
 
@@ -542,8 +566,10 @@ Important distinction:
 
 ### Multiple Attachments with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { attachments: [
     { path: "file1.pdf", type: "application/pdf", name: "Technical Specs", icon: "Tag" },
     { path: "file2.xlsx", type: "application/vnd...sheet", name: "Cost Analysis", icon: "Graph" }
@@ -564,8 +590,10 @@ Important distinction:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Contract with Multiple Exhibits
 
@@ -780,8 +808,10 @@ Important distinction:
 
 ### Remote File Attachments
 
-```html
+
+
 {% raw %}
+```html
 <!-- Attach file from company CDN -->
 <object data="https://cdn.example.com/documents/whitepaper-2024.pdf"
         type="application/pdf"
@@ -799,13 +829,17 @@ Important distinction:
         type="{{model.documentType}}"
         data-icon="Pushpin"
         alt="{{model.documentTitle}}"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Attachments
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { includeFinancials: true, financialsPath: "financials.xlsx" } -->
 
 <div>
@@ -819,8 +853,10 @@ Important distinction:
             alt="Financial Details"
             hidden="{{model.includeFinancials ? '' : 'hidden'}}"></object>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Attachment Table Layout
 
@@ -897,8 +933,10 @@ Important distinction:
 
 ### Version-Controlled Attachments
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     documents: [
         { name: "Spec", file: "spec-v3.pdf", version: "3.0", date: "2024-01-15" },
@@ -927,8 +965,10 @@ Important distinction:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Image Source Files as Attachments
 

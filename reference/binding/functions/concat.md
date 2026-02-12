@@ -57,16 +57,28 @@ All input strings joined together.
 
 ### Basic Concatenation
 
+
+
+{% raw %}
 ```handlebars
 {{concat('Hello', ' ', 'World')}}
 <!-- Output: Hello World -->
 ```
+{% endraw %}
+
+
 
 ### With Variables
 
+
+
+{% raw %}
 ```handlebars
 <p>{{concat(model.firstName, ' ', model.lastName)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -83,23 +95,41 @@ doc.Params["model"] = new {
 
 ### Multiple Values
 
+
+
+{% raw %}
 ```handlebars
 {{concat('Order #', model.orderNumber, ' - ', model.status)}}
 <!-- Output: Order #12345 - Shipped -->
 ```
+{% endraw %}
+
+
 
 ### With Formatting
 
+
+
+{% raw %}
 ```handlebars
 {{concat('Total: ', format(model.total, 'C2'))}}
 <!-- Output: Total: $99.99 -->
 ```
+{% endraw %}
+
+
 
 ### In Log Statement
 
+
+
+{% raw %}
 ```handlebars
 {{log concat('Processing order ', model.id)}}
 ```
+{% endraw %}
+
+
 
 ---
 

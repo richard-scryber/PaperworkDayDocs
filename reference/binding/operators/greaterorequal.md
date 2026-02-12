@@ -31,10 +31,11 @@ Compare if the left value is greater than or equal to the right value.
 
 ## Syntax
 
+
 ```
-{% raw %}
 {{operand1 >= operand2}}
 ```
+
 
 ---
 
@@ -69,7 +70,10 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 ### Age Verification
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.age >= 18}}
   <div class="eligible">
     <p>✓ Age requirement met ({{model.age}} years old)</p>
@@ -78,8 +82,12 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
   <div class="ineligible">
     <p>Must be 18 or older (currently {{model.age}})</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -97,7 +105,10 @@ doc.Params["model"] = new {
 
 ### Passing Grade
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.score >= 70}}
   <div class="pass">
     <h3>Passed</h3>
@@ -108,8 +119,12 @@ doc.Params["model"] = new {
     <h3>Did Not Pass</h3>
     <p>Score: {{model.score}}/100 (70 required)</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -128,7 +143,10 @@ doc.Params["model"] = new {
 
 ### Grade Classification
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.score >= 90}}
   <span class="grade-a">A - Excellent</span>
 {{else if model.score >= 80}}
@@ -139,12 +157,19 @@ doc.Params["model"] = new {
   <span class="grade-d">D - Needs Improvement</span>
 {{else}}
   <span class="grade-f">F - Failing</span>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 ### Free Shipping Eligibility
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.orderTotal >= 50}}
   <div class="free-shipping">
     <strong>✓ Free Shipping Eligible</strong>
@@ -154,8 +179,12 @@ doc.Params["model"] = new {
   <div class="shipping-required">
     <p>Add ${{format(50 - model.orderTotal, '0.00')}} more for free shipping</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -173,6 +202,8 @@ doc.Params["model"] = new {
 ```
 
 ### Access Level Validation
+
+
 
 {% raw %}
 ```html 
@@ -194,9 +225,14 @@ doc.Params["model"] = new {
 ```
 {% endraw %}
 
+
+
 ### Minimum Quantity Check
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#each model.items}}
   {{#if this.quantity >= this.minimumOrder}}
     <div class="valid-order">
@@ -208,8 +244,12 @@ doc.Params["model"] = new {
       <small>Minimum order: {{this.minimumOrder}} units</small>
     </div>
   {{/if}}
-{{/each}} {% endraw %}
+{{/each}} 
 ```
+{% endraw %}
+
+
+
 
 ---
 

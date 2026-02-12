@@ -107,8 +107,10 @@ By the end of this article, you'll be able to:
 
 ### Inline vs External
 
-```html
+
+
 {% raw %}
+```html
 <!-- ✅ Inline for data binding and small graphics -->
 <svg viewBox="0 0 100 100" width="50" height="50">
     <rect width="100" height="{{dataValue}}" fill="#3b82f6" />
@@ -118,8 +120,10 @@ By the end of this article, you'll be able to:
 <img src="./graphics/complex-diagram.svg"
      alt="System Architecture"
      style="width: 400pt;" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -412,8 +416,10 @@ tbody tr.large-content {
 
 ### Pattern 2: Product Catalog
 
-```html
+
+
 {% raw %}
+```html
 <!-- Responsive grid with images and details -->
 <div class="catalog-grid">
     {{#each products}}
@@ -436,8 +442,10 @@ tbody tr.large-content {
     </div>
     {{/each}}
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Pattern 3: Report with Tables and Charts
 

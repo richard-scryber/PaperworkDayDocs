@@ -76,8 +76,10 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
 
 ### Example 1: Language-Specific Hyphenation
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: 200pt; padding: 15pt; border: 1pt solid #ccc" lang="{{model.language.code}}">
     <p style="hyphens: {{model.language.hyphenation}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -103,13 +105,17 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
     "content": "Telekommunikationsinfrastrukturimplementierung erfordert umfassende Dokumentation..."
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Column Width-Based Hyphenation
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
     <p style="hyphens: {{model.column.hyphenation}}; text-align: justify; font-size: 10pt">
         {{model.column.text}}
@@ -135,13 +141,17 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Accessibility-Enhanced Hyphenation Control
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: 250pt; padding: 20pt" lang="{{model.document.language}}">
     <p style="hyphens: {{model.accessibility.hyphenationMode}}; text-align: {{model.document.alignment}}; font-size: 11pt">
         {{model.document.content}}
@@ -160,8 +170,10 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

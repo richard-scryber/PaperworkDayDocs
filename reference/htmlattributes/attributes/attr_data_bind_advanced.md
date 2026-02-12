@@ -50,8 +50,10 @@ These attributes are essential for:
 
 The iteration control attributes are applied to `<template>` elements alongside the `data-bind` attribute:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.items}}"
           data-bind-start="10"
           data-bind-step="1"
@@ -59,13 +61,17 @@ The iteration control attributes are applied to `<template>` elements alongside 
     <!-- Content repeated for items 10-29 -->
     <div>{{.name}}</div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Basic Syntax
 
-```html
+
+
 {% raw %}
+```html
 <!-- Start at index 0 (default), show 10 items -->
 <template data-bind="{{collection}}"
           data-bind-max="10">
@@ -92,8 +98,10 @@ The iteration control attributes are applied to `<template>` elements alongside 
           data-bind-max="15">
     <!-- Template content -->
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -115,8 +123,10 @@ These attributes are **only** supported on the following element:
 **Default**: `0`
 **Description**: Zero-based index of the first item to process from the collection.
 
-```html
+
+
 {% raw %}
+```html
 <!-- Start at first item (default) -->
 <template data-bind="{{items}}" data-bind-start="0">
 
@@ -125,8 +135,10 @@ These attributes are **only** supported on the following element:
 
 <!-- Start at 101st item (index 100) -->
 <template data-bind="{{items}}" data-bind-start="100">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Notes**:
 - If `start` exceeds the collection size, no items are rendered
@@ -139,8 +151,10 @@ These attributes are **only** supported on the following element:
 **Default**: `1`
 **Description**: Increment value for iteration. Controls which items are selected from the collection.
 
-```html
+
+
 {% raw %}
+```html
 <!-- Process every item (default) -->
 <template data-bind="{{items}}" data-bind-step="1">
 
@@ -152,8 +166,10 @@ These attributes are **only** supported on the following element:
 
 <!-- Process every tenth item -->
 <template data-bind="{{items}}" data-bind-step="10">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Notes**:
 - Step value of 1 processes all items sequentially
@@ -168,8 +184,10 @@ These attributes are **only** supported on the following element:
 **Default**: `int.MaxValue` (unlimited)
 **Description**: Maximum number of items to process and render.
 
-```html
+
+
 {% raw %}
+```html
 <!-- Process all items (default) -->
 <template data-bind="{{items}}">
 
@@ -181,8 +199,10 @@ These attributes are **only** supported on the following element:
 
 <!-- Process maximum of 100 items -->
 <template data-bind="{{items}}" data-bind-max="100">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Notes**:
 - Limits the total number of items processed, not the index
@@ -195,15 +215,19 @@ These attributes are **only** supported on the following element:
 
 The three attributes work together to provide flexible iteration control:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Formula: Process items from collection[start] up to max items, incrementing by step -->
 <template data-bind="{{items}}"
           data-bind-start="START_INDEX"
           data-bind-step="STEP_VALUE"
           data-bind-max="MAX_COUNT">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Processing Logic**:
 1. Start at index `data-bind-start` (default: 0)
@@ -249,39 +273,59 @@ max_count = 20
 ### Common Patterns
 
 **Odd Items Only**:
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{items}}" data-bind-start="0" data-bind-step="2">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Even Items Only**:
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{items}}" data-bind-start="1" data-bind-step="2">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Top N Items**:
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{items}}" data-bind-max="10">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Page 2 of 20 Items Per Page**:
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{items}}" data-bind-start="20" data-bind-max="20">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Every 5th Item**:
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{items}}" data-bind-step="5">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -291,8 +335,10 @@ max_count = 20
 
 Show the first 10 items from a collection:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { products: [...100 products...] } -->
 <h2>Products - Page 1</h2>
 <table style="width: 100%;">
@@ -313,15 +359,19 @@ Show the first 10 items from a collection:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 2. Pagination (Second Page)
 
 Show items 11-20 (indices 10-19):
 
-```html
+
+
 {% raw %}
+```html
 <h2>Products - Page 2</h2>
 <table style="width: 100%;">
     <thead>
@@ -341,15 +391,19 @@ Show items 11-20 (indices 10-19):
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 3. Top 5 Items
 
 Display only the first 5 items:
 
-```html
+
+
 {% raw %}
+```html
 <h2>Top 5 Bestsellers</h2>
 <div style="column-count: 1;">
     <template data-bind="{{model.bestsellers}}"
@@ -363,15 +417,19 @@ Display only the first 5 items:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 4. Alternating Row Pattern (Odd Rows)
 
 Show only odd-indexed items (1st, 3rd, 5th, etc.):
 
-```html
+
+
 {% raw %}
+```html
 <h2>Odd Items</h2>
 <template data-bind="{{model.items}}"
           data-bind-start="0"
@@ -380,15 +438,19 @@ Show only odd-indexed items (1st, 3rd, 5th, etc.):
         Item {{.name}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 5. Alternating Row Pattern (Even Rows)
 
 Show only even-indexed items (2nd, 4th, 6th, etc.):
 
-```html
+
+
 {% raw %}
+```html
 <h2>Even Items</h2>
 <template data-bind="{{model.items}}"
           data-bind-start="1"
@@ -397,15 +459,19 @@ Show only even-indexed items (2nd, 4th, 6th, etc.):
         Item {{.name}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 6. Multi-Column Layout (Two Columns)
 
 Split items into two columns using odd/even pattern:
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: 100%;">
     <!-- Left Column (Odd Items) -->
     <div style="display: inline-block; width: 48%; vertical-align: top; margin-right: 2%;">
@@ -431,15 +497,19 @@ Split items into two columns using odd/even pattern:
         </template>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 7. Every Third Item
 
 Show every third item from a collection:
 
-```html
+
+
 {% raw %}
+```html
 <h2>Every Third Product</h2>
 <template data-bind="{{model.products}}"
           data-bind-step="3">
@@ -447,15 +517,19 @@ Show every third item from a collection:
         <strong>{{.name}}</strong> - ${{.price}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 8. Batch Processing Report (Batch 1)
 
 Process items in batches of 50:
 
-```html
+
+
 {% raw %}
+```html
 <div style="page-break-after: always;">
     <h1>Batch 1 - Items 1-50</h1>
     <table style="width: 100%;">
@@ -470,15 +544,19 @@ Process items in batches of 50:
         </template>
     </table>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 9. Batch Processing Report (Batch 2)
 
 Second batch (items 51-100):
 
-```html
+
+
 {% raw %}
+```html
 <div style="page-break-after: always;">
     <h1>Batch 2 - Items 51-100</h1>
     <table style="width: 100%;">
@@ -493,15 +571,19 @@ Second batch (items 51-100):
         </template>
     </table>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 10. Sampling Every 10th Item
 
 Create a sample report showing every 10th item:
 
-```html
+
+
 {% raw %}
+```html
 <h2>Sample Data (Every 10th Record)</h2>
 <template data-bind="{{model.largeDataset}}"
           data-bind-step="10">
@@ -509,15 +591,19 @@ Create a sample report showing every 10th item:
         <strong>{{.recordNumber}}</strong>: {{.data}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 11. Dynamic Pagination with Binding
 
 Use bound values to control pagination:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [...], pageSize: 20, currentPage: 3 } -->
 <!-- Calculate: start = (currentPage - 1) * pageSize = 40 -->
 <h2>Page {{model.currentPage}}</h2>
@@ -526,15 +612,19 @@ Use bound values to control pagination:
           data-bind-max="{{model.pageSize}}">
     <div>{{.name}}</div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 12. Top N with Performance Optimization
 
 Show top 50 items with style caching:
 
-```html
+
+
 {% raw %}
+```html
 <h2>Top 50 Revenue Generating Products</h2>
 <template data-bind="{{model.sortedProducts}}"
           data-bind-max="50"
@@ -545,15 +635,19 @@ Show top 50 items with style caching:
         <div style="color: #666;">Revenue: ${{.revenue}}</div>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 13. Quarter Sampling (Every 4th Item)
 
 Show every 4th item for quarterly sampling:
 
-```html
+
+
 {% raw %}
+```html
 <h2>Quarterly Sample Data</h2>
 <table style="width: 100%;">
     <thead>
@@ -572,15 +666,19 @@ Show every 4th item for quarterly sampling:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 14. Limited Preview with Message
 
 Show first 10 items with an indicator for more:
 
-```html
+
+
 {% raw %}
+```html
 <h2>Order Preview (First 10 Orders)</h2>
 <template data-bind="{{model.orders}}"
           data-bind-max="10">
@@ -592,15 +690,19 @@ Show first 10 items with an indicator for more:
      hidden="{{count(model.orders) <= 10 ? 'hidden' : ''}}">
     ... and {{count(model.orders) - 10}} more orders
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 15. Complex Multi-Page Report
 
 Generate a multi-page report with consistent item counts per page:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Page 1: Items 0-24 -->
 <div style="page-break-after: always;">
     <div style="background-color: #336699; color: white; padding: 10pt;">
@@ -664,15 +766,19 @@ Generate a multi-page report with consistent item counts per page:
         Page 2 - Items 26-50
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 16. Three-Column Layout
 
 Distribute items across three columns using step patterns:
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: 100%;">
     <!-- Column 1: Items 0, 3, 6, 9... -->
     <div style="display: inline-block; width: 32%; vertical-align: top; margin-right: 1%;">
@@ -710,15 +816,19 @@ Distribute items across three columns using step patterns:
         </template>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 17. Skip First N Items
 
 Skip the first 5 items and show the rest:
 
-```html
+
+
 {% raw %}
+```html
 <h2>Items (Excluding First 5)</h2>
 <template data-bind="{{model.items}}"
           data-bind-start="5">
@@ -726,15 +836,19 @@ Skip the first 5 items and show the rest:
         {{.name}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 18. Percentage Sampling (10% Sample)
 
 Show approximately 10% of items (every 10th):
 
-```html
+
+
 {% raw %}
+```html
 <h2>10% Data Sample</h2>
 <p style="color: #666; font-style: italic;">
     Showing approximately 10% of total records (every 10th item)
@@ -745,15 +859,19 @@ Show approximately 10% of items (every 10th):
         Record ID: {{.id}} - {{.data}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 19. Combined with Nested Templates
 
 Paginate outer collection and limit inner collection:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Show first 5 categories, with top 3 products each -->
 <template data-bind="{{model.categories}}"
           data-bind-max="5">
@@ -768,15 +886,19 @@ Paginate outer collection and limit inner collection:
         </template>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 20. Performance-Optimized Large Dataset
 
 Handle a very large dataset with pagination and caching:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Process 1000 items in chunks of 100 -->
 <style>
     .data-row {
@@ -799,8 +921,10 @@ Handle a very large dataset with pagination and caching:
         {{.status}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

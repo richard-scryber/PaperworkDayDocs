@@ -95,8 +95,10 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 
 ### Example 1: Conditional page breaks after sections
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .content-block {
         page-break-after: {{block.requiresNewPage ? 'always' : 'auto'}};
@@ -115,13 +117,17 @@ The `page-break-after` property supports data binding, enabling dynamic control 
     </div>
     {{/each}}
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Dynamic summary pages
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .summary-section {
         page-break-after: {{settings.summaryOnSeparatePage ? 'always' : 'auto'}};
@@ -145,13 +151,17 @@ The `page-break-after` property supports data binding, enabling dynamic control 
     </div>
     {{/each}}
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Variable document structure with data-driven breaks
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-table-container {
         page-break-after: {{tableConfig.isolateTables ? 'always' : 'auto'}};
@@ -178,8 +188,10 @@ The `page-break-after` property supports data binding, enabling dynamic control 
     </div>
     {{/each}}
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

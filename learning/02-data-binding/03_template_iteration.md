@@ -31,6 +31,8 @@ By the end of this article, you'll be able to:
 
 The `{{#each}}` helper iterates over arrays and collections:
 
+
+
 {% raw %}
 ```html
 {{#each collection}}
@@ -39,6 +41,8 @@ The `{{#each}}` helper iterates over arrays and collections:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 ---
 
@@ -52,6 +56,8 @@ doc.Params["items"] = new[] { "Apple", "Banana", "Orange" };
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <ul>
@@ -61,6 +67,8 @@ doc.Params["items"] = new[] { "Apple", "Banana", "Orange" };
 </ul>
 ```
 {% endraw %}
+
+
 
 **Output:**
 ```html
@@ -84,6 +92,8 @@ doc.Params["products"] = new[]
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <ul>
@@ -93,6 +103,8 @@ doc.Params["products"] = new[]
 </ul>
 ```
 {% endraw %}
+
+
 
 **Output:**
 ```html
@@ -108,6 +120,8 @@ doc.Params["products"] = new[]
 ## Using {{@index}}
 
 Access the current iteration index (0-based):
+
+
 
 {% raw %}
 ```html
@@ -132,6 +146,8 @@ Access the current iteration index (0-based):
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Using {{@key}}
@@ -149,6 +165,8 @@ doc.Params["stats"] = new Dictionary<string, int>
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <dl>
@@ -159,6 +177,8 @@ doc.Params["stats"] = new Dictionary<string, int>
 </dl>
 ```
 {% endraw %}
+
+
 
 **Output:**
 ```html
@@ -204,6 +224,8 @@ doc.Params["departments"] = new[]
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 {{#each departments}}
@@ -217,7 +239,11 @@ doc.Params["departments"] = new[]
 ```
 {% endraw %}
 
+
+
 ### Three-Level Nesting
+
+
 
 {% raw %}
 ```html
@@ -235,6 +261,8 @@ doc.Params["departments"] = new[]
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Context Access in Loops
@@ -242,6 +270,8 @@ doc.Params["departments"] = new[]
 ### Parent Context
 
 Access parent scope data inside loops:
+
+
 
 {% raw %}
 ```html
@@ -254,11 +284,15 @@ Access parent scope data inside loops:
 ```
 {% endraw %}
 
+
+
 The `../` syntax accesses the parent context.
 
 ### Root Context
 
 Access the root data from any nested level:
+
+
 
 {% raw %}
 ```html
@@ -270,6 +304,8 @@ Access the root data from any nested level:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Empty Collections
@@ -277,6 +313,8 @@ Access the root data from any nested level:
 ### Using {{else}}
 
 Handle empty collections gracefully:
+
+
 
 {% raw %}
 ```html
@@ -290,6 +328,8 @@ Handle empty collections gracefully:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 ---
 
@@ -315,6 +355,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -386,6 +428,8 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Dynamic Lists
@@ -416,6 +460,8 @@ doc.Params["catalog"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <h1>{{catalog.categoryName}}</h1>
@@ -436,11 +482,15 @@ doc.Params["catalog"] = new
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Conditional Iteration
 
 ### Filtering with {{#if}}
+
+
 
 {% raw %}
 ```html
@@ -456,7 +506,11 @@ doc.Params["catalog"] = new
 ```
 {% endraw %}
 
+
+
 ### Alternating Styles
+
+
 
 {% raw %}
 ```html
@@ -467,6 +521,8 @@ doc.Params["catalog"] = new
 {{/each}}
 ```
 {% endraw %}
+
+
 
 ---
 
@@ -490,6 +546,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -545,6 +603,8 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ### Example 2: Sales Report with Nested Data
 
 **C# Code:**
@@ -581,6 +641,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -673,7 +735,11 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ### Example 3: Product Grid Layout
+
+
 
 {% raw %}
 ```html
@@ -697,6 +763,8 @@ doc.Params["model"] = new
 </div>
 ```
 {% endraw %}
+
+
 
 ---
 
@@ -736,6 +804,8 @@ Create an org chart showing:
 
 ### ❌ Forgetting {{this}}
 
+
+
 {% raw %}
 ```html
 {{#each products}}
@@ -744,7 +814,11 @@ Create an org chart showing:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Use `{{this.property}}`
+
+
 
 {% raw %}
 ```html
@@ -754,7 +828,11 @@ Create an org chart showing:
 ```
 {% endraw %}
 
+
+
 ### ❌ Wrong Context in Nested Loops
+
+
 
 {% raw %}
 ```html
@@ -766,7 +844,11 @@ Create an org chart showing:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Use parent context
+
+
 
 {% raw %}
 ```html
@@ -778,7 +860,11 @@ Create an org chart showing:
 ```
 {% endraw %}
 
+
+
 ### ❌ Not Handling Empty Collections
+
+
 
 {% raw %}
 ```html
@@ -789,7 +875,11 @@ Create an org chart showing:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Add {{else}}
+
+
 
 {% raw %}
 ```html
@@ -800,6 +890,8 @@ Create an org chart showing:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 ---
 

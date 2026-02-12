@@ -57,9 +57,15 @@ The number of items in the collection. Returns 0 for null or empty collections.
 
 ### Simple Count
 
+
+
+{% raw %}
 ```handlebars
 <p>Total items: {{count(model.items)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,12 +81,18 @@ doc.Params["model"] = new {
 
 ### Summary Statistics
 
+
+
+{% raw %}
 ```handlebars
 <h3>Order Summary</h3>
 <p>Number of items: {{count(model.orderItems)}}</p>
 <p>Total cost: ${{sum(collect(model.orderItems, 'price'))}}</p>
 <p>Average price: ${{round(sum(collect(model.orderItems, 'price')) / count(model.orderItems), 2)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -103,6 +115,9 @@ doc.Params["model"] = new {
 
 ### Conditional Display Based on Count
 
+
+
+{% raw %}
 ```handlebars
 {{#if (count(model.notifications) > 0)}}
   <p>You have {{count(model.notifications)}} new notifications</p>
@@ -110,6 +125,9 @@ doc.Params["model"] = new {
   <p>No new notifications</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -125,9 +143,15 @@ doc.Params["model"] = new {
 
 ### Progress Indicator
 
+
+
+{% raw %}
 ```handlebars
 <p>Progress: {{count(selectWhere(model.tasks, 'completed', true))}} of {{count(model.tasks)}} tasks completed</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

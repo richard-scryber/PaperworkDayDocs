@@ -77,20 +77,26 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
 
 ### Example 1: Dynamic Triangle
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { triangle: { points: "100,50 150,150 50,150", color: '#FF5722' } } -->
 <svg width="200" height="200">
     <polygon points="{{triangle.points}}"
              fill="{{triangle.color}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Star Rating
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { stars: 4 } -->
 <svg width="150" height="30">
     <template data-bind="{{Array.from({length: stars}, (_, i) => i)}}">
@@ -98,13 +104,17 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
                  fill="#FFC107"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Multiple Polygons
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { shapes: [
     {points: '50,10 90,90 10,40 90,40 10,90', color: '#e74c3c'},
     {points: '150,10 190,90 110,40 190,40 110,90', color: '#3498db'}
@@ -115,8 +125,10 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
                  fill="{{.color}}" stroke="#333" stroke-width="2"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -411,8 +423,10 @@ For regular polygons (equal sides and angles), calculate points using trigonomet
 
 ### Dynamic Star from Rating
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { rating: 5 } -->
 <svg width="200" height="40">
     <template data-bind="{{Array.from({length: rating}, (_, i) => i)}}">
@@ -420,8 +434,10 @@ For regular polygons (equal sides and angles), calculate points using trigonomet
                  fill="#FFC107"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Directional Arrows
 

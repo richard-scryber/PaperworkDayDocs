@@ -449,8 +449,10 @@ Control page breaks:
 
 ### Data-Bound Dynamic Table
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [{name: "Item 1", qty: 5, price: 10.00}, ...] } -->
 <table style="width: 100%; border-collapse: collapse;">
     <thead>
@@ -474,8 +476,10 @@ Control page breaks:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complex Table with Multiple Sections
 
@@ -569,8 +573,10 @@ Control page breaks:
 
 ### Table with Conditional Styling
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     transactions: [
         {date: "2024-01-15", description: "Sale", amount: 1500, type: "credit"},
@@ -598,8 +604,10 @@ Control page breaks:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Borderless Table for Layout
 

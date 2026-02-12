@@ -57,9 +57,15 @@ The most frequently occurring value. If multiple values tie for most frequent, r
 
 ### Basic Mode
 
+
+
+{% raw %}
 ```handlebars
 <p>Most common score: {{mode(model.scores)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,6 +81,9 @@ doc.Params["model"] = new {
 
 ### Statistical Summary
 
+
+
+{% raw %}
 ```handlebars
 <h3>Test Results</h3>
 <p>Mean: {{round(mean(model.scores), 1)}}</p>
@@ -82,6 +91,9 @@ doc.Params["model"] = new {
 <p>Mode: {{mode(model.scores)}}</p>
 <p>The most common score was {{mode(model.scores)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -101,9 +113,15 @@ doc.Params["model"] = new {
 
 ### Most Popular Product
 
+
+
+{% raw %}
 ```handlebars
 <p>Most ordered product: {{mode(collect(model.orders, 'productId'))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -125,6 +143,9 @@ doc.Params["model"] = new {
 
 ### Customer Preferences
 
+
+
+{% raw %}
 ```handlebars
 <h3>Survey Results</h3>
 <p>Responses collected: {{count(model.responses)}}</p>
@@ -133,6 +154,9 @@ doc.Params["model"] = new {
   <p>{{countOf(model.responses, 'choice', this)}} people chose this option</p>
 {{/with}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -158,9 +182,15 @@ doc.Params["model"] = new {
 
 ### String Mode
 
+
+
+{% raw %}
 ```handlebars
 <p>Most common status: {{mode(collect(model.tasks, 'status'))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

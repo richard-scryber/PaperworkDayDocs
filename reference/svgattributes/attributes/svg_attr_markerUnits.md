@@ -81,8 +81,10 @@ The `markerUnits` attribute is supported on:
 
 Choose coordinate system based on data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { useStrokeScaling: true, strokeWidth: 4 } -->
 <svg width="400" height="200">
     <defs>
@@ -98,15 +100,19 @@ Choose coordinate system based on data:
           stroke="#2c3e50" stroke-width="{{model.strokeWidth}}"
           marker-end="url(#dynamicUnits)"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Adaptive Marker Sizing
 
 Switch between proportional and fixed sizing:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { lines: [{width: 2, adaptive: true}, {width: 6, adaptive: true}, {width: 10, adaptive: false}] } -->
 <svg width="400" height="400">
     <defs>
@@ -130,15 +136,19 @@ Switch between proportional and fixed sizing:
         </text>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Chart Visualization with Consistent Markers
 
 Use userSpaceOnUse for consistent marker sizes across varying line widths:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dataPoints: [{x: 50, y: 150, weight: 2}, {x: 150, y: 100, weight: 4}, {x: 250, y: 130, weight: 3}, {x: 350, y: 80, weight: 6}] } -->
 <svg width="400" height="250">
     <defs>
@@ -155,15 +165,19 @@ Use userSpaceOnUse for consistent marker sizes across varying line widths:
               marker-end="url(#dataPoint)"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Responsive Arrow Sizing
 
 Create arrows that scale proportionally with line thickness:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { connections: [{thickness: 1, label: 'Thin'}, {thickness: 3, label: 'Medium'}, {thickness: 5, label: 'Thick'}] } -->
 <svg width="500" height="400">
     <defs>
@@ -181,8 +195,10 @@ Create arrows that scale proportionally with line thickness:
         <text x="50" y="{{$index * 100 + 105}}" font-size="12">{{.label}}</text>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

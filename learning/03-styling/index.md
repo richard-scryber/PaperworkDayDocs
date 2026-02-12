@@ -245,12 +245,16 @@ width: calc(100% - 40pt);
 height: calc((100% / 3) - 10pt);
 ```
 
+
+
 {% raw %}
 ```css
 /* With data binding */
 width: calc({{itemCount}} * 50pt);
 ```
 {% endraw %}
+
+
 
 ## Common Styling Patterns
 

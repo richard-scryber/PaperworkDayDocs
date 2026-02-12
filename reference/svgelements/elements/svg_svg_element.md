@@ -186,21 +186,27 @@ In the Scryber codebase:
 
 SVG content can be generated dynamically using data binding:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [{x:50, y:50, r:20, color:"red"}, {x:150, y:50, r:30, color:"blue"}] } -->
 <svg width="300pt" height="150pt" viewBox="0 0 300 150">
     <template data-bind="{{model.items}}">
         <circle cx="{{.x}}" cy="{{.y}}" r="{{.r}}" fill="{{.color}}"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Parameterized Graphics
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { chartData: { width: 400, height: 200, bars: [...] } } -->
 <svg width="{{model.chartData.width}}pt" height="{{model.chartData.height}}pt">
     <template data-bind="{{model.chartData.bars}}">
@@ -208,13 +214,17 @@ SVG content can be generated dynamically using data binding:
               fill="{{.color}}" opacity="{{.opacity}}"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional SVG Content
 
-```html
+
+
 {% raw %}
+```html
 <svg width="200pt" height="200pt">
     <rect width="200" height="200" fill="#f0f0f0"/>
     <g hidden="{{model.showDetails ? '' : 'hidden'}}">
@@ -222,13 +232,17 @@ SVG content can be generated dynamically using data binding:
         <text x="100" y="105" text-anchor="middle">Details</text>
     </g>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Styling
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { status: "warning", bgColor: "#ff9900", message: "Alert" } -->
 <svg width="300pt" height="100pt">
     <rect width="300" height="100" fill="{{model.bgColor}}" rx="5"/>
@@ -236,8 +250,10 @@ SVG content can be generated dynamically using data binding:
         {{model.message}}
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -348,8 +364,10 @@ SVG content can be generated dynamically using data binding:
 
 ### SVG Chart with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { chartData: [
     {label: "Q1", value: 75, color: "#4a90e2"},
     {label: "Q2", value: 120, color: "#50c878"},
@@ -371,8 +389,10 @@ SVG content can be generated dynamically using data binding:
         </g>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### SVG with Patterns
 
@@ -438,8 +458,10 @@ SVG content can be generated dynamically using data binding:
 
 ### Dynamic Gauge Chart
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { percentage: 75, status: "good" } -->
 <svg width="200pt" height="200pt" viewBox="0 0 200 200">
     <circle cx="100" cy="100" r="80" fill="none"
@@ -453,8 +475,10 @@ SVG content can be generated dynamically using data binding:
         {{model.percentage}}%
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### SVG Map with Interactive Elements
 
@@ -484,8 +508,10 @@ SVG content can be generated dynamically using data binding:
 
 ### SVG Timeline
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { events: [{year: "2020", title: "Founded", x: 50}, ...] } -->
 <svg width="500pt" height="150pt" viewBox="0 0 500 150">
     <line x1="50" y1="75" x2="450" y2="75"
@@ -502,13 +528,17 @@ SVG content can be generated dynamically using data binding:
         </g>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### SVG Status Badge
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { count: 5, type: "error" } -->
 <svg width="80pt" height="30pt" viewBox="0 0 80 30">
     <rect width="80" height="30"
@@ -519,8 +549,10 @@ SVG content can be generated dynamically using data binding:
         {{model.type == 'error' ? 'Errors' : 'Success'}}: {{model.count}}
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complex Dashboard Panel
 

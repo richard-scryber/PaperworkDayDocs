@@ -92,8 +92,10 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 
 ### Example 1: Dynamic section numbering with data binding
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .document { counter-reset: section; }
     .section-heading {
@@ -115,13 +117,17 @@ The `counter-reset` property works seamlessly with data binding to create dynami
         </template>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Multi-level outline with data-driven content
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .outline { counter-reset: chapter; }
     .chapter {
@@ -156,13 +162,17 @@ The `counter-reset` property works seamlessly with data binding to create dynami
         </template>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Data-driven task list with automatic numbering
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .task-list { counter-reset: task; }
     .task-item {
@@ -187,8 +197,10 @@ The `counter-reset` property works seamlessly with data binding to create dynami
         </template>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

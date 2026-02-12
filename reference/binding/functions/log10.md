@@ -57,9 +57,15 @@ The base-10 logarithm of the value.
 
 ### Basic Log10
 
+
+
+{% raw %}
 ```handlebars
 <p>log₁₀({{model.value}}) = {{format(log10(model.value), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Calculate Magnitude
 
+
+
+{% raw %}
 ```handlebars
 <p>Order of magnitude: 10^{{floor(log10(model.value))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,9 +105,15 @@ doc.Params["model"] = new {
 
 ### Decibel Calculation
 
+
+
+{% raw %}
 ```handlebars
 <p>dB: {{format(10 * log10(model.power / model.reference), '0.0')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

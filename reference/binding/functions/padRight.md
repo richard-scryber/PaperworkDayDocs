@@ -59,6 +59,9 @@ The padded string.
 
 ### Align Left in Fixed Width
 
+
+
+{% raw %}
 ```handlebars
 <pre>
 {{#each model.items}}
@@ -66,6 +69,9 @@ The padded string.
 {{/each}}
 </pre>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -89,6 +95,9 @@ Tool                 $9.99
 
 ### Table-Like Formatting
 
+
+
+{% raw %}
 ```handlebars
 <pre>
 {{padRight('Name', 15, ' ')}} {{padRight('Status', 10, ' ')}} Price
@@ -97,6 +106,9 @@ Tool                 $9.99
 {{/each}}
 </pre>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -119,9 +131,15 @@ Product B       Sold Out   $149.99
 
 ### Custom Padding Character
 
+
+
+{% raw %}
 ```handlebars
 <p>{{padRight(model.label, 20, '.')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -137,12 +155,18 @@ doc.Params["model"] = new {
 
 ### Create Separators
 
+
+
+{% raw %}
 ```handlebars
 <div>
   <span>{{model.title}}</span>
   <span>{{padRight('', 40, '-')}}</span>
 </div>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

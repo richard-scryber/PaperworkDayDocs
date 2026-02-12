@@ -91,8 +91,10 @@ The `padding-top` property supports dynamic values through data binding, allowin
 
 ### Example 1: Dynamic header padding based on header type
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .page-header {
         padding-top: {{header.size === 'large' ? '40pt' : '30pt'}};
@@ -109,8 +111,10 @@ The `padding-top` property supports dynamic values through data binding, allowin
         <p>{{header.subtitle}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -125,8 +129,10 @@ Data context:
 
 ### Example 2: Card headers with variable top padding
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .card {
         background-color: white;
@@ -149,8 +155,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -164,8 +172,10 @@ Data context:
 
 ### Example 3: Report cover with data-driven padding
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .report-cover {
         padding-top: {{design.coverTopPadding}}pt;
@@ -183,8 +193,10 @@ Data context:
         <p>{{report.year}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json

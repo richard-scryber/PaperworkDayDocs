@@ -57,9 +57,15 @@ The string with leading and trailing whitespace removed.
 
 ### Remove Extra Spaces
 
+
+
+{% raw %}
 ```handlebars
 <p>"{{trim(model.text)}}"</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,11 +81,17 @@ doc.Params["model"] = new {
 
 ### Clean User Input
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.names}}
   <li>{{trim(this)}}</li>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -97,11 +109,17 @@ doc.Params["model"] = new {
 
 ### Normalize for Comparison
 
+
+
+{% raw %}
 ```handlebars
 {{#if trim(model.status) == 'active'}}
   <span class="active">Active</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -117,9 +135,15 @@ doc.Params["model"] = new {
 
 ### Clean Multi-Line Text
 
+
+
+{% raw %}
 ```handlebars
 <p>{{trim(model.description)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

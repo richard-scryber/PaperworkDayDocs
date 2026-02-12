@@ -57,12 +57,18 @@ The angle in radians.
 
 ### Convert Common Angles
 
+
+
+{% raw %}
 ```handlebars
 <p>30° = {{format(radians(30), '0.000')}} radians</p>
 <p>45° = {{format(radians(45), '0.000')}} radians</p>
 <p>90° = {{format(radians(90), '0.000')}} radians</p>
 <p>180° = {{format(radians(180), '0.000')}} radians</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -74,11 +80,17 @@ The angle in radians.
 
 ### Use with Trigonometric Functions
 
+
+
+{% raw %}
 ```handlebars
 <p>sin(30°) = {{format(sin(radians(30)), '0.000')}}</p>
 <p>cos(60°) = {{format(cos(radians(60)), '0.000')}}</p>
 <p>tan(45°) = {{format(tan(radians(45)), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -89,10 +101,16 @@ The angle in radians.
 
 ### Calculate Circular Position
 
+
+
+{% raw %}
 ```handlebars
 <p>X: {{format(model.radius * cos(radians(model.angle)), '0.00')}}</p>
 <p>Y: {{format(model.radius * sin(radians(model.angle)), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

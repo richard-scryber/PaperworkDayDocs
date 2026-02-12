@@ -43,8 +43,10 @@ The `alt` attribute provides alternative text that:
 - Supports data binding for dynamic descriptions
 - Used exclusively with `<img>` elements
 
-```html
+
+
 {% raw %}
+```html
 <!-- Descriptive alt text -->
 <img src="company-logo.png" width="150pt" height="75pt"
      alt="Acme Corporation Logo" />
@@ -59,8 +61,10 @@ The `alt` attribute provides alternative text that:
 <!-- Dynamic alt text -->
 <img src="{{model.productImage}}" width="200pt" height="200pt"
      alt="{{model.productName}} - {{model.productDescription}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -77,8 +81,10 @@ The `alt` attribute is used with:
 
 The `alt` attribute supports data binding for dynamic descriptions:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Simple dynamic alt text -->
 <img src="{{model.imagePath}}" width="200pt" height="150pt"
      alt="{{model.imageDescription}}" />
@@ -101,8 +107,10 @@ The `alt` attribute supports data binding for dynamic descriptions:
          alt="{{.title}}: {{.description}}"
          style="margin: 5pt;" />
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -411,8 +419,10 @@ For optimal accessibility:
 
 ### Profile Photos
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { team: [
     { name: "Alice Johnson", role: "CEO", photo: "alice.jpg" },
     { name: "Bob Smith", role: "CTO", photo: "bob.jpg" }
@@ -431,8 +441,10 @@ For optimal accessibility:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Logos with Alt Text
 
@@ -566,8 +578,10 @@ For optimal accessibility:
 
 ### Image Gallery with Alt Text
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { photos: [
     { url: "photo1.jpg", title: "Mountain Peak", desc: "Snow-capped mountain at sunset" },
     { url: "photo2.jpg", title: "Ocean Waves", desc: "Waves crashing on rocky shore" }
@@ -586,13 +600,17 @@ For optimal accessibility:
         </figure>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Product Catalog with Detailed Alt
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { products: [{
     name: "Ergonomic Chair",
     image: "chair.jpg",
@@ -607,8 +625,10 @@ For optimal accessibility:
         <p>{{.features}}</p>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Linked Images with Descriptive Alt
 
@@ -696,15 +716,19 @@ For optimal accessibility:
 
 ### Conditional Alt Text
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { user: { name: "Alice", hasPhoto: true, role: "Manager" } } -->
 
 <img src="{{model.user.hasPhoto ? 'photos/' + model.user.name + '.jpg' : 'placeholder.png'}}"
      width="100pt" height="100pt"
      alt="{{model.user.hasPhoto ? 'Photo of ' + model.user.name + ', ' + model.user.role : 'Placeholder photo'}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Signature Images
 

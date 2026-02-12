@@ -77,6 +77,9 @@ In the library codebase:
 
 ### Examples
 
+
+
+{% raw %}
 ```html
 <!-- Book citation -->
 <p>As described in <cite>The Art of Programming</cite>, best practices include...</p>
@@ -91,8 +94,12 @@ In the library codebase:
 <p>Several sources (<cite>Brown 2022</cite>, <cite>Jones 2023</cite>) confirm this.</p>
 
 <!-- Data-bound citation -->
-{% raw %}<p>Reference: <cite>{{model.citationTitle}}</cite> ({{model.citationYear}})</p>{% endraw %}
+<p>Reference: <cite>{{model.citationTitle}}</cite> ({{model.citationYear}})</p>
 ```
+{% endraw %}
+
+
+
 
 ---
 
@@ -130,6 +137,9 @@ In the library codebase:
 
 ### Examples
 
+
+
+{% raw %}
 ```html
 <!-- Basic definition -->
 <p><dfn>Scryber</dfn> is a PDF generation library for .NET applications.</p>
@@ -144,8 +154,12 @@ In the library codebase:
 <p><dfn style="font-weight: bold; color: #336699;">Data binding</dfn> is the process of connecting template elements to data sources.</p>
 
 <!-- With data binding -->
-{% raw %}<p><dfn>{{model.termName}}</dfn>: {{model.termDefinition}}</p>{% endraw %}
+<p><dfn>{{model.termName}}</dfn>: {{model.termDefinition}}</p>
 ```
+{% endraw %}
+
+
+
 
 ---
 
@@ -178,6 +192,9 @@ In the library codebase:
 
 ### Examples
 
+
+
+{% raw %}
 ```html
 <!-- Basic quotation -->
 <p>The report stated <q>results exceeded expectations</q> in Q3.</p>
@@ -189,7 +206,7 @@ In the library codebase:
 <p>The motto is <q style="font-style: italic; color: #666;">Innovation through collaboration</q>.</p>
 
 <!-- With data binding -->
-{% raw %}<p>Customer feedback: <q>{{model.customerQuote}}</q></p>{% endraw %}
+<p>Customer feedback: <q>{{model.customerQuote}}</q></p>
 
 <!-- Custom quote styling -->
 <style>
@@ -201,6 +218,9 @@ In the library codebase:
 </style>
 <p>They remarked <q>this is excellent work</q>.</p>
 ```
+{% endraw %}
+
+
 
 ---
 

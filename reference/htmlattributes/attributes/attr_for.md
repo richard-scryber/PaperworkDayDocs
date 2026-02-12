@@ -137,18 +137,24 @@ The `for` attribute can be set statically or dynamically:
 
 ### Dynamic For with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { fieldId: "email-field" } -->
 <label for="{{model.fieldId}}">Email:</label>
 <input type="text" id="{{model.fieldId}}" name="email" value="{{model.email}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional For Value
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { isPrimary: true } -->
 <label for="{{model.isPrimary ? 'primary-email' : 'secondary-email'}}">
     Email:
@@ -157,13 +163,17 @@ The `for` attribute can be set statically or dynamically:
        id="{{model.isPrimary ? 'primary-email' : 'secondary-email'}}"
        name="email"
        value="{{model.email}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### For in Repeating Templates
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { fields: [{id: "field1", label: "Name", value: "John"}, ...] } -->
 <template data-bind="{{model.fields}}">
     <div style="margin-bottom: 10pt;">
@@ -171,8 +181,10 @@ The `for` attribute can be set statically or dynamically:
         <input type="text" id="{{.id}}" name="{{.id}}" value="{{.value}}" />
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -909,8 +921,10 @@ Labels can be positioned before, after, or around inputs:
 
 ### Data-Bound Form with Dynamic For Values
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     formFields: [
         {id: "field-001", label: "Company Name", value: "Acme Corp", type: "text"},
@@ -931,8 +945,10 @@ Labels can be positioned before, after, or around inputs:
                style="width: 100%; padding: 8pt; border: 1pt solid #cccccc;" />
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Inline Labels with For Attribute
 

@@ -57,9 +57,15 @@ The string with trailing whitespace removed.
 
 ### Remove Trailing Spaces
 
+
+
+{% raw %}
 ```handlebars
 <p>"{{trimEnd(model.text)}}"</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,11 +81,17 @@ doc.Params["model"] = new {
 
 ### Clean Line Endings
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.lines}}
   <p>{{trimEnd(this)}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -101,9 +113,15 @@ doc.Params["model"] = new {
 
 ### Preserve Leading Spaces
 
+
+
+{% raw %}
 ```handlebars
 <pre>{{trimEnd(model.code)}}</pre>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

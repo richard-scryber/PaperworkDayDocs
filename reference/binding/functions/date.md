@@ -69,9 +69,15 @@ A DateTime object representing the parsed date.
 
 ### Parse ISO Date
 
+
+
+{% raw %}
 ```handlebars
 <p>Order Date: {{format(date(model.orderDate), 'MMMM dd, yyyy')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -87,9 +93,15 @@ doc.Params["model"] = new {
 
 ### Calculate Days Until
 
+
+
+{% raw %}
 ```handlebars
 <p>Days until deadline: {{daysBetween(model.today, date(model.deadline))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -106,6 +118,9 @@ doc.Params["model"] = new {
 
 ### Format Different Date Strings
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.events}}
   <div class="event">
@@ -114,6 +129,9 @@ doc.Params["model"] = new {
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -144,10 +162,16 @@ doc.Params["model"] = new {
 
 ### Add Days to String Date
 
+
+
+{% raw %}
 ```handlebars
 <p>Ship Date: {{format(date(model.orderDate), 'yyyy-MM-dd')}}</p>
 <p>Est. Delivery: {{format(addDays(date(model.orderDate), 5), 'yyyy-MM-dd')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

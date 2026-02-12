@@ -31,17 +31,23 @@ By the end of this article, you'll be able to:
 
 Functions are called within expression brackets:
 
+
+
 {% raw %}
 ```html
 {{function(arg1, arg2, ...)}}
 ```
 {% endraw %}
 
+
+
 ---
 
 ## String Functions
 
 ### concat() - Concatenate Strings
+
+
 
 {% raw %}
 ```html
@@ -57,7 +63,11 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ### upper() - Convert to Uppercase
+
+
 
 {% raw %}
 ```html
@@ -68,7 +78,11 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ### lower() - Convert to Lowercase
+
+
 
 {% raw %}
 ```html
@@ -79,7 +93,11 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ### substring() - Extract Part of String
+
+
 
 {% raw %}
 ```html
@@ -95,7 +113,11 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ### trim() - Remove Whitespace
+
+
 
 {% raw %}
 ```html
@@ -106,7 +128,11 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ### replace() - Replace Text
+
+
 
 {% raw %}
 ```html
@@ -118,11 +144,15 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Math Functions
 
 ### add() - Addition
+
+
 
 {% raw %}
 ```html
@@ -138,7 +168,11 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ### subtract() - Subtraction
+
+
 
 {% raw %}
 ```html
@@ -149,7 +183,11 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ### multiply() - Multiplication
+
+
 
 {% raw %}
 ```html
@@ -160,7 +198,11 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ### divide() - Division
+
+
 
 {% raw %}
 ```html
@@ -171,9 +213,13 @@ Functions are called within expression brackets:
 ```
 {% endraw %}
 
+
+
 ### calc() - Complex Calculations
 
 The `calc()` function allows complex math expressions:
+
+
 
 {% raw %}
 ```html
@@ -195,6 +241,8 @@ The `calc()` function allows complex math expressions:
 ```
 {% endraw %}
 
+
+
 **Supported operators:**
 - `+` Addition
 - `-` Subtraction
@@ -213,6 +261,8 @@ doc.Params["model"] = new
 };
 ```
 
+
+
 {% raw %}
 ```html
 <!-- Total with tax -->
@@ -224,11 +274,15 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Conditional Functions
 
 ### if() - Inline Conditional
+
+
 
 {% raw %}
 ```html
@@ -243,7 +297,11 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ### choose() - Multiple Conditions
+
+
 
 {% raw %}
 ```html
@@ -256,11 +314,15 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Comparison Operators
 
 Use in conditional functions:
+
+
 
 {% raw %}
 ```html
@@ -284,11 +346,15 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Logical Operators
 
 ### AND
+
+
 
 {% raw %}
 ```html
@@ -297,7 +363,11 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ### OR
+
+
 
 {% raw %}
 ```html
@@ -306,7 +376,11 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ### NOT
+
+
 
 {% raw %}
 ```html
@@ -315,11 +389,15 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Date Functions
 
 ### now() - Current Date/Time
+
+
 
 {% raw %}
 ```html
@@ -329,7 +407,11 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ### format() - Format Date
+
+
 
 {% raw %}
 ```html
@@ -344,6 +426,8 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 **Common format strings:**
 - `yyyy-MM-dd` - 2025-01-15
 - `MM/dd/yyyy` - 01/15/2025
@@ -356,6 +440,8 @@ Use in conditional functions:
 ## Number Formatting
 
 ### format() - Format Numbers
+
+
 
 {% raw %}
 ```html
@@ -381,11 +467,15 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Practical Examples
 
 ### Example 1: Invoice Line Total
+
+
 
 {% raw %}
 ```html
@@ -412,7 +502,11 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ### Example 2: Customer Greeting
+
+
 
 {% raw %}
 ```html
@@ -422,7 +516,11 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ### Example 3: Status Badge
+
+
 
 {% raw %}
 ```html
@@ -435,7 +533,11 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ### Example 4: Discount Calculation
+
+
 
 {% raw %}
 ```html
@@ -451,7 +553,10 @@ Use in conditional functions:
 ```
 {% endraw %}
 
+
+
 ### Example 5: Text Truncation with Ellipsis
+
 
 {% raw %}
 ```html
@@ -462,6 +567,7 @@ Use in conditional functions:
 </p>
 ```
 {% endraw %}
+
 
 ---
 
@@ -491,6 +597,8 @@ doc.SaveAsPDF("report.pdf");
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -590,6 +698,8 @@ doc.SaveAsPDF("report.pdf");
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Try It Yourself
@@ -624,13 +734,19 @@ Create a template that displays the same date in:
 
 ### ❌ Missing Quotes in Strings
 
+
+
 {% raw %}
 ```html
 {{concat(Hello, model.name)}}  <!-- Error: Hello is not defined -->
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Quote string literals
+
+
 
 {% raw %}
 ```html
@@ -638,7 +754,11 @@ Create a template that displays the same date in:
 ```
 {% endraw %}
 
+
+
 ### ❌ Wrong calc() Syntax
+
+
 
 {% raw %}
 ```html
@@ -646,7 +766,11 @@ Create a template that displays the same date in:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Use direct expression with operators
+
+
 
 {% raw %}
 ```html
@@ -654,7 +778,11 @@ Create a template that displays the same date in:
 ```
 {% endraw %}
 
+
+
 ### ❌ Incorrect Parentheses in calc()
+
+
 
 {% raw %}
 ```html
@@ -662,13 +790,19 @@ Create a template that displays the same date in:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Use standard math expression with parentheses
+
+
 
 {% raw %}
 ```html
 {{calc((model.a + model.b) * model.c)}}  <!-- Correct -->
 ```
 {% endraw %}
+
+
 
 ---
 

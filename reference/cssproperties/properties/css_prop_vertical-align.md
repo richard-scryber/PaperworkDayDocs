@@ -84,8 +84,10 @@ The `vertical-align` property can be dynamically controlled through data binding
 
 ### Example 1: Dynamic Table Cell Alignment
 
-```html
+
+
 {% raw %}
+```html
 <table style="width: 100%; border-collapse: collapse">
     <tr style="height: 60pt">
         <td style="vertical-align: {{model.table.headerAlign}}; border: 1pt solid #ccc; padding: 8pt">
@@ -107,13 +109,17 @@ The `vertical-align` property can be dynamically controlled through data binding
     "data": {"value1": "Premium Widget"}
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Mathematical Expression with Dynamic Positioning
 
-```html
+
+
 {% raw %}
+```html
 <p style="font-size: 14pt">
     x<span style="vertical-align: {{model.notation.exponentAlign}}; font-size: 10pt">{{model.notation.exponent}}</span> +
     y<span style="vertical-align: {{model.notation.subscriptAlign}}; font-size: 10pt">{{model.notation.subscript}}</span>
@@ -129,13 +135,17 @@ The `vertical-align` property can be dynamically controlled through data binding
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Content Type-Based Alignment
 
-```html
+
+
 {% raw %}
+```html
 <div style="font-size: 12pt">
     <span style="vertical-align: {{model.element.alignment}}">{{model.element.text}}</span>
 </div>
@@ -148,8 +158,10 @@ The `vertical-align` property can be dynamically controlled through data binding
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

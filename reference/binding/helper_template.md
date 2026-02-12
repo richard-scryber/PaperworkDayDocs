@@ -33,11 +33,17 @@ Brief description of what this helper does.
 
 ## Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{#helper_name expression}}
   <!-- Content -->
 {{/helper_name}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -61,11 +67,17 @@ Brief description of what this helper does.
 
 ### Basic Example
 
+
+
+{% raw %}
 ```handlebars
 {{#helper_name model.data}}
   <p>{{this.property}}</p>
 {{/helper_name}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -85,11 +97,17 @@ doc.Params["model"] = new {
 
 The `{{#helper_name}}` helper compiles to the following Scryber template structure:
 
+
+
+{% raw %}
 ```xml
 <element data-attribute="{{expression}}">
   <!-- Content -->
 </element>
 ```
+{% endraw %}
+
+
 
 Brief explanation of how it works internally.
 

@@ -58,9 +58,15 @@ The number of hours between the two datetimes. Positive if endDateTime is after 
 
 ### Calculate Hours Until Event
 
+
+
+{% raw %}
 ```handlebars
 <p>Hours until meeting: {{hoursBetween(model.now, model.meetingTime)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -77,12 +83,18 @@ doc.Params["model"] = new {
 
 ### Shift Duration
 
+
+
+{% raw %}
 ```handlebars
 <h3>Work Shift Report</h3>
 {{#each model.shifts}}
   <p>{{this.employee}}: {{hoursBetween(this.clockIn, this.clockOut)}} hours</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -111,6 +123,9 @@ doc.Params["model"] = new {
 
 ### SLA Compliance
 
+
+
+{% raw %}
 ```handlebars
 <p>Response time: {{hoursBetween(model.ticketCreated, model.firstResponse)}} hours</p>
 <p>Status:
@@ -121,6 +136,9 @@ doc.Params["model"] = new {
 {{/if}}
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

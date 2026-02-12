@@ -204,6 +204,8 @@ Control element visibility based on data.
 
 ### Using Conditional Blocks
 
+
+
 {% raw %}
 ```html
 <!-- Show only if condition is true -->
@@ -226,10 +228,14 @@ Control element visibility based on data.
         <!-- Upgrade information -->
     </div>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Using Inline Conditionals with display
+
+
 
 {% raw %}
 ```html
@@ -241,8 +247,10 @@ Control element visibility based on data.
 <div style="display: {{if(model.userLevel >= 5, 'block', 'none')}};">
     <p>Advanced content for level 5+ users.</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -250,6 +258,9 @@ Control element visibility based on data.
 
 ### Example 1: Conditional Sections
 
+
+
+{% raw %}
 ```html
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -298,7 +309,6 @@ Control element visibility based on data.
     </div>
 
     <!-- Conditional sections -->
-    {% raw %}
     {{#if model.showStats}}
         <div class="section">
             <h2>Statistics</h2>
@@ -331,10 +341,12 @@ Control element visibility based on data.
             <p style="color: #666;">No new notifications.</p>
         </div>
     {{/if}}
-    {% endraw %}
 </body>
 </html>
 ```
+{% endraw %}
+
+
 
 ### Example 2: Badge and Button Styles
 
@@ -618,23 +630,30 @@ Create a layout with:
 
 ### ❌ Forgetting Conditional Closing Tags
 
+
+
 {% raw %}
 ```html
 {{#if model.showSection}}
     <div>Content</div>
 <!-- Missing {{/if}} - will cause errors -->
-{% endraw %}
 ```
+{% endraw %}
+
 
 ✅ **Solution:** Always close blocks
+
+
 
 {% raw %}
 ```html
 {{#if model.showSection}}
     <div>Content</div>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

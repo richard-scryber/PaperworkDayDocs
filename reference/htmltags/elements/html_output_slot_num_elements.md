@@ -59,8 +59,11 @@ The `<output>` element represents the result of a calculation, user action, or o
 
 ### Examples
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- Calculation result -->
+<!-- Calculation result -->
 <p>Total: <output style="font-weight: bold;">${{model.total}}</output></p>
 
 <!-- Formula result -->
@@ -97,8 +100,12 @@ The `<output>` element represents the result of a calculation, user action, or o
             <output style="font-size: 12pt;">${{grandTotal}}</output>
         </td>
     </tr>
-</table>{% endraw %}
+</table>
 ```
+{% endraw %}
+
+
+
 
 ---
 
@@ -117,8 +124,11 @@ The `<slot>` element represents a placeholder for dynamic content insertion.
 
 ### Examples
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- Basic slot -->
+<!-- Basic slot -->
 <div>
     <slot>Default content if no content provided</slot>
 </div>
@@ -143,8 +153,12 @@ The `<slot>` element represents a placeholder for dynamic content insertion.
 <!-- Data-bound slot -->
 <div>
     <slot>{{model.dynamicContent}}</slot>
-</div>{% endraw %}
+</div>
 ```
+{% endraw %}
+
+
+
 
 ---
 
@@ -174,8 +188,11 @@ Common .NET number format strings:
 
 ### Examples
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- Currency formatting -->
+<!-- Currency formatting -->
 <p>Price: <num data-value="{{model.price}}" data-format="C2"></num></p>
 
 <!-- Percentage formatting -->
@@ -217,8 +234,12 @@ Common .NET number format strings:
 </p>
 
 <!-- Custom format -->
-<p>Phone: <num data-value="{{model.phoneNumber}}" data-format="(###) ###-####"></num></p>{% endraw %}
+<p>Phone: <num data-value="{{model.phoneNumber}}" data-format="(###) ###-####"></num></p>
 ```
+{% endraw %}
+
+
+
 
 ---
 

@@ -31,10 +31,11 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 
 ## Syntax
 
+
 ```
-{% raw %}
 {{operand1 == operand2}}
-{% endraw %}```
+```
+
 
 ---
 
@@ -60,21 +61,27 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 ### Basic Comparison
 
 ```
-{% raw %}
+
 {{5 == 5}}
 <!-- Output: true -->
 
 {{5 == 3}}
-<!-- Output: false --> {% endraw %}
+<!-- Output: false --> 
 ```
+
 
 ### String Comparison
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#if model.status == 'active'}}
   <span class="badge-active">Active</span>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -85,45 +92,65 @@ doc.Params["model"] = new {
 
 ### Number Comparison
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#if model.quantity == 0}}
   <span class="out-of-stock">Out of Stock</span>
 {{else}}
   <span>{{model.quantity}} in stock</span>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
 
 ### Boolean Comparison
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#if model.isPremium == true}}
   <span class="premium-badge">Premium Member</span>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
 
 ### Multiple Conditions
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#if model.role == 'admin'}}
   <button>Delete</button>
 {{else if model.role == 'editor'}}
   <button>Edit</button>
 {{else if model.role == 'viewer'}}
   <button>View</button>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
 
 ### With #each
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#each model.products}}
   {{#if this.category == 'Electronics'}}
     <div class="electronics-product">
       <h3>{{this.name}}</h3>
     </div>
   {{/if}}
-{{/each}} {% endraw %}
+{{/each}} 
 ```
+{% endraw %}
+
+
 
 ---
 

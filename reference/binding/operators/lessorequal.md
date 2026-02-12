@@ -33,9 +33,10 @@ Compare if the left value is less than or equal to the right value.
 
 ## Syntax
 
-``` {% raw %}
+
+``` 
 {{operand1 <>= operand2}}
-``` {% endraw %}
+``` 
 
 ---
 
@@ -70,14 +71,21 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 ### Low Stock Alert
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.stock <= 10}}
   <div class="alert-warning">
     <strong>Low Stock Warning</strong>
     <p>Only {{model.stock}} units left - reorder soon!</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -96,23 +104,37 @@ doc.Params["model"] = new {
 
 ### Score Validation
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.score <= 100}}
   <p class="valid">Score: {{model.score}}/100</p>
 {{else}}
   <p class="error">Invalid score: {{model.score}} (must be ≤ 100)</p>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 ### Capacity Check
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.attendees <= model.capacity}}
   <span class="available">{{model.capacity - model.attendees}} spots available</span>
 {{else}}
   <span class="full">Event is full</span>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -129,18 +151,28 @@ doc.Params["model"] = new {
 
 ### Date Deadline Check
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.dueDate <= model.today}}
   <div class="overdue">
     <strong>Overdue!</strong>
     <p>Due: {{format(model.dueDate, 'MMM dd, yyyy')}}</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 ### Price Range Filter
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#each model.products}}
   {{#if this.price <= model.maxBudget}}
     <div class="product-affordable">
@@ -149,8 +181,12 @@ doc.Params["model"] = new {
       <span class="badge">Within Budget</span>
     </div>
   {{/if}}
-{{/each}} {% endraw %}
+{{/each}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp

@@ -249,16 +249,22 @@ Both attributes support data binding:
 
 ### Dynamic Values with Data Binding
 
+
+
 {% raw %}
 ```html
 <!-- Model: { textAlign: "right", vertAlign: "top" } -->
 <td align="{{model.textAlign}}" valign="{{model.vertAlign}}">
     Dynamic alignment
 </td>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Alignment
+
+
 
 {% raw %}
 ```html
@@ -267,8 +273,10 @@ Both attributes support data binding:
     valign="{{model.isHeader ? 'middle' : 'top'}}">
     Content
 </td>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -614,6 +622,8 @@ Alignment is applied in this order (later overrides earlier):
 
 ### Data-Bound Table with Dynamic Alignment
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -653,8 +663,10 @@ Alignment is applied in this order (later overrides earlier):
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

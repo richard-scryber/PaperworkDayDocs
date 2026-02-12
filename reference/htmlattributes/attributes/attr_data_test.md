@@ -54,19 +54,25 @@ This attribute is essential for:
 
 The `data-test` attribute is applied to `<if>` elements:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.showSection}}">
     <!-- Content rendered only when showSection is true -->
     <div>Conditional content</div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Basic Syntax
 
-```html
+
+
 {% raw %}
+```html
 <!-- Simple boolean property -->
 <if data-test="{{model.isActive}}">
     <div>Active content</div>
@@ -86,8 +92,10 @@ The `data-test` attribute is applied to `<if>` elements:
 <if data-test="{{!model.isHidden}}">
     <div>Visible content</div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -196,66 +204,90 @@ JavaScript-style truthy/falsy evaluation:
 ### Common Patterns
 
 **Null/Undefined Checks**:
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.value != null}}">
     <div>{{model.value}}</div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Empty Collection Checks**:
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.items.length > 0}}">
     <template data-bind="{{model.items}}">
         <div>{{.name}}</div>
     </template>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Multiple Conditions**:
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.isActive && model.isPaid && !model.isExpired}}">
     <div>Valid subscription</div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Nesting Conditionals
 
 Conditionals can be nested for complex logic:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.hasPermission}}">
     <if data-test="{{model.isActive}}">
         <!-- Shown only if both conditions true -->
         <div>Active with permission</div>
     </if>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Alternative Approaches
 
 For simple visibility control, consider alternatives:
 
 **CSS-based hiding** (content still in PDF):
-```html
+
+
 {% raw %}
+```html
 <div hidden="{{!model.show ? 'hidden' : ''}}">Content</div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Conditional styling**:
-```html
+
+
 {% raw %}
+```html
 <div style="display: {{model.show ? 'block' : 'none'}};">Content</div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Use `<if>` when content should be completely excluded.
 
@@ -277,37 +309,47 @@ For large conditional sections with many items, the performance benefit can be s
 
 Show content based on boolean flag:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.showDisclaimer}}">
     <div style="padding: 10pt; background-color: #fff3cd; border: 1pt solid #ffc107;">
         <strong>Disclaimer:</strong> This information is provided for reference only.
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 2. Numeric Comparison
 
 Show content based on age verification:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.age >= 21}}">
     <div style="padding: 15pt;">
         <h3>Age-Restricted Content</h3>
         <p>This section is only visible to users 21 and older.</p>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 3. String Equality
 
 Display content based on user role:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.userRole == 'Admin'}}">
     <div style="background-color: #f8d7da; padding: 10pt; margin: 10pt 0;">
         <strong>Administrator View</strong><br/>
@@ -315,75 +357,95 @@ Display content based on user role:
         Created: {{model.createdDate}}
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 4. Logical AND
 
 Require multiple conditions:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.isPremiumMember && model.orderTotal > 100}}">
     <div style="background-color: #d4edda; padding: 15pt; border: 2pt solid #28a745;">
         <strong>Premium Discount Applied!</strong><br/>
         You saved ${{model.premiumDiscount}} on this order.
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 5. Logical OR
 
 Show content if any condition is true:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.isUrgent || model.isHighPriority}}">
     <div style="background-color: #fff3cd; padding: 10pt; border-left: 5pt solid #ffc107;">
         <strong>⚠ Attention Required</strong><br/>
         This item requires immediate attention.
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 6. Negation
 
 Show content when condition is false:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{!model.isDisabled}}">
     <div>
         <h3>{{model.featureName}}</h3>
         <p>{{model.featureDescription}}</p>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 7. Null Check
 
 Verify value exists before displaying:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.specialInstructions != null}}">
     <div style="margin: 15pt 0; padding: 10pt; border: 1pt dashed #666;">
         <strong>Special Instructions:</strong><br/>
         {{model.specialInstructions}}
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 8. Collection Length Check
 
 Show section only if items exist:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.orderItems.length > 0}}">
     <h2>Order Items</h2>
     <table style="width: 100%;">
@@ -395,15 +457,19 @@ Show section only if items exist:
         </template>
     </table>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 9. Status-Based Display
 
 Different sections based on order status:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.orderStatus == 'pending'}}">
     <div style="color: orange; font-weight: bold; padding: 10pt; background-color: #fff3cd;">
         ⧗ Order Pending - Awaiting processing
@@ -421,15 +487,19 @@ Different sections based on order status:
         ✓ Order Delivered - {{model.deliveryDate}}
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 10. Complex Conditional Logic
 
 Multiple conditions with parentheses:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{(model.isVIP || model.orderTotal > 500) && model.isActive}}">
     <div style="background-color: #e7f3ff; padding: 15pt; border: 2pt solid #0066cc;">
         <h3 style="margin: 0 0 10pt 0;">VIP Benefits Applied</h3>
@@ -440,30 +510,38 @@ Multiple conditions with parentheses:
         </ul>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 11. Date-Based Conditional
 
 Show content based on date comparison:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.expirationDate != null && model.daysUntilExpiration < 30}}">
     <div style="background-color: #fff3cd; padding: 12pt; margin: 10pt 0; border-left: 4pt solid #ffc107;">
         <strong>⚠ Expiration Warning</strong><br/>
         This item expires in {{model.daysUntilExpiration}} days on {{model.expirationDate}}.
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 12. Permission-Based Sections
 
 Multiple permission levels:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Public content (always shown) -->
 <div>
     <h2>Public Information</h2>
@@ -493,15 +571,19 @@ Multiple permission levels:
         <p>{{model.adminContent}}</p>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 13. Invoice Payment Status
 
 Conditional payment messages:
 
-```html
+
+
 {% raw %}
+```html
 <div style="margin-top: 30pt;">
     <if data-test="{{model.isPaid}}">
         <div style="background-color: #d4edda; padding: 15pt; border: 2pt solid #28a745;">
@@ -534,15 +616,19 @@ Conditional payment messages:
         </div>
     </if>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 14. Nested Conditionals
 
 Complex nested logic:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.hasInsurance}}">
     <div style="margin: 15pt 0;">
         <h3>Insurance Coverage</h3>
@@ -563,15 +649,19 @@ Complex nested logic:
         </if>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 15. Conditional Tables
 
 Show entire table based on data presence:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.lineItems != null && model.lineItems.length > 0}}">
     <h2>Line Items</h2>
     <table style="width: 100%; border-collapse: collapse;">
@@ -597,15 +687,19 @@ Show entire table based on data presence:
         </tbody>
     </table>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 16. Multi-Language Support
 
 Language-specific content:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.language == 'en'}}">
     <div>
         <h1>Welcome</h1>
@@ -626,15 +720,19 @@ Language-specific content:
         <p>Merci d'avoir choisi nos services.</p>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 17. Conditional Styling and Formatting
 
 Show warnings based on threshold:
 
-```html
+
+
 {% raw %}
+```html
 <div>
     <h3>Account Balance: ${{model.balance}}</h3>
 
@@ -656,15 +754,19 @@ Show warnings based on threshold:
         </div>
     </if>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 18. Configuration-Driven Sections
 
 Show sections based on configuration:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.config.showExecutiveSummary}}">
     <div style="page-break-after: always;">
         <h1>Executive Summary</h1>
@@ -692,15 +794,19 @@ Show sections based on configuration:
         <p>{{model.appendixContent}}</p>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 19. Dynamic Document Sections
 
 Build document structure from data:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.sections}}">
     <if data-test="{{.enabled}}">
         <div style="margin-bottom: 30pt;">
@@ -720,15 +826,19 @@ Build document structure from data:
         </div>
     </if>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 20. Comprehensive Business Logic
 
 Complex real-world scenario:
 
-```html
+
+
 {% raw %}
+```html
 <div class="document">
     <!-- Header always shown -->
     <div style="background-color: #336699; color: white; padding: 20pt;">
@@ -806,8 +916,10 @@ Complex real-world scenario:
         </div>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

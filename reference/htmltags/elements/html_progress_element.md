@@ -526,8 +526,10 @@ Progress bars are excellent for:
 
 ### Data-Bound Progress Bars
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = {
     uploadProgress: 73,
     downloadProgress: 92,
@@ -572,8 +574,10 @@ Progress bars are excellent for:
         </progress>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Fitness Goals Dashboard
 
@@ -810,8 +814,10 @@ Progress bars are excellent for:
 
 ### Repeating Progress from Collection
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model.projects = [
     {name: "Website Redesign", progress: 92, total: 100},
     {name: "Mobile App", progress: 67, total: 100},
@@ -839,8 +845,10 @@ Progress bars are excellent for:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Circular/Vertical Progress Representation
 

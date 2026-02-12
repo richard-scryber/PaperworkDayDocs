@@ -57,9 +57,15 @@ The day of the week as a number from 0 (Sunday) to 6 (Saturday).
 
 ### Display Day Number
 
+
+
+{% raw %}
 ```handlebars
 <p>Day of week: {{dayOfWeek(model.date)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,6 +81,9 @@ doc.Params["model"] = new {
 
 ### Weekend Detection
 
+
+
+{% raw %}
 ```handlebars
 <p>{{format(model.date, 'dddd, MMMM dd')}}:
 {{#if (dayOfWeek(model.date) == 0 || dayOfWeek(model.date) == 6)}}
@@ -84,6 +93,9 @@ doc.Params["model"] = new {
 {{/if}}
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -99,6 +111,9 @@ doc.Params["model"] = new {
 
 ### Business Days Filter
 
+
+
+{% raw %}
 ```handlebars
 <h3>Business Day Appointments</h3>
 {{#each model.appointments}}
@@ -107,6 +122,9 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -128,6 +146,9 @@ doc.Params["model"] = new {
 
 ### Shift Schedule
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.dates}}
   <p>{{format(this, 'MMM dd')}}:
@@ -143,6 +164,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

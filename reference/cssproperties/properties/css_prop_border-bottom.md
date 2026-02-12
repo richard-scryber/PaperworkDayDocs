@@ -92,8 +92,10 @@ The `border-bottom` property supports dynamic values through data binding, allow
 
 ### Example 1: Table rows with conditional separators
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .table-row {
         padding: 8pt 0;
@@ -104,13 +106,17 @@ The `border-bottom` property supports dynamic values through data binding, allow
         <p>{{row.label}}: {{row.value}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Section headers with dynamic underlines
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .section-header {
         padding-bottom: 10pt;
@@ -124,8 +130,10 @@ The `border-bottom` property supports dynamic values through data binding, allow
         {{section.title}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -140,8 +148,10 @@ Data context:
 
 ### Example 3: Alert cards with severity indicators
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .alert-card {
         padding: 15pt;
@@ -153,8 +163,10 @@ Data context:
         <strong>{{alert.title}}:</strong> {{alert.message}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

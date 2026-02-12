@@ -58,9 +58,15 @@ A new DateTime with the specified milliseconds added.
 
 ### Add Milliseconds
 
+
+
+{% raw %}
 ```handlebars
 <p>Precise time: {{format(addMilliseconds(model.time, 500), 'h:mm:ss.fff tt')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -76,10 +82,16 @@ doc.Params["model"] = new {
 
 ### Performance Timing
 
+
+
+{% raw %}
 ```handlebars
 <p>Duration: {{model.elapsedMs}} ms</p>
 <p>Ended: {{format(addMilliseconds(model.started, model.elapsedMs), 'h:mm:ss.fff')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -97,9 +109,15 @@ doc.Params["model"] = new {
 
 ### High-Precision Timestamps
 
+
+
+{% raw %}
 ```handlebars
 <p>Timestamp: {{format(addMilliseconds(model.base, model.offset), 'yyyy-MM-dd HH:mm:ss.fff')}}</p>
 ```
+{% endraw %}
+
+
 
 ---
 

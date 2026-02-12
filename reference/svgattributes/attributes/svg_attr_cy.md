@@ -63,33 +63,43 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 
 ### Example 1: Dynamic Circle Positioning
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dot: { cx: 150, cy: 100, radius: 40, color: '#9C27B0' } } -->
 <svg width="300" height="200">
     <circle cx="{{dot.cx}}" cy="{{dot.cy}}" r="{{dot.radius}}"
             fill="{{dot.color}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Vertically Centered Element
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { viewportWidth: 400, viewportHeight: 300 } -->
 <svg width="{{viewportWidth}}" height="{{viewportHeight}}">
     <!-- Circle centered vertically and horizontally -->
     <circle cx="{{viewportWidth / 2}}" cy="{{viewportHeight / 2}}" r="60"
             fill="#FF5722"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Vertical Scatter Plot
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dataPoints: [
     {x: 80, cy: 180, r: 10, value: 45},
     {x: 140, cy: 120, r: 15, value: 75},
@@ -102,8 +112,10 @@ The `cy` attribute supports dynamic values using data binding expressions with `
                 fill="#2196F3" opacity="0.7"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -392,8 +404,10 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 
 ### Dynamic Vertical Positioning
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { markers: [
     {cx: 100, cy: 80, size: 12, label: 'High'},
     {cx: 200, cy: 150, size: 10, label: 'Medium'},
@@ -405,8 +419,10 @@ The `cy` attribute supports dynamic values using data binding expressions with `
                 fill="{{color}}" opacity="0.7"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Bell Curve Distribution
 

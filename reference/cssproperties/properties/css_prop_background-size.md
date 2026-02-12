@@ -102,8 +102,10 @@ The `background-size` property supports dynamic data binding, enabling responsiv
 
 ### Example 1: Dynamic logo sizing from company data
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .company-letterhead {
         background-image: url('{{company.logoUrl}}');
@@ -122,15 +124,19 @@ The `background-size` property supports dynamic data binding, enabling responsiv
         <p>{{letter.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Perfect for multi-tenant systems where each organization has logos of different dimensions. The logo size and spacing automatically adjust based on database values, ensuring consistent professional appearance across all clients.
 
 ### Example 2: Conditional watermark sizing by page type
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .document-page {
         background-image: url('{{watermark.imageUrl}}');
@@ -147,15 +153,19 @@ Perfect for multi-tenant systems where each organization has logos of different 
         <p>{{page.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Enables intelligent watermark sizing where cover pages use full-size backgrounds, content pages use proportional watermarks, and other pages use specific dimensions - all controlled by page type data.
 
 ### Example 3: User-configurable background images
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .certificate {
         background-image: url('{{certificate.backgroundImageUrl}}');
@@ -182,8 +192,10 @@ Enables intelligent watermark sizing where cover pages use full-size backgrounds
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Allows administrators to configure certificate templates with custom background images and sizing through a UI, storing preferences in a database. Users can choose from "contain", "cover", specific dimensions, or percentages for complete control over certificate appearance.
 

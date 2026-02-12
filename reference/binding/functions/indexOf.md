@@ -58,6 +58,9 @@ The zero-based index of the first occurrence, or -1 if not found.
 
 ### Check if Found
 
+
+
+{% raw %}
 ```handlebars
 {{#if indexOf(model.text, '@') >= 0}}
   <p>Email format detected</p>
@@ -65,6 +68,9 @@ The zero-based index of the first occurrence, or -1 if not found.
   <p>Not an email</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -80,9 +86,15 @@ doc.Params["model"] = new {
 
 ### Extract After Position
 
+
+
+{% raw %}
 ```handlebars
 <p>Domain: {{substring(model.email, indexOf(model.email, '@') + 1)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -98,10 +110,16 @@ doc.Params["model"] = new {
 
 ### Split on First Occurrence
 
+
+
+{% raw %}
 ```handlebars
 <p>First part: {{substring(model.text, 0, indexOf(model.text, ','))}}</p>
 <p>Second part: {{substring(model.text, indexOf(model.text, ',') + 2)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -118,6 +136,9 @@ doc.Params["model"] = new {
 
 ### Conditional Based on Position
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.items}}
   {{#if indexOf(this.code, '-') > 0}}
@@ -127,6 +148,9 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

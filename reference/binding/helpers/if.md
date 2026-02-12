@@ -33,6 +33,9 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 ## Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{#if condition}}
   <!-- Rendered if condition is true -->
@@ -42,6 +45,9 @@ Conditionally render content based on expressions. Supports multiple branches wi
   <!-- Rendered if all conditions are false -->
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -72,14 +78,23 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 ### Simple Condition
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.isActive}}
   <span class="badge-active">Active</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### If-Else
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.stock > 0}}
   <button>Add to Cart</button>
@@ -87,9 +102,15 @@ Conditionally render content based on expressions. Supports multiple branches wi
   <span class="out-of-stock">Out of Stock</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### Multiple Conditions
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.score >= 90}}
   <span class="grade-a">Excellent (A)</span>
@@ -101,9 +122,15 @@ Conditionally render content based on expressions. Supports multiple branches wi
   <span class="grade-f">Needs Improvement (F)</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### Comparison Operators
 
+
+
+{% raw %}
 ```handlebars
 <!-- Equality -->
 {{#if model.status == 'approved'}}
@@ -120,9 +147,15 @@ Conditionally render content based on expressions. Supports multiple branches wi
   <p class="alert">Low stock warning!</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### Logical Operators
 
+
+
+{% raw %}
 ```handlebars
 <!-- AND (&&) -->
 {{#if model.age >= 18 && model.hasLicense}}
@@ -138,9 +171,15 @@ Conditionally render content based on expressions. Supports multiple branches wi
   </div>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### With #each Context
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.users}}
   <div class="user">
@@ -156,6 +195,9 @@ Conditionally render content based on expressions. Supports multiple branches wi
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -163,6 +205,9 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 The `{{#if}}` helper compiles to Scryber's conditional rendering elements:
 
+
+
+{% raw %}
 ```xml
 <choose>
   <when data-test="{{condition}}">
@@ -176,6 +221,9 @@ The `{{#if}}` helper compiles to Scryber's conditional rendering elements:
   </otherwise>
 </choose>
 ```
+{% endraw %}
+
+
 
 This structure allows Scryber to evaluate conditions at databinding time and only render the matching branch.
 

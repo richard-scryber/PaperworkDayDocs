@@ -44,6 +44,8 @@ Scryber supports a rich variety of content types:
 
 ## Quick Example
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -126,8 +128,9 @@ Before starting this series:
 
 ### Image Sources
 
-{% raw %}
 ```html
+{% endraw %}
+
 <!-- Local file -->
 <img src="./images/logo.png" />
 
@@ -139,19 +142,23 @@ Before starting this series:
 
 <!-- Base64 embedded -->
 <img src="data:image/png;base64,iVBORw0KG..." />
-{% endraw %}
+
 ```
 
 ### SVG Inline vs External
 
 **Inline SVG** - Full control and data binding:
+
+
 {% raw %}
 ```html
 <svg width="200" height="200">
     <circle cx="100" cy="100" r="{{radius}}" fill="blue" />
 </svg>
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 **External SVG** - Reusable graphics:
 ```html
@@ -190,6 +197,8 @@ Before starting this series:
 
 ### Dynamic Images
 
+
+
 {% raw %}
 ```html
 {{#each products}}
@@ -201,10 +210,14 @@ Before starting this series:
     <p>{{this.description}}</p>
 </div>
 {{/each}}
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 ### Data-Driven SVG Charts
+
+
 
 {% raw %}
 ```html
@@ -222,10 +235,14 @@ Before starting this series:
     </text>
     {{/each}}
 </svg>
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 ### Dynamic Tables with Calculations
+
+
 
 {% raw %}
 ```html
@@ -249,12 +266,16 @@ Before starting this series:
         {{/each}}
     </tbody>
 </table>
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 ## Real-World Examples
 
 ### Product Catalog
+
+
 
 {% raw %}
 ```html
@@ -277,10 +298,14 @@ Before starting this series:
     </div>
     {{/each}}
 </div>
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 ### Data Dashboard
+
+
 
 {% raw %}
 ```html
@@ -348,10 +373,14 @@ Before starting this series:
         </tbody>
     </table>
 </div>
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 ### Invoice with Attachments
+
+
 
 {% raw %}
 ```html
@@ -398,8 +427,10 @@ Before starting this series:
     </div>
     {{/if}}
 </div>
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 ## Performance Tips
 
@@ -467,6 +498,8 @@ Before starting this series:
 
 ### Image Gallery
 
+
+
 {% raw %}
 ```html
 <div class="gallery">
@@ -479,10 +512,14 @@ Before starting this series:
     </div>
     {{/each}}
 </div>
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 ### Chart with Legend
+
+
 
 {% raw %}
 ```html
@@ -502,10 +539,14 @@ Before starting this series:
         {{/each}}
     </ul>
 </div>
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 ### Running Totals in Table
+
+
 
 {% raw %}
 ```html
@@ -525,8 +566,10 @@ Before starting this series:
         {{/each}}
     </tbody>
 </table>
-{% endraw %}
+
 ```
+{% endraw %}
+
 
 ## Next Steps
 

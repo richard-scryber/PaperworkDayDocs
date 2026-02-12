@@ -92,8 +92,10 @@ The `margin-inline-start` property supports dynamic values through data binding,
 
 ### Example 1: Dynamic indentation based on content hierarchy
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .content {
         padding: 30pt;
@@ -125,8 +127,10 @@ The `margin-inline-start` property supports dynamic values through data binding,
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -140,8 +144,10 @@ Data context:
 
 ### Example 2: Localized invoice layout with direction-aware spacing
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .invoice {
         padding: 40pt;
@@ -172,8 +178,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -198,8 +206,10 @@ Data context:
 
 ### Example 3: Comment thread with dynamic nesting
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .comments {
         padding: 25pt;
@@ -220,8 +230,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json

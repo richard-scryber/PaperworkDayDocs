@@ -71,6 +71,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -154,6 +156,8 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Pattern 2: Master-Detail Reports
@@ -231,6 +235,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -389,6 +395,8 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Pattern 3: Grouped Data with Subtotals
@@ -429,6 +437,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -510,11 +520,15 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Pattern 4: Conditional Page Breaks
 
 Control page breaks based on data.
+
+
 
 {% raw %}
 ```html
@@ -528,7 +542,11 @@ Control page breaks based on data.
 ```
 {% endraw %}
 
+
+
 Or with explicit conditions:
+
+
 
 {% raw %}
 ```html
@@ -544,6 +562,8 @@ Or with explicit conditions:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 ---
 
@@ -561,6 +581,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <div style="display: table; width: 100%;">
@@ -581,6 +603,8 @@ doc.Params["model"] = new
 </div>
 ```
 {% endraw %}
+
+
 
 ---
 
@@ -615,6 +639,8 @@ doc.Params["data"] = actualData;
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <style>
@@ -636,11 +662,15 @@ doc.Params["data"] = actualData;
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Pattern 7: Data-Driven Conditional Styles
 
 Apply styles based on data values.
+
+
 
 {% raw %}
 ```html
@@ -659,11 +689,15 @@ Apply styles based on data values.
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Pattern 8: Pagination with Index
 
 Display items with page-aware numbering.
+
+
 
 {% raw %}
 ```html
@@ -687,6 +721,8 @@ Display items with page-aware numbering.
 </table>
 ```
 {% endraw %}
+
+
 
 ---
 
@@ -722,6 +758,8 @@ Create an invoice with:
 
 ### ❌ Deeply Nested Context Issues
 
+
+
 {% raw %}
 ```html
 {{#each level1}}
@@ -737,6 +775,8 @@ Create an invoice with:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Restructure data or use root parameters
 
 ```csharp
@@ -747,11 +787,15 @@ doc.Params["companyName"] = "Tech Corp";  // Accessible from anywhere
 
 ### ❌ Complex Inline Conditionals
 
+
+
 {% raw %}
 ```html
 {{if(model.a && model.b || model.c && !model.d, if(model.e > 10, 'value1', 'value2'), 'value3')}}
 ```
 {% endraw %}
+
+
 
 ✅ **Solution:** Calculate in C#
 
@@ -762,6 +806,8 @@ doc.Params["displayValue"] = displayValue;
 
 ### ❌ Repeating Calculations
 
+
+
 {% raw %}
 ```html
 {{#each items}}
@@ -769,6 +815,8 @@ doc.Params["displayValue"] = displayValue;
 {{/each}}
 ```
 {% endraw %}
+
+
 
 ✅ **Solution:** Pre-calculate in C#
 

@@ -92,8 +92,10 @@ The overflow-x property works with data binding to create dynamic horizontal ove
 
 ### Example 1: Dynamic horizontal overflow for tables
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .table-container {
         padding: 10pt;
@@ -129,13 +131,17 @@ The overflow-x property works with data binding to create dynamic horizontal ove
         </table>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Conditional overflow for long text strings
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .text-display {
         padding: 10pt;
@@ -168,13 +174,17 @@ The overflow-x property works with data binding to create dynamic horizontal ove
         <strong>Command:</strong> {{commandString}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Responsive horizontal overflow for reports
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .report-section {
         margin: 20pt;
@@ -212,8 +222,10 @@ The overflow-x property works with data binding to create dynamic horizontal ove
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

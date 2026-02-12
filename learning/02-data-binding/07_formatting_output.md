@@ -32,17 +32,23 @@ By the end of this article, you'll be able to:
 
 The `format()` function applies .NET format strings to values:
 
+
+
 {% raw %}
 ```html
 {{format(value, 'formatString')}}
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Date Formatting
 
 ### Common Date Formats
+
+
 
 {% raw %}
 ```html
@@ -68,6 +74,8 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 ### Date Format Specifiers
 
 | Specifier | Description | Example |
@@ -90,6 +98,8 @@ The `format()` function applies .NET format strings to values:
 
 ### Custom Date Formats
 
+
+
 {% raw %}
 ```html
 <!-- Verbose format -->
@@ -110,11 +120,15 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Number Formatting
 
 ### Fixed Decimal Places
+
+
 
 {% raw %}
 ```html
@@ -132,7 +146,11 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 ### Number with Thousands Separator
+
+
 
 {% raw %}
 ```html
@@ -146,7 +164,11 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 ### General Number Format
+
+
 
 {% raw %}
 ```html
@@ -156,11 +178,15 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Currency Formatting
 
 ### Basic Currency
+
+
 
 {% raw %}
 ```html
@@ -178,7 +204,11 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 ### Manual Currency Formatting
+
+
 
 {% raw %}
 ```html
@@ -192,9 +222,13 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Percentage Formatting
+
+
 
 {% raw %}
 ```html
@@ -212,7 +246,11 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 **Important:** The `P` format multiplies the value by 100. If your value is already a percentage (e.g., 12.5), don't use `P`:
+
+
 
 {% raw %}
 ```html
@@ -223,11 +261,15 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Text Formatting
 
 ### String Functions
+
+
 
 {% raw %}
 ```html
@@ -249,7 +291,11 @@ The `format()` function applies .NET format strings to values:
 ```
 {% endraw %}
 
+
+
 ### Combining Formatting
+
+
 
 {% raw %}
 ```html
@@ -258,6 +304,8 @@ The `format()` function applies .NET format strings to values:
 <!-- Input: "john" → Output: "John" -->
 ```
 {% endraw %}
+
+
 
 ---
 
@@ -291,6 +339,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -435,6 +485,8 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ### Example 2: Product Catalog with Pricing
 
 **C# Code:**
@@ -497,6 +549,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -636,6 +690,8 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Format String Reference
@@ -703,6 +759,8 @@ Create a template that:
 
 ### ❌ Wrong Percentage Format
 
+
+
 {% raw %}
 ```html
 <!-- If value is already 12.5% (not 0.125) -->
@@ -710,7 +768,11 @@ Create a template that:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Check if value needs multiplication
+
+
 
 {% raw %}
 ```html
@@ -719,7 +781,11 @@ Create a template that:
 ```
 {% endraw %}
 
+
+
 ### ❌ Inconsistent Decimal Places
+
+
 
 {% raw %}
 ```html
@@ -728,7 +794,11 @@ Create a template that:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Use consistent formatting
+
+
 
 {% raw %}
 ```html
@@ -737,7 +807,11 @@ Create a template that:
 ```
 {% endraw %}
 
+
+
 ### ❌ Missing Format on Numbers
+
+
 
 {% raw %}
 ```html
@@ -745,13 +819,19 @@ Create a template that:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Always format currency
+
+
 
 {% raw %}
 ```html
 <p>Price: {{format(model.price, 'C2')}}</p>  <!-- $123.46 -->
 ```
 {% endraw %}
+
+
 
 ---
 

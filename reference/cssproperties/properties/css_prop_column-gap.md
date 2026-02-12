@@ -93,8 +93,10 @@ The column-gap property integrates with data binding to create adaptive spacing 
 
 ### Example 1: Dynamic column gap based on page size
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .article {
         column-count: 2;
@@ -127,13 +129,17 @@ The column-gap property integrates with data binding to create adaptive spacing 
         <p>{{content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: User-configurable spacing preferences
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .newsletter {
         padding: 40pt;
@@ -170,13 +176,17 @@ The column-gap property integrates with data binding to create adaptive spacing 
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Adaptive gap for magazine layouts
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .magazine-page {
         width: 650pt;
@@ -232,8 +242,10 @@ The column-gap property integrates with data binding to create adaptive spacing 
         {{/each}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

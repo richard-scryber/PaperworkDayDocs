@@ -345,8 +345,11 @@ addr.StyleClass = "postal-address";
 
 ### Data Binding with Contact Information
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- With model.contacts = [
+<!-- With model.contacts = [
     { name: "Sales", email: "sales@company.com", phone: "(555) 100-0001" },
     { name: "Support", email: "support@company.com", phone: "(555) 100-0002" }
 ] -->
@@ -360,7 +363,10 @@ addr.StyleClass = "postal-address";
         </address>
     </div>
 </template>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 
 ### Legal/Copyright Notice with Contact

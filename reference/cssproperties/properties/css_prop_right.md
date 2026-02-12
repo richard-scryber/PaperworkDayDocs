@@ -92,8 +92,10 @@ The `right` property supports data binding, enabling dynamic horizontal position
 
 ### Example 1: Dynamic stamp positioning from right
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .document {
         position: relative;
@@ -124,8 +126,10 @@ The `right` property supports data binding, enabling dynamic horizontal position
         <div class="stamp">{{stamp.text}}</div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data model:
 ```json
@@ -150,8 +154,10 @@ Data model:
 
 ### Example 2: Configurable right-aligned page numbers and logos
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .page-number {
         position: fixed;
@@ -187,8 +193,10 @@ Data model:
         <p>{{report.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data model:
 ```json
@@ -219,8 +227,10 @@ Data model:
 
 ### Example 3: Data-driven status badges on right side
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .page {
         position: relative;
@@ -256,8 +266,10 @@ Data model:
         <p>{{document.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data model:
 ```json

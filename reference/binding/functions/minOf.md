@@ -58,9 +58,15 @@ The smallest value of the specified property. Returns null for empty collections
 
 ### Lowest Price
 
+
+
+{% raw %}
 ```handlebars
 <p>Lowest price: ${{minOf(model.products, 'price')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -80,6 +86,9 @@ doc.Params["model"] = new {
 
 ### Inventory Low Stock Alert
 
+
+
+{% raw %}
 ```handlebars
 <h3>Inventory Status</h3>
 <p>Lowest stock level: {{minOf(model.inventory, 'quantity')}} units</p>
@@ -87,6 +96,9 @@ doc.Params["model"] = new {
   <p style="color: red;">Warning: Low stock detected!</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -108,12 +120,18 @@ doc.Params["model"] = new {
 
 ### Performance Metrics
 
+
+
+{% raw %}
 ```handlebars
 <h3>API Performance</h3>
 <p>Fastest response: {{minOf(model.requests, 'responseTime')}}ms</p>
 <p>Slowest response: {{maxOf(model.requests, 'responseTime')}}ms</p>
 <p>Average response: {{round(averageOf(model.requests, 'responseTime'), 0)}}ms</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -136,9 +154,15 @@ doc.Params["model"] = new {
 
 ### Age Range
 
+
+
+{% raw %}
 ```handlebars
 <p>Age range: {{minOf(model.participants, 'age')}} - {{maxOf(model.participants, 'age')}} years</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

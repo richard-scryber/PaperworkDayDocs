@@ -30,8 +30,11 @@ An attribute supports the element in which it is enclosed by adding further info
 
 The library also extended the behaviour of the element with a number of custom elements
 
+
+
+{% raw %}
 ```html
-    {% raw %}<body id='bId' class='main-content other-class' >
+    <body id='bId' class='main-content other-class' >
 
       <!--  custom binding repeater on a list -->
         
@@ -43,8 +46,12 @@ The library also extended the behaviour of the element with a number of custom e
 
       <!-- more content -->
 
-    </body>{% endraw %}
+    </body>
 ```
+{% endraw %}
+
+
+
 
 More information on actual document creation can be found in <a href='/index.html'>Getting Started</a>. And all <a href='/reference/htmltags/' >elements</a> have a list of the specific attributes they individually support.
 

@@ -713,8 +713,10 @@ Standard outline style:
 
 Dynamic list with formatting:
 
-```html
+
+
 {% raw %}
+```html
 <ol data-li-style="upper-roman" data-li-postfix=".">
     <template data-bind="{{model.chapters}}">
         <li>
@@ -730,8 +732,10 @@ Dynamic list with formatting:
         </li>
     </template>
 </ol>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 16. Custom Numbered Checkboxes
 
@@ -782,8 +786,10 @@ Corporate document numbering:
 
 Use custom labels based on data:
 
-```html
+
+
 {% raw %}
+```html
 <ol>
     <template data-bind="{{model.items}}">
         <li data-li-label="{{.isPriority ? '★' : ''}}">
@@ -791,8 +797,10 @@ Use custom labels based on data:
         </li>
     </template>
 </ol>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 19. Question and Answer Numbering
 

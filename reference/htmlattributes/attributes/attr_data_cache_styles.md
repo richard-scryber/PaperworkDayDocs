@@ -50,21 +50,27 @@ This attribute is essential for:
 
 The `data-cache-styles` attribute is applied to `<template>` elements, typically in conjunction with `data-bind`:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.items}}"
           data-cache-styles="true"
           data-style-identifier="unique-cache-id">
     <!-- Content with consistent styling -->
     <div class="item">{{.name}}</div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Basic Syntax
 
-```html
+
+
 {% raw %}
+```html
 <!-- Enable style caching -->
 <template data-bind="{{collection}}"
           data-cache-styles="true">
@@ -83,8 +89,10 @@ The `data-cache-styles` attribute is applied to `<template>` elements, typically
           data-cache-styles="false">
     <!-- Template content -->
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -116,8 +124,10 @@ The `data-cache-styles` attribute is **only** supported on the following element
 
 The attribute accepts literal boolean values or binding expressions:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Literal value -->
 <template data-bind="{{items}}" data-cache-styles="true">
 
@@ -128,8 +138,10 @@ The attribute accepts literal boolean values or binding expressions:
 <!-- Bound from model property -->
 <template data-bind="{{items}}"
           data-cache-styles="{{model.enableCaching}}">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -148,13 +160,17 @@ When `data-cache-styles="true"`:
 
 The `data-style-identifier` attribute works with `data-cache-styles`:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{items}}"
           data-cache-styles="true"
           data-style-identifier="item-cache">
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 - If not specified, Scryber generates an automatic identifier
 - Explicit identifiers enable cache sharing across multiple templates
@@ -179,8 +195,10 @@ The `data-style-identifier` attribute works with `data-cache-styles`:
 
 Style caching works best with **static styles**:
 
-```html
+
+
 {% raw %}
+```html
 <!-- GOOD: Static styles, perfect for caching -->
 <template data-bind="{{items}}" data-cache-styles="true">
     <div class="item-card">
@@ -202,8 +220,10 @@ Style caching works best with **static styles**:
         {{.content}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Performance Guidelines
 
@@ -235,8 +255,10 @@ Style caching reduces memory usage by:
 
 For maximum performance with large datasets:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     /* Use CSS classes instead of inline styles */
     .data-row { padding: 5pt; border-bottom: 1pt solid #ddd; }
@@ -250,8 +272,10 @@ For maximum performance with large datasets:
         {{.name}} - {{.value}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Optimizations combined:
 1. CSS classes (reusable styles)
@@ -266,23 +290,29 @@ Optimizations combined:
 
 Enable caching for a simple list:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.items}}"
           data-cache-styles="true">
     <div style="padding: 10pt; border-bottom: 1pt solid #ddd;">
         {{.name}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 2. Large Table with Caching
 
 Optimize a large data table:
 
-```html
+
+
 {% raw %}
+```html
 <table style="width: 100%;">
     <thead>
         <tr>
@@ -303,15 +333,19 @@ Optimize a large data table:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 3. Product Catalog with CSS Classes
 
 Use CSS classes with caching for consistency:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .product-card {
         padding: 15pt;
@@ -339,15 +373,19 @@ Use CSS classes with caching for consistency:
         <div class="product-price">${{.price}}</div>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 4. Conditional Caching Based on Dataset Size
 
 Enable caching only for large datasets:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [...], enableCache: items.length > 100 } -->
 <template data-bind="{{model.items}}"
           data-cache-styles="{{count(model.items) > 100}}">
@@ -355,15 +393,19 @@ Enable caching only for large datasets:
         {{.name}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 5. Multi-Template with Shared Cache
 
 Share cache identifier across related templates:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .list-item {
         padding: 10pt;
@@ -386,15 +428,19 @@ Share cache identifier across related templates:
           data-style-identifier="item-style">
     <div class="list-item">{{.name}} - Inactive</div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 6. Invoice Line Items
 
 Optimize repeating invoice lines:
 
-```html
+
+
 {% raw %}
+```html
 <table style="width: 100%; border-collapse: collapse;">
     <thead>
         <tr style="background-color: #f0f0f0;">
@@ -417,15 +463,19 @@ Optimize repeating invoice lines:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 7. Paginated Large Dataset
 
 Combine caching with pagination:
 
-```html
+
+
 {% raw %}
+```html
 <h1>Records 1-100 of {{count(model.allRecords)}}</h1>
 <template data-bind="{{model.allRecords}}"
           data-bind-start="0"
@@ -436,15 +486,19 @@ Combine caching with pagination:
         <strong>{{.id}}</strong> | {{.name}} | {{.value}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 8. Nested Templates with Selective Caching
 
 Cache outer template only:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Cache outer template (many categories) -->
 <template data-bind="{{model.categories}}"
           data-cache-styles="true"
@@ -463,15 +517,19 @@ Cache outer template only:
         </template>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 9. Employee Directory
 
 Large employee list with caching:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .employee-card {
         padding: 12pt;
@@ -501,15 +559,19 @@ Large employee list with caching:
         </div>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 10. Transaction Log
 
 High-volume transaction listing:
 
-```html
+
+
 {% raw %}
+```html
 <h1>Transaction Log ({{count(model.transactions)}} transactions)</h1>
 <table style="width: 100%; font-size: 9pt;">
     <thead>
@@ -533,15 +595,19 @@ High-volume transaction listing:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 11. Event Schedule
 
 Large event listing with time-based grouping:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .event-item {
         padding: 10pt;
@@ -564,15 +630,19 @@ Large event listing with time-based grouping:
         <div style="font-size: 9pt; color: #666;">{{.location}}</div>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 12. Inventory Report with Alternating Rows
 
 Use CSS pseudo-classes with caching:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .inventory-row {
         padding: 8pt;
@@ -595,15 +665,19 @@ Use CSS pseudo-classes with caching:
         </tr>
     </template>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 13. Multi-Page Report with Consistent Styling
 
 Cache styles across multiple report pages:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .report-section {
         padding: 15pt;
@@ -637,15 +711,19 @@ Cache styles across multiple report pages:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 14. Customer Mailing Labels
 
 High-volume label generation:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .mailing-label {
         width: 180pt;
@@ -667,15 +745,19 @@ High-volume label generation:
         <div>{{.city}}, {{.state}} {{.zip}}</div>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 15. Performance Comparison Report
 
 Demonstrate caching benefits with metrics:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Without caching (baseline) -->
 <div style="page-break-after: always;">
     <h1>Test 1: Without Style Caching</h1>
@@ -704,15 +786,19 @@ Demonstrate caching benefits with metrics:
     <p>Generation ended: {{model.endTime}}</p>
     <p>Items processed: {{count(model.testData)}}</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 16. Sales Report with Summary Cards
 
 Cache consistent card layout:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .sales-card {
         padding: 12pt;
@@ -738,15 +824,19 @@ Cache consistent card layout:
         </div>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 17. Log File Viewer
 
 Thousands of log entries with caching:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .log-entry {
         font-family: 'Courier New', monospace;
@@ -766,15 +856,19 @@ Thousands of log entries with caching:
         [{{.timestamp}}] {{.level}} - {{.message}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 18. Product Comparison Grid
 
 Large comparison table with caching:
 
-```html
+
+
 {% raw %}
+```html
 <table style="width: 100%; border-collapse: collapse;">
     <thead>
         <tr style="background-color: #336699; color: white;">
@@ -795,15 +889,19 @@ Large comparison table with caching:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 19. Batch Processing Status Report
 
 Monitor large batch operations:
 
-```html
+
+
 {% raw %}
+```html
 <h1>Batch Processing Report</h1>
 <p>Processed: {{model.processedCount}} of {{count(model.batchItems)}}</p>
 
@@ -826,15 +924,19 @@ Monitor large batch operations:
         <span class="status-{{.status}}"> [{{.status}}]</span>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 20. Complex Nested Structure with Selective Caching
 
 Optimize only high-volume sections:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .section-header {
         background-color: #336699;
@@ -867,8 +969,10 @@ Optimize only high-volume sections:
         </template>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

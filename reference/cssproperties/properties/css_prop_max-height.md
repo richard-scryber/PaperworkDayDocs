@@ -94,8 +94,10 @@ The max-height property supports dynamic value binding through template expressi
 
 ### Example 1: Images with configurable maximum heights
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .image-container {
         padding: 20pt;
@@ -115,13 +117,17 @@ The max-height property supports dynamic value binding through template expressi
              alt="{{image.caption}}" />
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Content sections with data-driven height limits
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .content-section {
         padding: 25pt;
@@ -142,13 +148,17 @@ The max-height property supports dynamic value binding through template expressi
         <div>{{section.content}}</div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Cards with variable maximum heights
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .card-grid {
         padding: 20pt;
@@ -177,13 +187,17 @@ The max-height property supports dynamic value binding through template expressi
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 4: Dashboard panels with configurable height constraints
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .dashboard {
         padding: 20pt;
@@ -218,8 +232,10 @@ The max-height property supports dynamic value binding through template expressi
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -103,22 +103,30 @@ The `data-min-scale` attribute supports data binding:
 
 ### Dynamic Minimum Scale
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { minImageScale: 0.5 } -->
 <img src="chart.png" data-min-scale="{{model.minImageScale}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Scaling
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { allowSmallImages: false } -->
 <img src="photo.jpg"
      data-min-scale="{{model.allowSmallImages ? '0.25' : '0.75'}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -279,8 +287,10 @@ In PDF generation:
 
 ### Example 7: Data-Bound Image Scaling
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { images: [{src: "...", minScale: 0.5}, ...] } -->
 
 <template data-bind="{{model.images}}">
@@ -290,8 +300,10 @@ In PDF generation:
              style="max-width: 100%;" />
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 8: Scientific Figures
 
@@ -438,8 +450,10 @@ In PDF generation:
 
 ### Example 14: Conditional Minimum Scale Based on Image Type
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { images: [{src: "...", type: "diagram|photo", ...}] } -->
 
 <template data-bind="{{model.images}}">
@@ -454,8 +468,10 @@ In PDF generation:
         </p>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 15: Complex Report with Multiple Image Types
 

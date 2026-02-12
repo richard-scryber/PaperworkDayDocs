@@ -57,10 +57,16 @@ A new array with items in reverse order (last item becomes first, etc.).
 
 ### Simple Reverse
 
+
+
+{% raw %}
 ```handlebars
 <p>Original: {{join(model.items, ', ')}}</p>
 <p>Reversed: {{join(reverse(model.items), ', ')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -77,12 +83,18 @@ doc.Params["model"] = new {
 
 ### Descending Sort
 
+
+
+{% raw %}
 ```handlebars
 <h3>Products (Highest to Lowest Price)</h3>
 {{#each reverse(sortBy(model.products, 'price'))}}
   <p>{{this.name}}: ${{this.price}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -105,12 +117,18 @@ doc.Params["model"] = new {
 
 ### Latest Items First
 
+
+
+{% raw %}
 ```handlebars
 <h3>Recent Orders</h3>
 {{#each reverse(sortBy(model.orders, 'date'))}}
   <p>{{format(this.date, 'MMM dd')}}: Order #{{this.id}} - ${{this.total}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -133,6 +151,9 @@ doc.Params["model"] = new {
 
 ### Countdown List
 
+
+
+{% raw %}
 ```handlebars
 <h3>Countdown</h3>
 {{#each reverse(model.numbers)}}
@@ -140,6 +161,9 @@ doc.Params["model"] = new {
 {{/each}}
 <p>Launch!</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -161,6 +185,9 @@ doc.Params["model"] = new {
 
 ### Leaderboard (High Scores First)
 
+
+
+{% raw %}
 ```handlebars
 <h3>Top Players</h3>
 {{#each reverse(sortBy(model.players, 'score'))}}
@@ -169,6 +196,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

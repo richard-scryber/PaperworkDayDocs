@@ -35,7 +35,7 @@ Handlebars helpers provide familiar syntax for common template patterns like ite
 
 ## Block Helpers
 
-These helpers use {% raw %}`{{#helper}}...{{/helper}}`{% endraw %} syntax to wrap content.
+These helpers use `{{#helper}}...{{/helper}}` syntax to wrap content.
 
 | Helper | Description | Special Variables |
 |--------|-------------|-------------------|
@@ -51,8 +51,8 @@ These helpers work within block helpers to create conditional branches.
 
 | Helper | Description | Used With |
 |--------|-------------|-----------|
-| [{{else if}}](./elseif) | Alternative condition branch | {% raw %}`{{#if}}`{% endraw %} |
-| [{{else}}](./else) | Fallback branch when conditions are false | {% raw %}`{{#if}}`{% endraw %}, {% raw %}`{{#each}}`{% endraw %}, {% raw %}`{{#with}}`{% endraw %} |
+| [{{else if}}](./elseif) | Alternative condition branch | `{{#if}}` |
+| [{{else}}](./else) | Fallback branch when conditions are false | `{{#if}}`, `{{#each}}`, `{{#with}}` |
 
 ---
 
@@ -60,7 +60,7 @@ These helpers work within block helpers to create conditional branches.
 
 | Helper | Description | Usage |
 |--------|-------------|-------|
-| [{{log}}](./log) | Debug output to console/trace | {% raw %}`{{log model.value level="debug"}}`{% endraw %} |
+| [{{log}}](./log) | Debug output to console/trace | `{{log model.value level="debug"}}` |
 
 ---
 
@@ -68,6 +68,9 @@ These helpers work within block helpers to create conditional branches.
 
 ### Iteration with Conditionals
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.items}}
   <div class="item {{if(@first, 'first', '')}}">
@@ -79,9 +82,15 @@ These helpers work within block helpers to create conditional branches.
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ### Context Switching with Parent Access
 
+
+
+{% raw %}
 ```handlebars
 {{#with model.order}}
   <h2>Order #{{orderNumber}}</h2>
@@ -91,9 +100,15 @@ These helpers work within block helpers to create conditional branches.
   {{/each}}
 {{/with}}
 ```
+{% endraw %}
+
+
 
 ### Multiple Conditions
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.score >= 90}}
   <span class="grade-a">Excellent</span>
@@ -105,6 +120,9 @@ These helpers work within block helpers to create conditional branches.
   <span class="grade-f">Needs Improvement</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ---
 

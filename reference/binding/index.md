@@ -277,6 +277,9 @@ Variables available in specific contexts:
 ## Common Patterns
 
 ### Formatting Values
+
+
+{% raw %}
 ```handlebars
 <!-- Currency -->
 {{format(price, 'C2')}}
@@ -290,18 +293,36 @@ Variables available in specific contexts:
 <!-- Percentage -->
 {{format(ratio, 'P1')}}
 ```
+{% endraw %}
+
+
 
 ### Conditional Classes
+
+
+{% raw %}
 ```handlebars
 <div class="{{if(isActive, 'active', 'inactive')}}">
 ```
+{% endraw %}
+
+
 
 ### Null-Safe Navigation
+
+
+{% raw %}
 ```handlebars
 {{user.address.city ?? 'No city specified'}}
 ```
+{% endraw %}
+
+
 
 ### Complex Expressions
+
+
+{% raw %}
 ```handlebars
 <!-- Calculate percentage -->
 {{format((revenue / target) * 100, '0.0')}}%
@@ -311,8 +332,14 @@ Variables available in specific contexts:
   <span class="excellent">Excellent</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### Working with Collections
+
+
+{% raw %}
 ```handlebars
 <!-- Total -->
 Total: {{sumOf(items, 'price')}}
@@ -323,6 +350,9 @@ Items: {{count(items)}}
 <!-- Average -->
 Average: {{format(averageOf(items, 'rating'), '0.0')}}
 ```
+{% endraw %}
+
+
 
 ---
 

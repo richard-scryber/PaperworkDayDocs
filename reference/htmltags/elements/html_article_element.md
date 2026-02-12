@@ -347,8 +347,11 @@ art.StyleClass = "articles";
 
 ### Article with Data Binding
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- With model.articles = [
+<!-- With model.articles = [
     { title: "First Post", author: "John", date: "Oct 10", content: "..." },
     { title: "Second Post", author: "Jane", date: "Oct 11", content: "..." }
 ] -->
@@ -366,8 +369,12 @@ art.StyleClass = "articles";
             Article by {{.author}}
         </footer>
     </article>
-</template>{% endraw %}
+</template>
 ```
+{% endraw %}
+
+
+
 
 ### Product Card Article
 

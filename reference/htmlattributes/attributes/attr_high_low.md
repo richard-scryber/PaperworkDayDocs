@@ -40,8 +40,10 @@ The `high` and `low` attributes control threshold-based visual feedback:
 - Enable data binding for dynamic thresholds
 - Default: low=min, high=max (when not specified)
 
-```html
+
+
 {% raw %}
+```html
 <!-- Basic meter with thresholds -->
 <meter value="75" min="0" max="100" low="30" high="80" optimum="50">
     75%
@@ -71,8 +73,10 @@ The `high` and `low` attributes control threshold-based visual feedback:
        optimum="{{model.optimal}}">
     {{model.value}}
 </meter>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -203,8 +207,10 @@ The `high` and `low` attributes support data binding for dynamic thresholds:
 
 ### Simple Threshold Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { currentTemp: 75, lowTemp: 65, highTemp: 80 } -->
 <meter value="{{model.currentTemp}}"
        min="60"
@@ -214,13 +220,17 @@ The `high` and `low` attributes support data binding for dynamic thresholds:
        optimum="72">
     {{model.currentTemp}}°F
 </meter>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Calculated Thresholds
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { maxValue: 100 } -->
 <!-- Calculate thresholds as percentages of max -->
 <meter value="{{model.currentValue}}"
@@ -231,13 +241,17 @@ The `high` and `low` attributes support data binding for dynamic thresholds:
        optimum="{{model.maxValue * 0.5}}">
     {{model.currentValue}}
 </meter>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Thresholds
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { isStrict: true, value: 65 } -->
 <!-- Stricter thresholds in strict mode -->
 <meter value="{{model.value}}"
@@ -248,13 +262,17 @@ The `high` and `low` attributes support data binding for dynamic thresholds:
        optimum="50">
     {{model.value}}% ({{model.isStrict ? 'Strict' : 'Normal'}} mode)
 </meter>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Thresholds from Configuration
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     metrics: [
         {name: "CPU", value: 45, low: 30, high: 75},
@@ -276,13 +294,17 @@ The `high` and `low` attributes support data binding for dynamic thresholds:
         </meter>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Seasonal or Contextual Thresholds
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { season: "summer", temp: 78 } -->
 <!-- Different thresholds for summer vs winter -->
 <meter value="{{model.temp}}"
@@ -293,8 +315,10 @@ The `high` and `low` attributes support data binding for dynamic thresholds:
        optimum="{{model.season === 'summer' ? 75 : 68}}">
     {{model.temp}}°F ({{model.season}})
 </meter>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -1229,8 +1253,10 @@ Test boundary values:
 
 ### Data-Bound Dynamic Thresholds
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     servers: [
         {name: "Web-01", cpu: 42, memLow: 30, memHigh: 75, mem: 58},
@@ -1288,8 +1314,10 @@ Test boundary values:
         its role and capacity. CPU thresholds are standardized across the fleet.
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Pressure Gauge with Safety Thresholds
 

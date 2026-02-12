@@ -453,8 +453,10 @@ The `<time>` element is perfect for:
 
 ### Data-Bound Time Elements
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = {
     createdDate: "2024-03-15T10:30:00",
     modifiedDate: "2024-03-20T14:45:00",
@@ -488,8 +490,10 @@ The `<time>` element is perfect for:
         </tr>
     </table>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Meeting Minutes Header
 
@@ -789,8 +793,10 @@ The `<time>` element is perfect for:
 
 ### Repeating Times from Collection
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model.events = [
     {name: "Team Standup", date: "2024-03-15T09:00:00"},
     {name: "Client Meeting", date: "2024-03-15T14:00:00"},
@@ -811,8 +817,10 @@ The `<time>` element is perfect for:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Version History
 

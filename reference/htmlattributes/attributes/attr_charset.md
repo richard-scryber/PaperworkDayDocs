@@ -73,8 +73,10 @@ In HTML5, the simplified `<meta charset="UTF-8">` syntax is preferred over the o
 
 The `charset` attribute supports data binding for dynamic encoding specification:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic charset from model -->
 <meta charset="{{model.encoding}}" />
 
@@ -83,8 +85,10 @@ The `charset` attribute supports data binding for dynamic encoding specification
 
 <!-- Default to UTF-8 if not specified -->
 <meta charset="{{model.charset || 'UTF-8'}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -526,8 +530,10 @@ If you encounter issues with special characters:
 
 ### Data-Bound Charset
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { document: { encoding: "UTF-8", language: "en" } } -->
 
 <!DOCTYPE html>
@@ -542,8 +548,10 @@ If you encounter issues with special characters:
     <p>Language: {{model.document.language}}</p>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Document with Diacritics
 
@@ -808,8 +816,10 @@ If you encounter issues with special characters:
 
 ### Conditional Charset with Fallback
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { preferences: { encoding: null } } -->
 
 <!DOCTYPE html>
@@ -824,8 +834,10 @@ If you encounter issues with special characters:
     <p>Using encoding: {{model.preferences.encoding || 'UTF-8 (default)'}}</p>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

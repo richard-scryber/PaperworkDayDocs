@@ -77,8 +77,10 @@ The `marker-end` attribute is supported on:
 
 Choose arrow type based on data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { connectionType: 'forward', arrows: { forward: 'arrow-forward', backward: 'arrow-back' } } -->
 <svg width="400" height="200">
     <defs>
@@ -96,15 +98,19 @@ Choose arrow type based on data:
           stroke="#2c3e50" stroke-width="2"
           marker-end="url(#{{model.arrows[model.connectionType]}})"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional End Markers
 
 Show markers based on status:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { isComplete: true, hasTarget: true } -->
 <svg width="400" height="200">
     <defs>
@@ -119,13 +125,17 @@ Show markers based on status:
           fill="none" stroke="#34495e" stroke-width="3"
           marker-end="{{model.isComplete && model.hasTarget ? 'url(#complete-marker)' : 'none'}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Flow Visualization
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     flows: [
         { from: {x: 50, y: 50}, to: {x: 200, y: 50}, active: true },
@@ -151,8 +161,10 @@ Show markers based on status:
               marker-end="{{.active ? 'url(#active-arrow)' : 'url(#inactive-arrow)'}}"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

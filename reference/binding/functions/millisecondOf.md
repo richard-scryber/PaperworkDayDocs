@@ -57,9 +57,15 @@ The millisecond as a number from 0 to 999.
 
 ### Display Millisecond
 
+
+
+{% raw %}
 ```handlebars
 <p>Millisecond: {{millisecondOf(model.time)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### High-Precision Timestamp
 
+
+
+{% raw %}
 ```handlebars
 <p>Timestamp: {{format(model.time, 'HH:mm:ss')}}.{{padLeft(string(millisecondOf(model.time)), 3, '0')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,12 +105,18 @@ doc.Params["model"] = new {
 
 ### Performance Metrics
 
+
+
+{% raw %}
 ```handlebars
 <h3>API Response Times</h3>
 {{#each model.requests}}
   <p>{{this.endpoint}}: {{secondOf(this.duration)}}.{{padLeft(string(millisecondOf(this.duration)), 3, '0')}}s</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -121,6 +139,9 @@ doc.Params["model"] = new {
 
 ### Precision Timing Validation
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.measurements}}
   <p>{{this.name}}: {{format(this.timestamp, 'HH:mm:ss.fff')}}
@@ -132,6 +153,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -153,12 +177,18 @@ doc.Params["model"] = new {
 
 ### Race Timing
 
+
+
+{% raw %}
 ```handlebars
 <h3>Race Results</h3>
 {{#each model.racers}}
   <p>{{this.name}}: {{minuteOf(this.finishTime)}}:{{padLeft(string(secondOf(this.finishTime)), 2, '0')}}.{{padLeft(string(millisecondOf(this.finishTime)), 3, '0')}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

@@ -90,8 +90,10 @@ The column-span property works with data binding to conditionally create full-wi
 
 ### Example 1: Conditional spanning based on content importance
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .article {
         column-count: 2;
@@ -140,13 +142,17 @@ The column-span property works with data binding to conditionally create full-wi
         {{/each}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Dynamic spanning for images and tables
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .document {
         column-count: 3;
@@ -224,13 +230,17 @@ The column-span property works with data binding to conditionally create full-wi
         {{/each}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Configurable spanning for newsletters
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .newsletter {
         padding: 40pt;
@@ -302,8 +312,10 @@ The column-span property works with data binding to conditionally create full-wi
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

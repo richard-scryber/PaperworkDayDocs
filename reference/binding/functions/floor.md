@@ -57,9 +57,15 @@ The largest integer less than or equal to the value.
 
 ### Round Down Prices
 
+
+
+{% raw %}
 ```handlebars
 <p>Base Price: ${{floor(model.price)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Calculate Completed Items
 
+
+
+{% raw %}
 ```handlebars
 <p>Full sets: {{floor(model.items / model.setSize)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -94,9 +106,15 @@ doc.Params["model"] = new {
 
 ### Age Calculation
 
+
+
+{% raw %}
 ```handlebars
 <p>Age: {{floor(model.days / 365)}} years</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -112,11 +130,17 @@ doc.Params["model"] = new {
 
 ### Always Round Down
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.values}}
   <li>{{this}} → {{floor(this)}}</li>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

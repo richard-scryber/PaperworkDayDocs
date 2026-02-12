@@ -70,8 +70,10 @@ The `border-right-width` property supports dynamic values through data binding, 
 
 ### Example 1: Column dividers with conditional width
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .table-cell {
         display: table-cell;
@@ -85,13 +87,17 @@ The `border-right-width` property supports dynamic values through data binding, 
         {{cell.content}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Dashboard separators
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .metric-panel {
         display: table-cell;
@@ -107,13 +113,17 @@ The `border-right-width` property supports dynamic values through data binding, 
         <div style="font-size: 11pt;">{{metric.label}}</div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Featured pricing tiers
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .pricing-option {
         display: table-cell;
@@ -128,8 +138,10 @@ The `border-right-width` property supports dynamic values through data binding, 
         <p>{{plan.price}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -33,11 +33,17 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 
 ## Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{#each collection}}
   <!-- Content repeated for each item -->
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -65,6 +71,9 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 
 ### Basic Iteration
 
+
+
+{% raw %}
 ```handlebars
 <ul>
 {{#each model.items}}
@@ -72,6 +81,9 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 {{/each}}
 </ul>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -91,6 +103,9 @@ doc.Params["model"] = new {
 
 ### With Object Properties
 
+
+
+{% raw %}
 ```handlebars
 <table>
   {{#each model.products}}
@@ -102,6 +117,9 @@ doc.Params["model"] = new {
   {{/each}}
 </table>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -115,6 +133,9 @@ doc.Params["model"] = new {
 
 ### Using Special Variables
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.items}}
   <div class="{{if(@first, 'first', '')}} {{if(@last, 'last', '')}}">
@@ -123,9 +144,15 @@ doc.Params["model"] = new {
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ### Accessing Parent Context
 
+
+
+{% raw %}
 ```handlebars
 <h1>{{model.companyName}}</h1>
 {{#each model.departments}}
@@ -135,6 +162,9 @@ doc.Params["model"] = new {
   {{/each}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -142,11 +172,17 @@ doc.Params["model"] = new {
 
 The `{{#each}}` helper compiles to the following Scryber template element:
 
+
+
+{% raw %}
 ```xml
 <template data-bind="{{collection}}">
   <!-- Your content here with {{this}} context -->
 </template>
 ```
+{% endraw %}
+
+
 
 This uses Scryber's [`ForEach` component](../../components/foreach.html) internally, which provides the iteration and context management.
 

@@ -94,8 +94,10 @@ The `stroke-opacity` property can be dynamically set using data binding expressi
 
 ### Example 1: Connection strength visualization
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .node {
         fill: white;
@@ -123,8 +125,10 @@ The `stroke-opacity` property can be dynamically set using data binding expressi
         {{/each}}
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 With model data:
 ```json
@@ -144,8 +148,10 @@ With model data:
 
 ### Example 2: Conditional emphasis based on importance
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .boundary {
         fill: none;
@@ -165,13 +171,17 @@ With model data:
         {{/each}}
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Data quality indicators
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-point {
         fill: #3b82f6;
@@ -191,8 +201,10 @@ With model data:
     </svg>
     <p>Stroke opacity indicates data quality (0.0-1.0)</p>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 With model data:
 ```json

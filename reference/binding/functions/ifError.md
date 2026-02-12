@@ -58,9 +58,15 @@ Returns the result of `expression` if successful, otherwise returns `fallbackVal
 
 ### Safe Division
 
+
+
+{% raw %}
 ```handlebars
 <p>Average: {{ifError(model.total / model.count, 0)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -77,11 +83,17 @@ doc.Params["model"] = new {
 
 ### Safe Property Access
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.items}}
   <p>{{this.name}}: {{ifError(this.details.description, 'No description available')}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -101,9 +113,15 @@ doc.Params["model"] = new {
 
 ### Safe Type Conversion
 
+
+
+{% raw %}
 ```handlebars
 <p>Value: {{ifError(int(model.userInput), -1)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -119,11 +137,17 @@ doc.Params["model"] = new {
 
 ### Safe Date Parsing
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.records}}
   <p>{{this.id}}: {{ifError(format(date(this.dateString), 'yyyy-MM-dd'), 'Invalid date')}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -143,9 +167,15 @@ doc.Params["model"] = new {
 
 ### Safe Array Access
 
+
+
+{% raw %}
 ```handlebars
 <p>First item: {{ifError(model.items[0], 'No items')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

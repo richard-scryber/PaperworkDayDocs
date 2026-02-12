@@ -49,6 +49,8 @@ Apply styles directly to elements using the `style` attribute:
 
 **When to use:** Dynamic styling with data binding
 
+
+
 {% raw %}
 ```html
 <div style="color: {{model.themeColor}};">
@@ -56,6 +58,8 @@ Apply styles directly to elements using the `style` attribute:
 </div>
 ```
 {% endraw %}
+
+
 
 ### 2. Embedded Styles
 

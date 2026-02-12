@@ -58,11 +58,17 @@ contains(str, search)
 
 ### Simple Search
 
+
+
+{% raw %}
 ```handlebars
 {{#if contains(model.description, 'premium')}}
   <span class="badge-premium">Premium Product</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -78,6 +84,9 @@ doc.Params["model"] = new {
 
 ### Filter Items
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.products}}
   {{#if contains(this.name, 'Pro')}}
@@ -88,6 +97,9 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -114,6 +126,9 @@ doc.Params["model"] = new {
 
 ### Keyword Highlighting
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.items}}
   {{#if contains(toLower(this.title), toLower(model.searchTerm))}}
@@ -124,9 +139,15 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ### Email Validation
 
+
+
+{% raw %}
 ```handlebars
 {{#if contains(model.email, '@')}}
   <p>Email: {{model.email}}</p>
@@ -134,6 +155,9 @@ doc.Params["model"] = new {
   <p class="error">Invalid email format</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

@@ -32,6 +32,8 @@ By the end of this article, you'll be able to:
 
 ### Basic Data Binding
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -96,10 +98,14 @@ By the end of this article, you'll be able to:
     </table>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Accessing Index
+
+
 
 {% raw %}
 ```html
@@ -112,14 +118,18 @@ By the end of this article, you'll be able to:
     </tr>
     {{/each}}
 </tbody>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
 ## Calculated Columns
 
 ### Simple Calculations
+
+
 
 {% raw %}
 ```html
@@ -143,10 +153,14 @@ By the end of this article, you'll be able to:
         {{/each}}
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complex Calculations
+
+
 
 {% raw %}
 ```html
@@ -165,14 +179,18 @@ By the end of this article, you'll be able to:
     </tr>
     {{/each}}
 </tbody>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
 ## Running Totals
 
 ### Using Variables for Accumulation
+
+
 
 {% raw %}
 ```html
@@ -203,8 +221,10 @@ By the end of this article, you'll be able to:
         {{/each}}
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -374,6 +394,8 @@ tfoot {
 
 ### Example 1: Invoice with Calculations
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -542,10 +564,14 @@ tfoot {
     </div>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Multi-Page Report with Repeating Headers
+
+
 
 {% raw %}
 ```html
@@ -671,8 +697,10 @@ tfoot {
     </table>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -742,6 +770,8 @@ tr {
 
 ### ❌ Incorrect Calculation Syntax
 
+
+
 {% raw %}
 ```html
 <!-- Wrong: Missing operators -->
@@ -749,10 +779,14 @@ tr {
 
 <!-- Wrong: Too many nested calcs -->
 <td>{{calc(calc(calc(this.a +  this.b) *  2) -  10)}}</td>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ✅ **Solution:**
+
+
 
 {% raw %}
 ```html
@@ -763,8 +797,10 @@ tr {
 <var data-id="sum" data-value="{{this.a +  this.b}}" />
 <var data-id="doubled" data-value="{{Document.Params.sum *  2}}" />
 <td>{{Document.Params.doubled -  10}}</td>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

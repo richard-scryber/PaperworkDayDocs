@@ -57,9 +57,15 @@ The square root of the value.
 
 ### Basic Square Root
 
+
+
+{% raw %}
 ```handlebars
 <p>√{{model.value}} = {{format(sqrt(model.value), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Calculate Distance
 
+
+
+{% raw %}
 ```handlebars
 <p>Distance: {{format(sqrt(model.dx * model.dx + model.dy * model.dy), '0.00')}} units</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -94,9 +106,15 @@ doc.Params["model"] = new {
 
 ### Standard Deviation Component
 
+
+
+{% raw %}
 ```handlebars
 <p>Std Dev: {{format(sqrt(model.variance), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

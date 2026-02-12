@@ -97,8 +97,10 @@ The `href` attribute is supported on:
 
 Reference different gradients based on data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { gradientType: 'blue', status: 'active' } -->
 <svg width="400" height="300">
     <defs>
@@ -123,15 +125,19 @@ Reference different gradients based on data:
         Status: {{model.status}} ({{model.gradientType}})
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Image Sources
 
 Load images from data properties:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { images: [{src: 'photo1.jpg', x: 50, y: 50}, {src: 'photo2.jpg', x: 250, y: 50}] } -->
 <svg width="500" height="300">
     <template data-bind="{{model.images}}">
@@ -142,15 +148,19 @@ Load images from data properties:
               fill="none" stroke="#2c3e50" stroke-width="2"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Reusable Components with Use
 
 Reference symbols dynamically:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { icons: [{type: 'check', x: 50, y: 50}, {type: 'cross', x: 150, y: 50}, {type: 'star', x: 250, y: 50}] } -->
 <svg width="400" height="200">
     <defs>
@@ -170,15 +180,19 @@ Reference symbols dynamically:
         <use href="#{{.type}}" x="{{.x}}" y="{{.y}}" width="80" height="80"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Hyperlinks
 
 Create clickable elements with data-driven URLs:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { buttons: [{label: 'Home', url: '/home', color: '#3498db'}, {label: 'About', url: '/about', color: '#2ecc71'}] } -->
 <svg width="400" height="200">
     <template data-bind="{{model.buttons}}">
@@ -191,15 +205,19 @@ Create clickable elements with data-driven URLs:
         </a>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Pattern Library References
 
 Reference patterns from a library:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { surfaces: [{pattern: 'dots', x: 50, y: 50}, {pattern: 'stripes', x: 250, y: 50}] } -->
 <svg width="500" height="300">
     <defs>
@@ -217,8 +235,10 @@ Reference patterns from a library:
               fill="url(#{{.pattern}})" stroke="#2c3e50" stroke-width="2"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

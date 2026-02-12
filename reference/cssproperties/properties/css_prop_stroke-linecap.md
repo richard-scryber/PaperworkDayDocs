@@ -89,8 +89,10 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 
 ### Example 1: Data-driven line styles in charts
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .chart-line {
         stroke-width: 3;
@@ -107,13 +109,17 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Conditional linecap based on connection status
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .connector {
         stroke-width: 4;
@@ -130,13 +136,17 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Dynamic progress bars with bound line caps
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .progress-track { stroke: #e5e7eb; stroke-width: 12; }
     .progress-bar { stroke-width: 12; }
@@ -154,8 +164,10 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

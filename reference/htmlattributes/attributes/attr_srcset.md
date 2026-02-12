@@ -39,6 +39,9 @@ The `srcset` attribute defines image source alternatives:
 - Works in conjunction with `sizes` attribute
 - Supports data binding for dynamic image sets
 
+
+
+{% raw %}
 ```html
 <!-- Resolution-based srcset (pixel density) -->
 <img src="image.jpg"
@@ -63,10 +66,13 @@ The `srcset` attribute defines image source alternatives:
 </picture>
 
 <!-- Dynamic srcset -->
-{% raw %}<img src="{{model.defaultImage}}"
+<img src="{{model.defaultImage}}"
      srcset="{{model.imageSources}}"
      alt="{{model.altText}}" />
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 ---
 
@@ -86,8 +92,10 @@ The `srcset` attribute is used with:
 
 The `srcset` attribute supports data binding for dynamic image sources:
 
+
+{% raw %}
 ```html
-{% raw %}<!-- Dynamic srcset from model -->
+<!-- Dynamic srcset from model -->
 <img src="{{model.defaultSrc}}"
      srcset="{{model.responsiveSources}}"
      alt="{{model.description}}" />
@@ -118,7 +126,10 @@ The `srcset` attribute supports data binding for dynamic image sources:
     </template>
     <img src="{{model.fallback}}" alt="{{model.alt}}" />
 </picture>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -721,8 +732,10 @@ Avoid these errors:
 
 ### Data-Bound Responsive Images
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     products: [
         {
@@ -758,8 +771,10 @@ Avoid these errors:
         </article>
     </template>
 </section>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Comparison Chart
 

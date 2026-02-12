@@ -31,10 +31,11 @@ Compare two values for inequality. Returns true if values are not equal.
 
 ## Syntax
 
+
 ```
-{% raw %}
 {{operand1 != operand2}}
 ```
+
 
 ---
 
@@ -69,14 +70,21 @@ Evaluated before: `??`, `&&`, `||`
 
 ### Exclude Specific Status
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.status != 'cancelled'}}
   <div class="order-active">
     <h3>Order #{{model.orderNumber}}</h3>
     <p>Status: {{model.status}}</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -96,25 +104,42 @@ doc.Params["model"] = new {
 
 ### Check for Non-Zero
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.balance != 0}}
   <p class="outstanding">Balance due: ${{format(model.balance, '0.00')}}</p>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 ### Filter Out Null Values
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#each model.users}}
   {{#if this.email != null}}
     <p>{{this.name}}: {{this.email}}</p>
   {{/if}}
-{{/each}} {% endraw %}
+{{/each}} 
 ```
+{% endraw %}
+
+
+
 
 ### Highlight Changes
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#each model.items}}
   {{#if this.currentPrice != this.previousPrice}}
     <div class="price-changed">
@@ -123,19 +148,30 @@ doc.Params["model"] = new {
       <span class="new">${{this.currentPrice}}</span>
     </div>
   {{/if}}
-{{/each}} {% endraw %}
+{{/each}} 
 ```
+{% endraw %}
+
+
+
 
 ### Show Alert for Specific Conditions
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.stock != model.expectedStock}}
   <div class="alert-warning">
     <p>Stock discrepancy detected!</p>
     <p>Expected: {{model.expectedStock}}, Actual: {{model.stock}}</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp

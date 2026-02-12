@@ -57,17 +57,29 @@ The absolute value of the input number.
 
 ### Basic Usage
 
+
+
+{% raw %}
 ```handlebars
 {{abs(-5)}}     <!-- Output: 5 -->
 {{abs(5)}}      <!-- Output: 5 -->
 {{abs(-3.14)}}  <!-- Output: 3.14 -->
 ```
+{% endraw %}
+
+
 
 ### Calculate Difference
 
+
+
+{% raw %}
 ```handlebars
 <p>Difference: {{abs(model.actual - model.expected)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -84,17 +96,29 @@ doc.Params["model"] = new {
 
 ### Show Variance
 
+
+
+{% raw %}
 ```handlebars
 <p>Variance: {{format(abs(model.value - model.average), 'N2')}}</p>
 ```
+{% endraw %}
+
+
 
 ### With Conditional
 
+
+
+{% raw %}
 ```handlebars
 {{#if abs(model.change) > 10}}
   <span class="significant">Significant change</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ---
 

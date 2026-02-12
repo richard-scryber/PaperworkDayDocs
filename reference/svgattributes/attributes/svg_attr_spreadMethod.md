@@ -87,8 +87,10 @@ The `spreadMethod` attribute is supported on:
 
 Choose spread method based on data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { pattern: "striped" } -->
 <svg width="400" height="200">
     <defs>
@@ -101,15 +103,19 @@ Choose spread method based on data:
     </defs>
     <rect width="400" height="200" fill="url(#dynamicSpread)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Pattern Density
 
 Control stripe density with data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { stripeWidth: 15 } -->
 <svg width="600" height="200">
     <defs>
@@ -124,15 +130,19 @@ Control stripe density with data:
     </defs>
     <rect width="600" height="200" fill="url(#stripes)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Pattern Effects
 
 Apply patterns based on data state:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { usePattern: true, isReflected: false } -->
 <svg width="500" height="250">
     <defs>
@@ -147,15 +157,19 @@ Apply patterns based on data state:
     </defs>
     <rect width="500" height="250" fill="url(#conditionalPattern)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data Visualization Patterns
 
 Create patterns for chart backgrounds:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { chartType: "bar", showGrid: true } -->
 <svg width="600" height="400">
     <defs>
@@ -172,15 +186,19 @@ Create patterns for chart backgrounds:
 
     <rect width="600" height="400" fill="url(#chartPattern)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Ripple Effect Intensity
 
 Control ripple pattern based on intensity data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { rippleIntensity: 3, rippleWidth: 25 } -->
 <svg width="400" height="400">
     <defs>
@@ -195,8 +213,10 @@ Control ripple pattern based on intensity data:
 
     <rect width="400" height="400" fill="url(#ripples)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -534,8 +554,10 @@ For radial gradients, spread methods work concentrically:
 
 ### Data-Driven Stripe Pattern
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { stripePattern: "repeat", stripeWidth: 8 } -->
 <svg width="500" height="200">
     <defs>
@@ -551,8 +573,10 @@ For radial gradients, spread methods work concentrically:
 
     <rect width="500" height="200" fill="url(#dataStripes)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Chart with Striped Background
 

@@ -57,9 +57,15 @@ The natural logarithm of the value.
 
 ### Basic Logarithm
 
+
+
+{% raw %}
 ```handlebars
 <p>ln({{model.value}}) = {{format(log(model.value), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Time to Double
 
+
+
+{% raw %}
 ```handlebars
 <p>Years to double: {{format(log(2) / model.rate, '0.0')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

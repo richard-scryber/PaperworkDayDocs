@@ -365,6 +365,8 @@ ul.custom li::before {
 
 ### Dynamic List Generation
 
+
+
 {% raw %}
 ```html
 <h1>Product Catalog</h1>
@@ -374,10 +376,14 @@ ul.custom li::before {
     <li>{{this.name}} - ${{this.price}}</li>
     {{/each}}
 </ul>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional List Items
+
+
 
 {% raw %}
 ```html
@@ -394,10 +400,14 @@ ul.custom li::before {
     <li>GPS Navigation</li>
     {{/if}}
 </ul>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Nested Dynamic Lists
+
+
 
 {% raw %}
 ```html
@@ -415,8 +425,10 @@ ul.custom li::before {
     </li>
     {{/each}}
 </ul>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -424,7 +436,7 @@ ul.custom li::before {
 
 ### Example 1: Feature Comparison List
 
-{% raw %}
+
 ```html
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -560,11 +572,11 @@ ul.custom li::before {
 </body>
 </html>
 ```
-{% endraw %}
+
 
 ### Example 2: Table of Contents
 
-{% raw %}
+
 ```html
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -702,7 +714,7 @@ ul.custom li::before {
 </body>
 </html>
 ```
-{% endraw %}
+
 
 ---
 

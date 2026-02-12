@@ -93,8 +93,10 @@ The `padding-inline` property supports dynamic values through data binding, enab
 
 ### Example 1: Dynamic card padding based on content type
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .card {
         padding-inline: {{card.type === 'featured' ? '30pt' : '20pt'}};
@@ -110,8 +112,10 @@ The `padding-inline` property supports dynamic values through data binding, enab
         <p>{{card.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -126,8 +130,10 @@ Data context:
 
 ### Example 2: Responsive invoice layout with data-driven padding
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .invoice {
         padding-inline: {{layout.pageInset}}pt;
@@ -148,8 +154,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -166,8 +174,10 @@ Data context:
 
 ### Example 3: Form fields with variable padding
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .form-group {
         padding-inline: {{form.size === 'large' ? '25pt' : '20pt'}};
@@ -189,8 +199,10 @@ Data context:
         <input class="form-input" type="email" />
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json

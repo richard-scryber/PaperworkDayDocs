@@ -57,9 +57,15 @@ The largest value in the collection. Returns null for empty collections.
 
 ### Simple Maximum
 
+
+
+{% raw %}
 ```handlebars
 <p>Highest score: {{max(model.scores)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Price Range
 
+
+
+{% raw %}
 ```handlebars
 <p>Price range: ${{min(collect(model.products, 'price'))}} - ${{max(collect(model.products, 'price'))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -98,12 +110,18 @@ doc.Params["model"] = new {
 
 ### Daily Sales Peak
 
+
+
+{% raw %}
 ```handlebars
 <h3>Sales Analysis</h3>
 <p>Peak daily sales: ${{max(collect(model.dailySales, 'amount'))}}</p>
 <p>Average daily sales: ${{round(average(collect(model.dailySales, 'amount')), 2)}}</p>
 <p>Total weekly sales: ${{sum(collect(model.dailySales, 'amount'))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -128,11 +146,17 @@ doc.Params["model"] = new {
 
 ### Class Performance
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.classes}}
   <p>{{this.name}}: Top score {{max(this.scores)}}, Class average {{round(average(this.scores), 1)}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

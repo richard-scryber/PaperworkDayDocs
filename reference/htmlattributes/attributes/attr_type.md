@@ -133,29 +133,39 @@ The `type` attribute can be set statically or dynamically using data binding:
 
 ### Dynamic Type with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { inputType: "text", fieldValue: "Dynamic value" } -->
 <input type="{{model.inputType}}" value="{{model.fieldValue}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Type Selection
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { isCheckbox: true } -->
 <input type="{{model.isCheckbox ? 'checkbox' : 'text'}}"
        value="{{model.value}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Value Binding for Checkboxes and Radio Buttons
 
 For checkbox and radio button types, the `value` attribute controls the checked/selected state:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Checkbox: non-empty value = checked -->
 <input type="checkbox" value="checked" />
 <input type="checkbox" value="" />
@@ -167,8 +177,10 @@ For checkbox and radio button types, the `value` attribute controls the checked/
 <!-- Data-bound checkbox state -->
 <!-- Model: { isAccepted: true } -->
 <input type="checkbox" value="{{model.isAccepted ? 'checked' : ''}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -523,8 +535,10 @@ Scryber processes these input types during PDF generation. The rendered PDF disp
 
 ### Data-Bound Input Types
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     fields: [
         {type: "text", label: "Name", value: "John Doe"},
@@ -542,8 +556,10 @@ Scryber processes these input types during PDF generation. The rendered PDF disp
                style="width: 300pt; padding: 6pt; border: 1pt solid #cccccc;" />
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Survey Form with Mixed Input Types
 
@@ -820,8 +836,10 @@ Scryber processes these input types during PDF generation. The rendered PDF disp
 
 ### Conditional Type Rendering with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     showPassword: false,
     useCheckbox: true,
@@ -858,8 +876,10 @@ Scryber processes these input types during PDF generation. The rendered PDF disp
         I agree to the terms
     </label>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

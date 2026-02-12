@@ -181,13 +181,17 @@ Scryber uses dedicated HTML elements within sections for headers and footers.
 
 Scryber provides page numbering through specific elements or data binding:
 
+
+
 {% raw %}
 ```html
 <footer>
     <p>Page {{@page}} of {{@pages}}</p>
 </footer>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Or using dedicated page number elements (check Scryber documentation for exact syntax):
 
@@ -203,6 +207,8 @@ Or using dedicated page number elements (check Scryber documentation for exact s
 
 ### Document Title
 
+
+
 {% raw %}
 ```html
 <header>
@@ -215,18 +221,23 @@ Or using dedicated page number elements (check Scryber documentation for exact s
         </div>
     </div>
 </header>
-{% endraw %}
 ```
+{% endraw %}
+
 
 ### Date and Time
+
+
 
 {% raw %}
 ```html
 <footer>
     <p>Generated: {{format(model.generatedDate, 'MMMM dd, yyyy')}}</p>
 </footer>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

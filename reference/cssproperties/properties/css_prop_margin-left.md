@@ -93,8 +93,10 @@ The `margin-left` property supports dynamic values through data binding, allowin
 
 ### Example 1: Dynamic indentation based on content level
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .content {
         padding: 30pt;
@@ -126,8 +128,10 @@ The `margin-left` property supports dynamic values through data binding, allowin
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -141,8 +145,10 @@ Data context:
 
 ### Example 2: Invoice line items with dynamic indentation
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .invoice {
         padding: 40pt;
@@ -177,8 +183,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -199,8 +207,10 @@ Data context:
 
 ### Example 3: Chat message alignment based on sender
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .chat-container {
         padding: 25pt;
@@ -224,8 +234,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json

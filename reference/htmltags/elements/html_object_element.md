@@ -166,11 +166,15 @@ The `data` attribute specifies the file to attach and supports multiple source t
    ```
 
 4. **Dynamic Sources via Data Binding**:
-   ```html
+
+
 {% raw %}
+   ```html
    <object data="{{model.attachmentPath}}" type="{{model.mimeType}}"></object>
-   {% endraw %}
 ```
+{% endraw %}
+
+
 
 ### MIME Types
 
@@ -224,15 +228,19 @@ When an icon is specified, a clickable icon appears in the document at the objec
 
 For dynamic attachments from memory or databases, use the `data-file-data` attribute:
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model.fileBytes containing byte[] data -->
 <object data="filename.pdf"
         data-file-data="{{model.fileBytes}}"
         type="application/pdf"
         alt="Dynamically loaded document"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 The system will:
 1. Use the `data` attribute value as the filename
@@ -440,21 +448,27 @@ In the Scryber codebase:
 
 ### Dynamic Attachment Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = { attachmentPath: "report.pdf", attachmentType: "application/pdf", attachmentName: "Monthly Report" } -->
 
 <object data="{{model.attachmentPath}}"
         type="{{model.attachmentType}}"
         data-icon="Paperclip"
         alt="{{model.attachmentName}}"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Binary Data Attachment
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model.fileBytes containing byte[] data from database/API -->
 
 <object data="{{model.fileName}}"
@@ -462,13 +476,17 @@ In the Scryber codebase:
         type="{{model.mimeType}}"
         data-icon="Paperclip"
         alt="{{model.description}}"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Attachments
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = { includeAttachment: true, filePath: "document.pdf" } -->
 
 <div>
@@ -480,13 +498,17 @@ In the Scryber codebase:
             data-icon="Paperclip"
             hidden="{{model.includeAttachment ? '' : 'hidden'}}"></object>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Repeating Attachments
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model.attachments = [
     {path: "file1.pdf", type: "application/pdf", name: "File 1"},
     {path: "file2.pdf", type: "application/pdf", name: "File 2"}
@@ -505,8 +527,10 @@ In the Scryber codebase:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Positioned Attachments
 
@@ -584,8 +608,10 @@ In the Scryber codebase:
 
 ### Remote File Attachment
 
-```html
+
+
 {% raw %}
+```html
 <!-- Attach file from remote URL -->
 <object data="https://example.com/files/whitepaper.pdf"
         type="application/pdf"
@@ -597,8 +623,10 @@ In the Scryber codebase:
         type="application/pdf"
         data-icon="Paperclip"
         alt="Generated Report"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Image Attachments
 
@@ -718,8 +746,10 @@ In the Scryber codebase:
 
 ### Research Paper with Supplementary Files
 
-```html
+
+
 {% raw %}
+```html
 <div class="paper">
     <h1>{{model.paperTitle}}</h1>
     <p class="authors">{{model.authors}}</p>
@@ -763,13 +793,17 @@ In the Scryber codebase:
         </div>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Invoice with Supporting Documents
 
-```html
+
+
 {% raw %}
+```html
 <div class="invoice">
     <h1>Invoice #{{model.invoiceNumber}}</h1>
     <p>Date: {{model.invoiceDate}}</p>
@@ -818,8 +852,10 @@ In the Scryber codebase:
         </div>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -58,15 +58,19 @@ An array containing all matches found.
 
 ### Extract All Numbers
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <ul>
 {{#each regexMatches(model.text, '\\d+')}}
   <li>Number: {{this}}</li>
 {{/each}}
 </ul>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -87,14 +91,18 @@ doc.Params["model"] = new {
 
 ### Extract Email Addresses
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <h3>Found Emails:</h3>
 {{#each regexMatches(model.text, '[\\w\\.]+@[\\w\\.]+')}}
   <p>{{this}}</p>
 {{/each}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -112,15 +120,19 @@ doc.Params["model"] = new {
 
 ### Extract Hashtags
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <div class="tags">
 {{#each regexMatches(model.post, '#\\w+')}}
   <span class="tag">{{this}}</span>
 {{/each}}
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -141,20 +153,30 @@ doc.Params["model"] = new {
 
 ### Extract URLs
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <h3>Links:</h3>
 {{#each regexMatches(model.content, 'https?://[^\\s]+')}}
   <a href="{{this}}">{{this}}</a>
 {{/each}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Count Matches
 
+
+
+{% raw %}
 ```handlebars
 <p>Found {{length(regexMatches(model.text, '\\d'))}} digits</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

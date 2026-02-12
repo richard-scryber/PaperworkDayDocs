@@ -59,11 +59,15 @@ The string with all pattern matches replaced.
 
 ### Remove All Digits
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <p>{{regexSwap(model.text, '\\d', '')}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -79,11 +83,15 @@ doc.Params["model"] = new {
 
 ### Mask Phone Numbers
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <p>{{regexSwap(model.phone, '\\d', 'X')}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -99,11 +107,15 @@ doc.Params["model"] = new {
 
 ### Replace Multiple Spaces
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <p>{{regexSwap(model.text, '\\s+', ' ')}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -119,11 +131,15 @@ doc.Params["model"] = new {
 
 ### Sanitize Special Characters
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <p>{{regexSwap(model.filename, '[^a-zA-Z0-9_.-]', '_')}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -139,19 +155,27 @@ doc.Params["model"] = new {
 
 ### Format Numbers with Separators
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <p>{{regexSwap(model.number, '(\\d)(?=(\\d{3})+$)', '$1,')}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Remove HTML Tags
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <p>{{regexSwap(model.html, '<[^>]+>', '')}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -167,12 +191,16 @@ doc.Params["model"] = new {
 
 ### Convert Dates
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <!-- Convert MM/DD/YYYY to YYYY-MM-DD -->
 <p>{{regexSwap(model.date, '(\\d{2})/(\\d{2})/(\\d{4})', '$3-$1-$2')}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

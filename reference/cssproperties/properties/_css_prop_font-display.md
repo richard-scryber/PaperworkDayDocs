@@ -73,8 +73,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 
 ### Data Binding Examples
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic font-display from configuration (no effect in PDF) -->
 <style>
     @font-face {
@@ -113,8 +115,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
         {{content}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Note:** Font-display is not applied during PDF rendering in Scryber.Core. These data binding examples are useful for shared stylesheets that serve both web and PDF contexts, where the property applies to web rendering only.
 

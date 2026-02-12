@@ -97,8 +97,10 @@ The `-pdf-li-postfix` property supports data binding, enabling dynamic postfix t
 
 ### Example 1: Configurable postfix punctuation
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .formatted-list {
         list-style-type: decimal;
@@ -114,8 +116,10 @@ The `-pdf-li-postfix` property supports data binding, enabling dynamic postfix t
         <li>{{items[2]}}</li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context (with period):**
 ```json
@@ -155,8 +159,10 @@ Different document types can use appropriate postfix punctuation: periods for fo
 
 ### Example 2: Multilingual postfix conventions
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .localized-list {
         list-style-type: decimal;
@@ -172,8 +178,10 @@ Different document types can use appropriate postfix punctuation: periods for fo
         <li>{{locale.items[2]}}</li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context (English/US):**
 ```json
@@ -209,8 +217,10 @@ Different languages and regions have different conventions for list punctuation.
 
 ### Example 3: Legal document section numbering
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .legal-sections {
         list-style-type: decimal;
@@ -232,8 +242,10 @@ Different languages and regions have different conventions for list punctuation.
         <li>{{sections[1].title}}</li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context (US jurisdiction):**
 ```json

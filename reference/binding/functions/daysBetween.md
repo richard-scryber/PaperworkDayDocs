@@ -58,9 +58,15 @@ The number of days between the two dates. Positive if endDate is after startDate
 
 ### Calculate Days Until Event
 
+
+
+{% raw %}
 ```handlebars
 <p>Days until launch: {{daysBetween(model.today, model.launchDate)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -77,12 +83,18 @@ doc.Params["model"] = new {
 
 ### Project Duration
 
+
+
+{% raw %}
 ```handlebars
 <h3>Project Timeline</h3>
 <p>Start: {{format(model.startDate, 'MMMM dd, yyyy')}}</p>
 <p>End: {{format(model.endDate, 'MMMM dd, yyyy')}}</p>
 <p>Duration: {{daysBetween(model.startDate, model.endDate)}} days</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -102,6 +114,9 @@ doc.Params["model"] = new {
 
 ### Overdue Calculation
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.tasks}}
   <p>{{this.name}}:
@@ -113,6 +128,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

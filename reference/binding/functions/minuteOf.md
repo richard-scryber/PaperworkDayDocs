@@ -57,9 +57,15 @@ The minute as a number from 0 to 59.
 
 ### Display Minute
 
+
+
+{% raw %}
 ```handlebars
 <p>Minute: {{minuteOf(model.time)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Custom Time Format
 
+
+
+{% raw %}
 ```handlebars
 <p>Time: {{hourOf(model.time)}}:{{padLeft(string(minuteOf(model.time)), 2, '0')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,6 +105,9 @@ doc.Params["model"] = new {
 
 ### Appointment Slot Detection
 
+
+
+{% raw %}
 ```handlebars
 <p>Time Slot:
 {{#if (minuteOf(model.appointmentTime) == 0)}}
@@ -104,6 +119,9 @@ doc.Params["model"] = new {
 {{/if}}
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -119,11 +137,17 @@ doc.Params["model"] = new {
 
 ### Parking Time Calculation
 
+
+
+{% raw %}
 ```handlebars
 <h3>Parking Duration</h3>
 <p>Hours: {{hoursBetween(model.entry, model.exit)}}</p>
 <p>Additional minutes: {{minuteOf(model.exit) - minuteOf(model.entry)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -142,6 +166,9 @@ doc.Params["model"] = new {
 
 ### Meeting Start Validation
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.meetings}}
   <p>{{format(this.startTime, 'h:mm tt')}}
@@ -151,6 +178,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

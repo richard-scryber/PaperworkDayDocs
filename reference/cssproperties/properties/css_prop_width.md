@@ -93,8 +93,10 @@ The width property supports dynamic value binding through template expressions, 
 
 ### Example 1: Chart with dynamic width
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .chart-container {
         padding: 20pt;
@@ -129,13 +131,17 @@ The width property supports dynamic value binding through template expressions, 
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Conditional image sizing
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .product-image {
         height: auto;
@@ -151,13 +157,17 @@ The width property supports dynamic value binding through template expressions, 
              alt="{{product.name}}" />
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Progress bars with data-driven widths
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .progress-container {
         width: 400pt;
@@ -193,13 +203,17 @@ The width property supports dynamic value binding through template expressions, 
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 4: Responsive table columns based on configuration
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-table {
         width: 100%;
@@ -230,8 +244,10 @@ The width property supports dynamic value binding through template expressions, 
         </tbody>
     </table>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

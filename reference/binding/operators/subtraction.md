@@ -31,9 +31,15 @@ Subtract one numeric value from another.
 
 ## Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{operand1 - operand2}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -68,9 +74,15 @@ The difference between the left and right operands.
 
 ### Basic Subtraction
 
+
+
+{% raw %}
 ```handlebars
 <p>Discount: ${{model.originalPrice - model.salePrice}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -87,9 +99,15 @@ doc.Params["model"] = new {
 
 ### Calculating Remaining Stock
 
+
+
+{% raw %}
 ```handlebars
 <p>Remaining: {{model.totalStock - model.soldQuantity}} units</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -106,12 +124,21 @@ doc.Params["model"] = new {
 
 ### Date Difference (with days)
 
+
+
+{% raw %}
 ```handlebars
 <p>Days remaining: {{daysBetween(model.today, model.deadline)}}</p>
 ```
+{% endraw %}
+
+
 
 ### Variance Calculation
 
+
+
+{% raw %}
 ```handlebars
 <p>Variance: {{model.actual - model.expected}}</p>
 {{#if model.actual - model.expected > 0}}
@@ -120,6 +147,9 @@ doc.Params["model"] = new {
   <span class="negative">Below target</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -137,6 +167,9 @@ doc.Params["model"] = new {
 
 ### Combined with Other Operators
 
+
+
+{% raw %}
 ```handlebars
 <!-- Discount percentage -->
 <p>Save: {{format((model.originalPrice - model.salePrice) / model.originalPrice * 100, '0')}}%</p>
@@ -144,6 +177,9 @@ doc.Params["model"] = new {
 <!-- Net profit -->
 <p>Profit: ${{format(model.revenue - model.costs - model.taxes, '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 ---
 

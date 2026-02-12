@@ -58,16 +58,28 @@ Description of what the function returns.
 
 ### Basic Usage
 
+
+
+{% raw %}
 ```handlebars
 {{functionName(value)}}
 <!-- Output: result -->
 ```
+{% endraw %}
+
+
 
 ### With Variables
 
+
+
+{% raw %}
 ```handlebars
 <p>Result: {{functionName(model.value)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -83,10 +95,16 @@ doc.Params["model"] = new {
 
 ### Complex Example
 
+
+
+{% raw %}
 ```handlebars
 <!-- More advanced usage -->
 {{functionName(expression, model.param)}}
 ```
+{% endraw %}
+
+
 
 ---
 

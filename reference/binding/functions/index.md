@@ -32,11 +32,15 @@ Built-in functions for data manipulation and formatting in Scryber binding expre
 Expression functions transform and manipulate data within binding expressions. Over 90 built-in functions are available across multiple categories.
 
 **Usage:**
-```handlebars
+
+
 {% raw %}
+```handlebars
 {{functionName(param1, param2, ...)}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -46,13 +50,13 @@ Convert values between different types.
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| [int](./int) | Convert to integer | {% raw %}`{{int(model.value)}}`{% endraw %} |
-| [long](./long) | Convert to long integer | {% raw %}`{{long(model.bigNumber)}}`{% endraw %} |
-| [double](./double) | Convert to double precision float | {% raw %}`{{double(model.value)}}`{% endraw %} |
-| [decimal](./decimal) | Convert to decimal | {% raw %}`{{decimal(model.price)}}`{% endraw %} |
-| [bool](./bool) | Convert to boolean | {% raw %}`{{bool(model.flag)}}`{% endraw %} |
-| [date](./date) | Convert to DateTime | {% raw %}`{{date(model.dateString)}}`{% endraw %} |
-| [typeof](./typeof) | Get type name | {% raw %}`{{typeof(model.value)}}`{% endraw %} |
+| [int](./int) | Convert to integer | `{{int(model.value)}}` |
+| [long](./long) | Convert to long integer | `{{long(model.bigNumber)}}` |
+| [double](./double) | Convert to double precision float | `{{double(model.value)}}` |
+| [decimal](./decimal) | Convert to decimal | `{{decimal(model.price)}}` |
+| [bool](./bool) | Convert to boolean | `{{bool(model.flag)}}` |
+| [date](./date) | Convert to DateTime | `{{date(model.dateString)}}` |
+| [typeof](./typeof) | Get type name | `{{typeof(model.value)}}` |
 
 ---
 
@@ -62,26 +66,26 @@ Manipulate and format text.
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| [format](./format) / [string](./string.md) | Format values as strings | {% raw %}`{{format(model.price, 'C2')}}`{% endraw %} |
-| [concat](./concat) | Concatenate strings | {% raw %}`{{concat(model.first, ' ', model.last)}}`{% endraw %} |
-| [join](./join) | Join array with separator | {% raw %}`{{join(model.items, ', ')}}`{% endraw %} |
-| [substring](./substring) | Extract substring | {% raw %}`{{substring(model.text, 0, 10)}}`{% endraw %} |
-| [replace](./replace) | Replace text | {% raw %}`{{replace(model.text, 'old', 'new')}}`{% endraw %} |
-| [toLower](./toLower) | Convert to lowercase | {% raw %}`{{toLower(model.text)}}`{% endraw %} |
-| [toUpper](./toUpper) | Convert to UPPERCASE | {% raw %}`{{toUpper(model.code)}}`{% endraw %} |
-| [trim](./trim) | Remove leading/trailing whitespace | {% raw %}`{{trim(model.text)}}`{% endraw %} |
-| [trimEnd](./trimEnd) | Remove trailing whitespace | {% raw %}`{{trimEnd(model.text)}}`{% endraw %} |
-| [length](./length) | Get string length | {% raw %}`{{length(model.text)}}`{% endraw %} |
-| [contains](./contains) | Check if contains substring | {% raw %}`{{contains(model.text, 'search')}}`{% endraw %} |
-| [startsWith](./startsWith) | Check if starts with substring | {% raw %}`{{startsWith(model.text, 'prefix')}}`{% endraw %} |
-| [endsWith](./endsWith) | Check if ends with substring | {% raw %}`{{endsWith(model.text, 'suffix')}}`{% endraw %} |
-| [indexOf](./indexOf) | Find substring position | {% raw %}`{{indexOf(model.text, 'search')}}`{% endraw %} |
-| [padLeft](./padLeft) | Pad left with characters | {% raw %}`{{padLeft(model.num, 5, '0')}}`{% endraw %} |
-| [padRight](./padRight) | Pad right with characters | {% raw %}`{{padRight(model.text, 10, ' ')}}`{% endraw %} |
-| [split](./split) | Split string into array | {% raw %}`{{split(model.text, ',')}}`{% endraw %} |
-| [regexIsMatch](./regexIsMatch) | Test regex pattern | {% raw %}`{{regexIsMatch(model.email, '^.+@.+$')}}`{% endraw %} |
-| [regexMatches](./regexMatches) | Find all regex matches | {% raw %}`{{regexMatches(model.text, '\\d+')}}`{% endraw %} |
-| [regexSwap](./regexSwap) | Replace using regex | {% raw %}`{{regexSwap(model.text, '\\d+', 'X')}}`{% endraw %} |
+| [format](./format) / [string](./string.md) | Format values as strings | `{{format(model.price, 'C2')}}` |
+| [concat](./concat) | Concatenate strings | `{{concat(model.first, ' ', model.last)}}` |
+| [join](./join) | Join array with separator | `{{join(model.items, ', ')}}` |
+| [substring](./substring) | Extract substring | `{{substring(model.text, 0, 10)}}` |
+| [replace](./replace) | Replace text | `{{replace(model.text, 'old', 'new')}}` |
+| [toLower](./toLower) | Convert to lowercase | `{{toLower(model.text)}}` |
+| [toUpper](./toUpper) | Convert to UPPERCASE | `{{toUpper(model.code)}}` |
+| [trim](./trim) | Remove leading/trailing whitespace | `{{trim(model.text)}}` |
+| [trimEnd](./trimEnd) | Remove trailing whitespace | `{{trimEnd(model.text)}}` |
+| [length](./length) | Get string length | `{{length(model.text)}}` |
+| [contains](./contains) | Check if contains substring | `{{contains(model.text, 'search')}}` |
+| [startsWith](./startsWith) | Check if starts with substring | `{{startsWith(model.text, 'prefix')}}` |
+| [endsWith](./endsWith) | Check if ends with substring | `{{endsWith(model.text, 'suffix')}}` |
+| [indexOf](./indexOf) | Find substring position | `{{indexOf(model.text, 'search')}}` |
+| [padLeft](./padLeft) | Pad left with characters | `{{padLeft(model.num, 5, '0')}}` |
+| [padRight](./padRight) | Pad right with characters | `{{padRight(model.text, 10, ' ')}}` |
+| [split](./split) | Split string into array | `{{split(model.text, ',')}}` |
+| [regexIsMatch](./regexIsMatch) | Test regex pattern | `{{regexIsMatch(model.email, '^.+@.+$')}}` |
+| [regexMatches](./regexMatches) | Find all regex matches | `{{regexMatches(model.text, '\\d+')}}` |
+| [regexSwap](./regexSwap) | Replace using regex | `{{regexSwap(model.text, '\\d+', 'X')}}` |
 
 ---
 
@@ -91,28 +95,28 @@ Perform calculations and mathematical operations.
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| [abs](./abs) | Absolute value | {% raw %}`{{abs(model.value)}}`{% endraw %} |
-| [ceiling](./ceiling) | Round up to integer | {% raw %}`{{ceiling(model.value)}}`{% endraw %} |
-| [floor](./floor) | Round down to integer | {% raw %}`{{floor(model.value)}}`{% endraw %} |
-| [round](./round) | Round to nearest | {% raw %}`{{round(model.value, 2)}}`{% endraw %} |
-| [truncate](./truncate) | Truncate decimal | {% raw %}`{{truncate(model.value)}}`{% endraw %} |
-| [sqrt](./sqrt) | Square root | {% raw %}`{{sqrt(model.value)}}`{% endraw %} |
-| [pow](./pow) | Raise to power | {% raw %}`{{pow(model.base, model.exp)}}`{% endraw %} |
-| [exp](./exp) | Exponential (e^x) | {% raw %}`{{exp(model.value)}}`{% endraw %} |
-| [log](./log) | Natural logarithm | {% raw %}`{{log(model.value)}}`{% endraw %} |
-| [log10](./log10) | Base-10 logarithm | {% raw %}`{{log10(model.value)}}`{% endraw %} |
-| [sign](./sign) | Sign of number (-1, 0, 1) | {% raw %}`{{sign(model.value)}}`{% endraw %} |
-| [sin](./sin) | Sine | {% raw %}`{{sin(model.radians)}}`{% endraw %} |
-| [cos](./cos) | Cosine | {% raw %}`{{cos(model.radians)}}`{% endraw %} |
-| [tan](./tan) | Tangent | {% raw %}`{{tan(model.radians)}}`{% endraw %} |
-| [asin](./asin) | Arcsine | {% raw %}`{{asin(model.value)}}`{% endraw %} |
-| [acos](./acos) | Arccosine | {% raw %}`{{acos(model.value)}}`{% endraw %} |
-| [atan](./atan) | Arctangent | {% raw %}`{{atan(model.value)}}`{% endraw %} |
-| [degrees](./degrees) | Convert radians to degrees | {% raw %}`{{degrees(model.radians)}}`{% endraw %} |
-| [radians](./radians) | Convert degrees to radians | {% raw %}`{{radians(model.degrees)}}`{% endraw %} |
-| [pi](./pi) | Pi constant (3.14159...) | {% raw %}`{{pi()}}`{% endraw %} |
-| [e](./e) | Euler's number (2.71828...) | {% raw %}`{{e()}}`{% endraw %} |
-| [random](./random) | Random number | {% raw %}`{{random()}}`{% endraw %} |
+| [abs](./abs) | Absolute value | `{{abs(model.value)}}` |
+| [ceiling](./ceiling) | Round up to integer | `{{ceiling(model.value)}}` |
+| [floor](./floor) | Round down to integer | `{{floor(model.value)}}` |
+| [round](./round) | Round to nearest | `{{round(model.value, 2)}}` |
+| [truncate](./truncate) | Truncate decimal | `{{truncate(model.value)}}` |
+| [sqrt](./sqrt) | Square root | `{{sqrt(model.value)}}` |
+| [pow](./pow) | Raise to power | `{{pow(model.base, model.exp)}}` |
+| [exp](./exp) | Exponential (e^x) | `{{exp(model.value)}}` |
+| [log](./log) | Natural logarithm | `{{log(model.value)}}` |
+| [log10](./log10) | Base-10 logarithm | `{{log10(model.value)}}` |
+| [sign](./sign) | Sign of number (-1, 0, 1) | `{{sign(model.value)}}` |
+| [sin](./sin) | Sine | `{{sin(model.radians)}}` |
+| [cos](./cos) | Cosine | `{{cos(model.radians)}}` |
+| [tan](./tan) | Tangent | `{{tan(model.radians)}}` |
+| [asin](./asin) | Arcsine | `{{asin(model.value)}}` |
+| [acos](./acos) | Arccosine | `{{acos(model.value)}}` |
+| [atan](./atan) | Arctangent | `{{atan(model.value)}}` |
+| [degrees](./degrees) | Convert radians to degrees | `{{degrees(model.radians)}}` |
+| [radians](./radians) | Convert degrees to radians | `{{radians(model.degrees)}}` |
+| [pi](./pi) | Pi constant (3.14159...) | `{{pi()}}` |
+| [e](./e) | Euler's number (2.71828...) | `{{e()}}` |
+| [random](./random) | Random number | `{{random()}}` |
 
 ---
 
@@ -122,26 +126,26 @@ Work with dates and timestamps.
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| [addDays](./addDays) | Add days to date | {% raw %}`{{addDays(model.date, 7)}}`{% endraw %} |
-| [addMonths](./addMonths) | Add months to date | {% raw %}`{{addMonths(model.date, 1)}}`{% endraw %} |
-| [addYears](./addYears) | Add years to date | {% raw %}`{{addYears(model.date, 1)}}`{% endraw %} |
-| [addHours](./addHours) | Add hours to date | {% raw %}`{{addHours(model.date, 2)}}`{% endraw %} |
-| [addMinutes](./addMinutes) | Add minutes to date | {% raw %}`{{addMinutes(model.date, 30)}}`{% endraw %} |
-| [addSeconds](./addSeconds) | Add seconds to date | {% raw %}`{{addSeconds(model.date, 45)}}`{% endraw %} |
-| [addMilliseconds](./addMilliseconds) | Add milliseconds to date | {% raw %}`{{addMilliseconds(model.date, 500)}}`{% endraw %} |
-| [daysBetween](./daysBetween) | Days between two dates | {% raw %}`{{daysBetween(model.start, model.end)}}`{% endraw %} |
-| [hoursBetween](./hoursBetween) | Hours between two dates | {% raw %}`{{hoursBetween(model.start, model.end)}}`{% endraw %} |
-| [minutesBetween](./minutesBetween) | Minutes between two dates | {% raw %}`{{minutesBetween(model.start, model.end)}}`{% endraw %} |
-| [secondsBetween](./secondsBetween) | Seconds between two dates | {% raw %}`{{secondsBetween(model.start, model.end)}}`{% endraw %} |
-| [yearOf](./yearOf) | Extract year | {% raw %}`{{yearOf(model.date)}}`{% endraw %} |
-| [monthOfYear](./monthOfYear) | Extract month (1-12) | {% raw %}`{{monthOfYear(model.date)}}`{% endraw %} |
-| [dayOfMonth](./dayOfMonth) | Extract day (1-31) | {% raw %}`{{dayOfMonth(model.date)}}`{% endraw %} |
-| [dayOfWeek](./dayOfWeek) | Extract day of week (0-6) | {% raw %}`{{dayOfWeek(model.date)}}`{% endraw %} |
-| [dayOfYear](./dayOfYear) | Extract day of year (1-366) | {% raw %}`{{dayOfYear(model.date)}}`{% endraw %} |
-| [hourOf](./hourOf) | Extract hour (0-23) | {% raw %}`{{hourOf(model.date)}}`{% endraw %} |
-| [minuteOf](./minuteOf) | Extract minute (0-59) | {% raw %}`{{minuteOf(model.date)}}`{% endraw %} |
-| [secondOf](./secondOf) | Extract second (0-59) | {% raw %}`{{secondOf(model.date)}}`{% endraw %} |
-| [millisecondOf](./millisecondOf) | Extract millisecond (0-999) | {% raw %}`{{millisecondOf(model.date)}}`{% endraw %} |
+| [addDays](./addDays) | Add days to date | `{{addDays(model.date, 7)}}` |
+| [addMonths](./addMonths) | Add months to date | `{{addMonths(model.date, 1)}}` |
+| [addYears](./addYears) | Add years to date | `{{addYears(model.date, 1)}}` |
+| [addHours](./addHours) | Add hours to date | `{{addHours(model.date, 2)}}` |
+| [addMinutes](./addMinutes) | Add minutes to date | `{{addMinutes(model.date, 30)}}` |
+| [addSeconds](./addSeconds) | Add seconds to date | `{{addSeconds(model.date, 45)}}` |
+| [addMilliseconds](./addMilliseconds) | Add milliseconds to date | `{{addMilliseconds(model.date, 500)}}` |
+| [daysBetween](./daysBetween) | Days between two dates | `{{daysBetween(model.start, model.end)}}` |
+| [hoursBetween](./hoursBetween) | Hours between two dates | `{{hoursBetween(model.start, model.end)}}` |
+| [minutesBetween](./minutesBetween) | Minutes between two dates | `{{minutesBetween(model.start, model.end)}}` |
+| [secondsBetween](./secondsBetween) | Seconds between two dates | `{{secondsBetween(model.start, model.end)}}` |
+| [yearOf](./yearOf) | Extract year | `{{yearOf(model.date)}}` |
+| [monthOfYear](./monthOfYear) | Extract month (1-12) | `{{monthOfYear(model.date)}}` |
+| [dayOfMonth](./dayOfMonth) | Extract day (1-31) | `{{dayOfMonth(model.date)}}` |
+| [dayOfWeek](./dayOfWeek) | Extract day of week (0-6) | `{{dayOfWeek(model.date)}}` |
+| [dayOfYear](./dayOfYear) | Extract day of year (1-366) | `{{dayOfYear(model.date)}}` |
+| [hourOf](./hourOf) | Extract hour (0-23) | `{{hourOf(model.date)}}` |
+| [minuteOf](./minuteOf) | Extract minute (0-59) | `{{minuteOf(model.date)}}` |
+| [secondOf](./secondOf) | Extract second (0-59) | `{{secondOf(model.date)}}` |
+| [millisecondOf](./millisecondOf) | Extract millisecond (0-999) | `{{millisecondOf(model.date)}}` |
 
 ---
 
@@ -151,9 +155,9 @@ Control flow and conditional logic within expressions.
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| [if](./if) | Ternary conditional | {% raw %}`{{if(model.active, 'Yes', 'No')}}`{% endraw %} |
-| [ifError](./ifError) | Fallback on error | {% raw %}`{{ifError(model.value, 'default')}}`{% endraw %} |
-| [in](./in) | Check if value in list | {% raw %}`{{in(model.status, 'active', 'pending')}}`{% endraw %} |
+| [if](./if) | Ternary conditional | `{{if(model.active, 'Yes', 'No')}}` |
+| [ifError](./ifError) | Fallback on error | `{{ifError(model.value, 'default')}}` |
+| [in](./in) | Check if value in list | `{{in(model.status, 'active', 'pending')}}` |
 
 ---
 
@@ -163,21 +167,21 @@ Aggregate and manipulate collections.
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| [count](./count) | Count items in collection | {% raw %}`{{count(model.items)}}`{% endraw %} |
-| [countOf](./countOf) | Count with condition | {% raw %}`{{countOf(model.items, 'isActive')}}`{% endraw %} |
-| [sum](./sum) | Sum numeric values | {% raw %}`{{sum(model.numbers)}}`{% endraw %} |
-| [sumOf](./sumOf) | Sum property values | {% raw %}`{{sumOf(model.items, 'price')}}`{% endraw %} |
-| [min](./min) | Minimum value | {% raw %}`{{min(model.numbers)}}`{% endraw %} |
-| [minOf](./minOf) | Minimum property value | {% raw %}`{{minOf(model.items, 'price')}}`{% endraw %} |
-| [max](./max) | Maximum value | {% raw %}`{{max(model.numbers)}}`{% endraw %} |
-| [maxOf](./maxOf) | Maximum property value | {% raw %}`{{maxOf(model.items, 'price')}}`{% endraw %} |
-| [collect](./collect) | Extract property values | {% raw %}`{{collect(model.items, 'name')}}`{% endraw %} |
-| [each](./each) | Iterate with function | {% raw %}`{{each(model.items, 'transform')}}`{% endraw %} |
-| [eachOf](./eachOf) | Iterate property with function | {% raw %}`{{eachOf(model.items, 'prop', 'fn')}}`{% endraw %} |
-| [firstWhere](./firstWhere) | Find first matching item | {% raw %}`{{firstWhere(model.items, 'isActive')}}`{% endraw %} |
-| [selectWhere](./selectWhere) | Filter collection | {% raw %}`{{selectWhere(model.items, 'isActive')}}`{% endraw %} |
-| [sortBy](./sortBy) | Sort by property | {% raw %}`{{sortBy(model.items, 'name')}}`{% endraw %} |
-| [reverse](./reverse) | Reverse order | {% raw %}`{{reverse(model.items)}}`{% endraw %} |
+| [count](./count) | Count items in collection | `{{count(model.items)}}` |
+| [countOf](./countOf) | Count with condition | `{{countOf(model.items, 'isActive')}}` |
+| [sum](./sum) | Sum numeric values | `{{sum(model.numbers)}}` |
+| [sumOf](./sumOf) | Sum property values | `{{sumOf(model.items, 'price')}}` |
+| [min](./min) | Minimum value | `{{min(model.numbers)}}` |
+| [minOf](./minOf) | Minimum property value | `{{minOf(model.items, 'price')}}` |
+| [max](./max) | Maximum value | `{{max(model.numbers)}}` |
+| [maxOf](./maxOf) | Maximum property value | `{{maxOf(model.items, 'price')}}` |
+| [collect](./collect) | Extract property values | `{{collect(model.items, 'name')}}` |
+| [each](./each) | Iterate with function | `{{each(model.items, 'transform')}}` |
+| [eachOf](./eachOf) | Iterate property with function | `{{eachOf(model.items, 'prop', 'fn')}}` |
+| [firstWhere](./firstWhere) | Find first matching item | `{{firstWhere(model.items, 'isActive')}}` |
+| [selectWhere](./selectWhere) | Filter collection | `{{selectWhere(model.items, 'isActive')}}` |
+| [sortBy](./sortBy) | Sort by property | `{{sortBy(model.items, 'name')}}` |
+| [reverse](./reverse) | Reverse order | `{{reverse(model.items)}}` |
 
 ---
 
@@ -187,11 +191,11 @@ Calculate statistics on collections.
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| [average](./average) | Average of values | {% raw %}`{{average(model.numbers)}}`{% endraw %} |
-| [averageOf](./averageOf) | Average of property | {% raw %}`{{averageOf(model.items, 'price')}}`{% endraw %} |
-| [mean](./mean) | Mean value | {% raw %}`{{mean(model.numbers)}}`{% endraw %} |
-| [median](./median) | Median value | {% raw %}`{{median(model.numbers)}}`{% endraw %} |
-| [mode](./mode) | Mode (most frequent) | {% raw %}`{{mode(model.numbers)}}`{% endraw %} |
+| [average](./average) | Average of values | `{{average(model.numbers)}}` |
+| [averageOf](./averageOf) | Average of property | `{{averageOf(model.items, 'price')}}` |
+| [mean](./mean) | Mean value | `{{mean(model.numbers)}}` |
+| [median](./median) | Median value | `{{median(model.numbers)}}` |
+| [mode](./mode) | Mode (most frequent) | `{{mode(model.numbers)}}` |
 
 ---
 
@@ -201,8 +205,8 @@ Dynamic CSS calculations.
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| [calc](./calc.md) | CSS calc expression | {% raw %}`{{calc('100% - 20pt')}}`{% endraw %} |
-| [var](./var.md) | CSS variable reference | {% raw %}`{{var('primary-color')}}`{% endraw %} |
+| [calc](./calc.md) | CSS calc expression | `{{calc('100% - 20pt')}}` |
+| [var](./var.md) | CSS variable reference | `{{var('primary-color')}}` |
 
 ---
 
@@ -210,51 +214,71 @@ Dynamic CSS calculations.
 
 ### Formatting Currency
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <p>Total: {{format(model.total, 'C2')}}</p>
 <!-- Output: Total: $1,234.56 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Date Calculations
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <p>Due: {{format(addDays(model.orderDate, 30), 'MMMM dd, yyyy')}}</p>
 <!-- Output: Due: April 14, 2024 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Values
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <span class="{{if(model.score >= 70, 'pass', 'fail')}}">
   Score: {{model.score}}
 </span>
 <!-- Output: <span class="pass">Score: 85</span> -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Collection Aggregation
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <p>Total Items: {{count(model.items)}}</p>
 <p>Total Price: {{format(sumOf(model.items, 'price'), 'C2')}}</p>
 <p>Average: {{format(averageOf(model.items, 'price'), 'C2')}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### String Manipulation
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <h2>{{toUpper(substring(model.title, 0, 1))}}{{substring(model.title, 1)}}</h2>
 <!-- Output: Capitalize first letter -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

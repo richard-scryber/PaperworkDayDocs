@@ -320,8 +320,11 @@ bquote.Contents.Add(q);
 
 ### Blockquote with Data Binding
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- With model.testimonials = [
+<!-- With model.testimonials = [
     { quote: "Excellent service!", author: "John Doe", company: "ABC Corp" },
     { quote: "Highly recommended!", author: "Jane Smith", company: "XYZ Ltd" }
 ] -->
@@ -333,8 +336,12 @@ bquote.Contents.Add(q);
             — <strong>{{.author}}</strong>, {{.company}}
         </footer>
     </blockquote>
-</template>{% endraw %}
+</template>
 ```
+{% endraw %}
+
+
+
 
 ### Blockquote for Pull Quote
 
@@ -428,15 +435,22 @@ bquote.Contents.Add(q);
 
 ### Blockquote with Dynamic Styling
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- With model = { quoteStyle: "professional" } -->
+<!-- With model = { quoteStyle: "professional" } -->
 
 <blockquote style="border-left-color: {{model.quoteColor}};
                    border-left-width: {{model.borderWidth}}pt;">
     <p>{{model.quoteText}}</p>
     <footer style="font-style: normal;">— {{model.attribution}}</footer>
-</blockquote>{% endraw %}
+</blockquote>
 ```
+{% endraw %}
+
+
+
 
 ---
 

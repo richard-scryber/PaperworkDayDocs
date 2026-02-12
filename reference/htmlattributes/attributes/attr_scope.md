@@ -39,8 +39,10 @@ The `scope` attribute defines header relationships:
 - Essential for complex tables with multiple header levels
 - Supports data binding for dynamic scope assignment
 
-```html
+
+
 {% raw %}
+```html
 <!-- Column header -->
 <th scope="col">Product Name</th>
 
@@ -55,8 +57,10 @@ The `scope` attribute defines header relationships:
 
 <!-- Dynamic scope -->
 <th scope="{{model.headerScope}}">{{model.headerText}}</th>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -73,8 +77,10 @@ The `scope` attribute is used exclusively with:
 
 The `scope` attribute supports data binding for dynamic scope assignment:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic scope value -->
 <th scope="{{model.scopeType}}">{{model.headerLabel}}</th>
 
@@ -98,8 +104,10 @@ The `scope` attribute supports data binding for dynamic scope assignment:
 <template data-bind="{{model.tableHeaders}}">
     <th scope="{{.scope}}" colspan="{{.colspan}}">{{.text}}</th>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -749,8 +757,10 @@ For PDF generation:
 
 ### Data-Bound Table
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     headers: [
         { text: "Product", scope: "col" },
@@ -787,8 +797,10 @@ For PDF generation:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Financial Report Table
 

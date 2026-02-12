@@ -95,8 +95,10 @@ The `margin-inline` property supports dynamic values through data binding, enabl
 
 ### Example 1: Dynamic document margins based on page size
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .document {
         margin-inline: {{page.size === 'A4' ? '50pt' : '72pt'}};
@@ -122,8 +124,10 @@ The `margin-inline` property supports dynamic values through data binding, enabl
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -139,8 +143,10 @@ Data context:
 
 ### Example 2: Responsive invoice layout with data-driven spacing
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .invoice {
         margin-inline: {{layout.pageMargin}}pt;
@@ -172,8 +178,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -191,8 +199,10 @@ Data context:
 
 ### Example 3: Centered card with adaptive margins
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .page {
         padding: 30pt;
@@ -220,8 +230,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json

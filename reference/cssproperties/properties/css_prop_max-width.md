@@ -94,8 +94,10 @@ The max-width property supports dynamic value binding through template expressio
 
 ### Example 1: Content sections with configurable maximum widths
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .content-wrapper {
         margin: 0 auto;
@@ -117,13 +119,17 @@ The max-width property supports dynamic value binding through template expressio
         <p>{{article.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Images with data-driven maximum widths
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .image-container {
         padding: 20pt;
@@ -144,13 +150,17 @@ The max-width property supports dynamic value binding through template expressio
              alt="{{image.caption}}" />
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Cards with conditional maximum widths
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .card-grid {
         padding: 20pt;
@@ -177,13 +187,17 @@ The max-width property supports dynamic value binding through template expressio
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 4: Table with configurable maximum width
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .table-container {
         padding: 20pt;
@@ -224,8 +238,10 @@ The max-width property supports dynamic value binding through template expressio
         </table>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

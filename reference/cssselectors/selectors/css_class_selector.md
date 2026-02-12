@@ -289,8 +289,10 @@ p.intro {
 
 ### Example 10: Combined with data binding
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .product-name {
         font-size: 14pt;
@@ -308,8 +310,10 @@ p.intro {
         <div class="product-price">${{.price}}</div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

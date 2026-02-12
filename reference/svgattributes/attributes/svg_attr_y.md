@@ -70,21 +70,27 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 
 ### Example 1: Dynamic Vertical Positioning
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { position: { x: 100, y: 75 }, size: { width: 150, height: 100 } } -->
 <svg width="400" height="300">
     <rect x="{{position.x}}" y="{{position.y}}"
           width="{{size.width}}" height="{{size.height}}"
           fill="#9C27B0"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Calculated Vertical Position for Charts
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { chartHeight: 200, value: 85, maxValue: 150 } -->
 <svg width="300" height="250">
     <!-- Bar positioned from bottom -->
@@ -92,13 +98,17 @@ The `y` attribute supports dynamic values using data binding expressions with `{
           width="80" height="{{value / maxValue * chartHeight}}"
           fill="#4CAF50"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Stacked Bars with Dynamic Y
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { segments: [
     {height: 60, color: '#e74c3c'},
     {height: 40, color: '#f39c12'},
@@ -111,8 +121,10 @@ The `y` attribute supports dynamic values using data binding expressions with `{
               fill="{{.color}}"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -305,8 +317,10 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 
 ### Dynamic Height Bar Chart from Bottom
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { bars: [
     {value: 80, label: 'Q1'},
     {value: 120, label: 'Q2'},
@@ -322,8 +336,10 @@ The `y` attribute supports dynamic values using data binding expressions with `{
               fill="#4CAF50"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Layer Stack
 
@@ -428,8 +444,10 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 
 ### Dynamic Row Positioning
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { rows: [
     {label: 'Row 1', color: '#e74c3c'},
     {label: 'Row 2', color: '#f39c12'},
@@ -445,8 +463,10 @@ The `y` attribute supports dynamic values using data binding expressions with `{
               fill="{{.color}}" rx="4"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Hierarchical Tree Layout
 

@@ -83,8 +83,10 @@ The `refX` attribute is supported on:
 
 Adjust reference position based on marker size:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { markerSize: 12, alignCenter: true } -->
 <svg width="400" height="200">
     <defs>
@@ -103,15 +105,19 @@ Adjust reference position based on marker size:
           stroke="#2c3e50" stroke-width="2"
           marker-end="url(#dynamic-ref)"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Alignment
 
 Change alignment based on marker type:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { markerType: 'arrow', arrowTipAlign: true } -->
 <svg width="400" height="200">
     <defs>
@@ -128,13 +134,17 @@ Change alignment based on marker type:
           stroke="#2c3e50" stroke-width="2"
           marker-end="url(#aligned-marker)"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Marker Positioning
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     markers: [
         { size: 10, alignType: 'center', color: '#e74c3c' },
@@ -168,8 +178,10 @@ Change alignment based on marker type:
               marker-end="url(#marker-{{$index}})"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

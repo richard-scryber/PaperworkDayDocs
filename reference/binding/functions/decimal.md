@@ -57,9 +57,15 @@ A decimal representation with exact precision (28-29 significant digits).
 
 ### Currency Conversion
 
+
+
+{% raw %}
 ```handlebars
 <p>Total: ${{format(decimal(model.price), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Financial Calculations
 
+
+
+{% raw %}
 ```handlebars
 <p>Interest: ${{format(decimal(model.principal) * decimal(model.rate), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -94,11 +106,17 @@ doc.Params["model"] = new {
 
 ### Precise Arithmetic
 
+
+
+{% raw %}
 ```handlebars
 <p>Subtotal: ${{format(decimal(model.price) * decimal(model.quantity), '0.00')}}</p>
 <p>Tax: ${{format(decimal(model.price) * decimal(model.quantity) * decimal(model.taxRate), '0.00')}}</p>
 <p>Total: ${{format(decimal(model.price) * decimal(model.quantity) * (1 + decimal(model.taxRate)), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

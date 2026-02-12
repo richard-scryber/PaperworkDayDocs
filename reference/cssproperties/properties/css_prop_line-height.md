@@ -110,8 +110,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 
 ### Data Binding Examples
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic line height from model -->
 <p style="line-height: {{preferences.lineSpacing}}">
     Text with user-defined line spacing
@@ -147,8 +149,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
         Spacing optimized for document type
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Note:** Bound line-height values can be unitless numbers (recommended), absolute units (e.g., '20pt'), or percentages (e.g., '150%'). Unitless values scale proportionally with font-size changes.
 

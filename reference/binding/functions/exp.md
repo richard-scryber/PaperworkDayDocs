@@ -57,9 +57,15 @@ e raised to the power of the value (e^value).
 
 ### Basic Exponential
 
+
+
+{% raw %}
 ```handlebars
 <p>e^{{model.value}} = {{format(exp(model.value), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Growth Calculation
 
+
+
+{% raw %}
 ```handlebars
 <p>Population: {{format(model.initial * exp(model.rate * model.time), '0')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -95,9 +107,15 @@ doc.Params["model"] = new {
 
 ### Exponential Decay
 
+
+
+{% raw %}
 ```handlebars
 <p>Remaining: {{format(model.initial * exp(-model.decayRate * model.time), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

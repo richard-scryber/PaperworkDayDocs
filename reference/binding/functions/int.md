@@ -60,9 +60,15 @@ A 32-bit integer representation of the value.
 
 ### Convert String to Integer
 
+
+
+{% raw %}
 ```handlebars
 <p>Value: {{int(model.stringValue)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -78,9 +84,15 @@ doc.Params["model"] = new {
 
 ### Truncate Decimal
 
+
+
+{% raw %}
 ```handlebars
 <p>Truncated: {{int(model.decimalValue)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -96,10 +108,16 @@ doc.Params["model"] = new {
 
 ### Calculate Whole Units
 
+
+
+{% raw %}
 ```handlebars
 <p>Full boxes: {{int(model.items / model.boxSize)}}</p>
 <p>Remaining items: {{model.items % model.boxSize}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -117,9 +135,15 @@ doc.Params["model"] = new {
 
 ### Age Calculation
 
+
+
+{% raw %}
 ```handlebars
 <p>Age: {{int(daysBetween(model.birthDate, model.today) / 365)}} years</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

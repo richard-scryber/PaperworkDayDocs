@@ -30,6 +30,8 @@ By the end of this article, you'll be able to:
 
 ## Complete Report Template
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -497,8 +499,10 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

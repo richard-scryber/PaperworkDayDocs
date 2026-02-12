@@ -84,33 +84,43 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
 
 ### Example 1: Line Chart from Data
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { data: [10, 25, 15, 40, 30, 45, 35] } -->
 <svg width="300" height="150">
     <polyline points="{{data.map((v, i)).join(' ')}}"
               fill="none" stroke="#2196F3" stroke-width="3"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Dynamic Trend Line
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { points: "50,80 100,60 150,90 200,40 250,70" } -->
 <svg width="300" height="120">
     <polyline points="{{points}}"
               fill="none" stroke="#4CAF50" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Multiple Polylines
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { series: [
     {points: '20,80 60,60 100,70 140,50', color: '#e74c3c'},
     {points: '20,90 60,75 100,85 140,70', color: '#3498db'}
@@ -121,8 +131,10 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
                   fill="none" stroke="{{.color}}" stroke-width="2"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -393,21 +405,27 @@ At least 2 points are required for a visible polyline. A single point produces n
 
 ### Dynamic Chart from Array
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { values: [30, 45, 35, 60, 50, 70, 55] } -->
 <svg width="280" height="150">
     <polyline points="{{values.map((v, i)).join(' ')}}"
               fill="none" stroke="#3498db" stroke-width="3"
               stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Multi-Series with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { datasets: [
     {name: 'Series A', data: [20,40,35,60,50], color: '#e74c3c'},
     {name: 'Series B', data: [30,35,45,50,55], color: '#3498db'},
@@ -419,8 +437,10 @@ At least 2 points are required for a visible polyline. A single point produces n
                   fill="none" stroke="{{.color}}" stroke-width="2"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -86,8 +86,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 
 ### Data Binding Examples
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic style from model data -->
 <p style="font-style: {{text.styleValue}}">
     Text with dynamically applied font style
@@ -117,8 +119,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
         Note: {{noteContent}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Note:** Bound font-style values should be valid CSS keywords: 'normal', 'italic', or 'oblique'. Invalid values may result in the default 'normal' style being applied.
 

@@ -97,8 +97,10 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 
 ### Example 1: Dynamic badge labels with centered text
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .badge-circle { stroke-width: 2; }
     .badge-text { font-size: 12px; font-weight: bold; text-anchor: middle; }
@@ -117,13 +119,17 @@ The `dominant-baseline` property can be dynamically controlled through data bind
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Data-driven timeline labels with hanging baseline
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .timeline-line { stroke: #9ca3af; stroke-width: 2; }
     .event-marker { fill: #3b82f6; }
@@ -141,13 +147,17 @@ The `dominant-baseline` property can be dynamically controlled through data bind
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Conditional baseline for chart annotations
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-bar { fill: #3b82f6; }
     .value-label { font-size: 14px; font-weight: bold; text-anchor: middle; }
@@ -165,8 +175,10 @@ The `dominant-baseline` property can be dynamically controlled through data bind
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -92,8 +92,10 @@ The `fill-opacity` property can be dynamically set using data binding expression
 
 ### Example 1: Data value transparency in charts
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .bar {
         fill: #3b82f6;
@@ -113,8 +115,10 @@ The `fill-opacity` property can be dynamically set using data binding expression
         {{/each}}
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 With model data (opacity based on percentage values):
 ```json
@@ -130,8 +134,10 @@ With model data (opacity based on percentage values):
 
 ### Example 2: Confidence levels in data visualization
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-circle {
         fill: #10b981;
@@ -150,8 +156,10 @@ With model data (opacity based on percentage values):
         {{/each}}
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 With model data:
 ```json
@@ -167,8 +175,10 @@ With model data:
 
 ### Example 3: Conditional opacity based on status
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .status-indicator {
         fill: #3b82f6;
@@ -189,8 +199,10 @@ With model data:
         {{/each}}
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

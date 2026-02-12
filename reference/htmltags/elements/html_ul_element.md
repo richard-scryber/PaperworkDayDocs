@@ -331,8 +331,10 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
 
 ### List with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Template with model.items = ["Apple", "Banana", "Cherry"] -->
 <ul>
     <li>Shopping List ({{count(model.items)}} items):</li>
@@ -347,13 +349,17 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
 • Banana
 • Cherry
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complex Data Binding Example
 
-```html
+
+
 {% raw %}
+```html
 <!-- Template with model.features = [{name: "Feature A", status: "complete"}, ...] -->
 <style>
     .status-complete { color: green; }
@@ -367,8 +373,10 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
         </li>
     </template>
 </ul>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Preventing List Item Breaks
 
@@ -467,8 +475,10 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
 
 ### Conditional List Items
 
-```html
+
+
 {% raw %}
+```html
 <!-- Template with model.showDetails = true -->
 <ul>
     <li>Always visible item</li>
@@ -477,8 +487,10 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
     </li>
     <li>Another always visible item</li>
 </ul>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### List with Background and Borders
 

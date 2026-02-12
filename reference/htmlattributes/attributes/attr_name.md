@@ -144,34 +144,46 @@ The `name` attribute can be set statically or dynamically:
 
 ### Dynamic Name with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { fieldName: "customerEmail" } -->
 <input type="text" name="{{model.fieldName}}" value="{{model.value}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Name
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { isPrimary: true } -->
 <input type="text"
        name="{{model.isPrimary ? 'primaryEmail' : 'secondaryEmail'}}"
        value="{{model.email}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Name in Repeating Templates
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { fields: [{id: "field1", value: "Value 1"}, ...] } -->
 <template data-bind="{{model.fields}}">
     <input type="text" name="{{.id}}" value="{{.value}}" />
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -678,8 +690,10 @@ Names can contain letters, numbers, hyphens, and underscores:
 
 ### Data-Bound Names
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     fields: [
         {name: "firstName", label: "First Name", value: "Sarah"},
@@ -699,8 +713,10 @@ Names can contain letters, numbers, hyphens, and underscores:
                style="width: 100%; padding: 8pt; border: 1pt solid #cccccc;" />
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Registration Form with Organized Names
 

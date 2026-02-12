@@ -55,9 +55,15 @@ The value of e (approximately 2.71828182845905).
 
 ### Display Constant
 
+
+
+{% raw %}
 ```handlebars
 <p>Euler's number: {{format(e(), '0.00000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -66,9 +72,15 @@ The value of e (approximately 2.71828182845905).
 
 ### Exponential Growth
 
+
+
+{% raw %}
 ```handlebars
 <p>Result: {{format(model.initial * pow(e(), model.rate * model.time), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -86,11 +98,17 @@ doc.Params["model"] = new {
 
 ### Natural Exponential
 
+
+
+{% raw %}
 ```handlebars
 <!-- e^2 using constant vs exp function -->
 <p>e^2 = {{format(pow(e(), 2), '0.000')}}</p>
 <p>exp(2) = {{format(exp(2), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html

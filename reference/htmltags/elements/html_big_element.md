@@ -198,8 +198,11 @@ The `<big>` element may be useful when:
 
 ### Data Binding with Big Tags
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- While deprecated, big tags work with data binding -->
+<!-- While deprecated, big tags work with data binding -->
 <p>
     Welcome, <big>{{model.userName}}</big>!
 </p>
@@ -207,8 +210,12 @@ The `<big>` element may be useful when:
 <!-- Better alternative with CSS -->
 <p>
     Welcome, <span style="font-size: 1.2em; font-weight: bold;">{{model.userName}}</span>!
-</p>{% endraw %}
+</p>
 ```
+{% endraw %}
+
+
+
 
 ### Big in Lists
 

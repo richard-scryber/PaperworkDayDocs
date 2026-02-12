@@ -58,9 +58,15 @@ A single string with all array elements joined by the separator.
 
 ### Comma-Separated List
 
+
+
+{% raw %}
 ```handlebars
 <p>Tags: {{join(model.tags, ', ')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -76,9 +82,15 @@ doc.Params["model"] = new {
 
 ### Pipe-Separated Values
 
+
+
+{% raw %}
 ```handlebars
 <p>Categories: {{join(model.categories, ' | ')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -94,9 +106,15 @@ doc.Params["model"] = new {
 
 ### Create Full Name
 
+
+
+{% raw %}
 ```handlebars
 <p>Name: {{join(model.nameParts, ' ')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -112,9 +130,15 @@ doc.Params["model"] = new {
 
 ### Bullet List
 
+
+
+{% raw %}
 ```handlebars
 <p>Features: {{join(model.features, ' • ')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -130,9 +154,15 @@ doc.Params["model"] = new {
 
 ### Create Path
 
+
+
+{% raw %}
 ```handlebars
 <p>Path: {{join(model.pathParts, '/')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

@@ -28,27 +28,27 @@ Perform mathematical calculations on numeric values.
 
 | Operator | Description | Precedence | Example |
 |----------|-------------|------------|---------|
-| [+](./addition) | Addition | 5 | {% raw %}`{{model.price + model.tax}}`{% endraw %} |
-| [-](./subtraction) | Subtraction | 5 | {% raw %}`{{model.total - model.discount}}`{% endraw %} |
-| [*](./multiplication) | Multiplication | 4 | {% raw %}`{{model.quantity * model.price}}`{% endraw %} |
-| [/](./division) | Division | 4 | {% raw %}`{{model.total / model.count}}`{% endraw %} |
-| [%](./modulus) | Modulus (remainder) | 4 | {% raw %}`{{model.index % 2}}`{% endraw %} |
-| [^](./power) | Exponentiation | 3 | {% raw %}`{{model.base ^ model.exponent}}`{% endraw %} |
+| [+](./addition) | Addition | 5 | `{{model.price + model.tax}}` |
+| [-](./subtraction) | Subtraction | 5 | `{{model.total - model.discount}}` |
+| [*](./multiplication) | Multiplication | 4 | `{{model.quantity * model.price}}` |
+| [/](./division) | Division | 4 | `{{model.total / model.count}}` |
+| [%](./modulus) | Modulus (remainder) | 4 | `{{model.index % 2}}` |
+| [^](./power) | Exponentiation | 3 | `{{model.base ^ model.exponent}}` |
 
 ---
 
 ## Comparison Operators
 
-Compare values and return boolean results. Used primarily in {% raw %}`{{#if}}`{% endraw %} conditionals.
+Compare values and return boolean results. Used primarily in `{{#if}}` conditionals.
 
 | Operator | Description | Precedence | Example |
 |----------|-------------|------------|---------|
-| [==](./equality) | Equality | 7 | {% raw %}`{{#if model.status == 'active'}}`{% endraw %} |
-| [!=](./inequality) | Inequality | 7 | {% raw %}`{{#if model.count != 0}}`{% endraw %} |
-| [<](./lessthan) | Less than | 6 | {% raw %}`{{#if model.age < 18}}`{% endraw %} |
-| [<=](./lessorequal) | Less than or equal | 6 | {% raw %}`{{#if model.score <= 100}}`{% endraw %} |
-| [>](./greaterthan) | Greater than | 6 | {% raw %}`{{#if model.value > 0}}`{% endraw %} |
-| [>=](./greaterorequal) | Greater than or equal | 6 | {% raw %}`{{#if model.age >= 18}}`{% endraw %} |
+| [==](./equality) | Equality | 7 | `{{#if model.status == 'active'}}` |
+| [!=](./inequality) | Inequality | 7 | `{{#if model.count != 0}}` |
+| [<](./lessthan) | Less than | 6 | `{{#if model.age < 18}}` |
+| [<=](./lessorequal) | Less than or equal | 6 | `{{#if model.score <= 100}}` |
+| [>](./greaterthan) | Greater than | 6 | `{{#if model.value > 0}}` |
+| [>=](./greaterorequal) | Greater than or equal | 6 | `{{#if model.age >= 18}}` |
 
 ---
 
@@ -58,8 +58,8 @@ Combine boolean expressions.
 
 | Operator | Description | Precedence | Example |
 |----------|-------------|------------|---------|
-| [&&](./and) | Logical AND | 9 | {% raw %}`{{#if model.age >= 18 && model.hasLicense}}`{% endraw %} |
-| [\|\|](./or) | Logical OR | 10 | {% raw %}`{{#if model.isAdmin \|\| model.isModerator}}`{% endraw %} |
+| [&&](./and) | Logical AND | 9 | `{{#if model.age >= 18 && model.hasLicense}}` |
+| [\|\|](./or) | Logical OR | 10 | `{{#if model.isAdmin \|\| model.isModerator}}` |
 
 ---
 
@@ -69,7 +69,7 @@ Handle null or undefined values with fallback.
 
 | Operator | Description | Precedence | Example |
 |----------|-------------|------------|---------|
-| [??](./nullcoalesce) | Null coalescing | 8 | {% raw %}`{{model.name ?? 'Unknown'}}`{% endraw %} |
+| [??](./nullcoalesce) | Null coalescing | 8 | `{{model.name ?? 'Unknown'}}` |
 
 ---
 
@@ -89,9 +89,15 @@ Operators are evaluated in order of precedence (1 = highest, 10 = lowest):
 10. Logical OR `||`
 
 Use parentheses to override precedence:
+
+
+{% raw %}
 ```handlebars
 {{(model.price + model.tax) * model.quantity}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -99,41 +105,61 @@ Use parentheses to override precedence:
 
 ### Complex Arithmetic
 
+
+
+{% raw %}
 ```handlebars
 <p>Subtotal: ${{model.quantity * model.price}}</p>
 <p>Tax: ${{(model.quantity * model.price) * model.taxRate}}</p>
 <p>Total: ${{(model.quantity * model.price) * (1 + model.taxRate)}}</p>
 ```
+{% endraw %}
+
+
 
 ### Multiple Comparisons
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.age >= 13 && model.age < 20}}
   <span class="teen">Teenager</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### Null Safety
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <h2>{{model.user.name ?? 'Guest User'}}</h2>
 <p>{{model.description ?? 'No description available'}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Classes
 
-```handlebars
+
+
 {% raw %}
+```handlebars
 <div class="item {{#if model.stock > 0}}in-stock{{else}}out-of-stock{{/if}}">
   <p>Price: ${{model.price}}</p>
   {{#if model.discount > 0}}
     <p class="sale">Save: ${{model.price * model.discount}}</p>
   {{/if}}
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

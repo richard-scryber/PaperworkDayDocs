@@ -57,9 +57,15 @@ The day of the month as a number from 1 to 31.
 
 ### Display Day
 
+
+
+{% raw %}
 ```handlebars
 <p>Day: {{dayOfMonth(model.date)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Custom Date Format
 
+
+
+{% raw %}
 ```handlebars
 <p>Date: {{yearOf(model.date)}}-{{padLeft(string(monthOfYear(model.date)), 2, '0')}}-{{padLeft(string(dayOfMonth(model.date)), 2, '0')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,6 +105,9 @@ doc.Params["model"] = new {
 
 ### Day Range Filter
 
+
+
+{% raw %}
 ```handlebars
 <h3>Events in First Half of Month</h3>
 {{#each model.events}}
@@ -101,6 +116,9 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -122,6 +140,9 @@ doc.Params["model"] = new {
 
 ### Payment Schedule
 
+
+
+{% raw %}
 ```handlebars
 <p>Next payment due:
 {{#if (dayOfMonth(model.today) < 15)}}
@@ -131,6 +152,9 @@ doc.Params["model"] = new {
 {{/if}}
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

@@ -360,8 +360,11 @@ anchor.Style.Fill.Color = StandardColors.Blue;
 
 ### Data Binding in Links
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- With model = { url: "https://example.com", linkText: "Click Here" } -->
+<!-- With model = { url: "https://example.com", linkText: "Click Here" } -->
 <a href="{{model.url}}">{{model.linkText}}</a>
 
 <!-- Dynamic styling -->
@@ -373,8 +376,12 @@ anchor.Style.Fill.Color = StandardColors.Blue;
 <!-- Repeating links -->
 <template data-bind="{{model.menuItems}}">
     <a href="{{.url}}" style="margin-right: 15pt;">{{.title}}</a>
-</template>{% endraw %}
+</template>
 ```
+{% endraw %}
+
+
+
 
 ### Link with Block Content
 
@@ -390,17 +397,23 @@ anchor.Style.Fill.Color = StandardColors.Blue;
 
 ### Conditional Links
 
+
+
+{% raw %}
 ```html
 <!-- Link shown/hidden based on condition -->
-{% raw %}<a href="{{model.detailsUrl}}" hidden="{{model.hideLink ? 'hidden' : ''}}">
+<a href="{{model.detailsUrl}}" hidden="{{model.hideLink ? 'hidden' : ''}}">
     View Details
-{% endraw %}</a>
+</a>
 ```
+{% endraw %}
+
+
 
 ### Table of Contents with Styled Links
 
 ```html
-{% raw %}<div style="border: 2pt solid #336699; padding: 15pt; margin: 20pt 0;">
+<div style="border: 2pt solid #336699; padding: 15pt; margin: 20pt 0;">
     <h2 style="margin-top: 0;">Contents</h2>
     <div style="line-height: 2;">
         <a href="#chapter1" style="display: block; color: #333;
@@ -417,7 +430,8 @@ anchor.Style.Fill.Color = StandardColors.Blue;
         </a>
     </div>
 </div>
-{% endraw %}```
+```
+
 
 ### Footer Navigation
 

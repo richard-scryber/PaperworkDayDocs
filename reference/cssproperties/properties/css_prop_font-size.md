@@ -112,8 +112,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 
 ### Data Binding Examples
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic font size from model -->
 <p style="font-size: {{customer.preferredFontSize}}pt">
     Text sized according to customer preference
@@ -141,8 +143,10 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
         Standard body text with type-specific sizing
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Note:** Bound font-size values should include units (e.g., 'pt', 'px'). Ensure the bound data provides valid CSS length values to avoid rendering issues.
 

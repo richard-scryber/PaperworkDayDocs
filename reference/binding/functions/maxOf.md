@@ -58,9 +58,15 @@ The largest value of the specified property. Returns null for empty collections.
 
 ### Highest Price
 
+
+
+{% raw %}
 ```handlebars
 <p>Highest price: ${{maxOf(model.products, 'price')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -80,12 +86,18 @@ doc.Params["model"] = new {
 
 ### Order Size Analysis
 
+
+
+{% raw %}
 ```handlebars
 <h3>Order Statistics</h3>
 <p>Largest order: ${{maxOf(model.orders, 'total')}}</p>
 <p>Smallest order: ${{minOf(model.orders, 'total')}}</p>
 <p>Average order: ${{round(averageOf(model.orders, 'total'), 2)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -109,12 +121,18 @@ doc.Params["model"] = new {
 
 ### Server Load Monitoring
 
+
+
+{% raw %}
 ```handlebars
 <h3>Server Performance</h3>
 {{#each model.servers}}
   <p>{{this.name}}: Peak load {{maxOf(this.samples, 'cpuUsage')}}%, Current {{this.currentCpu}}%</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -151,6 +169,9 @@ doc.Params["model"] = new {
 
 ### Capacity Planning
 
+
+
+{% raw %}
 ```handlebars
 <p>Maximum capacity: {{maxOf(model.locations, 'capacity')}} people</p>
 <p>Current total attendance: {{sumOf(model.locations, 'attendance')}}</p>
@@ -158,6 +179,9 @@ doc.Params["model"] = new {
   <p style="color: red;">Overcapacity warning!</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

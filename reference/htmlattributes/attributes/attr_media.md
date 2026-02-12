@@ -38,8 +38,10 @@ The `media` attribute defines media-specific conditions:
 - In PDF context, primarily used with `print` media type
 - Supports data binding for dynamic media selection
 
-```html
+
+
 {% raw %}
+```html
 <!-- Print-specific stylesheet -->
 <link rel="stylesheet" href="print.css" media="print" />
 
@@ -62,8 +64,10 @@ The `media` attribute defines media-specific conditions:
 
 <!-- Dynamic media -->
 <link rel="stylesheet" href="{{model.stylesheetUrl}}" media="{{model.mediaQuery}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -83,8 +87,10 @@ The `media` attribute is used with:
 
 The `media` attribute supports data binding for dynamic media queries:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic media query -->
 <link rel="stylesheet" href="{{model.stylePath}}" media="{{model.targetMedia}}" />
 
@@ -108,8 +114,10 @@ The `media` attribute supports data binding for dynamic media queries:
 <!-- Configuration-based media -->
 <link rel="stylesheet" href="layout.css"
       media="print and (orientation: {{model.orientation}})" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -831,8 +839,10 @@ For PDF generation with Scryber:
 
 ### Data-Bound Media Queries
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     pageSize: "A4",
     orientation: "portrait",
@@ -868,8 +878,10 @@ For PDF generation with Scryber:
     <p>Orientation: {{model.orientation}}</p>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Report with Print Optimization
 

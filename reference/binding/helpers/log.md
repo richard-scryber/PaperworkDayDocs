@@ -33,10 +33,16 @@ Output debug messages to the trace log during template processing. Useful for de
 
 ## Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{log message}}
 {{log message1 expression message2 level="info" category="debug"}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -65,17 +71,29 @@ Output debug messages to the trace log during template processing. Useful for de
 
 ### Basic Logging
 
+
+
+{% raw %}
 ```handlebars
 {{log "Processing user profile"}}
 ```
+{% endraw %}
+
+
 
 ### Logging Values
 
+
+
+{% raw %}
 ```handlebars
 {{#with model.user}}
   {{log "User: " name " (ID: " id ")"}}
 {{/with}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -94,6 +112,9 @@ User: John Doe (ID: 12345)
 
 ### With Log Level
 
+
+
+{% raw %}
 ```handlebars
 {{log "Starting data processing" level="debug"}}
 
@@ -103,9 +124,15 @@ User: John Doe (ID: 12345)
 
 {{log "Processing complete" level="info"}}
 ```
+{% endraw %}
+
+
 
 ### With Category for Filtering
 
+
+
+{% raw %}
 ```handlebars
 {{log "Validating user input" category="validation"}}
 
@@ -115,9 +142,15 @@ User: John Doe (ID: 12345)
   {{log "Validation failed: " model.validationErrors category="validation" level="warn"}}
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### Logging in Loops
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.orders}}
   {{log "Processing order #" this.orderNumber category="orders"}}
@@ -127,6 +160,9 @@ User: John Doe (ID: 12345)
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -150,6 +186,9 @@ High-value order: $2100
 
 ### Logging with Expressions
 
+
+
+{% raw %}
 ```handlebars
 {{#with model.user}}
   {{log if(isModerator, "User is a moderator", "User is not a moderator") level="debug" category="auth"}}
@@ -157,9 +196,15 @@ High-value order: $2100
   {{log "User " name " has " concat(format(loginCount, 'N0'), " logins") category="stats"}}
 {{/with}}
 ```
+{% endraw %}
+
+
 
 ### Conditional Debugging
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.items}}
   {{#if this.price > 100}}
@@ -171,6 +216,9 @@ High-value order: $2100
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -178,11 +226,17 @@ High-value order: $2100
 
 The `{{log}}` helper compiles to:
 
+
+
+{% raw %}
 ```xml
 <log data-message="{{concatenated expressions}}"
      data-level="Verbose|Message|Warning|Error"
      data-category="category name" />
 ```
+{% endraw %}
+
+
 
 The log entry is written to the document's trace log during databinding and does not produce any visible output in the PDF.
 

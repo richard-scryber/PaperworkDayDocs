@@ -79,8 +79,10 @@ The `marker-mid` attribute is supported on:
 
 Choose middle marker based on data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { pathStyle: 'dotted', markers: { dotted: 'dot-mid', segmented: 'arrow-mid' } } -->
 <svg width="400" height="200">
     <defs>
@@ -98,15 +100,19 @@ Choose middle marker based on data:
               fill="none" stroke="#2c3e50" stroke-width="2"
               marker-mid="url(#{{model.markers[model.pathStyle]}})"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Middle Markers
 
 Show markers based on conditions:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { showVertices: true, highlightPath: false } -->
 <svg width="400" height="200">
     <defs>
@@ -120,13 +126,17 @@ Show markers based on conditions:
           fill="none" stroke="#34495e" stroke-width="2"
           marker-mid="{{model.showVertices ? 'url(#vertex-marker)' : 'none'}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Path Visualization
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     paths: [
         { points: '50,100 150,50 250,100', showNodes: true },
@@ -147,8 +157,10 @@ Show markers based on conditions:
                   marker-mid="{{.showNodes ? 'url(#node-mid)' : 'none'}}"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

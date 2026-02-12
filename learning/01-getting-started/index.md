@@ -68,6 +68,8 @@ dotnet add package Scryber.Core
 
 ### 2. Create a Simple Template
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -86,6 +88,8 @@ dotnet add package Scryber.Core
 </html>
 ```
 {% endraw %}
+
+
 
 ### 3. Generate the PDF
 
@@ -118,7 +122,7 @@ Scryber supports two document formats:
 
 Uses XML namespace and strict XHTML syntax:
 
-{% raw %}
+
 ```html
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -130,7 +134,7 @@ Uses XML namespace and strict XHTML syntax:
 </body>
 </html>
 ```
-{% endraw %}
+
 
 **Parse with:** `Document.ParseDocument()`
 

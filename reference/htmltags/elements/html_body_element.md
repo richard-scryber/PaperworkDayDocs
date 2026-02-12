@@ -623,8 +623,11 @@ Special expressions available:
 
 ### Book Body with Chapter Pages
 
+
+
+{% raw %}
 ```html
-{% raw %}<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My Book</title>
@@ -665,8 +668,12 @@ Special expressions available:
         <p><page /></p>
     </footer>
 </body>
-</html>{% endraw %}
+</html>
 ```
+{% endraw %}
+
+
+
 
 ### Technical Manual Body
 
@@ -861,8 +868,11 @@ Special expressions available:
 
 ### Data-Bound Body
 
+
+
+{% raw %}
 ```html
-{% raw %}<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>{{model.title}}</title>
@@ -891,8 +901,12 @@ Special expressions available:
         </p>
     </footer>
 </body>
-</html>{% endraw %}
+</html>
 ```
+{% endraw %}
+
+
+
 
 ---
 

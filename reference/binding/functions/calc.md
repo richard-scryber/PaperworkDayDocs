@@ -57,11 +57,17 @@ A formatted CSS calc() expression string.
 
 ### Dynamic Width Calculation
 
+
+
+{% raw %}
 ```handlebars
 <div style="width: {{calc('100% - 20px')}}; border: 1px solid black;">
   <p>Content with calculated width</p>
 </div>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -77,11 +83,17 @@ doc.Params["model"] = new { };
 
 ### Variable-Based Calculations
 
+
+
+{% raw %}
 ```handlebars
 <div style="margin-left: {{calc(string(model.indent) + 'px + 1em')}};">
   <p>Indented content</p>
 </div>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -99,6 +111,9 @@ doc.Params["model"] = new {
 
 ### Responsive Sizing
 
+
+
+{% raw %}
 ```handlebars
 <table style="width: {{calc('100% - ' + string(model.sidebarWidth) + 'px')}};">
   <tr>
@@ -106,6 +121,9 @@ doc.Params["model"] = new {
   </tr>
 </table>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -125,6 +143,9 @@ doc.Params["model"] = new {
 
 ### Grid Layout Calculations
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.columns}}
   <div style="width: {{calc('100% / ' + string(count(../model.columns)))}}; float: left;">
@@ -132,6 +153,9 @@ doc.Params["model"] = new {
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -159,11 +183,17 @@ doc.Params["model"] = new {
 
 ### Font Size Scaling
 
+
+
+{% raw %}
 ```handlebars
 <h1 style="font-size: {{calc(string(model.baseFontSize) + 'pt * ' + string(model.scale))}};">
   {{model.title}}
 </h1>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

@@ -291,6 +291,8 @@ Content flows from page to page automatically:
 
 ### Conditional Breaks
 
+
+
 {% raw %}
 ```html
 {{#each chapters}}
@@ -299,8 +301,10 @@ Content flows from page to page automatically:
     <p>{{this.content}}</p>
 </div>
 {{/each}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ## Column Layouts
 
@@ -361,8 +365,10 @@ Content flows from page to page automatically:
 
 ### Report Layout
 
-```html
+
+
 {% raw %}
+```html
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -408,13 +414,17 @@ Content flows from page to page automatically:
     </footer>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Multi-Section Document
 
-```html
+
+
 {% raw %}
+```html
 <section style="page: A4 portrait; margin: 1in;">
     <!-- Cover page -->
     <div style="text-align: center; margin-top: 3in;">
@@ -443,10 +453,14 @@ Content flows from page to page automatically:
         <!-- Wide data table -->
     </table>
 </section>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Watermark Overlay
+
+
 
 {% raw %}
 ```html
@@ -464,8 +478,10 @@ Content flows from page to page automatically:
 </style>
 
 <div class="watermark">{{if(isDraft, 'DRAFT', '')}}</div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ## Learning Path
 
@@ -494,6 +510,8 @@ Content flows from page to page automatically:
 
 ### Chapter Starts on New Page
 
+
+
 {% raw %}
 ```html
 {{#each chapters}}
@@ -502,8 +520,10 @@ Content flows from page to page automatically:
     <div>{{this.content}}</div>
 </div>
 {{/each}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Keep Heading with Content
 
@@ -516,6 +536,8 @@ Content flows from page to page automatically:
 
 ### Dynamic Page Numbers
 
+
+
 {% raw %}
 ```html
 <footer>
@@ -524,8 +546,10 @@ Content flows from page to page automatically:
         <span>Page <page-number /> of <page-count /></span>
     </div>
 </footer>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ## Next Steps
 

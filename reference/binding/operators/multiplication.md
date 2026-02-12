@@ -31,9 +31,11 @@ Multiply two numeric values together.
 
 ## Syntax
 
-``` {% raw %}
+
+``` 
 {{operand1 * operand2}}
-{% endraw %}```
+```
+
 
 ---
 
@@ -68,9 +70,14 @@ The product of the left and right operands.
 
 ### Line Item Total
 
-```html {% raw %}
+
+{% raw %}
+```html 
 <p>Total: ${{format(model.quantity * model.price, '0.00')}}</p>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -87,9 +94,15 @@ doc.Params["model"] = new {
 
 ### Area Calculation
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 <p>Area: {{model.width * model.height}} sq ft</p>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -106,11 +119,16 @@ doc.Params["model"] = new {
 
 ### Tax Calculation
 
-```html {% raw %}
+
+{% raw %}
+```html 
 <p>Subtotal: ${{format(model.price, '0.00')}}</p>
 <p>Tax ({{model.taxRate * 100}}%): ${{format(model.price * model.taxRate, '0.00')}}</p>
 <p>Total: ${{format(model.price * (1 + model.taxRate), '0.00')}}</p>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -129,18 +147,29 @@ doc.Params["model"] = new {
 
 ### Percentage Calculation
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 <p>{{format(model.score / model.total * 100, '0.0')}}% correct</p>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 ### Scaling Values
 
-```html {% raw %}
+
+{% raw %}
+```html 
 <!-- SVG bar chart with scaled heights -->
 {{#each model.data}}
   <rect height="{{this.value * model.scaleFactor}}" />
-{{/each}} {% endraw %}
+{{/each}} 
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

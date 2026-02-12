@@ -330,8 +330,11 @@ function authenticate(username, password) {
 
 ### Figure with Data Binding
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- With model.figures = [
+<!-- With model.figures = [
     { number: 1, title: "Architecture", image: "arch.png", description: "System overview" },
     { number: 2, title: "Workflow", image: "flow.png", description: "Process flow" }
 ] -->
@@ -343,8 +346,12 @@ function authenticate(username, password) {
             Figure {{.number}}: {{.description}}
         </figcaption>
     </figure>
-</template>{% endraw %}
+</template>
 ```
+{% endraw %}
+
+
+
 
 ### Figure for Mathematical Diagram
 

@@ -59,6 +59,8 @@ Each article provides:
 
 ### Invoice Example Structure
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -130,8 +132,10 @@ Each article provides:
     </footer>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ## What You'll Learn
 
@@ -247,6 +251,8 @@ Helpful but not required:
 
 ### Professional Headers
 
+
+
 {% raw %}
 ```html
 <header style="border-bottom: 2pt solid #2563eb; padding-bottom: 15pt;">
@@ -258,8 +264,10 @@ Helpful but not required:
         </div>
     </div>
 </header>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Styled Tables
 
@@ -298,6 +306,8 @@ tfoot {
 
 ### Dynamic Calculations
 
+
+
 {% raw %}
 ```html
 <!-- Store subtotal -->
@@ -328,10 +338,14 @@ tfoot {
     <td>Total</td>
     <td>${{Document.Params.total}}</td>
 </tr>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Content
+
+
 
 {% raw %}
 ```html
@@ -346,20 +360,26 @@ tfoot {
     <p>Payment is past due. Please remit immediately.</p>
 </div>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Page Numbers
 
-```html
+
+
 {% raw %}
+```html
 <footer style="text-align: center; margin-top: 30pt;">
     <p style="font-size: 9pt; color: #666;">
         Page <page-number /> of <page-count /> | {{company.name}} | {{company.phone}}
     </p>
 </footer>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ## Data Structure Examples
 

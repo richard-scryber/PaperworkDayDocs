@@ -81,8 +81,10 @@ Note: This attribute is NOT used with `<radialGradient>` elements, which use `cx
 
 Bind the x1 coordinate to data values for dynamic gradient positioning:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { startX: 25 } -->
 <svg width="400" height="100">
     <defs>
@@ -95,15 +97,19 @@ Bind the x1 coordinate to data values for dynamic gradient positioning:
     </defs>
     <rect width="400" height="100" fill="url(#dynamicStart)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Calculated Gradient Angles
 
 Calculate x1/x2 coordinates to create specific gradient angles:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { angle: 45 } -->
 <!-- Calculates gradient vector from angle in degrees -->
 <svg width="400" height="200">
@@ -119,15 +125,19 @@ Calculate x1/x2 coordinates to create specific gradient angles:
     </defs>
     <rect width="400" height="200" fill="url(#angleGrad)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Chart Gradients
 
 Position gradients based on data ranges:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dataMin: 0, dataMax: 100, highlightStart: 30 } -->
 <svg width="500" height="300">
     <defs>
@@ -142,15 +152,19 @@ Position gradients based on data ranges:
     </defs>
     <rect x="0" y="0" width="500" height="300" fill="url(#chartGrad)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Gradient Direction
 
 Change gradient direction based on data conditions:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { direction: "rtl", value: 75 } -->
 <svg width="400" height="100">
     <defs>
@@ -165,15 +179,19 @@ Change gradient direction based on data conditions:
     </defs>
     <rect width="{{model.value * 4}}" height="100" fill="url(#dirGrad)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Responsive Gradient Positioning
 
 Adjust gradient based on viewport or container size:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { containerWidth: 800, offset: 200 } -->
 <svg width="{{model.containerWidth}}" height="200">
     <defs>
@@ -189,8 +207,10 @@ Adjust gradient based on viewport or container size:
     </defs>
     <rect width="{{model.containerWidth}}" height="200" fill="url(#responsive)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -452,8 +472,10 @@ The gradient vector is defined by start point (x1, y1) and end point (x2, y2):
 
 ### Data-Driven Gradient Start
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { highlightPosition: 30, color1: "#3498db", color2: "#e74c3c" } -->
 <svg width="400" height="100">
     <defs>
@@ -468,8 +490,10 @@ The gradient vector is defined by start point (x1, y1) and end point (x2, y2):
     </defs>
     <rect width="400" height="100" fill="url(#dataStart)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Striped Pattern with Offset Start
 

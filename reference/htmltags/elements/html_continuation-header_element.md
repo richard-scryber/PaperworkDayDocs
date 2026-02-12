@@ -130,8 +130,11 @@ The `<continuation-header>` element can be placed within:
 
 ### Multi-page Table with Headers
 
+
+
+{% raw %}
 ```html
-{% raw %}<style>
+<style>
     continuation-header {
         background-color: #f0f0f0;
         padding: 10pt;
@@ -168,8 +171,12 @@ The `<continuation-header>` element can be placed within:
             </template>
         </tbody>
     </table>
-</body>{% endraw %}
+</body>
 ```
+{% endraw %}
+
+
+
 
 ### Section-Specific Continuation Header
 
@@ -216,8 +223,11 @@ The `<continuation-header>` element can be placed within:
 
 ### Data-Bound Continuation Header
 
+
+
+{% raw %}
 ```html
-{% raw %}<body>
+<body>
     <header>
         <h1>{{report.title}}</h1>
         <p>Generated: {{report.date}}</p>
@@ -235,8 +245,12 @@ The `<continuation-header>` element can be placed within:
             <p data-content="{{.content}}"></p>
         </template>
     </div>
-</body>{% endraw %}
+</body>
 ```
+{% endraw %}
+
+
+
 
 ### Styled Continuation Indicator
 
@@ -301,8 +315,11 @@ The `<continuation-header>` element can be placed within:
 
 ### Invoice Continuation
 
+
+
+{% raw %}
 ```html
-{% raw %}<body>
+<body>
     <header>
         <h1>Invoice #{{invoice.number}}</h1>
         <p>Bill To: {{invoice.customer.name}}</p>
@@ -334,13 +351,20 @@ The `<continuation-header>` element can be placed within:
             </tr>
         </tbody>
     </table>
-</body>{% endraw %}
+</body>
 ```
+{% endraw %}
+
+
+
 
 ### Legal Document Continuation
 
+
+
+{% raw %}
 ```html
-{% raw %}<style>
+<style>
     continuation-header {
         font-family: 'Times New Roman', serif;
         font-size: 10pt;
@@ -363,13 +387,20 @@ The `<continuation-header>` element can be placed within:
     <div>
         <!-- Contract clauses -->
     </div>
-</body>{% endraw %}
+</body>
 ```
+{% endraw %}
+
+
+
 
 ### Medical Records with Patient Info
 
+
+
+{% raw %}
 ```html
-{% raw %}<body>
+<body>
     <header>
         <h1>Patient Medical Record</h1>
         <p>Name: {{patient.name}}</p>
@@ -390,13 +421,20 @@ The `<continuation-header>` element can be placed within:
             <div>
         </template>
     </main>
-</body>{% endraw %}
+</body>
 ```
+{% endraw %}
+
+
+
 
 ### Academic Transcript
 
+
+
+{% raw %}
 ```html
-{% raw %}<body>
+<body>
     <header>
         <h1>Official Academic Transcript</h1>
         <p>Student: {{student.name}} (ID: {{student.id}})</p>
@@ -412,13 +450,20 @@ The `<continuation-header>` element can be placed within:
     <table data-content="{{student.courses}}">
         <!-- Course listings -->
     </table>
-</body>{% endraw %}
+</body>
 ```
+{% endraw %}
+
+
+
 
 ### Inventory List with Context
 
+
+
+{% raw %}
 ```html
-{% raw %}<continuation-header>
+<continuation-header>
     <table style="width: 100%; background-color: #333; color: white; padding: 5pt;">
         <tr>
             <td><strong>Warehouse Inventory</strong></td>
@@ -428,13 +473,20 @@ The `<continuation-header>` element can be placed within:
             </td>
         </tr>
     </table>
-</continuation-header>{% endraw %}
+</continuation-header>
 ```
+{% endraw %}
+
+
+
 
 ### Conference Schedule
 
+
+
+{% raw %}
 ```html
-{% raw %}<body>
+<body>
     <header>
         <h1>{{conference.name}}</h1>
         <h2>Schedule - {{conference.date}}</h2>
@@ -452,8 +504,12 @@ The `<continuation-header>` element can be placed within:
             </div>
         </template>
     </main>
-</body>{% endraw %}
+</body>
 ```
+{% endraw %}
+
+
+
 
 ---
 

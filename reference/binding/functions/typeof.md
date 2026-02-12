@@ -73,10 +73,16 @@ The .NET type name of the value.
 
 ### Debug Output
 
+
+
+{% raw %}
 ```handlebars
 {{log "Value type: " typeof(model.value) level="debug"}}
 <p>Value: {{model.value}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -92,6 +98,9 @@ Value type: System.Int32
 
 ### Type-Based Conditional
 
+
+
+{% raw %}
 ```handlebars
 {{#if typeof(model.data) == 'System.String'}}
   <p>String value: {{model.data}}</p>
@@ -101,18 +110,30 @@ Value type: System.Int32
   <p>Type: {{typeof(model.data)}}, Value: {{model.data}}</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### Debugging Collection Types
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.items}}
   {{log "Item type: " typeof(this) " Value: " this level="debug"}}
   <p>{{this}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ### Type Inspection for Troubleshooting
 
+
+
+{% raw %}
 ```handlebars
 <div class="debug-info">
   <h3>Type Information</h3>
@@ -125,6 +146,9 @@ Value type: System.Int32
   </ul>
 </div>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

@@ -63,33 +63,43 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 
 ### Example 1: Dynamic Circle Center
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dot: { cx: 150, cy: 100, radius: 30, color: '#4CAF50' } } -->
 <svg width="300" height="200">
     <circle cx="{{dot.cx}}" cy="{{dot.cy}}" r="{{dot.radius}}"
             fill="{{dot.color}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Centered Elements with Calculation
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { viewportWidth: 400, viewportHeight: 300 } -->
 <svg width="{{viewportWidth}}" height="{{viewportHeight}}">
     <!-- Circle centered in viewport -->
     <circle cx="{{viewportWidth / 2}}" cy="{{viewportHeight / 2}}" r="50"
             fill="#2196F3"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Bubble Chart with Template
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dataPoints: [
     {cx: 80, cy: 100, r: 25, value: 100, color: '#e74c3c'},
     {cx: 180, cy: 80, r: 35, value: 150, color: '#3498db'},
@@ -102,8 +112,10 @@ The `cx` attribute supports dynamic values using data binding expressions with `
                 stroke="#333" stroke-width="1"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -335,8 +347,10 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 
 ### Dynamic Scatter Plot
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { points: [
     {cx: 80, cy: 150, size: 8, category: 'A'},
     {cx: 140, cy: 100, size: 12, category: 'B'},
@@ -350,8 +364,10 @@ The `cx` attribute supports dynamic values using data binding expressions with `
                 fill="{{colors[.category]}}" opacity="0.7"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Molecule Diagram
 

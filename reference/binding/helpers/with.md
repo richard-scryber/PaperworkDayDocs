@@ -33,6 +33,9 @@ Change the data context to a specific object, simplifying property access within
 
 ## Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{#with object}}
   <!-- Properties accessed directly -->
@@ -40,13 +43,22 @@ Change the data context to a specific object, simplifying property access within
   <!-- Optional fallback if object is null -->
 {{/with}}
 ```
+{% endraw %}
+
+
 
 **With Alias:**
+
+
+{% raw %}
 ```handlebars
 {{#with object as | alias |}}
   <!-- Use alias to reference the object -->
 {{/with}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -72,6 +84,9 @@ Change the data context to a specific object, simplifying property access within
 
 ### Basic Context Switching
 
+
+
+{% raw %}
 ```handlebars
 {{#with model.user}}
   <h2>{{name}}</h2>
@@ -79,6 +94,9 @@ Change the data context to a specific object, simplifying property access within
   <p>Age: {{age}}</p>
 {{/with}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -100,6 +118,9 @@ doc.Params["model"] = new {
 
 ### With Else Block
 
+
+
+{% raw %}
 ```handlebars
 {{#with model.user}}
   <div class="user-profile">
@@ -111,9 +132,15 @@ doc.Params["model"] = new {
   </div>
 {{/with}}
 ```
+{% endraw %}
+
+
 
 ### Accessing Parent Properties
 
+
+
+{% raw %}
 ```handlebars
 <h1>Order #{{model.orderNumber}}</h1>
 
@@ -124,9 +151,15 @@ doc.Params["model"] = new {
   </div>
 {{/with}}
 ```
+{% endraw %}
+
+
 
 ### Using Alias Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{#with model.currentUser as | user |}}
   <div>
@@ -135,9 +168,15 @@ doc.Params["model"] = new {
   </div>
 {{/with}}
 ```
+{% endraw %}
+
+
 
 ### Nested With Blocks
 
+
+
+{% raw %}
 ```handlebars
 {{#with model.company}}
   <h1>{{name}}</h1>
@@ -151,6 +190,9 @@ doc.Params["model"] = new {
   {{/with}}
 {{/with}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -158,6 +200,9 @@ doc.Params["model"] = new {
 
 The `{{#with}}` helper compiles to the following Scryber template structure:
 
+
+
+{% raw %}
 ```xml
 <template data-bind="{{object}}">
   <!-- Main content with direct property access -->
@@ -166,6 +211,9 @@ The `{{#with}}` helper compiles to the following Scryber template structure:
   </template>
 </template>
 ```
+{% endraw %}
+
+
 
 For the alias syntax `{{#with object as | alias |}}`, it creates a variable binding that makes the object available under the specified name.
 

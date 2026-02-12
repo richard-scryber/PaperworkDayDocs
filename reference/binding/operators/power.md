@@ -31,9 +31,15 @@ Raise a number to a specified power (exponentiation).
 
 ## Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{base ^ exponent}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -68,9 +74,15 @@ The base raised to the power of the exponent.
 
 ### Square
 
+
+
+{% raw %}
 ```handlebars
 <p>Area of square: {{model.side ^ 2}} sq ft</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -86,9 +98,15 @@ doc.Params["model"] = new {
 
 ### Cube
 
+
+
+{% raw %}
 ```handlebars
 <p>Volume of cube: {{model.side ^ 3}} cubic ft</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -104,9 +122,15 @@ doc.Params["model"] = new {
 
 ### Compound Interest
 
+
+
+{% raw %}
 ```handlebars
 <p>Future Value: ${{format(model.principal * (1 + model.rate) ^ model.years, '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -124,15 +148,27 @@ doc.Params["model"] = new {
 
 ### Scientific Notation
 
+
+
+{% raw %}
 ```handlebars
 <p>Speed of light: {{3 ^ 8}} m/s</p>
 ```
+{% endraw %}
+
+
 
 ### Power of 10
 
+
+
+{% raw %}
 ```handlebars
 <p>{{model.value * (10 ^ model.decimals)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

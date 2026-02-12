@@ -58,6 +58,9 @@ endsWith(str, suffix)
 
 ### File Extension Check
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.files}}
   {{#if endsWith(this.name, '.pdf')}}
@@ -71,6 +74,9 @@ endsWith(str, suffix)
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -95,6 +101,9 @@ doc.Params["model"] = new {
 
 ### Domain Validation
 
+
+
+{% raw %}
 ```handlebars
 {{#if endsWith(model.email, '@company.com')}}
   <span class="badge-internal">Internal</span>
@@ -102,6 +111,9 @@ doc.Params["model"] = new {
   <span class="badge-external">External</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -117,6 +129,9 @@ doc.Params["model"] = new {
 
 ### URL Path Checking
 
+
+
+{% raw %}
 ```handlebars
 {{#if endsWith(model.url, '/')}}
   <a href="{{model.url}}index.html">{{model.url}}index.html</a>
@@ -124,9 +139,15 @@ doc.Params["model"] = new {
   <a href="{{model.url}}">{{model.url}}</a>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ### Version Suffix
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.products}}
   <div class="product">
@@ -141,6 +162,9 @@ doc.Params["model"] = new {
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

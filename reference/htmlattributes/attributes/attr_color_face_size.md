@@ -230,18 +230,26 @@ While deprecated, these attributes support data binding:
 ```
 
 ### Dynamic Values with Data Binding
+
+
+{% raw %}
 ```html
-{% raw %}<!-- Model: { textColor: "blue", fontFamily: "Helvetica", fontSize: "14pt" } -->
+<!-- Model: { textColor: "blue", fontFamily: "Helvetica", fontSize: "14pt" } -->
 <font color="{{model.textColor}}"
       face="{{model.fontFamily}}"
       size="{{model.fontSize}}">
     Dynamically styled text
 </font>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 ### Conditional Values
+
+{% raw %}
 ```html
-{% raw %}<!-- Model: { isError: true } -->
+<!-- Model: { isError: true } -->
 <font color="{{model.isError ? 'red' : 'black'}}"
       size="{{model.isError ? '14pt' : '12pt'}}">
     Conditional styling
@@ -252,7 +260,10 @@ While deprecated, these attributes support data binding:
 <span style="color: {{model.textColor}}; font-family: {{model.fontFamily}}; font-size: {{model.fontSize}};">
     Dynamically styled text
 </span>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 ---
 
@@ -486,8 +497,11 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
 
 ### Example 9: Data-Bound Legacy Document
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- Model: {
+<!-- Model: {
     userName: "John Doe",
     statusColor: "green",
     statusMessage: "Active",
@@ -507,7 +521,7 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
     </font>
 </p>
 
-{% endraw %}<p>
+<p>
     <font face="Arial" size="12pt">
         Account Status:
         <font color="{{model.statusColor}}" size="13pt">
@@ -516,6 +530,9 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
     </font>
 </p>
 ```
+{% endraw %}
+
+
 
 ### Example 10: Report Header with Mixed Styling
 
@@ -610,8 +627,10 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
 
 ### Example 14: Certificate Text Styling
 
-```html
+
+
 {% raw %}
+```html
 <div style="text-align: center; padding: 40pt; border: 5pt double #336699;">
     <font face="Georgia" size="32pt" color="#2c3e50">
         <strong>Certificate of Achievement</strong>
@@ -642,8 +661,10 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
         Date: {{model.completionDate}}
     </font>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 15: Legacy to Modern Migration Example
 

@@ -252,6 +252,8 @@ By the end of this article, you'll be able to:
 
 ### Dynamic Image Sources
 
+
+
 {% raw %}
 ```html
 <!-- Bind image source -->
@@ -274,11 +276,15 @@ By the end of this article, you'll be able to:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Practical Examples
 
 ### Example 1: Product Catalog
+
+
 
 {% raw %}
 ```html
@@ -384,7 +390,11 @@ By the end of this article, you'll be able to:
 ```
 {% endraw %}
 
+
+
 ### Example 2: Report with Charts
+
+
 
 {% raw %}
 ```html
@@ -572,6 +582,8 @@ By the end of this article, you'll be able to:
 </html>
 ```
 {% endraw %}
+
+
 
 ---
 

@@ -70,8 +70,10 @@ The `border-bottom-width` property supports dynamic values through data binding,
 
 ### Example 1: Dynamic heading underlines
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .heading {
         border-bottom-style: solid;
@@ -85,13 +87,17 @@ The `border-bottom-width` property supports dynamic values through data binding,
         {{heading.text}}
     </h2>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Table row emphasis
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .table-row {
         border-bottom-style: solid;
@@ -104,13 +110,17 @@ The `border-bottom-width` property supports dynamic values through data binding,
         <p>{{row.label}}: {{row.value}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Navigation active state
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .nav-item {
         border-bottom-style: solid;
@@ -123,8 +133,10 @@ The `border-bottom-width` property supports dynamic values through data binding,
         {{nav.label}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -81,8 +81,10 @@ Note: This attribute is NOT used with `<radialGradient>` elements.
 
 Bind the x2 coordinate to data for dynamic gradient extent:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { endX: 75 } -->
 <svg width="400" height="100">
     <defs>
@@ -95,15 +97,19 @@ Bind the x2 coordinate to data for dynamic gradient extent:
     </defs>
     <rect width="400" height="100" fill="url(#dynamicEnd)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Progress-Based Gradient Width
 
 Create gradients that reflect progress or completion:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { progress: 65 } -->
 <svg width="400" height="100">
     <defs>
@@ -118,15 +124,19 @@ Create gradients that reflect progress or completion:
     <rect width="400" height="100" rx="50" fill="#ecf0f1" />
     <rect width="{{model.progress * 4}}" height="100" rx="50" fill="url(#progressGrad)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Chart Gradients
 
 Position gradient endpoints based on data ranges:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dataStart: 20, dataEnd: 80, chartWidth: 500 } -->
 <svg width="{{model.chartWidth}}" height="300">
     <defs>
@@ -141,15 +151,19 @@ Position gradient endpoints based on data ranges:
     </defs>
     <rect width="{{model.chartWidth}}" height="300" fill="url(#dataGrad)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Calculated Gradient Vectors
 
 Calculate gradient endpoint from angle and length:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { angle: 30, length: 80 } -->
 <svg width="400" height="300">
     <defs>
@@ -163,15 +177,19 @@ Calculate gradient endpoint from angle and length:
     </defs>
     <rect width="400" height="300" fill="url(#calcGrad)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Heatmap with Data-Driven Range
 
 Create color gradients based on data value ranges:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { valueRange: { start: 0, end: 100 }, highlightEnd: 70 } -->
 <svg width="500" height="100">
     <defs>
@@ -187,8 +205,10 @@ Create color gradients based on data value ranges:
     </defs>
     <rect width="500" height="100" fill="url(#heatRange)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -339,8 +359,10 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 
 ### Progress Bar with Dynamic End
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { completion: 70 } -->
 <svg width="400" height="60">
     <defs>
@@ -358,8 +380,10 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
         {{model.completion}}%
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Bar Chart with Horizontal Gradient Bars
 
@@ -505,8 +529,10 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 
 ### Data-Driven Highlight Region
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { highlightStart: 30, highlightEnd: 70 } -->
 <svg width="500" height="100">
     <defs>
@@ -526,8 +552,10 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
           height="100"
           fill="url(#highlight)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -241,28 +241,38 @@ using (var doc = Document.ParseDocument(templatePath))
 This template showcases many Scryber capabilities:
 
 ### 1. Data Binding
-```html
+
+
 {% raw %}
+```html
 <h1>{{model.reportYear}} Report</h1>
 <p>{{model.introduction.openingText}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 2. Iteration with `{{#each}}`
-```html
+
+
 {% raw %}
+```html
 {{#each model.sections.expandRange.stories}}
     <div class="success-story">
         <h2>{{this.title}}</h2>
         <p>{{this.description}}</p>
     </div>
 {{/each}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 3. Conditional Rendering with `{{#if}}`
-```html
+
+
 {% raw %}
+```html
 {{#if this.keyFacts}}
     <ul>
         {{#each this.keyFacts}}
@@ -270,26 +280,36 @@ This template showcases many Scryber capabilities:
         {{/each}}
     </ul>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 4. Inline Conditionals with if()
-```html
+
+
 {% raw %}
+```html
 <span class="{{if(this.increasing, 'trend-up', 'trend-down')}}">
     {{if(this.increasing, '↑ Increasing', '↓ Declining')}}
 </span>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 5. Formatting with format()
-```html
+
+
 {% raw %}
+```html
 <span>{{format(model.globalStats.currentPopulation, 'N0')}}</span>
 <span>{{format(model.footer.publishDate, 'MMMM yyyy')}}</span>
 <span>{{format(model.sections.secureHabitat.rangerGap.salaryShortfall, 'C0')}}</span>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 6. CSS Styling
 - External CSS file for clean separation of concerns

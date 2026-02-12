@@ -31,9 +31,10 @@ Compare if the left value is greater than the right value.
 
 ## Syntax
 
-``` {% raw %}
+
+``` 
 {{operand1 > operand2}}
-``` {% endraw %}
+``` 
 
 ---
 
@@ -68,7 +69,10 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 ### Adult Verification
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.age > 18}}
   <div class="access-granted">
     <p>Age verified: {{model.age}} years old</p>
@@ -77,8 +81,12 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
   <div class="access-denied">
     <p>Must be 18 or older</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -96,24 +104,38 @@ doc.Params["model"] = new {
 
 ### High Value Order
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.orderTotal > 1000}}
   <div class="vip-order">
     <strong>High-Value Order</strong>
     <p>Expedited processing approved</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 ### Stock Availability
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.quantity > 0}}
   <p>{{model.quantity}} in stock</p>
 {{else}}
   <p class="disabled" >Out of Stock</button>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -129,7 +151,10 @@ doc.Params["model"] = new {
 
 ### Performance Indicator
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.revenue > model.target}}
   <div class="success">
     <h3>Target Exceeded!</h3>
@@ -137,8 +162,12 @@ doc.Params["model"] = new {
     <p>Target: ${{format(model.target, 'N0')}}</p>
     <p>Surplus: ${{format(model.revenue - model.target, 'N0')}}</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 **Data:**
 ```csharp
@@ -160,15 +189,22 @@ doc.Params["model"] = new {
 
 ### Temperature Warning
 
-```html {% raw %}
+
+
+{% raw %}
+```html 
 {{#if model.temperature > 100}}
   <span class="danger">⚠ High Temperature Alert: {{model.temperature}}°F</span>
 {{else if model.temperature > 80}}
   <span class="warning">Warm: {{model.temperature}}°F</span>
 {{else}}
   <span class="normal">{{model.temperature}}°F</span>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
+
 
 ---
 

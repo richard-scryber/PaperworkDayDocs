@@ -59,11 +59,17 @@ A formatted CSS var() expression string.
 
 ### Simple Variable Reference
 
+
+
+{% raw %}
 ```handlebars
 <div style="color: {{var('primary-color')}}; background: {{var('bg-color')}};">
   <p>Styled with CSS variables</p>
 </div>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -79,11 +85,17 @@ doc.Params["model"] = new { };
 
 ### Variable with Fallback
 
+
+
+{% raw %}
 ```handlebars
 <p style="color: {{var('text-color', '#333333')}};">
   Text with fallback color
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -99,6 +111,9 @@ doc.Params["model"] = new { };
 
 ### Dynamic Variable Names
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.themes}}
   <div style="background: {{var(concat(this.name, '-bg'))}};">
@@ -108,6 +123,9 @@ doc.Params["model"] = new { };
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -135,6 +153,9 @@ doc.Params["model"] = new {
 
 ### Themed Components
 
+
+
+{% raw %}
 ```handlebars
 <div class="card" style="
   border-color: {{var('card-border', '#cccccc')}};
@@ -149,6 +170,9 @@ doc.Params["model"] = new {
   </p>
 </div>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -176,6 +200,9 @@ doc.Params["model"] = new {
 
 ### Responsive Sizing
 
+
+
+{% raw %}
 ```handlebars
 <table style="width: {{var('table-width', '100%')}}; font-size: {{var('table-font-size', '10pt')}};">
   <tr>
@@ -186,6 +213,9 @@ doc.Params["model"] = new {
   </tr>
 </table>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

@@ -57,9 +57,15 @@ The sine of the angle (value between -1 and 1).
 
 ### Basic Sine
 
+
+
+{% raw %}
 ```handlebars
 <p>sin(π/2) = {{format(sin(pi() / 2), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -68,11 +74,17 @@ The sine of the angle (value between -1 and 1).
 
 ### Convert Degrees to Radians First
 
+
+
+{% raw %}
 ```handlebars
 <p>sin(30°) = {{format(sin(radians(30)), '0.000')}}</p>
 <p>sin(45°) = {{format(sin(radians(45)), '0.000')}}</p>
 <p>sin(90°) = {{format(sin(radians(90)), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -83,9 +95,15 @@ The sine of the angle (value between -1 and 1).
 
 ### Calculate Wave Position
 
+
+
+{% raw %}
 ```handlebars
 <p>Y = {{format(model.amplitude * sin(model.angle), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

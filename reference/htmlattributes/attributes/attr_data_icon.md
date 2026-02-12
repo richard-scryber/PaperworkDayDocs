@@ -77,8 +77,10 @@ The `data-icon` attribute is used exclusively with:
 
 The `data-icon` attribute supports data binding for dynamic icon selection:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Simple dynamic icon -->
 <object data="{{model.filePath}}"
         type="{{model.fileType}}"
@@ -101,8 +103,10 @@ The `data-icon` attribute supports data binding for dynamic icon selection:
             data-icon="{{.icon}}"
             alt="{{.description}}"></object>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -388,8 +392,10 @@ Combine icons with fallback content for clear communication:
 
 Select icons based on business logic:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { attachment: { path: "file.pdf", priority: "high", category: "data" } } -->
 
 <object data="{{model.attachment.path}}"
@@ -397,8 +403,10 @@ Select icons based on business logic:
         data-icon="{{model.attachment.priority == 'high' ? 'Pushpin' :
                       model.attachment.category == 'data' ? 'Graph' :
                       'Paperclip'}}"></object>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Accessibility Considerations
 
@@ -580,8 +588,10 @@ Icons appear at the object element's location:
 
 ### Dynamic Icon Selection
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     attachments: [
         { file: "critical.pdf", type: "application/pdf", priority: "high", name: "Critical Update" },
@@ -605,8 +615,10 @@ Icons appear at the object element's location:
         </span>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Styled Attachment List
 
@@ -1159,8 +1171,10 @@ Icons appear at the object element's location:
 
 ### Healthcare Records with Icons
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     patient: { name: "John Doe", id: "P-12345" },
     records: [
@@ -1197,8 +1211,10 @@ Icons appear at the object element's location:
         </template>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -93,8 +93,10 @@ The `-pdf-li-inset` property supports data binding, enabling dynamic control of 
 
 ### Example 1: User-configurable spacing preferences
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .custom-inset-list {
         list-style-type: decimal;
@@ -110,8 +112,10 @@ The `-pdf-li-inset` property supports data binding, enabling dynamic control of 
         <li>{{items[2]}}</li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context:**
 ```json
@@ -135,8 +139,10 @@ Users can configure inset spacing based on their readability preferences or acce
 
 ### Example 2: Document density control
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .density-list {
         list-style-type: disc;
@@ -153,8 +159,10 @@ Users can configure inset spacing based on their readability preferences or acce
         <li>{{content.items[2]}}</li>
     </ul>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context:**
 ```json
@@ -179,8 +187,10 @@ Documents can adapt between compact (5pt inset), normal (10pt inset), or spaciou
 
 ### Example 3: Hierarchical inset for nested lists
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .level-1 {
         list-style-type: decimal;
@@ -213,8 +223,10 @@ Documents can adapt between compact (5pt inset), normal (10pt inset), or spaciou
         </li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context:**
 ```json

@@ -57,9 +57,15 @@ The second as a number from 0 to 59.
 
 ### Display Second
 
+
+
+{% raw %}
 ```handlebars
 <p>Second: {{secondOf(model.time)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Precise Time Display
 
+
+
+{% raw %}
 ```handlebars
 <p>Time: {{hourOf(model.time)}}:{{padLeft(string(minuteOf(model.time)), 2, '0')}}:{{padLeft(string(secondOf(model.time)), 2, '0')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,6 +105,9 @@ doc.Params["model"] = new {
 
 ### Timestamp Validation
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.events}}
   <p>{{format(this.timestamp, 'h:mm:ss tt')}}
@@ -102,6 +117,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -123,12 +141,18 @@ doc.Params["model"] = new {
 
 ### Performance Timing
 
+
+
+{% raw %}
 ```handlebars
 <h3>Request Processing Time</h3>
 <p>Start: {{format(model.startTime, 'h:mm:ss')}}</p>
 <p>End: {{format(model.endTime, 'h:mm:ss')}}</p>
 <p>Seconds: {{secondOf(model.endTime) - secondOf(model.startTime)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -148,6 +172,9 @@ doc.Params["model"] = new {
 
 ### Synchronization Check
 
+
+
+{% raw %}
 ```handlebars
 <p>Sync Status:
 {{#if (secondOf(model.lastSync) < 5)}}
@@ -157,6 +184,9 @@ doc.Params["model"] = new {
 {{/if}}
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

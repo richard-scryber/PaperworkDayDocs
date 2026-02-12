@@ -57,11 +57,17 @@ The angle in degrees.
 
 ### Convert Pi
 
+
+
+{% raw %}
 ```handlebars
 <p>π radians = {{format(degrees(pi()), '0.0')}}°</p>
 <p>π/2 radians = {{format(degrees(pi() / 2), '0.0')}}°</p>
 <p>π/4 radians = {{format(degrees(pi() / 4), '0.0')}}°</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -72,9 +78,15 @@ The angle in degrees.
 
 ### Convert Trigonometric Result
 
+
+
+{% raw %}
 ```handlebars
 <p>Angle: {{format(degrees(asin(0.5)), '0.0')}}°</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -83,11 +95,17 @@ The angle in degrees.
 
 ### Display Angles
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.angles}}
   <li>{{this}} rad = {{format(degrees(this), '0.0')}}°</li>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

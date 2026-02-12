@@ -93,8 +93,10 @@ The `margin-right` property supports dynamic values through data binding, allowi
 
 ### Example 1: Dynamic column spacing for responsive layouts
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .column-container {
         padding: 20pt;
@@ -123,8 +125,10 @@ The `margin-right` property supports dynamic values through data binding, allowi
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -138,8 +142,10 @@ Data context:
 
 ### Example 2: Badge spacing based on display mode
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .badge {
         display: inline-block;
@@ -161,8 +167,10 @@ Data context:
         <span class="badge">Popular</span>
     </p>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -173,8 +181,10 @@ Data context:
 
 ### Example 3: Data-driven product grid spacing
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .product-grid {
         padding: 25pt;
@@ -204,8 +214,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json

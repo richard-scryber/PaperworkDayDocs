@@ -57,9 +57,15 @@ The year as a 4-digit number (e.g., 2024).
 
 ### Display Year
 
+
+
+{% raw %}
 ```handlebars
 <p>Copyright {{yearOf(model.currentDate)}} Acme Corporation</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Calculate Age
 
+
+
+{% raw %}
 ```handlebars
 <p>{{model.name}} is {{yearOf(model.today) - yearOf(model.birthDate)}} years old</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -95,12 +107,18 @@ doc.Params["model"] = new {
 
 ### Group by Year
 
+
+
+{% raw %}
 ```handlebars
 <h3>Orders by Year</h3>
 {{#each model.orders}}
   <p>{{yearOf(this.orderDate)}}: {{this.total}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -123,9 +141,15 @@ doc.Params["model"] = new {
 
 ### Fiscal Year Calculation
 
+
+
+{% raw %}
 ```handlebars
 <p>Fiscal Year: {{#if (monthOfYear(model.date) >= 7)}}{{yearOf(model.date) + 1}}{{else}}{{yearOf(model.date)}}{{/if}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

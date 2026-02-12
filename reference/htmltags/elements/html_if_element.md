@@ -40,8 +40,10 @@ The `<if>` element controls content rendering that:
 - Removes content completely when false (not just hidden)
 - Works with any type of content (text, elements, tables, images)
 
-```html
+
+
 {% raw %}
+```html
 <!-- Simple condition -->
 <if data-test="{{model.showDetails}}">
     <div>Detailed information here</div>
@@ -51,8 +53,10 @@ The `<if>` element controls content rendering that:
 <if data-test="{{model.userRole == 'Admin'}}">
     <div>Admin-only content</div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -79,8 +83,10 @@ The `<if>` element controls content rendering that:
 
 The `data-test` attribute accepts any expression that evaluates to a boolean:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Direct boolean property -->
 <if data-test="{{model.isActive}}">Active content</if>
 
@@ -94,8 +100,10 @@ The `data-test` attribute accepts any expression that evaluates to a boolean:
 
 <!-- Negation -->
 <if data-test="{{!model.isDisabled}}">Enabled content</if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Comparison Operators
 
@@ -112,8 +120,10 @@ Supported operators in expressions:
 
 ### Null and Empty Checks
 
-```html
+
+
 {% raw %}
+```html
 <!-- Check for null or empty -->
 <if data-test="{{model.description != null}}">
     <p>{{model.description}}</p>
@@ -123,8 +133,10 @@ Supported operators in expressions:
 <if data-test="{{model.items.length > 0}}">
     <p>Items available</p>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -144,15 +156,19 @@ The `<if>` element has important rendering characteristics:
 
 You can nest `<if>` elements for complex logic:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.hasPermission}}">
     <if data-test="{{model.isActive}}">
         <!-- Content shown only if both conditions true -->
     </if>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Alternative Approaches
 
@@ -166,13 +182,17 @@ However, `<if>` is more efficient as it doesn't process content at all when fals
 
 The `data-template` attribute allows inline content definition, useful for simple conditional text:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.status == 'urgent'}}"
     data-template="<span style='color: red; font-weight: bold;'>URGENT</span>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -180,21 +200,27 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 ### Basic Conditional Content
 
-```html
+
+
 {% raw %}
+```html
 <!-- Show discount section only if discount exists -->
 <if data-test="{{model.discount > 0}}">
     <div style="color: red; font-weight: bold;">
         Save {{model.discount}}%!
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### User Role-Based Content
 
-```html
+
+
 {% raw %}
+```html
 <!-- Admin-only section -->
 <if data-test="{{model.userRole == 'Admin'}}">
     <div style="background-color: #fff3cd; padding: 10pt; margin: 10pt 0;">
@@ -207,13 +233,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
     <h2>{{model.title}}</h2>
     <p>{{model.description}}</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Table Sections
 
-```html
+
+
 {% raw %}
+```html
 <table style="width: 100%;">
     <thead>
         <tr>
@@ -238,13 +268,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Status-Dependent Styling
 
-```html
+
+
 {% raw %}
+```html
 <div class="order">
     <h3>Order #{{model.orderNumber}}</h3>
 
@@ -266,13 +300,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         </div>
     </if>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Nested Conditions
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.hasOrders}}">
     <div class="orders-section">
         <h2>Your Orders</h2>
@@ -294,13 +332,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         </if>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Warnings and Notices
 
-```html
+
+
 {% raw %}
+```html
 <!-- Low stock warning -->
 <if data-test="{{model.stockLevel < 10}}">
     <div style="background-color: #fff3cd; border: 1pt solid #ffc107;
@@ -316,13 +358,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         <strong>Error:</strong> Out of stock
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Date-Based Content
 
-```html
+
+
 {% raw %}
+```html
 <!-- Show expiration warning if date is soon -->
 <if data-test="{{model.daysUntilExpiration < 30}}">
     <div style="color: red;">
@@ -336,13 +382,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         This subscription has expired. Please renew.
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Footers
 
-```html
+
+
 {% raw %}
+```html
 <div class="page-footer">
     <div style="text-align: center;">
         Page <page></page> of <page property="total"></page>
@@ -360,13 +410,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         </div>
     </if>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complex Business Logic
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.customer.isPremium && model.order.total > 100}}">
     <div style="background-color: #d4edda; border: 1pt solid #28a745; padding: 10pt;">
         <strong>Premium Discount Applied!</strong> You saved ${{model.premiumDiscount}}
@@ -378,13 +432,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         <strong>Upgrade to Premium</strong> and save {{model.potentialSavings}} on this order!
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Images
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.product.hasImage}}">
     <img src="{{model.product.imageUrl}}"
          style="width: 200pt; height: 200pt; object-fit: cover;"/>
@@ -396,13 +454,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         <span style="color: #999;">No image available</span>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Report Sections Based on Data
 
-```html
+
+
 {% raw %}
+```html
 <h1>{{model.reportTitle}}</h1>
 
 <if data-test="{{model.includeSummary}}">
@@ -427,13 +489,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         <!-- Chart content -->
     </section>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Terms and Conditions
 
-```html
+
+
 {% raw %}
+```html
 <h2>Terms and Conditions</h2>
 
 <div>{{model.standardTerms}}</div>
@@ -451,13 +517,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         <p>{{model.customTerms}}</p>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Price Display
 
-```html
+
+
 {% raw %}
+```html
 <div class="product-price">
     <if data-test="{{model.onSale}}">
         <div>
@@ -476,13 +546,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         </div>
     </if>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Permission-Based Document Sections
 
-```html
+
+
 {% raw %}
+```html
 <div class="document">
     <!-- Public section - always visible -->
     <section>
@@ -514,13 +588,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         </section>
     </if>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional QR Codes or Barcodes
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.includeQRCode}}">
     <div style="text-align: center; margin: 20pt 0;">
         <img src="{{model.qrCodeUrl}}" style="width: 100pt; height: 100pt;"/>
@@ -529,13 +607,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         </div>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Multi-Language Conditional Content
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.language == 'en'}}">
     <div>
         <h1>Welcome</h1>
@@ -556,13 +638,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         <p>Merci pour votre commande.</p>
     </div>
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Page Breaks
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.sections}}">
     <div class="section">
         <h2>{{.title}}</h2>
@@ -574,13 +660,17 @@ The `data-template` attribute allows inline content definition, useful for simpl
         </if>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Invoice Payment Status
 
-```html
+
+
 {% raw %}
+```html
 <div class="invoice">
     <h1>Invoice #{{model.invoiceNumber}}</h1>
 
@@ -609,8 +699,10 @@ The `data-template` attribute allows inline content definition, useful for simpl
         </div>
     </if>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

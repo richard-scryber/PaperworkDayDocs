@@ -602,8 +602,10 @@ While not interactive in PDF, meters are excellent for:
 
 ### Data-Bound Meters
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = {
     cpuUsage: 45,
     memoryUsage: 72,
@@ -653,8 +655,10 @@ While not interactive in PDF, meters are excellent for:
         <span style="margin-left: 10pt;">{{model.networkUsage}}%</span>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Health Score Card
 
@@ -886,8 +890,10 @@ While not interactive in PDF, meters are excellent for:
 
 ### Repeating Meters from Collection
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model.servers = [
     {name: "Web-01", cpu: 45, memory: 68, disk: 72},
     {name: "Web-02", cpu: 52, memory: 71, disk: 65},
@@ -924,8 +930,10 @@ While not interactive in PDF, meters are excellent for:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Custom Styled Meters with CSS Classes
 

@@ -107,8 +107,11 @@ The `background-image` property supports dynamic data binding, enabling personal
 
 ### Example 1: Dynamic user profile photo
 
+
+
+{% raw %}
 ```html
-{% raw %}<style>
+<style>
     .employee-badge {
         background-image: url('{{employee.photoUrl}}');
         background-repeat: no-repeat;
@@ -128,14 +131,19 @@ The `background-image` property supports dynamic data binding, enabling personal
         <p>Department: {{employee.department}}</p>
     </div>
 </body>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 Perfect for creating employee badges, ID cards, or personnel reports where each document needs a different photo loaded from your database or user profile system.
 
 ### Example 2: Conditional watermarks based on document status
 
+
+{% raw %}
 ```html
-{% raw %}<style>
+<style>
     .document-content {
         background-image: url('{{#if document.isDraft}}images/draft-watermark.png{{else if document.isConfidential}}images/confidential-watermark.png{{else}}images/approved-watermark.png{{/if}}');
         background-repeat: no-repeat;
@@ -152,14 +160,20 @@ Perfect for creating employee badges, ID cards, or personnel reports where each 
         <p>{{document.content}}</p>
     </div>
 </body>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 Automatically applies the appropriate watermark based on document state - essential for document management systems where visual status indicators prevent misuse of drafts or confidential materials.
 
 ### Example 3: Product catalog with dynamic images
 
+
+
+{% raw %}
 ```html
-{% raw %}<style>
+<style>
     .product-card {
         background-image: url('{{product.imageUrl}}');
         background-repeat: no-repeat;
@@ -186,7 +200,10 @@ Automatically applies the appropriate watermark based on document state - essent
     </div>
     {{/each}}
 </body>
-{% endraw %}```
+```
+{% endraw %}
+
+
 
 Generates product catalogs, price lists, or inventory reports where each item displays its own product image from your product database or CMS.
 

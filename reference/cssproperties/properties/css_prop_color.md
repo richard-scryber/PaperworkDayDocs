@@ -90,8 +90,10 @@ The `color` property can be dynamically set using data binding expressions, enab
 
 ### Example 1: Status-based text colors in invoices
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .status-text {
         font-weight: bold;
@@ -103,8 +105,10 @@ The `color` property can be dynamically set using data binding expressions, enab
         <p>Payment Status: <span class="status-text" style="color: {{payment.statusColor}}">{{payment.status}}</span></p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 With model data:
 ```json
@@ -122,8 +126,10 @@ With model data:
 
 ### Example 2: Conditional colors based on values
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .amount {
         font-size: 14pt;
@@ -154,13 +160,17 @@ With model data:
         </tbody>
     </table>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Brand colors from configuration
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .company-name {
         font-size: 24pt;
@@ -183,8 +193,10 @@ With model data:
         <p>Outstanding: <span style="color: {{theme.warningColor}}">${{revenue.outstanding}}</span></p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 With configuration data:
 ```json

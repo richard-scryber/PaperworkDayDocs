@@ -31,6 +31,8 @@ By the end of this article, you'll be able to:
 
 Show content only when a condition is true:
 
+
+
 {% raw %}
 ```html
 {{#if condition}}
@@ -39,11 +41,15 @@ Show content only when a condition is true:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Basic Conditionals
 
 ### Boolean Conditions
+
+
 
 {% raw %}
 ```html
@@ -53,11 +59,15 @@ Show content only when a condition is true:
 ```
 {% endraw %}
 
+
+
 ```csharp
 doc.Params["model"] = new { isPremium = true };
 ```
 
 ### Null/Empty Checks
+
+
 
 {% raw %}
 ```html
@@ -70,11 +80,15 @@ doc.Params["model"] = new { isPremium = true };
 ```
 {% endraw %}
 
+
+
 ---
 
 ## {{else}} Clause
 
 Provide alternative content when condition is false:
+
+
 
 {% raw %}
 ```html
@@ -86,11 +100,15 @@ Provide alternative content when condition is false:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## {{else if}} Chains
 
 Test multiple conditions:
+
+
 
 {% raw %}
 ```html
@@ -106,11 +124,15 @@ Test multiple conditions:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Comparison Operators
 
 ### Equality and Inequality
+
+
 
 {% raw %}
 ```html
@@ -126,7 +148,11 @@ Test multiple conditions:
 ```
 {% endraw %}
 
+
+
 ### Numeric Comparisons
+
+
 
 {% raw %}
 ```html
@@ -152,6 +178,8 @@ Test multiple conditions:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Logical Operators
@@ -159,6 +187,8 @@ Test multiple conditions:
 ### AND (&&)
 
 Both conditions must be true:
+
+
 
 {% raw %}
 ```html
@@ -170,9 +200,13 @@ Both conditions must be true:
 ```
 {% endraw %}
 
+
+
 ### OR (||)
 
 At least one condition must be true:
+
+
 
 {% raw %}
 ```html
@@ -185,9 +219,13 @@ At least one condition must be true:
 ```
 {% endraw %}
 
+
+
 ### NOT (!)
 
 Negate a condition:
+
+
 
 {% raw %}
 ```html
@@ -201,7 +239,11 @@ Negate a condition:
 ```
 {% endraw %}
 
+
+
 ### Complex Logic
+
+
 
 {% raw %}
 ```html
@@ -214,11 +256,15 @@ Negate a condition:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Inline Conditionals with if()
 
 Use the `if()` function for inline conditional values:
+
+
 
 {% raw %}
 ```html
@@ -240,11 +286,15 @@ Use the `if()` function for inline conditional values:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Conditional Sections
 
 ### Show Different Layouts
+
+
 
 {% raw %}
 ```html
@@ -269,7 +319,11 @@ Use the `if()` function for inline conditional values:
 ```
 {% endraw %}
 
+
+
 ### Conditional Headers and Footers
+
+
 
 {% raw %}
 ```html
@@ -293,11 +347,15 @@ Use the `if()` function for inline conditional values:
 ```
 {% endraw %}
 
+
+
 ---
 
 ## Combining Conditionals with Iteration
 
 ### Filter Items in Loops
+
+
 
 {% raw %}
 ```html
@@ -313,7 +371,11 @@ Use the `if()` function for inline conditional values:
 ```
 {% endraw %}
 
+
+
 ### Show/Hide Sections Based on Data
+
+
 
 {% raw %}
 ```html
@@ -342,6 +404,8 @@ Use the `if()` function for inline conditional values:
 {{/if}}
 ```
 {% endraw %}
+
+
 
 ---
 
@@ -374,6 +438,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -526,6 +592,8 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ### Example 2: Personalized Report with User Levels
 
 **C# Code:**
@@ -558,6 +626,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -726,6 +796,8 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 ### Example 3: Data-Driven SVG Bar Chart
 
 Create a dynamic bar chart showing sales revenue by category with SVG.
@@ -767,6 +839,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -1068,6 +1142,8 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
+
+
 **Key Features:**
 
 1. **Dynamic Bar Heights** - Bars scale based on actual revenue data, calculated in template
@@ -1082,9 +1158,11 @@ doc.Params["model"] = new
 **How It Works:**
 
 - **Template Calculations**: Each category's bar height is calculated in the template using `<var>` elements:
+
   ```
   <var data-id="barHeight" data-value="{{this.revenue / ../maxValue * 200}}" />
   ```
+
 - **Variable Storage**: Calculated values are stored and accessed via `Document.Params.barHeight`
 - **Conditional Coloring**: `{{#if}}` blocks determine bar colors: `{{if(this.metTarget, '#10b981', '#ef4444')}}`
 - **Mathematical Expressions**: Standard math notation positions bars: `{{50 + @index * 100}}`
@@ -1125,13 +1203,19 @@ Create a template that:
 
 ### ❌ Using Assignment Instead of Comparison
 
+
+
 {% raw %}
 ```html
 {{#if model.status = 'active'}}  <!-- Wrong: assignment -->
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Use `==` for comparison
+
+
 
 {% raw %}
 ```html
@@ -1139,7 +1223,11 @@ Create a template that:
 ```
 {% endraw %}
 
+
+
 ### ❌ Missing Parentheses in Complex Logic
+
+
 
 {% raw %}
 ```html
@@ -1147,7 +1235,11 @@ Create a template that:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Use parentheses
+
+
 
 {% raw %}
 ```html
@@ -1155,7 +1247,11 @@ Create a template that:
 ```
 {% endraw %}
 
+
+
 ### ❌ Forgetting to Close {{/if}}
+
+
 
 {% raw %}
 ```html
@@ -1165,7 +1261,11 @@ Create a template that:
 ```
 {% endraw %}
 
+
+
 ✅ **Solution:** Always close blocks
+
+
 
 {% raw %}
 ```html
@@ -1174,6 +1274,8 @@ Create a template that:
 {{/if}}
 ```
 {% endraw %}
+
+
 
 ---
 

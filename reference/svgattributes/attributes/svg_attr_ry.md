@@ -69,21 +69,27 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 
 ### Example 1: Dynamic Ellipse Height
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { oval: { cx: 150, cy: 100, rx: 90, ry: 60, color: '#FF5722' } } -->
 <svg width="300" height="200">
     <ellipse cx="{{oval.cx}}" cy="{{oval.cy}}"
              rx="{{oval.rx}}" ry="{{oval.ry}}"
              fill="{{oval.color}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Adaptive Corner Rounding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { card: { width: 200, height: 140, radiusX: 10, radiusY: 15 } } -->
 <svg width="250" height="180">
     <rect x="25" y="20"
@@ -91,13 +97,17 @@ The `ry` attribute supports dynamic values using data binding expressions with `
           rx="{{card.radiusX}}" ry="{{card.radiusY}}"
           fill="#9C27B0" stroke="#6A1B9A" stroke-width="2"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Variable Height Ellipses
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dataItems: [
     {cx: 100, cy: 100, rx: 50, ry: 30, color: '#e74c3c'},
     {cx: 220, cy: 100, rx: 50, ry: 50, color: '#3498db'},
@@ -110,8 +120,10 @@ The `ry` attribute supports dynamic values using data binding expressions with `
                  fill="{{.color}}" opacity="0.6"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -397,8 +409,10 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 
 ### Dynamic Vertical Radius
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { badges: [
     {x: 20, y: 30, ry: 8, label: 'Small'},
     {x: 150, y: 30, ry: 15, label: 'Medium'},
@@ -412,8 +426,10 @@ The `ry` attribute supports dynamic values using data binding expressions with `
               fill="#9C27B0"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Aspect Ratio Comparison
 

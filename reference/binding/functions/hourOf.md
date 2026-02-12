@@ -57,9 +57,15 @@ The hour in 24-hour format as a number from 0 (midnight) to 23 (11 PM).
 
 ### Display Hour
 
+
+
+{% raw %}
 ```handlebars
 <p>Hour: {{hourOf(model.time)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,6 +81,9 @@ doc.Params["model"] = new {
 
 ### Business Hours Check
 
+
+
+{% raw %}
 ```handlebars
 <p>Status:
 {{#if (hourOf(model.currentTime) >= 9 && hourOf(model.currentTime) < 17)}}
@@ -84,6 +93,9 @@ doc.Params["model"] = new {
 {{/if}}
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -99,6 +111,9 @@ doc.Params["model"] = new {
 
 ### Shift Assignment
 
+
+
+{% raw %}
 ```handlebars
 <p>Shift:
 {{#if (hourOf(model.clockIn) < 8)}}
@@ -110,6 +125,9 @@ doc.Params["model"] = new {
 {{/if}}
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -125,6 +143,9 @@ doc.Params["model"] = new {
 
 ### Peak Hour Pricing
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.transactions}}
   <p>{{format(this.time, 'h:mm tt')}}: ${{this.amount}}
@@ -134,6 +155,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

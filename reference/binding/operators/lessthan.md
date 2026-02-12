@@ -33,9 +33,10 @@ Compare if the left value is less than the right value.
 
 ## Syntax
 
-``` {% raw %}
+
+``` 
 {{operand1 &lt; operand2}}
-{% endraw %} ``` 
+ ``` 
 
 ---
 
@@ -70,15 +71,20 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 ### Age Restriction
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#if model.age < 18}}
   <div class="minor-warning">
     <p>Parental consent required (Age: {{model.age}})</p>
   </div>
 {{else}}
   <p>Age verified: {{model.age}} years old</p>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -96,14 +102,19 @@ doc.Params["model"] = new {
 
 ### Low Stock Warning
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#if model.quantity < model.threshold}}
   <div class="alert-warning">
     <strong>Low Stock Alert!</strong>
     <p>Only {{model.quantity}} units remaining</p>
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -123,19 +134,26 @@ doc.Params["model"] = new {
 
 ### Temperature Check
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#if model.temperature < 32}}
   <span class="freezing">⚠ Freezing conditions</span>
 {{else if model.temperature < 60}}
   <span class="cold">Cold</span>
 {{else}}
   <span class="normal">Normal</span>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
 
 ### Discount Eligibility
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#each model.products}}
   <div class="product">
     <h3>{{this.name}}</h3>
@@ -145,12 +163,17 @@ doc.Params["model"] = new {
       <span class="badge">Budget Friendly</span>
     {{/if}}
   </div>
-{{/each}} {% endraw %}
+{{/each}} 
 ```
+{% endraw %}
+
+
 
 ### Progress Tracking
 
-```html {% raw %}
+
+{% raw %}
+```html 
 {{#if model.progress < 0.25}}
   <div class="progress-bar red" style="width: {{model.progress * 100}}%">
     {{format(model.progress * 100, '0')}}%
@@ -163,8 +186,11 @@ doc.Params["model"] = new {
   <div class="progress-bar green" style="width: {{model.progress * 100}}%">
     {{format(model.progress * 100, '0')}}%
   </div>
-{{/if}} {% endraw %}
+{{/if}} 
 ```
+{% endraw %}
+
+
 
 ---
 

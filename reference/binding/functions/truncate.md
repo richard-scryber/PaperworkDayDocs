@@ -57,9 +57,15 @@ The integer portion of the number.
 
 ### Remove Decimals
 
+
+
+{% raw %}
 ```handlebars
 <p>Whole number: {{truncate(model.value)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,10 +81,16 @@ doc.Params["model"] = new {
 
 ### Extract Integer Part
 
+
+
+{% raw %}
 ```handlebars
 <p>Dollars: ${{truncate(model.price)}}</p>
 <p>Cents: {{round((model.price - truncate(model.price)) * 100)}}¢</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -95,11 +107,17 @@ doc.Params["model"] = new {
 
 ### No Rounding Behavior
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.values}}
   <li>{{this}} → {{truncate(this)}}</li>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

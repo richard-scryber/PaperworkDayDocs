@@ -57,10 +57,16 @@ The tangent of the angle.
 
 ### Basic Tangent
 
+
+
+{% raw %}
 ```handlebars
 <p>tan(0) = {{format(tan(0), '0.000')}}</p>
 <p>tan(π/4) = {{format(tan(pi() / 4), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -70,9 +76,15 @@ The tangent of the angle.
 
 ### Convert Degrees
 
+
+
+{% raw %}
 ```handlebars
 <p>tan(45°) = {{format(tan(radians(45)), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -81,9 +93,15 @@ The tangent of the angle.
 
 ### Calculate Slope
 
+
+
+{% raw %}
 ```handlebars
 <p>Slope: {{format(tan(model.angle), '0.00')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

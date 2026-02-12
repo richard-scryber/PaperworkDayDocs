@@ -31,9 +31,15 @@ Brief description of what this operator does.
 
 ## Syntax
 
+
+
+{% raw %}
 ```handlebars
 {{operand1 operator operand2}}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -56,16 +62,28 @@ Description of what the operator returns.
 
 ### Basic Usage
 
+
+
+{% raw %}
 ```handlebars
 {{5 operator 3}}
 <!-- Output: result -->
 ```
+{% endraw %}
+
+
 
 ### With Variables
 
+
+
+{% raw %}
 ```handlebars
 <p>Result: {{model.value1 operator model.value2}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -82,11 +100,17 @@ doc.Params["model"] = new {
 
 ### In Conditional
 
+
+
+{% raw %}
 ```handlebars
 {{#if model.score operator threshold}}
   <span>Condition met</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 ---
 

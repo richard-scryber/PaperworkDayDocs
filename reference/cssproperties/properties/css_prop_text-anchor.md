@@ -90,8 +90,10 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 
 ### Example 1: Dynamic chart labels with data-driven anchoring
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .bar { fill: #3b82f6; }
     .data-label { font-size: 14px; font-weight: bold; }
@@ -108,13 +110,17 @@ The `text-anchor` property can be dynamically controlled through data binding, e
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Conditional text alignment based on position
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-point { fill: #3b82f6; }
     .point-label { font-size: 12px; fill: #1f2937; }
@@ -130,13 +136,17 @@ The `text-anchor` property can be dynamically controlled through data binding, e
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Data-driven network diagram with centered labels
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .node { stroke: #3b82f6; stroke-width: 3; }
     .node-label { font-size: 13px; font-weight: bold; dominant-baseline: middle; }
@@ -155,8 +165,10 @@ The `text-anchor` property can be dynamically controlled through data binding, e
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

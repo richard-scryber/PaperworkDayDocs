@@ -55,9 +55,15 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 
 ### Basic Random
 
+
+
+{% raw %}
 ```handlebars
 <p>Random: {{format(random(), '0.000')}}</p>
 ```
+{% endraw %}
+
+
 
 **Output (example):**
 ```html
@@ -66,23 +72,41 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 
 ### Random Integer Range
 
+
+
+{% raw %}
 ```handlebars
 <!-- Random integer from 1 to 10 -->
 <p>Random (1-10): {{floor(random() * 10) + 1}}</p>
 ```
+{% endraw %}
+
+
 
 ### Random Selection
 
+
+
+{% raw %}
 ```handlebars
 <!-- Randomly select from array -->
 <p>Selected: {{model.items[floor(random() * length(model.items))]}}</p>
 ```
+{% endraw %}
+
+
 
 ### Random Percentage
 
+
+
+{% raw %}
 ```handlebars
 <p>Random percentage: {{format(random() * 100, '0.0')}}%</p>
 ```
+{% endraw %}
+
+
 
 ---
 

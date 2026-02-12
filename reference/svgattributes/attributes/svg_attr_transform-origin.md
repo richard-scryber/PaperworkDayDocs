@@ -24,8 +24,10 @@ The `transform-origin` attribute controls the transformation reference point:
 - Simplify complex transformations without coordinate calculations
 - Works with all transform functions (translate, rotate, scale, skew)
 
-```html
+
+
 {% raw %}
+```html
 <!-- Rotate around element center -->
 <rect x="50" y="50" width="100" height="100"
       transform="rotate(45)"
@@ -43,8 +45,10 @@ The `transform-origin` attribute controls the transformation reference point:
       transform="rotate({{model.angle}})"
       transform-origin="{{model.originX}} {{model.originY}}"
       fill="green"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -150,57 +154,75 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 
 ### Dynamic Origin Coordinates
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { originX: 100, originY: 100 } -->
 <rect x="50" y="50" width="100" height="100"
       transform="rotate(45)"
       transform-origin="{{model.originX}} {{model.originY}}"
       fill="blue"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Keyword-Based Origin
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { horizontalAlign: "center", verticalAlign: "center" } -->
 <rect x="0" y="0" width="80" height="80"
       transform="scale(1.5)"
       transform-origin="{{model.horizontalAlign}} {{model.verticalAlign}}"
       fill="red"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Calculated Origin Point
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { elementX: 50, elementY: 50, elementWidth: 100, elementHeight: 100 } -->
 <rect x="{{model.elementX}}" y="{{model.elementY}}"
       width="{{model.elementWidth}}" height="{{model.elementHeight}}"
       transform="rotate(30)"
       transform-origin="{{model.elementX + model.elementWidth / 2}} {{model.elementY + model.elementHeight / 2}}"
       fill="green"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Interactive Rotation Point
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { rotationAngle: 45, pivotX: 150, pivotY: 100 } -->
 <g transform="rotate({{model.rotationAngle}})" transform-origin="{{model.pivotX}} {{model.pivotY}}">
     <rect x="100" y="50" width="100" height="100" fill="purple"/>
     <circle cx="{{model.pivotX}}" cy="{{model.pivotY}}" r="5" fill="red"/>
 </g>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Transformations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [{angle:0, cx:100, cy:100}, {angle:45, cx:200, cy:100}] } -->
 <template data-bind="{{model.items}}">
     <rect x="{{.cx - 25}}" y="{{.cy - 25}}" width="50" height="50"
@@ -208,20 +230,26 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
           transform-origin="{{.cx}} {{.cy}}"
           fill="orange"/>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Scaling from Different Origins
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { scale: 1.5, scaleOrigin: "center center" } -->
 <circle cx="150" cy="150" r="40"
         transform="scale({{model.scale}})"
         transform-origin="{{model.scaleOrigin}}"
         fill="teal"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -705,8 +733,10 @@ The `transform-origin` attribute is part of the SVG specification. In Scryber, i
 
 ### Dynamic Rotation Point
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { angle: 45, pivotX: 150, pivotY: 150 } -->
 <svg width="300pt" height="300pt">
     <!-- Pivot point indicator -->
@@ -721,13 +751,17 @@ The `transform-origin` attribute is part of the SVG specification. In Scryber, i
           transform="rotate({{model.angle}})"
           transform-origin="{{model.pivotX}} {{model.pivotY}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Scale Animation Origin
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { scale: 1.5, scaleMode: "center" } -->
 <!-- scaleMode: "topleft", "center", "bottomright" -->
 <svg width="300pt" height="300pt">
@@ -736,8 +770,10 @@ The `transform-origin` attribute is part of the SVG specification. In Scryber, i
           transform="scale({{model.scale}})"
           transform-origin="{{model.scaleMode == 'topleft' ? '100 100' : model.scaleMode == 'center' ? '150 150' : '200 200'}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Keywords vs Coordinates
 

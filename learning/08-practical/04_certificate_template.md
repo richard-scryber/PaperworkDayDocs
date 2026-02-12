@@ -29,6 +29,8 @@ By the end of this article, you'll be able to:
 
 ## Complete Certificate Template
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -411,8 +413,10 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -578,6 +582,8 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 
 ### Variation 1: Training Certificate
 
+
+
 {% raw %}
 ```html
 <p class="achievement-text">
@@ -594,10 +600,14 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
     • {{this}}<br />
     {{/each}}
 </p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Variation 2: Award Certificate
+
+
 
 {% raw %}
 ```html
@@ -614,10 +624,14 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 <div style="text-align: center; margin: 25pt 0;">
     <img src="{{award.badgeImage}}" style="width: 100pt; height: 100pt;" />
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Variation 3: Membership Certificate
+
+
 
 {% raw %}
 ```html
@@ -643,8 +657,10 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
         <div class="meta-value">{{membership.id}}</div>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -693,6 +709,8 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 
 ### 3. Signature Styles
 
+
+
 {% raw %}
 ```html
 <!-- Handwritten signature with typed name below -->
@@ -715,13 +733,17 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
         Digitally signed on {{certificate.date}}
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 4. QR Code for Verification
 
-```html
+
+
 {% raw %}
+```html
 <div style="position: absolute; bottom: 20pt; right: 20pt; text-align: center;">
     <img src="{{certificate.qrCode}}"
          style="width: 60pt; height: 60pt; border: 2pt solid #2563eb;" />
@@ -729,8 +751,10 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
         Scan to verify
     </p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -863,12 +887,16 @@ Implement certificate verification:
 
 ### ❌ Text Overflow
 
-```html
+
+
 {% raw %}
+```html
 <!-- Long name breaks layout -->
 <div class="recipient-name">{{recipient.name}}</div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ✅ **Solution:**
 

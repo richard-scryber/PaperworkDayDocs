@@ -94,8 +94,10 @@ The `background-color` property can be dynamically set using data binding expres
 
 ### Example 1: Dynamic status backgrounds in reports
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .status-badge {
         display: inline-block;
@@ -112,8 +114,10 @@ The `background-color` property can be dynamically set using data binding expres
     </div>
     {{/each}}
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 With model data:
 ```json
@@ -128,8 +132,10 @@ With model data:
 
 ### Example 2: Conditional highlighting based on thresholds
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-cell {
         padding: 8pt;
@@ -156,13 +162,17 @@ With model data:
         </tbody>
     </table>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Themed sections with brand colors
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .section {
         padding: 20pt;
@@ -185,8 +195,10 @@ With model data:
         <p style="color: {{branding.secondaryText}}">{{summary.financial}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 With configuration:
 ```json

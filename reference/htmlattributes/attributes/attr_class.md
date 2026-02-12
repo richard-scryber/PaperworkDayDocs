@@ -92,8 +92,10 @@ The `class` attribute is supported on **all HTML elements** in Scryber, includin
 
 The `class` attribute supports data binding for dynamic class assignment:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic single class -->
 <div class="{{model.theme}}">
     Themed content
@@ -121,8 +123,10 @@ The `class` attribute supports data binding for dynamic class assignment:
         <p class="item-description">{{.description}}</p>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -694,8 +698,10 @@ Use classes to create reusable component patterns:
 
 ### Data Binding with Classes
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .status-active { color: #28a745; font-weight: bold; }
     .status-inactive { color: #dc3545; }
@@ -721,8 +727,10 @@ Use classes to create reusable component patterns:
         <p>{{.description}}</p>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Responsive Utility Classes
 
@@ -929,8 +937,10 @@ Use classes to create reusable component patterns:
 
 ### Conditional Classes with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .item { padding: 10pt; margin: 5pt 0; border: 1pt solid #ddd; }
     .item-featured { border-color: gold; border-width: 3pt; background-color: #fffacd; }
@@ -946,8 +956,10 @@ Use classes to create reusable component patterns:
         <p>Price: {{.price}}</p>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complex Layout with Classes
 

@@ -135,8 +135,10 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 
 ### Basic Text Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Simple value binding -->
 <text x="50" y="50" font-size="16">{{model.customerName}}</text>
 
@@ -147,13 +149,17 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 <text x="50" y="110" fill="{{model.status === 'active' ? 'green' : 'red'}}">
     Status: {{model.status}}
 </text>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Positioning
 
-```html
+
+
 {% raw %}
+```html
 <!-- Data-driven coordinates -->
 <text x="{{model.labelX}}" y="{{model.labelY}}" font-size="12">
     {{model.labelText}}
@@ -163,13 +169,17 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 <text x="{{model.chartWidth / 2}}" y="30" text-anchor="middle" font-weight="700">
     {{model.chartTitle}}
 </text>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Styling
 
-```html
+
+
 {% raw %}
+```html
 <!-- Conditional fill color -->
 <text x="100" y="50" fill="{{model.value > 100 ? '#00aa00' : '#aa0000'}}" font-size="20">
     {{model.value}}
@@ -184,13 +194,17 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 <text x="75" y="75" fill="#336699" fill-opacity="{{model.confidence}}">
     Confidence: {{(model.confidence * 100).toFixed(0)}}%
 </text>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Template Iteration
 
-```html
+
+
 {% raw %}
+```html
 <!-- Generate labels from data array -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="200">
     <template data-bind="{{model.labels}}">
@@ -199,8 +213,10 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
         </text>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -348,8 +364,10 @@ X-axis labels for a bar chart:
 
 Dynamic text from model data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { customerName: "Acme Corp", orderCount: 42 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="60">
     <text x="10" y="30" font-size="16" fill="#333">
@@ -359,15 +377,19 @@ Dynamic text from model data:
         Total Orders: {{model.orderCount}}
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 8. Value with Conditional Color
 
 Text color based on threshold:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { revenue: 125000, target: 100000 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="80">
     <text x="10" y="30" font-size="14" fill="#333">
@@ -378,15 +400,19 @@ Text color based on threshold:
         ${{(model.revenue / 1000).toFixed(1)}}K
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 9. Chart with Dynamic Labels
 
 Bar chart with data-driven positioning:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { data: [{label: "Jan", value: 120}, {label: "Feb", value: 150}, ...] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="250">
     <template data-bind="{{model.data}}">
@@ -412,8 +438,10 @@ Bar chart with data-driven positioning:
         </text>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 10. Multi-Style Text Header
 
@@ -435,8 +463,10 @@ Combining multiple text elements:
 
 Formatted percentage with styling:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { completionRate: 0.75 } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60">
     <text x="100" y="35" text-anchor="middle" font-size="32" font-weight="700" fill="#336699">
@@ -446,8 +476,10 @@ Formatted percentage with styling:
         Complete
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 12. Status Badge
 
@@ -467,8 +499,10 @@ Circular badge with centered text:
 
 Gauge with temperature reading:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { temperature: 72.5, unit: "°F" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
     <circle cx="100" cy="100" r="80" fill="none" stroke="#ddd" stroke-width="20"/>
@@ -482,15 +516,19 @@ Gauge with temperature reading:
         {{model.unit}}
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 14. Data Point Labels
 
 Scatter plot with value labels:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { points: [{x: 50, y: 100, value: "A"}, {x: 150, y: 50, value: "B"}] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
     <template data-bind="{{model.points}}">
@@ -500,8 +538,10 @@ Scatter plot with value labels:
         </text>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 15. Legend with Icons
 
@@ -524,8 +564,10 @@ Chart legend with text labels:
 
 Text size based on importance:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [{text: "Critical", priority: 3}, {text: "Normal", priority: 1}] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150">
     <template data-bind="{{model.items}}">
@@ -538,8 +580,10 @@ Text size based on importance:
         </text>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 17. Annotation with Leader
 
@@ -580,8 +624,10 @@ Multiple text elements for line breaks:
 
 Date/time labels on chart axis:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { timePoints: [{date: "Jan 1", value: 100}, {date: "Jan 15", value: 150}] } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="250">
     <template data-bind="{{model.timePoints}}">
@@ -600,15 +646,19 @@ Date/time labels on chart axis:
         </text>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 20. Score Display with Description
 
 Large score with explanatory text:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { score: 8.7, maxScore: 10, description: "Excellent" } -->
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="150">
     <text x="100" y="60" text-anchor="middle" font-size="56" font-weight="700" fill="#00aa00">
@@ -621,8 +671,10 @@ Large score with explanatory text:
         {{model.description}}
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

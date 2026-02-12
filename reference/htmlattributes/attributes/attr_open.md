@@ -39,8 +39,10 @@ The `open` attribute controls disclosure widget state:
 - In PDF context, typically renders content as expanded
 - Supports data binding for dynamic state control
 
-```html
+
+
 {% raw %}
+```html
 <!-- Open/expanded by default -->
 <details open>
     <summary>Click to collapse</summary>
@@ -63,8 +65,10 @@ The `open` attribute controls disclosure widget state:
     <summary>{{model.title}}</summary>
     <p>{{model.content}}</p>
 </details>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -81,8 +85,10 @@ The `open` attribute is used exclusively with:
 
 The `open` attribute supports data binding for dynamic state control:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic open state from model -->
 <details open="{{model.expanded ? 'open' : null}}">
     <summary>Section Title</summary>
@@ -110,8 +116,10 @@ The `open` attribute supports data binding for dynamic state control:
         <p>{{.answer}}</p>
     </details>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -680,8 +688,10 @@ Common uses for details elements:
 
 ### Data-Bound FAQ
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     faqs: [
         {
@@ -736,8 +746,10 @@ Common uses for details elements:
     </template>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Technical Documentation
 

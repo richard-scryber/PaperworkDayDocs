@@ -93,8 +93,10 @@ The `margin-inline-end` property supports dynamic values through data binding, a
 
 ### Example 1: Dynamic badge spacing based on display mode
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .badges {
         padding: 25pt;
@@ -120,8 +122,10 @@ The `margin-inline-end` property supports dynamic values through data binding, a
         <span class="badge">Popular</span>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -135,8 +139,10 @@ Data context:
 
 ### Example 2: Responsive grid layout with data-driven spacing
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .product-grid {
         padding: 25pt;
@@ -162,8 +168,10 @@ Data context:
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -184,8 +192,10 @@ Data context:
 
 ### Example 3: Bilingual button group with direction-aware spacing
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .button-group {
         padding: 25pt;
@@ -208,8 +218,10 @@ Data context:
         <button class="button">{{buttons.secondary}}</button>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json

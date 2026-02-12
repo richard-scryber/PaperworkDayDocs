@@ -33,6 +33,9 @@ The `<abbr>` element is an inline semantic HTML element that marks up abbreviati
 
 ## Usage
 
+
+
+{% raw %}
 ```html
 <!-- Basic abbreviation -->
 <abbr title="HyperText Markup Language">HTML</abbr>
@@ -41,8 +44,12 @@ The `<abbr>` element is an inline semantic HTML element that marks up abbreviati
 <abbr title="Cascading Style Sheets" class="technical-term">CSS</abbr>
 
 <!-- With data binding -->
-{% raw %}<abbr title="{{model.abbreviationExpansion}}">{{model.abbreviationText}}</abbr>{% endraw %}
+<abbr title="{{model.abbreviationExpansion}}">{{model.abbreviationText}}</abbr>
 ```
+{% endraw %}
+
+
+
 
 ---
 
@@ -167,8 +174,11 @@ abbr.Style.Text.Decoration = TextDecoration.Underline;
 
 ### Data Binding with Abbreviations
 
+
+
+{% raw %}
 ```html
-{% raw %}<p>
+<p>
     The system uses
     <abbr title="{{model.protocolFullName}}">{{model.protocolAbbr}}</abbr>
     for communication.
@@ -179,8 +189,12 @@ abbr.Style.Text.Decoration = TextDecoration.Underline;
     "protocolAbbr": "HTTPS",
     "protocolFullName": "HyperText Transfer Protocol Secure"
 }
--->{% endraw %}
+-->
 ```
+{% endraw %}
+
+
+
 
 
 ### Multiple Abbreviations in Technical Report
@@ -198,17 +212,27 @@ abbr.Style.Text.Decoration = TextDecoration.Underline;
 
 ### Time and Date Abbreviations
 
+
+
+{% raw %}
 ```html
-{% raw %}<p>
+<p>
     Meeting scheduled for
     <abbr title="{{string(date(), 'dddd MMMM yyyy ZZZ)}}">{{string(date(), "YY-MM-DD")}}</abbr>,
-</p>{% endraw %}
+</p>
 ```
+{% endraw %}
+
+
+
 
 ### Repeating Template with Dynamic Abbreviations
 
+
+
+{% raw %}
 ```html
-{% raw %}<template data-bind="{{model.technicalTerms}}">
+<template data-bind="{{model.technicalTerms}}">
     <p>
         <abbr title="{{.fullName}}">{{.abbr}}</abbr>: {{.description}}
     </p>
@@ -222,8 +246,12 @@ abbr.Style.Text.Decoration = TextDecoration.Underline;
         { "abbr": "IDE", "fullName": "Integrated Development Environment", "description": "..." }
     ]
 }
--->{% endraw %}
+-->
 ```
+{% endraw %}
+
+
+
 
 
 ---

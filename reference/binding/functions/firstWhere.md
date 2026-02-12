@@ -59,12 +59,18 @@ The first item where the specified property equals the given value, or null if n
 
 ### Find User by ID
 
+
+
+{% raw %}
 ```handlebars
 {{#with firstWhere(model.users, 'id', model.currentUserId)}}
   <p>Welcome, {{this.name}}!</p>
   <p>Email: {{this.email}}</p>
 {{/with}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -86,6 +92,9 @@ doc.Params["model"] = new {
 
 ### Get Product Details
 
+
+
+{% raw %}
 ```handlebars
 {{#with firstWhere(model.products, 'sku', 'WIDGET-001')}}
   <h3>{{this.name}}</h3>
@@ -93,6 +102,9 @@ doc.Params["model"] = new {
   <p>Stock: {{this.quantity}} units</p>
 {{/with}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -114,6 +126,9 @@ doc.Params["model"] = new {
 
 ### Find First Active Item
 
+
+
+{% raw %}
 ```handlebars
 {{#with firstWhere(model.subscriptions, 'status', 'active')}}
   <p>Active plan: {{this.planName}}</p>
@@ -122,6 +137,9 @@ doc.Params["model"] = new {
   <p>No active subscription</p>
 {{/with}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -142,6 +160,9 @@ doc.Params["model"] = new {
 
 ### Lookup and Display Related Data
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.orderItems}}
   {{#with firstWhere(../model.products, 'id', this.productId)}}
@@ -149,6 +170,9 @@ doc.Params["model"] = new {
   {{/with}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

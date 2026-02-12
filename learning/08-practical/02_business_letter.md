@@ -29,6 +29,8 @@ By the end of this article, you'll be able to:
 
 ## Complete Business Letter Template
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -312,8 +314,10 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -495,6 +499,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 ### 1. Professional Letterhead
 
+
+
 {% raw %}
 ```html
 <div class="letterhead">
@@ -507,6 +513,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 ```
 {% endraw %}
 
+
+
 **Features:**
 - Centered design
 - Company logo
@@ -514,6 +522,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 - Bottom border for separation
 
 ### 2. Date and Reference
+
+
 
 {% raw %}
 ```html
@@ -526,8 +536,10 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
     <p><strong>Ref:</strong> {{letter.referenceNumber}}</p>
 </div>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Features:**
 - Right-aligned date
@@ -535,6 +547,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 - Professional formatting
 
 ### 3. Address Block
+
+
 
 {% raw %}
 ```html
@@ -549,8 +563,10 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
     <p>{{recipient.address}}</p>
     <p>{{recipient.city}}, {{recipient.state}} {{recipient.zip}}</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Features:**
 - Complete recipient information
@@ -558,6 +574,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 - Standard postal format
 
 ### 4. Letter Body
+
+
 
 {% raw %}
 ```html
@@ -572,8 +590,10 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 <div class="closing">
     <p>{{letter.closing}},</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Features:**
 - Dynamic paragraph count
@@ -581,6 +601,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 - Customizable closing
 
 ### 5. Signature Block
+
+
 
 {% raw %}
 ```html
@@ -591,8 +613,10 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
     <p class="signature-name">{{signer.name}}</p>
     <p class="signature-title">{{signer.title}}</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Features:**
 - Optional signature image
@@ -645,6 +669,8 @@ body {
 
 ### Variation 3: Memo Style
 
+
+
 {% raw %}
 ```html
 <div class="memo-header">
@@ -667,14 +693,18 @@ body {
         </tr>
     </table>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
 ## Multi-Page Letter Handling
 
 For letters that span multiple pages, add page headers:
+
+
 
 {% raw %}
 ```html
@@ -699,8 +729,10 @@ For letters that span multiple pages, add page headers:
         @top-right { content: none; }
     }
 </style>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -708,8 +740,10 @@ For letters that span multiple pages, add page headers:
 
 ### 1. Signature Positioning
 
-```html
+
+
 {% raw %}
+```html
 <div style="display: flex; justify-content: space-between; margin-top: 40pt;">
     <div class="signature-block">
         <img src="{{signer1.signature}}" style="height: 40pt;" />
@@ -723,8 +757,10 @@ For letters that span multiple pages, add page headers:
         <p>{{signer2.title}}</p>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 2. Confidential Watermark
 
@@ -741,18 +777,24 @@ For letters that span multiple pages, add page headers:
 }
 ```
 
+
+
 {% raw %}
 ```html
 {{#if letter.isConfidential}}
 <div class="watermark">CONFIDENTIAL</div>
 {{/if}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 3. Custom Footer with Logo
 
-```html
+
+
 {% raw %}
+```html
 <div class="letter-footer">
     <table style="width: 100%;">
         <tr>
@@ -768,8 +810,10 @@ For letters that span multiple pages, add page headers:
         </tr>
     </table>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -823,39 +867,50 @@ Create specialized templates for:
 
 ### ❌ Missing Salutation
 
-{% raw %}
+
 ```html
 <!-- Generic greeting -->
 <p>Dear Sir/Madam:</p>
 ```
-{% endraw %}
+
 
 ✅ **Solution:**
+
+
 
 {% raw %}
 ```html
 <!-- Personalized -->
 <p>Dear {{recipient.salutation}}:</p>
-{% endraw %}
 ```
+{% endraw %}
+
 
 ### ❌ Signature Too Large
 
-```html
+
+
 {% raw %}
+```html
 <img src="{{signer.signature}}" />
 <!-- Signature fills entire page -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ✅ **Solution:**
 
-```html
+
+
 {% raw %}
+```html
 <img src="{{signer.signature}}"
      style="max-height: 40pt; max-width: 200pt;" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

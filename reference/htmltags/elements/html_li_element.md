@@ -358,8 +358,10 @@ By default, list items can break across pages/columns:
 
 ### Conditional List Items
 
-```html
+
+
 {% raw %}
+```html
 <!-- Template with model.showOptional = true -->
 <ul>
     <li>Always visible item</li>
@@ -368,13 +370,17 @@ By default, list items can break across pages/columns:
     </li>
     <li>Another always visible item</li>
 </ul>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Bound List Items
 
-```html
+
+
 {% raw %}
+```html
 <!-- Template with model.items = ["Apple", "Banana", "Cherry"] -->
 <ul>
     <template data-bind="{{model.items}}">
@@ -387,13 +393,17 @@ By default, list items can break across pages/columns:
 • Banana
 • Cherry
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complex Data Binding with Styling
 
-```html
+
+
 {% raw %}
+```html
 <!-- Template with model.tasks = [{name: "Task 1", done: true}, ...] -->
 <style>
     .task-done {
@@ -414,8 +424,10 @@ By default, list items can break across pages/columns:
         </li>
     </template>
 </ul>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Numbered Items with Status Indicators
 

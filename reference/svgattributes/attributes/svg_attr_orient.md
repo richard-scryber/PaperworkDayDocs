@@ -82,8 +82,10 @@ The `orient` attribute is supported on:
 
 Switch between auto and fixed orientation based on data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { useAutoOrient: true, fixedAngle: 45 } -->
 <svg width="400" height="200">
     <defs>
@@ -98,15 +100,19 @@ Switch between auto and fixed orientation based on data:
           fill="none" stroke="#2c3e50" stroke-width="2"
           marker-end="url(#dynamicOrient)"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Arrow Angles
 
 Set marker angles from data for directional indicators:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { arrows: [{angle: 0, label: 'East'}, {angle: 90, label: 'South'}, {angle: 180, label: 'West'}, {angle: 270, label: 'North'}] } -->
 <svg width="400" height="400">
     <defs>
@@ -130,15 +136,19 @@ Set marker angles from data for directional indicators:
         </template>
     </g>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Reversed Orientation
 
 Use reversed orientation for bidirectional flows:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { connections: [{start: {x: 50, y: 100}, end: {x: 350, y: 100}, bidirectional: true}] } -->
 <svg width="400" height="200">
     <defs>
@@ -160,15 +170,19 @@ Use reversed orientation for bidirectional flows:
               marker-end="url(#arrow-auto)"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Clock Hand Positions
 
 Create clock-like indicators with precise angles:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { hourAngle: 90, minuteAngle: 180, secondAngle: 270 } -->
 <svg width="300" height="300" viewBox="0 0 300 300">
     <defs>
@@ -202,8 +216,10 @@ Create clock-like indicators with precise angles:
           transform="rotate({{model.secondAngle}} 150 150)"
           marker-end="url(#second-hand)"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

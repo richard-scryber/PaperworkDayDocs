@@ -82,8 +82,10 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
 
 ### Example 1: Responsive Column Hyphenation
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
     <p style="hyphens: auto; hyphens-limit-chars-after: {{model.column.charsAfterHyphen}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -109,13 +111,17 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
     "content": "Implementation methodologies telecommunications..."
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Language-Based Configuration
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: 200pt; padding: 15pt" lang="{{model.language.code}}">
     <p style="hyphens: auto; hyphens-limit-chars-after: {{model.language.charsAfter}}; text-align: justify; font-size: 11pt">
         {{model.content}}
@@ -141,13 +147,17 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
     "content": "Implementación de infraestructura de telecomunicaciones..."
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Balanced Before and After Settings
 
-```html
+
+
 {% raw %}
+```html
 <div style="width: 220pt; padding: 18pt" lang="en">
     <p style="hyphens: auto;
              hyphens-limit-chars-before: {{model.hyphenation.charsBefore}};
@@ -180,8 +190,10 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

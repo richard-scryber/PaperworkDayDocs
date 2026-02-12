@@ -58,6 +58,9 @@ An array containing the split substrings.
 
 ### Split CSV
 
+
+
+{% raw %}
 ```handlebars
 <ul>
 {{#each split(model.tags, ',')}}
@@ -65,6 +68,9 @@ An array containing the split substrings.
 {{/each}}
 </ul>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -85,10 +91,16 @@ doc.Params["model"] = new {
 
 ### Split Full Name
 
+
+
+{% raw %}
 ```handlebars
 <p>First Name: {{split(model.fullName, ' ')[0]}}</p>
 <p>Last Name: {{split(model.fullName, ' ')[1]}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -105,6 +117,9 @@ doc.Params["model"] = new {
 
 ### Split Path
 
+
+
+{% raw %}
 ```handlebars
 <ul class="breadcrumb">
 {{#each split(model.path, '/')}}
@@ -112,6 +127,9 @@ doc.Params["model"] = new {
 {{/each}}
 </ul>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -132,9 +150,15 @@ doc.Params["model"] = new {
 
 ### Count Occurrences
 
+
+
+{% raw %}
 ```handlebars
 <p>Words: {{length(split(model.sentence, ' '))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

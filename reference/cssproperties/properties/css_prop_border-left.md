@@ -92,8 +92,10 @@ The `border-left` property supports dynamic values through data binding, allowin
 
 ### Example 1: Alert boxes with severity colors
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .alert-box {
         padding: 15pt;
@@ -105,8 +107,10 @@ The `border-left` property supports dynamic values through data binding, allowin
         <strong>{{severity.level}}:</strong> {{message}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -122,8 +126,10 @@ Data context:
 
 ### Example 2: Status cards with dynamic indicators
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .status-card {
         padding: 15pt 15pt 15pt 20pt;
@@ -137,8 +143,10 @@ Data context:
         <p>Status: {{status.label}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -155,8 +163,10 @@ Data context:
 
 ### Example 3: Callout boxes with conditional accents
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .callout {
         padding: 15pt 15pt 15pt 20pt;
@@ -169,8 +179,10 @@ Data context:
         <p>{{callout.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

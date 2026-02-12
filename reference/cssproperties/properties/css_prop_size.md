@@ -116,8 +116,10 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 
 ### Example 1: Configuration-driven page sizes
 
-```html
+
+
 {% raw %}
+```html
 <style>
     @page {
         size: {{config.paperSize || 'A4'}} {{config.orientation || 'portrait'}};
@@ -137,13 +139,17 @@ The `size` property within `@page` rules supports data binding, allowing you to 
     <h1 class="document-header">{{documentTitle}}</h1>
     <p>This document uses {{config.paperSize}} paper in {{config.orientation}} orientation.</p>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Document type-specific page layouts
 
-```html
+
+
 {% raw %}
+```html
 <style>
     @page report-page {
         size: {{reportType === 'executive' ? 'Letter' : 'A4'}} portrait;
@@ -172,13 +178,17 @@ The `size` property within `@page` rules supports data binding, allowing you to 
         <p>Charts in landscape format...</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Custom page dimensions from data
 
-```html
+
+
 {% raw %}
+```html
 <style>
     @page custom-size {
         size: {{pageWidth}}mm {{pageHeight}}mm;
@@ -215,8 +225,10 @@ The `size` property within `@page` rules supports data binding, allowing you to 
         <p>{{standardSectionContent}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

@@ -57,9 +57,15 @@ The arithmetic mean of all values. Returns null for empty collections.
 
 ### Basic Mean Calculation
 
+
+
+{% raw %}
 ```handlebars
 <p>Mean temperature: {{round(mean(model.temperatures), 1)}}°F</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,6 +81,9 @@ doc.Params["model"] = new {
 
 ### Statistical Summary
 
+
+
+{% raw %}
 ```handlebars
 <h3>Data Analysis</h3>
 <p>Mean: {{round(mean(model.values), 2)}}</p>
@@ -82,6 +91,9 @@ doc.Params["model"] = new {
 <p>Min: {{min(model.values)}}</p>
 <p>Max: {{max(model.values)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -101,6 +113,9 @@ doc.Params["model"] = new {
 
 ### Comparing Mean and Median
 
+
+
+{% raw %}
 ```handlebars
 <h3>Score Distribution</h3>
 <p>Mean score: {{round(mean(model.scores), 1)}}</p>
@@ -109,6 +124,9 @@ doc.Params["model"] = new {
   <p style="color: orange;">Note: Large difference suggests outliers in data</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -127,9 +145,15 @@ doc.Params["model"] = new {
 
 ### Property-Based Mean
 
+
+
+{% raw %}
 ```handlebars
 <p>Mean rating: {{round(mean(collect(model.reviews, 'rating')), 1)}} stars</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

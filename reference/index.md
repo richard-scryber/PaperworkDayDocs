@@ -42,7 +42,7 @@ Styling properties such as <code>font-style: italic;</code> or <code>background-
 
 ### <a href='binding/index.html'>Binding Expressions reference</a>
 
-Binding content within templates to external or calculated data is key to creating dynamic documents and can be within the <code>{% raw %}&lt;span&gt;{{ handle bars notation }}&lt;/span&gt;{% endraw %}</code> or attributes <code>{% raw %}&lt;rect width='{{model.width}}' .../&gt;{% endraw %}</code> or within style properties with the <code>width: calc(model.size + 10pt)</code>. This sections details all the available expressions and functions that can be used within a template (or passed content) to dynamically alter the output, or layout, or design of the resultant document.
+Binding content within templates to external or calculated data is key to creating dynamic documents and can be within the <code>&lt;span&gt;{{ handle bars notation }}&lt;/span&gt;</code> or attributes <code>&lt;rect width='{{model.width}}' .../&gt;</code> or within style properties with the <code>width: calc(model.size + 10pt)</code>. This sections details all the available expressions and functions that can be used within a template (or passed content) to dynamically alter the output, or layout, or design of the resultant document.
 
 
 ## Drawing Vectors
@@ -54,4 +54,4 @@ Drawing within a template is based around inline or databound svg elements in th
 
 ### <a href='svgattributes/index.html'>SVG drawing attribute refererence</a>
 
-The SVG attributes such as <code>@width</code> or <code>@fill</code> alter the appearance and behaviour of their containing element, e.g. <code>&lt;rect width="{% raw %}{{model.width}}{% endraw %}" height="40pt" fill="aqua" /&gt;</code>. This section details all the attributes that the core library supports, along with the supported values for the attribute, and also elements it can be used on (and cannot).
+The SVG attributes such as <code>@width</code> or <code>@fill</code> alter the appearance and behaviour of their containing element, e.g. <code>&lt;rect width="{{model.width}}" height="40pt" fill="aqua" /&gt;</code>. This section details all the attributes that the core library supports, along with the supported values for the attribute, and also elements it can be used on (and cannot).

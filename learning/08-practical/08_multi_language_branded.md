@@ -31,6 +31,8 @@ By the end of this article, you'll be able to:
 
 ### Base Template with Language Support
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -252,8 +254,10 @@ By the end of this article, you'll be able to:
     </div>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

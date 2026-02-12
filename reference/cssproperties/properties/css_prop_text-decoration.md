@@ -77,8 +77,10 @@ The `text-decoration` property can be dynamically controlled using data binding,
 
 ### Example 1: Conditional Link Underline
 
-```html
+
+
 {% raw %}
+```html
 <a href="{{model.link.url}}"
    style="color: {{model.link.color}}; text-decoration: {{model.link.decoration}}">
     {{model.link.text}}
@@ -94,13 +96,17 @@ The `text-decoration` property can be dynamically controlled using data binding,
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Status-Based Text Decoration
 
-```html
+
+
 {% raw %}
+```html
 <div>
     <p style="text-decoration: {{model.item.decoration}}; color: {{model.item.color}}">
         {{model.item.name}} - {{model.item.price}}
@@ -128,13 +134,17 @@ The `text-decoration` property can be dynamically controlled using data binding,
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Document Revision Tracking
 
-```html
+
+
 {% raw %}
+```html
 <p style="font-size: 11pt">
     The deadline is
     <span style="text-decoration: {{model.changes.oldValueDecoration}}; color: #999">
@@ -152,8 +162,10 @@ The `text-decoration` property can be dynamically controlled using data binding,
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

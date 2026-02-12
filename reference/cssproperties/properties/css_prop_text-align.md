@@ -76,19 +76,25 @@ The `text-align` property can be dynamically set using data binding expressions,
 
 ### Example 1: User Preference-Based Alignment
 
-```html
+
+
 {% raw %}
+```html
 <div style="text-align: {{model.userPreferences.textAlignment}}; font-size: 12pt">
     This paragraph's alignment is determined by user preferences.
     Users can choose 'left', 'center', 'right', or 'justify'.
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Content Type Conditional Alignment
 
-```html
+
+
 {% raw %}
+```html
 <h1 style="text-align: {{model.document.titleAlignment}}; font-size: 24pt">
     {{model.document.title}}
 </h1>
@@ -107,13 +113,17 @@ The `text-align` property can be dynamically set using data binding expressions,
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Multilingual Document with RTL Support
 
-```html
+
+
 {% raw %}
+```html
 <div style="text-align: {{model.language.alignment}}; direction: {{model.language.direction}}; font-size: 12pt">
     {{model.content}}
 </div>
@@ -128,8 +138,10 @@ The `text-align` property can be dynamically set using data binding expressions,
     "content": "محتوى النص هنا"
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

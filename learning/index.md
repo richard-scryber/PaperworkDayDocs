@@ -345,6 +345,8 @@ Contributions welcome! See [Contributing Guide](https://github.com/richard-scryb
 ### Essential Syntax
 
 **XHTML Format (with namespace):**
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -370,8 +372,10 @@ Contributions welcome! See [Contributing Guide](https://github.com/richard-scryb
     <p>{{Document.Params.myVar}}</p>
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Parsing Methods:**
 ```csharp
@@ -395,11 +399,15 @@ var doc = Document.ParseHTML("template.html");
 width: calc(100% - 40pt);
 ```
 
+
+
 {% raw %}
 ```css
 height: calc({{value}} * 2pt);
 ```
 {% endraw %}
+
+
 
 ```css
 /* Positioning */

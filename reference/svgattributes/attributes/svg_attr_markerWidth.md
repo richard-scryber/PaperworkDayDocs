@@ -79,8 +79,10 @@ The `markerWidth` attribute is supported on:
 
 Adjust marker width based on data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { markerSize: 12, importance: 'high' } -->
 <svg width="400" height="200">
     <defs>
@@ -99,15 +101,19 @@ Adjust marker width based on data:
           stroke="#2c3e50" stroke-width="2"
           marker-end="url(#dynamic-marker)"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Responsive Arrow Sizing
 
 Scale markers based on context:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { arrowScale: 1.5, strokeWidth: 3 } -->
 <svg width="400" height="200">
     <defs>
@@ -126,13 +132,17 @@ Scale markers based on context:
           stroke="#2c3e50" stroke-width="{{model.strokeWidth}}"
           marker-end="url(#scaled-arrow)"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Marker Dimensions
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     connections: [
         { points: '50,50 200,50', width: 8, height: 8 },
@@ -161,8 +171,10 @@ Scale markers based on context:
                   marker-end="url(#marker-{{$index}})"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

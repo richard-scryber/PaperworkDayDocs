@@ -94,8 +94,10 @@ The min-width property supports dynamic value binding through template expressio
 
 ### Example 1: Cards with data-driven minimum widths
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .card-container {
         padding: 20pt;
@@ -122,13 +124,17 @@ The min-width property supports dynamic value binding through template expressio
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Buttons with conditional minimum widths
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .button {
         padding: 10pt 20pt;
@@ -144,13 +150,17 @@ The min-width property supports dynamic value binding through template expressio
         {{button.label}}
     </button>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Table columns with variable minimum widths
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-table {
         width: 100%;
@@ -185,13 +195,17 @@ The min-width property supports dynamic value binding through template expressio
         </tbody>
     </table>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 4: Form inputs with responsive minimum widths
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .form-group {
         margin-bottom: 15pt;
@@ -214,8 +228,10 @@ The min-width property supports dynamic value binding through template expressio
                style="min-width: {{field.minWidth}}pt; max-width: {{field.maxWidth}}pt" />
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

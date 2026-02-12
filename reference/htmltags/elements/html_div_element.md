@@ -205,8 +205,11 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 
 ### Div with Data Binding
 
+
+
+{% raw %}
 ```html
-{% raw %}<!-- In template with model = { name: "John", age: 30 } -->
+<!-- In template with model = { name: "John", age: 30 } -->
 <div class="user-card">
     <div style="font-weight: bold;">Name: {{model.name}}</div>
     <div>Age: {{model.age}}</div>
@@ -214,13 +217,19 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 
 <!-- Output: -->
 <!-- Name: John -->
-<!-- Age: 30 -->{% endraw %}
+<!-- Age: 30 -->
 ```
+{% endraw %}
+
+
+
 
 ### Repeating Divs with Template
 
-```html
+
+
 {% raw %}
+```html
 <!-- In template with model.items = [{name: "Item 1"}, {name: "Item 2"}] -->
 <div class="container">
     <template data-bind="{{model.items}}">
@@ -232,8 +241,10 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 
 <!-- Output: -->
 <!-- Two divs, each with item name and styling -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Multi-Column Div
 
@@ -261,6 +272,9 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 
 ### Hidden Div
 
+
+
+{% raw %}
 ```html
 <!-- Using hidden attribute -->
 <div hidden="hidden">
@@ -273,10 +287,14 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 </div>
 
 <!-- Conditionally shown based on expression -->
-{% raw %}<div hidden="{{model.hideSection ? 'hidden' : ''}}">
+<div hidden="{{model.hideSection ? 'hidden' : ''}}">
     Shown only when model.hideSection is false
-</div>{% endraw %}
+</div>
 ```
+{% endraw %}
+
+
+
 
 ### Transform Example
 

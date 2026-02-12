@@ -59,18 +59,30 @@ Returns `trueValue` if condition is true, `falseValue` otherwise.
 
 ### Basic Usage
 
+
+
+{% raw %}
 ```handlebars
 {{if(model.isActive, 'Active', 'Inactive')}}
 <!-- Output: Active (if isActive is true) -->
 ```
+{% endraw %}
+
+
 
 ### Conditional CSS Class
 
+
+
+{% raw %}
 ```handlebars
 <div class="{{if(model.isPremium, 'premium', 'standard')}}">
   <h3>{{model.name}}</h3>
 </div>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -89,18 +101,33 @@ doc.Params["model"] = new {
 
 ### With Comparison
 
+
+
+{% raw %}
 ```handlebars
 {{if(model.score >= 70, 'Pass', 'Fail')}}
 ```
+{% endraw %}
+
+
 
 ### Nested Conditions
 
+
+
+{% raw %}
 ```handlebars
 {{if(model.age >= 18, if(model.hasLicense, 'Can drive', 'No license'), 'Too young')}}
 ```
+{% endraw %}
+
+
 
 ### With Special Variables
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.items}}
   <tr class="{{if(@index % 2 == 0, 'even-row', 'odd-row')}}">
@@ -108,12 +135,21 @@ doc.Params["model"] = new {
   </tr>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ### Avoid Division by Zero
 
+
+
+{% raw %}
 ```handlebars
 <p>Average: {{if(model.count > 0, model.total / model.count, 0)}}</p>
 ```
+{% endraw %}
+
+
 
 ---
 

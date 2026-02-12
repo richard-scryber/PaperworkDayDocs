@@ -42,8 +42,10 @@ When a `<var>` element includes both `data-id` and `data-value` attributes, the 
 
 ## Usage
 
-```html
+
+
 {% raw %}
+```html
 <!-- Store a value in the document data stack -->
 <var data-id="totalAmount" data-value="{{model.total}}"></var>
 
@@ -55,8 +57,10 @@ When a `<var>` element includes both `data-id` and `data-value` attributes, the 
     <p>Item total: {{.price}}</p>
     <p>Grand total: {{params.totalAmount}}</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -80,21 +84,29 @@ When a `<var>` element includes both `data-id` and `data-value` attributes, the 
 
 Values are stored during the data binding phase using the `data-id` and `data-value` attributes:
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="myVariable" data-value="{{someExpression}}"></var>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Retrieving Values
 
 Stored values can be retrieved anywhere in the document using the `params` object:
 
-```html
+
+
 {% raw %}
+```html
 {{params.myVariable}}
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Scope
 
@@ -121,17 +133,23 @@ Values stored in `<var>` elements are available:
 
 ### Example 1: Basic Value Storage
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="username" data-value="{{user.name}}"></var>
 <p>Welcome back, {{params.username}}!</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Storing Calculated Values
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="totalPrice" data-value="{{product.price * product.quantity}}"></var>
 <var data-id="taxAmount" data-value="{{params.totalPrice * 0.08}}"></var>
 <var data-id="grandTotal" data-value="{{params.totalPrice + params.taxAmount}}"></var>
@@ -139,13 +157,17 @@ Values stored in `<var>` elements are available:
 <p>Subtotal: ${{params.totalPrice}}</p>
 <p>Tax (8%): ${{params.taxAmount}}</p>
 <p>Grand Total: ${{params.grandTotal}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Using in Repeating Templates
 
-```html
+
+
 {% raw %}
+```html
 <!-- Store the customer name at document level -->
 <var data-id="customerName" data-value="{{invoice.customerName}}"></var>
 
@@ -166,38 +188,50 @@ Values stored in `<var>` elements are available:
         </tr>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 4: Counter for Item Numbers
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="itemCount" data-value="0"></var>
 
 <div data-bind="{{model.products}}">
     <var data-id="itemCount" data-value="{{params.itemCount + 1}}"></var>
     <p>Item #{{params.itemCount}}: {{.name}}</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 5: Storing Date Information
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="reportDate" data-value="{{DateTime.Now}}"></var>
 <var data-id="reportYear" data-value="{{DateTime.Now.Year}}"></var>
 
 <h1>Annual Report {{params.reportYear}}</h1>
 <p>Generated on: {{params.reportDate}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 6: Page Total Calculations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Store page number or section -->
 <var data-id="currentSection" data-value="Financial Summary"></var>
 
@@ -210,26 +244,34 @@ Values stored in `<var>` elements are available:
 
 <p><strong>Section: {{params.currentSection}}</strong></p>
 <p><strong>Total: ${{params.pageTotal}}</strong></p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 7: Conditional Logic with Stored Values
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="hasErrors" data-value="{{model.errorCount > 0}}"></var>
 <var data-id="statusColor" data-value="{{params.hasErrors ? 'red' : 'green'}}"></var>
 
 <div style="color: {{params.statusColor}}">
     <p>Status: {{params.hasErrors ? 'Failed' : 'Success'}}</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 8: Multi-page Document with Consistent Data
 
-```html
+
+
 {% raw %}
+```html
 <!-- Store company info at start -->
 <var data-id="companyName" data-value="{{config.companyName}}"></var>
 <var data-id="companyLogo" data-value="{{config.logoPath}}"></var>
@@ -244,13 +286,17 @@ Values stored in `<var>` elements are available:
 <section>
     <p>This report is provided by {{params.companyName}}</p>
 </section>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 9: Running Totals Across Sections
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="runningTotal" data-value="0"></var>
 
 <h2>Q1 Sales</h2>
@@ -266,25 +312,33 @@ Values stored in `<var>` elements are available:
 </div>
 
 <h2>Year-to-Date Total: ${{params.runningTotal}}</h2>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 10: Storing Complex Objects
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="selectedProduct" data-value="{{model.products[0]}}"></var>
 
 <h2>Featured Product: {{params.selectedProduct.name}}</h2>
 <p>Price: ${{params.selectedProduct.price}}</p>
 <p>Description: {{params.selectedProduct.description}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 11: Max/Min Value Tracking
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="maxValue" data-value="0"></var>
 <var data-id="minValue" data-value="999999"></var>
 
@@ -297,13 +351,17 @@ Values stored in `<var>` elements are available:
 <p>Maximum: {{params.maxValue}}</p>
 <p>Minimum: {{params.minValue}}</p>
 <p>Range: {{params.maxValue - params.minValue}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 12: Invoice with Line Item Totals
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="invoiceNumber" data-value="{{invoice.number}}"></var>
 <var data-id="invoiceSubtotal" data-value="0"></var>
 
@@ -343,13 +401,17 @@ Values stored in `<var>` elements are available:
         </tr>
     </tfoot>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 13: Nested Repeating Templates
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="reportTitle" data-value="{{report.title}}"></var>
 
 <div data-bind="{{report.departments}}">
@@ -361,13 +423,17 @@ Values stored in `<var>` elements are available:
         <p>Report: {{params.reportTitle}}</p>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 14: Storing Configuration Values
 
-```html
+
+
 {% raw %}
+```html
 <!-- Store configuration at document start -->
 <var data-id="currency" data-value="USD"></var>
 <var data-id="currencySymbol" data-value="$"></var>
@@ -377,13 +443,17 @@ Values stored in `<var>` elements are available:
 <!-- Use throughout document -->
 <p>Amount: {{params.currencySymbol}}100.00 {{params.currency}}</p>
 <p>Locale: {{params.locale}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 15: Visible Content with Storage
 
-```html
+
+
 {% raw %}
+```html
 <!-- Store value AND display it -->
 <p>
     Tax Rate: <var data-id="taxRate" data-value="{{config.taxRate}}">{{config.taxRate}}%</var>
@@ -391,13 +461,17 @@ Values stored in `<var>` elements are available:
 
 <!-- Later use the stored value in calculations -->
 <p>Tax Amount: ${{params.orderTotal * params.taxRate / 100}}</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 16: Accumulating Statistics
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="totalOrders" data-value="0"></var>
 <var data-id="completedOrders" data-value="0"></var>
 <var data-id="cancelledOrders" data-value="0"></var>
@@ -414,13 +488,17 @@ Values stored in `<var>` elements are available:
 <p>Completed: {{params.completedOrders}}</p>
 <p>Cancelled: {{params.cancelledOrders}}</p>
 <p>Success Rate: {{params.completedOrders / params.totalOrders * 100}}%</p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 17: Section Headers with Context
 
-```html
+
+
 {% raw %}
+```html
 <div data-bind="{{report.sections}}">
     <var data-id="sectionTitle" data-value="{{.title}}"></var>
     <var data-id="sectionIndex" data-value="{{$index + 1}}"></var>
@@ -431,13 +509,17 @@ Values stored in `<var>` elements are available:
         <p>Item {{$index + 1}} in {{params.sectionTitle}}</p>
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 18: Average Calculations
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="sum" data-value="0"></var>
 <var data-id="count" data-value="0"></var>
 
@@ -448,13 +530,17 @@ Values stored in `<var>` elements are available:
 </div>
 
 <p><strong>Average Score: {{params.sum / params.count}}</strong></p>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 19: Conditional Display Based on Stored Values
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="itemCount" data-value="{{model.items.length}}"></var>
 <var data-id="hasItems" data-value="{{params.itemCount > 0}}"></var>
 
@@ -468,13 +554,17 @@ Values stored in `<var>` elements are available:
 <div data-if="{{!params.hasItems}}">
     <p>No items to display</p>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 20: Multi-level Totals
 
-```html
+
+
 {% raw %}
+```html
 <var data-id="grandTotal" data-value="0"></var>
 
 <div data-bind="{{categories}}">
@@ -491,8 +581,10 @@ Values stored in `<var>` elements are available:
 </div>
 
 <h2>Grand Total: ${{params.grandTotal}}</h2>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

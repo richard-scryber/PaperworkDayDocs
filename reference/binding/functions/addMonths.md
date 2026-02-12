@@ -58,9 +58,15 @@ A new DateTime with the specified months added.
 
 ### Add Months
 
+
+
+{% raw %}
 ```handlebars
 <p>Due Date: {{format(addMonths(model.startDate, 3), 'MMMM dd, yyyy')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -76,9 +82,15 @@ doc.Params["model"] = new {
 
 ### Subtract Months
 
+
+
+{% raw %}
 ```handlebars
 <p>3 months ago: {{format(addMonths(model.today, -3), 'yyyy-MM-dd')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -94,11 +106,17 @@ doc.Params["model"] = new {
 
 ### Payment Schedule
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.payments}}
   <li>Payment {{add(@index, 1)}}: {{format(addMonths(model.startDate, @index), 'MMM dd, yyyy')}}</li>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -120,9 +138,15 @@ doc.Params["model"] = new {
 
 ### Annual Review Date
 
+
+
+{% raw %}
 ```handlebars
 <p>Next Review: {{format(addMonths(model.lastReview, 12), 'MMMM dd, yyyy')}}</p>
 ```
+{% endraw %}
+
+
 
 ---
 

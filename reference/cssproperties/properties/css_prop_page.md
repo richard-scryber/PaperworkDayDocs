@@ -88,8 +88,10 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
 
 ### Example 1: Data-driven page context selection
 
-```html
+
+
 {% raw %}
+```html
 <style>
     @page portrait-page {
         size: A4 portrait;
@@ -122,13 +124,17 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
     </div>
     {{/each}}
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Document type-based page assignments
 
-```html
+
+
 {% raw %}
+```html
 <style>
     @page cover-style {
         size: {{documentConfig.coverSize || 'A4'}} portrait;
@@ -173,13 +179,17 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
     </div>
     {{/if}}
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Named page sequences with conditional formatting
 
-```html
+
+
 {% raw %}
+```html
 <style>
     @page summary-page {
         size: {{pageSettings.size || 'A4'}} portrait;
@@ -232,8 +242,10 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
     </div>
     {{/each}}
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

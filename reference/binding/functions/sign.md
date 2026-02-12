@@ -59,6 +59,9 @@ sign(value)
 
 ### Check Sign
 
+
+
+{% raw %}
 ```handlebars
 {{#if sign(model.balance) > 0}}
   <p class="positive">Credit: ${{model.balance}}</p>
@@ -68,6 +71,9 @@ sign(value)
   <p>Zero balance</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -83,6 +89,9 @@ doc.Params["model"] = new {
 
 ### Profit/Loss Indicator
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.accounts}}
   <tr>
@@ -91,6 +100,9 @@ doc.Params["model"] = new {
   </tr>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -116,9 +128,15 @@ doc.Params["model"] = new {
 
 ### Direction Indicator
 
+
+
+{% raw %}
 ```handlebars
 <p>Trend: {{if(sign(model.change) > 0, 'Increasing', if(sign(model.change) < 0, 'Decreasing', 'Stable'))}}</p>
 ```
+{% endraw %}
+
+
 
 ---
 

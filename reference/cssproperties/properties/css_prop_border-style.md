@@ -91,8 +91,10 @@ The `border-style` property supports dynamic values through data binding, allowi
 
 ### Example 1: Status-based border styles
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .notification {
         border-width: 2pt;
@@ -107,8 +109,10 @@ The `border-style` property supports dynamic values through data binding, allowi
         <p>Message: {{notification.message}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -123,8 +127,10 @@ Data context:
 
 ### Example 2: Conditional border patterns
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .invoice-status {
         border-width: 2pt 2pt 2pt 6pt;
@@ -140,13 +146,17 @@ Data context:
         <p>Status: {{invoice.status}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Alert severity styles
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .alert-message {
         border-width: 2pt;
@@ -159,8 +169,10 @@ Data context:
         <strong>{{alert.severity}}:</strong> {{alert.text}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json

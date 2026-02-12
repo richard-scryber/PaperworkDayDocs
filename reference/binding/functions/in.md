@@ -58,9 +58,15 @@ Returns `true` if the value exists in the collection, `false` otherwise.
 
 ### Simple Membership Check
 
+
+
+{% raw %}
 ```handlebars
 <p>Has premium: {{in('premium', model.features)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -76,6 +82,9 @@ doc.Params["model"] = new {
 
 ### Conditional Display Based on Membership
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.users}}
   <p>{{this.name}}:
@@ -87,6 +96,9 @@ doc.Params["model"] = new {
   </p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -109,6 +121,9 @@ doc.Params["model"] = new {
 
 ### Status Badge Display
 
+
+
+{% raw %}
 ```handlebars
 <p>Status:
 {{#if (in(model.status, model.activeStatuses))}}
@@ -120,6 +135,9 @@ doc.Params["model"] = new {
 {{/if}}
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -137,6 +155,9 @@ doc.Params["model"] = new {
 
 ### Access Control
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.features}}
   {{#if (in(this.id, model.user.permissions))}}
@@ -144,6 +165,9 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -167,6 +191,9 @@ doc.Params["model"] = new {
 
 ### Category Filter
 
+
+
+{% raw %}
 ```handlebars
 <h3>Priority Items</h3>
 {{#each model.items}}
@@ -175,6 +202,9 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

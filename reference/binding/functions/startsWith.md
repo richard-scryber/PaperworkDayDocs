@@ -58,6 +58,9 @@ startsWith(str, prefix)
 
 ### Protocol Detection
 
+
+
+{% raw %}
 ```handlebars
 {{#if startsWith(model.url, 'https://')}}
   <span class="secure">🔒 Secure</span>
@@ -65,6 +68,9 @@ startsWith(str, prefix)
   <span class="insecure">⚠ Not Secure</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -80,6 +86,9 @@ doc.Params["model"] = new {
 
 ### File Type Detection
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.files}}
   {{#if startsWith(this.name, 'report_')}}
@@ -89,6 +98,9 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -113,6 +125,9 @@ doc.Params["model"] = new {
 
 ### Prefix-Based Filtering
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.codes}}
   {{#if startsWith(this, 'PRO-')}}
@@ -122,9 +137,15 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}}
 ```
+{% endraw %}
+
+
 
 ### Phone Number Validation
 
+
+
+{% raw %}
 ```handlebars
 {{#if startsWith(model.phone, '+1')}}
   <p>US/Canada: {{model.phone}}</p>
@@ -134,6 +155,9 @@ doc.Params["model"] = new {
   <p>International: {{model.phone}}</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

@@ -416,8 +416,10 @@ Control how text wraps within cells:
 
 ### Data-Bound Table Cells
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     products: [
         {id: "P001", name: "Laptop", price: 1299.99, stock: 15},
@@ -462,8 +464,10 @@ Control how text wraps within cells:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Cells with Custom Padding and Borders
 
@@ -576,8 +580,10 @@ Control how text wraps within cells:
 
 ### Cells with Conditional Formatting
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     scores: [
         {student: "Alice", math: 95, english: 88, science: 92},
@@ -620,8 +626,10 @@ Control how text wraps within cells:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Cells with Text Wrapping Control
 

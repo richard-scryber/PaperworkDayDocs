@@ -91,8 +91,10 @@ The `white-space` property can be dynamically controlled through data binding, a
 
 ### Example 1: Content Type-Based Whitespace Handling
 
-```html
+
+
 {% raw %}
+```html
 <div style="white-space: {{model.content.whitespaceMode}}; font-family: {{model.content.fontFamily}}; font-size: 10pt">
     {{model.content.text}}
 </div>
@@ -116,13 +118,17 @@ The `white-space` property can be dynamically controlled through data binding, a
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Address Formatting with Data
 
-```html
+
+
 {% raw %}
+```html
 <div style="white-space: {{model.address.whitespaceMode}}; font-size: 11pt">
 {{model.address.name}}
 {{model.address.street}}
@@ -141,13 +147,17 @@ The `white-space` property can be dynamically controlled through data binding, a
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Dynamic Table Cell Wrapping
 
-```html
+
+
 {% raw %}
+```html
 <table style="width: 100%; border-collapse: collapse">
     <tr>
         <td style="white-space: {{model.column.whitespaceMode}}; padding: 8pt; border: 1pt solid #ccc">
@@ -173,8 +183,10 @@ The `white-space` property can be dynamically controlled through data binding, a
     }
 }
 -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

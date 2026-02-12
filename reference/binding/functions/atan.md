@@ -57,10 +57,16 @@ The angle in radians (between -π/2 and π/2).
 
 ### Basic Arctangent
 
+
+
+{% raw %}
 ```handlebars
 <p>atan(1) = {{format(atan(1), '0.000')}} radians</p>
 <p>atan(1) = {{format(degrees(atan(1)), '0.0')}}°</p>
 ```
+{% endraw %}
+
+
 
 **Output:**
 ```html
@@ -70,9 +76,15 @@ The angle in radians (between -π/2 and π/2).
 
 ### Find Angle from Slope
 
+
+
+{% raw %}
 ```handlebars
 <p>Angle: {{format(degrees(atan(model.rise / model.run)), '0.0')}}°</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -89,9 +101,15 @@ doc.Params["model"] = new {
 
 ### Calculate Bearing
 
+
+
+{% raw %}
 ```handlebars
 <p>Bearing: {{format(degrees(atan(model.opposite / model.adjacent)), '0.1')}}°</p>
 ```
+{% endraw %}
+
+
 
 ---
 

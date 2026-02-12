@@ -25,8 +25,10 @@ The `transform` attribute modifies the coordinate system for an element and its 
 - Support data binding for dynamic transformations
 - Apply to groups to transform multiple elements together
 
-```html
+
+
 {% raw %}
+```html
 <!-- Single transformation -->
 <rect x="0" y="0" width="50" height="50" transform="translate(100,50)" fill="blue"/>
 
@@ -41,8 +43,10 @@ The `transform` attribute modifies the coordinate system for an element and its 
 <g transform="translate({{model.x}}, {{model.y}}) rotate({{model.angle}})">
     <rect width="60" height="40" fill="purple"/>
 </g>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -140,82 +144,110 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 
 ### Dynamic Translation
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { x: 100, y: 50 } -->
 <rect width="50" height="50"
       transform="translate({{model.x}}, {{model.y}})"
       fill="blue"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Rotation
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { angle: 45, centerX: 100, centerY: 100 } -->
 <rect x="75" y="75" width="50" height="50"
       transform="rotate({{model.angle}}, {{model.centerX}}, {{model.centerY}})"
       fill="red"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Scaling
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { scale: 1.5 } -->
 <circle cx="100" cy="100" r="30"
         transform="scale({{model.scale}})"
         fill="green"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Combined Dynamic Transformations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { x: 150, y: 100, rotation: 30, scale: 1.2 } -->
 <g transform="translate({{model.x}}, {{model.y}}) rotate({{model.rotation}}) scale({{model.scale}})">
     <rect x="-25" y="-25" width="50" height="50" fill="purple"/>
 </g>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Repeated Transformations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [{x:50, y:50, angle:0}, {x:150, y:50, angle:45}] } -->
 <template data-bind="{{model.items}}">
     <rect width="40" height="40"
           transform="translate({{.x}}, {{.y}}) rotate({{.angle}})"
           fill="orange"/>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Calculated Transformations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { index: 3, baseAngle: 30 } -->
 <rect width="50" height="50"
       transform="translate({{100 + model.index * 60}}, 100) rotate({{model.baseAngle * model.index}})"
       fill="teal"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Transformations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { isExpanded: true } -->
 <rect width="50" height="50"
       transform="scale({{model.isExpanded ? 2 : 1}})"
       fill="blue"/>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -548,8 +580,10 @@ Note that SVG transforms are different from CSS transforms:
 
 ### Dynamic Gauge Needle
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { gaugeValue: 75, minValue: 0, maxValue: 100 } -->
 <svg width="300pt" height="200pt">
     <!-- Gauge background -->
@@ -569,13 +603,17 @@ Note that SVG transforms are different from CSS transforms:
         {{model.gaugeValue}}%
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Circular Menu Items
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { menuItems: [{label:"Home", angle:0}, {label:"About", angle:60}] } -->
 <svg width="400pt" height="400pt">
     <g transform="translate(200, 200)">
@@ -594,8 +632,10 @@ Note that SVG transforms are different from CSS transforms:
         </template>
     </g>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Isometric Cube
 
@@ -619,8 +659,10 @@ Note that SVG transforms are different from CSS transforms:
 
 ### Rotating Fan Blades
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { fanRotation: 45 } -->
 <svg width="300pt" height="300pt">
     <g transform="translate(150, 150) rotate({{model.fanRotation}})">
@@ -635,13 +677,17 @@ Note that SVG transforms are different from CSS transforms:
         <circle r="5" fill="#ccc"/>
     </g>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Progress Wheel
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { progress: 65, totalSections: 8 } -->
 <svg width="300pt" height="300pt">
     <g transform="translate(150, 150)">
@@ -658,13 +704,17 @@ Note that SVG transforms are different from CSS transforms:
         </text>
     </g>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Arrow Pointer
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { direction: 135 } -->
 <svg width="200pt" height="200pt">
     <g transform="translate(100, 100)">
@@ -682,13 +732,17 @@ Note that SVG transforms are different from CSS transforms:
         </g>
     </g>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Scale Comparison
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [{name:"Small", scale:0.5}, {name:"Medium", scale:1}, {name:"Large", scale:1.8}] } -->
 <svg width="500pt" height="200pt">
     <template data-bind="{{model.items}}">
@@ -700,8 +754,10 @@ Note that SVG transforms are different from CSS transforms:
         </g>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Skewed Perspective Box
 

@@ -370,8 +370,10 @@ def fibonacci(n):
 
 ### Data Binding with Code
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model.codeSnippets = [
     { title: "Example 1", code: "function hello() {\n  return 'world';\n}", language: "javascript" },
     { title: "Example 2", code: "def greet():\n  return 'hello'", language: "python" }
@@ -384,8 +386,10 @@ def fibonacci(n):
                     border: 1pt solid #ddd; font-size: 9pt;">{{.code}}</pre>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### XML/HTML Code Display
 

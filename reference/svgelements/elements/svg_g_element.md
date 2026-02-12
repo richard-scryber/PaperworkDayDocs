@@ -166,8 +166,10 @@ SVGGroup implements `ICloneable`:
 
 ### Dynamic Group Visibility
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { showDetails: true } -->
 <svg width="300pt" height="200pt">
     <g id="summary">
@@ -179,13 +181,17 @@ SVGGroup implements `ICloneable`:
         <text x="150" y="100" text-anchor="middle">Detail Information</text>
     </g>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Repeated Groups
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { icons: [{x:50, icon:"check"}, {x:150, icon:"star"}] } -->
 <svg width="300pt" height="100pt">
     <template data-bind="{{model.icons}}">
@@ -195,26 +201,34 @@ SVGGroup implements `ICloneable`:
         </g>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Transformations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { rotation: 45, scale: 1.5 } -->
 <svg width="200pt" height="200pt">
     <g transform="translate(100,100) rotate({{model.rotation}}) scale({{model.scale}})">
         <rect x="-25" y="-25" width="50" height="50" fill="#336699"/>
     </g>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data-Driven Styling
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { groups: [{color:"red", items:[...]}, {color:"blue", items:[...]}] } -->
 <svg width="400pt" height="200pt">
     <template data-bind="{{model.groups}}">
@@ -225,8 +239,10 @@ SVGGroup implements `ICloneable`:
         </g>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -382,8 +398,10 @@ SVGGroup implements `ICloneable`:
 
 ### Conditional Groups
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { showGrid: true, showLabels: false } -->
 <svg width="300pt" height="300pt">
     <g id="grid" stroke="#ddd" stroke-width="1" hidden="{{model.showGrid ? '' : 'hidden'}}">
@@ -398,8 +416,10 @@ SVGGroup implements `ICloneable`:
         <text x="250" y="50">C</text>
     </g>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Layer Organization
 
@@ -467,8 +487,10 @@ SVGGroup implements `ICloneable`:
 
 ### Data-Driven Bar Chart Groups
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { data: [{label:"A", value:80, color:"#4a90e2"}, {label:"B", value:120, color:"#50c878"}] } -->
 <svg width="400pt" height="300pt">
     <template data-bind="{{model.data}}">
@@ -481,8 +503,10 @@ SVGGroup implements `ICloneable`:
         </g>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Grouped Pattern Elements
 

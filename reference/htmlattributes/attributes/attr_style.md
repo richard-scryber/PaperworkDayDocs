@@ -39,8 +39,10 @@ The `style` attribute applies CSS styles directly to an element:
 - For maintainable, reusable styles, use CSS classes instead
 - Refer to the **[CSS Styles documentation](/reference/styles/)** for comprehensive styling capabilities
 
-```html
+
+
 {% raw %}
+```html
 <!-- Basic inline style -->
 <p style="color: red; font-size: 14pt;">Styled paragraph</p>
 
@@ -53,8 +55,10 @@ The `style` attribute applies CSS styles directly to an element:
 <span style="color: {{model.textColor}}; font-weight: bold;">
     Dynamic styled text
 </span>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -83,8 +87,10 @@ The `style` attribute is supported on **all HTML elements** in Scryber, includin
 
 The `style` attribute supports data binding for dynamic style values:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Single dynamic property -->
 <div style="color: {{model.primaryColor}};">
     Dynamically colored text
@@ -114,8 +120,10 @@ The `style` attribute supports data binding for dynamic style values:
         <h3 style="color: {{.textColor}};">{{.title}}</h3>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -220,8 +228,10 @@ Scryber supports various CSS units:
 - Better readability
 - Separation of style and content
 
-```html
+
+
 {% raw %}
+```html
 <!-- Good use of inline style: unique value -->
 <div style="background-image: url('{{model.userPhoto}}');">
 
@@ -236,8 +246,10 @@ Scryber supports various CSS units:
 
 <div class="highlight-box">Reusable style</div>
 <div class="highlight-box">Another use</div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### CSS Specificity
 
@@ -449,8 +461,10 @@ Apply multiple CSS properties by separating them with semicolons:
 
 ### Data Binding with Styles
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { theme: { primary: "#336699", fontSize: 14 } } -->
 
 <div style="color: {{model.theme.primary}};
@@ -469,8 +483,10 @@ Apply multiple CSS properties by separating them with semicolons:
 ">
     {{model.message}}
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complex Styling
 
@@ -717,8 +733,10 @@ Apply multiple CSS properties by separating them with semicolons:
 
 ### Dynamic Status Indicators
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { items: [{name: "Task 1", status: "complete", priority: "high"}] } -->
 
 <template data-bind="{{model.items}}">
@@ -736,8 +754,10 @@ Apply multiple CSS properties by separating them with semicolons:
         </p>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Blockquote Styling
 

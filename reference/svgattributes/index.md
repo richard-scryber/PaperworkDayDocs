@@ -56,8 +56,11 @@ By default **All** attributes are *case sensitive*.
 
 When included in the document either inline with the rest of the content or <a href='/reference/htmltags/embed.html' >embedded</a> into the content the attributes support binging to dynamic data. As an image the binding will be empty.
 
+
+
+{% raw %}
 ```html
-   {{% raw %}}<html xmlns='http://www.w3.org/1999/xhtml'>
+   {}<html xmlns='http://www.w3.org/1999/xhtml'>
     <head>
       <title>SVG Attribute Binding</title>
     </head>
@@ -76,8 +79,12 @@ When included in the document either inline with the rest of the content or <a h
         <img src='./mydrawing.svg' />
 
     </body>
-   </html>{{% endraw %}}
+   </html>{}
 ```
+{% endraw %}
+
+
+
 
 ---
 

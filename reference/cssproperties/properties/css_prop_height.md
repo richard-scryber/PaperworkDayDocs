@@ -95,8 +95,10 @@ The height property supports dynamic value binding through template expressions,
 
 ### Example 1: Chart bars with dynamic heights
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .chart-container {
         padding: 20pt;
@@ -140,13 +142,17 @@ The height property supports dynamic value binding through template expressions,
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Conditional section heights
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .content-section {
         width: 500pt;
@@ -162,13 +168,17 @@ The height property supports dynamic value binding through template expressions,
         <p>{{section.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Image sizing based on data
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .gallery {
         padding: 20pt;
@@ -188,13 +198,17 @@ The height property supports dynamic value binding through template expressions,
              alt="{{image.caption}}" />
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 4: Data-driven dashboard panels
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .dashboard {
         padding: 20pt;
@@ -227,8 +241,10 @@ The height property supports dynamic value binding through template expressions,
         </div>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

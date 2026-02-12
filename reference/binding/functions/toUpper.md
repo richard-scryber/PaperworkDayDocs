@@ -57,9 +57,15 @@ The string converted to uppercase.
 
 ### Basic Uppercase
 
+
+
+{% raw %}
 ```handlebars
 <p>{{toUpper(model.text)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Headers and Titles
 
+
+
+{% raw %}
 ```handlebars
 <h1>{{toUpper(model.title)}}</h1>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,9 +105,15 @@ doc.Params["model"] = new {
 
 ### Product Codes
 
+
+
+{% raw %}
 ```handlebars
 <p>SKU: {{toUpper(model.sku)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -111,9 +129,15 @@ doc.Params["model"] = new {
 
 ### Capitalize First Letter
 
+
+
+{% raw %}
 ```handlebars
 <p>{{toUpper(substring(model.name, 0, 1))}}{{substring(model.name, 1)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -129,6 +153,9 @@ doc.Params["model"] = new {
 
 ### Emphasis
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.alerts}}
   <div class="alert">
@@ -136,6 +163,9 @@ doc.Params["model"] = new {
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

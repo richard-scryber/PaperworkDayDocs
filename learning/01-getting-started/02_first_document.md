@@ -156,7 +156,7 @@ var doc = Document.ParseHTML("template.html");
 
 Let's create a more complete document with styling:
 
-{% raw %}
+
 ```html
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -245,7 +245,7 @@ Let's create a more complete document with styling:
 </body>
 </html>
 ```
-{% endraw %}
+
 
 **C# Code:**
 

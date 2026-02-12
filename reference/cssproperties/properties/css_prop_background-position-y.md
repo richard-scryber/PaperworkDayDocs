@@ -102,8 +102,10 @@ The `background-position-y` property supports dynamic data binding, enabling ver
 
 ### Example 1: Dynamic vertical positioning from layout preferences
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .document-watermark {
         background-image: url('{{watermark.imageUrl}}');
@@ -121,15 +123,19 @@ The `background-position-y` property supports dynamic data binding, enabling ver
         <p>{{document.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Enables administrators to control watermark vertical placement (top, center, bottom, or specific offsets) through configuration while keeping horizontal centering. Perfect for different document types requiring watermarks at various vertical positions.
 
 ### Example 2: Conditional vertical positioning by content length
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .certificate-seal {
         background-image: url('{{certificate.sealUrl}}');
@@ -151,15 +157,19 @@ Enables administrators to control watermark vertical placement (top, center, bot
         {{/if}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Intelligently adjusts seal vertical position based on content - certificates with extensive text push seals to the bottom with fixed offset, while shorter certificates position seals proportionally for better balance.
 
 ### Example 3: Multi-layer vertical positioning with data
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .branded-document {
         background-image: url('{{branding.headerImageUrl}}'), url('{{branding.footerImageUrl}}');
@@ -178,8 +188,10 @@ Intelligently adjusts seal vertical position based on content - certificates wit
         <p>{{document.content}}</p>
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Creates documents with separate header and footer decorative elements, each with configurable vertical positioning. Organizations can fine-tune the exact placement of both elements independently to match their brand guidelines and document requirements.
 

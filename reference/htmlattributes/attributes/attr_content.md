@@ -111,34 +111,46 @@ The `content` attribute fully supports data binding:
 
 ### Dynamic Content with Data Binding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { author: "Jane Smith", reportTitle: "Q4 Report", year: 2024 } -->
 <meta name="author" content="{{model.author}}" />
 <meta name="description" content="{{model.reportTitle}} for {{model.year}}" />
 <meta name="keywords" content="report, {{model.year}}, financial" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Calculated Content
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { firstName: "John", lastName: "Doe", date: "2024-01-15" } -->
 <meta name="author" content="{{model.firstName}} {{model.lastName}}" />
 <meta name="generator" content="Report Generator v2.0 - {{model.date}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Conditional Content
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { isPublic: false } -->
 <meta name="classification"
       content="{{model.isPublic ? 'Public' : 'Confidential'}}" />
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -228,8 +240,10 @@ Or use multiple meta tags with the same property:
 
 ### Example 3: Data-Bound Metadata
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     author: "Jane Doe",
     department: "Marketing",
@@ -244,8 +258,10 @@ Or use multiple meta tags with the same property:
     <meta name="keywords" content="catalog, products, {{model.year}}, {{model.department}}" />
     <meta name="generator" content="Catalog Generator - {{model.year}}" />
 </head>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 4: Open Graph Metadata
 
@@ -331,8 +347,10 @@ Or use multiple meta tags with the same property:
 
 ### Example 10: Invoice Metadata
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { invoiceNumber: "INV-2024-001", clientName: "ABC Corp", date: "2024-01-15" } -->
 
 <head>
@@ -344,8 +362,10 @@ Or use multiple meta tags with the same property:
     <meta property="invoice:client" content="{{model.clientName}}" />
     <meta property="invoice:date" content="{{model.date}}" />
 </head>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 11: Academic Paper
 
@@ -393,8 +413,10 @@ Or use multiple meta tags with the same property:
 
 ### Example 14: Conditional Metadata
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { isDraft: true, author: "John Doe", version: "0.9" } -->
 
 <head>
@@ -405,8 +427,10 @@ Or use multiple meta tags with the same property:
     <meta name="version" content="{{model.version}}" />
     <meta name="status" content="{{model.isDraft ? 'draft' : 'final'}}" />
 </head>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 15: Rich Metadata Collection
 

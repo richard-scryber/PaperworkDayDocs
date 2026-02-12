@@ -90,8 +90,10 @@ The `-pdf-li-concat` property supports data binding, enabling dynamic control of
 
 ### Example 1: Dynamic hierarchical numbering
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .document-structure {
         list-style-type: decimal;
@@ -111,8 +113,10 @@ The `-pdf-li-concat` property supports data binding, enabling dynamic control of
         </li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context:**
 ```json
@@ -136,8 +140,10 @@ When `useHierarchical` is true, produces 1, 1.1, 1.2; when false, produces 1, 1,
 
 ### Example 2: Legal document numbering by jurisdiction
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .legal-terms {
         list-style-type: decimal;
@@ -158,8 +164,10 @@ When `useHierarchical` is true, produces 1, 1.1, 1.2; when false, produces 1, 1,
         </li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context:**
 ```json
@@ -185,8 +193,10 @@ Different legal jurisdictions may require different numbering conventions. This 
 
 ### Example 3: Standards-compliant technical documentation
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .spec-section {
         list-style-type: decimal;
@@ -210,8 +220,10 @@ Different legal jurisdictions may require different numbering conventions. This 
         </li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context:**
 ```json

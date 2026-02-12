@@ -153,11 +153,15 @@ The `src` attribute supports multiple source types:
    ```
 
 4. **Dynamic Sources via Data Binding**:
-   ```html
+
+
 {% raw %}
+   ```html
    <iframe src="{{model.contentUrl}}"></iframe>
-   {% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Supported Content Types
 
@@ -307,8 +311,10 @@ In the Scryber codebase:
 
 ### Dynamic Content Loading
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = { headerTemplate: "header-v2.html", footerTemplate: "footer-standard.html" } -->
 
 <iframe src="{{model.headerTemplate}}"></iframe>
@@ -319,8 +325,10 @@ In the Scryber codebase:
 </div>
 
 <iframe src="{{model.footerTemplate}}"></iframe>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Styled Iframe with Dimensions
 
@@ -370,8 +378,10 @@ In the Scryber codebase:
 
 ### Conditional Content Loading
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = { showHeader: true, showFooter: false } -->
 
 <iframe src="header.html" hidden="{{model.showHeader ? '' : 'hidden'}}"></iframe>
@@ -381,8 +391,10 @@ In the Scryber codebase:
 </div>
 
 <iframe src="footer.html" hidden="{{model.showFooter ? '' : 'hidden'}}"></iframe>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Loading Remote Content
 
@@ -399,8 +411,10 @@ In the Scryber codebase:
 
 ### Multi-Language Support
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = { language: "en", region: "US" } -->
 
 <iframe src="i18n/{{model.language}}/header.html"></iframe>
@@ -410,8 +424,10 @@ In the Scryber codebase:
 </div>
 
 <iframe src="i18n/{{model.language}}/footer.html"></iframe>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Nested Iframes
 
@@ -432,8 +448,10 @@ In the Scryber codebase:
 
 ### Template Variations
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = { templateVersion: 2, customerType: "premium" } -->
 
 <iframe src="headers/header-v{{model.templateVersion}}.html"></iframe>
@@ -444,8 +462,10 @@ In the Scryber codebase:
 </div>
 
 <iframe src="footers/footer-{{model.customerType}}.html"></iframe>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Iframe with Fallback Content
 
@@ -481,8 +501,10 @@ In the Scryber codebase:
 
 ### Dynamic Report Sections
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model.sections = [{src: "intro.html"}, {src: "analysis.html"}, {src: "conclusion.html"}] -->
 
 <div class="report">
@@ -494,8 +516,10 @@ In the Scryber codebase:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Themed Document Assembly
 
@@ -557,8 +581,10 @@ In the Scryber codebase:
 
 ### Email Template Embedding
 
-```html
+
+
 {% raw %}
+```html
 <!-- Load email signature from shared template -->
 <div class="email-body">
     <p>Dear {{model.recipientName}},</p>
@@ -566,8 +592,10 @@ In the Scryber codebase:
 
     <iframe src="templates/signatures/{{model.senderDepartment}}.html"></iframe>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Form Components
 
@@ -591,8 +619,10 @@ In the Scryber codebase:
 
 ### API-Driven Content
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = { apiEndpoint: "https://api.example.com", reportId: "12345" } -->
 
 <div class="report">
@@ -606,8 +636,10 @@ In the Scryber codebase:
     <!-- Load report footer from API -->
     <iframe src="{{model.apiEndpoint}}/reports/{{model.reportId}}/footer.html"></iframe>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Responsive Container Sizing
 
@@ -628,8 +660,10 @@ In the Scryber codebase:
 
 ### Conditional Regional Content
 
-```html
+
+
 {% raw %}
+```html
 <!-- With model = { country: "US", state: "CA" } -->
 
 <div class="regional-document">
@@ -642,8 +676,10 @@ In the Scryber codebase:
     <!-- Country-specific footer with legal info -->
     <iframe src="content/{{model.country}}/legal-footer.html"></iframe>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Complex Document Structure
 

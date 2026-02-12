@@ -89,8 +89,10 @@ Used within:
 
 Bind stop positions to data for flexible gradients:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { midpoint: 35 } -->
 <svg width="400" height="100">
     <defs>
@@ -102,15 +104,19 @@ Bind stop positions to data for flexible gradients:
     </defs>
     <rect width="400" height="100" fill="url(#dynamicMid)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data Threshold Visualization
 
 Position color stops at data threshold boundaries:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { warningThreshold: 60, dangerThreshold: 80 } -->
 <svg width="500" height="100">
     <defs>
@@ -125,15 +131,19 @@ Position color stops at data threshold boundaries:
     </defs>
     <rect width="500" height="100" fill="url(#thresholds)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Generate Stops from Data Array
 
 Create gradient stops dynamically from data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dataPoints: [{value: 0, color: "#2ecc71"}, {value: 30, color: "#f1c40f"},
               {value: 70, color: "#e67e22"}, {value: 100, color: "#e74c3c"}] } -->
 <svg width="400" height="100">
@@ -146,15 +156,19 @@ Create gradient stops dynamically from data:
     </defs>
     <rect width="400" height="100" fill="url(#dataStops)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Progress-Based Color Stops
 
 Position stops based on completion or progress:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { progress: 65 } -->
 <svg width="400" height="100">
     <defs>
@@ -167,15 +181,19 @@ Position stops based on completion or progress:
     </defs>
     <rect width="400" height="100" fill="url(#progressGrad)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Temperature Scale with Data Offsets
 
 Create color scales based on data ranges:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { freezing: 0, cool: 25, warm: 50, hot: 75, extreme: 100 } -->
 <svg width="400" height="100">
     <defs>
@@ -189,8 +207,10 @@ Create color scales based on data ranges:
     </defs>
     <rect width="400" height="100" fill="url(#tempScale)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -369,8 +389,10 @@ Stops outside 0%-100% work with spreadMethod:
 
 ### Progress Bar with Threshold
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { progress: 65 } -->
 <svg width="400" height="60">
     <defs>
@@ -387,8 +409,10 @@ Stops outside 0%-100% work with spreadMethod:
         {{model.progress}}%
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Chart Color Zones
 
@@ -492,8 +516,10 @@ Stops outside 0%-100% work with spreadMethod:
 
 ### Data-Driven Threshold Stops
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { low: 30, medium: 60, high: 80 } -->
 <svg width="500" height="100">
     <defs>
@@ -511,8 +537,10 @@ Stops outside 0%-100% work with spreadMethod:
 
     <rect width="500" height="100" fill="url(#dataThresh)" />
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Timeline with Color Phases
 

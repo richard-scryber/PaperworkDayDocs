@@ -57,9 +57,15 @@ The smallest value in the collection. Returns null for empty collections.
 
 ### Simple Minimum
 
+
+
+{% raw %}
 ```handlebars
 <p>Lowest score: {{min(model.scores)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Price Range
 
+
+
+{% raw %}
 ```handlebars
 <p>Price range: ${{min(collect(model.products, 'price'))}} - ${{max(collect(model.products, 'price'))}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -98,12 +110,18 @@ doc.Params["model"] = new {
 
 ### Temperature Analysis
 
+
+
+{% raw %}
 ```handlebars
 <h3>Weekly Temperature Summary</h3>
 <p>High: {{max(model.temperatures)}}°F</p>
 <p>Low: {{min(model.temperatures)}}°F</p>
 <p>Average: {{round(average(model.temperatures), 1)}}°F</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -122,11 +140,17 @@ doc.Params["model"] = new {
 
 ### Student Performance
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.students}}
   <p>{{this.name}}: Best {{max(this.scores)}}, Worst {{min(this.scores)}}, Average {{round(average(this.scores), 1)}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

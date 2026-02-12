@@ -91,8 +91,10 @@ The `padding-right` property supports dynamic values through data binding, allow
 
 ### Example 1: Alert boxes with icon space
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .alert {
         padding-top: 12pt;
@@ -109,8 +111,10 @@ The `padding-right` property supports dynamic values through data binding, allow
         <strong>Info:</strong> {{alert.message}}
     </div>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -124,8 +128,10 @@ Data context:
 
 ### Example 2: Table cells with dynamic padding
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-table {
         width: 100%;
@@ -161,8 +167,10 @@ Data context:
         </tbody>
     </table>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json
@@ -175,8 +183,10 @@ Data context:
 
 ### Example 3: Button padding based on size
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .button {
         padding-top: {{button.size === 'large' ? '12pt' : '8pt'}};
@@ -191,8 +201,10 @@ Data context:
 <body>
     <button class="button">{{button.label}}</button>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 Data context:
 ```json

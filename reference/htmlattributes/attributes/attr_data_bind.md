@@ -44,19 +44,25 @@ This attribute is essential for:
 
 The `data-bind` attribute is applied to `<template>` elements and accepts binding expressions that evaluate to enumerable collections:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.items}}">
     <!-- Content repeated for each item -->
     <div>{{.name}}</div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Basic Syntax
 
-```html
+
+
 {% raw %}
+```html
 <!-- Bind to a collection -->
 <template data-bind="{{collection}}">
     <!-- Template content -->
@@ -71,8 +77,10 @@ The `data-bind` attribute is applied to `<template>` elements and accepts bindin
 <template data-bind="{@:Model.Data}">
     <!-- Template content -->
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -93,11 +101,15 @@ The `data-bind` attribute is **only** supported on the following element:
 The `data-bind` attribute accepts binding expressions in two formats:
 
 **1. Modern Expression Syntax (Recommended)**
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{expression}}">
-{% endraw %}
 ```
+{% endraw %}
+
+
 - Uses double curly braces: `{{...}}`
 - Supports JavaScript-like expressions
 - Allows method calls: `{{filter(model.items, .active)}}`
@@ -128,8 +140,10 @@ The expression must evaluate to one of the following enumerable types:
 
 Within a template, a new data context is created for each iteration:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.products}}">
     <!-- Current item reference -->
     {{.}}              <!-- The entire current item -->
@@ -140,8 +154,10 @@ Within a template, a new data context is created for each iteration:
     {{model.companyName}}  <!-- Access parent model -->
     {{model.taxRate}}      <!-- Use parent data -->
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Special Context Variables
 
@@ -192,36 +208,48 @@ See individual documentation for these attributes for details.
 ### Common Binding Patterns
 
 **Nested Collections**
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.categories}}">
     <h2>{{.categoryName}}</h2>
     <template data-bind="{{.products}}">
         <div>{{.productName}}</div>
     </template>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Accessing Parent Context**
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.orders}}">
     <div>
         Order {{.id}} for {{model.customerName}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Filtered Collections**
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{filter(model.items, .active)}}">
     <div>{{.name}}</div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -231,8 +259,10 @@ See individual documentation for these attributes for details.
 
 Generate a simple list from an array:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { fruits: ["Apple", "Banana", "Orange", "Grape"] } -->
 <ul>
     <template data-bind="{{model.fruits}}">
@@ -245,15 +275,19 @@ Generate a simple list from an array:
 <!-- • Banana -->
 <!-- • Orange -->
 <!-- • Grape -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 2. Object Collection with Properties
 
 Iterate over objects and access their properties:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { users: [{name: "John", email: "john@example.com"}, ...] } -->
 <template data-bind="{{model.users}}">
     <div style="margin-bottom: 10pt;">
@@ -261,15 +295,19 @@ Iterate over objects and access their properties:
         Email: {{.email}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 3. Table Row Generation
 
 Create table rows dynamically:
 
-```html
+
+
 {% raw %}
+```html
 <table style="width: 100%;">
     <thead>
         <tr>
@@ -288,15 +326,19 @@ Create table rows dynamically:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 4. Nested Template for Hierarchical Data
 
 Handle multi-level data structures:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { departments: [{name: "Sales", employees: [...]}] } -->
 <template data-bind="{{model.departments}}">
     <div style="page-break-inside: avoid; margin-bottom: 20pt;">
@@ -314,15 +356,19 @@ Handle multi-level data structures:
         </table>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 5. Complex Expression Binding
 
 Use expressions to transform data:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.items}}">
     <div>
         <!-- Calculated values -->
@@ -332,15 +378,19 @@ Use expressions to transform data:
         Total: ${{(.price * .quantity) * 1.08}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 6. Accessing Parent Model in Nested Template
 
 Reference parent context from within nested templates:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { companyName: "Acme Corp", orders: [...] } -->
 <template data-bind="{{model.orders}}">
     <div>
@@ -355,29 +405,37 @@ Reference parent context from within nested templates:
         </template>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 7. Conditional Item Display
 
 Use expressions to conditionally render items:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.products}}">
     <div hidden="{{.discontinued ? 'hidden' : ''}}">
         {{.name}} - ${{.price}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 8. Invoice Line Items with Totals
 
 Generate invoice sections with calculations:
 
-```html
+
+
 {% raw %}
+```html
 <h1>Invoice #{{model.invoiceNumber}}</h1>
 <table style="width: 100%; margin: 20pt 0;">
     <thead>
@@ -413,15 +471,19 @@ Generate invoice sections with calculations:
         </tr>
     </tfoot>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 9. Multi-Page Customer Report
 
 Generate one page per customer with order details:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.customers}}">
     <div style="page-break-before: always;">
         <!-- Customer header -->
@@ -464,15 +526,19 @@ Generate one page per customer with order details:
         </table>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 10. Catalog with Categories and Products
 
 Three-level nested template structure:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.categories}}">
     <div style="margin-bottom: 40pt;">
         <h1 style="color: #336699; border-bottom: 3pt solid #336699; padding-bottom: 5pt;">
@@ -506,15 +572,19 @@ Three-level nested template structure:
         </template>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 11. Data Grid with Alternating Row Colors
 
 Apply styling based on position:
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-row { padding: 8pt; border-bottom: 1pt solid #ddd; }
     .data-row:nth-child(even) { background-color: #f9f9f9; }
@@ -528,15 +598,19 @@ Apply styling based on position:
         <div style="display: inline-block; width: 30%;">{{.status}}</div>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 12. Timeline with Event Grouping
 
 Group events by date with nested iterations:
 
-```html
+
+
 {% raw %}
+```html
 <template data-bind="{{model.timeline}}">
     <div style="margin-bottom: 25pt; padding-left: 25pt; border-left: 3pt solid #336699;">
         <h2 style="color: #336699; margin: 0 0 10pt 0;">
@@ -558,15 +632,19 @@ Group events by date with nested iterations:
         </template>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 13. Product Comparison Table
 
 Generate comparison columns dynamically:
 
-```html
+
+
 {% raw %}
+```html
 <table style="width: 100%; border-collapse: collapse;">
     <thead>
         <tr style="background-color: #336699; color: white;">
@@ -589,15 +667,19 @@ Generate comparison columns dynamically:
         </template>
     </tbody>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 14. File Directory Listing with Icons
 
 Display files with type-specific icons:
 
-```html
+
+
 {% raw %}
+```html
 <h2>Directory Contents</h2>
 <template data-bind="{{model.files}}">
     <div style="padding: 10pt; border-bottom: 1pt solid #eee;">
@@ -616,15 +698,19 @@ Display files with type-specific icons:
         </div>
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 15. Performance-Optimized Large Dataset
 
 Efficient rendering with style caching:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Efficiently render 1000+ items -->
 <style>
     .large-list-item {
@@ -641,15 +727,19 @@ Efficient rendering with style caching:
         <strong>{{.id}}</strong> - {{.name}} | {{.value}}
     </div>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 16. Conditional Empty State
 
 Show message when collection is empty:
 
-```html
+
+
 {% raw %}
+```html
 <div style="border: 1pt solid #ccc; padding: 15pt;">
     <h3>Products</h3>
 
@@ -665,8 +755,10 @@ Show message when collection is empty:
         No products available at this time.
     </div>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

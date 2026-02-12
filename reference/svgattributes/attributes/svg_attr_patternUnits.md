@@ -77,8 +77,10 @@ The `patternUnits` attribute is supported on:
 
 Choose coordinate system based on data:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { useRelative: true, tileSize: 50 } -->
 <svg width="400" height="300">
     <defs>
@@ -99,15 +101,19 @@ Choose coordinate system based on data:
 
     <rect x="50" y="50" width="300" height="200" fill="url(#dynamicPattern)" stroke="#2c3e50"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Adaptive Pattern Sizing
 
 Switch between responsive and fixed patterns:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { responsive: true, shapeWidth: 200, shapeHeight: 150 } -->
 <svg width="450" height="400">
     <defs>
@@ -127,15 +133,19 @@ Switch between responsive and fixed patterns:
         Mode: {{model.responsive ? 'Responsive (scales with shape)' : 'Fixed (constant tile size)'}}
     </text>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Background Pattern Library
 
 Create reusable patterns with different coordinate systems:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     backgrounds: [
         {id: 'dots', type: 'relative', size: 0.1, name: 'Dot Pattern'},
@@ -177,15 +187,19 @@ Create reusable patterns with different coordinate systems:
           fill="url(#{{model.selectedBg}})"
           stroke="#2c3e50" stroke-width="2"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Chart Background with Fixed Grid
 
 Use userSpaceOnUse for consistent grid patterns:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { chartX: 50, chartY: 50, chartWidth: 400, chartHeight: 300, gridSize: 40 } -->
 <svg width="500" height="400">
     <defs>
@@ -204,8 +218,10 @@ Use userSpaceOnUse for consistent grid patterns:
 
     <!-- Chart content would go here -->
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

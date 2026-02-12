@@ -59,9 +59,15 @@ The padded string.
 
 ### Zero-Padded Numbers
 
+
+
+{% raw %}
 ```handlebars
 <p>Order #{{padLeft(format(model.orderNumber, '0'), 8, '0')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -77,11 +83,17 @@ doc.Params["model"] = new {
 
 ### Invoice Numbers
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.invoices}}
   <div>INV-{{padLeft(format(this.id, '0'), 6, '0')}}</div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -103,6 +115,9 @@ doc.Params["model"] = new {
 
 ### Align Text
 
+
+
+{% raw %}
 ```handlebars
 <pre>
 {{#each model.items}}
@@ -110,6 +125,9 @@ doc.Params["model"] = new {
 {{/each}}
 </pre>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -133,9 +151,15 @@ doc.Params["model"] = new {
 
 ### Custom Padding
 
+
+
+{% raw %}
 ```handlebars
 <p>{{padLeft(model.code, 10, '-')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

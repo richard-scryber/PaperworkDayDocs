@@ -97,8 +97,10 @@ The `list-style-type` property supports data binding, enabling dynamic control o
 
 ### Example 1: User-configurable list markers
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .user-list {
         list-style-type: {{userPrefs.markerType}};
@@ -113,8 +115,10 @@ The `list-style-type` property supports data binding, enabling dynamic control o
         <li>Third item</li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context:**
 ```json
@@ -130,8 +134,10 @@ Users can select their preferred numbering format (decimal, alpha, roman) from a
 
 ### Example 2: Document type-specific formatting
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .typed-list {
         list-style-type: {{doc.numberingStyle}};
@@ -146,8 +152,10 @@ Users can select their preferred numbering format (decimal, alpha, roman) from a
         <li>Section content three</li>
     </ol>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context:**
 ```json
@@ -163,8 +171,10 @@ Different document types automatically get appropriate numbering: upper-roman fo
 
 ### Example 3: Multilingual list markers
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .localized-bullets {
         list-style-type: {{lang.bulletStyle}};
@@ -179,8 +189,10 @@ Different document types automatically get appropriate numbering: upper-roman fo
         <li>{{lang.feature3}}</li>
     </ul>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data context:**
 ```json

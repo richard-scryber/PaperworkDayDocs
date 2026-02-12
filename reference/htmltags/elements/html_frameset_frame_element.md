@@ -154,6 +154,8 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
 
 **Example: Watermark on all pages**
 
+
+
 {% raw %}
 ```html
 <frameset>
@@ -169,10 +171,14 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
         </html>
     </frame>
 </frameset>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Example: Header on first page only**
+
+
 
 {% raw %}
 ```html
@@ -188,8 +194,10 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
         </html>
     </frame>
 </frameset>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -227,8 +235,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 ### Basic PDF with Overlay Content
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Existing PDF form -->
     <frame src="application-form.pdf"></frame>
 
@@ -245,8 +256,12 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Merging Multiple Templates
 
@@ -280,8 +295,10 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 ### Certificate Generation
 
-```html
+
+
 {% raw %}
+```html
 <frameset>
     <!-- Pre-designed certificate template PDF -->
     <frame src="certificate-template.pdf">
@@ -310,13 +327,18 @@ Frame content is loaded during the data binding phase and may use async operatio
         </html>
     </frame>
 </frameset>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Invoice with Letterhead
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Company letterhead PDF (first page only) -->
     <frame src="company-letterhead.pdf" data-page-start="0" data-page-count="1"></frame>
 
@@ -353,13 +375,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Form Filling
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Government or standard form PDF -->
     <frame src="tax-form.pdf">
         <html>
@@ -384,8 +413,12 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Multi-Page Overlay
 
@@ -409,8 +442,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 ### Conditional Frame Inclusion
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
 
     <!-- Include cover page only if specified -->
     <frame src="cover-page.html"
@@ -424,13 +460,20 @@ Frame content is loaded during the data binding phase and may use async operatio
 
     <frame src="enterprise-terms.html"
            hidden="{{model.contractType != 'enterprise' ? 'hidden' : ''}}"></frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Report with Executive Summary
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Executive summary on company template -->
     <frame src="company-template.pdf" data-page-start="0" data-page-count="1">
         <html>
@@ -443,13 +486,20 @@ Frame content is loaded during the data binding phase and may use async operatio
 
     <!-- Detailed report content -->
     <frame src="detailed-report.html"></frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Contract Assembly
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Standard contract first page -->
     <frame src="contract-template.pdf" data-page-start="0" data-page-count="1"></frame>
 
@@ -478,8 +528,12 @@ Frame content is loaded during the data binding phase and may use async operatio
 
     <!-- Standard contract last pages -->
     <frame src="contract-template.pdf" data-page-start="1"></frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Watermarking Existing PDF
 
@@ -504,16 +558,26 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 ### Dynamic Content Insertion
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <frame src="template.pdf" data-content="{{model.htmlContent}}" ></frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Multi-Language Documents
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- English version -->
     <frame src="content-en.html"
            hidden="{{model.language != 'en' ? 'hidden' : ''}}"></frame>
@@ -525,13 +589,20 @@ Frame content is loaded during the data binding phase and may use async operatio
     <!-- French version -->
     <frame src="content-fr.html"
            hidden="{{model.language != 'fr' ? 'hidden' : ''}}"></frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Medical Records with Privacy Notice
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- HIPAA privacy notice (required first page) -->
     <frame src="hipaa-notice.pdf" data-page-start="0" data-page-count="1"></frame>
 
@@ -558,8 +629,12 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Paginated Report Assembly
 
@@ -587,8 +662,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 ### Ticket or Badge Generation
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Badge template with design -->
     <frame src="badge-template.pdf">
         <html>
@@ -633,13 +711,17 @@ Frame content is loaded during the data binding phase and may use async operatio
     <frame>
 
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: Watermark on All Pages
 
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Apply "CONFIDENTIAL" watermark to every page -->
     <frame src="document.pdf" data-over-repeat="Repeat">
         <html>
@@ -654,13 +736,17 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+
 
 ### Overlay Repeat: Page Numbers on All Pages
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Add page numbers to every page of existing PDF -->
     <frame src="legacy-document.pdf" data-over-repeat="Repeat">
         <html>
@@ -676,13 +762,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: First Page Header
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Add cover information only to first page -->
     <frame src="report.pdf" data-over-repeat="First">
         <html>
@@ -698,13 +791,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: Last Page Footer
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Add signature block only to last page -->
     <frame src="contract.pdf" data-over-repeat="Last">
         <html>
@@ -730,13 +830,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: Conditional Watermark
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Apply different watermarks based on document status -->
     <frame src="document.pdf" data-over-repeat="Repeat"
            hidden="{{model.status != 'draft' ? 'hidden' : ''}}">
@@ -763,13 +870,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: Bates Numbering
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Add Bates numbering to each page -->
     <frame src="legal-document.pdf" data-over-repeat="Repeat">
         <html>
@@ -783,13 +897,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: Dynamic Headers and Footers
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Add repeating header/footer with dynamic content -->
     <frame src="presentation.pdf" data-over-repeat="Repeat">
         <html>
@@ -834,13 +955,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: First and Last Page Special Treatment
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Cover page overlay (first page only) -->
     <frame src="blank-template.pdf" data-page-count="1" data-over-repeat="First">
         <html>
@@ -877,13 +1005,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: Data-Bound Conditional Control
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Dynamically control overlay repeat based on data -->
     <frame src="document.pdf" data-over-repeat="{{if(model.showWatermark, 'Repeat', 'None')}}">
         <html>
@@ -896,13 +1031,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: Dynamic Selection Based on Document Type
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Use different overlay patterns based on document settings -->
     <frame src="document.pdf"
            data-over-repeat="{{if(model.headerOnAllPages, 'Repeat', if(model.headerOnFirstOnly, 'First', 'None'))}}">
@@ -918,13 +1060,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: User Preference Controlled
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Page numbers controlled by user preference -->
     <frame src="report.pdf"
            data-over-repeat="{{if(model.preferences.showPageNumbers, 'Repeat', 'None')}}">
@@ -954,13 +1103,20 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ### Overlay Repeat: Complex Conditional Logic
 
+
+
+{% raw %}
 ```html
-{% raw %}<frameset>
+<frameset>
     <!-- Different overlay behaviors based on multiple conditions -->
     <frame src="document.pdf"
            data-over-repeat="{{if(model.documentType == 'draft', 'Repeat',
@@ -998,8 +1154,12 @@ Frame content is loaded during the data binding phase and may use async operatio
             </body>
         </html>
     </frame>
-</frameset>{% endraw %}
+</frameset>
 ```
+{% endraw %}
+
+
+
 
 ---
 

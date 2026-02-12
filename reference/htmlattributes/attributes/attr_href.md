@@ -40,8 +40,10 @@ The `href` attribute defines link destinations:
 - Supports data binding for dynamic link generation
 - Used exclusively with `<a>` (anchor) elements
 
-```html
+
+
 {% raw %}
+```html
 <!-- External URL -->
 <a href="https://www.example.com">Visit Example.com</a>
 
@@ -56,8 +58,10 @@ The `href` attribute defines link destinations:
 
 <!-- Dynamic link -->
 <a href="{{model.documentUrl}}">{{model.linkText}}</a>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -76,8 +80,10 @@ While some HTML specifications allow `href` on other elements, in Scryber it is 
 
 The `href` attribute supports data binding for dynamic link destinations:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Simple dynamic URL -->
 <a href="{{model.websiteUrl}}">Visit Website</a>
 
@@ -104,8 +110,10 @@ The `href` attribute supports data binding for dynamic link destinations:
 <template data-bind="{{model.menuItems}}">
     <a href="{{.url}}" style="margin-right: 15pt;">{{.title}}</a>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -536,8 +544,10 @@ Links should always have a valid `href` value:
 
 ### Data-Bound Dynamic Links
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     products: [
         { id: "p1", name: "Widget A", url: "products/widget-a.pdf" },
@@ -559,13 +569,17 @@ Links should always have a valid `href` value:
         </div>
     </template>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Navigation Menu
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { menuItems: [
     { url: "#home", label: "Home" },
     { url: "#services", label: "Services" },
@@ -593,8 +607,10 @@ Links should always have a valid `href` value:
         <a href="{{.url}}" class="nav-link">{{.label}}</a>
     </template>
 </nav>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Table of Contents with Page Links
 
@@ -772,8 +788,10 @@ Links should always have a valid `href` value:
 
 ### Conditional Link Destinations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { user: { isPremium: true }, premiumUrl: "premium.pdf", standardUrl: "standard.pdf" } -->
 
 <div>
@@ -786,8 +804,10 @@ Links should always have a valid `href` value:
         {{model.user.isPremium ? 'Access Premium Content' : 'Access Standard Content'}}
     </a>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Reference Links in Academic Style
 

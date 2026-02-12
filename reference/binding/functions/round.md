@@ -58,9 +58,15 @@ The rounded value.
 
 ### Round to Integer
 
+
+
+{% raw %}
 ```handlebars
 <p>Rounded: {{round(model.value)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -76,9 +82,15 @@ doc.Params["model"] = new {
 
 ### Round to 2 Decimal Places
 
+
+
+{% raw %}
 ```handlebars
 <p>Price: ${{round(model.price, 2)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -94,9 +106,15 @@ doc.Params["model"] = new {
 
 ### Round Percentage
 
+
+
+{% raw %}
 ```handlebars
 <p>{{round((model.completed / model.total) * 100, 1)}}% complete</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -113,11 +131,17 @@ doc.Params["model"] = new {
 
 ### Multiple Decimal Places
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.measurements}}
   <li>{{this.name}}: {{round(this.value, 3)}} mm</li>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

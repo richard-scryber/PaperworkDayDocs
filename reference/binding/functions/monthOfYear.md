@@ -57,9 +57,15 @@ The month as a number from 1 (January) to 12 (December).
 
 ### Display Month Number
 
+
+
+{% raw %}
 ```handlebars
 <p>Month: {{monthOfYear(model.date)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -75,9 +81,15 @@ doc.Params["model"] = new {
 
 ### Quarter Calculation
 
+
+
+{% raw %}
 ```handlebars
 <p>Quarter: Q{{ceiling(monthOfYear(model.date) / 3)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,6 +105,9 @@ doc.Params["model"] = new {
 
 ### Seasonal Classification
 
+
+
+{% raw %}
 ```handlebars
 <p>Season:
 {{#if (monthOfYear(model.date) >= 3 && monthOfYear(model.date) <= 5)}}
@@ -106,6 +121,9 @@ doc.Params["model"] = new {
 {{/if}}
 </p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -121,12 +139,18 @@ doc.Params["model"] = new {
 
 ### Sales by Month
 
+
+
+{% raw %}
 ```handlebars
 <h3>Monthly Sales</h3>
 {{#each model.sales}}
   <p>Month {{monthOfYear(this.date)}}: ${{this.amount}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

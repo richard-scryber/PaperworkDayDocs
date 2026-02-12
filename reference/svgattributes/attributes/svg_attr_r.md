@@ -66,33 +66,43 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 
 ### Example 1: Dynamic Circle Size
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dot: { cx: 150, cy: 100, radius: 45, color: '#9C27B0' } } -->
 <svg width="300" height="200">
     <circle cx="{{dot.cx}}" cy="{{dot.cy}}" r="{{dot.radius}}"
             fill="{{dot.color}}"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Sized by Data Value
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { value: 85, maxValue: 100 } -->
 <svg width="200" height="200">
     <!-- Circle radius based on percentage of max value -->
     <circle cx="100" cy="100" r="{{(value / maxValue) * 80}}"
             fill="#4CAF50" opacity="0.7"/>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Bubble Chart with Variable Sizes
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { bubbles: [
     {cx: 80, cy: 100, value: 50, color: '#e74c3c'},
     {cx: 180, cy: 80, value: 100, color: '#3498db'},
@@ -105,8 +115,10 @@ The `r` attribute supports dynamic values using data binding expressions with `{
                 stroke="#333" stroke-width="1"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -325,8 +337,10 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 
 ### Dynamic Radius Based on Data
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { dataPoints: [
     {cx: 80, cy: 150, value: 30, label: 'A'},
     {cx: 180, cy: 150, value: 60, label: 'B'},
@@ -340,8 +354,10 @@ The `r` attribute supports dynamic values using data binding expressions with `{
                 fill="#2196F3" opacity="0.6"/>
     </template>
 </svg>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Size Comparison Chart
 

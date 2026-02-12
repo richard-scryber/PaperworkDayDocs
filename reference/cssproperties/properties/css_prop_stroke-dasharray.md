@@ -106,8 +106,10 @@ The `stroke-dasharray` property can be dynamically controlled through data bindi
 
 ### Example 1: Data-driven dash patterns for chart lines
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .data-line {
         stroke-width: 3;
@@ -124,13 +126,17 @@ The `stroke-dasharray` property can be dynamically controlled through data bindi
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Progress indicator with dynamic dashes
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .progress-ring {
         fill: none;
@@ -150,13 +156,17 @@ The `stroke-dasharray` property can be dynamically controlled through data bindi
                 transform="rotate(-90 100 100)"/>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Conditional dash styles based on status
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .status-line {
         stroke-width: 4;
@@ -173,8 +183,10 @@ The `stroke-dasharray` property can be dynamically controlled through data bindi
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

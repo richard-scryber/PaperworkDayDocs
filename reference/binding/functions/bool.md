@@ -71,6 +71,9 @@ bool(value)
 
 ### String to Boolean
 
+
+
+{% raw %}
 ```handlebars
 {{#if bool(model.isActiveString)}}
   <span class="active">Active</span>
@@ -78,6 +81,9 @@ bool(value)
   <span class="inactive">Inactive</span>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -93,6 +99,9 @@ doc.Params["model"] = new {
 
 ### Number to Boolean
 
+
+
+{% raw %}
 ```handlebars
 {{#if bool(model.statusCode)}}
   <p>Operation successful</p>
@@ -100,6 +109,9 @@ doc.Params["model"] = new {
   <p>Operation failed</p>
 {{/if}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -115,6 +127,9 @@ doc.Params["model"] = new {
 
 ### Checkbox Value
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.features}}
   <div>
@@ -126,6 +141,9 @@ doc.Params["model"] = new {
   </div>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

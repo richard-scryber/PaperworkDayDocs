@@ -91,8 +91,10 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
 
 ### Example 1: Data-driven fade overlays
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .overlay { fill: url(#fadeOverlay); }
 </style>
@@ -110,13 +112,17 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
         <rect class="overlay" width="400" height="300"/>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 2: Dynamic vignette effect with data-bound opacity
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .vignette { fill: url(#vignetteGrad); }
 </style>
@@ -135,13 +141,17 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
         <rect class="vignette" width="500" height="400"/>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Example 3: Conditional transparency for emphasis
 
-```html
+
+
 {% raw %}
+```html
 <style>
     .highlight-area { fill: url(#highlightGrad); }
 </style>
@@ -160,8 +170,10 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
         </template>
     </svg>
 </body>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

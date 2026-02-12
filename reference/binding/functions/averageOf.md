@@ -58,9 +58,15 @@ The arithmetic mean of the specified property. Returns null for empty collection
 
 ### Average Price
 
+
+
+{% raw %}
 ```handlebars
 <p>Average product price: ${{round(averageOf(model.products, 'price'), 2)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -80,12 +86,18 @@ doc.Params["model"] = new {
 
 ### Sales Performance
 
+
+
+{% raw %}
 ```handlebars
 <h3>Sales Summary</h3>
 <p>Average daily sales: ${{round(averageOf(model.dailySales, 'amount'), 2)}}</p>
 <p>Total sales: ${{sumOf(model.dailySales, 'amount')}}</p>
 <p>Number of days: {{count(model.dailySales)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -109,6 +121,9 @@ doc.Params["model"] = new {
 
 ### Team Statistics
 
+
+
+{% raw %}
 ```handlebars
 {{#each model.teams}}
   <h4>{{this.name}}</h4>
@@ -116,6 +131,9 @@ doc.Params["model"] = new {
   <p>Team size: {{count(this.members)}} members</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -152,12 +170,18 @@ doc.Params["model"] = new {
 
 ### Performance Benchmarks
 
+
+
+{% raw %}
 ```handlebars
 <h3>Server Performance</h3>
 <p>Average CPU usage: {{round(averageOf(model.servers, 'cpuUsage'), 1)}}%</p>
 <p>Average memory usage: {{round(averageOf(model.servers, 'memoryUsage'), 1)}}%</p>
 <p>Peak CPU: {{maxOf(model.servers, 'cpuUsage')}}%</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

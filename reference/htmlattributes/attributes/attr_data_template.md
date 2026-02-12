@@ -50,8 +50,10 @@ This attribute is useful for:
 
 The `data-template` attribute is applied to `<if>` elements and can be used with `<template>` elements (via the `data-content` attribute synonym):
 
-```html
+
+
 {% raw %}
+```html
 <!-- Simple conditional template -->
 <if data-test="{{model.showMessage}}"
     data-template="<div style='color: red;'>Important message</div>">
@@ -61,13 +63,17 @@ The `data-template` attribute is applied to `<if>` elements and can be used with
 <template data-bind="{{items}}"
           data-content="<div>{{.name}}</div>">
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Basic Syntax
 
-```html
+
+
 {% raw %}
+```html
 <!-- Conditional rendering with inline template -->
 <if data-test="{{condition}}"
     data-template="<p>HTML content here</p>">
@@ -82,8 +88,10 @@ The `data-template` attribute is applied to `<if>` elements and can be used with
 <template data-bind="{{items}}"
           data-content="<span>{{.text}}</span>">
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -115,8 +123,10 @@ The `data-template` attribute is supported on the following elements:
 
 The attribute accepts literal HTML strings or binding expressions:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Literal HTML -->
 <if data-test="{{model.show}}"
     data-template="<div class='alert'>Alert content</div>">
@@ -131,8 +141,10 @@ The attribute accepts literal HTML strings or binding expressions:
 <if data-test="{{model.isUrgent}}"
     data-template="{{model.isUrgent ? '<span style=\'color:red;\'>URGENT</span>' : '<span>Normal</span>'}}">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -142,8 +154,10 @@ The attribute accepts literal HTML strings or binding expressions:
 
 When `data-template` is specified, it takes precedence over any child elements:
 
-```html
+
+
 {% raw %}
+```html
 <!-- This child content is IGNORED -->
 <if data-test="{{condition}}"
     data-template="<p>Inline template</p>">
@@ -151,15 +165,19 @@ When `data-template` is specified, it takes precedence over any child elements:
 </if>
 
 <!-- Rendered output will be: <p>Inline template</p> -->
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### HTML Escaping
 
 HTML content within the attribute value must be properly escaped:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Single quotes inside double quotes -->
 <if data-test="{{condition}}"
     data-template="<div style='color: red;'>Text</div>">
@@ -169,27 +187,35 @@ HTML content within the attribute value must be properly escaped:
 <if data-test="{{condition}}"
     data-template="<div style=&quot;color: red;&quot;>Text</div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Data Binding Within Templates
 
 Inline templates support full data binding syntax:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.showUser}}"
     data-template="<div><strong>{{model.userName}}</strong> - {{model.userEmail}}</div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Namespace Handling
 
 When used within HTML documents, the inline template content inherits the HTML namespace automatically:
 
-```html
+
+
 {% raw %}
+```html
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <body>
     <if data-test="{{condition}}"
@@ -198,36 +224,46 @@ When used within HTML documents, the inline template content inherits the HTML n
     <!-- Div element has HTML namespace automatically -->
 </body>
 </html>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Dynamic Template Loading
 
 Templates can be loaded from external sources:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { condition: true, templateContent: "<div>Loaded content</div>" } -->
 <if data-test="{{model.condition}}"
     data-template="{{model.templateContent}}">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Multi-Line Content
 
 For readability, use appropriate quoting:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.show}}"
     data-template="<div style='padding: 10pt; border: 1pt solid black;'>
                       <h3>Title</h3>
                       <p>Content goes here</p>
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Performance Considerations
 
@@ -258,33 +294,43 @@ For readability, use appropriate quoting:
 
 Display a simple message conditionally:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.hasError}}"
     data-template="<div style='color: red; font-weight: bold;'>Error occurred!</div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 2. Dynamic Content from Model
 
 Load template content from model property:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { showNotice: true, noticeHtml: "<div class='notice'>Important notice</div>" } -->
 <if data-test="{{model.showNotice}}"
     data-template="{{model.noticeHtml}}">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 3. Conditional Badge
 
 Display different badge styles:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.status == 'urgent'}}"
     data-template="<span style='background-color: red; color: white; padding: 5pt; border-radius: 3pt;'>URGENT</span>">
 </if>
@@ -292,29 +338,37 @@ Display different badge styles:
 <if data-test="{{model.status == 'normal'}}"
     data-template="<span style='background-color: green; color: white; padding: 5pt; border-radius: 3pt;'>NORMAL</span>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 4. Inline Alert Box
 
 Conditional alert with styling:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.showWarning}}"
     data-template="<div style='background-color: #fff3cd; border: 1pt solid #ffc107; padding: 15pt; margin: 10pt 0;'>
                       <strong>Warning:</strong> {{model.warningMessage}}
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 5. Dynamic Icon Display
 
 Show different icons based on status:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.isComplete}}"
     data-template="<span style='color: green; font-size: 14pt;'>✓ Complete</span>">
 </if>
@@ -322,21 +376,27 @@ Show different icons based on status:
 <if data-test="{{!model.isComplete}}"
     data-template="<span style='color: orange; font-size: 14pt;'>⧗ In Progress</span>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 6. Programmatically Generated Template
 
 Generate template content in code:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { showDetails: true, detailsHtml: GenerateDetailsHtml() } -->
 <if data-test="{{model.showDetails}}"
     data-template="{{model.detailsHtml}}">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ```csharp
 // C# code to generate template
@@ -360,21 +420,27 @@ string GenerateDetailsHtml()
 
 Load template content from database:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { showCustomSection: true, customHtml: LoadFromDatabase("section_template") } -->
 <if data-test="{{model.showCustomSection}}"
     data-template="{{model.customHtml}}">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 8. Conditional Pricing Display
 
 Show pricing with conditional formatting:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.onSale}}"
     data-template="<div style='text-align: center;'>
                       <div style='text-decoration: line-through; color: #999;'>${{model.regularPrice}}</div>
@@ -382,30 +448,38 @@ Show pricing with conditional formatting:
                       <div style='color: red; font-size: 10pt;'>Save {{model.discountPercent}}%!</div>
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 9. Conditional Footer Note
 
 Add conditional footer information:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.isConfidential}}"
     data-template="<div style='margin-top: 20pt; padding: 10pt; background-color: #f8d7da; border: 2pt solid #dc3545;'>
                       <strong style='color: #dc3545;'>CONFIDENTIAL:</strong>
                       This document contains proprietary information.
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 10. Inline User Badge
 
 Display user type badge:
 
-```html
+
+
 {% raw %}
+```html
 <div>
     User: {{model.userName}}
     <if data-test="{{model.userType == 'admin'}}"
@@ -415,30 +489,38 @@ Display user type badge:
         data-template="<span style='background-color: #ffc107; color: black; padding: 3pt 8pt; margin-left: 5pt; font-size: 8pt; border-radius: 3pt;'>PREMIUM</span>">
     </if>
 </div>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 11. Conditional Watermark
 
 Add watermark for draft documents:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.isDraft}}"
     data-template="<div style='position: absolute; top: 50%; left: 50%; transform: rotate(-45deg);
                                font-size: 72pt; color: rgba(255,0,0,0.2); font-weight: bold;'>
                       DRAFT
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 12. Simple Table Row
 
 Conditional table row with inline template:
 
-```html
+
+
 {% raw %}
+```html
 <table style="width: 100%;">
     <tr>
         <td>Order Status:</td>
@@ -455,15 +537,19 @@ Conditional table row with inline template:
         </td>
     </tr>
 </table>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 13. Internationalized Content
 
 Load locale-specific templates:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: { language: "en", contentEn: "<p>English content</p>", contentEs: "<p>Contenido español</p>" } -->
 <if data-test="{{model.language == 'en'}}"
     data-template="{{model.contentEn}}">
@@ -472,15 +558,19 @@ Load locale-specific templates:
 <if data-test="{{model.language == 'es'}}"
     data-template="{{model.contentEs}}">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 14. Conditional QR Code
 
 Show QR code with description:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.includeQRCode}}"
     data-template="<div style='text-align: center; margin: 20pt 0;'>
                       <img src='{{model.qrCodeUrl}}' style='width: 100pt; height: 100pt;'/>
@@ -489,15 +579,19 @@ Show QR code with description:
                       </div>
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 15. Terms and Conditions Section
 
 Conditionally include terms:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.includeTerms}}"
     data-template="<div style='margin-top: 30pt; padding: 15pt; border-top: 2pt solid black;'>
                       <h3 style='margin: 0 0 10pt 0;'>Terms and Conditions</h3>
@@ -506,15 +600,19 @@ Conditionally include terms:
                       </div>
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 16. Status Indicator Panel
 
 Multi-line status panel:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.systemStatus != 'operational'}}"
     data-template="<div style='background-color: #fff3cd; border-left: 5pt solid #ffc107; padding: 15pt; margin: 10pt 0;'>
                       <div style='font-weight: bold; font-size: 12pt; margin-bottom: 5pt;'>
@@ -528,15 +626,19 @@ Multi-line status panel:
                       </div>
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 17. Conditional Signature Block
 
 Add signature block for certain document types:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.requiresSignature}}"
     data-template="<div style='margin-top: 40pt; padding: 20pt; border: 1pt solid #000;'>
                       <div style='margin-bottom: 30pt;'>
@@ -550,15 +652,19 @@ Add signature block for certain document types:
                       </div>
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 18. Simple Payment Instructions
 
 Conditional payment details:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.paymentMethod == 'check'}}"
     data-template="<div style='background-color: #d1ecf1; padding: 10pt; margin: 10pt 0;'>
                       <strong>Payment Instructions:</strong><br/>
@@ -575,15 +681,19 @@ Conditional payment details:
                       Routing: {{model.routingNumber}}
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 19. Promotional Banner
 
 Conditional promotional content:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.showPromotion}}"
     data-template="<div style='background: linear-gradient(to right, #667eea, #764ba2);
                                color: white; padding: 20pt; text-align: center;
@@ -599,15 +709,19 @@ Conditional promotional content:
                       </div>
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### 20. Complex Conditional Layout
 
 Multi-section conditional content:
 
-```html
+
+
 {% raw %}
+```html
 <if data-test="{{model.showDetailedSummary}}"
     data-template="<div style='border: 2pt solid #336699; padding: 15pt; margin: 20pt 0;'>
                       <div style='background-color: #336699; color: white; padding: 10pt; margin: -15pt -15pt 15pt -15pt;'>
@@ -633,8 +747,10 @@ Multi-section conditional content:
                       </table>
                    </div>">
 </if>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 

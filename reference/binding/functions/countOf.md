@@ -59,12 +59,18 @@ The number of items where the specified property equals the given value.
 
 ### Count by Status
 
+
+
+{% raw %}
 ```handlebars
 <h3>Task Status</h3>
 <p>Active: {{countOf(model.tasks, 'status', 'active')}}</p>
 <p>Completed: {{countOf(model.tasks, 'status', 'completed')}}</p>
 <p>Pending: {{countOf(model.tasks, 'status', 'pending')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -89,10 +95,16 @@ doc.Params["model"] = new {
 
 ### Boolean Property Count
 
+
+
+{% raw %}
 ```handlebars
 <p>Verified users: {{countOf(model.users, 'verified', true)}}</p>
 <p>Unverified users: {{countOf(model.users, 'verified', false)}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -114,12 +126,18 @@ doc.Params["model"] = new {
 
 ### Inventory by Category
 
+
+
+{% raw %}
 ```handlebars
 <h3>Inventory Summary</h3>
 {{#each model.categories}}
   <p>{{this}}: {{countOf(model.products, 'category', this)}} items</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -145,12 +163,18 @@ doc.Params["model"] = new {
 
 ### Priority Distribution
 
+
+
+{% raw %}
 ```handlebars
 <h3>Priority Distribution</h3>
 <p>High: {{countOf(model.issues, 'priority', 'high')}} ({{round((countOf(model.issues, 'priority', 'high') / count(model.issues)) * 100, 0)}}%)</p>
 <p>Medium: {{countOf(model.issues, 'priority', 'medium')}} ({{round((countOf(model.issues, 'priority', 'medium') / count(model.issues)) * 100, 0)}}%)</p>
 <p>Low: {{countOf(model.issues, 'priority', 'low')}} ({{round((countOf(model.issues, 'priority', 'low') / count(model.issues)) * 100, 0)}}%)</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp

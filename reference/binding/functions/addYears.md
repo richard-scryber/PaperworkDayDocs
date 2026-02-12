@@ -58,9 +58,15 @@ A new DateTime with the specified years added.
 
 ### Add Years
 
+
+
+{% raw %}
 ```handlebars
 <p>Expiry: {{format(addYears(model.issued, 5), 'MMMM dd, yyyy')}}</p>
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -76,18 +82,30 @@ doc.Params["model"] = new {
 
 ### Calculate Age Next Year
 
+
+
+{% raw %}
 ```handlebars
 <p>Next year you'll be {{yearOf(addYears(model.today, 1)) - yearOf(model.birthDate)}} years old</p>
 ```
+{% endraw %}
+
+
 
 ### Contract Renewal Dates
 
+
+
+{% raw %}
 ```handlebars
 <h3>Renewal Schedule</h3>
 {{#each model.renewalYears}}
   <p>Year {{this}}: {{format(addYears(model.startDate, this), 'yyyy-MM-dd')}}</p>
 {{/each}}
 ```
+{% endraw %}
+
+
 
 **Data:**
 ```csharp
@@ -109,9 +127,15 @@ doc.Params["model"] = new {
 
 ### Subtract Years
 
+
+
+{% raw %}
 ```handlebars
 <p>5 years ago: {{format(addYears(model.today, -5), 'MMMM yyyy')}}</p>
 ```
+{% endraw %}
+
+
 
 ---
 

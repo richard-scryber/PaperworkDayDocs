@@ -41,8 +41,10 @@ The `cite` attribute defines source URLs:
 - Supports data binding for dynamic source references
 - Not visually displayed by default but accessible in document metadata
 
-```html
+
+
 {% raw %}
+```html
 <!-- Citation for blockquote -->
 <blockquote cite="https://example.com/article">
     This is a quoted passage from an external source.
@@ -65,8 +67,10 @@ The `cite` attribute defines source URLs:
 <blockquote cite="{{model.sourceUrl}}">
     {{model.quotation}}
 </blockquote>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ---
 
@@ -88,8 +92,10 @@ The `cite` attribute is used with:
 
 The `cite` attribute supports data binding for dynamic source URLs:
 
-```html
+
+
 {% raw %}
+```html
 <!-- Dynamic citation URL -->
 <blockquote cite="{{model.article.sourceUrl}}">
     {{model.article.quote}}
@@ -118,8 +124,10 @@ The `cite` attribute supports data binding for dynamic source URLs:
     <del cite="{{.reason}}" datetime="{{.date}}">{{.oldValue}}</del>
     <ins cite="{{.reason}}" datetime="{{.date}}">{{.newValue}}</ins>
 </template>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 **Data Model Example:**
 ```json
@@ -564,8 +572,10 @@ The `cite` attribute is optional:
 
 ### Data-Bound Citations
 
-```html
+
+
 {% raw %}
+```html
 <!-- Model: {
     quotes: [
         {
@@ -596,8 +606,10 @@ The `cite` attribute is optional:
         </blockquote>
     </template>
 </article>
-{% endraw %}
 ```
+{% endraw %}
+
+
 
 ### Book Review with Citations
 
