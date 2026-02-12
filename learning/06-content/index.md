@@ -206,7 +206,7 @@ Before starting this series:
 
 
 
-
+{% raw %}
 ```html
 {{#each products}}
 <div class="product">
@@ -219,6 +219,7 @@ Before starting this series:
 {{/each}}
 
 ```
+{% endraw %}
 
 
 
@@ -229,6 +230,7 @@ Before starting this series:
 
 
 
+{% raw %}
 ```html
 <svg width="500" height="300">
     {{#each dataPoints}}
@@ -246,6 +248,7 @@ Before starting this series:
 </svg>
 
 ```
+{% endraw %}
 
 
 
@@ -256,6 +259,7 @@ Before starting this series:
 
 
 
+{% raw %}
 ```html
 <table>
     <thead>
@@ -279,6 +283,7 @@ Before starting this series:
 </table>
 
 ```
+{% endraw %}
 
 
 
@@ -291,6 +296,7 @@ Before starting this series:
 
 
 
+{% raw %}
 ```html
 <div class="catalog">
     {{#each products}}
@@ -313,6 +319,7 @@ Before starting this series:
 </div>
 
 ```
+{% endraw %}
 
 
 
@@ -323,6 +330,7 @@ Before starting this series:
 
 
 
+{% raw %}
 ```html
 <div class="dashboard">
     <h1>Sales Dashboard - {{reportDate}}</h1>
@@ -390,6 +398,7 @@ Before starting this series:
 </div>
 
 ```
+{% endraw %}
 
 
 
@@ -400,6 +409,7 @@ Before starting this series:
 
 
 
+{% raw %}
 ```html
 <div class="invoice">
     <img src="{{company.logo}}" style="width: 150pt;" />
@@ -446,6 +456,7 @@ Before starting this series:
 </div>
 
 ```
+{% endraw %}
 
 
 
@@ -520,6 +531,7 @@ Before starting this series:
 
 
 
+{% raw %}
 ```html
 <div class="gallery">
     {{#each images}}
@@ -533,6 +545,7 @@ Before starting this series:
 </div>
 
 ```
+{% endraw %}
 
 
 
@@ -543,6 +556,7 @@ Before starting this series:
 
 
 
+{% raw %}
 ```html
 <div class="chart-container">
     <svg width="500" height="300">
@@ -562,6 +576,7 @@ Before starting this series:
 </div>
 
 ```
+{% endraw %}
 
 
 
@@ -572,6 +587,7 @@ Before starting this series:
 
 
 
+{% raw %}
 ```html
 <var data-id="runningTotal" data-value="0" />
 
@@ -591,6 +607,7 @@ Before starting this series:
 </table>
 
 ```
+{% endraw %}
 
 
 

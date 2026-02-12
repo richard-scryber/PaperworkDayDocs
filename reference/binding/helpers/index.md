@@ -39,9 +39,9 @@ These helpers use `{% raw %}{{#helper}}...{{/helper}}{% endraw %}` syntax to wra
 
 | Helper | Description | Special Variables |
 |--------|-------------|-------------------|
-| [{{#each}}](./each) | Iterate over arrays and collections | `@index`, `@first`, `@last` |
-| [{{#with}}](./with) | Switch data context to a specific object | `this`, `../` |
-| [{{#if}}](./if) | Conditional rendering based on expressions | - |
+| [{% raw %}{{#each}}{% endraw %}](./each) | Iterate over arrays and collections | `@index`, `@first`, `@last` |
+| [{% raw %}{{#with}}{% endraw %}](./with) | Switch data context to a specific object | `this`, `../` |
+| [{% raw %}{{#if}}{% endraw %}](./if) | Conditional rendering based on expressions | - |
 
 ---
 
@@ -51,7 +51,7 @@ These helpers work within block helpers to create conditional branches.
 
 | Helper | Description | Used With |
 |--------|-------------|-----------|
-| [{{else if}}](./elseif) | Alternative condition branch | `{% raw %}{{#if}}{% endraw %}` |
+| [{% raw %}{{else if}}{% endraw %}](./elseif) | Alternative condition branch | `{% raw %}{{#if}}{% endraw %}` |
 | [{{else}}](./else) | Fallback branch when conditions are false | `{% raw %}{{#if}}{% endraw %}`, `{% raw %}{{#each}}{% endraw %}`, `{% raw %}{{#with}}{% endraw %}` |
 
 ---

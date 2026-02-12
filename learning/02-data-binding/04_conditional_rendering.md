@@ -18,8 +18,8 @@ Control what content appears in your PDFs based on data values and business logi
 ## Learning Objectives
 
 By the end of this article, you'll be able to:
-- Use {{#if}} blocks to conditionally show content
-- Chain conditions with {{else}} and {{else if}}
+- Use {% raw %}{{#if}}{% endraw %} blocks to conditionally show content
+- Chain conditions with {% raw %}{{else}}{% endraw %} and {% raw %}{{else if}}{% endraw %}
 - Apply comparison and logical operators
 - Use show-if and hide-if attributes
 - Build complex conditional logic
@@ -27,7 +27,7 @@ By the end of this article, you'll be able to:
 
 ---
 
-## The {{#if}} Block
+## The {% raw %}{{#if}}{% endraw %} Block
 
 Show content only when a condition is true:
 
@@ -120,7 +120,7 @@ Provide alternative content when condition is false:
 
 ---
 
-## {{else if}} Chains
+## {% raw %}{{else if}}{% endraw %} Chains
 
 Test multiple conditions:
 
@@ -1343,7 +1343,7 @@ Create a template that:
 
 
 
-### ❌ Forgetting to Close {{/if}}
+### ❌ Forgetting to Close {% raw %}{{/if}}{% endraw %}
 
 
 

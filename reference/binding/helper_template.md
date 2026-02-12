@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# {{#helper_name}} : Helper Description
+# {% raw %}{{#helper_name}}{% endraw %} : Helper Description
 {: .no_toc }
 
 ---

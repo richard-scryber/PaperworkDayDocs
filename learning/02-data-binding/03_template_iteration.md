@@ -27,7 +27,7 @@ By the end of this article, you'll be able to:
 
 ---
 
-## The {{#each}} Helper
+## The {% raw %}{{#each}}{% endraw %} Helper
 
 The `{% raw %}{{#each}}{% endraw %}` helper iterates over arrays and collections:
 
@@ -129,7 +129,7 @@ doc.Params["products"] = new[]
 
 ---
 
-## Using {{@index}}
+## Using {% raw %}{{@index}}{% endraw %}
 
 Access the current iteration index (0-based):
 
@@ -166,7 +166,7 @@ Access the current iteration index (0-based):
 
 ---
 
-## Using {{@key}}
+## Using {% raw %}{{@key}}{% endraw %}
 
 When iterating over dictionaries or objects with named properties:
 
@@ -536,7 +536,7 @@ doc.Params["catalog"] = new
 
 ## Conditional Iteration
 
-### Filtering with {{#if}}
+### Filtering with {% raw %}{{#if}}{% endraw %}
 
 
 

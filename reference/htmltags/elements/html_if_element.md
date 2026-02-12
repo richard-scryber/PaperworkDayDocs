@@ -189,8 +189,8 @@ You can nest `<if>` elements for complex logic:
 ### Alternative Approaches
 
 For simple show/hide, you can also use:
-- `hidden` attribute with expression: `<div hidden="{{!model.show ? 'hidden' : ''}}">`
-- CSS display: `style="display: {{model.show ? 'block' : 'none'}}"`
+- `hidden` attribute with expression: `{% raw %}<div hidden="{{!model.show ? 'hidden' : ''}}">{% endraw %}`
+- CSS display: `{% raw %}style="display: {{model.show ? 'block' : 'none'}}"{% endraw %}`
 
 However, `<if>` is more efficient as it doesn't process content at all when false.
 

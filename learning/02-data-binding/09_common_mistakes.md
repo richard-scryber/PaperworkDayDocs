@@ -385,7 +385,7 @@ doc.Params["model"] = new
 
 ## Mistake 8: Not Closing Blocks
 
-### ❌ Problem: Missing {{/if}} or {{/each}}
+### ❌ Problem: Missing {% raw %}{{/if}}{% endraw %} or {% raw %}{{/each}}{% endraw %}
 
 
 

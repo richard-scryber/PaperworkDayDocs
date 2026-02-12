@@ -33,7 +33,7 @@ Provides a fallback branch when conditional expressions are false or when collec
 
 ## Syntax
 
-**With {{#if}}:**
+**With {% raw %}{{#if}}{% endraw %}:**
 
 
 
@@ -52,7 +52,7 @@ Provides a fallback branch when conditional expressions are false or when collec
 
 
 
-**With {{#each}}:**
+**With {% raw %}{{#each}}{% endraw %}:**
 
 
 
@@ -71,7 +71,7 @@ Provides a fallback branch when conditional expressions are false or when collec
 
 
 
-**With {{#with}}:**
+**With {% raw %}{{#with}}{% endraw %}:**
 
 
 
@@ -235,7 +235,7 @@ doc.Params["model"] = new {
 
 ## Underlying Implementation
 
-**In {{#if}} blocks**, `{% raw %}{{else}}{% endraw %}` compiles to:
+**In {% raw %}{{#if}}{% endraw %} blocks**, `{% raw %}{{else}}{% endraw %}` compiles to:
 
 
 
@@ -257,7 +257,7 @@ doc.Params["model"] = new {
 
 
 
-**In {{#each}} blocks**, `{% raw %}{{else}}{% endraw %}` creates a conditional wrapper:
+**In {% raw %}{{#each}}{% endraw %} blocks**, `{% raw %}{{else}}{% endraw %}` creates a conditional wrapper:
 
 
 

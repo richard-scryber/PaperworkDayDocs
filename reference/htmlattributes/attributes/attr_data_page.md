@@ -596,11 +596,8 @@ Safe page extraction with bounds:
 Assemble certification with selected modules:
 
 
+{% raw %}
 ```html
-{% endraw %}
-
-
-
 <!-- Model: { completedModules: [1, 3, 7] } -->
 <frameset>
     <!-- Certificate cover -->
@@ -617,6 +614,7 @@ Assemble certification with selected modules:
     <frame src="cert-cover.pdf" data-page-start="1" data-page-count="1"></frame>
 </frameset>
 ```
+{% endraw %}
 
 
 ### 18. Datasheet Generator
@@ -627,6 +625,7 @@ Create custom product datasheet:
 
 
 
+{% raw %}
 ```html
 <!-- Model: { productId: 42, includeSpecs: true, includeWarranty: true } -->
 <frameset>
@@ -648,6 +647,7 @@ Create custom product datasheet:
            hidden="{{model.includeWarranty ? '' : 'hidden'}}"></frame>
 </frameset>
 ```
+{% endraw %}
 
 
 
@@ -660,6 +660,7 @@ Combine articles into newsletter:
 
 
 
+{% raw %}
 ```html
 <!-- Model: { articles: [{start: 5, count: 3}, {start: 12, count: 2}, ...] } -->
 <frameset>
@@ -677,6 +678,7 @@ Combine articles into newsletter:
     <frame src="newsletter-footer.pdf" data-page-count="1"></frame>
 </frameset>
 ```
+{% endraw %}
 
 
 
@@ -690,6 +692,7 @@ Generate exam from question database:
 
 
 
+{% raw %}
 ```html
 <!-- Model: { questionPages: [2, 5, 8, 12, 15, 20, 23, 28, 30, 35] } -->
 <frameset>
@@ -706,6 +709,7 @@ Generate exam from question database:
     <frame src="answer-sheet.pdf"></frame>
 </frameset>
 ```
+{% endraw %}
 
 
 
