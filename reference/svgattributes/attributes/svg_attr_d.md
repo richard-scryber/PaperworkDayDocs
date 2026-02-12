@@ -113,9 +113,11 @@ d="M 10 30 L 90 30 L 90 70 L 10 70 Z"  <!-- Valid -->
 
 ## Data Binding
 
-The `d` attribute supports dynamic path generation using data binding expressions with `{{expression}}` syntax.
+The `d` attribute supports dynamic path generation using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Simple Dynamic Path
+
+
 
 
 
@@ -131,7 +133,11 @@ The `d` attribute supports dynamic path generation using data binding expression
 
 
 
+
+
 ### Example 2: Calculated Bezier Curve
+
+
 
 
 
@@ -147,7 +153,11 @@ The `d` attribute supports dynamic path generation using data binding expression
 
 
 
+
+
 ### Example 3: Programmatic Path Generation
+
+
 
 
 
@@ -170,7 +180,11 @@ The `d` attribute supports dynamic path generation using data binding expression
 
 
 
+
+
 ### Example 4: Dynamic Chart Path
+
+
 
 
 
@@ -195,7 +209,11 @@ The `d` attribute supports dynamic path generation using data binding expression
 
 
 
+
+
 ### Example 5: Dynamic Star Generator
+
+
 
 
 
@@ -228,7 +246,11 @@ The `d` attribute supports dynamic path generation using data binding expression
 
 
 
+
+
 ### Example 6: Multiple Dynamic Paths
+
+
 
 
 
@@ -251,7 +273,11 @@ The `d` attribute supports dynamic path generation using data binding expression
 
 
 
+
+
 ### Example 7: Animated Progress Arc
+
+
 
 
 
@@ -279,6 +305,8 @@ The `d` attribute supports dynamic path generation using data binding expression
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

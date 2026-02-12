@@ -83,9 +83,11 @@ Coordinates can be:
 
 ## Data Binding
 
-The `points` attribute supports dynamic coordinate generation using data binding expressions with `{{expression}}` syntax.
+The `points` attribute supports dynamic coordinate generation using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Simple Bound Points
+
+
 
 
 
@@ -101,7 +103,11 @@ The `points` attribute supports dynamic coordinate generation using data binding
 
 
 
+
+
 ### Example 2: Generated Line Chart
+
+
 
 {% raw %}
 ```html
@@ -123,7 +129,11 @@ The `points` attribute supports dynamic coordinate generation using data binding
 ```
 {% endraw %}
 
+
+
 ### Example 3: Dynamic Polygon Shape
+
+
 
 
 
@@ -154,7 +164,11 @@ The `points` attribute supports dynamic coordinate generation using data binding
 
 
 
+
+
 ### Example 4: Array-based Scatter Points
+
+
 
 
 
@@ -178,7 +192,11 @@ The `points` attribute supports dynamic coordinate generation using data binding
 
 
 
+
+
 ### Example 5: Temperature Timeline
+
+
 
 {% raw %}
 ```html
@@ -205,7 +223,11 @@ The `points` attribute supports dynamic coordinate generation using data binding
 ```
 {% endraw %}
 
+
+
 ### Example 6: Multi-Series Chart
+
+
 
 
 
@@ -244,7 +266,11 @@ The `points` attribute supports dynamic coordinate generation using data binding
 
 
 
+
+
 ### Example 7: Grid of Points
+
+
 
 
 
@@ -280,7 +306,11 @@ The `points` attribute supports dynamic coordinate generation using data binding
 
 
 
+
+
 ### Example 8: Normalized Data Visualization
+
+
 
 
 
@@ -306,6 +336,8 @@ The `points` attribute supports dynamic coordinate generation using data binding
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -579,6 +611,8 @@ For charts and graphs:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { sparkData: [12, 18, 15, 22, 19, 25, 23, 28, 24, 30] } -->
@@ -588,6 +622,8 @@ For charts and graphs:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

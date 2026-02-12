@@ -98,6 +98,8 @@ The `margin` property supports dynamic values through data binding, allowing you
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -123,6 +125,8 @@ The `margin` property supports dynamic values through data binding, allowing you
 
 
 
+
+
 Data context:
 ```json
 {
@@ -134,6 +138,8 @@ Data context:
 ```
 
 ### Example 2: Conditional spacing for compact vs. normal mode
+
+
 
 
 
@@ -162,6 +168,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -172,6 +180,8 @@ Data context:
 ```
 
 ### Example 3: Responsive margins based on page size
+
+
 
 
 
@@ -195,6 +205,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

@@ -95,6 +95,8 @@ The `-pdf-li-inset` property supports data binding, enabling dynamic control of 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -114,6 +116,8 @@ The `-pdf-li-inset` property supports data binding, enabling dynamic control of 
 </body>
 ```
 {% endraw %}
+
+
 
 
 
@@ -141,6 +145,8 @@ Users can configure inset spacing based on their readability preferences or acce
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -161,6 +167,8 @@ Users can configure inset spacing based on their readability preferences or acce
 </body>
 ```
 {% endraw %}
+
+
 
 
 
@@ -186,6 +194,8 @@ Users can configure inset spacing based on their readability preferences or acce
 Documents can adapt between compact (5pt inset), normal (10pt inset), or spacious (15pt inset) layouts based on space constraints or presentation requirements.
 
 ### Example 3: Hierarchical inset for nested lists
+
+
 
 
 
@@ -225,6 +235,8 @@ Documents can adapt between compact (5pt inset), normal (10pt inset), or spaciou
 </body>
 ```
 {% endraw %}
+
+
 
 
 

@@ -60,11 +60,15 @@ An array containing the values of the specified property from each item.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Product names: {{join(collect(model.products, 'name'), ', ')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -88,12 +92,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Total price: ${{sum(collect(model.items, 'price'))}}</p>
 <p>Average price: ${{round(average(collect(model.items, 'price')), 2)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -118,12 +126,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Order IDs: {{join(collect(model.orders, 'id'), ', ')}}</p>
 <p>Total orders: {{count(collect(model.orders, 'id'))}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -148,6 +160,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Sales Performance</h3>
@@ -157,6 +171,8 @@ doc.Params["model"] = new {
 <p>Lowest sale: ${{min(collect(model.sales, 'amount'))}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -185,6 +201,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.teams}}
@@ -194,6 +212,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

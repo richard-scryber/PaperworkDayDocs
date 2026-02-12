@@ -42,6 +42,8 @@ The `min` and `max` attributes control value ranges and scaling:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Basic meter with range 0-100 -->
@@ -64,6 +66,8 @@ The `min` and `max` attributes control value ranges and scaling:
 </meter>
 ```
 {% endraw %}
+
+
 
 
 
@@ -166,6 +170,8 @@ The `min` and `max` attributes support data binding for dynamic ranges:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { minTemp: 0, maxTemp: 100, currentTemp: 75 } -->
@@ -179,7 +185,11 @@ The `min` and `max` attributes support data binding for dynamic ranges:
 
 
 
+
+
 ### Calculated Ranges
+
+
 
 
 
@@ -196,7 +206,11 @@ The `min` and `max` attributes support data binding for dynamic ranges:
 
 
 
+
+
 ### Conditional Ranges
+
+
 
 
 
@@ -213,7 +227,11 @@ The `min` and `max` attributes support data binding for dynamic ranges:
 
 
 
+
+
 ### Dynamic Input Constraints
+
+
 
 
 
@@ -229,7 +247,11 @@ The `min` and `max` attributes support data binding for dynamic ranges:
 
 
 
+
+
 ### Repeating Elements with Varying Ranges
+
+
 
 
 
@@ -251,6 +273,8 @@ The `min` and `max` attributes support data binding for dynamic ranges:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -713,6 +737,8 @@ The range affects visual fill calculation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -753,6 +779,8 @@ The range affects visual fill calculation:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -1199,6 +1227,8 @@ The range affects visual fill calculation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -1238,6 +1268,8 @@ The range affects visual fill calculation:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

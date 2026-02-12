@@ -60,11 +60,15 @@ A single string with all array elements joined by the separator.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Tags: {{join(model.tags, ', ')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -84,11 +88,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Categories: {{join(model.categories, ' | ')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,11 +116,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Name: {{join(model.nameParts, ' ')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -132,11 +144,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Features: {{join(model.features, ' • ')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -156,11 +172,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Path: {{join(model.pathParts, '/')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -185,7 +205,7 @@ doc.Params["model"] = new {
 - Empty arrays return empty string
 - Null elements are treated as empty strings
 - For collection of objects, use with `collect()` to extract property first
-- Alternative to manually iterating with `{{#each}}`
+- Alternative to manually iterating with `{% raw %}{{#each}}{% endraw %}`
 
 ---
 

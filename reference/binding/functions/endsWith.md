@@ -60,6 +60,8 @@ endsWith(str, suffix)
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.files}}
@@ -75,6 +77,8 @@ endsWith(str, suffix)
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -103,6 +107,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if endsWith(model.email, '@company.com')}}
@@ -112,6 +118,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -131,6 +139,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if endsWith(model.url, '/')}}
@@ -143,7 +153,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Version Suffix
+
+
 
 
 
@@ -163,6 +177,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

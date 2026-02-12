@@ -113,6 +113,8 @@ The `content` attribute fully supports data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { author: "Jane Smith", reportTitle: "Q4 Report", year: 2024 } -->
@@ -124,7 +126,11 @@ The `content` attribute fully supports data binding:
 
 
 
+
+
 ### Calculated Content
+
+
 
 
 
@@ -138,7 +144,11 @@ The `content` attribute fully supports data binding:
 
 
 
+
+
 ### Conditional Content
+
+
 
 
 
@@ -149,6 +159,8 @@ The `content` attribute fully supports data binding:
       content="{{model.isPublic ? 'Public' : 'Confidential'}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -242,6 +254,8 @@ Or use multiple meta tags with the same property:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -260,6 +274,8 @@ Or use multiple meta tags with the same property:
 </head>
 ```
 {% endraw %}
+
+
 
 
 
@@ -349,6 +365,8 @@ Or use multiple meta tags with the same property:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { invoiceNumber: "INV-2024-001", clientName: "ABC Corp", date: "2024-01-15" } -->
@@ -364,6 +382,8 @@ Or use multiple meta tags with the same property:
 </head>
 ```
 {% endraw %}
+
+
 
 
 
@@ -415,6 +435,8 @@ Or use multiple meta tags with the same property:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { isDraft: true, author: "John Doe", version: "0.9" } -->
@@ -429,6 +451,8 @@ Or use multiple meta tags with the same property:
 </head>
 ```
 {% endraw %}
+
+
 
 
 

@@ -174,6 +174,8 @@ The `data-content` attribute allows setting label text via data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { fieldLabel: "Customer Name" } -->
@@ -181,6 +183,8 @@ The `data-content` attribute allows setting label text via data binding:
 <input type="text" value="{{model.customerName}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -562,6 +566,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -599,6 +605,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -938,6 +946,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -966,6 +976,8 @@ In the Scryber codebase:
 </p>
 ```
 {% endraw %}
+
+
 
 
 

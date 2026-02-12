@@ -92,6 +92,8 @@ The `-pdf-li-concat` property supports data binding, enabling dynamic control of
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -118,6 +120,8 @@ The `-pdf-li-concat` property supports data binding, enabling dynamic control of
 
 
 
+
+
 **Data context:**
 ```json
 {
@@ -139,6 +143,8 @@ The `-pdf-li-concat` property supports data binding, enabling dynamic control of
 When `useHierarchical` is true, produces 1, 1.1, 1.2; when false, produces 1, 1, 2. This allows organizations to switch between numbering styles for different document types.
 
 ### Example 2: Legal document numbering by jurisdiction
+
+
 
 
 
@@ -169,6 +175,8 @@ When `useHierarchical` is true, produces 1, 1.1, 1.2; when false, produces 1, 1,
 
 
 
+
+
 **Data context:**
 ```json
 {
@@ -192,6 +200,8 @@ When `useHierarchical` is true, produces 1, 1.1, 1.2; when false, produces 1, 1,
 Different legal jurisdictions may require different numbering conventions. This approach ensures compliance with local legal document standards.
 
 ### Example 3: Standards-compliant technical documentation
+
+
 
 
 
@@ -222,6 +232,8 @@ Different legal jurisdictions may require different numbering conventions. This 
 </body>
 ```
 {% endraw %}
+
+
 
 
 

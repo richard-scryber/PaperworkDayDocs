@@ -424,6 +424,8 @@ The horizontal rule is rendered as:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { sectionColor: "#336699" } -->
@@ -433,7 +435,11 @@ The horizontal rule is rendered as:
 
 
 
+
+
 ### Conditional Rule
+
+
 
 
 
@@ -444,6 +450,8 @@ The horizontal rule is rendered as:
     style="border: none; height: 1pt; background-color: #ccc; margin: 15pt 0;"/>
 ```
 {% endraw %}
+
+
 
 
 

@@ -60,6 +60,8 @@ The zero-based index of the first occurrence, or -1 if not found.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if indexOf(model.text, '@') >= 0}}
@@ -69,6 +71,8 @@ The zero-based index of the first occurrence, or -1 if not found.
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -88,11 +92,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Domain: {{substring(model.email, indexOf(model.email, '@') + 1)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -112,12 +120,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>First part: {{substring(model.text, 0, indexOf(model.text, ','))}}</p>
 <p>Second part: {{substring(model.text, indexOf(model.text, ',') + 2)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -138,6 +150,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -149,6 +163,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

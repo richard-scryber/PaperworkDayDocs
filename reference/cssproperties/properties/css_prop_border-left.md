@@ -94,6 +94,8 @@ The `border-left` property supports dynamic values through data binding, allowin
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -112,6 +114,8 @@ The `border-left` property supports dynamic values through data binding, allowin
 
 
 
+
+
 Data context:
 ```json
 {
@@ -125,6 +129,8 @@ Data context:
 ```
 
 ### Example 2: Status cards with dynamic indicators
+
+
 
 
 
@@ -148,6 +154,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -162,6 +170,8 @@ Data context:
 ```
 
 ### Example 3: Callout boxes with conditional accents
+
+
 
 
 
@@ -181,6 +191,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

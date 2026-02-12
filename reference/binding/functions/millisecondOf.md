@@ -59,11 +59,15 @@ The millisecond as a number from 0 to 999.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Millisecond: {{millisecondOf(model.time)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Timestamp: {{format(model.time, 'HH:mm:ss')}}.{{padLeft(string(millisecondOf(model.time)), 3, '0')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,6 +115,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>API Response Times</h3>
@@ -115,6 +125,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -141,6 +153,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.measurements}}
@@ -154,6 +168,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -179,6 +195,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Race Results</h3>
@@ -187,6 +205,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

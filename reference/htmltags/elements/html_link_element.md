@@ -409,6 +409,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -432,6 +434,8 @@ In the Scryber codebase:
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -468,6 +472,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -488,6 +494,8 @@ In the Scryber codebase:
 </html>
 ```
 {% endraw %}
+
+
 
 
 

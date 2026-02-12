@@ -183,6 +183,8 @@ Scryber provides page numbering through specific elements or data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <footer>
@@ -190,6 +192,8 @@ Scryber provides page numbering through specific elements or data binding:
 </footer>
 ```
 {% endraw %}
+
+
 
 
 
@@ -209,6 +213,8 @@ Or using dedicated page number elements (check Scryber documentation for exact s
 
 
 
+
+
 {% raw %}
 ```html
 <header>
@@ -225,7 +231,11 @@ Or using dedicated page number elements (check Scryber documentation for exact s
 {% endraw %}
 
 
+
+
 ### Date and Time
+
+
 
 
 
@@ -236,6 +246,8 @@ Or using dedicated page number elements (check Scryber documentation for exact s
 </footer>
 ```
 {% endraw %}
+
+
 
 
 

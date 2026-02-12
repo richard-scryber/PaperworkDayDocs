@@ -78,6 +78,8 @@ The `border-right-color` property supports dynamic values through data binding, 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -98,7 +100,11 @@ The `border-right-color` property supports dynamic values through data binding, 
 
 
 
+
+
 ### Example 2: Dashboard metric dividers
+
+
 
 
 
@@ -124,7 +130,11 @@ The `border-right-color` property supports dynamic values through data binding, 
 
 
 
+
+
 ### Example 3: Sidebar navigation indicators
+
+
 
 
 
@@ -145,6 +155,8 @@ The `border-right-color` property supports dynamic values through data binding, 
 </body>
 ```
 {% endraw %}
+
+
 
 
 

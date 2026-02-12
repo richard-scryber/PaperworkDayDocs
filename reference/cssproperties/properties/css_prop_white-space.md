@@ -93,6 +93,8 @@ The `white-space` property can be dynamically controlled through data binding, a
 
 
 
+
+
 {% raw %}
 ```html
 <div style="white-space: {{model.content.whitespaceMode}}; font-family: {{model.content.fontFamily}}; font-size: 10pt">
@@ -123,7 +125,11 @@ The `white-space` property can be dynamically controlled through data binding, a
 
 
 
+
+
 ### Example 2: Address Formatting with Data
+
+
 
 
 
@@ -152,7 +158,11 @@ The `white-space` property can be dynamically controlled through data binding, a
 
 
 
+
+
 ### Example 3: Dynamic Table Cell Wrapping
+
+
 
 
 
@@ -185,6 +195,8 @@ The `white-space` property can be dynamically controlled through data binding, a
 -->
 ```
 {% endraw %}
+
+
 
 
 

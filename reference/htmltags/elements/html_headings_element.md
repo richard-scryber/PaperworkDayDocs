@@ -288,6 +288,8 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { reportTitle: "Q4 Report", chapter: "Sales Analysis", year: 2024 } -->
@@ -305,7 +307,11 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 
 
 
+
+
 ### Dynamic Headings with Templates
+
+
 
 
 
@@ -321,6 +327,8 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 <!-- Generates headings for each section in the array -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -446,6 +454,8 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { showIntro: true, showMethods: false } -->
@@ -461,6 +471,8 @@ Headings have default `overflow-split: never` behavior, meaning they won't split
 <!-- Hidden when showMethods is false -->
 ```
 {% endraw %}
+
+
 
 
 

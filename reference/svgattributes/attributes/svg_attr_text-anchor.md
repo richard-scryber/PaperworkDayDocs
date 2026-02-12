@@ -82,6 +82,8 @@ Change alignment based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { labels: [{text: 'Left', align: 'start', y: 80}, {text: 'Center', align: 'middle', y: 150}, {text: 'Right', align: 'end', y: 220}] } -->
@@ -99,9 +101,13 @@ Change alignment based on data:
 
 
 
+
+
 ### Chart Labels with Centered Text
 
 Center labels on data points:
+
+
 
 
 
@@ -125,9 +131,13 @@ Center labels on data points:
 
 
 
+
+
 ### Position-Dependent Alignment
 
 Align text based on position:
+
+
 
 
 
@@ -147,9 +157,13 @@ Align text based on position:
 
 
 
+
+
 ### Responsive Label Positioning
 
 Adjust alignment for different screen positions:
+
+
 
 
 
@@ -169,9 +183,13 @@ Adjust alignment for different screen positions:
 
 
 
+
+
 ### Data Table with Aligned Columns
 
 Create aligned text columns:
+
+
 
 
 
@@ -193,6 +211,8 @@ Create aligned text columns:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -265,6 +285,8 @@ Each line respects text-anchor:
 **Chart labels:**
 
 
+
+
 {% raw %}
 ```html
 <!-- Center labels on data points -->
@@ -276,7 +298,11 @@ Each line respects text-anchor:
 
 
 
+
+
 **Axis labels:**
+
+
 
 
 {% raw %}
@@ -290,7 +316,11 @@ Each line respects text-anchor:
 
 
 
+
+
 **Button text:**
+
+
 
 
 {% raw %}
@@ -305,7 +335,11 @@ Each line respects text-anchor:
 
 
 
+
+
 **Table columns:**
+
+
 
 
 {% raw %}
@@ -316,6 +350,8 @@ Each line respects text-anchor:
 </text>
 ```
 {% endraw %}
+
+
 
 
 

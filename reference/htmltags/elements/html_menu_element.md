@@ -318,6 +318,8 @@ Or using data attributes:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.menuItems = [{text: "Item 1"}, {text: "Item 2"}] -->
@@ -339,6 +341,8 @@ Or using data attributes:
 </menu>
 ```
 {% endraw %}
+
+
 
 
 

@@ -83,6 +83,8 @@ Bind the y1 coordinate to data for dynamic gradient start position:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { startY: 20 } -->
@@ -104,9 +106,13 @@ Bind the y1 coordinate to data for dynamic gradient start position:
 
 
 
+
+
 ### Data-Driven Gradient Angles
 
 Calculate gradient angles from data:
+
+
 
 
 
@@ -132,9 +138,13 @@ Calculate gradient angles from data:
 
 
 
+
+
 ### Chart Background with Data Position
 
 Position gradient based on chart data ranges:
+
+
 
 
 
@@ -159,9 +169,13 @@ Position gradient based on chart data ranges:
 
 
 
+
+
 ### Conditional Gradient Direction
 
 Change gradient direction based on data orientation:
+
+
 
 
 
@@ -186,9 +200,13 @@ Change gradient direction based on data orientation:
 
 
 
+
+
 ### Temperature Gradient Based on Range
 
 Create vertical gradients representing temperature or value ranges:
+
+
 
 
 
@@ -212,6 +230,8 @@ Create vertical gradients representing temperature or value ranges:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -485,6 +505,8 @@ Vertical gradients are commonly used for:
 
 
 
+
+
 {% raw %}
 ```html
 <svg width="200" height="300">
@@ -501,6 +523,8 @@ Vertical gradients are commonly used for:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -544,6 +568,8 @@ Vertical gradients are commonly used for:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { minValue: 0, maxValue: 100, currentValue: 65 } -->
@@ -567,6 +593,8 @@ Vertical gradients are commonly used for:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

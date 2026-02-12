@@ -96,6 +96,8 @@ The `word-spacing` property supports data binding for dynamic control of word sp
 
 
 
+
+
 {% raw %}
 ```html
 <p style="word-spacing: {{model.accessibility.wordSpacing}}; font-size: 12pt; line-height: 1.6">
@@ -115,7 +117,11 @@ The `word-spacing` property supports data binding for dynamic control of word sp
 
 
 
+
+
 ### Example 2: Document Type-Based Spacing
+
+
 
 
 
@@ -149,7 +155,11 @@ The `word-spacing` property supports data binding for dynamic control of word sp
 
 
 
+
+
 ### Example 3: Emphasis Through Spacing
+
+
 
 
 
@@ -170,6 +180,8 @@ The `word-spacing` property supports data binding for dynamic control of word sp
 -->
 ```
 {% endraw %}
+
+
 
 
 

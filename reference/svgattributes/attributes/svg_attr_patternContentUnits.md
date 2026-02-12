@@ -85,6 +85,8 @@ Choose content coordinate system based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { useRelativeContent: false, tileSize: 50, dotRadius: 18 } -->
@@ -109,9 +111,13 @@ Choose content coordinate system based on data:
 
 
 
+
+
 ### Adaptive Pattern Graphics
 
 Switch between scaling and fixed-size content:
+
+
 
 
 
@@ -149,9 +155,13 @@ Switch between scaling and fixed-size content:
 
 
 
+
+
 ### Responsive Pattern Content
 
 Create patterns where content adapts to filled shape size:
+
+
 
 
 
@@ -180,9 +190,13 @@ Create patterns where content adapts to filled shape size:
 
 
 
+
+
 ### Data Visualization Patterns
 
 Create consistent patterns for chart backgrounds:
+
+
 
 
 
@@ -209,6 +223,8 @@ Create consistent patterns for chart backgrounds:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

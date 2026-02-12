@@ -81,6 +81,8 @@ Adjust marker height based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { markerSize: 14, visualScale: 1.2 } -->
@@ -107,9 +109,13 @@ Adjust marker height based on data:
 
 
 
+
+
 ### Proportional Sizing
 
 Scale both dimensions together:
+
+
 
 
 
@@ -138,7 +144,11 @@ Scale both dimensions together:
 
 
 
+
+
 ### Variable Aspect Ratios
+
+
 
 
 
@@ -174,6 +184,8 @@ Scale both dimensions together:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

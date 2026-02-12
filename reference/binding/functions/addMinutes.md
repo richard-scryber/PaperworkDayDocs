@@ -60,11 +60,15 @@ A new DateTime with the specified minutes added.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Departs: {{format(addMinutes(model.boardingTime, 45), 'h:mm tt')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -84,6 +88,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.appointments}}
@@ -91,6 +97,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -117,11 +125,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>End time: {{format(addMinutes(model.start, model.durationMinutes), 'h:mm tt')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

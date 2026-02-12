@@ -60,6 +60,8 @@ An array containing the split substrings.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <ul>
@@ -69,6 +71,8 @@ An array containing the split substrings.
 </ul>
 ```
 {% endraw %}
+
+
 
 
 
@@ -93,12 +97,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>First Name: {{split(model.fullName, ' ')[0]}}</p>
 <p>Last Name: {{split(model.fullName, ' ')[1]}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -119,6 +127,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <ul class="breadcrumb">
@@ -128,6 +138,8 @@ doc.Params["model"] = new {
 </ul>
 ```
 {% endraw %}
+
+
 
 
 
@@ -152,11 +164,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Words: {{length(split(model.sentence, ' '))}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -180,7 +196,7 @@ doc.Params["model"] = new {
 - Empty strings included if separator appears consecutively
 - If separator not found, returns array with single element (original string)
 - Case-sensitive matching
-- Use with `{{#each}}` to iterate results
+- Use with `{% raw %}{{#each}}{% endraw %}` to iterate results
 - Use with `trim()` to clean up whitespace
 - Opposite of `join()` function
 

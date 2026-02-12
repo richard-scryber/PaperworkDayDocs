@@ -75,6 +75,8 @@ The `charset` attribute supports data binding for dynamic encoding specification
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Dynamic charset from model -->
@@ -87,6 +89,8 @@ The `charset` attribute supports data binding for dynamic encoding specification
 <meta charset="{{model.charset || 'UTF-8'}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -532,6 +536,8 @@ If you encounter issues with special characters:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { document: { encoding: "UTF-8", language: "en" } } -->
@@ -550,6 +556,8 @@ If you encounter issues with special characters:
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -818,6 +826,8 @@ If you encounter issues with special characters:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { preferences: { encoding: null } } -->
@@ -836,6 +846,8 @@ If you encounter issues with special characters:
 </html>
 ```
 {% endraw %}
+
+
 
 
 

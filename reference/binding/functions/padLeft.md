@@ -61,11 +61,15 @@ The padded string.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Order #{{padLeft(format(model.orderNumber, '0'), 8, '0')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,6 +89,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.invoices}}
@@ -92,6 +98,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -117,6 +125,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <pre>
@@ -126,6 +136,8 @@ doc.Params["model"] = new {
 </pre>
 ```
 {% endraw %}
+
+
 
 
 
@@ -153,11 +165,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{padLeft(model.code, 10, '-')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

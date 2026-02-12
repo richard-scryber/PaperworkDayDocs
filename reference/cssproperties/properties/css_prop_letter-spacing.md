@@ -96,6 +96,8 @@ The `letter-spacing` property can be dynamically controlled through data binding
 
 
 
+
+
 {% raw %}
 ```html
 <p style="letter-spacing: {{model.accessibility.letterSpacing}}; font-size: 12pt">
@@ -115,7 +117,11 @@ The `letter-spacing` property can be dynamically controlled through data binding
 
 
 
+
+
 ### Example 2: Content Type-Based Spacing
+
+
 
 
 
@@ -149,7 +155,11 @@ The `letter-spacing` property can be dynamically controlled through data binding
 
 
 
+
+
 ### Example 3: Dynamic Emphasis Levels
+
+
 
 
 
@@ -169,6 +179,8 @@ The `letter-spacing` property can be dynamically controlled through data binding
 -->
 ```
 {% endraw %}
+
+
 
 
 

@@ -116,6 +116,8 @@ The attribute accepts literal boolean values or binding expressions:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Literal value -->
@@ -128,6 +130,8 @@ The attribute accepts literal boolean values or binding expressions:
 <thead data-repeat="{{count(model.items) > 20}}">
 ```
 {% endraw %}
+
+
 
 
 
@@ -219,6 +223,8 @@ Standard table with header repetition (default):
 
 
 
+
+
 {% raw %}
 ```html
 <table style="width: 100%; border-collapse: collapse;">
@@ -247,6 +253,8 @@ Standard table with header repetition (default):
 </table>
 ```
 {% endraw %}
+
+
 
 
 
@@ -285,6 +293,8 @@ Professional styled header that repeats:
 
 
 
+
+
 {% raw %}
 ```html
 <table style="width: 100%; border-collapse: collapse;">
@@ -320,9 +330,13 @@ Professional styled header that repeats:
 
 
 
+
+
 ### 4. Multi-Row Header
 
 Complex header with two rows, both repeat:
+
+
 
 
 
@@ -368,9 +382,13 @@ Complex header with two rows, both repeat:
 
 
 
+
+
 ### 5. Conditional Repetition Based on Data Size
 
 Enable repetition only for large datasets:
+
+
 
 
 
@@ -400,9 +418,13 @@ Enable repetition only for large datasets:
 
 
 
+
+
 ### 6. Invoice Line Items
 
 Invoice table with repeating header:
+
+
 
 
 
@@ -462,9 +484,13 @@ Invoice table with repeating header:
 
 
 
+
+
 ### 7. Transaction Log
 
 Long transaction list with compact repeating header:
+
+
 
 
 
@@ -508,9 +534,13 @@ Long transaction list with compact repeating header:
 
 
 
+
+
 ### 8. Inventory Report with Grouped Headers
 
 Grouped column headers that repeat:
+
+
 
 
 
@@ -558,9 +588,13 @@ Grouped column headers that repeat:
 
 
 
+
+
 ### 9. Employee Directory
 
 Multi-page directory with repeating styled header:
+
+
 
 
 
@@ -603,9 +637,13 @@ Multi-page directory with repeating styled header:
 
 
 
+
+
 ### 10. Product Catalog
 
 Catalog with image-based header (repetition enabled):
+
+
 
 
 
@@ -646,9 +684,13 @@ Catalog with image-based header (repetition enabled):
 
 
 
+
+
 ### 11. Audit Trail Report
 
 Compliance report with repeating header:
+
+
 
 
 
@@ -691,9 +733,13 @@ Compliance report with repeating header:
 
 
 
+
+
 ### 12. Financial Statement
 
 Financial data with multiple header levels:
+
+
 
 
 
@@ -737,9 +783,13 @@ Financial data with multiple header levels:
 
 
 
+
+
 ### 13. Order Fulfillment Report
 
 Warehouse picking list with repeating header:
+
+
 
 
 
@@ -786,9 +836,13 @@ Warehouse picking list with repeating header:
 
 
 
+
+
 ### 14. Event Schedule
 
 Multi-day event schedule with repeating date headers:
+
+
 
 
 
@@ -827,9 +881,13 @@ Multi-day event schedule with repeating date headers:
 
 
 
+
+
 ### 15. Comparison Report
 
 Side-by-side comparison with repeating headers:
+
+
 
 
 
@@ -865,6 +923,8 @@ Side-by-side comparison with repeating headers:
 </table>
 ```
 {% endraw %}
+
+
 
 
 

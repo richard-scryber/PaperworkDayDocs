@@ -59,11 +59,15 @@ The number of items in the collection. Returns 0 for null or empty collections.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Total items: {{count(model.items)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,6 +87,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Order Summary</h3>
@@ -91,6 +97,8 @@ doc.Params["model"] = new {
 <p>Average price: ${{round(sum(collect(model.orderItems, 'price')) / count(model.orderItems), 2)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -117,6 +125,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if (count(model.notifications) > 0)}}
@@ -126,6 +136,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -145,11 +157,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Progress: {{count(selectWhere(model.tasks, 'completed', true))}} of {{count(model.tasks)}} tasks completed</p>
 ```
 {% endraw %}
+
+
 
 
 

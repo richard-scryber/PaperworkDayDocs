@@ -155,11 +155,15 @@ The `src` attribute supports multiple source types:
 4. **Dynamic Sources via Data Binding**:
 
 
+
+
 {% raw %}
    ```html
    <iframe src="{{model.contentUrl}}"></iframe>
 ```
 {% endraw %}
+
+
 
 
 
@@ -313,6 +317,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { headerTemplate: "header-v2.html", footerTemplate: "footer-standard.html" } -->
@@ -327,6 +333,8 @@ In the Scryber codebase:
 <iframe src="{{model.footerTemplate}}"></iframe>
 ```
 {% endraw %}
+
+
 
 
 
@@ -380,6 +388,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { showHeader: true, showFooter: false } -->
@@ -393,6 +403,8 @@ In the Scryber codebase:
 <iframe src="footer.html" hidden="{{model.showFooter ? '' : 'hidden'}}"></iframe>
 ```
 {% endraw %}
+
+
 
 
 
@@ -413,6 +425,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { language: "en", region: "US" } -->
@@ -426,6 +440,8 @@ In the Scryber codebase:
 <iframe src="i18n/{{model.language}}/footer.html"></iframe>
 ```
 {% endraw %}
+
+
 
 
 
@@ -450,6 +466,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { templateVersion: 2, customerType: "premium" } -->
@@ -464,6 +482,8 @@ In the Scryber codebase:
 <iframe src="footers/footer-{{model.customerType}}.html"></iframe>
 ```
 {% endraw %}
+
+
 
 
 
@@ -503,6 +523,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.sections = [{src: "intro.html"}, {src: "analysis.html"}, {src: "conclusion.html"}] -->
@@ -518,6 +540,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -583,6 +607,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Load email signature from shared template -->
@@ -594,6 +620,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -621,6 +649,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { apiEndpoint: "https://api.example.com", reportId: "12345" } -->
@@ -638,6 +668,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -662,6 +694,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { country: "US", state: "CA" } -->
@@ -678,6 +712,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

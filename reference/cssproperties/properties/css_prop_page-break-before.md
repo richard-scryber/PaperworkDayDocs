@@ -97,6 +97,8 @@ The `page-break-before` property supports data binding, allowing you to dynamica
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -122,7 +124,11 @@ The `page-break-before` property supports data binding, allowing you to dynamica
 
 
 
+
+
 ### Example 2: Data-driven report sections
+
+
 
 
 
@@ -153,7 +159,11 @@ The `page-break-before` property supports data binding, allowing you to dynamica
 
 
 
+
+
 ### Example 3: Multi-format document with conditional pagination
+
+
 
 
 
@@ -178,6 +188,8 @@ The `page-break-before` property supports data binding, allowing you to dynamica
 </body>
 ```
 {% endraw %}
+
+
 
 
 

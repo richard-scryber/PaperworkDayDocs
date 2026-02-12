@@ -94,6 +94,8 @@ The `fill-opacity` property can be dynamically set using data binding expression
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -120,6 +122,8 @@ The `fill-opacity` property can be dynamically set using data binding expression
 
 
 
+
+
 With model data (opacity based on percentage values):
 ```json
 {
@@ -133,6 +137,8 @@ With model data (opacity based on percentage values):
 ```
 
 ### Example 2: Confidence levels in data visualization
+
+
 
 
 
@@ -161,6 +167,8 @@ With model data (opacity based on percentage values):
 
 
 
+
+
 With model data:
 ```json
 {
@@ -174,6 +182,8 @@ With model data:
 ```
 
 ### Example 3: Conditional opacity based on status
+
+
 
 
 
@@ -201,6 +211,8 @@ With model data:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

@@ -85,6 +85,8 @@ Adjust vertical reference based on marker size:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { markerSize: 14, verticalAlign: 'center' } -->
@@ -110,7 +112,11 @@ Adjust vertical reference based on marker size:
 
 
 
+
+
 ### Conditional Vertical Alignment
+
+
 
 
 
@@ -137,7 +143,11 @@ Adjust vertical reference based on marker size:
 
 
 
+
+
 ### Data-Driven Vertical Positioning
+
+
 
 
 
@@ -178,6 +188,8 @@ Adjust vertical reference based on marker size:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

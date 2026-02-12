@@ -26,6 +26,8 @@ The `viewBox` attribute controls the SVG coordinate system and viewport:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Basic viewBox: shows coordinates 0,0 to 100,100 -->
@@ -44,6 +46,8 @@ The `viewBox` attribute controls the SVG coordinate system and viewport:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -124,6 +128,8 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { x: 0, y: 0, width: 100, height: 100 } -->
@@ -137,7 +143,11 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 
 
 
+
+
 ### Zoom Effect
+
+
 
 
 
@@ -156,7 +166,11 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 
 
 
+
+
 ### Pan Effect
+
+
 
 
 
@@ -175,7 +189,11 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 
 
 
+
+
 ### Responsive ViewBox
+
+
 
 
 
@@ -194,7 +212,11 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 
 
 
+
+
 ### Focus on Region
+
+
 
 
 
@@ -212,7 +234,11 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 
 
 
+
+
 ### Animated Viewport Transition
+
+
 
 
 
@@ -227,6 +253,8 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -605,6 +633,8 @@ ViewBox is key to creating responsive, scalable SVG:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { selectedElement: { x: 200, y: 150, width: 100, height: 100 } } -->
@@ -618,6 +648,8 @@ ViewBox is key to creating responsive, scalable SVG:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -692,6 +724,8 @@ ViewBox is key to creating responsive, scalable SVG:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { frame: 0 } -->
@@ -709,6 +743,8 @@ ViewBox is key to creating responsive, scalable SVG:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

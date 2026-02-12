@@ -93,6 +93,8 @@ The `padding-right` property supports dynamic values through data binding, allow
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -116,6 +118,8 @@ The `padding-right` property supports dynamic values through data binding, allow
 
 
 
+
+
 Data context:
 ```json
 {
@@ -127,6 +131,8 @@ Data context:
 ```
 
 ### Example 2: Table cells with dynamic padding
+
+
 
 
 
@@ -172,6 +178,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -182,6 +190,8 @@ Data context:
 ```
 
 ### Example 3: Button padding based on size
+
+
 
 
 
@@ -203,6 +213,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

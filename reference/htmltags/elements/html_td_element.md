@@ -418,6 +418,8 @@ Control how text wraps within cells:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -466,6 +468,8 @@ Control how text wraps within cells:
 </table>
 ```
 {% endraw %}
+
+
 
 
 
@@ -582,6 +586,8 @@ Control how text wraps within cells:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -628,6 +634,8 @@ Control how text wraps within cells:
 </table>
 ```
 {% endraw %}
+
+
 
 
 

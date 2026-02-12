@@ -92,6 +92,8 @@ The `position` property supports data binding, allowing you to dynamically contr
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -117,6 +119,8 @@ The `position` property supports data binding, allowing you to dynamically contr
 
 
 
+
+
 Data model:
 ```json
 {
@@ -136,6 +140,8 @@ Data model:
 ```
 
 ### Example 2: Conditional header positioning based on layout preferences
+
+
 
 
 
@@ -169,6 +175,8 @@ Data model:
 
 
 
+
+
 Data model:
 ```json
 {
@@ -188,6 +196,8 @@ Data model:
 ```
 
 ### Example 3: Dynamic approval stamp positioning
+
+
 
 
 
@@ -225,6 +235,8 @@ Data model:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

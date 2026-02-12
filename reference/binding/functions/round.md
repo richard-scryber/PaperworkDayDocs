@@ -60,11 +60,15 @@ The rounded value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Rounded: {{round(model.value)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -84,11 +88,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Price: ${{round(model.price, 2)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,11 +116,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{round((model.completed / model.total) * 100, 1)}}% complete</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -133,6 +145,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.measurements}}
@@ -140,6 +154,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

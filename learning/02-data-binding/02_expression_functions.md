@@ -33,6 +33,8 @@ Functions are called within expression brackets:
 
 
 
+
+
 {% raw %}
 ```html
 {{function(arg1, arg2, ...)}}
@@ -41,11 +43,15 @@ Functions are called within expression brackets:
 
 
 
+
+
 ---
 
 ## String Functions
 
 ### concat() - Concatenate Strings
+
+
 
 
 
@@ -65,7 +71,11 @@ Functions are called within expression brackets:
 
 
 
+
+
 ### upper() - Convert to Uppercase
+
+
 
 
 
@@ -80,7 +90,11 @@ Functions are called within expression brackets:
 
 
 
+
+
 ### lower() - Convert to Lowercase
+
+
 
 
 
@@ -95,7 +109,11 @@ Functions are called within expression brackets:
 
 
 
+
+
 ### substring() - Extract Part of String
+
+
 
 
 
@@ -115,7 +133,11 @@ Functions are called within expression brackets:
 
 
 
+
+
 ### trim() - Remove Whitespace
+
+
 
 
 
@@ -130,7 +152,11 @@ Functions are called within expression brackets:
 
 
 
+
+
 ### replace() - Replace Text
+
+
 
 
 
@@ -146,11 +172,15 @@ Functions are called within expression brackets:
 
 
 
+
+
 ---
 
 ## Math Functions
 
 ### add() - Addition
+
+
 
 
 
@@ -170,7 +200,11 @@ Functions are called within expression brackets:
 
 
 
+
+
 ### subtract() - Subtraction
+
+
 
 
 
@@ -185,7 +219,11 @@ Functions are called within expression brackets:
 
 
 
+
+
 ### multiply() - Multiplication
+
+
 
 
 
@@ -200,7 +238,11 @@ Functions are called within expression brackets:
 
 
 
+
+
 ### divide() - Division
+
+
 
 
 
@@ -215,9 +257,13 @@ Functions are called within expression brackets:
 
 
 
+
+
 ### calc() - Complex Calculations
 
 The `calc()` function allows complex math expressions:
+
+
 
 
 
@@ -243,6 +289,8 @@ The `calc()` function allows complex math expressions:
 
 
 
+
+
 **Supported operators:**
 - `+` Addition
 - `-` Subtraction
@@ -263,6 +311,8 @@ doc.Params["model"] = new
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Total with tax -->
@@ -276,11 +326,15 @@ doc.Params["model"] = new
 
 
 
+
+
 ---
 
 ## Conditional Functions
 
 ### if() - Inline Conditional
+
+
 
 
 
@@ -299,7 +353,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### choose() - Multiple Conditions
+
+
 
 
 
@@ -316,11 +374,15 @@ doc.Params["model"] = new
 
 
 
+
+
 ---
 
 ## Comparison Operators
 
 Use in conditional functions:
+
+
 
 
 
@@ -348,11 +410,15 @@ Use in conditional functions:
 
 
 
+
+
 ---
 
 ## Logical Operators
 
 ### AND
+
+
 
 
 
@@ -365,7 +431,11 @@ Use in conditional functions:
 
 
 
+
+
 ### OR
+
+
 
 
 
@@ -378,7 +448,11 @@ Use in conditional functions:
 
 
 
+
+
 ### NOT
+
+
 
 
 
@@ -391,11 +465,15 @@ Use in conditional functions:
 
 
 
+
+
 ---
 
 ## Date Functions
 
 ### now() - Current Date/Time
+
+
 
 
 
@@ -409,7 +487,11 @@ Use in conditional functions:
 
 
 
+
+
 ### format() - Format Date
+
+
 
 
 
@@ -428,6 +510,8 @@ Use in conditional functions:
 
 
 
+
+
 **Common format strings:**
 - `yyyy-MM-dd` - 2025-01-15
 - `MM/dd/yyyy` - 01/15/2025
@@ -440,6 +524,8 @@ Use in conditional functions:
 ## Number Formatting
 
 ### format() - Format Numbers
+
+
 
 
 
@@ -469,11 +555,15 @@ Use in conditional functions:
 
 
 
+
+
 ---
 
 ## Practical Examples
 
 ### Example 1: Invoice Line Total
+
+
 
 
 
@@ -504,7 +594,11 @@ Use in conditional functions:
 
 
 
+
+
 ### Example 2: Customer Greeting
+
+
 
 
 
@@ -518,7 +612,11 @@ Use in conditional functions:
 
 
 
+
+
 ### Example 3: Status Badge
+
+
 
 
 
@@ -535,7 +633,11 @@ Use in conditional functions:
 
 
 
+
+
 ### Example 4: Discount Calculation
+
+
 
 
 
@@ -555,7 +657,11 @@ Use in conditional functions:
 
 
 
+
+
 ### Example 5: Text Truncation with Ellipsis
+
+
 
 
 {% raw %}
@@ -567,6 +673,8 @@ Use in conditional functions:
 </p>
 ```
 {% endraw %}
+
+
 
 
 ---
@@ -597,6 +705,8 @@ doc.SaveAsPDF("report.pdf");
 ```
 
 **Template:**
+
+
 
 
 {% raw %}
@@ -700,6 +810,8 @@ doc.SaveAsPDF("report.pdf");
 
 
 
+
+
 ---
 
 ## Try It Yourself
@@ -736,6 +848,8 @@ Create a template that displays the same date in:
 
 
 
+
+
 {% raw %}
 ```html
 {{concat(Hello, model.name)}}  <!-- Error: Hello is not defined -->
@@ -744,7 +858,11 @@ Create a template that displays the same date in:
 
 
 
+
+
 ✅ **Solution:** Quote string literals
+
+
 
 
 
@@ -756,7 +874,11 @@ Create a template that displays the same date in:
 
 
 
+
+
 ### ❌ Wrong calc() Syntax
+
+
 
 
 
@@ -768,7 +890,11 @@ Create a template that displays the same date in:
 
 
 
+
+
 ✅ **Solution:** Use direct expression with operators
+
+
 
 
 
@@ -780,7 +906,11 @@ Create a template that displays the same date in:
 
 
 
+
+
 ### ❌ Incorrect Parentheses in calc()
+
+
 
 
 
@@ -792,7 +922,11 @@ Create a template that displays the same date in:
 
 
 
+
+
 ✅ **Solution:** Use standard math expression with parentheses
+
+
 
 
 
@@ -801,6 +935,8 @@ Create a template that displays the same date in:
 {{calc((model.a + model.b) * model.c)}}  <!-- Correct -->
 ```
 {% endraw %}
+
+
 
 
 

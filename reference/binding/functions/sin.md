@@ -59,11 +59,15 @@ The sine of the angle (value between -1 and 1).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>sin(π/2) = {{format(sin(pi() / 2), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -76,6 +80,8 @@ The sine of the angle (value between -1 and 1).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>sin(30°) = {{format(sin(radians(30)), '0.000')}}</p>
@@ -83,6 +89,8 @@ The sine of the angle (value between -1 and 1).
 <p>sin(90°) = {{format(sin(radians(90)), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -97,11 +105,15 @@ The sine of the angle (value between -1 and 1).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Y = {{format(model.amplitude * sin(model.angle), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

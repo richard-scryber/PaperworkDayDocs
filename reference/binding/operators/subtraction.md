@@ -33,11 +33,15 @@ Subtract one numeric value from another.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{operand1 - operand2}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -76,11 +80,15 @@ The difference between the left and right operands.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Discount: ${{model.originalPrice - model.salePrice}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -101,11 +109,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Remaining: {{model.totalStock - model.soldQuantity}} units</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -126,6 +138,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Days remaining: {{daysBetween(model.today, model.deadline)}}</p>
@@ -134,7 +148,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Variance Calculation
+
+
 
 
 
@@ -148,6 +166,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -169,6 +189,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <!-- Discount percentage -->
@@ -178,6 +200,8 @@ doc.Params["model"] = new {
 <p>Profit: ${{format(model.revenue - model.costs - model.taxes, '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

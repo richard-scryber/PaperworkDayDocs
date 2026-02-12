@@ -94,6 +94,8 @@ The column-width property integrates with data binding to create flexible, respo
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -134,7 +136,11 @@ The column-width property integrates with data binding to create flexible, respo
 
 
 
+
+
 ### Example 2: Configurable column layouts
+
+
 
 
 
@@ -179,7 +185,11 @@ The column-width property integrates with data binding to create flexible, respo
 
 
 
+
+
 ### Example 3: Adaptive layouts for multi-section documents
+
+
 
 
 
@@ -237,6 +247,8 @@ The column-width property integrates with data binding to create flexible, respo
 </body>
 ```
 {% endraw %}
+
+
 
 
 

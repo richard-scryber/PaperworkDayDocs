@@ -59,11 +59,15 @@ The day of the year as a number from 1 (January 1st) to 365 or 366 (December 31s
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Day {{dayOfYear(model.date)}} of {{yearOf(model.date)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Year Progress: {{round((dayOfYear(model.today) / 365) * 100, 1)}}%</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,11 +115,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Production Code: {{yearOf(model.date) % 100}}{{padLeft(string(dayOfYear(model.date)), 3, '0')}}-{{model.batchNumber}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -129,6 +141,8 @@ doc.Params["model"] = new {
 ```
 
 ### Seasonal Marketing Periods
+
+
 
 
 
@@ -150,6 +164,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -166,11 +182,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Days left in {{yearOf(model.today)}}: {{365 - dayOfYear(model.today)}}</p>
 ```
 {% endraw %}
+
+
 
 
 

@@ -59,11 +59,15 @@ The natural logarithm of the value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>ln({{model.value}}) = {{format(log(model.value), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Years to double: {{format(log(2) / model.rate, '0.0')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

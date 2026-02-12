@@ -71,11 +71,15 @@ A DateTime object representing the parsed date.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Order Date: {{format(date(model.orderDate), 'MMMM dd, yyyy')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -95,11 +99,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Days until deadline: {{daysBetween(model.today, date(model.deadline))}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -120,6 +128,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.events}}
@@ -130,6 +140,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -164,12 +176,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Ship Date: {{format(date(model.orderDate), 'yyyy-MM-dd')}}</p>
 <p>Est. Delivery: {{format(addDays(date(model.orderDate), 5), 'yyyy-MM-dd')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

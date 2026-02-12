@@ -80,9 +80,11 @@ The `<line>` element creates a straight line defined by:
 
 ## Data Binding
 
-The `<line>` element supports dynamic attribute values using data binding expressions with `{{expression}}` syntax.
+The `<line>` element supports dynamic attribute values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Line Coordinates
+
+
 
 
 
@@ -99,7 +101,11 @@ The `<line>` element supports dynamic attribute values using data binding expres
 
 
 
+
+
 ### Example 2: Chart Grid Lines
+
+
 
 
 
@@ -117,7 +123,11 @@ The `<line>` element supports dynamic attribute values using data binding expres
 
 
 
+
+
 ### Example 3: Connection Lines
+
+
 
 
 
@@ -136,6 +146,8 @@ The `<line>` element supports dynamic attribute values using data binding expres
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -423,6 +435,8 @@ Lines are efficient shapes for rendering. Use them for grids, axes, and connecto
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { rows: 5, cols: 5, cellSize: 30 } -->
@@ -444,7 +458,11 @@ Lines are efficient shapes for rendering. Use them for grids, axes, and connecto
 
 
 
+
+
 ### Progress Line
+
+
 
 
 
@@ -461,6 +479,8 @@ Lines are efficient shapes for rendering. Use them for grids, axes, and connecto
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

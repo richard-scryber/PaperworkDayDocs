@@ -40,6 +40,8 @@ The `media` attribute defines media-specific conditions:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Print-specific stylesheet -->
@@ -69,6 +71,8 @@ The `media` attribute defines media-specific conditions:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -86,6 +90,8 @@ The `media` attribute is used with:
 ## Binding Values
 
 The `media` attribute supports data binding for dynamic media queries:
+
+
 
 
 
@@ -116,6 +122,8 @@ The `media` attribute supports data binding for dynamic media queries:
       media="print and (orientation: {{model.orientation}})" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -841,6 +849,8 @@ For PDF generation with Scryber:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -880,6 +890,8 @@ For PDF generation with Scryber:
 </html>
 ```
 {% endraw %}
+
+
 
 
 

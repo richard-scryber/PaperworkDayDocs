@@ -41,6 +41,8 @@ The `target` attribute defines link opening behavior:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Open in new window/tab -->
@@ -62,6 +64,8 @@ The `target` attribute defines link opening behavior:
 <a href="{{model.url}}" target="{{model.targetWindow}}">Link</a>
 ```
 {% endraw %}
+
+
 
 
 
@@ -88,6 +92,8 @@ The `target` attribute is used with:
 ## Binding Values
 
 The `target` attribute supports data binding for dynamic target assignment:
+
+
 
 
 
@@ -120,6 +126,8 @@ The `target` attribute supports data binding for dynamic target assignment:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -612,6 +620,8 @@ Target for form submissions (limited PDF use):
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -661,6 +671,8 @@ Target for form submissions (limited PDF use):
 </html>
 ```
 {% endraw %}
+
+
 
 
 

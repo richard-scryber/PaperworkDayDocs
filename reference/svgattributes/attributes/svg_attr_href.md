@@ -99,6 +99,8 @@ Reference different gradients based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { gradientType: 'blue', status: 'active' } -->
@@ -130,9 +132,13 @@ Reference different gradients based on data:
 
 
 
+
+
 ### Dynamic Image Sources
 
 Load images from data properties:
+
+
 
 
 
@@ -153,9 +159,13 @@ Load images from data properties:
 
 
 
+
+
 ### Reusable Components with Use
 
 Reference symbols dynamically:
+
+
 
 
 
@@ -185,9 +195,13 @@ Reference symbols dynamically:
 
 
 
+
+
 ### Dynamic Hyperlinks
 
 Create clickable elements with data-driven URLs:
+
+
 
 
 
@@ -210,9 +224,13 @@ Create clickable elements with data-driven URLs:
 
 
 
+
+
 ### Pattern Library References
 
 Reference patterns from a library:
+
+
 
 
 
@@ -237,6 +255,8 @@ Reference patterns from a library:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

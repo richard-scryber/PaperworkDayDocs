@@ -59,11 +59,15 @@ The string converted to uppercase.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{toUpper(model.text)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h1>{{toUpper(model.title)}}</h1>
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,11 +115,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>SKU: {{toUpper(model.sku)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -131,11 +143,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{toUpper(substring(model.name, 0, 1))}}{{substring(model.name, 1)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -155,6 +171,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.alerts}}
@@ -164,6 +182,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

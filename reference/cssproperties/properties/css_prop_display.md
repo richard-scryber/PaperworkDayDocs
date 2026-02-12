@@ -107,6 +107,8 @@ The display property works seamlessly with data binding to create dynamic, condi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -138,7 +140,11 @@ The display property works seamlessly with data binding to create dynamic, condi
 
 
 
+
+
 ### Example 2: Dynamic layout based on preferences
+
+
 
 
 
@@ -180,7 +186,11 @@ The display property works seamlessly with data binding to create dynamic, condi
 
 
 
+
+
 ### Example 3: Conditional rendering for different document types
+
+
 
 
 
@@ -213,6 +223,8 @@ The display property works seamlessly with data binding to create dynamic, condi
 </body>
 ```
 {% endraw %}
+
+
 
 
 

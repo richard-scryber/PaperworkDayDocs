@@ -33,11 +33,15 @@ Brief description of what this operator does.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{operand1 operator operand2}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -64,6 +68,8 @@ Description of what the operator returns.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{5 operator 3}}
@@ -73,7 +79,11 @@ Description of what the operator returns.
 
 
 
+
+
 ### With Variables
+
+
 
 
 
@@ -82,6 +92,8 @@ Description of what the operator returns.
 <p>Result: {{model.value1 operator model.value2}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -102,6 +114,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if model.score operator threshold}}
@@ -109,6 +123,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 

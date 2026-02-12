@@ -59,6 +59,8 @@ The angle in radians.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>30° = {{format(radians(30), '0.000')}} radians</p>
@@ -67,6 +69,8 @@ The angle in radians.
 <p>180° = {{format(radians(180), '0.000')}} radians</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -82,6 +86,8 @@ The angle in radians.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>sin(30°) = {{format(sin(radians(30)), '0.000')}}</p>
@@ -89,6 +95,8 @@ The angle in radians.
 <p>tan(45°) = {{format(tan(radians(45)), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -103,12 +111,16 @@ The angle in radians.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>X: {{format(model.radius * cos(radians(model.angle)), '0.00')}}</p>
 <p>Y: {{format(model.radius * sin(radians(model.angle)), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

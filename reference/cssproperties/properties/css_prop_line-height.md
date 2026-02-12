@@ -99,16 +99,18 @@ line-height: 150%;
 
 ## Data Binding
 
-CSS properties support dynamic values through Scryber's Handlebars-style data binding syntax using `{{expression}}` in inline styles. This enables line-height to be determined dynamically based on model data, readability preferences, or document requirements.
+CSS properties support dynamic values through Scryber's Handlebars-style data binding syntax using `{% raw %}{{expression}}{% endraw %}` in inline styles. This enables line-height to be determined dynamically based on model data, readability preferences, or document requirements.
 
 ### Binding Syntax
 
-Data binding expressions are enclosed in double curly braces `{{}}` and can reference:
-- Model properties: `{{model.propertyName}}`
-- Nested data: `{{document.spacing.lineHeight}}`
-- Conditional expressions: `{{condition ? valueIfTrue : valueIfFalse}}`
+Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% endraw %}` and can reference:
+- Model properties: `{% raw %}{{model.propertyName}}{% endraw %}`
+- Nested data: `{% raw %}{{document.spacing.lineHeight}}{% endraw %}`
+- Conditional expressions: `{% raw %}{{condition ? valueIfTrue : valueIfFalse}}{% endraw %}`
 
 ### Data Binding Examples
+
+
 
 
 
@@ -151,6 +153,8 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 </body>
 ```
 {% endraw %}
+
+
 
 
 

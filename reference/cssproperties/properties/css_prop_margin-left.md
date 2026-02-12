@@ -95,6 +95,8 @@ The `margin-left` property supports dynamic values through data binding, allowin
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -133,6 +135,8 @@ The `margin-left` property supports dynamic values through data binding, allowin
 
 
 
+
+
 Data context:
 ```json
 {
@@ -144,6 +148,8 @@ Data context:
 ```
 
 ### Example 2: Invoice line items with dynamic indentation
+
+
 
 
 
@@ -188,6 +194,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -206,6 +214,8 @@ Data context:
 ```
 
 ### Example 3: Chat message alignment based on sender
+
+
 
 
 
@@ -236,6 +246,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

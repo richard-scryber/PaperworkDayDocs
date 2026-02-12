@@ -46,6 +46,8 @@ The `data-bind` attribute is applied to `<template>` elements and accepts bindin
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{model.items}}">
@@ -57,7 +59,11 @@ The `data-bind` attribute is applied to `<template>` elements and accepts bindin
 
 
 
+
+
 ### Basic Syntax
+
+
 
 
 
@@ -82,6 +88,8 @@ The `data-bind` attribute is applied to `<template>` elements and accepts bindin
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -103,6 +111,8 @@ The `data-bind` attribute accepts binding expressions in two formats:
 **1. Modern Expression Syntax (Recommended)**
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{expression}}">
@@ -110,10 +120,12 @@ The `data-bind` attribute accepts binding expressions in two formats:
 {% endraw %}
 
 
-- Uses double curly braces: `{{...}}`
+
+
+- Uses double curly braces: `{% raw %}{{...}}{% endraw %}`
 - Supports JavaScript-like expressions
-- Allows method calls: `{{filter(model.items, .active)}}`
-- Enables calculations: `{{model.items.slice(0, 10)}}`
+- Allows method calls: `{% raw %}{{filter(model.items, .active)}}{% endraw %}`
+- Enables calculations: `{% raw %}{{model.items.slice(0, 10)}}{% endraw %}`
 
 **2. Legacy XPath Syntax**
 ```html
@@ -142,6 +154,8 @@ Within a template, a new data context is created for each iteration:
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{model.products}}">
@@ -159,15 +173,17 @@ Within a template, a new data context is created for each iteration:
 
 
 
+
+
 ### Special Context Variables
 
 Within `data-bind` templates, special variables are available (syntax may vary):
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `.` | Current item | `{{.name}}` |
-| `$index` or `index()` | Zero-based index | `{{$index + 1}}` |
-| `$count` or `count()` | Total item count | `{{$count}}` |
+| `.` | Current item | `{% raw %}{{.name}}{% endraw %}` |
+| `$index` or `index()` | Zero-based index | `{% raw %}{{$index + 1}}{% endraw %}` |
+| `$count` or `count()` | Total item count | `{% raw %}{{$count}}{% endraw %}` |
 
 ---
 
@@ -210,6 +226,8 @@ See individual documentation for these attributes for details.
 **Nested Collections**
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{model.categories}}">
@@ -223,7 +241,11 @@ See individual documentation for these attributes for details.
 
 
 
+
+
 **Accessing Parent Context**
+
+
 
 
 {% raw %}
@@ -238,7 +260,11 @@ See individual documentation for these attributes for details.
 
 
 
+
+
 **Filtered Collections**
+
+
 
 
 {% raw %}
@@ -251,6 +277,8 @@ See individual documentation for these attributes for details.
 
 
 
+
+
 ---
 
 ## Examples
@@ -258,6 +286,8 @@ See individual documentation for these attributes for details.
 ### 1. Simple List Iteration
 
 Generate a simple list from an array:
+
+
 
 
 
@@ -280,9 +310,13 @@ Generate a simple list from an array:
 
 
 
+
+
 ### 2. Object Collection with Properties
 
 Iterate over objects and access their properties:
+
+
 
 
 
@@ -300,9 +334,13 @@ Iterate over objects and access their properties:
 
 
 
+
+
 ### 3. Table Row Generation
 
 Create table rows dynamically:
+
+
 
 
 
@@ -331,9 +369,13 @@ Create table rows dynamically:
 
 
 
+
+
 ### 4. Nested Template for Hierarchical Data
 
 Handle multi-level data structures:
+
+
 
 
 
@@ -361,9 +403,13 @@ Handle multi-level data structures:
 
 
 
+
+
 ### 5. Complex Expression Binding
 
 Use expressions to transform data:
+
+
 
 
 
@@ -383,9 +429,13 @@ Use expressions to transform data:
 
 
 
+
+
 ### 6. Accessing Parent Model in Nested Template
 
 Reference parent context from within nested templates:
+
+
 
 
 
@@ -410,9 +460,13 @@ Reference parent context from within nested templates:
 
 
 
+
+
 ### 7. Conditional Item Display
 
 Use expressions to conditionally render items:
+
+
 
 
 
@@ -428,9 +482,13 @@ Use expressions to conditionally render items:
 
 
 
+
+
 ### 8. Invoice Line Items with Totals
 
 Generate invoice sections with calculations:
+
+
 
 
 
@@ -476,9 +534,13 @@ Generate invoice sections with calculations:
 
 
 
+
+
 ### 9. Multi-Page Customer Report
 
 Generate one page per customer with order details:
+
+
 
 
 
@@ -531,9 +593,13 @@ Generate one page per customer with order details:
 
 
 
+
+
 ### 10. Catalog with Categories and Products
 
 Three-level nested template structure:
+
+
 
 
 
@@ -577,9 +643,13 @@ Three-level nested template structure:
 
 
 
+
+
 ### 11. Data Grid with Alternating Row Colors
 
 Apply styling based on position:
+
+
 
 
 
@@ -603,9 +673,13 @@ Apply styling based on position:
 
 
 
+
+
 ### 12. Timeline with Event Grouping
 
 Group events by date with nested iterations:
+
+
 
 
 
@@ -637,9 +711,13 @@ Group events by date with nested iterations:
 
 
 
+
+
 ### 13. Product Comparison Table
 
 Generate comparison columns dynamically:
+
+
 
 
 
@@ -672,9 +750,13 @@ Generate comparison columns dynamically:
 
 
 
+
+
 ### 14. File Directory Listing with Icons
 
 Display files with type-specific icons:
+
+
 
 
 
@@ -703,9 +785,13 @@ Display files with type-specific icons:
 
 
 
+
+
 ### 15. Performance-Optimized Large Dataset
 
 Efficient rendering with style caching:
+
+
 
 
 
@@ -732,9 +818,13 @@ Efficient rendering with style caching:
 
 
 
+
+
 ### 16. Conditional Empty State
 
 Show message when collection is empty:
+
+
 
 
 
@@ -757,6 +847,8 @@ Show message when collection is empty:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

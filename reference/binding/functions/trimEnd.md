@@ -59,11 +59,15 @@ The string with trailing whitespace removed.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>"{{trimEnd(model.text)}}"</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,6 +87,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.lines}}
@@ -90,6 +96,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -115,11 +123,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <pre>{{trimEnd(model.code)}}</pre>
 ```
 {% endraw %}
+
+
 
 
 

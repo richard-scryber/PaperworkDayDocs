@@ -200,6 +200,8 @@ The `<big>` element may be useful when:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- While deprecated, big tags work with data binding -->
@@ -213,6 +215,8 @@ The `<big>` element may be useful when:
 </p>
 ```
 {% endraw %}
+
+
 
 
 

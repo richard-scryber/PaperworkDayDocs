@@ -94,6 +94,8 @@ The `margin-inline-start` property supports dynamic values through data binding,
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -132,6 +134,8 @@ The `margin-inline-start` property supports dynamic values through data binding,
 
 
 
+
+
 Data context:
 ```json
 {
@@ -143,6 +147,8 @@ Data context:
 ```
 
 ### Example 2: Localized invoice layout with direction-aware spacing
+
+
 
 
 
@@ -183,6 +189,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -205,6 +213,8 @@ Data context:
 ```
 
 ### Example 3: Comment thread with dynamic nesting
+
+
 
 
 
@@ -232,6 +242,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

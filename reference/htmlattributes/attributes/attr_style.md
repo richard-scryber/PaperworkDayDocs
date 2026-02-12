@@ -41,6 +41,8 @@ The `style` attribute applies CSS styles directly to an element:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Basic inline style -->
@@ -57,6 +59,8 @@ The `style` attribute applies CSS styles directly to an element:
 </span>
 ```
 {% endraw %}
+
+
 
 
 
@@ -86,6 +90,8 @@ The `style` attribute is supported on **all HTML elements** in Scryber, includin
 ## Binding Values
 
 The `style` attribute supports data binding for dynamic style values:
+
+
 
 
 
@@ -122,6 +128,8 @@ The `style` attribute supports data binding for dynamic style values:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -230,6 +238,8 @@ Scryber supports various CSS units:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Good use of inline style: unique value -->
@@ -248,6 +258,8 @@ Scryber supports various CSS units:
 <div class="highlight-box">Another use</div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -463,6 +475,8 @@ Apply multiple CSS properties by separating them with semicolons:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { theme: { primary: "#336699", fontSize: 14 } } -->
@@ -485,6 +499,8 @@ Apply multiple CSS properties by separating them with semicolons:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -735,6 +751,8 @@ Apply multiple CSS properties by separating them with semicolons:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { items: [{name: "Task 1", status: "complete", priority: "high"}] } -->
@@ -756,6 +774,8 @@ Apply multiple CSS properties by separating them with semicolons:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

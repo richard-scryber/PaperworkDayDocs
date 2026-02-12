@@ -230,6 +230,8 @@ Use data binding for dynamic image sources:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { printImage: "print.jpg", screenImage: "screen.jpg" } -->
@@ -240,6 +242,8 @@ Use data binding for dynamic image sources:
 </picture>
 ```
 {% endraw %}
+
+
 
 
 
@@ -398,6 +402,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = {
@@ -413,6 +419,8 @@ In the Scryber codebase:
 </picture>
 ```
 {% endraw %}
+
+
 
 
 
@@ -497,6 +505,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <div class="product-card" style="border: 1pt solid #ddd; padding: 15pt; margin: 10pt;">
@@ -515,6 +525,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -543,6 +555,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { showHighRes: true, imagePath: "photos/" } -->
@@ -556,7 +570,11 @@ In the Scryber codebase:
 
 
 
+
+
 ### Repeating Pictures from Data
+
+
 
 
 
@@ -578,6 +596,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -625,6 +645,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <div style="border: 3pt double #336699; padding: 40pt; text-align: center;">
@@ -645,7 +667,11 @@ In the Scryber codebase:
 
 
 
+
+
 ### Cover Page Design
+
+
 
 
 
@@ -689,6 +715,8 @@ In the Scryber codebase:
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -750,6 +778,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <div style="max-width: 600pt; margin: 0 auto; font-family: Arial, sans-serif;">
@@ -776,6 +806,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

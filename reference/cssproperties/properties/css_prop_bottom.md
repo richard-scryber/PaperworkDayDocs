@@ -94,6 +94,8 @@ The `bottom` property supports data binding, allowing dynamic vertical positioni
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -126,6 +128,8 @@ The `bottom` property supports data binding, allowing dynamic vertical positioni
 
 
 
+
+
 Data model:
 ```json
 {
@@ -148,6 +152,8 @@ Data model:
 ```
 
 ### Example 2: Dynamic signature block positioning
+
+
 
 
 
@@ -194,6 +200,8 @@ Data model:
 
 
 
+
+
 Data model:
 ```json
 {
@@ -215,6 +223,8 @@ Data model:
 ```
 
 ### Example 3: Data-driven approval stamp at bottom
+
+
 
 
 
@@ -253,6 +263,8 @@ Data model:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

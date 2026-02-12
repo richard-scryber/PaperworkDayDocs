@@ -162,6 +162,8 @@ Patterns support data binding for dynamic content, colors, and sizing.
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Pattern with data-driven colors -->
@@ -183,7 +185,11 @@ Patterns support data binding for dynamic content, colors, and sizing.
 
 
 
+
+
 ### Dynamic Pattern Size
+
+
 
 
 
@@ -207,7 +213,11 @@ Patterns support data binding for dynamic content, colors, and sizing.
 
 
 
+
+
 ### Template-Generated Patterns
+
+
 
 
 
@@ -239,7 +249,11 @@ Patterns support data binding for dynamic content, colors, and sizing.
 
 
 
+
+
 ### Data-Driven Pattern Application
+
+
 
 
 
@@ -255,6 +269,8 @@ Patterns support data binding for dynamic content, colors, and sizing.
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -492,6 +508,8 @@ Bar chart with pattern fills based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { data: [{value: 120, category: "A", usePattern: true}, ...] } -->
@@ -520,6 +538,8 @@ Bar chart with pattern fills based on data:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -566,6 +586,8 @@ Pattern with data-driven colors:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { primaryColor: "#336699", secondaryColor: "#6699cc" } -->
@@ -581,6 +603,8 @@ Pattern with data-driven colors:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -678,6 +702,8 @@ Chart regions with pattern fills:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { zones: [{x: 0, y: 0, w: 200, h: 150, pattern: "safe"}, ...] } -->
@@ -711,6 +737,8 @@ Chart regions with pattern fills:
 
 
 
+
+
 ### 18. Circular Pattern
 
 Radial dot pattern:
@@ -734,6 +762,8 @@ Radial dot pattern:
 ### 19. Variable Density Pattern
 
 Pattern density based on data value:
+
+
 
 
 
@@ -764,9 +794,13 @@ Pattern density based on data value:
 
 
 
+
+
 ### 20. Multi-Pattern Comparison
 
 Side-by-side pattern comparisons:
+
+
 
 
 
@@ -804,6 +838,8 @@ Side-by-side pattern comparisons:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

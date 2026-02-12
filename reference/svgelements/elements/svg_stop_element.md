@@ -207,6 +207,8 @@ Bind stop colors to model data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { primaryColor: "#3498db", accentColor: "#e74c3c" } -->
@@ -219,9 +221,13 @@ Bind stop colors to model data:
 
 
 
+
+
 ### Dynamic Stop Positions
 
 Create data-driven stop positions:
+
+
 
 
 
@@ -238,9 +244,13 @@ Create data-driven stop positions:
 
 
 
+
+
 ### Conditional Stop Colors
 
 Set colors based on data conditions:
+
+
 
 
 
@@ -257,9 +267,13 @@ Set colors based on data conditions:
 
 
 
+
+
 ### Dynamic Opacity
 
 Control stop transparency with data:
+
+
 
 
 
@@ -275,9 +289,13 @@ Control stop transparency with data:
 
 
 
+
+
 ### Generate Stops from Array
 
 Create multiple stops from data collections:
+
+
 
 
 
@@ -299,9 +317,13 @@ Create multiple stops from data collections:
 
 
 
+
+
 ### Data-Driven Color Scales
 
 Create color scales from data ranges:
+
+
 
 
 
@@ -316,6 +338,8 @@ Create color scales from data ranges:
 </linearGradient>
 ```
 {% endraw %}
+
+
 
 
 
@@ -541,6 +565,8 @@ Create color scales from data ranges:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { level: 75, lowColor: "#2ecc71", midColor: "#f39c12", highColor: "#e74c3c" } -->
@@ -559,7 +585,11 @@ Create color scales from data ranges:
 
 
 
+
+
 ### Temperature Scale with Data Stops
+
+
 
 
 
@@ -580,7 +610,11 @@ Create color scales from data ranges:
 
 
 
+
+
 ### Dynamic Opacity Based on Value
+
+
 
 
 
@@ -599,7 +633,11 @@ Create color scales from data ranges:
 
 
 
+
+
 ### Conditional Color Stops
+
+
 
 
 
@@ -620,7 +658,11 @@ Create color scales from data ranges:
 
 
 
+
+
 ### Percentage-Based Color Stops
+
+
 
 
 
@@ -638,6 +680,8 @@ Create color scales from data ranges:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

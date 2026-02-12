@@ -78,6 +78,8 @@ The `border-top-color` property supports dynamic values through data binding, al
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -100,6 +102,8 @@ The `border-top-color` property supports dynamic values through data binding, al
 
 
 
+
+
 Data context:
 ```json
 {
@@ -112,6 +116,8 @@ Data context:
 ```
 
 ### Example 2: Priority-based colors
+
+
 
 
 
@@ -136,7 +142,11 @@ Data context:
 
 
 
+
+
 ### Example 3: Conditional alert colors
+
+
 
 
 
@@ -157,6 +167,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

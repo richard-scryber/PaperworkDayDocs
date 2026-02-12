@@ -90,6 +90,8 @@ The `float` property supports data binding, allowing dynamic control of element 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -113,6 +115,8 @@ The `float` property supports data binding, allowing dynamic control of element 
 </body>
 ```
 {% endraw %}
+
+
 
 
 
@@ -142,6 +146,8 @@ Data model:
 ```
 
 ### Example 2: Configurable sidebar float position
+
+
 
 
 
@@ -188,6 +194,8 @@ Data model:
 
 
 
+
+
 Data model:
 ```json
 {
@@ -219,6 +227,8 @@ Data model:
 ```
 
 ### Example 3: Data-driven callout box positioning
+
+
 
 
 
@@ -256,6 +266,8 @@ Data model:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

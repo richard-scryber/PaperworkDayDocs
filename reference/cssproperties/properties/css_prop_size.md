@@ -118,6 +118,8 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -144,7 +146,11 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 
 
 
+
+
 ### Example 2: Document type-specific page layouts
+
+
 
 
 
@@ -183,7 +189,11 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 
 
 
+
+
 ### Example 3: Custom page dimensions from data
+
+
 
 
 
@@ -227,6 +237,8 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 </body>
 ```
 {% endraw %}
+
+
 
 
 

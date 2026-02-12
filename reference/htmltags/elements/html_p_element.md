@@ -159,6 +159,8 @@ Control how paragraphs break across pages:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { description: "Product details here" } -->
@@ -170,6 +172,8 @@ Control how paragraphs break across pages:
 </p>
 ```
 {% endraw %}
+
+
 
 
 

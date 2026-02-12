@@ -62,16 +62,18 @@ font-display: optional;
 
 ## Data Binding
 
-CSS properties support dynamic values through Scryber's Handlebars-style data binding syntax using `{{expression}}` in inline styles. While font-display is not currently implemented in Scryber.Core (as it's primarily a web-focused property), the data binding syntax is supported for shared web/PDF stylesheets.
+CSS properties support dynamic values through Scryber's Handlebars-style data binding syntax using `{% raw %}{{expression}}{% endraw %}` in inline styles. While font-display is not currently implemented in Scryber.Core (as it's primarily a web-focused property), the data binding syntax is supported for shared web/PDF stylesheets.
 
 ### Binding Syntax
 
-Data binding expressions are enclosed in double curly braces `{{}}` and can reference:
-- Model properties: `{{model.propertyName}}`
-- Nested data: `{{config.fontDisplay}}`
-- Conditional expressions: `{{condition ? valueIfTrue : valueIfFalse}}`
+Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% endraw %}` and can reference:
+- Model properties: `{% raw %}{{model.propertyName}}{% endraw %}`
+- Nested data: `{% raw %}{{config.fontDisplay}}{% endraw %}`
+- Conditional expressions: `{% raw %}{{condition ? valueIfTrue : valueIfFalse}}{% endraw %}`
 
 ### Data Binding Examples
+
+
 
 
 
@@ -117,6 +119,8 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 </body>
 ```
 {% endraw %}
+
+
 
 
 

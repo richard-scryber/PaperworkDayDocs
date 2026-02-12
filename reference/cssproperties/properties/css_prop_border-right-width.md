@@ -72,6 +72,8 @@ The `border-right-width` property supports dynamic values through data binding, 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -92,7 +94,11 @@ The `border-right-width` property supports dynamic values through data binding, 
 
 
 
+
+
 ### Example 2: Dashboard separators
+
+
 
 
 
@@ -118,7 +124,11 @@ The `border-right-width` property supports dynamic values through data binding, 
 
 
 
+
+
 ### Example 3: Featured pricing tiers
+
+
 
 
 
@@ -140,6 +150,8 @@ The `border-right-width` property supports dynamic values through data binding, 
 </body>
 ```
 {% endraw %}
+
+
 
 
 

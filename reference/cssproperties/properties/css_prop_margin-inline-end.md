@@ -95,6 +95,8 @@ The `margin-inline-end` property supports dynamic values through data binding, a
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -127,6 +129,8 @@ The `margin-inline-end` property supports dynamic values through data binding, a
 
 
 
+
+
 Data context:
 ```json
 {
@@ -138,6 +142,8 @@ Data context:
 ```
 
 ### Example 2: Responsive grid layout with data-driven spacing
+
+
 
 
 
@@ -173,6 +179,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -191,6 +199,8 @@ Data context:
 ```
 
 ### Example 3: Bilingual button group with direction-aware spacing
+
+
 
 
 
@@ -220,6 +230,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

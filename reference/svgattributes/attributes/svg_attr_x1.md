@@ -83,6 +83,8 @@ Bind the x1 coordinate to data values for dynamic gradient positioning:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { startX: 25 } -->
@@ -102,9 +104,13 @@ Bind the x1 coordinate to data values for dynamic gradient positioning:
 
 
 
+
+
 ### Calculated Gradient Angles
 
 Calculate x1/x2 coordinates to create specific gradient angles:
+
+
 
 
 
@@ -130,9 +136,13 @@ Calculate x1/x2 coordinates to create specific gradient angles:
 
 
 
+
+
 ### Data-Driven Chart Gradients
 
 Position gradients based on data ranges:
+
+
 
 
 
@@ -157,9 +167,13 @@ Position gradients based on data ranges:
 
 
 
+
+
 ### Conditional Gradient Direction
 
 Change gradient direction based on data conditions:
+
+
 
 
 
@@ -184,9 +198,13 @@ Change gradient direction based on data conditions:
 
 
 
+
+
 ### Responsive Gradient Positioning
 
 Adjust gradient based on viewport or container size:
+
+
 
 
 
@@ -209,6 +227,8 @@ Adjust gradient based on viewport or container size:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -474,6 +494,8 @@ The gradient vector is defined by start point (x1, y1) and end point (x2, y2):
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { highlightPosition: 30, color1: "#3498db", color2: "#e74c3c" } -->
@@ -492,6 +514,8 @@ The gradient vector is defined by start point (x1, y1) and end point (x2, y2):
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

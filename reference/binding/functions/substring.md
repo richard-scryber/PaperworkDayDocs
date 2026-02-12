@@ -61,11 +61,15 @@ The extracted substring.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Short Name: {{substring(model.fullName, 0, 10)}}...</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,11 +89,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Last Name: {{substring(model.fullName, 5)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -109,6 +117,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.articles}}
@@ -123,6 +133,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -152,11 +164,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Code: {{substring(model.fullCode, 4, 8)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -176,11 +192,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Initial: {{toUpper(substring(model.name, 0, 1))}}</p>
 ```
 {% endraw %}
+
+
 
 
 

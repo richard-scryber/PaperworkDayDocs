@@ -90,6 +90,8 @@ The `val` attribute fully supports data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { totalAmount: 542.75 } -->
@@ -99,7 +101,11 @@ The `val` attribute fully supports data binding:
 
 
 
+
+
 ### Calculated Value
+
+
 
 
 
@@ -112,7 +118,11 @@ The `val` attribute fully supports data binding:
 
 
 
+
+
 ### Formatted Value
+
+
 
 
 
@@ -122,6 +132,8 @@ The `val` attribute fully supports data binding:
 <output for="items" val="${{model.total.toFixed(2)}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -212,6 +224,8 @@ An empty or missing `val` attribute results in an empty output:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { subtotal: 500, taxRate: 0.08, total: 540 } -->
@@ -227,6 +241,8 @@ An empty or missing `val` attribute results in an empty output:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -321,6 +337,8 @@ An empty or missing `val` attribute results in an empty output:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { items: [
@@ -341,6 +359,8 @@ An empty or missing `val` attribute results in an empty output:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -375,6 +395,8 @@ An empty or missing `val` attribute results in an empty output:
 ```
 
 ### Example 10: Invoice with Line Items
+
+
 
 
 
@@ -423,6 +445,8 @@ An empty or missing `val` attribute results in an empty output:
 </table>
 ```
 {% endraw %}
+
+
 
 
 
@@ -520,6 +544,8 @@ An empty or missing `val` attribute results in an empty output:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { score: 95, passed: true } -->
@@ -539,6 +565,8 @@ An empty or missing `val` attribute results in an empty output:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

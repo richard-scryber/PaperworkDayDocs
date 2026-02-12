@@ -97,6 +97,8 @@ The `border-color` property supports dynamic values through data binding, allowi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -120,6 +122,8 @@ The `border-color` property supports dynamic values through data binding, allowi
 
 
 
+
+
 Data context:
 ```json
 {
@@ -133,6 +137,8 @@ Data context:
 ```
 
 ### Example 2: Alert severity colors
+
+
 
 
 
@@ -156,6 +162,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -169,6 +177,8 @@ Data context:
 ```
 
 ### Example 3: Table rows with conditional colors
+
+
 
 
 
@@ -195,6 +205,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

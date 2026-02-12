@@ -59,12 +59,16 @@ The angle in radians (between 0 and π).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>acos(0.5) = {{format(acos(0.5), '0.000')}} radians</p>
 <p>acos(0.5) = {{format(degrees(acos(0.5)), '0.0')}}°</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -78,11 +82,15 @@ The angle in radians (between 0 and π).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Angle: {{format(degrees(acos(model.adjacent / model.hypotenuse)), '0.0')}}°</p>
 ```
 {% endraw %}
+
+
 
 
 

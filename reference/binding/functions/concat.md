@@ -59,6 +59,8 @@ All input strings joined together.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{concat('Hello', ' ', 'World')}}
@@ -68,7 +70,11 @@ All input strings joined together.
 
 
 
+
+
 ### With Variables
+
+
 
 
 
@@ -77,6 +83,8 @@ All input strings joined together.
 <p>{{concat(model.firstName, ' ', model.lastName)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -97,6 +105,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{concat('Order #', model.orderNumber, ' - ', model.status)}}
@@ -106,7 +116,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### With Formatting
+
+
 
 
 
@@ -119,7 +133,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### In Log Statement
+
+
 
 
 
@@ -128,6 +146,8 @@ doc.Params["model"] = new {
 {{log concat('Processing order ', model.id)}}
 ```
 {% endraw %}
+
+
 
 
 

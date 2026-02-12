@@ -89,6 +89,8 @@ The `hyphenate-character` property can be dynamically controlled through data bi
 
 
 
+
+
 {% raw %}
 ```html
 <div style="width: 200pt; padding: 15pt" lang="{{model.language.code}}">
@@ -121,7 +123,11 @@ The `hyphenate-character` property can be dynamically controlled through data bi
 
 
 
+
+
 ### Example 2: Document Format-Based Character
+
+
 
 
 
@@ -159,7 +165,11 @@ The `hyphenate-character` property can be dynamically controlled through data bi
 
 
 
+
+
 ### Example 3: Typography Style Settings
+
+
 
 
 
@@ -192,6 +202,8 @@ The `hyphenate-character` property can be dynamically controlled through data bi
 -->
 ```
 {% endraw %}
+
+
 
 
 

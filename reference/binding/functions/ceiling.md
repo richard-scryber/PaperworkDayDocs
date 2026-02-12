@@ -59,11 +59,15 @@ The smallest integer greater than or equal to the value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Rounded Price: ${{ceiling(model.price)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Pages required: {{ceiling(model.items / model.itemsPerPage)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,11 +116,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Boxes needed: {{ceiling(model.quantity / model.boxSize)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -133,6 +145,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.values}}
@@ -140,6 +154,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

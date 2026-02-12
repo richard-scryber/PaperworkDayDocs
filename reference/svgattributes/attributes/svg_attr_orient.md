@@ -84,6 +84,8 @@ Switch between auto and fixed orientation based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { useAutoOrient: true, fixedAngle: 45 } -->
@@ -105,9 +107,13 @@ Switch between auto and fixed orientation based on data:
 
 
 
+
+
 ### Data-Driven Arrow Angles
 
 Set marker angles from data for directional indicators:
+
+
 
 
 
@@ -141,9 +147,13 @@ Set marker angles from data for directional indicators:
 
 
 
+
+
 ### Conditional Reversed Orientation
 
 Use reversed orientation for bidirectional flows:
+
+
 
 
 
@@ -175,9 +185,13 @@ Use reversed orientation for bidirectional flows:
 
 
 
+
+
 ### Clock Hand Positions
 
 Create clock-like indicators with precise angles:
+
+
 
 
 
@@ -218,6 +232,8 @@ Create clock-like indicators with precise angles:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

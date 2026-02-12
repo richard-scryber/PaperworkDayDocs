@@ -99,6 +99,8 @@ File attachments allow you to embed external files within a PDF, making the PDF 
 
 
 
+
+
 {% raw %}
 ```html
 <h1>Invoice with Supporting Documents</h1>
@@ -122,7 +124,11 @@ File attachments allow you to embed external files within a PDF, making the PDF 
 
 
 
+
+
 ### Conditional Attachments
+
+
 
 
 
@@ -139,6 +145,8 @@ File attachments allow you to embed external files within a PDF, making the PDF 
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -385,6 +393,8 @@ While not direct file embedding, you can modularize content:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -518,6 +528,8 @@ While not direct file embedding, you can modularize content:
 </html>
 ```
 {% endraw %}
+
+
 
 
 

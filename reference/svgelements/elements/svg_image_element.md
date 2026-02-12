@@ -126,6 +126,8 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Simple source binding -->
@@ -143,7 +145,11 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 
 
 
+
+
 ### Dynamic Positioning
+
+
 
 
 
@@ -167,7 +173,11 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 
 
 
+
+
 ### Dynamic Sizing
+
+
 
 
 
@@ -191,7 +201,11 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 
 
 
+
+
 ### Conditional Display
+
+
 
 
 
@@ -217,7 +231,11 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 
 
 
+
+
 ### Template Iteration
+
+
 
 
 
@@ -244,6 +262,8 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -412,6 +432,8 @@ Dynamic logo based on model:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { companyLogo: "./images/acme-corp-logo.png" } -->
@@ -425,9 +447,13 @@ Dynamic logo based on model:
 
 
 
+
+
 ### 8. Conditional Badge
 
 Badge shown based on status:
+
+
 
 
 
@@ -444,9 +470,13 @@ Badge shown based on status:
 
 
 
+
+
 ### 9. Product Thumbnail Grid
 
 Grid of product images:
+
+
 
 
 
@@ -467,9 +497,13 @@ Grid of product images:
 
 
 
+
+
 ### 10. Chart with Icon Markers
 
 Data points with icon markers:
+
+
 
 
 
@@ -495,9 +529,13 @@ Data points with icon markers:
 
 
 
+
+
 ### 11. Status Icon
 
 Status indicator icon with color coding:
+
+
 
 
 
@@ -514,6 +552,8 @@ Status indicator icon with color coding:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -543,6 +583,8 @@ Horizontal row of partner logos:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { partners: [{logo: "partner1.png", name: "ABC"}, ...] } -->
@@ -562,6 +604,8 @@ Horizontal row of partner logos:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -587,6 +631,8 @@ Avatar with size based on user tier:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { userAvatar: "user123.jpg", userTier: 2 } -->
@@ -609,9 +655,13 @@ Avatar with size based on user tier:
 
 
 
+
+
 ### 16. Comparison Layout
 
 Side-by-side image comparison:
+
+
 
 
 
@@ -636,9 +686,13 @@ Side-by-side image comparison:
 
 
 
+
+
 ### 17. Category Icons
 
 Category selection with icons:
+
+
 
 
 
@@ -677,9 +731,13 @@ Category selection with icons:
 
 
 
+
+
 ### 18. Report Header with Logo
 
 Report header combining logo and text:
+
+
 
 
 
@@ -706,9 +764,13 @@ Report header combining logo and text:
 
 
 
+
+
 ### 19. Image Gallery with Captions
 
 Gallery layout with captions:
+
+
 
 
 
@@ -740,9 +802,13 @@ Gallery layout with captions:
 
 
 
+
+
 ### 20. QR Code Placement
 
 QR code with instructions:
+
+
 
 
 
@@ -769,6 +835,8 @@ QR code with instructions:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

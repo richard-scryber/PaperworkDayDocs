@@ -61,6 +61,8 @@ sign(value)
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if sign(model.balance) > 0}}
@@ -72,6 +74,8 @@ sign(value)
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -91,6 +95,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.accounts}}
@@ -101,6 +107,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -130,11 +138,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Trend: {{if(sign(model.change) > 0, 'Increasing', if(sign(model.change) < 0, 'Decreasing', 'Stable'))}}</p>
 ```
 {% endraw %}
+
+
 
 
 

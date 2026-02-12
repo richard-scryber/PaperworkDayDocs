@@ -115,6 +115,8 @@ The `data-outline-title` attribute supports data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { chapterNum: 3, chapterTitle: "Advanced Features" } -->
@@ -126,7 +128,11 @@ The `data-outline-title` attribute supports data binding:
 
 
 
+
+
 ### Computed Outline Title
+
+
 
 
 
@@ -138,6 +144,8 @@ The `data-outline-title` attribute supports data binding:
 </h2>
 ```
 {% endraw %}
+
+
 
 
 
@@ -325,6 +333,8 @@ Creates this bookmark structure:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -342,6 +352,8 @@ Creates this bookmark structure:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -605,6 +617,8 @@ Creates this bookmark structure:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { year: 2024, sections: [...] } -->
@@ -646,6 +660,8 @@ Creates this bookmark structure:
 </h1>
 ```
 {% endraw %}
+
+
 
 
 

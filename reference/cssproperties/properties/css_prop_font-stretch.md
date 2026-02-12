@@ -89,16 +89,18 @@ font-stretch: 200%;
 
 ## Data Binding
 
-CSS properties support dynamic values through Scryber's Handlebars-style data binding syntax using `{{expression}}` in inline styles. While font-stretch is not currently implemented in Scryber.Core, the data binding syntax is supported for future compatibility.
+CSS properties support dynamic values through Scryber's Handlebars-style data binding syntax using `{% raw %}{{expression}}{% endraw %}` in inline styles. While font-stretch is not currently implemented in Scryber.Core, the data binding syntax is supported for future compatibility.
 
 ### Binding Syntax
 
-Data binding expressions are enclosed in double curly braces `{{}}` and can reference:
-- Model properties: `{{model.propertyName}}`
-- Nested data: `{{style.fontStretch}}`
-- Conditional expressions: `{{condition ? valueIfTrue : valueIfFalse}}`
+Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% endraw %}` and can reference:
+- Model properties: `{% raw %}{{model.propertyName}}{% endraw %}`
+- Nested data: `{% raw %}{{style.fontStretch}}{% endraw %}`
+- Conditional expressions: `{% raw %}{{condition ? valueIfTrue : valueIfFalse}}{% endraw %}`
 
 ### Data Binding Examples
+
+
 
 
 
@@ -133,6 +135,8 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 </body>
 ```
 {% endraw %}
+
+
 
 
 

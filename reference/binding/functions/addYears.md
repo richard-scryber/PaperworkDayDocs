@@ -60,11 +60,15 @@ A new DateTime with the specified years added.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Expiry: {{format(addYears(model.issued, 5), 'MMMM dd, yyyy')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -84,6 +88,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Next year you'll be {{yearOf(addYears(model.today, 1)) - yearOf(model.birthDate)}} years old</p>
@@ -92,7 +98,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Contract Renewal Dates
+
+
 
 
 
@@ -104,6 +114,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -129,11 +141,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>5 years ago: {{format(addYears(model.today, -5), 'MMMM yyyy')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

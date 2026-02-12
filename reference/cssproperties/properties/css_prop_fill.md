@@ -99,6 +99,8 @@ The `fill` property can be dynamically set using data binding expressions, enabl
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -124,6 +126,8 @@ The `fill` property can be dynamically set using data binding expressions, enabl
 
 
 
+
+
 With model data:
 ```json
 {
@@ -136,6 +140,8 @@ With model data:
 ```
 
 ### Example 2: Conditional status indicators
+
+
 
 
 
@@ -163,7 +169,11 @@ With model data:
 
 
 
+
+
 ### Example 3: Category-based color coding
+
+
 
 
 
@@ -186,6 +196,8 @@ With model data:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

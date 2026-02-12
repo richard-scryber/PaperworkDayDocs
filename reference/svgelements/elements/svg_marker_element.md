@@ -167,6 +167,8 @@ Markers support data binding for dynamic appearance and behavior.
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Marker with data-driven color -->
@@ -188,7 +190,11 @@ Markers support data binding for dynamic appearance and behavior.
 
 
 
+
+
 ### Size Based on Data
+
+
 
 
 
@@ -212,7 +218,11 @@ Markers support data binding for dynamic appearance and behavior.
 
 
 
+
+
 ### Template-Generated Markers
+
+
 
 
 
@@ -240,6 +250,8 @@ Markers support data binding for dynamic appearance and behavior.
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -527,6 +539,8 @@ Data-driven marker colors:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { connections: [{x1: 50, y1: 50, x2: 200, y2: 50, status: "success"}] } -->
@@ -549,6 +563,8 @@ Data-driven marker colors:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -703,6 +719,8 @@ Progress indicator with markers:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { progress: 0.75 } -->
@@ -727,6 +745,8 @@ Progress indicator with markers:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

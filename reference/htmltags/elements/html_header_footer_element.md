@@ -388,6 +388,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <footer style="position: absolute; bottom: 20pt; left: 20pt; right: 20pt; border-top: 1pt solid #ddd; padding-top: 10pt; font-size: 9pt; color: #666;">
@@ -405,6 +407,8 @@ In the Scryber codebase:
 </footer>
 ```
 {% endraw %}
+
+
 
 
 
@@ -485,6 +489,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { title: "My Article", author: "John", date: "2025-10-13", category: "Technology" } -->
@@ -505,6 +511,8 @@ In the Scryber codebase:
 </article>
 ```
 {% endraw %}
+
+
 
 
 

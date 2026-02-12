@@ -168,6 +168,8 @@ SVGGroup implements `ICloneable`:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { showDetails: true } -->
@@ -186,7 +188,11 @@ SVGGroup implements `ICloneable`:
 
 
 
+
+
 ### Repeated Groups
+
+
 
 
 
@@ -206,7 +212,11 @@ SVGGroup implements `ICloneable`:
 
 
 
+
+
 ### Dynamic Transformations
+
+
 
 
 
@@ -223,7 +233,11 @@ SVGGroup implements `ICloneable`:
 
 
 
+
+
 ### Data-Driven Styling
+
+
 
 
 
@@ -241,6 +255,8 @@ SVGGroup implements `ICloneable`:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -400,6 +416,8 @@ SVGGroup implements `ICloneable`:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { showGrid: true, showLabels: false } -->
@@ -418,6 +436,8 @@ SVGGroup implements `ICloneable`:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -489,6 +509,8 @@ SVGGroup implements `ICloneable`:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { data: [{label:"A", value:80, color:"#4a90e2"}, {label:"B", value:120, color:"#50c878"}] } -->
@@ -505,6 +527,8 @@ SVGGroup implements `ICloneable`:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

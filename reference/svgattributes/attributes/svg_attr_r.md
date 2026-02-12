@@ -62,9 +62,11 @@ The `r` attribute is supported on the following SVG elements:
 
 ## Data Binding
 
-The `r` attribute supports dynamic values using data binding expressions with `{{expression}}` syntax.
+The `r` attribute supports dynamic values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Circle Size
+
+
 
 
 
@@ -80,7 +82,11 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 ### Example 2: Sized by Data Value
+
+
 
 
 
@@ -97,7 +103,11 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 ### Example 3: Bubble Chart with Variable Sizes
+
+
 
 
 
@@ -117,6 +127,8 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -339,6 +351,8 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { dataPoints: [
@@ -356,6 +370,8 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

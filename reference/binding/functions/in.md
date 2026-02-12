@@ -60,11 +60,15 @@ Returns `true` if the value exists in the collection, `false` otherwise.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Has premium: {{in('premium', model.features)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -84,6 +88,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.users}}
@@ -97,6 +103,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -123,6 +131,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Status:
@@ -136,6 +146,8 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -157,6 +169,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.features}}
@@ -166,6 +180,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -193,6 +209,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Priority Items</h3>
@@ -203,6 +221,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

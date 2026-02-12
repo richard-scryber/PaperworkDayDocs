@@ -59,11 +59,15 @@ The median value. For even-length collections, returns the average of the two mi
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Median score: {{median(model.scores)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Median value: {{median(model.values)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,6 +115,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Price Analysis</h3>
@@ -115,6 +125,8 @@ doc.Params["model"] = new {
 <p style="color: gray;">Median is less affected by extreme values</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -137,6 +149,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Household Income Statistics</h3>
@@ -147,6 +161,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -175,6 +191,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Test Score Analysis</h3>
@@ -185,6 +203,8 @@ doc.Params["model"] = new {
 <p>Range: {{min(model.scores)}} - {{max(model.scores)}}</p>
 ```
 {% endraw %}
+
+
 
 
 

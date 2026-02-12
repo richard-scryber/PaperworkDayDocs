@@ -60,11 +60,15 @@ The sum of the specified property across all items. Returns 0 for empty collecti
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Total price: ${{sumOf(model.products, 'price')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -88,6 +92,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Monthly Sales Summary</h3>
@@ -96,6 +102,8 @@ doc.Params["model"] = new {
 <p>Average Sale: ${{round(sumOf(model.sales, 'amount') / count(model.sales), 2)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -122,6 +130,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Warehouse Inventory</h3>
@@ -131,6 +141,8 @@ doc.Params["model"] = new {
 <p><strong>Total Value: ${{sumOf(model.warehouses, 'totalValue')}}</strong></p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -170,6 +182,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Team Time Tracking</h3>
@@ -179,6 +193,8 @@ doc.Params["model"] = new {
 <p>Grand Total: {{sumOf(model.projects, 'totalHours')}} hours</p>
 ```
 {% endraw %}
+
+
 
 
 

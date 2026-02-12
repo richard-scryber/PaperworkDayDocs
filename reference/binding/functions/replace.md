@@ -61,11 +61,15 @@ A new string with all occurrences replaced.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{replace(model.text, 'old', 'new')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,11 +89,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Phone: {{replace(model.phone -  '')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -109,11 +117,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{replace(model.code, '_', ' ')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -133,6 +145,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -143,7 +157,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Template Variable Replacement
+
+
 
 
 
@@ -152,6 +170,8 @@ doc.Params["model"] = new {
 <p>{{replace(replace(model.template, '{name}', model.name), '{date}', model.date)}}</p>
 ```
 {% endraw %}
+
+
 
 
 

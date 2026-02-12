@@ -78,6 +78,8 @@ The `text-align` property can be dynamically set using data binding expressions,
 
 
 
+
+
 {% raw %}
 ```html
 <div style="text-align: {{model.userPreferences.textAlignment}}; font-size: 12pt">
@@ -89,7 +91,11 @@ The `text-align` property can be dynamically set using data binding expressions,
 
 
 
+
+
 ### Example 2: Content Type Conditional Alignment
+
+
 
 
 
@@ -118,7 +124,11 @@ The `text-align` property can be dynamically set using data binding expressions,
 
 
 
+
+
 ### Example 3: Multilingual Document with RTL Support
+
+
 
 
 
@@ -140,6 +150,8 @@ The `text-align` property can be dynamically set using data binding expressions,
 -->
 ```
 {% endraw %}
+
+
 
 
 

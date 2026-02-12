@@ -52,6 +52,8 @@ The `data-cache-styles` attribute is applied to `<template>` elements, typically
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{model.items}}"
@@ -65,7 +67,11 @@ The `data-cache-styles` attribute is applied to `<template>` elements, typically
 
 
 
+
+
 ### Basic Syntax
+
+
 
 
 
@@ -91,6 +97,8 @@ The `data-cache-styles` attribute is applied to `<template>` elements, typically
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -126,6 +134,8 @@ The attribute accepts literal boolean values or binding expressions:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Literal value -->
@@ -140,6 +150,8 @@ The attribute accepts literal boolean values or binding expressions:
           data-cache-styles="{{model.enableCaching}}">
 ```
 {% endraw %}
+
+
 
 
 
@@ -162,6 +174,8 @@ The `data-style-identifier` attribute works with `data-cache-styles`:
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{items}}"
@@ -169,6 +183,8 @@ The `data-style-identifier` attribute works with `data-cache-styles`:
           data-style-identifier="item-cache">
 ```
 {% endraw %}
+
+
 
 
 
@@ -197,6 +213,8 @@ Style caching works best with **static styles**:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- GOOD: Static styles, perfect for caching -->
@@ -222,6 +240,8 @@ Style caching works best with **static styles**:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -257,6 +277,8 @@ For maximum performance with large datasets:
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -277,6 +299,8 @@ For maximum performance with large datasets:
 
 
 
+
+
 Optimizations combined:
 1. CSS classes (reusable styles)
 2. Style caching (avoid recomputation)
@@ -289,6 +313,8 @@ Optimizations combined:
 ### 1. Basic Style Caching
 
 Enable caching for a simple list:
+
+
 
 
 
@@ -305,9 +331,13 @@ Enable caching for a simple list:
 
 
 
+
+
 ### 2. Large Table with Caching
 
 Optimize a large data table:
+
+
 
 
 
@@ -338,9 +368,13 @@ Optimize a large data table:
 
 
 
+
+
 ### 3. Product Catalog with CSS Classes
 
 Use CSS classes with caching for consistency:
+
+
 
 
 
@@ -378,9 +412,13 @@ Use CSS classes with caching for consistency:
 
 
 
+
+
 ### 4. Conditional Caching Based on Dataset Size
 
 Enable caching only for large datasets:
+
+
 
 
 
@@ -398,9 +436,13 @@ Enable caching only for large datasets:
 
 
 
+
+
 ### 5. Multi-Template with Shared Cache
 
 Share cache identifier across related templates:
+
+
 
 
 
@@ -433,9 +475,13 @@ Share cache identifier across related templates:
 
 
 
+
+
 ### 6. Invoice Line Items
 
 Optimize repeating invoice lines:
+
+
 
 
 
@@ -468,9 +514,13 @@ Optimize repeating invoice lines:
 
 
 
+
+
 ### 7. Paginated Large Dataset
 
 Combine caching with pagination:
+
+
 
 
 
@@ -491,9 +541,13 @@ Combine caching with pagination:
 
 
 
+
+
 ### 8. Nested Templates with Selective Caching
 
 Cache outer template only:
+
+
 
 
 
@@ -522,9 +576,13 @@ Cache outer template only:
 
 
 
+
+
 ### 9. Employee Directory
 
 Large employee list with caching:
+
+
 
 
 
@@ -564,9 +622,13 @@ Large employee list with caching:
 
 
 
+
+
 ### 10. Transaction Log
 
 High-volume transaction listing:
+
+
 
 
 
@@ -600,9 +662,13 @@ High-volume transaction listing:
 
 
 
+
+
 ### 11. Event Schedule
 
 Large event listing with time-based grouping:
+
+
 
 
 
@@ -635,9 +701,13 @@ Large event listing with time-based grouping:
 
 
 
+
+
 ### 12. Inventory Report with Alternating Rows
 
 Use CSS pseudo-classes with caching:
+
+
 
 
 
@@ -670,9 +740,13 @@ Use CSS pseudo-classes with caching:
 
 
 
+
+
 ### 13. Multi-Page Report with Consistent Styling
 
 Cache styles across multiple report pages:
+
+
 
 
 
@@ -716,9 +790,13 @@ Cache styles across multiple report pages:
 
 
 
+
+
 ### 14. Customer Mailing Labels
 
 High-volume label generation:
+
+
 
 
 
@@ -750,9 +828,13 @@ High-volume label generation:
 
 
 
+
+
 ### 15. Performance Comparison Report
 
 Demonstrate caching benefits with metrics:
+
+
 
 
 
@@ -791,9 +873,13 @@ Demonstrate caching benefits with metrics:
 
 
 
+
+
 ### 16. Sales Report with Summary Cards
 
 Cache consistent card layout:
+
+
 
 
 
@@ -829,9 +915,13 @@ Cache consistent card layout:
 
 
 
+
+
 ### 17. Log File Viewer
 
 Thousands of log entries with caching:
+
+
 
 
 
@@ -861,9 +951,13 @@ Thousands of log entries with caching:
 
 
 
+
+
 ### 18. Product Comparison Grid
 
 Large comparison table with caching:
+
+
 
 
 
@@ -894,9 +988,13 @@ Large comparison table with caching:
 
 
 
+
+
 ### 19. Batch Processing Status Report
 
 Monitor large batch operations:
+
+
 
 
 
@@ -929,9 +1027,13 @@ Monitor large batch operations:
 
 
 
+
+
 ### 20. Complex Nested Structure with Selective Caching
 
 Optimize only high-volume sections:
+
+
 
 
 
@@ -971,6 +1073,8 @@ Optimize only high-volume sections:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

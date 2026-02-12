@@ -112,6 +112,8 @@ The `paint-order` property can be dynamically controlled through data binding, e
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -139,7 +141,11 @@ The `paint-order` property can be dynamically controlled through data binding, e
 
 
 
+
+
 ### Example 2: Data-driven label styles for status badges
+
+
 
 
 
@@ -170,7 +176,11 @@ The `paint-order` property can be dynamically controlled through data binding, e
 
 
 
+
+
 ### Example 3: Dynamic signage with variable paint order
+
+
 
 
 
@@ -201,6 +211,8 @@ The `paint-order` property can be dynamically controlled through data binding, e
 </body>
 ```
 {% endraw %}
+
+
 
 
 

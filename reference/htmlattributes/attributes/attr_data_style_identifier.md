@@ -40,6 +40,8 @@ The `data-style-identifier` attribute is used to:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Without identifier - styles computed for each row -->
@@ -57,6 +59,8 @@ The `data-style-identifier` attribute is used to:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -81,6 +85,8 @@ The `data-style-identifier` attribute is primarily supported by:
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{collection}}" data-style-identifier="unique-id">
@@ -88,6 +94,8 @@ The `data-style-identifier` attribute is primarily supported by:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -122,6 +130,8 @@ The `data-style-identifier` attribute supports static and dynamic values:
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{model.products}}" data-style-identifier="product-row">
@@ -135,7 +145,11 @@ The `data-style-identifier` attribute supports static and dynamic values:
 
 
 
+
+
 ### Dynamic Identifier
+
+
 
 
 
@@ -149,6 +163,8 @@ The `data-style-identifier` attribute supports static and dynamic values:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -202,6 +218,8 @@ For maximum performance, combine with:
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{model.largeDataset}}"
@@ -216,11 +234,15 @@ For maximum performance, combine with:
 
 
 
+
+
 ---
 
 ## Examples
 
 ### Example 1: Basic Table Row Optimization
+
+
 
 
 
@@ -251,7 +273,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 2: List Items with Shared Styling
+
+
 
 
 
@@ -271,7 +297,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 3: Invoice Line Items
+
+
 
 
 
@@ -305,7 +335,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 4: Data Grid with Complex Styling
+
+
 
 
 
@@ -335,7 +369,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 5: Product Catalog Items
+
+
 
 
 
@@ -358,7 +396,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 6: Multiple Identifier Groups
+
+
 
 
 
@@ -391,7 +433,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 7: Nested Templates with Identifiers
+
+
 
 
 
@@ -417,7 +463,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 8: Transaction Log
+
+
 
 
 
@@ -443,7 +493,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 9: Report with Alternating Row Colors
+
+
 
 
 
@@ -478,7 +532,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 10: Performance-Critical Large Dataset
+
+
 
 
 
@@ -507,7 +565,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 11: Customer List
+
+
 
 
 
@@ -532,7 +594,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 12: Dynamic Identifier Based on Data
+
+
 
 
 
@@ -552,7 +618,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 13: Financial Statement Rows
+
+
 
 
 
@@ -578,7 +648,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 14: Email Campaign Report
+
+
 
 
 
@@ -612,7 +686,11 @@ For maximum performance, combine with:
 
 
 
+
+
 ### Example 15: Complete Optimized Report
+
+
 
 
 
@@ -656,6 +734,8 @@ For maximum performance, combine with:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

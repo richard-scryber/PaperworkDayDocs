@@ -59,11 +59,15 @@ A double-precision floating-point representation of the value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Value: {{double(model.stringValue)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Result: {{format(double(model.coefficient) * pow(10, model.exponent), '0.00e+00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,11 +116,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Rate: {{double(model.percentage) / 100}}</p>
 ```
 {% endraw %}
+
+
 
 
 

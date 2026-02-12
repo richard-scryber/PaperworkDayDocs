@@ -60,6 +60,8 @@ Description of what the function returns.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{functionName(value)}}
@@ -69,7 +71,11 @@ Description of what the function returns.
 
 
 
+
+
 ### With Variables
+
+
 
 
 
@@ -78,6 +84,8 @@ Description of what the function returns.
 <p>Result: {{functionName(model.value)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -97,12 +105,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <!-- More advanced usage -->
 {{functionName(expression, model.param)}}
 ```
 {% endraw %}
+
+
 
 
 

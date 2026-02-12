@@ -97,6 +97,8 @@ The `padding` property supports dynamic values through data binding, allowing yo
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -118,6 +120,8 @@ The `padding` property supports dynamic values through data binding, allowing yo
 
 
 
+
+
 Data context:
 ```json
 {
@@ -130,6 +134,8 @@ Data context:
 ```
 
 ### Example 2: Responsive padding based on content density
+
+
 
 
 
@@ -170,6 +176,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -182,6 +190,8 @@ Data context:
 ```
 
 ### Example 3: Variable padding for form fields
+
+
 
 
 
@@ -218,6 +228,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

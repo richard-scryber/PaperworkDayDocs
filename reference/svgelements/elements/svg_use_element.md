@@ -219,6 +219,8 @@ Referenced elements must implement `ICloneable`:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { shapeId: "star", x: 100, y: 100 } -->
@@ -234,7 +236,11 @@ Referenced elements must implement `ICloneable`:
 
 
 
+
+
 ### Repeated Instances
+
+
 
 
 
@@ -254,7 +260,11 @@ Referenced elements must implement `ICloneable`:
 
 
 
+
+
 ### Dynamic Styling
+
+
 
 
 
@@ -274,7 +284,11 @@ Referenced elements must implement `ICloneable`:
 
 
 
+
+
 ### Data-Driven Transformations
+
+
 
 
 
@@ -298,6 +312,8 @@ Referenced elements must implement `ICloneable`:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -512,6 +528,8 @@ Referenced elements must implement `ICloneable`:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { points: [{x:50, y:150, value:25}, {x:150, y:100, value:50}, {x:250, y:50, value:75}] } -->
@@ -531,6 +549,8 @@ Referenced elements must implement `ICloneable`:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -617,6 +637,8 @@ Referenced elements must implement `ICloneable`:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { status: "success", x: 100, y: 100 } -->
@@ -637,6 +659,8 @@ Referenced elements must implement `ICloneable`:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

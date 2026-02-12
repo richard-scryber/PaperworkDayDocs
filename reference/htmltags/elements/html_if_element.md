@@ -42,6 +42,8 @@ The `<if>` element controls content rendering that:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Simple condition -->
@@ -55,6 +57,8 @@ The `<if>` element controls content rendering that:
 </if>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,6 +89,8 @@ The `data-test` attribute accepts any expression that evaluates to a boolean:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Direct boolean property -->
@@ -105,6 +111,8 @@ The `data-test` attribute accepts any expression that evaluates to a boolean:
 
 
 
+
+
 ### Comparison Operators
 
 Supported operators in expressions:
@@ -122,6 +130,8 @@ Supported operators in expressions:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Check for null or empty -->
@@ -135,6 +145,8 @@ Supported operators in expressions:
 </if>
 ```
 {% endraw %}
+
+
 
 
 
@@ -158,6 +170,8 @@ You can nest `<if>` elements for complex logic:
 
 
 
+
+
 {% raw %}
 ```html
 <if data-test="{{model.hasPermission}}">
@@ -167,6 +181,8 @@ You can nest `<if>` elements for complex logic:
 </if>
 ```
 {% endraw %}
+
+
 
 
 
@@ -184,6 +200,8 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 {% raw %}
 ```html
 <if data-test="{{model.status == 'urgent'}}"
@@ -194,11 +212,15 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ---
 
 ## Examples
 
 ### Basic Conditional Content
+
+
 
 
 
@@ -215,7 +237,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### User Role-Based Content
+
+
 
 
 
@@ -238,7 +264,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Conditional Table Sections
+
+
 
 
 
@@ -273,7 +303,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Status-Dependent Styling
+
+
 
 
 
@@ -305,7 +339,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Nested Conditions
+
+
 
 
 
@@ -337,7 +375,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Conditional Warnings and Notices
+
+
 
 
 
@@ -363,7 +405,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Date-Based Content
+
+
 
 
 
@@ -387,7 +433,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Conditional Footers
+
+
 
 
 
@@ -415,7 +465,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Complex Business Logic
+
+
 
 
 
@@ -437,7 +491,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Conditional Images
+
+
 
 
 
@@ -459,7 +517,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Report Sections Based on Data
+
+
 
 
 
@@ -494,7 +556,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Conditional Terms and Conditions
+
+
 
 
 
@@ -522,7 +588,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Conditional Price Display
+
+
 
 
 
@@ -551,7 +621,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Permission-Based Document Sections
+
+
 
 
 
@@ -593,7 +667,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Conditional QR Codes or Barcodes
+
+
 
 
 
@@ -612,7 +690,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Multi-Language Conditional Content
+
+
 
 
 
@@ -643,7 +725,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Conditional Page Breaks
+
+
 
 
 
@@ -665,7 +751,11 @@ The `data-template` attribute allows inline content definition, useful for simpl
 
 
 
+
+
 ### Invoice Payment Status
+
+
 
 
 
@@ -701,6 +791,8 @@ The `data-template` attribute allows inline content definition, useful for simpl
 </div>
 ```
 {% endraw %}
+
+
 
 
 

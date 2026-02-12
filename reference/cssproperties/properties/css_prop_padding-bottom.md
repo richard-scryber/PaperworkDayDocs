@@ -93,6 +93,8 @@ The `padding-bottom` property supports dynamic values through data binding, allo
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -125,6 +127,8 @@ The `padding-bottom` property supports dynamic values through data binding, allo
 
 
 
+
+
 Data context:
 ```json
 {
@@ -137,6 +141,8 @@ Data context:
 ```
 
 ### Example 2: Card body with variable bottom padding
+
+
 
 
 
@@ -177,6 +183,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -189,6 +197,8 @@ Data context:
 ```
 
 ### Example 3: Newsletter sections with adaptive padding
+
+
 
 
 
@@ -212,6 +222,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

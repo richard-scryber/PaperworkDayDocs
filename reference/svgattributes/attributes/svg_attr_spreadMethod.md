@@ -89,6 +89,8 @@ Choose spread method based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { pattern: "striped" } -->
@@ -108,9 +110,13 @@ Choose spread method based on data:
 
 
 
+
+
 ### Data-Driven Pattern Density
 
 Control stripe density with data:
+
+
 
 
 
@@ -135,9 +141,13 @@ Control stripe density with data:
 
 
 
+
+
 ### Conditional Pattern Effects
 
 Apply patterns based on data state:
+
+
 
 
 
@@ -162,9 +172,13 @@ Apply patterns based on data state:
 
 
 
+
+
 ### Data Visualization Patterns
 
 Create patterns for chart backgrounds:
+
+
 
 
 
@@ -191,9 +205,13 @@ Create patterns for chart backgrounds:
 
 
 
+
+
 ### Ripple Effect Intensity
 
 Control ripple pattern based on intensity data:
+
+
 
 
 
@@ -215,6 +233,8 @@ Control ripple pattern based on intensity data:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -556,6 +576,8 @@ For radial gradients, spread methods work concentrically:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { stripePattern: "repeat", stripeWidth: 8 } -->
@@ -575,6 +597,8 @@ For radial gradients, spread methods work concentrically:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

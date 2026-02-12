@@ -207,6 +207,8 @@ body {
 
 
 
+
+
 {% raw %}
 ```html
 <!-- ❌ Won't work in PDF -->
@@ -216,6 +218,8 @@ body {
 <p>{{model.message}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -548,11 +552,15 @@ public void TestTemplate(string htmlPath)
 
 
 
+
+
 {% raw %}
 ```html
 <p>Date: {{model.currentDate}}</p>
 ```
 {% endraw %}
+
+
 
 
 

@@ -60,11 +60,15 @@ A new DateTime with the specified hours added.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Meeting ends: {{format(addHours(model.startTime, 2), 'h:mm tt')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -84,11 +88,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Delivery between {{format(addHours(model.orderTime, 2), 'h:mm tt')}} and {{format(addHours(model.orderTime, 4), 'h:mm tt')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,12 +116,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>EST: {{format(model.time, 'h:mm tt')}}</p>
 <p>PST: {{format(addHours(model.time, -3), 'h:mm tt')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

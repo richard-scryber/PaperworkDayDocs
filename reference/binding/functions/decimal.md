@@ -59,11 +59,15 @@ A decimal representation with exact precision (28-29 significant digits).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Total: ${{format(decimal(model.price), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Interest: ${{format(decimal(model.principal) * decimal(model.rate), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,6 +116,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Subtotal: ${{format(decimal(model.price) * decimal(model.quantity), '0.00')}}</p>
@@ -115,6 +125,8 @@ doc.Params["model"] = new {
 <p>Total: ${{format(decimal(model.price) * decimal(model.quantity) * (1 + decimal(model.taxRate)), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

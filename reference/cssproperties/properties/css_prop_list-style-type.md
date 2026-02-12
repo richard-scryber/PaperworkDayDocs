@@ -99,6 +99,8 @@ The `list-style-type` property supports data binding, enabling dynamic control o
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -120,6 +122,8 @@ The `list-style-type` property supports data binding, enabling dynamic control o
 
 
 
+
+
 **Data context:**
 ```json
 {
@@ -133,6 +137,8 @@ The `list-style-type` property supports data binding, enabling dynamic control o
 Users can select their preferred numbering format (decimal, alpha, roman) from application settings, which is then applied to all lists in generated documents.
 
 ### Example 2: Document type-specific formatting
+
+
 
 
 
@@ -157,6 +163,8 @@ Users can select their preferred numbering format (decimal, alpha, roman) from a
 
 
 
+
+
 **Data context:**
 ```json
 {
@@ -170,6 +178,8 @@ Users can select their preferred numbering format (decimal, alpha, roman) from a
 Different document types automatically get appropriate numbering: upper-roman for legal briefs, decimal for technical documents, lower-alpha for questionnaires, etc.
 
 ### Example 3: Multilingual list markers
+
+
 
 
 
@@ -191,6 +201,8 @@ Different document types automatically get appropriate numbering: upper-roman fo
 </body>
 ```
 {% endraw %}
+
+
 
 
 

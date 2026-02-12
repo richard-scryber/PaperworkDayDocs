@@ -107,6 +107,8 @@ The `data-id` attribute supports both static and dynamic values:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { varId: "dynamic-total" } -->
@@ -116,7 +118,11 @@ The `data-id` attribute supports both static and dynamic values:
 
 
 
+
+
 ### Computed Data ID
+
+
 
 
 
@@ -128,6 +134,8 @@ The `data-id` attribute supports both static and dynamic values:
 </var>
 ```
 {% endraw %}
+
+
 
 
 
@@ -243,6 +251,8 @@ In Scryber PDF generation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { items: [{id: "001", name: "Widget", price: 25}, {id: "002", name: "Gadget", price: 50}] } -->
@@ -257,6 +267,8 @@ In Scryber PDF generation:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -506,6 +518,8 @@ In Scryber PDF generation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -526,6 +540,8 @@ In Scryber PDF generation:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

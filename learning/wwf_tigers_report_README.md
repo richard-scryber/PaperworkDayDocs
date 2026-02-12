@@ -243,6 +243,8 @@ This template showcases many Scryber capabilities:
 ### 1. Data Binding
 
 
+
+
 {% raw %}
 ```html
 <h1>{{model.reportYear}} Report</h1>
@@ -252,7 +254,11 @@ This template showcases many Scryber capabilities:
 
 
 
-### 2. Iteration with `{{#each}}`
+
+
+### 2. Iteration with `{% raw %}{{#each}}{% endraw %}`
+
+
 
 
 {% raw %}
@@ -268,7 +274,11 @@ This template showcases many Scryber capabilities:
 
 
 
-### 3. Conditional Rendering with `{{#if}}`
+
+
+### 3. Conditional Rendering with `{% raw %}{{#if}}{% endraw %}`
+
+
 
 
 {% raw %}
@@ -285,7 +295,11 @@ This template showcases many Scryber capabilities:
 
 
 
+
+
 ### 4. Inline Conditionals with if()
+
+
 
 
 {% raw %}
@@ -298,7 +312,11 @@ This template showcases many Scryber capabilities:
 
 
 
+
+
 ### 5. Formatting with format()
+
+
 
 
 {% raw %}
@@ -308,6 +326,8 @@ This template showcases many Scryber capabilities:
 <span>{{format(model.sections.secureHabitat.rangerGap.salaryShortfall, 'C0')}}</span>
 ```
 {% endraw %}
+
+
 
 
 
@@ -366,7 +386,7 @@ The HTML template (`wwf_tigers_report_template.html`) is modular:
 ### Data Content
 
 Edit the JSON file (`wwf_tigers_report_data.json`) to update content:
-- Optional properties use `{{#if}}` checks in template
+- Optional properties use `{% raw %}{{#if}}{% endraw %}` checks in template
 - Arrays can have any number of items
 - You can add custom properties and reference them in the template
 
@@ -386,7 +406,7 @@ This makes it easy for different team members to work on different aspects indep
 3. **Keep Data Consistent**: Ensure all required properties are present in your JSON file
 4. **Test with Sample Data**: Use the provided sample data first to verify the template works
 5. **Customize Gradually**: Start with JSON content changes, then colors, then layout, then structure
-6. **Use Conditionals**: Wrap optional content in `{{#if}}` blocks to handle missing data gracefully
+6. **Use Conditionals**: Wrap optional content in `{% raw %}{{#if}}{% endraw %}` blocks to handle missing data gracefully
 7. **Format Numbers**: Use `format()` function for consistent number and currency formatting
 8. **Page Breaks**: Adjust `page-break-before` and `page-break-after` to control pagination
 9. **Test PDF Output**: Always generate and review the PDF to ensure proper rendering

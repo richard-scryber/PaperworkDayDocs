@@ -59,11 +59,15 @@ The number of characters in the string or items in the array.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Length: {{length(model.text)}} characters</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Total items: {{length(model.items)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,6 +115,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.descriptions}}
@@ -121,7 +131,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Character Limit Validation
+
+
 
 
 
@@ -134,6 +148,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -153,6 +169,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Products ({{length(model.products)}})</h3>
@@ -163,6 +181,8 @@ doc.Params["model"] = new {
 </ul>
 ```
 {% endraw %}
+
+
 
 
 

@@ -320,6 +320,8 @@ Create striped tables using nth-child CSS selectors:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -352,7 +354,11 @@ Create striped tables using nth-child CSS selectors:
 
 
 
+
+
 ### Conditional Row Styling
+
+
 
 
 
@@ -388,6 +394,8 @@ Create striped tables using nth-child CSS selectors:
 </table>
 ```
 {% endraw %}
+
+
 
 
 

@@ -35,6 +35,8 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each collection}}
@@ -42,6 +44,8 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -73,6 +77,8 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 
 
 
+
+
 {% raw %}
 ```handlebars
 <ul>
@@ -82,6 +88,8 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 </ul>
 ```
 {% endraw %}
+
+
 
 
 
@@ -105,6 +113,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <table>
@@ -118,6 +128,8 @@ doc.Params["model"] = new {
 </table>
 ```
 {% endraw %}
+
+
 
 
 
@@ -135,6 +147,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -148,7 +162,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Accessing Parent Context
+
+
 
 
 
@@ -166,11 +184,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 ---
 
 ## Underlying Implementation
 
-The `{{#each}}` helper compiles to the following Scryber template element:
+The `{% raw %}{{#each}}{% endraw %}` helper compiles to the following Scryber template element:
+
+
 
 
 
@@ -184,6 +206,8 @@ The `{{#each}}` helper compiles to the following Scryber template element:
 
 
 
+
+
 This uses Scryber's [`ForEach` component](../../components/foreach.html) internally, which provides the iteration and context management.
 
 ---
@@ -194,7 +218,7 @@ This uses Scryber's [`ForEach` component](../../components/foreach.html) interna
 - Works with any IEnumerable collection
 - Can be nested for multi-dimensional data
 - Context changes to current item within the block
-- Use `{{.}}` to reference the entire current item
+- Use `{% raw %}{{.}}{% endraw %}` to reference the entire current item
 - Provides `@index`, `@first`, and `@last` special variables
 
 ---

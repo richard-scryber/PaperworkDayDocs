@@ -75,12 +75,16 @@ The .NET type name of the value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{log "Value type: " typeof(model.value) level="debug"}}
 <p>Value: {{model.value}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -100,6 +104,8 @@ Value type: System.Int32
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if typeof(model.data) == 'System.String'}}
@@ -114,7 +120,11 @@ Value type: System.Int32
 
 
 
+
+
 ### Debugging Collection Types
+
+
 
 
 
@@ -129,7 +139,11 @@ Value type: System.Int32
 
 
 
+
+
 ### Type Inspection for Troubleshooting
+
+
 
 
 
@@ -147,6 +161,8 @@ Value type: System.Int32
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -184,7 +200,7 @@ doc.Params["model"] = new {
 - Anonymous types show generated names
 - For null values, behavior may vary
 - Primarily a debugging tool
-- Use with `{{log}}` helper for tracing
+- Use with `{% raw %}{{log}}{% endraw %}` helper for tracing
 
 ---
 

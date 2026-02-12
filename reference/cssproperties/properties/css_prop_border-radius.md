@@ -98,6 +98,8 @@ The `border-radius` property supports dynamic values through data binding, allow
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -119,6 +121,8 @@ The `border-radius` property supports dynamic values through data binding, allow
 
 
 
+
+
 Data context:
 ```json
 {
@@ -132,6 +136,8 @@ Data context:
 ```
 
 ### Example 2: Card styles based on type
+
+
 
 
 
@@ -156,6 +162,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -168,6 +176,8 @@ Data context:
 ```
 
 ### Example 3: Conditional rounded corners
+
+
 
 
 
@@ -188,6 +198,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

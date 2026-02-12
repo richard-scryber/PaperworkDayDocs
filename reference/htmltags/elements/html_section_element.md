@@ -426,6 +426,8 @@ The `<section>` element has the following default behavior:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.chapters = [
@@ -454,6 +456,8 @@ The `<section>` element has the following default behavior:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

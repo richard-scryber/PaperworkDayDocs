@@ -32,9 +32,11 @@ Compare if the left value is greater than the right value.
 ## Syntax
 
 
+{% raw %}
 ``` 
 {{operand1 > operand2}}
 ``` 
+{% endraw %}
 
 ---
 
@@ -71,6 +73,8 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.age > 18}}
@@ -84,6 +88,8 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -106,6 +112,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.orderTotal > 1000}}
@@ -120,7 +128,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Stock Availability
+
+
 
 
 
@@ -133,6 +145,8 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -153,6 +167,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.revenue > model.target}}
@@ -165,6 +181,8 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -191,6 +209,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.temperature > 100}}
@@ -206,6 +226,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 ---
 
 ## Notes
@@ -214,7 +236,7 @@ doc.Params["model"] = new {
 - String comparison is case-sensitive and uses lexicographic ordering
 - Date comparison compares chronological order
 - Cannot compare incompatible types
-- Commonly used with `{{#if}}` for conditional rendering
+- Commonly used with `{% raw %}{{#if}}{% endraw %}` for conditional rendering
 - Can be combined with logical operators (`&&`, `||`)
 - For "greater than or equal", use `>=` operator
 

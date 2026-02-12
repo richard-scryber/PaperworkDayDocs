@@ -91,6 +91,8 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -114,7 +116,11 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 
 
 
+
+
 ### Example 2: Conditional linecap based on connection status
+
+
 
 
 
@@ -141,7 +147,11 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 
 
 
+
+
 ### Example 3: Dynamic progress bars with bound line caps
+
+
 
 
 
@@ -166,6 +176,8 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 </body>
 ```
 {% endraw %}
+
+
 
 
 

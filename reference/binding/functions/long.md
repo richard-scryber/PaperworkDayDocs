@@ -59,11 +59,15 @@ A 64-bit integer representation of the value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Population: {{format(long(model.population), 'N0')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Total Size: {{format(long(model.bytes) / 1024 / 1024, '0.00')}} MB</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,11 +115,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Timestamp: {{long(model.timestamp)}}</p>
 ```
 {% endraw %}
+
+
 
 
 

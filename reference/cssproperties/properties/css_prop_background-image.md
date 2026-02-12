@@ -109,6 +109,8 @@ The `background-image` property supports dynamic data binding, enabling personal
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -136,9 +138,13 @@ The `background-image` property supports dynamic data binding, enabling personal
 
 
 
+
+
 Perfect for creating employee badges, ID cards, or personnel reports where each document needs a different photo loaded from your database or user profile system.
 
 ### Example 2: Conditional watermarks based on document status
+
+
 
 
 {% raw %}
@@ -165,9 +171,13 @@ Perfect for creating employee badges, ID cards, or personnel reports where each 
 
 
 
+
+
 Automatically applies the appropriate watermark based on document state - essential for document management systems where visual status indicators prevent misuse of drafts or confidential materials.
 
 ### Example 3: Product catalog with dynamic images
+
+
 
 
 
@@ -202,6 +212,8 @@ Automatically applies the appropriate watermark based on document state - essent
 </body>
 ```
 {% endraw %}
+
+
 
 
 

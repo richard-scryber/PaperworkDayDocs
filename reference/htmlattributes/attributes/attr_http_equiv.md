@@ -91,6 +91,8 @@ The `http-equiv` and `content` attributes support data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { charset: "UTF-8", language: "en-US" } -->
@@ -98,6 +100,8 @@ The `http-equiv` and `content` attributes support data binding:
 <meta http-equiv="Content-Language" content="{{model.language}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -225,6 +229,8 @@ Most `http-equiv` directives are **not applicable to PDF generation**:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { encoding: "UTF-8", contentType: "text/html" } -->
@@ -237,6 +243,8 @@ Most `http-equiv` directives are **not applicable to PDF generation**:
 </head>
 ```
 {% endraw %}
+
+
 
 
 
@@ -296,6 +304,8 @@ Most `http-equiv` directives are **not applicable to PDF generation**:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { useUnicode: true } -->
@@ -308,6 +318,8 @@ Most `http-equiv` directives are **not applicable to PDF generation**:
 </head>
 ```
 {% endraw %}
+
+
 
 
 

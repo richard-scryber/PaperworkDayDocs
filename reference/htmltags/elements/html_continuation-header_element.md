@@ -132,6 +132,8 @@ The `<continuation-header>` element can be placed within:
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -174,6 +176,8 @@ The `<continuation-header>` element can be placed within:
 </body>
 ```
 {% endraw %}
+
+
 
 
 
@@ -225,6 +229,8 @@ The `<continuation-header>` element can be placed within:
 
 
 
+
+
 {% raw %}
 ```html
 <body>
@@ -248,6 +254,8 @@ The `<continuation-header>` element can be placed within:
 </body>
 ```
 {% endraw %}
+
+
 
 
 
@@ -317,6 +325,8 @@ The `<continuation-header>` element can be placed within:
 
 
 
+
+
 {% raw %}
 ```html
 <body>
@@ -358,7 +368,11 @@ The `<continuation-header>` element can be placed within:
 
 
 
+
+
 ### Legal Document Continuation
+
+
 
 
 
@@ -394,7 +408,11 @@ The `<continuation-header>` element can be placed within:
 
 
 
+
+
 ### Medical Records with Patient Info
+
+
 
 
 
@@ -428,7 +446,11 @@ The `<continuation-header>` element can be placed within:
 
 
 
+
+
 ### Academic Transcript
+
+
 
 
 
@@ -457,7 +479,11 @@ The `<continuation-header>` element can be placed within:
 
 
 
+
+
 ### Inventory List with Context
+
+
 
 
 
@@ -480,7 +506,11 @@ The `<continuation-header>` element can be placed within:
 
 
 
+
+
 ### Conference Schedule
+
+
 
 
 
@@ -507,6 +537,8 @@ The `<continuation-header>` element can be placed within:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

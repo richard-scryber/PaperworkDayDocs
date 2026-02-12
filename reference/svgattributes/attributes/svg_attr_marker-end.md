@@ -79,6 +79,8 @@ Choose arrow type based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { connectionType: 'forward', arrows: { forward: 'arrow-forward', backward: 'arrow-back' } } -->
@@ -103,9 +105,13 @@ Choose arrow type based on data:
 
 
 
+
+
 ### Conditional End Markers
 
 Show markers based on status:
+
+
 
 
 
@@ -130,7 +136,11 @@ Show markers based on status:
 
 
 
+
+
 ### Data-Driven Flow Visualization
+
+
 
 
 
@@ -163,6 +173,8 @@ Show markers based on status:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

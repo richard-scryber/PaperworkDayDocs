@@ -528,6 +528,8 @@ Progress bars are excellent for:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = {
@@ -576,6 +578,8 @@ Progress bars are excellent for:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -816,6 +820,8 @@ Progress bars are excellent for:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.projects = [
@@ -847,6 +853,8 @@ Progress bars are excellent for:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

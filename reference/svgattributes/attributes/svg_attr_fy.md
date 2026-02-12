@@ -83,6 +83,8 @@ Bind focal point Y coordinate to data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { lightY: 30 } -->
@@ -103,9 +105,13 @@ Bind focal point Y coordinate to data:
 
 
 
+
+
 ### Height-Based Lighting Position
 
 Position lighting based on container dimensions:
+
+
 
 
 
@@ -131,9 +137,13 @@ Position lighting based on container dimensions:
 
 
 
+
+
 ### Data-Driven Vertical Direction
 
 Change vertical lighting based on data state:
+
+
 
 
 
@@ -158,9 +168,13 @@ Change vertical lighting based on data state:
 
 
 
+
+
 ### Time-Based Sun Position
 
 Simulate sun position based on time of day:
+
+
 
 {% raw %}
 ```html
@@ -186,9 +200,13 @@ Simulate sun position based on time of day:
 ```
 {% endraw %}
 
+
+
 ### Scroll-Based Lighting Effect
 
 Change lighting position based on scroll or progress:
+
+
 
 
 
@@ -212,6 +230,8 @@ Change lighting position based on scroll or progress:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -516,6 +536,8 @@ Using both fx and fy creates diagonal lighting:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { verticalPos: 35, color: "#3498db" } -->
@@ -534,6 +556,8 @@ Using both fx and fy creates diagonal lighting:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

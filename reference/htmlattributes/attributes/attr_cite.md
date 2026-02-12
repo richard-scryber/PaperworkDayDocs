@@ -43,6 +43,8 @@ The `cite` attribute defines source URLs:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Citation for blockquote -->
@@ -72,6 +74,8 @@ The `cite` attribute defines source URLs:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -91,6 +95,8 @@ The `cite` attribute is used with:
 ## Binding Values
 
 The `cite` attribute supports data binding for dynamic source URLs:
+
+
 
 
 
@@ -126,6 +132,8 @@ The `cite` attribute supports data binding for dynamic source URLs:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -574,6 +582,8 @@ The `cite` attribute is optional:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -608,6 +618,8 @@ The `cite` attribute is optional:
 </article>
 ```
 {% endraw %}
+
+
 
 
 

@@ -52,6 +52,8 @@ The `data-template` attribute is applied to `<if>` elements and can be used with
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Simple conditional template -->
@@ -68,7 +70,11 @@ The `data-template` attribute is applied to `<if>` elements and can be used with
 
 
 
+
+
 ### Basic Syntax
+
+
 
 
 
@@ -93,6 +99,8 @@ The `data-template` attribute is applied to `<if>` elements and can be used with
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -112,7 +120,7 @@ The `data-template` attribute is supported on the following elements:
 | Value Type | Description |
 |------------|-------------|
 | **HTML String** | Literal HTML markup as a string |
-| **Binding Expression** | Expression that evaluates to HTML string: `{{expression}}` |
+| **Binding Expression** | Expression that evaluates to HTML string: `{% raw %}{{expression}}{% endraw %}` |
 
 ### Type
 
@@ -122,6 +130,8 @@ The `data-template` attribute is supported on the following elements:
 ### Expression Support
 
 The attribute accepts literal HTML strings or binding expressions:
+
+
 
 
 
@@ -146,6 +156,8 @@ The attribute accepts literal HTML strings or binding expressions:
 
 
 
+
+
 ---
 
 ## Notes
@@ -153,6 +165,8 @@ The attribute accepts literal HTML strings or binding expressions:
 ### Precedence Over Child Elements
 
 When `data-template` is specified, it takes precedence over any child elements:
+
+
 
 
 
@@ -170,9 +184,13 @@ When `data-template` is specified, it takes precedence over any child elements:
 
 
 
+
+
 ### HTML Escaping
 
 HTML content within the attribute value must be properly escaped:
+
+
 
 
 
@@ -192,9 +210,13 @@ HTML content within the attribute value must be properly escaped:
 
 
 
+
+
 ### Data Binding Within Templates
 
 Inline templates support full data binding syntax:
+
+
 
 
 
@@ -208,9 +230,13 @@ Inline templates support full data binding syntax:
 
 
 
+
+
 ### Namespace Handling
 
 When used within HTML documents, the inline template content inherits the HTML namespace automatically:
+
+
 
 
 
@@ -229,9 +255,13 @@ When used within HTML documents, the inline template content inherits the HTML n
 
 
 
+
+
 ### Dynamic Template Loading
 
 Templates can be loaded from external sources:
+
+
 
 
 
@@ -246,9 +276,13 @@ Templates can be loaded from external sources:
 
 
 
+
+
 ### Multi-Line Content
 
 For readability, use appropriate quoting:
+
+
 
 
 
@@ -262,6 +296,8 @@ For readability, use appropriate quoting:
 </if>
 ```
 {% endraw %}
+
+
 
 
 
@@ -296,6 +332,8 @@ Display a simple message conditionally:
 
 
 
+
+
 {% raw %}
 ```html
 <if data-test="{{model.hasError}}"
@@ -306,9 +344,13 @@ Display a simple message conditionally:
 
 
 
+
+
 ### 2. Dynamic Content from Model
 
 Load template content from model property:
+
+
 
 
 
@@ -323,9 +365,13 @@ Load template content from model property:
 
 
 
+
+
 ### 3. Conditional Badge
 
 Display different badge styles:
+
+
 
 
 
@@ -343,9 +389,13 @@ Display different badge styles:
 
 
 
+
+
 ### 4. Inline Alert Box
 
 Conditional alert with styling:
+
+
 
 
 
@@ -361,9 +411,13 @@ Conditional alert with styling:
 
 
 
+
+
 ### 5. Dynamic Icon Display
 
 Show different icons based on status:
+
+
 
 
 
@@ -381,9 +435,13 @@ Show different icons based on status:
 
 
 
+
+
 ### 6. Programmatically Generated Template
 
 Generate template content in code:
+
+
 
 
 
@@ -395,6 +453,8 @@ Generate template content in code:
 </if>
 ```
 {% endraw %}
+
+
 
 
 
@@ -422,6 +482,8 @@ Load template content from database:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { showCustomSection: true, customHtml: LoadFromDatabase("section_template") } -->
@@ -433,9 +495,13 @@ Load template content from database:
 
 
 
+
+
 ### 8. Conditional Pricing Display
 
 Show pricing with conditional formatting:
+
+
 
 
 
@@ -453,9 +519,13 @@ Show pricing with conditional formatting:
 
 
 
+
+
 ### 9. Conditional Footer Note
 
 Add conditional footer information:
+
+
 
 
 
@@ -472,9 +542,13 @@ Add conditional footer information:
 
 
 
+
+
 ### 10. Inline User Badge
 
 Display user type badge:
+
+
 
 
 
@@ -494,9 +568,13 @@ Display user type badge:
 
 
 
+
+
 ### 11. Conditional Watermark
 
 Add watermark for draft documents:
+
+
 
 
 
@@ -513,9 +591,13 @@ Add watermark for draft documents:
 
 
 
+
+
 ### 12. Simple Table Row
 
 Conditional table row with inline template:
+
+
 
 
 
@@ -542,9 +624,13 @@ Conditional table row with inline template:
 
 
 
+
+
 ### 13. Internationalized Content
 
 Load locale-specific templates:
+
+
 
 
 
@@ -563,9 +649,13 @@ Load locale-specific templates:
 
 
 
+
+
 ### 14. Conditional QR Code
 
 Show QR code with description:
+
+
 
 
 
@@ -584,9 +674,13 @@ Show QR code with description:
 
 
 
+
+
 ### 15. Terms and Conditions Section
 
 Conditionally include terms:
+
+
 
 
 
@@ -605,9 +699,13 @@ Conditionally include terms:
 
 
 
+
+
 ### 16. Status Indicator Panel
 
 Multi-line status panel:
+
+
 
 
 
@@ -631,9 +729,13 @@ Multi-line status panel:
 
 
 
+
+
 ### 17. Conditional Signature Block
 
 Add signature block for certain document types:
+
+
 
 
 
@@ -657,9 +759,13 @@ Add signature block for certain document types:
 
 
 
+
+
 ### 18. Simple Payment Instructions
 
 Conditional payment details:
+
+
 
 
 
@@ -686,9 +792,13 @@ Conditional payment details:
 
 
 
+
+
 ### 19. Promotional Banner
 
 Conditional promotional content:
+
+
 
 
 
@@ -714,9 +824,13 @@ Conditional promotional content:
 
 
 
+
+
 ### 20. Complex Conditional Layout
 
 Multi-section conditional content:
+
+
 
 
 
@@ -749,6 +863,8 @@ Multi-section conditional content:
 </if>
 ```
 {% endraw %}
+
+
 
 
 

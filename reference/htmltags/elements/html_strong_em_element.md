@@ -260,6 +260,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { userName: "John Smith", status: "Active", itemName: "Product A" } -->
@@ -273,6 +275,8 @@ In the Scryber codebase:
 </strong></p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -511,6 +515,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.items = [{name: "Item 1", value: "100"}, {name: "Item 2", value: "200"}] -->
@@ -519,6 +525,8 @@ In the Scryber codebase:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

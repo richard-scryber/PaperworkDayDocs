@@ -78,6 +78,8 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
 
 
 
+
+
 {% raw %}
 ```html
 <div style="width: 200pt; padding: 15pt; border: 1pt solid #ccc" lang="{{model.language.code}}">
@@ -110,7 +112,11 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
 
 
 
+
+
 ### Example 2: Column Width-Based Hyphenation
+
+
 
 
 
@@ -146,7 +152,11 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
 
 
 
+
+
 ### Example 3: Accessibility-Enhanced Hyphenation Control
+
+
 
 
 
@@ -172,6 +182,8 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
 -->
 ```
 {% endraw %}
+
+
 
 
 

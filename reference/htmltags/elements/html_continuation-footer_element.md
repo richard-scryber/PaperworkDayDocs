@@ -140,6 +140,8 @@ The `<continuation-footer>` element can be placed within:
 
 
 
+
+
 {% raw %}
 ```html
 <body>
@@ -166,7 +168,11 @@ The `<continuation-footer>` element can be placed within:
 
 
 
+
+
 ### Medical Records with Patient Info
+
+
 
 
 
@@ -204,7 +210,11 @@ The `<continuation-footer>` element can be placed within:
 
 
 
+
+
 ### Multi-Column Footer Layout
+
+
 
 
 
@@ -236,6 +246,8 @@ The `<continuation-footer>` element can be placed within:
 </continuation-footer>
 ```
 {% endraw %}
+
+
 
 
 

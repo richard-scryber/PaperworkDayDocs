@@ -60,12 +60,16 @@ A new DateTime with the specified days added.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{format(addDays(model.orderDate, 7), 'yyyy-MM-dd')}}
 <!-- Adds 7 days to order date -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,6 +89,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>7 days ago: {{format(addDays(model.today, -7), 'yyyy-MM-dd')}}</p>
@@ -93,7 +99,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Calculate Delivery Date
+
+
 
 
 
@@ -105,7 +115,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Calculate Deadline
+
+
 
 
 
@@ -114,6 +128,8 @@ doc.Params["model"] = new {
 <p>Due: {{format(addDays(model.startDate, model.durationDays), 'MM/dd/yyyy')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

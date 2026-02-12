@@ -79,6 +79,8 @@ The `text-decoration` property can be dynamically controlled using data binding,
 
 
 
+
+
 {% raw %}
 ```html
 <a href="{{model.link.url}}"
@@ -101,7 +103,11 @@ The `text-decoration` property can be dynamically controlled using data binding,
 
 
 
+
+
 ### Example 2: Status-Based Text Decoration
+
+
 
 
 
@@ -139,7 +145,11 @@ The `text-decoration` property can be dynamically controlled using data binding,
 
 
 
+
+
 ### Example 3: Document Revision Tracking
+
+
 
 
 
@@ -164,6 +174,8 @@ The `text-decoration` property can be dynamically controlled using data binding,
 -->
 ```
 {% endraw %}
+
+
 
 
 

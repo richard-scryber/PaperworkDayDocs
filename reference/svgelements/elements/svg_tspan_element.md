@@ -132,6 +132,8 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 
 
 
+
+
 {% raw %}
 ```html
 <text x="10" y="30" font-size="16">
@@ -155,7 +157,11 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 
 
 
+
+
 ### Dynamic Positioning
+
+
 
 
 
@@ -178,7 +184,11 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 
 
 
+
+
 ### Style Binding
+
+
 
 
 
@@ -205,7 +215,11 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 
 
 
+
+
 ### Template Iteration
+
+
 
 
 
@@ -220,6 +234,8 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 </text>
 ```
 {% endraw %}
+
+
 
 
 
@@ -416,6 +432,8 @@ Dynamic customer information with styling:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { customerName: "John Doe", accountType: "Premium", balance: 5432.10 } -->
@@ -439,9 +457,13 @@ Dynamic customer information with styling:
 
 
 
+
+
 ### 11. Temperature with Units
 
 Temperature display with styled units:
+
+
 
 
 
@@ -461,9 +483,13 @@ Temperature display with styled units:
 
 
 
+
+
 ### 12. Score with Context
 
 Score display with description:
+
+
 
 
 
@@ -486,9 +512,13 @@ Score display with description:
 
 
 
+
+
 ### 13. Conditional Status Color
 
 Status text with conditional coloring:
+
+
 
 
 
@@ -510,9 +540,13 @@ Status text with conditional coloring:
 
 
 
+
+
 ### 14. Percentage Breakdown
 
 Percentage display with components:
+
+
 
 
 
@@ -534,9 +568,13 @@ Percentage display with components:
 
 
 
+
+
 ### 15. Product Name with SKU
 
 Product information with different text styles:
+
+
 
 
 
@@ -557,9 +595,13 @@ Product information with different text styles:
 
 
 
+
+
 ### 16. Metric with Trend Indicator
 
 Value with trend arrow:
+
+
 
 
 
@@ -585,9 +627,13 @@ Value with trend arrow:
 
 
 
+
+
 ### 17. Date Range Display
 
 Formatted date range with separator:
+
+
 
 
 
@@ -604,6 +650,8 @@ Formatted date range with separator:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -627,6 +675,8 @@ Text with multiple highlighted terms:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { keywords: ["important", "urgent", "required"] } -->
@@ -644,9 +694,13 @@ Text with multiple highlighted terms:
 
 
 
+
+
 ### 20. Complex Label with Multiple Styles
 
 Multi-component label with various styling:
+
+
 
 
 
@@ -675,6 +729,8 @@ Multi-component label with various styling:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

@@ -32,9 +32,11 @@ Adds two numeric values together. Or joins two string values together.
 ## Syntax
 
 
+{% raw %}
 ```
 {{operand1 + operand2}}
 ```
+{% endraw %}
 
 
 ---
@@ -61,13 +63,17 @@ The sum of the two operands.
 ### Basic Addition
 
 
+{% raw %}
 ```
 {{5 + 3}}
 <!-- Output: 8 -->
 ```
+{% endraw %}
 
 
 ### With Variables
+
+
 
 
 
@@ -78,6 +84,8 @@ The sum of the two operands.
 <p>Total: ${{model.price + model.tax}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -99,27 +107,33 @@ doc.Params["model"] = new {
 ### Multiple Additions
 
 
+{% raw %}
 ```
 <p>Total: {{model.base + model.shipping + model.tax}}</p>
 ```
+{% endraw %}
 
 
 ### With Formatting
 
+{% raw %}
 ```
 
 <p>Grand Total: {{format(model.subtotal + model.tax, 'C2')}}</p>
 ```
+{% endraw %}
 
 
 ### In #each Loop
 
+{% raw %}
 ```
 
 {{#each model.items}}
   <p>Item {{@index + 1}}: {{this.name}}</p>
 {{/each}}
 ```
+{% endraw %}
 
 
 ---

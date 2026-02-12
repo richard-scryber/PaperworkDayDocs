@@ -424,6 +424,8 @@ Part Two: 3. Third item, 4. Fourth item
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Template with model.steps = ["Initialize", "Configure", "Execute"] -->
@@ -445,7 +447,11 @@ Part Two: 3. Third item, 4. Fourth item
 
 
 
+
+
 ### Complex Data Binding Example
+
+
 
 
 
@@ -467,6 +473,8 @@ Part Two: 3. Third item, 4. Fourth item
 </ol>
 ```
 {% endraw %}
+
+
 
 
 

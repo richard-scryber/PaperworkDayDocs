@@ -241,6 +241,8 @@ The `<style>` element supports data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -255,6 +257,8 @@ The `<style>` element supports data binding:
 </style>
 ```
 {% endraw %}
+
+
 
 
 
@@ -680,6 +684,8 @@ Data binding expressions are evaluated before CSS parsing.
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -720,6 +726,8 @@ Data binding expressions are evaluated before CSS parsing.
 </html>
 ```
 {% endraw %}
+
+
 
 
 

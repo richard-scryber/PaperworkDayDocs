@@ -94,6 +94,8 @@ The `stroke-width` property can be dynamically set using data binding expression
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -116,6 +118,8 @@ The `stroke-width` property can be dynamically set using data binding expression
 
 
 
+
+
 With model data:
 ```json
 {
@@ -128,6 +132,8 @@ With model data:
 ```
 
 ### Example 2: Conditional border thickness based on status
+
+
 
 
 
@@ -157,7 +163,11 @@ With model data:
 
 
 
+
+
 ### Example 3: Network connections weighted by traffic
+
+
 
 
 
@@ -191,6 +201,8 @@ With model data:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

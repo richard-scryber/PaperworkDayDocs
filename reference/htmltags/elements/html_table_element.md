@@ -451,6 +451,8 @@ Control page breaks:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { items: [{name: "Item 1", qty: 5, price: 10.00}, ...] } -->
@@ -478,6 +480,8 @@ Control page breaks:
 </table>
 ```
 {% endraw %}
+
+
 
 
 
@@ -575,6 +579,8 @@ Control page breaks:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -606,6 +612,8 @@ Control page breaks:
 </table>
 ```
 {% endraw %}
+
+
 
 
 

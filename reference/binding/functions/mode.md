@@ -59,11 +59,15 @@ The most frequently occurring value. If multiple values tie for most frequent, r
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Most common score: {{mode(model.scores)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,6 +87,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Test Results</h3>
@@ -92,6 +98,8 @@ doc.Params["model"] = new {
 <p>The most common score was {{mode(model.scores)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -115,11 +123,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Most ordered product: {{mode(collect(model.orders, 'productId'))}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -145,6 +157,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Survey Results</h3>
@@ -155,6 +169,8 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -184,11 +200,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Most common status: {{mode(collect(model.tasks, 'status'))}}</p>
 ```
 {% endraw %}
+
+
 
 
 

@@ -61,6 +61,8 @@ Each article provides:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -134,6 +136,8 @@ Each article provides:
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -253,6 +257,8 @@ Helpful but not required:
 
 
 
+
+
 {% raw %}
 ```html
 <header style="border-bottom: 2pt solid #2563eb; padding-bottom: 15pt;">
@@ -266,6 +272,8 @@ Helpful but not required:
 </header>
 ```
 {% endraw %}
+
+
 
 
 
@@ -308,6 +316,8 @@ tfoot {
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Store subtotal -->
@@ -343,7 +353,11 @@ tfoot {
 
 
 
+
+
 ### Conditional Content
+
+
 
 
 
@@ -365,7 +379,11 @@ tfoot {
 
 
 
+
+
 ### Page Numbers
+
+
 
 
 
@@ -378,6 +396,8 @@ tfoot {
 </footer>
 ```
 {% endraw %}
+
+
 
 
 

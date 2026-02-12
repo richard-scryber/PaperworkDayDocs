@@ -59,11 +59,15 @@ The year as a 4-digit number (e.g., 2024).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Copyright {{yearOf(model.currentDate)}} Acme Corporation</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{model.name}} is {{yearOf(model.today) - yearOf(model.birthDate)}} years old</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -109,6 +117,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Orders by Year</h3>
@@ -117,6 +127,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -143,11 +155,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Fiscal Year: {{#if (monthOfYear(model.date) >= 7)}}{{yearOf(model.date) + 1}}{{else}}{{yearOf(model.date)}}{{/if}}</p>
 ```
 {% endraw %}
+
+
 
 
 

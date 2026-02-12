@@ -85,6 +85,8 @@ Adjust reference position based on marker size:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { markerSize: 12, alignCenter: true } -->
@@ -110,9 +112,13 @@ Adjust reference position based on marker size:
 
 
 
+
+
 ### Conditional Alignment
 
 Change alignment based on marker type:
+
+
 
 
 
@@ -139,7 +145,11 @@ Change alignment based on marker type:
 
 
 
+
+
 ### Data-Driven Marker Positioning
+
+
 
 
 
@@ -180,6 +190,8 @@ Change alignment based on marker type:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

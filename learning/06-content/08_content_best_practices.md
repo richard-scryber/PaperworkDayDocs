@@ -109,6 +109,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- ✅ Inline for data binding and small graphics -->
@@ -122,6 +124,8 @@ By the end of this article, you'll be able to:
      style="width: 400pt;" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -418,6 +422,8 @@ tbody tr.large-content {
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Responsive grid with images and details -->
@@ -444,6 +450,8 @@ tbody tr.large-content {
 </div>
 ```
 {% endraw %}
+
+
 
 
 

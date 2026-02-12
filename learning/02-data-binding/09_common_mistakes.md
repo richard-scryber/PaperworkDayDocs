@@ -33,6 +33,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 {% raw %}
 ```html
 {{#each products}}
@@ -43,7 +45,11 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ### ✅ Solution: Always Use `this`
+
+
 
 
 
@@ -54,6 +60,8 @@ By the end of this article, you'll be able to:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -69,6 +77,8 @@ Without `this`, the binding engine may look for the property in the wrong scope,
 
 
 
+
+
 {% raw %}
 ```html
 {{#each departments}}
@@ -81,7 +91,11 @@ Without `this`, the binding engine may look for the property in the wrong scope,
 
 
 
+
+
 ### ✅ Solution: Count Your Nesting Levels
+
+
 
 
 
@@ -97,9 +111,11 @@ Without `this`, the binding engine may look for the property in the wrong scope,
 
 
 
+
+
 ### Debugging Tip
 
-Count the `{{#each}}` blocks you're inside:
+Count the `{% raw %}{{#each}}{% endraw %}` blocks you're inside:
 - 1 level deep: `../property`
 - 2 levels deep: `../../property`
 - 3 levels deep: `../../../property`
@@ -117,12 +133,16 @@ doc.Params["model"] = new { Name = "John" };  // Capital N
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Template -->
 <p>{{model.name}}</p>  <!-- lowercase n - Won't bind! -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -134,11 +154,15 @@ doc.Params["model"] = new { name = "John" };  // lowercase n
 
 
 
+
+
 {% raw %}
 ```html
 <p>{{model.name}}</p>  <!-- lowercase n - Will bind! -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -163,6 +187,8 @@ doc.Params["model"] = new
 
 
 
+
+
 {% raw %}
 ```html
 <p>{{model.customer.name}}</p>  <!-- Error! customer is null -->
@@ -171,7 +197,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### ✅ Solution: Check for Null
+
+
 
 
 
@@ -184,6 +214,8 @@ doc.Params["model"] = new
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -204,6 +236,8 @@ doc.Params["model"] = new
 
 
 
+
+
 {% raw %}
 ```html
 {{#if model.status = 'active'}}  <!-- Assignment, not comparison! -->
@@ -214,7 +248,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### ✅ Solution: Use `==` for Comparison
+
+
 
 
 
@@ -225,6 +263,8 @@ doc.Params["model"] = new
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -245,6 +285,8 @@ doc.Params["model"] = new
 
 
 
+
+
 {% raw %}
 ```html
 {{'model.price + model.tax'}}  <!-- Won't work - string literal -->
@@ -253,7 +295,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### ✅ Solution: Use Direct Expression
+
+
 
 
 
@@ -265,7 +311,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### ❌ Problem: Using Comma-Separated Arguments
+
+
 
 
 
@@ -277,7 +327,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### ✅ Solution: Use Standard Math Expression
+
+
 
 
 
@@ -289,11 +343,15 @@ doc.Params["model"] = new
 
 
 
+
+
 ---
 
 ## Mistake 7: Forgetting Quotes in Strings
 
 ### ❌ Problem: Unquoted String Literals
+
+
 
 
 
@@ -305,7 +363,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### ✅ Solution: Quote String Literals
+
+
 
 
 
@@ -317,11 +379,15 @@ doc.Params["model"] = new
 
 
 
+
+
 ---
 
 ## Mistake 8: Not Closing Blocks
 
 ### ❌ Problem: Missing {{/if}} or {{/each}}
+
+
 
 
 
@@ -337,7 +403,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### ✅ Solution: Always Close Blocks
+
+
 
 
 
@@ -353,11 +423,13 @@ doc.Params["model"] = new
 
 
 
+
+
 ### Debugging Tip
 
 Count your opening and closing tags:
-- `{{#if}}` must have `{{/if}}`
-- `{{#each}}` must have `{{/each}}`
+- `{% raw %}{{#if}}{% endraw %}` must have `{% raw %}{{/if}}{% endraw %}`
+- `{% raw %}{{#each}}{% endraw %}` must have `{% raw %}{{/each}}{% endraw %}`
 - Keep them properly nested
 
 ---
@@ -365,6 +437,8 @@ Count your opening and closing tags:
 ## Mistake 9: Percentage Format Confusion
 
 ### ❌ Problem: Double Multiplication
+
+
 
 
 
@@ -377,7 +451,11 @@ Count your opening and closing tags:
 
 
 
+
+
 ### ✅ Solution: Understand the Input
+
+
 
 
 
@@ -390,6 +468,8 @@ Count your opening and closing tags:
 {{model.rate}}%  <!-- Shows 15% -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -440,12 +520,16 @@ doc.Params["invoice"] = invoiceData;
 ### ❌ Problem: Unreadable Template Logic
 
 
+
+
 {% raw %}
 ```html
 <p>{{format(calc(calc(model.price *  model.quantity) + 
             calc(calc(model.price *  model.quantity) *  0.08)), 'C2')}}</p>
 ```
 {% endraw %}
+
+
 
 
 ### ✅ Solution: Calculate in C#
@@ -467,6 +551,8 @@ doc.Params["model"] = new
 
 
 
+
+
 {% raw %}
 ```html
 <p>{{format(model.total, 'C2')}}</p>  <!-- Simple and readable -->
@@ -475,11 +561,15 @@ doc.Params["model"] = new
 
 
 
+
+
 ---
 
 ## Mistake 13: Not Handling Empty Collections
 
 ### ❌ Problem: No Fallback for Empty Data
+
+
 
 
 
@@ -495,7 +585,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### ✅ Solution: Add {{else}} Clause
+
+
 
 
 
@@ -512,11 +606,15 @@ doc.Params["model"] = new
 
 
 
+
+
 ---
 
 ## Mistake 14: Incorrect Date Formatting
 
 ### ❌ Problem: Wrong Format Specifiers
+
+
 
 
 
@@ -528,7 +626,11 @@ doc.Params["model"] = new
 
 
 
+
+
 ### ✅ Solution: Use Correct Specifiers
+
+
 
 
 
@@ -537,6 +639,8 @@ doc.Params["model"] = new
 {{format(model.date, 'yyyy-MM-dd')}}  <!-- Correct: lowercase yyyy -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -560,11 +664,15 @@ doc.Params["model"] = new
 
 
 
+
+
 {% raw %}
 ```html
 {{model.price *  2}}  <!-- May not work correctly -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -579,11 +687,15 @@ doc.Params["model"] = new
 
 
 
+
+
 {% raw %}
 ```html
 {{model.price *  2}}  <!-- Works correctly -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -596,7 +708,7 @@ When data binding doesn't work, check:
 - [ ] **Case sensitivity** - Property names match exactly?
 - [ ] **Context** - Using `this` in loops?
 - [ ] **Null values** - Checking for null before accessing properties?
-- [ ] **Closed blocks** - Every `{{#if}}` has `{{/if}}`?
+- [ ] **Closed blocks** - Every `{% raw %}{{#if}}{% endraw %}` has `{% raw %}{{/if}}{% endraw %}`?
 - [ ] **Parameters set** - `doc.Params` set before `SaveAsPDF()`?
 - [ ] **Data types** - Numbers as numbers, not strings?
 - [ ] **Format strings** - Using correct format specifiers?
@@ -707,13 +819,13 @@ public void TestTemplateWithNullValues()
 | Error | Fix |
 |-------|-----|
 | Property not binding | Check case sensitivity |
-| Null reference | Add `{{#if}}` check |
+| Null reference | Add `{% raw %}{{#if}}{% endraw %}` check |
 | Wrong parent context | Count `../` correctly |
 | calc() not working | Operators as strings: `'+'` |
 | Percentage shows wrong | Check if value needs `P` format |
-| Block not rendering | Check for closing `{{/if}}` or `{{/each}}` |
+| Block not rendering | Check for closing `{% raw %}{{/if}}{% endraw %}` or `{% raw %}{{/each}}{% endraw %}` |
 | Data not appearing | Verify `doc.Params` set before save |
-| Empty collection shows nothing | Add `{{else}}` clause |
+| Empty collection shows nothing | Add `{% raw %}{{else}}{% endraw %}` clause |
 
 ---
 

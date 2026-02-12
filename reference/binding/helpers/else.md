@@ -36,6 +36,8 @@ Provides a fallback branch when conditional expressions are false or when collec
 **With {{#if}}:**
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if condition}}
@@ -48,7 +50,11 @@ Provides a fallback branch when conditional expressions are false or when collec
 
 
 
+
+
 **With {{#each}}:**
+
+
 
 
 {% raw %}
@@ -63,7 +69,11 @@ Provides a fallback branch when conditional expressions are false or when collec
 
 
 
+
+
 **With {{#with}}:**
+
+
 
 
 {% raw %}
@@ -78,17 +88,21 @@ Provides a fallback branch when conditional expressions are false or when collec
 
 
 
+
+
 ---
 
 ## Parameters
 
-No parameters. The `{{else}}` helper is used as a separator within block helpers.
+No parameters. The `{% raw %}{{else}}{% endraw %}` helper is used as a separator within block helpers.
 
 ---
 
 ## Examples
 
 ### With If Statement
+
+
 
 
 
@@ -101,6 +115,8 @@ No parameters. The `{{else}}` helper is used as a separator within block helpers
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -120,6 +136,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <ul>
@@ -131,6 +149,8 @@ doc.Params["model"] = new {
 </ul>
 ```
 {% endraw %}
+
+
 
 
 
@@ -152,6 +172,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#with model.user}}
@@ -166,6 +188,8 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -187,6 +211,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if model.grade >= 90}}
@@ -203,11 +229,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 ---
 
 ## Underlying Implementation
 
-**In {{#if}} blocks**, `{{else}}` compiles to:
+**In {{#if}} blocks**, `{% raw %}{{else}}{% endraw %}` compiles to:
+
+
 
 
 {% raw %}
@@ -225,7 +255,11 @@ doc.Params["model"] = new {
 
 
 
-**In {{#each}} blocks**, `{{else}}` creates a conditional wrapper:
+
+
+**In {{#each}} blocks**, `{% raw %}{{else}}{% endraw %}` creates a conditional wrapper:
+
+
 
 
 {% raw %}
@@ -241,16 +275,18 @@ doc.Params["model"] = new {
 
 
 
+
+
 ---
 
 ## Notes
 
-- Can be used with `{{#if}}`, `{{#each}}`, and `{{#with}}`
-- Only one `{{else}}` block allowed per helper (use `{{else if}}` for multiple conditions)
-- For `{{#if}}`, the else block renders when all conditions are false
-- For `{{#each}}`, the else block renders when the collection is empty
-- For `{{#with}}`, the else block renders when the object is null or undefined
-- Position matters: must come after all `{{else if}}` blocks
+- Can be used with `{% raw %}{{#if}}{% endraw %}`, `{% raw %}{{#each}}{% endraw %}`, and `{% raw %}{{#with}}{% endraw %}`
+- Only one `{% raw %}{{else}}{% endraw %}` block allowed per helper (use `{% raw %}{{else if}}{% endraw %}` for multiple conditions)
+- For `{% raw %}{{#if}}{% endraw %}`, the else block renders when all conditions are false
+- For `{% raw %}{{#each}}{% endraw %}`, the else block renders when the collection is empty
+- For `{% raw %}{{#with}}{% endraw %}`, the else block renders when the object is null or undefined
+- Position matters: must come after all `{% raw %}{{else if}}{% endraw %}` blocks
 
 ---
 

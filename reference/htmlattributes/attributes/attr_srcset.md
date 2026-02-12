@@ -41,6 +41,8 @@ The `srcset` attribute defines image source alternatives:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Resolution-based srcset (pixel density) -->
@@ -74,6 +76,8 @@ The `srcset` attribute defines image source alternatives:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -91,6 +95,8 @@ The `srcset` attribute is used with:
 ## Binding Values
 
 The `srcset` attribute supports data binding for dynamic image sources:
+
+
 
 
 {% raw %}
@@ -128,6 +134,8 @@ The `srcset` attribute supports data binding for dynamic image sources:
 </picture>
 ```
 {% endraw %}
+
+
 
 
 
@@ -734,6 +742,8 @@ Avoid these errors:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -773,6 +783,8 @@ Avoid these errors:
 </section>
 ```
 {% endraw %}
+
+
 
 
 

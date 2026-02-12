@@ -96,6 +96,8 @@ The `background-color` property can be dynamically set using data binding expres
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -119,6 +121,8 @@ The `background-color` property can be dynamically set using data binding expres
 
 
 
+
+
 With model data:
 ```json
 {
@@ -131,6 +135,8 @@ With model data:
 ```
 
 ### Example 2: Conditional highlighting based on thresholds
+
+
 
 
 
@@ -167,7 +173,11 @@ With model data:
 
 
 
+
+
 ### Example 3: Themed sections with brand colors
+
+
 
 
 
@@ -197,6 +207,8 @@ With model data:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

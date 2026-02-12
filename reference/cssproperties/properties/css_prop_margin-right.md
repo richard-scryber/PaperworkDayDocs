@@ -95,6 +95,8 @@ The `margin-right` property supports dynamic values through data binding, allowi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -130,6 +132,8 @@ The `margin-right` property supports dynamic values through data binding, allowi
 
 
 
+
+
 Data context:
 ```json
 {
@@ -141,6 +145,8 @@ Data context:
 ```
 
 ### Example 2: Badge spacing based on display mode
+
+
 
 
 
@@ -172,6 +178,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -180,6 +188,8 @@ Data context:
 ```
 
 ### Example 3: Data-driven product grid spacing
+
+
 
 
 
@@ -216,6 +226,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

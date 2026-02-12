@@ -41,6 +41,8 @@ The `title` attribute provides element metadata that:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Create a bookmark entry -->
@@ -59,6 +61,8 @@ The `title` attribute provides element metadata that:
 </h1>
 ```
 {% endraw %}
+
+
 
 
 
@@ -91,6 +95,8 @@ The `title` attribute supports data binding for dynamic bookmark text:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Dynamic chapter titles -->
@@ -120,6 +126,8 @@ The `title` attribute supports data binding for dynamic bookmark text:
 </h2>
 ```
 {% endraw %}
+
+
 
 
 
@@ -433,6 +441,8 @@ For consistent results, always provide explicit `title` attributes on elements y
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { report: { title: "Q4 2025 Report", sections: [...] } } -->
@@ -459,6 +469,8 @@ For consistent results, always provide explicit `title` attributes on elements y
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -673,6 +685,8 @@ For consistent results, always provide explicit `title` attributes on elements y
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { reportType: "quarterly", quarter: "Q4", year: 2025, sections: [...] } -->
@@ -697,6 +711,8 @@ For consistent results, always provide explicit `title` attributes on elements y
 </template>
 ```
 {% endraw %}
+
+
 
 
 

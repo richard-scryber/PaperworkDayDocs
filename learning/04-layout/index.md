@@ -293,6 +293,8 @@ Content flows from page to page automatically:
 
 
 
+
+
 {% raw %}
 ```html
 {{#each chapters}}
@@ -303,6 +305,8 @@ Content flows from page to page automatically:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -367,6 +371,8 @@ Content flows from page to page automatically:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -419,7 +425,11 @@ Content flows from page to page automatically:
 
 
 
+
+
 ### Multi-Section Document
+
+
 
 
 
@@ -458,7 +468,11 @@ Content flows from page to page automatically:
 
 
 
+
+
 ### Watermark Overlay
+
+
 
 
 
@@ -480,6 +494,8 @@ Content flows from page to page automatically:
 <div class="watermark">{{if(isDraft, 'DRAFT', '')}}</div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -512,6 +528,8 @@ Content flows from page to page automatically:
 
 
 
+
+
 {% raw %}
 ```html
 {{#each chapters}}
@@ -522,6 +540,8 @@ Content flows from page to page automatically:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -538,6 +558,8 @@ Content flows from page to page automatically:
 
 
 
+
+
 {% raw %}
 ```html
 <footer>
@@ -548,6 +570,8 @@ Content flows from page to page automatically:
 </footer>
 ```
 {% endraw %}
+
+
 
 
 

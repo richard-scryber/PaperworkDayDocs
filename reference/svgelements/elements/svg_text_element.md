@@ -137,6 +137,8 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Simple value binding -->
@@ -154,7 +156,11 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 
 
 
+
+
 ### Dynamic Positioning
+
+
 
 
 
@@ -174,7 +180,11 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 
 
 
+
+
 ### Dynamic Styling
+
+
 
 
 
@@ -199,7 +209,11 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 
 
 
+
+
 ### Template Iteration
+
+
 
 
 
@@ -215,6 +229,8 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -366,6 +382,8 @@ Dynamic text from model data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { customerName: "Acme Corp", orderCount: 42 } -->
@@ -382,9 +400,13 @@ Dynamic text from model data:
 
 
 
+
+
 ### 8. Value with Conditional Color
 
 Text color based on threshold:
+
+
 
 
 
@@ -405,9 +427,13 @@ Text color based on threshold:
 
 
 
+
+
 ### 9. Chart with Dynamic Labels
 
 Bar chart with data-driven positioning:
+
+
 
 
 
@@ -443,6 +469,8 @@ Bar chart with data-driven positioning:
 
 
 
+
+
 ### 10. Multi-Style Text Header
 
 Combining multiple text elements:
@@ -465,6 +493,8 @@ Formatted percentage with styling:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { completionRate: 0.75 } -->
@@ -478,6 +508,8 @@ Formatted percentage with styling:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -501,6 +533,8 @@ Gauge with temperature reading:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { temperature: 72.5, unit: "°F" } -->
@@ -521,9 +555,13 @@ Gauge with temperature reading:
 
 
 
+
+
 ### 14. Data Point Labels
 
 Scatter plot with value labels:
+
+
 
 
 
@@ -540,6 +578,8 @@ Scatter plot with value labels:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -566,6 +606,8 @@ Text size based on importance:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { items: [{text: "Critical", priority: 3}, {text: "Normal", priority: 1}] } -->
@@ -582,6 +624,8 @@ Text size based on importance:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -626,6 +670,8 @@ Date/time labels on chart axis:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { timePoints: [{date: "Jan 1", value: 100}, {date: "Jan 15", value: 150}] } -->
@@ -651,9 +697,13 @@ Date/time labels on chart axis:
 
 
 
+
+
 ### 20. Score Display with Description
 
 Large score with explanatory text:
+
+
 
 
 
@@ -673,6 +723,8 @@ Large score with explanatory text:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

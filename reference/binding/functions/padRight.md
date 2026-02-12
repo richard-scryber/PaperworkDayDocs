@@ -61,6 +61,8 @@ The padded string.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <pre>
@@ -70,6 +72,8 @@ The padded string.
 </pre>
 ```
 {% endraw %}
+
+
 
 
 
@@ -97,6 +101,8 @@ Tool                 $9.99
 
 
 
+
+
 {% raw %}
 ```handlebars
 <pre>
@@ -107,6 +113,8 @@ Tool                 $9.99
 </pre>
 ```
 {% endraw %}
+
+
 
 
 
@@ -133,11 +141,15 @@ Product B       Sold Out   $149.99
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{padRight(model.label, 20, '.')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -157,6 +169,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <div>
@@ -165,6 +179,8 @@ doc.Params["model"] = new {
 </div>
 ```
 {% endraw %}
+
+
 
 
 

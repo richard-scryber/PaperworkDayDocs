@@ -32,6 +32,8 @@ The library also extended the behaviour of the element with a number of custom e
 
 
 
+
+
 {% raw %}
 ```html
     <body id='bId' class='main-content other-class' >
@@ -49,6 +51,8 @@ The library also extended the behaviour of the element with a number of custom e
     </body>
 ```
 {% endraw %}
+
+
 
 
 

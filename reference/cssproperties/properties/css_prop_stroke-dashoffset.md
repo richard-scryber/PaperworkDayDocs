@@ -100,6 +100,8 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -125,7 +127,11 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
 
 
 
+
+
 ### Example 2: Data-driven gauge meter
+
+
 
 
 
@@ -151,7 +157,11 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
 
 
 
+
+
 ### Example 3: Skill level bars with data binding
+
+
 
 
 
@@ -176,6 +186,8 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
 </body>
 ```
 {% endraw %}
+
+
 
 
 

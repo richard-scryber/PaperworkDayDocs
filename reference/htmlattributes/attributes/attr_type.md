@@ -135,6 +135,8 @@ The `type` attribute can be set statically or dynamically using data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { inputType: "text", fieldValue: "Dynamic value" } -->
@@ -144,7 +146,11 @@ The `type` attribute can be set statically or dynamically using data binding:
 
 
 
+
+
 ### Conditional Type Selection
+
+
 
 
 
@@ -158,9 +164,13 @@ The `type` attribute can be set statically or dynamically using data binding:
 
 
 
+
+
 ### Value Binding for Checkboxes and Radio Buttons
 
 For checkbox and radio button types, the `value` attribute controls the checked/selected state:
+
+
 
 
 
@@ -179,6 +189,8 @@ For checkbox and radio button types, the `value` attribute controls the checked/
 <input type="checkbox" value="{{model.isAccepted ? 'checked' : ''}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -537,6 +549,8 @@ Scryber processes these input types during PDF generation. The rendered PDF disp
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -558,6 +572,8 @@ Scryber processes these input types during PDF generation. The rendered PDF disp
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -838,6 +854,8 @@ Scryber processes these input types during PDF generation. The rendered PDF disp
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -878,6 +896,8 @@ Scryber processes these input types during PDF generation. The rendered PDF disp
 </div>
 ```
 {% endraw %}
+
+
 
 
 

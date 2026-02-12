@@ -73,6 +73,8 @@ bool(value)
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if bool(model.isActiveString)}}
@@ -82,6 +84,8 @@ bool(value)
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -101,6 +105,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if bool(model.statusCode)}}
@@ -110,6 +116,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -129,6 +137,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.features}}
@@ -142,6 +152,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

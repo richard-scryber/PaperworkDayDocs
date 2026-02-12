@@ -79,6 +79,8 @@ The `data-icon` attribute supports data binding for dynamic icon selection:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Simple dynamic icon -->
@@ -105,6 +107,8 @@ The `data-icon` attribute supports data binding for dynamic icon selection:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -394,6 +398,8 @@ Select icons based on business logic:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { attachment: { path: "file.pdf", priority: "high", category: "data" } } -->
@@ -405,6 +411,8 @@ Select icons based on business logic:
                       'Paperclip'}}"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -590,6 +598,8 @@ Icons appear at the object element's location:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -617,6 +627,8 @@ Icons appear at the object element's location:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -1173,6 +1185,8 @@ Icons appear at the object element's location:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -1213,6 +1227,8 @@ Icons appear at the object element's location:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

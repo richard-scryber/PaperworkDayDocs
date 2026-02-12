@@ -54,6 +54,8 @@ The `data-passthrough` attribute is used exclusively with `<iframe>` elements:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Default: style isolation (passthrough=false) -->
@@ -70,6 +72,8 @@ The `data-passthrough` attribute is used exclusively with `<iframe>` elements:
         data-passthrough="{{model.useTheme}}"></iframe>
 ```
 {% endraw %}
+
+
 
 
 
@@ -99,6 +103,8 @@ The `data-passthrough` attribute is supported exclusively on:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Static values -->
@@ -118,6 +124,8 @@ The `data-passthrough` attribute is supported exclusively on:
         data-passthrough="{{model.useCustomTheme ? false : true}}"></iframe>
 ```
 {% endraw %}
+
+
 
 
 
@@ -347,6 +355,8 @@ Common patterns for document composition:
 **Pattern 3: Conditional Theming**
 
 
+
+
 {% raw %}
 ```html
 <!-- Theme based on document type -->
@@ -354,6 +364,8 @@ Common patterns for document composition:
         data-passthrough="{{model.documentType == 'branded'}}"></iframe>
 ```
 {% endraw %}
+
+
 
 
 
@@ -491,6 +503,8 @@ Apply theme based on content type:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { sections: [{url: "a.html", themed: true}, {url: "b.html", themed: false}] } -->
@@ -509,6 +523,8 @@ Apply theme based on content type:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -650,6 +666,8 @@ public class ReportModel
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -671,6 +689,8 @@ public class ReportModel
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -733,6 +753,8 @@ public class DocumentSettings
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { settings: { themeMode: "light" } } -->
@@ -762,9 +784,13 @@ public class DocumentSettings
 
 
 
+
+
 ### 9. Multi-Language Document with Consistent Typography
 
 Different languages, same typography:
+
+
 
 
 
@@ -813,6 +839,8 @@ Different languages, same typography:
 
 
 
+
+
 ### 10. Template Library with Style Control
 
 Reusable templates with configurable theming:
@@ -831,6 +859,8 @@ public class TemplateLibraryModel
     public List<TemplateSection> Sections { get; set; }
 }
 ```
+
+
 
 
 
@@ -854,6 +884,8 @@ public class TemplateLibraryModel
 
 
 
+
+
 ### 11. White-Label Document Generation
 
 Generate documents with different branding:
@@ -868,6 +900,8 @@ public class BrandingConfig
     public bool ApplyBranding { get; set; }
 }
 ```
+
+
 
 
 
@@ -906,6 +940,8 @@ public class BrandingConfig
         data-passthrough="{{model.branding.applyBranding}}"></iframe>
 ```
 {% endraw %}
+
+
 
 
 

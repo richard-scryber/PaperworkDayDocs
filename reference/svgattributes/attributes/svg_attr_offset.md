@@ -91,6 +91,8 @@ Bind stop positions to data for flexible gradients:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { midpoint: 35 } -->
@@ -109,9 +111,13 @@ Bind stop positions to data for flexible gradients:
 
 
 
+
+
 ### Data Threshold Visualization
 
 Position color stops at data threshold boundaries:
+
+
 
 
 
@@ -136,9 +142,13 @@ Position color stops at data threshold boundaries:
 
 
 
+
+
 ### Generate Stops from Data Array
 
 Create gradient stops dynamically from data:
+
+
 
 
 
@@ -161,9 +171,13 @@ Create gradient stops dynamically from data:
 
 
 
+
+
 ### Progress-Based Color Stops
 
 Position stops based on completion or progress:
+
+
 
 
 
@@ -186,9 +200,13 @@ Position stops based on completion or progress:
 
 
 
+
+
 ### Temperature Scale with Data Offsets
 
 Create color scales based on data ranges:
+
+
 
 
 
@@ -209,6 +227,8 @@ Create color scales based on data ranges:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -391,6 +411,8 @@ Stops outside 0%-100% work with spreadMethod:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { progress: 65 } -->
@@ -411,6 +433,8 @@ Stops outside 0%-100% work with spreadMethod:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -518,6 +542,8 @@ Stops outside 0%-100% work with spreadMethod:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { low: 30, medium: 60, high: 80 } -->
@@ -539,6 +565,8 @@ Stops outside 0%-100% work with spreadMethod:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

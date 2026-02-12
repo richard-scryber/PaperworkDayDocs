@@ -60,6 +60,8 @@ An array containing all matches found.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <ul>
@@ -69,6 +71,8 @@ An array containing all matches found.
 </ul>
 ```
 {% endraw %}
+
+
 
 
 
@@ -93,6 +97,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Found Emails:</h3>
@@ -101,6 +107,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -122,6 +130,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <div class="tags">
@@ -131,6 +141,8 @@ doc.Params["model"] = new {
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -155,6 +167,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Links:</h3>
@@ -166,7 +180,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Count Matches
+
+
 
 
 
@@ -175,6 +193,8 @@ doc.Params["model"] = new {
 <p>Found {{length(regexMatches(model.text, '\\d'))}} digits</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -198,7 +218,7 @@ doc.Params["model"] = new {
 - Returns array of all matches (not just first)
 - Returns empty array if no matches found
 - Backslashes must be escaped: `\\d`, `\\w`, etc.
-- Use with `{{#each}}` to iterate matches
+- Use with `{% raw %}{{#each}}{% endraw %}` to iterate matches
 - For testing if match exists, use `regexIsMatch()`
 - For replacement, use `regexSwap()`
 

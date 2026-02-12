@@ -40,6 +40,8 @@ The `datetime` attribute defines temporal values:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Date only -->
@@ -64,6 +66,8 @@ The `datetime` attribute defines temporal values:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -82,6 +86,8 @@ The `datetime` attribute is used with:
 ## Binding Values
 
 The `datetime` attribute supports data binding for dynamic date/time values:
+
+
 
 
 
@@ -122,6 +128,8 @@ The `datetime` attribute supports data binding for dynamic date/time values:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -688,6 +696,8 @@ The `datetime` attribute is optional for `<time>` elements:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -728,6 +738,8 @@ The `datetime` attribute is optional for `<time>` elements:
 </article>
 ```
 {% endraw %}
+
+
 
 
 

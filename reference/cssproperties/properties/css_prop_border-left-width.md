@@ -72,6 +72,8 @@ The `border-left-width` property supports dynamic values through data binding, a
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -91,7 +93,11 @@ The `border-left-width` property supports dynamic values through data binding, a
 
 
 
+
+
 ### Example 2: Priority-based accent bars
+
+
 
 
 
@@ -116,7 +122,11 @@ The `border-left-width` property supports dynamic values through data binding, a
 
 
 
+
+
 ### Example 3: Navigation active indicator
+
+
 
 
 
@@ -137,6 +147,8 @@ The `border-left-width` property supports dynamic values through data binding, a
 </body>
 ```
 {% endraw %}
+
+
 
 
 

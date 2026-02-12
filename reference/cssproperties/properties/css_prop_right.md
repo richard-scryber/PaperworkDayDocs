@@ -94,6 +94,8 @@ The `right` property supports data binding, enabling dynamic horizontal position
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -131,6 +133,8 @@ The `right` property supports data binding, enabling dynamic horizontal position
 
 
 
+
+
 Data model:
 ```json
 {
@@ -153,6 +157,8 @@ Data model:
 ```
 
 ### Example 2: Configurable right-aligned page numbers and logos
+
+
 
 
 
@@ -198,6 +204,8 @@ Data model:
 
 
 
+
+
 Data model:
 ```json
 {
@@ -226,6 +234,8 @@ Data model:
 ```
 
 ### Example 3: Data-driven status badges on right side
+
+
 
 
 
@@ -268,6 +278,8 @@ Data model:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

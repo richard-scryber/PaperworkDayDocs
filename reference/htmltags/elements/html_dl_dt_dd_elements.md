@@ -510,6 +510,8 @@ Definition lists handle page breaks naturally:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Template with model.terms = [{term: "API", def: "Application Programming Interface"}, ...] -->
@@ -527,7 +529,11 @@ Definition lists handle page breaks naturally:
 
 
 
+
+
 ### Complex Data Binding Example
+
+
 
 
 
@@ -566,6 +572,8 @@ Definition lists handle page breaks naturally:
 </dl>
 ```
 {% endraw %}
+
+
 
 
 

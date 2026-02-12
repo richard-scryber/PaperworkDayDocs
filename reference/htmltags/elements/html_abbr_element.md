@@ -35,6 +35,8 @@ The `<abbr>` element is an inline semantic HTML element that marks up abbreviati
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Basic abbreviation -->
@@ -47,6 +49,8 @@ The `<abbr>` element is an inline semantic HTML element that marks up abbreviati
 <abbr title="{{model.abbreviationExpansion}}">{{model.abbreviationText}}</abbr>
 ```
 {% endraw %}
+
+
 
 
 
@@ -176,6 +180,8 @@ abbr.Style.Text.Decoration = TextDecoration.Underline;
 
 
 
+
+
 {% raw %}
 ```html
 <p>
@@ -192,6 +198,8 @@ abbr.Style.Text.Decoration = TextDecoration.Underline;
 -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -214,6 +222,8 @@ abbr.Style.Text.Decoration = TextDecoration.Underline;
 
 
 
+
+
 {% raw %}
 ```html
 <p>
@@ -226,7 +236,11 @@ abbr.Style.Text.Decoration = TextDecoration.Underline;
 
 
 
+
+
 ### Repeating Template with Dynamic Abbreviations
+
+
 
 
 
@@ -249,6 +263,8 @@ abbr.Style.Text.Decoration = TextDecoration.Underline;
 -->
 ```
 {% endraw %}
+
+
 
 
 

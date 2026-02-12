@@ -54,6 +54,8 @@ The `data-page-hint` attribute is used exclusively with the `<page>` element (pa
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Basic page number with hint -->
@@ -69,6 +71,8 @@ The `data-page-hint` attribute is used exclusively with the `<page>` element (pa
 <page property="total" data-page-hint="{{model.totalPageEstimate}}"></page>
 ```
 {% endraw %}
+
+
 
 
 
@@ -96,6 +100,8 @@ The `data-page-hint` attribute is supported exclusively on:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Static hint -->
@@ -111,6 +117,8 @@ The `data-page-hint` attribute is supported exclusively on:
 <page property="total" data-page-hint="{{model.pageCountEstimate}}"></page>
 ```
 {% endraw %}
+
+
 
 
 
@@ -299,6 +307,8 @@ public class ReportModel
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Use calculated hint -->
@@ -308,6 +318,8 @@ public class ReportModel
 </footer>
 ```
 {% endraw %}
+
+
 
 
 
@@ -328,6 +340,8 @@ The hint applies to the scope of the page number display (document total or sect
 ### Headers and Footers
 
 Common use case for page hints:
+
+
 
 
 
@@ -367,6 +381,8 @@ Common use case for page hints:
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -477,6 +493,8 @@ public class ReportModel
 
 
 
+
+
 {% raw %}
 ```html
 <footer>
@@ -488,9 +506,13 @@ public class ReportModel
 
 
 
+
+
 ### 3. Large Report with Accurate Hint
 
 Optimize large document rendering:
+
+
 
 
 
@@ -530,6 +552,8 @@ Optimize large document rendering:
 
 
 
+
+
 ### 4. Total Page Count Display Only
 
 Display only total page count:
@@ -558,6 +582,8 @@ public class MultiSectionReport
     public int TotalPageHint => 5 + 40 + 15; // 60 pages
 }
 ```
+
+
 
 
 
@@ -613,6 +639,8 @@ public class MultiSectionReport
 
 
 
+
+
 ### 6. Conditional Page Hint Based on Content
 
 Adjust hint based on content flags:
@@ -645,6 +673,8 @@ public class FlexibleReport
 
 
 
+
+
 {% raw %}
 ```html
 <footer>
@@ -653,6 +683,8 @@ public class FlexibleReport
 </footer>
 ```
 {% endraw %}
+
+
 
 
 
@@ -683,6 +715,8 @@ public class InvoiceBatch
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -705,6 +739,8 @@ public class InvoiceBatch
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -738,6 +774,8 @@ public class ProductCatalog
 
 
 
+
+
 {% raw %}
 ```html
 <footer style="text-align: center;">
@@ -746,6 +784,8 @@ public class ProductCatalog
 </footer>
 ```
 {% endraw %}
+
+
 
 
 
@@ -781,6 +821,8 @@ public class ResearchPaper
 
 
 
+
+
 {% raw %}
 ```html
 <footer style="border-top: 1pt solid #333; padding-top: 5pt; text-align: center;">
@@ -788,6 +830,8 @@ public class ResearchPaper
 </footer>
 ```
 {% endraw %}
+
+
 
 
 
@@ -820,6 +864,8 @@ public class Newsletter
 
 
 
+
+
 {% raw %}
 ```html
 <footer>
@@ -830,6 +876,8 @@ public class Newsletter
 </footer>
 ```
 {% endraw %}
+
+
 
 
 
@@ -863,6 +911,8 @@ public class ConferenceProceedings
 
 
 
+
+
 {% raw %}
 ```html
 <header>
@@ -873,6 +923,8 @@ public class ConferenceProceedings
 </header>
 ```
 {% endraw %}
+
+
 
 
 
@@ -904,6 +956,8 @@ public class DataReport
     }
 }
 ```
+
+
 
 
 
@@ -944,6 +998,8 @@ public class DataReport
 
 
 
+
+
 ### 13. Manual with Dynamic Chapter Inclusion
 
 User manual with optional chapters:
@@ -973,6 +1029,8 @@ public class UserManual
 
 
 
+
+
 {% raw %}
 ```html
 <footer>
@@ -981,6 +1039,8 @@ public class UserManual
 </footer>
 ```
 {% endraw %}
+
+
 
 
 
@@ -1002,6 +1062,8 @@ public class BatchProcessor
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{model.reports}}">
@@ -1017,6 +1079,8 @@ public class BatchProcessor
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -1049,6 +1113,8 @@ public class AdaptiveReport
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Hint recalculates for each document -->
@@ -1061,9 +1127,13 @@ public class AdaptiveReport
 
 
 
+
+
 ### 16. Performance Comparison View
 
 Test document with and without hints:
+
+
 
 
 
@@ -1099,6 +1169,8 @@ Test document with and without hints:
 </html>
 ```
 {% endraw %}
+
+
 
 
 

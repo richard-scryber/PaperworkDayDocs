@@ -83,6 +83,8 @@ Bind the y2 coordinate to data for dynamic gradient range:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { endY: 80 } -->
@@ -102,9 +104,13 @@ Bind the y2 coordinate to data for dynamic gradient range:
 
 
 
+
+
 ### Chart Height-Based Gradients
 
 Position gradient endpoint based on chart dimensions:
+
+
 
 
 
@@ -127,9 +133,13 @@ Position gradient endpoint based on chart dimensions:
 
 
 
+
+
 ### Data-Driven Diagonal Gradients
 
 Calculate gradient angle from data values:
+
+
 
 
 
@@ -154,9 +164,13 @@ Calculate gradient angle from data values:
 
 
 
+
+
 ### Conditional Vertical Extent
 
 Change gradient extent based on data conditions:
+
+
 
 
 
@@ -188,9 +202,13 @@ Change gradient extent based on data conditions:
 
 
 
+
+
 ### Temperature Range Visualization
 
 Create vertical gradients representing value ranges:
+
+
 
 
 
@@ -212,6 +230,8 @@ Create vertical gradients representing value ranges:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -509,6 +529,8 @@ Common scenarios where y2 is essential:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { level: 70, maxLevel: 100 } -->
@@ -538,6 +560,8 @@ Common scenarios where y2 is essential:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

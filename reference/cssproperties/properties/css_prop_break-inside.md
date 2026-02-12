@@ -96,6 +96,8 @@ The `break-inside` property supports data binding, allowing you to dynamically c
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -125,7 +127,11 @@ The `break-inside` property supports data binding, allowing you to dynamically c
 
 
 
+
+
 ### Example 2: Configurable table and figure integrity
+
+
 
 
 
@@ -166,7 +172,11 @@ The `break-inside` property supports data binding, allowing you to dynamically c
 
 
 
+
+
 ### Example 3: Multi-column newsletter with smart content breaking
+
+
 
 
 
@@ -208,6 +218,8 @@ The `break-inside` property supports data binding, allowing you to dynamically c
 </body>
 ```
 {% endraw %}
+
+
 
 
 

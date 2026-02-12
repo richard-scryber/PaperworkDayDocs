@@ -101,6 +101,8 @@ The `stroke` property can be dynamically set using data binding expressions, ena
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -127,6 +129,8 @@ The `stroke` property can be dynamically set using data binding expressions, ena
 
 
 
+
+
 With model data:
 ```json
 {
@@ -139,6 +143,8 @@ With model data:
 ```
 
 ### Example 2: Conditional network connection colors
+
+
 
 
 
@@ -178,7 +184,11 @@ With model data:
 
 
 
+
+
 ### Example 3: Category-based border colors from theme
+
+
 
 
 
@@ -205,6 +215,8 @@ With model data:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

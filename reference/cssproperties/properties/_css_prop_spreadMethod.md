@@ -70,6 +70,8 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
 
 
 
+
+
 {% raw %}
 ```html
 <body>
@@ -90,7 +92,11 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
 
 
 
+
+
 ### Example 2: Data-driven striped patterns
+
+
 
 
 
@@ -117,7 +123,11 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
 
 
 
+
+
 ### Example 3: Dynamic radial patterns with reflection
+
+
 
 
 
@@ -138,6 +148,8 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
 </body>
 ```
 {% endraw %}
+
+
 
 
 

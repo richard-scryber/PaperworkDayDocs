@@ -41,6 +41,8 @@ The `scope` attribute defines header relationships:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Column header -->
@@ -62,6 +64,8 @@ The `scope` attribute defines header relationships:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -76,6 +80,8 @@ The `scope` attribute is used exclusively with:
 ## Binding Values
 
 The `scope` attribute supports data binding for dynamic scope assignment:
+
+
 
 
 
@@ -106,6 +112,8 @@ The `scope` attribute supports data binding for dynamic scope assignment:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -759,6 +767,8 @@ For PDF generation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -799,6 +809,8 @@ For PDF generation:
 </table>
 ```
 {% endraw %}
+
+
 
 
 

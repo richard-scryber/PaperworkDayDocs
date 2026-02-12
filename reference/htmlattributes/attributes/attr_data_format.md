@@ -241,6 +241,8 @@ Format strings can be bound from data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Format from model -->
@@ -250,6 +252,8 @@ Format strings can be bound from data:
 <num value="{{.value}}" data-format="{{.isPercentage ? 'P2' : 'N2'}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -263,6 +267,8 @@ Display money with currency symbol:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Value: 1234.56 -->
@@ -273,6 +279,8 @@ Display money with currency symbol:
 <num value="{{model.price}}" data-format="C2" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -294,6 +302,8 @@ Show values as percentages:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Value: 0.1234 -->
@@ -311,9 +321,13 @@ Show values as percentages:
 
 
 
+
+
 ### 4. Fixed Decimal Places
 
 Control decimal precision:
+
+
 
 
 
@@ -330,6 +344,8 @@ Control decimal precision:
 <!-- Output: 1.4142 -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -351,6 +367,8 @@ Pad with leading zeros:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Invoice numbers -->
@@ -362,6 +380,8 @@ Pad with leading zeros:
 <!-- Output: 000123 -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -383,6 +403,8 @@ Add custom text around numbers:
 
 
 
+
+
 {% raw %}
 ```html
 <num value="75" data-format="'Score: '#0' points'" />
@@ -392,6 +414,8 @@ Add custom text around numbers:
 <!-- Output: 23.5°C -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -506,6 +530,8 @@ Format currency in table:
 
 
 
+
+
 {% raw %}
 ```html
 <table style="width: 100%;">
@@ -533,9 +559,13 @@ Format currency in table:
 
 
 
+
+
 ### 18. Financial Report with Percentages
 
 Show financial metrics:
+
+
 
 
 
@@ -557,9 +587,13 @@ Show financial metrics:
 
 
 
+
+
 ### 19. Measurement Display
 
 Show measurements with units:
+
+
 
 
 
@@ -581,9 +615,13 @@ Show measurements with units:
 
 
 
+
+
 ### 20. Date Header with Custom Format
 
 Create formatted headers:
+
+
 
 
 
@@ -601,9 +639,13 @@ Create formatted headers:
 
 
 
+
+
 ### 21. Dynamic Format Selection
 
 Choose format based on data:
+
+
 
 
 
@@ -617,9 +659,13 @@ Choose format based on data:
 
 
 
+
+
 ### 22. Conditional Negative Formatting
 
 Format negative values in red:
+
+
 
 
 
@@ -633,9 +679,13 @@ Format negative values in red:
 
 
 
+
+
 ### 23. Multi-Currency Display
 
 Show multiple currencies:
+
+
 
 
 
@@ -652,9 +702,13 @@ Show multiple currencies:
 
 
 
+
+
 ### 24. Score Card with Conditional Formatting
 
 Display scores with context:
+
+
 
 
 
@@ -676,9 +730,13 @@ Display scores with context:
 
 
 
+
+
 ### 25. Time Duration Formatting
 
 Show elapsed time:
+
+
 
 
 
@@ -692,6 +750,8 @@ Show elapsed time:
 <!-- Output: 2:15 PM -->
 ```
 {% endraw %}
+
+
 
 
 

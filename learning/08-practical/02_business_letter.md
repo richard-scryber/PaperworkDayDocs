@@ -31,6 +31,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -319,6 +321,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ---
 
 ## C# Letter Generator
@@ -501,6 +505,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 
 
+
+
 {% raw %}
 ```html
 <div class="letterhead">
@@ -515,6 +521,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 
 
+
+
 **Features:**
 - Centered design
 - Company logo
@@ -522,6 +530,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 - Bottom border for separation
 
 ### 2. Date and Reference
+
+
 
 
 
@@ -541,12 +551,16 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 
 
+
+
 **Features:**
 - Right-aligned date
 - Optional reference number
 - Professional formatting
 
 ### 3. Address Block
+
+
 
 
 
@@ -568,12 +582,16 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 
 
+
+
 **Features:**
 - Complete recipient information
 - Conditional title and company
 - Standard postal format
 
 ### 4. Letter Body
+
+
 
 
 
@@ -595,12 +613,16 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 
 
 
+
+
 **Features:**
 - Dynamic paragraph count
 - Proper spacing
 - Customizable closing
 
 ### 5. Signature Block
+
+
 
 
 
@@ -615,6 +637,8 @@ using (var output = new FileStream("partnership-letter.pdf", FileMode.Create))
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -671,6 +695,8 @@ body {
 
 
 
+
+
 {% raw %}
 ```html
 <div class="memo-header">
@@ -698,11 +724,15 @@ body {
 
 
 
+
+
 ---
 
 ## Multi-Page Letter Handling
 
 For letters that span multiple pages, add page headers:
+
+
 
 
 
@@ -734,11 +764,15 @@ For letters that span multiple pages, add page headers:
 
 
 
+
+
 ---
 
 ## Tips & Tricks
 
 ### 1. Signature Positioning
+
+
 
 
 
@@ -762,6 +796,8 @@ For letters that span multiple pages, add page headers:
 
 
 
+
+
 ### 2. Confidential Watermark
 
 ```css
@@ -779,6 +815,8 @@ For letters that span multiple pages, add page headers:
 
 
 
+
+
 {% raw %}
 ```html
 {{#if letter.isConfidential}}
@@ -789,7 +827,11 @@ For letters that span multiple pages, add page headers:
 
 
 
+
+
 ### 3. Custom Footer with Logo
+
+
 
 
 
@@ -812,6 +854,8 @@ For letters that span multiple pages, add page headers:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -878,6 +922,8 @@ Create specialized templates for:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Personalized -->
@@ -886,7 +932,11 @@ Create specialized templates for:
 {% endraw %}
 
 
+
+
 ### ❌ Signature Too Large
+
+
 
 
 
@@ -899,7 +949,11 @@ Create specialized templates for:
 
 
 
+
+
 ✅ **Solution:**
+
+
 
 
 
@@ -909,6 +963,8 @@ Create specialized templates for:
      style="max-height: 40pt; max-width: 200pt;" />
 ```
 {% endraw %}
+
+
 
 
 

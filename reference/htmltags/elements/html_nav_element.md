@@ -398,6 +398,8 @@ The `<nav>` element has the following default behavior:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.chapters = [
@@ -422,6 +424,8 @@ The `<nav>` element has the following default behavior:
 </nav>
 ```
 {% endraw %}
+
+
 
 
 

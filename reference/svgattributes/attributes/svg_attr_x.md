@@ -66,9 +66,11 @@ The `x` attribute is supported on the following SVG elements:
 
 ## Data Binding
 
-The `x` attribute supports dynamic values using data binding expressions with `{{expression}}` syntax.
+The `x` attribute supports dynamic values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Positioning from Data
+
+
 
 
 
@@ -85,7 +87,11 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 ### Example 2: Calculated Position
+
+
 
 
 
@@ -102,7 +108,11 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 ### Example 3: Dynamic Bar Chart Positioning
+
+
 
 
 
@@ -123,6 +133,8 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -299,6 +311,8 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { columns: [
@@ -317,6 +331,8 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -344,6 +360,8 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { widgets: [
@@ -362,6 +380,8 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -414,6 +434,8 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { items: [
@@ -430,6 +452,8 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

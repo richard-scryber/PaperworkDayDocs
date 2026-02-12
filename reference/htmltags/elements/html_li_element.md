@@ -360,6 +360,8 @@ By default, list items can break across pages/columns:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Template with model.showOptional = true -->
@@ -375,7 +377,11 @@ By default, list items can break across pages/columns:
 
 
 
+
+
 ### Data-Bound List Items
+
+
 
 
 
@@ -398,7 +404,11 @@ By default, list items can break across pages/columns:
 
 
 
+
+
 ### Complex Data Binding with Styling
+
+
 
 
 
@@ -426,6 +436,8 @@ By default, list items can break across pages/columns:
 </ul>
 ```
 {% endraw %}
+
+
 
 
 

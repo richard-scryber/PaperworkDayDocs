@@ -110,6 +110,8 @@ The `content` property can be dynamically populated through data binding with co
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -139,7 +141,11 @@ The `content` property can be dynamically populated through data binding with co
 
 
 
+
+
 ### Example 2: Generated badges with data-driven counters
+
+
 
 
 
@@ -184,7 +190,11 @@ The `content` property can be dynamically populated through data binding with co
 
 
 
+
+
 ### Example 3: Data-driven figure numbering
+
+
 
 
 
@@ -222,6 +232,8 @@ The `content` property can be dynamically populated through data binding with co
 </body>
 ```
 {% endraw %}
+
+
 
 
 

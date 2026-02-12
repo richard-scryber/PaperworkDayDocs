@@ -91,6 +91,8 @@ The `-pdf-li-group` property supports data binding, allowing dynamic control of 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -119,6 +121,8 @@ The `-pdf-li-group` property supports data binding, allowing dynamic control of 
 
 
 
+
+
 **Data context:**
 ```json
 {
@@ -141,6 +145,8 @@ The `-pdf-li-group` property supports data binding, allowing dynamic control of 
 When `enableGrouping` is true, produces hierarchical numbering (1, 1.1, 1.2); when false, each list starts fresh (1, 1, 2).
 
 ### Example 2: Configurable document outline
+
+
 
 
 
@@ -170,6 +176,8 @@ When `enableGrouping` is true, produces hierarchical numbering (1, 1.1, 1.2); wh
 
 
 
+
+
 **Data context:**
 ```json
 {
@@ -189,6 +197,8 @@ When `enableGrouping` is true, produces hierarchical numbering (1, 1.1, 1.2); wh
 Organizations can configure whether documents use hierarchical (1.1, 1.2) or independent (1, 2) numbering based on their documentation standards.
 
 ### Example 3: Named groups for complex documents
+
+
 
 
 
@@ -217,6 +227,8 @@ Organizations can configure whether documents use hierarchical (1.1, 1.2) or ind
 </body>
 ```
 {% endraw %}
+
+
 
 
 

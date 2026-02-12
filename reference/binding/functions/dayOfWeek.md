@@ -59,11 +59,15 @@ The day of the week as a number from 0 (Sunday) to 6 (Saturday).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Day of week: {{dayOfWeek(model.date)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,6 +87,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{format(model.date, 'dddd, MMMM dd')}}:
@@ -94,6 +100,8 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -113,6 +121,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Business Day Appointments</h3>
@@ -123,6 +133,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -148,6 +160,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.dates}}
@@ -165,6 +179,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

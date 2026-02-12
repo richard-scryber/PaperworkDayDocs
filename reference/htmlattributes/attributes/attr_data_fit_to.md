@@ -56,6 +56,8 @@ The `data-fit-to` attribute is used exclusively with anchor (`<a>`) elements tha
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Fit entire page in view -->
@@ -74,6 +76,8 @@ The `data-fit-to` attribute is used exclusively with anchor (`<a>`) elements tha
 <a href="#{{.targetId}}" data-fit-to="{{.fitMode}}">{{.linkText}}</a>
 ```
 {% endraw %}
+
+
 
 
 
@@ -118,6 +122,8 @@ The `data-fit-to` attribute is supported exclusively on:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- FullPage: Show entire page -->
@@ -138,6 +144,8 @@ The `data-fit-to` attribute is supported exclusively on:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -567,6 +575,8 @@ public class DocumentModel
 
 
 
+
+
 {% raw %}
 ```html
 <nav>
@@ -579,6 +589,8 @@ public class DocumentModel
 </nav>
 ```
 {% endraw %}
+
+
 
 
 
@@ -989,6 +1001,8 @@ public class TextbookModel
 
 
 
+
+
 {% raw %}
 ```html
 <div class="textbook">
@@ -1014,6 +1028,8 @@ public class TextbookModel
 </div>
 ```
 {% endraw %}
+
+
 
 
 

@@ -92,6 +92,8 @@ The column-count property works seamlessly with data binding to create dynamic m
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -128,7 +130,11 @@ The column-count property works seamlessly with data binding to create dynamic m
 
 
 
+
+
 ### Example 2: User-configurable newsletter layout
+
+
 
 
 
@@ -180,7 +186,11 @@ The column-count property works seamlessly with data binding to create dynamic m
 
 
 
+
+
 ### Example 3: Responsive multi-column documents
+
+
 
 
 
@@ -235,6 +245,8 @@ The column-count property works seamlessly with data binding to create dynamic m
 </body>
 ```
 {% endraw %}
+
+
 
 
 

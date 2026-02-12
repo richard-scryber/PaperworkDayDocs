@@ -60,6 +60,8 @@ startsWith(str, prefix)
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if startsWith(model.url, 'https://')}}
@@ -69,6 +71,8 @@ startsWith(str, prefix)
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -88,6 +92,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.files}}
@@ -99,6 +105,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -127,6 +135,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.codes}}
@@ -141,7 +151,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Phone Number Validation
+
+
 
 
 
@@ -156,6 +170,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 

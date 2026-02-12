@@ -59,6 +59,8 @@ The absolute value of the input number.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{abs(-5)}}     <!-- Output: 5 -->
@@ -69,7 +71,11 @@ The absolute value of the input number.
 
 
 
+
+
 ### Calculate Difference
+
+
 
 
 
@@ -78,6 +84,8 @@ The absolute value of the input number.
 <p>Difference: {{abs(model.actual - model.expected)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -98,6 +106,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Variance: {{format(abs(model.value - model.average), 'N2')}}</p>
@@ -106,7 +116,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### With Conditional
+
+
 
 
 
@@ -117,6 +131,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 

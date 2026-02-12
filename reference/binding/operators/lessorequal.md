@@ -34,9 +34,11 @@ Compare if the left value is less than or equal to the right value.
 ## Syntax
 
 
+{% raw %}
 ``` 
 {{operand1 <>= operand2}}
 ``` 
+{% endraw %}
 
 ---
 
@@ -73,6 +75,8 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.stock <= 10}}
@@ -83,6 +87,8 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -106,6 +112,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.score <= 100}}
@@ -119,7 +127,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Capacity Check
+
+
 
 
 
@@ -132,6 +144,8 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -153,6 +167,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.dueDate <= model.today}}
@@ -167,7 +183,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Price Range Filter
+
+
 
 
 
@@ -184,6 +204,8 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -223,7 +245,7 @@ doc.Params["model"] = new {
 - String comparison is case-sensitive and uses lexicographic ordering
 - Date comparison compares chronological order
 - Cannot compare incompatible types
-- Commonly used with `{{#if}}` for conditional rendering
+- Commonly used with `{% raw %}{{#if}}{% endraw %}` for conditional rendering
 - Can be combined with logical operators (`&&`, `||`)
 
 ---

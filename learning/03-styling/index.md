@@ -247,12 +247,16 @@ height: calc((100% / 3) - 10pt);
 
 
 
+
+
 {% raw %}
 ```css
 /* With data binding */
 width: calc({{itemCount}} * 50pt);
 ```
 {% endraw %}
+
+
 
 
 

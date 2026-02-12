@@ -104,6 +104,8 @@ The `background-position-y` property supports dynamic data binding, enabling ver
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -128,9 +130,13 @@ The `background-position-y` property supports dynamic data binding, enabling ver
 
 
 
+
+
 Enables administrators to control watermark vertical placement (top, center, bottom, or specific offsets) through configuration while keeping horizontal centering. Perfect for different document types requiring watermarks at various vertical positions.
 
 ### Example 2: Conditional vertical positioning by content length
+
+
 
 
 
@@ -162,9 +168,13 @@ Enables administrators to control watermark vertical placement (top, center, bot
 
 
 
+
+
 Intelligently adjusts seal vertical position based on content - certificates with extensive text push seals to the bottom with fixed offset, while shorter certificates position seals proportionally for better balance.
 
 ### Example 3: Multi-layer vertical positioning with data
+
+
 
 
 
@@ -190,6 +200,8 @@ Intelligently adjusts seal vertical position based on content - certificates wit
 </body>
 ```
 {% endraw %}
+
+
 
 
 

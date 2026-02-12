@@ -52,6 +52,8 @@ The iteration control attributes are applied to `<template>` elements alongside 
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{model.items}}"
@@ -66,7 +68,11 @@ The iteration control attributes are applied to `<template>` elements alongside 
 
 
 
+
+
 ### Basic Syntax
+
+
 
 
 
@@ -103,6 +109,8 @@ The iteration control attributes are applied to `<template>` elements alongside 
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -125,6 +133,8 @@ These attributes are **only** supported on the following element:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Start at first item (default) -->
@@ -140,6 +150,8 @@ These attributes are **only** supported on the following element:
 
 
 
+
+
 **Notes**:
 - If `start` exceeds the collection size, no items are rendered
 - Negative values are treated as 0
@@ -150,6 +162,8 @@ These attributes are **only** supported on the following element:
 **Type**: `integer`
 **Default**: `1`
 **Description**: Increment value for iteration. Controls which items are selected from the collection.
+
+
 
 
 
@@ -171,6 +185,8 @@ These attributes are **only** supported on the following element:
 
 
 
+
+
 **Notes**:
 - Step value of 1 processes all items sequentially
 - Step value of 2 processes items at indices 0, 2, 4, 6, etc.
@@ -183,6 +199,8 @@ These attributes are **only** supported on the following element:
 **Type**: `integer`
 **Default**: `int.MaxValue` (unlimited)
 **Description**: Maximum number of items to process and render.
+
+
 
 
 
@@ -204,6 +222,8 @@ These attributes are **only** supported on the following element:
 
 
 
+
+
 **Notes**:
 - Limits the total number of items processed, not the index
 - Combined with `start`, processes up to `max` items starting from `start`
@@ -217,6 +237,8 @@ The three attributes work together to provide flexible iteration control:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Formula: Process items from collection[start] up to max items, incrementing by step -->
@@ -226,6 +248,8 @@ The three attributes work together to provide flexible iteration control:
           data-bind-max="MAX_COUNT">
 ```
 {% endraw %}
+
+
 
 
 
@@ -275,6 +299,8 @@ max_count = 20
 **Odd Items Only**:
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{items}}" data-bind-start="0" data-bind-step="2">
@@ -283,7 +309,11 @@ max_count = 20
 
 
 
+
+
 **Even Items Only**:
+
+
 
 
 {% raw %}
@@ -294,7 +324,11 @@ max_count = 20
 
 
 
+
+
 **Top N Items**:
+
+
 
 
 {% raw %}
@@ -305,7 +339,11 @@ max_count = 20
 
 
 
+
+
 **Page 2 of 20 Items Per Page**:
+
+
 
 
 {% raw %}
@@ -316,7 +354,11 @@ max_count = 20
 
 
 
+
+
 **Every 5th Item**:
+
+
 
 
 {% raw %}
@@ -327,6 +369,8 @@ max_count = 20
 
 
 
+
+
 ---
 
 ## Examples
@@ -334,6 +378,8 @@ max_count = 20
 ### 1. Basic Pagination (First Page)
 
 Show the first 10 items from a collection:
+
+
 
 
 
@@ -364,9 +410,13 @@ Show the first 10 items from a collection:
 
 
 
+
+
 ### 2. Pagination (Second Page)
 
 Show items 11-20 (indices 10-19):
+
+
 
 
 
@@ -396,9 +446,13 @@ Show items 11-20 (indices 10-19):
 
 
 
+
+
 ### 3. Top 5 Items
 
 Display only the first 5 items:
+
+
 
 
 
@@ -422,9 +476,13 @@ Display only the first 5 items:
 
 
 
+
+
 ### 4. Alternating Row Pattern (Odd Rows)
 
 Show only odd-indexed items (1st, 3rd, 5th, etc.):
+
+
 
 
 
@@ -443,9 +501,13 @@ Show only odd-indexed items (1st, 3rd, 5th, etc.):
 
 
 
+
+
 ### 5. Alternating Row Pattern (Even Rows)
 
 Show only even-indexed items (2nd, 4th, 6th, etc.):
+
+
 
 
 
@@ -464,9 +526,13 @@ Show only even-indexed items (2nd, 4th, 6th, etc.):
 
 
 
+
+
 ### 6. Multi-Column Layout (Two Columns)
 
 Split items into two columns using odd/even pattern:
+
+
 
 
 
@@ -502,9 +568,13 @@ Split items into two columns using odd/even pattern:
 
 
 
+
+
 ### 7. Every Third Item
 
 Show every third item from a collection:
+
+
 
 
 
@@ -522,9 +592,13 @@ Show every third item from a collection:
 
 
 
+
+
 ### 8. Batch Processing Report (Batch 1)
 
 Process items in batches of 50:
+
+
 
 
 
@@ -549,9 +623,13 @@ Process items in batches of 50:
 
 
 
+
+
 ### 9. Batch Processing Report (Batch 2)
 
 Second batch (items 51-100):
+
+
 
 
 
@@ -576,9 +654,13 @@ Second batch (items 51-100):
 
 
 
+
+
 ### 10. Sampling Every 10th Item
 
 Create a sample report showing every 10th item:
+
+
 
 
 
@@ -596,9 +678,13 @@ Create a sample report showing every 10th item:
 
 
 
+
+
 ### 11. Dynamic Pagination with Binding
 
 Use bound values to control pagination:
+
+
 
 
 
@@ -617,9 +703,13 @@ Use bound values to control pagination:
 
 
 
+
+
 ### 12. Top N with Performance Optimization
 
 Show top 50 items with style caching:
+
+
 
 
 
@@ -640,9 +730,13 @@ Show top 50 items with style caching:
 
 
 
+
+
 ### 13. Quarter Sampling (Every 4th Item)
 
 Show every 4th item for quarterly sampling:
+
+
 
 
 
@@ -671,9 +765,13 @@ Show every 4th item for quarterly sampling:
 
 
 
+
+
 ### 14. Limited Preview with Message
 
 Show first 10 items with an indicator for more:
+
+
 
 
 
@@ -695,9 +793,13 @@ Show first 10 items with an indicator for more:
 
 
 
+
+
 ### 15. Complex Multi-Page Report
 
 Generate a multi-page report with consistent item counts per page:
+
+
 
 
 
@@ -771,9 +873,13 @@ Generate a multi-page report with consistent item counts per page:
 
 
 
+
+
 ### 16. Three-Column Layout
 
 Distribute items across three columns using step patterns:
+
+
 
 
 
@@ -821,9 +927,13 @@ Distribute items across three columns using step patterns:
 
 
 
+
+
 ### 17. Skip First N Items
 
 Skip the first 5 items and show the rest:
+
+
 
 
 
@@ -841,9 +951,13 @@ Skip the first 5 items and show the rest:
 
 
 
+
+
 ### 18. Percentage Sampling (10% Sample)
 
 Show approximately 10% of items (every 10th):
+
+
 
 
 
@@ -864,9 +978,13 @@ Show approximately 10% of items (every 10th):
 
 
 
+
+
 ### 19. Combined with Nested Templates
 
 Paginate outer collection and limit inner collection:
+
+
 
 
 
@@ -891,9 +1009,13 @@ Paginate outer collection and limit inner collection:
 
 
 
+
+
 ### 20. Performance-Optimized Large Dataset
 
 Handle a very large dataset with pagination and caching:
+
+
 
 
 
@@ -923,6 +1045,8 @@ Handle a very large dataset with pagination and caching:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

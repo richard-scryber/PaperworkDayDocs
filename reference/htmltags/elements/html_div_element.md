@@ -207,6 +207,8 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- In template with model = { name: "John", age: 30 } -->
@@ -224,7 +226,11 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 
 
 
+
+
 ### Repeating Divs with Template
+
+
 
 
 
@@ -243,6 +249,8 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 <!-- Two divs, each with item name and styling -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -274,6 +282,8 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Using hidden attribute -->
@@ -292,6 +302,8 @@ The `<div>` element uses the `LayoutEnginePanel` layout engine, which:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

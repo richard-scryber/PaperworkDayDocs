@@ -89,6 +89,8 @@ The `page-break-inside` property supports data binding, allowing you to dynamica
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -116,7 +118,11 @@ The `page-break-inside` property supports data binding, allowing you to dynamica
 
 
 
+
+
 ### Example 2: Data-driven table integrity
+
+
 
 
 
@@ -163,7 +169,11 @@ The `page-break-inside` property supports data binding, allowing you to dynamica
 
 
 
+
+
 ### Example 3: Variable break avoidance for important content
+
+
 
 
 
@@ -194,6 +204,8 @@ The `page-break-inside` property supports data binding, allowing you to dynamica
 </body>
 ```
 {% endraw %}
+
+
 
 
 

@@ -105,6 +105,8 @@ The `data-min-scale` attribute supports data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { minImageScale: 0.5 } -->
@@ -114,7 +116,11 @@ The `data-min-scale` attribute supports data binding:
 
 
 
+
+
 ### Conditional Scaling
+
+
 
 
 
@@ -125,6 +131,8 @@ The `data-min-scale` attribute supports data binding:
      data-min-scale="{{model.allowSmallImages ? '0.25' : '0.75'}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -289,6 +297,8 @@ In PDF generation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { images: [{src: "...", minScale: 0.5}, ...] } -->
@@ -302,6 +312,8 @@ In PDF generation:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -452,6 +464,8 @@ In PDF generation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { images: [{src: "...", type: "diagram|photo", ...}] } -->
@@ -470,6 +484,8 @@ In PDF generation:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

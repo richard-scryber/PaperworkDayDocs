@@ -339,6 +339,8 @@ Include pages based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <frameset>
@@ -351,6 +353,8 @@ Include pages based on data:
 <!-- Includes pages 6-8 -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -411,6 +415,8 @@ Build custom document based on user selection:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { includeIntro: true, includeTech: true, includeAppendix: false } -->
@@ -433,9 +439,13 @@ Build custom document based on user selection:
 
 
 
+
+
 ### 12. Extract Odd Pages Only
 
 Use template with bound data to extract odd pages:
+
+
 
 
 {% raw %}
@@ -453,9 +463,13 @@ Use template with bound data to extract odd pages:
 
 
 
+
+
 ### 13. Legal Document Assembly
 
 Assemble contract with variable clauses:
+
+
 
 
 
@@ -491,9 +505,13 @@ Assemble contract with variable clauses:
 
 
 
+
+
 ### 14. Report with Dynamic Sections
 
 Include sections based on data availability:
+
+
 
 
 
@@ -524,9 +542,13 @@ Include sections based on data availability:
 
 
 
+
+
 ### 15. Multi-Language Document
 
 Assemble document with language-specific pages:
+
+
 
 
 
@@ -550,9 +572,13 @@ Assemble document with language-specific pages:
 
 
 
+
+
 ### 16. Page Range Validation Example
 
 Safe page extraction with bounds:
+
+
 
 
 {% raw %}
@@ -572,6 +598,8 @@ Assemble certification with selected modules:
 
 ```html
 {% endraw %}
+
+
 
 <!-- Model: { completedModules: [1, 3, 7] } -->
 <frameset>
@@ -597,7 +625,8 @@ Create custom product datasheet:
 
 
 
-{% raw %}
+
+
 ```html
 <!-- Model: { productId: 42, includeSpecs: true, includeWarranty: true } -->
 <frameset>
@@ -619,7 +648,8 @@ Create custom product datasheet:
            hidden="{{model.includeWarranty ? '' : 'hidden'}}"></frame>
 </frameset>
 ```
-{% endraw %}
+
+
 
 
 
@@ -628,7 +658,8 @@ Create custom product datasheet:
 Combine articles into newsletter:
 
 
-{% raw %}
+
+
 ```html
 <!-- Model: { articles: [{start: 5, count: 3}, {start: 12, count: 2}, ...] } -->
 <frameset>
@@ -646,7 +677,8 @@ Combine articles into newsletter:
     <frame src="newsletter-footer.pdf" data-page-count="1"></frame>
 </frameset>
 ```
-{% endraw %}
+
+
 
 
 
@@ -656,7 +688,8 @@ Generate exam from question database:
 
 
 
-{% raw %}
+
+
 ```html
 <!-- Model: { questionPages: [2, 5, 8, 12, 15, 20, 23, 28, 30, 35] } -->
 <frameset>
@@ -673,7 +706,8 @@ Generate exam from question database:
     <frame src="answer-sheet.pdf"></frame>
 </frameset>
 ```
-{% endraw %}
+
+
 
 
 

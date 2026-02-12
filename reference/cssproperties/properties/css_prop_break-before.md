@@ -104,6 +104,8 @@ The `break-before` property supports data binding, allowing you to create sophis
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -130,7 +132,11 @@ The `break-before` property supports data binding, allowing you to create sophis
 
 
 
+
+
 ### Example 2: Dynamic page orientation based on content
+
+
 
 
 
@@ -179,7 +185,11 @@ The `break-before` property supports data binding, allowing you to create sophis
 
 
 
+
+
 ### Example 3: Configurable report structure with named pages
+
+
 
 
 
@@ -219,6 +229,8 @@ The `break-before` property supports data binding, allowing you to create sophis
 </body>
 ```
 {% endraw %}
+
+
 
 
 

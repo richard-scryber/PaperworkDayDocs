@@ -27,11 +27,13 @@ has_toc: false
 
 ## Summary
 
-Provides alternative conditional branches within an `{{#if}}` block. Multiple `{{else if}}` branches can be chained to create complex conditional logic.
+Provides alternative conditional branches within an `{% raw %}{{#if}}{% endraw %}` block. Multiple `{% raw %}{{else if}}{% endraw %}` branches can be chained to create complex conditional logic.
 
 **Based on:** Additional [`<when>` elements](../../components/choose.md) in the `<choose>` structure
 
 ## Syntax
+
+
 
 
 
@@ -51,6 +53,8 @@ Provides alternative conditional branches within an `{{#if}}` block. Multiple `{
 
 
 
+
+
 ---
 
 ## Parameters
@@ -63,7 +67,7 @@ Provides alternative conditional branches within an `{{#if}}` block. Multiple `{
 
 ## Supported Operators
 
-Same as `{{#if}}`:
+Same as `{% raw %}{{#if}}{% endraw %}`:
 
 | Operator | Description | Example |
 |----------|-------------|---------|
@@ -81,6 +85,8 @@ Same as `{{#if}}`:
 ## Examples
 
 ### Grade Classification
+
+
 
 
 
@@ -102,6 +108,8 @@ Same as `{{#if}}`:
 
 
 
+
+
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -115,6 +123,8 @@ doc.Params["model"] = new {
 ```
 
 ### Order Status
+
+
 
 
 
@@ -139,6 +149,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -154,6 +166,8 @@ doc.Params["model"] = new {
 ```
 
 ### Age Group Classification
+
+
 
 
 
@@ -173,6 +187,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -186,6 +202,8 @@ doc.Params["model"] = new {
 ```
 
 ### Priority Level with Multiple Conditions
+
+
 
 
 
@@ -213,11 +231,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 ---
 
 ## Underlying Implementation
 
-The `{{else if}}` helper compiles to additional `<when>` elements in the Scryber `<choose>` structure:
+The `{% raw %}{{else if}}{% endraw %}` helper compiles to additional `<when>` elements in the Scryber `<choose>` structure:
+
+
 
 
 
@@ -242,17 +264,19 @@ The `{{else if}}` helper compiles to additional `<when>` elements in the Scryber
 
 
 
+
+
 Conditions are evaluated in order from top to bottom. Only the first true condition is rendered.
 
 ---
 
 ## Notes
 
-- Only used within `{{#if}}` blocks
-- Can have unlimited `{{else if}}` branches
+- Only used within `{% raw %}{{#if}}{% endraw %}` blocks
+- Can have unlimited `{% raw %}{{else if}}{% endraw %}` branches
 - Evaluated in order - first true condition wins
 - Only one branch is ever rendered
-- Must come after `{{#if}}` and before `{{else}}`
+- Must come after `{% raw %}{{#if}}{% endraw %}` and before `{% raw %}{{else}}{% endraw %}`
 - Supports all comparison and logical operators
 - Cannot use `!` (NOT) operator - use `!=` or reverse logic instead
 - Use parentheses for complex expressions: `(a && b) || c`

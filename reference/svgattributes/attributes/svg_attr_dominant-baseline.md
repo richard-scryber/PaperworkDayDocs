@@ -90,6 +90,8 @@ Change vertical alignment based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { labels: [{text: 'Top', align: 'hanging', x: 100}, {text: 'Middle', align: 'middle', x: 200}, {text: 'Bottom', align: 'text-bottom', x: 300}] } -->
@@ -107,9 +109,13 @@ Change vertical alignment based on data:
 
 
 
+
+
 ### Centered Button Text
 
 Center text perfectly in buttons:
+
+
 
 
 
@@ -129,9 +135,13 @@ Center text perfectly in buttons:
 
 
 
+
+
 ### Badge Labels with Centered Text
 
 Create badges with perfectly centered numbers:
+
+
 
 
 
@@ -151,9 +161,13 @@ Create badges with perfectly centered numbers:
 
 
 
+
+
 ### Multi-Line Aligned Text
 
 Align multi-line text blocks:
+
+
 
 
 
@@ -175,9 +189,13 @@ Align multi-line text blocks:
 
 
 
+
+
 ### Position-Specific Alignment
 
 Use different alignment based on position:
+
+
 
 
 
@@ -195,6 +213,8 @@ Use different alignment based on position:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -310,6 +330,8 @@ Each line can have different baseline:
 **Buttons:**
 
 
+
+
 {% raw %}
 ```html
 <text x="{{buttonCenterX}}" y="{{buttonCenterY}}"
@@ -321,7 +343,11 @@ Each line can have different baseline:
 
 
 
+
+
 **Badges:**
+
+
 
 
 {% raw %}
@@ -335,7 +361,11 @@ Each line can have different baseline:
 
 
 
+
+
 **Chart labels:**
+
+
 
 
 {% raw %}
@@ -346,6 +376,8 @@ Each line can have different baseline:
 </text>
 ```
 {% endraw %}
+
+
 
 
 

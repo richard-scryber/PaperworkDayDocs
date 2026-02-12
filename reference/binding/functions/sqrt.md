@@ -59,11 +59,15 @@ The square root of the value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>√{{model.value}} = {{format(sqrt(model.value), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Distance: {{format(sqrt(model.dx * model.dx + model.dy * model.dy), '0.00')}} units</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,11 +116,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Std Dev: {{format(sqrt(model.variance), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

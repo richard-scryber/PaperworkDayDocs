@@ -34,7 +34,12 @@ def rebuild_raw_tags(filepath):
         line = lines[i]
 
         # Check if this is the start of a code block
-        if line.strip().startswith('```') and not line.strip().endswith('```'):
+        # Handle both ``` and ```language (but not inline ```code``` on same line)
+        stripped = line.strip()
+        is_code_fence = (stripped.startswith('```') and
+                        (len(stripped) == 3 or not stripped.endswith('```')))
+
+        if is_code_fence:
             # This is an opening code fence
             code_block_start = i
             code_block_lines = [line]

@@ -89,16 +89,18 @@ font: normal 14pt Arial;
 
 ## Data Binding
 
-CSS properties support dynamic values through Scryber's Handlebars-style data binding syntax using `{{expression}}` in inline styles. This enables font properties to be set based on model data, calculations, or conditional logic at PDF generation time.
+CSS properties support dynamic values through Scryber's Handlebars-style data binding syntax using `{% raw %}{{expression}}{% endraw %}` in inline styles. This enables font properties to be set based on model data, calculations, or conditional logic at PDF generation time.
 
 ### Binding Syntax
 
-Data binding expressions are enclosed in double curly braces `{{}}` and can reference:
-- Model properties: `{{model.propertyName}}`
-- Nested data: `{{customer.preferences.fontConfig}}`
-- Conditional expressions: `{{condition ? valueIfTrue : valueIfFalse}}`
+Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% endraw %}` and can reference:
+- Model properties: `{% raw %}{{model.propertyName}}{% endraw %}`
+- Nested data: `{% raw %}{{customer.preferences.fontConfig}}{% endraw %}`
+- Conditional expressions: `{% raw %}{{condition ? valueIfTrue : valueIfFalse}}{% endraw %}`
 
 ### Data Binding Examples
+
+
 
 
 
@@ -125,7 +127,9 @@ Data binding expressions are enclosed in double curly braces `{{}}` and can refe
 
 
 
-**Note:** The shorthand `font` property with data binding works best when the entire value is bound. Individual property values within the compound font declaration cannot be individually bound using `{{}}` syntax.
+
+
+**Note:** The shorthand `font` property with data binding works best when the entire value is bound. Individual property values within the compound font declaration cannot be individually bound using `{% raw %}{{}}{% endraw %}` syntax.
 
 ---
 

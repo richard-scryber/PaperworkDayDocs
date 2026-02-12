@@ -251,6 +251,8 @@ Both attributes support data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { textAlign: "right", vertAlign: "top" } -->
@@ -262,7 +264,11 @@ Both attributes support data binding:
 
 
 
+
+
 ### Conditional Alignment
+
+
 
 
 
@@ -275,6 +281,8 @@ Both attributes support data binding:
 </td>
 ```
 {% endraw %}
+
+
 
 
 
@@ -624,6 +632,8 @@ Alignment is applied in this order (later overrides earlier):
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -665,6 +675,8 @@ Alignment is applied in this order (later overrides earlier):
 </table>
 ```
 {% endraw %}
+
+
 
 
 

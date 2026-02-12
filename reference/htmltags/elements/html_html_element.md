@@ -232,6 +232,8 @@ The `lang` attribute specifies the document's language but does not affect text 
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -250,6 +252,8 @@ The `lang` attribute specifies the document's language but does not affect text 
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -297,6 +301,8 @@ using (var doc = Document.ParseDocument(path))
 
 
 
+
+
 {% raw %}
 ```html
 <!-- HTML Template: branded-document.html -->
@@ -333,6 +339,8 @@ using (var doc = Document.ParseDocument(path))
 
 
 
+
+
 ### Document with Security Settings
 
 ```html
@@ -355,6 +363,8 @@ using (var doc = Document.ParseDocument(path))
 ```
 
 ### Complete Invoice Example
+
+
 
 
 
@@ -457,6 +467,8 @@ using (var doc = Document.ParseDocument(path))
 </html>
 ```
 {% endraw %}
+
+
 
 
 

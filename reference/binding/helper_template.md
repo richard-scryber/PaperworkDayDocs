@@ -35,6 +35,8 @@ Brief description of what this helper does.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#helper_name expression}}
@@ -42,6 +44,8 @@ Brief description of what this helper does.
 {{/helper_name}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -69,6 +73,8 @@ Brief description of what this helper does.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#helper_name model.data}}
@@ -76,6 +82,8 @@ Brief description of what this helper does.
 {{/helper_name}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -95,7 +103,9 @@ doc.Params["model"] = new {
 
 ## Underlying Implementation
 
-The `{{#helper_name}}` helper compiles to the following Scryber template structure:
+The `{% raw %}{{#helper_name}}{% endraw %}` helper compiles to the following Scryber template structure:
+
+
 
 
 
@@ -106,6 +116,8 @@ The `{{#helper_name}}` helper compiles to the following Scryber template structu
 </element>
 ```
 {% endraw %}
+
+
 
 
 

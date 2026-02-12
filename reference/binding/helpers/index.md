@@ -35,7 +35,7 @@ Handlebars helpers provide familiar syntax for common template patterns like ite
 
 ## Block Helpers
 
-These helpers use `{{#helper}}...{{/helper}}` syntax to wrap content.
+These helpers use `{% raw %}{{#helper}}...{{/helper}}{% endraw %}` syntax to wrap content.
 
 | Helper | Description | Special Variables |
 |--------|-------------|-------------------|
@@ -51,8 +51,8 @@ These helpers work within block helpers to create conditional branches.
 
 | Helper | Description | Used With |
 |--------|-------------|-----------|
-| [{{else if}}](./elseif) | Alternative condition branch | `{{#if}}` |
-| [{{else}}](./else) | Fallback branch when conditions are false | `{{#if}}`, `{{#each}}`, `{{#with}}` |
+| [{{else if}}](./elseif) | Alternative condition branch | `{% raw %}{{#if}}{% endraw %}` |
+| [{{else}}](./else) | Fallback branch when conditions are false | `{% raw %}{{#if}}{% endraw %}`, `{% raw %}{{#each}}{% endraw %}`, `{% raw %}{{#with}}{% endraw %}` |
 
 ---
 
@@ -60,13 +60,15 @@ These helpers work within block helpers to create conditional branches.
 
 | Helper | Description | Usage |
 |--------|-------------|-------|
-| [{{log}}](./log) | Debug output to console/trace | `{{log model.value level="debug"}}` |
+| [{{log}}](./log) | Debug output to console/trace | `{% raw %}{{log model.value level="debug"}}{% endraw %}` |
 
 ---
 
 ## Common Patterns
 
 ### Iteration with Conditionals
+
+
 
 
 
@@ -86,7 +88,11 @@ These helpers work within block helpers to create conditional branches.
 
 
 
+
+
 ### Context Switching with Parent Access
+
+
 
 
 
@@ -104,7 +110,11 @@ These helpers work within block helpers to create conditional branches.
 
 
 
+
+
 ### Multiple Conditions
+
+
 
 
 
@@ -121,6 +131,8 @@ These helpers work within block helpers to create conditional branches.
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 

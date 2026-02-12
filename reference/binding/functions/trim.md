@@ -59,11 +59,15 @@ The string with leading and trailing whitespace removed.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>"{{trim(model.text)}}"</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,6 +87,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.names}}
@@ -90,6 +96,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -111,6 +119,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if trim(model.status) == 'active'}}
@@ -118,6 +128,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -137,11 +149,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{trim(model.description)}}</p>
 ```
 {% endraw %}
+
+
 
 
 

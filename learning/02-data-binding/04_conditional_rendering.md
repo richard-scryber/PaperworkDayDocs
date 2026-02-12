@@ -33,6 +33,8 @@ Show content only when a condition is true:
 
 
 
+
+
 {% raw %}
 ```html
 {{#if condition}}
@@ -43,11 +45,15 @@ Show content only when a condition is true:
 
 
 
+
+
 ---
 
 ## Basic Conditionals
 
 ### Boolean Conditions
+
+
 
 
 
@@ -61,11 +67,15 @@ Show content only when a condition is true:
 
 
 
+
+
 ```csharp
 doc.Params["model"] = new { isPremium = true };
 ```
 
 ### Null/Empty Checks
+
+
 
 
 
@@ -82,11 +92,15 @@ doc.Params["model"] = new { isPremium = true };
 
 
 
+
+
 ---
 
 ## {{else}} Clause
 
 Provide alternative content when condition is false:
+
+
 
 
 
@@ -102,11 +116,15 @@ Provide alternative content when condition is false:
 
 
 
+
+
 ---
 
 ## {{else if}} Chains
 
 Test multiple conditions:
+
+
 
 
 
@@ -126,11 +144,15 @@ Test multiple conditions:
 
 
 
+
+
 ---
 
 ## Comparison Operators
 
 ### Equality and Inequality
+
+
 
 
 
@@ -150,7 +172,11 @@ Test multiple conditions:
 
 
 
+
+
 ### Numeric Comparisons
+
+
 
 
 
@@ -180,6 +206,8 @@ Test multiple conditions:
 
 
 
+
+
 ---
 
 ## Logical Operators
@@ -187,6 +215,8 @@ Test multiple conditions:
 ### AND (&&)
 
 Both conditions must be true:
+
+
 
 
 
@@ -202,9 +232,13 @@ Both conditions must be true:
 
 
 
+
+
 ### OR (||)
 
 At least one condition must be true:
+
+
 
 
 
@@ -221,9 +255,13 @@ At least one condition must be true:
 
 
 
+
+
 ### NOT (!)
 
 Negate a condition:
+
+
 
 
 
@@ -241,7 +279,11 @@ Negate a condition:
 
 
 
+
+
 ### Complex Logic
+
+
 
 
 
@@ -258,11 +300,15 @@ Negate a condition:
 
 
 
+
+
 ---
 
 ## Inline Conditionals with if()
 
 Use the `if()` function for inline conditional values:
+
+
 
 
 
@@ -288,11 +334,15 @@ Use the `if()` function for inline conditional values:
 
 
 
+
+
 ---
 
 ## Conditional Sections
 
 ### Show Different Layouts
+
+
 
 
 
@@ -321,7 +371,11 @@ Use the `if()` function for inline conditional values:
 
 
 
+
+
 ### Conditional Headers and Footers
+
+
 
 
 
@@ -349,11 +403,15 @@ Use the `if()` function for inline conditional values:
 
 
 
+
+
 ---
 
 ## Combining Conditionals with Iteration
 
 ### Filter Items in Loops
+
+
 
 
 
@@ -373,7 +431,11 @@ Use the `if()` function for inline conditional values:
 
 
 
+
+
 ### Show/Hide Sections Based on Data
+
+
 
 
 
@@ -404,6 +466,8 @@ Use the `if()` function for inline conditional values:
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -438,6 +502,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 
 
 {% raw %}
@@ -594,6 +660,8 @@ doc.Params["model"] = new
 
 
 
+
+
 ### Example 2: Personalized Report with User Levels
 
 **C# Code:**
@@ -626,6 +694,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 
 
 {% raw %}
@@ -798,6 +868,8 @@ doc.Params["model"] = new
 
 
 
+
+
 ### Example 3: Data-Driven SVG Bar Chart
 
 Create a dynamic bar chart showing sales revenue by category with SVG.
@@ -839,6 +911,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 
 
 {% raw %}
@@ -1144,6 +1218,8 @@ doc.Params["model"] = new
 
 
 
+
+
 **Key Features:**
 
 1. **Dynamic Bar Heights** - Bars scale based on actual revenue data, calculated in template
@@ -1159,14 +1235,16 @@ doc.Params["model"] = new
 
 - **Template Calculations**: Each category's bar height is calculated in the template using `<var>` elements:
 
+{% raw %}
   ```
   <var data-id="barHeight" data-value="{{this.revenue / ../maxValue * 200}}" />
   ```
+{% endraw %}
 
 - **Variable Storage**: Calculated values are stored and accessed via `Document.Params.barHeight`
-- **Conditional Coloring**: `{{#if}}` blocks determine bar colors: `{{if(this.metTarget, '#10b981', '#ef4444')}}`
-- **Mathematical Expressions**: Standard math notation positions bars: `{{50 + @index * 100}}`
-- **Conditional Labels**: Labels only appear when bars are tall enough: `{{#if Document.Params.barHeight > 30}}`
+- **Conditional Coloring**: `{% raw %}{{#if}}{% endraw %}` blocks determine bar colors: `{% raw %}{{if(this.metTarget, '#10b981', '#ef4444')}}{% endraw %}`
+- **Mathematical Expressions**: Standard math notation positions bars: `{% raw %}{{50 + @index * 100}}{% endraw %}`
+- **Conditional Labels**: Labels only appear when bars are tall enough: `{% raw %}{{#if Document.Params.barHeight > 30}}{% endraw %}`
 - **Nested Conditionals**: Insights section uses multiple conditional levels for performance warnings
 
 ---
@@ -1205,6 +1283,8 @@ Create a template that:
 
 
 
+
+
 {% raw %}
 ```html
 {{#if model.status = 'active'}}  <!-- Wrong: assignment -->
@@ -1213,7 +1293,11 @@ Create a template that:
 
 
 
+
+
 ✅ **Solution:** Use `==` for comparison
+
+
 
 
 
@@ -1225,7 +1309,11 @@ Create a template that:
 
 
 
+
+
 ### ❌ Missing Parentheses in Complex Logic
+
+
 
 
 
@@ -1237,7 +1325,11 @@ Create a template that:
 
 
 
+
+
 ✅ **Solution:** Use parentheses
+
+
 
 
 
@@ -1249,7 +1341,11 @@ Create a template that:
 
 
 
+
+
 ### ❌ Forgetting to Close {{/if}}
+
+
 
 
 
@@ -1263,7 +1359,11 @@ Create a template that:
 
 
 
+
+
 ✅ **Solution:** Always close blocks
+
+
 
 
 
@@ -1274,6 +1374,8 @@ Create a template that:
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 

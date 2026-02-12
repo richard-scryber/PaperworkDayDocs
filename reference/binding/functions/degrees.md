@@ -59,6 +59,8 @@ The angle in degrees.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>π radians = {{format(degrees(pi()), '0.0')}}°</p>
@@ -66,6 +68,8 @@ The angle in degrees.
 <p>π/4 radians = {{format(degrees(pi() / 4), '0.0')}}°</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -80,11 +84,15 @@ The angle in degrees.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Angle: {{format(degrees(asin(0.5)), '0.0')}}°</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -97,6 +105,8 @@ The angle in degrees.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.angles}}
@@ -104,6 +114,8 @@ The angle in degrees.
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

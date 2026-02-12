@@ -57,11 +57,15 @@ The value of e (approximately 2.71828182845905).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Euler's number: {{format(e(), '0.00000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -74,11 +78,15 @@ The value of e (approximately 2.71828182845905).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Result: {{format(model.initial * pow(e(), model.rate * model.time), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -100,6 +108,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <!-- e^2 using constant vs exp function -->
@@ -107,6 +117,8 @@ doc.Params["model"] = new {
 <p>exp(2) = {{format(exp(2), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

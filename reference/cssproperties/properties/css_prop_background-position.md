@@ -111,6 +111,8 @@ The `background-position` property supports dynamic data binding, enabling preci
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -135,9 +137,13 @@ The `background-position` property supports dynamic data binding, enabling preci
 
 
 
+
+
 Allows each organization to specify their preferred logo position (e.g., "top left", "right 20pt top 20pt", "center") through configuration, ensuring invoices match their exact branding guidelines stored in the database.
 
 ### Example 2: Conditional positioning based on document layout
+
+
 
 
 
@@ -166,9 +172,13 @@ Allows each organization to specify their preferred logo position (e.g., "top le
 
 
 
+
+
 Automatically adjusts seal position based on certificate layout style - classic layouts place seals in the bottom right corner, modern layouts center them at the bottom, while alternative layouts center them completely.
 
 ### Example 3: Multi-element positioning with data arrays
+
+
 
 
 
@@ -192,6 +202,8 @@ Automatically adjusts seal position based on certificate layout style - classic 
 </body>
 ```
 {% endraw %}
+
+
 
 
 

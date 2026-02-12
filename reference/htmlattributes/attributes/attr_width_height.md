@@ -41,6 +41,8 @@ The `width` and `height` attributes control element dimensions:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Image with explicit dimensions -->
@@ -64,6 +66,8 @@ The `width` and `height` attributes control element dimensions:
 <img src="{{model.imagePath}}" width="{{model.imageWidth}}pt" height="{{model.imageHeight}}pt" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -95,6 +99,8 @@ The `width` and `height` attributes are commonly used with:
 ## Binding Values
 
 The `width` and `height` attributes support data binding:
+
+
 
 
 
@@ -132,6 +138,8 @@ The `width` and `height` attributes support data binding:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -485,6 +493,8 @@ Avoid zero or missing dimensions:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -508,7 +518,11 @@ Avoid zero or missing dimensions:
 
 
 
+
+
 ### Product Listing with Images
+
+
 
 
 
@@ -532,6 +546,8 @@ Avoid zero or missing dimensions:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -604,6 +620,8 @@ Avoid zero or missing dimensions:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { user: { name: "Alice", photo: "alice.jpg" } } -->
@@ -628,6 +646,8 @@ Avoid zero or missing dimensions:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -686,6 +706,8 @@ Avoid zero or missing dimensions:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { displayMode: "thumbnail" } -->
@@ -696,6 +718,8 @@ Avoid zero or missing dimensions:
      alt="Product photo" />
 ```
 {% endraw %}
+
+
 
 
 

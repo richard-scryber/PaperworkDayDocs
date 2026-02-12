@@ -104,6 +104,8 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -131,7 +133,11 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 
 
 
+
+
 ### Example 2: Data-driven chart isolation
+
+
 
 
 
@@ -171,7 +177,11 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 
 
 
+
+
 ### Example 3: Variable document sections with mixed breaks
+
+
 
 
 
@@ -209,6 +219,8 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 </body>
 ```
 {% endraw %}
+
+
 
 
 

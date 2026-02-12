@@ -46,6 +46,8 @@ The `data-allow-missing-images` attribute provides error tolerance for images:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Default: Missing image throws error -->
@@ -72,6 +74,8 @@ The `data-allow-missing-images` attribute provides error tolerance for images:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -86,6 +90,8 @@ The `data-allow-missing-images` attribute is used exclusively with:
 ## Binding Values
 
 The `data-allow-missing-images` attribute supports data binding for dynamic error handling:
+
+
 
 
 
@@ -115,6 +121,8 @@ The `data-allow-missing-images` attribute supports data binding for dynamic erro
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -201,6 +209,8 @@ When `data-allow-missing-images="true"`:
 1. **User-Generated Content**: Images uploaded by users that may not always be present
 
 
+
+
 {% raw %}
    ```html
    <img src="{{model.userAvatar}}"
@@ -212,7 +222,11 @@ When `data-allow-missing-images="true"`:
 
 
 
+
+
 2. **Optional Images**: Images that enhance but aren't critical to the document
+
+
 
 
 {% raw %}
@@ -225,7 +239,11 @@ When `data-allow-missing-images="true"`:
 
 
 
+
+
 3. **Dynamic Content**: Images from external sources that may be temporarily unavailable
+
+
 
 
 {% raw %}
@@ -238,7 +256,11 @@ When `data-allow-missing-images="true"`:
 
 
 
+
+
 4. **Template Reuse**: Shared templates used with varying data sources
+
+
 
 
 {% raw %}
@@ -252,7 +274,11 @@ When `data-allow-missing-images="true"`:
 
 
 
+
+
 5. **Beta/Development Features**: New image sources being tested
+
+
 
 
 {% raw %}
@@ -262,6 +288,8 @@ When `data-allow-missing-images="true"`:
         data-allow-missing-images="true" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -318,6 +346,8 @@ The attribute works with all image loading methods:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Missing binary data allowed -->
@@ -335,9 +365,13 @@ The attribute works with all image loading methods:
 
 
 
+
+
 ### Combining with Alternative Text
 
 Use `alt` attribute to provide text when images are missing:
+
+
 
 
 
@@ -356,6 +390,8 @@ Use `alt` attribute to provide text when images are missing:
      data-allow-missing-images="true" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -378,6 +414,8 @@ Consider timeout settings for network images when using lenient mode.
 **Multiple Optional Images**:
 
 
+
+
 {% raw %}
 ```html
 <!-- Each attempt takes time, even when failing gracefully -->
@@ -388,6 +426,8 @@ Consider timeout settings for network images when using lenient mode.
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -405,6 +445,8 @@ Pre-validate image availability when possible to improve performance.
 2. **Provide Alt Text**: Always include alt text for missing images
 
 
+
+
 {% raw %}
    ```html
    <img src="{{model.photo}}"
@@ -416,6 +458,8 @@ Pre-validate image availability when possible to improve performance.
 
 
 
+
+
 3. **Log and Monitor**: Enable logging to track missing images
    ```csharp
    // Enable trace logging to see missing image warnings
@@ -423,6 +467,8 @@ Pre-validate image availability when possible to improve performance.
    ```
 
 4. **Validate in Development**: Use strict mode during development
+
+
 
 
 {% raw %}
@@ -438,6 +484,8 @@ Pre-validate image availability when possible to improve performance.
 
 
 
+
+
 5. **Pre-Check Availability**: Validate image existence before document generation
    ```csharp
    // Pseudo-code: Check before generating
@@ -449,6 +497,8 @@ Pre-validate image availability when possible to improve performance.
 6. **Fallback Images**: Provide fallback for missing images
 
 
+
+
 {% raw %}
    ```html
    <!-- If userPhoto missing, use default avatar -->
@@ -457,6 +507,8 @@ Pre-validate image availability when possible to improve performance.
         data-allow-missing-images="true" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -493,6 +545,8 @@ Different behaviors for different environments:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { isProduction: true, allowMissing: true } -->
@@ -508,9 +562,13 @@ Different behaviors for different environments:
 
 
 
+
+
 ### Security Considerations
 
 Be cautious with path validation:
+
+
 
 
 
@@ -525,6 +583,8 @@ Be cautious with path validation:
 
 
 
+
+
 Don't expose file system details in error messages:
 - Enable lenient mode to prevent path disclosure
 - Log errors securely server-side
@@ -535,6 +595,8 @@ Don't expose file system details in error messages:
 ## Examples
 
 ### Basic Missing Image Tolerance
+
+
 
 
 
@@ -560,7 +622,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### User Profile with Optional Avatar
+
+
 
 
 
@@ -583,7 +649,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Product Catalog with Variable Images
+
+
 
 
 
@@ -618,7 +688,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Report with Optional Charts
+
+
 
 
 
@@ -659,7 +733,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Employee Directory with Photos
+
+
 
 
 
@@ -695,7 +773,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Dynamic External Images
+
+
 
 
 
@@ -728,7 +810,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Conditional Missing Image Handling
+
+
 
 
 
@@ -752,7 +838,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Real Estate Listings with Variable Photos
+
+
 
 
 
@@ -790,7 +880,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Invoice with Optional Logo
+
+
 
 
 
@@ -820,6 +914,8 @@ Don't expose file system details in error messages:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -865,6 +961,8 @@ Don't expose file system details in error messages:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { posts: [
@@ -907,7 +1005,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Medical Report with Optional Imaging
+
+
 
 
 
@@ -949,7 +1051,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Photo Gallery with Lazy Loading
+
+
 
 
 
@@ -985,7 +1091,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Certificate with Optional Seal
+
+
 
 
 
@@ -1033,7 +1143,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Product Comparison with Variable Images
+
+
 
 
 
@@ -1081,7 +1195,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Event Flyer with Optional Sponsor Logos
+
+
 
 
 
@@ -1125,7 +1243,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Newsletter with Optional Header Images
+
+
 
 
 
@@ -1163,7 +1285,11 @@ Don't expose file system details in error messages:
 
 
 
+
+
 ### Team Roster with Missing Photos
+
+
 
 
 
@@ -1198,6 +1324,8 @@ Don't expose file system details in error messages:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

@@ -65,7 +65,7 @@ Standard 7-section pattern for function/operator/element documentation:
 6. **Returns** - Type and description
 7. **Examples** - 2-3 practical examples with data context and output
 
-Use `{{functionName}}` notation for Handlebars/template code blocks.
+Use `{% raw %}{{functionName}}{% endraw %}` notation for Handlebars/template code blocks.
 
 ### File Naming Convention
 - Functions/helpers: lowercase `functionName.md`
@@ -88,10 +88,10 @@ Category indexes (e.g., `binding/index.md`) maintain:
 - Links to child pages as markdown tables or sections
 
 ### Handlebars Syntax
-- Template syntax: `{{#helper}}...{{/helper}}` for block helpers
-- Expressions: `{{ this }}`, `{{ model.property }}`
+- Template syntax: `{% raw %}{{#helper}}...{{/helper}}{% endraw %}` for block helpers
+- Expressions: `{% raw %}{{ this }}{% endraw %}`, `{% raw %}{{ model.property }}{% endraw %}`
 - Special vars: `@index`, `this`, `..` (parent context)
-- Operators combine with parentheses: `{{ (value > 10) && (value < 20) }}`
+- Operators combine with parentheses: `{% raw %}{{ (value > 10) && (value < 20) }}{% endraw %}`
 
 ### Data Type Documentation
 Functions specify return types and parameter requirements:

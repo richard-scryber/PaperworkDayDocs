@@ -85,12 +85,16 @@ The formatted string representation of the value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Price: {{format(model.price, 'C2')}}</p>
 <!-- Output: Price: $19.99 -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -103,6 +107,8 @@ doc.Params["model"] = new { price = 19.99m };
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Population: {{format(model.population, 'N0')}}</p>
@@ -112,7 +118,11 @@ doc.Params["model"] = new { price = 19.99m };
 
 
 
+
+
 ### Percentage Formatting
+
+
 
 
 
@@ -125,12 +135,16 @@ doc.Params["model"] = new { price = 19.99m };
 
 
 
+
+
 **Data:**
 ```csharp
 doc.Params["model"] = new { growth = 0.156 };
 ```
 
 ### Date Formatting
+
+
 
 
 
@@ -146,7 +160,11 @@ doc.Params["model"] = new { growth = 0.156 };
 
 
 
+
+
 ### With Calculations
+
+
 
 
 
@@ -160,6 +178,8 @@ doc.Params["model"] = new { growth = 0.156 };
 
 
 
+
+
 ---
 
 ## Notes
@@ -167,7 +187,7 @@ doc.Params["model"] = new { growth = 0.156 };
 - If `format` parameter is omitted, uses default `.ToString()` conversion
 - Format strings are culture-sensitive
 - Invalid format strings may throw exceptions
-- Use with `??` operator for safety: `{{format(value ?? 0, 'C2')}}`
+- Use with `??` operator for safety: `{% raw %}{{format(value ?? 0, 'C2')}}{% endraw %}`
 
 ---
 

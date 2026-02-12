@@ -94,6 +94,8 @@ The `opacity` property can be dynamically set using data binding expressions, en
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -118,6 +120,8 @@ The `opacity` property can be dynamically set using data binding expressions, en
 
 
 
+
+
 With model data:
 ```json
 {
@@ -130,6 +134,8 @@ With model data:
 ```
 
 ### Example 2: Conditional visibility based on status
+
+
 
 
 
@@ -157,7 +163,11 @@ With model data:
 
 
 
+
+
 ### Example 3: Age-based document opacity
+
+
 
 
 
@@ -182,6 +192,8 @@ With model data:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

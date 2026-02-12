@@ -32,9 +32,11 @@ Provide a fallback value when an expression evaluates to null or undefined.
 ## Syntax
 
 
+{% raw %}
 ```
 {{expression ?? fallbackValue}}
 ```
+{% endraw %}
 
 
 ---
@@ -72,11 +74,15 @@ Returns the left operand if it's not null, otherwise returns the right operand.
 
 
 
+
+
 {% raw %}
 ```html
 <h2>Welcome, {{model.user.name ?? 'Guest'}}!</h2>
 ```
 {% endraw %}
+
+
 
 
 
@@ -112,6 +118,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html
 {{#each model.products}}
@@ -122,6 +130,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -156,6 +166,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <div class="contact-info">
@@ -168,7 +180,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Nested Property Access
+
+
 
 
 
@@ -177,6 +193,8 @@ doc.Params["model"] = new {
 <p>City: {{model.user.address.city ?? 'Unknown'}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -198,6 +216,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -210,6 +230,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -243,6 +265,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Display Name: {{model.displayName ?? model.username ?? model.email ?? 'Anonymous'}}</p>
@@ -251,7 +275,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Default Image
+
+
 
 
 
@@ -265,6 +293,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 ---
 
 ## Notes
@@ -274,7 +304,7 @@ doc.Params["model"] = new {
 - Can chain multiple null coalescing operators
 - Evaluates left-to-right when chained
 - Does not check for empty strings - only null/undefined
-- More concise than `{{#if value}}{{value}}{{else}}default{{/if}}`
+- More concise than `{% raw %}{{#if value}}{{value}}{{else}}default{{/if}}{% endraw %}`
 - Similar to C# null-coalescing operator
 - Use `ifError()` function for error handling instead of null checking
 
@@ -283,6 +313,8 @@ doc.Params["model"] = new {
 ## Null vs Empty String
 
 The `??` operator only checks for null/undefined, not empty strings:
+
+
 
 
 
@@ -296,6 +328,8 @@ The `??` operator only checks for null/undefined, not empty strings:
 {{#if model.name}}{{model.name}}{{else}}Default{{/if}}
 ```
 {% endraw %}
+
+
 
 
 

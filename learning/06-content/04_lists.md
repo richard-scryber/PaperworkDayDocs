@@ -367,6 +367,8 @@ ul.custom li::before {
 
 
 
+
+
 {% raw %}
 ```html
 <h1>Product Catalog</h1>
@@ -381,7 +383,11 @@ ul.custom li::before {
 
 
 
+
+
 ### Conditional List Items
+
+
 
 
 
@@ -405,7 +411,11 @@ ul.custom li::before {
 
 
 
+
+
 ### Nested Dynamic Lists
+
+
 
 
 
@@ -427,6 +437,8 @@ ul.custom li::before {
 </ul>
 ```
 {% endraw %}
+
+
 
 
 

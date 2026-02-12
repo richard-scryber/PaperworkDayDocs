@@ -86,6 +86,8 @@ The `vertical-align` property can be dynamically controlled through data binding
 
 
 
+
+
 {% raw %}
 ```html
 <table style="width: 100%; border-collapse: collapse">
@@ -114,7 +116,11 @@ The `vertical-align` property can be dynamically controlled through data binding
 
 
 
+
+
 ### Example 2: Mathematical Expression with Dynamic Positioning
+
+
 
 
 
@@ -140,7 +146,11 @@ The `vertical-align` property can be dynamically controlled through data binding
 
 
 
+
+
 ### Example 3: Content Type-Based Alignment
+
+
 
 
 
@@ -160,6 +170,8 @@ The `vertical-align` property can be dynamically controlled through data binding
 -->
 ```
 {% endraw %}
+
+
 
 
 

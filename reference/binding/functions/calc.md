@@ -59,6 +59,8 @@ A formatted CSS calc() expression string.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <div style="width: {{calc('100% - 20px')}}; border: 1px solid black;">
@@ -66,6 +68,8 @@ A formatted CSS calc() expression string.
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,6 +89,8 @@ doc.Params["model"] = new { };
 
 
 
+
+
 {% raw %}
 ```handlebars
 <div style="margin-left: {{calc(string(model.indent) + 'px + 1em')}};">
@@ -92,6 +98,8 @@ doc.Params["model"] = new { };
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -113,6 +121,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <table style="width: {{calc('100% - ' + string(model.sidebarWidth) + 'px')}};">
@@ -122,6 +132,8 @@ doc.Params["model"] = new {
 </table>
 ```
 {% endraw %}
+
+
 
 
 
@@ -145,6 +157,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.columns}}
@@ -154,6 +168,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -185,6 +201,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h1 style="font-size: {{calc(string(model.baseFontSize) + 'pt * ' + string(model.scale))}};">
@@ -192,6 +210,8 @@ doc.Params["model"] = new {
 </h1>
 ```
 {% endraw %}
+
+
 
 
 

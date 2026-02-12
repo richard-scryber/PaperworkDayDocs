@@ -27,11 +27,13 @@ has_toc: false
 
 ## Summary
 
-Conditionally render content based on expressions. Supports multiple branches with `{{else if}}` and `{{else}}`.
+Conditionally render content based on expressions. Supports multiple branches with `{% raw %}{{else if}}{% endraw %}` and `{% raw %}{{else}}{% endraw %}`.
 
 **Based on:** [`<choose>`, `<when>`, and `<otherwise>` elements](../../components/choose.md) for conditional template rendering
 
 ## Syntax
+
+
 
 
 
@@ -46,6 +48,8 @@ Conditionally render content based on expressions. Supports multiple branches wi
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -80,6 +84,8 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if model.isActive}}
@@ -90,7 +96,11 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 
 
+
+
 ### If-Else
+
+
 
 
 
@@ -106,7 +116,11 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 
 
+
+
 ### Multiple Conditions
+
+
 
 
 
@@ -126,7 +140,11 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 
 
+
+
 ### Comparison Operators
+
+
 
 
 
@@ -151,7 +169,11 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 
 
+
+
 ### Logical Operators
+
+
 
 
 
@@ -175,7 +197,11 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 
 
+
+
 ### With #each Context
+
+
 
 
 
@@ -199,11 +225,15 @@ Conditionally render content based on expressions. Supports multiple branches wi
 
 
 
+
+
 ---
 
 ## Underlying Implementation
 
-The `{{#if}}` helper compiles to Scryber's conditional rendering elements:
+The `{% raw %}{{#if}}{% endraw %}` helper compiles to Scryber's conditional rendering elements:
+
+
 
 
 
@@ -225,6 +255,8 @@ The `{{#if}}` helper compiles to Scryber's conditional rendering elements:
 
 
 
+
+
 This structure allows Scryber to evaluate conditions at databinding time and only render the matching branch.
 
 ---
@@ -236,7 +268,7 @@ This structure allows Scryber to evaluate conditions at databinding time and onl
 - **Truthy values**: everything else
 - Use parentheses for complex expressions: `(a && b) || c`
 - Cannot use `!` (NOT) operator - use `!=` or reverse logic instead
-- Multiple `{{else if}}` branches are supported
+- Multiple `{% raw %}{{else if}}{% endraw %}` branches are supported
 - Only one branch is rendered in the output
 
 ---

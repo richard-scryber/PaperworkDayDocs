@@ -83,6 +83,8 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
 
 
 
+
+
 {% raw %}
 ```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
@@ -115,7 +117,11 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
 
 
 
+
+
 ### Example 2: Language-Specific Settings
+
+
 
 
 
@@ -151,7 +157,11 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
 
 
 
+
+
 ### Example 3: Document Format Preferences
+
+
 
 
 
@@ -186,6 +196,8 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
 -->
 ```
 {% endraw %}
+
+
 
 
 

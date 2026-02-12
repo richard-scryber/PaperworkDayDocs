@@ -119,6 +119,8 @@ The `property` and `content` attributes support data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { reportTitle: "Q4 2024 Report", reportType: "quarterly" } -->
@@ -130,7 +132,11 @@ The `property` and `content` attributes support data binding:
 
 
 
+
+
 ### Conditional Metadata
+
+
 
 
 
@@ -142,6 +148,8 @@ The `property` and `content` attributes support data binding:
 <meta property="app:department" content="{{model.department}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -313,6 +321,8 @@ In Scryber PDF generation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -343,6 +353,8 @@ In Scryber PDF generation:
 </head>
 ```
 {% endraw %}
+
+
 
 
 

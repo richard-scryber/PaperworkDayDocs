@@ -93,6 +93,8 @@ The `padding-top` property supports dynamic values through data binding, allowin
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -116,6 +118,8 @@ The `padding-top` property supports dynamic values through data binding, allowin
 
 
 
+
+
 Data context:
 ```json
 {
@@ -128,6 +132,8 @@ Data context:
 ```
 
 ### Example 2: Card headers with variable top padding
+
+
 
 
 
@@ -160,6 +166,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -171,6 +179,8 @@ Data context:
 ```
 
 ### Example 3: Report cover with data-driven padding
+
+
 
 
 
@@ -195,6 +205,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

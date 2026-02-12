@@ -41,6 +41,8 @@ The `lang` attribute defines content language:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Document-wide language -->
@@ -74,6 +76,8 @@ The `lang` attribute defines content language:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -100,6 +104,8 @@ The `lang` attribute can be used on **any HTML element**, including:
 ## Binding Values
 
 The `lang` attribute supports data binding for dynamic language selection:
+
+
 
 
 
@@ -144,6 +150,8 @@ The `lang` attribute supports data binding for dynamic language selection:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -795,6 +803,8 @@ BCP 47 supports historical and extinct languages:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -837,6 +847,8 @@ BCP 47 supports historical and extinct languages:
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -1092,6 +1104,8 @@ BCP 47 supports historical and extinct languages:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -1122,6 +1136,8 @@ BCP 47 supports historical and extinct languages:
 </html>
 ```
 {% endraw %}
+
+
 
 
 

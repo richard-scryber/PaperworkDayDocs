@@ -95,6 +95,8 @@ The column-gap property integrates with data binding to create adaptive spacing 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -134,7 +136,11 @@ The column-gap property integrates with data binding to create adaptive spacing 
 
 
 
+
+
 ### Example 2: User-configurable spacing preferences
+
+
 
 
 
@@ -181,7 +187,11 @@ The column-gap property integrates with data binding to create adaptive spacing 
 
 
 
+
+
 ### Example 3: Adaptive gap for magazine layouts
+
+
 
 
 
@@ -244,6 +254,8 @@ The column-gap property integrates with data binding to create adaptive spacing 
 </body>
 ```
 {% endraw %}
+
+
 
 
 

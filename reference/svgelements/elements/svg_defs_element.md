@@ -168,6 +168,8 @@ Organize definitions logically:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { gradientColors: [{offset: "0%", color: "#ff0000"}, {offset: "100%", color: "#0000ff"}] } -->
@@ -186,7 +188,11 @@ Organize definitions logically:
 
 
 
+
+
 ### Conditional Definitions
+
+
 
 
 
@@ -208,7 +214,11 @@ Organize definitions logically:
 
 
 
+
+
 ### Data-Driven Icon Library
+
+
 
 
 
@@ -230,6 +240,8 @@ Organize definitions logically:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -564,6 +576,8 @@ Organize definitions logically:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { badges: [{id:"new", color:"#ff4444", text:"NEW"}, {id:"sale", color:"#50c878", text:"SALE"}] } -->
@@ -586,6 +600,8 @@ Organize definitions logically:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

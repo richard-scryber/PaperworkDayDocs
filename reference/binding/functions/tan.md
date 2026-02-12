@@ -59,12 +59,16 @@ The tangent of the angle.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>tan(0) = {{format(tan(0), '0.000')}}</p>
 <p>tan(π/4) = {{format(tan(pi() / 4), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -78,11 +82,15 @@ The tangent of the angle.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>tan(45°) = {{format(tan(radians(45)), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -95,11 +103,15 @@ The tangent of the angle.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Slope: {{format(tan(model.angle), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

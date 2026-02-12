@@ -59,11 +59,15 @@ The sum of all numeric values in the collection. Returns 0 for empty or null col
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Total: {{sum(model.values)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,6 +87,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Invoice</h3>
@@ -92,6 +98,8 @@ doc.Params["model"] = new {
 <p><strong>Total: ${{sum(collect(model.items, 'price'))}}</strong></p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -119,6 +127,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Budget Overview</h3>
@@ -127,6 +137,8 @@ doc.Params["model"] = new {
 <p>Remaining: ${{model.totalBudget - sum(collect(model.expenses, 'amount'))}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -154,6 +166,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.students}}
@@ -161,6 +175,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

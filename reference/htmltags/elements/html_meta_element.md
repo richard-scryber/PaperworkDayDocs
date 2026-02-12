@@ -368,6 +368,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <head>
@@ -387,7 +389,11 @@ In the Scryber codebase:
 
 
 
+
+
 ### Invoice with Restricted Copying
+
+
 
 
 
@@ -405,6 +411,8 @@ In the Scryber codebase:
 </head>
 ```
 {% endraw %}
+
+
 
 
 

@@ -60,11 +60,15 @@ A new DateTime with the specified months added.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Due Date: {{format(addMonths(model.startDate, 3), 'MMMM dd, yyyy')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -84,11 +88,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>3 months ago: {{format(addMonths(model.today, -3), 'yyyy-MM-dd')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,6 +116,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.payments}}
@@ -115,6 +125,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -140,11 +152,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Next Review: {{format(addMonths(model.lastReview, 12), 'MMMM dd, yyyy')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

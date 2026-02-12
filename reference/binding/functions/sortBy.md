@@ -60,6 +60,8 @@ A new sorted array with items ordered by the specified property in ascending ord
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Students (Alphabetical)</h3>
@@ -68,6 +70,8 @@ A new sorted array with items ordered by the specified property in ascending ord
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -94,6 +98,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Products (Lowest to Highest Price)</h3>
@@ -102,6 +108,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -128,6 +136,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Upcoming Events</h3>
@@ -136,6 +146,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -162,6 +174,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Top Scores</h3>
@@ -170,6 +184,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -198,6 +214,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Active Tasks (By Priority)</h3>
@@ -206,6 +224,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

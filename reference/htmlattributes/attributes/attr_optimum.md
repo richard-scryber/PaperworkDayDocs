@@ -43,6 +43,8 @@ The `optimum` attribute controls semantic coloring logic:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Lower is better: optimum near min -->
@@ -71,6 +73,8 @@ The `optimum` attribute controls semantic coloring logic:
 </meter>
 ```
 {% endraw %}
+
+
 
 
 
@@ -255,6 +259,8 @@ The `optimum` attribute supports data binding for dynamic target values:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { currentValue: 75, targetValue: 80 } -->
@@ -271,7 +277,11 @@ The `optimum` attribute supports data binding for dynamic target values:
 
 
 
+
+
 ### Calculated Optimum
+
+
 
 
 
@@ -292,7 +302,11 @@ The `optimum` attribute supports data binding for dynamic target values:
 
 
 
+
+
 ### Conditional Optimum
+
+
 
 
 
@@ -313,7 +327,11 @@ The `optimum` attribute supports data binding for dynamic target values:
 
 
 
+
+
 ### Context-Specific Optimum
+
+
 
 
 
@@ -334,7 +352,11 @@ The `optimum` attribute supports data binding for dynamic target values:
 
 
 
+
+
 ### Dynamic Targets from Collection
+
+
 
 
 
@@ -363,6 +385,8 @@ The `optimum` attribute supports data binding for dynamic target values:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -478,6 +502,8 @@ Consistent optimum values for related measurements:
 **Fixed Optimum:**
 
 
+
+
 {% raw %}
 ```html
 <!-- Room temperature: always 72°F -->
@@ -490,7 +516,11 @@ Consistent optimum values for related measurements:
 
 
 
+
+
 **Variable Optimum:**
+
+
 
 
 {% raw %}
@@ -507,7 +537,11 @@ Consistent optimum values for related measurements:
 
 
 
+
+
 **Context-Dependent Optimum:**
+
+
 
 
 {% raw %}
@@ -520,6 +554,8 @@ Consistent optimum values for related measurements:
 </meter>
 ```
 {% endraw %}
+
+
 
 
 
@@ -1276,6 +1312,8 @@ Test each zone to verify color logic:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -1341,7 +1379,11 @@ Test each zone to verify color logic:
 
 
 
+
+
 ### Multiple Meters with Different Optimum Values
+
+
 
 
 
@@ -1431,6 +1473,8 @@ Test each zone to verify color logic:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

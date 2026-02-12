@@ -144,6 +144,8 @@ Linear gradients support dynamic data binding for personalized backgrounds:
 
 
 
+
+
 {% raw %}
 ```html
 <div style="width: 200pt; height: 100pt; 
@@ -154,6 +156,8 @@ Linear gradients support dynamic data binding for personalized backgrounds:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

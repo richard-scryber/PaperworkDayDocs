@@ -97,6 +97,8 @@ The `margin-inline` property supports dynamic values through data binding, enabl
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -129,6 +131,8 @@ The `margin-inline` property supports dynamic values through data binding, enabl
 
 
 
+
+
 Data context:
 ```json
 {
@@ -142,6 +146,8 @@ Data context:
 ```
 
 ### Example 2: Responsive invoice layout with data-driven spacing
+
+
 
 
 
@@ -183,6 +189,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -198,6 +206,8 @@ Data context:
 ```
 
 ### Example 3: Centered card with adaptive margins
+
+
 
 
 
@@ -232,6 +242,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

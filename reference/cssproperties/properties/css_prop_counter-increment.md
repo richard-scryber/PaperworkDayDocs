@@ -96,6 +96,8 @@ The `counter-increment` property automatically works with data-bound elements, i
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -130,7 +132,11 @@ The `counter-increment` property automatically works with data-bound elements, i
 
 
 
+
+
 ### Example 2: Dynamic FAQ with question numbering
+
+
 
 
 
@@ -172,7 +178,11 @@ The `counter-increment` property automatically works with data-bound elements, i
 
 
 
+
+
 ### Example 3: Multi-category lists with separate counters
+
+
 
 
 
@@ -217,6 +227,8 @@ The `counter-increment` property automatically works with data-bound elements, i
 </body>
 ```
 {% endraw %}
+
+
 
 
 

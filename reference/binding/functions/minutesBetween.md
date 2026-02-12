@@ -60,11 +60,15 @@ The number of minutes between the two datetimes. Positive if endDateTime is afte
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Meeting duration: {{minutesBetween(model.startTime, model.endTime)}} minutes</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,6 +89,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Parking Receipt</h3>
@@ -94,6 +100,8 @@ doc.Params["model"] = new {
 <p>Cost: ${{round((minutesBetween(model.entryTime, model.exitTime) / 60) * model.hourlyRate, 2)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -119,6 +127,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.calls}}
@@ -131,6 +141,8 @@ doc.Params["model"] = new {
 <p>Average: {{average(collect(model.calls, 'duration'))}} min</p>
 ```
 {% endraw %}
+
+
 
 
 

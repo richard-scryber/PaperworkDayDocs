@@ -168,11 +168,15 @@ The `data` attribute specifies the file to attach and supports multiple source t
 4. **Dynamic Sources via Data Binding**:
 
 
+
+
 {% raw %}
    ```html
    <object data="{{model.attachmentPath}}" type="{{model.mimeType}}"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -230,6 +234,8 @@ For dynamic attachments from memory or databases, use the `data-file-data` attri
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.fileBytes containing byte[] data -->
@@ -239,6 +245,8 @@ For dynamic attachments from memory or databases, use the `data-file-data` attri
         alt="Dynamically loaded document"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -450,6 +458,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { attachmentPath: "report.pdf", attachmentType: "application/pdf", attachmentName: "Monthly Report" } -->
@@ -463,7 +473,11 @@ In the Scryber codebase:
 
 
 
+
+
 ### Binary Data Attachment
+
+
 
 
 
@@ -481,7 +495,11 @@ In the Scryber codebase:
 
 
 
+
+
 ### Conditional Attachments
+
+
 
 
 
@@ -503,7 +521,11 @@ In the Scryber codebase:
 
 
 
+
+
 ### Repeating Attachments
+
+
 
 
 
@@ -529,6 +551,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -610,6 +634,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Attach file from remote URL -->
@@ -625,6 +651,8 @@ In the Scryber codebase:
         alt="Generated Report"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -748,6 +776,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <div class="paper">
@@ -798,7 +828,11 @@ In the Scryber codebase:
 
 
 
+
+
 ### Invoice with Supporting Documents
+
+
 
 
 
@@ -854,6 +888,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

@@ -51,6 +51,8 @@ Apply styles directly to elements using the `style` attribute:
 
 
 
+
+
 {% raw %}
 ```html
 <div style="color: {{model.themeColor}};">
@@ -58,6 +60,8 @@ Apply styles directly to elements using the `style` attribute:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

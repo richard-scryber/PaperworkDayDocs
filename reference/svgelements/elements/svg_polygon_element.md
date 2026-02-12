@@ -73,9 +73,11 @@ The `<polygon>` element creates a closed multi-sided shape defined by:
 
 ## Data Binding
 
-The `<polygon>` element supports dynamic attribute values using data binding expressions with `{{expression}}` syntax.
+The `<polygon>` element supports dynamic attribute values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Triangle
+
+
 
 
 
@@ -91,7 +93,11 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
 
 
 
+
+
 ### Example 2: Star Rating
+
+
 
 
 
@@ -109,7 +115,11 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
 
 
 
+
+
 ### Example 3: Multiple Polygons
+
+
 
 
 
@@ -127,6 +137,8 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -425,6 +437,8 @@ For regular polygons (equal sides and angles), calculate points using trigonomet
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { rating: 5 } -->
@@ -436,6 +450,8 @@ For regular polygons (equal sides and angles), calculate points using trigonomet
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

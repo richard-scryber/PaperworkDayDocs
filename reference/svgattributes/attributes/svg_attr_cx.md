@@ -59,9 +59,11 @@ The `cx` attribute is supported on the following SVG elements:
 
 ## Data Binding
 
-The `cx` attribute supports dynamic values using data binding expressions with `{{expression}}` syntax.
+The `cx` attribute supports dynamic values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Circle Center
+
+
 
 
 
@@ -77,7 +79,11 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 ### Example 2: Centered Elements with Calculation
+
+
 
 
 
@@ -94,7 +100,11 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 ### Example 3: Bubble Chart with Template
+
+
 
 
 
@@ -114,6 +124,8 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -349,6 +361,8 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { points: [
@@ -366,6 +380,8 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

@@ -90,6 +90,8 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -129,7 +131,11 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
 
 
 
+
+
 ### Example 2: Document type-based page assignments
+
+
 
 
 
@@ -184,7 +190,11 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
 
 
 
+
+
 ### Example 3: Named page sequences with conditional formatting
+
+
 
 
 
@@ -244,6 +254,8 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
 </body>
 ```
 {% endraw %}
+
+
 
 
 

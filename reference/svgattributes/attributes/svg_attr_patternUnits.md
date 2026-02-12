@@ -79,6 +79,8 @@ Choose coordinate system based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { useRelative: true, tileSize: 50 } -->
@@ -106,9 +108,13 @@ Choose coordinate system based on data:
 
 
 
+
+
 ### Adaptive Pattern Sizing
 
 Switch between responsive and fixed patterns:
+
+
 
 
 
@@ -138,9 +144,13 @@ Switch between responsive and fixed patterns:
 
 
 
+
+
 ### Background Pattern Library
 
 Create reusable patterns with different coordinate systems:
+
+
 
 
 
@@ -192,9 +202,13 @@ Create reusable patterns with different coordinate systems:
 
 
 
+
+
 ### Chart Background with Fixed Grid
 
 Use userSpaceOnUse for consistent grid patterns:
+
+
 
 
 
@@ -220,6 +234,8 @@ Use userSpaceOnUse for consistent grid patterns:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

@@ -61,6 +61,8 @@ The number of items where the specified property equals the given value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Task Status</h3>
@@ -69,6 +71,8 @@ The number of items where the specified property equals the given value.
 <p>Pending: {{countOf(model.tasks, 'status', 'pending')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -97,12 +101,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Verified users: {{countOf(model.users, 'verified', true)}}</p>
 <p>Unverified users: {{countOf(model.users, 'verified', false)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -128,6 +136,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Inventory Summary</h3>
@@ -136,6 +146,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -165,6 +177,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Priority Distribution</h3>
@@ -173,6 +187,8 @@ doc.Params["model"] = new {
 <p>Low: {{countOf(model.issues, 'priority', 'low')}} ({{round((countOf(model.issues, 'priority', 'low') / count(model.issues)) * 100, 0)}}%)</p>
 ```
 {% endraw %}
+
+
 
 
 

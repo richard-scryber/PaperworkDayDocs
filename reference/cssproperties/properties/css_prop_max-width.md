@@ -96,6 +96,8 @@ The max-width property supports dynamic value binding through template expressio
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -124,7 +126,11 @@ The max-width property supports dynamic value binding through template expressio
 
 
 
+
+
 ### Example 2: Images with data-driven maximum widths
+
+
 
 
 
@@ -155,7 +161,11 @@ The max-width property supports dynamic value binding through template expressio
 
 
 
+
+
 ### Example 3: Cards with conditional maximum widths
+
+
 
 
 
@@ -192,7 +202,11 @@ The max-width property supports dynamic value binding through template expressio
 
 
 
+
+
 ### Example 4: Table with configurable maximum width
+
+
 
 
 
@@ -240,6 +254,8 @@ The max-width property supports dynamic value binding through template expressio
 </body>
 ```
 {% endraw %}
+
+
 
 
 

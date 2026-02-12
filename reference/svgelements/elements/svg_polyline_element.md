@@ -80,9 +80,11 @@ The `<polyline>` element creates connected line segments defined by:
 
 ## Data Binding
 
-The `<polyline>` element supports dynamic attribute values using data binding expressions with `{{expression}}` syntax.
+The `<polyline>` element supports dynamic attribute values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Line Chart from Data
+
+
 
 
 
@@ -98,7 +100,11 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
 
 
 
+
+
 ### Example 2: Dynamic Trend Line
+
+
 
 
 
@@ -115,7 +121,11 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
 
 
 
+
+
 ### Example 3: Multiple Polylines
+
+
 
 
 
@@ -133,6 +143,8 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -407,6 +419,8 @@ At least 2 points are required for a visible polyline. A single point produces n
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { values: [30, 45, 35, 60, 50, 70, 55] } -->
@@ -420,7 +434,11 @@ At least 2 points are required for a visible polyline. A single point produces n
 
 
 
+
+
 ### Multi-Series with Data Binding
+
+
 
 
 
@@ -439,6 +457,8 @@ At least 2 points are required for a visible polyline. A single point produces n
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

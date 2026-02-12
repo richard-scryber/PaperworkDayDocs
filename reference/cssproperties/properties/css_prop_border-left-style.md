@@ -72,6 +72,8 @@ The `border-top-style` property supports dynamic values through data binding, al
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -91,7 +93,11 @@ The `border-top-style` property supports dynamic values through data binding, al
 
 
 
+
+
 ### Example 2: Document formality indicators
+
+
 
 
 
@@ -114,7 +120,11 @@ The `border-top-style` property supports dynamic values through data binding, al
 
 
 
+
+
 ### Example 3: Table row separators
+
+
 
 
 
@@ -134,6 +144,8 @@ The `border-top-style` property supports dynamic values through data binding, al
 </body>
 ```
 {% endraw %}
+
+
 
 
 

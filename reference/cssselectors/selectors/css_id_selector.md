@@ -299,6 +299,8 @@ ID selectors have the highest specificity value of **5 points**.
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -320,6 +322,8 @@ ID selectors have the highest specificity value of **5 points**.
 </body>
 ```
 {% endraw %}
+
+
 
 
 

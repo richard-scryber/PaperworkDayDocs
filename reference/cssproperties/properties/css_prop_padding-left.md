@@ -94,6 +94,8 @@ The `padding-left` property supports dynamic values through data binding, allowi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -118,6 +120,8 @@ The `padding-left` property supports dynamic values through data binding, allowi
 
 
 
+
+
 Data context:
 ```json
 {
@@ -130,6 +134,8 @@ Data context:
 ```
 
 ### Example 2: Nested content with hierarchy-based padding
+
+
 
 
 
@@ -160,6 +166,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -171,6 +179,8 @@ Data context:
 ```
 
 ### Example 3: Quote block with data-driven accent padding
+
+
 
 
 
@@ -196,6 +206,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

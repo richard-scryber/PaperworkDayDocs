@@ -84,6 +84,8 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
 
 
 
+
+
 {% raw %}
 ```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
@@ -116,7 +118,11 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
 
 
 
+
+
 ### Example 2: Language-Based Configuration
+
+
 
 
 
@@ -152,7 +158,11 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
 
 
 
+
+
 ### Example 3: Balanced Before and After Settings
+
+
 
 
 
@@ -192,6 +202,8 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
 -->
 ```
 {% endraw %}
+
+
 
 
 

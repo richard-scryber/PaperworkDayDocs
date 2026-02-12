@@ -79,6 +79,8 @@ In the library codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Book citation -->
@@ -97,6 +99,8 @@ In the library codebase:
 <p>Reference: <cite>{{model.citationTitle}}</cite> ({{model.citationYear}})</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -139,6 +143,8 @@ In the library codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Basic definition -->
@@ -157,6 +163,8 @@ In the library codebase:
 <p><dfn>{{model.termName}}</dfn>: {{model.termDefinition}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -194,6 +202,8 @@ In the library codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Basic quotation -->
@@ -219,6 +229,8 @@ In the library codebase:
 <p>They remarked <q>this is excellent work</q>.</p>
 ```
 {% endraw %}
+
+
 
 
 

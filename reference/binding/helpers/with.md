@@ -35,6 +35,8 @@ Change the data context to a specific object, simplifying property access within
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#with object}}
@@ -47,7 +49,11 @@ Change the data context to a specific object, simplifying property access within
 
 
 
+
+
 **With Alias:**
+
+
 
 
 {% raw %}
@@ -57,6 +63,8 @@ Change the data context to a specific object, simplifying property access within
 {{/with}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -86,6 +94,8 @@ Change the data context to a specific object, simplifying property access within
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#with model.user}}
@@ -95,6 +105,8 @@ Change the data context to a specific object, simplifying property access within
 {{/with}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -120,6 +132,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#with model.user}}
@@ -136,7 +150,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Accessing Parent Properties
+
+
 
 
 
@@ -155,7 +173,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Using Alias Syntax
+
+
 
 
 
@@ -172,7 +194,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Nested With Blocks
+
+
 
 
 
@@ -194,11 +220,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 ---
 
 ## Underlying Implementation
 
-The `{{#with}}` helper compiles to the following Scryber template structure:
+The `{% raw %}{{#with}}{% endraw %}` helper compiles to the following Scryber template structure:
+
+
 
 
 
@@ -215,16 +245,18 @@ The `{{#with}}` helper compiles to the following Scryber template structure:
 
 
 
-For the alias syntax `{{#with object as | alias |}}`, it creates a variable binding that makes the object available under the specified name.
+
+
+For the alias syntax `{% raw %}{{#with object as | alias |}}{% endraw %}`, it creates a variable binding that makes the object available under the specified name.
 
 ---
 
 ## Notes
 
-- Empty/null objects trigger the `{{else}}` block
-- Use `{{.}}` to reference the entire context object
-- Use `{{../property}}` to go up one level
-- Use `{{../../property}}` to go up two levels
+- Empty/null objects trigger the `{% raw %}{{else}}{% endraw %}` block
+- Use `{% raw %}{{.}}{% endraw %}` to reference the entire context object
+- Use `{% raw %}{{../property}}{% endraw %}` to go up one level
+- Use `{% raw %}{{../../property}}{% endraw %}` to go up two levels
 - Alias names must be valid identifiers
 - Context switching simplifies deeply nested property access
 

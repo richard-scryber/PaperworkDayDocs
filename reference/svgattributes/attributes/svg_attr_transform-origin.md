@@ -26,6 +26,8 @@ The `transform-origin` attribute controls the transformation reference point:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Rotate around element center -->
@@ -47,6 +49,8 @@ The `transform-origin` attribute controls the transformation reference point:
       fill="green"/>
 ```
 {% endraw %}
+
+
 
 
 
@@ -156,6 +160,8 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { originX: 100, originY: 100 } -->
@@ -168,7 +174,11 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 
 
 
+
+
 ### Dynamic Keyword-Based Origin
+
+
 
 
 
@@ -184,7 +194,11 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 
 
 
+
+
 ### Calculated Origin Point
+
+
 
 
 
@@ -201,7 +215,11 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 
 
 
+
+
 ### Interactive Rotation Point
+
+
 
 
 
@@ -217,7 +235,11 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 
 
 
+
+
 ### Data-Driven Transformations
+
+
 
 
 
@@ -235,7 +257,11 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 
 
 
+
+
 ### Scaling from Different Origins
+
+
 
 
 
@@ -248,6 +274,8 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
         fill="teal"/>
 ```
 {% endraw %}
+
+
 
 
 
@@ -735,6 +763,8 @@ The `transform-origin` attribute is part of the SVG specification. In Scryber, i
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { angle: 45, pivotX: 150, pivotY: 150 } -->
@@ -756,7 +786,11 @@ The `transform-origin` attribute is part of the SVG specification. In Scryber, i
 
 
 
+
+
 ### Scale Animation Origin
+
+
 
 
 
@@ -772,6 +806,8 @@ The `transform-origin` attribute is part of the SVG specification. In Scryber, i
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

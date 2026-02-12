@@ -55,6 +55,8 @@ The `data-value` attribute is applied to `<var>` elements and `<num>` elements:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Create document variable -->
@@ -67,7 +69,11 @@ The `data-value` attribute is applied to `<var>` elements and `<num>` elements:
 
 
 
+
+
 ### Basic Syntax
+
+
 
 
 
@@ -86,6 +92,8 @@ The `data-value` attribute is applied to `<var>` elements and `<num>` elements:
 <num data-value="{{model.quantity * model.unitPrice}}" data-format="C"></num>
 ```
 {% endraw %}
+
+
 
 
 
@@ -109,10 +117,10 @@ The `data-value` attribute is supported on the following elements:
 | Value Type | Description |
 |------------|-------------|
 | **Literal Value** | Direct string, number, or boolean value |
-| **Binding Expression** | Expression that evaluates to a value: `{{expression}}` |
-| **Property Access** | Reference to model property: `{{model.property}}` |
-| **Calculation** | Mathematical expression: `{{value1 + value2}}` |
-| **Conditional** | Ternary expression: `{{condition ? value1 : value2}}` |
+| **Binding Expression** | Expression that evaluates to a value: `{% raw %}{{expression}}{% endraw %}` |
+| **Property Access** | Reference to model property: `{% raw %}{{model.property}}{% endraw %}` |
+| **Calculation** | Mathematical expression: `{% raw %}{{value1 + value2}}{% endraw %}` |
+| **Conditional** | Ternary expression: `{% raw %}{{condition ? value1 : value2}}{% endraw %}` |
 
 ### Type
 
@@ -122,6 +130,8 @@ The `data-value` attribute is supported on the following elements:
 ### Expression Support
 
 The attribute accepts any valid binding expression:
+
+
 
 
 
@@ -146,6 +156,8 @@ The attribute accepts any valid binding expression:
 
 
 
+
+
 ---
 
 ## Notes
@@ -156,7 +168,7 @@ When `<var>` elements have both `data-id` and `data-value`:
 1. Expression in `data-value` is evaluated during data binding
 2. Result is stored in `document.Params[data-id]`
 3. Value becomes available throughout the document
-4. Can be referenced using `{{data-id}}` syntax
+4. Can be referenced using `{% raw %}{{data-id}}{% endraw %}` syntax
 
 ### Visibility Behavior
 
@@ -186,6 +198,8 @@ When used with `<num>` elements, `data-value` provides the raw value:
 
 
 
+
+
 {% raw %}
 ```html
 <num data-value="{{model.price}}" data-format="C"></num>
@@ -194,11 +208,15 @@ When used with `<num>` elements, `data-value` provides the raw value:
 
 
 
+
+
 The `data-format` attribute controls display formatting while `data-value` provides the underlying value.
 
 ### Use Cases
 
 **Document-Level Constants**:
+
+
 
 
 {% raw %}
@@ -210,7 +228,11 @@ The `data-format` attribute controls display formatting while `data-value` provi
 
 
 
+
+
 **Computed Totals**:
+
+
 
 
 {% raw %}
@@ -221,7 +243,11 @@ The `data-format` attribute controls display formatting while `data-value` provi
 
 
 
+
+
 **Conditional Values**:
+
+
 
 
 {% raw %}
@@ -232,7 +258,11 @@ The `data-format` attribute controls display formatting while `data-value` provi
 
 
 
+
+
 **Complex Calculations**:
+
+
 
 
 {% raw %}
@@ -244,6 +274,8 @@ The `data-format` attribute controls display formatting while `data-value` provi
 
 
 
+
+
 ---
 
 ## Examples
@@ -251,6 +283,8 @@ The `data-format` attribute controls display formatting while `data-value` provi
 ### 1. Simple Variable Storage
 
 Store a computed value for later use:
+
+
 
 
 
@@ -269,9 +303,13 @@ Store a computed value for later use:
 
 
 
+
+
 ### 2. Tax Rate Constant
 
 Create a reusable tax rate:
+
+
 
 
 
@@ -294,9 +332,13 @@ Create a reusable tax rate:
 
 
 
+
+
 ### 3. Discount Calculation
 
 Compute and store discount amount:
+
+
 
 
 
@@ -316,9 +358,13 @@ Compute and store discount amount:
 
 
 
+
+
 ### 4. Full Name Computation
 
 Combine first and last names:
+
+
 
 
 
@@ -338,9 +384,13 @@ Combine first and last names:
 
 
 
+
+
 ### 5. Formatted Number Display
 
 Display computed value with formatting:
+
+
 
 
 
@@ -360,9 +410,13 @@ Display computed value with formatting:
 
 
 
+
+
 ### 6. Conditional Status Text
 
 Store conditional status string:
+
+
 
 
 
@@ -381,9 +435,13 @@ Store conditional status string:
 
 
 
+
+
 ### 7. Complex Financial Calculation
 
 Multi-step calculation with intermediate values:
+
+
 
 
 
@@ -423,9 +481,13 @@ Multi-step calculation with intermediate values:
 
 
 
+
+
 ### 8. Date Formatting
 
 Store formatted date string:
+
+
 
 
 
@@ -443,9 +505,13 @@ Store formatted date string:
 
 
 
+
+
 ### 9. Percentage Calculations
 
 Calculate and display percentages:
+
+
 
 
 
@@ -469,9 +535,13 @@ Calculate and display percentages:
 
 
 
+
+
 ### 10. Conditional Pricing
 
 Store pricing based on customer type:
+
+
 
 
 
@@ -496,9 +566,13 @@ Store pricing based on customer type:
 
 
 
+
+
 ### 11. Company Information Variables
 
 Store company details as variables:
+
+
 
 
 
@@ -521,9 +595,13 @@ Store company details as variables:
 
 
 
+
+
 ### 12. Aggregate Statistics
 
 Calculate summary statistics:
+
+
 
 
 
@@ -560,9 +638,13 @@ Calculate summary statistics:
 
 
 
+
+
 ### 13. Shipping Cost Calculation
 
 Complex shipping logic:
+
+
 
 
 
@@ -591,9 +673,13 @@ Complex shipping logic:
 
 
 
+
+
 ### 14. Dynamic Page Title
 
 Create page-specific titles:
+
+
 
 
 
@@ -613,9 +699,13 @@ Create page-specific titles:
 
 
 
+
+
 ### 15. Conditional Message Text
 
 Generate dynamic messages:
+
+
 
 
 
@@ -643,9 +733,13 @@ Generate dynamic messages:
 
 
 
+
+
 ### 16. Multi-Currency Support
 
 Calculate currency conversions:
+
+
 
 
 
@@ -678,9 +772,13 @@ Calculate currency conversions:
 
 
 
+
+
 ### 17. Inventory Status Calculation
 
 Compute inventory metrics:
+
+
 
 
 
@@ -721,9 +819,13 @@ Compute inventory metrics:
 
 
 
+
+
 ### 18. Loan Payment Calculator
 
 Calculate loan payment details:
+
+
 
 
 
@@ -780,9 +882,13 @@ Calculate loan payment details:
 
 
 
+
+
 ### 19. Grade Calculation
 
 Compute grade statistics:
+
+
 
 
 
@@ -841,9 +947,13 @@ Compute grade statistics:
 
 
 
+
+
 ### 20. Comprehensive Invoice with All Calculations
 
 Production-ready invoice with complete calculations:
+
+
 
 
 
@@ -984,6 +1094,8 @@ Production-ready invoice with complete calculations:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

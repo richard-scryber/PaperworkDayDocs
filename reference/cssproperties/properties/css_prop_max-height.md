@@ -96,6 +96,8 @@ The max-height property supports dynamic value binding through template expressi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -122,7 +124,11 @@ The max-height property supports dynamic value binding through template expressi
 
 
 
+
+
 ### Example 2: Content sections with data-driven height limits
+
+
 
 
 
@@ -153,7 +159,11 @@ The max-height property supports dynamic value binding through template expressi
 
 
 
+
+
 ### Example 3: Cards with variable maximum heights
+
+
 
 
 
@@ -192,7 +202,11 @@ The max-height property supports dynamic value binding through template expressi
 
 
 
+
+
 ### Example 4: Dashboard panels with configurable height constraints
+
+
 
 
 
@@ -234,6 +248,8 @@ The max-height property supports dynamic value binding through template expressi
 </body>
 ```
 {% endraw %}
+
+
 
 
 

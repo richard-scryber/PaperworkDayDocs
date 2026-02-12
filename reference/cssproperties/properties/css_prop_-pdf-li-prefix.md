@@ -98,6 +98,8 @@ The `-pdf-li-prefix` property supports data binding, enabling dynamic prefix tex
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -118,6 +120,8 @@ The `-pdf-li-prefix` property supports data binding, enabling dynamic prefix tex
 </body>
 ```
 {% endraw %}
+
+
 
 
 
@@ -143,6 +147,8 @@ Different list types (tasks, steps, requirements, questions) can have appropriat
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -163,6 +169,8 @@ Different list types (tasks, steps, requirements, questions) can have appropriat
 </body>
 ```
 {% endraw %}
+
+
 
 
 
@@ -204,6 +212,8 @@ List prefixes automatically adapt to the document language, ensuring proper loca
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -235,6 +245,8 @@ List prefixes automatically adapt to the document language, ensuring proper loca
 </body>
 ```
 {% endraw %}
+
+
 
 
 

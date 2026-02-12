@@ -349,6 +349,8 @@ art.StyleClass = "articles";
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.articles = [
@@ -372,6 +374,8 @@ art.StyleClass = "articles";
 </template>
 ```
 {% endraw %}
+
+
 
 
 

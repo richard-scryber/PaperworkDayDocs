@@ -188,6 +188,8 @@ SVG content can be generated dynamically using data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { items: [{x:50, y:50, r:20, color:"red"}, {x:150, y:50, r:30, color:"blue"}] } -->
@@ -201,7 +203,11 @@ SVG content can be generated dynamically using data binding:
 
 
 
+
+
 ### Parameterized Graphics
+
+
 
 
 
@@ -219,7 +225,11 @@ SVG content can be generated dynamically using data binding:
 
 
 
+
+
 ### Conditional SVG Content
+
+
 
 
 
@@ -237,7 +247,11 @@ SVG content can be generated dynamically using data binding:
 
 
 
+
+
 ### Data-Driven Styling
+
+
 
 
 
@@ -252,6 +266,8 @@ SVG content can be generated dynamically using data binding:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -366,6 +382,8 @@ SVG content can be generated dynamically using data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { chartData: [
@@ -391,6 +409,8 @@ SVG content can be generated dynamically using data binding:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -460,6 +480,8 @@ SVG content can be generated dynamically using data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { percentage: 75, status: "good" } -->
@@ -477,6 +499,8 @@ SVG content can be generated dynamically using data binding:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -510,6 +534,8 @@ SVG content can be generated dynamically using data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { events: [{year: "2020", title: "Founded", x: 50}, ...] } -->
@@ -533,7 +559,11 @@ SVG content can be generated dynamically using data binding:
 
 
 
+
+
 ### SVG Status Badge
+
+
 
 
 
@@ -551,6 +581,8 @@ SVG content can be generated dynamically using data binding:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

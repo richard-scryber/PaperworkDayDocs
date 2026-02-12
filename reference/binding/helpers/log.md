@@ -35,12 +35,16 @@ Output debug messages to the trace log during template processing. Useful for de
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{log message}}
 {{log message1 expression message2 level="info" category="debug"}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -73,6 +77,8 @@ Output debug messages to the trace log during template processing. Useful for de
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{log "Processing user profile"}}
@@ -81,7 +87,11 @@ Output debug messages to the trace log during template processing. Useful for de
 
 
 
+
+
 ### Logging Values
+
+
 
 
 
@@ -92,6 +102,8 @@ Output debug messages to the trace log during template processing. Useful for de
 {{/with}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -114,6 +126,8 @@ User: John Doe (ID: 12345)
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{log "Starting data processing" level="debug"}}
@@ -128,7 +142,11 @@ User: John Doe (ID: 12345)
 
 
 
+
+
 ### With Category for Filtering
+
+
 
 
 
@@ -146,7 +164,11 @@ User: John Doe (ID: 12345)
 
 
 
+
+
 ### Logging in Loops
+
+
 
 
 
@@ -161,6 +183,8 @@ User: John Doe (ID: 12345)
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -188,6 +212,8 @@ High-value order: $2100
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#with model.user}}
@@ -200,7 +226,11 @@ High-value order: $2100
 
 
 
+
+
 ### Conditional Debugging
+
+
 
 
 
@@ -220,11 +250,15 @@ High-value order: $2100
 
 
 
+
+
 ---
 
 ## Underlying Implementation
 
-The `{{log}}` helper compiles to:
+The `{% raw %}{{log}}{% endraw %}` helper compiles to:
+
+
 
 
 
@@ -235,6 +269,8 @@ The `{{log}}` helper compiles to:
      data-category="category name" />
 ```
 {% endraw %}
+
+
 
 
 

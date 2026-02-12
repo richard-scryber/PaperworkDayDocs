@@ -32,9 +32,11 @@ Compare if the left value is greater than or equal to the right value.
 ## Syntax
 
 
+{% raw %}
 ```
 {{operand1 >= operand2}}
 ```
+{% endraw %}
 
 
 ---
@@ -72,6 +74,8 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.age >= 18}}
@@ -85,6 +89,8 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,6 +113,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.score >= 70}}
@@ -122,6 +130,8 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -145,6 +155,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.score >= 90}}
@@ -164,7 +176,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Free Shipping Eligibility
+
+
 
 
 
@@ -186,6 +202,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -202,6 +220,8 @@ doc.Params["model"] = new {
 ```
 
 ### Access Level Validation
+
+
 
 
 
@@ -227,7 +247,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Minimum Quantity Check
+
+
 
 
 
@@ -251,6 +275,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 ---
 
 ## Notes
@@ -260,7 +286,7 @@ doc.Params["model"] = new {
 - String comparison is case-sensitive and uses lexicographic ordering
 - Date comparison compares chronological order
 - Cannot compare incompatible types
-- Commonly used with `{{#if}}` for conditional rendering
+- Commonly used with `{% raw %}{{#if}}{% endraw %}` for conditional rendering
 - Can be combined with logical operators (`&&`, `||`)
 - Very common for threshold checks and eligibility validation
 

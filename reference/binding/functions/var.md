@@ -61,6 +61,8 @@ A formatted CSS var() expression string.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <div style="color: {{var('primary-color')}}; background: {{var('bg-color')}};">
@@ -68,6 +70,8 @@ A formatted CSS var() expression string.
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -87,6 +91,8 @@ doc.Params["model"] = new { };
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p style="color: {{var('text-color', '#333333')}};">
@@ -94,6 +100,8 @@ doc.Params["model"] = new { };
 </p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -113,6 +121,8 @@ doc.Params["model"] = new { };
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.themes}}
@@ -124,6 +134,8 @@ doc.Params["model"] = new { };
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -155,6 +167,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <div class="card" style="
@@ -171,6 +185,8 @@ doc.Params["model"] = new {
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -202,6 +218,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <table style="width: {{var('table-width', '100%')}}; font-size: {{var('table-font-size', '10pt')}};">
@@ -214,6 +232,8 @@ doc.Params["model"] = new {
 </table>
 ```
 {% endraw %}
+
+
 
 
 

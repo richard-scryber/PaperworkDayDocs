@@ -32,9 +32,11 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 ## Syntax
 
 
+{% raw %}
 ```
 {{operand1 == operand2}}
 ```
+{% endraw %}
 
 
 ---
@@ -60,6 +62,7 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 
 ### Basic Comparison
 
+{% raw %}
 ```
 
 {{5 == 5}}
@@ -68,9 +71,12 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 {{5 == 3}}
 <!-- Output: false --> 
 ```
+{% endraw %}
 
 
 ### String Comparison
+
+
 
 
 {% raw %}
@@ -83,6 +89,8 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 
 
 
+
+
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -91,6 +99,8 @@ doc.Params["model"] = new {
 ```
 
 ### Number Comparison
+
+
 
 
 {% raw %}
@@ -105,7 +115,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Boolean Comparison
+
+
 
 
 {% raw %}
@@ -118,7 +132,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Multiple Conditions
+
+
 
 
 {% raw %}
@@ -135,7 +153,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### With #each
+
+
 
 
 {% raw %}
@@ -149,6 +171,8 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
+
+
 
 
 

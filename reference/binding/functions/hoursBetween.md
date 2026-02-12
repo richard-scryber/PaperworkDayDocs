@@ -60,11 +60,15 @@ The number of hours between the two datetimes. Positive if endDateTime is after 
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Hours until meeting: {{hoursBetween(model.now, model.meetingTime)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,6 +89,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Work Shift Report</h3>
@@ -93,6 +99,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -125,6 +133,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Response time: {{hoursBetween(model.ticketCreated, model.firstResponse)}} hours</p>
@@ -137,6 +147,8 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
+
+
 
 
 

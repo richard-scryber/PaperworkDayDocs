@@ -60,11 +60,15 @@ The smallest value of the specified property. Returns null for empty collections
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Lowest price: ${{minOf(model.products, 'price')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -88,6 +92,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Inventory Status</h3>
@@ -97,6 +103,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -122,6 +130,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>API Performance</h3>
@@ -130,6 +140,8 @@ doc.Params["model"] = new {
 <p>Average response: {{round(averageOf(model.requests, 'responseTime'), 0)}}ms</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -156,11 +168,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Age range: {{minOf(model.participants, 'age')}} - {{maxOf(model.participants, 'age')}} years</p>
 ```
 {% endraw %}
+
+
 
 
 

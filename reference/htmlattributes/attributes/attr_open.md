@@ -41,6 +41,8 @@ The `open` attribute controls disclosure widget state:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Open/expanded by default -->
@@ -70,6 +72,8 @@ The `open` attribute controls disclosure widget state:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -84,6 +88,8 @@ The `open` attribute is used exclusively with:
 ## Binding Values
 
 The `open` attribute supports data binding for dynamic state control:
+
+
 
 
 
@@ -118,6 +124,8 @@ The `open` attribute supports data binding for dynamic state control:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -690,6 +698,8 @@ Common uses for details elements:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -748,6 +758,8 @@ Common uses for details elements:
 </html>
 ```
 {% endraw %}
+
+
 
 
 

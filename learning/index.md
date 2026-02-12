@@ -46,10 +46,10 @@ Learn the fundamentals: installation, basic documents, HTML/CSS for PDFs, and tr
 Master Handlebars-style data binding, expressions, functions, and conditional rendering.
 
 **You'll learn:**
-- Bind data to templates with `{{expression}}`
+- Bind data to templates with `{% raw %}{{expression}}{% endraw %}`
 - Use functions (string, math, **calc**, conditionals)
-- Iterate with templates and `{{#each}}`
-- Conditional rendering with `{{#if}}`
+- Iterate with templates and `{% raw %}{{#each}}{% endraw %}`
+- Conditional rendering with `{% raw %}{{#if}}{% endraw %}`
 - **Work with variables and Document.Params**
 - Understand context and scope
 - Format output (numbers, dates, currency)
@@ -254,9 +254,9 @@ Jump to what you need:
 ## Key Features Covered
 
 ### Data Binding
-- `{{expression}}` syntax
-- `{{#each}}` iteration
-- `{{#if}}` conditionals
+- `{% raw %}{{expression}}{% endraw %}` syntax
+- `{% raw %}{{#each}}{% endraw %}` iteration
+- `{% raw %}{{#if}}{% endraw %}` conditionals
 - **`<var>` element for storage**
 - **Document.Params access**
 - Nested data structures
@@ -347,6 +347,8 @@ Contributions welcome! See [Contributing Guide](https://github.com/richard-scryb
 **XHTML Format (with namespace):**
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -377,6 +379,8 @@ Contributions welcome! See [Contributing Guide](https://github.com/richard-scryb
 
 
 
+
+
 **Parsing Methods:**
 ```csharp
 // XHTML with namespace (ParseDocument)
@@ -401,11 +405,15 @@ width: calc(100% - 40pt);
 
 
 
+
+
 {% raw %}
 ```css
 height: calc({{value}} * 2pt);
 ```
 {% endraw %}
+
+
 
 
 

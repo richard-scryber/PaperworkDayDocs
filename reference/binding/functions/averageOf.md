@@ -60,11 +60,15 @@ The arithmetic mean of the specified property. Returns null for empty collection
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Average product price: ${{round(averageOf(model.products, 'price'), 2)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -88,6 +92,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Sales Summary</h3>
@@ -96,6 +102,8 @@ doc.Params["model"] = new {
 <p>Number of days: {{count(model.dailySales)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -123,6 +131,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.teams}}
@@ -132,6 +142,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -172,6 +184,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Server Performance</h3>
@@ -180,6 +194,8 @@ doc.Params["model"] = new {
 <p>Peak CPU: {{maxOf(model.servers, 'cpuUsage')}}%</p>
 ```
 {% endraw %}
+
+
 
 
 

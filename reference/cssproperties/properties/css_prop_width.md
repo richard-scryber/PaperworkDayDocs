@@ -95,6 +95,8 @@ The width property supports dynamic value binding through template expressions, 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -136,7 +138,11 @@ The width property supports dynamic value binding through template expressions, 
 
 
 
+
+
 ### Example 2: Conditional image sizing
+
+
 
 
 
@@ -162,7 +168,11 @@ The width property supports dynamic value binding through template expressions, 
 
 
 
+
+
 ### Example 3: Progress bars with data-driven widths
+
+
 
 
 
@@ -208,7 +218,11 @@ The width property supports dynamic value binding through template expressions, 
 
 
 
+
+
 ### Example 4: Responsive table columns based on configuration
+
+
 
 
 
@@ -246,6 +260,8 @@ The width property supports dynamic value binding through template expressions, 
 </body>
 ```
 {% endraw %}
+
+
 
 
 

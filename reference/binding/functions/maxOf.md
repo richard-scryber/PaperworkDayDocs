@@ -60,11 +60,15 @@ The largest value of the specified property. Returns null for empty collections.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Highest price: ${{maxOf(model.products, 'price')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -88,6 +92,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Order Statistics</h3>
@@ -96,6 +102,8 @@ doc.Params["model"] = new {
 <p>Average order: ${{round(averageOf(model.orders, 'total'), 2)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -123,6 +131,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Server Performance</h3>
@@ -131,6 +141,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -171,6 +183,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Maximum capacity: {{maxOf(model.locations, 'capacity')}} people</p>
@@ -180,6 +194,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 

@@ -455,6 +455,8 @@ The `<time>` element is perfect for:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = {
@@ -492,6 +494,8 @@ The `<time>` element is perfect for:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -795,6 +799,8 @@ The `<time>` element is perfect for:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.events = [
@@ -819,6 +825,8 @@ The `<time>` element is perfect for:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

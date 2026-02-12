@@ -75,6 +75,8 @@ The `border-top-width` property supports dynamic values through data binding, al
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -96,7 +98,11 @@ The `border-top-width` property supports dynamic values through data binding, al
 
 
 
+
+
 ### Example 2: Dynamic table row separators
+
+
 
 
 
@@ -119,7 +125,11 @@ The `border-top-width` property supports dynamic values through data binding, al
 
 
 
+
+
 ### Example 3: Conditional section dividers
+
+
 
 
 
@@ -141,6 +151,8 @@ The `border-top-width` property supports dynamic values through data binding, al
 </body>
 ```
 {% endraw %}
+
+
 
 
 

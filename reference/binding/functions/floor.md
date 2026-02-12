@@ -59,11 +59,15 @@ The largest integer less than or equal to the value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Base Price: ${{floor(model.price)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Full sets: {{floor(model.items / model.setSize)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,11 +116,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Age: {{floor(model.days / 365)}} years</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -132,6 +144,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.values}}
@@ -139,6 +153,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

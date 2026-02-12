@@ -93,6 +93,8 @@ The `-pdf-li-align` property supports data binding, allowing dynamic control of 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -122,6 +124,8 @@ The `-pdf-li-align` property supports data binding, allowing dynamic control of 
 
 
 
+
+
 **Data context:**
 ```json
 {
@@ -139,6 +143,8 @@ The `-pdf-li-align` property supports data binding, allowing dynamic control of 
 For lists with varying marker widths (1-10, 1-100), right alignment ensures visual consistency. Users can configure this based on their aesthetic preferences.
 
 ### Example 2: Document type-specific alignment
+
+
 
 
 
@@ -161,6 +167,8 @@ For lists with varying marker widths (1-10, 1-100), right alignment ensures visu
 </body>
 ```
 {% endraw %}
+
+
 
 
 
@@ -188,6 +196,8 @@ Different document types can have predefined alignment preferences: center for f
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -207,6 +217,8 @@ Different document types can have predefined alignment preferences: center for f
 </body>
 ```
 {% endraw %}
+
+
 
 
 

@@ -59,11 +59,15 @@ The arithmetic mean of all values. Returns null for empty collections.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Mean temperature: {{round(mean(model.temperatures), 1)}}°F</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,6 +87,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Data Analysis</h3>
@@ -92,6 +98,8 @@ doc.Params["model"] = new {
 <p>Max: {{max(model.values)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -115,6 +123,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Score Distribution</h3>
@@ -125,6 +135,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -147,11 +159,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Mean rating: {{round(mean(collect(model.reviews, 'rating')), 1)}} stars</p>
 ```
 {% endraw %}
+
+
 
 
 

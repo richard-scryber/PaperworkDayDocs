@@ -36,11 +36,13 @@ The `<var>` element serves a dual purpose in Scryber:
 1. **Semantic Markup**: Represents a variable or mathematical expression (rendered in italic by default)
 2. **Data Storage**: Stores values in the document parameters using `data-id` and `data-value` attributes
 
-When a `<var>` element includes both `data-id` and `data-value` attributes, the value is stored in `Document.Params` and can be retrieved anywhere in the document using `{{params.data-id-value}}`.
+When a `<var>` element includes both `data-id` and `data-value` attributes, the value is stored in `Document.Params` and can be retrieved anywhere in the document using `{% raw %}{{params.data-id-value}}{% endraw %}`.
 
 ---
 
 ## Usage
+
+
 
 
 
@@ -59,6 +61,8 @@ When a `<var>` element includes both `data-id` and `data-value` attributes, the 
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -86,11 +90,15 @@ Values are stored during the data binding phase using the `data-id` and `data-va
 
 
 
+
+
 {% raw %}
 ```html
 <var data-id="myVariable" data-value="{{someExpression}}"></var>
 ```
 {% endraw %}
+
+
 
 
 
@@ -100,11 +108,15 @@ Stored values can be retrieved anywhere in the document using the `params` objec
 
 
 
+
+
 {% raw %}
 ```html
 {{params.myVariable}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -135,6 +147,8 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 {% raw %}
 ```html
 <var data-id="username" data-value="{{user.name}}"></var>
@@ -144,7 +158,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 2: Storing Calculated Values
+
+
 
 
 
@@ -162,7 +180,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 3: Using in Repeating Templates
+
+
 
 
 
@@ -193,7 +215,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 4: Counter for Item Numbers
+
+
 
 
 
@@ -210,7 +236,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 5: Storing Date Information
+
+
 
 
 
@@ -226,7 +256,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 6: Page Total Calculations
+
+
 
 
 
@@ -249,7 +283,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 7: Conditional Logic with Stored Values
+
+
 
 
 
@@ -266,7 +304,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 8: Multi-page Document with Consistent Data
+
+
 
 
 
@@ -291,7 +333,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 9: Running Totals Across Sections
+
+
 
 
 
@@ -317,7 +363,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 10: Storing Complex Objects
+
+
 
 
 
@@ -333,7 +383,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 11: Max/Min Value Tracking
+
+
 
 
 
@@ -356,7 +410,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 12: Invoice with Line Item Totals
+
+
 
 
 
@@ -406,7 +464,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 13: Nested Repeating Templates
+
+
 
 
 
@@ -428,7 +490,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 14: Storing Configuration Values
+
+
 
 
 
@@ -448,7 +514,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 15: Visible Content with Storage
+
+
 
 
 
@@ -466,7 +536,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 16: Accumulating Statistics
+
+
 
 
 
@@ -493,7 +567,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 17: Section Headers with Context
+
+
 
 
 
@@ -514,7 +592,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 18: Average Calculations
+
+
 
 
 
@@ -535,7 +617,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 19: Conditional Display Based on Stored Values
+
+
 
 
 
@@ -559,7 +645,11 @@ Values stored in `<var>` elements are available:
 
 
 
+
+
 ### Example 20: Multi-level Totals
+
+
 
 
 
@@ -583,6 +673,8 @@ Values stored in `<var>` elements are available:
 <h2>Grand Total: ${{params.grandTotal}}</h2>
 ```
 {% endraw %}
+
+
 
 
 

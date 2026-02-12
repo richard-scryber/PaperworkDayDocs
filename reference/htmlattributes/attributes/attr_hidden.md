@@ -44,6 +44,8 @@ The `hidden` attribute controls element visibility:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Visible element (no hidden attribute) -->
@@ -58,6 +60,8 @@ The `hidden` attribute controls element visibility:
 </p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -90,6 +94,8 @@ The `hidden` attribute is supported on **all HTML elements** in Scryber, includi
 ## Binding Values
 
 The `hidden` attribute is particularly powerful with data binding for conditional visibility:
+
+
 
 
 
@@ -132,6 +138,8 @@ The `hidden` attribute is particularly powerful with data binding for conditiona
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -204,6 +212,8 @@ Use boolean expressions to control visibility dynamically:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Show if true -->
@@ -225,9 +235,13 @@ Use boolean expressions to control visibility dynamically:
 
 
 
+
+
 ### Hiding Table Rows and Cells
 
 You can conditionally hide table rows, cells, and other table elements:
+
+
 
 
 
@@ -252,11 +266,15 @@ You can conditionally hide table rows, cells, and other table elements:
 
 
 
+
+
 ### Hiding vs Conditional Rendering
 
 There are two approaches to conditional content:
 
 **1. Using `hidden` attribute:**
+
+
 
 
 {% raw %}
@@ -266,6 +284,8 @@ There are two approaches to conditional content:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -305,6 +325,8 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 {% raw %}
 ```html
 <section hidden="{{model.includeDraftSections ? '' : 'hidden'}}">
@@ -317,6 +339,8 @@ You can hide large document sections including all nested content:
 </section>
 ```
 {% endraw %}
+
+
 
 
 
@@ -338,6 +362,8 @@ You can hide large document sections including all nested content:
 ```
 
 ### Conditional Content Based on User Role
+
+
 
 
 
@@ -371,7 +397,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Show/Hide Based on Data Presence
+
+
 
 
 
@@ -399,7 +429,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Conditional Report Sections
+
+
 
 
 
@@ -430,7 +464,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Hiding Table Columns
+
+
 
 
 
@@ -482,7 +520,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Conditional Warning Messages
+
+
 
 
 
@@ -516,7 +558,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Hiding List Items
+
+
 
 
 
@@ -550,7 +596,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Draft vs Final Document
+
+
 
 
 
@@ -587,7 +637,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Conditional Page Sections
+
+
 
 
 
@@ -641,7 +695,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Hiding Sensitive Information
+
+
 
 
 
@@ -681,7 +739,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Conditional Graphics and Images
+
+
 
 
 
@@ -712,7 +774,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Dynamic Form Sections
+
+
 
 
 
@@ -756,7 +822,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Hiding Empty Sections
+
+
 
 
 
@@ -794,7 +864,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Multi-Language Documents
+
+
 
 
 
@@ -826,7 +900,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Conditional Footer Information
+
+
 
 
 
@@ -852,7 +930,11 @@ You can hide large document sections including all nested content:
 
 
 
+
+
 ### Status-Based Content
+
+
 
 
 
@@ -886,6 +968,8 @@ You can hide large document sections including all nested content:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

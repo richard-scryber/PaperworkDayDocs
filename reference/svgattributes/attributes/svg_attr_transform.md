@@ -27,6 +27,8 @@ The `transform` attribute modifies the coordinate system for an element and its 
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Single transformation -->
@@ -45,6 +47,8 @@ The `transform` attribute modifies the coordinate system for an element and its 
 </g>
 ```
 {% endraw %}
+
+
 
 
 
@@ -146,6 +150,8 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { x: 100, y: 50 } -->
@@ -157,7 +163,11 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 
 
 
+
+
 ### Dynamic Rotation
+
+
 
 
 
@@ -172,7 +182,11 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 
 
 
+
+
 ### Dynamic Scaling
+
+
 
 
 
@@ -187,7 +201,11 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 
 
 
+
+
 ### Combined Dynamic Transformations
+
+
 
 
 
@@ -202,7 +220,11 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 
 
 
+
+
 ### Data-Driven Repeated Transformations
+
+
 
 
 
@@ -219,7 +241,11 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 
 
 
+
+
 ### Calculated Transformations
+
+
 
 
 
@@ -234,7 +260,11 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 
 
 
+
+
 ### Conditional Transformations
+
+
 
 
 
@@ -246,6 +276,8 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
       fill="blue"/>
 ```
 {% endraw %}
+
+
 
 
 
@@ -582,6 +614,8 @@ Note that SVG transforms are different from CSS transforms:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { gaugeValue: 75, minValue: 0, maxValue: 100 } -->
@@ -608,7 +642,11 @@ Note that SVG transforms are different from CSS transforms:
 
 
 
+
+
 ### Circular Menu Items
+
+
 
 
 
@@ -637,6 +675,8 @@ Note that SVG transforms are different from CSS transforms:
 
 
 
+
+
 ### Isometric Cube
 
 ```html
@@ -661,6 +701,8 @@ Note that SVG transforms are different from CSS transforms:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { fanRotation: 45 } -->
@@ -682,7 +724,11 @@ Note that SVG transforms are different from CSS transforms:
 
 
 
+
+
 ### Progress Wheel
+
+
 
 
 
@@ -709,7 +755,11 @@ Note that SVG transforms are different from CSS transforms:
 
 
 
+
+
 ### Arrow Pointer
+
+
 
 
 
@@ -737,7 +787,11 @@ Note that SVG transforms are different from CSS transforms:
 
 
 
+
+
 ### Scale Comparison
+
+
 
 
 
@@ -756,6 +810,8 @@ Note that SVG transforms are different from CSS transforms:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

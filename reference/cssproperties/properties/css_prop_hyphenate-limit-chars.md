@@ -103,6 +103,8 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
 
 
 
+
+
 {% raw %}
 ```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
@@ -135,7 +137,11 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
 
 
 
+
+
 ### Example 2: Language-Specific Hyphenation Rules
+
+
 
 
 
@@ -171,7 +177,11 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
 
 
 
+
+
 ### Example 3: Document Quality Settings
+
+
 
 
 
@@ -206,6 +216,8 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
 -->
 ```
 {% endraw %}
+
+
 
 
 

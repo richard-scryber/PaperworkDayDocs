@@ -32,9 +32,11 @@ Calculate the remainder after dividing one number by another.
 ## Syntax
 
 
+{% raw %}
 ``` 
 {{operand1 % operand2}}
  ```
+{% endraw %}
 
 ---
 
@@ -70,6 +72,8 @@ The remainder after dividing the left operand by the right operand.
 ### Even/Odd Detection
 
 
+
+
 {% raw %}
 ```html 
 {{#each model.items}}
@@ -79,6 +83,8 @@ The remainder after dividing the left operand by the right operand.
 {{/each}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -105,6 +111,8 @@ doc.Params["model"] = new {
 ### Alternating Row Colors
 
 
+
+
 {% raw %}
 ```html 
 <table>
@@ -119,7 +127,11 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
+
+
 ### Cycle Through Values
+
+
 
 
 {% raw %}
@@ -135,7 +147,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Check Divisibility
+
+
 
 
 {% raw %}
@@ -147,6 +163,8 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -166,6 +184,8 @@ doc.Params["model"] = new {
 ### Grid Layout Column Wrapping
 
 
+
+
 {% raw %}
 ```html 
 {{#each model.images}}
@@ -177,6 +197,8 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
+
+
 
 
 

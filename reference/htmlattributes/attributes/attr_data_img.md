@@ -47,6 +47,8 @@ These attributes provide programmatic image loading:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Bind to ImageData object -->
@@ -73,6 +75,8 @@ These attributes provide programmatic image loading:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -89,6 +93,8 @@ These attributes are used exclusively with:
 These attributes are designed specifically for data binding scenarios:
 
 ### data-img Binding
+
+
 
 
 
@@ -109,7 +115,11 @@ These attributes are designed specifically for data binding scenarios:
 
 
 
+
+
 ### data-img-data and data-img-type Binding
+
+
 
 
 
@@ -143,6 +153,8 @@ These attributes are designed specifically for data binding scenarios:
      width="200pt" height="150pt" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -203,6 +215,8 @@ When multiple image source attributes are present:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- data-img-data takes precedence -->
@@ -212,6 +226,8 @@ When multiple image source attributes are present:
      width="200pt" height="150pt" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -226,6 +242,8 @@ The `data-img-type` attribute accepts standard image MIME types:
 | `image/gif` | GIF | Supports transparency and animation |
 | `image/bmp` | BMP | Uncompressed bitmap (may work) |
 | `image/tiff` | TIFF | High-quality images (may work) |
+
+
 
 
 
@@ -250,6 +268,8 @@ The `data-img-type` attribute accepts standard image MIME types:
 
 
 
+
+
 ### Binary Data Sources
 
 Common sources for binary image data:
@@ -260,6 +280,8 @@ Common sources for binary image data:
 4. **Dynamic Generation**: Images created at runtime (charts, QR codes)
 5. **Memory Caching**: Pre-loaded images cached in memory
 6. **Image Processing**: Modified/transformed images
+
+
 
 
 
@@ -284,11 +306,15 @@ Common sources for binary image data:
 
 
 
+
+
 ### Error Handling
 
 When binary image data cannot be loaded:
 
 **Missing MIME Type**:
+
+
 
 
 {% raw %}
@@ -297,6 +323,8 @@ When binary image data cannot be loaded:
 <img data-img-data="{{model.bytes}}" width="200pt" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -310,6 +338,8 @@ When binary image data cannot be loaded:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Proper error handling -->
@@ -320,6 +350,8 @@ When binary image data cannot be loaded:
      width="150pt" height="150pt" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -342,6 +374,8 @@ Binary image loading:
 **Best Practices**:
 
 
+
+
 {% raw %}
 ```html
 <!-- Good: Small images from database -->
@@ -354,6 +388,8 @@ Binary image loading:
 <img src="{{model.largeImagePath}}" width="600pt" height="400pt" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -382,6 +418,8 @@ model.ImageData = imageData;
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Use in template -->
@@ -391,9 +429,13 @@ model.ImageData = imageData;
 
 
 
+
+
 ### Combining with Standard Attributes
 
 Binary image attributes work with all standard image attributes:
+
+
 
 
 
@@ -414,9 +456,13 @@ Binary image attributes work with all standard image attributes:
 
 
 
+
+
 ### Dynamic MIME Type Determination
 
 MIME type can be determined at runtime:
+
+
 
 
 
@@ -433,6 +479,8 @@ MIME type can be determined at runtime:
 
 
 
+
+
 ### Base64 Data URIs vs Binary Data
 
 Comparison of approaches:
@@ -446,6 +494,8 @@ Comparison of approaches:
 **Binary data with data-img-data**:
 
 
+
+
 {% raw %}
 ```html
 <img data-img-data="{{model.bytes}}"
@@ -453,6 +503,8 @@ Comparison of approaches:
      width="100pt" height="100pt" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -473,6 +525,8 @@ When handling binary image data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Validated and size-limited image -->
@@ -483,6 +537,8 @@ When handling binary image data:
      data-allow-missing-images="true" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -503,6 +559,8 @@ If no factory matches the MIME type, an error is raised.
 ## Examples
 
 ### Basic Binary Image Loading
+
+
 
 
 
@@ -527,7 +585,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Database-Driven Images
+
+
 
 
 
@@ -550,7 +612,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Product Images from Database
+
+
 
 
 
@@ -586,7 +652,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Photo Gallery from API
+
+
 
 
 
@@ -618,7 +688,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Dynamic QR Code Generation
+
+
 
 
 
@@ -649,7 +723,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Employee Badge with Photo
+
+
 
 
 
@@ -681,7 +759,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Chart Images from Rendering Service
+
+
 
 
 
@@ -715,7 +797,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Image with Fallback Handling
+
+
 
 
 
@@ -740,7 +826,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Medical Imaging Report
+
+
 
 
 
@@ -775,7 +865,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Signature Images from Database
+
+
 
 
 
@@ -817,7 +911,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Real Estate Listing with Property Photos
+
+
 
 
 
@@ -860,7 +958,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Dynamic Thumbnail Generation
+
+
 
 
 
@@ -896,7 +998,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Barcode Labels
+
+
 
 
 
@@ -938,7 +1044,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Image Comparison Layout
+
+
 
 
 
@@ -979,7 +1089,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### ID Card with Embedded Photo
+
+
 
 
 
@@ -1024,7 +1138,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Image Grid from API
+
+
 
 
 
@@ -1062,7 +1180,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Dynamic Logo Variations
+
+
 
 
 
@@ -1111,7 +1233,11 @@ If no factory matches the MIME type, an error is raised.
 
 
 
+
+
 ### Certificate with Seal Image
+
+
 
 
 
@@ -1153,6 +1279,8 @@ If no factory matches the MIME type, an error is raised.
 </div>
 ```
 {% endraw %}
+
+
 
 
 

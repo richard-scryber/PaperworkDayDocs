@@ -32,9 +32,11 @@ Combine two boolean expressions. Returns true only if both operands are true.
 ## Syntax
 
 
+{% raw %}
 ```
 {{condition1 && condition2}}
 ```
+{% endraw %}
 
 
 ---
@@ -81,6 +83,7 @@ Evaluated before: `||`
 
 ### Driving Eligibility
 
+{% raw %}
 ```
 
 {{#if model.age >= 18 && model.hasLicense}}
@@ -99,6 +102,7 @@ Evaluated before: `||`
   </div>
 {{/if}} 
 ```
+{% endraw %}
 
 
 **Data:**
@@ -118,6 +122,7 @@ doc.Params["model"] = new {
 
 ### Multiple Conditions
 
+{% raw %}
 ```
 
 {{#if model.isActive && model.isPaid &amp;&amp; model.isVerified}}
@@ -136,10 +141,12 @@ doc.Params["model"] = new {
   </div>
 {{/if}} 
 ```
+{% endraw %}
 
 
 ### Range Check
 
+{% raw %}
 ```
 
 {{#if model.age >= 13 &amp;&amp; model.age < 20}}
@@ -150,6 +157,7 @@ doc.Params["model"] = new {
   <span class="age-group">Other</span>
 {{/if}} 
 ```
+{% endraw %}
 
 
 **Data:**
@@ -166,6 +174,7 @@ doc.Params["model"] = new {
 
 ### Stock and Price Validation
 
+{% raw %}
 ```
 
 {{#each model.products}}
@@ -179,6 +188,7 @@ doc.Params["model"] = new {
   {{/if}}
 {{/each}} 
 ```
+{% endraw %}
 
 
 **Data:**

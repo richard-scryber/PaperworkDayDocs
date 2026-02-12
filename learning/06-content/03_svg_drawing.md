@@ -243,6 +243,8 @@ The `<path>` element is the most powerful SVG shape.
 
 
 
+
+
 {% raw %}
 ```html
 <svg width="400" height="300">
@@ -266,7 +268,11 @@ The `<path>` element is the most powerful SVG shape.
 
 
 
+
+
 ### Calculated Positions
+
+
 
 
 
@@ -296,11 +302,15 @@ The `<path>` element is the most powerful SVG shape.
 
 
 
+
+
 ---
 
 ## Practical Examples
 
 ### Example 1: Bar Chart
+
+
 
 
 
@@ -426,7 +436,11 @@ The `<path>` element is the most powerful SVG shape.
 
 
 
+
+
 ### Example 2: Line Chart
+
+
 
 
 
@@ -553,6 +567,8 @@ The `<path>` element is the most powerful SVG shape.
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -718,6 +734,8 @@ Create a chart comparing 2-3 data series:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Calculate positions dynamically -->
@@ -730,6 +748,8 @@ Create a chart comparing 2-3 data series:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

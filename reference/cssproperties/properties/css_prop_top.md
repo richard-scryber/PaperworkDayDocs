@@ -94,6 +94,8 @@ The `top` property supports data binding, enabling dynamic vertical positioning 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -124,6 +126,8 @@ The `top` property supports data binding, enabling dynamic vertical positioning 
 
 
 
+
+
 Data model:
 ```json
 {
@@ -142,6 +146,8 @@ Data model:
 ```
 
 ### Example 2: Configurable stamp vertical positioning
+
+
 
 
 
@@ -174,6 +180,8 @@ Data model:
 
 
 
+
+
 Data model:
 ```json
 {
@@ -191,6 +199,8 @@ Data model:
 ```
 
 ### Example 3: Data-driven watermark placement
+
+
 
 
 
@@ -217,6 +227,8 @@ Data model:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

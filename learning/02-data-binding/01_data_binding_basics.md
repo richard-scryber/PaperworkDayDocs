@@ -18,7 +18,7 @@ Learn the fundamentals of data binding to create dynamic, data-driven PDF docume
 ## Learning Objectives
 
 By the end of this article, you'll be able to:
-- Understand the `{{expression}}` syntax
+- Understand the `{% raw %}{{expression}}{% endraw %}` syntax
 - Bind data to templates
 - Access object properties and nested data
 - Pass data from C# to templates
@@ -38,11 +38,15 @@ Data binding connects your data to template placeholders, allowing you to genera
 **Dynamic Template with Data Binding:**
 
 
+
+
 {% raw %}
 ```html
 <p>Hello, {{model.name}}!</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -64,6 +68,8 @@ doc.Params["model"] = new { name = "John" };
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Simple property -->
@@ -79,7 +85,11 @@ doc.Params["model"] = new { name = "John" };
 
 
 
+
+
 ### Multiple Bindings
+
+
 
 
 
@@ -91,6 +101,8 @@ doc.Params["model"] = new { name = "John" };
 <p>{{content}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -117,6 +129,8 @@ doc.SaveAsPDF("output.pdf");
 **Template:**
 
 
+
+
 {% raw %}
 ```html
 <h1>{{model.name}}</h1>
@@ -124,6 +138,8 @@ doc.SaveAsPDF("output.pdf");
 <p>Age: {{model.age}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -163,6 +179,8 @@ doc.Params["users"] = users;
 
 
 
+
+
 {% raw %}
 ```html
 {{#each users}}
@@ -173,11 +191,15 @@ doc.Params["users"] = users;
 
 
 
+
+
 ---
 
 ## Accessing Properties
 
 ### Simple Properties
+
+
 
 
 
@@ -191,6 +213,8 @@ doc.Params["users"] = users;
 
 
 
+
+
 ```csharp
 doc.Params["firstName"] = "John";
 doc.Params["lastName"] = "Doe";
@@ -201,6 +225,8 @@ doc.Params["age"] = 30;
 
 
 
+
+
 {% raw %}
 ```html
 <p>{{customer.name}}</p>
@@ -208,6 +234,8 @@ doc.Params["age"] = 30;
 <p>{{customer.phone}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -224,6 +252,8 @@ doc.Params["customer"] = new
 
 
 
+
+
 {% raw %}
 ```html
 <p>{{user.profile.firstName}}</p>
@@ -232,6 +262,8 @@ doc.Params["customer"] = new
 <p>{{user.address.city}}, {{user.address.state}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -275,6 +307,8 @@ doc.SaveAsPDF("business-card.pdf");
 ```
 
 **Template (business-card.html):**
+
+
 
 
 {% raw %}
@@ -330,6 +364,8 @@ doc.SaveAsPDF("business-card.pdf");
 
 
 
+
+
 ### Example 2: Simple Invoice
 
 **C# Code:**
@@ -355,6 +391,8 @@ doc.SaveAsPDF("invoice.pdf");
 ```
 
 **Template (invoice.html):**
+
+
 
 
 {% raw %}
@@ -450,6 +488,8 @@ doc.SaveAsPDF("invoice.pdf");
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -559,6 +599,8 @@ doc.Params["model"] = data;
 
 
 
+
+
 {% raw %}
 ```html
 <!-- If property is null, nothing is rendered -->
@@ -578,7 +620,11 @@ doc.Params["model"] = data;
 
 
 
+
+
 ### Safe Navigation
+
+
 
 
 
@@ -594,6 +640,8 @@ doc.Params["model"] = new
 // {{model.user.name}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -635,12 +683,16 @@ Pass an array of products from C#.
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Template uses: {{model.Name}} -->
 <p>{{model.Name}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -660,11 +712,17 @@ doc.Params["model"] = new { Name = "John" };
 
 
 
+
+
 {% raw %}
 ```html
 <p>{{model.name}}</p>
 ```
 {% endraw %}
+
+
+
+
 
 
 
@@ -680,6 +738,8 @@ doc.SaveAsPDF("output.pdf");
 
 
 
+
+
 ✅ **Solution:** Always pass data
 
 ```csharp
@@ -690,11 +750,15 @@ doc.Params["model"] = data;
 
 
 
+
+
 {% raw %}
 ```html
 <p>{{user.name}}</p>
 ```
 {% endraw %}
+
+
 
 
 

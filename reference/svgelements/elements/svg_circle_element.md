@@ -72,9 +72,11 @@ The `<circle>` element creates a circular shape defined by:
 
 ## Data Binding
 
-The `<circle>` element supports dynamic attribute values using data binding expressions with `{{expression}}` syntax.
+The `<circle>` element supports dynamic attribute values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Size and Color
+
+
 
 
 
@@ -90,7 +92,11 @@ The `<circle>` element supports dynamic attribute values using data binding expr
 
 
 
+
+
 ### Example 2: Status Indicators
+
+
 
 
 
@@ -106,7 +112,11 @@ The `<circle>` element supports dynamic attribute values using data binding expr
 
 
 
+
+
 ### Example 3: Bubble Chart with Template
+
+
 
 
 
@@ -126,6 +136,8 @@ The `<circle>` element supports dynamic attribute values using data binding expr
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -365,6 +377,8 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { points: [
@@ -384,7 +398,11 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 
 
 
+
+
 ### Dynamic Status Dots
+
+
 
 
 
@@ -406,7 +424,11 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 
 
 
+
+
 ### Percentage Indicator
+
+
 
 
 
@@ -425,6 +447,8 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

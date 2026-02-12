@@ -59,11 +59,15 @@ The hour in 24-hour format as a number from 0 (midnight) to 23 (11 PM).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Hour: {{hourOf(model.time)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,6 +87,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Status:
@@ -94,6 +100,8 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -113,6 +121,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Shift:
@@ -126,6 +136,8 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -145,6 +157,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.transactions}}
@@ -156,6 +170,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

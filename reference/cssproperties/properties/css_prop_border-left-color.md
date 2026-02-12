@@ -78,6 +78,8 @@ The `border-left-color` property supports dynamic values through data binding, a
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -98,6 +100,8 @@ The `border-left-color` property supports dynamic values through data binding, a
 
 
 
+
+
 Data context:
 ```json
 {
@@ -111,6 +115,8 @@ Data context:
 ```
 
 ### Example 2: Status-based accent bars
+
+
 
 
 
@@ -136,7 +142,11 @@ Data context:
 
 
 
+
+
 ### Example 3: Category indicators
+
+
 
 
 
@@ -158,6 +168,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

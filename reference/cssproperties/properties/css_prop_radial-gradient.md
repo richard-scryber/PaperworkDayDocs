@@ -160,6 +160,8 @@ Radial gradients support dynamic data binding for personalized backgrounds:
 
 
 
+
+
 {% raw %}
 ```html
 <div style="width: 200pt; height: 200pt; border-radius: 100pt;
@@ -170,6 +172,8 @@ Radial gradients support dynamic data binding for personalized backgrounds:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

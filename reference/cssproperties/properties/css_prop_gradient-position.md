@@ -97,6 +97,8 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 
 
 
+
+
 {% raw %}
 ```html
 <body>
@@ -120,7 +122,11 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 
 
 
+
+
 ### Example 2: Dynamic angle gradients based on data
+
+
 
 
 
@@ -147,7 +153,11 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 
 
 
+
+
 ### Example 3: Conditional gradient positions for different layouts
+
+
 
 
 
@@ -173,6 +183,8 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 </body>
 ```
 {% endraw %}
+
+
 
 
 

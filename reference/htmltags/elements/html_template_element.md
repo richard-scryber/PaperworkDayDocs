@@ -43,6 +43,8 @@ The `<template>` element creates repeating content that:
 
 
 
+
+
 {% raw %}
 ```html
 <template data-bind="{{model.items}}">
@@ -53,6 +55,8 @@ The `<template>` element creates repeating content that:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -89,7 +93,9 @@ The `<template>` element creates repeating content that:
 
 ### Current Item Reference
 
-Within a template, use `{{.}}` to reference the current item, or `{{.propertyName}}` to access properties:
+Within a template, use `{% raw %}{{.}}{% endraw %}` to reference the current item, or `{% raw %}{{.propertyName}}{% endraw %}` to access properties:
+
+
 
 
 
@@ -105,9 +111,13 @@ Within a template, use `{{.}}` to reference the current item, or `{{.propertyNam
 
 
 
+
+
 ### Parent Context Access
 
 Access parent context using path notation:
+
+
 
 
 
@@ -123,9 +133,13 @@ Access parent context using path notation:
 
 
 
+
+
 ### Index and Count
 
 The template automatically provides context about iteration:
+
+
 
 
 
@@ -136,6 +150,8 @@ The template automatically provides context about iteration:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -186,6 +202,8 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { products: [{name: "Widget", price: 19.99}, {name: "Gadget", price: 29.99}] } -->
@@ -203,7 +221,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Table Row Generation
+
+
 
 
 
@@ -232,7 +254,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Nested Templates for Hierarchical Data
+
+
 
 
 
@@ -259,7 +285,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Pagination with Start and Max
+
+
 
 
 
@@ -276,7 +306,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Step Iteration (Every Other Item)
+
+
 
 
 
@@ -300,7 +334,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Conditional Rendering with Expressions
+
+
 
 
 
@@ -316,7 +354,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Complex Nested Template with Totals
+
+
 
 
 
@@ -359,7 +401,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Multi-Level Nested Categories
+
+
 
 
 
@@ -392,7 +438,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Inline Content Template
+
+
 
 
 
@@ -407,7 +457,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Styled Cards with Alternating Colors
+
+
 
 
 
@@ -441,7 +495,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Directory Listing with File Types
+
+
 
 
 
@@ -466,7 +524,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Chart Data Labels
+
+
 
 
 
@@ -497,7 +559,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Timeline with Date Grouping
+
+
 
 
 
@@ -521,7 +587,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Performance-Optimized Large Dataset
+
+
 
 
 
@@ -540,7 +610,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Conditional Sections
+
+
 
 
 
@@ -563,7 +637,11 @@ If the bound collection is empty or null, the template generates no output witho
 
 
 
+
+
 ### Master-Detail Report
+
+
 
 
 
@@ -635,6 +713,8 @@ If the bound collection is empty or null, the template generates no output witho
 </template>
 ```
 {% endraw %}
+
+
 
 
 

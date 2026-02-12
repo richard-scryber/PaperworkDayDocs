@@ -84,6 +84,8 @@ The `id` attribute supports data binding with dynamic values:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Dynamic ID from data model -->
@@ -110,6 +112,8 @@ The `id` attribute supports data binding with dynamic values:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -403,6 +407,8 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { sections: [{ id: "intro", title: "Introduction" }, ...] } -->
@@ -424,7 +430,11 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
 
 
 
+
+
 ### Unique IDs in Repeated Content
+
+
 
 
 
@@ -441,6 +451,8 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -563,6 +575,8 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { user: { role: "admin", userId: 123 } } -->
@@ -575,6 +589,8 @@ This creates a navigable bookmark in the PDF outline panel that links to the ele
 <!-- Results in: <div id="admin-dashboard-123"> -->
 ```
 {% endraw %}
+
+
 
 
 

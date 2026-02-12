@@ -32,9 +32,11 @@ Multiply two numeric values together.
 ## Syntax
 
 
+{% raw %}
 ``` 
 {{operand1 * operand2}}
 ```
+{% endraw %}
 
 
 ---
@@ -71,11 +73,15 @@ The product of the left and right operands.
 ### Line Item Total
 
 
+
+
 {% raw %}
 ```html 
 <p>Total: ${{format(model.quantity * model.price, '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -96,11 +102,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 <p>Area: {{model.width * model.height}} sq ft</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -120,6 +130,8 @@ doc.Params["model"] = new {
 ### Tax Calculation
 
 
+
+
 {% raw %}
 ```html 
 <p>Subtotal: ${{format(model.price, '0.00')}}</p>
@@ -127,6 +139,8 @@ doc.Params["model"] = new {
 <p>Total: ${{format(model.price * (1 + model.taxRate), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -149,6 +163,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 <p>{{format(model.score / model.total * 100, '0.0')}}% correct</p>
@@ -157,7 +173,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Scaling Values
+
+
 
 
 {% raw %}
@@ -168,6 +188,8 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
+
+
 
 
 

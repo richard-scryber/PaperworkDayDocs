@@ -45,6 +45,8 @@ The `alt` attribute provides alternative text that:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Descriptive alt text -->
@@ -66,6 +68,8 @@ The `alt` attribute provides alternative text that:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -80,6 +84,8 @@ The `alt` attribute is used with:
 ## Binding Values
 
 The `alt` attribute supports data binding for dynamic descriptions:
+
+
 
 
 
@@ -109,6 +115,8 @@ The `alt` attribute supports data binding for dynamic descriptions:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -421,6 +429,8 @@ For optimal accessibility:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { team: [
@@ -443,6 +453,8 @@ For optimal accessibility:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -580,6 +592,8 @@ For optimal accessibility:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { photos: [
@@ -605,7 +619,11 @@ For optimal accessibility:
 
 
 
+
+
 ### Product Catalog with Detailed Alt
+
+
 
 
 
@@ -627,6 +645,8 @@ For optimal accessibility:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -718,6 +738,8 @@ For optimal accessibility:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { user: { name: "Alice", hasPhoto: true, role: "Manager" } } -->
@@ -727,6 +749,8 @@ For optimal accessibility:
      alt="{{model.user.hasPhoto ? 'Photo of ' + model.user.name + ', ' + model.user.role : 'Placeholder photo'}}" />
 ```
 {% endraw %}
+
+
 
 
 

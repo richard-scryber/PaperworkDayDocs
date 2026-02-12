@@ -44,6 +44,8 @@ The `<input>` element creates form fields that:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Basic text input with value -->
@@ -56,6 +58,8 @@ The `<input>` element creates form fields that:
 <input type="checkbox" value="checked" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -176,6 +180,8 @@ Inputs support dynamic value binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { name: "John Doe", email: "john@example.com" } -->
@@ -186,6 +192,8 @@ Inputs support dynamic value binding:
 <input type="checkbox" value="{{model.isActive ? 'checked' : ''}}" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -366,6 +374,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -402,6 +412,8 @@ In the Scryber codebase:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -892,6 +904,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -966,7 +980,11 @@ In the Scryber codebase:
 
 
 
+
+
 ### Form Template with Repeating Fields
+
+
 
 
 
@@ -1011,6 +1029,8 @@ In the Scryber codebase:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

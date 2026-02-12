@@ -156,6 +156,8 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
 
 
 
+
+
 {% raw %}
 ```html
 <frameset>
@@ -176,7 +178,11 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
 
 
 
+
+
 **Example: Header on first page only**
+
+
 
 
 
@@ -196,6 +202,8 @@ When a frame has both a source file (typically a PDF) and inner content, the inn
 </frameset>
 ```
 {% endraw %}
+
+
 
 
 
@@ -237,6 +245,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 {% raw %}
 ```html
 <frameset>
@@ -259,6 +269,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 </frameset>
 ```
 {% endraw %}
+
+
 
 
 
@@ -297,6 +309,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 {% raw %}
 ```html
 <frameset>
@@ -332,7 +346,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Invoice with Letterhead
+
+
 
 
 
@@ -382,7 +400,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Form Filling
+
+
 
 
 
@@ -420,6 +442,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Multi-Page Overlay
 
 ```html
@@ -441,6 +465,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 ```
 
 ### Conditional Frame Inclusion
+
+
 
 
 
@@ -467,7 +493,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Report with Executive Summary
+
+
 
 
 
@@ -493,7 +523,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Contract Assembly
+
+
 
 
 
@@ -535,6 +569,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Watermarking Existing PDF
 
 ```html
@@ -560,6 +596,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 {% raw %}
 ```html
 <frameset>
@@ -571,7 +609,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Multi-Language Documents
+
+
 
 
 
@@ -596,7 +638,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Medical Records with Privacy Notice
+
+
 
 
 
@@ -636,6 +682,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Paginated Report Assembly
 
 ```html
@@ -661,6 +709,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 ```
 
 ### Ticket or Badge Generation
+
+
 
 
 
@@ -718,6 +768,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: Watermark on All Pages
 
 ```html
@@ -741,6 +793,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 ### Overlay Repeat: Page Numbers on All Pages
+
+
 
 
 
@@ -769,7 +823,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: First Page Header
+
+
 
 
 
@@ -798,7 +856,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: Last Page Footer
+
+
 
 
 
@@ -837,7 +899,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: Conditional Watermark
+
+
 
 
 
@@ -877,7 +943,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: Bates Numbering
+
+
 
 
 
@@ -904,7 +974,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: Dynamic Headers and Footers
+
+
 
 
 
@@ -962,7 +1036,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: First and Last Page Special Treatment
+
+
 
 
 
@@ -1012,7 +1090,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: Data-Bound Conditional Control
+
+
 
 
 
@@ -1038,7 +1120,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: Dynamic Selection Based on Document Type
+
+
 
 
 
@@ -1067,7 +1153,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: User Preference Controlled
+
+
 
 
 
@@ -1110,7 +1200,11 @@ Frame content is loaded during the data binding phase and may use async operatio
 
 
 
+
+
 ### Overlay Repeat: Complex Conditional Logic
+
+
 
 
 
@@ -1157,6 +1251,8 @@ Frame content is loaded during the data binding phase and may use async operatio
 </frameset>
 ```
 {% endraw %}
+
+
 
 
 

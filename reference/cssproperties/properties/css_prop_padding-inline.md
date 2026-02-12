@@ -95,6 +95,8 @@ The `padding-inline` property supports dynamic values through data binding, enab
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -117,6 +119,8 @@ The `padding-inline` property supports dynamic values through data binding, enab
 
 
 
+
+
 Data context:
 ```json
 {
@@ -129,6 +133,8 @@ Data context:
 ```
 
 ### Example 2: Responsive invoice layout with data-driven padding
+
+
 
 
 
@@ -159,6 +165,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -173,6 +181,8 @@ Data context:
 ```
 
 ### Example 3: Form fields with variable padding
+
+
 
 
 
@@ -201,6 +211,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

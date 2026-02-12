@@ -65,9 +65,11 @@ The `ry` attribute is supported on the following SVG elements:
 
 ## Data Binding
 
-The `ry` attribute supports dynamic values using data binding expressions with `{{expression}}` syntax.
+The `ry` attribute supports dynamic values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Ellipse Height
+
+
 
 
 
@@ -84,7 +86,11 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 ### Example 2: Adaptive Corner Rounding
+
+
 
 
 
@@ -102,7 +108,11 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 ### Example 3: Variable Height Ellipses
+
+
 
 
 
@@ -122,6 +132,8 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -411,6 +423,8 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { badges: [
@@ -428,6 +442,8 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

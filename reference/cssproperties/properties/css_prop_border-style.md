@@ -93,6 +93,8 @@ The `border-style` property supports dynamic values through data binding, allowi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -114,6 +116,8 @@ The `border-style` property supports dynamic values through data binding, allowi
 
 
 
+
+
 Data context:
 ```json
 {
@@ -126,6 +130,8 @@ Data context:
 ```
 
 ### Example 2: Conditional border patterns
+
+
 
 
 
@@ -151,7 +157,11 @@ Data context:
 
 
 
+
+
 ### Example 3: Alert severity styles
+
+
 
 
 
@@ -171,6 +181,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

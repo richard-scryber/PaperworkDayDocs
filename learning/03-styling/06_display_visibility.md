@@ -206,6 +206,8 @@ Control element visibility based on data.
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Show only if condition is true -->
@@ -233,7 +235,11 @@ Control element visibility based on data.
 
 
 
+
+
 ### Using Inline Conditionals with display
+
+
 
 
 
@@ -252,11 +258,15 @@ Control element visibility based on data.
 
 
 
+
+
 ---
 
 ## Practical Examples
 
 ### Example 1: Conditional Sections
+
+
 
 
 
@@ -345,6 +355,8 @@ Control element visibility based on data.
 </html>
 ```
 {% endraw %}
+
+
 
 
 
@@ -632,6 +644,8 @@ Create a layout with:
 
 
 
+
+
 {% raw %}
 ```html
 {{#if model.showSection}}
@@ -641,7 +655,11 @@ Create a layout with:
 {% endraw %}
 
 
+
+
 ✅ **Solution:** Always close blocks
+
+
 
 
 
@@ -652,6 +670,8 @@ Create a layout with:
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 

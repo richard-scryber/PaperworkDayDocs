@@ -51,6 +51,8 @@ The `data-content` attribute accepts a string value containing HTML/XHTML markup
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Simple text content -->
@@ -66,6 +68,8 @@ The `data-content` attribute accepts a string value containing HTML/XHTML markup
 
 
 
+
+
 ### Content Actions
 
 The `data-content-action` attribute controls how the content is inserted:
@@ -75,6 +79,8 @@ The `data-content-action` attribute controls how the content is inserted:
 | `append` | Add after existing content | No (except for VisualComponent) |
 | `prepend` | Add before existing content | No |
 | `replace` | Replace all existing content | Yes (for most components) |
+
+
 
 
 
@@ -89,6 +95,8 @@ The `data-content-action` attribute controls how the content is inserted:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -126,6 +134,8 @@ The `data-content` attribute value is evaluated during data binding, supporting:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Direct property binding -->
@@ -144,9 +154,13 @@ The `data-content` attribute value is evaluated during data binding, supporting:
 
 
 
+
+
 ### Content Type Specification
 
 Use `data-content-type` to specify the MIME type of the content:
+
+
 
 
 
@@ -163,6 +177,8 @@ Use `data-content-type` to specify the MIME type of the content:
 <div data-content="{{model.plainText}}" data-content-type="text/plain"></div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -257,6 +273,8 @@ Replace label text with bound data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { userName: "John Smith" } -->
@@ -268,9 +286,13 @@ Replace label text with bound data:
 
 
 
+
+
 ### 2. Dynamic Formatted Text
 
 Generate formatted content from data:
+
+
 
 
 
@@ -287,9 +309,13 @@ Generate formatted content from data:
 
 
 
+
+
 ### 3. Conditional Content Display
 
 Show different content based on conditions:
+
+
 
 
 
@@ -306,9 +332,13 @@ Show different content based on conditions:
 
 
 
+
+
 ### 4. Dynamic HTML Content in Div
 
 Insert formatted HTML markup:
+
+
 
 
 
@@ -323,9 +353,13 @@ Insert formatted HTML markup:
 
 
 
+
+
 ### 5. Inline Template Content
 
 Define template content inline without nested elements:
+
+
 
 
 
@@ -344,9 +378,13 @@ Define template content inline without nested elements:
 
 
 
+
+
 ### 6. Appending Dynamic Content
 
 Add content after existing elements:
+
+
 
 
 
@@ -362,9 +400,13 @@ Add content after existing elements:
 
 
 
+
+
 ### 7. Prepending Header Content
 
 Add content before existing elements:
+
+
 
 
 
@@ -380,9 +422,13 @@ Add content before existing elements:
 
 
 
+
+
 ### 8. Complex Multi-Line HTML Content
 
 Generate complex markup structure:
+
+
 
 
 
@@ -402,9 +448,13 @@ Generate complex markup structure:
 
 
 
+
+
 ### 9. Dynamic Table Content Generation
 
 Create table structure dynamically:
+
+
 
 
 
@@ -431,9 +481,13 @@ Create table structure dynamically:
 
 
 
+
+
 ### 10. Conditional Section Inclusion
 
 Include entire sections conditionally:
+
+
 
 
 
@@ -449,9 +503,13 @@ Include entire sections conditionally:
 
 
 
+
+
 ### 11. List Generation with Dynamic Styling
 
 Create styled list items:
+
+
 
 
 
@@ -468,9 +526,13 @@ Create styled list items:
 
 
 
+
+
 ### 12. Placeholder with Fallback Content
 
 Show dynamic content or fallback:
+
+
 
 
 
@@ -487,9 +549,13 @@ Show dynamic content or fallback:
 
 
 
+
+
 ### 13. Frame with Dynamic Document Content
 
 Assemble documents dynamically:
+
+
 
 
 
@@ -508,9 +574,13 @@ Assemble documents dynamically:
 
 
 
+
+
 ### 14. Localized Content Injection
 
 Insert locale-specific content:
+
+
 
 
 
@@ -527,9 +597,13 @@ Insert locale-specific content:
 
 
 
+
+
 ### 15. Rich Text with Embedded Bindings
 
 Create complex formatted content with multiple bindings:
+
+
 
 
 
@@ -551,9 +625,13 @@ Create complex formatted content with multiple bindings:
 
 
 
+
+
 ### 16. Template with Alternate Content Definition
 
 Define template behavior inline:
+
+
 
 
 
@@ -569,6 +647,8 @@ Define template behavior inline:
 <!-- Type A items get blue background, Type B get purple -->
 ```
 {% endraw %}
+
+
 
 
 

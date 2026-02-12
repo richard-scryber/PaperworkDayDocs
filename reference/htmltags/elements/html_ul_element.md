@@ -333,6 +333,8 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Template with model.items = ["Apple", "Banana", "Cherry"] -->
@@ -354,7 +356,11 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
 
 
 
+
+
 ### Complex Data Binding Example
+
+
 
 
 
@@ -375,6 +381,8 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
 </ul>
 ```
 {% endraw %}
+
+
 
 
 
@@ -477,6 +485,8 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Template with model.showDetails = true -->
@@ -489,6 +499,8 @@ Unordered lists can contain nested lists (either `<ul>` or `<ol>`):
 </ul>
 ```
 {% endraw %}
+
+
 
 
 

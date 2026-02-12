@@ -254,6 +254,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Bind image source -->
@@ -278,11 +280,15 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ---
 
 ## Practical Examples
 
 ### Example 1: Product Catalog
+
+
 
 
 
@@ -392,7 +398,11 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ### Example 2: Report with Charts
+
+
 
 
 
@@ -582,6 +592,8 @@ By the end of this article, you'll be able to:
 </html>
 ```
 {% endraw %}
+
+
 
 
 

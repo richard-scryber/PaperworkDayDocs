@@ -96,6 +96,8 @@ The `stroke-opacity` property can be dynamically set using data binding expressi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -130,6 +132,8 @@ The `stroke-opacity` property can be dynamically set using data binding expressi
 
 
 
+
+
 With model data:
 ```json
 {
@@ -147,6 +151,8 @@ With model data:
 ```
 
 ### Example 2: Conditional emphasis based on importance
+
+
 
 
 
@@ -176,7 +182,11 @@ With model data:
 
 
 
+
+
 ### Example 3: Data quality indicators
+
+
 
 
 
@@ -203,6 +213,8 @@ With model data:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

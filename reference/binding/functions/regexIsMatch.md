@@ -60,6 +60,8 @@ regexIsMatch(str, pattern)
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if regexIsMatch(model.email, '^[^@]+@[^@]+\\.[^@]+$')}}
@@ -69,6 +71,8 @@ regexIsMatch(str, pattern)
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -88,6 +92,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if regexIsMatch(model.phone, '^\\d{3}-\\d{3}-\\d{4}$')}}
@@ -97,6 +103,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -113,6 +121,8 @@ doc.Params["model"] = new {
 ```
 
 ### Postal Code Validation
+
+
 
 
 
@@ -133,7 +143,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Contains Digits
+
+
 
 
 
@@ -149,7 +163,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Alphanumeric Check
+
+
 
 
 
@@ -162,6 +180,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 

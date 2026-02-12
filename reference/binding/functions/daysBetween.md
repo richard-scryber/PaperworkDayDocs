@@ -60,11 +60,15 @@ The number of days between the two dates. Positive if endDate is after startDate
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Days until launch: {{daysBetween(model.today, model.launchDate)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,6 +89,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Project Timeline</h3>
@@ -93,6 +99,8 @@ doc.Params["model"] = new {
 <p>Duration: {{daysBetween(model.startDate, model.endDate)}} days</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -116,6 +124,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.tasks}}
@@ -129,6 +139,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

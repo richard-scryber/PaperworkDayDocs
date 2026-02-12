@@ -133,9 +133,11 @@ The `d` attribute uses a mini-language of commands and coordinates:
 
 ## Data Binding
 
-The `<path>` element supports dynamic path data using data binding expressions with `{{expression}}` syntax.
+The `<path>` element supports dynamic path data using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Path Data
+
+
 
 
 
@@ -151,7 +153,11 @@ The `<path>` element supports dynamic path data using data binding expressions w
 
 
 
+
+
 ### Example 2: Calculated Curve
+
+
 
 
 
@@ -167,7 +173,11 @@ The `<path>` element supports dynamic path data using data binding expressions w
 
 
 
+
+
 ### Example 3: Multiple Dynamic Paths
+
+
 
 
 
@@ -185,6 +195,8 @@ The `<path>` element supports dynamic path data using data binding expressions w
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -445,6 +457,8 @@ The path data string is parsed into drawing operations. Invalid syntax will resu
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { radius: 50, sweep: 1 } -->
@@ -454,6 +468,8 @@ The path data string is parsed into drawing operations. Invalid syntax will resu
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

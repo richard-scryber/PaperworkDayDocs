@@ -196,6 +196,8 @@ SVG anchors can be defined in `<defs>` and reused:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { url: "https://example.com", label: "Visit Site" } -->
@@ -212,7 +214,11 @@ SVG anchors can be defined in `<defs>` and reused:
 
 
 
+
+
 ### Repeated Linked Elements
+
+
 
 
 
@@ -234,7 +240,11 @@ SVG anchors can be defined in `<defs>` and reused:
 
 
 
+
+
 ### Conditional Link Styling
+
+
 
 
 
@@ -258,7 +268,11 @@ SVG anchors can be defined in `<defs>` and reused:
 
 
 
+
+
 ### Interactive Map with Links
+
+
 
 
 
@@ -280,6 +294,8 @@ SVG anchors can be defined in `<defs>` and reused:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -690,6 +706,8 @@ SVG anchors can be defined in `<defs>` and reused:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { servers: [{name:"Web", status:"ok", url:"#web"}, {name:"DB", status:"warning", url:"#db"}] } -->
@@ -709,6 +727,8 @@ SVG anchors can be defined in `<defs>` and reused:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

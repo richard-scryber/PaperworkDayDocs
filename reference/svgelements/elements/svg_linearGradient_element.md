@@ -168,6 +168,8 @@ Bind gradient stop colors to data values:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { primaryColor: "#3498db", secondaryColor: "#e74c3c" } -->
@@ -185,9 +187,13 @@ Bind gradient stop colors to data values:
 
 
 
+
+
 ### Dynamic Stop Positions
 
 Create gradients with data-driven stop positions:
+
+
 
 
 
@@ -207,9 +213,13 @@ Create gradients with data-driven stop positions:
 
 
 
+
+
 ### Conditional Gradients
 
 Generate gradients based on data conditions:
+
+
 
 
 
@@ -229,9 +239,13 @@ Generate gradients based on data conditions:
 
 
 
+
+
 ### Data-Driven Gradient Angles
 
 Create gradients with dynamic angles:
+
+
 
 
 
@@ -254,9 +268,13 @@ Create gradients with dynamic angles:
 
 
 
+
+
 ### Repeating Gradients from Data
 
 Generate multiple gradient stops from arrays:
+
+
 
 
 
@@ -273,6 +291,8 @@ Generate multiple gradient stops from arrays:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -556,6 +576,8 @@ Generate multiple gradient stops from arrays:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { value: 75, thresholdLow: 50, thresholdHigh: 80 } -->
@@ -575,7 +597,11 @@ Generate multiple gradient stops from arrays:
 
 
 
+
+
 ### Dynamic Theme Gradients
+
+
 
 
 
@@ -592,6 +618,8 @@ Generate multiple gradient stops from arrays:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

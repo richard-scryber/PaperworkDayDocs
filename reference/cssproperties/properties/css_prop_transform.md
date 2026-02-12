@@ -111,6 +111,8 @@ The `transform` property can be dynamically controlled through data binding, ena
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -136,7 +138,11 @@ The `transform` property can be dynamically controlled through data binding, ena
 
 
 
+
+
 ### Example 2: Dynamic scaling for data visualization
+
+
 
 
 
@@ -162,7 +168,11 @@ The `transform` property can be dynamically controlled through data binding, ena
 
 
 
+
+
 ### Example 3: Conditional transforms for interactive states
+
+
 
 
 
@@ -185,6 +195,8 @@ The `transform` property can be dynamically controlled through data binding, ena
 </body>
 ```
 {% endraw %}
+
+
 
 
 

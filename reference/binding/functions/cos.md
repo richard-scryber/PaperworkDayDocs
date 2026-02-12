@@ -59,12 +59,16 @@ The cosine of the angle (value between -1 and 1).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>cos(0) = {{format(cos(0), '0.000')}}</p>
 <p>cos(π) = {{format(cos(pi()), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -78,6 +82,8 @@ The cosine of the angle (value between -1 and 1).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>cos(0°) = {{format(cos(radians(0)), '0.000')}}</p>
@@ -85,6 +91,8 @@ The cosine of the angle (value between -1 and 1).
 <p>cos(90°) = {{format(cos(radians(90)), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -99,11 +107,15 @@ The cosine of the angle (value between -1 and 1).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>X = {{format(model.radius * cos(model.angle), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

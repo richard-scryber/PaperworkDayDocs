@@ -322,6 +322,8 @@ bquote.Contents.Add(q);
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model.testimonials = [
@@ -339,6 +341,8 @@ bquote.Contents.Add(q);
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -437,6 +441,8 @@ bquote.Contents.Add(q);
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { quoteStyle: "professional" } -->
@@ -448,6 +454,8 @@ bquote.Contents.Add(q);
 </blockquote>
 ```
 {% endraw %}
+
+
 
 
 

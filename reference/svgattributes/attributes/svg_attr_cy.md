@@ -59,9 +59,11 @@ The `cy` attribute is supported on the following SVG elements:
 
 ## Data Binding
 
-The `cy` attribute supports dynamic values using data binding expressions with `{{expression}}` syntax.
+The `cy` attribute supports dynamic values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Circle Positioning
+
+
 
 
 
@@ -77,7 +79,11 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 ### Example 2: Vertically Centered Element
+
+
 
 
 
@@ -94,7 +100,11 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 ### Example 3: Vertical Scatter Plot
+
+
 
 
 
@@ -114,6 +124,8 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -406,6 +418,8 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { markers: [
@@ -421,6 +435,8 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

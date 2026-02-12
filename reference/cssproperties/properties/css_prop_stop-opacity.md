@@ -93,6 +93,8 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -117,7 +119,11 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
 
 
 
+
+
 ### Example 2: Dynamic vignette effect with data-bound opacity
+
+
 
 
 
@@ -146,7 +152,11 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
 
 
 
+
+
 ### Example 3: Conditional transparency for emphasis
+
+
 
 
 
@@ -172,6 +182,8 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
 </body>
 ```
 {% endraw %}
+
+
 
 
 

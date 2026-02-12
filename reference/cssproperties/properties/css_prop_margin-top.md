@@ -94,6 +94,8 @@ The `margin-top` property supports dynamic values through data binding, allowing
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -125,6 +127,8 @@ The `margin-top` property supports dynamic values through data binding, allowing
 
 
 
+
+
 Data context:
 ```json
 {
@@ -136,6 +140,8 @@ Data context:
 ```
 
 ### Example 2: Invoice sections with dynamic top margins
+
+
 
 
 
@@ -183,6 +189,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -200,6 +208,8 @@ Data context:
 ```
 
 ### Example 3: Card spacing based on importance
+
+
 
 
 
@@ -229,6 +239,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

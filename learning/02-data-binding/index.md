@@ -35,7 +35,7 @@ Data binding is what makes Scryber truly powerful. Instead of hard-coding conten
 
 Data binding connects your template to your data. In Scryber, this means:
 
-- **Dynamic Values** - Display data using `{{expression}}` syntax
+- **Dynamic Values** - Display data using `{% raw %}{{expression}}{% endraw %}` syntax
 - **Conditional Content** - Show or hide sections based on data
 - **Loops & Iteration** - Repeat content for lists and arrays
 - **Calculations** - Perform math and string operations
@@ -44,6 +44,8 @@ Data binding connects your template to your data. In Scryber, this means:
 ## Quick Example
 
 ### Template
+
+
 
 
 {% raw %}
@@ -71,6 +73,8 @@ Data binding connects your template to your data. In Scryber, this means:
 
 
 
+
+
 ### C# Code
 ```csharp
 doc.Params["invoice"] = new {
@@ -91,7 +95,7 @@ A fully populated invoice with all items listed dynamically!
 This series covers everything you need to create sophisticated data-driven documents:
 
 ### 1. [Data Binding Basics](01_data_binding_basics.html)
-- Basic `{{expression}}` syntax
+- Basic `{% raw %}{{expression}}{% endraw %}` syntax
 - Binding to properties and nested objects
 - Passing data from C#, JSON, and XML
 - Understanding data context
@@ -105,14 +109,14 @@ This series covers everything you need to create sophisticated data-driven docum
 
 ### 3. [Template Iteration](03_template_iteration.html)
 - Using the `<template>` element
-- Iterating with `{{#each}}`
-- Working with `{{@index}}` and `{{@key}}`
+- Iterating with `{% raw %}{{#each}}{% endraw %}`
+- Working with `{% raw %}{{@index}}{% endraw %}` and `{% raw %}{{@key}}{% endraw %}`
 - Nested loops and complex data structures
 
 ### 4. [Conditional Rendering](04_conditional_rendering.html)
-- `{{#if}}` and `{{#unless}}` helpers
+- `{% raw %}{{#if}}{% endraw %}` and `{% raw %}{{#unless}}{% endraw %}` helpers
 - Inline conditionals with `if()` function
-- `{{else}}` clauses
+- `{% raw %}{{else}}{% endraw %}` clauses
 - Conditional visibility and sections
 
 ### 5. [Variables & Document Parameters](05_variables_params.html)
@@ -156,6 +160,8 @@ Scryber uses Handlebars-style syntax for data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Simple value -->
@@ -174,9 +180,13 @@ Scryber uses Handlebars-style syntax for data binding:
 
 
 
+
+
 ### Block Helpers
 
 Block helpers control template flow:
+
+
 
 
 
@@ -196,9 +206,13 @@ Block helpers control template flow:
 
 
 
+
+
 ### Data Context
 
 Every expression evaluates in a data context:
+
+
 
 
 
@@ -217,11 +231,15 @@ Every expression evaluates in a data context:
 
 
 
+
+
 ## Real-World Applications
 
 Data binding enables powerful scenarios:
 
 ### Dynamic Invoices
+
+
 
 
 {% raw %}
@@ -242,7 +260,11 @@ Data binding enables powerful scenarios:
 
 
 
+
+
 ### Conditional Sections
+
+
 
 
 {% raw %}
@@ -259,7 +281,11 @@ Data binding enables powerful scenarios:
 
 
 
+
+
 ### Calculated Values
+
+
 
 
 {% raw %}
@@ -276,7 +302,11 @@ Data binding enables powerful scenarios:
 
 
 
+
+
 ### Multi-Language Support
+
+
 
 
 {% raw %}
@@ -291,9 +321,13 @@ Data binding enables powerful scenarios:
 
 
 
+
+
 ## Common Patterns
 
 ### Master-Detail Reports
+
+
 
 
 {% raw %}
@@ -314,7 +348,11 @@ Data binding enables powerful scenarios:
 
 
 
+
+
 ### Running Totals
+
+
 
 
 {% raw %}
@@ -335,7 +373,11 @@ Data binding enables powerful scenarios:
 
 
 
+
+
 ### Conditional Formatting
+
+
 
 
 {% raw %}
@@ -348,6 +390,8 @@ Data binding enables powerful scenarios:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -364,7 +408,7 @@ Data binding enables powerful scenarios:
 
 ## Tips for Success
 
-1. **Start Simple** - Begin with basic `{{property}}` expressions
+1. **Start Simple** - Begin with basic `{% raw %}{{property}}{% endraw %}` expressions
 2. **Test Incrementally** - Add complexity gradually
 3. **Understand Context** - Know where you are in the data structure
 4. **Use Variables** - Store calculated values for reuse

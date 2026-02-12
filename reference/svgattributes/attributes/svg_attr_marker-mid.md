@@ -81,6 +81,8 @@ Choose middle marker based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { pathStyle: 'dotted', markers: { dotted: 'dot-mid', segmented: 'arrow-mid' } } -->
@@ -105,9 +107,13 @@ Choose middle marker based on data:
 
 
 
+
+
 ### Conditional Middle Markers
 
 Show markers based on conditions:
+
+
 
 
 
@@ -131,7 +137,11 @@ Show markers based on conditions:
 
 
 
+
+
 ### Data-Driven Path Visualization
+
+
 
 
 
@@ -159,6 +169,8 @@ Show markers based on conditions:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

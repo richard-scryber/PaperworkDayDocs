@@ -42,6 +42,8 @@ The `src` attribute specifies content sources:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Local image file -->
@@ -63,6 +65,8 @@ The `src` attribute specifies content sources:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -80,6 +84,8 @@ The `src` attribute is used with:
 ## Binding Values
 
 The `src` attribute supports data binding for dynamic content sources:
+
+
 
 
 
@@ -112,6 +118,8 @@ The `src` attribute supports data binding for dynamic content sources:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -314,6 +322,8 @@ Be cautious with user-provided `src` values:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Sanitize user input -->
@@ -321,6 +331,8 @@ Be cautious with user-provided `src` values:
 <img src="{{model.sanitizedImagePath}}" width="200pt" height="150pt" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -380,6 +392,8 @@ Scryber may cache images during document generation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { user: { avatar: "avatars/john.png", name: "John" } } -->
@@ -396,7 +410,11 @@ Scryber may cache images during document generation:
 
 
 
+
+
 ### Image Gallery
+
+
 
 
 
@@ -424,7 +442,11 @@ Scryber may cache images during document generation:
 
 
 
+
+
 ### Conditional Images
+
+
 
 
 
@@ -440,7 +462,11 @@ Scryber may cache images during document generation:
 
 
 
+
+
 ### Product Catalog with Images
+
+
 
 
 
@@ -471,6 +497,8 @@ Scryber may cache images during document generation:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -567,6 +595,8 @@ Scryber may cache images during document generation:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { team: [
@@ -593,6 +623,8 @@ Scryber may cache images during document generation:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -667,6 +699,8 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { gallery: Array of 6 images } -->
@@ -680,6 +714,8 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -705,6 +741,8 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Embed external HTML content -->
@@ -726,6 +764,8 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 
 
 
+
+
 ### Image with Link
 
 ```html
@@ -744,6 +784,8 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 ```
 
 ### Image Thumbnails
+
+
 
 
 
@@ -778,6 +820,8 @@ C3sBL5DSSrxAWlMIHkBQsLCwshFRJLK7OzOvyGaTaKFP+DDzmPn95n1A..."
 </div>
 ```
 {% endraw %}
+
+
 
 
 

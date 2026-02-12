@@ -81,6 +81,8 @@ Choose coordinate system based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { useAbsolute: false } -->
@@ -103,9 +105,13 @@ Choose coordinate system based on data:
 
 
 
+
+
 ### Responsive vs Fixed Gradients
 
 Switch between responsive and fixed based on context:
+
+
 
 
 
@@ -131,9 +137,13 @@ Switch between responsive and fixed based on context:
 
 
 
+
+
 ### Chart-Specific Gradients
 
 Use absolute coordinates for consistent chart backgrounds:
+
+
 
 
 
@@ -162,9 +172,13 @@ Use absolute coordinates for consistent chart backgrounds:
 
 
 
+
+
 ### Shared Gradient Across Multiple Shapes
 
 Use userSpaceOnUse for consistent gradient across shapes:
+
+
 
 
 
@@ -189,6 +203,8 @@ Use userSpaceOnUse for consistent gradient across shapes:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -488,6 +504,8 @@ Use userSpaceOnUse for consistent gradient across shapes:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { mode: "responsive", width: 500, height: 300 } -->
@@ -508,6 +526,8 @@ Use userSpaceOnUse for consistent gradient across shapes:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

@@ -120,6 +120,8 @@ Background properties support dynamic data binding, allowing you to create perso
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -139,9 +141,13 @@ Background properties support dynamic data binding, allowing you to create perso
 
 
 
+
+
 This example dynamically loads company logos based on data, perfect for multi-tenant systems or white-label documents where each client needs their own branding.
 
 ### Example 2: Conditional background colors by status
+
+
 
 
 
@@ -165,9 +171,13 @@ This example dynamically loads company logos based on data, perfect for multi-te
 
 
 
+
+
 Perfect for creating status-driven documents like approval letters, invoice status reports, or compliance certificates where visual indicators change based on state.
 
 ### Example 3: Data-driven watermarks and positioning
+
+
 
 
 
@@ -195,6 +205,8 @@ Perfect for creating status-driven documents like approval letters, invoice stat
 </body>
 ```
 {% endraw %}
+
+
 
 
 

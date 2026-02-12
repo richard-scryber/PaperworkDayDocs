@@ -74,9 +74,11 @@ The `<ellipse>` element creates an elliptical shape defined by:
 
 ## Data Binding
 
-The `<ellipse>` element supports dynamic attribute values using data binding expressions with `{{expression}}` syntax.
+The `<ellipse>` element supports dynamic attribute values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Size and Position
+
+
 
 
 
@@ -93,7 +95,11 @@ The `<ellipse>` element supports dynamic attribute values using data binding exp
 
 
 
+
+
 ### Example 2: Data-Driven Badges
+
+
 
 
 
@@ -110,7 +116,11 @@ The `<ellipse>` element supports dynamic attribute values using data binding exp
 
 
 
+
+
 ### Example 3: Repeating Ellipses
+
+
 
 
 
@@ -130,6 +140,8 @@ The `<ellipse>` element supports dynamic attribute values using data binding exp
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -398,6 +410,8 @@ The stroke is drawn centered on the ellipse's outline, extending both inward and
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { sizes: [
@@ -414,6 +428,8 @@ The stroke is drawn centered on the ellipse's outline, extending both inward and
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

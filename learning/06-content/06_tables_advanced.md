@@ -34,6 +34,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -103,7 +105,11 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ### Accessing Index
+
+
 
 
 
@@ -123,11 +129,15 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ---
 
 ## Calculated Columns
 
 ### Simple Calculations
+
+
 
 
 
@@ -158,7 +168,11 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ### Complex Calculations
+
+
 
 
 
@@ -184,11 +198,15 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ---
 
 ## Running Totals
 
 ### Using Variables for Accumulation
+
+
 
 
 
@@ -223,6 +241,8 @@ By the end of this article, you'll be able to:
 </table>
 ```
 {% endraw %}
+
+
 
 
 
@@ -393,6 +413,8 @@ tfoot {
 ## Practical Examples
 
 ### Example 1: Invoice with Calculations
+
+
 
 
 
@@ -569,7 +591,11 @@ tfoot {
 
 
 
+
+
 ### Example 2: Multi-Page Report with Repeating Headers
+
+
 
 
 
@@ -702,6 +728,8 @@ tfoot {
 
 
 
+
+
 ---
 
 ## Try It Yourself
@@ -772,6 +800,8 @@ tr {
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Wrong: Missing operators -->
@@ -784,7 +814,11 @@ tr {
 
 
 
+
+
 ✅ **Solution:**
+
+
 
 
 
@@ -799,6 +833,8 @@ tr {
 <td>{{Document.Params.doubled -  10}}</td>
 ```
 {% endraw %}
+
+
 
 
 

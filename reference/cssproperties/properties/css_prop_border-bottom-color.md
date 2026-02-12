@@ -78,6 +78,8 @@ The `border-bottom-color` property supports dynamic values through data binding,
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -98,6 +100,8 @@ The `border-bottom-color` property supports dynamic values through data binding,
 
 
 
+
+
 Data context:
 ```json
 {
@@ -109,6 +113,8 @@ Data context:
 ```
 
 ### Example 2: Table row separators with status
+
+
 
 
 
@@ -131,7 +137,11 @@ Data context:
 
 
 
+
+
 ### Example 3: Card accent colors
+
+
 
 
 
@@ -154,6 +164,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

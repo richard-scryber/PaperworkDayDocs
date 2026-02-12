@@ -78,6 +78,8 @@ The `text-decoration-line` property supports data binding for dynamic decoration
 
 
 
+
+
 {% raw %}
 ```html
 <a href="{{model.link.url}}"
@@ -100,7 +102,11 @@ The `text-decoration-line` property supports data binding for dynamic decoration
 
 
 
+
+
 ### Example 2: Product Status Indication
+
+
 
 
 
@@ -136,7 +142,11 @@ The `text-decoration-line` property supports data binding for dynamic decoration
 
 
 
+
+
 ### Example 3: Emphasis Style from Settings
+
+
 
 
 
@@ -156,6 +166,8 @@ The `text-decoration-line` property supports data binding for dynamic decoration
 -->
 ```
 {% endraw %}
+
+
 
 
 

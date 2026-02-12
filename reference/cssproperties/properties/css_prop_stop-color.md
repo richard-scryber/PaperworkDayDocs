@@ -99,6 +99,8 @@ The `stop-color` property can be dynamically controlled through data binding, en
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -122,7 +124,11 @@ The `stop-color` property can be dynamically controlled through data binding, en
 
 
 
+
+
 ### Example 2: Dynamic multi-stop gradients from data
+
+
 
 
 
@@ -148,7 +154,11 @@ The `stop-color` property can be dynamically controlled through data binding, en
 
 
 
+
+
 ### Example 3: Conditional gradient colors based on thresholds
+
+
 
 
 
@@ -172,6 +182,8 @@ The `stop-color` property can be dynamically controlled through data binding, en
 </body>
 ```
 {% endraw %}
+
+
 
 
 

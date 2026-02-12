@@ -42,12 +42,12 @@ Block-level helpers for control flow and iteration in templates.
 
 | Helper | Syntax | Description |
 |--------|--------|-------------|
-| **each** | `{{#each collection}}...{{/each}}` | Iterate over arrays or collections. Access items with `{{this}}` |
-| **with** | `{{#with object}}...{{/with}}` | Change data context to a specific object |
-| **if** | `{{#if condition}}...{{/if}}` | Conditional rendering based on expression |
-| **else if** | `{{else if condition}}` | Additional condition in an if block |
-| **else** | `{{else}}` | Fallback when conditions aren't met |
-| **log** | `{{log "message"}}` | Output debug messages to trace log |
+| **each** | `{% raw %}{{#each collection}}...{{/each}}{% endraw %}` | Iterate over arrays or collections. Access items with `{% raw %}{{this}}{% endraw %}` |
+| **with** | `{% raw %}{{#with object}}...{{/with}}{% endraw %}` | Change data context to a specific object |
+| **if** | `{% raw %}{{#if condition}}...{{/if}}{% endraw %}` | Conditional rendering based on expression |
+| **else if** | `{% raw %}{{else if condition}}{% endraw %}` | Additional condition in an if block |
+| **else** | `{% raw %}{{else}}{% endraw %}` | Fallback when conditions aren't met |
+| **log** | `{% raw %}{{log "message"}}{% endraw %}` | Output debug messages to trace log |
 
 [→ Detailed Handlebars Helpers Documentation](./helpers/)
 
@@ -55,47 +55,47 @@ Block-level helpers for control flow and iteration in templates.
 
 ## Binding Operators
 
-Operators used within `{{expression}}` bindings.
+Operators used within `{% raw %}{{expression}}{% endraw %}` bindings.
 
 ### Mathematical Operators
 
 | Operator | Example | Description |
 |----------|---------|-------------|
-| `+` | `{{a + b}}` | Addition |
-| `-` | `{{a - b}}` | Subtraction |
-| `*` | `{{a * b}}` | Multiplication |
-| `/` | `{{a / b}}` | Division |
-| `%` | `{{a % b}}` | Modulus (remainder) |
-| `^` | `{{a ^ b}}` | Power (exponentiation) |
+| `+` | `{% raw %}{{a + b}}{% endraw %}` | Addition |
+| `-` | `{% raw %}{{a - b}}{% endraw %}` | Subtraction |
+| `*` | `{% raw %}{{a * b}}{% endraw %}` | Multiplication |
+| `/` | `{% raw %}{{a / b}}{% endraw %}` | Division |
+| `%` | `{% raw %}{{a % b}}{% endraw %}` | Modulus (remainder) |
+| `^` | `{% raw %}{{a ^ b}}{% endraw %}` | Power (exponentiation) |
 
 ### Comparison Operators
 
 | Operator | Example | Description |
 |----------|---------|-------------|
-| `==` | `{{a == b}}` | Equality |
-| `!=` | `{{a != b}}` | Inequality |
-| `<` | `{{a < b}}` | Less than |
-| `<=` | `{{a <= b}}` | Less than or equal |
-| `>` | `{{a > b}}` | Greater than |
-| `>=` | `{{a >= b}}` | Greater than or equal |
+| `==` | `{% raw %}{{a == b}}{% endraw %}` | Equality |
+| `!=` | `{% raw %}{{a != b}}{% endraw %}` | Inequality |
+| `<` | `{% raw %}{{a < b}}{% endraw %}` | Less than |
+| `<=` | `{% raw %}{{a <= b}}{% endraw %}` | Less than or equal |
+| `>` | `{% raw %}{{a > b}}{% endraw %}` | Greater than |
+| `>=` | `{% raw %}{{a >= b}}{% endraw %}` | Greater than or equal |
 
 ### Logical Operators
 
 | Operator | Example | Description |
 |----------|---------|-------------|
-| `&&` | `{{a && b}}` | Logical AND |
-| `||` | `{{a || b}}` | Logical OR |
-| `!` | `{{!a}}` | Logical NOT |
+| `&&` | `{% raw %}{{a && b}}{% endraw %}` | Logical AND |
+| `||` | `{% raw %}{{a || b}}{% endraw %}` | Logical OR |
+| `!` | `{% raw %}{{!a}}{% endraw %}` | Logical NOT |
 
 ### Other Operators
 
 | Operator | Example | Description |
 |----------|---------|-------------|
-| `??` | `{{a ?? b}}` | Null coalescing - returns b if a is null |
-| `.` | `{{model.property}}` | Property access |
-| `[]` | `{{array[0]}}` | Array/indexer access |
-| `..` | `{{../parent}}` | Navigate to parent context |
-| `this` | `{{this.property}}` | Current context reference |
+| `??` | `{% raw %}{{a ?? b}}{% endraw %}` | Null coalescing - returns b if a is null |
+| `.` | `{% raw %}{{model.property}}{% endraw %}` | Property access |
+| `[]` | `{% raw %}{{array[0]}}{% endraw %}` | Array/indexer access |
+| `..` | `{% raw %}{{../parent}}{% endraw %}` | Navigate to parent context |
+| `this` | `{% raw %}{{this.property}}{% endraw %}` | Current context reference |
 
 [→ Detailed Operators Documentation](./operators/)
 
@@ -103,7 +103,7 @@ Operators used within `{{expression}}` bindings.
 
 ## Expression Functions
 
-Built-in functions available in `{{expression}}` bindings.
+Built-in functions available in `{% raw %}{{expression}}{% endraw %}` bindings.
 
 ### Conversion Functions
 
@@ -264,9 +264,9 @@ Variables available in specific contexts:
 
 | Variable | Context | Description |
 |----------|---------|-------------|
-| `@index` | `{{#each}}` loops | Zero-based index of current item |
-| `@first` | `{{#each}}` loops | True if first item |
-| `@last` | `{{#each}}` loops | True if last item |
+| `@index` | `{% raw %}{{#each}}{% endraw %}` loops | Zero-based index of current item |
+| `@first` | `{% raw %}{{#each}}{% endraw %}` loops | True if first item |
+| `@last` | `{% raw %}{{#each}}{% endraw %}` loops | True if last item |
 | `this` | Any context | Reference to current data context |
 | `.` | Any context | Shorthand for current context |
 | `..` | Nested contexts | Reference to parent context |
@@ -277,6 +277,8 @@ Variables available in specific contexts:
 ## Common Patterns
 
 ### Formatting Values
+
+
 
 
 {% raw %}
@@ -297,7 +299,11 @@ Variables available in specific contexts:
 
 
 
+
+
 ### Conditional Classes
+
+
 
 
 {% raw %}
@@ -308,7 +314,11 @@ Variables available in specific contexts:
 
 
 
+
+
 ### Null-Safe Navigation
+
+
 
 
 {% raw %}
@@ -319,7 +329,11 @@ Variables available in specific contexts:
 
 
 
+
+
 ### Complex Expressions
+
+
 
 
 {% raw %}
@@ -336,7 +350,11 @@ Variables available in specific contexts:
 
 
 
+
+
 ### Working with Collections
+
+
 
 
 {% raw %}
@@ -351,6 +369,8 @@ Items: {{count(items)}}
 Average: {{format(averageOf(items, 'rating'), '0.0')}}
 ```
 {% endraw %}
+
+
 
 
 

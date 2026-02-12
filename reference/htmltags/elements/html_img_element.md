@@ -238,6 +238,8 @@ Bind image sources dynamically from data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { imagePath: "photo.jpg" } -->
@@ -249,6 +251,8 @@ Bind image sources dynamically from data:
      width="150pt" height="100pt" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -490,6 +494,8 @@ o8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0icmVkIi8+Cjwvc3ZnPg=="
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Bind image source from model -->
@@ -514,6 +520,8 @@ o8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0icmVkIi8+Cjwvc3ZnPg=="
      alt="User Photo" />
 ```
 {% endraw %}
+
+
 
 
 
@@ -595,6 +603,8 @@ o8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0icmVkIi8+Cjwvc3ZnPg=="
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Image that won't cause error if missing -->
@@ -609,6 +619,8 @@ o8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0icmVkIi8+Cjwvc3ZnPg=="
      data-allow-missing-images="true" />
 ```
 {% endraw %}
+
+
 
 
 

@@ -564,12 +564,16 @@ foreach (var batch in items.Chunk(100))
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Shows: {{model.name}} instead of actual name -->
 <p>{{model.name}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -600,6 +604,8 @@ foreach (var prop in properties)
 
 
 
+
+
 {% raw %}
 ```csharp
 // ✅ Ensure data is passed
@@ -615,6 +621,8 @@ doc.Params["model"] = model;
 // Data must have: .name property
 ```
 {% endraw %}
+
+
 
 
 

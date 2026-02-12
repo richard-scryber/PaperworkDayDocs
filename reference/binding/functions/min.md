@@ -59,11 +59,15 @@ The smallest value in the collection. Returns null for empty collections.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Lowest score: {{min(model.scores)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Price range: ${{min(collect(model.products, 'price'))}} - ${{max(collect(model.products, 'price'))}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -112,6 +120,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Weekly Temperature Summary</h3>
@@ -120,6 +130,8 @@ doc.Params["model"] = new {
 <p>Average: {{round(average(model.temperatures), 1)}}°F</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -142,6 +154,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.students}}
@@ -149,6 +163,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

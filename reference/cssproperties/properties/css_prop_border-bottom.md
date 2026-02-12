@@ -94,6 +94,8 @@ The `border-bottom` property supports dynamic values through data binding, allow
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -111,7 +113,11 @@ The `border-bottom` property supports dynamic values through data binding, allow
 
 
 
+
+
 ### Example 2: Section headers with dynamic underlines
+
+
 
 
 
@@ -135,6 +141,8 @@ The `border-bottom` property supports dynamic values through data binding, allow
 
 
 
+
+
 Data context:
 ```json
 {
@@ -147,6 +155,8 @@ Data context:
 ```
 
 ### Example 3: Alert cards with severity indicators
+
+
 
 
 
@@ -165,6 +175,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

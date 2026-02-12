@@ -33,11 +33,15 @@ Combine two boolean expressions. Returns true if at least one operand is true.
 
 
 
+
+
 {% raw %}
 ```html 
 {{condition1 || condition2}}
 ``` 
 {% endraw %}
+
+
 
 
 ---
@@ -84,6 +88,8 @@ Evaluated after: All other operators
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.isAdmin || model.isModerator}}
@@ -98,6 +104,8 @@ Evaluated after: All other operators
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -122,6 +130,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.status == 'shipped' || model.status == 'delivered'}}
@@ -137,6 +147,8 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -160,6 +172,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.dayOfWeek == 0 || model.dayOfWeek == 6}}
@@ -179,7 +193,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Alert Conditions
+
+
 
 
 
@@ -200,6 +218,8 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -236,6 +256,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.role == 'admin' || model.role == 'manager' || model.role == 'supervisor'}}
@@ -250,7 +272,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Priority Orders
+
+
 
 
 
@@ -272,6 +298,8 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 

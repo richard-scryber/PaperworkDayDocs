@@ -26,6 +26,8 @@ The `preserveAspectRatio` attribute controls SVG scaling behavior:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Default: center and fit inside -->
@@ -50,6 +52,8 @@ The `preserveAspectRatio` attribute controls SVG scaling behavior:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -144,6 +148,8 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { alignment: "xMidYMid", scale: "meet" } -->
@@ -157,7 +163,11 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 
 
 
+
+
 ### Conditional Scaling
+
+
 
 
 
@@ -174,7 +184,11 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 
 
 
+
+
 ### User-Selected Alignment
+
+
 
 
 
@@ -191,7 +205,11 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 
 
 
+
+
 ### Toggle Stretch Mode
+
+
 
 
 
@@ -207,7 +225,11 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 
 
 
+
+
 ### Responsive Image Fitting
+
+
 
 
 
@@ -222,6 +244,8 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -737,6 +761,8 @@ When `preserveAspectRatio="none"`:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { displayMode: "contain" } -->
@@ -755,7 +781,11 @@ When `preserveAspectRatio="none"`:
 
 
 
+
+
 ### Mobile vs Desktop Layout
+
+
 
 
 
@@ -777,6 +807,8 @@ When `preserveAspectRatio="none"`:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

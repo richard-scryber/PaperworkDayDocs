@@ -60,11 +60,15 @@ Returns the result of `expression` if successful, otherwise returns `fallbackVal
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Average: {{ifError(model.total / model.count, 0)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,6 +89,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -92,6 +98,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -115,11 +123,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Value: {{ifError(int(model.userInput), -1)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -139,6 +151,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.records}}
@@ -146,6 +160,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -169,11 +185,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>First item: {{ifError(model.items[0], 'No items')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -203,10 +223,10 @@ doc.Params["model"] = new {
   - Missing property graceful handling
   - Array bounds protection
 - Consider using null coalescing operator (`??`) for simple null checks
-- For debugging errors, use `{{log}}` helper instead
+- For debugging errors, use `{% raw %}{{log}}{% endraw %}` helper instead
 - Performance: Has slight overhead due to error catching
 - Best practice: Use when you expect potential errors in data
-- Alternative to extensive null checking with `{{#if}}`
+- Alternative to extensive null checking with `{% raw %}{{#if}}{% endraw %}`
 
 ---
 

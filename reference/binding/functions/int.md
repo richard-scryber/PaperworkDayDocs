@@ -62,11 +62,15 @@ A 32-bit integer representation of the value.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Value: {{int(model.stringValue)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -86,11 +90,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Truncated: {{int(model.decimalValue)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -110,12 +118,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Full boxes: {{int(model.items / model.boxSize)}}</p>
 <p>Remaining items: {{model.items % model.boxSize}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -137,11 +149,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Age: {{int(daysBetween(model.birthDate, model.today) / 365)}} years</p>
 ```
 {% endraw %}
+
+
 
 
 

@@ -98,6 +98,8 @@ The `border` property supports dynamic values through data binding, allowing bor
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -119,6 +121,8 @@ The `border` property supports dynamic values through data binding, allowing bor
 
 
 
+
+
 Data context:
 ```json
 {
@@ -133,6 +137,8 @@ Data context:
 ```
 
 ### Example 2: Conditional border emphasis
+
+
 
 
 
@@ -156,7 +162,11 @@ Data context:
 
 
 
+
+
 ### Example 3: Alert severity borders
+
+
 
 
 
@@ -175,6 +185,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

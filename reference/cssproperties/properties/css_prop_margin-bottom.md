@@ -94,6 +94,8 @@ The `margin-bottom` property supports dynamic values through data binding, allow
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -121,6 +123,8 @@ The `margin-bottom` property supports dynamic values through data binding, allow
 
 
 
+
+
 Data context:
 ```json
 {
@@ -133,6 +137,8 @@ Data context:
 ```
 
 ### Example 2: Card spacing based on layout density
+
+
 
 
 
@@ -169,6 +175,8 @@ Data context:
 
 
 
+
+
 Data context:
 ```json
 {
@@ -179,6 +187,8 @@ Data context:
 ```
 
 ### Example 3: Form field spacing based on validation
+
+
 
 
 
@@ -219,6 +229,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

@@ -65,9 +65,11 @@ The `rx` attribute is supported on the following SVG elements:
 
 ## Data Binding
 
-The `rx` attribute supports dynamic values using data binding expressions with `{{expression}}` syntax.
+The `rx` attribute supports dynamic values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Ellipse Size
+
+
 
 
 
@@ -84,7 +86,11 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 ### Example 2: Rounded Corners Based on Size
+
+
 
 
 
@@ -102,7 +108,11 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 ### Example 3: Variable Ellipses in Charts
+
+
 
 
 
@@ -122,6 +132,8 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -396,6 +408,8 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { buttons: [
@@ -413,6 +427,8 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

@@ -362,6 +362,8 @@ anchor.Style.Fill.Color = StandardColors.Blue;
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { url: "https://example.com", linkText: "Click Here" } -->
@@ -383,6 +385,8 @@ anchor.Style.Fill.Color = StandardColors.Blue;
 
 
 
+
+
 ### Link with Block Content
 
 ```html
@@ -399,6 +403,8 @@ anchor.Style.Fill.Color = StandardColors.Blue;
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Link shown/hidden based on condition -->
@@ -407,6 +413,8 @@ anchor.Style.Fill.Color = StandardColors.Blue;
 </a>
 ```
 {% endraw %}
+
+
 
 
 

@@ -28,27 +28,27 @@ Perform mathematical calculations on numeric values.
 
 | Operator | Description | Precedence | Example |
 |----------|-------------|------------|---------|
-| [+](./addition) | Addition | 5 | `{{model.price + model.tax}}` |
-| [-](./subtraction) | Subtraction | 5 | `{{model.total - model.discount}}` |
-| [*](./multiplication) | Multiplication | 4 | `{{model.quantity * model.price}}` |
-| [/](./division) | Division | 4 | `{{model.total / model.count}}` |
-| [%](./modulus) | Modulus (remainder) | 4 | `{{model.index % 2}}` |
-| [^](./power) | Exponentiation | 3 | `{{model.base ^ model.exponent}}` |
+| [+](./addition) | Addition | 5 | `{% raw %}{{model.price + model.tax}}{% endraw %}` |
+| [-](./subtraction) | Subtraction | 5 | `{% raw %}{{model.total - model.discount}}{% endraw %}` |
+| [*](./multiplication) | Multiplication | 4 | `{% raw %}{{model.quantity * model.price}}{% endraw %}` |
+| [/](./division) | Division | 4 | `{% raw %}{{model.total / model.count}}{% endraw %}` |
+| [%](./modulus) | Modulus (remainder) | 4 | `{% raw %}{{model.index % 2}}{% endraw %}` |
+| [^](./power) | Exponentiation | 3 | `{% raw %}{{model.base ^ model.exponent}}{% endraw %}` |
 
 ---
 
 ## Comparison Operators
 
-Compare values and return boolean results. Used primarily in `{{#if}}` conditionals.
+Compare values and return boolean results. Used primarily in `{% raw %}{{#if}}{% endraw %}` conditionals.
 
 | Operator | Description | Precedence | Example |
 |----------|-------------|------------|---------|
-| [==](./equality) | Equality | 7 | `{{#if model.status == 'active'}}` |
-| [!=](./inequality) | Inequality | 7 | `{{#if model.count != 0}}` |
-| [<](./lessthan) | Less than | 6 | `{{#if model.age < 18}}` |
-| [<=](./lessorequal) | Less than or equal | 6 | `{{#if model.score <= 100}}` |
-| [>](./greaterthan) | Greater than | 6 | `{{#if model.value > 0}}` |
-| [>=](./greaterorequal) | Greater than or equal | 6 | `{{#if model.age >= 18}}` |
+| [==](./equality) | Equality | 7 | `{% raw %}{{#if model.status == 'active'}}{% endraw %}` |
+| [!=](./inequality) | Inequality | 7 | `{% raw %}{{#if model.count != 0}}{% endraw %}` |
+| [<](./lessthan) | Less than | 6 | `{% raw %}{{#if model.age < 18}}{% endraw %}` |
+| [<=](./lessorequal) | Less than or equal | 6 | `{% raw %}{{#if model.score <= 100}}{% endraw %}` |
+| [>](./greaterthan) | Greater than | 6 | `{% raw %}{{#if model.value > 0}}{% endraw %}` |
+| [>=](./greaterorequal) | Greater than or equal | 6 | `{% raw %}{{#if model.age >= 18}}{% endraw %}` |
 
 ---
 
@@ -58,8 +58,8 @@ Combine boolean expressions.
 
 | Operator | Description | Precedence | Example |
 |----------|-------------|------------|---------|
-| [&&](./and) | Logical AND | 9 | `{{#if model.age >= 18 && model.hasLicense}}` |
-| [\|\|](./or) | Logical OR | 10 | `{{#if model.isAdmin \|\| model.isModerator}}` |
+| [&&](./and) | Logical AND | 9 | `{% raw %}{{#if model.age >= 18 && model.hasLicense}}{% endraw %}` |
+| [\|\|](./or) | Logical OR | 10 | `{% raw %}{{#if model.isAdmin \|\| model.isModerator}}{% endraw %}` |
 
 ---
 
@@ -69,7 +69,7 @@ Handle null or undefined values with fallback.
 
 | Operator | Description | Precedence | Example |
 |----------|-------------|------------|---------|
-| [??](./nullcoalesce) | Null coalescing | 8 | `{{model.name ?? 'Unknown'}}` |
+| [??](./nullcoalesce) | Null coalescing | 8 | `{% raw %}{{model.name ?? 'Unknown'}}{% endraw %}` |
 
 ---
 
@@ -91,6 +91,8 @@ Operators are evaluated in order of precedence (1 = highest, 10 = lowest):
 Use parentheses to override precedence:
 
 
+
+
 {% raw %}
 ```handlebars
 {{(model.price + model.tax) * model.quantity}}
@@ -99,11 +101,15 @@ Use parentheses to override precedence:
 
 
 
+
+
 ---
 
 ## Common Patterns
 
 ### Complex Arithmetic
+
+
 
 
 
@@ -117,7 +123,11 @@ Use parentheses to override precedence:
 
 
 
+
+
 ### Multiple Comparisons
+
+
 
 
 
@@ -131,7 +141,11 @@ Use parentheses to override precedence:
 
 
 
+
+
 ### Null Safety
+
+
 
 
 
@@ -144,7 +158,11 @@ Use parentheses to override precedence:
 
 
 
+
+
 ### Conditional Classes
+
+
 
 
 
@@ -158,6 +176,8 @@ Use parentheses to override precedence:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

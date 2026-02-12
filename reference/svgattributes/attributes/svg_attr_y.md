@@ -66,9 +66,11 @@ The `y` attribute is supported on the following SVG elements:
 
 ## Data Binding
 
-The `y` attribute supports dynamic values using data binding expressions with `{{expression}}` syntax.
+The `y` attribute supports dynamic values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Vertical Positioning
+
+
 
 
 
@@ -85,7 +87,11 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 ### Example 2: Calculated Vertical Position for Charts
+
+
 
 
 
@@ -103,7 +109,11 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 ### Example 3: Stacked Bars with Dynamic Y
+
+
 
 
 
@@ -123,6 +133,8 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -319,6 +331,8 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { bars: [
@@ -338,6 +352,8 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -446,6 +462,8 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { rows: [
@@ -465,6 +483,8 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

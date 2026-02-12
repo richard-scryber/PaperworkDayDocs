@@ -97,6 +97,8 @@ The height property supports dynamic value binding through template expressions,
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -147,7 +149,11 @@ The height property supports dynamic value binding through template expressions,
 
 
 
+
+
 ### Example 2: Conditional section heights
+
+
 
 
 
@@ -173,7 +179,11 @@ The height property supports dynamic value binding through template expressions,
 
 
 
+
+
 ### Example 3: Image sizing based on data
+
+
 
 
 
@@ -203,7 +213,11 @@ The height property supports dynamic value binding through template expressions,
 
 
 
+
+
 ### Example 4: Data-driven dashboard panels
+
+
 
 
 
@@ -243,6 +257,8 @@ The height property supports dynamic value binding through template expressions,
 </body>
 ```
 {% endraw %}
+
+
 
 
 

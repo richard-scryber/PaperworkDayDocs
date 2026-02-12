@@ -72,6 +72,8 @@ The `border-bottom-width` property supports dynamic values through data binding,
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -92,7 +94,11 @@ The `border-bottom-width` property supports dynamic values through data binding,
 
 
 
+
+
 ### Example 2: Table row emphasis
+
+
 
 
 
@@ -115,7 +121,11 @@ The `border-bottom-width` property supports dynamic values through data binding,
 
 
 
+
+
 ### Example 3: Navigation active state
+
+
 
 
 
@@ -135,6 +145,8 @@ The `border-bottom-width` property supports dynamic values through data binding,
 </body>
 ```
 {% endraw %}
+
+
 
 
 

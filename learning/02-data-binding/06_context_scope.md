@@ -42,6 +42,8 @@ doc.Params["author"] = "John Doe";
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Root context -->
@@ -49,6 +51,8 @@ doc.Params["author"] = "John Doe";
 <p>By {{author}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -62,6 +66,8 @@ doc.Params["author"] = "John Doe";
 
 
 
+
+
 {% raw %}
 ```html
 <!-- At root level, these are equivalent -->
@@ -72,7 +78,11 @@ doc.Params["author"] = "John Doe";
 
 
 
+
+
 ### In Loops
+
+
 
 
 
@@ -87,9 +97,13 @@ doc.Params["author"] = "John Doe";
 
 
 
+
+
 ### Simple Values
 
 When iterating over simple arrays, `this` is the value itself:
+
+
 
 
 
@@ -100,6 +114,8 @@ When iterating over simple arrays, `this` is the value itself:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -117,6 +133,8 @@ Access the parent scope from within a nested context.
 
 
 
+
+
 {% raw %}
 ```html
 {{#each orders}}
@@ -131,6 +149,8 @@ Access the parent scope from within a nested context.
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -154,6 +174,8 @@ doc.Params["orders"] = new[]
 
 
 
+
+
 {% raw %}
 ```html
 {{#each departments}}
@@ -174,6 +196,8 @@ doc.Params["orders"] = new[]
 
 
 
+
+
 - `this.memberName` - Current member
 - `../teamName` - Parent team
 - `../../name` - Grandparent department
@@ -190,6 +214,8 @@ While `../` accesses parent, you can navigate to root by using the parameter nam
 
 
 
+
+
 {% raw %}
 ```html
 {{#each model.orders}}
@@ -201,6 +227,8 @@ While `../` accesses parent, you can navigate to root by using the parameter nam
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -223,6 +251,8 @@ doc.Params["model"] = new
 
 
 
+
+
 {% raw %}
 ```html
 {{#each items}}
@@ -233,11 +263,15 @@ doc.Params["model"] = new
 
 
 
+
+
 ```csharp
 doc.Params["items"] = new[] { "Apple", "Banana", "Orange" };
 ```
 
 ### Arrays of Objects
+
+
 
 
 
@@ -255,7 +289,11 @@ doc.Params["items"] = new[] { "Apple", "Banana", "Orange" };
 
 
 
+
+
 ### Nested Arrays
+
+
 
 
 
@@ -277,11 +315,15 @@ doc.Params["items"] = new[] { "Apple", "Banana", "Orange" };
 
 
 
+
+
 ---
 
 ## Context in Conditionals
 
-Context remains the same inside `{{#if}}` blocks:
+Context remains the same inside `{% raw %}{{#if}}{% endraw %}` blocks:
+
+
 
 
 
@@ -302,6 +344,8 @@ Context remains the same inside `{{#if}}` blocks:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -343,6 +387,8 @@ doc.Params["invoice"] = new
 ```
 
 **Template:**
+
+
 
 
 {% raw %}
@@ -459,6 +505,8 @@ doc.Params["invoice"] = new
 
 
 
+
+
 ### Example 2: Multi-Level Organization Chart
 
 **C# Code:**
@@ -520,6 +568,8 @@ doc.Params["organization"] = new
 ```
 
 **Template:**
+
+
 
 
 {% raw %}
@@ -628,6 +678,8 @@ doc.Params["organization"] = new
 
 
 
+
+
 ---
 
 ## Context Navigation Tips
@@ -636,10 +688,10 @@ doc.Params["organization"] = new
 
 | Context | How to Access | Example |
 |---------|--------------|---------|
-| Current | `{{this.property}}` | `{{this.name}}` |
-| Parent | `{{../property}}` | `{{../categoryName}}` |
-| Grandparent | `{{../../property}}` | `{{../../divisionName}}` |
-| Root parameter | `{{paramName}}` | `{{companyName}}` |
+| Current | `{% raw %}{{this.property}}{% endraw %}` | `{% raw %}{{this.name}}{% endraw %}` |
+| Parent | `{% raw %}{{../property}}{% endraw %}` | `{% raw %}{{../categoryName}}{% endraw %}` |
+| Grandparent | `{% raw %}{{../../property}}{% endraw %}` | `{% raw %}{{../../divisionName}}{% endraw %}` |
+| Root parameter | `{% raw %}{{paramName}}{% endraw %}` | `{% raw %}{{companyName}}{% endraw %}` |
 
 ### When to Use Each
 
@@ -698,6 +750,8 @@ Create a template with:
 
 
 
+
+
 {% raw %}
 ```html
 {{#each departments}}
@@ -710,7 +764,11 @@ Create a template with:
 
 
 
+
+
 ✅ **Solution:** Count nesting levels
+
+
 
 
 
@@ -726,7 +784,11 @@ Create a template with:
 
 
 
+
+
 ### ❌ Forgetting `this` in Loops
+
+
 
 
 
@@ -740,7 +802,11 @@ Create a template with:
 
 
 
+
+
 ✅ **Solution:** Use `this`
+
+
 
 
 
@@ -751,6 +817,8 @@ Create a template with:
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

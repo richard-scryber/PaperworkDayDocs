@@ -83,6 +83,8 @@ Choose coordinate system based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { useStrokeScaling: true, strokeWidth: 4 } -->
@@ -105,9 +107,13 @@ Choose coordinate system based on data:
 
 
 
+
+
 ### Adaptive Marker Sizing
 
 Switch between proportional and fixed sizing:
+
+
 
 
 
@@ -141,9 +147,13 @@ Switch between proportional and fixed sizing:
 
 
 
+
+
 ### Chart Visualization with Consistent Markers
 
 Use userSpaceOnUse for consistent marker sizes across varying line widths:
+
+
 
 
 
@@ -170,9 +180,13 @@ Use userSpaceOnUse for consistent marker sizes across varying line widths:
 
 
 
+
+
 ### Responsive Arrow Sizing
 
 Create arrows that scale proportionally with line thickness:
+
+
 
 
 
@@ -197,6 +211,8 @@ Create arrows that scale proportionally with line thickness:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

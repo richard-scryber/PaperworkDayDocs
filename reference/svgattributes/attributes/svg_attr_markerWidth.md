@@ -81,6 +81,8 @@ Adjust marker width based on data:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { markerSize: 12, importance: 'high' } -->
@@ -106,9 +108,13 @@ Adjust marker width based on data:
 
 
 
+
+
 ### Responsive Arrow Sizing
 
 Scale markers based on context:
+
+
 
 
 
@@ -137,7 +143,11 @@ Scale markers based on context:
 
 
 
+
+
 ### Data-Driven Marker Dimensions
+
+
 
 
 
@@ -173,6 +183,8 @@ Scale markers based on context:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

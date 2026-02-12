@@ -104,6 +104,8 @@ The `background-size` property supports dynamic data binding, enabling responsiv
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -129,9 +131,13 @@ The `background-size` property supports dynamic data binding, enabling responsiv
 
 
 
+
+
 Perfect for multi-tenant systems where each organization has logos of different dimensions. The logo size and spacing automatically adjust based on database values, ensuring consistent professional appearance across all clients.
 
 ### Example 2: Conditional watermark sizing by page type
+
+
 
 
 
@@ -158,9 +164,13 @@ Perfect for multi-tenant systems where each organization has logos of different 
 
 
 
+
+
 Enables intelligent watermark sizing where cover pages use full-size backgrounds, content pages use proportional watermarks, and other pages use specific dimensions - all controlled by page type data.
 
 ### Example 3: User-configurable background images
+
+
 
 
 
@@ -194,6 +204,8 @@ Enables intelligent watermark sizing where cover pages use full-size backgrounds
 </body>
 ```
 {% endraw %}
+
+
 
 
 

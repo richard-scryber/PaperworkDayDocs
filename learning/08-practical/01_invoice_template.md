@@ -31,6 +31,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -393,6 +395,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ---
 
 ## C# Invoice Generator
@@ -609,6 +613,8 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 
 
+
+
 {% raw %}
 ```html
 <div class="invoice-header">
@@ -625,6 +631,8 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 
 
+
+
 **Features:**
 - Company logo on left
 - Invoice title and number on right
@@ -632,6 +640,8 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 - Bottom border for separation
 
 ### 2. Company and Customer Information
+
+
 
 
 
@@ -657,12 +667,16 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 
 
+
+
 **Features:**
 - Side-by-side layout
 - Conditional customer company name
 - Clear visual hierarchy
 
 ### 3. Line Items Table
+
+
 
 
 
@@ -699,13 +713,17 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 
 
 
+
+
 **Features:**
-- Dynamic rows with `{{#each}}`
+- Dynamic rows with `{% raw %}{{#each}}{% endraw %}`
 - Automatic calculation: quantity × price
 - Optional item details
 - Professional styling with alternating rows
 
 ### 4. Totals Calculation
+
+
 
 
 
@@ -730,6 +748,8 @@ using (var output = new FileStream("invoice-2025-001.pdf", FileMode.Create))
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -760,6 +780,8 @@ Add more item details:
 
 
 
+
+
 {% raw %}
 ```html
 <tr>
@@ -778,9 +800,13 @@ Add more item details:
 
 
 
+
+
 ### Variation 3: Service Invoice (Hourly)
 
 For hourly billing:
+
+
 
 
 
@@ -814,6 +840,8 @@ For hourly billing:
 
 
 
+
+
 ---
 
 ## Tips & Tricks
@@ -821,6 +849,8 @@ For hourly billing:
 ### Professional Touches
 
 1. **Logo Optimization:**
+
+
 
 
 {% raw %}
@@ -834,7 +864,11 @@ For hourly billing:
 
 
 
+
+
 2. **Status Badge:**
+
+
 
 
 
@@ -853,7 +887,11 @@ For hourly billing:
 
 
 
+
+
 3. **QR Code for Payment:**
+
+
 
 
 {% raw %}
@@ -868,7 +906,11 @@ For hourly billing:
 
 
 
+
+
 4. **Terms and Conditions:**
+
+
 
 
 {% raw %}
@@ -880,6 +922,8 @@ For hourly billing:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -926,6 +970,8 @@ Build specialized invoices for:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Dynamic calculation -->
@@ -935,7 +981,11 @@ Build specialized invoices for:
 
 
 
+
+
 ### ❌ Missing Null Checks
+
+
 
 
 
@@ -949,7 +999,11 @@ Build specialized invoices for:
 
 
 
+
+
 ✅ **Solution:**
+
+
 
 
 
@@ -964,7 +1018,11 @@ Build specialized invoices for:
 
 
 
+
+
 ### ❌ Poor Number Formatting
+
+
 
 
 
@@ -978,7 +1036,11 @@ Build specialized invoices for:
 
 
 
+
+
 ✅ **Solution:**
+
+
 
 
 
@@ -989,6 +1051,8 @@ Build specialized invoices for:
 <!-- Output: $1,234.50 -->
 ```
 {% endraw %}
+
+
 
 
 

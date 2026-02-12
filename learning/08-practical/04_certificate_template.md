@@ -31,6 +31,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -418,6 +420,8 @@ By the end of this article, you'll be able to:
 
 
 
+
+
 ---
 
 ## C# Certificate Generator
@@ -584,6 +588,8 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 
 
 
+
+
 {% raw %}
 ```html
 <p class="achievement-text">
@@ -605,7 +611,11 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 
 
 
+
+
 ### Variation 2: Award Certificate
+
+
 
 
 
@@ -629,7 +639,11 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 
 
 
+
+
 ### Variation 3: Membership Certificate
+
+
 
 
 
@@ -659,6 +673,8 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -711,6 +727,8 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Handwritten signature with typed name below -->
@@ -738,7 +756,11 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 
 
 
+
+
 ### 4. QR Code for Verification
+
+
 
 
 
@@ -753,6 +775,8 @@ using (var output = new FileStream("certificate-sarah-johnson.pdf", FileMode.Cre
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -889,12 +913,16 @@ Implement certificate verification:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Long name breaks layout -->
 <div class="recipient-name">{{recipient.name}}</div>
 ```
 {% endraw %}
+
+
 
 
 

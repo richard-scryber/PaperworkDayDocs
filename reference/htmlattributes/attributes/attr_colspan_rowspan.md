@@ -44,6 +44,8 @@ The `colspan` and `rowspan` attributes control cell spanning:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Cell spanning 2 columns -->
@@ -62,6 +64,8 @@ The `colspan` and `rowspan` attributes control cell spanning:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -77,6 +81,8 @@ The `colspan` and `rowspan` attributes are used with:
 ## Binding Values
 
 The `colspan` and `rowspan` attributes support data binding:
+
+
 
 
 
@@ -105,6 +111,8 @@ The `colspan` and `rowspan` attributes support data binding:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -861,6 +869,8 @@ When using spanning cells:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -899,6 +909,8 @@ When using spanning cells:
 </table>
 ```
 {% endraw %}
+
+
 
 
 

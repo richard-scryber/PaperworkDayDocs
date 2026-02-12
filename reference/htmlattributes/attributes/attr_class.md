@@ -94,6 +94,8 @@ The `class` attribute supports data binding for dynamic class assignment:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Dynamic single class -->
@@ -125,6 +127,8 @@ The `class` attribute supports data binding for dynamic class assignment:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -700,6 +704,8 @@ Use classes to create reusable component patterns:
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -729,6 +735,8 @@ Use classes to create reusable component patterns:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -939,6 +947,8 @@ Use classes to create reusable component patterns:
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -958,6 +968,8 @@ Use classes to create reusable component patterns:
 </template>
 ```
 {% endraw %}
+
+
 
 
 

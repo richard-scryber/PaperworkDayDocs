@@ -83,6 +83,8 @@ Bind the x2 coordinate to data for dynamic gradient extent:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { endX: 75 } -->
@@ -102,9 +104,13 @@ Bind the x2 coordinate to data for dynamic gradient extent:
 
 
 
+
+
 ### Progress-Based Gradient Width
 
 Create gradients that reflect progress or completion:
+
+
 
 
 
@@ -129,9 +135,13 @@ Create gradients that reflect progress or completion:
 
 
 
+
+
 ### Data-Driven Chart Gradients
 
 Position gradient endpoints based on data ranges:
+
+
 
 
 
@@ -156,9 +166,13 @@ Position gradient endpoints based on data ranges:
 
 
 
+
+
 ### Calculated Gradient Vectors
 
 Calculate gradient endpoint from angle and length:
+
+
 
 
 
@@ -182,9 +196,13 @@ Calculate gradient endpoint from angle and length:
 
 
 
+
+
 ### Heatmap with Data-Driven Range
 
 Create color gradients based on data value ranges:
+
+
 
 
 
@@ -207,6 +225,8 @@ Create color gradients based on data value ranges:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -361,6 +381,8 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { completion: 70 } -->
@@ -382,6 +404,8 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -531,6 +555,8 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { highlightStart: 30, highlightEnd: 70 } -->
@@ -554,6 +580,8 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

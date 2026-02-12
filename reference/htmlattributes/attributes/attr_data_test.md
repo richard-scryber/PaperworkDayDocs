@@ -56,6 +56,8 @@ The `data-test` attribute is applied to `<if>` elements:
 
 
 
+
+
 {% raw %}
 ```html
 <if data-test="{{model.showSection}}">
@@ -67,7 +69,11 @@ The `data-test` attribute is applied to `<if>` elements:
 
 
 
+
+
 ### Basic Syntax
+
+
 
 
 
@@ -97,6 +103,8 @@ The `data-test` attribute is applied to `<if>` elements:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -117,16 +125,16 @@ The `data-test` attribute accepts any expression that evaluates to a boolean val
 
 | Expression Type | Example | Description |
 |----------------|---------|-------------|
-| **Boolean Property** | `{{model.isActive}}` | Direct boolean value from model |
-| **Comparison** | `{{model.age >= 18}}` | Numeric or string comparison |
-| **Equality** | `{{model.status == 'approved'}}` | Equality check |
-| **Inequality** | `{{model.status != 'rejected'}}` | Not equal check |
-| **Logical AND** | `{{model.a && model.b}}` | Both conditions must be true |
-| **Logical OR** | `{{model.a \|\| model.b}}` | At least one condition true |
-| **Negation** | `{{!model.isDisabled}}` | Logical NOT |
-| **Null Check** | `{{model.value != null}}` | Check for null values |
-| **Length Check** | `{{model.items.length > 0}}` | Array/collection size |
-| **Complex** | `{{(model.a && model.b) \|\| model.c}}` | Combined logic |
+| **Boolean Property** | `{% raw %}{{model.isActive}}{% endraw %}` | Direct boolean value from model |
+| **Comparison** | `{% raw %}{{model.age >= 18}}{% endraw %}` | Numeric or string comparison |
+| **Equality** | `{% raw %}{{model.status == 'approved'}}{% endraw %}` | Equality check |
+| **Inequality** | `{% raw %}{{model.status != 'rejected'}}{% endraw %}` | Not equal check |
+| **Logical AND** | `{% raw %}{{model.a && model.b}}{% endraw %}` | Both conditions must be true |
+| **Logical OR** | `{% raw %}{{model.a \|\| model.b}}{% endraw %}` | At least one condition true |
+| **Negation** | `{% raw %}{{!model.isDisabled}}{% endraw %}` | Logical NOT |
+| **Null Check** | `{% raw %}{{model.value != null}}{% endraw %}` | Check for null values |
+| **Length Check** | `{% raw %}{{model.items.length > 0}}{% endraw %}` | Array/collection size |
+| **Complex** | `{% raw %}{{(model.a && model.b) \|\| model.c}}{% endraw %}` | Combined logic |
 
 ### Type
 
@@ -139,12 +147,12 @@ Supported comparison operators:
 
 | Operator | Description | Example |
 |----------|-------------|---------|
-| `==` | Equal to | `{{model.status == 'active'}}` |
-| `!=` | Not equal to | `{{model.type != 'draft'}}` |
-| `>` | Greater than | `{{model.quantity > 10}}` |
-| `>=` | Greater than or equal | `{{model.age >= 18}}` |
-| `<` | Less than | `{{model.price < 100}}` |
-| `<=` | Less than or equal | `{{model.score <= 50}}` |
+| `==` | Equal to | `{% raw %}{{model.status == 'active'}}{% endraw %}` |
+| `!=` | Not equal to | `{% raw %}{{model.type != 'draft'}}{% endraw %}` |
+| `>` | Greater than | `{% raw %}{{model.quantity > 10}}{% endraw %}` |
+| `>=` | Greater than or equal | `{% raw %}{{model.age >= 18}}{% endraw %}` |
+| `<` | Less than | `{% raw %}{{model.price < 100}}{% endraw %}` |
+| `<=` | Less than or equal | `{% raw %}{{model.score <= 50}}{% endraw %}` |
 
 ### Logical Operators
 
@@ -152,9 +160,9 @@ Supported logical operators:
 
 | Operator | Description | Example |
 |----------|-------------|---------|
-| `&&` | Logical AND | `{{model.a && model.b}}` |
-| `\|\|` | Logical OR | `{{model.a \|\| model.b}}` |
-| `!` | Logical NOT | `{{!model.isDisabled}}` |
+| `&&` | Logical AND | `{% raw %}{{model.a && model.b}}{% endraw %}` |
+| `\|\|` | Logical OR | `{% raw %}{{model.a \|\| model.b}}{% endraw %}` |
+| `!` | Logical NOT | `{% raw %}{{!model.isDisabled}}{% endraw %}` |
 
 ### Operator Precedence
 
@@ -206,6 +214,8 @@ JavaScript-style truthy/falsy evaluation:
 **Null/Undefined Checks**:
 
 
+
+
 {% raw %}
 ```html
 <if data-test="{{model.value != null}}">
@@ -216,7 +226,11 @@ JavaScript-style truthy/falsy evaluation:
 
 
 
+
+
 **Empty Collection Checks**:
+
+
 
 
 {% raw %}
@@ -231,7 +245,11 @@ JavaScript-style truthy/falsy evaluation:
 
 
 
+
+
 **Multiple Conditions**:
+
+
 
 
 {% raw %}
@@ -244,9 +262,13 @@ JavaScript-style truthy/falsy evaluation:
 
 
 
+
+
 ### Nesting Conditionals
 
 Conditionals can be nested for complex logic:
+
+
 
 
 
@@ -263,11 +285,15 @@ Conditionals can be nested for complex logic:
 
 
 
+
+
 ### Alternative Approaches
 
 For simple visibility control, consider alternatives:
 
 **CSS-based hiding** (content still in PDF):
+
+
 
 
 {% raw %}
@@ -278,7 +304,11 @@ For simple visibility control, consider alternatives:
 
 
 
+
+
 **Conditional styling**:
+
+
 
 
 {% raw %}
@@ -286,6 +316,8 @@ For simple visibility control, consider alternatives:
 <div style="display: {{model.show ? 'block' : 'none'}};">Content</div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -311,6 +343,8 @@ Show content based on boolean flag:
 
 
 
+
+
 {% raw %}
 ```html
 <if data-test="{{model.showDisclaimer}}">
@@ -323,9 +357,13 @@ Show content based on boolean flag:
 
 
 
+
+
 ### 2. Numeric Comparison
 
 Show content based on age verification:
+
+
 
 
 
@@ -342,9 +380,13 @@ Show content based on age verification:
 
 
 
+
+
 ### 3. String Equality
 
 Display content based on user role:
+
+
 
 
 
@@ -362,9 +404,13 @@ Display content based on user role:
 
 
 
+
+
 ### 4. Logical AND
 
 Require multiple conditions:
+
+
 
 
 
@@ -381,9 +427,13 @@ Require multiple conditions:
 
 
 
+
+
 ### 5. Logical OR
 
 Show content if any condition is true:
+
+
 
 
 
@@ -400,9 +450,13 @@ Show content if any condition is true:
 
 
 
+
+
 ### 6. Negation
 
 Show content when condition is false:
+
+
 
 
 
@@ -419,9 +473,13 @@ Show content when condition is false:
 
 
 
+
+
 ### 7. Null Check
 
 Verify value exists before displaying:
+
+
 
 
 
@@ -438,9 +496,13 @@ Verify value exists before displaying:
 
 
 
+
+
 ### 8. Collection Length Check
 
 Show section only if items exist:
+
+
 
 
 
@@ -462,9 +524,13 @@ Show section only if items exist:
 
 
 
+
+
 ### 9. Status-Based Display
 
 Different sections based on order status:
+
+
 
 
 
@@ -492,9 +558,13 @@ Different sections based on order status:
 
 
 
+
+
 ### 10. Complex Conditional Logic
 
 Multiple conditions with parentheses:
+
+
 
 
 
@@ -515,9 +585,13 @@ Multiple conditions with parentheses:
 
 
 
+
+
 ### 11. Date-Based Conditional
 
 Show content based on date comparison:
+
+
 
 
 
@@ -534,9 +608,13 @@ Show content based on date comparison:
 
 
 
+
+
 ### 12. Permission-Based Sections
 
 Multiple permission levels:
+
+
 
 
 
@@ -576,9 +654,13 @@ Multiple permission levels:
 
 
 
+
+
 ### 13. Invoice Payment Status
 
 Conditional payment messages:
+
+
 
 
 
@@ -621,9 +703,13 @@ Conditional payment messages:
 
 
 
+
+
 ### 14. Nested Conditionals
 
 Complex nested logic:
+
+
 
 
 
@@ -654,9 +740,13 @@ Complex nested logic:
 
 
 
+
+
 ### 15. Conditional Tables
 
 Show entire table based on data presence:
+
+
 
 
 
@@ -692,9 +782,13 @@ Show entire table based on data presence:
 
 
 
+
+
 ### 16. Multi-Language Support
 
 Language-specific content:
+
+
 
 
 
@@ -725,9 +819,13 @@ Language-specific content:
 
 
 
+
+
 ### 17. Conditional Styling and Formatting
 
 Show warnings based on threshold:
+
+
 
 
 
@@ -759,9 +857,13 @@ Show warnings based on threshold:
 
 
 
+
+
 ### 18. Configuration-Driven Sections
 
 Show sections based on configuration:
+
+
 
 
 
@@ -799,9 +901,13 @@ Show sections based on configuration:
 
 
 
+
+
 ### 19. Dynamic Document Sections
 
 Build document structure from data:
+
+
 
 
 
@@ -831,9 +937,13 @@ Build document structure from data:
 
 
 
+
+
 ### 20. Comprehensive Business Logic
 
 Complex real-world scenario:
+
+
 
 
 
@@ -918,6 +1028,8 @@ Complex real-world scenario:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

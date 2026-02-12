@@ -46,6 +46,8 @@ Scryber supports a rich variety of content types:
 
 
 
+
+
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -131,6 +133,8 @@ Before starting this series:
 ```html
 {% endraw %}
 
+
+
 <!-- Local file -->
 <img src="./images/logo.png" />
 
@@ -150,14 +154,16 @@ Before starting this series:
 **Inline SVG** - Full control and data binding:
 
 
-{% raw %}
+
+
 ```html
 <svg width="200" height="200">
     <circle cx="100" cy="100" r="{{radius}}" fill="blue" />
 </svg>
 
 ```
-{% endraw %}
+
+
 
 
 **External SVG** - Reusable graphics:
@@ -199,7 +205,8 @@ Before starting this series:
 
 
 
-{% raw %}
+
+
 ```html
 {{#each products}}
 <div class="product">
@@ -212,14 +219,16 @@ Before starting this series:
 {{/each}}
 
 ```
-{% endraw %}
+
+
 
 
 ### Data-Driven SVG Charts
 
 
 
-{% raw %}
+
+
 ```html
 <svg width="500" height="300">
     {{#each dataPoints}}
@@ -237,14 +246,16 @@ Before starting this series:
 </svg>
 
 ```
-{% endraw %}
+
+
 
 
 ### Dynamic Tables with Calculations
 
 
 
-{% raw %}
+
+
 ```html
 <table>
     <thead>
@@ -268,7 +279,8 @@ Before starting this series:
 </table>
 
 ```
-{% endraw %}
+
+
 
 
 ## Real-World Examples
@@ -277,7 +289,8 @@ Before starting this series:
 
 
 
-{% raw %}
+
+
 ```html
 <div class="catalog">
     {{#each products}}
@@ -300,14 +313,16 @@ Before starting this series:
 </div>
 
 ```
-{% endraw %}
+
+
 
 
 ### Data Dashboard
 
 
 
-{% raw %}
+
+
 ```html
 <div class="dashboard">
     <h1>Sales Dashboard - {{reportDate}}</h1>
@@ -375,14 +390,16 @@ Before starting this series:
 </div>
 
 ```
-{% endraw %}
+
+
 
 
 ### Invoice with Attachments
 
 
 
-{% raw %}
+
+
 ```html
 <div class="invoice">
     <img src="{{company.logo}}" style="width: 150pt;" />
@@ -429,7 +446,8 @@ Before starting this series:
 </div>
 
 ```
-{% endraw %}
+
+
 
 
 ## Performance Tips
@@ -500,7 +518,8 @@ Before starting this series:
 
 
 
-{% raw %}
+
+
 ```html
 <div class="gallery">
     {{#each images}}
@@ -514,14 +533,16 @@ Before starting this series:
 </div>
 
 ```
-{% endraw %}
+
+
 
 
 ### Chart with Legend
 
 
 
-{% raw %}
+
+
 ```html
 <div class="chart-container">
     <svg width="500" height="300">
@@ -541,14 +562,16 @@ Before starting this series:
 </div>
 
 ```
-{% endraw %}
+
+
 
 
 ### Running Totals in Table
 
 
 
-{% raw %}
+
+
 ```html
 <var data-id="runningTotal" data-value="0" />
 
@@ -568,7 +591,8 @@ Before starting this series:
 </table>
 
 ```
-{% endraw %}
+
+
 
 
 ## Next Steps

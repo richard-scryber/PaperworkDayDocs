@@ -59,11 +59,15 @@ The day of the month as a number from 1 to 31.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Day: {{dayOfMonth(model.date)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Date: {{yearOf(model.date)}}-{{padLeft(string(monthOfYear(model.date)), 2, '0')}}-{{padLeft(string(dayOfMonth(model.date)), 2, '0')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,6 +115,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Events in First Half of Month</h3>
@@ -117,6 +127,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -142,6 +154,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Next payment due:
@@ -153,6 +167,8 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
+
+
 
 
 

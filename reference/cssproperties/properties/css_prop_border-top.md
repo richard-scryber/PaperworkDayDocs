@@ -95,6 +95,8 @@ The `border-top` property supports dynamic values through data binding, allowing
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -115,6 +117,8 @@ The `border-top` property supports dynamic values through data binding, allowing
 
 
 
+
+
 Data context:
 ```json
 {
@@ -128,6 +132,8 @@ Data context:
 ```
 
 ### Example 2: Dynamic table row separators
+
+
 
 
 
@@ -149,7 +155,11 @@ Data context:
 
 
 
+
+
 ### Example 3: Priority-based top accents
+
+
 
 
 
@@ -170,6 +180,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

@@ -94,6 +94,8 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -122,7 +124,11 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 
 
 
+
+
 ### Example 2: Multi-level outline with data-driven content
+
+
 
 
 
@@ -167,7 +173,11 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 
 
 
+
+
 ### Example 3: Data-driven task list with automatic numbering
+
+
 
 
 
@@ -199,6 +209,8 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 </body>
 ```
 {% endraw %}
+
+
 
 
 

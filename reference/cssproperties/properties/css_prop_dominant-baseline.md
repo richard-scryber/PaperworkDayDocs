@@ -99,6 +99,8 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -124,7 +126,11 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 
 
 
+
+
 ### Example 2: Data-driven timeline labels with hanging baseline
+
+
 
 
 
@@ -152,7 +158,11 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 
 
 
+
+
 ### Example 3: Conditional baseline for chart annotations
+
+
 
 
 
@@ -177,6 +187,8 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 </body>
 ```
 {% endraw %}
+
+
 
 
 

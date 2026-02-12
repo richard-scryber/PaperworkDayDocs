@@ -61,6 +61,8 @@ A new array containing only items where the specified property equals the given 
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Active Tasks</h3>
@@ -69,6 +71,8 @@ A new array containing only items where the specified property equals the given 
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -95,6 +99,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Category Sales</h3>
@@ -103,6 +109,8 @@ doc.Params["model"] = new {
 <p>Clothing: ${{sumOf(selectWhere(model.products, 'category', 'Clothing'), 'sales')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -131,6 +139,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Verified Users ({{count(selectWhere(model.users, 'verified', true))}})</h3>
@@ -139,6 +149,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -164,6 +176,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>High Priority Active Tasks</h3>
@@ -174,6 +188,8 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
+
+
 
 
 

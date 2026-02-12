@@ -92,6 +92,8 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -115,7 +117,11 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 
 
 
+
+
 ### Example 2: Conditional text alignment based on position
+
+
 
 
 
@@ -141,7 +147,11 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 
 
 
+
+
 ### Example 3: Data-driven network diagram with centered labels
+
+
 
 
 
@@ -167,6 +177,8 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 </body>
 ```
 {% endraw %}
+
+
 
 
 

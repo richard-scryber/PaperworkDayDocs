@@ -96,6 +96,8 @@ The `border-width` property supports dynamic values through data binding, allowi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -117,7 +119,11 @@ The `border-width` property supports dynamic values through data binding, allowi
 
 
 
+
+
 ### Example 2: Priority-based border thickness
+
+
 
 
 
@@ -142,6 +148,8 @@ The `border-width` property supports dynamic values through data binding, allowi
 
 
 
+
+
 Data context:
 ```json
 {
@@ -156,6 +164,8 @@ Data context:
 ```
 
 ### Example 3: Table rows with dynamic borders
+
+
 
 
 
@@ -181,6 +191,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

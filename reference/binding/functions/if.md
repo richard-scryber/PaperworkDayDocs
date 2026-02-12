@@ -61,6 +61,8 @@ Returns `trueValue` if condition is true, `falseValue` otherwise.
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{if(model.isActive, 'Active', 'Inactive')}}
@@ -70,7 +72,11 @@ Returns `trueValue` if condition is true, `falseValue` otherwise.
 
 
 
+
+
 ### Conditional CSS Class
+
+
 
 
 
@@ -81,6 +87,8 @@ Returns `trueValue` if condition is true, `falseValue` otherwise.
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -103,6 +111,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{if(model.score >= 70, 'Pass', 'Fail')}}
@@ -111,7 +121,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Nested Conditions
+
+
 
 
 
@@ -123,7 +137,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### With Special Variables
+
+
 
 
 
@@ -139,7 +157,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Avoid Division by Zero
+
+
 
 
 
@@ -151,13 +173,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 ---
 
 ## Notes
 
 - Both `trueValue` and `falseValue` are evaluated (no short-circuit)
 - Can be nested for complex logic
-- Consider using `{{#if}}` helper for cleaner multi-line conditionals
+- Consider using `{% raw %}{{#if}}{% endraw %}` helper for cleaner multi-line conditionals
 - Useful for inline conditional values
 
 ---

@@ -324,6 +324,8 @@ In the Scryber codebase:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { showDetails: true, title: "Product Info", description: "..." } -->
@@ -341,7 +343,11 @@ In the Scryber codebase:
 
 
 
+
+
 ### Repeating Details from Collection
+
+
 
 
 
@@ -361,6 +367,8 @@ In the Scryber codebase:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -655,6 +663,8 @@ public class DocumentGenerator
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { userRole: "admin", adminContent: "Admin details...", userContent: "User details..." } -->
@@ -679,6 +689,8 @@ public class DocumentGenerator
 </details>
 ```
 {% endraw %}
+
+
 
 
 

@@ -59,12 +59,16 @@ A new array with items in reverse order (last item becomes first, etc.).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Original: {{join(model.items, ', ')}}</p>
 <p>Reversed: {{join(reverse(model.items), ', ')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,6 +89,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Products (Highest to Lowest Price)</h3>
@@ -93,6 +99,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -119,6 +127,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Recent Orders</h3>
@@ -127,6 +137,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -153,6 +165,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Countdown</h3>
@@ -162,6 +176,8 @@ doc.Params["model"] = new {
 <p>Launch!</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -187,6 +203,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Top Players</h3>
@@ -197,6 +215,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

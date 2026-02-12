@@ -94,6 +94,8 @@ The `border-right` property supports dynamic values through data binding, allowi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -113,7 +115,11 @@ The `border-right` property supports dynamic values through data binding, allowi
 
 
 
+
+
 ### Example 2: Dashboard metrics with dynamic separators
+
+
 
 
 
@@ -137,6 +143,8 @@ The `border-right` property supports dynamic values through data binding, allowi
 
 
 
+
+
 Data context:
 ```json
 {
@@ -150,6 +158,8 @@ Data context:
 ```
 
 ### Example 3: Sidebar navigation with active indicator
+
+
 
 
 
@@ -168,6 +178,8 @@ Data context:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

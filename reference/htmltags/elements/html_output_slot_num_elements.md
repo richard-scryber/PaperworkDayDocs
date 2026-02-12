@@ -61,6 +61,8 @@ The `<output>` element represents the result of a calculation, user action, or o
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Calculation result -->
@@ -107,6 +109,8 @@ The `<output>` element represents the result of a calculation, user action, or o
 
 
 
+
+
 ---
 
 ## &lt;slot&gt; : Content Slot Element
@@ -123,6 +127,8 @@ The `<slot>` element represents a placeholder for dynamic content insertion.
 | `hidden` | string | Set to "hidden" to hide the element. |
 
 ### Examples
+
+
 
 
 
@@ -160,6 +166,8 @@ The `<slot>` element represents a placeholder for dynamic content insertion.
 
 
 
+
+
 ---
 
 ## &lt;num&gt; : Number Formatting Element
@@ -187,6 +195,8 @@ Common .NET number format strings:
 - `£#,##0.00`: Custom format
 
 ### Examples
+
+
 
 
 
@@ -237,6 +247,8 @@ Common .NET number format strings:
 <p>Phone: <num data-value="{{model.phoneNumber}}" data-format="(###) ###-####"></num></p>
 ```
 {% endraw %}
+
+
 
 
 

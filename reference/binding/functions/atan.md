@@ -59,12 +59,16 @@ The angle in radians (between -π/2 and π/2).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>atan(1) = {{format(atan(1), '0.000')}} radians</p>
 <p>atan(1) = {{format(degrees(atan(1)), '0.0')}}°</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -78,11 +82,15 @@ The angle in radians (between -π/2 and π/2).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Angle: {{format(degrees(atan(model.rise / model.run)), '0.0')}}°</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -103,11 +111,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Bearing: {{format(degrees(atan(model.opposite / model.adjacent)), '0.1')}}°</p>
 ```
 {% endraw %}
+
+
 
 
 

@@ -98,6 +98,8 @@ The min-height property supports dynamic value binding through template expressi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -132,7 +134,11 @@ The min-height property supports dynamic value binding through template expressi
 
 
 
+
+
 ### Example 2: Section headers with data-driven minimum heights
+
+
 
 
 
@@ -162,7 +168,11 @@ The min-height property supports dynamic value binding through template expressi
 
 
 
+
+
 ### Example 3: Table rows with conditional minimum heights
+
+
 
 
 
@@ -206,7 +216,11 @@ The min-height property supports dynamic value binding through template expressi
 
 
 
+
+
 ### Example 4: Dashboard panels with responsive minimum heights
+
+
 
 
 
@@ -247,6 +261,8 @@ The min-height property supports dynamic value binding through template expressi
 </body>
 ```
 {% endraw %}
+
+
 
 
 

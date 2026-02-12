@@ -60,11 +60,15 @@ A new DateTime with the specified seconds added.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Timeout: {{format(addSeconds(model.startTime, 30), 'h:mm:ss tt')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -84,6 +88,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>T-minus: {{secondsBetween(model.now, addSeconds(model.launchTime, 0))}} seconds</p>
@@ -92,7 +98,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Processing Time
+
+
 
 
 
@@ -101,6 +111,8 @@ doc.Params["model"] = new {
 <p>Completed: {{format(addSeconds(model.started, model.elapsedSeconds), 'h:mm:ss')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

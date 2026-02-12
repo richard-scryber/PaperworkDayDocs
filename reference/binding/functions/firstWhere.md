@@ -61,6 +61,8 @@ The first item where the specified property equals the given value, or null if n
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#with firstWhere(model.users, 'id', model.currentUserId)}}
@@ -69,6 +71,8 @@ The first item where the specified property equals the given value, or null if n
 {{/with}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -94,6 +98,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#with firstWhere(model.products, 'sku', 'WIDGET-001')}}
@@ -103,6 +109,8 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -128,6 +136,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#with firstWhere(model.subscriptions, 'status', 'active')}}
@@ -138,6 +148,8 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -162,6 +174,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.orderItems}}
@@ -171,6 +185,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -212,7 +228,7 @@ doc.Params["model"] = new {
   - Configuration lookups
   - Related data joins
   - Default item selection
-- Use with `{{#with}}` helper for clean null handling
+- Use with `{% raw %}{{#with}}{% endraw %}` helper for clean null handling
 - For finding all matches, use `selectWhere()` instead
 - For counting matches, use `countOf()` instead
 - Performance: O(n) worst case, but stops at first match

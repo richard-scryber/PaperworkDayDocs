@@ -97,6 +97,8 @@ The `background-repeat` property supports dynamic data binding, allowing you to 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -118,9 +120,13 @@ The `background-repeat` property supports dynamic data binding, allowing you to 
 
 
 
+
+
 Enables different organizations to use their own background patterns with custom repeat settings (repeat, repeat-x, repeat-y, no-repeat) - perfect for white-label document generation where each client has unique branding requirements.
 
 ### Example 2: Conditional repeating borders based on document type
+
+
 
 
 
@@ -145,9 +151,13 @@ Enables different organizations to use their own background patterns with custom
 
 
 
+
+
 Automatically adjusts background repetition based on document type - certificates get single centered images, letterheads get horizontal borders, while general documents can have full repeating patterns.
 
 ### Example 3: Data-driven security patterns
+
+
 
 
 
@@ -175,6 +185,8 @@ Automatically adjusts background repetition based on document type - certificate
 </body>
 ```
 {% endraw %}
+
+
 
 
 

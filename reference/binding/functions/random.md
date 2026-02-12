@@ -57,11 +57,15 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Random: {{format(random(), '0.000')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -74,6 +78,8 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <!-- Random integer from 1 to 10 -->
@@ -83,7 +89,11 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 
 
 
+
+
 ### Random Selection
+
+
 
 
 
@@ -96,7 +106,11 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 
 
 
+
+
 ### Random Percentage
+
+
 
 
 
@@ -105,6 +119,8 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 <p>Random percentage: {{format(random() * 100, '0.0')}}%</p>
 ```
 {% endraw %}
+
+
 
 
 

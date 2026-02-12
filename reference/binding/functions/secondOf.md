@@ -59,11 +59,15 @@ The second as a number from 0 to 59.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Second: {{secondOf(model.time)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Time: {{hourOf(model.time)}}:{{padLeft(string(minuteOf(model.time)), 2, '0')}}:{{padLeft(string(secondOf(model.time)), 2, '0')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,6 +115,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.events}}
@@ -118,6 +128,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -143,6 +155,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Request Processing Time</h3>
@@ -151,6 +165,8 @@ doc.Params["model"] = new {
 <p>Seconds: {{secondOf(model.endTime) - secondOf(model.startTime)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -174,6 +190,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Sync Status:
@@ -185,6 +203,8 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
+
+
 
 
 

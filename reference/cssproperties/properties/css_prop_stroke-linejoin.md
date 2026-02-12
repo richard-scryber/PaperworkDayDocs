@@ -92,6 +92,8 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -115,7 +117,11 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 
 
 
+
+
 ### Example 2: Conditional border styles for UI states
+
+
 
 
 
@@ -143,7 +149,11 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 
 
 
+
+
 ### Example 3: Dynamic chart elements with variable line joins
+
+
 
 
 
@@ -168,6 +178,8 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 </body>
 ```
 {% endraw %}
+
+
 
 
 

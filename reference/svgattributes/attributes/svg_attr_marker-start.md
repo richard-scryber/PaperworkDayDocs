@@ -79,6 +79,8 @@ Choose marker based on data properties:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { lineType: 'primary', markers: { primary: 'dot-start', secondary: 'arrow-start' } } -->
@@ -103,9 +105,13 @@ Choose marker based on data properties:
 
 
 
+
+
 ### Conditional Markers
 
 Show markers based on conditions:
+
+
 
 
 
@@ -129,7 +135,11 @@ Show markers based on conditions:
 
 
 
+
+
 ### Data-Driven Connection Visualization
+
+
 
 
 
@@ -162,6 +172,8 @@ Show markers based on conditions:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

@@ -60,6 +60,8 @@ contains(str, search)
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if contains(model.description, 'premium')}}
@@ -67,6 +69,8 @@ contains(str, search)
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -86,6 +90,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.products}}
@@ -98,6 +104,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -128,6 +136,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -143,7 +153,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Email Validation
+
+
 
 
 
@@ -156,6 +170,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 

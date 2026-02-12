@@ -92,6 +92,8 @@ The `color` property can be dynamically set using data binding expressions, enab
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -110,6 +112,8 @@ The `color` property can be dynamically set using data binding expressions, enab
 
 
 
+
+
 With model data:
 ```json
 {
@@ -125,6 +129,8 @@ With model data:
 ```
 
 ### Example 2: Conditional colors based on values
+
+
 
 
 
@@ -165,7 +171,11 @@ With model data:
 
 
 
+
+
 ### Example 3: Brand colors from configuration
+
+
 
 
 
@@ -195,6 +205,8 @@ With model data:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

@@ -84,6 +84,8 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
 
 
 
+
+
 {% raw %}
 ```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
@@ -116,7 +118,11 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
 
 
 
+
+
 ### Example 2: Language-Specific Hyphenation
+
+
 
 
 
@@ -152,7 +158,11 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
 
 
 
+
+
 ### Example 3: Quality-Based Settings
+
+
 
 
 
@@ -187,6 +197,8 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
 -->
 ```
 {% endraw %}
+
+
 
 
 

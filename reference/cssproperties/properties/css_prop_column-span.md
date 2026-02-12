@@ -92,6 +92,8 @@ The column-span property works with data binding to conditionally create full-wi
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -147,7 +149,11 @@ The column-span property works with data binding to conditionally create full-wi
 
 
 
+
+
 ### Example 2: Dynamic spanning for images and tables
+
+
 
 
 
@@ -235,7 +241,11 @@ The column-span property works with data binding to conditionally create full-wi
 
 
 
+
+
 ### Example 3: Configurable spanning for newsletters
+
+
 
 
 
@@ -314,6 +324,8 @@ The column-span property works with data binding to conditionally create full-wi
 </body>
 ```
 {% endraw %}
+
+
 
 
 

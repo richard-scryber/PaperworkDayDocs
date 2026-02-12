@@ -32,9 +32,11 @@ Divide one numeric value by another.
 ## Syntax
 
 
+{% raw %}
 ```
 {{operand1 / operand2}}
 ```
+{% endraw %}
 
 
 ---
@@ -72,11 +74,15 @@ The quotient of the left operand divided by the right operand.
 
 
 
+
+
 {% raw %}
 ```html 
 <p>Average: {{format(model.total / model.count, '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -97,11 +103,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 <p>Price per unit: ${{format(model.totalPrice / model.quantity, '0.00')}}</p> 
 ```
 {% endraw %}
+
+
 
 
 
@@ -123,11 +133,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 <p>Completion: {{format((model.completed / model.total) * 100, '0.0')}}%</p> 
 ```
 {% endraw %}
+
+
 
 
 
@@ -149,6 +163,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 <p>Speed: {{format(model.distance / model.time, '0.0')}} mph</p> 
@@ -158,7 +174,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Ratio Comparison
+
+
 
 
 
@@ -175,6 +195,8 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 

@@ -32,9 +32,11 @@ Compare two values for inequality. Returns true if values are not equal.
 ## Syntax
 
 
+{% raw %}
 ```
 {{operand1 != operand2}}
 ```
+{% endraw %}
 
 
 ---
@@ -72,6 +74,8 @@ Evaluated before: `??`, `&&`, `||`
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.status != 'cancelled'}}
@@ -82,6 +86,8 @@ Evaluated before: `??`, `&&`, `||`
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -106,6 +112,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```html 
 {{#if model.balance != 0}}
@@ -117,7 +125,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Filter Out Null Values
+
+
 
 
 
@@ -134,7 +146,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Highlight Changes
+
+
 
 
 
@@ -155,7 +171,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Show Alert for Specific Conditions
+
+
 
 
 
@@ -169,6 +189,8 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
+
+
 
 
 
@@ -197,7 +219,7 @@ doc.Params["model"] = new {
 - String comparison is case-sensitive
 - For null checks, use `value != null` or null coalescing `??`
 - Opposite of `==` (equality) operator
-- Commonly used with `{{#if}}` for conditional rendering
+- Commonly used with `{% raw %}{{#if}}{% endraw %}` for conditional rendering
 - Can be combined with logical operators (`&&`, `||`)
 - Type conversion may occur between compatible types
 

@@ -184,6 +184,8 @@ Bind radial gradient colors to data values:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { centerColor: "#f39c12", edgeColor: "#e74c3c" } -->
@@ -201,9 +203,13 @@ Bind radial gradient colors to data values:
 
 
 
+
+
 ### Dynamic Focal Point Position
 
 Create lighting effects with data-driven focal points:
+
+
 
 
 
@@ -224,9 +230,13 @@ Create lighting effects with data-driven focal points:
 
 
 
+
+
 ### Conditional Gradient Based on Status
 
 Generate gradients based on data state:
+
+
 
 {% raw %}
 ```html
@@ -244,9 +254,13 @@ Generate gradients based on data state:
 ```
 {% endraw %}
 
+
+
 ### Dynamic Gradient Radius
 
 Control gradient extent with data:
+
+
 
 
 
@@ -267,9 +281,13 @@ Control gradient extent with data:
 
 
 
+
+
 ### Data-Driven Multi-Stop Gradients
 
 Generate complex gradients from data arrays:
+
+
 
 
 
@@ -286,6 +304,8 @@ Generate complex gradients from data arrays:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -544,6 +564,8 @@ Generate complex gradients from data arrays:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { temperature: 85, maxTemp: 100 } -->
@@ -564,7 +586,11 @@ Generate complex gradients from data arrays:
 
 
 
+
+
 ### Dynamic Spotlight Position
+
+
 
 
 
@@ -582,6 +608,8 @@ Generate complex gradients from data arrays:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

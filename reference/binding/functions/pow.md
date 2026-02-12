@@ -60,11 +60,15 @@ The base raised to the power of the exponent.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{model.value}} squared = {{pow(model.value, 2)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -84,11 +88,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Volume: {{pow(model.side, 3)}} cubic units</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -108,11 +116,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Future Value: ${{format(model.principal * pow(1 + model.rate, model.years), '0.00')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -134,12 +146,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <!-- Cube root using pow(value, 1/3) -->
 <p>Cube root of 27: {{format(pow(27, 1/3), '0.0')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

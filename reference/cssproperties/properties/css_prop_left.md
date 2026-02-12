@@ -94,6 +94,8 @@ The `left` property supports data binding, allowing dynamic horizontal positioni
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -131,6 +133,8 @@ The `left` property supports data binding, allowing dynamic horizontal positioni
 
 
 
+
+
 Data model:
 ```json
 {
@@ -155,6 +159,8 @@ Data model:
 ```
 
 ### Example 2: Dynamic badge positioning from left
+
+
 
 
 
@@ -190,6 +196,8 @@ Data model:
 
 
 
+
+
 Data model:
 ```json
 {
@@ -208,6 +216,8 @@ Data model:
 ```
 
 ### Example 3: Configurable logo and margin notes
+
+
 
 
 
@@ -246,6 +256,8 @@ Data model:
 </body>
 ```
 {% endraw %}
+
+
 
 
 

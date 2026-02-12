@@ -51,6 +51,8 @@ Both attributes are used exclusively with the `<object>` element and support dat
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Attach file from byte array -->
@@ -71,6 +73,8 @@ Both attributes are used exclusively with the `<object>` element and support dat
         alt="{{model.description}}"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -99,6 +103,8 @@ The `data-file-data` attribute accepts binary file content:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Simple byte array binding -->
@@ -117,6 +123,8 @@ The `data-file-data` attribute accepts binary file content:
         type="application/pdf"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -150,6 +158,8 @@ The `data-file` attribute binds to embedded file data objects:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Bind to pre-loaded embedded file object -->
@@ -158,6 +168,8 @@ The `data-file` attribute binds to embedded file data objects:
         type="application/pdf"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -191,6 +203,8 @@ When multiple data sources are specified, they are evaluated in this order:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- This will use data-file-data if fileBytes is not null -->
@@ -202,9 +216,13 @@ When multiple data sources are specified, they are evaluated in this order:
 
 
 
+
+
 ### Filename from data Attribute
 
 When using `data-file-data`, the `data` attribute value becomes the filename:
+
+
 
 
 
@@ -221,6 +239,8 @@ When using `data-file-data`, the `data` attribute value becomes the filename:
         type="application/pdf"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -263,6 +283,8 @@ Always specify the correct MIME type for proper file handling:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- PDF -->
@@ -289,6 +311,8 @@ Always specify the correct MIME type for proper file handling:
 
 
 
+
+
 ### Error Handling
 
 File data loading follows standard error handling:
@@ -305,6 +329,8 @@ File data loading follows standard error handling:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With error fallback -->
@@ -318,6 +344,8 @@ File data loading follows standard error handling:
 </object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -366,6 +394,8 @@ var model = new
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Template usage -->
@@ -377,6 +407,8 @@ var model = new
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -414,6 +446,8 @@ When binary data is null or empty:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Safe binding with null check -->
@@ -423,6 +457,8 @@ When binary data is null or empty:
         hidden="{{model.fileBytes == null ? 'hidden' : ''}}"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -453,6 +489,8 @@ model.EmbeddedFile = embeddedFile;
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Use in template -->
@@ -462,6 +500,8 @@ model.EmbeddedFile = embeddedFile;
         data-icon="Paperclip"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -475,6 +515,8 @@ Simple file attachment from byte array:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { fileName: "document.pdf", fileData: byte[], mimeType: "application/pdf" } -->
@@ -485,6 +527,8 @@ Simple file attachment from byte array:
         data-icon="Paperclip"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -510,6 +554,8 @@ var documents = await db.Documents
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Template -->
@@ -526,6 +572,8 @@ var documents = await db.Documents
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -554,6 +602,8 @@ public class ReportModel
 
 
 
+
+
 {% raw %}
 ```html
 <object data="{{model.FileName}}"
@@ -563,6 +613,8 @@ public class ReportModel
         alt="API Retrieved Document"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -593,6 +645,8 @@ public class InvoiceModel
 
 
 
+
+
 {% raw %}
 ```html
 <h2>Invoice Details</h2>
@@ -611,9 +665,13 @@ public class InvoiceModel
 
 
 
+
+
 ### 5. Conditional File Attachment
 
 Attach files conditionally based on data availability:
+
+
 
 
 
@@ -633,6 +691,8 @@ Attach files conditionally based on data availability:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -657,6 +717,8 @@ public class ReportModel
 
 
 
+
+
 {% raw %}
 ```html
 <div class="attachments-section">
@@ -676,6 +738,8 @@ public class ReportModel
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -707,6 +771,8 @@ public class Model
 
 
 
+
+
 {% raw %}
 ```html
 <object data="generated-report.pdf"
@@ -716,6 +782,8 @@ public class Model
         alt="Generated Report"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -736,6 +804,8 @@ public class ImageAttachment
 
 
 
+
+
 {% raw %}
 ```html
 <div class="image-gallery">
@@ -750,6 +820,8 @@ public class ImageAttachment
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -787,6 +859,8 @@ public class SourceCodePackage
 
 
 
+
+
 {% raw %}
 ```html
 <object data="source-code.zip"
@@ -796,6 +870,8 @@ public class SourceCodePackage
         alt="Source Code Archive"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -827,6 +903,8 @@ public class ExcelReport
 
 
 
+
+
 {% raw %}
 ```html
 <object data="financial-data.xlsx"
@@ -839,9 +917,13 @@ public class ExcelReport
 
 
 
+
+
 ### 11. Fallback Content with Binary Data
 
 Provide fallback when binary data is unavailable:
+
+
 
 
 
@@ -867,6 +949,8 @@ Provide fallback when binary data is unavailable:
 
 
 
+
+
 ### 12. Certificate/Credential Attachment
 
 Attach security certificates or credentials:
@@ -879,6 +963,8 @@ public class CertificateAttachment
     public DateTime ExpirationDate { get; set; }
 }
 ```
+
+
 
 
 
@@ -902,6 +988,8 @@ public class CertificateAttachment
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -936,6 +1024,8 @@ public class ConfigurationModel
 
 
 
+
+
 {% raw %}
 ```html
 <object data="configuration.json"
@@ -945,6 +1035,8 @@ public class ConfigurationModel
         alt="Application Configuration"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -961,6 +1053,8 @@ public class SignedDocument
     public DateTime SignedDate { get; set; }
 }
 ```
+
+
 
 
 
@@ -999,6 +1093,8 @@ public class SignedDocument
 
 
 
+
+
 ### 15. Medical Record with DICOM Attachments
 
 Attach medical imaging or other specialized files:
@@ -1012,6 +1108,8 @@ public class MedicalRecord
     public DateTime ScanDate { get; set; }
 }
 ```
+
+
 
 
 
@@ -1050,6 +1148,8 @@ public class MedicalRecord
 
 
 
+
+
 ### 16. Version-Controlled Document Attachments
 
 Attach multiple versions of a document:
@@ -1068,6 +1168,8 @@ public class VersionedDocument
     public List<DocumentVersion> Versions { get; set; }
 }
 ```
+
+
 
 
 
@@ -1104,6 +1206,8 @@ public class VersionedDocument
 </div>
 ```
 {% endraw %}
+
+
 
 
 

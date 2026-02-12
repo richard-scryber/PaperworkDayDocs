@@ -290,6 +290,8 @@ This displays the page number where the referenced component appears.
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { documentTitle: "Annual Report 2024", currentYear: 2024 } -->
@@ -304,7 +306,11 @@ This displays the page number where the referenced component appears.
 
 
 
+
+
 ### Complex Footer Layout
+
+
 
 
 
@@ -334,6 +340,8 @@ This displays the page number where the referenced component appears.
 
 
 
+
+
 ### Different Formats in Same Document
 
 ```html
@@ -358,6 +366,8 @@ This displays the page number where the referenced component appears.
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Only show page numbers after first page -->
@@ -366,6 +376,8 @@ This displays the page number where the referenced component appears.
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -401,6 +413,8 @@ This displays the page number where the referenced component appears.
 
 
 
+
+
 {% raw %}
 ```html
 <div style="display: table; width: 100%; border-top: 1pt solid #ccc; padding-top: 5pt; font-size: 9pt;">
@@ -421,7 +435,11 @@ This displays the page number where the referenced component appears.
 
 
 
+
+
 ### Index with Page References
+
+
 
 
 
@@ -443,6 +461,8 @@ This displays the page number where the referenced component appears.
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -480,6 +500,8 @@ This displays the page number where the referenced component appears.
 
 
 
+
+
 {% raw %}
 ```html
 <div style="padding: 15pt; background-color: #f5f5f5; border-bottom: 2pt solid #336699;">
@@ -496,6 +518,8 @@ This displays the page number where the referenced component appears.
 </div>
 ```
 {% endraw %}
+
+
 
 
 

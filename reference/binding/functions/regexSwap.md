@@ -61,11 +61,15 @@ The string with all pattern matches replaced.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.text, '\\d', '')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -85,11 +89,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.phone, '\\d', 'X')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -109,11 +117,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.text, '\\s+', ' ')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -133,11 +145,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.filename, '[^a-zA-Z0-9_.-]', '_')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -157,6 +173,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.number, '(\\d)(?=(\\d{3})+$)', '$1,')}}</p>
@@ -165,7 +183,11 @@ doc.Params["model"] = new {
 
 
 
+
+
 ### Remove HTML Tags
+
+
 
 
 
@@ -174,6 +196,8 @@ doc.Params["model"] = new {
 <p>{{regexSwap(model.html, '<[^>]+>', '')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -193,12 +217,16 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <!-- Convert MM/DD/YYYY to YYYY-MM-DD -->
 <p>{{regexSwap(model.date, '(\\d{2})/(\\d{2})/(\\d{4})', '$3-$1-$2')}}</p>
 ```
 {% endraw %}
+
+
 
 
 

@@ -97,6 +97,8 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -122,7 +124,11 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 
 
 
+
+
 ### Example 2: Dynamic summary pages
+
+
 
 
 
@@ -156,7 +162,11 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 
 
 
+
+
 ### Example 3: Variable document structure with data-driven breaks
+
+
 
 
 
@@ -190,6 +200,8 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 </body>
 ```
 {% endraw %}
+
+
 
 
 

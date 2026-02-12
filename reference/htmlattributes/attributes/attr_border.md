@@ -251,6 +251,8 @@ The `border` attribute supports data binding:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { borderWidth: 2 } -->
@@ -264,7 +266,11 @@ The `border` attribute supports data binding:
 
 
 
+
+
 ### Conditional Border
+
+
 
 
 
@@ -286,6 +292,8 @@ The `border` attribute supports data binding:
 </table>
 ```
 {% endraw %}
+
+
 
 
 
@@ -899,6 +907,8 @@ The `border` attribute has no performance impact on PDF generation.
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -932,6 +942,8 @@ The `border` attribute has no performance impact on PDF generation.
 </table>
 ```
 {% endraw %}
+
+
 
 
 

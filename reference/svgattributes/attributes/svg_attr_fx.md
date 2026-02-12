@@ -83,6 +83,8 @@ Bind focal point to data for dynamic lighting effects:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { lightX: 35, lightY: 35 } -->
@@ -103,9 +105,13 @@ Bind focal point to data for dynamic lighting effects:
 
 
 
+
+
 ### Mouse/Touch Position Lighting
 
 Create interactive lighting following pointer position:
+
+
 
 
 
@@ -131,9 +137,13 @@ Create interactive lighting following pointer position:
 
 
 
+
+
 ### Data-Driven Highlight Direction
 
 Position highlights based on data orientation:
+
+
 
 
 
@@ -161,9 +171,13 @@ Position highlights based on data orientation:
 
 
 
+
+
 ### Status Indicator with Centered/Offset Glow
 
 Change focal point based on status state:
+
+
 
 
 
@@ -188,9 +202,13 @@ Change focal point based on status state:
 
 
 
+
+
 ### Calculated Lighting Angle
 
 Calculate focal point from angle data:
+
+
 
 
 
@@ -211,6 +229,8 @@ Calculate focal point from angle data:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -492,6 +512,8 @@ Focal point positioning is ideal for:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { lightX: 35, lightY: 40, brightness: 1.0 } -->
@@ -513,7 +535,11 @@ Focal point positioning is ideal for:
 
 
 
+
+
 ### Interactive Button State
+
+
 
 
 
@@ -539,6 +565,8 @@ Focal point positioning is ideal for:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

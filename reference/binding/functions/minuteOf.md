@@ -59,11 +59,15 @@ The minute as a number from 0 to 59.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Minute: {{minuteOf(model.time)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Time: {{hourOf(model.time)}}:{{padLeft(string(minuteOf(model.time)), 2, '0')}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -107,6 +115,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Time Slot:
@@ -120,6 +130,8 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -139,6 +151,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Parking Duration</h3>
@@ -146,6 +160,8 @@ doc.Params["model"] = new {
 <p>Additional minutes: {{minuteOf(model.exit) - minuteOf(model.entry)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -168,6 +184,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.meetings}}
@@ -179,6 +197,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

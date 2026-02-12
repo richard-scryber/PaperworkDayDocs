@@ -42,6 +42,8 @@ The `href` attribute defines link destinations:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- External URL -->
@@ -63,6 +65,8 @@ The `href` attribute defines link destinations:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -79,6 +83,8 @@ While some HTML specifications allow `href` on other elements, in Scryber it is 
 ## Binding Values
 
 The `href` attribute supports data binding for dynamic link destinations:
+
+
 
 
 
@@ -112,6 +118,8 @@ The `href` attribute supports data binding for dynamic link destinations:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -546,6 +554,8 @@ Links should always have a valid `href` value:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -574,7 +584,11 @@ Links should always have a valid `href` value:
 
 
 
+
+
 ### Navigation Menu
+
+
 
 
 
@@ -609,6 +623,8 @@ Links should always have a valid `href` value:
 </nav>
 ```
 {% endraw %}
+
+
 
 
 
@@ -790,6 +806,8 @@ Links should always have a valid `href` value:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { user: { isPremium: true }, premiumUrl: "premium.pdf", standardUrl: "standard.pdf" } -->
@@ -806,6 +824,8 @@ Links should always have a valid `href` value:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

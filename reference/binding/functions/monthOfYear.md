@@ -59,11 +59,15 @@ The month as a number from 1 (January) to 12 (December).
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Month: {{monthOfYear(model.date)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,11 +87,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Quarter: Q{{ceiling(monthOfYear(model.date) / 3)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -104,6 +112,8 @@ doc.Params["model"] = new {
 ```
 
 ### Seasonal Classification
+
+
 
 
 
@@ -125,6 +135,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -141,6 +153,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <h3>Monthly Sales</h3>
@@ -149,6 +163,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

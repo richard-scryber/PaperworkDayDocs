@@ -131,6 +131,8 @@ The `<span>` element has the following default behavior:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- With model = { userName: "John", userRole: "Admin" } -->
@@ -138,6 +140,8 @@ The `<span>` element has the following default behavior:
 <p>Your role: <span class="role">{{model.userRole}}</span></p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -166,12 +170,16 @@ The `<span>` element has the following default behavior:
 
 
 
+
+
 {% raw %}
 ```html
 <p>Status: <span data-content="{{model.status}}"
                style="color: {{model.statusColor}}"></span></p>
 ```
 {% endraw %}
+
+
 
 
 

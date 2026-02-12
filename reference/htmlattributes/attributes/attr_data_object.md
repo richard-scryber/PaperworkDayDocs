@@ -46,6 +46,8 @@ The `data` attribute specifies the source file for attachment:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Local file attachment -->
@@ -65,6 +67,8 @@ The `data` attribute specifies the source file for attachment:
 
 
 
+
+
 ---
 
 ## Supported Elements
@@ -81,6 +85,8 @@ The `data` attribute is used exclusively with:
 ## Binding Values
 
 The `data` attribute supports data binding for dynamic file attachment:
+
+
 
 
 
@@ -112,6 +118,8 @@ The `data` attribute supports data binding for dynamic file attachment:
 </template>
 ```
 {% endraw %}
+
+
 
 
 
@@ -226,6 +234,8 @@ For files from memory or databases, use `data-file-data` instead:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- data attribute used as filename, binary content from data-file-data -->
@@ -235,6 +245,8 @@ For files from memory or databases, use `data-file-data` instead:
         data-icon="Paperclip"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -310,6 +322,8 @@ Be cautious with file attachments:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Sanitize user input -->
@@ -319,6 +333,8 @@ Be cautious with file attachments:
         data-icon="Paperclip"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -345,6 +361,8 @@ The attachment filename is extracted from the `data` attribute:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Filename: "report.pdf" -->
@@ -360,6 +378,8 @@ The attachment filename is extracted from the `data` attribute:
         type="application/pdf"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -499,6 +519,8 @@ Important distinction:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { reportPath: "reports/Q4.pdf", reportType: "application/pdf" } -->
@@ -526,6 +548,8 @@ Important distinction:
         type="application/pdf"></object>
 ```
 {% endraw %}
+
+
 
 
 
@@ -568,6 +592,8 @@ Important distinction:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { attachments: [
@@ -592,6 +618,8 @@ Important distinction:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -810,6 +838,8 @@ Important distinction:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Attach file from company CDN -->
@@ -834,7 +864,11 @@ Important distinction:
 
 
 
+
+
 ### Conditional Attachments
+
+
 
 
 
@@ -855,6 +889,8 @@ Important distinction:
 </div>
 ```
 {% endraw %}
+
+
 
 
 
@@ -935,6 +971,8 @@ Important distinction:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -967,6 +1005,8 @@ Important distinction:
 </div>
 ```
 {% endraw %}
+
+
 
 
 

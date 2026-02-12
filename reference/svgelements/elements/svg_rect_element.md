@@ -77,9 +77,11 @@ The `<rect>` element creates a rectangular shape defined by:
 
 ## Data Binding
 
-The `<rect>` element supports dynamic attribute values using data binding expressions with `{{expression}}` syntax.
+The `<rect>` element supports dynamic attribute values using data binding expressions with `{% raw %}{{expression}}{% endraw %}` syntax.
 
 ### Example 1: Dynamic Position and Size
+
+
 
 
 
@@ -96,7 +98,11 @@ The `<rect>` element supports dynamic attribute values using data binding expres
 
 
 
+
+
 ### Example 2: Dynamic Colors from Data
+
+
 
 
 
@@ -112,7 +118,11 @@ The `<rect>` element supports dynamic attribute values using data binding expres
 
 
 
+
+
 ### Example 3: Repeating Rectangles with Template
+
+
 
 
 
@@ -132,6 +142,8 @@ The `<rect>` element supports dynamic attribute values using data binding expres
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -321,6 +333,8 @@ Transforms are applied in the order specified and can be combined:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { status: 'online', color: '#4CAF50' } -->
@@ -330,6 +344,8 @@ Transforms are applied in the order specified and can be combined:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 
@@ -392,6 +408,8 @@ Transforms are applied in the order specified and can be combined:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { progress: 0.65 } -->
@@ -408,7 +426,11 @@ Transforms are applied in the order specified and can be combined:
 
 
 
+
+
 ### Table Cell Background
+
+
 
 
 
@@ -426,7 +448,11 @@ Transforms are applied in the order specified and can be combined:
 
 
 
+
+
 ### Dynamic Status Badges
+
+
 
 
 
@@ -448,7 +474,11 @@ Transforms are applied in the order specified and can be combined:
 
 
 
+
+
 ### Heat Map Cell
+
+
 
 
 
@@ -462,6 +492,8 @@ Transforms are applied in the order specified and can be combined:
 </svg>
 ```
 {% endraw %}
+
+
 
 
 

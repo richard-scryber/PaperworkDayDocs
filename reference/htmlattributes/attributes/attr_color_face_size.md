@@ -232,6 +232,8 @@ While deprecated, these attributes support data binding:
 ### Dynamic Values with Data Binding
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { textColor: "blue", fontFamily: "Helvetica", fontSize: "14pt" } -->
@@ -245,7 +247,11 @@ While deprecated, these attributes support data binding:
 
 
 
+
+
 ### Conditional Values
+
+
 
 {% raw %}
 ```html
@@ -262,6 +268,8 @@ While deprecated, these attributes support data binding:
 </span>
 ```
 {% endraw %}
+
+
 
 
 
@@ -499,6 +507,8 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -531,6 +541,8 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
 </p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -629,6 +641,8 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
 
 
 
+
+
 {% raw %}
 ```html
 <div style="text-align: center; padding: 40pt; border: 5pt double #336699;">
@@ -663,6 +677,8 @@ The CSS `style` attribute takes precedence over the deprecated attributes when c
 </div>
 ```
 {% endraw %}
+
+
 
 
 

@@ -285,6 +285,8 @@ Both attributes can be set statically or dynamically:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: { tablePadding: 12, tableSpacing: 4 } -->
@@ -298,7 +300,11 @@ Both attributes can be set statically or dynamically:
 
 
 
+
+
 ### Conditional Values
+
+
 
 
 
@@ -313,6 +319,8 @@ Both attributes can be set statically or dynamically:
 </table>
 ```
 {% endraw %}
+
+
 
 
 
@@ -905,6 +913,8 @@ You can combine these attributes with CSS for fine control:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- Model: {
@@ -945,6 +955,8 @@ You can combine these attributes with CSS for fine control:
 </table>
 ```
 {% endraw %}
+
+
 
 
 

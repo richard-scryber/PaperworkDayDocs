@@ -59,11 +59,15 @@ The string converted to lowercase.
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>{{toLower(model.text)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -83,6 +87,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#if toLower(model.status) == 'active'}}
@@ -90,6 +96,8 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
+
+
 
 
 
@@ -109,11 +117,15 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 <p>Email: {{toLower(model.email)}}</p>
 ```
 {% endraw %}
+
+
 
 
 
@@ -133,6 +145,8 @@ doc.Params["model"] = new {
 
 
 
+
+
 {% raw %}
 ```handlebars
 {{#each model.categories}}
@@ -142,6 +156,8 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
+
+
 
 
 

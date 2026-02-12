@@ -34,6 +34,8 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 {% raw %}
 ```html
 {{format(value, 'formatString')}}
@@ -42,11 +44,15 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ---
 
 ## Date Formatting
 
 ### Common Date Formats
+
+
 
 
 
@@ -76,6 +82,8 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ### Date Format Specifiers
 
 | Specifier | Description | Example |
@@ -97,6 +105,8 @@ The `format()` function applies .NET format strings to values:
 | `tt` | AM/PM | PM |
 
 ### Custom Date Formats
+
+
 
 
 
@@ -122,11 +132,15 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ---
 
 ## Number Formatting
 
 ### Fixed Decimal Places
+
+
 
 
 
@@ -148,7 +162,11 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ### Number with Thousands Separator
+
+
 
 
 
@@ -166,7 +184,11 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ### General Number Format
+
+
 
 
 
@@ -180,11 +202,15 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ---
 
 ## Currency Formatting
 
 ### Basic Currency
+
+
 
 
 
@@ -206,7 +232,11 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ### Manual Currency Formatting
+
+
 
 
 
@@ -224,9 +254,13 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ---
 
 ## Percentage Formatting
+
+
 
 
 
@@ -248,7 +282,11 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 **Important:** The `P` format multiplies the value by 100. If your value is already a percentage (e.g., 12.5), don't use `P`:
+
+
 
 
 
@@ -263,11 +301,15 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ---
 
 ## Text Formatting
 
 ### String Functions
+
+
 
 
 
@@ -293,7 +335,11 @@ The `format()` function applies .NET format strings to values:
 
 
 
+
+
 ### Combining Formatting
+
+
 
 
 
@@ -304,6 +350,8 @@ The `format()` function applies .NET format strings to values:
 <!-- Input: "john" → Output: "John" -->
 ```
 {% endraw %}
+
+
 
 
 
@@ -339,6 +387,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 
 
 {% raw %}
@@ -487,6 +537,8 @@ doc.Params["model"] = new
 
 
 
+
+
 ### Example 2: Product Catalog with Pricing
 
 **C# Code:**
@@ -549,6 +601,8 @@ doc.Params["model"] = new
 ```
 
 **Template:**
+
+
 
 
 {% raw %}
@@ -692,6 +746,8 @@ doc.Params["model"] = new
 
 
 
+
+
 ---
 
 ## Format String Reference
@@ -761,6 +817,8 @@ Create a template that:
 
 
 
+
+
 {% raw %}
 ```html
 <!-- If value is already 12.5% (not 0.125) -->
@@ -770,7 +828,11 @@ Create a template that:
 
 
 
+
+
 ✅ **Solution:** Check if value needs multiplication
+
+
 
 
 
@@ -783,7 +845,11 @@ Create a template that:
 
 
 
+
+
 ### ❌ Inconsistent Decimal Places
+
+
 
 
 
@@ -796,7 +862,11 @@ Create a template that:
 
 
 
+
+
 ✅ **Solution:** Use consistent formatting
+
+
 
 
 
@@ -809,7 +879,11 @@ Create a template that:
 
 
 
+
+
 ### ❌ Missing Format on Numbers
+
+
 
 
 
@@ -821,7 +895,11 @@ Create a template that:
 
 
 
+
+
 ✅ **Solution:** Always format currency
+
+
 
 
 
@@ -830,6 +908,8 @@ Create a template that:
 <p>Price: {{format(model.price, 'C2')}}</p>  <!-- $123.46 -->
 ```
 {% endraw %}
+
+
 
 
 

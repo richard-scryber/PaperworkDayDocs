@@ -104,6 +104,8 @@ The `background-position-x` property supports dynamic data binding, enabling hor
 
 
 
+
+
 {% raw %}
 ```html
 <style>
@@ -130,9 +132,13 @@ The `background-position-x` property supports dynamic data binding, enabling hor
 
 
 
+
+
 Allows organizations to control horizontal logo placement (left, center, right, or specific offsets) through configuration while keeping vertical position fixed at the top. Perfect for accommodating different brand guidelines in multi-tenant systems.
 
 ### Example 2: Conditional horizontal positioning by document type
+
+
 
 
 
@@ -160,9 +166,13 @@ Allows organizations to control horizontal logo placement (left, center, right, 
 
 
 
+
+
 Automatically centers icons for formal documents while left-aligning them for informal ones. The vertical position remains consistent while horizontal placement adapts to document formality level.
 
 ### Example 3: Responsive horizontal spacing for multiple logos
+
+
 
 
 
@@ -187,6 +197,8 @@ Automatically centers icons for formal documents while left-aligning them for in
 </body>
 ```
 {% endraw %}
+
+
 
 
 
