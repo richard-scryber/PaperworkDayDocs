@@ -29,3 +29,6 @@ callouts:
   warning:
     title: Warning
     color: red
+
+ga_tracking: G-C7R7SHJGSR
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
