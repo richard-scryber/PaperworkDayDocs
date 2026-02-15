@@ -2,7 +2,7 @@
 <script src="/assets/jquery.cookie.js" crossorigin="anonymous"></script>
 <script>
         var currTheme = $.cookie("theme");
-        if(currTheme){
+        if(currTheme && currTheme != "undefined"){
 
             var existing = jtd.getTheme();
 
@@ -84,7 +84,11 @@ a, .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-
 }
 
 code{
-    font-size: 1em;
+    font-size: 0.9em;
+}
+
+li {
+    margin: 0.5em 0;
 }
 
 

@@ -6,15 +6,8 @@ has_toc: false
 nav_order: 0
 ---
 
-# Learn Paperwork, and the Core library
+# Learn Scryber, and the Core library
 {: .no_toc}
-
----
-
-{: .note }
-> The documentation is **IN REVIEW** phase. The reference section will be more accurate than the learing guides as it is rolled out. 
->
-> If you do discover an inconsistency whilst trying to do something. Then check the reference section, if it's still incorrect then please do reach out via the [GitHub](https://github.com/richard-scryber/scryber.core) issue and discussion tabs.
 
 ---
 
@@ -29,6 +22,36 @@ nav_order: 0
 
 ---
 
+# About Scryber
+
+Scryber.Core is a powerful, open-source .NET library for generating professional PDF documents simply from HTML templates. It include CSS styling and (handlebar-esque) binding to data, enabling developers to quickly create flexible, dynamic, data-driven documents with ease.
+
+Check out the [Quick Start](/quickstart/quickstart_core) to jump straight in and get to know some of the capabilities
+
+---
+
+
+## Key Features
+
+- **HTML/CSS-Based Templating**: Define your document structure using familiar HTML and CSS, making it easy to design and maintain templates
+- **Data Binding**: Bind data from your application directly into your documents with powerful expression support
+- **Dynamic Styling**: Use calc, relative units and bound data to dynamically alter reports and documents
+- **Multi-page Support**: Create complex, multi-page documents with headers, footers, and page breaks
+- **Rich Content**: Include images, SVG graphics, tables, lists, and charts
+- **Font Support**: Use system fonts, embedded fonts, or remote fonts like Google Fonts
+- **Content Embedding**: Inject dynamic SVG graphics, complex rich content and document attachments at runtime
+- **Flexible Output**: Generate PDFs in-memory, save to disk, or stream to HTTP responses
+- **Cross-platform**: Run on Windows, macOS, iOS, and Linux with .NET
+- **WASM Support**: Full support for asyncronous operation including pure client side execution
+
+---
+
+{: .note }
+> The documentation is **IN REVIEW** phase. The reference section will be more accurate than the learing guides as it is rolled out. 
+>
+> If you do discover an inconsistency whilst trying to do something. Then check the reference section, if it's still incorrect then please do reach out via the [GitHub](https://github.com/richard-scryber/scryber.core) issue and discussion tabs.
+
+---
 
 ## Getting Around
 
@@ -63,10 +86,10 @@ There are 8 individual modules
 The reference section is split into 7 sections covering each of the major components with examples of usage, and samples.
 
 1. [HTML Elements](reference/htmltags) - The HTML tags such as `<html>`, or `<div>` within a template or referernced source give the structure and content to your document
-2. [HTML Attributes](reference/htmlattributes) - This section details all the attributes that the core library supports, along with the supported values for the attribute.
-3. [CSS Selectors][cssselectors/index] - This sections details all the supported (and not supported) selectors in the library, along with the at rules such as @media that allow selectorss to be regulated on their application within the library.
-4. [CSS Properties](reference/cssproperties/) - Styling properties such as font-style: italic; or background-image: var(model.logo); are defined within selectors to be applied to matching content tags, or drawing elements.
-5. [Binding Operators and Functions](reference/binding) - Covers all data binding structures available in Scryber templates, including Handlebars helpers, operators, and expression functions.
-6. [SVG Elements](reference/svgelements) - This section details all the SVG Drawing elements that the core library supports, along with the available (and unavailable attributes) that the tag supports.
-7. [SVG Attributes](reference/svgattributes) - This section details all the attributes that the core library supports, along with the supported values for the attribute, and also elements it can be used on (and cannot).
+2. [HTML Attributes](reference/htmlattributes) - This section details all the attributes that the core library supports suc as `@id` and `@class`, along with the supported values for the attribute.
+3. [CSS Selectors][reference/cssselectors/] - This sections details all the supported (and not supported) selectors in the library (`#id`, `.class`), along with at rules such as `@media` and `@font-face`.
+4. [CSS Properties](reference/cssproperties/) - Styling properties such as `font-style: italic;` or `background-image: var(model.logo);` are defined within selectors to be applied to matching content tags, or drawing elements.
+5. [Binding Operators and Functions](reference/binding) - Covers all data binding structures available in Scryber templates, including Handlebars [helpers](reference/binding/helpers/), [operators](reference/binding/operators) like (`+`, `%` and `??`), and expression [functions](reference/binding/functions/) like `substring` and `count`.
+6. [SVG Elements](reference/svgelements) - This section details all the SVG Drawing elements that the core library supports such as `path`, `marker` and `image`, along with the available (and unavailable attributes) that the tag supports.
+7. [SVG Attributes](reference/svgattributes) - This section details all the attributes that the core library supports (`viewport`, `cx`, `cy` etc.), along with the supported values for the attribute, and also elements they can be used on.
 

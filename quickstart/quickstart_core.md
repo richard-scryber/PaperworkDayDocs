@@ -7,14 +7,36 @@ has_toc: false
 
 
 # Scyber Quick Start
+{: .no_toc}
 
 Follow along if you want to understand some of the key features and benefits of the Scryber.Core library. Here we add the package and build out a data template with dynamic styling and some repeating content. Based on your knowledge level you may then want to dive straight into your own use-cases to complete, or review the reference section to understand supported features.
 
 ---
 
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
+
+## Application Type
+
+If you don't have an existing application, or platform you want to add the Scryber.Core engine to, then create a new console appliction.
+
+Scryber can be run and loaded from executables in all platforms that run dotnet, including client side Blazor WASM, but in this example we will not cover the outer execution.
+
+Consult your own IDE documentation if you are not sure how to do this, or follow the [Learning Guides](/learning/) articles.
+
+---
+
 ## Adding Scryber.Core
 
-Whilst Scryber is open source and the code can be downloaded and built locally, the easiest way is to add the nuget package to a new or existing project. Consult your own IDE documentation if you are not sure how to do this, or add the package from the command line in the project folder.
+Whilst Scryber is open source and the code can be downloaded and built locally, the easiest way is to add the nuget package to a new or existing project. Or add the package from the command line in the project folder.
 
 ```
 dotnet add package Scryber.Core
@@ -37,29 +59,28 @@ The package is located at [https://www.nuget.org/packages/Scryber.Core.Mvc](http
 The first thing we can do is add a simple html template file (the ubiquitous Hello World) as a starter and call the file 'Hello.html'.
 
 #### Hello.html
+{: .no_toc}
 ```handlebars
-{% raw %}<html xmlns='http://www.w3.org/1999/xhtml'>
+{% raw %}<!-- the namespace is important  -->
+<html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
     <!-- Give it a title -->
-    <title>Hello {{user.firstName ?? "World"}}</title>
+    <title>Hello World</title>
 </head>
-<!-- dynamic styling -->
-<body>
+<!-- a bit of styling -->
+<body style='margin: 20pt'>
     <!-- A heading title -->
-    <h1>Hello, {{user.firstName ?? "World"}}</h1>
+    <h1>Hello, World</h1>
 
     <!-- custom style support -->
     <p class='intro'>
-      This is {{(user.firstName + "'s") ?? "my"}} first dynamic PDF generated with Scryber.Core.
+      This is my first dynamic PDF generated with Scryber.Core.
     </p>
 </body>
 </html>{% endraw %}
 ```
 
-Save the file, and we can generate our first PDF.
-
-{: .note }
-> Scyber will accept streams, text readers and xml readers so you can load from many different sources (or resources), but for this example it  makes sense to use a file (it doesn't even need to have the '.html' extension, use '.config', and it will never be sent over a web server).
+Save the file in your project, and we can move on to generate our first PDF in code.
 
 ---
 
@@ -67,16 +88,21 @@ Save the file, and we can generate our first PDF.
 ## Generate our first template
 
 
-At an approprite location within your code, either responding to an event firing, or web request add the following
+At an approprite location within your code, in the main function, or either responding to an event firing, or web request add the following
 
 #### PDF Generation
+{: .no_toc}
 ```csharp
         //using Scryber.Components
 
-        var input = "hello.html"; //Load the HTML template from a file (or open stream, or text reader)
-        using var doc = Document.ParseDocument(input); //read the template
+        //Load the XHTML template from a file wherever you saved it (or open stream, or text reader)
+        var input = "hello.html"; 
+        using var doc = Document.ParseDocument(input);
 
-        using var output = new FileStream("hello.pdf", FileMode.Create); //create the stream to write to.
+        //this is your opportunity to alter ANYTHING you want in the template
+
+        //create a stream to write to - in this case a file.
+        using var output = new FileStream("hello.pdf", FileMode.Create);
         doc.SaveAsPDF(stream); //write the pdf file.
 
 ```
@@ -89,14 +115,125 @@ The resultant file should now be able to be opened in any PDF Viewer application
 
 ![Hello World Preview](../assets/sampleImages/HelloWorld1.png)
 
+
+---
+
+## Troubleshooting
+
+If it didn't work at all, then check the package and the template structure (it needs to be valid xml and include the namespace).
+
+If it did work, but doesn't look like it should then you can check the logs with what SCryber is doing, using the `doc.AppendTraceLog = true` after parsing. Any errors that occur should appear within pages appended to the output.
+
+
 ---
 
 ## Making it dynamic
 
-In the original template you may have noticed a few `{% raw %}{{handlebar}}{% endraw %}` expressions such as `{% raw %}{{user.firstName ?? "World"}}{% endraw %}` within the template. Scryber is using these to evaluate at runtime values provided to the document instance. The `??` is a [Null Coalescing](reference/binding/operators/nullcoalesce) operator that will provide the second value `"World"` if the first - the `user.firstName` object property reference - is null. 
+This is fine, but not exactly dynamic! We can add a little more 'pizzazz' with some data. We can do anything we want between parsing, setting content, adding components (tables, lists, sections etc), updating styles and much more.
 
-With scryber we can now easily provide the dynamic data to the document using its `Params` property.
+But - one of the core principals of **scryber** is a clear *separation of data*, to layout and style. So we can add an object to the document parameters. This can be accessed by the template during document processing.
 
+#### Add our user
+{: .no_toc}
+```csharp
+        var input = "hello.html";
+        using var doc = Document.ParseDocument(input);
+
+        //set the 'user' to an instance value
+        doc.Params["user"] = new { firstName = "John", lastName = "Smith" };
+
+        using var output = new FileStream("hello.pdf", FileMode.Create);
+        doc.SaveAsPDF(stream);
+
+```
+---
+
+### Content binding syntax
+
+The template databinding syntax is based on `{% raw %}{{handlebars}}{% endraw %}`, which can appear in the content, or within attribute values. 
+
+```html{% raw %}
+<h1>Hello {{user.firstName}}</h1>
+{% endraw %}```
+
+The library supports the standard 'dot' notation to access inner values (along with indexors '[]' for arrays and dictionarys).
+
+---
+
+### Personalize the template
+
+So we can update our template to use this data within the content.
+
+#### Adding expressions
+{: .no_toc}
+```handlebars
+{% raw %}<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <!-- Give it a title using the value if it is available -->
+    <title>Hello {{user.firstName ?? "World"}}</title>
+</head>
+<body style="margin: 20pt;">
+<!-- complex expression with function support -->
+<h1>Hello, {{concat(user.firstName, " ", user.lastName) ?? "World"}}</h1>
+
+<p class='intro'>
+    This is {{(user.firstName + "'s") ?? "my"}} first dynamic PDF generated with Scryber.Core.
+</p>
+</body>
+</html>
+{% endraw %}```
+
+---
+
+### With dynamic content
+
+Generating the output we should have custom values placed **naturally** within the document.
+
+![Hello World with values](/assets/sampleImages/HelloWorld2.png)
+
+---
+
+## Style binding syntax
+
+Along with content, the template styles can be 'bound' to dynamic values using the well known `var()` and `calc()` functions.
+
+```html{% raw %}
+<h1 style='color: var(brand.mainColor, black)'>Hello {{concat(user.firstName, " ", user.lastName)}}</h1>
+{% endraw %}```
+
+And these can either be used directly, or indirectly through css variables, within the template styles, or referenced stylesheets.
+
+```html{% raw %}
+<style>
+    :root{
+        --brand-bg : var(brand.lightColor, transparent);
+    }
+
+    .branded{
+        background-color : var(--brand-bg);
+        color: var(brand.mainColor);
+    }
+</style>
+{% endraw %}```
+
+---
+
+## Looping through content.
+
+The library also uses the standard `{% raw %}{{#each items}}{% endraw %}` and `{% raw %}{{#if test}}{% endraw %}` expressions for loops and decisions.
+The current item within the loop can be accessed using the `this` reference. 
+
+```html{% raw %}
+{{#if count(container.items) > 0 }}
+{{#each container.items}}<span class='item'>{{this.property}}</span><{{/each}}>
+{{/if }}
+{% endraw %}```
+
+---
+
+## Extending our sample
+
+If we add more data to our user, with some skils, and also add some custom branding.
 
 #### Add our user
 ```csharp
@@ -104,175 +241,185 @@ With scryber we can now easily provide the dynamic data to the document using it
         using var doc = Document.ParseDocument(input);
 
         //set the user to an instance (or JSON) value
-        doc.Params["user"] = new { firstName = "John", lastName = "Smith" };
+        doc.Params["user"] = new { firstName = "John", lastName = "Smith", emailAddress = "j.smith@company.com",
+                                   skills = new[] {"C Sharp", "javascript", "scrum master", "Team leader"},
+                                   profilePicture = "" };
+
+        //add some custom style information.
+        doc.Params["brand"] = new { mainColor = "rgb(0,168,161)", lightColor = "silver"};
 
         using var output = new FileStream("hello.pdf", FileMode.Create);
         doc.SaveAsPDF(stream);
 
 ```
-
 ---
 
-## Checking the result
+## Update the template
 
-If we generate again, our World should now be John, and I know he appreicates that!
+We can now make some changes to our template and use the provided data to create a more useful template. Including:
 
-![Hello John Preview](../assets/sampleImages/HelloWorld2.png)
-
----
-
-## Getting into the power
-
-This is a very simple example, as all Hello Worlds should be, but we can easily take it to a new level with the same template.
-
-If our data model is expanded to include some personal information, and a collection of friends. And we want to 
+- an external stylesheet for 'font-awesome'
+- adding google fonts for 'Roboto'
+- define custom css varialbles
+- add a decision for a dynamic image or an icon.
+- add a collection function to count items
+- include a list of items if present
+- add a fallback 
 
 
-```csharp
-        //using Scryber.Components
-
-        // Load the HTML template from a file, or stream, or text reader
-        var doc = Document.ParseDocument("hello.html");
-
-        // Add your data.
-        doc.Params["user"] = new
-        {
-            firstName = "John", lastName = "Smith", 
-            sightImpared = true,
-            friends = new [] {
-             new { firstName = "Bill", lastName = "Jones", stillFriends = true, },
-             new { firstName = "Sarah", lastName = "Jones", stillFriends = true, },
-             new { firstName = "James", lastName = "Long", stillFriends = true, },
-             new { firstName = "Sam", lastName = "Elsewhere", stillFriends = false, }
-             }
-            
-        };
-
-        doc.Params["brand"] = new { color = "rgb(0, 168, 161)", 
-                            lightColor = "rgb(144, 227, 223)",
-                              logo = "https://www.paperworkday.info/assets/PaperworkTransparent.svg",
-                              strapLine = "<span>We make documents <b><i>much</i> easier</b> for you</span>"
-                              }
-
-        // Generate the PDF to a file, a stream or a response.
-        using (var stream = new FileStream("hello.pdf", FileMode.Create))
-        {
-            doc.SaveAsPDF(stream);
-        }
-```
-
-#### hello.html
 ```handlebars
 {% raw %}<html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
-    <!-- Bind some meta-data -->
-    <title>Hello {{user.firstName ?? "World"}}</title>
-
-    <!-- Add relative (or remote) CSS for styles -->
-    <link rel="stylesheet" href="hello_styles.css" type="text/css" />
-
+    <!-- Give it a title -->
+    <title>Hello {{concat(user.firstName, " ", user.lastName) ?? "World"}}</title>
     <!-- Add some remote fonts from google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
-
-    <!-- Some icons from font-awesome -->
+    <!-- Load some icons from font-awesome -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.css' />
+
     <style>
+        /* define some css variables based on the properties, but with a fallback default */
+        :root{
+            --brand-color: var(brand.mainColor, red);
+            --brand-bg: var(brand.lightColor, #faa);
+        }
 
-      /* use custom fonts */
-      body { 
-        font-family: 'Roboto', Helvetica, sans-serif;
-        margins: 20pt 15pt 20pt 30pt;
-      }
-      /* dynamic styles */
-      body > .logo { 
-        color: var(--brand-color); 
-        background-color: var(--brand-color-light); 
-        padding: 2rem; 
-        text-align: center;
-      }
-    </style>
+        /* Add remote fonts as the base font with fallback */
+        body{
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            margin: 20pt;
+            color: black;
+        }
 
+        /* classes with custom styling from the properties */
+        .title{
+            font-size: 18pt;
+            color: var(--brand-color);
+            margin-bottom: 1rem;
+        }
+        
+        .intro{
+            font-size: 12pt;
+            border: solid 1pt var(--brand-color);
+            padding: 5pt;
+            border-radius: 2.5pt;
+            background-color: var(--brand-bg);
+        }
+
+        .intro ul{
+            list-style: none;
+            margin: 0;
+            padding-left: 20pt;
+        }
+
+        .intro ul li{
+            line-height: 1.5;
+        }
+
+        .intro i.far {
+            font-size: 80%;
+            color: var(--brand-color)
+        }
+
+        /* floating profile picture with some spacing */
+        .profile-picture{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            object-fit: cover;
+            float: left;
+            margin-right: 10pt;
+            border: solid 2pt var(--brand-color);
+        }
+
+        div.profile-picture{
+            font-size: 36px;
+            overflow:visible;
+            color: var(--brand-color);
+        }
+
+        div.profile-picture i{
+            display: inline-block;
+            overflow: visible;
+            padding-left: 7pt;
+            padding-top: 4pt;
+            vertical-align: bottom;
+        }
+</style>
 </head>
-<!-- dynamic styling -->
-<body class='{{if(user.sightImpared,"accessible","normal")}}'>
 
-    <div class='logo' >
-        <!-- dynamic remote file loading -->
-        <img src='{{brand.logoUrl}}'/>
+<body>
+<!-- Only include the picture if it exists -->
+ {{#if (length(user.profilePicture) > 0) }}
+    <img src='{{user.profilePicture}}' class='profile-picture'/>
+{{else}}
+    <!-- fall back to an icon -->
+    <div class="profile-picture"><i class='far fa-user'></i></div>
+ {{/if}}
 
-        <!-- bound complex content with dynamic visibility -->
-        <div class='strapline' data-content='{{brand.strapLine}}' data-type='text/html' hidden='{{if(length(brand.strapline) > 0, "", "hidden")}}'></div>
-    </div>
+ <!-- make the name a clickable email link -->
+<h1 class="title">
+    <a href="mailto:{{user.emailAddress}}" style="color: var(--brand-color);">
+        {{concat(user.firstName, " ", user.lastName) ?? "World"}}
+    </a></h1>
 
-    <!-- complex expression with function support -->
-    <h1>Hello, {{concat(user.firstName, " ", user.lastName) ?? "World"}}!</h1>
-
-    <!-- custom style support using a variable, but can also be a bound expression -->
-    <p class='intro' style='border-top: solid 1px var(--brand-color);'>
-      This is {{(user.firstName + "'s") ?? "my"}} first dynamic PDF generated with Scryber.Core.
-    </p>
-
-
-    <!--  dynamically store a calculated value of friends who are active -->
-    <var data-id='activeFriends' data-value='{{selectWhere(user.friends, this.isActive == true)}}' />
-
-    <!-- check if we have active friends -->
-    {{#if count(activeFriends) > 0}}
-
-        <!--  store the friends alphabetically last name and first name -->
-        <var data-id='activeFriendsByName' data-value='{{sortBy(user.friends, this.lastName + " " + this.firstName)}}' />
-
-        <!-- also going to keep a record of the first  -->
-        <var data-id='rollingIndex' data-value='{{"0"}}' />
-
-        <!-- aggregate functions on the collection of friends -->
-        <h2>You have {{count(activeFriendsByName)}} friends:</h2>
-
-        <!-- loop through each one, setting the current data -->
-        {{#each activeFriendsByName}}
-
-            <!-- check for the first letter. If it's not the same as the last, 
-            then we can update the index and output content -->
-
-            {{#if (rollingIndex != substring(this.lastName, 0, 1))}}
-                <var data-id='rollingIndex' data-value='{{substring(this.lastName, 0, 1)}}' />
-                <div class='friend-index-letter'>{{rollingIndex}}</div>
-            {{/if}}
-
-            <!-- Each friend has a card, with an icon, an index, and their name -->
-            
-            <div class='friend-card'>
-                <div class='icon'><i class='far far-user'></i></div>
-                <div class='details'>
-                    <span class='index' >{{@index + 1}}</span>
-                    <span class='name' >{{this.lastName + ", " + this.firstName}}</span>
-                </div>
-            </div>
+<!-- if we have skills, loop through them skills with a count at the start -->
+{{#if count(user.skills)}}
+<div class='intro'>
+    {{user.firstName}} has {{count(user.skills)}} skills:
+    <ul>
+        {{#each user.skills}}
+            <!-- a list of skills  with a check icon -->
+            <li><i class="far fa-check-circle"></i> {{this}}</li>
         {{/each}}
-
-    {{else}}
-        <!-- finally a fallback if none -->
-        <p class='muted'>You have no friends {{user.firstName}}, please try and get some!</p>
-    {{/if}}
-
+    </ul>
+</div>
+{{else}}
+    <!-- Fallback to no skills -->
+    <div><em>{{user.fistName}} has no known skills</em></div>
+{{/if}}
 </body>
-</html>{% endraw %}
-```
+</html>
+{% endraw %}```
 
-#### hello_styles.css
-```css
+## Checking the result
 
-```
+Hopefully you are able re-generate and see the following output.
 
-#### Updated parameters
-```csharp
+![Hello World 3 Preview](../assets/sampleImages/HelloWorld3.png)
 
-```
-
-#### The result
+We have added a lot into the template - looping, images, links, styles, functions, positioning, remote fonts and stylesheets.
+But the static styles can be moved to a separate linked file, and the actual body is only about 20 lines long, and quite readable.
 
 ---
 
 ## What's next
+
+This has been a quick dive into the capabilities of the core engine. There is still a lot that is possible!
+
+- [Data binding functions](/learning/02-data-binding/) and the [reference](/reference/binding) listing
+
+- Dynamic [SVG drawings and charts](/learning/06-content/02_svg_basics/) and the [reference](/reference/svgelements) contents.
+
+- [Typography and fonts](/learning/05-typography/) for using the standard fonts, and including [custom fonts](/reference/cssselectors/selectors/css_font_face_rule).
+
+- [Tables](/learning/04-layout/06_tables) and [Lists](/learning/06-content/04_lists) in pages with binding.
+
+- Updating and modifying existing PDF's using [Framesets and Frames](/reference/htmltags/elements/html_frameset_frame_element)
+
+- [Page sizes](/learning/04-layout/01_page_sizes_orientation) and column layout.
+
+- [Embedding content and Attachments](/learning/06-content/07_attachments_embedded) in files.
+
+- Complete CSS property support [reference](/reference/cssproperties)
+
+- Security, permissions and document meta-data [output](/learning/07-configuration/)
+
+- [Logging](/learning/07-configuration/02_logging) and Tracing output.
+
+---
+
+**Or just jump into the [Learning Guides](/learning/) to take you through each feature in turn.**
+
 
 
