@@ -6,7 +6,7 @@ has_toc: false
 ---
 
 
-# Scyber Quick Start
+# Library Quick Start
 {: .no_toc}
 
 Follow along if you want to understand some of the key features and benefits of the Scryber.Core library. Here we add the package and build out a data template with dynamic styling and some repeating content. Based on your knowledge level you may then want to dive straight into your own use-cases to complete, or review the reference section to understand supported features.
