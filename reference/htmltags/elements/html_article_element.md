@@ -12,9 +12,11 @@ has_toc: false
 # &lt;article&gt; : The Article Element
 {: .no_toc }
 
+The `<article>` element represents a self-contained composition in a document that is independently distributable or reusable. It is a semantic block-level element ideal for blog posts, news articles, product cards, user comments, or any content that makes sense on its own.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<article>` element represents a self-contained composition in a document that is independently distributable or reusable. It is a semantic block-level element ideal for blog posts, news articles, product cards, user comments, or any content that makes sense on its own.
 
 ---
 

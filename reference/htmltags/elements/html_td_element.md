@@ -12,9 +12,11 @@ has_toc: false
 # &lt;td&gt; and &lt;th&gt; : Table Cell Elements
 {: .no_toc }
 
+The `<td>` (table data) and `<th>` (table header) elements represent individual cells within a table row. They contain the actual content of the table and support spanning multiple columns, custom styling, alignment, and all standard CSS properties.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<td>` (table data) and `<th>` (table header) elements represent individual cells within a table row. They contain the actual content of the table and support spanning multiple columns, custom styling, alignment, and all standard CSS properties.
 
 ## Usage
 

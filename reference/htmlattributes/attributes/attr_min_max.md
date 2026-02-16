@@ -12,6 +12,8 @@ has_toc: false
 # @min and @max : The Value Range Attributes
 {: .no_toc}
 
+The `min` and `max` attributes define the minimum and maximum values for numeric input fields, meter elements, and progress indicators in PDF documents. They establish the valid range for values, enabling proper percentage calculations, threshold evaluations, and visual scaling in rendered output.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,9 +27,6 @@ has_toc: false
 
 ---
 
-## Summary
-
-The `min` and `max` attributes define the minimum and maximum values for numeric input fields, meter elements, and progress indicators in PDF documents. They establish the valid range for values, enabling proper percentage calculations, threshold evaluations, and visual scaling in rendered output.
 
 ## Usage
 
@@ -51,9 +50,6 @@ The `min` and `max` attributes control value ranges and scaling:
 
 <!-- Progress bar with custom range -->
 <progress value="45" min="0" max="100">45%</progress>
-
-<!-- Input field with numeric constraints -->
-<input type="number" value="5" min="1" max="10" />
 
 <!-- Meter with decimal range -->
 <meter value="0.75" min="0" max="1">75%</meter>
@@ -81,7 +77,6 @@ The `min` and `max` attributes are supported by the following elements:
 |---------|-------------|
 | `<meter>` | Gauge/measurement element - defines the full scale range |
 | `<progress>` | Progress bar element - defines the completion range |
-| `<input>` | Input field (number, range types) - defines valid input range |
 
 ---
 
@@ -222,26 +217,6 @@ The `min` and `max` attributes support data binding for dynamic ranges:
        max="{{model.isMetric ? 100 : 212}}">
     {{model.value}}{{model.isMetric ? '°C' : '°F'}}
 </meter>
-```
-{% endraw %}
-
-
-
-
-
-### Dynamic Input Constraints
-
-
-
-
-
-{% raw %}
-```html
-<!-- Model: { quantity: 5, minOrder: 1, maxStock: 20 } -->
-<input type="number"
-       value="{{model.quantity}}"
-       min="{{model.minOrder}}"
-       max="{{model.maxStock}}" />
 ```
 {% endraw %}
 
@@ -1279,11 +1254,10 @@ The range affects visual fill calculation:
 
 - [meter](/reference/htmltags/elements/html_meter_element.html) - Meter/gauge element
 - [progress](/reference/htmltags/elements/html_progress_element.html) - Progress bar element
-- [input](/reference/htmltags/elements/html_input_element.html) - Input field element
 - [value](/reference/htmlattributes/attributes/attr_value.html) - Value attribute
 - [high and low](/reference/htmlattributes/attributes/attr_high_low.html) - Threshold attributes for meter
 - [optimum](/reference/htmlattributes/attributes/attr_optimum.html) - Optimal value attribute for meter
-- [Data Binding](/reference/binding/) - Dynamic data binding and expressions
-- [CSS Styles](/reference/styles/) - Complete CSS styling reference
+- [Data Binding](/library/binding/) - Dynamic data binding and expressions
+- [CSS Styles](/library/styles/) - Complete CSS styling reference
 
 ---

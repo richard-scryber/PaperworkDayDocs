@@ -12,7 +12,11 @@ has_toc: false
 # @content : The Metadata Content Value Attribute
 {: .no_toc }
 
+
+The `content` attribute specifies the value for metadata properties in HTML `<meta>` elements. It works in conjunction with the `name`, `property`, or `http-equiv` attributes to define document metadata that can be embedded in PDF properties or used for documentation purposes.
+
 ---
+
 
 <details class='top-toc' markdown="block">
   <summary>
@@ -22,13 +26,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-
-The `content` attribute specifies the value for metadata properties in HTML `<meta>` elements. It works in conjunction with the `name`, `property`, or `http-equiv` attributes to define document metadata that can be embedded in PDF properties or used for documentation purposes.
-
 
 ---
 

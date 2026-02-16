@@ -12,9 +12,13 @@ has_toc: false
 # &lt;a&gt; : The Anchor/Link Element
 {: .no_toc }
 
+The `<a>` (anchor) element creates hyperlinks in PDF documents. It supports internal document links, external URLs, file references, and document-specific navigation actions. Links can contain text, images, or other content. By default the anchor is inline, but can be styled as a block or inline-block component.
+
+Block and inline content within the anchor will become 'clickable' to navigate within and outside of the current document.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -23,14 +27,6 @@ has_toc: false
 {: toc}
 </details>
 
----
-
-
-## Summary
-
-The `<a>` (anchor) element creates hyperlinks in PDF documents. It supports internal document links, external URLs, file references, and document-specific navigation actions. Links can contain text, images, or other content. By default the anchor is inline, but can be styled as a block or inline-block component.
-
-Block and inline content within the anchor will become 'clickable' to navigate within and outside of the current document.
 
 ---
 

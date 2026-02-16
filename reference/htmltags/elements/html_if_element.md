@@ -12,9 +12,17 @@ has_toc: false
 # &lt;if&gt; : The Conditional Rendering Element
 {: .no_toc }
 
+The `<if>` element is a powerful Scryber component that conditionally renders content based on boolean expressions. It enables dynamic content control, allowing you to show or hide sections of your PDF based on data, user permissions, configuration settings, or any boolean condition.
+
 ---
 
-<details open class='top-toc' markdown="block">
+{: .note }
+> The `if` element is similar to the handlebars `{% raw %}{{#if condition }}{% endraw %}` helper. However it does not provide support for `else` and `else if` content.
+> The library also provides the `choose` with `when` and `otherwise` to match the `#if` capabilities, and more.
+
+---
+
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,10 +32,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-The `<if>` element is a powerful Scryber component that conditionally renders content based on boolean expressions. It enables dynamic content control, allowing you to show or hide sections of your PDF based on data, user permissions, configuration settings, or any boolean condition.
 
 ## Usage
 
@@ -58,10 +62,6 @@ The `<if>` element controls content rendering that:
 ```
 {% endraw %}
 
-
-
-
-
 ---
 
 ## Supported Attributes
@@ -86,8 +86,6 @@ The `<if>` element controls content rendering that:
 ### Boolean Expressions
 
 The `data-test` attribute accepts any expression that evaluates to a boolean:
-
-
 
 
 
@@ -130,8 +128,6 @@ Supported operators in expressions:
 
 
 
-
-
 {% raw %}
 ```html
 <!-- Check for null or empty -->
@@ -148,7 +144,17 @@ Supported operators in expressions:
 
 
 
+### &lt;if&gt; vs #if vs &lt;choose&gt;
 
+The engine supports both the xml compliant and valid `<if>` element, along with the *handlebars* `#if` notation, along with the `<choose>` element. Decisions can also be made within styling and visibility based on binding expressions.
+
+And they each offer various advantages and disadvantages...
+
+- Use `{% raw %}{{#if test}} ..content.. {{/if}}{% endraw %}` when you are already using loops such as `{% raw %}{{#each model}} ..content.. {{/each}}{% endraw %}`
+- Use `{% raw %}{{#if}}{% endraw %}` if you do not need to preserve the validity of an xml file.
+- Use `<choose>` when you want to make multiple decisions (when that, or when that, otherwise), and prefer to keep valid xml for processing.
+- Use `<if>` when you want to conditionally include some content based on a single state, and prefer to keep valid xml for processing.
+- Use `hidden='calc(if(decision, "hidden", ""))'` when you want to show or hide an individual static component dynamically.
 
 ---
 

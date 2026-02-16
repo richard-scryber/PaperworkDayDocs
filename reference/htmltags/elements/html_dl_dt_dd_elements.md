@@ -12,9 +12,11 @@ has_toc: false
 # &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; : The Definition List Elements
 {: .no_toc }
 
+The `<dl>` element represents a definition list (also known as a description list) containing term-description pairs. It consists of `<dt>` (definition term) elements and `<dd>` (definition description) elements. Definition lists are ideal for glossaries, metadata, key-value pairs, FAQs, and any content where terms need to be associated with their descriptions or definitions.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<dl>` element represents a definition list (also known as a description list) containing term-description pairs. It consists of `<dt>` (definition term) elements and `<dd>` (definition description) elements. Definition lists are ideal for glossaries, metadata, key-value pairs, FAQs, and any content where terms need to be associated with their descriptions or definitions.
 
 ---
 

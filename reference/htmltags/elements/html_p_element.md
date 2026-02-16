@@ -12,9 +12,11 @@ has_toc: false
 # &lt;p&gt; : The Paragraph Element
 {: .no_toc }
 
+The `<p>` element represents a paragraph of text. It is a block-level element that automatically adds vertical spacing before and after the content.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<p>` element represents a paragraph of text. It is a block-level element that automatically adds vertical spacing before and after the content.
 
 ## Usage
 

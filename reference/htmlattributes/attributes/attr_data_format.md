@@ -12,6 +12,10 @@ has_toc: false
 # @data-format : The Number and Date Formatting Attribute
 {: .no_toc }
 
+The `data-format` attribute specifies the display format for numeric values and dates in Scryber PDF documents. 
+It uses .NET-style format strings to control how numbers, currency, percentages, and dates are rendered in `<num>`, `<time>`, and `<page>` elements.
+
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,27 +26,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-
-The `data-format` attribute specifies the display format for numeric values and dates in Scryber PDF documents. It uses .NET-style format strings to control how numbers, currency, percentages, and dates are rendered in `<num>`, `<time>`, and `<page>` elements.
-
-
-The `data-format` attribute enables precise control over the textual representation of numeric and temporal values in PDF output. It applies .NET Standard or Custom format strings to transform raw values into human-readable, locale-appropriate text.
-
-This attribute is essential for:
-- Currency and financial displays
-- Percentage calculations
-- Date and time formatting
-- Decimal precision control
-- Custom number representations
-- Page numbering formats
-- Scientific notation
-- Locale-specific formatting
-
-The formatting occurs during document generation, allowing the same numeric data to be displayed differently in various contexts using different format strings.
 
 ---
 
@@ -69,6 +52,20 @@ The `data-format` attribute accepts .NET format strings and is applied to elemen
 <page property="page" data-format="Page {0} of {1}" />
 <!-- Output: Page 3 of 10 -->
 ```
+
+The attribute enables precise control over the textual representation of numeric and temporal values in PDF output. It applies .NET Standard or Custom format strings to transform raw values into human-readable, locale-appropriate text.
+
+This attribute is essential for:
+- Currency and financial displays
+- Percentage calculations
+- Date and time formatting
+- Decimal precision control
+- Custom number representations
+- Page numbering formats
+- Scientific notation
+- Locale-specific formatting
+
+The formatting occurs during document generation, allowing the same numeric data to be displayed differently in various contexts using different format strings.
 
 ---
 

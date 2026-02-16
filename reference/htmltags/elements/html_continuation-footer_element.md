@@ -12,21 +12,6 @@ has_toc: false
 # &lt;continuation-footer&gt; : The Continuation Footer Element
 {: .no_toc }
 
----
-
-<details open class='top-toc' markdown="block">
-  <summary>
-    On this page
-  </summary>
-  {: .text-delta }
-- TOC
-{: toc}
-</details>
-
----
-
-## Summary
-
 The `<continuation-footer>` element is used within `<body>` or `<section>` elements to provide a footer that displays on overflow pages. This is particularly useful for:
 - Indicating "Continued on next page"
 - Showing new footer content after a title page
@@ -35,6 +20,17 @@ The `<continuation-footer>` element is used within `<body>` or `<section>` eleme
 
 The continuation footer appears on pages 2, 3, 4... but NOT on the first page. The first page shows the regular `<footer>` element (even if it is empty).
 If the continuation footer is not present then *any* template `<footer>` will show on all pages.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 

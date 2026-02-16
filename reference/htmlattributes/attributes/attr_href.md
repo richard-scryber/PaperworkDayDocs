@@ -12,6 +12,8 @@ has_toc: false
 # @href : The Hyperlink Reference Attribute
 {: .no_toc}
 
+The `href` attribute specifies the destination of a hyperlink in anchor (`<a>`) elements. It supports external URLs, internal document anchors, file references, email links, and special PDF navigation actions, enabling comprehensive linking capabilities in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `href` attribute specifies the destination of a hyperlink in anchor (`<a>`) elements. It supports external URLs, internal document anchors, file references, email links, and special PDF navigation actions, enabling comprehensive linking capabilities in PDF documents.
 
 ## Usage
 

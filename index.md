@@ -24,7 +24,7 @@ nav_order: 0
 
 # About Scryber
 
-Scryber.Core is a powerful, open-source .NET library for generating professional PDF documents simply from HTML templates. It include CSS styling and (handlebar-esque) binding to data, enabling developers to quickly create flexible, dynamic, data-driven documents with ease.
+Scryber.Core is a powerful, open-source .NET library for generating professional PDF documents simply from HTML templates. It include CSS styling and (handlebar-esque) binding to data, enabling designers and developers to quickly create flexible, dynamic, data-driven documents and reports with ease.
 
 Check out the [Quick Start](/quickstart/quickstart_core) to jump straight in and get to know some of the capabilities
 

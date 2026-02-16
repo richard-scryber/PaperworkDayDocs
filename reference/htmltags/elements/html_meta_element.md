@@ -12,9 +12,12 @@ has_toc: false
 # &lt;meta&gt; : The Metadata Element
 {: .no_toc }
 
+
+The `<meta>` element provides metadata about the PDF document. It sets document properties like author, description, keywords, and configures PDF-specific settings such as security permissions and encryption.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +27,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<meta>` element provides metadata about the PDF document. It sets document properties like author, description, keywords, and configures PDF-specific settings such as security permissions and encryption.
 
 ## Usage
 

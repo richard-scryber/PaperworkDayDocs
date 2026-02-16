@@ -12,6 +12,9 @@ has_toc: false
 # @class : The Class Attribute
 {: .no_toc }
 
+
+The `class` attribute assigns one or more CSS class names to an HTML element, enabling reusable styling and consistent design patterns across multiple elements. Classes are the primary mechanism for applying shared styles and can be combined to create flexible, maintainable document designs.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,13 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-
-The `class` attribute assigns one or more CSS class names to an HTML element, enabling reusable styling and consistent design patterns across multiple elements. Classes are the primary mechanism for applying shared styles and can be combined to create flexible, maintainable document designs.
-
 
 ---
 

@@ -12,6 +12,8 @@ has_toc: false
 # @data-min-scale : The Minimum Scaling Factor Attribute
 {: .no_toc }
 
+The `data-min-scale` attribute specifies the minimum scaling factor for image elements when they are automatically resized to fit within their container. It prevents images from being scaled down too much, maintaining a minimum readable or visible size in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-
-The `data-min-scale` attribute specifies the minimum scaling factor for image elements when they are automatically resized to fit within their container. It prevents images from being scaled down too much, maintaining a minimum readable or visible size in PDF documents.
 
 ---
 

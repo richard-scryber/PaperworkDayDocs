@@ -12,6 +12,10 @@ has_toc: false
 # @border : The Border Attribute
 {: .no_toc }
 
+
+The `border` attribute provides a simplified way to add borders to tables in PDF documents. This legacy HTML attribute sets a uniform border width around the table and its cells, offering quick border styling for table layouts.
+
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,13 +26,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-
-The `border` attribute provides a simplified way to add borders to tables in PDF documents. This legacy HTML attribute sets a uniform border width around the table and its cells, offering quick border styling for table layouts.
-
 
 ---
 

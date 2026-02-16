@@ -12,9 +12,12 @@ has_toc: false
 # &lt;blockquote&gt; : The Block Quotation Element
 {: .no_toc }
 
+
+The `<blockquote>` element represents a section that is quoted from another source. It is a semantic block-level element designed for displaying extended quotations with appropriate visual styling to distinguish quoted content from surrounding text.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,12 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<blockquote>` element represents a section that is quoted from another source. It is a semantic block-level element designed for displaying extended quotations with appropriate visual styling to distinguish quoted content from surrounding text.
 
 ---
 

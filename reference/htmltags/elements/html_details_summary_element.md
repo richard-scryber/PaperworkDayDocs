@@ -11,9 +11,13 @@ has_toc: false
 
 # &lt;details&gt; and &lt;summary&gt; : Collapsible Content Sections
 
+The `<details>` and `<summary>` elements create collapsible content sections. In static PDF output, these elements render in either expanded or collapsed state based on the `open` attribute. The `<summary>` provides a visible heading, while the remaining content inside `<details>` can be shown or hidden.
+
+**NOTE:** It is expected that this element, along with `abbr`, `cite`, `defn` will use the interactive features for comments and call outs in output documents, <u>in future versions</u>>.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -21,14 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<details>` and `<summary>` elements create collapsible content sections. In static PDF output, these elements render in either expanded or collapsed state based on the `open` attribute. The `<summary>` provides a visible heading, while the remaining content inside `<details>` can be shown or hidden.
-
-**NOTE:** It is expected that this element, along with `abbr`, `cite`, `defn` will use the interactive features for comments and call outs in output documents, <u>in future versions</u>>.
 
 ---
 

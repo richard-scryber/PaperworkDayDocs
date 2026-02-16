@@ -12,6 +12,8 @@ has_toc: false
 # @data-icon : The Attachment Display Icon Attribute
 {: .no_toc }
 
+The `data-icon` attribute controls the visual icon displayed for file attachments in PDF documents. When used with the `<object>` element, it specifies which icon type appears in the document at the attachment's location, providing visual indicators for embedded files accessible through PDF viewers.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -23,11 +25,8 @@ has_toc: false
 {: toc}
 </details>
 
----
 
-## Summmary
 
-The `data-icon` attribute controls the visual icon displayed for file attachments in PDF documents. When used with the `<object>` element, it specifies which icon type appears in the document at the attachment's location, providing visual indicators for embedded files accessible through PDF viewers.
 
 ---
 

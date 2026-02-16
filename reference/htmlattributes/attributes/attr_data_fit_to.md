@@ -12,6 +12,9 @@ has_toc: false
 # @data-fit-to : The PDF Link Destination Fit Mode Attribute
 {: .no_toc }
 
+
+The `data-fit-to` attribute controls how PDF viewers display the destination when following internal document links. It specifies the zoom level and viewport positioning when navigating to anchored elements, providing precise control over the viewing experience for internal navigation.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,37 +28,9 @@ has_toc: false
 
 ---
 
-## Summary
-
-
-The `data-fit-to` attribute controls how PDF viewers display the destination when following internal document links. It specifies the zoom level and viewport positioning when navigating to anchored elements, providing precise control over the viewing experience for internal navigation.
-
-
-The `data-fit-to` attribute defines the display mode for link destinations:
-
-- Controls zoom and viewport when following internal document links
-- Supports standard PDF destination fit modes (FitH, FitV, FitB, FitR, Fit, XYZ)
-- Works exclusively with anchor (`<a>`) elements linking to internal destinations
-- Enables optimal viewing of linked content
-- Provides user-friendly navigation experiences
-- Maps to PDF specification destination fit types
-
-This attribute is essential for:
-- Creating table of contents with optimal destination views
-- Building navigation systems with predictable viewing behavior
-- Linking to figures, tables, and sections with appropriate zoom
-- Controlling how bookmarks and internal links display targets
-- Providing consistent navigation experiences
-- Implementing PDF-specific navigation patterns
-
----
-
 ## Usage
 
 The `data-fit-to` attribute is used exclusively with anchor (`<a>`) elements that link to internal destinations:
-
-
-
 
 
 {% raw %}
@@ -77,9 +52,26 @@ The `data-fit-to` attribute is used exclusively with anchor (`<a>`) elements tha
 ```
 {% endraw %}
 
+The `data-fit-to` attribute defines the display mode for link destinations:
 
+- Controls zoom and viewport when following internal document links
+- Supports standard PDF destination fit modes (FitH, FitV, FitB, FitR, Fit, XYZ)
+- Works exclusively with anchor (`<a>`) elements linking to internal destinations
+- Enables optimal viewing of linked content
+- Provides user-friendly navigation experiences
+- Maps to PDF specification destination fit types
 
+This attribute is essential for:
+- Creating table of contents with optimal destination views
+- Building navigation systems with predictable viewing behavior
+- Linking to figures, tables, and sections with appropriate zoom
+- Controlling how bookmarks and internal links display targets
+- Providing consistent navigation experiences
+- Implementing PDF-specific navigation patterns
 
+{: .note }
+> Support for `data-fit-to` is reader application specific (e.g. Adobe Acrobat). 
+> The engine can only specify what it would like the reader to do, it is up to the reader to perform the action.
 
 ---
 

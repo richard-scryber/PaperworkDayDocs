@@ -12,6 +12,8 @@ has_toc: false
 # @hidden : The Hidden Attribute
 {: .no_toc }
 
+The `hidden` attribute controls the visibility of an element in the rendered PDF document. When set to "hidden", the element and all its contents are excluded from the output, making it useful for conditional content display, draft sections, and dynamic visibility control through data binding.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,12 +27,6 @@ has_toc: false
 
 ---
 
-## Summary
-
-The `hidden` attribute controls the visibility of an element in the rendered PDF document. When set to "hidden", the element and all its contents are excluded from the output, making it useful for conditional content display, draft sections, and dynamic visibility control through data binding.
-
-
----
 
 ## Usage
 
@@ -183,6 +179,8 @@ The `hidden` attribute in Scryber works similarly to `display: none` in CSS:
 - Child elements are also hidden
 - Element does not appear in the PDF output
 
+However, as `hidden` is not a style based property - it must be set directly - it does not need extra calculation to check the value. This means it is faster to use, especially for larger documents (or bound tables) where content is being selectively displayed.
+
 ```html
 <!-- These are functionally equivalent -->
 <div hidden="hidden">Content</div>
@@ -268,7 +266,7 @@ You can conditionally hide table rows, cells, and other table elements:
 
 
 
-### Hiding vs Conditional Rendering
+### Hiding, vs none vs Conditional Rendering
 
 There are two approaches to conditional content:
 
@@ -285,17 +283,29 @@ There are two approaches to conditional content:
 ```
 {% endraw %}
 
+**2. Using style display property:**
 
-
-
-
-**2. Using conditional template logic (if available):**
+{% raw %}
 ```html
-<!-- Some templating systems support conditional blocks -->
-<!-- Check Scryber's template documentation for specific syntax -->
+    <div style='display: calc(model.condion ? "none" : "block")'>Content will be displayed as a block if the condition is true, otherwise not rendered.</div>
 ```
+{% endraw %}
 
-The `hidden` attribute is simpler and works consistently across all elements.
+
+
+**3. Using conditional template logic:**
+
+{% raw %}
+```html
+{{#if model.condition}}
+    <div>Content will only be created if the condition is true</div>
+{{/if}}
+```
+{% endraw %}
+
+- The `hidden` attribute is simpler and more discreet for smaller inner content.
+- The `display` value will be processed and honoured during layout, but involves more processing, including all the inner content.
+- The `#if` is more visible and readable for complex inner content. No inner content will be **created** if the condition is false.
 
 ### Performance Considerations
 

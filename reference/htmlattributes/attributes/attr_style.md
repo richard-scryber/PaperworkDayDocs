@@ -12,6 +12,8 @@ has_toc: false
 # @style : The Style Attribute
 {: .no_toc}
 
+The `style` attribute applies inline CSS styles directly to an HTML element. While inline styles provide quick, element-specific formatting, Scryber offers comprehensive CSS styling support through `<style>` blocks and external stylesheets for more maintainable designs.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,9 +27,6 @@ has_toc: false
 
 ---
 
-## Summary
-
-The `style` attribute applies inline CSS styles directly to an HTML element. While inline styles provide quick, element-specific formatting, Scryber offers comprehensive CSS styling support through `<style>` blocks and external stylesheets for more maintainable designs.
 
 ## Usage
 
@@ -83,15 +82,15 @@ The `style` attribute is supported on **all HTML elements** in Scryber, includin
 - `<code>`, `<kbd>`, `<samp>`, `<var>`, `<mark>`, `<small>`
 
 ### Media Elements
-- `<img>`, `<iframe>`, `<canvas>`
+- `<img>`, `<iframe>`
 
 ---
 
 ## Binding Values
 
-The `style` attribute supports data binding for dynamic style values:
+The `style` attribute supports data binding for dynamic style values either using *handlebars*, or the `calc()` or `var()` functions.
 
-
+The notation of choice is up to you, however - calc and var tend to show less templating errors in editors and can look neater in style blocks and style sheets, handlebars are mre distinctive within inline style values.
 
 
 
@@ -113,17 +112,17 @@ The `style` attribute supports data binding for dynamic style values:
     Dynamic dimensions and color
 </div>
 
-<!-- Conditional styling -->
-<span style="font-weight: {{model.isImportant ? 'bold' : 'normal'}};
-             color: {{model.isError ? 'red' : 'black'}};">
+<!-- Conditional styling with calc() -->
+<span style="font-weight: calc(model.isImportant ? 'bold' : 'normal');
+             color: calc(model.isError ? 'red' : 'black');">
     Conditional style
 </span>
 
 <!-- In repeated content -->
 <template data-bind="{{model.items}}">
     <div style="padding: 10pt; background-color: {{.color}};
-                border-left: 4pt solid {{.borderColor}};">
-        <h3 style="color: {{.textColor}};">{{.title}}</h3>
+                border-left: 4pt solid var(.borderColor);">
+        <h3 style="color: calc(.textColor);">{{.title}}</h3>
     </div>
 </template>
 ```
@@ -213,6 +212,10 @@ Scryber supports various CSS units:
 | `in` | Inches | `width: 8.5in;` |
 | `cm` | Centimeters | `height: 29.7cm;` |
 | `mm` | Millimeters | `border: 2mm solid;` |
+| `rem`| Relative to the *root* font size | `margin: 1rem` |
+| `vw`, `vh` | Relative to the viewport width and height | `width: 90vw` |
+| `vmax`, `vmin` | Relative to the maximum or minimum viewport size | `x : 20vMin` |
+
 
 ```html
 <div style="width: 100%; padding: 15pt; font-size: 12pt;">

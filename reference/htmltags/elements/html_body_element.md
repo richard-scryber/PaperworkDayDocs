@@ -12,9 +12,11 @@ has_toc: false
 # &lt;body&gt; : The Document Body Element
 {: .no_toc }
 
+The `<body>` element represents the main content container of an HTML document. It contains all visible content that will be rendered in the PDF, including text, images, tables, and other elements. The body acts as a section with special properties for document-wide content.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<body>` element represents the main content container of an HTML document. It contains all visible content that will be rendered in the PDF, including text, images, tables, and other elements. The body acts as a section with special properties for document-wide content.
 
 ---
 

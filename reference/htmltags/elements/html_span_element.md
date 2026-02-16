@@ -12,9 +12,12 @@ has_toc: false
 # &lt;span&gt; : The Generic Inline Container
 {: .no_toc }
 
+
+The `<span>` element is a generic inline container used to group inline content and apply styling without breaking the flow of text. It is one of the most commonly used elements for inline text formatting and styling.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +27,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<span>` element is a generic inline container used to group inline content and apply styling without breaking the flow of text. It is one of the most commonly used elements for inline text formatting and styling.
 
 ## Usage
 

@@ -11,6 +11,9 @@ has_toc: false
 
 # @media : The Media Query Attribute
 {: .no_toc}
+
+The `media` attribute specifies media queries that determine when styles or resources should be applied. Used primarily with `<link>` and `<style>` elements, it enables conditional CSS loading based on output characteristics. In PDF generation context, it allows creating print-optimized styles and responsive layouts tailored for different page sizes.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -23,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `media` attribute specifies media queries that determine when styles or resources should be applied. Used primarily with `<link>` and `<style>` elements, it enables conditional CSS loading based on output characteristics. In PDF generation context, it allows creating print-optimized styles and responsive layouts tailored for different page sizes.
 
 ## Usage
 
@@ -47,7 +46,7 @@ The `media` attribute defines media-specific conditions:
 <!-- Print-specific stylesheet -->
 <link rel="stylesheet" href="print.css" media="print" />
 
-<!-- Screen-specific stylesheet -->
+<!-- Screen-specific stylesheet, will not be used -->
 <link rel="stylesheet" href="screen.css" media="screen" />
 
 <!-- All media types (default) -->

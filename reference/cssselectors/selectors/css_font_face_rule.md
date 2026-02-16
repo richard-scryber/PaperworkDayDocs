@@ -1,6 +1,6 @@
 ---
 layout: default
-title: page at-Rule
+title: font-face at-Rule
 parent: CSS Selectors
 parent_url: /reference/cssselectors/
 grand_parent: Template reference
@@ -42,6 +42,7 @@ Applies styles to the page container itself, not the content within the page.
 ---
 
 ## Syntax Examples
+
 
 ```css
 /* Basic page setup */

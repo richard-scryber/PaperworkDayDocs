@@ -14,7 +14,13 @@ has_toc: false
 
 ---
 
-<details open class='top-toc' markdown="block">
+## Summary
+
+The `<ul>` element represents an unordered list of items, typically rendered with bullet markers. It provides a semantic way to group related items where the order doesn't matter, such as features, options, or collections. In PDF output, unordered lists maintain their structure and support extensive customization through CSS.
+
+---
+
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +30,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<ul>` element represents an unordered list of items, typically rendered with bullet markers. It provides a semantic way to group related items where the order doesn't matter, such as features, options, or collections. In PDF output, unordered lists maintain their structure and support extensive customization through CSS.
 
 ## Usage
 

@@ -12,9 +12,11 @@ has_toc: false
 # &lt;nav&gt; : The Navigation Element
 {: .no_toc }
 
+The `<nav>` element represents a section of navigation links. It is a semantic block-level element specifically designed for major navigation blocks such as table of contents, site menus, page indexes, and cross-references.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<nav>` element represents a section of navigation links. It is a semantic block-level element specifically designed for major navigation blocks such as table of contents, site menus, page indexes, and cross-references.
 
 ## Usage
 

@@ -12,6 +12,9 @@ has_toc: false
 # @data-file and @data-file-data : The File Attachment Data Attributes
 {: .no_toc }
 
+
+The `data-file` and `data-file-data` attributes enable advanced file attachment capabilities in PDF documents, allowing direct binding of embedded file data objects and binary file content. These attributes provide powerful mechanisms for attaching files from memory, databases, APIs, or other dynamic sources.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,10 +28,7 @@ has_toc: false
 
 ---
 
-## Summary
-
-
-The `data-file` and `data-file-data` attributes enable advanced file attachment capabilities in PDF documents, allowing direct binding of embedded file data objects and binary file content. These attributes provide powerful mechanisms for attaching files from memory, databases, APIs, or other dynamic sources.
+## Usage
 
 The `data-file` and `data-file-data` attributes work together to create PDF file attachments from various data sources:
 
@@ -43,14 +43,8 @@ These attributes are essential for:
 - Creating attachments from byte arrays in your data model
 - Building document assembly systems with embedded resources
 
----
-
-## Usage
 
 Both attributes are used exclusively with the `<object>` element and support data binding:
-
-
-
 
 
 {% raw %}
@@ -75,7 +69,13 @@ Both attributes are used exclusively with the `<object>` element and support dat
 {% endraw %}
 
 
+---
 
+### What's the difference
+
+Using the `data-file-data` will always result in a new embedded file object within the resultant document - even if the SAME data has been added to the document previously. As the engine has no (quick way) to know it is a duplicate. 
+
+Using the `data-file`, the reference to the binary data is unique to the instance, and will only be defined in the output document once - even if there are multiple references.
 
 
 ---

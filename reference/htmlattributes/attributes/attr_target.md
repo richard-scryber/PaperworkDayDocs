@@ -12,6 +12,8 @@ has_toc: false
 # @target : The Link Target Attribute
 {: .no_toc}
 
+The `target` attribute specifies where to open a linked document or resource. Used with `<a>` (anchor) elements, it controls link behavior such as opening in a new window, the same frame, or the parent frame. In PDF documents, it primarily affects external links and can control whether links open in the same PDF viewer or a new window.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,22 +27,19 @@ has_toc: false
 
 ---
 
-## Summary
-
-The `target` attribute specifies where to open a linked document or resource. Used with `<a>` (anchor) elements, it controls link behavior such as opening in a new window, the same frame, or the parent frame. In PDF documents, it primarily affects external links and can control whether links open in the same PDF viewer or a new window.
-
 ## Usage
 
 The `target` attribute defines link opening behavior:
 - Specifies where linked documents should open
-- Used with `<a>` and `<area>` elements
+- Used with `<a>` elements
 - Common values: `_blank`, `_self`, `_parent`, `_top`
 - Can reference named frames/windows
 - In PDF context, mainly affects external links
 - Supports data binding for dynamic target assignment
 
 
-
+{: .note }
+> As with all links the implementation is dependant on the reader application. If opening another file it is down to the reader to interpret the instruction, and open a new file window when requested.
 
 
 {% raw %}
@@ -77,9 +76,6 @@ The `target` attribute is used with:
 
 ### Anchor Element
 - `<a>` - Hyperlink element (primary use)
-
-### Area Element
-- `<area>` - Image map area element
 
 ### Base Element
 - `<base>` - Default target for all links in document

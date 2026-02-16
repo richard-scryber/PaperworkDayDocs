@@ -12,6 +12,9 @@ has_toc: false
 # @cellpadding and @cellspacing : Table Spacing Attributes
 {: .no_toc }
 
+
+The `cellpadding` and `cellspacing` attributes control the spacing within and between table cells in PDF documents. These attributes provide precise control over table layout, affecting readability and visual presentation. They are legacy HTML attributes that remain useful for quick table spacing adjustments.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,14 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-
-The `cellpadding` and `cellspacing` attributes control the spacing within and between table cells in PDF documents. These attributes provide precise control over table layout, affecting readability and visual presentation. They are legacy HTML attributes that remain useful for quick table spacing adjustments.
-
-
 
 ---
 

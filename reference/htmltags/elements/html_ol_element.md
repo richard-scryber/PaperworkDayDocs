@@ -12,9 +12,12 @@ has_toc: false
 # &lt;ol&gt; : The Ordered List Element
 {: .no_toc }
 
+
+The `<ol>` element represents an ordered list of items, where the sequence matters. Items are automatically numbered using various numbering styles such as decimals (1, 2, 3), letters (a, b, c), or Roman numerals (i, ii, iii). In PDF output, ordered lists maintain precise numbering with support for nested hierarchies and custom formatting.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +27,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<ol>` element represents an ordered list of items, where the sequence matters. Items are automatically numbered using various numbering styles such as decimals (1, 2, 3), letters (a, b, c), or Roman numerals (i, ii, iii). In PDF output, ordered lists maintain precise numbering with support for nested hierarchies and custom formatting.
 
 ## Usage
 

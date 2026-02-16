@@ -12,7 +12,10 @@ has_toc: false
 # @data-bind-start, @data-bind-step, @data-bind-max : Template Iteration Control Attributes
 {: .no_toc }
 
+These three attributes provide precise control over template iteration behavior, enabling pagination, selective item rendering, and performance optimization for large datasets. They work in conjunction with the `data-bind` attribute on `<template>` elements to control which items from a collection are processed and rendered.
+
 ---
+
 
 <details class='top-toc' markdown="block">
   <summary>
@@ -25,33 +28,9 @@ has_toc: false
 
 ---
 
-## Summmary
-
-These three attributes provide precise control over template iteration behavior, enabling pagination, selective item rendering, and performance optimization for large datasets. They work in conjunction with the `data-bind` attribute on `<template>` elements to control which items from a collection are processed and rendered.
-
-The iteration control attributes extend the basic `data-bind` functionality by allowing you to:
-- **Paginate** large datasets by specifying start index and maximum count
-- **Filter** items by stepping through collections at intervals
-- **Optimize performance** by limiting the number of items processed
-- **Create alternating patterns** using step values
-- **Implement batch processing** for reports and exports
-
-These attributes are essential for:
-- Paginated reports showing a subset of data
-- Performance optimization with large collections (1000+ items)
-- Creating alternating row patterns (odd/even)
-- Batch processing documents
-- Implementing "top N" item displays
-- Creating multi-page reports with consistent item counts per page
-
----
-
 ## Usage
 
 The iteration control attributes are applied to `<template>` elements alongside the `data-bind` attribute:
-
-
-
 
 
 {% raw %}
@@ -66,7 +45,20 @@ The iteration control attributes are applied to `<template>` elements alongside 
 ```
 {% endraw %}
 
+They extend the basic `data-bind` functionality by allowing you to:
+- **Paginate** large datasets by specifying start index and maximum count
+- **Filter** items by stepping through collections at intervals
+- **Optimize performance** by limiting the number of items processed
+- **Create alternating patterns** using step values
+- **Implement batch processing** for reports and exports
 
+These attributes are essential for:
+- Paginated reports showing a subset of data
+- Performance optimization with large collections (1000+ items)
+- Creating alternating row patterns (odd/even)
+- Batch processing documents
+- Implementing "top N" item displays
+- Creating multi-page reports with consistent item counts per page
 
 
 

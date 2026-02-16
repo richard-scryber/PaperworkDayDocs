@@ -12,9 +12,11 @@ has_toc: false
 # &lt;address&gt; : The Contact Information Element
 {: .no_toc }
 
+The `<address>` element represents contact information for a person, organization, or document. It is a semantic block-level element designed for displaying contact details such as physical addresses, email addresses, phone numbers, and social media links with appropriate styling to distinguish this information from regular content.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<address>` element represents contact information for a person, organization, or document. It is a semantic block-level element designed for displaying contact details such as physical addresses, email addresses, phone numbers, and social media links with appropriate styling to distinguish this information from regular content.
 
 ---
 

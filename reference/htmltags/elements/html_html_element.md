@@ -12,9 +12,11 @@ has_toc: false
 # &lt;html&gt; : The Root HTML Document Element
 {: .no_toc }
 
+The `<html>` element is the root element of an HTML document. It contains all other elements and defines the document structure with a head section for metadata and a body (or frameset) section for content.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-The `<html>` element is the root element of an HTML document. It contains all other elements and defines the document structure with a head section for metadata and a body (or frameset) section for content.
 
 ## Usage
 

@@ -12,6 +12,8 @@ has_toc: false
 # @title : The Title Attribute
 {: .no_toc}
 
+The `title` attribute provides additional information about an element. In Scryber PDF documents, it primarily serves to create navigable bookmarks and outline entries, enabling users to quickly jump to different sections of the document through the PDF viewer's navigation panel.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `title` attribute provides additional information about an element. In Scryber PDF documents, it primarily serves to create navigable bookmarks and outline entries, enabling users to quickly jump to different sections of the document through the PDF viewer's navigation panel.
 
 ## Usage
 
@@ -46,19 +44,26 @@ The `title` attribute provides element metadata that:
 {% raw %}
 ```html
 <!-- Create a bookmark entry -->
-<h1 id="chapter1" title="Chapter 1: Introduction">
-    Chapter 1: Introduction
-</h1>
+<div title="Chapter 1: Introduction">
+    <h1 id="chapter1" >Chapter 1: Introduction</h1>
 
-<!-- Create nested bookmark hierarchy -->
-<h2 id="section1-1" title="1.1 Overview">
-    1.1 Overview
-</h2>
+    <!-- Create nested bookmark hierarchy -->
+    <div>
+        <h2 id="section1-1" title="1.1 Overview">
+            1.1 Overview
+        </h2>
+    </div>
 
-<!-- Dynamic bookmark text -->
-<h1 id="{{model.chapterId}}" title="{{model.chapterTitle}}">
-    {{model.chapterTitle}}
-</h1>
+    <!-- Dynamic bookmark text -->
+    {{#each model.sections}}
+    <div title='{{concat("1." , (@index + 2), " ", this.chapterTitle)}}'>
+
+        <h1 id="{{this.chapterId}}" >{{this.chapterTitle}}</h1>
+        <p data-content='{{this.chapterContent}}'></p>
+
+    </div>
+    {{/each}}
+</div>
 ```
 {% endraw %}
 
@@ -72,10 +77,6 @@ The `title` attribute provides element metadata that:
 
 The `title` attribute is technically supported on **all HTML elements**, but its bookmark functionality is most commonly used with:
 
-### Heading Elements (Primary Use)
-- `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
-
-These elements automatically create hierarchical bookmark structures based on heading levels.
 
 ### Structural Elements
 - `<section>`, `<article>`, `<aside>`, `<nav>`
@@ -175,31 +176,6 @@ The primary purpose of the `title` attribute in Scryber is to create PDF bookmar
 <!-- Creates a second-level bookmark "Overview" under the parent section -->
 ```
 
-### Bookmark Hierarchy
-
-Bookmarks are automatically organized hierarchically based on heading levels:
-
-- `<h1>` creates top-level bookmarks
-- `<h2>` creates second-level bookmarks (nested under nearest `<h1>`)
-- `<h3>` creates third-level bookmarks (nested under nearest `<h2>`)
-- And so on through `<h6>`
-
-```html
-<h1 id="ch1" title="Chapter 1">Chapter 1</h1>          <!-- Level 1 -->
-    <h2 id="s1-1" title="1.1 First Section">Section 1.1</h2>     <!-- Level 2 -->
-        <h3 id="s1-1-1" title="1.1.1 Subsection">Subsection</h3>  <!-- Level 3 -->
-    <h2 id="s1-2" title="1.2 Second Section">Section 1.2</h2>    <!-- Level 2 -->
-<h1 id="ch2" title="Chapter 2">Chapter 2</h1>          <!-- Level 1 -->
-```
-
-This creates a bookmark tree structure:
-```
-Chapter 1
-  ├─ 1.1 First Section
-  │   └─ 1.1.1 Subsection
-  └─ 1.2 Second Section
-Chapter 2
-```
 
 ### Title vs Element Content
 

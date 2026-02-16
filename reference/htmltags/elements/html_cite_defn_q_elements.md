@@ -12,9 +12,13 @@ has_toc: false
 # &lt;cite&gt;, &lt;defn&gt;, &lt;q&gt; : Inline citataion, definition and quotation Elements
 {: .no_toc }
 
+The library supports a variety of semantic HTML elements that provide meaning to inline text content. These elements not only convey semantic information but also apply default styling appropriate to their purpose. This document covers: `<cite>`, `<dfn>` and `<q>` inline text elements.
+
+They can each be styled indepently or as a tag group, and support the full styling capabilities of a [span](html_span_element.html).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,14 +26,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The library supports a variety of semantic HTML elements that provide meaning to inline text content. These elements not only convey semantic information but also apply default styling appropriate to their purpose. This document covers: `<cite>`, `<dfn>` and `<q>` inline text elements.
-
-They can each be styled indepently or as a tag group, and support the full styling capabilities of a [span](html_span_element.html).
 
 ---
 

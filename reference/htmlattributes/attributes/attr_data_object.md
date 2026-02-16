@@ -12,6 +12,10 @@ has_toc: false
 # @data : The Object Data Source Attribute
 {: .no_toc }
 
+The `data` attribute on the `<object>` element specifies the file source for PDF attachments. It accepts file paths (relative or absolute), URLs, and dynamic data binding expressions, enabling flexible file embedding in PDF documents. Attached files remain as separate entities within the PDF, accessible through PDF viewer attachment interfaces.
+{: .no-}
+
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,13 +26,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-
-The `data` attribute on the `<object>` element specifies the file source for PDF attachments. It accepts file paths (relative or absolute), URLs, and dynamic data binding expressions, enabling flexible file embedding in PDF documents. Attached files remain as separate entities within the PDF, accessible through PDF viewer attachment interfaces.
-{: .no-}
 
 ---
 
@@ -62,6 +59,11 @@ The `data` attribute specifies the source file for attachment:
 
 <!-- With display icon -->
 <object data="contract.pdf" type="application/pdf" data-icon="Paperclip"></object>
+
+<!-- With no icon and a link -->
+<object id='theContract' data="contractLinked.pdf" type="application/pdf" data-icon="None"></object>
+<a href='#theContract' >A link to the attachment via #id</a>
+
 ```
 {% endraw %}
 
@@ -163,6 +165,7 @@ The `data` attribute on `<object>` creates **embedded file attachments** in PDF:
 4. **Access**: PDF viewers provide attachment panels/icons for users to open/save files
 5. **Icon Display**: Optional visual indicators (via `data-icon`) can appear in the document
 6. **Metadata**: Filename, MIME type, and description are stored with the attachment
+7. **Document Links**: Anchor (&lt;a&gt;) links can be used to open the attachments.
 
 This is similar to email attachments - files are packaged with the document but remain distinct.
 
@@ -372,10 +375,13 @@ The attachment filename is extracted from the `data` attribute:
 <object data="https://example.com/files/Q4-2024.xlsx"
         type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"></object>
 
-<!-- Filename: "generated.pdf" (when using binary data) -->
-<object data="generated.pdf"
+<!-- Filename: "generated.pdf" (when using binary data) with no icon, but a link  -->
+<object id='boundAttachment' data-icon="None"
+        data="generated.pdf"
         data-file-data="{{model.bytes}}"
         type="application/pdf"></object>
+
+<a href="#boundAttachment" title="A title from the link" >Link to bound attachment</a>
 ```
 {% endraw %}
 

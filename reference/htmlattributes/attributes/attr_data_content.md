@@ -12,6 +12,10 @@ has_toc: false
 # @data-content : The Dynamic Content Attribute
 {: .no_toc }
 
+The `data-content` attribute provides a mechanism for dynamically generating and inserting content into elements during the data binding phase.
+
+This is supported by the `data-content-type` and `data-content-action` attributes.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,9 +29,9 @@ has_toc: false
 
 ---
 
-## Summmary
+## Usage
 
-The `data-content` attribute provides a mechanism for dynamically generating and inserting content into elements during the data binding phase. Unlike static content declared in the template, `data-content` evaluates at runtime, allowing you to:
+The `data-content` attribute accepts a string value containing HTML/XHTML markup or plain text. The content is parsed according to the document's default parser or the MIME type specified in `data-content-type`. Unlike static content declared in the template, `data-content` evaluates at runtime, allowing you to:
 
 - Generate content from bound data values
 - Insert dynamically constructed HTML/XHTML markup
@@ -42,10 +46,6 @@ This attribute is particularly useful when:
 - You want to avoid deeply nested template structures
 
 ---
-
-## Usage
-
-The `data-content` attribute accepts a string value containing HTML/XHTML markup or plain text. The content is parsed according to the document's default parser or the MIME type specified in `data-content-type`.
 
 ### Basic Syntax
 
@@ -63,6 +63,9 @@ The `data-content` attribute accepts a string value containing HTML/XHTML markup
 
 <!-- Dynamic content from bound expression -->
 <span data-content="{{model.dynamicContent}}"></span>
+
+<!-- Dynamic content in a template to be used when looping over each item (completely dynamic) -->
+<template data-bind="{{context.items}}" data-content="{{model.layout}}" data-content-type="text/html" ></template>
 ```
 {% endraw %}
 

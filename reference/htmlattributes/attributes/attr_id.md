@@ -12,6 +12,8 @@ has_toc: false
 # @id : The ID Attribute
 {: .no_toc}
 
+The `id` attribute provides a unique identifier for an HTML element within a document. It serves multiple purposes: creating anchor points for internal links, targeting elements for styling, establishing references for PDF bookmarks, and enabling element identification in data binding scenarios.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,11 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `id` attribute provides a unique identifier for an HTML element within a document. It serves multiple purposes: creating anchor points for internal links, targeting elements for styling, establishing references for PDF bookmarks, and enabling element identification in data binding scenarios.
 
 ## Usage
 

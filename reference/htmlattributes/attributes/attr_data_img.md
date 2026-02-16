@@ -12,6 +12,8 @@ has_toc: false
 # @data-img, @data-img-data, @data-img-type : Image Data Attributes
 {: .no_toc }
 
+The `data-img`, `data-img-data`, and `data-img-type` attributes provide alternative methods for loading images in Scryber PDF documents. These attributes enable binding image data directly from memory, databases, or APIs without requiring file system access, supporting dynamic binary image data with explicit MIME type specification.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -23,11 +25,6 @@ has_toc: false
 {: toc}
 </details>
 
----
-
-## Summmary
-
-The `data-img`, `data-img-data`, and `data-img-type` attributes provide alternative methods for loading images in Scryber PDF documents. These attributes enable binding image data directly from memory, databases, or APIs without requiring file system access, supporting dynamic binary image data with explicit MIME type specification.
 
 
 ---
@@ -73,9 +70,11 @@ These attributes provide programmatic image loading:
 ```
 {% endraw %}
 
+### What's the difference
 
+Using the `data-img-data` will always result in a new embedded image object within the resultant document - even if the SAME data has been added to the document previously. As the engine has no (quick way) to know it is a duplicate. 
 
-
+Using the `data-image`, the reference to the binary data is unique to the instance, and will only be defined in the output document **once** - even if there are multiple references.
 
 ---
 

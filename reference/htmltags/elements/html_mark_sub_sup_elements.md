@@ -12,21 +12,6 @@ has_toc: false
 # &lt;mark&gt;, &lt;small&gt;, &lt;sub&gt;, &lt;sup&gt;: Text Modification Elements
 {: .no_toc }
 
----
-
-<details open class='top-toc' markdown="block">
-  <summary>
-    On this page
-  </summary>
-  {: .text-delta }
-- TOC
-{: toc}
-</details>
-
----
-
-
-## Summary
 
 Specialized inline elements for text formatting including highlighted text, small print, subscripts and superscripts.
 
@@ -34,6 +19,18 @@ Specialized inline elements for text formatting including highlighted text, smal
 - `<small>`: Smaller text (75% size)
 - `<sub>`: Subscript text (lowered and smaller)
 - `<sup>`: Superscript text (raised and smaller)
+
+---
+
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: data-value
+title: data-value and data-id
 parent: HTML Attributes
 parent_url: /reference/htmlattributes/
 grand_parent: Template reference
@@ -9,11 +9,10 @@ has_children: false
 has_toc: false
 ---
 
-# @data-value : The Computed Value Attribute
+# @data-value and @data-id : The Computed Value Attribute
 {: .no_toc }
 
 The `data-value` attribute enables computed or dynamic value assignment for elements, allowing you to bind expressions to element values, store intermediate calculations, or pass computed values to document parameters. This attribute is primarily used with `<var>` elements for creating document-level variables and computed values.
-
 
 ---
 
@@ -26,9 +25,13 @@ The `data-value` attribute enables computed or dynamic value assignment for elem
 {: toc}
 </details>
 
+
 ---
 
-## Summary
+## Usage
+
+The `data-value` attribute is applied to `<var>` elements and `<num>` elements:
+
 
 The `data-value` attribute provides dynamic value computation and assignment, enabling:
 - **Computed value storage** in document-level variables
@@ -47,13 +50,6 @@ This attribute is essential for:
 
 **Primary Use Case**: The `data-value` attribute is most commonly used with `<var>` elements in combination with `data-id` to create document-level variables that can be referenced elsewhere.
 
----
-
-## Usage
-
-The `data-value` attribute is applied to `<var>` elements and `<num>` elements:
-
-
 
 
 
@@ -66,8 +62,6 @@ The `data-value` attribute is applied to `<var>` elements and `<num>` elements:
 <div>Tax Amount: ${{model.subtotal * taxRate}}</div>
 ```
 {% endraw %}
-
-
 
 
 
@@ -106,7 +100,7 @@ The `data-value` attribute is supported on the following elements:
 - `<var>` - Variable element for storing computed values
 - `<num>` - Number element for formatted numeric display
 
-**Note**: When used with `<var>`, the `data-id` attribute is typically required to make the value accessible as a document parameter.
+**Note**: When used with `<var>`, the `data-id` attribute is required to make the value accessible as a document parameter.
 
 ---
 

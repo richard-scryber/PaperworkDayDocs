@@ -12,6 +12,8 @@ has_toc: false
 # @property : The Metadata Property Attribute
 {: .no_toc}
 
+The `property` attribute defines metadata properties in HTML documents using the Open Graph protocol or other RDF vocabularies. While primarily used for web pages, it can be included in PDF metadata for comprehensive document information preservation.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `property` attribute defines metadata properties in HTML documents using the Open Graph protocol or other RDF vocabularies. While primarily used for web pages, it can be included in PDF metadata for comprehensive document information preservation.
 
 ## Usage
 

@@ -12,9 +12,11 @@ has_toc: false
 # &lt;br&gt; : The Line Break Element
 {: .no_toc }
 
+The `<br/>` element creates a line break within text content, forcing subsequent content to start on a new line without creating a new paragraph or block-level container.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<br/>` element creates a line break within text content, forcing subsequent content to start on a new line without creating a new paragraph or block-level container.
 
 ---
 

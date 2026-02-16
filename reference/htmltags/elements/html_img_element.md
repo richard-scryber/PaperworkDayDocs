@@ -12,9 +12,12 @@ has_toc: false
 # &lt;img&gt; : The Image Element
 {: .no_toc }
 
+The `<img>` element embeds images in PDF documents. It supports multiple image sources including local files, remote URLs, and data URIs. Images can be in various formats (JPEG, PNG, GIF) and can be dynamically sized, positioned, and styled.
+
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -25,9 +28,6 @@ has_toc: false
 
 ---
 
-
-## Summary
-The `<img>` element embeds images in PDF documents. It supports multiple image sources including local files, remote URLs, and data URIs. Images can be in various formats (JPEG, PNG, GIF) and can be dynamically sized, positioned, and styled.
 
 ## Usage
 
@@ -151,7 +151,8 @@ Scryber supports multiple image source types:
 Scryber supports the following image formats:
 - **JPEG** (.jpg, .jpeg): Best for photographs and complex images
 - **PNG** (.png): Supports transparency, good for logos and graphics
-- **GIF** (.gif): Animated and static GIF images
+- **GIF** (.gif): Static GIF images with low color rendition
+- **SVG** (.svg): Vector images that can be scaled to any size (vector information is retained, rather than raseterization). Great for logos, drawings, charts etc. (but not photographs).
 
 ### Image Sizing
 

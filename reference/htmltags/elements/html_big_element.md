@@ -11,9 +11,13 @@ has_toc: false
 
 # &lt;big&gt; : The Big Text Element (Deprecated)
 {: .no_toc }
+
+
+The `<big>` element is a deprecated HTML element that renders text at 120% of the parent font size. While still supported for backward compatibility, **CSS styling is strongly recommended** instead.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -21,12 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<big>` element is a deprecated HTML element that renders text at 120% of the parent font size. While still supported for backward compatibility, **CSS styling is strongly recommended** instead.
 
 ---
 

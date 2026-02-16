@@ -12,9 +12,12 @@ has_toc: false
 # &lt;header&gt; and &lt;footer&gt; : Header and Footer Elements
 {: .no_toc }
 
+
+The `<header>` and `<footer>` elements represent introductory and closing content respectively. They are semantic block-level elements used to define headers and footers within containing elements like `<article>`, `<section>`, and `<body>`. These elements have special positioning behavior when used as direct children of certain containers.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,10 +27,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-The `<header>` and `<footer>` elements represent introductory and closing content respectively. They are semantic block-level elements used to define headers and footers within containing elements like `<article>`, `<section>`, and `<body>`. These elements have special positioning behavior when used as direct children of certain containers.
 
 ## Usage
 

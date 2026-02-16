@@ -14,7 +14,7 @@ nav_order: 1
 
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>

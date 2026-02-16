@@ -12,9 +12,11 @@ has_toc: false
 # &lt;fieldset&gt; and &lt;legend&gt; : Form Grouping Elements
 {: .no_toc }
 
+The `<fieldset>` and `<legend>` elements are used together to create visually grouped sections within forms or form-like layouts. The `<fieldset>` element creates a bordered container, while the `<legend>` element provides a caption or title that appears embedded in the fieldset's border. These elements are essential for organizing complex forms into logical sections.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,11 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-The `<fieldset>` and `<legend>` elements are used together to create visually grouped sections within forms or form-like layouts. The `<fieldset>` element creates a bordered container, while the `<legend>` element provides a caption or title that appears embedded in the fieldset's border. These elements are essential for organizing complex forms into logical sections.
 
 ---
 

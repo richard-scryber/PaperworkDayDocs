@@ -12,6 +12,9 @@ has_toc: false
 # @data-bind : The Template Iteration Attribute
 {: .no_toc }
 
+The `data-bind` attribute enables template-based iteration over collections in Scryber PDF documents. When applied to `<template>` elements, it dynamically generates repeating content for each item in an array, list, or any enumerable data source.
+
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,27 +28,9 @@ has_toc: false
 
 ---
 
-## Summmary
-
-The `data-bind` attribute enables template-based iteration over collections in Scryber PDF documents. When applied to `<template>` elements, it dynamically generates repeating content for each item in an array, list, or any enumerable data source.
-
-The `data-bind` attribute is the primary mechanism for creating dynamic, data-driven repeating content in Scryber templates. It binds a template element to a collection and generates the template's content once for each item in that collection. Each iteration creates a new data context scoped to the current item, allowing you to reference item properties using the dot notation (`.propertyName`).
-
-This attribute is essential for:
-- Generating table rows from database results
-- Creating lists of items from arrays
-- Building master-detail reports
-- Iterating over JSON or XML data
-- Dynamically generating any repeating content structure
-
----
-
 ## Usage
 
 The `data-bind` attribute is applied to `<template>` elements and accepts binding expressions that evaluate to enumerable collections:
-
-
-
 
 
 {% raw %}
@@ -58,7 +43,14 @@ The `data-bind` attribute is applied to `<template>` elements and accepts bindin
 {% endraw %}
 
 
+It is the primary mechanism for creating dynamic, data-driven repeating content in Scryber templates. It binds a template element to a collection and generates the template's content once for each item in that collection. Each iteration creates a new data context scoped to the current item, allowing you to reference item properties using the dot notation (`.propertyName`).
 
+This attribute is essential for:
+- Generating table rows from database results
+- Creating lists of items from arrays
+- Building master-detail reports
+- Iterating over JSON or XML data
+- Dynamically generating any repeating content structure
 
 
 ### Basic Syntax

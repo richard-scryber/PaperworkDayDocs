@@ -12,9 +12,16 @@ has_toc: false
 # &lt;template&gt; : The Template Element for Repeating Content
 {: .no_toc }
 
+The `<template>` element is a powerful data-binding component that generates repeating content by iterating over collections. It enables dynamic content generation, data context scoping, and complex data transformations in PDF documents.
+
 ---
 
-<details open class='top-toc' markdown="block">
+{: .note }
+> The `template` element is synonymous with using the handlebars `{% raw %}{{#each collection }}{% endraw %}` helper, as this provides a greater visibility and standardisation. However, there are some advanced options within the template component that can give greater flexibility without calculations.
+
+---
+
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +31,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<template>` element is a powerful data-binding component that generates repeating content by iterating over collections. It enables dynamic content generation, data context scoping, and complex data transformations in PDF documents.
 
 ## Usage
 
@@ -57,7 +59,27 @@ The `<template>` element creates repeating content that:
 {% endraw %}
 
 
+### template vs #each
 
+The engine supports both the xml compliant and valid `<template>` element, along with the *handlebars* `{% raw %}{{#each }}{% endraw %}` notation. And they each offer looping over collections of data.
+
+#### Pro's of #each
+- Simple syntax
+- Clear formatting within the template on most editors
+
+#### Con's of #each
+- Not valid XML template content.
+- Cannot specify start or step values
+- Can cause the parsing to fail completely if the inner content is not valid xml
+
+#### Pro's of <template>
+- Maintains the validity of the xml file.
+- Offers support for data-step, data-start and data-count
+- Supports data-content for dynamic templates
+
+#### Con's of <template>
+- Less visible in the editor as not highlighted.
+- More complex, and non-standard syntax to remember, or look up.
 
 
 ---

@@ -12,9 +12,12 @@ has_toc: false
 # &lt;strong&gt;, &lt;em&gt;, &lt;b&gt;, &lt;i&gt; : Bold and Italic Text Elements
 {: .no_toc }
 
+
+The bold and italic text elements provide both semantic and presentational text emphasis in PDF documents. `<strong>` and `<em>` are semantic elements indicating importance and emphasis, while `<b>` and `<i>` are presentational elements for visual styling without semantic meaning.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,13 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-
-## Summary
-
-The bold and italic text elements provide both semantic and presentational text emphasis in PDF documents. `<strong>` and `<em>` are semantic elements indicating importance and emphasis, while `<b>` and `<i>` are presentational elements for visual styling without semantic meaning.
 
 ---
 

@@ -11,21 +11,6 @@ has_toc: false
 
 # &lt;continuation-header&gt; : The Continuation Header Element
 {: .no_toc }
----
-
-<details open class='top-toc' markdown="block">
-  <summary>
-    On this page
-  </summary>
-  {: .text-delta }
-- TOC
-{: toc}
-</details>
-
----
-
-
-## Summary
 
 The `<continuation-header>` element defines content that appears at the top of continuation pages when content spans multiple pages. The regular `<header>` element will appear on all pages, unless the continuation header is present, and it will appear on second and subsequent pages.
 
@@ -38,6 +23,17 @@ It is used within `<body>` or `<section>` elements to provide a header that disp
 
 The continuation header only appears when content flows to additional pages. The first page shows the regular `<header>` element (if present), while subsequent pages show the `<continuation-header>`.
 If the continuation header is not present then any template `<header>` will show on all pages.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 

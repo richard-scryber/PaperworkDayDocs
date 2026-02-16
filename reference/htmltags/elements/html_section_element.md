@@ -12,9 +12,11 @@ has_toc: false
 # &lt;section&gt; : The Section Element
 {: .no_toc }
 
+The `<section>` element represents a thematic grouping of content, typically with a heading. It is a semantic block-level element used to divide documents into logical sections, chapters, or themed content areas.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<section>` element represents a thematic grouping of content, typically with a heading. It is a semantic block-level element used to divide documents into logical sections, chapters, or themed content areas.
 
 ## Usage
 

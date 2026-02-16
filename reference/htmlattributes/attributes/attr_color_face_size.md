@@ -12,7 +12,10 @@ has_toc: false
 # @color, @face, @size : Deprecated Font Element Attributes
 {: .no_toc }
 
+The `color`, `face`, and `size` attributes are deprecated HTML attributes historically used with the `<font>` element for styling text appearance. While still supported for backward compatibility, **modern CSS properties are strongly recommended** for all new templates.
+
 ---
+
 
 <details class='top-toc' markdown="block">
   <summary>
@@ -22,12 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-The `color`, `face`, and `size` attributes are deprecated HTML attributes historically used with the `<font>` element for styling text appearance. While still supported for backward compatibility, **modern CSS properties are strongly recommended** for all new templates.
-
 
 ---
 

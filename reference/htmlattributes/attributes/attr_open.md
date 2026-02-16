@@ -12,6 +12,8 @@ has_toc: false
 # @open : The Details Open State Attribute
 {: .no_toc}
 
+The `open` attribute specifies whether a `<details>` element should be expanded (open) or collapsed (closed) by default. As a boolean attribute, its presence indicates the element is open, while its absence means closed. This enables creation of expandable/collapsible content sections in PDF documents, though PDF support for interactive elements is limited.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,9 +27,7 @@ has_toc: false
 
 ---
 
-## Summary
 
-The `open` attribute specifies whether a `<details>` element should be expanded (open) or collapsed (closed) by default. As a boolean attribute, its presence indicates the element is open, while its absence means closed. This enables creation of expandable/collapsible content sections in PDF documents, though PDF support for interactive elements is limited.
 
 ## Usage
 
@@ -71,6 +71,9 @@ The `open` attribute controls disclosure widget state:
 {% endraw %}
 
 
+{: .note }
+> The functionality of `details` is expected to be enhanced in the future with support for callouts and expandable content.
+> Check any updates to the library when using this component, which may break existing templates.
 
 
 

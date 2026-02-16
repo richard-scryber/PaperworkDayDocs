@@ -12,6 +12,8 @@ has_toc: false
 # @data-page-hint : The Page Count Hint Attribute
 {: .no_toc }
 
+The `data-page-hint` attribute provides a hint about the total page count for documents, enabling optimized page number rendering and improved document generation performance. It helps the PDF generation engine estimate total pages before final layout calculation, particularly useful for page numbering in headers and footers.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -26,8 +28,6 @@ has_toc: false
 ---
 
 ## Summmary
-
-The `data-page-hint` attribute provides a hint about the total page count for documents, enabling optimized page number rendering and improved document generation performance. It helps the PDF generation engine estimate total pages before final layout calculation, particularly useful for page numbering in headers and footers.
 
 The `data-page-hint` attribute optimizes page numbering by providing an estimated total page count:
 

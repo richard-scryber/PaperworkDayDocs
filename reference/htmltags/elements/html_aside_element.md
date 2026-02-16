@@ -12,9 +12,11 @@ has_toc: false
 # &lt;aside&gt; : The Aside Element
 {: .no_toc }
 
+The `<aside>` element represents content that is tangentially related to the content around it. It is a semantic block-level element typically used for sidebars, pull quotes, callout boxes, glossaries, related links, and supplementary information that enhances but is separate from the main content.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<aside>` element represents content that is tangentially related to the content around it. It is a semantic block-level element typically used for sidebars, pull quotes, callout boxes, glossaries, related links, and supplementary information that enhances but is separate from the main content.
 
 ---
 

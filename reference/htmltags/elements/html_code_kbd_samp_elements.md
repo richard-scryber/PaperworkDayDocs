@@ -12,9 +12,16 @@ has_toc: false
 # &lt;code&gt;, &lt;kbd&gt;, &lt;samp&gt; : Computer Related Formatting Elements
 {: .no_toc }
 
+Specialized inline elements for text formatting computer code, keyboard input and sample output
+
+- `<code>`: Inline code or computer text (monospace)
+- `<kbd>`: Keyboard input (monospace)
+- `<samp>`: Sample program output (monospace)
+
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,17 +29,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-Specialized inline elements for text formatting computer code, keyboard input and sample output
-
-- `<code>`: Inline code or computer text (monospace)
-- `<kbd>`: Keyboard input (monospace)
-- `<samp>`: Sample program output (monospace)
-
 
 ---
 

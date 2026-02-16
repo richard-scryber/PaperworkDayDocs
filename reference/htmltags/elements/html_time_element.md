@@ -12,9 +12,11 @@ has_toc: false
 # &lt;time&gt; : The Date/Time Element
 {: .no_toc }
 
+The `<time>` element represents a specific date, time, or datetime value. In PDF output, it renders formatted date/time text according to the specified format string. It's ideal for displaying dates, timestamps, deadlines, and temporal information with consistent formatting throughout your document.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,11 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The `<time>` element represents a specific date, time, or datetime value. In PDF output, it renders formatted date/time text according to the specified format string. It's ideal for displaying dates, timestamps, deadlines, and temporal information with consistent formatting throughout your document.
 
 ## Usage
 

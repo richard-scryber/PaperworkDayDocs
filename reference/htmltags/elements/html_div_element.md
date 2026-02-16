@@ -12,9 +12,12 @@ has_toc: false
 # &lt;div&gt; : The Generic Div Element
 {: .no_toc }
 
+
+The `<div>` element is a generic block-level container used to group content and apply styling. It is one of the most commonly used elements in HTML templates for creating document structure and layout in PDF output.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,12 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<div>` element is a generic block-level container used to group content and apply styling. It is one of the most commonly used elements in HTML templates for creating document structure and layout in PDF output.
 
 ---
 

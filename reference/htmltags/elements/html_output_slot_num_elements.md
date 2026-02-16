@@ -12,9 +12,16 @@ has_toc: false
 # &lt;output&gt;, &lt;slot&gt;, &lt;num&gt; : Inline Textual Value Elements
 {: .no_toc }
 
+
+The library supports a variety of semantic HTML elements that provide meaning to inline text content. These elements not only convey semantic information but also apply default styling appropriate to their purpose. This document covers: `<output>`, `<slot>` and `<num>` that are appropriate for use with value information..
+
+They can each be styled indepently or as a tag group, and support the full styling capabilities of a [span](html_span_element.html).
+
+The `<num>` element can also have numeric values bound from the data and formatted to a readable/local variation.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,15 +31,6 @@ has_toc: false
 </details>
 
 ---
-
-
-## Summary
-
-The library supports a variety of semantic HTML elements that provide meaning to inline text content. These elements not only convey semantic information but also apply default styling appropriate to their purpose. This document covers: `<output>`, `<slot>` and `<num>` that are appropriate for use with value information..
-
-They can each be styled indepently or as a tag group, and support the full styling capabilities of a [span](html_span_element.html).
-
-The `<num>` element can also have numeric values bound from the data and formatted to a readable/local variation.
 
 ## Overview
 

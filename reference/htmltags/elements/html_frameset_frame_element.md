@@ -11,9 +11,11 @@ has_toc: false
 
 # &lt;frameset&gt; and &lt;frame&gt; : PDF Merging and Document Combination Elements
 
+The `<frameset>` and `<frame>` elements are powerful components that enable merging existing PDFs with dynamically generated content, creating combined documents, and building complex multi-source PDF files. This allows you to overlay generated content onto existing PDFs, append documents, or create sophisticated document workflows.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -23,12 +25,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `<frameset>` and `<frame>` elements are powerful components that enable merging existing PDFs with dynamically generated content, creating combined documents, and building complex multi-source PDF files. This allows you to overlay generated content onto existing PDFs, append documents, or create sophisticated document workflows.
-
---
 
 ## Usage
 

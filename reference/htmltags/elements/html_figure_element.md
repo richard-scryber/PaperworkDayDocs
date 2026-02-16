@@ -12,9 +12,12 @@ has_toc: false
 # &lt;figure&gt; : The Figure with Caption Element
 {: .no_toc }
 
+
+The `<figure>` element represents self-contained content, typically with a caption, that is referenced as a single unit from the main content. It is a semantic block-level element designed for encapsulating images, diagrams, code listings, illustrations, charts, or other content that can be moved away from the main flow without affecting the document's meaning.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,12 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `<figure>` element represents self-contained content, typically with a caption, that is referenced as a single unit from the main content. It is a semantic block-level element designed for encapsulating images, diagrams, code listings, illustrations, charts, or other content that can be moved away from the main flow without affecting the document's meaning.
 
 ---
 

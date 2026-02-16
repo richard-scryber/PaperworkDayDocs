@@ -12,7 +12,11 @@ has_toc: false
 # @data-allow-missing-images : The Missing Images Tolerance Attribute
 {: .no_toc }
 
+
+The `data-allow-missing-images` attribute controls error handling behavior when image files cannot be loaded in Scryber PDF documents. Setting this attribute to `true` enables graceful degradation, allowing document generation to continue even when images are missing, inaccessible, or invalid, instead of throwing exceptions that halt the process.
+
 ---
+
 
 <details class='top-toc' markdown="block">
   <summary>
@@ -22,12 +26,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-
-The `data-allow-missing-images` attribute controls error handling behavior when image files cannot be loaded in Scryber PDF documents. Setting this attribute to `true` enables graceful degradation, allowing document generation to continue even when images are missing, inaccessible, or invalid, instead of throwing exceptions that halt the process.
 
 ---
 

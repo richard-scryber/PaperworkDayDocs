@@ -12,6 +12,8 @@ has_toc: false
 # @width and @height : The Sizing Attributes
 {: .no_toc}
 
+The `width` and `height` attributes control the dimensions of elements in PDF documents. They are primarily used with images, iframes, tables, and table cells, supporting various units (points, pixels, percentages) and enabling precise layout control through both explicit values and data binding.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,9 +27,6 @@ has_toc: false
 
 ---
 
-## Summary
-
-The `width` and `height` attributes control the dimensions of elements in PDF documents. They are primarily used with images, iframes, tables, and table cells, supporting various units (points, pixels, percentages) and enabling precise layout control through both explicit values and data binding.
 
 ## Usage
 
@@ -188,6 +187,9 @@ Scryber supports multiple units for width and height:
 | `in` | Inches | `width="5.5in"` | Physical dimensions |
 | `cm` | Centimeters | `width="14cm"` | Metric measurements |
 | `mm` | Millimeters | `width="140mm"` | Precise metric sizing |
+| `rem`| Relative to the *root* font size | `margin: 1rem` |
+| `vw`, `vh` | Relative to the viewport width and height | `width: 90vw` |
+| `vmax`, `vmin` | Relative to the maximum or minimum viewport size | `x : 20vMin` |
 
 ```html
 <!-- Points (recommended for PDF) -->

@@ -12,9 +12,16 @@ has_toc: false
 # &lt;del&gt;, &lt;ins&gt;, &lt;u&gt;, &lt;strike&gt;: Text Formatting Elements
 {: .no_toc }
 
+Specialized inline elements for marking edits and changes to textual content for deletions, insertions and underlines.
+
+- `<del>`: Deleted text (strikethrough)
+- `<ins>`: Inserted text (underlined)
+- `<u>`: Underlined text (presentational)
+- `<strike>` (`s`): Strikethrough text (presentational)
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -22,17 +29,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-Specialized inline elements for marking edits and changes to textual content for deletions, insertions and underlines.
-
-- `<del>`: Deleted text (strikethrough)
-- `<ins>`: Inserted text (underlined)
-- `<u>`: Underlined text (presentational)
-- `<strike>` (`s`): Strikethrough text (presentational)
 
 ---
 

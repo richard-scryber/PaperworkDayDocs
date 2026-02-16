@@ -13,9 +13,9 @@ nav_order: 2
 
 ---
 
-<details open markdown="block">
+<details markdown="block">
   <summary>
-    Table of contents
+    On this page
   </summary>
   {: .text-delta }
 - TOC
@@ -28,10 +28,7 @@ nav_order: 2
 
 An attribute supports the element in which it is enclosed by adding further information in a formal and discreet manner. The library supports the use of the many standard element attributes on various <a href='../htmltags/' >Html Elements</a>. Where possible the library tries to match expected behaviour to the final output based on existing meaning.
 
-The library also extended the behaviour of the element with a number of custom elements
-
-
-
+The library also extends the behaviour of the element with a number of custom elements
 
 
 {% raw %}

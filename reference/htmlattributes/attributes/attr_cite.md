@@ -12,6 +12,9 @@ has_toc: false
 # @cite : The Citation Source Attribute
 {: .no_toc }
 
+
+The `cite` attribute specifies the URL of a source document or resource that explains a quotation, insertion, or deletion. It provides attribution and reference information for `<blockquote>`, `<q>`, `<ins>`, and `<del>` elements, enabling proper citation and documentation of content changes in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-
-The `cite` attribute specifies the URL of a source document or resource that explains a quotation, insertion, or deletion. It provides attribution and reference information for `<blockquote>`, `<q>`, `<ins>`, and `<del>` elements, enabling proper citation and documentation of content changes in PDF documents.
 
 ---
 

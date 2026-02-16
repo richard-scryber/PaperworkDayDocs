@@ -12,6 +12,8 @@ has_toc: false
 # @src : The Source Attribute
 {: .no_toc}
 
+The `src` attribute specifies the source location of embedded content such as images and iframes. It accepts file paths (relative or absolute), URLs, and data URIs, enabling flexible content embedding in PDF documents with support for various image formats and external HTML content.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `src` attribute specifies the source location of embedded content such as images and iframes. It accepts file paths (relative or absolute), URLs, and data URIs, enabling flexible content embedding in PDF documents with support for various image formats and external HTML content.
 
 ## Usage
 

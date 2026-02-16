@@ -12,9 +12,10 @@ has_toc: false
 # &lt;font&gt; : The Font Element (Deprecated)
 {: .no_toc }
 
----
+The `<font>` element is a deprecated HTML element for styling text appearance. While still supported for backward compatibility, **CSS styling is strongly recommended** instead.
 
-<details open class='top-toc' markdown="block">
+---
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -24,9 +25,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-The `<font>` element is a deprecated HTML element for styling text appearance. While still supported for backward compatibility, **CSS styling is strongly recommended** instead.
 
 ## Usage
 

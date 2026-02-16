@@ -12,9 +12,11 @@ has_toc: false
 # &lt;head&gt; : The Document Head Element
 {: .no_toc }
 
+The `<head>` element contains metadata and document-level information that affects the entire PDF document. It is not rendered visually but provides essential information about document properties, styling, and configuration.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -25,9 +27,6 @@ has_toc: false
 
 ---
 
-
-## Summary
-The `<head>` element contains metadata and document-level information that affects the entire PDF document. It is not rendered visually but provides essential information about document properties, styling, and configuration.
 
 ## Usage
 

@@ -48,10 +48,6 @@ doc.SaveAsPDF("output.pdf");
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
 <h1>{{title}}</h1>
@@ -60,10 +56,6 @@ doc.SaveAsPDF("output.pdf");
 <p>Pages: {{pageCount}}</p>
 ```
 {% endraw %}
-
-
-
-
 
 ---
 
@@ -87,10 +79,6 @@ doc.Params["model"] = new
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
 <h1>Invoice #{{model.invoiceNumber}}</h1>
@@ -110,10 +98,6 @@ doc.Params["model"] = new
 <p><strong>Total: ${{model.total}}</strong></p>
 ```
 {% endraw %}
-
-
-
-
 
 ### Typed Classes
 
@@ -191,10 +175,6 @@ doc.Params["config"] = new
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
 <div class="header">
@@ -211,10 +191,6 @@ doc.Params["config"] = new
 {{/if}}
 ```
 {% endraw %}
-
-
-
-
 
 ---
 
@@ -247,10 +223,6 @@ doc.Params["model"] = new
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
 <p>Items: {{model.itemCount}}</p>
@@ -259,10 +231,6 @@ doc.Params["model"] = new
 <p><strong>Total: ${{format(model.total, 'F2')}}</strong></p>
 ```
 {% endraw %}
-
-
-
-
 
 **Why calculate in C#?**
 - More reliable than template calculations
@@ -284,10 +252,6 @@ doc.Params["companyName"] = "Tech Corp";
 doc.Params["year"] = 2025;
 ```
 
-
-
-
-
 {% raw %}
 ```html
 <!-- Available in header -->
@@ -306,10 +270,6 @@ doc.Params["year"] = 2025;
 </div>
 ```
 {% endraw %}
-
-
-
-
 
 ---
 
@@ -356,10 +316,6 @@ doc.Params["helpers"] = new
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
 <p>Generated: {{format(helpers.currentDate, helpers.dateFormat)}}</p>
@@ -367,10 +323,6 @@ doc.Params["helpers"] = new
 <p>Total: {{helpers.currencySymbol}}{{format(model.total, helpers.numberFormat)}}</p>
 ```
 {% endraw %}
-
-
-
-
 
 ### Pattern 3: Conditional Configuration
 
@@ -388,10 +340,6 @@ doc.Params["config"] = new
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
 <h1>{{model.title}}</h1>
@@ -416,10 +364,6 @@ doc.Params["config"] = new
 {{/if}}
 ```
 {% endraw %}
-
-
-
-
 
 ---
 
@@ -474,10 +418,6 @@ doc.SaveAsPDF("annual-report.pdf");
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -611,7 +551,7 @@ doc.SaveAsPDF("annual-report.pdf");
                     {{format(this.revenue -  this.expenses, 'C0')}}
                 </td>
                 <td style="text-align: right;">
-                    {{format(calc(calc(this.revenue -  this.expenses) /  this.revenue), 'P0')}}
+                    {{format((this.revenue -  this.expenses) /  this.revenue, 'P0')}}
                 </td>
             </tr>
             {{/each}}
@@ -630,10 +570,6 @@ doc.SaveAsPDF("annual-report.pdf");
 </html>
 ```
 {% endraw %}
-
-
-
-
 
 ### Example 2: Reusable Template Components
 
@@ -677,10 +613,6 @@ doc.Params["model"] = actualData;
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
 <!DOCTYPE html>
@@ -730,10 +662,6 @@ doc.Params["model"] = actualData;
 </html>
 ```
 {% endraw %}
-
-
-
-
 
 ---
 

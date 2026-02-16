@@ -31,22 +31,15 @@ By the end of this article, you'll be able to:
 
 The `{% raw %}{{#each}}{% endraw %}` helper iterates over arrays and collections:
 
-
-
-
-
 {% raw %}
 ```html
+
 {{#each collection}}
     <!-- Content repeated for each item -->
     {{this.property}}
 {{/each}}
 ```
 {% endraw %}
-
-
-
-
 
 ---
 
@@ -60,12 +53,9 @@ doc.Params["items"] = new[] { "Apple", "Banana", "Orange" };
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
+
 <ul>
     {{#each items}}
         <li>{{this}}</li>
@@ -73,10 +63,6 @@ doc.Params["items"] = new[] { "Apple", "Banana", "Orange" };
 </ul>
 ```
 {% endraw %}
-
-
-
-
 
 **Output:**
 ```html
@@ -100,12 +86,9 @@ doc.Params["products"] = new[]
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
+
 <ul>
     {{#each products}}
         <li>{{this.name}} - ${{this.price}}</li>
@@ -113,10 +96,6 @@ doc.Params["products"] = new[]
 </ul>
 ```
 {% endraw %}
-
-
-
-
 
 **Output:**
 ```html
@@ -126,6 +105,7 @@ doc.Params["products"] = new[]
     <li>Widget C - $20.00</li>
 </ul>
 ```
+{% raw %}
 
 ---
 
@@ -133,12 +113,8 @@ doc.Params["products"] = new[]
 
 Access the current iteration index (0-based):
 
-
-
-
-
 {% raw %}
-```html
+```
 <table>
     <thead>
         <tr>
@@ -160,10 +136,6 @@ Access the current iteration index (0-based):
 ```
 {% endraw %}
 
-
-
-
-
 ---
 
 ## Using {% raw %}{{@key}}{% endraw %}
@@ -171,7 +143,7 @@ Access the current iteration index (0-based):
 When iterating over dictionaries or objects with named properties:
 
 **C# Code:**
-```csharp
+```
 doc.Params["stats"] = new Dictionary<string, int>
 {
     { "Users", 1250 },
@@ -181,12 +153,9 @@ doc.Params["stats"] = new Dictionary<string, int>
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
+
 <dl>
     {{#each stats}}
         <dt>{{@key}}</dt>
@@ -195,10 +164,6 @@ doc.Params["stats"] = new Dictionary<string, int>
 </dl>
 ```
 {% endraw %}
-
-
-
-
 
 **Output:**
 ```html
@@ -244,12 +209,9 @@ doc.Params["departments"] = new[]
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
+
 {{#each departments}}
     <h2>{{this.name}}</h2>
     <ul>
@@ -261,18 +223,11 @@ doc.Params["departments"] = new[]
 ```
 {% endraw %}
 
-
-
-
-
 ### Three-Level Nesting
-
-
-
-
 
 {% raw %}
 ```html
+
 {{#each companies}}
     <h1>{{this.companyName}}</h1>
     {{#each this.departments}}
@@ -287,10 +242,6 @@ doc.Params["departments"] = new[]
 ```
 {% endraw %}
 
-
-
-
-
 ---
 
 ## Context Access in Loops
@@ -299,12 +250,9 @@ doc.Params["departments"] = new[]
 
 Access parent scope data inside loops:
 
-
-
-
-
 {% raw %}
 ```html
+
 {{#each orders}}
     <p>Order {{this.orderNumber}} for customer {{../customerName}}</p>
     {{#each this.items}}
@@ -314,22 +262,15 @@ Access parent scope data inside loops:
 ```
 {% endraw %}
 
-
-
-
-
 The `../` syntax accesses the parent context.
 
 ### Root Context
 
 Access the root data from any nested level:
 
-
-
-
-
 {% raw %}
 ```html
+
 {{#each departments}}
     {{#each this.employees}}
         <p>{{this.name}} works for {{../../companyName}}</p>
@@ -338,24 +279,15 @@ Access the root data from any nested level:
 ```
 {% endraw %}
 
-
-
-
-
 ---
 
 ## Empty Collections
 
-### Using {{else}}
+### Using {% raw %}{{else}}{% endraw %}
 
 Handle empty collections gracefully:
 
-
-
-
-
 {% raw %}
-```html
 {{#each products}}
     <div class="product">
         <h3>{{this.name}}</h3>
@@ -366,10 +298,6 @@ Handle empty collections gracefully:
 {{/each}}
 ```
 {% endraw %}
-
-
-
-
 
 ---
 
@@ -395,12 +323,9 @@ doc.Params["model"] = new
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
+
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -470,10 +395,6 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
-
-
-
-
 ---
 
 ## Dynamic Lists
@@ -504,12 +425,9 @@ doc.Params["catalog"] = new
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
+
 <h1>{{catalog.categoryName}}</h1>
 
 {{#each catalog.products}}
@@ -528,19 +446,11 @@ doc.Params["catalog"] = new
 ```
 {% endraw %}
 
-
-
-
-
 ---
 
 ## Conditional Iteration
 
 ### Filtering with {% raw %}{{#if}}{% endraw %}
-
-
-
-
 
 {% raw %}
 ```html
@@ -556,18 +466,11 @@ doc.Params["catalog"] = new
 ```
 {% endraw %}
 
-
-
-
-
 ### Alternating Styles
-
-
-
-
 
 {% raw %}
 ```html
+
 {{#each items}}
     <div class="{{if(calc(@index, '%', 2), 'odd-row', 'even-row')}}">
         {{this.name}}
@@ -575,10 +478,6 @@ doc.Params["catalog"] = new
 {{/each}}
 ```
 {% endraw %}
-
-
-
-
 
 ---
 
@@ -602,12 +501,9 @@ doc.Params["model"] = new
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
+
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -661,10 +557,6 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
-
-
-
-
 ### Example 2: Sales Report with Nested Data
 
 **C# Code:**
@@ -701,12 +593,9 @@ doc.Params["model"] = new
 ```
 
 **Template:**
-
-
-
-
 {% raw %}
 ```html
+
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -797,18 +686,11 @@ doc.Params["model"] = new
 ```
 {% endraw %}
 
-
-
-
-
 ### Example 3: Product Grid Layout
-
-
-
-
 
 {% raw %}
 ```html
+
 <div style="display: table; width: 100%;">
     {{#each products}}
         <div style="display: table-cell; width: 33%; padding: 10pt; vertical-align: top;">
@@ -829,10 +711,6 @@ doc.Params["model"] = new
 </div>
 ```
 {% endraw %}
-
-
-
-
 
 ---
 
@@ -872,48 +750,29 @@ Create an org chart showing:
 
 ### ❌ Forgetting {{this}}
 
-
-
-
-
 {% raw %}
-```html
 {{#each products}}
     <p>{{name}}</p>  <!-- Won't work -->
 {{/each}}
 ```
 {% endraw %}
 
-
-
-
-
-✅ **Solution:** Use `{% raw %}{{this.property}}{% endraw %}`
-
-
-
-
+✅ **Solution:** Use `{{this.property}}`
 
 {% raw %}
 ```html
+
 {{#each products}}
     <p>{{this.name}}</p>
 {{/each}}
 ```
 {% endraw %}
 
-
-
-
-
 ### ❌ Wrong Context in Nested Loops
-
-
-
-
 
 {% raw %}
 ```html
+
 {{#each departments}}
     {{#each employees}}
         <p>{{deptName}}</p>  <!-- Wrong scope -->
@@ -922,18 +781,11 @@ Create an org chart showing:
 ```
 {% endraw %}
 
-
-
-
-
 ✅ **Solution:** Use parent context
-
-
-
-
 
 {% raw %}
 ```html
+
 {{#each departments}}
     {{#each this.employees}}
         <p>{{../deptName}}</p>
@@ -942,18 +794,11 @@ Create an org chart showing:
 ```
 {% endraw %}
 
-
-
-
-
 ### ❌ Not Handling Empty Collections
-
-
-
-
 
 {% raw %}
 ```html
+
 {{#each items}}
     <div>{{this.name}}</div>
 {{/each}}
@@ -961,15 +806,7 @@ Create an org chart showing:
 ```
 {% endraw %}
 
-
-
-
-
 ✅ **Solution:** Add {{else}}
-
-
-
-
 
 {% raw %}
 ```html
@@ -980,10 +817,6 @@ Create an org chart showing:
 {{/each}}
 ```
 {% endraw %}
-
-
-
-
 
 ---
 

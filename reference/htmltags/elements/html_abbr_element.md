@@ -12,9 +12,12 @@ has_toc: false
 # &lt;abbr&gt; : The Abbreviation Element
 {: .no_toc }
 
+
+The `<abbr>` element is an inline semantic HTML element that marks up abbreviations and acronyms. In the library, it renders text in italic by default and supports the `title` attribute to provide the full form of the abbreviation. Unlike the standard HTML elements, where `title` appears in the outline, title can be used for accessibility, annotations, or displayed contextually.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
@@ -25,15 +28,7 @@ has_toc: false
 
 ---
 
-## Summary
-
-The `<abbr>` element is an inline semantic HTML element that marks up abbreviations and acronyms. In the library, it renders text in italic by default and supports the `title` attribute to provide the full form of the abbreviation. Unlike the standard HTML elements, where `title` appears in the outline, title can be used for accessibility, annotations, or displayed contextually.
-
----
-
 ## Usage
-
-
 
 
 
@@ -49,9 +44,6 @@ The `<abbr>` element is an inline semantic HTML element that marks up abbreviati
 <abbr title="{{model.abbreviationExpansion}}">{{model.abbreviationText}}</abbr>
 ```
 {% endraw %}
-
-
-
 
 
 

@@ -12,7 +12,10 @@ has_toc: false
 # @colspan and @rowspan : The Table Cell Spanning Attributes
 {: .no_toc }
 
+The `colspan` and `rowspan` attributes enable table cells to span multiple columns or rows, creating complex table layouts with merged cells. These attributes are essential for creating structured data tables, reports, forms, and sophisticated grid layouts in PDF documents.
+
 ---
+
 
 <details class='top-toc' markdown="block">
   <summary>
@@ -22,12 +25,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summmary
-The `colspan` and `rowspan` attributes enable table cells to span multiple columns or rows, creating complex table layouts with merged cells. These attributes are essential for creating structured data tables, reports, forms, and sophisticated grid layouts in PDF documents.
-
 
 ---
 
