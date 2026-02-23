@@ -12,22 +12,20 @@ has_toc: false
 # split() : Split String into Array
 {: .no_toc }
 
+Split a string into an array of substrings based on a separator.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Split a string into an array of substrings based on a separator.
 
 ## Signature
 
@@ -59,9 +57,6 @@ An array containing the split substrings.
 ### Split CSV
 
 
-
-
-
 {% raw %}
 ```handlebars
 <ul>
@@ -71,9 +66,6 @@ An array containing the split substrings.
 </ul>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -96,18 +88,12 @@ doc.Params["model"] = new {
 ### Split Full Name
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>First Name: {{split(model.fullName, ' ')[0]}}</p>
 <p>Last Name: {{split(model.fullName, ' ')[1]}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -126,9 +112,6 @@ doc.Params["model"] = new {
 ### Split Path
 
 
-
-
-
 {% raw %}
 ```handlebars
 <ul class="breadcrumb">
@@ -138,9 +121,6 @@ doc.Params["model"] = new {
 </ul>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -163,17 +143,11 @@ doc.Params["model"] = new {
 ### Count Occurrences
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Words: {{length(split(model.sentence, ' '))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

@@ -12,6 +12,8 @@ has_toc: false
 # margin-right : Right Margin Property
 {: .no_toc }
 
+The `margin-right` property sets the right margin of an element in PDF documents. The right margin creates space to the right of the element, separating it from adjacent elements or the page edge and controlling horizontal spacing in document layouts.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `margin-right` property sets the right margin of an element in PDF documents. The right margin creates space to the right of the element, separating it from adjacent elements or the page edge and controlling horizontal spacing in document layouts.
 
 ---
 
@@ -94,9 +90,6 @@ The `margin-right` property supports dynamic values through data binding, allowi
 ### Example 1: Dynamic column spacing for responsive layouts
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -131,9 +124,6 @@ The `margin-right` property supports dynamic values through data binding, allowi
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -145,9 +135,6 @@ Data context:
 ```
 
 ### Example 2: Badge spacing based on display mode
-
-
-
 
 
 {% raw %}
@@ -177,9 +164,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -188,9 +172,6 @@ Data context:
 ```
 
 ### Example 3: Data-driven product grid spacing
-
-
-
 
 
 {% raw %}
@@ -226,9 +207,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

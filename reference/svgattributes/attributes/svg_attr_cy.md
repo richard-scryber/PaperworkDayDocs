@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @cy : Center Y Coordinate Attribute
+{: .no_toc }
 
 The `cy` attribute specifies the vertical center position (center Y-coordinate) of circular and elliptical elements within the SVG coordinate system. It defines the vertical center point for circles, ellipses, and radial gradients in your PDF documents.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -64,9 +78,6 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 ### Example 1: Dynamic Circle Positioning
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { dot: { cx: 150, cy: 100, radius: 40, color: '#9C27B0' } } -->
@@ -78,13 +89,7 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 {% endraw %}
 
 
-
-
-
 ### Example 2: Vertically Centered Element
-
-
-
 
 
 {% raw %}
@@ -99,13 +104,7 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 {% endraw %}
 
 
-
-
-
 ### Example 3: Vertical Scatter Plot
-
-
-
 
 
 {% raw %}
@@ -124,9 +123,6 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -417,9 +413,6 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 ### Dynamic Vertical Positioning
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { markers: [
@@ -435,9 +428,6 @@ The `cy` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Bell Curve Distribution

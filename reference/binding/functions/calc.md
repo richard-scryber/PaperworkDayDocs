@@ -12,22 +12,20 @@ has_toc: false
 # calc() : CSS Calculation Expression
 {: .no_toc }
 
+Generate a CSS calc() expression for dynamic style calculations. This allows mathematical operations in CSS property values with units.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Generate a CSS calc() expression for dynamic style calculations. This allows mathematical operations in CSS property values with units.
 
 ## Signature
 
@@ -58,9 +56,6 @@ A formatted CSS calc() expression string.
 ### Dynamic Width Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <div style="width: {{calc('100% - 20px')}}; border: 1px solid black;">
@@ -68,9 +63,6 @@ A formatted CSS calc() expression string.
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,9 +80,6 @@ doc.Params["model"] = new { };
 ### Variable-Based Calculations
 
 
-
-
-
 {% raw %}
 ```handlebars
 <div style="margin-left: {{calc(string(model.indent) + 'px + 1em')}};">
@@ -98,9 +87,6 @@ doc.Params["model"] = new { };
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -120,9 +106,6 @@ doc.Params["model"] = new {
 ### Responsive Sizing
 
 
-
-
-
 {% raw %}
 ```handlebars
 <table style="width: {{calc('100% - ' + string(model.sidebarWidth) + 'px')}};">
@@ -132,9 +115,6 @@ doc.Params["model"] = new {
 </table>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -156,9 +136,6 @@ doc.Params["model"] = new {
 ### Grid Layout Calculations
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.columns}}
@@ -168,9 +145,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -200,9 +174,6 @@ doc.Params["model"] = new {
 ### Font Size Scaling
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h1 style="font-size: {{calc(string(model.baseFontSize) + 'pt * ' + string(model.scale))}};">
@@ -210,9 +181,6 @@ doc.Params["model"] = new {
 </h1>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

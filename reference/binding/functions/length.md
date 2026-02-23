@@ -12,22 +12,20 @@ has_toc: false
 # length() : Get String/Array Length
 {: .no_toc }
 
+Get the length of a string or count of items in an array.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Get the length of a string or count of items in an array.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The number of characters in the string or items in the array.
 ### String Length
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Length: {{length(model.text)}} characters</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Array Count
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Total items: {{length(model.items)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,9 +100,6 @@ doc.Params["model"] = new {
 ### Conditional Truncation
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.descriptions}}
@@ -130,13 +113,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Character Limit Validation
-
-
-
 
 
 {% raw %}
@@ -148,9 +125,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -168,9 +142,6 @@ doc.Params["model"] = new {
 ### List Size Display
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Products ({{length(model.products)}})</h3>
@@ -181,9 +152,6 @@ doc.Params["model"] = new {
 </ul>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

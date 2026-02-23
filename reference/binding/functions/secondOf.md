@@ -12,22 +12,20 @@ has_toc: false
 # secondOf() : Extract Second from DateTime
 {: .no_toc }
 
+Extract the second component from a datetime value as a number (0-59).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract the second component from a datetime value as a number (0-59).
 
 ## Signature
 
@@ -58,17 +56,11 @@ The second as a number from 0 to 59.
 ### Display Second
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Second: {{secondOf(model.time)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Precise Time Display
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Time: {{hourOf(model.time)}}:{{padLeft(string(minuteOf(model.time)), 2, '0')}}:{{padLeft(string(secondOf(model.time)), 2, '0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,9 +100,6 @@ doc.Params["model"] = new {
 ### Timestamp Validation
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.events}}
@@ -128,9 +111,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -154,9 +134,6 @@ doc.Params["model"] = new {
 ### Performance Timing
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Request Processing Time</h3>
@@ -165,9 +142,6 @@ doc.Params["model"] = new {
 <p>Seconds: {{secondOf(model.endTime) - secondOf(model.startTime)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -189,9 +163,6 @@ doc.Params["model"] = new {
 ### Synchronization Check
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Sync Status:
@@ -203,9 +174,6 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

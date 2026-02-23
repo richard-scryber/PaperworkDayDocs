@@ -12,6 +12,8 @@ has_toc: false
 # margin : Margin Shorthand Property
 {: .no_toc }
 
+The `margin` property is a shorthand for setting all four margin sides (top, right, bottom, left) of an element in PDF documents. Margins create space outside the element's border, separating it from other elements and controlling document layout and white space.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `margin` property is a shorthand for setting all four margin sides (top, right, bottom, left) of an element in PDF documents. Margins create space outside the element's border, separating it from other elements and controlling document layout and white space.
 
 ---
 
@@ -97,9 +93,6 @@ The `margin` property supports dynamic values through data binding, allowing you
 ### Example 1: Dynamic invoice spacing based on document type
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -124,9 +117,6 @@ The `margin` property supports dynamic values through data binding, allowing you
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -138,9 +128,6 @@ Data context:
 ```
 
 ### Example 2: Conditional spacing for compact vs. normal mode
-
-
-
 
 
 {% raw %}
@@ -167,9 +154,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -180,9 +164,6 @@ Data context:
 ```
 
 ### Example 3: Responsive margins based on page size
-
-
-
 
 
 {% raw %}
@@ -205,9 +186,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

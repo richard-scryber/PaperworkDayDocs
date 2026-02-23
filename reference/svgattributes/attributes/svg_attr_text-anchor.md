@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @text-anchor : The Text Horizontal Alignment Attribute
+{: .no_toc }
 
 The `text-anchor` attribute controls the horizontal alignment of text relative to its x position. It determines whether text starts at, centers on, or ends at the specified x coordinate.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -81,9 +95,6 @@ The `text-anchor` attribute is supported on:
 Change alignment based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { labels: [{text: 'Left', align: 'start', y: 80}, {text: 'Center', align: 'middle', y: 150}, {text: 'Right', align: 'end', y: 220}] } -->
@@ -100,15 +111,9 @@ Change alignment based on data:
 {% endraw %}
 
 
-
-
-
 ### Chart Labels with Centered Text
 
 Center labels on data points:
-
-
-
 
 
 {% raw %}
@@ -130,15 +135,9 @@ Center labels on data points:
 {% endraw %}
 
 
-
-
-
 ### Position-Dependent Alignment
 
 Align text based on position:
-
-
-
 
 
 {% raw %}
@@ -156,15 +155,9 @@ Align text based on position:
 {% endraw %}
 
 
-
-
-
 ### Responsive Label Positioning
 
 Adjust alignment for different screen positions:
-
-
-
 
 
 {% raw %}
@@ -182,15 +175,9 @@ Adjust alignment for different screen positions:
 {% endraw %}
 
 
-
-
-
 ### Data Table with Aligned Columns
 
 Create aligned text columns:
-
-
-
 
 
 {% raw %}
@@ -211,9 +198,6 @@ Create aligned text columns:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -285,8 +269,6 @@ Each line respects text-anchor:
 **Chart labels:**
 
 
-
-
 {% raw %}
 ```html
 <!-- Center labels on data points -->
@@ -297,12 +279,7 @@ Each line respects text-anchor:
 {% endraw %}
 
 
-
-
-
 **Axis labels:**
-
-
 
 
 {% raw %}
@@ -315,12 +292,7 @@ Each line respects text-anchor:
 {% endraw %}
 
 
-
-
-
 **Button text:**
-
-
 
 
 {% raw %}
@@ -334,12 +306,7 @@ Each line respects text-anchor:
 {% endraw %}
 
 
-
-
-
 **Table columns:**
-
-
 
 
 {% raw %}
@@ -350,9 +317,6 @@ Each line respects text-anchor:
 </text>
 ```
 {% endraw %}
-
-
-
 
 
 ### Text Bounding Box

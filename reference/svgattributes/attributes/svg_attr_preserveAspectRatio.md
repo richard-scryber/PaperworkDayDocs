@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @preserveAspectRatio : The Aspect Ratio Preservation Attribute
+{: .no_toc }
 
 The `preserveAspectRatio` attribute controls how an SVG's viewBox is scaled and positioned within the viewport when their aspect ratios differ. It determines whether to maintain the aspect ratio, how to align the content, and whether to fit the content inside or fill the viewport.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -23,9 +37,6 @@ The `preserveAspectRatio` attribute controls SVG scaling behavior:
 - Support responsive designs with predictable scaling
 - Enable data binding for dynamic aspect ratio control
 - Create letterbox or pillarbox effects
-
-
-
 
 
 {% raw %}
@@ -52,9 +63,6 @@ The `preserveAspectRatio` attribute controls SVG scaling behavior:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -147,9 +155,6 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 ### Dynamic Alignment
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { alignment: "xMidYMid", scale: "meet" } -->
@@ -162,13 +167,7 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 {% endraw %}
 
 
-
-
-
 ### Conditional Scaling
-
-
-
 
 
 {% raw %}
@@ -183,13 +182,7 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 {% endraw %}
 
 
-
-
-
 ### User-Selected Alignment
-
-
-
 
 
 {% raw %}
@@ -204,13 +197,7 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 {% endraw %}
 
 
-
-
-
 ### Toggle Stretch Mode
-
-
-
 
 
 {% raw %}
@@ -224,13 +211,7 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 {% endraw %}
 
 
-
-
-
 ### Responsive Image Fitting
-
-
-
 
 
 {% raw %}
@@ -244,9 +225,6 @@ The `preserveAspectRatio` attribute supports data binding for dynamic aspect rat
 </template>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -760,9 +738,6 @@ When `preserveAspectRatio="none"`:
 ### Dynamic Fit Mode
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { displayMode: "contain" } -->
@@ -780,13 +755,7 @@ When `preserveAspectRatio="none"`:
 {% endraw %}
 
 
-
-
-
 ### Mobile vs Desktop Layout
-
-
-
 
 
 {% raw %}
@@ -807,9 +776,6 @@ When `preserveAspectRatio="none"`:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

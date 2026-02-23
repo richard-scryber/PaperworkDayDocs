@@ -12,22 +12,20 @@ has_toc: false
 # endsWith() : Check String Suffix
 {: .no_toc }
 
+Check if a string ends with a specified suffix.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Check if a string ends with a specified suffix.
 
 ## Signature
 
@@ -59,9 +57,6 @@ endsWith(str, suffix)
 ### File Extension Check
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.files}}
@@ -77,9 +72,6 @@ endsWith(str, suffix)
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -106,9 +98,6 @@ doc.Params["model"] = new {
 ### Domain Validation
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if endsWith(model.email, '@company.com')}}
@@ -118,9 +107,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -138,9 +124,6 @@ doc.Params["model"] = new {
 ### URL Path Checking
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if endsWith(model.url, '/')}}
@@ -152,13 +135,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Version Suffix
-
-
-
 
 
 {% raw %}
@@ -177,9 +154,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

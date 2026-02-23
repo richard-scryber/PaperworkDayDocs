@@ -12,6 +12,8 @@ has_toc: false
 # height : Height Property
 {: .no_toc }
 
+The `height` property sets the vertical dimension of an element in PDF documents. It defines how tall an element should be, affecting its layout, content overflow behavior, and how it interacts with other elements in the document flow.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `height` property sets the vertical dimension of an element in PDF documents. It defines how tall an element should be, affecting its layout, content overflow behavior, and how it interacts with other elements in the document flow.
 
 ---
 
@@ -96,9 +92,6 @@ The height property supports dynamic value binding through template expressions,
 ### Example 1: Chart bars with dynamic heights
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -148,13 +141,7 @@ The height property supports dynamic value binding through template expressions,
 {% endraw %}
 
 
-
-
-
 ### Example 2: Conditional section heights
-
-
-
 
 
 {% raw %}
@@ -178,13 +165,7 @@ The height property supports dynamic value binding through template expressions,
 {% endraw %}
 
 
-
-
-
 ### Example 3: Image sizing based on data
-
-
-
 
 
 {% raw %}
@@ -212,13 +193,7 @@ The height property supports dynamic value binding through template expressions,
 {% endraw %}
 
 
-
-
-
 ### Example 4: Data-driven dashboard panels
-
-
-
 
 
 {% raw %}
@@ -257,9 +232,6 @@ The height property supports dynamic value binding through template expressions,
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,6 +12,8 @@ has_toc: false
 # counter-increment : Counter Modification Property
 {: .no_toc }
 
+The `counter-increment` property increases or decreases the value of one or more CSS counters. Counters are used with the `content` property and `counter()` or `counters()` functions to automatically number elements and create sequential content in documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `counter-increment` property increases or decreases the value of one or more CSS counters. Counters are used with the `content` property and `counter()` or `counters()` functions to automatically number elements and create sequential content in documents.
 
 ---
 
@@ -95,9 +91,6 @@ The `counter-increment` property automatically works with data-bound elements, i
 ### Example 1: Data-driven numbered list with automatic incrementing
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -131,13 +124,7 @@ The `counter-increment` property automatically works with data-bound elements, i
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic FAQ with question numbering
-
-
-
 
 
 {% raw %}
@@ -177,13 +164,7 @@ The `counter-increment` property automatically works with data-bound elements, i
 {% endraw %}
 
 
-
-
-
 ### Example 3: Multi-category lists with separate counters
-
-
-
 
 
 {% raw %}
@@ -227,9 +208,6 @@ The `counter-increment` property automatically works with data-bound elements, i
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

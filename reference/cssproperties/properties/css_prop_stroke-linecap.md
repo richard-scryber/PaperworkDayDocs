@@ -12,6 +12,8 @@ has_toc: false
 # stroke-linecap : SVG Line Cap Style Property
 {: .no_toc }
 
+The `stroke-linecap` property defines the shape to be used at the end of open subpaths and dashes in SVG strokes. This property controls how line endings appear, whether they are flat, rounded, or extended with a square cap.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `stroke-linecap` property defines the shape to be used at the end of open subpaths and dashes in SVG strokes. This property controls how line endings appear, whether they are flat, rounded, or extended with a square cap.
 
 ---
 
@@ -90,9 +86,6 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 ### Example 1: Data-driven line styles in charts
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -115,13 +108,7 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 {% endraw %}
 
 
-
-
-
 ### Example 2: Conditional linecap based on connection status
-
-
-
 
 
 {% raw %}
@@ -146,13 +133,7 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 {% endraw %}
 
 
-
-
-
 ### Example 3: Dynamic progress bars with bound line caps
-
-
-
 
 
 {% raw %}
@@ -176,9 +157,6 @@ The `stroke-linecap` property can be dynamically set through data binding to cre
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

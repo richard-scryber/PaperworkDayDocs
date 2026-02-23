@@ -12,22 +12,20 @@ has_toc: false
 # concat() : Concatenate Strings
 {: .no_toc }
 
+Concatenate multiple strings into one.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Concatenate multiple strings into one.
 
 ## Signature
 
@@ -58,9 +56,6 @@ All input strings joined together.
 ### Basic Concatenation
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{concat('Hello', ' ', 'World')}}
@@ -69,13 +64,7 @@ All input strings joined together.
 {% endraw %}
 
 
-
-
-
 ### With Variables
-
-
-
 
 
 {% raw %}
@@ -83,9 +72,6 @@ All input strings joined together.
 <p>{{concat(model.firstName, ' ', model.lastName)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -104,9 +90,6 @@ doc.Params["model"] = new {
 ### Multiple Values
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{concat('Order #', model.orderNumber, ' - ', model.status)}}
@@ -115,13 +98,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### With Formatting
-
-
-
 
 
 {% raw %}
@@ -132,13 +109,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### In Log Statement
-
-
-
 
 
 {% raw %}
@@ -146,9 +117,6 @@ doc.Params["model"] = new {
 {{log concat('Processing order ', model.id)}}
 ```
 {% endraw %}
-
-
-
 
 
 ---

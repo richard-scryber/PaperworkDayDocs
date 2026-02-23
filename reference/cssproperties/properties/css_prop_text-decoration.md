@@ -12,6 +12,8 @@ has_toc: false
 # text-decoration : Text Decoration Property
 {: .no_toc }
 
+The `text-decoration` property specifies decorative lines that appear on text. This is commonly used to underline links, strike through deleted text, or add emphasis to content in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `text-decoration` property specifies decorative lines that appear on text. This is commonly used to underline links, strike through deleted text, or add emphasis to content in PDF documents.
 
 ---
 
@@ -78,9 +74,6 @@ The `text-decoration` property can be dynamically controlled using data binding,
 ### Example 1: Conditional Link Underline
 
 
-
-
-
 {% raw %}
 ```html
 <a href="{{model.link.url}}"
@@ -102,13 +95,7 @@ The `text-decoration` property can be dynamically controlled using data binding,
 {% endraw %}
 
 
-
-
-
 ### Example 2: Status-Based Text Decoration
-
-
-
 
 
 {% raw %}
@@ -144,13 +131,7 @@ The `text-decoration` property can be dynamically controlled using data binding,
 {% endraw %}
 
 
-
-
-
 ### Example 3: Document Revision Tracking
-
-
-
 
 
 {% raw %}
@@ -174,9 +155,6 @@ The `text-decoration` property can be dynamically controlled using data binding,
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

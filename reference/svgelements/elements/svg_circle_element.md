@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;circle&gt; : SVG Circle Element
+{: .no_toc }
 
 The `<circle>` element draws a perfect circle shape in SVG content within your PDF documents. It's ideal for creating dots, indicators, icons, pie charts, avatars, and decorative elements.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -77,9 +91,6 @@ The `<circle>` element supports dynamic attribute values using data binding expr
 ### Example 1: Dynamic Size and Color
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { dot: { cx: 50, cy: 50, radius: 25, color: '#4CAF50' } } -->
@@ -91,13 +102,7 @@ The `<circle>` element supports dynamic attribute values using data binding expr
 {% endraw %}
 
 
-
-
-
 ### Example 2: Status Indicators
-
-
-
 
 
 {% raw %}
@@ -111,13 +116,7 @@ The `<circle>` element supports dynamic attribute values using data binding expr
 {% endraw %}
 
 
-
-
-
 ### Example 3: Bubble Chart with Template
-
-
-
 
 
 {% raw %}
@@ -136,9 +135,6 @@ The `<circle>` element supports dynamic attribute values using data binding expr
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -376,9 +372,6 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 ### Scatter Plot Points
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { points: [
@@ -397,13 +390,7 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 {% endraw %}
 
 
-
-
-
 ### Dynamic Status Dots
-
-
-
 
 
 {% raw %}
@@ -423,13 +410,7 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 {% endraw %}
 
 
-
-
-
 ### Percentage Indicator
-
-
-
 
 
 {% raw %}
@@ -447,9 +428,6 @@ When applying `scale()` transforms to circles, non-uniform scaling (different x 
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

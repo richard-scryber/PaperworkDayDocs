@@ -12,6 +12,8 @@ has_toc: false
 # position : Position Property
 {: .no_toc }
 
+The `position` property specifies the positioning method used for an element in PDF documents. It determines how an element is positioned on the page and how it interacts with the normal document flow. This is fundamental for creating complex layouts, overlays, headers, footers, and watermarks.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `position` property specifies the positioning method used for an element in PDF documents. It determines how an element is positioned on the page and how it interacts with the normal document flow. This is fundamental for creating complex layouts, overlays, headers, footers, and watermarks.
 
 ---
 
@@ -91,9 +87,6 @@ The `position` property supports data binding, allowing you to dynamically contr
 ### Example 1: Dynamic watermark positioning based on document type
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -118,9 +111,6 @@ The `position` property supports data binding, allowing you to dynamically contr
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -140,9 +130,6 @@ Data model:
 ```
 
 ### Example 2: Conditional header positioning based on layout preferences
-
-
-
 
 
 {% raw %}
@@ -174,9 +161,6 @@ Data model:
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -196,9 +180,6 @@ Data model:
 ```
 
 ### Example 3: Dynamic approval stamp positioning
-
-
-
 
 
 {% raw %}
@@ -235,9 +216,6 @@ Data model:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data model:

@@ -12,22 +12,20 @@ has_toc: false
 # averageOf() : Calculate Average of Property
 {: .no_toc }
 
+Calculate the arithmetic mean (average) of a specific numeric property across all items in a collection.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the arithmetic mean (average) of a specific numeric property across all items in a collection.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The arithmetic mean of the specified property. Returns null for empty collection
 ### Average Price
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Average product price: ${{round(averageOf(model.products, 'price'), 2)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -91,9 +83,6 @@ doc.Params["model"] = new {
 ### Sales Performance
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Sales Summary</h3>
@@ -102,9 +91,6 @@ doc.Params["model"] = new {
 <p>Number of days: {{count(model.dailySales)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -130,9 +116,6 @@ doc.Params["model"] = new {
 ### Team Statistics
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.teams}}
@@ -142,9 +125,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -183,9 +163,6 @@ doc.Params["model"] = new {
 ### Performance Benchmarks
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Server Performance</h3>
@@ -194,9 +171,6 @@ doc.Params["model"] = new {
 <p>Peak CPU: {{maxOf(model.servers, 'cpuUsage')}}%</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

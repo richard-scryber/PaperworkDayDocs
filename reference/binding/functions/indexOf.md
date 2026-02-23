@@ -12,22 +12,20 @@ has_toc: false
 # indexOf() : Find Substring Position
 {: .no_toc }
 
+Find the first occurrence position of a substring within a string.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Find the first occurrence position of a substring within a string.
 
 ## Signature
 
@@ -59,9 +57,6 @@ The zero-based index of the first occurrence, or -1 if not found.
 ### Check if Found
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if indexOf(model.text, '@') >= 0}}
@@ -71,9 +66,6 @@ The zero-based index of the first occurrence, or -1 if not found.
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -91,17 +83,11 @@ doc.Params["model"] = new {
 ### Extract After Position
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Domain: {{substring(model.email, indexOf(model.email, '@') + 1)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -119,18 +105,12 @@ doc.Params["model"] = new {
 ### Split on First Occurrence
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>First part: {{substring(model.text, 0, indexOf(model.text, ','))}}</p>
 <p>Second part: {{substring(model.text, indexOf(model.text, ',') + 2)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -149,9 +129,6 @@ doc.Params["model"] = new {
 ### Conditional Based on Position
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -163,9 +140,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

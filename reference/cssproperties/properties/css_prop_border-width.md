@@ -12,6 +12,8 @@ has_toc: false
 # border-width : Border Width Property
 {: .no_toc }
 
+The `border-width` property sets the width of all four borders of an element. This property controls the thickness of borders and can be specified using named values or length measurements.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-width` property sets the width of all four borders of an element. This property controls the thickness of borders and can be specified using named values or length measurements.
 
 ---
 
@@ -95,9 +91,6 @@ The `border-width` property supports dynamic values through data binding, allowi
 ### Example 1: Conditional border emphasis
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -118,13 +111,7 @@ The `border-width` property supports dynamic values through data binding, allowi
 {% endraw %}
 
 
-
-
-
 ### Example 2: Priority-based border thickness
-
-
-
 
 
 {% raw %}
@@ -147,9 +134,6 @@ The `border-width` property supports dynamic values through data binding, allowi
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -164,9 +148,6 @@ Data context:
 ```
 
 ### Example 3: Table rows with dynamic borders
-
-
-
 
 
 {% raw %}
@@ -191,9 +172,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

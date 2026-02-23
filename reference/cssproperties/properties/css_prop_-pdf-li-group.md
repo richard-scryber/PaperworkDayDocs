@@ -12,6 +12,8 @@ has_toc: false
 # -pdf-li-group : List Item Group Property (Scryber Custom)
 {: .no_toc }
 
+The `-pdf-li-group` property is a Scryber-specific extension that controls how list item numbering is grouped across nested lists. This property enables advanced list numbering schemes commonly found in legal documents, technical specifications, and structured documentation where hierarchical numbering is required.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,17 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `-pdf-li-group` property is a Scryber-specific extension that controls how list item numbering is grouped across nested lists. This property enables advanced list numbering schemes commonly found in legal documents, technical specifications, and structured documentation where hierarchical numbering is required.
-
----
-
-{: .note }
-Although the support for this property is expected to continue for the forseeable future, its functionality will be consumed into custom or pre-defined [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type.html) values.
 
 ---
 
@@ -90,9 +81,6 @@ The `-pdf-li-group` property supports data binding, allowing dynamic control of 
 ### Example 1: Dynamic legal numbering scheme
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -120,9 +108,6 @@ The `-pdf-li-group` property supports data binding, allowing dynamic control of 
 {% endraw %}
 
 
-
-
-
 **Data context:**
 ```json
 {
@@ -145,9 +130,6 @@ The `-pdf-li-group` property supports data binding, allowing dynamic control of 
 When `enableGrouping` is true, produces hierarchical numbering (1, 1.1, 1.2); when false, each list starts fresh (1, 1, 2).
 
 ### Example 2: Configurable document outline
-
-
-
 
 
 {% raw %}
@@ -175,9 +157,6 @@ When `enableGrouping` is true, produces hierarchical numbering (1, 1.1, 1.2); wh
 {% endraw %}
 
 
-
-
-
 **Data context:**
 ```json
 {
@@ -197,9 +176,6 @@ When `enableGrouping` is true, produces hierarchical numbering (1, 1.1, 1.2); wh
 Organizations can configure whether documents use hierarchical (1.1, 1.2) or independent (1, 2) numbering based on their documentation standards.
 
 ### Example 3: Named groups for complex documents
-
-
-
 
 
 {% raw %}
@@ -227,9 +203,6 @@ Organizations can configure whether documents use hierarchical (1.1, 1.2) or ind
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**

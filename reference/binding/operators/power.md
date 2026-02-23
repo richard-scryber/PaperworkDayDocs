@@ -12,27 +12,22 @@ has_toc: false
 # ^ : Power (Exponentiation) Operator
 {: .no_toc }
 
+Raise a number to a specified power (exponentiation).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
 
-## Summary
-
-Raise a number to a specified power (exponentiation).
-
 ## Syntax
-
-
-
 
 
 {% raw %}
@@ -40,9 +35,6 @@ Raise a number to a specified power (exponentiation).
 {{base ^ exponent}}
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -79,17 +71,11 @@ The base raised to the power of the exponent.
 ### Square
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Area of square: {{model.side ^ 2}} sq ft</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -107,17 +93,11 @@ doc.Params["model"] = new {
 ### Cube
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Volume of cube: {{model.side ^ 3}} cubic ft</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -135,17 +115,11 @@ doc.Params["model"] = new {
 ### Compound Interest
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Future Value: ${{format(model.principal * (1 + model.rate) ^ model.years, '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -165,9 +139,6 @@ doc.Params["model"] = new {
 ### Scientific Notation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Speed of light: {{3 ^ 8}} m/s</p>
@@ -175,13 +146,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Power of 10
-
-
-
 
 
 {% raw %}
@@ -189,9 +154,6 @@ doc.Params["model"] = new {
 <p>{{model.value * (10 ^ model.decimals)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

@@ -12,6 +12,8 @@ has_toc: false
 # border-bottom : Bottom Border Shorthand Property
 {: .no_toc }
 
+The `border-bottom` property is a shorthand that sets the width, style, and color of the bottom border of an element. This property is commonly used for underlines, section separators, and footer accents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `border-bottom` property is a shorthand that sets the width, style, and color of the bottom border of an element. This property is commonly used for underlines, section separators, and footer accents.
 
 ## Usage
 
@@ -93,9 +91,6 @@ The `border-bottom` property supports dynamic values through data binding, allow
 ### Example 1: Table rows with conditional separators
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -112,13 +107,7 @@ The `border-bottom` property supports dynamic values through data binding, allow
 {% endraw %}
 
 
-
-
-
 ### Example 2: Section headers with dynamic underlines
-
-
-
 
 
 {% raw %}
@@ -140,9 +129,6 @@ The `border-bottom` property supports dynamic values through data binding, allow
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -155,9 +141,6 @@ Data context:
 ```
 
 ### Example 3: Alert cards with severity indicators
-
-
-
 
 
 {% raw %}
@@ -175,9 +158,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

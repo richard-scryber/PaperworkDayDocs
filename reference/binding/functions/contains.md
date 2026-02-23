@@ -12,22 +12,20 @@ has_toc: false
 # contains() : Check if String Contains Substring
 {: .no_toc }
 
+Check if a string contains a specified substring.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Check if a string contains a specified substring.
 
 ## Signature
 
@@ -59,9 +57,6 @@ contains(str, search)
 ### Simple Search
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if contains(model.description, 'premium')}}
@@ -69,9 +64,6 @@ contains(str, search)
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -89,9 +81,6 @@ doc.Params["model"] = new {
 ### Filter Items
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.products}}
@@ -104,9 +93,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -135,9 +121,6 @@ doc.Params["model"] = new {
 ### Keyword Highlighting
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -152,13 +135,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Email Validation
-
-
-
 
 
 {% raw %}
@@ -170,9 +147,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

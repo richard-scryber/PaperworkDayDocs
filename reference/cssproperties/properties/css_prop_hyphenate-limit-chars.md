@@ -12,6 +12,8 @@ has_toc: false
 # hyphenate-limit-chars : Hyphenation Character Limits
 {: .no_toc }
 
+The `hyphenate-limit-chars` property specifies the minimum number of characters in a word before hyphenation, and the minimum number of characters before and after the hyphenation point. This is a shorthand property for fine-tuning automatic hyphenation behavior in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `hyphenate-limit-chars` property specifies the minimum number of characters in a word before hyphenation, and the minimum number of characters before and after the hyphenation point. This is a shorthand property for fine-tuning automatic hyphenation behavior in PDF documents.
 
 ---
 
@@ -102,9 +98,6 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
 ### Example 1: Responsive Hyphenation Limits
 
 
-
-
-
 {% raw %}
 ```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
@@ -136,13 +129,7 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
 {% endraw %}
 
 
-
-
-
 ### Example 2: Language-Specific Hyphenation Rules
-
-
-
 
 
 {% raw %}
@@ -176,13 +163,7 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Document Quality Settings
-
-
-
 
 
 {% raw %}
@@ -216,9 +197,6 @@ The `hyphenate-limit-chars` property can be dynamically configured through data 
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

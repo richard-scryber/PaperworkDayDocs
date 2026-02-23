@@ -12,6 +12,8 @@ has_toc: false
 # border-left-color : Left Border Color Property
 {: .no_toc }
 
+The `border-left-color` property sets the color of the left border.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-left-color` property sets the color of the left border.
 
 ---
 
@@ -77,9 +73,6 @@ The `border-left-color` property supports dynamic values through data binding, a
 ### Example 1: Alert severity colors
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -99,9 +92,6 @@ The `border-left-color` property supports dynamic values through data binding, a
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -115,9 +105,6 @@ Data context:
 ```
 
 ### Example 2: Status-based accent bars
-
-
-
 
 
 {% raw %}
@@ -141,13 +128,7 @@ Data context:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Category indicators
-
-
-
 
 
 {% raw %}
@@ -168,9 +149,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

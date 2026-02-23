@@ -12,6 +12,8 @@ has_toc: false
 # padding : Padding Shorthand Property
 {: .no_toc }
 
+The `padding` property is a shorthand for setting all four padding sides (top, right, bottom, left) of an element in PDF documents. Padding creates space inside the element's border, between the border and the content, and inherits the element's background color.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `padding` property is a shorthand for setting all four padding sides (top, right, bottom, left) of an element in PDF documents. Padding creates space inside the element's border, between the border and the content, and inherits the element's background color.
 
 ---
 
@@ -96,9 +92,6 @@ The `padding` property supports dynamic values through data binding, allowing yo
 ### Example 1: Dynamic card padding based on importance
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -119,9 +112,6 @@ The `padding` property supports dynamic values through data binding, allowing yo
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -134,9 +124,6 @@ Data context:
 ```
 
 ### Example 2: Responsive padding based on content density
-
-
-
 
 
 {% raw %}
@@ -175,9 +162,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -190,9 +174,6 @@ Data context:
 ```
 
 ### Example 3: Variable padding for form fields
-
-
-
 
 
 {% raw %}
@@ -228,9 +209,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

@@ -12,22 +12,20 @@ has_toc: false
 # padLeft() : Pad String on Left
 {: .no_toc }
 
+Pad a string on the left side to reach a specified length.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Pad a string on the left side to reach a specified length.
 
 ## Signature
 
@@ -60,17 +58,11 @@ The padded string.
 ### Zero-Padded Numbers
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Order #{{padLeft(format(model.orderNumber, '0'), 8, '0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,9 +80,6 @@ doc.Params["model"] = new {
 ### Invoice Numbers
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.invoices}}
@@ -98,9 +87,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -124,9 +110,6 @@ doc.Params["model"] = new {
 ### Align Text
 
 
-
-
-
 {% raw %}
 ```handlebars
 <pre>
@@ -136,9 +119,6 @@ doc.Params["model"] = new {
 </pre>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -164,17 +144,11 @@ doc.Params["model"] = new {
 ### Custom Padding
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{padLeft(model.code, 10, '-')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

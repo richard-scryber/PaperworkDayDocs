@@ -12,6 +12,8 @@ has_toc: false
 # letter-spacing : Letter Spacing Property
 {: .no_toc }
 
+The `letter-spacing` property controls the horizontal spacing between characters (letters) in text. This property is useful for adjusting text appearance, creating emphasis, and improving readability in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `letter-spacing` property controls the horizontal spacing between characters (letters) in text. This property is useful for adjusting text appearance, creating emphasis, and improving readability in PDF documents.
 
 ---
 
@@ -95,9 +91,6 @@ The `letter-spacing` property can be dynamically controlled through data binding
 ### Example 1: User Accessibility Preferences
 
 
-
-
-
 {% raw %}
 ```html
 <p style="letter-spacing: {{model.accessibility.letterSpacing}}; font-size: 12pt">
@@ -116,13 +109,7 @@ The `letter-spacing` property can be dynamically controlled through data binding
 {% endraw %}
 
 
-
-
-
 ### Example 2: Content Type-Based Spacing
-
-
-
 
 
 {% raw %}
@@ -154,13 +141,7 @@ The `letter-spacing` property can be dynamically controlled through data binding
 {% endraw %}
 
 
-
-
-
 ### Example 3: Dynamic Emphasis Levels
-
-
-
 
 
 {% raw %}
@@ -179,9 +160,6 @@ The `letter-spacing` property can be dynamically controlled through data binding
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

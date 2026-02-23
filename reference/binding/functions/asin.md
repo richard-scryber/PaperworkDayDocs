@@ -12,22 +12,20 @@ has_toc: false
 # asin() : Arcsine (Inverse Sine)
 {: .no_toc }
 
+Calculate the arcsine (inverse sine) of a value, returning the angle in radians.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the arcsine (inverse sine) of a value, returning the angle in radians.
 
 ## Signature
 
@@ -58,18 +56,12 @@ The angle in radians (between -π/2 and π/2).
 ### Basic Arcsine
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>asin(0.5) = {{format(asin(0.5), '0.000')}} radians</p>
 <p>asin(0.5) = {{format(degrees(asin(0.5)), '0.0')}}°</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -81,17 +73,11 @@ The angle in radians (between -π/2 and π/2).
 ### Find Angle from Ratio
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Angle: {{format(degrees(asin(model.opposite / model.hypotenuse)), '0.0')}}°</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

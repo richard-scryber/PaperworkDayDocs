@@ -12,22 +12,20 @@ has_toc: false
 # double() : Convert to Double
 {: .no_toc }
 
+Convert a value to a double-precision floating-point number.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert a value to a double-precision floating-point number.
 
 ## Signature
 
@@ -58,17 +56,11 @@ A double-precision floating-point representation of the value.
 ### Convert String to Double
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Value: {{double(model.stringValue)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Scientific Calculations
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Result: {{format(double(model.coefficient) * pow(10, model.exponent), '0.00e+00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -115,17 +101,11 @@ doc.Params["model"] = new {
 ### Percentage to Decimal
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Rate: {{double(model.percentage) / 100}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

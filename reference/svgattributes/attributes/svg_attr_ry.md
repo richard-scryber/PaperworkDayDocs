@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @ry : Vertical Radius Attribute
+{: .no_toc }
 
 The `ry` attribute specifies the vertical radius for elliptical shapes and rounded corners within the SVG coordinate system. It defines the vertical dimension for ellipses and the vertical corner curvature for rectangles in your PDF documents.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -70,9 +84,6 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 ### Example 1: Dynamic Ellipse Height
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { oval: { cx: 150, cy: 100, rx: 90, ry: 60, color: '#FF5722' } } -->
@@ -85,13 +96,7 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 {% endraw %}
 
 
-
-
-
 ### Example 2: Adaptive Corner Rounding
-
-
-
 
 
 {% raw %}
@@ -107,13 +112,7 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 {% endraw %}
 
 
-
-
-
 ### Example 3: Variable Height Ellipses
-
-
-
 
 
 {% raw %}
@@ -132,9 +131,6 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -422,9 +418,6 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 ### Dynamic Vertical Radius
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { badges: [
@@ -442,9 +435,6 @@ The `ry` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Aspect Ratio Comparison

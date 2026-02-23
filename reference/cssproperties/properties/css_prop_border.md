@@ -12,6 +12,8 @@ has_toc: false
 # border : Border Shorthand Property
 {: .no_toc }
 
+The `border` property is a shorthand that sets all border properties (width, style, and color) for all four sides of an element in a single declaration. This property is essential for creating visual boundaries, separating content sections, and enhancing the overall design of PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border` property is a shorthand that sets all border properties (width, style, and color) for all four sides of an element in a single declaration. This property is essential for creating visual boundaries, separating content sections, and enhancing the overall design of PDF documents.
 
 ---
 
@@ -97,9 +93,6 @@ The `border` property supports dynamic values through data binding, allowing bor
 ### Example 1: Invoice status borders
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -120,9 +113,6 @@ The `border` property supports dynamic values through data binding, allowing bor
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -137,9 +127,6 @@ Data context:
 ```
 
 ### Example 2: Conditional border emphasis
-
-
-
 
 
 {% raw %}
@@ -161,13 +148,7 @@ Data context:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Alert severity borders
-
-
-
 
 
 {% raw %}
@@ -185,9 +166,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

@@ -12,6 +12,8 @@ has_toc: false
 # transform : Element Transformation Property
 {: .no_toc }
 
+The `transform` property applies 2D or 3D transformations to elements in PDF documents. This property allows you to rotate, scale, translate (move), skew, or apply matrix transformations to both HTML and SVG elements, enabling complex visual effects and layouts.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `transform` property applies 2D or 3D transformations to elements in PDF documents. This property allows you to rotate, scale, translate (move), skew, or apply matrix transformations to both HTML and SVG elements, enabling complex visual effects and layouts.
 
 ---
 
@@ -110,9 +106,6 @@ The `transform` property can be dynamically controlled through data binding, ena
 ### Example 1: Data-driven rotation for gauge needles
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -137,13 +130,7 @@ The `transform` property can be dynamically controlled through data binding, ena
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic scaling for data visualization
-
-
-
 
 
 {% raw %}
@@ -167,13 +154,7 @@ The `transform` property can be dynamically controlled through data binding, ena
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional transforms for interactive states
-
-
-
 
 
 {% raw %}
@@ -195,9 +176,6 @@ The `transform` property can be dynamically controlled through data binding, ena
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

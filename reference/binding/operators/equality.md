@@ -12,6 +12,8 @@ has_toc: false
 # == : Equality Operator
 {: .no_toc }
 
+Compares two values for equality. Returns `true` if values are equal, `false` otherwise.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Compares two values for equality. Returns `true` if values are equal, `false` otherwise.
 
 ## Syntax
 
@@ -77,8 +75,6 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 ### String Comparison
 
 
-
-
 {% raw %}
 ```html 
 {{#if model.status == 'active'}}
@@ -86,9 +82,6 @@ Compares two values for equality. Returns `true` if values are equal, `false` ot
 {{/if}} 
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -99,8 +92,6 @@ doc.Params["model"] = new {
 ```
 
 ### Number Comparison
-
-
 
 
 {% raw %}
@@ -114,12 +105,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Boolean Comparison
-
-
 
 
 {% raw %}
@@ -131,12 +117,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Multiple Conditions
-
-
 
 
 {% raw %}
@@ -152,12 +133,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### With #each
-
-
 
 
 {% raw %}
@@ -171,9 +147,6 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
-
-
-
 
 
 ---

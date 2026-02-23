@@ -12,22 +12,20 @@ has_toc: false
 # sumOf() : Sum Property Across Collection
 {: .no_toc }
 
+Calculate the sum of a specific numeric property across all items in a collection.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the sum of a specific numeric property across all items in a collection.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The sum of the specified property across all items. Returns 0 for empty collecti
 ### Simple Property Sum
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Total price: ${{sumOf(model.products, 'price')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -91,9 +83,6 @@ doc.Params["model"] = new {
 ### Sales Report
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Monthly Sales Summary</h3>
@@ -102,9 +91,6 @@ doc.Params["model"] = new {
 <p>Average Sale: ${{round(sumOf(model.sales, 'amount') / count(model.sales), 2)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -129,9 +115,6 @@ doc.Params["model"] = new {
 ### Inventory Value
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Warehouse Inventory</h3>
@@ -141,9 +124,6 @@ doc.Params["model"] = new {
 <p><strong>Total Value: ${{sumOf(model.warehouses, 'totalValue')}}</strong></p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -181,9 +161,6 @@ doc.Params["model"] = new {
 ### Project Hours
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Team Time Tracking</h3>
@@ -193,9 +170,6 @@ doc.Params["model"] = new {
 <p>Grand Total: {{sumOf(model.projects, 'totalHours')}} hours</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @dominant-baseline : The Text Vertical Alignment Attribute
+{: .no_toc }
 
 The `dominant-baseline` attribute controls the vertical alignment of text relative to its y position. It determines which part of the text (baseline, middle, top, etc.) aligns with the specified y coordinate.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -89,9 +103,6 @@ The `dominant-baseline` attribute is supported on:
 Change vertical alignment based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { labels: [{text: 'Top', align: 'hanging', x: 100}, {text: 'Middle', align: 'middle', x: 200}, {text: 'Bottom', align: 'text-bottom', x: 300}] } -->
@@ -108,15 +119,9 @@ Change vertical alignment based on data:
 {% endraw %}
 
 
-
-
-
 ### Centered Button Text
 
 Center text perfectly in buttons:
-
-
-
 
 
 {% raw %}
@@ -134,15 +139,9 @@ Center text perfectly in buttons:
 {% endraw %}
 
 
-
-
-
 ### Badge Labels with Centered Text
 
 Create badges with perfectly centered numbers:
-
-
-
 
 
 {% raw %}
@@ -160,15 +159,9 @@ Create badges with perfectly centered numbers:
 {% endraw %}
 
 
-
-
-
 ### Multi-Line Aligned Text
 
 Align multi-line text blocks:
-
-
-
 
 
 {% raw %}
@@ -188,15 +181,9 @@ Align multi-line text blocks:
 {% endraw %}
 
 
-
-
-
 ### Position-Specific Alignment
 
 Use different alignment based on position:
-
-
-
 
 
 {% raw %}
@@ -213,9 +200,6 @@ Use different alignment based on position:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -330,8 +314,6 @@ Each line can have different baseline:
 **Buttons:**
 
 
-
-
 {% raw %}
 ```html
 <text x="{{buttonCenterX}}" y="{{buttonCenterY}}"
@@ -342,12 +324,7 @@ Each line can have different baseline:
 {% endraw %}
 
 
-
-
-
 **Badges:**
-
-
 
 
 {% raw %}
@@ -360,12 +337,7 @@ Each line can have different baseline:
 {% endraw %}
 
 
-
-
-
 **Chart labels:**
-
-
 
 
 {% raw %}
@@ -376,9 +348,6 @@ Each line can have different baseline:
 </text>
 ```
 {% endraw %}
-
-
-
 
 
 **Top-aligned headings:**

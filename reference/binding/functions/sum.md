@@ -12,22 +12,20 @@ has_toc: false
 # sum() : Sum Numeric Values
 {: .no_toc }
 
+Calculate the sum of numeric values in a collection or array.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the sum of numeric values in a collection or array.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The sum of all numeric values in the collection. Returns 0 for empty or null col
 ### Simple Sum
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Total: {{sum(model.values)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Order Total
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Invoice</h3>
@@ -98,9 +87,6 @@ doc.Params["model"] = new {
 <p><strong>Total: ${{sum(collect(model.items, 'price'))}}</strong></p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -126,9 +112,6 @@ doc.Params["model"] = new {
 ### Budget Summary
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Budget Overview</h3>
@@ -137,9 +120,6 @@ doc.Params["model"] = new {
 <p>Remaining: ${{model.totalBudget - sum(collect(model.expenses, 'amount'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -165,9 +145,6 @@ doc.Params["model"] = new {
 ### Score Aggregation
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.students}}
@@ -175,9 +152,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

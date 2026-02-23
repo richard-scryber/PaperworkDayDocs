@@ -12,30 +12,24 @@ has_toc: false
 # else : Fallback Branch Helper
 {: .no_toc }
 
+Provides a fallback branch when conditional expressions are false or when collections are empty.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
 
-## Summary
-
-Provides a fallback branch when conditional expressions are false or when collections are empty.
-
-**Based on:** [`<otherwise>` element](../../components/choose.md) in conditionals, or fallback content in iteration contexts
-
 ## Syntax
 
 **With {% raw %}{{#if}}{% endraw %}:**
-
-
 
 
 {% raw %}
@@ -49,12 +43,7 @@ Provides a fallback branch when conditional expressions are false or when collec
 {% endraw %}
 
 
-
-
-
 **With {% raw %}{{#each}}{% endraw %}:**
-
-
 
 
 {% raw %}
@@ -68,12 +57,7 @@ Provides a fallback branch when conditional expressions are false or when collec
 {% endraw %}
 
 
-
-
-
 **With {% raw %}{{#with}}{% endraw %}:**
-
-
 
 
 {% raw %}
@@ -85,9 +69,6 @@ Provides a fallback branch when conditional expressions are false or when collec
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -103,9 +84,6 @@ No parameters. The `{% raw %}{{else}}{% endraw %}` helper is used as a separator
 ### With If Statement
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if model.hasStock}}
@@ -115,9 +93,6 @@ No parameters. The `{% raw %}{{else}}{% endraw %}` helper is used as a separator
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -135,9 +110,6 @@ doc.Params["model"] = new {
 ### With Each Loop (Empty Collection)
 
 
-
-
-
 {% raw %}
 ```handlebars
 <ul>
@@ -149,9 +121,6 @@ doc.Params["model"] = new {
 </ul>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -171,9 +140,6 @@ doc.Params["model"] = new {
 ### With Context Switch (Null Object)
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#with model.user}}
@@ -188,9 +154,6 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -210,9 +173,6 @@ doc.Params["model"] = new {
 ### Multiple Else If with Final Else
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if model.grade >= 90}}
@@ -228,16 +188,11 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ---
 
 ## Underlying Implementation
 
 **In {% raw %}{{#if}}{% endraw %} blocks**, `{% raw %}{{else}}{% endraw %}` compiles to:
-
-
 
 
 {% raw %}
@@ -254,12 +209,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 **In {% raw %}{{#each}}{% endraw %} blocks**, `{% raw %}{{else}}{% endraw %}` creates a conditional wrapper:
-
-
 
 
 {% raw %}
@@ -272,9 +222,6 @@ doc.Params["model"] = new {
 </template>
 ```
 {% endraw %}
-
-
-
 
 
 ---

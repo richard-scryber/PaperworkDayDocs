@@ -12,22 +12,20 @@ has_toc: false
 # floor() : Round Down to Integer
 {: .no_toc }
 
+Round a number down to the nearest integer.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Round a number down to the nearest integer.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The largest integer less than or equal to the value.
 ### Round Down Prices
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Base Price: ${{floor(model.price)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Calculate Completed Items
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Full sets: {{floor(model.items / model.setSize)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -115,17 +101,11 @@ doc.Params["model"] = new {
 ### Age Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Age: {{floor(model.days / 365)}} years</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -143,9 +123,6 @@ doc.Params["model"] = new {
 ### Always Round Down
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.values}}
@@ -153,9 +130,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

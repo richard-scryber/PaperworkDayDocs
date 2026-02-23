@@ -3,7 +3,7 @@ layout: default
 title: Best Practices
 parent: Configuration & Extension System
 grand_parent: Reference
-nav_order: 8
+nav_order: 9
 ---
 
 # Best Practices

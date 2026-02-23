@@ -12,6 +12,8 @@ has_toc: false
 # dominant-baseline : SVG Vertical Text Alignment Property
 {: .no_toc }
 
+The `dominant-baseline` property specifies the vertical alignment of SVG text content relative to the baseline. This property controls how text is positioned vertically at its anchor point, allowing precise control over text placement in diagrams, charts, and technical drawings.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `dominant-baseline` property specifies the vertical alignment of SVG text content relative to the baseline. This property controls how text is positioned vertically at its anchor point, allowing precise control over text placement in diagrams, charts, and technical drawings.
 
 ---
 
@@ -98,9 +94,6 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 ### Example 1: Dynamic badge labels with centered text
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -125,13 +118,7 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 {% endraw %}
 
 
-
-
-
 ### Example 2: Data-driven timeline labels with hanging baseline
-
-
-
 
 
 {% raw %}
@@ -157,13 +144,7 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional baseline for chart annotations
-
-
-
 
 
 {% raw %}
@@ -187,9 +168,6 @@ The `dominant-baseline` property can be dynamically controlled through data bind
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

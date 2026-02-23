@@ -12,29 +12,22 @@ has_toc: false
 # #with : Context Switching Helper
 {: .no_toc }
 
+Change the data context to a specific object, simplifying property access within the block. Properties can be accessed directly without the object prefix.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
 
-## Summary
-
-Change the data context to a specific object, simplifying property access within the block. Properties can be accessed directly without the object prefix.
-
-**Based on:** [`<template>` element](../../htmltags/template.html) with context binding and the [`With` component](../../components/with.html)
-
 ## Syntax
-
-
-
 
 
 {% raw %}
@@ -48,12 +41,7 @@ Change the data context to a specific object, simplifying property access within
 {% endraw %}
 
 
-
-
-
 **With Alias:**
-
-
 
 
 {% raw %}
@@ -63,9 +51,6 @@ Change the data context to a specific object, simplifying property access within
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -93,9 +78,6 @@ Change the data context to a specific object, simplifying property access within
 ### Basic Context Switching
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#with model.user}}
@@ -105,9 +87,6 @@ Change the data context to a specific object, simplifying property access within
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -131,9 +110,6 @@ doc.Params["model"] = new {
 ### With Else Block
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#with model.user}}
@@ -149,13 +125,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Accessing Parent Properties
-
-
-
 
 
 {% raw %}
@@ -172,13 +142,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Using Alias Syntax
-
-
-
 
 
 {% raw %}
@@ -193,13 +157,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Nested With Blocks
-
-
-
 
 
 {% raw %}
@@ -219,17 +177,11 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ---
 
 ## Underlying Implementation
 
 The `{% raw %}{{#with}}{% endraw %}` helper compiles to the following Scryber template structure:
-
-
-
 
 
 {% raw %}
@@ -242,9 +194,6 @@ The `{% raw %}{{#with}}{% endraw %}` helper compiles to the following Scryber te
 </template>
 ```
 {% endraw %}
-
-
-
 
 
 For the alias syntax `{% raw %}{{#with object as | alias |}}{% endraw %}`, it creates a variable binding that makes the object available under the specified name.

@@ -12,22 +12,20 @@ has_toc: false
 # decimal() : Convert to Decimal
 {: .no_toc }
 
+Convert a value to a decimal number with exact precision. Best for financial calculations.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert a value to a decimal number with exact precision. Best for financial calculations.
 
 ## Signature
 
@@ -58,17 +56,11 @@ A decimal representation with exact precision (28-29 significant digits).
 ### Currency Conversion
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Total: ${{format(decimal(model.price), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Financial Calculations
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Interest: ${{format(decimal(model.principal) * decimal(model.rate), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -115,9 +101,6 @@ doc.Params["model"] = new {
 ### Precise Arithmetic
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Subtotal: ${{format(decimal(model.price) * decimal(model.quantity), '0.00')}}</p>
@@ -125,9 +108,6 @@ doc.Params["model"] = new {
 <p>Total: ${{format(decimal(model.price) * decimal(model.quantity) * (1 + decimal(model.taxRate)), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

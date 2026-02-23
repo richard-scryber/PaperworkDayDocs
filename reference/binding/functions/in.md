@@ -12,22 +12,20 @@ has_toc: false
 # in() : Check Value in Collection
 {: .no_toc }
 
+Check if a value exists in a collection or array. Returns true if the value is found, false otherwise.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Check if a value exists in a collection or array. Returns true if the value is found, false otherwise.
 
 ## Signature
 
@@ -59,17 +57,11 @@ Returns `true` if the value exists in the collection, `false` otherwise.
 ### Simple Membership Check
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Has premium: {{in('premium', model.features)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -87,9 +79,6 @@ doc.Params["model"] = new {
 ### Conditional Display Based on Membership
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.users}}
@@ -103,9 +92,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -130,9 +116,6 @@ doc.Params["model"] = new {
 ### Status Badge Display
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Status:
@@ -146,9 +129,6 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -168,9 +148,6 @@ doc.Params["model"] = new {
 ### Access Control
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.features}}
@@ -180,9 +157,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -208,9 +182,6 @@ doc.Params["model"] = new {
 ### Category Filter
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Priority Items</h3>
@@ -221,9 +192,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

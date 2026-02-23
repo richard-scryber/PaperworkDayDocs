@@ -12,22 +12,20 @@ has_toc: false
 # ceiling() : Round Up to Integer
 {: .no_toc }
 
+Round a number up to the nearest integer.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Round a number up to the nearest integer.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The smallest integer greater than or equal to the value.
 ### Round Up Prices
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Rounded Price: ${{ceiling(model.price)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Calculate Pages Needed
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Pages required: {{ceiling(model.items / model.itemsPerPage)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -115,17 +101,11 @@ doc.Params["model"] = new {
 ### Minimum Purchase Quantity
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Boxes needed: {{ceiling(model.quantity / model.boxSize)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -144,9 +124,6 @@ doc.Params["model"] = new {
 ### Always Round Up
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.values}}
@@ -154,9 +131,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

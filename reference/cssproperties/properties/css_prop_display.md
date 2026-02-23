@@ -12,6 +12,8 @@ has_toc: false
 # display : Display Property
 {: .no_toc }
 
+The `display` property specifies how an element is rendered in the document layout. It controls whether an element is treated as a block-level element, inline element, table element, or hidden entirely. This is fundamental for controlling document structure and layout in PDF generation.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `display` property specifies how an element is rendered in the document layout. It controls whether an element is treated as a block-level element, inline element, table element, or hidden entirely. This is fundamental for controlling document structure and layout in PDF generation.
 
 ---
 
@@ -106,9 +102,6 @@ The display property works seamlessly with data binding to create dynamic, condi
 ### Example 1: Conditional section visibility
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -139,13 +132,7 @@ The display property works seamlessly with data binding to create dynamic, condi
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic layout based on preferences
-
-
-
 
 
 {% raw %}
@@ -185,13 +172,7 @@ The display property works seamlessly with data binding to create dynamic, condi
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional rendering for different document types
-
-
-
 
 
 {% raw %}
@@ -223,9 +204,6 @@ The display property works seamlessly with data binding to create dynamic, condi
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

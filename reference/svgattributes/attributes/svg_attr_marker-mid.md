@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @marker-mid : The Path Middle Vertices Marker Attribute
+{: .no_toc }
 
 The `marker-mid` attribute specifies a marker graphic to be drawn at all interior vertices (middle points) of a path, polyline, or polygon. This is useful for marking path segments, creating dotted visual effects, or highlighting path vertices.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -80,9 +94,6 @@ The `marker-mid` attribute is supported on:
 Choose middle marker based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { pathStyle: 'dotted', markers: { dotted: 'dot-mid', segmented: 'arrow-mid' } } -->
@@ -106,15 +117,9 @@ Choose middle marker based on data:
 {% endraw %}
 
 
-
-
-
 ### Conditional Middle Markers
 
 Show markers based on conditions:
-
-
-
 
 
 {% raw %}
@@ -136,13 +141,7 @@ Show markers based on conditions:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Path Visualization
-
-
-
 
 
 {% raw %}
@@ -169,9 +168,6 @@ Show markers based on conditions:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

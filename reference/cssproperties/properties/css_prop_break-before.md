@@ -12,6 +12,8 @@ has_toc: false
 # break-before : Break Before Property
 {: .no_toc }
 
+The `break-before` property controls page and column breaks before an element when generating PDF documents. This is the modern CSS3 replacement for `page-break-before`, offering more control including column breaks for multi-column layouts. It ensures specific content starts on a new page or column, creating clear document structure and organization.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `break-before` property controls page and column breaks before an element when generating PDF documents. This is the modern CSS3 replacement for `page-break-before`, offering more control including column breaks for multi-column layouts. It ensures specific content starts on a new page or column, creating clear document structure and organization.
 
 ---
 
@@ -103,9 +99,6 @@ The `break-before` property supports data binding, allowing you to create sophis
 ### Example 1: Conditional chapter breaks
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -131,13 +124,7 @@ The `break-before` property supports data binding, allowing you to create sophis
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic page orientation based on content
-
-
-
 
 
 {% raw %}
@@ -184,13 +171,7 @@ The `break-before` property supports data binding, allowing you to create sophis
 {% endraw %}
 
 
-
-
-
 ### Example 3: Configurable report structure with named pages
-
-
-
 
 
 {% raw %}
@@ -229,9 +210,6 @@ The `break-before` property supports data binding, allowing you to create sophis
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

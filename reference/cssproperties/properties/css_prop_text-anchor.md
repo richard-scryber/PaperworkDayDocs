@@ -12,6 +12,8 @@ has_toc: false
 # text-anchor : SVG Text Alignment Property
 {: .no_toc }
 
+The `text-anchor` property defines the horizontal alignment of SVG text content relative to a given point. This property controls whether text is left-aligned (starts at the point), center-aligned (centered on the point), or right-aligned (ends at the point).
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `text-anchor` property defines the horizontal alignment of SVG text content relative to a given point. This property controls whether text is left-aligned (starts at the point), center-aligned (centered on the point), or right-aligned (ends at the point).
 
 ---
 
@@ -91,9 +87,6 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 ### Example 1: Dynamic chart labels with data-driven anchoring
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -116,13 +109,7 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 {% endraw %}
 
 
-
-
-
 ### Example 2: Conditional text alignment based on position
-
-
-
 
 
 {% raw %}
@@ -146,13 +133,7 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 {% endraw %}
 
 
-
-
-
 ### Example 3: Data-driven network diagram with centered labels
-
-
-
 
 
 {% raw %}
@@ -177,9 +158,6 @@ The `text-anchor` property can be dynamically controlled through data binding, e
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @offset : The Gradient Stop Position Attribute
+{: .no_toc }
 
 The `offset` attribute defines the position of a color stop along a gradient vector. It determines where a specific color appears in the gradient transition, with 0% representing the gradient's start and 100% representing its end. Multiple stops at different offsets create smooth multi-color transitions.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -90,9 +104,6 @@ Used within:
 Bind stop positions to data for flexible gradients:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { midpoint: 35 } -->
@@ -110,15 +121,9 @@ Bind stop positions to data for flexible gradients:
 {% endraw %}
 
 
-
-
-
 ### Data Threshold Visualization
 
 Position color stops at data threshold boundaries:
-
-
-
 
 
 {% raw %}
@@ -141,15 +146,9 @@ Position color stops at data threshold boundaries:
 {% endraw %}
 
 
-
-
-
 ### Generate Stops from Data Array
 
 Create gradient stops dynamically from data:
-
-
-
 
 
 {% raw %}
@@ -170,15 +169,9 @@ Create gradient stops dynamically from data:
 {% endraw %}
 
 
-
-
-
 ### Progress-Based Color Stops
 
 Position stops based on completion or progress:
-
-
-
 
 
 {% raw %}
@@ -199,15 +192,9 @@ Position stops based on completion or progress:
 {% endraw %}
 
 
-
-
-
 ### Temperature Scale with Data Offsets
 
 Create color scales based on data ranges:
-
-
-
 
 
 {% raw %}
@@ -227,9 +214,6 @@ Create color scales based on data ranges:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -410,9 +394,6 @@ Stops outside 0%-100% work with spreadMethod:
 ### Progress Bar with Threshold
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { progress: 65 } -->
@@ -433,9 +414,6 @@ Stops outside 0%-100% work with spreadMethod:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Chart Color Zones
@@ -541,9 +519,6 @@ Stops outside 0%-100% work with spreadMethod:
 ### Data-Driven Threshold Stops
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { low: 30, medium: 60, high: 80 } -->
@@ -565,9 +540,6 @@ Stops outside 0%-100% work with spreadMethod:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Timeline with Color Phases

@@ -12,22 +12,20 @@ has_toc: false
 # median() : Calculate Median Value
 {: .no_toc }
 
+Calculate the median (middle value) of numeric values in a collection. The median is the value that separates the higher half from the lower half of the data.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the median (middle value) of numeric values in a collection. The median is the value that separates the higher half from the lower half of the data.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The median value. For even-length collections, returns the average of the two mi
 ### Basic Median
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Median score: {{median(model.scores)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Even Count Median
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Median value: {{median(model.values)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,9 +100,6 @@ doc.Params["model"] = new {
 ### Robust Against Outliers
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Price Analysis</h3>
@@ -125,9 +108,6 @@ doc.Params["model"] = new {
 <p style="color: gray;">Median is less affected by extreme values</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -148,9 +128,6 @@ doc.Params["model"] = new {
 ### Income Distribution
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Household Income Statistics</h3>
@@ -161,9 +138,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -190,9 +164,6 @@ doc.Params["model"] = new {
 ### Statistical Comparison
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Test Score Analysis</h3>
@@ -203,9 +174,6 @@ doc.Params["model"] = new {
 <p>Range: {{min(model.scores)}} - {{max(model.scores)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

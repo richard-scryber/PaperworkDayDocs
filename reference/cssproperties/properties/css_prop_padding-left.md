@@ -12,6 +12,8 @@ has_toc: false
 # padding-left : Left Padding Property
 {: .no_toc }
 
+The `padding-left` property sets the left padding of an element in PDF documents. Left padding creates space inside the element to the left of the content, between the left border and the content, inheriting the element's background color.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `padding-left` property sets the left padding of an element in PDF documents. Left padding creates space inside the element to the left of the content, between the left border and the content, inheriting the element's background color.
 
 ---
 
@@ -93,9 +89,6 @@ The `padding-left` property supports dynamic values through data binding, allowi
 ### Example 1: Alert with icon padding
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -119,9 +112,6 @@ The `padding-left` property supports dynamic values through data binding, allowi
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -134,9 +124,6 @@ Data context:
 ```
 
 ### Example 2: Nested content with hierarchy-based padding
-
-
-
 
 
 {% raw %}
@@ -165,9 +152,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -179,9 +163,6 @@ Data context:
 ```
 
 ### Example 3: Quote block with data-driven accent padding
-
-
-
 
 
 {% raw %}
@@ -206,9 +187,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

@@ -12,22 +12,20 @@ has_toc: false
 # atan() : Arctangent (Inverse Tangent)
 {: .no_toc }
 
+Calculate the arctangent (inverse tangent) of a value, returning the angle in radians.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the arctangent (inverse tangent) of a value, returning the angle in radians.
 
 ## Signature
 
@@ -58,18 +56,12 @@ The angle in radians (between -π/2 and π/2).
 ### Basic Arctangent
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>atan(1) = {{format(atan(1), '0.000')}} radians</p>
 <p>atan(1) = {{format(degrees(atan(1)), '0.0')}}°</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -81,17 +73,11 @@ The angle in radians (between -π/2 and π/2).
 ### Find Angle from Slope
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Angle: {{format(degrees(atan(model.rise / model.run)), '0.0')}}°</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -110,17 +96,11 @@ doc.Params["model"] = new {
 ### Calculate Bearing
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Bearing: {{format(degrees(atan(model.opposite / model.adjacent)), '0.1')}}°</p>
 ```
 {% endraw %}
-
-
-
 
 
 ---

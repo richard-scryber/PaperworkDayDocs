@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;rect&gt; : SVG Rectangle Element
+{: .no_toc }
 
 The `<rect>` element draws a rectangle shape in SVG content within your PDF documents. It supports rounded corners, fills, strokes, and transformations, making it versatile for creating boxes, borders, charts, badges, and layout elements.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -82,9 +96,6 @@ The `<rect>` element supports dynamic attribute values using data binding expres
 ### Example 1: Dynamic Position and Size
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { chart: { x: 50, y: 100, width: 200, height: 150 } } -->
@@ -97,13 +108,7 @@ The `<rect>` element supports dynamic attribute values using data binding expres
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic Colors from Data
-
-
-
 
 
 {% raw %}
@@ -117,13 +122,7 @@ The `<rect>` element supports dynamic attribute values using data binding expres
 {% endraw %}
 
 
-
-
-
 ### Example 3: Repeating Rectangles with Template
-
-
-
 
 
 {% raw %}
@@ -142,9 +141,6 @@ The `<rect>` element supports dynamic attribute values using data binding expres
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -332,9 +328,6 @@ Transforms are applied in the order specified and can be combined:
 ### Status Indicator Badge
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { status: 'online', color: '#4CAF50' } -->
@@ -344,9 +337,6 @@ Transforms are applied in the order specified and can be combined:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Card with Border Accent
@@ -407,9 +397,6 @@ Transforms are applied in the order specified and can be combined:
 ### Dynamic Width Progress Bar
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { progress: 0.65 } -->
@@ -425,13 +412,7 @@ Transforms are applied in the order specified and can be combined:
 {% endraw %}
 
 
-
-
-
 ### Table Cell Background
-
-
-
 
 
 {% raw %}
@@ -447,13 +428,7 @@ Transforms are applied in the order specified and can be combined:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Status Badges
-
-
-
 
 
 {% raw %}
@@ -473,13 +448,7 @@ Transforms are applied in the order specified and can be combined:
 {% endraw %}
 
 
-
-
-
 ### Heat Map Cell
-
-
-
 
 
 {% raw %}
@@ -492,9 +461,6 @@ Transforms are applied in the order specified and can be combined:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

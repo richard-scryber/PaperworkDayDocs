@@ -12,6 +12,8 @@ has_toc: false
 # border-right-width : Right Border Width Property
 {: .no_toc }
 
+The `border-right-width` property sets the width of the right border of an element.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-right-width` property sets the width of the right border of an element.
 
 ---
 
@@ -71,9 +67,6 @@ The `border-right-width` property supports dynamic values through data binding, 
 ### Example 1: Column dividers with conditional width
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -93,13 +86,7 @@ The `border-right-width` property supports dynamic values through data binding, 
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dashboard separators
-
-
-
 
 
 {% raw %}
@@ -123,13 +110,7 @@ The `border-right-width` property supports dynamic values through data binding, 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Featured pricing tiers
-
-
-
 
 
 {% raw %}
@@ -150,9 +131,6 @@ The `border-right-width` property supports dynamic values through data binding, 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

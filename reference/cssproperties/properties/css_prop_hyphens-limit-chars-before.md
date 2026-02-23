@@ -12,6 +12,8 @@ has_toc: false
 # hyphens-limit-chars-before : Minimum Characters Before Hyphen
 {: .no_toc }
 
+The `hyphens-limit-chars-before` property specifies the minimum number of characters that must appear before the hyphenation point in a word. This ensures readable word fragments before the hyphen in PDF documents with automatic hyphenation.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `hyphens-limit-chars-before` property specifies the minimum number of characters that must appear before the hyphenation point in a word. This ensures readable word fragments before the hyphen in PDF documents with automatic hyphenation.
 
 ---
 
@@ -83,9 +79,6 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
 ### Example 1: Adaptive Column Formatting
 
 
-
-
-
 {% raw %}
 ```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
@@ -117,13 +110,7 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
 {% endraw %}
 
 
-
-
-
 ### Example 2: Language-Specific Hyphenation
-
-
-
 
 
 {% raw %}
@@ -157,13 +144,7 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Quality-Based Settings
-
-
-
 
 
 {% raw %}
@@ -197,9 +178,6 @@ The `hyphens-limit-chars-before` property can be dynamically controlled through 
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

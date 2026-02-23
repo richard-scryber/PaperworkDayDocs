@@ -12,6 +12,8 @@ has_toc: false
 # hyphenate-character : Custom Hyphenation Character
 {: .no_toc }
 
+The `hyphenate-character` property specifies the character to use at the end of a line when a word is hyphenated. This allows customization of the hyphen symbol for different languages, stylistic preferences, or special typographic requirements in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `hyphenate-character` property specifies the character to use at the end of a line when a word is hyphenated. This allows customization of the hyphen symbol for different languages, stylistic preferences, or special typographic requirements in PDF documents.
 
 ---
 
@@ -88,9 +84,6 @@ The `hyphenate-character` property can be dynamically controlled through data bi
 ### Example 1: Language-Specific Hyphen Characters
 
 
-
-
-
 {% raw %}
 ```html
 <div style="width: 200pt; padding: 15pt" lang="{{model.language.code}}">
@@ -122,13 +115,7 @@ The `hyphenate-character` property can be dynamically controlled through data bi
 {% endraw %}
 
 
-
-
-
 ### Example 2: Document Format-Based Character
-
-
-
 
 
 {% raw %}
@@ -164,13 +151,7 @@ The `hyphenate-character` property can be dynamically controlled through data bi
 {% endraw %}
 
 
-
-
-
 ### Example 3: Typography Style Settings
-
-
-
 
 
 {% raw %}
@@ -202,9 +183,6 @@ The `hyphenate-character` property can be dynamically controlled through data bi
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

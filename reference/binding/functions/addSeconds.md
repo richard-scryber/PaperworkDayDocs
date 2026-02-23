@@ -12,22 +12,20 @@ has_toc: false
 # addSeconds() : Add Seconds to Date
 {: .no_toc }
 
+Add seconds to a datetime. Use negative values to subtract seconds.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Add seconds to a datetime. Use negative values to subtract seconds.
 
 ## Signature
 
@@ -59,17 +57,11 @@ A new DateTime with the specified seconds added.
 ### Add Seconds
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Timeout: {{format(addSeconds(model.startTime, 30), 'h:mm:ss tt')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -87,9 +79,6 @@ doc.Params["model"] = new {
 ### Countdown Display
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>T-minus: {{secondsBetween(model.now, addSeconds(model.launchTime, 0))}} seconds</p>
@@ -97,13 +86,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Processing Time
-
-
-
 
 
 {% raw %}
@@ -111,9 +94,6 @@ doc.Params["model"] = new {
 <p>Completed: {{format(addSeconds(model.started, model.elapsedSeconds), 'h:mm:ss')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

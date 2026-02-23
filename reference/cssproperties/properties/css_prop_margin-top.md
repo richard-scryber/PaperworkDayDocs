@@ -12,6 +12,8 @@ has_toc: false
 # margin-top : Top Margin Property
 {: .no_toc }
 
+The `margin-top` property sets the top margin of an element in PDF documents. The top margin creates space above the element, separating it from preceding elements or the page edge and controlling vertical spacing in document layouts.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `margin-top` property sets the top margin of an element in PDF documents. The top margin creates space above the element, separating it from preceding elements or the page edge and controlling vertical spacing in document layouts.
 
 ---
 
@@ -93,9 +89,6 @@ The `margin-top` property supports dynamic values through data binding, allowing
 ### Example 1: Dynamic heading spacing based on level
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -126,9 +119,6 @@ The `margin-top` property supports dynamic values through data binding, allowing
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -140,9 +130,6 @@ Data context:
 ```
 
 ### Example 2: Invoice sections with dynamic top margins
-
-
-
 
 
 {% raw %}
@@ -188,9 +175,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -208,9 +192,6 @@ Data context:
 ```
 
 ### Example 3: Card spacing based on importance
-
-
-
 
 
 {% raw %}
@@ -239,9 +220,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

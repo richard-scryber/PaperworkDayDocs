@@ -14,6 +14,8 @@ has_toc: false
 # linear-gradient() : Linear Gradient Function
 {: .no_toc }
 
+The `linear-gradient()` CSS function creates a smooth color transition along a straight line in a specified direction. Linear gradients are commonly used for backgrounds, borders, and decorative effects, providing a professional appearance to PDF documents without requiring image files.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,12 +26,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `linear-gradient()` CSS function creates a smooth color transition along a straight line in a specified direction. Linear gradients are commonly used for backgrounds, borders, and decorative effects, providing a professional appearance to PDF documents without requiring image files.
 
 ---
 
@@ -143,9 +139,6 @@ Linear gradients support dynamic data binding for personalized backgrounds:
 ### Example: Dynamic gradient based on data
 
 
-
-
-
 {% raw %}
 ```html
 <div style="width: 200pt; height: 100pt; 
@@ -156,9 +149,6 @@ Linear gradients support dynamic data binding for personalized backgrounds:
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 ---

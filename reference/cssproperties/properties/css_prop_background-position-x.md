@@ -12,6 +12,8 @@ has_toc: false
 # background-position-x : Background Horizontal Position Property
 {: .no_toc }
 
+The `background-position-x` property sets the horizontal position of background images within an element in PDF documents. This property allows independent control of horizontal positioning without affecting vertical placement.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `background-position-x` property sets the horizontal position of background images within an element in PDF documents. This property allows independent control of horizontal positioning without affecting vertical placement.
 
 ---
 
@@ -103,9 +99,6 @@ The `background-position-x` property supports dynamic data binding, enabling hor
 ### Example 1: Dynamic horizontal alignment from user preferences
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -131,15 +124,9 @@ The `background-position-x` property supports dynamic data binding, enabling hor
 {% endraw %}
 
 
-
-
-
 Allows organizations to control horizontal logo placement (left, center, right, or specific offsets) through configuration while keeping vertical position fixed at the top. Perfect for accommodating different brand guidelines in multi-tenant systems.
 
 ### Example 2: Conditional horizontal positioning by document type
-
-
-
 
 
 {% raw %}
@@ -165,15 +152,9 @@ Allows organizations to control horizontal logo placement (left, center, right, 
 {% endraw %}
 
 
-
-
-
 Automatically centers icons for formal documents while left-aligning them for informal ones. The vertical position remains consistent while horizontal placement adapts to document formality level.
 
 ### Example 3: Responsive horizontal spacing for multiple logos
-
-
-
 
 
 {% raw %}
@@ -197,9 +178,6 @@ Automatically centers icons for formal documents while left-aligning them for in
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Creates partnership documents with two logos positioned with dynamic horizontal offsets from edges. Margins can be adjusted per document to accommodate different logo sizes while maintaining professional spacing.

@@ -12,6 +12,8 @@ has_toc: false
 # bottom : Bottom Position Property
 {: .no_toc }
 
+The `bottom` property specifies the vertical offset from the bottom edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement from the bottom. This property is essential for creating footers, fixed bottom content, and precisely positioned elements anchored to the bottom.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `bottom` property specifies the vertical offset from the bottom edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement from the bottom. This property is essential for creating footers, fixed bottom content, and precisely positioned elements anchored to the bottom.
 
 ---
 
@@ -93,9 +89,6 @@ The `bottom` property supports data binding, allowing dynamic vertical positioni
 ### Example 1: Configurable footer positioning
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -127,9 +120,6 @@ The `bottom` property supports data binding, allowing dynamic vertical positioni
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -152,9 +142,6 @@ Data model:
 ```
 
 ### Example 2: Dynamic signature block positioning
-
-
-
 
 
 {% raw %}
@@ -199,9 +186,6 @@ Data model:
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -223,9 +207,6 @@ Data model:
 ```
 
 ### Example 3: Data-driven approval stamp at bottom
-
-
-
 
 
 {% raw %}
@@ -263,9 +244,6 @@ Data model:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data model:

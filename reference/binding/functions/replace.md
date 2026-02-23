@@ -12,22 +12,20 @@ has_toc: false
 # replace() : Replace Text
 {: .no_toc }
 
+Replace all occurrences of a substring with another string.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Replace all occurrences of a substring with another string.
 
 ## Signature
 
@@ -60,17 +58,11 @@ A new string with all occurrences replaced.
 ### Simple Replacement
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{replace(model.text, 'old', 'new')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,17 +80,11 @@ doc.Params["model"] = new {
 ### Remove Characters
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Phone: {{replace(model.phone -  '')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -116,17 +102,11 @@ doc.Params["model"] = new {
 ### Format Display
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{replace(model.code, '_', ' ')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -144,9 +124,6 @@ doc.Params["model"] = new {
 ### Sanitize Input
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -156,13 +133,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Template Variable Replacement
-
-
-
 
 
 {% raw %}
@@ -170,9 +141,6 @@ doc.Params["model"] = new {
 <p>{{replace(replace(model.template, '{name}', model.name), '{date}', model.date)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

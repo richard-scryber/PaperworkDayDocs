@@ -12,6 +12,8 @@ has_toc: false
 # font-weight : The Font Weight Property
 {: .no_toc }
 
+The `font-weight` property specifies the boldness or thickness of text characters. It accepts both numeric values (100-900) and keyword values, allowing precise control over text weight for creating visual hierarchy and emphasis in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `font-weight` property specifies the boldness or thickness of text characters. It accepts both numeric values (100-900) and keyword values, allowing precise control over text weight for creating visual hierarchy and emphasis in PDF documents.
 
 ---
 
@@ -115,9 +111,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 ### Data Binding Examples
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Dynamic weight from model data -->
@@ -157,9 +150,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Note:** Bound font-weight values can be keywords ('normal', 'bold') or numeric values (100-900). Ensure bound data provides valid font-weight values to maintain consistent text rendering.

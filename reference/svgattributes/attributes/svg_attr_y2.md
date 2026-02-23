@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @y2 : The Linear Gradient End Y Coordinate Attribute
+{: .no_toc }
 
 The `y2` attribute defines the Y-coordinate of the ending point for a linear gradient vector. Together with `x2`, it establishes the destination point where the gradient ends, completing the gradient vector that determines the direction, angle, and extent of the color transition.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -82,9 +96,6 @@ Note: This attribute is NOT used with `<radialGradient>` elements.
 Bind the y2 coordinate to data for dynamic gradient range:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { endY: 80 } -->
@@ -103,15 +114,9 @@ Bind the y2 coordinate to data for dynamic gradient range:
 {% endraw %}
 
 
-
-
-
 ### Chart Height-Based Gradients
 
 Position gradient endpoint based on chart dimensions:
-
-
-
 
 
 {% raw %}
@@ -132,15 +137,9 @@ Position gradient endpoint based on chart dimensions:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Diagonal Gradients
 
 Calculate gradient angle from data values:
-
-
-
 
 
 {% raw %}
@@ -163,15 +162,9 @@ Calculate gradient angle from data values:
 {% endraw %}
 
 
-
-
-
 ### Conditional Vertical Extent
 
 Change gradient extent based on data conditions:
-
-
-
 
 
 {% raw %}
@@ -201,15 +194,9 @@ Change gradient extent based on data conditions:
 {% endraw %}
 
 
-
-
-
 ### Temperature Range Visualization
 
 Create vertical gradients representing value ranges:
-
-
-
 
 
 {% raw %}
@@ -230,9 +217,6 @@ Create vertical gradients representing value ranges:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -528,9 +512,6 @@ Common scenarios where y2 is essential:
 ### Data-Driven Fill Level
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { level: 70, maxLevel: 100 } -->
@@ -560,9 +541,6 @@ Common scenarios where y2 is essential:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Vertical Slider

@@ -12,6 +12,8 @@ has_toc: false
 # -pdf-li-prefix : List Item Prefix Property (Scryber Custom)
 {: .no_toc }
 
+The `-pdf-li-prefix` property is a Scryber-specific extension that adds custom text before list item markers. This property enables advanced list formatting by allowing you to prepend text, symbols, or labels to list numbers or bullets, creating professional documentation with custom marker styles like "Item 1:", "Step A)", or "Section 2.1:".
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,17 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `-pdf-li-prefix` property is a Scryber-specific extension that adds custom text before list item markers. This property enables advanced list formatting by allowing you to prepend text, symbols, or labels to list numbers or bullets, creating professional documentation with custom marker styles like "Item 1:", "Step A)", or "Section 2.1:".
-
----
-
-{: .note }
-Although the support for this property is expected to continue for the forseeable future, its functionality will be consumed into custom or pre-defined [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type.html) values.
 
 ---
 
@@ -97,9 +88,6 @@ The `-pdf-li-prefix` property supports data binding, enabling dynamic prefix tex
 ### Example 1: Dynamic prefix based on list type
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -120,9 +108,6 @@ The `-pdf-li-prefix` property supports data binding, enabling dynamic prefix tex
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**
@@ -146,9 +131,6 @@ Different list types (tasks, steps, requirements, questions) can have appropriat
 ### Example 2: Multilingual prefixes
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -169,9 +151,6 @@ Different list types (tasks, steps, requirements, questions) can have appropriat
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context (English):**
@@ -211,9 +190,6 @@ List prefixes automatically adapt to the document language, ensuring proper loca
 ### Example 3: Document identifier prefixes
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -245,9 +221,6 @@ List prefixes automatically adapt to the document language, ensuring proper loca
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**

@@ -12,6 +12,8 @@ has_toc: false
 # column-span : Column Span Property
 {: .no_toc }
 
+The `column-span` property specifies whether an element should span across all columns in a multi-column layout. This is essential for creating headlines, section dividers, images, and other elements that need to break out of the column flow and span the full width of the container in newsletters, magazines, and professional documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `column-span` property specifies whether an element should span across all columns in a multi-column layout. This is essential for creating headlines, section dividers, images, and other elements that need to break out of the column flow and span the full width of the container in newsletters, magazines, and professional documents.
 
 ---
 
@@ -91,9 +87,6 @@ The column-span property works with data binding to conditionally create full-wi
 ### Example 1: Conditional spanning based on content importance
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -148,13 +141,7 @@ The column-span property works with data binding to conditionally create full-wi
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic spanning for images and tables
-
-
-
 
 
 {% raw %}
@@ -240,13 +227,7 @@ The column-span property works with data binding to conditionally create full-wi
 {% endraw %}
 
 
-
-
-
 ### Example 3: Configurable spanning for newsletters
-
-
-
 
 
 {% raw %}
@@ -324,9 +305,6 @@ The column-span property works with data binding to conditionally create full-wi
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

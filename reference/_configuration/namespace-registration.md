@@ -3,7 +3,7 @@ layout: default
 title: Namespace Registration
 parent: Configuration & Extension System
 grand_parent: Reference
-nav_order: 4
+nav_order: 5
 ---
 
 # Namespace Registration

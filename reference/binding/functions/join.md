@@ -12,22 +12,20 @@ has_toc: false
 # join() : Join Array with Separator
 {: .no_toc }
 
+Join array elements into a single string with a separator.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Join array elements into a single string with a separator.
 
 ## Signature
 
@@ -59,17 +57,11 @@ A single string with all array elements joined by the separator.
 ### Comma-Separated List
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Tags: {{join(model.tags, ', ')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -87,17 +79,11 @@ doc.Params["model"] = new {
 ### Pipe-Separated Values
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Categories: {{join(model.categories, ' | ')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -115,17 +101,11 @@ doc.Params["model"] = new {
 ### Create Full Name
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Name: {{join(model.nameParts, ' ')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -143,17 +123,11 @@ doc.Params["model"] = new {
 ### Bullet List
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Features: {{join(model.features, ' • ')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -171,17 +145,11 @@ doc.Params["model"] = new {
 ### Create Path
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Path: {{join(model.pathParts, '/')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

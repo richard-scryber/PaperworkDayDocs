@@ -12,6 +12,8 @@ has_toc: false
 # border-left-width : Left Border Width Property
 {: .no_toc }
 
+The `border-left-width` property sets the width of the left border of an element.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-left-width` property sets the width of the left border of an element.
 
 ---
 
@@ -71,9 +67,6 @@ The `border-left-width` property supports dynamic values through data binding, a
 ### Example 1: Status indicator thickness
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -92,13 +85,7 @@ The `border-left-width` property supports dynamic values through data binding, a
 {% endraw %}
 
 
-
-
-
 ### Example 2: Priority-based accent bars
-
-
-
 
 
 {% raw %}
@@ -121,13 +108,7 @@ The `border-left-width` property supports dynamic values through data binding, a
 {% endraw %}
 
 
-
-
-
 ### Example 3: Navigation active indicator
-
-
-
 
 
 {% raw %}
@@ -147,9 +128,6 @@ The `border-left-width` property supports dynamic values through data binding, a
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

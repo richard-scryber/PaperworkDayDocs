@@ -12,6 +12,8 @@ has_toc: false
 # -pdf-li-inset : List Item Inset Property (Scryber Custom)
 {: .no_toc }
 
+The `-pdf-li-inset` property is a Scryber-specific extension that controls the horizontal distance (inset) between the list marker and the list item content. This property allows precise control over the spacing between bullets/numbers and their associated text, enabling professional document layouts with optimal readability.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,17 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `-pdf-li-inset` property is a Scryber-specific extension that controls the horizontal distance (inset) between the list marker and the list item content. This property allows precise control over the spacing between bullets/numbers and their associated text, enabling professional document layouts with optimal readability.
-
----
-
-{: .note }
-Although the support for this property is expected to continue for the forseeable future, its functionality will be consumed into custom or pre-defined [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type.html) values.
 
 ---
 
@@ -94,9 +85,6 @@ The `-pdf-li-inset` property supports data binding, enabling dynamic control of 
 ### Example 1: User-configurable spacing preferences
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -116,9 +104,6 @@ The `-pdf-li-inset` property supports data binding, enabling dynamic control of 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**
@@ -144,9 +129,6 @@ Users can configure inset spacing based on their readability preferences or acce
 ### Example 2: Document density control
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -167,9 +149,6 @@ Users can configure inset spacing based on their readability preferences or acce
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**
@@ -194,9 +173,6 @@ Users can configure inset spacing based on their readability preferences or acce
 Documents can adapt between compact (5pt inset), normal (10pt inset), or spacious (15pt inset) layouts based on space constraints or presentation requirements.
 
 ### Example 3: Hierarchical inset for nested lists
-
-
-
 
 
 {% raw %}
@@ -235,9 +211,6 @@ Documents can adapt between compact (5pt inset), normal (10pt inset), or spaciou
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**

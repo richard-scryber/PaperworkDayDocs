@@ -12,22 +12,20 @@ has_toc: false
 # minuteOf() : Extract Minute from DateTime
 {: .no_toc }
 
+Extract the minute component from a datetime value as a number (0-59).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract the minute component from a datetime value as a number (0-59).
 
 ## Signature
 
@@ -58,17 +56,11 @@ The minute as a number from 0 to 59.
 ### Display Minute
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Minute: {{minuteOf(model.time)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Custom Time Format
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Time: {{hourOf(model.time)}}:{{padLeft(string(minuteOf(model.time)), 2, '0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,9 +100,6 @@ doc.Params["model"] = new {
 ### Appointment Slot Detection
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Time Slot:
@@ -130,9 +113,6 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -150,9 +130,6 @@ doc.Params["model"] = new {
 ### Parking Time Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Parking Duration</h3>
@@ -160,9 +137,6 @@ doc.Params["model"] = new {
 <p>Additional minutes: {{minuteOf(model.exit) - minuteOf(model.entry)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -183,9 +157,6 @@ doc.Params["model"] = new {
 ### Meeting Start Validation
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.meetings}}
@@ -197,9 +168,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

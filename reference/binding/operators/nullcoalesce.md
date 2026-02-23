@@ -12,6 +12,8 @@ has_toc: false
 # ?? : Null Coalescing Operator
 {: .no_toc }
 
+Provide a fallback value when an expression evaluates to null or undefined.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Provide a fallback value when an expression evaluates to null or undefined.
 
 ## Syntax
 
@@ -73,17 +71,11 @@ Returns the left operand if it's not null, otherwise returns the right operand.
 ### Default User Name
 
 
-
-
-
 {% raw %}
 ```html
 <h2>Welcome, {{model.user.name ?? 'Guest'}}!</h2>
 ```
 {% endraw %}
-
-
-
 
 
 **Data (with name):**
@@ -117,9 +109,6 @@ doc.Params["model"] = new {
 ### Missing Description
 
 
-
-
-
 {% raw %}
 ```html
 {{#each model.products}}
@@ -130,9 +119,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -165,9 +151,6 @@ doc.Params["model"] = new {
 ### Optional Contact Information
 
 
-
-
-
 {% raw %}
 ```handlebars
 <div class="contact-info">
@@ -179,13 +162,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Nested Property Access
-
-
-
 
 
 {% raw %}
@@ -193,9 +170,6 @@ doc.Params["model"] = new {
 <p>City: {{model.user.address.city ?? 'Unknown'}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data (nested null):**
@@ -215,9 +189,6 @@ doc.Params["model"] = new {
 ### Default Values in Lists
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -230,9 +201,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -264,9 +232,6 @@ doc.Params["model"] = new {
 ### Chaining Multiple Defaults
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Display Name: {{model.displayName ?? model.username ?? model.email ?? 'Anonymous'}}</p>
@@ -274,13 +239,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Default Image
-
-
-
 
 
 {% raw %}
@@ -290,9 +249,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -315,9 +271,6 @@ doc.Params["model"] = new {
 The `??` operator only checks for null/undefined, not empty strings:
 
 
-
-
-
 {% raw %}
 ```handlebars
 <!-- Empty string is NOT null -->
@@ -328,9 +281,6 @@ The `??` operator only checks for null/undefined, not empty strings:
 {{#if model.name}}{{model.name}}{{else}}Default{{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 ---

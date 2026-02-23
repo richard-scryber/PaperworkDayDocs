@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @fy : The Radial Gradient Focal Point Y Coordinate Attribute
+{: .no_toc }
 
 The `fy` attribute defines the Y-coordinate of the focal point for a radial gradient. Working together with `fx`, it positions where the 0% color stop begins vertically, enabling creation of directional lighting effects, depth perception, and realistic 3D appearances in SVG graphics.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -82,9 +96,6 @@ Note: This attribute is NOT used with `<linearGradient>` elements.
 Bind focal point Y coordinate to data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { lightY: 30 } -->
@@ -104,15 +115,9 @@ Bind focal point Y coordinate to data:
 {% endraw %}
 
 
-
-
-
 ### Height-Based Lighting Position
 
 Position lighting based on container dimensions:
-
-
-
 
 
 {% raw %}
@@ -136,15 +141,9 @@ Position lighting based on container dimensions:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Vertical Direction
 
 Change vertical lighting based on data state:
-
-
-
 
 
 {% raw %}
@@ -167,13 +166,9 @@ Change vertical lighting based on data state:
 {% endraw %}
 
 
-
-
-
 ### Time-Based Sun Position
 
 Simulate sun position based on time of day:
-
 
 
 {% raw %}
@@ -201,13 +196,9 @@ Simulate sun position based on time of day:
 {% endraw %}
 
 
-
 ### Scroll-Based Lighting Effect
 
 Change lighting position based on scroll or progress:
-
-
-
 
 
 {% raw %}
@@ -230,9 +221,6 @@ Change lighting position based on scroll or progress:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -535,9 +523,6 @@ Using both fx and fy creates diagonal lighting:
 ### Data-Driven Vertical Position
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { verticalPos: 35, color: "#3498db" } -->
@@ -556,9 +541,6 @@ Using both fx and fy creates diagonal lighting:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

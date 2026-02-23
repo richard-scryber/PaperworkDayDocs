@@ -12,22 +12,20 @@ has_toc: false
 # sortBy() : Sort Collection by Property
 {: .no_toc }
 
+Sort a collection by a specific property in ascending order.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Sort a collection by a specific property in ascending order.
 
 ## Signature
 
@@ -59,9 +57,6 @@ A new sorted array with items ordered by the specified property in ascending ord
 ### Sort by Name
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Students (Alphabetical)</h3>
@@ -70,9 +65,6 @@ A new sorted array with items ordered by the specified property in ascending ord
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -97,9 +89,6 @@ doc.Params["model"] = new {
 ### Sort by Price
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Products (Lowest to Highest Price)</h3>
@@ -108,9 +97,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -135,9 +121,6 @@ doc.Params["model"] = new {
 ### Sort by Date
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Upcoming Events</h3>
@@ -146,9 +129,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -173,9 +153,6 @@ doc.Params["model"] = new {
 ### Sort and Reverse for Descending Order
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Top Scores</h3>
@@ -184,9 +161,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -213,9 +187,6 @@ doc.Params["model"] = new {
 ### Sort Filtered Results
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Active Tasks (By Priority)</h3>
@@ -224,9 +195,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

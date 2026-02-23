@@ -12,22 +12,20 @@ has_toc: false
 # pow() : Power (Exponentiation)
 {: .no_toc }
 
+Raise a number to a specified power.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Raise a number to a specified power.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The base raised to the power of the exponent.
 ### Square
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{model.value}} squared = {{pow(model.value, 2)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -87,17 +79,11 @@ doc.Params["model"] = new {
 ### Cube
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Volume: {{pow(model.side, 3)}} cubic units</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -115,17 +101,11 @@ doc.Params["model"] = new {
 ### Compound Interest
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Future Value: ${{format(model.principal * pow(1 + model.rate, model.years), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -145,18 +125,12 @@ doc.Params["model"] = new {
 ### Nth Root
 
 
-
-
-
 {% raw %}
 ```handlebars
 <!-- Cube root using pow(value, 1/3) -->
 <p>Cube root of 27: {{format(pow(27, 1/3), '0.0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**

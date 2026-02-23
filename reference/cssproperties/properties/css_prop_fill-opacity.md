@@ -12,6 +12,8 @@ has_toc: false
 # fill-opacity : SVG Fill Opacity Property
 {: .no_toc }
 
+The `fill-opacity` property controls the transparency of SVG shape fills independently from the stroke. This property enables precise control over fill transparency while maintaining stroke opacity, essential for creating layered graphics and subtle visual effects in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `fill-opacity` property controls the transparency of SVG shape fills independently from the stroke. This property enables precise control over fill transparency while maintaining stroke opacity, essential for creating layered graphics and subtle visual effects in PDF documents.
 
 ---
 
@@ -93,9 +89,6 @@ The `fill-opacity` property can be dynamically set using data binding expression
 ### Example 1: Data value transparency in charts
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -121,9 +114,6 @@ The `fill-opacity` property can be dynamically set using data binding expression
 {% endraw %}
 
 
-
-
-
 With model data (opacity based on percentage values):
 ```json
 {
@@ -137,9 +127,6 @@ With model data (opacity based on percentage values):
 ```
 
 ### Example 2: Confidence levels in data visualization
-
-
-
 
 
 {% raw %}
@@ -166,9 +153,6 @@ With model data (opacity based on percentage values):
 {% endraw %}
 
 
-
-
-
 With model data:
 ```json
 {
@@ -182,9 +166,6 @@ With model data:
 ```
 
 ### Example 3: Conditional opacity based on status
-
-
-
 
 
 {% raw %}
@@ -211,9 +192,6 @@ With model data:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

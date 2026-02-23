@@ -12,6 +12,8 @@ has_toc: false
 # padding-inline-end : Inline End Padding Property
 {: .no_toc }
 
+The `padding-inline-end` property sets the padding at the inline end edge of an element in PDF documents. This is a logical property that maps to either right or left padding depending on the writing direction. In left-to-right (LTR) languages it corresponds to `padding-right`, while in right-to-left (RTL) languages it corresponds to `padding-left`.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `padding-inline-end` property sets the padding at the inline end edge of an element in PDF documents. This is a logical property that maps to either right or left padding depending on the writing direction. In left-to-right (LTR) languages it corresponds to `padding-right`, while in right-to-left (RTL) languages it corresponds to `padding-left`.
 
 ---
 
@@ -92,9 +88,6 @@ The `padding-inline-end` property supports dynamic values through data binding, 
 ### Example 1: Alert with dynamic action button space
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -116,9 +109,6 @@ The `padding-inline-end` property supports dynamic values through data binding, 
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -130,9 +120,6 @@ Data context:
 ```
 
 ### Example 2: Table cells with dynamic end padding
-
-
-
 
 
 {% raw %}
@@ -162,9 +149,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -175,9 +159,6 @@ Data context:
 ```
 
 ### Example 3: Quote block with asymmetric padding
-
-
-
 
 
 {% raw %}
@@ -209,9 +190,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

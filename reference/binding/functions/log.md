@@ -12,22 +12,20 @@ has_toc: false
 # log() : Natural Logarithm
 {: .no_toc }
 
+Calculate the natural logarithm (base e) of a number.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the natural logarithm (base e) of a number.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The natural logarithm of the value.
 ### Basic Logarithm
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>ln({{model.value}}) = {{format(log(model.value), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Time to Double
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Years to double: {{format(log(2) / model.rate, '0.0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

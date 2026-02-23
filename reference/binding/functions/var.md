@@ -12,22 +12,20 @@ has_toc: false
 # var() : CSS Variable Reference
 {: .no_toc }
 
+Generate a CSS var() expression to reference CSS custom properties (variables). Allows dynamic CSS variable references with optional fallback values.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Generate a CSS var() expression to reference CSS custom properties (variables). Allows dynamic CSS variable references with optional fallback values.
 
 ## Signature
 
@@ -60,9 +58,6 @@ A formatted CSS var() expression string.
 ### Simple Variable Reference
 
 
-
-
-
 {% raw %}
 ```handlebars
 <div style="color: {{var('primary-color')}}; background: {{var('bg-color')}};">
@@ -70,9 +65,6 @@ A formatted CSS var() expression string.
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -90,9 +82,6 @@ doc.Params["model"] = new { };
 ### Variable with Fallback
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p style="color: {{var('text-color', '#333333')}};">
@@ -100,9 +89,6 @@ doc.Params["model"] = new { };
 </p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -120,9 +106,6 @@ doc.Params["model"] = new { };
 ### Dynamic Variable Names
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.themes}}
@@ -134,9 +117,6 @@ doc.Params["model"] = new { };
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -166,9 +146,6 @@ doc.Params["model"] = new {
 ### Themed Components
 
 
-
-
-
 {% raw %}
 ```handlebars
 <div class="card" style="
@@ -185,9 +162,6 @@ doc.Params["model"] = new {
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -217,9 +191,6 @@ doc.Params["model"] = new {
 ### Responsive Sizing
 
 
-
-
-
 {% raw %}
 ```handlebars
 <table style="width: {{var('table-width', '100%')}}; font-size: {{var('table-font-size', '10pt')}};">
@@ -232,9 +203,6 @@ doc.Params["model"] = new {
 </table>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

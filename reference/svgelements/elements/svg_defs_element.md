@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;defs&gt; : The SVG Definitions Container
+{: .no_toc }
 
 The `<defs>` element is a container for defining reusable SVG resources that can be referenced throughout the document. Elements placed inside `<defs>` are not directly rendered but can be instantiated multiple times using the `<use>` element or referenced by other elements (gradients, patterns, masks, etc.).
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -167,9 +181,6 @@ Organize definitions logically:
 ### Dynamic Definition Creation
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { gradientColors: [{offset: "0%", color: "#ff0000"}, {offset: "100%", color: "#0000ff"}] } -->
@@ -187,13 +198,7 @@ Organize definitions logically:
 {% endraw %}
 
 
-
-
-
 ### Conditional Definitions
-
-
-
 
 
 {% raw %}
@@ -213,13 +218,7 @@ Organize definitions logically:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Icon Library
-
-
-
 
 
 {% raw %}
@@ -240,9 +239,6 @@ Organize definitions logically:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -575,9 +571,6 @@ Organize definitions logically:
 ### Dynamic Badge Definitions
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { badges: [{id:"new", color:"#ff4444", text:"NEW"}, {id:"sale", color:"#50c878", text:"SALE"}] } -->
@@ -600,9 +593,6 @@ Organize definitions logically:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Organizational Template

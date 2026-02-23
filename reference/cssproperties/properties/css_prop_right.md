@@ -12,6 +12,8 @@ has_toc: false
 # right : Right Position Property
 {: .no_toc }
 
+The `right` property specifies the horizontal offset from the right edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement along the horizontal axis from the right side. This property is essential for creating right-aligned content, stamps, and precisely positioned elements.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `right` property specifies the horizontal offset from the right edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement along the horizontal axis from the right side. This property is essential for creating right-aligned content, stamps, and precisely positioned elements.
 
 ---
 
@@ -93,9 +89,6 @@ The `right` property supports data binding, enabling dynamic horizontal position
 ### Example 1: Dynamic stamp positioning from right
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -132,9 +125,6 @@ The `right` property supports data binding, enabling dynamic horizontal position
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -157,9 +147,6 @@ Data model:
 ```
 
 ### Example 2: Configurable right-aligned page numbers and logos
-
-
-
 
 
 {% raw %}
@@ -203,9 +190,6 @@ Data model:
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -234,9 +218,6 @@ Data model:
 ```
 
 ### Example 3: Data-driven status badges on right side
-
-
-
 
 
 {% raw %}
@@ -278,9 +259,6 @@ Data model:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data model:

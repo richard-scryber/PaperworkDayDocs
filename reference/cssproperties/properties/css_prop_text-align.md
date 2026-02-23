@@ -12,6 +12,8 @@ has_toc: false
 # text-align : Text Alignment Property
 {: .no_toc }
 
+The `text-align` property specifies the horizontal alignment of text and inline content within block-level elements. This is essential for controlling the layout and visual presentation of text in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `text-align` property specifies the horizontal alignment of text and inline content within block-level elements. This is essential for controlling the layout and visual presentation of text in PDF documents.
 
 ---
 
@@ -77,9 +73,6 @@ The `text-align` property can be dynamically set using data binding expressions,
 ### Example 1: User Preference-Based Alignment
 
 
-
-
-
 {% raw %}
 ```html
 <div style="text-align: {{model.userPreferences.textAlignment}}; font-size: 12pt">
@@ -90,13 +83,7 @@ The `text-align` property can be dynamically set using data binding expressions,
 {% endraw %}
 
 
-
-
-
 ### Example 2: Content Type Conditional Alignment
-
-
-
 
 
 {% raw %}
@@ -123,13 +110,7 @@ The `text-align` property can be dynamically set using data binding expressions,
 {% endraw %}
 
 
-
-
-
 ### Example 3: Multilingual Document with RTL Support
-
-
-
 
 
 {% raw %}
@@ -150,9 +131,6 @@ The `text-align` property can be dynamically set using data binding expressions,
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

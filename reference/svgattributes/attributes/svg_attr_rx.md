@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @rx : Horizontal Radius Attribute
+{: .no_toc }
 
 The `rx` attribute specifies the horizontal radius for elliptical shapes and rounded corners within the SVG coordinate system. It defines the horizontal dimension for ellipses and the corner curvature for rectangles in your PDF documents.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -70,9 +84,6 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 ### Example 1: Dynamic Ellipse Size
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { oval: { cx: 150, cy: 80, rx: 100, ry: 50, color: '#FF5722' } } -->
@@ -85,13 +96,7 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 {% endraw %}
 
 
-
-
-
 ### Example 2: Rounded Corners Based on Size
-
-
-
 
 
 {% raw %}
@@ -107,13 +112,7 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 {% endraw %}
 
 
-
-
-
 ### Example 3: Variable Ellipses in Charts
-
-
-
 
 
 {% raw %}
@@ -132,9 +131,6 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -407,9 +403,6 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 ### Dynamic Corner Radius
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { buttons: [
@@ -427,9 +420,6 @@ The `rx` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Aspect Ratio Comparison

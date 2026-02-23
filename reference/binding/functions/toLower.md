@@ -12,22 +12,20 @@ has_toc: false
 # toLower() : Convert to Lowercase
 {: .no_toc }
 
+Convert a string to lowercase letters.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert a string to lowercase letters.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The string converted to lowercase.
 ### Basic Lowercase
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{toLower(model.text)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Normalize for Comparison
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if toLower(model.status) == 'active'}}
@@ -96,9 +85,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -116,17 +102,11 @@ doc.Params["model"] = new {
 ### Email Display
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Email: {{toLower(model.email)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -144,9 +124,6 @@ doc.Params["model"] = new {
 ### CSS Class Names
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.categories}}
@@ -156,9 +133,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

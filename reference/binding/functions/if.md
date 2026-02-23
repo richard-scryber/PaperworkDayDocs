@@ -12,22 +12,20 @@ has_toc: false
 # if() : Ternary Conditional
 {: .no_toc }
 
+Evaluate a condition and return one value if true, another if false. Similar to the ternary operator in programming languages.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Evaluate a condition and return one value if true, another if false. Similar to the ternary operator in programming languages.
 
 ## Signature
 
@@ -60,9 +58,6 @@ Returns `trueValue` if condition is true, `falseValue` otherwise.
 ### Basic Usage
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{if(model.isActive, 'Active', 'Inactive')}}
@@ -71,13 +66,7 @@ Returns `trueValue` if condition is true, `falseValue` otherwise.
 {% endraw %}
 
 
-
-
-
 ### Conditional CSS Class
-
-
-
 
 
 {% raw %}
@@ -87,9 +76,6 @@ Returns `trueValue` if condition is true, `falseValue` otherwise.
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -110,9 +96,6 @@ doc.Params["model"] = new {
 ### With Comparison
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{if(model.score >= 70, 'Pass', 'Fail')}}
@@ -120,13 +103,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Nested Conditions
-
-
-
 
 
 {% raw %}
@@ -136,13 +113,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### With Special Variables
-
-
-
 
 
 {% raw %}
@@ -156,13 +127,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Avoid Division by Zero
-
-
-
 
 
 {% raw %}
@@ -170,9 +135,6 @@ doc.Params["model"] = new {
 <p>Average: {{if(model.count > 0, model.total / model.count, 0)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 ---

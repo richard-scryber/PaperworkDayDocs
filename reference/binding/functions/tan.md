@@ -12,22 +12,20 @@ has_toc: false
 # tan() : Tangent Function
 {: .no_toc }
 
+Calculate the tangent of an angle (in radians).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the tangent of an angle (in radians).
 
 ## Signature
 
@@ -58,18 +56,12 @@ The tangent of the angle.
 ### Basic Tangent
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>tan(0) = {{format(tan(0), '0.000')}}</p>
 <p>tan(π/4) = {{format(tan(pi() / 4), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -81,17 +73,11 @@ The tangent of the angle.
 ### Convert Degrees
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>tan(45°) = {{format(tan(radians(45)), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -102,17 +88,11 @@ The tangent of the angle.
 ### Calculate Slope
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Slope: {{format(tan(model.angle), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

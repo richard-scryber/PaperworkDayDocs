@@ -12,6 +12,8 @@ has_toc: false
 # page-break-before : Page Break Before Property
 {: .no_toc }
 
+The `page-break-before` property controls whether a page break should occur before an element when generating PDF documents. This property is essential for controlling document pagination, creating chapter breaks, and ensuring specific content starts on a new page. Note that this is a legacy CSS2 property; consider using the newer `break-before` property for more options.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `page-break-before` property controls whether a page break should occur before an element when generating PDF documents. This property is essential for controlling document pagination, creating chapter breaks, and ensuring specific content starts on a new page. Note that this is a legacy CSS2 property; consider using the newer `break-before` property for more options.
 
 ---
 
@@ -96,9 +92,6 @@ The `page-break-before` property supports data binding, allowing you to dynamica
 ### Example 1: Conditional page breaks for chapter starts
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -123,13 +116,7 @@ The `page-break-before` property supports data binding, allowing you to dynamica
 {% endraw %}
 
 
-
-
-
 ### Example 2: Data-driven report sections
-
-
-
 
 
 {% raw %}
@@ -158,13 +145,7 @@ The `page-break-before` property supports data binding, allowing you to dynamica
 {% endraw %}
 
 
-
-
-
 ### Example 3: Multi-format document with conditional pagination
-
-
-
 
 
 {% raw %}
@@ -188,9 +169,6 @@ The `page-break-before` property supports data binding, allowing you to dynamica
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

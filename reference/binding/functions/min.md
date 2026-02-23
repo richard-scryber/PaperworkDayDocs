@@ -12,22 +12,20 @@ has_toc: false
 # min() : Find Minimum Value
 {: .no_toc }
 
+Find the minimum (smallest) value in a collection of numeric values.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Find the minimum (smallest) value in a collection of numeric values.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The smallest value in the collection. Returns null for empty collections.
 ### Simple Minimum
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Lowest score: {{min(model.scores)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Price Range
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Price range: ${{min(collect(model.products, 'price'))}} - ${{max(collect(model.products, 'price'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -119,9 +105,6 @@ doc.Params["model"] = new {
 ### Temperature Analysis
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Weekly Temperature Summary</h3>
@@ -130,9 +113,6 @@ doc.Params["model"] = new {
 <p>Average: {{round(average(model.temperatures), 1)}}°F</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -153,9 +133,6 @@ doc.Params["model"] = new {
 ### Student Performance
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.students}}
@@ -163,9 +140,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

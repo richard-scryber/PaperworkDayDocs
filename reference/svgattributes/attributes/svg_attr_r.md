@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @r : Radius Attribute
+{: .no_toc }
 
 The `r` attribute specifies the radius of circular elements within the SVG coordinate system. It defines the distance from the center point to the edge for circles and the outer radius for radial gradients in your PDF documents.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -67,9 +81,6 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 ### Example 1: Dynamic Circle Size
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { dot: { cx: 150, cy: 100, radius: 45, color: '#9C27B0' } } -->
@@ -81,13 +92,7 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 {% endraw %}
 
 
-
-
-
 ### Example 2: Sized by Data Value
-
-
-
 
 
 {% raw %}
@@ -102,13 +107,7 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 {% endraw %}
 
 
-
-
-
 ### Example 3: Bubble Chart with Variable Sizes
-
-
-
 
 
 {% raw %}
@@ -127,9 +126,6 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -350,9 +346,6 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 ### Dynamic Radius Based on Data
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { dataPoints: [
@@ -370,9 +363,6 @@ The `r` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Size Comparison Chart

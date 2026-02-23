@@ -12,22 +12,20 @@ has_toc: false
 # format() : Format and Convert Values
 {: .no_toc }
 
+Convert values to formatted strings using .NET format strings. Supports numeric, currency, percentage, and date formatting.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert values to formatted strings using .NET format strings. Supports numeric, currency, percentage, and date formatting.
 
 ## Signature
 
@@ -84,18 +82,12 @@ The formatted string representation of the value.
 ### Currency Formatting
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Price: {{format(model.price, 'C2')}}</p>
 <!-- Output: Price: $19.99 -->
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -106,9 +98,6 @@ doc.Params["model"] = new { price = 19.99m };
 ### Number Formatting
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Population: {{format(model.population, 'N0')}}</p>
@@ -117,13 +106,7 @@ doc.Params["model"] = new { price = 19.99m };
 {% endraw %}
 
 
-
-
-
 ### Percentage Formatting
-
-
-
 
 
 {% raw %}
@@ -134,18 +117,12 @@ doc.Params["model"] = new { price = 19.99m };
 {% endraw %}
 
 
-
-
-
 **Data:**
 ```csharp
 doc.Params["model"] = new { growth = 0.156 };
 ```
 
 ### Date Formatting
-
-
-
 
 
 {% raw %}
@@ -159,13 +136,7 @@ doc.Params["model"] = new { growth = 0.156 };
 {% endraw %}
 
 
-
-
-
 ### With Calculations
-
-
-
 
 
 {% raw %}
@@ -175,9 +146,6 @@ doc.Params["model"] = new { growth = 0.156 };
 <p>Complete: {{format(model.completed / model.total, 'P0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 ---

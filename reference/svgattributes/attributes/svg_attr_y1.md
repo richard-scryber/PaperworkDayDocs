@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @y1 : The Linear Gradient Start Y Coordinate Attribute
+{: .no_toc }
 
 The `y1` attribute defines the Y-coordinate of the starting point for a linear gradient vector. Together with `x1`, it establishes the origin point from which the gradient begins, determining the vertical component of the gradient's angle and direction.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -82,9 +96,6 @@ Note: This attribute is NOT used with `<radialGradient>` elements, which use `cx
 Bind the y1 coordinate to data for dynamic gradient start position:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { startY: 20 } -->
@@ -105,15 +116,9 @@ Bind the y1 coordinate to data for dynamic gradient start position:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Gradient Angles
 
 Calculate gradient angles from data:
-
-
-
 
 
 {% raw %}
@@ -137,15 +142,9 @@ Calculate gradient angles from data:
 {% endraw %}
 
 
-
-
-
 ### Chart Background with Data Position
 
 Position gradient based on chart data ranges:
-
-
-
 
 
 {% raw %}
@@ -168,15 +167,9 @@ Position gradient based on chart data ranges:
 {% endraw %}
 
 
-
-
-
 ### Conditional Gradient Direction
 
 Change gradient direction based on data orientation:
-
-
-
 
 
 {% raw %}
@@ -199,15 +192,9 @@ Change gradient direction based on data orientation:
 {% endraw %}
 
 
-
-
-
 ### Temperature Gradient Based on Range
 
 Create vertical gradients representing temperature or value ranges:
-
-
-
 
 
 {% raw %}
@@ -230,9 +217,6 @@ Create vertical gradients representing temperature or value ranges:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -504,9 +488,6 @@ Vertical gradients are commonly used for:
 ### Gauge Indicator with Vertical Gradient
 
 
-
-
-
 {% raw %}
 ```html
 <svg width="200" height="300">
@@ -523,9 +504,6 @@ Vertical gradients are commonly used for:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Battery Level Indicator
@@ -567,9 +545,6 @@ Vertical gradients are commonly used for:
 ### Data-Driven Vertical Range
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { minValue: 0, maxValue: 100, currentValue: 65 } -->
@@ -593,9 +568,6 @@ Vertical gradients are commonly used for:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

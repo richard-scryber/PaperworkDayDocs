@@ -12,6 +12,8 @@ has_toc: false
 # top : Top Position Property
 {: .no_toc }
 
+The `top` property specifies the vertical offset from the top edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement. This property is essential for creating headers, fixed content, and precisely positioned elements.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `top` property specifies the vertical offset from the top edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement. This property is essential for creating headers, fixed content, and precisely positioned elements.
 
 ---
 
@@ -93,9 +89,6 @@ The `top` property supports data binding, enabling dynamic vertical positioning 
 ### Example 1: Dynamic header offset based on configuration
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -125,9 +118,6 @@ The `top` property supports data binding, enabling dynamic vertical positioning 
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -146,9 +136,6 @@ Data model:
 ```
 
 ### Example 2: Configurable stamp vertical positioning
-
-
-
 
 
 {% raw %}
@@ -179,9 +166,6 @@ Data model:
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -199,9 +183,6 @@ Data model:
 ```
 
 ### Example 3: Data-driven watermark placement
-
-
-
 
 
 {% raw %}
@@ -227,9 +208,6 @@ Data model:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data model:

@@ -12,6 +12,8 @@ has_toc: false
 # text-decoration-line : Text Decoration Line Property
 {: .no_toc }
 
+The `text-decoration-line` property specifies the type of decoration line to apply to text. This property is part of the text-decoration shorthand and provides granular control over text decoration effects in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `text-decoration-line` property specifies the type of decoration line to apply to text. This property is part of the text-decoration shorthand and provides granular control over text decoration effects in PDF documents.
 
 ---
 
@@ -77,9 +73,6 @@ The `text-decoration-line` property supports data binding for dynamic decoration
 ### Example 1: Dynamic Link Styling
 
 
-
-
-
 {% raw %}
 ```html
 <a href="{{model.link.url}}"
@@ -101,13 +94,7 @@ The `text-decoration-line` property supports data binding for dynamic decoration
 {% endraw %}
 
 
-
-
-
 ### Example 2: Product Status Indication
-
-
-
 
 
 {% raw %}
@@ -141,13 +128,7 @@ The `text-decoration-line` property supports data binding for dynamic decoration
 {% endraw %}
 
 
-
-
-
 ### Example 3: Emphasis Style from Settings
-
-
-
 
 
 {% raw %}
@@ -166,9 +147,6 @@ The `text-decoration-line` property supports data binding for dynamic decoration
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

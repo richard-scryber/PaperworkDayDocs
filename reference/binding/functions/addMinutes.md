@@ -12,22 +12,20 @@ has_toc: false
 # addMinutes() : Add Minutes to Date
 {: .no_toc }
 
+Add minutes to a datetime. Use negative values to subtract minutes.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Add minutes to a datetime. Use negative values to subtract minutes.
 
 ## Signature
 
@@ -59,17 +57,11 @@ A new DateTime with the specified minutes added.
 ### Add Minutes
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Departs: {{format(addMinutes(model.boardingTime, 45), 'h:mm tt')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -87,9 +79,6 @@ doc.Params["model"] = new {
 ### Appointment Schedule
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.appointments}}
@@ -97,9 +86,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -124,17 +110,11 @@ doc.Params["model"] = new {
 ### Duration Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>End time: {{format(addMinutes(model.start, model.durationMinutes), 'h:mm tt')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 ---

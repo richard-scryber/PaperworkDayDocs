@@ -12,6 +12,8 @@ has_toc: false
 # paint-order : SVG Paint Layering Property
 {: .no_toc }
 
+The `paint-order` property specifies the order in which fill, stroke, and markers are painted on SVG elements. This property controls the layering of these paint operations, allowing you to create effects like outlined text, bordered shapes, and customized rendering orders.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `paint-order` property specifies the order in which fill, stroke, and markers are painted on SVG elements. This property controls the layering of these paint operations, allowing you to create effects like outlined text, bordered shapes, and customized rendering orders.
 
 ---
 
@@ -111,9 +107,6 @@ The `paint-order` property can be dynamically controlled through data binding, e
 ### Example 1: Conditional outlined text based on emphasis level
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -140,13 +133,7 @@ The `paint-order` property can be dynamically controlled through data binding, e
 {% endraw %}
 
 
-
-
-
 ### Example 2: Data-driven label styles for status badges
-
-
-
 
 
 {% raw %}
@@ -175,13 +162,7 @@ The `paint-order` property can be dynamically controlled through data binding, e
 {% endraw %}
 
 
-
-
-
 ### Example 3: Dynamic signage with variable paint order
-
-
-
 
 
 {% raw %}
@@ -211,9 +192,6 @@ The `paint-order` property can be dynamically controlled through data binding, e
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

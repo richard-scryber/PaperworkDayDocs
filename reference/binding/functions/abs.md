@@ -12,22 +12,20 @@ has_toc: false
 # abs() : Absolute Value
 {: .no_toc }
 
+Get the absolute value of a number (remove negative sign).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Get the absolute value of a number (remove negative sign).
 
 ## Signature
 
@@ -58,9 +56,6 @@ The absolute value of the input number.
 ### Basic Usage
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{abs(-5)}}     <!-- Output: 5 -->
@@ -70,13 +65,7 @@ The absolute value of the input number.
 {% endraw %}
 
 
-
-
-
 ### Calculate Difference
-
-
-
 
 
 {% raw %}
@@ -84,9 +73,6 @@ The absolute value of the input number.
 <p>Difference: {{abs(model.actual - model.expected)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -105,9 +91,6 @@ doc.Params["model"] = new {
 ### Show Variance
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Variance: {{format(abs(model.value - model.average), 'N2')}}</p>
@@ -115,13 +98,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### With Conditional
-
-
-
 
 
 {% raw %}
@@ -131,9 +108,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 ---

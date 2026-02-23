@@ -12,22 +12,20 @@ has_toc: false
 # radians() : Convert Degrees to Radians
 {: .no_toc }
 
+Convert an angle from degrees to radians.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert an angle from degrees to radians.
 
 ## Signature
 
@@ -58,9 +56,6 @@ The angle in radians.
 ### Convert Common Angles
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>30° = {{format(radians(30), '0.000')}} radians</p>
@@ -69,9 +64,6 @@ The angle in radians.
 <p>180° = {{format(radians(180), '0.000')}} radians</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -85,9 +77,6 @@ The angle in radians.
 ### Use with Trigonometric Functions
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>sin(30°) = {{format(sin(radians(30)), '0.000')}}</p>
@@ -95,9 +84,6 @@ The angle in radians.
 <p>tan(45°) = {{format(tan(radians(45)), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -110,18 +96,12 @@ The angle in radians.
 ### Calculate Circular Position
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>X: {{format(model.radius * cos(radians(model.angle)), '0.00')}}</p>
 <p>Y: {{format(model.radius * sin(radians(model.angle)), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

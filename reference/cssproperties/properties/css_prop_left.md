@@ -12,6 +12,8 @@ has_toc: false
 # left : Left Position Property
 {: .no_toc }
 
+The `left` property specifies the horizontal offset from the left edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement along the horizontal axis. This property is essential for creating sidebars, precise layouts, and horizontally positioned content.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `left` property specifies the horizontal offset from the left edge for positioned elements in PDF documents. It works in conjunction with the `position` property to precisely control element placement along the horizontal axis. This property is essential for creating sidebars, precise layouts, and horizontally positioned content.
 
 ---
 
@@ -93,9 +89,6 @@ The `left` property supports data binding, allowing dynamic horizontal positioni
 ### Example 1: Configurable sidebar offset
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -132,9 +125,6 @@ The `left` property supports data binding, allowing dynamic horizontal positioni
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -159,9 +149,6 @@ Data model:
 ```
 
 ### Example 2: Dynamic badge positioning from left
-
-
-
 
 
 {% raw %}
@@ -195,9 +182,6 @@ Data model:
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -216,9 +200,6 @@ Data model:
 ```
 
 ### Example 3: Configurable logo and margin notes
-
-
-
 
 
 {% raw %}
@@ -256,9 +237,6 @@ Data model:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data model:

@@ -12,6 +12,8 @@ has_toc: false
 # max-width : Maximum Width Property
 {: .no_toc }
 
+The `max-width` property sets the maximum horizontal dimension of an element in PDF documents. It ensures that an element will never be wider than the specified value, even if its content or other constraints would make it larger. This property is essential for responsive layouts, readability optimization, and preventing content from extending beyond desired boundaries.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `max-width` property sets the maximum horizontal dimension of an element in PDF documents. It ensures that an element will never be wider than the specified value, even if its content or other constraints would make it larger. This property is essential for responsive layouts, readability optimization, and preventing content from extending beyond desired boundaries.
 
 ---
 
@@ -95,9 +91,6 @@ The max-width property supports dynamic value binding through template expressio
 ### Example 1: Content sections with configurable maximum widths
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -125,13 +118,7 @@ The max-width property supports dynamic value binding through template expressio
 {% endraw %}
 
 
-
-
-
 ### Example 2: Images with data-driven maximum widths
-
-
-
 
 
 {% raw %}
@@ -160,13 +147,7 @@ The max-width property supports dynamic value binding through template expressio
 {% endraw %}
 
 
-
-
-
 ### Example 3: Cards with conditional maximum widths
-
-
-
 
 
 {% raw %}
@@ -201,13 +182,7 @@ The max-width property supports dynamic value binding through template expressio
 {% endraw %}
 
 
-
-
-
 ### Example 4: Table with configurable maximum width
-
-
-
 
 
 {% raw %}
@@ -254,9 +229,6 @@ The max-width property supports dynamic value binding through template expressio
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

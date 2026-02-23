@@ -12,6 +12,8 @@ has_toc: false
 # != : Inequality Operator
 {: .no_toc }
 
+Compare two values for inequality. Returns true if values are not equal.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Compare two values for inequality. Returns true if values are not equal.
 
 ## Syntax
 
@@ -73,9 +71,6 @@ Evaluated before: `??`, `&&`, `||`
 ### Exclude Specific Status
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.status != 'cancelled'}}
@@ -86,10 +81,6 @@ Evaluated before: `??`, `&&`, `||`
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -111,9 +102,6 @@ doc.Params["model"] = new {
 ### Check for Non-Zero
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.balance != 0}}
@@ -123,14 +111,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Filter Out Null Values
-
-
-
 
 
 {% raw %}
@@ -144,14 +125,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Highlight Changes
-
-
-
 
 
 {% raw %}
@@ -169,14 +143,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Show Alert for Specific Conditions
-
-
-
 
 
 {% raw %}
@@ -189,10 +156,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**

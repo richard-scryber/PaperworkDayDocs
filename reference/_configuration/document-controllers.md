@@ -112,7 +112,8 @@ public class InvoiceController
 
 **Actions** are methods invoked during document lifecycle events. Action methods must:
 - Be public instance methods
-- Accept exactly one parameter (the context object for that lifecycle phase)
+- Be marked with `[PDFAction]`
+- Match the event handler signature: `(object sender, <ContextType> args)`
 - Return `void`
 
 ### Supported Lifecycle Events
@@ -140,40 +141,45 @@ public class ReportController
     public ForEach DataRepeater { get; set; }
 
     // Init: Set up initial state
-    public void Init(InitContext context)
+    [PDFAction]
+    public void Init(object sender, InitContext args)
     {
-        context.TraceLog.Add(TraceLevel.Message, "Report Controller", "Initializing report");
+        args.TraceLog.Add(TraceLevel.Message, "Report Controller", "Initializing report");
         ReportDateLabel.Text = DateTime.Now.ToString("MMMM dd, yyyy");
     }
 
     // Load: Prepare data sources
-    public void Load(LoadContext context)
+    [PDFAction]
+    public void Load(object sender, LoadContext args)
     {
         var data = LoadReportData();
         DataRepeater.DataSource = data;
         
-        context.Document.Params["RecordCount"] = data.Count;
+        args.Document.Params["RecordCount"] = data.Count;
     }
 
     // DataBinding: Modify binding context
-    public void HandleDataBinding(DataBindContext context)
+    [PDFAction]
+    public void HandleDataBinding(object sender, DataBindContext args)
     {
-        if (context.DataStack.HasData)
+        if (args.DataStack.HasData)
         {
-            var current = context.DataStack.Current;
+            var current = args.DataStack.Current;
             // Augment data object
         }
     }
 
     // DataBound: Post-process after binding
-    public void HandleDataBound(DataBindContext context)
+    [PDFAction]
+    public void HandleDataBound(object sender, DataBindContext args)
     {
-        context.TraceLog.Add(TraceLevel.Verbose, "Report Controller", 
+        args.TraceLog.Add(TraceLevel.Verbose, "Report Controller", 
             $"Data binding complete for {DataRepeater.ChildCount} items");
     }
 
     // PreLayout: Modify before layout
-    public void HandlePreLayout(LayoutContext context)
+    [PDFAction]
+    public void HandlePreLayout(object sender, LayoutContext args)
     {
         if (DataRepeater.ChildCount == 0)
         {
@@ -182,10 +188,11 @@ public class ReportController
     }
 
     // PostLayout: Access layout information
-    public void HandlePostLayout(LayoutContext context)
+    [PDFAction]
+    public void HandlePostLayout(object sender, LayoutContext args)
     {
-        context.TraceLog.Add(TraceLevel.Message, "Report Controller", 
-            $"Layout complete: {context.DocumentLayout.AllPages.Count} pages");
+        args.TraceLog.Add(TraceLevel.Message, "Report Controller", 
+            $"Layout complete: {args.DocumentLayout.AllPages.Count} pages");
     }
 
     private List<ReportData> LoadReportData()
@@ -252,9 +259,10 @@ namespace MyCompany.Reports
         private decimal _totalSales;
 
         // Action: Initialize report
-        public void InitReport(InitContext context)
+        [PDFAction]
+        public void InitReport(object sender, InitContext args)
         {
-            context.TraceLog.Add(TraceLevel.Message, "SalesReport", "Initializing sales report");
+            args.TraceLog.Add(TraceLevel.Message, "SalesReport", "Initializing sales report");
             
             CompanyNameLabel.Text = "Acme Corporation";
             TitleLabel.Text = "Monthly Sales Report";
@@ -262,9 +270,10 @@ namespace MyCompany.Reports
         }
 
         // Action: Load data
-        public void LoadReportData(LoadContext context)
+        [PDFAction]
+        public void LoadReportData(object sender, LoadContext args)
         {
-            context.TraceLog.Add(TraceLevel.Message, "SalesReport", "Loading sales data");
+            args.TraceLog.Add(TraceLevel.Message, "SalesReport", "Loading sales data");
             
             // Load data from database/API
             _salesData = FetchSalesData();
@@ -281,21 +290,33 @@ namespace MyCompany.Reports
             NoDataPanel.Visible = (_salesData.Count == 0);
         }
 
+        // Action: Invoked for each generated row/item in the foreach template
+        [PDFAction]
+        public void HandleSalesItemDataBound(object sender, TemplateItemDataBoundArgs args)
+        {
+            if (args.Item is TableRow row && args.Context.CurrentIndex % 2 == 1)
+            {
+                row.StyleClass = "alternate-row";
+            }
+        }
+
         // Action: Pre-layout modifications
-        public void BeforeLayout(LayoutContext context)
+        [PDFAction]
+        public void BeforeLayout(object sender, LayoutContext args)
         {
             if (_salesData.Count > 100)
             {
-                context.TraceLog.Add(TraceLevel.Warning, "SalesReport", 
+                args.TraceLog.Add(TraceLevel.Warning, "SalesReport", 
                     "Large dataset may cause performance issues");
             }
         }
 
         // Action: Post-layout inspection
-        public void AfterLayout(LayoutContext context)
+        [PDFAction]
+        public void AfterLayout(object sender, LayoutContext args)
         {
-            var pageCount = context.DocumentLayout.AllPages.Count;
-            context.TraceLog.Add(TraceLevel.Message, "SalesReport", 
+            var pageCount = args.DocumentLayout.AllPages.Count;
+            args.TraceLog.Add(TraceLevel.Message, "SalesReport", 
                 $"Report generated: {pageCount} pages, {_salesData.Count} records, total ${_totalSales:N2}");
         }
 
@@ -347,7 +368,7 @@ namespace MyCompany.Reports
                     </pdf:TableHeaderRow>
                     
                     <pdf:TableRow>
-                        <pdf:ForEach id='SalesDataRepeater' value='.'>
+                        <pdf:ForEach id='SalesDataRepeater' value='.' on-item-databound='HandleSalesItemDataBound'>
                             <pdf:TableCell>
                                 <pdf:Label text='{@:Product}' />
                             </pdf:TableCell>

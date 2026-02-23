@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # spreadMethod : SVG Gradient Spread Method Attribute
+{: .no_toc }
 
 The `spreadMethod` attribute determines how a gradient behaves beyond its defined start and end points. This SVG attribute controls whether the gradient pads with the final color, reflects back and forth, or repeats the gradient pattern.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -69,9 +83,6 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
 ### Example 1: Conditional spread method for pattern styles
 
 
-
-
-
 {% raw %}
 ```html
 <body>
@@ -91,13 +102,7 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
 {% endraw %}
 
 
-
-
-
 ### Example 2: Data-driven striped patterns
-
-
-
 
 
 {% raw %}
@@ -122,13 +127,7 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
 {% endraw %}
 
 
-
-
-
 ### Example 3: Dynamic radial patterns with reflection
-
-
-
 
 
 {% raw %}
@@ -148,9 +147,6 @@ The `spreadMethod` attribute can be dynamically controlled through data binding,
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,6 +12,8 @@ has_toc: false
 # stroke-opacity : SVG Stroke Opacity Property
 {: .no_toc }
 
+The `stroke-opacity` property controls the transparency of SVG shape strokes independently from the fill. This property enables precise control over outline transparency while maintaining fill opacity, essential for creating layered graphics and sophisticated visual effects in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `stroke-opacity` property controls the transparency of SVG shape strokes independently from the fill. This property enables precise control over outline transparency while maintaining fill opacity, essential for creating layered graphics and sophisticated visual effects in PDF documents.
 
 ---
 
@@ -95,9 +91,6 @@ The `stroke-opacity` property can be dynamically set using data binding expressi
 ### Example 1: Connection strength visualization
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -131,9 +124,6 @@ The `stroke-opacity` property can be dynamically set using data binding expressi
 {% endraw %}
 
 
-
-
-
 With model data:
 ```json
 {
@@ -151,9 +141,6 @@ With model data:
 ```
 
 ### Example 2: Conditional emphasis based on importance
-
-
-
 
 
 {% raw %}
@@ -181,13 +168,7 @@ With model data:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Data quality indicators
-
-
-
 
 
 {% raw %}
@@ -213,9 +194,6 @@ With model data:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 With model data:

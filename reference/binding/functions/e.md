@@ -12,22 +12,20 @@ has_toc: false
 # e() : Euler's Number Constant
 {: .no_toc }
 
+Get the mathematical constant e (Euler's number), approximately 2.71828.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Get the mathematical constant e (Euler's number), approximately 2.71828.
 
 ## Signature
 
@@ -56,17 +54,11 @@ The value of e (approximately 2.71828182845905).
 ### Display Constant
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Euler's number: {{format(e(), '0.00000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -77,17 +69,11 @@ The value of e (approximately 2.71828182845905).
 ### Exponential Growth
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Result: {{format(model.initial * pow(e(), model.rate * model.time), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -107,9 +93,6 @@ doc.Params["model"] = new {
 ### Natural Exponential
 
 
-
-
-
 {% raw %}
 ```handlebars
 <!-- e^2 using constant vs exp function -->
@@ -117,9 +100,6 @@ doc.Params["model"] = new {
 <p>exp(2) = {{format(exp(2), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**

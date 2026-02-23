@@ -12,6 +12,8 @@ has_toc: false
 # counter-reset : Counter Initialization Property
 {: .no_toc }
 
+The `counter-reset` property creates or resets one or more CSS counters to a specified value. Counters are used with the `content` property and `counter()` or `counters()` functions to automatically number elements, create hierarchical numbering systems, and generate sequential content.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `counter-reset` property creates or resets one or more CSS counters to a specified value. Counters are used with the `content` property and `counter()` or `counters()` functions to automatically number elements, create hierarchical numbering systems, and generate sequential content.
 
 ---
 
@@ -93,9 +89,6 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 ### Example 1: Dynamic section numbering with data binding
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -123,13 +116,7 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 {% endraw %}
 
 
-
-
-
 ### Example 2: Multi-level outline with data-driven content
-
-
-
 
 
 {% raw %}
@@ -172,13 +159,7 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 {% endraw %}
 
 
-
-
-
 ### Example 3: Data-driven task list with automatic numbering
-
-
-
 
 
 {% raw %}
@@ -209,9 +190,6 @@ The `counter-reset` property works seamlessly with data binding to create dynami
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

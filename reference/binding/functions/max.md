@@ -12,22 +12,20 @@ has_toc: false
 # max() : Find Maximum Value
 {: .no_toc }
 
+Find the maximum (largest) value in a collection of numeric values.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Find the maximum (largest) value in a collection of numeric values.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The largest value in the collection. Returns null for empty collections.
 ### Simple Maximum
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Highest score: {{max(model.scores)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Price Range
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Price range: ${{min(collect(model.products, 'price'))}} - ${{max(collect(model.products, 'price'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -119,9 +105,6 @@ doc.Params["model"] = new {
 ### Daily Sales Peak
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Sales Analysis</h3>
@@ -130,9 +113,6 @@ doc.Params["model"] = new {
 <p>Total weekly sales: ${{sum(collect(model.dailySales, 'amount'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -159,9 +139,6 @@ doc.Params["model"] = new {
 ### Class Performance
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.classes}}
@@ -169,9 +146,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

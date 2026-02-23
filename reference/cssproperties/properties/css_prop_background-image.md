@@ -12,6 +12,8 @@ has_toc: false
 # background-image : Background Image Property
 {: .no_toc }
 
+The `background-image` property sets one or more background images for an element in PDF documents. This property is essential for adding logos, watermarks, letterheads, patterns, and decorative elements to enhance document appearance and branding.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `background-image` property sets one or more background images for an element in PDF documents. This property is essential for adding logos, watermarks, letterheads, patterns, and decorative elements to enhance document appearance and branding.
 
 ---
 
@@ -108,9 +104,6 @@ The `background-image` property supports dynamic data binding, enabling personal
 ### Example 1: Dynamic user profile photo
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -137,14 +130,9 @@ The `background-image` property supports dynamic data binding, enabling personal
 {% endraw %}
 
 
-
-
-
 Perfect for creating employee badges, ID cards, or personnel reports where each document needs a different photo loaded from your database or user profile system.
 
 ### Example 2: Conditional watermarks based on document status
-
-
 
 
 {% raw %}
@@ -170,15 +158,9 @@ Perfect for creating employee badges, ID cards, or personnel reports where each 
 {% endraw %}
 
 
-
-
-
 Automatically applies the appropriate watermark based on document state - essential for document management systems where visual status indicators prevent misuse of drafts or confidential materials.
 
 ### Example 3: Product catalog with dynamic images
-
-
-
 
 
 {% raw %}
@@ -212,9 +194,6 @@ Automatically applies the appropriate watermark based on document state - essent
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Generates product catalogs, price lists, or inventory reports where each item displays its own product image from your product database or CMS.

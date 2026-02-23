@@ -12,6 +12,8 @@ has_toc: false
 # line-height : The Line Height Property
 {: .no_toc }
 
+The `line-height` property sets the vertical spacing between lines of text in PDF documents. It controls the leading (space between baselines of consecutive lines) and significantly affects readability. Line-height can be specified as an absolute unit, a unitless multiplier, or a relative unit (em units).
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `line-height` property sets the vertical spacing between lines of text in PDF documents. It controls the leading (space between baselines of consecutive lines) and significantly affects readability. Line-height can be specified as an absolute unit, a unitless multiplier, or a relative unit (em units).
 
 ---
 
@@ -111,9 +107,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 ### Data Binding Examples
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Dynamic line height from model -->
@@ -153,9 +146,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Note:** Bound line-height values can be unitless numbers (recommended), absolute units (e.g., '20pt'), or percentages (e.g., '150%'). Unitless values scale proportionally with font-size changes.

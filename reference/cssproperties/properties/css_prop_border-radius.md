@@ -12,6 +12,8 @@ has_toc: false
 # border-radius : Border Radius Property
 {: .no_toc }
 
+The `border-radius` property rounds the corners of an element's border. This property creates smooth, curved corners instead of sharp right angles, enhancing the visual design of PDF documents with modern, polished appearances.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-radius` property rounds the corners of an element's border. This property creates smooth, curved corners instead of sharp right angles, enhancing the visual design of PDF documents with modern, polished appearances.
 
 ---
 
@@ -97,9 +93,6 @@ The `border-radius` property supports dynamic values through data binding, allow
 ### Example 1: Dynamic badge styles
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -120,9 +113,6 @@ The `border-radius` property supports dynamic values through data binding, allow
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -136,9 +126,6 @@ Data context:
 ```
 
 ### Example 2: Card styles based on type
-
-
-
 
 
 {% raw %}
@@ -161,9 +148,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -176,9 +160,6 @@ Data context:
 ```
 
 ### Example 3: Conditional rounded corners
-
-
-
 
 
 {% raw %}
@@ -198,9 +179,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

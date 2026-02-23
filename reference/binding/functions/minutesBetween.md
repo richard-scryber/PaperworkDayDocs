@@ -12,22 +12,20 @@ has_toc: false
 # minutesBetween() : Calculate Minutes Between Dates
 {: .no_toc }
 
+Calculate the number of minutes between two datetimes. Returns a positive or negative number depending on whether the second datetime is after or before the first.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the number of minutes between two datetimes. Returns a positive or negative number depending on whether the second datetime is after or before the first.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The number of minutes between the two datetimes. Positive if endDateTime is afte
 ### Meeting Duration
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Meeting duration: {{minutesBetween(model.startTime, model.endTime)}} minutes</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,9 +80,6 @@ doc.Params["model"] = new {
 ### Parking Duration and Cost
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Parking Receipt</h3>
@@ -100,9 +89,6 @@ doc.Params["model"] = new {
 <p>Cost: ${{round((minutesBetween(model.entryTime, model.exitTime) / 60) * model.hourlyRate, 2)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -126,9 +112,6 @@ doc.Params["model"] = new {
 ### Call Center Metrics
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.calls}}
@@ -141,9 +124,6 @@ doc.Params["model"] = new {
 <p>Average: {{average(collect(model.calls, 'duration'))}} min</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

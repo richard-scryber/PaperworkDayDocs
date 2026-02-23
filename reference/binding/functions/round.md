@@ -12,22 +12,20 @@ has_toc: false
 # round() : Round to Nearest
 {: .no_toc }
 
+Round a number to the nearest integer or specified decimal places.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Round a number to the nearest integer or specified decimal places.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The rounded value.
 ### Round to Integer
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Rounded: {{round(model.value)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -87,17 +79,11 @@ doc.Params["model"] = new {
 ### Round to 2 Decimal Places
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Price: ${{round(model.price, 2)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -115,17 +101,11 @@ doc.Params["model"] = new {
 ### Round Percentage
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{round((model.completed / model.total) * 100, 1)}}% complete</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -144,9 +124,6 @@ doc.Params["model"] = new {
 ### Multiple Decimal Places
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.measurements}}
@@ -154,9 +131,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

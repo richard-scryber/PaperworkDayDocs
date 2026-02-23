@@ -12,6 +12,8 @@ has_toc: false
 # hyphens-limit-chars-length : Minimum Word Length for Hyphenation
 {: .no_toc }
 
+The `hyphens-limit-chars-length` property specifies the minimum number of characters a word must have before it can be hyphenated. This property provides granular control over which words are eligible for automatic hyphenation in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `hyphens-limit-chars-length` property specifies the minimum number of characters a word must have before it can be hyphenated. This property provides granular control over which words are eligible for automatic hyphenation in PDF documents.
 
 ---
 
@@ -82,9 +78,6 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
 ### Example 1: Column Width Adaptation
 
 
-
-
-
 {% raw %}
 ```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
@@ -116,13 +109,7 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
 {% endraw %}
 
 
-
-
-
 ### Example 2: Language-Specific Settings
-
-
-
 
 
 {% raw %}
@@ -156,13 +143,7 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
 {% endraw %}
 
 
-
-
-
 ### Example 3: Document Format Preferences
-
-
-
 
 
 {% raw %}
@@ -196,9 +177,6 @@ The `hyphens-limit-chars-length` property supports data binding for dynamic cont
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

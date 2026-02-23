@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @viewBox : The SVG Viewport and Coordinate System Attribute
+{: .no_toc }
 
 The `viewBox` attribute defines the coordinate system and aspect ratio for an SVG canvas. It establishes which portion of the SVG's coordinate space is visible within the viewport, enabling responsive scaling, zooming, and panning effects without modifying the actual SVG content.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -23,9 +37,6 @@ The `viewBox` attribute controls the SVG coordinate system and viewport:
 - Control which portion of the SVG content is visible
 - Support data binding for dynamic viewport adjustments
 - Simplify coordinate calculations with custom units
-
-
-
 
 
 {% raw %}
@@ -46,9 +57,6 @@ The `viewBox` attribute controls the SVG coordinate system and viewport:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -127,9 +135,6 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 ### Dynamic Zoom and Pan
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { x: 0, y: 0, width: 100, height: 100 } -->
@@ -142,13 +147,7 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 {% endraw %}
 
 
-
-
-
 ### Zoom Effect
-
-
-
 
 
 {% raw %}
@@ -165,13 +164,7 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 {% endraw %}
 
 
-
-
-
 ### Pan Effect
-
-
-
 
 
 {% raw %}
@@ -188,13 +181,7 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 {% endraw %}
 
 
-
-
-
 ### Responsive ViewBox
-
-
-
 
 
 {% raw %}
@@ -211,13 +198,7 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 {% endraw %}
 
 
-
-
-
 ### Focus on Region
-
-
-
 
 
 {% raw %}
@@ -233,13 +214,7 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 {% endraw %}
 
 
-
-
-
 ### Animated Viewport Transition
-
-
-
 
 
 {% raw %}
@@ -253,9 +228,6 @@ The `viewBox` attribute supports data binding for dynamic viewport control:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -632,9 +604,6 @@ ViewBox is key to creating responsive, scalable SVG:
 ### Dynamic Zoom to Element
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { selectedElement: { x: 200, y: 150, width: 100, height: 100 } } -->
@@ -648,9 +617,6 @@ ViewBox is key to creating responsive, scalable SVG:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Minimap Overview
@@ -723,9 +689,6 @@ ViewBox is key to creating responsive, scalable SVG:
 ### Animated Pan Through Scene
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { frame: 0 } -->
@@ -743,9 +706,6 @@ ViewBox is key to creating responsive, scalable SVG:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Responsive Logo

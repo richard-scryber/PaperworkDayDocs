@@ -12,6 +12,8 @@ has_toc: false
 # break-after : Break After Property
 {: .no_toc }
 
+The `break-after` property controls page and column breaks after an element when generating PDF documents. This is the modern CSS3 replacement for `page-break-after`, offering more control including column breaks for multi-column layouts. It ensures specific content ends before a break, creating clear document structure and proper section separation.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `break-after` property controls page and column breaks after an element when generating PDF documents. This is the modern CSS3 replacement for `page-break-after`, offering more control including column breaks for multi-column layouts. It ensures specific content ends before a break, creating clear document structure and proper section separation.
 
 ---
 
@@ -103,9 +99,6 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 ### Example 1: Conditional breaks after content blocks
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -132,13 +125,7 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 {% endraw %}
 
 
-
-
-
 ### Example 2: Data-driven chart isolation
-
-
-
 
 
 {% raw %}
@@ -176,13 +163,7 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 {% endraw %}
 
 
-
-
-
 ### Example 3: Variable document sections with mixed breaks
-
-
-
 
 
 {% raw %}
@@ -219,9 +200,6 @@ The `break-after` property supports data binding, enabling dynamic control of pa
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

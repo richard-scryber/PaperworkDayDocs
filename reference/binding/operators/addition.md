@@ -12,6 +12,8 @@ has_toc: false
 # + : Addition Operator
 {: .no_toc }
 
+Adds two numeric values together. Or joins two string values together.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Adds two numeric values together. Or joins two string values together.
 
 ## Syntax
 
@@ -74,9 +72,6 @@ The sum of the two operands.
 ### With Variables
 
 
-
-
-
 {% raw %}
 ```html
 <p>Subtotal: ${{model.price}}</p>
@@ -84,9 +79,6 @@ The sum of the two operands.
 <p>Total: ${{model.price + model.tax}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

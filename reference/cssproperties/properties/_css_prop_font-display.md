@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # font-display : The Font Display Property
+{: .no_toc }
 
 Summary
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 The `font-display` property controls how font files are displayed based on whether and when they are downloaded and ready to use. This property is currently recognized by Scryber.Core but not applied during PDF rendering. It is included for CSS compatibility with web standards.
 
@@ -74,9 +88,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 ### Data Binding Examples
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Dynamic font-display from configuration (no effect in PDF) -->
@@ -119,9 +130,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Note:** Font-display is not applied during PDF rendering in Scryber.Core. These data binding examples are useful for shared stylesheets that serve both web and PDF contexts, where the property applies to web rendering only.

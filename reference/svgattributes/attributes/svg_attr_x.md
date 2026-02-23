@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @x : X Coordinate Attribute
+{: .no_toc }
 
 The `x` attribute specifies the horizontal position (X-coordinate) of an element within the SVG coordinate system. It defines the left edge position for rectangles and images, or the starting horizontal position for other elements in your PDF documents.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -71,9 +85,6 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 ### Example 1: Dynamic Positioning from Data
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { position: { x: 100, y: 50 }, size: { width: 150, height: 80 } } -->
@@ -86,13 +97,7 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 {% endraw %}
 
 
-
-
-
 ### Example 2: Calculated Position
-
-
-
 
 
 {% raw %}
@@ -107,13 +112,7 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 {% endraw %}
 
 
-
-
-
 ### Example 3: Dynamic Bar Chart Positioning
-
-
-
 
 
 {% raw %}
@@ -133,9 +132,6 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -310,9 +306,6 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 ### Dynamic Column Layout
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { columns: [
@@ -331,9 +324,6 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Calendar Grid Days
@@ -359,9 +349,6 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 ### Dashboard Widget Grid
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { widgets: [
@@ -380,9 +367,6 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Stacked Timeline Events
@@ -433,9 +417,6 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 ### Dynamic Spacing Between Elements
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { items: [
@@ -452,9 +433,6 @@ The `x` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

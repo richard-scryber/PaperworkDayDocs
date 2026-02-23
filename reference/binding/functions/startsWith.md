@@ -12,22 +12,20 @@ has_toc: false
 # startsWith() : Check String Prefix
 {: .no_toc }
 
+Check if a string starts with a specified prefix.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Check if a string starts with a specified prefix.
 
 ## Signature
 
@@ -59,9 +57,6 @@ startsWith(str, prefix)
 ### Protocol Detection
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if startsWith(model.url, 'https://')}}
@@ -71,9 +66,6 @@ startsWith(str, prefix)
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -91,9 +83,6 @@ doc.Params["model"] = new {
 ### File Type Detection
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.files}}
@@ -105,9 +94,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -134,9 +120,6 @@ doc.Params["model"] = new {
 ### Prefix-Based Filtering
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.codes}}
@@ -150,13 +133,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Phone Number Validation
-
-
-
 
 
 {% raw %}
@@ -170,9 +147,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

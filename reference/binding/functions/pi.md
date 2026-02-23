@@ -12,22 +12,20 @@ has_toc: false
 # pi() : Pi Constant
 {: .no_toc }
 
+Get the mathematical constant π (pi), approximately 3.14159.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Get the mathematical constant π (pi), approximately 3.14159.
 
 ## Signature
 
@@ -56,18 +54,12 @@ The value of π (approximately 3.14159265358979).
 ### Circle Calculations
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Circumference: {{format(2 * pi() * model.radius, '0.00')}}</p>
 <p>Area: {{format(pi() * pow(model.radius, 2), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Angle Conversions
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>90° = {{format(pi() / 2, '0.000')}} radians</p>
@@ -96,9 +85,6 @@ doc.Params["model"] = new {
 <p>360° = {{format(2 * pi(), '0.000')}} radians</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -111,18 +97,12 @@ doc.Params["model"] = new {
 ### Trigonometric Calculations
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>sin(π/6) = {{format(sin(pi() / 6), '0.000')}}</p>
 <p>cos(π/3) = {{format(cos(pi() / 3), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**

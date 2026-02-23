@@ -12,6 +12,8 @@ has_toc: false
 # overflow : Overflow Property
 {: .no_toc }
 
+The `overflow` property controls how content is handled when it exceeds the boundaries of its containing element. This is essential for managing text flow, constraining content areas, and creating scrollable regions in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `overflow` property controls how content is handled when it exceeds the boundaries of its containing element. This is essential for managing text flow, constraining content areas, and creating scrollable regions in PDF documents.
 
 ---
 
@@ -93,9 +89,6 @@ The overflow property integrates with data binding to create dynamic content are
 ### Example 1: Dynamic overflow based on content length
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -125,13 +118,7 @@ The overflow property integrates with data binding to create dynamic content are
 {% endraw %}
 
 
-
-
-
 ### Example 2: Adaptive overflow for different page sizes
-
-
-
 
 
 {% raw %}
@@ -166,13 +153,7 @@ The overflow property integrates with data binding to create dynamic content are
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional overflow for data-driven layouts
-
-
-
 
 
 {% raw %}
@@ -213,9 +194,6 @@ The overflow property integrates with data binding to create dynamic content are
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

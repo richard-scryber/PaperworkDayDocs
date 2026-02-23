@@ -12,6 +12,8 @@ has_toc: false
 # margin-inline-end : Inline End Margin Property
 {: .no_toc }
 
+The `margin-inline-end` property sets the margin at the inline end edge of an element in PDF documents. This is a logical property that maps to either right or left margin depending on the writing direction. In left-to-right (LTR) languages it corresponds to `margin-right`, while in right-to-left (RTL) languages it corresponds to `margin-left`.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `margin-inline-end` property sets the margin at the inline end edge of an element in PDF documents. This is a logical property that maps to either right or left margin depending on the writing direction. In left-to-right (LTR) languages it corresponds to `margin-right`, while in right-to-left (RTL) languages it corresponds to `margin-left`.
 
 ---
 
@@ -94,9 +90,6 @@ The `margin-inline-end` property supports dynamic values through data binding, a
 ### Example 1: Dynamic badge spacing based on display mode
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -128,9 +121,6 @@ The `margin-inline-end` property supports dynamic values through data binding, a
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -142,9 +132,6 @@ Data context:
 ```
 
 ### Example 2: Responsive grid layout with data-driven spacing
-
-
-
 
 
 {% raw %}
@@ -178,9 +165,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -199,9 +183,6 @@ Data context:
 ```
 
 ### Example 3: Bilingual button group with direction-aware spacing
-
-
-
 
 
 {% raw %}
@@ -230,9 +211,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

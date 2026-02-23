@@ -12,22 +12,20 @@ has_toc: false
 # dayOfYear() : Extract Day of Year from Date
 {: .no_toc }
 
+Extract the day of the year from a datetime value as a number (1-366), representing which day it is in the calendar year.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract the day of the year from a datetime value as a number (1-366), representing which day it is in the calendar year.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The day of the year as a number from 1 (January 1st) to 365 or 366 (December 31s
 ### Display Day of Year
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Day {{dayOfYear(model.date)}} of {{yearOf(model.date)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Progress Through Year
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Year Progress: {{round((dayOfYear(model.today) / 365) * 100, 1)}}%</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,17 +100,11 @@ doc.Params["model"] = new {
 ### Manufacturing Day Code
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Production Code: {{yearOf(model.date) % 100}}{{padLeft(string(dayOfYear(model.date)), 3, '0')}}-{{model.batchNumber}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -141,9 +121,6 @@ doc.Params["model"] = new {
 ```
 
 ### Seasonal Marketing Periods
-
-
-
 
 
 {% raw %}
@@ -163,9 +140,6 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -181,17 +155,11 @@ doc.Params["model"] = new {
 ### Days Remaining in Year
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Days left in {{yearOf(model.today)}}: {{365 - dayOfYear(model.today)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

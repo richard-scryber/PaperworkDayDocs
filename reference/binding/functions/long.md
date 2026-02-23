@@ -12,22 +12,20 @@ has_toc: false
 # long() : Convert to Long Integer
 {: .no_toc }
 
+Convert a value to a 64-bit long integer. Useful for large numbers that exceed Int32 range.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert a value to a 64-bit long integer. Useful for large numbers that exceed Int32 range.
 
 ## Signature
 
@@ -58,17 +56,11 @@ A 64-bit integer representation of the value.
 ### Large Number Conversion
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Population: {{format(long(model.population), 'N0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### File Size Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Total Size: {{format(long(model.bytes) / 1024 / 1024, '0.00')}} MB</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,17 +100,11 @@ doc.Params["model"] = new {
 ### Timestamp Conversion
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Timestamp: {{long(model.timestamp)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

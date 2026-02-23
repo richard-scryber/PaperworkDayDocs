@@ -12,22 +12,20 @@ has_toc: false
 # truncate() : Remove Decimal Portion
 {: .no_toc }
 
+Remove the decimal portion of a number without rounding.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Remove the decimal portion of a number without rounding.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The integer portion of the number.
 ### Remove Decimals
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Whole number: {{truncate(model.value)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,18 +78,12 @@ doc.Params["model"] = new {
 ### Extract Integer Part
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Dollars: ${{truncate(model.price)}}</p>
 <p>Cents: {{round((model.price - truncate(model.price)) * 100)}}¢</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -116,9 +102,6 @@ doc.Params["model"] = new {
 ### No Rounding Behavior
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.values}}
@@ -126,9 +109,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

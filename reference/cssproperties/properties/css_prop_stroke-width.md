@@ -12,6 +12,8 @@ has_toc: false
 # stroke-width : SVG Stroke Width Property
 {: .no_toc }
 
+The `stroke-width` property controls the thickness of SVG shape strokes in PDF documents. This property is fundamental for defining line weights, border thickness, and the visual prominence of vector graphics outlines.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `stroke-width` property controls the thickness of SVG shape strokes in PDF documents. This property is fundamental for defining line weights, border thickness, and the visual prominence of vector graphics outlines.
 
 ---
 
@@ -93,9 +89,6 @@ The `stroke-width` property can be dynamically set using data binding expression
 ### Example 1: Data-driven line weights in charts
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -117,9 +110,6 @@ The `stroke-width` property can be dynamically set using data binding expression
 {% endraw %}
 
 
-
-
-
 With model data:
 ```json
 {
@@ -132,9 +122,6 @@ With model data:
 ```
 
 ### Example 2: Conditional border thickness based on status
-
-
-
 
 
 {% raw %}
@@ -162,13 +149,7 @@ With model data:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Network connections weighted by traffic
-
-
-
 
 
 {% raw %}
@@ -201,9 +182,6 @@ With model data:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 With model data (bandwidth determines line thickness):

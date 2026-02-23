@@ -12,22 +12,20 @@ has_toc: false
 # regexMatches() : Find All Pattern Matches
 {: .no_toc }
 
+Find all occurrences of a regular expression pattern in a string.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Find all occurrences of a regular expression pattern in a string.
 
 ## Signature
 
@@ -59,9 +57,6 @@ An array containing all matches found.
 ### Extract All Numbers
 
 
-
-
-
 {% raw %}
 ```handlebars
 <ul>
@@ -71,9 +66,6 @@ An array containing all matches found.
 </ul>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -96,9 +88,6 @@ doc.Params["model"] = new {
 ### Extract Email Addresses
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Found Emails:</h3>
@@ -107,9 +96,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -129,9 +115,6 @@ doc.Params["model"] = new {
 ### Extract Hashtags
 
 
-
-
-
 {% raw %}
 ```handlebars
 <div class="tags">
@@ -141,9 +124,6 @@ doc.Params["model"] = new {
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -166,9 +146,6 @@ doc.Params["model"] = new {
 ### Extract URLs
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Links:</h3>
@@ -179,13 +156,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Count Matches
-
-
-
 
 
 {% raw %}
@@ -193,9 +164,6 @@ doc.Params["model"] = new {
 <p>Found {{length(regexMatches(model.text, '\\d'))}} digits</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

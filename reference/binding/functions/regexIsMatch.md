@@ -12,22 +12,20 @@ has_toc: false
 # regexIsMatch() : Test Regular Expression
 {: .no_toc }
 
+Test if a string matches a regular expression pattern.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Test if a string matches a regular expression pattern.
 
 ## Signature
 
@@ -59,9 +57,6 @@ regexIsMatch(str, pattern)
 ### Email Validation
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if regexIsMatch(model.email, '^[^@]+@[^@]+\\.[^@]+$')}}
@@ -71,9 +66,6 @@ regexIsMatch(str, pattern)
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -91,9 +83,6 @@ doc.Params["model"] = new {
 ### Phone Number Format
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if regexIsMatch(model.phone, '^\\d{3}-\\d{3}-\\d{4}$')}}
@@ -103,9 +92,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -121,9 +107,6 @@ doc.Params["model"] = new {
 ```
 
 ### Postal Code Validation
-
-
-
 
 
 {% raw %}
@@ -142,13 +125,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Contains Digits
-
-
-
 
 
 {% raw %}
@@ -162,13 +139,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Alphanumeric Check
-
-
-
 
 
 {% raw %}
@@ -180,9 +151,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

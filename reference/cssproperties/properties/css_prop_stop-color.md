@@ -12,6 +12,8 @@ has_toc: false
 # stop-color : SVG Gradient Stop Color Property
 {: .no_toc }
 
+The `stop-color` property specifies the color value at a gradient stop within SVG gradient definitions. This property is essential for creating linear and radial gradients by defining the colors at specific positions along the gradient vector.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `stop-color` property specifies the color value at a gradient stop within SVG gradient definitions. This property is essential for creating linear and radial gradients by defining the colors at specific positions along the gradient vector.
 
 ---
 
@@ -98,9 +94,6 @@ The `stop-color` property can be dynamically controlled through data binding, en
 ### Example 1: Data-driven gradient colors for status indicators
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -123,13 +116,7 @@ The `stop-color` property can be dynamically controlled through data binding, en
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic multi-stop gradients from data
-
-
-
 
 
 {% raw %}
@@ -153,13 +140,7 @@ The `stop-color` property can be dynamically controlled through data binding, en
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional gradient colors based on thresholds
-
-
-
 
 
 {% raw %}
@@ -182,9 +163,6 @@ The `stop-color` property can be dynamically controlled through data binding, en
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

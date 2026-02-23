@@ -12,22 +12,20 @@ has_toc: false
 # log10() : Base-10 Logarithm
 {: .no_toc }
 
+Calculate the base-10 logarithm of a number.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the base-10 logarithm of a number.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The base-10 logarithm of the value.
 ### Basic Log10
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>log₁₀({{model.value}}) = {{format(log10(model.value), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Calculate Magnitude
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Order of magnitude: 10^{{floor(log10(model.value))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,17 +100,11 @@ doc.Params["model"] = new {
 ### Decibel Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>dB: {{format(10 * log10(model.power / model.reference), '0.0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

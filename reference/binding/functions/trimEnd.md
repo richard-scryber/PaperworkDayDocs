@@ -12,22 +12,20 @@ has_toc: false
 # trimEnd() : Remove Trailing Whitespace
 {: .no_toc }
 
+Remove trailing whitespace from the end of a string.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Remove trailing whitespace from the end of a string.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The string with trailing whitespace removed.
 ### Remove Trailing Spaces
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>"{{trimEnd(model.text)}}"</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Clean Line Endings
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.lines}}
@@ -96,9 +85,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -122,17 +108,11 @@ doc.Params["model"] = new {
 ### Preserve Leading Spaces
 
 
-
-
-
 {% raw %}
 ```handlebars
 <pre>{{trimEnd(model.code)}}</pre>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

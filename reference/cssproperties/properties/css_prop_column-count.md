@@ -12,6 +12,8 @@ has_toc: false
 # column-count : Column Count Property
 {: .no_toc }
 
+The `column-count` property specifies the number of columns an element should be divided into for multi-column layout. This is essential for creating newspaper-style layouts, magazine columns, brochures, and professional multi-column documents in PDF generation.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `column-count` property specifies the number of columns an element should be divided into for multi-column layout. This is essential for creating newspaper-style layouts, magazine columns, brochures, and professional multi-column documents in PDF generation.
 
 ---
 
@@ -91,9 +87,6 @@ The column-count property works seamlessly with data binding to create dynamic m
 ### Example 1: Dynamic column count based on page size
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -129,13 +122,7 @@ The column-count property works seamlessly with data binding to create dynamic m
 {% endraw %}
 
 
-
-
-
 ### Example 2: User-configurable newsletter layout
-
-
-
 
 
 {% raw %}
@@ -185,13 +172,7 @@ The column-count property works seamlessly with data binding to create dynamic m
 {% endraw %}
 
 
-
-
-
 ### Example 3: Responsive multi-column documents
-
-
-
 
 
 {% raw %}
@@ -245,9 +226,6 @@ The column-count property works seamlessly with data binding to create dynamic m
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

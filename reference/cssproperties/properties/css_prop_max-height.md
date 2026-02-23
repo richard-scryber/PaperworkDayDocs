@@ -12,6 +12,8 @@ has_toc: false
 # max-height : Maximum Height Property
 {: .no_toc }
 
+The `max-height` property sets the maximum vertical dimension of an element in PDF documents. It ensures that an element will never be taller than the specified value, even if its content would require more space. This property is essential for controlling layout overflow, maintaining consistent page breaks, and creating fixed-height sections that adapt to varying content amounts.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `max-height` property sets the maximum vertical dimension of an element in PDF documents. It ensures that an element will never be taller than the specified value, even if its content would require more space. This property is essential for controlling layout overflow, maintaining consistent page breaks, and creating fixed-height sections that adapt to varying content amounts.
 
 ---
 
@@ -95,9 +91,6 @@ The max-height property supports dynamic value binding through template expressi
 ### Example 1: Images with configurable maximum heights
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -123,13 +116,7 @@ The max-height property supports dynamic value binding through template expressi
 {% endraw %}
 
 
-
-
-
 ### Example 2: Content sections with data-driven height limits
-
-
-
 
 
 {% raw %}
@@ -158,13 +145,7 @@ The max-height property supports dynamic value binding through template expressi
 {% endraw %}
 
 
-
-
-
 ### Example 3: Cards with variable maximum heights
-
-
-
 
 
 {% raw %}
@@ -201,13 +182,7 @@ The max-height property supports dynamic value binding through template expressi
 {% endraw %}
 
 
-
-
-
 ### Example 4: Dashboard panels with configurable height constraints
-
-
-
 
 
 {% raw %}
@@ -248,9 +223,6 @@ The max-height property supports dynamic value binding through template expressi
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,22 +12,20 @@ has_toc: false
 # toUpper() : Convert to Uppercase
 {: .no_toc }
 
+Convert a string to uppercase letters.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert a string to uppercase letters.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The string converted to uppercase.
 ### Basic Uppercase
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{toUpper(model.text)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Headers and Titles
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h1>{{toUpper(model.title)}}</h1>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,17 +100,11 @@ doc.Params["model"] = new {
 ### Product Codes
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>SKU: {{toUpper(model.sku)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -142,17 +122,11 @@ doc.Params["model"] = new {
 ### Capitalize First Letter
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{toUpper(substring(model.name, 0, 1))}}{{substring(model.name, 1)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -170,9 +144,6 @@ doc.Params["model"] = new {
 ### Emphasis
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.alerts}}
@@ -182,9 +153,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

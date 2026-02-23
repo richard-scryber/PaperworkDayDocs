@@ -12,22 +12,20 @@ has_toc: false
 # sin() : Sine Function
 {: .no_toc }
 
+Calculate the sine of an angle (in radians).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the sine of an angle (in radians).
 
 ## Signature
 
@@ -58,17 +56,11 @@ The sine of the angle (value between -1 and 1).
 ### Basic Sine
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>sin(π/2) = {{format(sin(pi() / 2), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -79,9 +71,6 @@ The sine of the angle (value between -1 and 1).
 ### Convert Degrees to Radians First
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>sin(30°) = {{format(sin(radians(30)), '0.000')}}</p>
@@ -89,9 +78,6 @@ The sine of the angle (value between -1 and 1).
 <p>sin(90°) = {{format(sin(radians(90)), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -104,17 +90,11 @@ The sine of the angle (value between -1 and 1).
 ### Calculate Wave Position
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Y = {{format(model.amplitude * sin(model.angle), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

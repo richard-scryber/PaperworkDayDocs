@@ -12,6 +12,8 @@ has_toc: false
 # <= : Less Than or Equal Operator
 {: .no_toc }
 
+Compare if the left value is less than or equal to the right value.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,16 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Compare if the left value is less than or equal to the right value. 
-
-*Note*: even within attributes, xml (and as such xhtml require the < and the & to be escaped within templates.)
 
 ## Syntax
 
@@ -74,9 +70,6 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 ### Low Stock Alert
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.stock <= 10}}
@@ -87,10 +80,6 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -111,9 +100,6 @@ doc.Params["model"] = new {
 ### Score Validation
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.score <= 100}}
@@ -125,14 +111,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Capacity Check
-
-
-
 
 
 {% raw %}
@@ -144,10 +123,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -166,9 +141,6 @@ doc.Params["model"] = new {
 ### Date Deadline Check
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.dueDate <= model.today}}
@@ -181,14 +153,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Price Range Filter
-
-
-
 
 
 {% raw %}
@@ -204,10 +169,6 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**

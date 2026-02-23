@@ -12,6 +12,8 @@ has_toc: false
 # padding-inline : Inline Padding Shorthand Property
 {: .no_toc }
 
+The `padding-inline` property is a logical shorthand for setting both `padding-inline-start` and `padding-inline-end` of an element in PDF documents. This property adapts to the writing direction, making it ideal for creating internationalized documents that work in both LTR and RTL languages.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `padding-inline` property is a logical shorthand for setting both `padding-inline-start` and `padding-inline-end` of an element in PDF documents. This property adapts to the writing direction, making it ideal for creating internationalized documents that work in both LTR and RTL languages.
 
 ---
 
@@ -94,9 +90,6 @@ The `padding-inline` property supports dynamic values through data binding, enab
 ### Example 1: Dynamic card padding based on content type
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -118,9 +111,6 @@ The `padding-inline` property supports dynamic values through data binding, enab
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -133,9 +123,6 @@ Data context:
 ```
 
 ### Example 2: Responsive invoice layout with data-driven padding
-
-
-
 
 
 {% raw %}
@@ -164,9 +151,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -181,9 +165,6 @@ Data context:
 ```
 
 ### Example 3: Form fields with variable padding
-
-
-
 
 
 {% raw %}
@@ -211,9 +192,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

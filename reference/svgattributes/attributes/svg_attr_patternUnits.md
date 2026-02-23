@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @patternUnits : The Pattern Coordinate System Attribute
+{: .no_toc }
 
 The `patternUnits` attribute defines the coordinate system for the pattern's positioning attributes (`x`, `y`, `width`, `height`). It determines whether the pattern tile dimensions are relative to the filled shape or absolute in document space.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -78,9 +92,6 @@ The `patternUnits` attribute is supported on:
 Choose coordinate system based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { useRelative: true, tileSize: 50 } -->
@@ -107,15 +118,9 @@ Choose coordinate system based on data:
 {% endraw %}
 
 
-
-
-
 ### Adaptive Pattern Sizing
 
 Switch between responsive and fixed patterns:
-
-
-
 
 
 {% raw %}
@@ -143,15 +148,9 @@ Switch between responsive and fixed patterns:
 {% endraw %}
 
 
-
-
-
 ### Background Pattern Library
 
 Create reusable patterns with different coordinate systems:
-
-
-
 
 
 {% raw %}
@@ -201,15 +200,9 @@ Create reusable patterns with different coordinate systems:
 {% endraw %}
 
 
-
-
-
 ### Chart Background with Fixed Grid
 
 Use userSpaceOnUse for consistent grid patterns:
-
-
-
 
 
 {% raw %}
@@ -234,9 +227,6 @@ Use userSpaceOnUse for consistent grid patterns:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

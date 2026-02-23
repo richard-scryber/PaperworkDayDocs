@@ -12,6 +12,8 @@ has_toc: false
 # padding-right : Right Padding Property
 {: .no_toc }
 
+The `padding-right` property sets the right padding of an element in PDF documents. Right padding creates space inside the element to the right of the content, between the right border and the content, inheriting the element's background color.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `padding-right` property sets the right padding of an element in PDF documents. Right padding creates space inside the element to the right of the content, between the right border and the content, inheriting the element's background color.
 
 ---
 
@@ -92,9 +88,6 @@ The `padding-right` property supports dynamic values through data binding, allow
 ### Example 1: Alert boxes with icon space
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -117,9 +110,6 @@ The `padding-right` property supports dynamic values through data binding, allow
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -131,9 +121,6 @@ Data context:
 ```
 
 ### Example 2: Table cells with dynamic padding
-
-
-
 
 
 {% raw %}
@@ -177,9 +164,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -190,9 +174,6 @@ Data context:
 ```
 
 ### Example 3: Button padding based on size
-
-
-
 
 
 {% raw %}
@@ -213,9 +194,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

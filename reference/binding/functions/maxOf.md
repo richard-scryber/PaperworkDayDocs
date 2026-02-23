@@ -12,22 +12,20 @@ has_toc: false
 # maxOf() : Find Maximum Property Value
 {: .no_toc }
 
+Find the maximum (largest) value of a specific numeric property across all items in a collection.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Find the maximum (largest) value of a specific numeric property across all items in a collection.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The largest value of the specified property. Returns null for empty collections.
 ### Highest Price
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Highest price: ${{maxOf(model.products, 'price')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -91,9 +83,6 @@ doc.Params["model"] = new {
 ### Order Size Analysis
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Order Statistics</h3>
@@ -102,9 +91,6 @@ doc.Params["model"] = new {
 <p>Average order: ${{round(averageOf(model.orders, 'total'), 2)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -130,9 +116,6 @@ doc.Params["model"] = new {
 ### Server Load Monitoring
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Server Performance</h3>
@@ -141,9 +124,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -182,9 +162,6 @@ doc.Params["model"] = new {
 ### Capacity Planning
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Maximum capacity: {{maxOf(model.locations, 'capacity')}} people</p>
@@ -194,9 +171,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

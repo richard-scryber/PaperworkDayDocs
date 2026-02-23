@@ -12,29 +12,22 @@ has_toc: false
 # else if : Alternative Condition Helper
 {: .no_toc }
 
+Provides alternative conditional branches within an `{% raw %}{{#if}}{% endraw %}` block. Multiple `{% raw %}{{else if}}{% endraw %}` branches can be chained to create complex conditional logic.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
 
-## Summary
-
-Provides alternative conditional branches within an `{% raw %}{{#if}}{% endraw %}` block. Multiple `{% raw %}{{else if}}{% endraw %}` branches can be chained to create complex conditional logic.
-
-**Based on:** Additional [`<when>` elements](../../components/choose.md) in the `<choose>` structure
-
 ## Syntax
-
-
-
 
 
 {% raw %}
@@ -50,9 +43,6 @@ Provides alternative conditional branches within an `{% raw %}{{#if}}{% endraw %
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -87,9 +77,6 @@ Same as `{% raw %}{{#if}}{% endraw %}`:
 ### Grade Classification
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if model.score >= 90}}
@@ -107,9 +94,6 @@ Same as `{% raw %}{{#if}}{% endraw %}`:
 {% endraw %}
 
 
-
-
-
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -123,9 +107,6 @@ doc.Params["model"] = new {
 ```
 
 ### Order Status
-
-
-
 
 
 {% raw %}
@@ -148,9 +129,6 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -168,9 +146,6 @@ doc.Params["model"] = new {
 ### Age Group Classification
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if model.age < 13}}
@@ -186,9 +161,6 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -202,9 +174,6 @@ doc.Params["model"] = new {
 ```
 
 ### Priority Level with Multiple Conditions
-
-
-
 
 
 {% raw %}
@@ -230,17 +199,11 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ---
 
 ## Underlying Implementation
 
 The `{% raw %}{{else if}}{% endraw %}` helper compiles to additional `<when>` elements in the Scryber `<choose>` structure:
-
-
-
 
 
 {% raw %}
@@ -261,9 +224,6 @@ The `{% raw %}{{else if}}{% endraw %}` helper compiles to additional `<when>` el
 </choose>
 ```
 {% endraw %}
-
-
-
 
 
 Conditions are evaluated in order from top to bottom. Only the first true condition is rendered.

@@ -12,6 +12,8 @@ has_toc: false
 # overflow-y : Vertical Overflow Property
 {: .no_toc }
 
+The `overflow-y` property controls how content is handled when it exceeds the vertical boundaries of its containing element. This allows independent control of vertical overflow behavior, essential for fixed-height containers, content cards, and paginated layouts in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `overflow-y` property controls how content is handled when it exceeds the vertical boundaries of its containing element. This allows independent control of vertical overflow behavior, essential for fixed-height containers, content cards, and paginated layouts in PDF documents.
 
 ---
 
@@ -93,9 +89,6 @@ The overflow-y property integrates with data binding to manage vertical content 
 ### Example 1: Dynamic card heights with overflow control
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -130,13 +123,7 @@ The overflow-y property integrates with data binding to manage vertical content 
 {% endraw %}
 
 
-
-
-
 ### Example 2: Adaptive overflow for dashboard panels
-
-
-
 
 
 {% raw %}
@@ -182,13 +169,7 @@ The overflow-y property integrates with data binding to manage vertical content 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Responsive content lists with overflow
-
-
-
 
 
 {% raw %}
@@ -238,9 +219,6 @@ The overflow-y property integrates with data binding to manage vertical content 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

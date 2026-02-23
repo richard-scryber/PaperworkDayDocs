@@ -12,6 +12,8 @@ has_toc: false
 # margin-left : Left Margin Property
 {: .no_toc }
 
+The `margin-left` property sets the left margin of an element in PDF documents. The left margin creates space to the left of the element, separating it from adjacent elements or the page edge and controlling horizontal spacing in document layouts.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `margin-left` property sets the left margin of an element in PDF documents. The left margin creates space to the left of the element, separating it from adjacent elements or the page edge and controlling horizontal spacing in document layouts.
 
 ---
 
@@ -94,9 +90,6 @@ The `margin-left` property supports dynamic values through data binding, allowin
 ### Example 1: Dynamic indentation based on content level
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -134,9 +127,6 @@ The `margin-left` property supports dynamic values through data binding, allowin
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -148,9 +138,6 @@ Data context:
 ```
 
 ### Example 2: Invoice line items with dynamic indentation
-
-
-
 
 
 {% raw %}
@@ -193,9 +180,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -214,9 +198,6 @@ Data context:
 ```
 
 ### Example 3: Chat message alignment based on sender
-
-
-
 
 
 {% raw %}
@@ -246,9 +227,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

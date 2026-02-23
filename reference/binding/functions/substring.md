@@ -12,22 +12,20 @@ has_toc: false
 # substring() : Extract Substring
 {: .no_toc }
 
+Extract a portion of a string starting at a specified position.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract a portion of a string starting at a specified position.
 
 ## Signature
 
@@ -60,17 +58,11 @@ The extracted substring.
 ### Extract First N Characters
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Short Name: {{substring(model.fullName, 0, 10)}}...</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,17 +80,11 @@ doc.Params["model"] = new {
 ### Extract from Position to End
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Last Name: {{substring(model.fullName, 5)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -116,9 +102,6 @@ doc.Params["model"] = new {
 ### Truncate Long Text
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.articles}}
@@ -133,9 +116,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -163,17 +143,11 @@ doc.Params["model"] = new {
 ### Extract Middle Portion
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Code: {{substring(model.fullCode, 4, 8)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -191,17 +165,11 @@ doc.Params["model"] = new {
 ### First Initial
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Initial: {{toUpper(substring(model.name, 0, 1))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

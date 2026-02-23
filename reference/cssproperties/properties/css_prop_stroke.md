@@ -12,6 +12,8 @@ has_toc: false
 # stroke : SVG Stroke Color Property
 {: .no_toc }
 
+The `stroke` property sets the outline color of SVG shapes and vector elements in PDF documents. This property is essential for creating borders around shapes, drawing lines, and defining the edges of vector graphics.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `stroke` property sets the outline color of SVG shapes and vector elements in PDF documents. This property is essential for creating borders around shapes, drawing lines, and defining the edges of vector graphics.
 
 ---
 
@@ -100,9 +96,6 @@ The `stroke` property can be dynamically set using data binding expressions, ena
 ### Example 1: Status-based outline colors
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -128,9 +121,6 @@ The `stroke` property can be dynamically set using data binding expressions, ena
 {% endraw %}
 
 
-
-
-
 With model data:
 ```json
 {
@@ -143,9 +133,6 @@ With model data:
 ```
 
 ### Example 2: Conditional network connection colors
-
-
-
 
 
 {% raw %}
@@ -183,13 +170,7 @@ With model data:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Category-based border colors from theme
-
-
-
 
 
 {% raw %}
@@ -215,9 +196,6 @@ With model data:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 With theme configuration:

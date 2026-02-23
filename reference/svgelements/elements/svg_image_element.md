@@ -10,24 +10,20 @@ has_toc: false
 ---
 
 # &lt;image&gt; : The SVG Image Element
+{: .no_toc }
 
 The `<image>` element is used to embed raster images (PNG, JPEG, etc.) within SVG graphics. It provides precise positioning and sizing control for images in vector-based documents and supports transformations.
 
 ---
 
-## Summary
-
-The `<image>` element embeds external image resources into SVG content. Unlike HTML img elements, SVG images use a coordinate-based positioning system and can be transformed using SVG transformation matrices. Images can be sourced from local files, URLs, or data URIs.
-
-Key features:
-- Embed PNG, JPEG, GIF, and other image formats
-- Precise positioning with x, y coordinates
-- Explicit width and height control
-- Aspect ratio preservation options
-- Transformation support (rotate, scale, skew)
-- Opacity control
-- Data binding for dynamic image sources
-- Support for base64 encoded data URIs
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 
@@ -125,9 +121,6 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 ### Dynamic Image Source
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Simple source binding -->
@@ -144,13 +137,7 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 {% endraw %}
 
 
-
-
-
 ### Dynamic Positioning
-
-
-
 
 
 {% raw %}
@@ -172,13 +159,7 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 {% endraw %}
 
 
-
-
-
 ### Dynamic Sizing
-
-
-
 
 
 {% raw %}
@@ -200,13 +181,7 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 {% endraw %}
 
 
-
-
-
 ### Conditional Display
-
-
-
 
 
 {% raw %}
@@ -230,13 +205,7 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 {% endraw %}
 
 
-
-
-
 ### Template Iteration
-
-
-
 
 
 {% raw %}
@@ -262,9 +231,6 @@ The `<image>` element supports dynamic source URLs, positioning, and sizing thro
 </template>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -431,9 +397,6 @@ Circular profile photo (clipped with clipPath):
 Dynamic logo based on model:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { companyLogo: "./images/acme-corp-logo.png" } -->
@@ -446,15 +409,9 @@ Dynamic logo based on model:
 {% endraw %}
 
 
-
-
-
 ### 8. Conditional Badge
 
 Badge shown based on status:
-
-
-
 
 
 {% raw %}
@@ -469,15 +426,9 @@ Badge shown based on status:
 {% endraw %}
 
 
-
-
-
 ### 9. Product Thumbnail Grid
 
 Grid of product images:
-
-
-
 
 
 {% raw %}
@@ -496,15 +447,9 @@ Grid of product images:
 {% endraw %}
 
 
-
-
-
 ### 10. Chart with Icon Markers
 
 Data points with icon markers:
-
-
-
 
 
 {% raw %}
@@ -528,15 +473,9 @@ Data points with icon markers:
 {% endraw %}
 
 
-
-
-
 ### 11. Status Icon
 
 Status indicator icon with color coding:
-
-
-
 
 
 {% raw %}
@@ -552,9 +491,6 @@ Status indicator icon with color coding:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 12. Background Image
@@ -582,9 +518,6 @@ Full background image with content overlay:
 Horizontal row of partner logos:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { partners: [{logo: "partner1.png", name: "ABC"}, ...] } -->
@@ -604,9 +537,6 @@ Horizontal row of partner logos:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 14. Image with Border Frame
@@ -630,9 +560,6 @@ Image inside decorative border:
 Avatar with size based on user tier:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { userAvatar: "user123.jpg", userTier: 2 } -->
@@ -654,15 +581,9 @@ Avatar with size based on user tier:
 {% endraw %}
 
 
-
-
-
 ### 16. Comparison Layout
 
 Side-by-side image comparison:
-
-
-
 
 
 {% raw %}
@@ -685,15 +606,9 @@ Side-by-side image comparison:
 {% endraw %}
 
 
-
-
-
 ### 17. Category Icons
 
 Category selection with icons:
-
-
-
 
 
 {% raw %}
@@ -730,15 +645,9 @@ Category selection with icons:
 {% endraw %}
 
 
-
-
-
 ### 18. Report Header with Logo
 
 Report header combining logo and text:
-
-
-
 
 
 {% raw %}
@@ -763,15 +672,9 @@ Report header combining logo and text:
 {% endraw %}
 
 
-
-
-
 ### 19. Image Gallery with Captions
 
 Gallery layout with captions:
-
-
-
 
 
 {% raw %}
@@ -801,15 +704,9 @@ Gallery layout with captions:
 {% endraw %}
 
 
-
-
-
 ### 20. QR Code Placement
 
 QR code with instructions:
-
-
-
 
 
 {% raw %}
@@ -835,9 +732,6 @@ QR code with instructions:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

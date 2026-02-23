@@ -12,6 +12,8 @@ has_toc: false
 # min-height : Minimum Height Property
 {: .no_toc }
 
+The `min-height` property sets the minimum vertical dimension of an element in PDF documents. It ensures that an element will never be shorter than the specified value, even if its content would require less space. This property is crucial for maintaining consistent layouts and preventing elements from collapsing when content is minimal.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `min-height` property sets the minimum vertical dimension of an element in PDF documents. It ensures that an element will never be shorter than the specified value, even if its content would require less space. This property is crucial for maintaining consistent layouts and preventing elements from collapsing when content is minimal.
 
 ---
 
@@ -97,9 +93,6 @@ The min-height property supports dynamic value binding through template expressi
 ### Example 1: Cards with variable minimum heights
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -133,13 +126,7 @@ The min-height property supports dynamic value binding through template expressi
 {% endraw %}
 
 
-
-
-
 ### Example 2: Section headers with data-driven minimum heights
-
-
-
 
 
 {% raw %}
@@ -167,13 +154,7 @@ The min-height property supports dynamic value binding through template expressi
 {% endraw %}
 
 
-
-
-
 ### Example 3: Table rows with conditional minimum heights
-
-
-
 
 
 {% raw %}
@@ -215,13 +196,7 @@ The min-height property supports dynamic value binding through template expressi
 {% endraw %}
 
 
-
-
-
 ### Example 4: Dashboard panels with responsive minimum heights
-
-
-
 
 
 {% raw %}
@@ -261,9 +236,6 @@ The min-height property supports dynamic value binding through template expressi
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

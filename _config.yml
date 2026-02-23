@@ -14,6 +14,13 @@ aux_links:
 
 heading_anchors: false
 
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+
 callouts:
   highlight:
     color: yellow

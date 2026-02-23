@@ -12,6 +12,8 @@ has_toc: false
 # font-size : The Font Size Property
 {: .no_toc }
 
+The `font-size` property sets the size of text in PDF documents. It accepts absolute length values (points, pixels, etc.) or predefined keyword values that map to specific point sizes. Font size is fundamental to text rendering and affects the visual hierarchy and readability of PDF content.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,13 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-
-The `font-size` property sets the size of text in PDF documents. It accepts absolute length values (points, pixels, etc.) or predefined keyword values that map to specific point sizes. Font size is fundamental to text rendering and affects the visual hierarchy and readability of PDF content.
 
 ---
 
@@ -113,9 +108,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 ### Data Binding Examples
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Dynamic font size from model -->
@@ -147,9 +139,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Note:** Bound font-size values should include units (e.g., 'pt', 'px'). Ensure the bound data provides valid CSS length values to avoid rendering issues.

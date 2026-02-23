@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @orient : The Marker Orientation Attribute
+{: .no_toc }
 
 The `orient` attribute defines the orientation (rotation angle) of a marker element relative to the shape it marks. It determines whether markers automatically rotate to align with the path direction or use a fixed angle.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -83,9 +97,6 @@ The `orient` attribute is supported on:
 Switch between auto and fixed orientation based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { useAutoOrient: true, fixedAngle: 45 } -->
@@ -106,15 +117,9 @@ Switch between auto and fixed orientation based on data:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Arrow Angles
 
 Set marker angles from data for directional indicators:
-
-
-
 
 
 {% raw %}
@@ -146,15 +151,9 @@ Set marker angles from data for directional indicators:
 {% endraw %}
 
 
-
-
-
 ### Conditional Reversed Orientation
 
 Use reversed orientation for bidirectional flows:
-
-
-
 
 
 {% raw %}
@@ -184,15 +183,9 @@ Use reversed orientation for bidirectional flows:
 {% endraw %}
 
 
-
-
-
 ### Clock Hand Positions
 
 Create clock-like indicators with precise angles:
-
-
-
 
 
 {% raw %}
@@ -232,9 +225,6 @@ Create clock-like indicators with precise angles:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

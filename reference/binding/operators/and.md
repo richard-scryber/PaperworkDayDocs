@@ -12,6 +12,8 @@ has_toc: false
 # && : Logical AND Operator
 {: .no_toc }
 
+Combine two boolean expressions. Returns true only if both operands are true.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Combine two boolean expressions. Returns true only if both operands are true.
 
 ## Syntax
 

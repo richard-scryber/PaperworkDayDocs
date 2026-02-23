@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @transform : The SVG Transform Attribute
+{: .no_toc }
 
 The `transform` attribute applies geometric transformations to SVG elements, allowing you to translate (move), rotate, scale, skew, or apply matrix transformations. Multiple transformations can be combined to create complex effects, and they can be dynamically controlled through data binding.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -24,9 +38,6 @@ The `transform` attribute modifies the coordinate system for an element and its 
 - Combine multiple transformations in sequence
 - Support data binding for dynamic transformations
 - Apply to groups to transform multiple elements together
-
-
-
 
 
 {% raw %}
@@ -47,9 +58,6 @@ The `transform` attribute modifies the coordinate system for an element and its 
 </g>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -149,9 +157,6 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 ### Dynamic Translation
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { x: 100, y: 50 } -->
@@ -162,13 +167,7 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 {% endraw %}
 
 
-
-
-
 ### Dynamic Rotation
-
-
-
 
 
 {% raw %}
@@ -181,13 +180,7 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 {% endraw %}
 
 
-
-
-
 ### Dynamic Scaling
-
-
-
 
 
 {% raw %}
@@ -200,13 +193,7 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 {% endraw %}
 
 
-
-
-
 ### Combined Dynamic Transformations
-
-
-
 
 
 {% raw %}
@@ -219,13 +206,7 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Repeated Transformations
-
-
-
 
 
 {% raw %}
@@ -240,13 +221,7 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 {% endraw %}
 
 
-
-
-
 ### Calculated Transformations
-
-
-
 
 
 {% raw %}
@@ -259,13 +234,7 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
 {% endraw %}
 
 
-
-
-
 ### Conditional Transformations
-
-
-
 
 
 {% raw %}
@@ -276,9 +245,6 @@ The `transform` attribute supports comprehensive data binding for dynamic transf
       fill="blue"/>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -613,9 +579,6 @@ Note that SVG transforms are different from CSS transforms:
 ### Dynamic Gauge Needle
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { gaugeValue: 75, minValue: 0, maxValue: 100 } -->
@@ -641,13 +604,7 @@ Note that SVG transforms are different from CSS transforms:
 {% endraw %}
 
 
-
-
-
 ### Circular Menu Items
-
-
-
 
 
 {% raw %}
@@ -674,9 +631,6 @@ Note that SVG transforms are different from CSS transforms:
 {% endraw %}
 
 
-
-
-
 ### Isometric Cube
 
 ```html
@@ -700,9 +654,6 @@ Note that SVG transforms are different from CSS transforms:
 ### Rotating Fan Blades
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { fanRotation: 45 } -->
@@ -723,13 +674,7 @@ Note that SVG transforms are different from CSS transforms:
 {% endraw %}
 
 
-
-
-
 ### Progress Wheel
-
-
-
 
 
 {% raw %}
@@ -754,13 +699,7 @@ Note that SVG transforms are different from CSS transforms:
 {% endraw %}
 
 
-
-
-
 ### Arrow Pointer
-
-
-
 
 
 {% raw %}
@@ -786,13 +725,7 @@ Note that SVG transforms are different from CSS transforms:
 {% endraw %}
 
 
-
-
-
 ### Scale Comparison
-
-
-
 
 
 {% raw %}
@@ -810,9 +743,6 @@ Note that SVG transforms are different from CSS transforms:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Skewed Perspective Box

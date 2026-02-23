@@ -12,6 +12,8 @@ has_toc: false
 # color : Text Color Property
 {: .no_toc }
 
+The `color` property sets the foreground color of text content in PDF elements. This property is fundamental for controlling text appearance and establishing visual hierarchy in generated PDFs.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `color` property sets the foreground color of text content in PDF elements. This property is fundamental for controlling text appearance and establishing visual hierarchy in generated PDFs.
 
 ---
 
@@ -91,9 +87,6 @@ The `color` property can be dynamically set using data binding expressions, enab
 ### Example 1: Status-based text colors in invoices
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -111,9 +104,6 @@ The `color` property can be dynamically set using data binding expressions, enab
 {% endraw %}
 
 
-
-
-
 With model data:
 ```json
 {
@@ -129,9 +119,6 @@ With model data:
 ```
 
 ### Example 2: Conditional colors based on values
-
-
-
 
 
 {% raw %}
@@ -170,13 +157,7 @@ With model data:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Brand colors from configuration
-
-
-
 
 
 {% raw %}
@@ -205,9 +186,6 @@ With model data:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 With configuration data:

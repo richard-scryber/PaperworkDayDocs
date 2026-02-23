@@ -12,6 +12,8 @@ has_toc: false
 # -pdf-li-postfix : List Item Postfix Property (Scryber Custom)
 {: .no_toc }
 
+The `-pdf-li-postfix` property is a Scryber-specific extension that adds custom text after list item markers. This property enables advanced list formatting by allowing you to append text, symbols, or punctuation to list numbers or bullets, creating professional documentation with custom marker styles like "1.", "A)", "1.1:", or "Item 5 -".
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,17 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `-pdf-li-postfix` property is a Scryber-specific extension that adds custom text after list item markers. This property enables advanced list formatting by allowing you to append text, symbols, or punctuation to list numbers or bullets, creating professional documentation with custom marker styles like "1.", "A)", "1.1:", or "Item 5 -".
-
----
-
-{: .note }
-Although the support for this property is expected to continue for the forseeable future, its functionality will be consumed into custom or pre-defined [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type.html) values.
 
 ---
 
@@ -98,9 +89,6 @@ The `-pdf-li-postfix` property supports data binding, enabling dynamic postfix t
 ### Example 1: Configurable postfix punctuation
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -120,9 +108,6 @@ The `-pdf-li-postfix` property supports data binding, enabling dynamic postfix t
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context (with period):**
@@ -164,9 +149,6 @@ Different document types can use appropriate postfix punctuation: periods for fo
 ### Example 2: Multilingual postfix conventions
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -186,9 +168,6 @@ Different document types can use appropriate postfix punctuation: periods for fo
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context (English/US):**
@@ -226,9 +205,6 @@ Different languages and regions have different conventions for list punctuation.
 ### Example 3: Legal document section numbering
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -254,9 +230,6 @@ Different languages and regions have different conventions for list punctuation.
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context (US jurisdiction):**

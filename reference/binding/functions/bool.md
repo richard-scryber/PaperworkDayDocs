@@ -12,22 +12,20 @@ has_toc: false
 # bool() : Convert to Boolean
 {: .no_toc }
 
+Convert a value to a boolean (true/false).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert a value to a boolean (true/false).
 
 ## Signature
 
@@ -72,9 +70,6 @@ bool(value)
 ### String to Boolean
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if bool(model.isActiveString)}}
@@ -84,9 +79,6 @@ bool(value)
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -104,9 +96,6 @@ doc.Params["model"] = new {
 ### Number to Boolean
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if bool(model.statusCode)}}
@@ -116,9 +105,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -136,9 +122,6 @@ doc.Params["model"] = new {
 ### Checkbox Value
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.features}}
@@ -152,9 +135,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

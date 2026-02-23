@@ -12,6 +12,8 @@ has_toc: false
 # background-color : Background Color Property
 {: .no_toc }
 
+The `background-color` property sets the background color of an element in PDF documents. This property is essential for creating visual distinction, highlighting content areas, and establishing document aesthetics.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `background-color` property sets the background color of an element in PDF documents. This property is essential for creating visual distinction, highlighting content areas, and establishing document aesthetics.
 
 ---
 
@@ -95,9 +91,6 @@ The `background-color` property can be dynamically set using data binding expres
 ### Example 1: Dynamic status backgrounds in reports
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -120,9 +113,6 @@ The `background-color` property can be dynamically set using data binding expres
 {% endraw %}
 
 
-
-
-
 With model data:
 ```json
 {
@@ -135,9 +125,6 @@ With model data:
 ```
 
 ### Example 2: Conditional highlighting based on thresholds
-
-
-
 
 
 {% raw %}
@@ -172,13 +159,7 @@ With model data:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Themed sections with brand colors
-
-
-
 
 
 {% raw %}
@@ -207,9 +188,6 @@ With model data:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 With configuration:

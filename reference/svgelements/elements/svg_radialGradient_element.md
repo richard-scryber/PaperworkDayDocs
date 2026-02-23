@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;radialGradient&gt; : The Radial Gradient Definition Element
+{: .no_toc }
 
 The `<radialGradient>` element defines a radial gradient fill that transitions between colors radiating from a focal point outward in a circular pattern. It must be placed inside an SVG `<defs>` section or directly within an `<svg>` canvas, and is referenced by its `id` attribute from SVG shapes and elements using the `fill` or `stroke` attributes.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -183,9 +197,6 @@ Radial gradients are ideal for:
 Bind radial gradient colors to data values:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { centerColor: "#f39c12", edgeColor: "#e74c3c" } -->
@@ -202,15 +213,9 @@ Bind radial gradient colors to data values:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Focal Point Position
 
 Create lighting effects with data-driven focal points:
-
-
-
 
 
 {% raw %}
@@ -229,13 +234,9 @@ Create lighting effects with data-driven focal points:
 {% endraw %}
 
 
-
-
-
 ### Conditional Gradient Based on Status
 
 Generate gradients based on data state:
-
 
 
 {% raw %}
@@ -255,13 +256,9 @@ Generate gradients based on data state:
 {% endraw %}
 
 
-
 ### Dynamic Gradient Radius
 
 Control gradient extent with data:
-
-
-
 
 
 {% raw %}
@@ -280,15 +277,9 @@ Control gradient extent with data:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Multi-Stop Gradients
 
 Generate complex gradients from data arrays:
-
-
-
 
 
 {% raw %}
@@ -304,9 +295,6 @@ Generate complex gradients from data arrays:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -563,9 +551,6 @@ Generate complex gradients from data arrays:
 ### Data-Driven Temperature Indicator
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { temperature: 85, maxTemp: 100 } -->
@@ -585,13 +570,7 @@ Generate complex gradients from data arrays:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Spotlight Position
-
-
-
 
 
 {% raw %}
@@ -608,9 +587,6 @@ Generate complex gradients from data arrays:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Progress Circle with Radial Background

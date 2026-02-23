@@ -12,6 +12,8 @@ has_toc: false
 # page : Page Context Property
 {: .no_toc }
 
+The `page` property specifies which named page context an element should use when generating PDF documents. This allows different parts of a document to use different page configurations (size, orientation, margins, headers, footers) by referencing named `@page` rules. It's essential for creating complex documents with varying page layouts.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `page` property specifies which named page context an element should use when generating PDF documents. This allows different parts of a document to use different page configurations (size, orientation, margins, headers, footers) by referencing named `@page` rules. It's essential for creating complex documents with varying page layouts.
 
 ---
 
@@ -89,9 +85,6 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
 ### Example 1: Data-driven page context selection
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -130,13 +123,7 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
 {% endraw %}
 
 
-
-
-
 ### Example 2: Document type-based page assignments
-
-
-
 
 
 {% raw %}
@@ -189,13 +176,7 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
 {% endraw %}
 
 
-
-
-
 ### Example 3: Named page sequences with conditional formatting
-
-
-
 
 
 {% raw %}
@@ -254,9 +235,6 @@ The `page` property supports data binding, enabling dynamic assignment of elemen
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,6 +12,8 @@ has_toc: false
 # border-right : Right Border Shorthand Property
 {: .no_toc }
 
+The `border-right` property is a shorthand that sets the width, style, and color of the right border of an element. This property is useful for creating vertical separators, sidebar edges, and asymmetric designs.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-right` property is a shorthand that sets the width, style, and color of the right border of an element. This property is useful for creating vertical separators, sidebar edges, and asymmetric designs.
 
 ---
 
@@ -93,9 +89,6 @@ The `border-right` property supports dynamic values through data binding, allowi
 ### Example 1: Column dividers with conditional styling
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -114,13 +107,7 @@ The `border-right` property supports dynamic values through data binding, allowi
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dashboard metrics with dynamic separators
-
-
-
 
 
 {% raw %}
@@ -142,9 +129,6 @@ The `border-right` property supports dynamic values through data binding, allowi
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -158,9 +142,6 @@ Data context:
 ```
 
 ### Example 3: Sidebar navigation with active indicator
-
-
-
 
 
 {% raw %}
@@ -178,9 +159,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

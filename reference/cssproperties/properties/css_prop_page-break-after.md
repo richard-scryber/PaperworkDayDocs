@@ -12,6 +12,8 @@ has_toc: false
 # page-break-after : Page Break After Property
 {: .no_toc }
 
+The `page-break-after` property controls whether a page break should occur after an element when generating PDF documents. This property is useful for ensuring specific content ends before a page break, separating sections, and controlling document flow. Note that this is a legacy CSS2 property; consider using the newer `break-after` property for more options.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `page-break-after` property controls whether a page break should occur after an element when generating PDF documents. This property is useful for ensuring specific content ends before a page break, separating sections, and controlling document flow. Note that this is a legacy CSS2 property; consider using the newer `break-after` property for more options.
 
 ---
 
@@ -96,9 +92,6 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 ### Example 1: Conditional page breaks after sections
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -123,13 +116,7 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic summary pages
-
-
-
 
 
 {% raw %}
@@ -161,13 +148,7 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Variable document structure with data-driven breaks
-
-
-
 
 
 {% raw %}
@@ -200,9 +181,6 @@ The `page-break-after` property supports data binding, enabling dynamic control 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

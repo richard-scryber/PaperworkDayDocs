@@ -12,6 +12,8 @@ has_toc: false
 # margin-bottom : Bottom Margin Property
 {: .no_toc }
 
+The `margin-bottom` property sets the bottom margin of an element in PDF documents. The bottom margin creates space below the element, separating it from following elements and controlling vertical spacing and document flow.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `margin-bottom` property sets the bottom margin of an element in PDF documents. The bottom margin creates space below the element, separating it from following elements and controlling vertical spacing and document flow.
 
 ---
 
@@ -93,9 +89,6 @@ The `margin-bottom` property supports dynamic values through data binding, allow
 ### Example 1: Dynamic paragraph spacing for different document types
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -122,9 +115,6 @@ The `margin-bottom` property supports dynamic values through data binding, allow
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -137,9 +127,6 @@ Data context:
 ```
 
 ### Example 2: Card spacing based on layout density
-
-
-
 
 
 {% raw %}
@@ -174,9 +161,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -187,9 +171,6 @@ Data context:
 ```
 
 ### Example 3: Form field spacing based on validation
-
-
-
 
 
 {% raw %}
@@ -229,9 +210,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

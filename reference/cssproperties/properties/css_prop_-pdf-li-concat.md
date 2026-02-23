@@ -12,6 +12,8 @@ has_toc: false
 # -pdf-li-concat : List Item Concatenation Property (Scryber Custom)
 {: .no_toc }
 
+The `-pdf-li-concat` property is a Scryber-specific extension that controls whether nested list item numbers are concatenated with their parent numbers to create hierarchical numbering schemes. This property is essential for creating professional documentation with compound numbering like 1.1, 1.2.3, or Section 2.3.1.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,18 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `-pdf-li-concat` property is a Scryber-specific extension that controls whether nested list item numbers are concatenated with their parent numbers to create hierarchical numbering schemes. This property is essential for creating professional documentation with compound numbering like 1.1, 1.2.3, or Section 2.3.1.
-
----
-
-{: .note }
-Although the support for this property is expected to continue for the forseeable future, its functionality will be consumed into custom or pre-defined [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type.html) values.
-
----
-
 
 ## Usage
 
@@ -91,9 +81,6 @@ The `-pdf-li-concat` property supports data binding, enabling dynamic control of
 ### Example 1: Dynamic hierarchical numbering
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -119,9 +106,6 @@ The `-pdf-li-concat` property supports data binding, enabling dynamic control of
 {% endraw %}
 
 
-
-
-
 **Data context:**
 ```json
 {
@@ -143,9 +127,6 @@ The `-pdf-li-concat` property supports data binding, enabling dynamic control of
 When `useHierarchical` is true, produces 1, 1.1, 1.2; when false, produces 1, 1, 2. This allows organizations to switch between numbering styles for different document types.
 
 ### Example 2: Legal document numbering by jurisdiction
-
-
-
 
 
 {% raw %}
@@ -174,9 +155,6 @@ When `useHierarchical` is true, produces 1, 1.1, 1.2; when false, produces 1, 1,
 {% endraw %}
 
 
-
-
-
 **Data context:**
 ```json
 {
@@ -200,9 +178,6 @@ When `useHierarchical` is true, produces 1, 1.1, 1.2; when false, produces 1, 1,
 Different legal jurisdictions may require different numbering conventions. This approach ensures compliance with local legal document standards.
 
 ### Example 3: Standards-compliant technical documentation
-
-
-
 
 
 {% raw %}
@@ -232,9 +207,6 @@ Different legal jurisdictions may require different numbering conventions. This 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**

@@ -12,6 +12,8 @@ has_toc: false
 # background : Background Shorthand Property
 {: .no_toc }
 
+The `background` property is a shorthand for setting multiple background-related properties in a single declaration. This property is essential for efficiently styling backgrounds in PDF documents, combining image, color, position, size, and repeat settings.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `background` property is a shorthand for setting multiple background-related properties in a single declaration. This property is essential for efficiently styling backgrounds in PDF documents, combining image, color, position, size, and repeat settings.
 
 ---
 
@@ -119,9 +115,6 @@ Background properties support dynamic data binding, allowing you to create perso
 ### Example 1: Dynamic company logo from data
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -140,15 +133,9 @@ Background properties support dynamic data binding, allowing you to create perso
 {% endraw %}
 
 
-
-
-
 This example dynamically loads company logos based on data, perfect for multi-tenant systems or white-label documents where each client needs their own branding.
 
 ### Example 2: Conditional background colors by status
-
-
-
 
 
 {% raw %}
@@ -170,15 +157,9 @@ This example dynamically loads company logos based on data, perfect for multi-te
 {% endraw %}
 
 
-
-
-
 Perfect for creating status-driven documents like approval letters, invoice status reports, or compliance certificates where visual indicators change based on state.
 
 ### Example 3: Data-driven watermarks and positioning
-
-
-
 
 
 {% raw %}
@@ -205,9 +186,6 @@ Perfect for creating status-driven documents like approval letters, invoice stat
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Enables dynamic document branding where watermark images, positions, sizes, and brand colors are all controlled by data. Ideal for template systems serving multiple organizations or document types.

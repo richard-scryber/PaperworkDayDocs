@@ -12,22 +12,20 @@ has_toc: false
 # average() : Calculate Average of Values
 {: .no_toc }
 
+Calculate the arithmetic mean (average) of numeric values in a collection.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the arithmetic mean (average) of numeric values in a collection.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The arithmetic mean of all values. Returns null for empty collections.
 ### Simple Average
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Average score: {{round(average(model.scores), 1)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Grade Report
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Student Performance</h3>
@@ -100,9 +89,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -127,9 +113,6 @@ doc.Params["model"] = new {
 ### Performance Metrics
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>API Performance Summary</h3>
@@ -138,9 +121,6 @@ doc.Params["model"] = new {
 <p>Slowest: {{max(collect(model.requests, 'responseTime'))}}ms</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -166,9 +146,6 @@ doc.Params["model"] = new {
 ### Price Analysis
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Product Pricing</h3>
@@ -177,9 +154,6 @@ doc.Params["model"] = new {
 <p>Price range: ${{min(collect(model.products, 'price'))}} - ${{max(collect(model.products, 'price'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

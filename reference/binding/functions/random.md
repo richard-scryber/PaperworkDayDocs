@@ -12,22 +12,20 @@ has_toc: false
 # random() : Random Number
 {: .no_toc }
 
+Generate a random number between 0 and 1.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Generate a random number between 0 and 1.
 
 ## Signature
 
@@ -56,17 +54,11 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 ### Basic Random
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Random: {{format(random(), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output (example):**
@@ -77,9 +69,6 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 ### Random Integer Range
 
 
-
-
-
 {% raw %}
 ```handlebars
 <!-- Random integer from 1 to 10 -->
@@ -88,13 +77,7 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 {% endraw %}
 
 
-
-
-
 ### Random Selection
-
-
-
 
 
 {% raw %}
@@ -105,13 +88,7 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 {% endraw %}
 
 
-
-
-
 ### Random Percentage
-
-
-
 
 
 {% raw %}
@@ -119,9 +96,6 @@ A random value between 0.0 (inclusive) and 1.0 (exclusive).
 <p>Random percentage: {{format(random() * 100, '0.0')}}%</p>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @markerUnits : The Marker Coordinate System Attribute
+{: .no_toc }
 
 The `markerUnits` attribute defines the coordinate system for the `markerWidth`, `markerHeight`, and marker content. It determines whether the marker scales with the stroke width of the shape it marks or uses absolute document coordinates.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -82,9 +96,6 @@ The `markerUnits` attribute is supported on:
 Choose coordinate system based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { useStrokeScaling: true, strokeWidth: 4 } -->
@@ -106,15 +117,9 @@ Choose coordinate system based on data:
 {% endraw %}
 
 
-
-
-
 ### Adaptive Marker Sizing
 
 Switch between proportional and fixed sizing:
-
-
-
 
 
 {% raw %}
@@ -146,15 +151,9 @@ Switch between proportional and fixed sizing:
 {% endraw %}
 
 
-
-
-
 ### Chart Visualization with Consistent Markers
 
 Use userSpaceOnUse for consistent marker sizes across varying line widths:
-
-
-
 
 
 {% raw %}
@@ -179,15 +178,9 @@ Use userSpaceOnUse for consistent marker sizes across varying line widths:
 {% endraw %}
 
 
-
-
-
 ### Responsive Arrow Sizing
 
 Create arrows that scale proportionally with line thickness:
-
-
-
 
 
 {% raw %}
@@ -211,9 +204,6 @@ Create arrows that scale proportionally with line thickness:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

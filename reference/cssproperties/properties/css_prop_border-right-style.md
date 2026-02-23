@@ -12,6 +12,8 @@ has_toc: false
 # border-top-style : Top Border Style Property
 {: .no_toc }
 
+The `border-top-style` property sets the line style of the top border.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-top-style` property sets the line style of the top border.
 
 ---
 
@@ -71,9 +67,6 @@ The `border-top-style` property supports dynamic values through data binding, al
 ### Example 1: Status-based border styles
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -92,13 +85,7 @@ The `border-top-style` property supports dynamic values through data binding, al
 {% endraw %}
 
 
-
-
-
 ### Example 2: Document formality indicators
-
-
-
 
 
 {% raw %}
@@ -119,13 +106,7 @@ The `border-top-style` property supports dynamic values through data binding, al
 {% endraw %}
 
 
-
-
-
 ### Example 3: Table row separators
-
-
-
 
 
 {% raw %}
@@ -144,9 +125,6 @@ The `border-top-style` property supports dynamic values through data binding, al
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

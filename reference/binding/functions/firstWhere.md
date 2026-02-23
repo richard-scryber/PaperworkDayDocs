@@ -12,22 +12,20 @@ has_toc: false
 # firstWhere() : Find First Matching Item
 {: .no_toc }
 
+Find and return the first item in a collection where a specific property matches a value.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Find and return the first item in a collection where a specific property matches a value.
 
 ## Signature
 
@@ -60,9 +58,6 @@ The first item where the specified property equals the given value, or null if n
 ### Find User by ID
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#with firstWhere(model.users, 'id', model.currentUserId)}}
@@ -71,9 +66,6 @@ The first item where the specified property equals the given value, or null if n
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -97,9 +89,6 @@ doc.Params["model"] = new {
 ### Get Product Details
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#with firstWhere(model.products, 'sku', 'WIDGET-001')}}
@@ -109,9 +98,6 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -135,9 +121,6 @@ doc.Params["model"] = new {
 ### Find First Active Item
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#with firstWhere(model.subscriptions, 'status', 'active')}}
@@ -148,9 +131,6 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -173,9 +153,6 @@ doc.Params["model"] = new {
 ### Lookup and Display Related Data
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.orderItems}}
@@ -185,9 +162,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

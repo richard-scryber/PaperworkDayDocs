@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @refX : The Marker Reference X Position Attribute
+{: .no_toc }
 
 The `refX` attribute defines the horizontal reference point of a marker - the X coordinate within the marker's coordinate system that aligns with the path vertex. This controls where the marker is positioned relative to the path point.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -84,9 +98,6 @@ The `refX` attribute is supported on:
 Adjust reference position based on marker size:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { markerSize: 12, alignCenter: true } -->
@@ -111,15 +122,9 @@ Adjust reference position based on marker size:
 {% endraw %}
 
 
-
-
-
 ### Conditional Alignment
 
 Change alignment based on marker type:
-
-
-
 
 
 {% raw %}
@@ -144,13 +149,7 @@ Change alignment based on marker type:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Marker Positioning
-
-
-
 
 
 {% raw %}
@@ -190,9 +189,6 @@ Change alignment based on marker type:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

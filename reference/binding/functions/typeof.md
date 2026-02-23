@@ -12,22 +12,20 @@ has_toc: false
 # typeof() : Get Type Name
 {: .no_toc }
 
+Get the type name of a value. Useful for debugging and conditional logic.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Get the type name of a value. Useful for debugging and conditional logic.
 
 ## Signature
 
@@ -74,18 +72,12 @@ The .NET type name of the value.
 ### Debug Output
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{log "Value type: " typeof(model.value) level="debug"}}
 <p>Value: {{model.value}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -103,9 +95,6 @@ Value type: System.Int32
 ### Type-Based Conditional
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if typeof(model.data) == 'System.String'}}
@@ -119,13 +108,7 @@ Value type: System.Int32
 {% endraw %}
 
 
-
-
-
 ### Debugging Collection Types
-
-
-
 
 
 {% raw %}
@@ -138,13 +121,7 @@ Value type: System.Int32
 {% endraw %}
 
 
-
-
-
 ### Type Inspection for Troubleshooting
-
-
-
 
 
 {% raw %}
@@ -161,9 +138,6 @@ Value type: System.Int32
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

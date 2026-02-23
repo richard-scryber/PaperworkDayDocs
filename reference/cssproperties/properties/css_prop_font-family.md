@@ -12,6 +12,8 @@ has_toc: false
 # font-family : The Font Family Property
 {: .no_toc }
 
+The `font-family` property specifies the typeface to be used for rendering text in PDF documents. It accepts a prioritized list of font family names, allowing for fallback options when the primary font is not available. Font names can be specified with or without quotes.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `font-family` property specifies the typeface to be used for rendering text in PDF documents. It accepts a prioritized list of font family names, allowing for fallback options when the primary font is not available. Font names can be specified with or without quotes.
 
 ---
 
@@ -99,9 +95,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 ### Data Binding Examples
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Dynamic font family from model -->
@@ -130,9 +123,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Note:** Ensure that font names from bound data match fonts available on the PDF generation system. Always include fallback fonts in the bound value or after the binding expression.

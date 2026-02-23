@@ -12,6 +12,8 @@ has_toc: false
 # border-bottom-width : Bottom Border Width Property
 {: .no_toc }
 
+The `border-bottom-width` property sets the width of the bottom border of an element.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-bottom-width` property sets the width of the bottom border of an element.
 
 ---
 
@@ -71,9 +67,6 @@ The `border-bottom-width` property supports dynamic values through data binding,
 ### Example 1: Dynamic heading underlines
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -93,13 +86,7 @@ The `border-bottom-width` property supports dynamic values through data binding,
 {% endraw %}
 
 
-
-
-
 ### Example 2: Table row emphasis
-
-
-
 
 
 {% raw %}
@@ -120,13 +107,7 @@ The `border-bottom-width` property supports dynamic values through data binding,
 {% endraw %}
 
 
-
-
-
 ### Example 3: Navigation active state
-
-
-
 
 
 {% raw %}
@@ -145,9 +126,6 @@ The `border-bottom-width` property supports dynamic values through data binding,
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

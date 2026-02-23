@@ -12,22 +12,20 @@ has_toc: false
 # date() : Convert to DateTime
 {: .no_toc }
 
+Convert a string or number to a DateTime object.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert a string or number to a DateTime object.
 
 ## Signature
 
@@ -70,17 +68,11 @@ A DateTime object representing the parsed date.
 ### Parse ISO Date
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Order Date: {{format(date(model.orderDate), 'MMMM dd, yyyy')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -98,17 +90,11 @@ doc.Params["model"] = new {
 ### Calculate Days Until
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Days until deadline: {{daysBetween(model.today, date(model.deadline))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -127,9 +113,6 @@ doc.Params["model"] = new {
 ### Format Different Date Strings
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.events}}
@@ -140,9 +123,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -175,18 +155,12 @@ doc.Params["model"] = new {
 ### Add Days to String Date
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Ship Date: {{format(date(model.orderDate), 'yyyy-MM-dd')}}</p>
 <p>Est. Delivery: {{format(addDays(date(model.orderDate), 5), 'yyyy-MM-dd')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

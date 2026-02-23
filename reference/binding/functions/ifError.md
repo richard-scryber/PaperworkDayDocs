@@ -12,22 +12,20 @@ has_toc: false
 # ifError() : Error Handling Expression
 {: .no_toc }
 
+Evaluate an expression and return a fallback value if an error occurs. This provides graceful error handling within binding expressions.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Evaluate an expression and return a fallback value if an error occurs. This provides graceful error handling within binding expressions.
 
 ## Signature
 
@@ -59,17 +57,11 @@ Returns the result of `expression` if successful, otherwise returns `fallbackVal
 ### Safe Division
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Average: {{ifError(model.total / model.count, 0)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,9 +80,6 @@ doc.Params["model"] = new {
 ### Safe Property Access
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.items}}
@@ -98,9 +87,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -122,17 +108,11 @@ doc.Params["model"] = new {
 ### Safe Type Conversion
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Value: {{ifError(int(model.userInput), -1)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -150,9 +130,6 @@ doc.Params["model"] = new {
 ### Safe Date Parsing
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.records}}
@@ -160,9 +137,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -184,17 +158,11 @@ doc.Params["model"] = new {
 ### Safe Array Access
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>First item: {{ifError(model.items[0], 'No items')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

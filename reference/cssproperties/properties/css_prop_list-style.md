@@ -12,6 +12,8 @@ has_toc: false
 # list-style : List Style Shorthand Property
 {: .no_toc }
 
+The `list-style` property is a shorthand for setting all list-related properties in a single declaration. It combines `list-style-type`, `list-style-position`, and `list-style-image` properties to control the appearance and positioning of list item markers.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `list-style` property is a shorthand for setting all list-related properties in a single declaration. It combines `list-style-type`, `list-style-position`, and `list-style-image` properties to control the appearance and positioning of list item markers.
 
 ---
 
@@ -98,9 +94,6 @@ The `list-style` property supports data binding, allowing you to dynamically con
 ### Example 1: Dynamic list marker types
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -120,9 +113,6 @@ The `list-style` property supports data binding, allowing you to dynamically con
 {% endraw %}
 
 
-
-
-
 **Data context:**
 ```json
 {
@@ -133,9 +123,6 @@ The `list-style` property supports data binding, allowing you to dynamically con
 This example allows switching between different list marker types (disc, circle, square, decimal, etc.) based on user preferences or document type.
 
 ### Example 2: Conditional formatting for document types
-
-
-
 
 
 {% raw %}
@@ -158,9 +145,6 @@ This example allows switching between different list marker types (disc, circle,
 {% endraw %}
 
 
-
-
-
 **Data context:**
 ```json
 {
@@ -174,9 +158,6 @@ This example allows switching between different list marker types (disc, circle,
 Different document types can use different numbering schemes: decimal for technical specs, upper-roman for legal documents, lower-alpha for questionnaires, etc.
 
 ### Example 3: Multilingual list formatting
-
-
-
 
 
 {% raw %}
@@ -197,9 +178,6 @@ Different document types can use different numbering schemes: decimal for techni
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**

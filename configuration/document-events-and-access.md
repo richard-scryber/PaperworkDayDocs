@@ -8,9 +8,7 @@ nav_order: 2
 
 # Document Remote Request Events and the Document Object Model (DOM)
 
-
-These two have been put together as they both revolve around a parsed document instance, that acts as the facade to the entire template. 
-It provides ways to extract and interact with the underlying content and handle requests for external content.
+They both revolve around a parsed document instance, these provides ways to extract and interact with the underlying content and handle requests for external content.
 
 ---
 
@@ -42,8 +40,8 @@ public class RemoteFileRequestedEventArgs : EventArgs
     // Request properties/methods:
     // - Request.FilePath: The path being requested
     // - Request.CompleteRequest(): Call this when done handling the request
-    // - Use Request.CompleteRequest(Stream, true, null): If successfull
-    // - Use Request.CompleteRequest(null, false, error.Message): If it falied.
+    // - Use Request.CompleteRequest(Stream, true, null): If successful
+    // - Use Request.CompleteRequest(null, false, error.Message): If it failed.
 }
 ```
 
@@ -82,7 +80,7 @@ doc.RemoteFileRegistered += (sender, args) =>
                 string actualPath = ResolveFontFromDatabase(fontId);
                 byte[] fontData = File.ReadAllBytes(actualPath);
 
-                //Success, so we can complete.
+                // Success, so we can complete.
                 request.CompleteRequest(fontData, true);
 
                 Console.WriteLine($"  ✓ Loaded from DB: {actualPath}");
@@ -169,7 +167,7 @@ doc.RemoteFileRegistered += (sender, args) =>
             request.CompleteRequest(null, false, ex);
         }
     }
-    // don't want to handle this request, so let processing contine as normal.
+    // don't want to handle this request, so let processing continue as normal.
 };
 
 doc.SaveAsPDF("output.pdf");

@@ -12,22 +12,20 @@ has_toc: false
 # regexSwap() : Replace Using Regular Expression
 {: .no_toc }
 
+Replace all occurrences matching a regular expression pattern with a replacement string.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Replace all occurrences matching a regular expression pattern with a replacement string.
 
 ## Signature
 
@@ -60,17 +58,11 @@ The string with all pattern matches replaced.
 ### Remove All Digits
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.text, '\\d', '')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,17 +80,11 @@ doc.Params["model"] = new {
 ### Mask Phone Numbers
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.phone, '\\d', 'X')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -116,17 +102,11 @@ doc.Params["model"] = new {
 ### Replace Multiple Spaces
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.text, '\\s+', ' ')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -144,17 +124,11 @@ doc.Params["model"] = new {
 ### Sanitize Special Characters
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.filename, '[^a-zA-Z0-9_.-]', '_')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -172,9 +146,6 @@ doc.Params["model"] = new {
 ### Format Numbers with Separators
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{regexSwap(model.number, '(\\d)(?=(\\d{3})+$)', '$1,')}}</p>
@@ -182,13 +153,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Remove HTML Tags
-
-
-
 
 
 {% raw %}
@@ -196,9 +161,6 @@ doc.Params["model"] = new {
 <p>{{regexSwap(model.html, '<[^>]+>', '')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -216,18 +178,12 @@ doc.Params["model"] = new {
 ### Convert Dates
 
 
-
-
-
 {% raw %}
 ```handlebars
 <!-- Convert MM/DD/YYYY to YYYY-MM-DD -->
 <p>{{regexSwap(model.date, '(\\d{2})/(\\d{2})/(\\d{4})', '$3-$1-$2')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

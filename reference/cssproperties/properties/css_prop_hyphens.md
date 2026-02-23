@@ -12,6 +12,8 @@ has_toc: false
 # hyphens : Hyphenation Property
 {: .no_toc }
 
+The `hyphens` property controls whether and how words should be hyphenated when text wraps across multiple lines. This is particularly important for justified text, narrow columns, and languages with long compound words in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `hyphens` property controls whether and how words should be hyphenated when text wraps across multiple lines. This is particularly important for justified text, narrow columns, and languages with long compound words in PDF documents.
 
 ---
 
@@ -77,9 +73,6 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
 ### Example 1: Language-Specific Hyphenation
 
 
-
-
-
 {% raw %}
 ```html
 <div style="width: 200pt; padding: 15pt; border: 1pt solid #ccc" lang="{{model.language.code}}">
@@ -111,13 +104,7 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
 {% endraw %}
 
 
-
-
-
 ### Example 2: Column Width-Based Hyphenation
-
-
-
 
 
 {% raw %}
@@ -151,13 +138,7 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
 {% endraw %}
 
 
-
-
-
 ### Example 3: Accessibility-Enhanced Hyphenation Control
-
-
-
 
 
 {% raw %}
@@ -182,9 +163,6 @@ The `hyphens` property can be dynamically controlled through data binding, enabl
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,22 +12,20 @@ has_toc: false
 # count() : Count Items in Collection
 {: .no_toc }
 
+Count the number of items in a collection or array.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Count the number of items in a collection or array.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The number of items in the collection. Returns 0 for null or empty collections.
 ### Simple Count
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Total items: {{count(model.items)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Summary Statistics
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Order Summary</h3>
@@ -97,9 +86,6 @@ doc.Params["model"] = new {
 <p>Average price: ${{round(sum(collect(model.orderItems, 'price')) / count(model.orderItems), 2)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -124,9 +110,6 @@ doc.Params["model"] = new {
 ### Conditional Display Based on Count
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if (count(model.notifications) > 0)}}
@@ -136,9 +119,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -156,17 +136,11 @@ doc.Params["model"] = new {
 ### Progress Indicator
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Progress: {{count(selectWhere(model.tasks, 'completed', true))}} of {{count(model.tasks)}} tasks completed</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

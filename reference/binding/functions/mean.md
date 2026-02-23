@@ -12,22 +12,20 @@ has_toc: false
 # mean() : Calculate Mean (Average)
 {: .no_toc }
 
+Calculate the arithmetic mean of numeric values in a collection. This is a mathematical synonym for the `average()` function.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the arithmetic mean of numeric values in a collection. This is a mathematical synonym for the `average()` function.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The arithmetic mean of all values. Returns null for empty collections.
 ### Basic Mean Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Mean temperature: {{round(mean(model.temperatures), 1)}}°F</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Statistical Summary
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Data Analysis</h3>
@@ -98,9 +87,6 @@ doc.Params["model"] = new {
 <p>Max: {{max(model.values)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -122,9 +108,6 @@ doc.Params["model"] = new {
 ### Comparing Mean and Median
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Score Distribution</h3>
@@ -135,9 +118,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -158,17 +138,11 @@ doc.Params["model"] = new {
 ### Property-Based Mean
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Mean rating: {{round(mean(collect(model.reviews, 'rating')), 1)}} stars</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

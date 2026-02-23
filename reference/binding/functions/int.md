@@ -12,24 +12,20 @@ has_toc: false
 # int() : Convert to Integer
 {: .no_toc }
 
+Convert a value to a 32-bit integer. Truncates decimal values.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert a value to a 32-bit integer. Truncates decimal values.
-
-**Alias:** `integer()`
 
 ## Signature
 
@@ -61,17 +57,11 @@ A 32-bit integer representation of the value.
 ### Convert String to Integer
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Value: {{int(model.stringValue)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -89,17 +79,11 @@ doc.Params["model"] = new {
 ### Truncate Decimal
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Truncated: {{int(model.decimalValue)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -117,18 +101,12 @@ doc.Params["model"] = new {
 ### Calculate Whole Units
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Full boxes: {{int(model.items / model.boxSize)}}</p>
 <p>Remaining items: {{model.items % model.boxSize}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -148,17 +126,11 @@ doc.Params["model"] = new {
 ### Age Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Age: {{int(daysBetween(model.birthDate, model.today) / 365)}} years</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

@@ -12,22 +12,20 @@ has_toc: false
 # dayOfMonth() : Extract Day from Date
 {: .no_toc }
 
+Extract the day of the month component from a datetime value as a number (1-31).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract the day of the month component from a datetime value as a number (1-31).
 
 ## Signature
 
@@ -58,17 +56,11 @@ The day of the month as a number from 1 to 31.
 ### Display Day
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Day: {{dayOfMonth(model.date)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Custom Date Format
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Date: {{yearOf(model.date)}}-{{padLeft(string(monthOfYear(model.date)), 2, '0')}}-{{padLeft(string(dayOfMonth(model.date)), 2, '0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,9 +100,6 @@ doc.Params["model"] = new {
 ### Day Range Filter
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Events in First Half of Month</h3>
@@ -127,9 +110,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -153,9 +133,6 @@ doc.Params["model"] = new {
 ### Payment Schedule
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Next payment due:
@@ -167,9 +144,6 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

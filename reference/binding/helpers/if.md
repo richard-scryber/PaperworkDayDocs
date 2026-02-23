@@ -12,29 +12,22 @@ has_toc: false
 # #if : Conditional Rendering Helper
 {: .no_toc }
 
+Conditionally render content based on expressions. Supports multiple branches with `{% raw %}{{else if}}{% endraw %}` and `{% raw %}{{else}}{% endraw %}`.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
 
-## Summary
-
-Conditionally render content based on expressions. Supports multiple branches with `{% raw %}{{else if}}{% endraw %}` and `{% raw %}{{else}}{% endraw %}`.
-
-**Based on:** [`<choose>`, `<when>`, and `<otherwise>` elements](../../components/choose.md) for conditional template rendering
-
 ## Syntax
-
-
-
 
 
 {% raw %}
@@ -48,9 +41,6 @@ Conditionally render content based on expressions. Supports multiple branches wi
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -83,9 +73,6 @@ Conditionally render content based on expressions. Supports multiple branches wi
 ### Simple Condition
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if model.isActive}}
@@ -95,13 +82,7 @@ Conditionally render content based on expressions. Supports multiple branches wi
 {% endraw %}
 
 
-
-
-
 ### If-Else
-
-
-
 
 
 {% raw %}
@@ -115,13 +96,7 @@ Conditionally render content based on expressions. Supports multiple branches wi
 {% endraw %}
 
 
-
-
-
 ### Multiple Conditions
-
-
-
 
 
 {% raw %}
@@ -139,13 +114,7 @@ Conditionally render content based on expressions. Supports multiple branches wi
 {% endraw %}
 
 
-
-
-
 ### Comparison Operators
-
-
-
 
 
 {% raw %}
@@ -168,13 +137,7 @@ Conditionally render content based on expressions. Supports multiple branches wi
 {% endraw %}
 
 
-
-
-
 ### Logical Operators
-
-
-
 
 
 {% raw %}
@@ -196,13 +159,7 @@ Conditionally render content based on expressions. Supports multiple branches wi
 {% endraw %}
 
 
-
-
-
 ### With #each Context
-
-
-
 
 
 {% raw %}
@@ -224,17 +181,11 @@ Conditionally render content based on expressions. Supports multiple branches wi
 {% endraw %}
 
 
-
-
-
 ---
 
 ## Underlying Implementation
 
 The `{% raw %}{{#if}}{% endraw %}` helper compiles to Scryber's conditional rendering elements:
-
-
-
 
 
 {% raw %}
@@ -252,9 +203,6 @@ The `{% raw %}{{#if}}{% endraw %}` helper compiles to Scryber's conditional rend
 </choose>
 ```
 {% endraw %}
-
-
-
 
 
 This structure allows Scryber to evaluate conditions at databinding time and only render the matching branch.

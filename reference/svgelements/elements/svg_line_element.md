@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;line&gt; : SVG Line Element
+{: .no_toc }
 
 The `<line>` element draws a straight line between two points in SVG content within your PDF documents. It's essential for creating diagrams, charts, connectors, dividers, borders, and geometric patterns.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -85,9 +99,6 @@ The `<line>` element supports dynamic attribute values using data binding expres
 ### Example 1: Dynamic Line Coordinates
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { line: { x1: 10, y1: 20, x2: 190, y2: 80 } } -->
@@ -100,13 +111,7 @@ The `<line>` element supports dynamic attribute values using data binding expres
 {% endraw %}
 
 
-
-
-
 ### Example 2: Chart Grid Lines
-
-
-
 
 
 {% raw %}
@@ -122,13 +127,7 @@ The `<line>` element supports dynamic attribute values using data binding expres
 {% endraw %}
 
 
-
-
-
 ### Example 3: Connection Lines
-
-
-
 
 
 {% raw %}
@@ -146,9 +145,6 @@ The `<line>` element supports dynamic attribute values using data binding expres
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -434,9 +430,6 @@ Lines are efficient shapes for rendering. Use them for grids, axes, and connecto
 ### Dynamic Grid Lines
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { rows: 5, cols: 5, cellSize: 30 } -->
@@ -457,13 +450,7 @@ Lines are efficient shapes for rendering. Use them for grids, axes, and connecto
 {% endraw %}
 
 
-
-
-
 ### Progress Line
-
-
-
 
 
 {% raw %}
@@ -479,9 +466,6 @@ Lines are efficient shapes for rendering. Use them for grids, axes, and connecto
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

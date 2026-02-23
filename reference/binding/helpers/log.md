@@ -12,29 +12,22 @@ has_toc: false
 # log : Debug Logging Helper
 {: .no_toc }
 
+Output debug messages to the trace log during template processing. Useful for debugging data binding and template logic. Does not render any visible content in the PDF.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
 
-## Summary
-
-Output debug messages to the trace log during template processing. Useful for debugging data binding and template logic. Does not render any visible content in the PDF.
-
-**Based on:** [`<log>` element](../../components/log.md) for trace logging
-
 ## Syntax
-
-
-
 
 
 {% raw %}
@@ -43,9 +36,6 @@ Output debug messages to the trace log during template processing. Useful for de
 {{log message1 expression message2 level="info" category="debug"}}
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -76,9 +66,6 @@ Output debug messages to the trace log during template processing. Useful for de
 ### Basic Logging
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{log "Processing user profile"}}
@@ -86,13 +73,7 @@ Output debug messages to the trace log during template processing. Useful for de
 {% endraw %}
 
 
-
-
-
 ### Logging Values
-
-
-
 
 
 {% raw %}
@@ -102,9 +83,6 @@ Output debug messages to the trace log during template processing. Useful for de
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -125,9 +103,6 @@ User: John Doe (ID: 12345)
 ### With Log Level
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{log "Starting data processing" level="debug"}}
@@ -141,13 +116,7 @@ User: John Doe (ID: 12345)
 {% endraw %}
 
 
-
-
-
 ### With Category for Filtering
-
-
-
 
 
 {% raw %}
@@ -163,13 +132,7 @@ User: John Doe (ID: 12345)
 {% endraw %}
 
 
-
-
-
 ### Logging in Loops
-
-
-
 
 
 {% raw %}
@@ -183,9 +146,6 @@ User: John Doe (ID: 12345)
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -211,9 +171,6 @@ High-value order: $2100
 ### Logging with Expressions
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#with model.user}}
@@ -225,13 +182,7 @@ High-value order: $2100
 {% endraw %}
 
 
-
-
-
 ### Conditional Debugging
-
-
-
 
 
 {% raw %}
@@ -249,17 +200,11 @@ High-value order: $2100
 {% endraw %}
 
 
-
-
-
 ---
 
 ## Underlying Implementation
 
 The `{% raw %}{{log}}{% endraw %}` helper compiles to:
-
-
-
 
 
 {% raw %}
@@ -269,9 +214,6 @@ The `{% raw %}{{log}}{% endraw %}` helper compiles to:
      data-category="category name" />
 ```
 {% endraw %}
-
-
-
 
 
 The log entry is written to the document's trace log during databinding and does not produce any visible output in the PDF.

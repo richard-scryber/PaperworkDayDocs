@@ -20,6 +20,7 @@ This documentation covers the complete architecture for extending and configurin
 
 ### Extension Mechanisms
 - **[Document Controllers](document-controllers)** - Code-behind functionality with outlets and actions
+- **[Working in Code](working-in-code)** - Building and modifying component trees directly with the object model and typed style values
 - **[Custom Components](custom-components)** - Creating reusable PDF components with custom namespaces
 - **[Namespace Registration](namespace-registration)** - Mapping XML namespaces to .NET assemblies
 - **[Image Factories](image-factories)** - Custom image loading from databases, APIs, or other sources

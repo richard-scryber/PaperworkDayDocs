@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @href : The Hyperlink Reference Attribute
+{: .no_toc }
 
 The `href` attribute (or `xlink:href` in older SVG) specifies a reference to another resource or element. It's used to link to external resources (images, documents), reference reusable elements (gradients, patterns, markers), and create hyperlinks.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -98,9 +112,6 @@ The `href` attribute is supported on:
 Reference different gradients based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { gradientType: 'blue', status: 'active' } -->
@@ -131,15 +142,9 @@ Reference different gradients based on data:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Image Sources
 
 Load images from data properties:
-
-
-
 
 
 {% raw %}
@@ -158,15 +163,9 @@ Load images from data properties:
 {% endraw %}
 
 
-
-
-
 ### Reusable Components with Use
 
 Reference symbols dynamically:
-
-
-
 
 
 {% raw %}
@@ -194,15 +193,9 @@ Reference symbols dynamically:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Hyperlinks
 
 Create clickable elements with data-driven URLs:
-
-
-
 
 
 {% raw %}
@@ -223,15 +216,9 @@ Create clickable elements with data-driven URLs:
 {% endraw %}
 
 
-
-
-
 ### Pattern Library References
 
 Reference patterns from a library:
-
-
-
 
 
 {% raw %}
@@ -255,9 +242,6 @@ Reference patterns from a library:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

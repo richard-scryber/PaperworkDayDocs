@@ -12,6 +12,8 @@ has_toc: false
 # opacity : Element Opacity Property
 {: .no_toc }
 
+The `opacity` property controls the transparency level of an entire element, including all its children, backgrounds, borders, and text. This property is essential for creating fade effects, overlays, watermarks, and visual hierarchy in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `opacity` property controls the transparency level of an entire element, including all its children, backgrounds, borders, and text. This property is essential for creating fade effects, overlays, watermarks, and visual hierarchy in PDF documents.
 
 ---
 
@@ -93,9 +89,6 @@ The `opacity` property can be dynamically set using data binding expressions, en
 ### Example 1: Priority-based opacity in task lists
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -119,9 +112,6 @@ The `opacity` property can be dynamically set using data binding expressions, en
 {% endraw %}
 
 
-
-
-
 With model data:
 ```json
 {
@@ -134,9 +124,6 @@ With model data:
 ```
 
 ### Example 2: Conditional visibility based on status
-
-
-
 
 
 {% raw %}
@@ -162,13 +149,7 @@ With model data:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Age-based document opacity
-
-
-
 
 
 {% raw %}
@@ -192,9 +173,6 @@ With model data:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

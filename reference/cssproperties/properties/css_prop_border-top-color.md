@@ -12,6 +12,8 @@ has_toc: false
 # border-top-color : Top Border Color Property
 {: .no_toc }
 
+The `border-top-color` property sets the color of the top border.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-top-color` property sets the color of the top border.
 
 ---
 
@@ -77,9 +73,6 @@ The `border-top-color` property supports dynamic values through data binding, al
 ### Example 1: Status-based colors
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -101,9 +94,6 @@ The `border-top-color` property supports dynamic values through data binding, al
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -116,9 +106,6 @@ Data context:
 ```
 
 ### Example 2: Priority-based colors
-
-
-
 
 
 {% raw %}
@@ -141,13 +128,7 @@ Data context:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional alert colors
-
-
-
 
 
 {% raw %}
@@ -167,9 +148,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

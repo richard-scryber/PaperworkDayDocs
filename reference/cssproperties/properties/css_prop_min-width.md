@@ -12,6 +12,8 @@ has_toc: false
 # min-width : Minimum Width Property
 {: .no_toc }
 
+The `min-width` property sets the minimum horizontal dimension of an element in PDF documents. It ensures that an element will never be narrower than the specified value, even if its content or other constraints would make it smaller. This property is essential for maintaining minimum readability and layout integrity.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `min-width` property sets the minimum horizontal dimension of an element in PDF documents. It ensures that an element will never be narrower than the specified value, even if its content or other constraints would make it smaller. This property is essential for maintaining minimum readability and layout integrity.
 
 ---
 
@@ -95,9 +91,6 @@ The min-width property supports dynamic value binding through template expressio
 ### Example 1: Cards with data-driven minimum widths
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -130,13 +123,7 @@ The min-width property supports dynamic value binding through template expressio
 {% endraw %}
 
 
-
-
-
 ### Example 2: Buttons with conditional minimum widths
-
-
-
 
 
 {% raw %}
@@ -160,13 +147,7 @@ The min-width property supports dynamic value binding through template expressio
 {% endraw %}
 
 
-
-
-
 ### Example 3: Table columns with variable minimum widths
-
-
-
 
 
 {% raw %}
@@ -209,13 +190,7 @@ The min-width property supports dynamic value binding through template expressio
 {% endraw %}
 
 
-
-
-
 ### Example 4: Form inputs with responsive minimum widths
-
-
-
 
 
 {% raw %}
@@ -244,9 +219,6 @@ The min-width property supports dynamic value binding through template expressio
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

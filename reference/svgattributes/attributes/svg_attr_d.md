@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # d : The SVG Path Data Attribute
+{: .no_toc }
 
 The `d` attribute defines path data for SVG `<path>` elements, specifying a sequence of drawing commands that create complex shapes, curves, lines, and arcs. It uses a mini-language of single-letter commands followed by coordinate parameters.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -118,9 +132,6 @@ The `d` attribute supports dynamic path generation using data binding expression
 ### Example 1: Simple Dynamic Path
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { pathData: 'M 10,50 L 90,50 L 50,10 Z' } -->
@@ -132,13 +143,7 @@ The `d` attribute supports dynamic path generation using data binding expression
 {% endraw %}
 
 
-
-
-
 ### Example 2: Calculated Bezier Curve
-
-
-
 
 
 {% raw %}
@@ -152,13 +157,7 @@ The `d` attribute supports dynamic path generation using data binding expression
 {% endraw %}
 
 
-
-
-
 ### Example 3: Programmatic Path Generation
-
-
-
 
 
 {% raw %}
@@ -179,13 +178,7 @@ The `d` attribute supports dynamic path generation using data binding expression
 {% endraw %}
 
 
-
-
-
 ### Example 4: Dynamic Chart Path
-
-
-
 
 
 {% raw %}
@@ -208,13 +201,7 @@ The `d` attribute supports dynamic path generation using data binding expression
 {% endraw %}
 
 
-
-
-
 ### Example 5: Dynamic Star Generator
-
-
-
 
 
 {% raw %}
@@ -245,13 +232,7 @@ The `d` attribute supports dynamic path generation using data binding expression
 {% endraw %}
 
 
-
-
-
 ### Example 6: Multiple Dynamic Paths
-
-
-
 
 
 {% raw %}
@@ -272,13 +253,7 @@ The `d` attribute supports dynamic path generation using data binding expression
 {% endraw %}
 
 
-
-
-
 ### Example 7: Animated Progress Arc
-
-
-
 
 
 {% raw %}
@@ -305,9 +280,6 @@ The `d` attribute supports dynamic path generation using data binding expression
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

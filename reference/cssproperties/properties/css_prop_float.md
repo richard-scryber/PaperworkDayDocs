@@ -12,6 +12,8 @@ has_toc: false
 # float : Float Property
 {: .no_toc }
 
+The `float` property specifies whether an element should float to the left or right side of its container, allowing text and inline elements to wrap around it. This is essential for creating magazine-style layouts, image captions, sidebars, and multi-column designs in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `float` property specifies whether an element should float to the left or right side of its container, allowing text and inline elements to wrap around it. This is essential for creating magazine-style layouts, image captions, sidebars, and multi-column designs in PDF documents.
 
 ---
 
@@ -89,9 +85,6 @@ The `float` property supports data binding, allowing dynamic control of element 
 ### Example 1: Dynamic image float direction based on layout preferences
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -115,9 +108,6 @@ The `float` property supports data binding, allowing dynamic control of element 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data model:
@@ -146,9 +136,6 @@ Data model:
 ```
 
 ### Example 2: Configurable sidebar float position
-
-
-
 
 
 {% raw %}
@@ -193,9 +180,6 @@ Data model:
 {% endraw %}
 
 
-
-
-
 Data model:
 ```json
 {
@@ -227,9 +211,6 @@ Data model:
 ```
 
 ### Example 3: Data-driven callout box positioning
-
-
-
 
 
 {% raw %}
@@ -266,9 +247,6 @@ Data model:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data model:

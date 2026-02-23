@@ -12,6 +12,8 @@ has_toc: false
 # margin-inline-start : Inline Start Margin Property
 {: .no_toc }
 
+The `margin-inline-start` property sets the margin at the inline start edge of an element in PDF documents. This is a logical property that maps to either left or right margin depending on the writing direction. In left-to-right (LTR) languages it corresponds to `margin-left`, while in right-to-left (RTL) languages it corresponds to `margin-right`.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `margin-inline-start` property sets the margin at the inline start edge of an element in PDF documents. This is a logical property that maps to either left or right margin depending on the writing direction. In left-to-right (LTR) languages it corresponds to `margin-left`, while in right-to-left (RTL) languages it corresponds to `margin-right`.
 
 ---
 
@@ -93,9 +89,6 @@ The `margin-inline-start` property supports dynamic values through data binding,
 ### Example 1: Dynamic indentation based on content hierarchy
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -133,9 +126,6 @@ The `margin-inline-start` property supports dynamic values through data binding,
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -147,9 +137,6 @@ Data context:
 ```
 
 ### Example 2: Localized invoice layout with direction-aware spacing
-
-
-
 
 
 {% raw %}
@@ -188,9 +175,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -213,9 +197,6 @@ Data context:
 ```
 
 ### Example 3: Comment thread with dynamic nesting
-
-
-
 
 
 {% raw %}
@@ -242,9 +223,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

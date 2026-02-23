@@ -10,24 +10,20 @@ has_toc: false
 ---
 
 # &lt;pattern&gt; : The SVG Pattern Fill Element
+{: .no_toc }
 
 The `<pattern>` element defines a reusable graphic pattern that can be used to fill or stroke shapes. Patterns tile repeatedly to cover the area of the shape they're applied to, enabling textures, backgrounds, and decorative fills.
 
 ---
 
-## Summary
-
-The `<pattern>` element creates tiled graphics that repeat to fill shapes. Patterns are defined once and can be referenced multiple times across different elements. They are ideal for backgrounds, textures, hatching, decorative fills, and data visualization patterns.
-
-Key features:
-- Define reusable tiled patterns
-- Tile size and positioning control
-- ViewBox support for scalable patterns
-- Nested SVG content (shapes, images, text)
-- Pattern coordinate system options
-- Transformation support
-- Reference with URL notation in fill attributes
-- Data binding for dynamic pattern content
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 
@@ -161,9 +157,6 @@ Patterns support data binding for dynamic content, colors, and sizing.
 ### Dynamic Pattern Content
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Pattern with data-driven colors -->
@@ -184,13 +177,7 @@ Patterns support data binding for dynamic content, colors, and sizing.
 {% endraw %}
 
 
-
-
-
 ### Dynamic Pattern Size
-
-
-
 
 
 {% raw %}
@@ -212,13 +199,7 @@ Patterns support data binding for dynamic content, colors, and sizing.
 {% endraw %}
 
 
-
-
-
 ### Template-Generated Patterns
-
-
-
 
 
 {% raw %}
@@ -248,13 +229,7 @@ Patterns support data binding for dynamic content, colors, and sizing.
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Pattern Application
-
-
-
 
 
 {% raw %}
@@ -269,9 +244,6 @@ Patterns support data binding for dynamic content, colors, and sizing.
 </template>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -507,9 +479,6 @@ Honeycomb texture:
 Bar chart with pattern fills based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { data: [{value: 120, category: "A", usePattern: true}, ...] } -->
@@ -538,9 +507,6 @@ Bar chart with pattern fills based on data:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 11. Image Texture Pattern
@@ -585,9 +551,6 @@ Pattern containing gradient:
 Pattern with data-driven colors:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { primaryColor: "#336699", secondaryColor: "#6699cc" } -->
@@ -603,9 +566,6 @@ Pattern with data-driven colors:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 14. Status Indicator Pattern
@@ -701,9 +661,6 @@ Different patterns for map regions:
 Chart regions with pattern fills:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { zones: [{x: 0, y: 0, w: 200, h: 150, pattern: "safe"}, ...] } -->
@@ -736,9 +693,6 @@ Chart regions with pattern fills:
 {% endraw %}
 
 
-
-
-
 ### 18. Circular Pattern
 
 Radial dot pattern:
@@ -762,9 +716,6 @@ Radial dot pattern:
 ### 19. Variable Density Pattern
 
 Pattern density based on data value:
-
-
-
 
 
 {% raw %}
@@ -793,15 +744,9 @@ Pattern density based on data value:
 {% endraw %}
 
 
-
-
-
 ### 20. Multi-Pattern Comparison
 
 Side-by-side pattern comparisons:
-
-
-
 
 
 {% raw %}
@@ -838,9 +783,6 @@ Side-by-side pattern comparisons:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

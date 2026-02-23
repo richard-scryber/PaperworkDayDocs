@@ -12,6 +12,8 @@ has_toc: false
 # word-spacing : Word Spacing Property
 {: .no_toc }
 
+The `word-spacing` property controls the horizontal spacing between words in text. This property adjusts the space added to the default word separation and can be used to improve readability or create specific typographic effects in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `word-spacing` property controls the horizontal spacing between words in text. This property adjusts the space added to the default word separation and can be used to improve readability or create specific typographic effects in PDF documents.
 
 ---
 
@@ -95,9 +91,6 @@ The `word-spacing` property supports data binding for dynamic control of word sp
 ### Example 1: Accessibility-Enhanced Spacing
 
 
-
-
-
 {% raw %}
 ```html
 <p style="word-spacing: {{model.accessibility.wordSpacing}}; font-size: 12pt; line-height: 1.6">
@@ -116,13 +109,7 @@ The `word-spacing` property supports data binding for dynamic control of word sp
 {% endraw %}
 
 
-
-
-
 ### Example 2: Document Type-Based Spacing
-
-
-
 
 
 {% raw %}
@@ -154,13 +141,7 @@ The `word-spacing` property supports data binding for dynamic control of word sp
 {% endraw %}
 
 
-
-
-
 ### Example 3: Emphasis Through Spacing
-
-
-
 
 
 {% raw %}
@@ -180,9 +161,6 @@ The `word-spacing` property supports data binding for dynamic control of word sp
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

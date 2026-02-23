@@ -12,22 +12,20 @@ has_toc: false
 # addYears() : Add Years to Date
 {: .no_toc }
 
+Add years to a date. Use negative values to subtract years.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Add years to a date. Use negative values to subtract years.
 
 ## Signature
 
@@ -59,17 +57,11 @@ A new DateTime with the specified years added.
 ### Add Years
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Expiry: {{format(addYears(model.issued, 5), 'MMMM dd, yyyy')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -87,9 +79,6 @@ doc.Params["model"] = new {
 ### Calculate Age Next Year
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Next year you'll be {{yearOf(addYears(model.today, 1)) - yearOf(model.birthDate)}} years old</p>
@@ -97,13 +86,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Contract Renewal Dates
-
-
-
 
 
 {% raw %}
@@ -114,9 +97,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -140,17 +120,11 @@ doc.Params["model"] = new {
 ### Subtract Years
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>5 years ago: {{format(addYears(model.today, -5), 'MMMM yyyy')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 ---

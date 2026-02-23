@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @marker-end : The Path End Marker Attribute
+{: .no_toc }
 
 The `marker-end` attribute specifies a marker graphic to be drawn at the final vertex of a path, line, polyline, or polygon. Markers are commonly used to add arrowheads, endpoints, or other decorative elements at the end of shapes.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -78,9 +92,6 @@ The `marker-end` attribute is supported on:
 Choose arrow type based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { connectionType: 'forward', arrows: { forward: 'arrow-forward', backward: 'arrow-back' } } -->
@@ -104,15 +115,9 @@ Choose arrow type based on data:
 {% endraw %}
 
 
-
-
-
 ### Conditional End Markers
 
 Show markers based on status:
-
-
-
 
 
 {% raw %}
@@ -135,13 +140,7 @@ Show markers based on status:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Flow Visualization
-
-
-
 
 
 {% raw %}
@@ -173,9 +172,6 @@ Show markers based on status:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

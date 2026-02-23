@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;polyline&gt; : SVG Polyline Element
+{: .no_toc }
 
 The `<polyline>` element draws a series of connected straight lines in SVG content within your PDF documents. Unlike `<polygon>`, polylines are open paths (not automatically closed). They're perfect for line charts, trend lines, signatures, waveforms, and complex multi-segment paths.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -85,9 +99,6 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
 ### Example 1: Line Chart from Data
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { data: [10, 25, 15, 40, 30, 45, 35] } -->
@@ -99,13 +110,7 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic Trend Line
-
-
-
 
 
 {% raw %}
@@ -120,13 +125,7 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
 {% endraw %}
 
 
-
-
-
 ### Example 3: Multiple Polylines
-
-
-
 
 
 {% raw %}
@@ -143,9 +142,6 @@ The `<polyline>` element supports dynamic attribute values using data binding ex
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -418,9 +414,6 @@ At least 2 points are required for a visible polyline. A single point produces n
 ### Dynamic Chart from Array
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { values: [30, 45, 35, 60, 50, 70, 55] } -->
@@ -433,13 +426,7 @@ At least 2 points are required for a visible polyline. A single point produces n
 {% endraw %}
 
 
-
-
-
 ### Multi-Series with Data Binding
-
-
-
 
 
 {% raw %}
@@ -457,9 +444,6 @@ At least 2 points are required for a visible polyline. A single point produces n
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

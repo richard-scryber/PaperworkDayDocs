@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @spreadMethod : The Gradient Spread Behavior Attribute
+{: .no_toc }
 
 The `spreadMethod` attribute defines how a gradient behaves beyond its defined start and end points (0% to 100%). It controls whether the gradient extends its end colors, repeats in a tiling pattern, or reflects in an alternating mirror pattern.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -88,9 +102,6 @@ The `spreadMethod` attribute is supported on:
 Choose spread method based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { pattern: "striped" } -->
@@ -109,15 +120,9 @@ Choose spread method based on data:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Pattern Density
 
 Control stripe density with data:
-
-
-
 
 
 {% raw %}
@@ -140,15 +145,9 @@ Control stripe density with data:
 {% endraw %}
 
 
-
-
-
 ### Conditional Pattern Effects
 
 Apply patterns based on data state:
-
-
-
 
 
 {% raw %}
@@ -171,15 +170,9 @@ Apply patterns based on data state:
 {% endraw %}
 
 
-
-
-
 ### Data Visualization Patterns
 
 Create patterns for chart backgrounds:
-
-
-
 
 
 {% raw %}
@@ -204,15 +197,9 @@ Create patterns for chart backgrounds:
 {% endraw %}
 
 
-
-
-
 ### Ripple Effect Intensity
 
 Control ripple pattern based on intensity data:
-
-
-
 
 
 {% raw %}
@@ -233,9 +220,6 @@ Control ripple pattern based on intensity data:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -575,9 +559,6 @@ For radial gradients, spread methods work concentrically:
 ### Data-Driven Stripe Pattern
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { stripePattern: "repeat", stripeWidth: 8 } -->
@@ -597,9 +578,6 @@ For radial gradients, spread methods work concentrically:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Chart with Striped Background

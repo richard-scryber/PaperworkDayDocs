@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @markerWidth : The Marker Viewport Width Attribute
+{: .no_toc }
 
 The `markerWidth` attribute defines the width of the marker viewport - the coordinate system canvas in which the marker content is rendered. This controls the horizontal size of the marker's coordinate space, not necessarily the visual size of the marker.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -80,9 +94,6 @@ The `markerWidth` attribute is supported on:
 Adjust marker width based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { markerSize: 12, importance: 'high' } -->
@@ -107,15 +118,9 @@ Adjust marker width based on data:
 {% endraw %}
 
 
-
-
-
 ### Responsive Arrow Sizing
 
 Scale markers based on context:
-
-
-
 
 
 {% raw %}
@@ -142,13 +147,7 @@ Scale markers based on context:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Marker Dimensions
-
-
-
 
 
 {% raw %}
@@ -183,9 +182,6 @@ Scale markers based on context:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

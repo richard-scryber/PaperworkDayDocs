@@ -12,22 +12,20 @@ has_toc: false
 # cos() : Cosine Function
 {: .no_toc }
 
+Calculate the cosine of an angle (in radians).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the cosine of an angle (in radians).
 
 ## Signature
 
@@ -58,18 +56,12 @@ The cosine of the angle (value between -1 and 1).
 ### Basic Cosine
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>cos(0) = {{format(cos(0), '0.000')}}</p>
 <p>cos(π) = {{format(cos(pi()), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -81,9 +73,6 @@ The cosine of the angle (value between -1 and 1).
 ### Convert Degrees to Radians
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>cos(0°) = {{format(cos(radians(0)), '0.000')}}</p>
@@ -91,9 +80,6 @@ The cosine of the angle (value between -1 and 1).
 <p>cos(90°) = {{format(cos(radians(90)), '0.000')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -106,17 +92,11 @@ The cosine of the angle (value between -1 and 1).
 ### Calculate Position
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>X = {{format(model.radius * cos(model.angle), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

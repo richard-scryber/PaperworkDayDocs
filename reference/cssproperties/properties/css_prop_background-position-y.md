@@ -12,6 +12,8 @@ has_toc: false
 # background-position-y : Background Vertical Position Property
 {: .no_toc }
 
+The `background-position-y` property sets the vertical position of background images within an element in PDF documents. This property allows independent control of vertical positioning without affecting horizontal placement.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `background-position-y` property sets the vertical position of background images within an element in PDF documents. This property allows independent control of vertical positioning without affecting horizontal placement.
 
 ---
 
@@ -103,9 +99,6 @@ The `background-position-y` property supports dynamic data binding, enabling ver
 ### Example 1: Dynamic vertical positioning from layout preferences
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -129,15 +122,9 @@ The `background-position-y` property supports dynamic data binding, enabling ver
 {% endraw %}
 
 
-
-
-
 Enables administrators to control watermark vertical placement (top, center, bottom, or specific offsets) through configuration while keeping horizontal centering. Perfect for different document types requiring watermarks at various vertical positions.
 
 ### Example 2: Conditional vertical positioning by content length
-
-
-
 
 
 {% raw %}
@@ -167,15 +154,9 @@ Enables administrators to control watermark vertical placement (top, center, bot
 {% endraw %}
 
 
-
-
-
 Intelligently adjusts seal vertical position based on content - certificates with extensive text push seals to the bottom with fixed offset, while shorter certificates position seals proportionally for better balance.
 
 ### Example 3: Multi-layer vertical positioning with data
-
-
-
 
 
 {% raw %}
@@ -200,9 +181,6 @@ Intelligently adjusts seal vertical position based on content - certificates wit
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Creates documents with separate header and footer decorative elements, each with configurable vertical positioning. Organizations can fine-tune the exact placement of both elements independently to match their brand guidelines and document requirements.

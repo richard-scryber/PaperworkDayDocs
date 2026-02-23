@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # points : The SVG Points List Attribute
+{: .no_toc }
 
 The `points` attribute defines a list of coordinate pairs for SVG `<polyline>` and `<polygon>` elements, specifying the vertices that form connected line segments. Each point represents an (x,y) coordinate where a line segment begins or ends.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -88,9 +102,6 @@ The `points` attribute supports dynamic coordinate generation using data binding
 ### Example 1: Simple Bound Points
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { pointList: "20,30 60,10 100,40 140,20 180,50" } -->
@@ -102,11 +113,7 @@ The `points` attribute supports dynamic coordinate generation using data binding
 {% endraw %}
 
 
-
-
-
 ### Example 2: Generated Line Chart
-
 
 
 {% raw %}
@@ -130,11 +137,7 @@ The `points` attribute supports dynamic coordinate generation using data binding
 {% endraw %}
 
 
-
 ### Example 3: Dynamic Polygon Shape
-
-
-
 
 
 {% raw %}
@@ -163,13 +166,7 @@ The `points` attribute supports dynamic coordinate generation using data binding
 {% endraw %}
 
 
-
-
-
 ### Example 4: Array-based Scatter Points
-
-
-
 
 
 {% raw %}
@@ -191,11 +188,7 @@ The `points` attribute supports dynamic coordinate generation using data binding
 {% endraw %}
 
 
-
-
-
 ### Example 5: Temperature Timeline
-
 
 
 {% raw %}
@@ -224,11 +217,7 @@ The `points` attribute supports dynamic coordinate generation using data binding
 {% endraw %}
 
 
-
 ### Example 6: Multi-Series Chart
-
-
-
 
 
 {% raw %}
@@ -265,13 +254,7 @@ The `points` attribute supports dynamic coordinate generation using data binding
 {% endraw %}
 
 
-
-
-
 ### Example 7: Grid of Points
-
-
-
 
 
 {% raw %}
@@ -305,13 +288,7 @@ The `points` attribute supports dynamic coordinate generation using data binding
 {% endraw %}
 
 
-
-
-
 ### Example 8: Normalized Data Visualization
-
-
-
 
 
 {% raw %}
@@ -336,9 +313,6 @@ The `points` attribute supports dynamic coordinate generation using data binding
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -610,9 +584,6 @@ For charts and graphs:
 ### Example 20: Sparkline Chart
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { sparkData: [12, 18, 15, 22, 19, 25, 23, 28, 24, 30] } -->
@@ -622,9 +593,6 @@ For charts and graphs:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

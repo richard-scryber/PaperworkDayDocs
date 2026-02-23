@@ -10,24 +10,20 @@ has_toc: false
 ---
 
 # &lt;marker&gt; : The SVG Marker Element
+{: .no_toc }
 
 The `<marker>` element defines graphical markers that can be attached to paths, lines, polygons, and polylines. Markers are automatically positioned and oriented at vertices and endpoints of shapes, commonly used for arrowheads, dots, and other path decorations.
 
 ---
 
-## Summary
-
-The `<marker>` element creates reusable graphics that can be placed at the start, middle, or end of path segments. Markers automatically rotate to align with the path direction and scale according to stroke width. They are essential for creating arrows, connection indicators, and decorative path endpoints.
-
-Key features:
-- Define reusable marker graphics
-- Automatic positioning at path vertices and endpoints
-- Auto-rotation to match path direction
-- Reference point control with refX and refY
-- Size specification with markerWidth and markerHeight
-- ViewBox support for scaling
-- Apply to paths, lines, polylines, and polygons
-- Data binding for dynamic marker content
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 
@@ -166,9 +162,6 @@ Markers support data binding for dynamic appearance and behavior.
 ### Dynamic Marker Content
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Marker with data-driven color -->
@@ -189,13 +182,7 @@ Markers support data binding for dynamic appearance and behavior.
 {% endraw %}
 
 
-
-
-
 ### Size Based on Data
-
-
-
 
 
 {% raw %}
@@ -217,13 +204,7 @@ Markers support data binding for dynamic appearance and behavior.
 {% endraw %}
 
 
-
-
-
 ### Template-Generated Markers
-
-
-
 
 
 {% raw %}
@@ -250,9 +231,6 @@ Markers support data binding for dynamic appearance and behavior.
 </template>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -538,9 +516,6 @@ Network nodes with connection arrows:
 Data-driven marker colors:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { connections: [{x1: 50, y1: 50, x2: 200, y2: 50, status: "success"}] } -->
@@ -563,9 +538,6 @@ Data-driven marker colors:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 11. Curved Path with Arrow
@@ -718,9 +690,6 @@ Dashed connection with arrows:
 Progress indicator with markers:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { progress: 0.75 } -->
@@ -745,9 +714,6 @@ Progress indicator with markers:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 19. Hierarchical Tree Connectors

@@ -12,6 +12,8 @@ has_toc: false
 # fill : SVG Fill Color Property
 {: .no_toc }
 
+The `fill` property sets the interior color of SVG shapes and vector elements in PDF documents. This property is fundamental for styling vector graphics, icons, and custom shapes embedded in PDFs.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `fill` property sets the interior color of SVG shapes and vector elements in PDF documents. This property is fundamental for styling vector graphics, icons, and custom shapes embedded in PDFs.
 
 ---
 
@@ -98,9 +94,6 @@ The `fill` property can be dynamically set using data binding expressions, enabl
 ### Example 1: Data-driven chart colors
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -125,9 +118,6 @@ The `fill` property can be dynamically set using data binding expressions, enabl
 {% endraw %}
 
 
-
-
-
 With model data:
 ```json
 {
@@ -140,9 +130,6 @@ With model data:
 ```
 
 ### Example 2: Conditional status indicators
-
-
-
 
 
 {% raw %}
@@ -168,13 +155,7 @@ With model data:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Category-based color coding
-
-
-
 
 
 {% raw %}
@@ -196,9 +177,6 @@ With model data:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 With configuration mapping:

@@ -12,22 +12,20 @@ has_toc: false
 # dayOfWeek() : Extract Day of Week from Date
 {: .no_toc }
 
+Extract the day of the week from a datetime value as a number (0-6), where 0 is Sunday and 6 is Saturday.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract the day of the week from a datetime value as a number (0-6), where 0 is Sunday and 6 is Saturday.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The day of the week as a number from 0 (Sunday) to 6 (Saturday).
 ### Display Day Number
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Day of week: {{dayOfWeek(model.date)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Weekend Detection
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{format(model.date, 'dddd, MMMM dd')}}:
@@ -100,9 +89,6 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -120,9 +106,6 @@ doc.Params["model"] = new {
 ### Business Days Filter
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Business Day Appointments</h3>
@@ -133,9 +116,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -159,9 +139,6 @@ doc.Params["model"] = new {
 ### Shift Schedule
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.dates}}
@@ -179,9 +156,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

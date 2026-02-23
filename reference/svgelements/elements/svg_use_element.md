@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;use&gt; : The SVG Reference Element
+{: .no_toc }
 
 The `<use>` element references and reuses existing SVG elements defined elsewhere in the document, typically within a `<defs>` container. It creates instances of shapes, groups, or symbols by cloning the referenced element, allowing for efficient reuse of graphics with different positions, sizes, and styling.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -218,9 +232,6 @@ Referenced elements must implement `ICloneable`:
 ### Dynamic References
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { shapeId: "star", x: 100, y: 100 } -->
@@ -235,13 +246,7 @@ Referenced elements must implement `ICloneable`:
 {% endraw %}
 
 
-
-
-
 ### Repeated Instances
-
-
-
 
 
 {% raw %}
@@ -259,13 +264,7 @@ Referenced elements must implement `ICloneable`:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Styling
-
-
-
 
 
 {% raw %}
@@ -283,13 +282,7 @@ Referenced elements must implement `ICloneable`:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Transformations
-
-
-
 
 
 {% raw %}
@@ -312,9 +305,6 @@ Referenced elements must implement `ICloneable`:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -527,9 +517,6 @@ Referenced elements must implement `ICloneable`:
 ### Data-Driven Chart Points
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { points: [{x:50, y:150, value:25}, {x:150, y:100, value:50}, {x:250, y:50, value:75}] } -->
@@ -549,9 +536,6 @@ Referenced elements must implement `ICloneable`:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Repeated Pattern with Variations
@@ -636,9 +620,6 @@ Referenced elements must implement `ICloneable`:
 ### Conditional Icon Display
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { status: "success", x: 100, y: 100 } -->
@@ -659,9 +640,6 @@ Referenced elements must implement `ICloneable`:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Network Nodes

@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @patternContentUnits : The Pattern Content Coordinate System Attribute
+{: .no_toc }
 
 The `patternContentUnits` attribute defines the coordinate system for the pattern's content elements (shapes, paths, text inside the pattern). It determines whether the pattern content uses relative coordinates or absolute document coordinates.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -84,9 +98,6 @@ The `patternContentUnits` attribute is supported on:
 Choose content coordinate system based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { useRelativeContent: false, tileSize: 50, dotRadius: 18 } -->
@@ -110,15 +121,9 @@ Choose content coordinate system based on data:
 {% endraw %}
 
 
-
-
-
 ### Adaptive Pattern Graphics
 
 Switch between scaling and fixed-size content:
-
-
-
 
 
 {% raw %}
@@ -154,15 +159,9 @@ Switch between scaling and fixed-size content:
 {% endraw %}
 
 
-
-
-
 ### Responsive Pattern Content
 
 Create patterns where content adapts to filled shape size:
-
-
-
 
 
 {% raw %}
@@ -189,15 +188,9 @@ Create patterns where content adapts to filled shape size:
 {% endraw %}
 
 
-
-
-
 ### Data Visualization Patterns
 
 Create consistent patterns for chart backgrounds:
-
-
-
 
 
 {% raw %}
@@ -223,9 +216,6 @@ Create consistent patterns for chart backgrounds:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

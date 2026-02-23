@@ -12,6 +12,8 @@ has_toc: false
 # >= : Greater Than or Equal Operator
 {: .no_toc }
 
+Compare if the left value is greater than or equal to the right value.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Compare if the left value is greater than or equal to the right value.
 
 ## Syntax
 
@@ -73,9 +71,6 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 ### Age Verification
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.age >= 18}}
@@ -89,10 +84,6 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -112,9 +103,6 @@ doc.Params["model"] = new {
 ### Passing Grade
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.score >= 70}}
@@ -130,10 +118,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -154,9 +138,6 @@ doc.Params["model"] = new {
 ### Grade Classification
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.score >= 90}}
@@ -174,14 +155,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Free Shipping Eligibility
-
-
-
 
 
 {% raw %}
@@ -200,10 +174,6 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -220,9 +190,6 @@ doc.Params["model"] = new {
 ```
 
 ### Access Level Validation
-
-
-
 
 
 {% raw %}
@@ -246,13 +213,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Minimum Quantity Check
-
-
-
 
 
 {% raw %}
@@ -271,10 +232,6 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 ---

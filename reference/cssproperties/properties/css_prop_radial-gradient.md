@@ -14,6 +14,8 @@ has_toc: false
 # radial-gradient() : Radial Gradient Function
 {: .no_toc }
 
+The `radial-gradient()` CSS function creates a smooth color transition radiating from a center point outward in all directions. Radial gradients are ideal for spotlight effects, halos, badges, circular backgrounds, and creating depth without requiring image files.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,12 +26,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `radial-gradient()` CSS function creates a smooth color transition radiating from a center point outward in all directions. Radial gradients are ideal for spotlight effects, halos, badges, circular backgrounds, and creating depth without requiring image files.
 
 ---
 
@@ -159,9 +155,6 @@ Radial gradients support dynamic data binding for personalized backgrounds:
 ### Example: Dynamic radial gradient based on data
 
 
-
-
-
 {% raw %}
 ```html
 <div style="width: 200pt; height: 200pt; border-radius: 100pt;
@@ -172,9 +165,6 @@ Radial gradients support dynamic data binding for personalized backgrounds:
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 ---

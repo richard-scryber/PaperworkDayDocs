@@ -12,22 +12,20 @@ has_toc: false
 # hourOf() : Extract Hour from DateTime
 {: .no_toc }
 
+Extract the hour component from a datetime value as a 24-hour format number (0-23).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract the hour component from a datetime value as a 24-hour format number (0-23).
 
 ## Signature
 
@@ -58,17 +56,11 @@ The hour in 24-hour format as a number from 0 (midnight) to 23 (11 PM).
 ### Display Hour
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Hour: {{hourOf(model.time)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Business Hours Check
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Status:
@@ -100,9 +89,6 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -120,9 +106,6 @@ doc.Params["model"] = new {
 ### Shift Assignment
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Shift:
@@ -136,9 +119,6 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -156,9 +136,6 @@ doc.Params["model"] = new {
 ### Peak Hour Pricing
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.transactions}}
@@ -170,9 +147,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

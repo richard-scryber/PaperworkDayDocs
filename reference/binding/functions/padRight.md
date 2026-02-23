@@ -12,22 +12,20 @@ has_toc: false
 # padRight() : Pad String on Right
 {: .no_toc }
 
+Pad a string on the right side to reach a specified length.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Pad a string on the right side to reach a specified length.
 
 ## Signature
 
@@ -60,9 +58,6 @@ The padded string.
 ### Align Left in Fixed Width
 
 
-
-
-
 {% raw %}
 ```handlebars
 <pre>
@@ -72,9 +67,6 @@ The padded string.
 </pre>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -100,9 +92,6 @@ Tool                 $9.99
 ### Table-Like Formatting
 
 
-
-
-
 {% raw %}
 ```handlebars
 <pre>
@@ -113,9 +102,6 @@ Tool                 $9.99
 </pre>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -140,17 +126,11 @@ Product B       Sold Out   $149.99
 ### Custom Padding Character
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{padRight(model.label, 20, '.')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -168,9 +148,6 @@ doc.Params["model"] = new {
 ### Create Separators
 
 
-
-
-
 {% raw %}
 ```handlebars
 <div>
@@ -179,9 +156,6 @@ doc.Params["model"] = new {
 </div>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

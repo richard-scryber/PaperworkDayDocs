@@ -10,7 +10,6 @@ has_toc: false
 ---
 
 # font-style : The Font Style Property
-
 {: .no_toc }
 
 ---
@@ -23,12 +22,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `font-style` property specifies the stylistic variation of a font, primarily controlling whether text is displayed in normal, italic, or oblique style. This property is essential for emphasizing text or creating visual distinction in PDF documents.
 
 ---
 
@@ -87,9 +80,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 ### Data Binding Examples
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Dynamic style from model data -->
@@ -123,9 +113,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Note:** Bound font-style values should be valid CSS keywords: 'normal', 'italic', or 'oblique'. Invalid values may result in the default 'normal' style being applied.

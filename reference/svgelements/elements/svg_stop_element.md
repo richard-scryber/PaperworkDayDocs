@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;stop&gt; : The Gradient Color Stop Element
+{: .no_toc }
 
 The `<stop>` element defines a color and position within a gradient definition. It must be used as a child element of `<linearGradient>` or `<radialGradient>` elements. Multiple stop elements create smooth color transitions at specified positions along the gradient.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -206,9 +220,6 @@ In the Scryber codebase:
 Bind stop colors to model data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { primaryColor: "#3498db", accentColor: "#e74c3c" } -->
@@ -220,15 +231,9 @@ Bind stop colors to model data:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Stop Positions
 
 Create data-driven stop positions:
-
-
-
 
 
 {% raw %}
@@ -243,15 +248,9 @@ Create data-driven stop positions:
 {% endraw %}
 
 
-
-
-
 ### Conditional Stop Colors
 
 Set colors based on data conditions:
-
-
-
 
 
 {% raw %}
@@ -266,15 +265,9 @@ Set colors based on data conditions:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Opacity
 
 Control stop transparency with data:
-
-
-
 
 
 {% raw %}
@@ -288,15 +281,9 @@ Control stop transparency with data:
 {% endraw %}
 
 
-
-
-
 ### Generate Stops from Array
 
 Create multiple stops from data collections:
-
-
-
 
 
 {% raw %}
@@ -316,15 +303,9 @@ Create multiple stops from data collections:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Color Scales
 
 Create color scales from data ranges:
-
-
-
 
 
 {% raw %}
@@ -338,9 +319,6 @@ Create color scales from data ranges:
 </linearGradient>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -564,9 +542,6 @@ Create color scales from data ranges:
 ### Data-Driven Status Colors
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { level: 75, lowColor: "#2ecc71", midColor: "#f39c12", highColor: "#e74c3c" } -->
@@ -584,13 +559,7 @@ Create color scales from data ranges:
 {% endraw %}
 
 
-
-
-
 ### Temperature Scale with Data Stops
-
-
-
 
 
 {% raw %}
@@ -609,13 +578,7 @@ Create color scales from data ranges:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Opacity Based on Value
-
-
-
 
 
 {% raw %}
@@ -632,13 +595,7 @@ Create color scales from data ranges:
 {% endraw %}
 
 
-
-
-
 ### Conditional Color Stops
-
-
-
 
 
 {% raw %}
@@ -657,13 +614,7 @@ Create color scales from data ranges:
 {% endraw %}
 
 
-
-
-
 ### Percentage-Based Color Stops
-
-
-
 
 
 {% raw %}
@@ -680,9 +631,6 @@ Create color scales from data ranges:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

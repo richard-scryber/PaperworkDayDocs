@@ -12,6 +12,8 @@ has_toc: false
 # column-gap : Column Gap Property
 {: .no_toc }
 
+The `column-gap` property specifies the space between columns in a multi-column layout. This property is essential for creating visually balanced and readable multi-column documents, controlling the whitespace that separates column content in newsletters, magazines, brochures, and professional reports.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `column-gap` property specifies the space between columns in a multi-column layout. This property is essential for creating visually balanced and readable multi-column documents, controlling the whitespace that separates column content in newsletters, magazines, brochures, and professional reports.
 
 ---
 
@@ -94,9 +90,6 @@ The column-gap property integrates with data binding to create adaptive spacing 
 ### Example 1: Dynamic column gap based on page size
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -135,13 +128,7 @@ The column-gap property integrates with data binding to create adaptive spacing 
 {% endraw %}
 
 
-
-
-
 ### Example 2: User-configurable spacing preferences
-
-
-
 
 
 {% raw %}
@@ -186,13 +173,7 @@ The column-gap property integrates with data binding to create adaptive spacing 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Adaptive gap for magazine layouts
-
-
-
 
 
 {% raw %}
@@ -254,9 +235,6 @@ The column-gap property integrates with data binding to create adaptive spacing 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

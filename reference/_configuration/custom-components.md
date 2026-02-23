@@ -3,7 +3,7 @@ layout: default
 title: Custom Components
 parent: Configuration & Extension System
 grand_parent: Reference
-nav_order: 3
+nav_order: 4
 ---
 
 # Custom Components

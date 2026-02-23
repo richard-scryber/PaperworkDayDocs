@@ -12,6 +12,8 @@ has_toc: false
 # font-stretch : The Font Stretch Property
 {: .no_toc }
 
+The `font-stretch` property selects a normal, condensed, or expanded face from a font. This property is currently recognized by Scryber.Core but not applied during PDF rendering. It is included for CSS compatibility and future enhancement.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,13 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-
-The `font-stretch` property selects a normal, condensed, or expanded face from a font. This property is currently recognized by Scryber.Core but not applied during PDF rendering. It is included for CSS compatibility and future enhancement.
 
 ---
 
@@ -101,9 +96,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 ### Data Binding Examples
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Dynamic stretch from model (no effect until implemented) -->
@@ -135,9 +127,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Note:** Font-stretch is currently not applied during PDF rendering. These data binding examples demonstrate the syntax for future compatibility when the property is implemented. The binding expressions will be processed but have no visual effect.

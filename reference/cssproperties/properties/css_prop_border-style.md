@@ -12,6 +12,8 @@ has_toc: false
 # border-style : Border Style Property
 {: .no_toc }
 
+The `border-style` property sets the line style for all four borders of an element. This property is required for borders to be visible and provides various line patterns including solid, dashed, dotted, and double styles.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-style` property sets the line style for all four borders of an element. This property is required for borders to be visible and provides various line patterns including solid, dashed, dotted, and double styles.
 
 ---
 
@@ -92,9 +88,6 @@ The `border-style` property supports dynamic values through data binding, allowi
 ### Example 1: Status-based border styles
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -115,9 +108,6 @@ The `border-style` property supports dynamic values through data binding, allowi
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -130,9 +120,6 @@ Data context:
 ```
 
 ### Example 2: Conditional border patterns
-
-
-
 
 
 {% raw %}
@@ -156,13 +143,7 @@ Data context:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Alert severity styles
-
-
-
 
 
 {% raw %}
@@ -181,9 +162,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

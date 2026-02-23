@@ -12,6 +12,8 @@ has_toc: false
 # list-style-type : List Marker Type Property
 {: .no_toc }
 
+The `list-style-type` property specifies the type of marker (bullet or number) to display for list items. This property provides various built-in marker styles for both ordered and unordered lists, essential for creating properly formatted lists in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `list-style-type` property specifies the type of marker (bullet or number) to display for list items. This property provides various built-in marker styles for both ordered and unordered lists, essential for creating properly formatted lists in PDF documents.
 
 ---
 
@@ -98,9 +94,6 @@ The `list-style-type` property supports data binding, enabling dynamic control o
 ### Example 1: User-configurable list markers
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -121,9 +114,6 @@ The `list-style-type` property supports data binding, enabling dynamic control o
 {% endraw %}
 
 
-
-
-
 **Data context:**
 ```json
 {
@@ -137,9 +127,6 @@ The `list-style-type` property supports data binding, enabling dynamic control o
 Users can select their preferred numbering format (decimal, alpha, roman) from application settings, which is then applied to all lists in generated documents.
 
 ### Example 2: Document type-specific formatting
-
-
-
 
 
 {% raw %}
@@ -162,9 +149,6 @@ Users can select their preferred numbering format (decimal, alpha, roman) from a
 {% endraw %}
 
 
-
-
-
 **Data context:**
 ```json
 {
@@ -178,9 +162,6 @@ Users can select their preferred numbering format (decimal, alpha, roman) from a
 Different document types automatically get appropriate numbering: upper-roman for legal briefs, decimal for technical documents, lower-alpha for questionnaires, etc.
 
 ### Example 3: Multilingual list markers
-
-
-
 
 
 {% raw %}
@@ -201,9 +182,6 @@ Different document types automatically get appropriate numbering: upper-roman fo
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**

@@ -14,11 +14,12 @@ Scryber provides a comprehensive configuration and extension system that allows 
 This documentation covers the complete architecture for extending and configuring Scryber:
 
 ## Document Configuration
-Applies to individiual document templates
+Applies to individual document templates
 
 - **[Processing Instructions](processing-instructions)** - Document-level parser configuration via XML processing instructions
 - **[DOM and Event Handling](document-events-and-access)** - Directly accessing content and responding to document remote file request events
 - **[Document Controllers](document-controllers)** - Code-behind functionality with outlets and actions
+- **[Working in Code](working-in-code)** - Building and modifying component trees directly with the object model and typed style values.
 
 ## Core Engine Configuration
 Applies to all documents within the application or process.
@@ -29,7 +30,7 @@ Applies to all documents within the application or process.
   - **[Font Configuration](font-configuration)** - Registering custom fonts and managing font loading
 
 ## Extension Mechanisms
-Apllies to any number of applications or processes
+Applies to any number of applications or processes
 
 - **[Custom Components](custom-components)** - Creating reusable PDF components with custom namespaces
 
@@ -37,8 +38,8 @@ Apllies to any number of applications or processes
 ## In the Code
 How the library works, a documents' lifecycle and creating and setting standard values.
 
-- **[Library Architecture](ARCHITECTURE)** - An overview ofthe libraries, important namespaces and class heirachys, and the strategies used for parsing; layout; and rendering.
-- **[Build In Code](code-classes)** - Details many of the standard classes used and ways to load (or dynamically create) images and fonts, add custom styles, set specific style values types, and parse component trees / style-sheets.
+- **[Library Architecture](ARCHITECTURE)** - An overview of the libraries, important namespaces and class hierarchies, and the strategies used for parsing; layout; and rendering.
+- **[Working in Code](working-in-code)** - Details many of the standard classes used and ways to create component trees, set typed style values, and safely parse CSS-like values from configuration.
 
 ## Integration
 - **[Complete Integration Example](integration-example)** - All extension mechanisms working together
@@ -93,7 +94,7 @@ public class MyController
 }
 ```
 
-## Initialzing the configuration in Scryber.Core
+## Initializing the configuration in Scryber.Core
 
 
 

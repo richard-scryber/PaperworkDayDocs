@@ -12,6 +12,8 @@ has_toc: false
 # padding-inline-start : Inline Start Padding Property
 {: .no_toc }
 
+The `padding-inline-start` property sets the padding at the inline start edge of an element in PDF documents. This is a logical property that maps to either left or right padding depending on the writing direction. In left-to-right (LTR) languages it corresponds to `padding-left`, while in right-to-left (RTL) languages it corresponds to `padding-right`.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `padding-inline-start` property sets the padding at the inline start edge of an element in PDF documents. This is a logical property that maps to either left or right padding depending on the writing direction. In left-to-right (LTR) languages it corresponds to `padding-left`, while in right-to-left (RTL) languages it corresponds to `padding-right`.
 
 ---
 
@@ -92,9 +88,6 @@ The `padding-inline-start` property supports dynamic values through data binding
 ### Example 1: Alert with dynamic icon space
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -116,9 +109,6 @@ The `padding-inline-start` property supports dynamic values through data binding
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -131,9 +121,6 @@ Data context:
 ```
 
 ### Example 2: Nested content with hierarchy-based padding
-
-
-
 
 
 {% raw %}
@@ -157,9 +144,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -172,9 +156,6 @@ Data context:
 ```
 
 ### Example 3: Localized invoice with direction-aware padding
-
-
-
 
 
 {% raw %}
@@ -198,9 +179,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

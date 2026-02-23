@@ -12,6 +12,8 @@ has_toc: false
 # -pdf-li-align : List Item Alignment Property (Scryber Custom)
 {: .no_toc }
 
+The `-pdf-li-align` property is a Scryber-specific extension that controls the horizontal alignment of list item markers relative to the list content. This property provides precise control over how bullets, numbers, and custom markers are positioned, enabling professional document layouts with properly aligned list structures.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,17 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `-pdf-li-align` property is a Scryber-specific extension that controls the horizontal alignment of list item markers relative to the list content. This property provides precise control over how bullets, numbers, and custom markers are positioned, enabling professional document layouts with properly aligned list structures.
-
----
-
-{: .note }
-Although the support for this property is expected to continue for the forseeable future, its functionality will be consumed into custom or pre-defined [list-style-type](/reference/cssproperties/properties/css_prop_list-style-type.html) values.
 
 ---
 
@@ -92,9 +83,6 @@ The `-pdf-li-align` property supports data binding, allowing dynamic control of 
 ### Example 1: User-configurable marker alignment
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -123,9 +111,6 @@ The `-pdf-li-align` property supports data binding, allowing dynamic control of 
 {% endraw %}
 
 
-
-
-
 **Data context:**
 ```json
 {
@@ -143,9 +128,6 @@ The `-pdf-li-align` property supports data binding, allowing dynamic control of 
 For lists with varying marker widths (1-10, 1-100), right alignment ensures visual consistency. Users can configure this based on their aesthetic preferences.
 
 ### Example 2: Document type-specific alignment
-
-
-
 
 
 {% raw %}
@@ -167,9 +149,6 @@ For lists with varying marker widths (1-10, 1-100), right alignment ensures visu
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**
@@ -195,9 +174,6 @@ Different document types can have predefined alignment preferences: center for f
 ### Example 3: Multilingual document formatting
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -217,9 +193,6 @@ Different document types can have predefined alignment preferences: center for f
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Data context:**

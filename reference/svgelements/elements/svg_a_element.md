@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;a&gt; : The SVG Anchor/Link Element
+{: .no_toc }
 
 The SVG `<a>` (anchor) element creates interactive hyperlinks within SVG graphics. It wraps SVG content to make shapes, groups, text, and other elements clickable, enabling navigation to external URLs, internal document locations, or other PDF destinations. This is the SVG-specific version of the HTML anchor element, optimized for use within SVG contexts.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -195,9 +209,6 @@ SVG anchors can be defined in `<defs>` and reused:
 ### Dynamic Link Destinations
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { url: "https://example.com", label: "Visit Site" } -->
@@ -213,13 +224,7 @@ SVG anchors can be defined in `<defs>` and reused:
 {% endraw %}
 
 
-
-
-
 ### Repeated Linked Elements
-
-
-
 
 
 {% raw %}
@@ -239,13 +244,7 @@ SVG anchors can be defined in `<defs>` and reused:
 {% endraw %}
 
 
-
-
-
 ### Conditional Link Styling
-
-
-
 
 
 {% raw %}
@@ -267,13 +266,7 @@ SVG anchors can be defined in `<defs>` and reused:
 {% endraw %}
 
 
-
-
-
 ### Interactive Map with Links
-
-
-
 
 
 {% raw %}
@@ -294,9 +287,6 @@ SVG anchors can be defined in `<defs>` and reused:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -705,9 +695,6 @@ SVG anchors can be defined in `<defs>` and reused:
 ### Linked Status Indicators
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { servers: [{name:"Web", status:"ok", url:"#web"}, {name:"DB", status:"warning", url:"#db"}] } -->
@@ -727,9 +714,6 @@ SVG anchors can be defined in `<defs>` and reused:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Transformed Link

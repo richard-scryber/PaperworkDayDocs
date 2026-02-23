@@ -12,6 +12,8 @@ has_toc: false
 # width : Width Property
 {: .no_toc }
 
+The `width` property sets the horizontal dimension of an element in PDF documents. It defines how wide an element should be, affecting its layout and how it interacts with other elements in the document flow.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `width` property sets the horizontal dimension of an element in PDF documents. It defines how wide an element should be, affecting its layout and how it interacts with other elements in the document flow.
 
 ---
 
@@ -94,9 +90,6 @@ The width property supports dynamic value binding through template expressions, 
 ### Example 1: Chart with dynamic width
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -137,13 +130,7 @@ The width property supports dynamic value binding through template expressions, 
 {% endraw %}
 
 
-
-
-
 ### Example 2: Conditional image sizing
-
-
-
 
 
 {% raw %}
@@ -167,13 +154,7 @@ The width property supports dynamic value binding through template expressions, 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Progress bars with data-driven widths
-
-
-
 
 
 {% raw %}
@@ -217,13 +198,7 @@ The width property supports dynamic value binding through template expressions, 
 {% endraw %}
 
 
-
-
-
 ### Example 4: Responsive table columns based on configuration
-
-
-
 
 
 {% raw %}
@@ -260,9 +235,6 @@ The width property supports dynamic value binding through template expressions, 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

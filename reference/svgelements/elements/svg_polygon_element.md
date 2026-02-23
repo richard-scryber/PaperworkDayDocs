@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;polygon&gt; : SVG Polygon Element
+{: .no_toc }
 
 The `<polygon>` element draws a closed shape consisting of connected straight lines in SVG content within your PDF documents. Unlike `<polyline>`, polygons automatically connect the last point to the first, creating a closed path. They're perfect for creating stars, triangles, arrows, custom shapes, badges, and geometric diagrams.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -78,9 +92,6 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
 ### Example 1: Dynamic Triangle
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { triangle: { points: "100,50 150,150 50,150", color: '#FF5722' } } -->
@@ -92,13 +103,7 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
 {% endraw %}
 
 
-
-
-
 ### Example 2: Star Rating
-
-
-
 
 
 {% raw %}
@@ -114,13 +119,7 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
 {% endraw %}
 
 
-
-
-
 ### Example 3: Multiple Polygons
-
-
-
 
 
 {% raw %}
@@ -137,9 +136,6 @@ The `<polygon>` element supports dynamic attribute values using data binding exp
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -436,9 +432,6 @@ For regular polygons (equal sides and angles), calculate points using trigonomet
 ### Dynamic Star from Rating
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { rating: 5 } -->
@@ -450,9 +443,6 @@ For regular polygons (equal sides and angles), calculate points using trigonomet
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Directional Arrows

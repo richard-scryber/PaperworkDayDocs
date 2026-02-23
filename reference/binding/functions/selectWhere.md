@@ -12,22 +12,20 @@ has_toc: false
 # selectWhere() : Filter Collection by Condition
 {: .no_toc }
 
+Filter a collection to return only items where a specific property matches a value.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Filter a collection to return only items where a specific property matches a value.
 
 ## Signature
 
@@ -60,9 +58,6 @@ A new array containing only items where the specified property equals the given 
 ### Filter by Status
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Active Tasks</h3>
@@ -71,9 +66,6 @@ A new array containing only items where the specified property equals the given 
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -98,9 +90,6 @@ doc.Params["model"] = new {
 ### Filter and Calculate
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Category Sales</h3>
@@ -109,9 +98,6 @@ doc.Params["model"] = new {
 <p>Clothing: ${{sumOf(selectWhere(model.products, 'category', 'Clothing'), 'sales')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -138,9 +124,6 @@ doc.Params["model"] = new {
 ### Filter Boolean Properties
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Verified Users ({{count(selectWhere(model.users, 'verified', true))}})</h3>
@@ -149,9 +132,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -175,9 +155,6 @@ doc.Params["model"] = new {
 ### Multi-Step Filtering
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>High Priority Active Tasks</h3>
@@ -188,9 +165,6 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

@@ -10,23 +10,20 @@ has_toc: false
 ---
 
 # &lt;text&gt; : The SVG Text Element
+{: .no_toc }
 
 The `<text>` element is used to render text content in SVG graphics. It provides precise positioning and styling control for labels, annotations, and textual information within vector graphics and charts.
 
 ---
 
-## Summary
-
-The `<text>` element enables the display of text at specific coordinates within an SVG coordinate system. It supports standard font styling, fill colors, transformations, and text anchoring for flexible positioning. Text can contain plain content or be structured with nested `<tspan>` elements for advanced formatting.
-
-Key features:
-- Precise x, y coordinate positioning
-- Font family, size, and style control
-- Text anchoring (start, middle, end)
-- Baseline alignment options
-- Fill colors and transformations
-- Support for nested tspan elements
-- Data binding for dynamic text content
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 
@@ -136,9 +133,6 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 ### Basic Text Binding
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Simple value binding -->
@@ -155,13 +149,7 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 {% endraw %}
 
 
-
-
-
 ### Dynamic Positioning
-
-
-
 
 
 {% raw %}
@@ -179,13 +167,7 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 {% endraw %}
 
 
-
-
-
 ### Dynamic Styling
-
-
-
 
 
 {% raw %}
@@ -208,13 +190,7 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 {% endraw %}
 
 
-
-
-
 ### Template Iteration
-
-
-
 
 
 {% raw %}
@@ -229,9 +205,6 @@ The `<text>` element supports comprehensive data binding for dynamic text conten
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -381,9 +354,6 @@ X-axis labels for a bar chart:
 Dynamic text from model data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { customerName: "Acme Corp", orderCount: 42 } -->
@@ -399,15 +369,9 @@ Dynamic text from model data:
 {% endraw %}
 
 
-
-
-
 ### 8. Value with Conditional Color
 
 Text color based on threshold:
-
-
-
 
 
 {% raw %}
@@ -426,15 +390,9 @@ Text color based on threshold:
 {% endraw %}
 
 
-
-
-
 ### 9. Chart with Dynamic Labels
 
 Bar chart with data-driven positioning:
-
-
-
 
 
 {% raw %}
@@ -468,9 +426,6 @@ Bar chart with data-driven positioning:
 {% endraw %}
 
 
-
-
-
 ### 10. Multi-Style Text Header
 
 Combining multiple text elements:
@@ -492,9 +447,6 @@ Combining multiple text elements:
 Formatted percentage with styling:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { completionRate: 0.75 } -->
@@ -508,9 +460,6 @@ Formatted percentage with styling:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 12. Status Badge
@@ -532,9 +481,6 @@ Circular badge with centered text:
 Gauge with temperature reading:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { temperature: 72.5, unit: "°F" } -->
@@ -554,15 +500,9 @@ Gauge with temperature reading:
 {% endraw %}
 
 
-
-
-
 ### 14. Data Point Labels
 
 Scatter plot with value labels:
-
-
-
 
 
 {% raw %}
@@ -578,9 +518,6 @@ Scatter plot with value labels:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 15. Legend with Icons
@@ -605,9 +542,6 @@ Chart legend with text labels:
 Text size based on importance:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { items: [{text: "Critical", priority: 3}, {text: "Normal", priority: 1}] } -->
@@ -624,9 +558,6 @@ Text size based on importance:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 17. Annotation with Leader
@@ -669,9 +600,6 @@ Multiple text elements for line breaks:
 Date/time labels on chart axis:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { timePoints: [{date: "Jan 1", value: 100}, {date: "Jan 15", value: 150}] } -->
@@ -696,15 +624,9 @@ Date/time labels on chart axis:
 {% endraw %}
 
 
-
-
-
 ### 20. Score Display with Description
 
 Large score with explanatory text:
-
-
-
 
 
 {% raw %}
@@ -723,9 +645,6 @@ Large score with explanatory text:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

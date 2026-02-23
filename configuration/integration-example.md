@@ -5,7 +5,7 @@ parent: Configuration & Extension
 parent_url: /configuration/
 has_children: false
 has_toc: false
-nav_order: 10
+nav_order: 11
 ---
 
 # Complete Integration Example

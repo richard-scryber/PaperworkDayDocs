@@ -3,7 +3,7 @@ layout: default
 title: Font Configuration
 parent: Configuration & Extension System
 grand_parent: Reference
-nav_order: 6
+nav_order: 7
 ---
 
 # Font Configuration

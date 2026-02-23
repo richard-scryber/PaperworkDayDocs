@@ -12,6 +12,8 @@ has_toc: false
 # * : Multiplication Operator
 {: .no_toc }
 
+Multiply two numeric values together.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Multiply two numeric values together.
 
 ## Syntax
 
@@ -73,16 +71,11 @@ The product of the left and right operands.
 ### Line Item Total
 
 
-
-
 {% raw %}
 ```html 
 <p>Total: ${{format(model.quantity * model.price, '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -101,17 +94,11 @@ doc.Params["model"] = new {
 ### Area Calculation
 
 
-
-
-
 {% raw %}
 ```html 
 <p>Area: {{model.width * model.height}} sq ft</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -130,8 +117,6 @@ doc.Params["model"] = new {
 ### Tax Calculation
 
 
-
-
 {% raw %}
 ```html 
 <p>Subtotal: ${{format(model.price, '0.00')}}</p>
@@ -139,9 +124,6 @@ doc.Params["model"] = new {
 <p>Total: ${{format(model.price * (1 + model.taxRate), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -162,9 +144,6 @@ doc.Params["model"] = new {
 ### Percentage Calculation
 
 
-
-
-
 {% raw %}
 ```html 
 <p>{{format(model.score / model.total * 100, '0.0')}}% correct</p>
@@ -172,12 +151,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Scaling Values
-
-
 
 
 {% raw %}
@@ -188,9 +162,6 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

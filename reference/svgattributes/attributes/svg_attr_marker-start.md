@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @marker-start : The Path Start Marker Attribute
+{: .no_toc }
 
 The `marker-start` attribute specifies a marker graphic to be drawn at the first vertex of a path, line, polyline, or polygon. Markers are typically used to add arrowheads, dots, or other decorative elements at the start of shapes.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -78,9 +92,6 @@ The `marker-start` attribute is supported on:
 Choose marker based on data properties:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { lineType: 'primary', markers: { primary: 'dot-start', secondary: 'arrow-start' } } -->
@@ -104,15 +115,9 @@ Choose marker based on data properties:
 {% endraw %}
 
 
-
-
-
 ### Conditional Markers
 
 Show markers based on conditions:
-
-
-
 
 
 {% raw %}
@@ -134,13 +139,7 @@ Show markers based on conditions:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Connection Visualization
-
-
-
 
 
 {% raw %}
@@ -172,9 +171,6 @@ Show markers based on conditions:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

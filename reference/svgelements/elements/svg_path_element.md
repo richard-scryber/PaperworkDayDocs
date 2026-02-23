@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;path&gt; : SVG Path Element
+{: .no_toc }
 
 The `<path>` element is the most powerful and flexible SVG shape element, capable of drawing any arbitrary shape using a series of commands in SVG content within your PDF documents. It supports straight lines, curves, arcs, and complex combinations, making it essential for icons, custom shapes, logos, and advanced graphics.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -138,9 +152,6 @@ The `<path>` element supports dynamic path data using data binding expressions w
 ### Example 1: Dynamic Path Data
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { pathData: 'M 10,50 L 50,20 L 90,60' } -->
@@ -152,13 +163,7 @@ The `<path>` element supports dynamic path data using data binding expressions w
 {% endraw %}
 
 
-
-
-
 ### Example 2: Calculated Curve
-
-
-
 
 
 {% raw %}
@@ -172,13 +177,7 @@ The `<path>` element supports dynamic path data using data binding expressions w
 {% endraw %}
 
 
-
-
-
 ### Example 3: Multiple Dynamic Paths
-
-
-
 
 
 {% raw %}
@@ -195,9 +194,6 @@ The `<path>` element supports dynamic path data using data binding expressions w
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -456,9 +452,6 @@ The path data string is parsed into drawing operations. Invalid syntax will resu
 ### Dynamic Arc
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { radius: 50, sweep: 1 } -->
@@ -468,9 +461,6 @@ The path data string is parsed into drawing operations. Invalid syntax will resu
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

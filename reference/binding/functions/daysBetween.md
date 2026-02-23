@@ -12,22 +12,20 @@ has_toc: false
 # daysBetween() : Calculate Days Between Dates
 {: .no_toc }
 
+Calculate the number of days between two dates. Returns a positive or negative number depending on whether the second date is after or before the first.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the number of days between two dates. Returns a positive or negative number depending on whether the second date is after or before the first.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The number of days between the two dates. Positive if endDate is after startDate
 ### Calculate Days Until Event
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Days until launch: {{daysBetween(model.today, model.launchDate)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,9 +80,6 @@ doc.Params["model"] = new {
 ### Project Duration
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Project Timeline</h3>
@@ -99,9 +88,6 @@ doc.Params["model"] = new {
 <p>Duration: {{daysBetween(model.startDate, model.endDate)}} days</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -123,9 +109,6 @@ doc.Params["model"] = new {
 ### Overdue Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.tasks}}
@@ -139,9 +122,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

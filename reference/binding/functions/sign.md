@@ -12,22 +12,20 @@ has_toc: false
 # sign() : Sign of Number
 {: .no_toc }
 
+Get the sign of a number (-1, 0, or 1).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Get the sign of a number (-1, 0, or 1).
 
 ## Signature
 
@@ -60,9 +58,6 @@ sign(value)
 ### Check Sign
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if sign(model.balance) > 0}}
@@ -74,9 +69,6 @@ sign(value)
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -94,9 +86,6 @@ doc.Params["model"] = new {
 ### Profit/Loss Indicator
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.accounts}}
@@ -107,9 +96,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -137,17 +123,11 @@ doc.Params["model"] = new {
 ### Direction Indicator
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Trend: {{if(sign(model.change) > 0, 'Increasing', if(sign(model.change) < 0, 'Decreasing', 'Stable'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 ---

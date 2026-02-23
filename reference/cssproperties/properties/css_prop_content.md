@@ -12,6 +12,8 @@ has_toc: false
 # content : Generated Content Property
 {: .no_toc }
 
+The `content` property is used with the `::before` and `::after` pseudo-elements to insert generated content into a document. This property enables automatic numbering, decorative elements, quotes, and dynamic content insertion without modifying the HTML markup.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `content` property is used with the `::before` and `::after` pseudo-elements to insert generated content into a document. This property enables automatic numbering, decorative elements, quotes, and dynamic content insertion without modifying the HTML markup.
 
 ---
 
@@ -109,9 +105,6 @@ The `content` property can be dynamically populated through data binding with co
 ### Example 1: Dynamic list with data-bound counter labels
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -140,13 +133,7 @@ The `content` property can be dynamically populated through data binding with co
 {% endraw %}
 
 
-
-
-
 ### Example 2: Generated badges with data-driven counters
-
-
-
 
 
 {% raw %}
@@ -189,13 +176,7 @@ The `content` property can be dynamically populated through data binding with co
 {% endraw %}
 
 
-
-
-
 ### Example 3: Data-driven figure numbering
-
-
-
 
 
 {% raw %}
@@ -232,9 +213,6 @@ The `content` property can be dynamically populated through data binding with co
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

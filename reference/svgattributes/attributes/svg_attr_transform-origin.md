@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @transform-origin : The Transform Origin Point Attribute
+{: .no_toc }
 
 The `transform-origin` attribute specifies the origin point for transformations applied to an SVG element. It determines the fixed point around which rotations, scaling, and other transformations are performed, providing precise control over transformation behavior without modifying coordinates.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -23,9 +37,6 @@ The `transform-origin` attribute controls the transformation reference point:
 - Support data binding for dynamic origin points
 - Simplify complex transformations without coordinate calculations
 - Works with all transform functions (translate, rotate, scale, skew)
-
-
-
 
 
 {% raw %}
@@ -49,9 +60,6 @@ The `transform-origin` attribute controls the transformation reference point:
       fill="green"/>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -159,9 +167,6 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 ### Dynamic Origin Coordinates
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { originX: 100, originY: 100 } -->
@@ -173,13 +178,7 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 {% endraw %}
 
 
-
-
-
 ### Dynamic Keyword-Based Origin
-
-
-
 
 
 {% raw %}
@@ -193,13 +192,7 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 {% endraw %}
 
 
-
-
-
 ### Calculated Origin Point
-
-
-
 
 
 {% raw %}
@@ -214,13 +207,7 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 {% endraw %}
 
 
-
-
-
 ### Interactive Rotation Point
-
-
-
 
 
 {% raw %}
@@ -234,13 +221,7 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Transformations
-
-
-
 
 
 {% raw %}
@@ -256,13 +237,7 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
 {% endraw %}
 
 
-
-
-
 ### Scaling from Different Origins
-
-
-
 
 
 {% raw %}
@@ -274,9 +249,6 @@ The `transform-origin` attribute supports data binding for dynamic origin contro
         fill="teal"/>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -762,9 +734,6 @@ The `transform-origin` attribute is part of the SVG specification. In Scryber, i
 ### Dynamic Rotation Point
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { angle: 45, pivotX: 150, pivotY: 150 } -->
@@ -785,13 +754,7 @@ The `transform-origin` attribute is part of the SVG specification. In Scryber, i
 {% endraw %}
 
 
-
-
-
 ### Scale Animation Origin
-
-
-
 
 
 {% raw %}
@@ -806,9 +769,6 @@ The `transform-origin` attribute is part of the SVG specification. In Scryber, i
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Keywords vs Coordinates

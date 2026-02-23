@@ -12,6 +12,8 @@ has_toc: false
 # background-repeat : Background Repeat Property
 {: .no_toc }
 
+The `background-repeat` property controls how background images are repeated (tiled) within an element in PDF documents. This property is essential for creating patterns, borders, and controlling single-instance image display.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `background-repeat` property controls how background images are repeated (tiled) within an element in PDF documents. This property is essential for creating patterns, borders, and controlling single-instance image display.
 
 ---
 
@@ -96,9 +92,6 @@ The `background-repeat` property supports dynamic data binding, allowing you to 
 ### Example 1: Dynamic pattern selection
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -119,15 +112,9 @@ The `background-repeat` property supports dynamic data binding, allowing you to 
 {% endraw %}
 
 
-
-
-
 Enables different organizations to use their own background patterns with custom repeat settings (repeat, repeat-x, repeat-y, no-repeat) - perfect for white-label document generation where each client has unique branding requirements.
 
 ### Example 2: Conditional repeating borders based on document type
-
-
-
 
 
 {% raw %}
@@ -150,15 +137,9 @@ Enables different organizations to use their own background patterns with custom
 {% endraw %}
 
 
-
-
-
 Automatically adjusts background repetition based on document type - certificates get single centered images, letterheads get horizontal borders, while general documents can have full repeating patterns.
 
 ### Example 3: Data-driven security patterns
-
-
-
 
 
 {% raw %}
@@ -185,9 +166,6 @@ Automatically adjusts background repetition based on document type - certificate
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Creates security-enhanced documents where high-security items automatically get full repeating microprint patterns, while lower security levels may use simpler watermarks. Essential for compliance and document authentication.

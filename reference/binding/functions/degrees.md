@@ -12,22 +12,20 @@ has_toc: false
 # degrees() : Convert Radians to Degrees
 {: .no_toc }
 
+Convert an angle from radians to degrees.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Convert an angle from radians to degrees.
 
 ## Signature
 
@@ -58,9 +56,6 @@ The angle in degrees.
 ### Convert Pi
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>π radians = {{format(degrees(pi()), '0.0')}}°</p>
@@ -68,9 +63,6 @@ The angle in degrees.
 <p>π/4 radians = {{format(degrees(pi() / 4), '0.0')}}°</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -83,17 +75,11 @@ The angle in degrees.
 ### Convert Trigonometric Result
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Angle: {{format(degrees(asin(0.5)), '0.0')}}°</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Output:**
@@ -104,9 +90,6 @@ The angle in degrees.
 ### Display Angles
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.angles}}
@@ -114,9 +97,6 @@ The angle in degrees.
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

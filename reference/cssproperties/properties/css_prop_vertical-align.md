@@ -12,6 +12,8 @@ has_toc: false
 # vertical-align : Vertical Alignment Property
 {: .no_toc }
 
+The `vertical-align` property specifies the vertical alignment of inline and table-cell elements relative to their container or baseline. This property is essential for controlling the vertical positioning of text, images, and other inline content in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `vertical-align` property specifies the vertical alignment of inline and table-cell elements relative to their container or baseline. This property is essential for controlling the vertical positioning of text, images, and other inline content in PDF documents.
 
 ---
 
@@ -85,9 +81,6 @@ The `vertical-align` property can be dynamically controlled through data binding
 ### Example 1: Dynamic Table Cell Alignment
 
 
-
-
-
 {% raw %}
 ```html
 <table style="width: 100%; border-collapse: collapse">
@@ -115,13 +108,7 @@ The `vertical-align` property can be dynamically controlled through data binding
 {% endraw %}
 
 
-
-
-
 ### Example 2: Mathematical Expression with Dynamic Positioning
-
-
-
 
 
 {% raw %}
@@ -145,13 +132,7 @@ The `vertical-align` property can be dynamically controlled through data binding
 {% endraw %}
 
 
-
-
-
 ### Example 3: Content Type-Based Alignment
-
-
-
 
 
 {% raw %}
@@ -170,9 +151,6 @@ The `vertical-align` property can be dynamically controlled through data binding
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

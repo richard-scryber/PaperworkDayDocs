@@ -12,6 +12,8 @@ has_toc: false
 # column-width : Column Width Property
 {: .no_toc }
 
+The `column-width` property specifies the ideal or minimum width for columns in a multi-column layout. Unlike `column-count` which sets an exact number of columns, `column-width` allows the browser to determine the optimal number of columns based on available space, making layouts more responsive and adaptable to different page sizes.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `column-width` property specifies the ideal or minimum width for columns in a multi-column layout. Unlike `column-count` which sets an exact number of columns, `column-width` allows the browser to determine the optimal number of columns based on available space, making layouts more responsive and adaptable to different page sizes.
 
 ---
 
@@ -93,9 +89,6 @@ The column-width property integrates with data binding to create flexible, respo
 ### Example 1: Responsive column width based on page size
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -135,13 +128,7 @@ The column-width property integrates with data binding to create flexible, respo
 {% endraw %}
 
 
-
-
-
 ### Example 2: Configurable column layouts
-
-
-
 
 
 {% raw %}
@@ -184,13 +171,7 @@ The column-width property integrates with data binding to create flexible, respo
 {% endraw %}
 
 
-
-
-
 ### Example 3: Adaptive layouts for multi-section documents
-
-
-
 
 
 {% raw %}
@@ -247,9 +228,6 @@ The column-width property integrates with data binding to create flexible, respo
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

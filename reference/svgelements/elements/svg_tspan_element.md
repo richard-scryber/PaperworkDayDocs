@@ -10,22 +10,20 @@ has_toc: false
 ---
 
 # &lt;tspan&gt; : The SVG Text Span Element
+{: .no_toc }
 
 The `<tspan>` element is used to create styled spans of text within SVG `<text>` elements. It allows for fine-grained control over text formatting, positioning, and appearance without requiring separate text elements.
 
 ---
 
-## Summary
-
-The `<tspan>` element provides inline text formatting capabilities within SVG text. It can override parent text styles, adjust positioning, and create multi-styled text runs. Think of it as the SVG equivalent of an HTML `<span>` element, but with SVG-specific positioning capabilities.
-
-Key features:
-- Override font properties for text segments
-- Adjust position with x, y coordinates or dx, dy offsets
-- Apply unique fill and stroke colors
-- Create multi-line text effects
-- Support for data binding on content and styles
-- Nest multiple tspan elements for complex layouts
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
 
 ---
 
@@ -131,9 +129,6 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 ### Basic Content Binding
 
 
-
-
-
 {% raw %}
 ```html
 <text x="10" y="30" font-size="16">
@@ -156,13 +151,7 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 {% endraw %}
 
 
-
-
-
 ### Dynamic Positioning
-
-
-
 
 
 {% raw %}
@@ -183,13 +172,7 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 {% endraw %}
 
 
-
-
-
 ### Style Binding
-
-
-
 
 
 {% raw %}
@@ -214,13 +197,7 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 {% endraw %}
 
 
-
-
-
 ### Template Iteration
-
-
-
 
 
 {% raw %}
@@ -234,9 +211,6 @@ The `<tspan>` element supports comprehensive data binding for dynamic content an
 </text>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -431,9 +405,6 @@ Multi-colored status indicator:
 Dynamic customer information with styling:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { customerName: "John Doe", accountType: "Premium", balance: 5432.10 } -->
@@ -456,15 +427,9 @@ Dynamic customer information with styling:
 {% endraw %}
 
 
-
-
-
 ### 11. Temperature with Units
 
 Temperature display with styled units:
-
-
-
 
 
 {% raw %}
@@ -482,15 +447,9 @@ Temperature display with styled units:
 {% endraw %}
 
 
-
-
-
 ### 12. Score with Context
 
 Score display with description:
-
-
-
 
 
 {% raw %}
@@ -511,15 +470,9 @@ Score display with description:
 {% endraw %}
 
 
-
-
-
 ### 13. Conditional Status Color
 
 Status text with conditional coloring:
-
-
-
 
 
 {% raw %}
@@ -539,15 +492,9 @@ Status text with conditional coloring:
 {% endraw %}
 
 
-
-
-
 ### 14. Percentage Breakdown
 
 Percentage display with components:
-
-
-
 
 
 {% raw %}
@@ -567,15 +514,9 @@ Percentage display with components:
 {% endraw %}
 
 
-
-
-
 ### 15. Product Name with SKU
 
 Product information with different text styles:
-
-
-
 
 
 {% raw %}
@@ -594,15 +535,9 @@ Product information with different text styles:
 {% endraw %}
 
 
-
-
-
 ### 16. Metric with Trend Indicator
 
 Value with trend arrow:
-
-
-
 
 
 {% raw %}
@@ -626,15 +561,9 @@ Value with trend arrow:
 {% endraw %}
 
 
-
-
-
 ### 17. Date Range Display
 
 Formatted date range with separator:
-
-
-
 
 
 {% raw %}
@@ -650,9 +579,6 @@ Formatted date range with separator:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### 18. Chart Legend Item
@@ -674,9 +600,6 @@ Legend entry with colored indicator text:
 Text with multiple highlighted terms:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { keywords: ["important", "urgent", "required"] } -->
@@ -693,15 +616,9 @@ Text with multiple highlighted terms:
 {% endraw %}
 
 
-
-
-
 ### 20. Complex Label with Multiple Styles
 
 Multi-component label with various styling:
-
-
-
 
 
 {% raw %}
@@ -729,9 +646,6 @@ Multi-component label with various styling:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,6 +12,8 @@ has_toc: false
 # border-left : Left Border Shorthand Property
 {: .no_toc }
 
+The `border-left` property is a shorthand that sets the width, style, and color of the left border of an element. This property is particularly useful for creating accent bars, callout boxes, and timeline markers.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-left` property is a shorthand that sets the width, style, and color of the left border of an element. This property is particularly useful for creating accent bars, callout boxes, and timeline markers.
 
 ---
 
@@ -93,9 +89,6 @@ The `border-left` property supports dynamic values through data binding, allowin
 ### Example 1: Alert boxes with severity colors
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -113,9 +106,6 @@ The `border-left` property supports dynamic values through data binding, allowin
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -129,9 +119,6 @@ Data context:
 ```
 
 ### Example 2: Status cards with dynamic indicators
-
-
-
 
 
 {% raw %}
@@ -153,9 +140,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -170,9 +154,6 @@ Data context:
 ```
 
 ### Example 3: Callout boxes with conditional accents
-
-
-
 
 
 {% raw %}
@@ -191,9 +172,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

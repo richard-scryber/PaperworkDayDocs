@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;svg&gt; : The SVG Canvas Container
+{: .no_toc }
 
 The `<svg>` element is the root container for Scalable Vector Graphics (SVG) content in PDF documents. It creates a self-contained graphics canvas that can contain shapes, paths, text, images, and other SVG elements. The SVG canvas supports coordinate systems, viewports, transformations, and reusable definitions.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -187,9 +201,6 @@ In the Scryber codebase:
 SVG content can be generated dynamically using data binding:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { items: [{x:50, y:50, r:20, color:"red"}, {x:150, y:50, r:30, color:"blue"}] } -->
@@ -202,13 +213,7 @@ SVG content can be generated dynamically using data binding:
 {% endraw %}
 
 
-
-
-
 ### Parameterized Graphics
-
-
-
 
 
 {% raw %}
@@ -224,13 +229,7 @@ SVG content can be generated dynamically using data binding:
 {% endraw %}
 
 
-
-
-
 ### Conditional SVG Content
-
-
-
 
 
 {% raw %}
@@ -246,13 +245,7 @@ SVG content can be generated dynamically using data binding:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Styling
-
-
-
 
 
 {% raw %}
@@ -266,9 +259,6 @@ SVG content can be generated dynamically using data binding:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -381,9 +371,6 @@ SVG content can be generated dynamically using data binding:
 ### SVG Chart with Data Binding
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { chartData: [
@@ -409,9 +396,6 @@ SVG content can be generated dynamically using data binding:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### SVG with Patterns
@@ -479,9 +463,6 @@ SVG content can be generated dynamically using data binding:
 ### Dynamic Gauge Chart
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { percentage: 75, status: "good" } -->
@@ -499,9 +480,6 @@ SVG content can be generated dynamically using data binding:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### SVG Map with Interactive Elements
@@ -533,9 +511,6 @@ SVG content can be generated dynamically using data binding:
 ### SVG Timeline
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { events: [{year: "2020", title: "Founded", x: 50}, ...] } -->
@@ -558,13 +533,7 @@ SVG content can be generated dynamically using data binding:
 {% endraw %}
 
 
-
-
-
 ### SVG Status Badge
-
-
-
 
 
 {% raw %}
@@ -581,9 +550,6 @@ SVG content can be generated dynamically using data binding:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Complex Dashboard Panel

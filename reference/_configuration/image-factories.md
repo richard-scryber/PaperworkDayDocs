@@ -3,7 +3,7 @@ layout: default
 title: Image Factories
 parent: Configuration & Extension System
 grand_parent: Reference
-nav_order: 5
+nav_order: 6
 ---
 
 # Image Factories

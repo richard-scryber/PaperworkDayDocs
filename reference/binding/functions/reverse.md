@@ -12,22 +12,20 @@ has_toc: false
 # reverse() : Reverse Collection Order
 {: .no_toc }
 
+Reverse the order of items in a collection, returning a new array with items in opposite order.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Reverse the order of items in a collection, returning a new array with items in opposite order.
 
 ## Signature
 
@@ -58,18 +56,12 @@ A new array with items in reverse order (last item becomes first, etc.).
 ### Simple Reverse
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Original: {{join(model.items, ', ')}}</p>
 <p>Reversed: {{join(reverse(model.items), ', ')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,9 +80,6 @@ doc.Params["model"] = new {
 ### Descending Sort
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Products (Highest to Lowest Price)</h3>
@@ -99,9 +88,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -126,9 +112,6 @@ doc.Params["model"] = new {
 ### Latest Items First
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Recent Orders</h3>
@@ -137,9 +120,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -164,9 +144,6 @@ doc.Params["model"] = new {
 ### Countdown List
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Countdown</h3>
@@ -176,9 +153,6 @@ doc.Params["model"] = new {
 <p>Launch!</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -202,9 +176,6 @@ doc.Params["model"] = new {
 ### Leaderboard (High Scores First)
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Top Players</h3>
@@ -215,9 +186,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

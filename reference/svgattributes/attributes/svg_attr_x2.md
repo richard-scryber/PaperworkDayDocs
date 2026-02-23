@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @x2 : The Linear Gradient End X Coordinate Attribute
+{: .no_toc }
 
 The `x2` attribute defines the X-coordinate of the ending point for a linear gradient vector. Together with `y2`, it establishes the destination point where the gradient ends, working in conjunction with the start point (x1, y1) to determine the gradient's complete direction and angle.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -82,9 +96,6 @@ Note: This attribute is NOT used with `<radialGradient>` elements.
 Bind the x2 coordinate to data for dynamic gradient extent:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { endX: 75 } -->
@@ -103,15 +114,9 @@ Bind the x2 coordinate to data for dynamic gradient extent:
 {% endraw %}
 
 
-
-
-
 ### Progress-Based Gradient Width
 
 Create gradients that reflect progress or completion:
-
-
-
 
 
 {% raw %}
@@ -134,15 +139,9 @@ Create gradients that reflect progress or completion:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Chart Gradients
 
 Position gradient endpoints based on data ranges:
-
-
-
 
 
 {% raw %}
@@ -165,15 +164,9 @@ Position gradient endpoints based on data ranges:
 {% endraw %}
 
 
-
-
-
 ### Calculated Gradient Vectors
 
 Calculate gradient endpoint from angle and length:
-
-
-
 
 
 {% raw %}
@@ -195,15 +188,9 @@ Calculate gradient endpoint from angle and length:
 {% endraw %}
 
 
-
-
-
 ### Heatmap with Data-Driven Range
 
 Create color gradients based on data value ranges:
-
-
-
 
 
 {% raw %}
@@ -225,9 +212,6 @@ Create color gradients based on data value ranges:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -380,9 +364,6 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 ### Progress Bar with Dynamic End
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { completion: 70 } -->
@@ -404,9 +385,6 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Bar Chart with Horizontal Gradient Bars
@@ -554,9 +532,6 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 ### Data-Driven Highlight Region
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { highlightStart: 30, highlightEnd: 70 } -->
@@ -580,9 +555,6 @@ The `x2` (and y2) coordinates interact with `spreadMethod`:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

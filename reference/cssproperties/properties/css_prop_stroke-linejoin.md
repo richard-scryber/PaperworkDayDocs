@@ -12,6 +12,8 @@ has_toc: false
 # stroke-linejoin : SVG Line Join Style Property
 {: .no_toc }
 
+The `stroke-linejoin` property defines the shape to be used at the corners where two line segments meet in SVG strokes. This property controls how corners appear, whether they are sharp mitered edges, rounded curves, or beveled (cut off) corners.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `stroke-linejoin` property defines the shape to be used at the corners where two line segments meet in SVG strokes. This property controls how corners appear, whether they are sharp mitered edges, rounded curves, or beveled (cut off) corners.
 
 ---
 
@@ -91,9 +87,6 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 ### Example 1: Data-driven polygon styles
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -116,13 +109,7 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 {% endraw %}
 
 
-
-
-
 ### Example 2: Conditional border styles for UI states
-
-
-
 
 
 {% raw %}
@@ -148,13 +135,7 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 {% endraw %}
 
 
-
-
-
 ### Example 3: Dynamic chart elements with variable line joins
-
-
-
 
 
 {% raw %}
@@ -178,9 +159,6 @@ The `stroke-linejoin` property can be dynamically controlled through data bindin
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @y : Y Coordinate Attribute
+{: .no_toc }
 
 The `y` attribute specifies the vertical position (Y-coordinate) of an element within the SVG coordinate system. It defines the top edge position for rectangles and images, or the starting vertical position for other elements in your PDF documents.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -71,9 +85,6 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 ### Example 1: Dynamic Vertical Positioning
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { position: { x: 100, y: 75 }, size: { width: 150, height: 100 } } -->
@@ -86,13 +97,7 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 {% endraw %}
 
 
-
-
-
 ### Example 2: Calculated Vertical Position for Charts
-
-
-
 
 
 {% raw %}
@@ -108,13 +113,7 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 {% endraw %}
 
 
-
-
-
 ### Example 3: Stacked Bars with Dynamic Y
-
-
-
 
 
 {% raw %}
@@ -133,9 +132,6 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -330,9 +326,6 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 ### Dynamic Height Bar Chart from Bottom
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { bars: [
@@ -352,9 +345,6 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Layer Stack
@@ -461,9 +451,6 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 ### Dynamic Row Positioning
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { rows: [
@@ -483,9 +470,6 @@ The `y` attribute supports dynamic values using data binding expressions with `{
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Hierarchical Tree Layout

@@ -12,22 +12,20 @@ has_toc: false
 # minOf() : Find Minimum Property Value
 {: .no_toc }
 
+Find the minimum (smallest) value of a specific numeric property across all items in a collection.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Find the minimum (smallest) value of a specific numeric property across all items in a collection.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The smallest value of the specified property. Returns null for empty collections
 ### Lowest Price
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Lowest price: ${{minOf(model.products, 'price')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -91,9 +83,6 @@ doc.Params["model"] = new {
 ### Inventory Low Stock Alert
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Inventory Status</h3>
@@ -103,9 +92,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -129,9 +115,6 @@ doc.Params["model"] = new {
 ### Performance Metrics
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>API Performance</h3>
@@ -140,9 +123,6 @@ doc.Params["model"] = new {
 <p>Average response: {{round(averageOf(model.requests, 'responseTime'), 0)}}ms</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -167,17 +147,11 @@ doc.Params["model"] = new {
 ### Age Range
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Age range: {{minOf(model.participants, 'age')}} - {{maxOf(model.participants, 'age')}} years</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

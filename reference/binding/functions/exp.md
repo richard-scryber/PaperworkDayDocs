@@ -12,22 +12,20 @@ has_toc: false
 # exp() : Exponential (e^x)
 {: .no_toc }
 
+Calculate e (Euler's number) raised to a specified power.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate e (Euler's number) raised to a specified power.
 
 ## Signature
 
@@ -58,17 +56,11 @@ e raised to the power of the value (e^value).
 ### Basic Exponential
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>e^{{model.value}} = {{format(exp(model.value), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Growth Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Population: {{format(model.initial * exp(model.rate * model.time), '0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -116,17 +102,11 @@ doc.Params["model"] = new {
 ### Exponential Decay
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Remaining: {{format(model.initial * exp(-model.decayRate * model.time), '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

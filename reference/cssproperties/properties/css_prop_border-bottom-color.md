@@ -12,6 +12,8 @@ has_toc: false
 # border-bottom-color : Bottom Border Color Property
 {: .no_toc }
 
+The `border-bottom-color` property sets the color of the bottom border.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-bottom-color` property sets the color of the bottom border.
 
 ---
 
@@ -77,9 +73,6 @@ The `border-bottom-color` property supports dynamic values through data binding,
 ### Example 1: Heading underline colors
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -99,9 +92,6 @@ The `border-bottom-color` property supports dynamic values through data binding,
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -113,9 +103,6 @@ Data context:
 ```
 
 ### Example 2: Table row separators with status
-
-
-
 
 
 {% raw %}
@@ -136,13 +123,7 @@ Data context:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Card accent colors
-
-
-
 
 
 {% raw %}
@@ -164,9 +145,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

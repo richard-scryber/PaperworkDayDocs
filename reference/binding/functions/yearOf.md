@@ -12,22 +12,20 @@ has_toc: false
 # yearOf() : Extract Year from Date
 {: .no_toc }
 
+Extract the year component from a datetime value as a 4-digit number.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract the year component from a datetime value as a 4-digit number.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The year as a 4-digit number (e.g., 2024).
 ### Display Year
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Copyright {{yearOf(model.currentDate)}} Acme Corporation</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Calculate Age
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{model.name}} is {{yearOf(model.today) - yearOf(model.birthDate)}} years old</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -116,9 +102,6 @@ doc.Params["model"] = new {
 ### Group by Year
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Orders by Year</h3>
@@ -127,9 +110,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -154,17 +134,11 @@ doc.Params["model"] = new {
 ### Fiscal Year Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Fiscal Year: {{#if (monthOfYear(model.date) >= 7)}}{{yearOf(model.date) + 1}}{{else}}{{yearOf(model.date)}}{{/if}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

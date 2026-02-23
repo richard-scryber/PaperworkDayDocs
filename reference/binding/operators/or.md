@@ -12,27 +12,22 @@ has_toc: false
 # || : Logical OR Operator
 {: .no_toc }
 
+Combine two boolean expressions. Returns true if at least one operand is true.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
 
-## Summary
-
-Combine two boolean expressions. Returns true if at least one operand is true.
-
 ## Syntax
-
-
-
 
 
 {% raw %}
@@ -40,8 +35,6 @@ Combine two boolean expressions. Returns true if at least one operand is true.
 {{condition1 || condition2}}
 ``` 
 {% endraw %}
-
-
 
 
 ---
@@ -87,9 +80,6 @@ Evaluated after: All other operators
 ### Administrative Access
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.isAdmin || model.isModerator}}
@@ -104,10 +94,6 @@ Evaluated after: All other operators
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -129,9 +115,6 @@ doc.Params["model"] = new {
 ### Multiple Status Check
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.status == 'shipped' || model.status == 'delivered'}}
@@ -147,10 +130,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -171,9 +150,6 @@ doc.Params["model"] = new {
 ### Weekend Detector
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.dayOfWeek == 0 || model.dayOfWeek == 6}}
@@ -191,14 +167,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Alert Conditions
-
-
-
 
 
 {% raw %}
@@ -218,10 +187,6 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -255,9 +220,6 @@ doc.Params["model"] = new {
 ### Role-Based Display
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.role == 'admin' || model.role == 'manager' || model.role == 'supervisor'}}
@@ -270,14 +232,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Priority Orders
-
-
-
 
 
 {% raw %}
@@ -298,10 +253,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 ---

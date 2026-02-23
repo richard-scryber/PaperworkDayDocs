@@ -3,7 +3,7 @@ layout: default
 title: Library Architecture
 parent: Configuration & Extension
 parent_url: /configuration
-nav_order: 11
+nav_order: 12
 ---
 
 
@@ -135,7 +135,7 @@ Scryber.Core is a .NET PDF generation engine that transforms HTML/XML templates 
 
 ### Open source frameworks
 
-- **bijington/expressive** : The source has been modifed significantly to work with the library, however forms the base of the Expression parser and function list.
+- **bijington/expressive** : The source has been modified significantly to work with the library, however forms the base of the Expression parser and function list.
 
 ---
 

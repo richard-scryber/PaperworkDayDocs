@@ -12,22 +12,20 @@ has_toc: false
 # mode() : Find Most Common Value
 {: .no_toc }
 
+Find the mode (most frequently occurring value) in a collection. Returns the value that appears most often.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Find the mode (most frequently occurring value) in a collection. Returns the value that appears most often.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The most frequently occurring value. If multiple values tie for most frequent, r
 ### Basic Mode
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Most common score: {{mode(model.scores)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Statistical Summary
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Test Results</h3>
@@ -98,9 +87,6 @@ doc.Params["model"] = new {
 <p>The most common score was {{mode(model.scores)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -122,17 +108,11 @@ doc.Params["model"] = new {
 ### Most Popular Product
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Most ordered product: {{mode(collect(model.orders, 'productId'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -156,9 +136,6 @@ doc.Params["model"] = new {
 ### Customer Preferences
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Survey Results</h3>
@@ -169,9 +146,6 @@ doc.Params["model"] = new {
 {{/with}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -199,17 +173,11 @@ doc.Params["model"] = new {
 ### String Mode
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Most common status: {{mode(collect(model.tasks, 'status'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

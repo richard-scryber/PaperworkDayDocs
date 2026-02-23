@@ -12,6 +12,8 @@ has_toc: false
 # border-right-color : Right Border Color Property
 {: .no_toc }
 
+The `border-right-color` property sets the color of the right border.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-right-color` property sets the color of the right border.
 
 ---
 
@@ -77,9 +73,6 @@ The `border-right-color` property supports dynamic values through data binding, 
 ### Example 1: Column separators with status colors
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -99,13 +92,7 @@ The `border-right-color` property supports dynamic values through data binding, 
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dashboard metric dividers
-
-
-
 
 
 {% raw %}
@@ -129,13 +116,7 @@ The `border-right-color` property supports dynamic values through data binding, 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Sidebar navigation indicators
-
-
-
 
 
 {% raw %}
@@ -155,9 +136,6 @@ The `border-right-color` property supports dynamic values through data binding, 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,27 +12,22 @@ has_toc: false
 # - : Subtraction Operator
 {: .no_toc }
 
+Subtract one numeric value from another.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
 
-## Summary
-
-Subtract one numeric value from another.
-
 ## Syntax
-
-
-
 
 
 {% raw %}
@@ -40,9 +35,6 @@ Subtract one numeric value from another.
 {{operand1 - operand2}}
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -79,17 +71,11 @@ The difference between the left and right operands.
 ### Basic Subtraction
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Discount: ${{model.originalPrice - model.salePrice}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -108,17 +94,11 @@ doc.Params["model"] = new {
 ### Calculating Remaining Stock
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Remaining: {{model.totalStock - model.soldQuantity}} units</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -137,9 +117,6 @@ doc.Params["model"] = new {
 ### Date Difference (with days)
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Days remaining: {{daysBetween(model.today, model.deadline)}}</p>
@@ -147,13 +124,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Variance Calculation
-
-
-
 
 
 {% raw %}
@@ -166,9 +137,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -188,9 +156,6 @@ doc.Params["model"] = new {
 ### Combined with Other Operators
 
 
-
-
-
 {% raw %}
 ```handlebars
 <!-- Discount percentage -->
@@ -200,9 +165,6 @@ doc.Params["model"] = new {
 <p>Profit: ${{format(model.revenue - model.costs - model.taxes, '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 ---

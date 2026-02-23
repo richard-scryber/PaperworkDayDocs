@@ -12,6 +12,8 @@ has_toc: false
 # stroke-dashoffset : SVG Dash Pattern Offset Property
 {: .no_toc }
 
+The `stroke-dashoffset` property specifies the distance into the dash pattern to start the dash. This property is commonly used in combination with `stroke-dasharray` to create animated drawing effects or to adjust the position of dashed patterns along a path.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `stroke-dashoffset` property specifies the distance into the dash pattern to start the dash. This property is commonly used in combination with `stroke-dasharray` to create animated drawing effects or to adjust the position of dashed patterns along a path.
 
 ---
 
@@ -99,9 +95,6 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
 ### Example 1: Dynamic progress circles from data
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -126,13 +119,7 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
 {% endraw %}
 
 
-
-
-
 ### Example 2: Data-driven gauge meter
-
-
-
 
 
 {% raw %}
@@ -156,13 +143,7 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
 {% endraw %}
 
 
-
-
-
 ### Example 3: Skill level bars with data binding
-
-
-
 
 
 {% raw %}
@@ -186,9 +167,6 @@ The `stroke-dashoffset` property can be dynamically bound to data values, enabli
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

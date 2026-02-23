@@ -12,6 +12,8 @@ has_toc: false
 # background-position : Background Position Property
 {: .no_toc }
 
+The `background-position` property sets the starting position of background images within an element in PDF documents. This property is essential for precisely positioning logos, watermarks, seals, and decorative elements.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `background-position` property sets the starting position of background images within an element in PDF documents. This property is essential for precisely positioning logos, watermarks, seals, and decorative elements.
 
 ---
 
@@ -110,9 +106,6 @@ The `background-position` property supports dynamic data binding, enabling preci
 ### Example 1: Dynamic logo positioning from preferences
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -136,15 +129,9 @@ The `background-position` property supports dynamic data binding, enabling preci
 {% endraw %}
 
 
-
-
-
 Allows each organization to specify their preferred logo position (e.g., "top left", "right 20pt top 20pt", "center") through configuration, ensuring invoices match their exact branding guidelines stored in the database.
 
 ### Example 2: Conditional positioning based on document layout
-
-
-
 
 
 {% raw %}
@@ -171,15 +158,9 @@ Allows each organization to specify their preferred logo position (e.g., "top le
 {% endraw %}
 
 
-
-
-
 Automatically adjusts seal position based on certificate layout style - classic layouts place seals in the bottom right corner, modern layouts center them at the bottom, while alternative layouts center them completely.
 
 ### Example 3: Multi-element positioning with data arrays
-
-
-
 
 
 {% raw %}
@@ -202,9 +183,6 @@ Automatically adjusts seal position based on certificate layout style - classic 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Enables sophisticated multi-layered backgrounds where both main logos and accent graphics have data-driven positioning. Perfect for complex branded documents requiring precise placement of multiple visual elements based on brand guidelines.

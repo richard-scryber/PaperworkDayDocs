@@ -12,29 +12,22 @@ has_toc: false
 # #each : Iteration Helper
 {: .no_toc }
 
+Iterate over arrays or collections, rendering the enclosed template for each item. The data context changes to the current item within the block.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
 
-## Summary
-
-Iterate over arrays or collections, rendering the enclosed template for each item. The data context changes to the current item within the block.
-
-**Based on:** [`<template>` element](../../htmltags/template.html) with data binding and the [`ForEach` component](../../components/foreach.html)
-
 ## Syntax
-
-
-
 
 
 {% raw %}
@@ -44,9 +37,6 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -76,9 +66,6 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 ### Basic Iteration
 
 
-
-
-
 {% raw %}
 ```handlebars
 <ul>
@@ -88,9 +75,6 @@ Iterate over arrays or collections, rendering the enclosed template for each ite
 </ul>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -112,9 +96,6 @@ doc.Params["model"] = new {
 ### With Object Properties
 
 
-
-
-
 {% raw %}
 ```handlebars
 <table>
@@ -130,9 +111,6 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -144,9 +122,6 @@ doc.Params["model"] = new {
 ```
 
 ### Using Special Variables
-
-
-
 
 
 {% raw %}
@@ -161,13 +136,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Accessing Parent Context
-
-
-
 
 
 {% raw %}
@@ -183,17 +152,11 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ---
 
 ## Underlying Implementation
 
 The `{% raw %}{{#each}}{% endraw %}` helper compiles to the following Scryber template element:
-
-
-
 
 
 {% raw %}
@@ -203,9 +166,6 @@ The `{% raw %}{{#each}}{% endraw %}` helper compiles to the following Scryber te
 </template>
 ```
 {% endraw %}
-
-
-
 
 
 This uses Scryber's [`ForEach` component](../../components/foreach.html) internally, which provides the iteration and context management.

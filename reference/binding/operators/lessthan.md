@@ -12,6 +12,8 @@ has_toc: false
 # < : Less Than Operator
 {: .no_toc }
 
+Compare if the left value is less than the right value.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,16 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Compare if the left value is less than the right value.
-
-*Note*: even within attributes, xml (and as such xhtml require the < and the & to be escaped within templates.)
 
 ## Syntax
 
@@ -74,8 +70,6 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 ### Age Restriction
 
 
-
-
 {% raw %}
 ```html 
 {{#if model.age < 18}}
@@ -87,9 +81,6 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 {{/if}} 
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -109,8 +100,6 @@ doc.Params["model"] = new {
 ### Low Stock Warning
 
 
-
-
 {% raw %}
 ```html 
 {{#if model.quantity < model.threshold}}
@@ -121,9 +110,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -145,8 +131,6 @@ doc.Params["model"] = new {
 ### Temperature Check
 
 
-
-
 {% raw %}
 ```html 
 {{#if model.temperature < 32}}
@@ -160,12 +144,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Discount Eligibility
-
-
 
 
 {% raw %}
@@ -184,12 +163,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Progress Tracking
-
-
 
 
 {% raw %}
@@ -209,9 +183,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
 
 
 ---

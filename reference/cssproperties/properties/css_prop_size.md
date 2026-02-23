@@ -12,6 +12,8 @@ has_toc: false
 # size : Page Size Property (for @page rule)
 {: .no_toc }
 
+The `size` property is used within the `@page` CSS at-rule to specify the size and orientation of pages in generated PDF documents. This property allows you to set standard paper sizes (like A4, Letter, Legal) or define custom dimensions. It's essential for controlling the physical dimensions of your PDF output.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `size` property is used within the `@page` CSS at-rule to specify the size and orientation of pages in generated PDF documents. This property allows you to set standard paper sizes (like A4, Letter, Legal) or define custom dimensions. It's essential for controlling the physical dimensions of your PDF output.
 
 ---
 
@@ -117,9 +113,6 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 ### Example 1: Configuration-driven page sizes
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -145,13 +138,7 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 {% endraw %}
 
 
-
-
-
 ### Example 2: Document type-specific page layouts
-
-
-
 
 
 {% raw %}
@@ -188,13 +175,7 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Custom page dimensions from data
-
-
-
 
 
 {% raw %}
@@ -237,9 +218,6 @@ The `size` property within `@page` rules supports data binding, allowing you to 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

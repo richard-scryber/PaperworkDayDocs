@@ -12,22 +12,20 @@ has_toc: false
 # monthOfYear() : Extract Month from Date
 {: .no_toc }
 
+Extract the month component from a datetime value as a number (1-12).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract the month component from a datetime value as a number (1-12).
 
 ## Signature
 
@@ -58,17 +56,11 @@ The month as a number from 1 (January) to 12 (December).
 ### Display Month Number
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Month: {{monthOfYear(model.date)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### Quarter Calculation
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Quarter: Q{{ceiling(monthOfYear(model.date) / 3)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -112,9 +98,6 @@ doc.Params["model"] = new {
 ```
 
 ### Seasonal Classification
-
-
-
 
 
 {% raw %}
@@ -134,9 +117,6 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 **Data:**
 ```csharp
 doc.Params["model"] = new {
@@ -152,9 +132,6 @@ doc.Params["model"] = new {
 ### Sales by Month
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Monthly Sales</h3>
@@ -163,9 +140,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

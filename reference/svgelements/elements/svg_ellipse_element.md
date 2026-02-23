@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;ellipse&gt; : SVG Ellipse Element
+{: .no_toc }
 
 The `<ellipse>` element draws an oval or elliptical shape in SVG content within your PDF documents. It's perfect for creating ovals, rounded badges, icons, orbital diagrams, and decorative elements that require different horizontal and vertical radii.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -79,9 +93,6 @@ The `<ellipse>` element supports dynamic attribute values using data binding exp
 ### Example 1: Dynamic Size and Position
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { oval: { cx: 100, cy: 60, rx: 80, ry: 45, color: '#FF5722' } } -->
@@ -94,13 +105,7 @@ The `<ellipse>` element supports dynamic attribute values using data binding exp
 {% endraw %}
 
 
-
-
-
 ### Example 2: Data-Driven Badges
-
-
-
 
 
 {% raw %}
@@ -115,13 +120,7 @@ The `<ellipse>` element supports dynamic attribute values using data binding exp
 {% endraw %}
 
 
-
-
-
 ### Example 3: Repeating Ellipses
-
-
-
 
 
 {% raw %}
@@ -140,9 +139,6 @@ The `<ellipse>` element supports dynamic attribute values using data binding exp
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -409,9 +405,6 @@ The stroke is drawn centered on the ellipse's outline, extending both inward and
 ### Dynamic Size Ellipses
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { sizes: [
@@ -428,9 +421,6 @@ The stroke is drawn centered on the ellipse's outline, extending both inward and
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

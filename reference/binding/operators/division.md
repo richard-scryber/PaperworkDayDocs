@@ -12,6 +12,8 @@ has_toc: false
 # / : Division Operator
 {: .no_toc }
 
+Divide one numeric value by another.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Divide one numeric value by another.
 
 ## Syntax
 
@@ -73,17 +71,11 @@ The quotient of the left operand divided by the right operand.
 ### Average Calculation
 
 
-
-
-
 {% raw %}
 ```html 
 <p>Average: {{format(model.total / model.count, '0.00')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -102,18 +94,11 @@ doc.Params["model"] = new {
 ### Unit Price
 
 
-
-
-
 {% raw %}
 ```html 
 <p>Price per unit: ${{format(model.totalPrice / model.quantity, '0.00')}}</p> 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -132,18 +117,11 @@ doc.Params["model"] = new {
 ### Percentage Calculation
 
 
-
-
-
 {% raw %}
 ```html 
 <p>Completion: {{format((model.completed / model.total) * 100, '0.0')}}%</p> 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -162,9 +140,6 @@ doc.Params["model"] = new {
 ### Rate Calculation
 
 
-
-
-
 {% raw %}
 ```html 
 <p>Speed: {{format(model.distance / model.time, '0.0')}} mph</p> 
@@ -172,14 +147,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Ratio Comparison
-
-
-
 
 
 {% raw %}
@@ -195,10 +163,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 ---

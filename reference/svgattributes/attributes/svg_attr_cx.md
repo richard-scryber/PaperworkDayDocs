@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @cx : Center X Coordinate Attribute
+{: .no_toc }
 
 The `cx` attribute specifies the horizontal center position (center X-coordinate) of circular and elliptical elements within the SVG coordinate system. It defines the horizontal center point for circles, ellipses, and radial gradients in your PDF documents.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -64,9 +78,6 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 ### Example 1: Dynamic Circle Center
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { dot: { cx: 150, cy: 100, radius: 30, color: '#4CAF50' } } -->
@@ -78,13 +89,7 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 {% endraw %}
 
 
-
-
-
 ### Example 2: Centered Elements with Calculation
-
-
-
 
 
 {% raw %}
@@ -99,13 +104,7 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 {% endraw %}
 
 
-
-
-
 ### Example 3: Bubble Chart with Template
-
-
-
 
 
 {% raw %}
@@ -124,9 +123,6 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -360,9 +356,6 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 ### Dynamic Scatter Plot
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { points: [
@@ -380,9 +373,6 @@ The `cx` attribute supports dynamic values using data binding expressions with `
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Molecule Diagram

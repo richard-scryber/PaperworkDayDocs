@@ -12,22 +12,20 @@ has_toc: false
 # collect() : Extract Property from All Items
 {: .no_toc }
 
+Extract a specific property from all items in a collection, returning a new array of those property values.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract a specific property from all items in a collection, returning a new array of those property values.
 
 ## Signature
 
@@ -59,17 +57,11 @@ An array containing the values of the specified property from each item.
 ### Extract Property Values
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Product names: {{join(collect(model.products, 'name'), ', ')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -91,18 +83,12 @@ doc.Params["model"] = new {
 ### Calculate Total from Property
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Total price: ${{sum(collect(model.items, 'price'))}}</p>
 <p>Average price: ${{round(average(collect(model.items, 'price')), 2)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -125,18 +111,12 @@ doc.Params["model"] = new {
 ### Extract IDs for Display
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Order IDs: {{join(collect(model.orders, 'id'), ', ')}}</p>
 <p>Total orders: {{count(collect(model.orders, 'id'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -159,9 +139,6 @@ doc.Params["model"] = new {
 ### Statistical Analysis
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Sales Performance</h3>
@@ -171,9 +148,6 @@ doc.Params["model"] = new {
 <p>Lowest sale: ${{min(collect(model.sales, 'amount'))}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -200,9 +174,6 @@ doc.Params["model"] = new {
 ### Nested Property Collection
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.teams}}
@@ -212,9 +183,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

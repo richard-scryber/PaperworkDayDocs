@@ -12,6 +12,8 @@ has_toc: false
 # padding-bottom : Bottom Padding Property
 {: .no_toc }
 
+The `padding-bottom` property sets the bottom padding of an element in PDF documents. Bottom padding creates space inside the element below the content, between the bottom border and the content, inheriting the element's background color.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `padding-bottom` property sets the bottom padding of an element in PDF documents. Bottom padding creates space inside the element below the content, between the bottom border and the content, inheriting the element's background color.
 
 ---
 
@@ -92,9 +88,6 @@ The `padding-bottom` property supports dynamic values through data binding, allo
 ### Example 1: Section padding based on content type
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -126,9 +119,6 @@ The `padding-bottom` property supports dynamic values through data binding, allo
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -141,9 +131,6 @@ Data context:
 ```
 
 ### Example 2: Card body with variable bottom padding
-
-
-
 
 
 {% raw %}
@@ -182,9 +169,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -197,9 +181,6 @@ Data context:
 ```
 
 ### Example 3: Newsletter sections with adaptive padding
-
-
-
 
 
 {% raw %}
@@ -222,9 +203,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

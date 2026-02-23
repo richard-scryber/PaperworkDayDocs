@@ -12,6 +12,8 @@ has_toc: false
 # > : Greater Than Operator
 {: .no_toc }
 
+Compare if the left value is greater than the right value.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Compare if the left value is greater than the right value.
 
 ## Syntax
 
@@ -72,9 +70,6 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 ### Adult Verification
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.age > 18}}
@@ -88,10 +83,6 @@ Evaluated before: `==`, `!=`, `??`, `&&`, `||`
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -111,9 +102,6 @@ doc.Params["model"] = new {
 ### High Value Order
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.orderTotal > 1000}}
@@ -126,14 +114,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
-
 ### Stock Availability
-
-
-
 
 
 {% raw %}
@@ -145,10 +126,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -166,9 +143,6 @@ doc.Params["model"] = new {
 ### Performance Indicator
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.revenue > model.target}}
@@ -181,10 +155,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 **Data:**
@@ -208,9 +178,6 @@ doc.Params["model"] = new {
 ### Temperature Warning
 
 
-
-
-
 {% raw %}
 ```html 
 {{#if model.temperature > 100}}
@@ -222,10 +189,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
-
 
 
 ---

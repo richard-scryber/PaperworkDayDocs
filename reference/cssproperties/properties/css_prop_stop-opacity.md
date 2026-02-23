@@ -12,6 +12,8 @@ has_toc: false
 # stop-opacity : SVG Gradient Stop Transparency Property
 {: .no_toc }
 
+The `stop-opacity` property specifies the opacity (transparency) value at a gradient stop within SVG gradient definitions. This property enables creating gradients that fade to transparent, allowing backgrounds and underlying elements to show through.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `stop-opacity` property specifies the opacity (transparency) value at a gradient stop within SVG gradient definitions. This property enables creating gradients that fade to transparent, allowing backgrounds and underlying elements to show through.
 
 ---
 
@@ -92,9 +88,6 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
 ### Example 1: Data-driven fade overlays
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -118,13 +111,7 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic vignette effect with data-bound opacity
-
-
-
 
 
 {% raw %}
@@ -151,13 +138,7 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional transparency for emphasis
-
-
-
 
 
 {% raw %}
@@ -182,9 +163,6 @@ The `stop-opacity` property can be dynamically controlled through data binding, 
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,6 +12,8 @@ has_toc: false
 # hyphens-limit-chars-after : Minimum Characters After Hyphen
 {: .no_toc }
 
+The `hyphens-limit-chars-after` property specifies the minimum number of characters that must appear after the hyphenation point in a word. This ensures readable word fragments following the hyphen in PDF documents with automatic hyphenation.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `hyphens-limit-chars-after` property specifies the minimum number of characters that must appear after the hyphenation point in a word. This ensures readable word fragments following the hyphen in PDF documents with automatic hyphenation.
 
 ---
 
@@ -83,9 +79,6 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
 ### Example 1: Responsive Column Hyphenation
 
 
-
-
-
 {% raw %}
 ```html
 <div style="width: {{model.column.width}}; padding: 15pt" lang="en">
@@ -117,13 +110,7 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
 {% endraw %}
 
 
-
-
-
 ### Example 2: Language-Based Configuration
-
-
-
 
 
 {% raw %}
@@ -157,13 +144,7 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
 {% endraw %}
 
 
-
-
-
 ### Example 3: Balanced Before and After Settings
-
-
-
 
 
 {% raw %}
@@ -202,9 +183,6 @@ The `hyphens-limit-chars-after` property supports data binding for dynamic contr
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

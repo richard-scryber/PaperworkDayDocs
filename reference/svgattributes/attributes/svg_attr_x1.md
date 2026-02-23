@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @x1 : The Linear Gradient Start X Coordinate Attribute
+{: .no_toc }
 
 The `x1` attribute defines the X-coordinate of the starting point for a linear gradient vector. Together with `y1`, it establishes the origin point from which the gradient begins, determining both the angle and direction of the color transition.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -82,9 +96,6 @@ Note: This attribute is NOT used with `<radialGradient>` elements, which use `cx
 Bind the x1 coordinate to data values for dynamic gradient positioning:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { startX: 25 } -->
@@ -103,15 +114,9 @@ Bind the x1 coordinate to data values for dynamic gradient positioning:
 {% endraw %}
 
 
-
-
-
 ### Calculated Gradient Angles
 
 Calculate x1/x2 coordinates to create specific gradient angles:
-
-
-
 
 
 {% raw %}
@@ -135,15 +140,9 @@ Calculate x1/x2 coordinates to create specific gradient angles:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Chart Gradients
 
 Position gradients based on data ranges:
-
-
-
 
 
 {% raw %}
@@ -166,15 +165,9 @@ Position gradients based on data ranges:
 {% endraw %}
 
 
-
-
-
 ### Conditional Gradient Direction
 
 Change gradient direction based on data conditions:
-
-
-
 
 
 {% raw %}
@@ -197,15 +190,9 @@ Change gradient direction based on data conditions:
 {% endraw %}
 
 
-
-
-
 ### Responsive Gradient Positioning
 
 Adjust gradient based on viewport or container size:
-
-
-
 
 
 {% raw %}
@@ -227,9 +214,6 @@ Adjust gradient based on viewport or container size:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -493,9 +477,6 @@ The gradient vector is defined by start point (x1, y1) and end point (x2, y2):
 ### Data-Driven Gradient Start
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { highlightPosition: 30, color1: "#3498db", color2: "#e74c3c" } -->
@@ -514,9 +495,6 @@ The gradient vector is defined by start point (x1, y1) and end point (x2, y2):
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Striped Pattern with Offset Start

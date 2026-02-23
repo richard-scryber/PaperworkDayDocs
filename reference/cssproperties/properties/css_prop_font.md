@@ -10,7 +10,6 @@ has_toc: false
 ---
 
 # font : The Shorthand Font Property
-
 {: .no_toc }
 
 ---
@@ -23,12 +22,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `font` property is a shorthand CSS property that sets multiple font-related properties in a single declaration. It can set font-style, font-variant, font-weight, font-size, line-height, and font-family. Alternatively, it can set the font to a system font using predefined keywords.
 
 ---
 
@@ -101,9 +94,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 ### Data Binding Examples
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Dynamic font from model data -->
@@ -124,9 +114,6 @@ Data binding expressions are enclosed in double curly braces `{% raw %}{{}}{% en
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 **Note:** The shorthand `font` property with data binding works best when the entire value is bound. Individual property values within the compound font declaration cannot be individually bound using `{% raw %}{{}}{% endraw %}` syntax.

@@ -12,6 +12,8 @@ has_toc: false
 # border-top-width : Top Border Width Property
 {: .no_toc }
 
+The `border-top-width` property sets the width of the top border of an element. Use this property when you need precise control over individual border widths.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-top-width` property sets the width of the top border of an element. Use this property when you need precise control over individual border widths.
 
 ---
 
@@ -74,9 +70,6 @@ The `border-top-width` property supports dynamic values through data binding, al
 ### Example 1: Priority-based header emphasis
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -97,13 +90,7 @@ The `border-top-width` property supports dynamic values through data binding, al
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic table row separators
-
-
-
 
 
 {% raw %}
@@ -124,13 +111,7 @@ The `border-top-width` property supports dynamic values through data binding, al
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional section dividers
-
-
-
 
 
 {% raw %}
@@ -151,9 +132,6 @@ The `border-top-width` property supports dynamic values through data binding, al
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

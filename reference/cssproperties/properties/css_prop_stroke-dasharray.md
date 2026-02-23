@@ -12,6 +12,8 @@ has_toc: false
 # stroke-dasharray : SVG Dashed Line Pattern Property
 {: .no_toc }
 
+The `stroke-dasharray` property defines the pattern of dashes and gaps used to stroke paths and shapes in SVG elements. This property is essential for creating dashed lines, dotted borders, and custom dash patterns in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `stroke-dasharray` property defines the pattern of dashes and gaps used to stroke paths and shapes in SVG elements. This property is essential for creating dashed lines, dotted borders, and custom dash patterns in PDF documents.
 
 ---
 
@@ -107,9 +103,6 @@ The `stroke-dasharray` property can be dynamically controlled through data bindi
 ### Example 1: Data-driven dash patterns for chart lines
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -132,13 +125,7 @@ The `stroke-dasharray` property can be dynamically controlled through data bindi
 {% endraw %}
 
 
-
-
-
 ### Example 2: Progress indicator with dynamic dashes
-
-
-
 
 
 {% raw %}
@@ -166,13 +153,7 @@ The `stroke-dasharray` property can be dynamically controlled through data bindi
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional dash styles based on status
-
-
-
 
 
 {% raw %}
@@ -195,9 +176,6 @@ The `stroke-dasharray` property can be dynamically controlled through data bindi
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

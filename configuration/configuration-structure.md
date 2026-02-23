@@ -5,7 +5,7 @@ parent: Configuration & Extension
 parent_url: /configuration/
 has_children: false
 has_toc: false
-nav_order: 4
+nav_order: 5
 ---
 
 # Scryber Configuration File Structure

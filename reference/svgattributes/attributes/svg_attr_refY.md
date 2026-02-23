@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @refY : The Marker Reference Y Position Attribute
+{: .no_toc }
 
 The `refY` attribute defines the vertical reference point of a marker - the Y coordinate within the marker's coordinate system that aligns with the path vertex. This works with `refX` to control complete marker positioning relative to the path.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -84,9 +98,6 @@ The `refY` attribute is supported on:
 Adjust vertical reference based on marker size:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { markerSize: 14, verticalAlign: 'center' } -->
@@ -111,13 +122,7 @@ Adjust vertical reference based on marker size:
 {% endraw %}
 
 
-
-
-
 ### Conditional Vertical Alignment
-
-
-
 
 
 {% raw %}
@@ -142,13 +147,7 @@ Adjust vertical reference based on marker size:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Vertical Positioning
-
-
-
 
 
 {% raw %}
@@ -188,9 +187,6 @@ Adjust vertical reference based on marker size:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

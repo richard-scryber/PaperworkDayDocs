@@ -12,6 +12,8 @@ has_toc: false
 # overflow-x : Horizontal Overflow Property
 {: .no_toc }
 
+The `overflow-x` property controls how content is handled when it exceeds the horizontal boundaries of its containing element. This allows independent control of horizontal overflow behavior, useful for wide tables, long text strings, and horizontally scrolling content in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `overflow-x` property controls how content is handled when it exceeds the horizontal boundaries of its containing element. This allows independent control of horizontal overflow behavior, useful for wide tables, long text strings, and horizontally scrolling content in PDF documents.
 
 ---
 
@@ -93,9 +89,6 @@ The overflow-x property works with data binding to create dynamic horizontal ove
 ### Example 1: Dynamic horizontal overflow for tables
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -137,13 +130,7 @@ The overflow-x property works with data binding to create dynamic horizontal ove
 {% endraw %}
 
 
-
-
-
 ### Example 2: Conditional overflow for long text strings
-
-
-
 
 
 {% raw %}
@@ -184,13 +171,7 @@ The overflow-x property works with data binding to create dynamic horizontal ove
 {% endraw %}
 
 
-
-
-
 ### Example 3: Responsive horizontal overflow for reports
-
-
-
 
 
 {% raw %}
@@ -234,9 +215,6 @@ The overflow-x property works with data binding to create dynamic horizontal ove
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

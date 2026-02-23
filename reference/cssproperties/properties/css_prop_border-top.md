@@ -12,6 +12,8 @@ has_toc: false
 # border-top : Top Border Shorthand Property
 {: .no_toc }
 
+The `border-top` property is a shorthand that sets the width, style, and color of the top border of an element. This property allows precise control over individual border sides, enabling asymmetric designs and visual emphasis.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,13 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-
-The `border-top` property is a shorthand that sets the width, style, and color of the top border of an element. This property allows precise control over individual border sides, enabling asymmetric designs and visual emphasis.
 
 ---
 
@@ -94,9 +89,6 @@ The `border-top` property supports dynamic values through data binding, allowing
 ### Example 1: Section headers with status colors
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -116,9 +108,6 @@ The `border-top` property supports dynamic values through data binding, allowing
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -132,9 +121,6 @@ Data context:
 ```
 
 ### Example 2: Dynamic table row separators
-
-
-
 
 
 {% raw %}
@@ -154,13 +140,7 @@ Data context:
 {% endraw %}
 
 
-
-
-
 ### Example 3: Priority-based top accents
-
-
-
 
 
 {% raw %}
@@ -180,9 +160,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,6 +12,8 @@ has_toc: false
 # border-color : Border Color Property
 {: .no_toc }
 
+The `border-color` property sets the color of all four borders of an element. This property controls the visual appearance of borders and can be specified using various color formats including named colors, hexadecimal notation, and RGB/RGBA functions.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `border-color` property sets the color of all four borders of an element. This property controls the visual appearance of borders and can be specified using various color formats including named colors, hexadecimal notation, and RGB/RGBA functions.
 
 ---
 
@@ -96,9 +92,6 @@ The `border-color` property supports dynamic values through data binding, allowi
 ### Example 1: Status-based border colors
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -121,9 +114,6 @@ The `border-color` property supports dynamic values through data binding, allowi
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -137,9 +127,6 @@ Data context:
 ```
 
 ### Example 2: Alert severity colors
-
-
-
 
 
 {% raw %}
@@ -161,9 +148,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -177,9 +161,6 @@ Data context:
 ```
 
 ### Example 3: Table rows with conditional colors
-
-
-
 
 
 {% raw %}
@@ -205,9 +186,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---

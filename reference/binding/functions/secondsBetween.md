@@ -12,22 +12,20 @@ has_toc: false
 # secondsBetween() : Calculate Seconds Between Dates
 {: .no_toc }
 
+Calculate the number of seconds between two datetimes. Returns a positive or negative number depending on whether the second datetime is after or before the first.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the number of seconds between two datetimes. Returns a positive or negative number depending on whether the second datetime is after or before the first.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The number of seconds between the two datetimes. Positive if endDateTime is afte
 ### Countdown Timer
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>T-minus {{secondsBetween(model.currentTime, model.launchTime)}} seconds</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,9 +80,6 @@ doc.Params["model"] = new {
 ### Performance Timing
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Operation Performance</h3>
@@ -103,9 +92,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -138,17 +124,11 @@ doc.Params["model"] = new {
 ### Video Duration
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Duration: {{floor(secondsBetween(model.startTime, model.endTime) / 60)}}:{{padLeft(string(secondsBetween(model.startTime, model.endTime) % 60), 2, '0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -167,9 +147,6 @@ doc.Params["model"] = new {
 ### Response Time Analysis
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>API Response Times</h3>
@@ -178,9 +155,6 @@ doc.Params["model"] = new {
 <p>Max: {{max(collect(model.requests, 'responseTime'))}}s</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

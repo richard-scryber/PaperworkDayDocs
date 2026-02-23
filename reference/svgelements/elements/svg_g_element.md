@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;g&gt; : The SVG Group Container
+{: .no_toc }
 
 The `<g>` (group) element is a container used to group related SVG elements together. Groups allow you to apply transformations, styles, and attributes to multiple elements at once. All child elements inherit styles from the group, and transformations applied to the group affect all its children.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -167,9 +181,6 @@ SVGGroup implements `ICloneable`:
 ### Dynamic Group Visibility
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { showDetails: true } -->
@@ -187,13 +198,7 @@ SVGGroup implements `ICloneable`:
 {% endraw %}
 
 
-
-
-
 ### Repeated Groups
-
-
-
 
 
 {% raw %}
@@ -211,13 +216,7 @@ SVGGroup implements `ICloneable`:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Transformations
-
-
-
 
 
 {% raw %}
@@ -232,13 +231,7 @@ SVGGroup implements `ICloneable`:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Styling
-
-
-
 
 
 {% raw %}
@@ -255,9 +248,6 @@ SVGGroup implements `ICloneable`:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -415,9 +405,6 @@ SVGGroup implements `ICloneable`:
 ### Conditional Groups
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { showGrid: true, showLabels: false } -->
@@ -436,9 +423,6 @@ SVGGroup implements `ICloneable`:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Layer Organization
@@ -508,9 +492,6 @@ SVGGroup implements `ICloneable`:
 ### Data-Driven Bar Chart Groups
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { data: [{label:"A", value:80, color:"#4a90e2"}, {label:"B", value:120, color:"#50c878"}] } -->
@@ -527,9 +508,6 @@ SVGGroup implements `ICloneable`:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Grouped Pattern Elements

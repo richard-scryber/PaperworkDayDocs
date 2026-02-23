@@ -12,6 +12,8 @@ has_toc: false
 # white-space : White Space Property
 {: .no_toc }
 
+The `white-space` property controls how whitespace (spaces, tabs, and line breaks) inside an element is handled. This property is essential for formatting preformatted text, code blocks, and controlling text wrapping behavior in PDF documents.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `white-space` property controls how whitespace (spaces, tabs, and line breaks) inside an element is handled. This property is essential for formatting preformatted text, code blocks, and controlling text wrapping behavior in PDF documents.
 
 ---
 
@@ -92,9 +88,6 @@ The `white-space` property can be dynamically controlled through data binding, a
 ### Example 1: Content Type-Based Whitespace Handling
 
 
-
-
-
 {% raw %}
 ```html
 <div style="white-space: {{model.content.whitespaceMode}}; font-family: {{model.content.fontFamily}}; font-size: 10pt">
@@ -124,13 +117,7 @@ The `white-space` property can be dynamically controlled through data binding, a
 {% endraw %}
 
 
-
-
-
 ### Example 2: Address Formatting with Data
-
-
-
 
 
 {% raw %}
@@ -157,13 +144,7 @@ The `white-space` property can be dynamically controlled through data binding, a
 {% endraw %}
 
 
-
-
-
 ### Example 3: Dynamic Table Cell Wrapping
-
-
-
 
 
 {% raw %}
@@ -195,9 +176,6 @@ The `white-space` property can be dynamically controlled through data binding, a
 -->
 ```
 {% endraw %}
-
-
-
 
 
 ---

@@ -12,22 +12,20 @@ has_toc: false
 # millisecondOf() : Extract Millisecond from DateTime
 {: .no_toc }
 
+Extract the millisecond component from a datetime value as a number (0-999).
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Extract the millisecond component from a datetime value as a number (0-999).
 
 ## Signature
 
@@ -58,17 +56,11 @@ The millisecond as a number from 0 to 999.
 ### Display Millisecond
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Millisecond: {{millisecondOf(model.time)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,17 +78,11 @@ doc.Params["model"] = new {
 ### High-Precision Timestamp
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Timestamp: {{format(model.time, 'HH:mm:ss')}}.{{padLeft(string(millisecondOf(model.time)), 3, '0')}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -114,9 +100,6 @@ doc.Params["model"] = new {
 ### Performance Metrics
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>API Response Times</h3>
@@ -125,9 +108,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -152,9 +132,6 @@ doc.Params["model"] = new {
 ### Precision Timing Validation
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.measurements}}
@@ -168,9 +145,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -194,9 +168,6 @@ doc.Params["model"] = new {
 ### Race Timing
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Race Results</h3>
@@ -205,9 +176,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

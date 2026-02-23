@@ -12,6 +12,8 @@ has_toc: false
 # % : Modulus Operator
 {: .no_toc }
 
+Calculate the remainder after dividing one number by another.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -20,14 +22,10 @@ has_toc: false
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the remainder after dividing one number by another.
 
 ## Syntax
 
@@ -72,8 +70,6 @@ The remainder after dividing the left operand by the right operand.
 ### Even/Odd Detection
 
 
-
-
 {% raw %}
 ```html 
 {{#each model.items}}
@@ -83,9 +79,6 @@ The remainder after dividing the left operand by the right operand.
 {{/each}} 
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -111,8 +104,6 @@ doc.Params["model"] = new {
 ### Alternating Row Colors
 
 
-
-
 {% raw %}
 ```html 
 <table>
@@ -127,11 +118,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
 ### Cycle Through Values
-
-
 
 
 {% raw %}
@@ -146,12 +133,7 @@ doc.Params["model"] = new {
 {% endraw %}
 
 
-
-
-
 ### Check Divisibility
-
-
 
 
 {% raw %}
@@ -163,9 +145,6 @@ doc.Params["model"] = new {
 {{/if}} 
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -184,8 +163,6 @@ doc.Params["model"] = new {
 ### Grid Layout Column Wrapping
 
 
-
-
 {% raw %}
 ```html 
 {{#each model.images}}
@@ -197,9 +174,6 @@ doc.Params["model"] = new {
 {{/each}} 
 ```
 {% endraw %}
-
-
-
 
 
 ---

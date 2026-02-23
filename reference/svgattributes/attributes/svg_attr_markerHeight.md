@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @markerHeight : The Marker Viewport Height Attribute
+{: .no_toc }
 
 The `markerHeight` attribute defines the height of the marker viewport - the vertical extent of the coordinate system in which the marker content is rendered. This works in conjunction with `markerWidth` to establish the complete marker coordinate space.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -80,9 +94,6 @@ The `markerHeight` attribute is supported on:
 Adjust marker height based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { markerSize: 14, visualScale: 1.2 } -->
@@ -108,15 +119,9 @@ Adjust marker height based on data:
 {% endraw %}
 
 
-
-
-
 ### Proportional Sizing
 
 Scale both dimensions together:
-
-
-
 
 
 {% raw %}
@@ -143,13 +148,7 @@ Scale both dimensions together:
 {% endraw %}
 
 
-
-
-
 ### Variable Aspect Ratios
-
-
-
 
 
 {% raw %}
@@ -184,9 +183,6 @@ Scale both dimensions together:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

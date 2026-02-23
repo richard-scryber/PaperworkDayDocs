@@ -12,6 +12,8 @@ has_toc: false
 # margin-inline : Inline Margin Shorthand Property
 {: .no_toc }
 
+The `margin-inline` property is a logical shorthand for setting both `margin-inline-start` and `margin-inline-end` of an element in PDF documents. This property adapts to the writing direction, making it ideal for creating internationalized documents that work in both LTR and RTL languages.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `margin-inline` property is a logical shorthand for setting both `margin-inline-start` and `margin-inline-end` of an element in PDF documents. This property adapts to the writing direction, making it ideal for creating internationalized documents that work in both LTR and RTL languages.
 
 ---
 
@@ -96,9 +92,6 @@ The `margin-inline` property supports dynamic values through data binding, enabl
 ### Example 1: Dynamic document margins based on page size
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -130,9 +123,6 @@ The `margin-inline` property supports dynamic values through data binding, enabl
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -146,9 +136,6 @@ Data context:
 ```
 
 ### Example 2: Responsive invoice layout with data-driven spacing
-
-
-
 
 
 {% raw %}
@@ -188,9 +175,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -206,9 +190,6 @@ Data context:
 ```
 
 ### Example 3: Centered card with adaptive margins
-
-
-
 
 
 {% raw %}
@@ -242,9 +223,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

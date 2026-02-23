@@ -12,22 +12,20 @@ has_toc: false
 # trim() : Remove Whitespace
 {: .no_toc }
 
+Remove leading and trailing whitespace from a string.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Remove leading and trailing whitespace from a string.
 
 ## Signature
 
@@ -58,17 +56,11 @@ The string with leading and trailing whitespace removed.
 ### Remove Extra Spaces
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>"{{trim(model.text)}}"</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -86,9 +78,6 @@ doc.Params["model"] = new {
 ### Clean User Input
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#each model.names}}
@@ -96,9 +85,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -118,9 +104,6 @@ doc.Params["model"] = new {
 ### Normalize for Comparison
 
 
-
-
-
 {% raw %}
 ```handlebars
 {{#if trim(model.status) == 'active'}}
@@ -128,9 +111,6 @@ doc.Params["model"] = new {
 {{/if}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -148,17 +128,11 @@ doc.Params["model"] = new {
 ### Clean Multi-Line Text
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>{{trim(model.description)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

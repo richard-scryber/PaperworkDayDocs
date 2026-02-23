@@ -12,22 +12,20 @@ has_toc: false
 # hoursBetween() : Calculate Hours Between Dates
 {: .no_toc }
 
+Calculate the number of hours between two datetimes. Returns a positive or negative number depending on whether the second datetime is after or before the first.
+
 ---
 
-<details open class='top-toc' markdown="block">
+<details class='top-toc' markdown="block">
   <summary>
     On this page
   </summary>
   {: .text-delta }
 - TOC
-{:toc}
+{: toc}
 </details>
 
 ---
-
-## Summary
-
-Calculate the number of hours between two datetimes. Returns a positive or negative number depending on whether the second datetime is after or before the first.
 
 ## Signature
 
@@ -59,17 +57,11 @@ The number of hours between the two datetimes. Positive if endDateTime is after 
 ### Calculate Hours Until Event
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Hours until meeting: {{hoursBetween(model.now, model.meetingTime)}}</p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -88,9 +80,6 @@ doc.Params["model"] = new {
 ### Shift Duration
 
 
-
-
-
 {% raw %}
 ```handlebars
 <h3>Work Shift Report</h3>
@@ -99,9 +88,6 @@ doc.Params["model"] = new {
 {{/each}}
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**
@@ -132,9 +118,6 @@ doc.Params["model"] = new {
 ### SLA Compliance
 
 
-
-
-
 {% raw %}
 ```handlebars
 <p>Response time: {{hoursBetween(model.ticketCreated, model.firstResponse)}} hours</p>
@@ -147,9 +130,6 @@ doc.Params["model"] = new {
 </p>
 ```
 {% endraw %}
-
-
-
 
 
 **Data:**

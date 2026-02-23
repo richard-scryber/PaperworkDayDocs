@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @fx : The Radial Gradient Focal Point X Coordinate Attribute
+{: .no_toc }
 
 The `fx` attribute defines the X-coordinate of the focal point for a radial gradient. The focal point is where the 0% color stop begins, creating the visual center of the radial color transition. By offsetting the focal point from the gradient circle's center, you can create lighting effects, depth, and directional illumination.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -82,9 +96,6 @@ Note: This attribute is NOT used with `<linearGradient>` elements.
 Bind focal point to data for dynamic lighting effects:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { lightX: 35, lightY: 35 } -->
@@ -104,15 +115,9 @@ Bind focal point to data for dynamic lighting effects:
 {% endraw %}
 
 
-
-
-
 ### Mouse/Touch Position Lighting
 
 Create interactive lighting following pointer position:
-
-
-
 
 
 {% raw %}
@@ -136,15 +141,9 @@ Create interactive lighting following pointer position:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Highlight Direction
 
 Position highlights based on data orientation:
-
-
-
 
 
 {% raw %}
@@ -170,15 +169,9 @@ Position highlights based on data orientation:
 {% endraw %}
 
 
-
-
-
 ### Status Indicator with Centered/Offset Glow
 
 Change focal point based on status state:
-
-
-
 
 
 {% raw %}
@@ -201,15 +194,9 @@ Change focal point based on status state:
 {% endraw %}
 
 
-
-
-
 ### Calculated Lighting Angle
 
 Calculate focal point from angle data:
-
-
-
 
 
 {% raw %}
@@ -229,9 +216,6 @@ Calculate focal point from angle data:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -511,9 +495,6 @@ Focal point positioning is ideal for:
 ### Data-Driven Light Position
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { lightX: 35, lightY: 40, brightness: 1.0 } -->
@@ -534,13 +515,7 @@ Focal point positioning is ideal for:
 {% endraw %}
 
 
-
-
-
 ### Interactive Button State
-
-
-
 
 
 {% raw %}
@@ -565,9 +540,6 @@ Focal point positioning is ideal for:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

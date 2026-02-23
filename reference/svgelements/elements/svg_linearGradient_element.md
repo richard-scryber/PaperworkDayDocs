@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # &lt;linearGradient&gt; : The Linear Gradient Definition Element
+{: .no_toc }
 
 The `<linearGradient>` element defines a linear gradient fill that transitions between colors along a straight line. It must be placed inside an SVG `<defs>` section or directly within an `<svg>` canvas, and is referenced by its `id` attribute from SVG shapes and elements using the `fill` or `stroke` attributes.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -167,9 +181,6 @@ Use `href` to reference another gradient's properties:
 Bind gradient stop colors to data values:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { primaryColor: "#3498db", secondaryColor: "#e74c3c" } -->
@@ -186,15 +197,9 @@ Bind gradient stop colors to data values:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Stop Positions
 
 Create gradients with data-driven stop positions:
-
-
-
 
 
 {% raw %}
@@ -212,15 +217,9 @@ Create gradients with data-driven stop positions:
 {% endraw %}
 
 
-
-
-
 ### Conditional Gradients
 
 Generate gradients based on data conditions:
-
-
-
 
 
 {% raw %}
@@ -238,15 +237,9 @@ Generate gradients based on data conditions:
 {% endraw %}
 
 
-
-
-
 ### Data-Driven Gradient Angles
 
 Create gradients with dynamic angles:
-
-
-
 
 
 {% raw %}
@@ -267,15 +260,9 @@ Create gradients with dynamic angles:
 {% endraw %}
 
 
-
-
-
 ### Repeating Gradients from Data
 
 Generate multiple gradient stops from arrays:
-
-
-
 
 
 {% raw %}
@@ -291,9 +278,6 @@ Generate multiple gradient stops from arrays:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -575,9 +559,6 @@ Generate multiple gradient stops from arrays:
 ### Data-Driven Status Indicator
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { value: 75, thresholdLow: 50, thresholdHigh: 80 } -->
@@ -596,13 +577,7 @@ Generate multiple gradient stops from arrays:
 {% endraw %}
 
 
-
-
-
 ### Dynamic Theme Gradients
-
-
-
 
 
 {% raw %}
@@ -618,9 +593,6 @@ Generate multiple gradient stops from arrays:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---

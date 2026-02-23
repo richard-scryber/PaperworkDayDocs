@@ -5,7 +5,7 @@ parent: Configuration & Extension
 parent_url: /configuration/
 has_children: false
 has_toc: false
-nav_order: 8
+nav_order: 9
 ---
 
 # Namespace Registration

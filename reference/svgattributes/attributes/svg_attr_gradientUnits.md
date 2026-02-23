@@ -10,8 +10,22 @@ has_toc: false
 ---
 
 # @gradientUnits : The Gradient Coordinate System Attribute
+{: .no_toc }
 
 The `gradientUnits` attribute defines the coordinate system used for gradient positioning attributes (x1, y1, x2, y2 for linear gradients; cx, cy, r, fx, fy for radial gradients). It determines whether coordinates are relative to the filled shape or absolute in document space.
+
+---
+
+<details class='top-toc' markdown="block">
+  <summary>
+    On this page
+  </summary>
+  {: .text-delta }
+- TOC
+{: toc}
+</details>
+
+---
 
 ## Usage
 
@@ -80,9 +94,6 @@ The `gradientUnits` attribute is supported on:
 Choose coordinate system based on data:
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { useAbsolute: false } -->
@@ -104,15 +115,9 @@ Choose coordinate system based on data:
 {% endraw %}
 
 
-
-
-
 ### Responsive vs Fixed Gradients
 
 Switch between responsive and fixed based on context:
-
-
-
 
 
 {% raw %}
@@ -136,15 +141,9 @@ Switch between responsive and fixed based on context:
 {% endraw %}
 
 
-
-
-
 ### Chart-Specific Gradients
 
 Use absolute coordinates for consistent chart backgrounds:
-
-
-
 
 
 {% raw %}
@@ -171,15 +170,9 @@ Use absolute coordinates for consistent chart backgrounds:
 {% endraw %}
 
 
-
-
-
 ### Shared Gradient Across Multiple Shapes
 
 Use userSpaceOnUse for consistent gradient across shapes:
-
-
-
 
 
 {% raw %}
@@ -203,9 +196,6 @@ Use userSpaceOnUse for consistent gradient across shapes:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ---
@@ -503,9 +493,6 @@ Use userSpaceOnUse for consistent gradient across shapes:
 ### Data-Driven Coordinate System
 
 
-
-
-
 {% raw %}
 ```html
 <!-- Model: { mode: "responsive", width: 500, height: 300 } -->
@@ -526,9 +513,6 @@ Use userSpaceOnUse for consistent gradient across shapes:
 </svg>
 ```
 {% endraw %}
-
-
-
 
 
 ### Timeline with Absolute Positioning

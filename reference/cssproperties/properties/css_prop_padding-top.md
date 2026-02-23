@@ -12,6 +12,8 @@ has_toc: false
 # padding-top : Top Padding Property
 {: .no_toc }
 
+The `padding-top` property sets the top padding of an element in PDF documents. Top padding creates space inside the element above the content, between the top border and the content, inheriting the element's background color.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `padding-top` property sets the top padding of an element in PDF documents. Top padding creates space inside the element above the content, between the top border and the content, inheriting the element's background color.
 
 ---
 
@@ -92,9 +88,6 @@ The `padding-top` property supports dynamic values through data binding, allowin
 ### Example 1: Dynamic header padding based on header type
 
 
-
-
-
 {% raw %}
 ```html
 <style>
@@ -117,9 +110,6 @@ The `padding-top` property supports dynamic values through data binding, allowin
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -132,9 +122,6 @@ Data context:
 ```
 
 ### Example 2: Card headers with variable top padding
-
-
-
 
 
 {% raw %}
@@ -165,9 +152,6 @@ Data context:
 {% endraw %}
 
 
-
-
-
 Data context:
 ```json
 {
@@ -179,9 +163,6 @@ Data context:
 ```
 
 ### Example 3: Report cover with data-driven padding
-
-
-
 
 
 {% raw %}
@@ -205,9 +186,6 @@ Data context:
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 Data context:

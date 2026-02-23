@@ -12,6 +12,8 @@ has_toc: false
 # x1, y1, x2, y2 : SVG Linear Gradient Position Attributes
 {: .no_toc }
 
+The `x1`, `y1`, `x2`, and `y2` attributes define the start and end points of a linear gradient vector in SVG. These attributes control the direction and positioning of the gradient, allowing you to create horizontal, vertical, diagonal, and custom-angled gradients.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -22,12 +24,6 @@ has_toc: false
 - TOC
 {: toc}
 </details>
-
----
-
-## Summary
-
-The `x1`, `y1`, `x2`, and `y2` attributes define the start and end points of a linear gradient vector in SVG. These attributes control the direction and positioning of the gradient, allowing you to create horizontal, vertical, diagonal, and custom-angled gradients.
 
 ---
 
@@ -96,9 +92,6 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 ### Example 1: Data-driven gradient directions
 
 
-
-
-
 {% raw %}
 ```html
 <body>
@@ -121,13 +114,7 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 {% endraw %}
 
 
-
-
-
 ### Example 2: Dynamic angle gradients based on data
-
-
-
 
 
 {% raw %}
@@ -152,13 +139,7 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 {% endraw %}
 
 
-
-
-
 ### Example 3: Conditional gradient positions for different layouts
-
-
-
 
 
 {% raw %}
@@ -183,9 +164,6 @@ The gradient position attributes (`x1`, `y1`, `x2`, `y2`) can be dynamically con
 </body>
 ```
 {% endraw %}
-
-
-
 
 
 ---
