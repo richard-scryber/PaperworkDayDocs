@@ -12,6 +12,8 @@ has_toc: false
 # CSS Specificity
 {: .no_toc }
 
+CSS specificity determines which styles are applied when multiple rules target the same element. In Scryber, specificity is calculated based on selector type, ancestor depth, and combinator type.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-CSS specificity determines which styles are applied when multiple rules target the same element. In Scryber, specificity is calculated based on selector type, ancestor depth, and combinator type.
 
 ## Specificity Values
 
@@ -112,7 +110,7 @@ div > section > p { }   /* 1 × 200 = 200 */
 
 ## Notes
 
-- Inline styles (if supported) would have even higher specificity
+- Inline styles are always applied, and overide all others (except !important, unless they are also !important)
 - `!important` declarations override normal specificity (use sparingly)
 - Pseudo-classes (:hover, :before, :after) add to the base selector's specificity
 - Universal selector (*) has minimal specificity but still counts

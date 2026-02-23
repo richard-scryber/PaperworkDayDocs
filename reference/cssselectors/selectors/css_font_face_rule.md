@@ -9,8 +9,10 @@ has_children: false
 has_toc: false
 ---
 
-# @page At-Rule
+# @font-face At-Rule
 {: .no_toc }
+
+The `@font-face` at-rule allows you to define specific fonts to be used within the template, outside of any directly loaded by the engine. This is particularly important in PDF generation with Scryber.
 
 ---
 
@@ -25,60 +27,138 @@ has_toc: false
 
 ---
 
-## Summary
-
-The `@page` at-rule allows you to define styles specific to printed pages, including page margins, size, orientation, and other page-specific properties. This is particularly important in PDF generation with Scryber.
 
 ## Usage
 
 ```css
-@page {
-    property: value;
+
+@font-face {
+    font-family: 'font name';
+    src: url('[relative or remote path to font file]') format('truetype') [, ...more formats];
+    font-weight: [100 ... 900];
+    font-style: reglular | italic | oblique;
 }
+
+.main{
+    font-family: 'font name', Helvetica, sans-serif;
+}
+
 ```
 
-Applies styles to the page container itself, not the content within the page.
+The `@font-face` defines an explicit font that can be used within the document, and will be embedded (if allowed) into the document itself so it can be used to by reader applications.
+
+Each definition is a single font based on family, weight and style, and multiple definitions of the same family are supported (encouraged) to allow for bold and italic variants. 
+
+PDF readers support embedded Open Type (aka. TrueType&trade; fonts).
+
+The library can convert .otc/.ttc collections, along with WOFF fonts directly to the supported formats. Any fonts defined in other formats (e.g. WOFF2), will be ignored. 
 
 ---
 
-## Syntax Examples
+### Font Matching and fallbacks
+
+Every font used within a document should have it's own set (or subset) of font definition. As such, when specifying a `b`old or `strong` font weight, there should be an available, matching font file for that weight. The engine will use system fonts if able, and has the default fonts to use (embedded within the engine).
+
+So in order to find the best font to display the applied characters with, the following table is used.
+
+- Take the first font-family in the list
+    - Find the font family and style. If matched...
+        - Find the requested weight and use.
+        - No exact weight, so find the nearest (larger or smaller) and use that.
+    - No matched family and style so switch to the next family in the list
+- No matching family with that style
+    - Find the font family in regular style
+         - Find the requested weight and use.
+        - No exact weight, so find the nearest (larger or smaller) and use that.
+    - No matching family in regular
+        - Use the built-in Courier / mono-spaced font (easily identified as not matching).
+    
+When used with a fall-back font in the style, it is 'guaranteed' to find an appropriate font for the requested component.
+
+---
+
+### Syntax Examples
 
 
 ```css
-/* Basic page setup */
-@page {
-    size: A4;
-    margin: 20mm;
+
+/* Load custom font - Roboto regular and bold */
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
 }
 
-/* Portrait orientation */
-@page {
-    size: A4 portrait;
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
 }
 
-/* Landscape orientation */
-@page {
-    size: A4 landscape;
+/* specify the default page font as 'Roboto' with fallbacks */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* Custom page size */
-@page {
-    size: 8.5in 11in;
-    margin: 1in;
+/* set the heading as bold */
+h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 2pt;
 }
 
-/* Different margins */
-@page {
-    margin-top: 30mm;
-    margin-bottom: 20mm;
-    margin-left: 25mm;
-    margin-right: 25mm;
+
+```
+
+When an exact match is not found for a font then a 'Warning' entry is added to the log.
+If no font can be found then either an exception will be raised (if the [conformance mode](/learning/07-configuration/03_error_handling_conformance) is 'Strict') or an error added to the log.
+
+```csharp
+//change the document conformance mode in code
+doc.ConformanceMode = ParserConformanceMode.Strict;
+
+```
+
+Or use the template [processing](/learning/07-configuration/02_logging) instructions.
+
+```xml
+<?scryber conformance-mode='strict' ... >
+<html> ...
+```
+
+
+---
+
+### No Fallback
+
+By default the engine will always try to fallback to the best font it can find. If it is better, or you want to check everything is in place, then you it ios possible to switch off this behaviour either individually, or globally.
+
+#### For a specific document
+```csharp
+doc.RenderOptions.FontFallback = false;
+```
+
+#### Withing the application
+
+Add the section to the application [configuration file](/learning/07-configuration/07_production_deployment)
+```json
+"Scryber" : {
+    "Fonts" : {
+        "FontSubstitution" : "false"
+    }
 }
 ```
 
 ---
 
-## Common Page Properties
+//NEED A BREAK!
+
+## Font-Face Properties
 
 - `size` - Page dimensions (A4, Letter, Legal, or custom dimensions)
 - `margin` - Page margins (shorthand)

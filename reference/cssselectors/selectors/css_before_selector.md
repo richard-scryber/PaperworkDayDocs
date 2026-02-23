@@ -12,6 +12,8 @@ has_toc: false
 # :before / ::before Pseudo-class Selector
 {: .no_toc }
 
+The `::before` pseudo-class selector targets the "before" state of an element, allowing you to style content or elements that appear before the main element. Both single-colon (`:before`) and double-colon (`::before`) syntax are supported (although the double-colon is recommended).
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,11 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `::before` pseudo-class selector targets the "before" state of an element, allowing you to style content or elements that appear before the main element. Both single-colon (`:before`) and double-colon (`::before`) syntax are supported (although the double-colon is recommended).
-
 ## Usage
 
 ```css

@@ -12,6 +12,8 @@ has_toc: false
 # @page At-Rule
 {: .no_toc }
 
+The `@page` at-rule allows you to define styles specific to printed pages, including page margins, size, orientation, and other page-specific properties. This is particularly important in PDF generation with Scryber.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,9 +27,6 @@ has_toc: false
 
 ---
 
-## Summary
-
-The `@page` at-rule allows you to define styles specific to printed pages, including page margins, size, orientation, and other page-specific properties. This is particularly important in PDF generation with Scryber.
 
 ## Usage
 

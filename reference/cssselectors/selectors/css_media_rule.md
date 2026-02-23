@@ -12,6 +12,9 @@ has_toc: false
 # @media At-Rule
 {: .no_toc }
 
+The `@media` at-rule allows you to define conditional styles that apply based on media features such as screen type, width, height, or print settings. This is essential for creating responsive PDF documents or different styles for screen vs. print.
+
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +27,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `@media` at-rule allows you to define conditional styles that apply based on media features such as screen type, width, height, or print settings. This is essential for creating responsive PDF documents or different styles for screen vs. print.
 
 ## Usage
 

@@ -12,6 +12,8 @@ has_toc: false
 # Element Selector (Type Selector)
 {: .no_toc }
 
+The element selector matches elements by their HTML tag name. It is the most basic CSS selector and has a specificity of 1.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,9 +27,6 @@ has_toc: false
 
 ---
 
-## Summary
-
-The element selector matches elements by their HTML tag name. It is the most basic CSS selector and has a specificity of 1.
 
 ## Usage
 
@@ -282,6 +281,28 @@ Element selectors have the lowest specificity value of **1 point**.
 ```
 
 ---
+
+### Element Selectors in code
+
+When building components in code, then the element name (`instance.ElementName`) will be blank - as such unless set explicitly, the instance will not match on the element selector.
+
+```csharp
+
+    var table = new HTMLTable();
+    table.StyleClass("grid");
+    pg.Contents.Add(table); 
+    
+    //The table will not match any selectors for 
+    //table {}
+    //table.grid
+
+    //but will match selectors
+    //.grid
+
+    //setting the element name will allow the styles to be matched.
+    table.ElementName = "table";
+
+```
 
 ## See Also
 

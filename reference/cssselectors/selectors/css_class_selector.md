@@ -12,6 +12,8 @@ has_toc: false
 # Class Selector
 {: .no_toc }
 
+The class selector matches elements by their class attribute value. It is denoted by a period (.) followed by the class name and has a specificity of 2-4 points depending on the number of classes.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The class selector matches elements by their class attribute value. It is denoted by a period (.) followed by the class name and has a specificity of 2-4 points depending on the number of classes.
 
 ## Usage
 

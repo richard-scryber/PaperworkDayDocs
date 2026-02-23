@@ -19,7 +19,7 @@ Configure logging, security, conformance, and optimization for production-ready 
 1. [Document Properties](01_document_properties.html) - Title, author, metadata, custom properties
 2. [Logging](02_logging.html) - Log levels, handlers, performance logging, troubleshooting
 3. [Error Handling & Conformance](03_error_handling_conformance.html) - Strict/Lax modes, validation, recovery
-4. [PDF Versions](04_pdf_versions.html) - PDF versions, PDF/A, PDF/X compliance
+<!-- 4. [PDF Versions](04_pdf_versions.html) - PDF versions, PDF/A, PDF/X compliance -->
 5. [Security](05_security.html) - Encryption, passwords, permissions
 6. [Optimization & Performance](06_optimization_performance.html) - File size, compression, caching, scaling
 7. [Production & Deployment](07_production_deployment.html) - Production config, monitoring, troubleshooting
@@ -38,7 +38,7 @@ Document configuration controls:
 - **Logging** - Diagnostic information and error tracking
 - **Error Handling** - How the system responds to problems
 - **Conformance** - Strict vs lax HTML/CSS parsing
-- **PDF Version** - PDF/A, PDF/X compliance
+<!-- - **PDF Version** - PDF/A, PDF/X compliance -->
 - **Security** - Encryption, passwords, and permissions
 - **Performance** - Optimization and resource management
 
@@ -63,9 +63,6 @@ doc.TraceLog = new PDFCollectorTraceLog(TraceRecordLevel.Verbose);
 
 // Set conformance mode
 doc.ConformanceMode = ParserConformanceMode.Lax;
-
-// Set PDF version
-doc.RenderOptions.PDFVersion = PDFVersion.PDF17;
 
 // Add security
 doc.RenderOptions.SecurityOptions = new PDFSecurityOptions()
@@ -119,11 +116,11 @@ This series covers production-ready configuration:
 - Validation and error recovery
 - Graceful degradation
 
-### 4. [PDF Versions](04_pdf_versions.html)
+<!-- ### 4. [PDF Versions](04_pdf_versions.html)
 - PDF version selection (1.4 - 2.0)
 - PDF/A compliance (archival)
 - PDF/X compliance (printing)
-- Feature compatibility by version
+- Feature compatibility by version -->
 
 ### 5. [Security](05_security.html)
 - Document encryption
@@ -306,32 +303,6 @@ if (logger.HasErrors)
 }
 ```
 
-## PDF/A Compliance
-
-### PDF/A-1b (Basic)
-
-```csharp
-doc.RenderOptions.PDFVersion = PDFVersion.PDF14;
-doc.RenderOptions.Conformance = PDFConformance.PDFA1B;
-
-// Requirements:
-// - All fonts must be embedded
-// - No encryption allowed
-// - No external dependencies
-```
-
-### PDF/A-2b
-
-```csharp
-doc.RenderOptions.PDFVersion = PDFVersion.PDF17;
-doc.RenderOptions.Conformance = PDFConformance.PDFA2B;
-
-// Allows:
-// - JPEG2000 compression
-// - Transparency
-// - Layers
-```
-
 ## Security Examples
 
 ### Read-Only PDF
@@ -449,34 +420,6 @@ public class InvoiceGenerator
 }
 ```
 
-### Archive-Compliant Reports
-
-```csharp
-public void GenerateArchiveReport(Report report, Stream output)
-{
-    var doc = Document.ParseDocument("report-template.html");
-
-    // PDF/A compliance
-    doc.RenderOptions.PDFVersion = PDFVersion.PDF17;
-    doc.RenderOptions.Conformance = PDFConformance.PDFA2B;
-
-    // Strict conformance for compliance
-    doc.ConformanceMode = ParserConformanceMode.Strict;
-
-    // Detailed logging
-    doc.TraceLog = new PDFCollectorTraceLog(TraceRecordLevel.Verbose);
-
-    // No security (PDF/A doesn't allow encryption)
-    doc.RenderOptions.SecurityOptions = null;
-
-    // Full font embedding required
-    doc.RenderOptions.FontSubsetting = false;
-
-    doc.Params["report"] = report;
-    doc.SaveAsPDF(output);
-}
-```
-
 ## Learning Path
 
 **Recommended progression:**
@@ -484,7 +427,6 @@ public void GenerateArchiveReport(Report report, Stream output)
 1. **Set Document Properties** - Metadata basics
 2. **Configure Logging** - Diagnostic information
 3. **Handle Errors** - Conformance and recovery
-4. **Choose PDF Version** - Compliance requirements
 5. **Add Security** - Protection and permissions
 6. **Optimize Performance** - Production-ready
 7. **Deploy to Production** - Best practices

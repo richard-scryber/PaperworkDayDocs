@@ -12,6 +12,9 @@ has_toc: false
 # Child Combinator (>)
 {: .no_toc }
 
+
+The child combinator (>) selects elements that are direct children of a specified parent element. Unlike the descendant combinator, it only matches immediate children, not deeper descendants.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -23,11 +26,7 @@ has_toc: false
 {: toc}
 </details>
 
----
 
-## Summary
-
-The child combinator (>) selects elements that are direct children of a specified parent element. Unlike the descendant combinator, it only matches immediate children, not deeper descendants.
 
 ## Usage
 

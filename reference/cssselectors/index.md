@@ -13,9 +13,9 @@ nav_order: 3
 
 ---
 
-<details open markdown="block">
+<details markdown="block">
   <summary>
-    Table of contents
+    On this page
   </summary>
   {: .text-delta }
 - TOC
@@ -150,6 +150,8 @@ Combinators allow mutiple selectors to be combined into a single match check. Th
 | <a href='selectors/css_child_combinator.html' >Direct Child</a>   | &gt; | A greater-than symbol (&gt;) between one selector and the next will match elements on the last selector that have **direct** parent(s) in the hierarchy that match the preceeding selector(s).   |
 | <a href='selectors/css_multiple_selectors.html' >Selector List</a>   | comma (", ") | A comma between one selector and the next will make a list of selectors and match on any of the selectors present.   |
 
+**NOTE:**: There are more to come in the future.
+
 ---
 
 ### Style Rules Reference
@@ -159,7 +161,7 @@ Combinators allow mutiple selectors to be combined into a single match check. Th
 |---|---|---|
 | <a href='selectors/css_media_rule.html' >Media Rule</a>   | @media | The media rule groups styles that are most appropriate for a display device. Most specifically the library will only use styles with a 'print' media query within it's list.   |
 | <a href='selectors/css_page_rule.html' >Page Size Rule</a>   | @page | The page rule allows modification of the page paper sizing, along with margins on that page. They can be named to be applied to individual sections of the resultant document.  |
-| Font Face Rule   | @font-face | The font-face rule defines a custom font available to be used from a local or remote source along with the format it uses. See <a href='/learning/05-typography/' >Using Fonts</a> for more information on font support.  |
+| <a href='selectors/css_font_face_rule.html' >Font Face Rule</a>   | @font-face | The font-face rule defines a custom font available to be used from a local or remote source along with the format it uses. See <a href='/learning/05-typography/' >Using Fonts</a> for more information on font support.  |
 
 ---
 
@@ -171,6 +173,9 @@ Pseudo element are keywords added to a selector to identify particular parts of 
 |---|---|---|
 | <a href='selectors/css_before_selector.html' >Before Content</a>   | ::before | ::before creates new pseudo element that is the first child of the matched element, often used to add cosmetic content. Also supports <a href='/learning/styles/counters.html' >counters</a>  |
 | <a href='selectors/css_after_selector.html' >After Content</a>   | ::after | ::after in a style selector creates new pseudo element that is the last child of the matched element, often used to add cosmetic content. Also supports <a href='/learning/styles/counters.html' >counters</a>  |
+
+
+**NOTE:**: There are more to come in the future.
 
 ---
 

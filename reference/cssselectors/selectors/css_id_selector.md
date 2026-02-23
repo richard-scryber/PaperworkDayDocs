@@ -12,6 +12,9 @@ has_toc: false
 # ID Selector
 {: .no_toc }
 
+
+The ID selector matches a single element by its unique id attribute value. It is denoted by a hash (#) followed by the ID name and has the highest specificity of 5 points.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +27,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The ID selector matches a single element by its unique id attribute value. It is denoted by a hash (#) followed by the ID name and has the highest specificity of 5 points.
 
 ## Usage
 

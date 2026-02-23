@@ -12,6 +12,8 @@ has_toc: false
 # Multiple Selectors (Comma-Separated)
 {: .no_toc }
 
+Multiple selectors allow you to apply the same styles to different elements by separating selectors with commas. This is also known as a selector list or grouping selectors.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,9 +27,6 @@ has_toc: false
 
 ---
 
-## Summary
-
-Multiple selectors allow you to apply the same styles to different elements by separating selectors with commas. This is also known as a selector list or grouping selectors.
 
 ## Usage
 

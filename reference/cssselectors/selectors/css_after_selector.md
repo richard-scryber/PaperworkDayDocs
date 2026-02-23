@@ -12,6 +12,8 @@ has_toc: false
 # ::after Pseudo-class Selector
 {: .no_toc }
 
+The `::after` pseudo-class selector targets the "after" state of an element, allowing you to style content or elements that appear after the main element. Both single-colon (`:after`) and double-colon (`::after`) syntax are supported (although the double-colon is recommended).
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -24,10 +26,6 @@ has_toc: false
 </details>
 
 ---
-
-## Summary
-
-The `::after` pseudo-class selector targets the "after" state of an element, allowing you to style content or elements that appear after the main element. Both single-colon (`:after`) and double-colon (`::after`) syntax are supported (although the double-colon is recommended).
 
 ## Usage
 

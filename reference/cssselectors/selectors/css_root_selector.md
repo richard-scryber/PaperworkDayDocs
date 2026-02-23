@@ -12,6 +12,8 @@ has_toc: false
 # :root Pseudo-class Selector
 {: .no_toc }
 
+The `:root` pseudo-class selector matches the root element of the document. This is typically the `<html>` element or the top-level document container in Scryber.
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -25,9 +27,6 @@ has_toc: false
 
 ---
 
-## Summary
-
-The `:root` pseudo-class selector matches the root element of the document. This is typically the `<html>` element or the top-level document container in Scryber.
 
 ## Usage
 

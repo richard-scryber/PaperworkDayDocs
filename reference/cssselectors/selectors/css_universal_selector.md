@@ -12,6 +12,8 @@ has_toc: false
 # Universal Selector
 {: .no_toc }
 
+The universal selector matches all elements in the document. It is denoted by an asterisk (*) and has a specificity of 1 point (same as an element selector).
+
 ---
 
 <details class='top-toc' markdown="block">
@@ -26,8 +28,6 @@ has_toc: false
 ---
 
 ## Summary
-
-The universal selector matches all elements in the document. It is denoted by an asterisk (*) and has a specificity of 1 point (same as an element selector).
 
 ## Usage
 
