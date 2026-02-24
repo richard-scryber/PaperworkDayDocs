@@ -19,7 +19,7 @@ Master page-based layout, positioning, and document structure to create professi
 1. [Page Sizes & Orientation](01_page_sizes_orientation.html) - Standard/custom sizes, portrait/landscape
 2. [Margins & Padding](02_margins_padding.html) - Page margins, element spacing, box model
 3. [Sections & Page Breaks](03_sections_page_breaks.html) - Page break control, pagination, keeping content together
-4. [Multi-Column Layouts](04_multi_column.html) - Table-cell layouts, column widths, gutters
+4. [Multi-Column Layouts](04_multi_column.html) - Native CSS columns, column widths, rules, and fill behavior
 5. [Positioning](05_positioning.html) - Static/relative/absolute, overlays, watermarks
 6. [Table Layouts](06_tables.html) - Data tables, table sizing, borders, page breaks
 7. [Headers & Footers](07_headers_footers.html) - Running headers/footers, page numbers
@@ -136,11 +136,11 @@ This series covers everything you need for professional document layout:
 - Multi-section documents
 
 ### 4. [Multi-Column Layouts](04_multi_column.html)
-- Table-cell method for columns
+- Native CSS columns with `columns`, `column-count`, and `column-width`
 - Equal and unequal column widths
 - Adding gutters (spacing)
-- Vertical alignment
-- Borders between columns
+- Rule styling with `column-rule` and `column-rule-*`
+- Fill behavior with `column-fill`
 - Why flexbox/grid don't work in PDF
 
 ### 5. [Positioning](05_positioning.html)
@@ -326,8 +326,9 @@ Content flows from page to page automatically:
 
 ```css
 .article {
-    column-count: 3;
+    columns: 3 170pt;
     column-gap: 15pt;
+    column-fill: balance;
 }
 
 .article h1 {

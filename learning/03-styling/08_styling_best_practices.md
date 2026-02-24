@@ -116,21 +116,20 @@ div.card.highlighted { background: yellow !important; }
 
 **PDF approach (works correctly):**
 ```css
-/* Table-based layout */
+/* Native multi-column flow */
 .container {
+    column-count: 3;
+    column-gap: 18pt;
+}
+
+.column {
+    break-inside: avoid;
+}
+
+/* Fixed panel layout (when needed) */
+.panel-layout {
     display: table;
     width: 100%;
-}
-
-.column {
-    display: table-cell;
-    width: 33.33%;
-}
-
-/* Float-based layout */
-.column {
-    float: left;
-    width: 33.33%;
 }
 ```
 
@@ -139,6 +138,7 @@ div.card.highlighted { background: yellow !important; }
 **✅ Well-supported:**
 - Typography (font-size, font-weight, font-family, color)
 - Box model (margin, padding, border, width, height)
+- Multi-column layout (`columns`, `column-count`, `column-width`)
 - Positioning (static, relative, absolute)
 - Display (block, inline, inline-block, table, none)
 - Colors (hex, RGB, RGBA, named)
@@ -395,7 +395,7 @@ div.card.highlighted { background: yellow !important; }
 **Checklist:**
 1. ✅ Verify box-sizing is set
 2. ✅ Check for flexbox/grid (not supported)
-3. ✅ Use table or float layout instead
+3. ✅ Use native columns (`columns`, `column-count`, `column-width`) for text flow
 4. ✅ Check for width overflow
 5. ✅ Verify margins aren't collapsing
 6. ✅ Test with simpler layout first
@@ -432,6 +432,7 @@ Before deploying PDF generation:
 - [ ] Consistent spacing scale used throughout
 - [ ] Typography hierarchy is clear
 - [ ] No flexbox or grid layout
+- [ ] Multi-column areas use native column properties
 - [ ] All fonts are loaded/embedded
 - [ ] All images load correctly
 - [ ] External resources are local or cached
@@ -471,7 +472,7 @@ Before deploying PDF generation:
 
 1. **Use points (pt)** for measurements
 2. **Keep selectors simple** (max 3 levels)
-3. **Use table-cell** for multi-column layouts
+3. **Use native columns** (`columns`, `column-count`, `column-width`) for multi-column text
 4. **Control page breaks** explicitly
 5. **Test with real data** early and often
 6. **Organize styles** logically

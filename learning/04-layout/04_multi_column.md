@@ -11,20 +11,20 @@ has_toc: false
 
 # Multi-Column Layouts
 
-Master column-based layouts using table-cell display for professional PDF documents.
+Master column-based layouts using native CSS columns (`columns`, `column-count`, `column-width`) for professional PDF documents.
 
 ---
 
 ## Learning Objectives
 
 By the end of this article, you'll be able to:
-- Create two-column layouts
-- Build three or more column layouts
-- Control column widths (fixed and fluid)
-- Add gutters (spacing) between columns
-- Understand why flexbox/grid don't work in PDF
-- Use table-cell for reliable column layouts
-- Create responsive column systems
+- Create two-column and three-column text flows
+- Control column count and preferred column width
+- Apply columns to pages and nested containers
+- Add gutters and divider lines between columns
+- Control column balancing with `column-fill`
+- Keep content readable with column spans and break control
+- Understand when table-cell is still useful for fixed card grids
 
 ---
 
@@ -36,18 +36,180 @@ Unlike modern web browsers, PDF rendering engines don't support:
 - ❌ Advanced layout features
 
 **Instead, use:**
-- ✅ `display: table` and `display: table-cell`
+- ✅ `columns`, `column-count`, and `column-width`
+- ✅ `column-gap` and `column-rule`
+- ✅ `column-rule-width`, `column-rule-style`, and `column-rule-color`
+- ✅ `column-fill` for balancing behavior
+- ✅ `column-span` and `break-inside`
+- ✅ `display: table` and `display: table-cell` (for fixed side-by-side blocks)
 - ✅ `float: left` / `float: right`
 - ✅ Percentage widths
 - ✅ `calc()` for dynamic calculations
 
 ---
 
-## Table-Cell Method (Recommended)
+## Native CSS Columns (Recommended)
 
-The most reliable method for column layouts in PDF.
+Scryber Core supports standard CSS multi-column properties. You can apply them directly to the page body or to any container (`div`, `section`, `article`, etc.).
 
 ### Basic Two-Column Layout
+
+```css
+body {
+    columns: 2;
+    column-gap: 20pt;
+}
+```
+
+### Using `column-count` and `column-width`
+
+```css
+/* Fixed number of columns */
+.article-two-col {
+    column-count: 2;
+    column-gap: 18pt;
+}
+
+/* Preferred width; engine chooses how many fit */
+.article-fluid {
+    column-width: 180pt;
+    column-gap: 16pt;
+}
+
+/* Shorthand */
+.article-shorthand {
+    columns: 3 170pt;  /* count + preferred width */
+    column-gap: 16pt;
+}
+```
+
+### Apply Columns to Any Container
+
+```html
+<div class="newsletter">
+    <h2 class="span-all">Weekly Update</h2>
+    <p>Long-form content flows through columns...</p>
+    <p>Additional paragraphs continue naturally...</p>
+</div>
+```
+
+```css
+.newsletter {
+    column-count: 2;
+    column-gap: 22pt;
+}
+
+.span-all {
+    column-span: all;
+    margin-top: 0;
+}
+```
+
+---
+
+## Column Width & Flow Control
+
+### Equal Multi-Column Flow
+
+```css
+.content {
+    column-count: 3;
+    column-gap: 18pt;
+}
+```
+
+### Preferred Width (Automatic Count)
+
+```css
+.content {
+    column-width: 160pt;
+    column-gap: 16pt;
+}
+```
+
+### Keep Blocks Together
+
+```css
+.card,
+.callout,
+h2 {
+    break-inside: avoid;
+}
+```
+
+### Span Headings Across All Columns
+
+```css
+h1,
+.section-title {
+    column-span: all;
+}
+```
+
+---
+
+## Gutters and Dividers
+
+### Spacing Between Columns
+
+```css
+.content {
+    column-count: 2;
+    column-gap: 20pt;
+}
+```
+
+### Divider Line Between Columns
+
+```css
+.content {
+    column-count: 2;
+    column-gap: 20pt;
+    column-rule: 1pt solid #d1d5db;
+}
+```
+
+### Longhand Rule Properties
+
+```css
+.content {
+    column-count: 2;
+    column-gap: 20pt;
+    column-rule-width: 1pt;
+    column-rule-style: solid;
+    column-rule-color: #d1d5db;
+}
+```
+
+---
+
+## Column Fill Behavior
+
+Use `column-fill` to choose how content is distributed across columns.
+
+```css
+/* Balanced column heights (default) */
+.article {
+    columns: 2;
+    column-gap: 20pt;
+    column-fill: balance;
+}
+
+/* Fill one column before continuing */
+.appendix {
+    columns: 2;
+    column-gap: 20pt;
+    column-fill: auto;
+}
+```
+
+---
+
+## When to Use Table-Cell Instead
+
+Use `display: table` / `display: table-cell` when you need fixed side-by-side components (for example, comparison cards or dashboard panes) rather than flowing text.
+
+### Fixed Two-Panel Layout
 
 ```css
 .container {
@@ -74,7 +236,7 @@ The most reliable method for column layouts in PDF.
 </div>
 ```
 
-### Three-Column Layout
+### Three Fixed Panels
 
 ```css
 .container {
@@ -89,7 +251,7 @@ The most reliable method for column layouts in PDF.
 }
 ```
 
-### Four-Column Layout
+### Four Fixed Panels
 
 ```css
 .container {
@@ -106,7 +268,7 @@ The most reliable method for column layouts in PDF.
 
 ---
 
-## Column Width Control
+## Fixed Panel Width Control
 
 ### Equal Width Columns
 
@@ -162,7 +324,7 @@ The most reliable method for column layouts in PDF.
 
 ---
 
-## Adding Gutters (Spacing)
+## Spacing for Fixed Panels
 
 ### Method 1: Padding
 
@@ -225,7 +387,7 @@ The most reliable method for column layouts in PDF.
 
 ---
 
-## Vertical Alignment
+## Vertical Alignment (Table-Cell Panels)
 
 Control how content aligns vertically within columns.
 
@@ -248,7 +410,7 @@ Control how content aligns vertically within columns.
 
 ---
 
-## Borders Between Columns
+## Borders Between Fixed Panels
 
 ### Method 1: Border on Column
 
@@ -285,7 +447,7 @@ Control how content aligns vertically within columns.
 
 ---
 
-## Practical Examples
+## Practical Examples (Table-Cell Panel Patterns)
 
 ### Example 1: Sidebar Layout
 
@@ -831,7 +993,18 @@ Create a comparison layout:
 }
 ```
 
-✅ **Solution:** Use table-cell
+✅ **Solution:** Use native columns for flowing text
+
+✅ **Preferred for flowing text:** Use native columns
+
+```css
+.container {
+    column-count: 2;
+    column-gap: 20pt;
+}
+```
+
+✅ **Use table-cell only for fixed panel layouts**
 
 ```css
 .container {
@@ -919,27 +1092,27 @@ Create a comparison layout:
 
 ## Column Layout Checklist
 
-- [ ] Using display: table and table-cell (not flexbox/grid)
-- [ ] vertical-align: top set on columns
-- [ ] Column widths add up to 100%
-- [ ] box-sizing: border-box applied
-- [ ] Appropriate gutter spacing (padding or border-spacing)
-- [ ] Content breaks properly if columns are tall
-- [ ] Borders/dividers between columns if needed
-- [ ] Responsive width strategy (fixed vs percentage)
+- [ ] Using `columns`, `column-count`, or `column-width` for text flow
+- [ ] `column-gap` set for readable spacing
+- [ ] `column-span: all` used for titles where needed
+- [ ] `break-inside: avoid` on cards/callouts/headings
+- [ ] `column-rule` added if visual divider is needed
+- [ ] `column-fill` chosen intentionally (`balance` or `auto`)
+- [ ] Content tested with realistic paragraph lengths
+- [ ] Table-cell used only for fixed panel/card patterns
 
 ---
 
 ## Best Practices
 
-1. **Use table-cell** - Most reliable for PDF column layouts
-2. **Set vertical-align: top** - Prevents unexpected alignment
-3. **Apply border-box** - Makes width calculations predictable
-4. **Plan for content length** - Columns grow with content
-5. **Use consistent gutters** - Typically 15-30pt between columns
-6. **Test with real content** - Varying content lengths affect layout
-7. **Consider page breaks** - Tall columns will break across pages
-8. **Keep it simple** - Avoid deeply nested column structures
+1. **Default to native columns** - Use `columns`, `column-count`, or `column-width`
+2. **Set readable gaps** - Typically `12pt` to `24pt` with `column-gap`
+3. **Control long blocks** - Use `break-inside: avoid` on important content
+4. **Span section headers** - Use `column-span: all` for major headings
+5. **Pick fill behavior early** - Use `column-fill: balance` for even columns, `auto` for sequential fill
+6. **Use table-cell selectively** - Best for fixed side-by-side panel designs
+7. **Avoid flex/grid assumptions** - Continue using PDF-supported layout features
+8. **Keep structures simple** - Prefer shallow, predictable container hierarchies
 
 ---
 

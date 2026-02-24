@@ -685,7 +685,7 @@ Create a layout with:
 | `inline` | Content | No | Left/Right | Text formatting |
 | `inline-block` | Content | Yes | All | Buttons, badges |
 | `table` | Full/Auto | Yes | All | Table layouts |
-| `table-cell` | Auto | Yes | None | Column layouts |
+| `table-cell` | Auto | Yes | None | Fixed side-by-side panels |
 | `none` | N/A | N/A | N/A | Hide elements |
 
 ---
@@ -695,7 +695,7 @@ Create a layout with:
 1. **Use semantic HTML** - Choose appropriate elements first
 2. **display: none** for conditional content
 3. **inline-block** for buttons and badges
-4. **table-cell** for multi-column layouts
+4. **Native columns** (`columns`, `column-count`, `column-width`) for multi-column text
 5. **Check closing tags** in conditional blocks
 6. **Test all conditions** to ensure proper rendering
 7. **Use visibility: hidden** when layout must be preserved

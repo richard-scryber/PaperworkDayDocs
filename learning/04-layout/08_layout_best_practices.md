@@ -174,23 +174,21 @@ p {
 }
 
 .two-column {
-    display: table;
-    width: 100%;
+    column-count: 2;
+    column-gap: 30pt;
 }
 
 .column {
-    display: table-cell;
-    width: 50%;
-    vertical-align: top;
-    padding: 0 15pt;
+    break-inside: avoid;
+    margin-bottom: 15pt;
 }
 
 .column:first-child {
-    padding-left: 0;
+    margin-top: 0;
 }
 
 .column:last-child {
-    padding-right: 0;
+    margin-bottom: 0;
 }
 ```
 
@@ -422,11 +420,12 @@ col:nth-child(3) { width: 30%; }
 **✅ Solution:**
 ```css
 .container {
-    display: table;  /* Supported, reliable */
+    column-count: 2;  /* Supported, reliable for flowing text */
+    column-gap: 20pt;
 }
 
-.column {
-    display: table-cell;
+.panel-layout {
+    display: table;  /* Use table-cell for fixed side-by-side panels */
 }
 ```
 
@@ -832,9 +831,9 @@ col:nth-child(3) { width: 20%; }
 **Checklist:**
 1. ✅ Verify widths add up to 100%
 2. ✅ Check for extra padding/margins
-3. ✅ Ensure display: table-cell on all columns
-4. ✅ Verify vertical-align: top is set
-5. ✅ Check border-spacing if using
+3. ✅ Ensure `columns` / `column-count` / `column-width` is applied
+4. ✅ Set `column-gap` for consistent spacing
+5. ✅ Use `break-inside: avoid` for cards and callouts
 
 ### Issue: Page Breaks in Wrong Places
 
@@ -861,9 +860,9 @@ col:nth-child(3) { width: 20%; }
 - [ ] Consistent spacing scale used
 - [ ] Page breaks controlled strategically
 - [ ] Headers/footers implemented
-- [ ] All layouts use supported methods (table-cell, not flexbox/grid)
+- [ ] All layouts use supported methods (native columns or table-cell panels, not flexbox/grid)
 - [ ] Tested with multi-page content
-- [ ] Column widths total 100%
+- [ ] Column settings produce readable line lengths
 - [ ] No content overflow
 
 ### Performance Checklist
@@ -895,7 +894,7 @@ col:nth-child(3) { width: 20%; }
 2. **Control page breaks** - Headings, cards, tables
 3. **Consistent spacing scale** - 10pt, 20pt, 30pt, etc.
 4. **Simple selectors** - Maximum 3 levels deep
-5. **table-cell for columns** - Not flexbox or grid
+5. **Native columns for text flow** - Use `columns`, `column-count`, `column-width`
 6. **Specify dimensions** - When known, for performance
 7. **Test with real content** - Edge cases and page breaks
 8. **Organize CSS logically** - Base, layout, components, utilities

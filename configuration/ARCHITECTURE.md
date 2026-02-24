@@ -53,13 +53,13 @@ Scryber.Core is a .NET PDF generation engine that transforms HTML/XML templates 
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        Public API Layer                          │
-│  Document.ParseDocument() / Document.ParseHtmlDocument()         │
-│  Document.SaveAsPDF() / Document.SaveAsPDFAsync()                │
+│                        Public API Layer                         │
+│  Document.ParseDocument() / Document.ParseHtmlDocument()        │
+│  Document.SaveAsPDF() / Document.SaveAsPDFAsync()               │
 └───────────────────────────┬─────────────────────────────────────┘
                             │
 ┌───────────────────────────┴─────────────────────────────────────┐
-│                    Component Tree Layer                          │
+│                    Component Tree Layer                         │
 │  HTMLDiv, HTMLSpan, Page, Section, Table, Image, etc.           │
 └───────────────────────────┬─────────────────────────────────────┘
                             │
@@ -146,7 +146,7 @@ Scryber.Core is a .NET PDF generation engine that transforms HTML/XML templates 
 ```
 Scryber.Common
     │
-    ├─→ Scryber.Drawing ────────┐
+    ├─→ Scryber.Drawing ─────────┐
     │       (fonts, graphics)    │
     │                            │
     ├─→ Scryber.Expressive ──────┤

@@ -184,7 +184,13 @@ The following properties control the page sizes, columns and breaks within. The 
 | Property  | Description |
 |---|---|
 | <a href='properties/column-count.html' >column-count</a>   | Specifies the number of columns within a block |
+| <a href='/reference/cssproperties/properties/css_prop_columns.html' >columns</a>   | Shorthand for setting `column-width` and `column-count` together |
 | <a href='properties/column-gap.html' >column-gap</a>   | Specifies the alley width between columns |
+| <a href='/reference/cssproperties/properties/css_prop_column-fill.html' >column-fill</a>   | Controls how content is distributed across columns (`balance` or `auto`) |
+| <a href='/reference/cssproperties/properties/css_prop_column-rule.html' >column-rule</a>   | Shorthand for setting width, style, and color of the divider between columns |
+| <a href='/reference/cssproperties/properties/css_prop_column-rule-width.html' >column-rule-width</a>   | Sets the divider line thickness between columns |
+| <a href='/reference/cssproperties/properties/css_prop_column-rule-style.html' >column-rule-style</a>   | Sets the divider line style between columns |
+| <a href='/reference/cssproperties/properties/css_prop_column-rule-color.html' >column-rule-color</a>   | Sets the divider line color between columns |
 | <a href='properties/column-width.html' >column-width</a>   | Specifies ideal column widths for content within an container so they are not smaller than the desired width but fill the container's width  |
 | <a href='properties/break-inside.html' >break-inside</a>   | Setting to avoid, will ensure that the content within is in a single region, column and/or page where possible. |
 | <a href='properties/break-after.html' >break-after</a>   | Setting to always, will ensure that any following content begins on a new region, column and/or page where possible.  |
